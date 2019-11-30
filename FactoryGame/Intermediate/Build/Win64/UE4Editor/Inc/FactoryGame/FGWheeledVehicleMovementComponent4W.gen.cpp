@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGWheeledVehicleMovementComponent4W.h"
+#include "FactoryGame/Public/FGWheeledVehicleMovementComponent4W.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -51,7 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent4W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent4W.h" },
 		{ "ToolTip", "returns the current largest lat slip of the vehicle" },
 	};
 #endif
@@ -85,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent4W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent4W.h" },
 		{ "ToolTip", "returns the current largest long slip of the vehicle" },
 	};
 #endif
@@ -119,7 +119,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent4W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent4W.h" },
 		{ "ToolTip", "returns the current largest tire load of the vehicle" },
 	};
 #endif
@@ -170,16 +170,16 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip, "GetLargestLateralSlip" }, // 2083297966
-		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip, "GetLargestLongitudinalSlip" }, // 2063467599
-		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue, "GetLargestTireLoadValue" }, // 3558711018
+		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip, "GetLargestLateralSlip" }, // 3572602611
+		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip, "GetLargestLongitudinalSlip" }, // 2220070186
+		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue, "GetLargestTireLoadValue" }, // 3020290492
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "HideCategories", "PlanarMovement Components|Movement|Planar Activation Components|Activation PlanarMovement Components|Movement|Planar Activation Components|Activation" },
 		{ "IncludePath", "FGWheeledVehicleMovementComponent4W.h" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent4W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent4W.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
@@ -187,7 +187,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mDownShiftLatency_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
 		{ "ClampMin", "0.0" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent4W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent4W.h" },
 		{ "UIMin", "0.0" },
 	};
 #endif
@@ -197,7 +197,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 		{ "Category", "MechanicalSetup" },
 		{ "ClampMax", "1.0" },
 		{ "ClampMin", "0.0" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent4W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent4W.h" },
 		{ "ToolTip", "Amount of ADDITIONAL required gear ratio in order to shift up or down, given a slope. The result is that on steep slopes, the vehicle will shift up at a higher ratio and shift down at a higher ratio." },
 		{ "UIMax", "1.0" },
 		{ "UIMin", "0.0" },
@@ -208,7 +208,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mDSOLMaxSlopeAngleLimit_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
 		{ "ClampMin", "0.001" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent4W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent4W.h" },
 		{ "ToolTip", "Max slope Angle Limit (in degrees) in order to use all of SlopeShiftRatio" },
 	};
 #endif
@@ -217,7 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mUseDSOLGearbox_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
 		{ "DisplayName", "Use Jace's special gearbox" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent4W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent4W.h" },
 		{ "ToolTip", "Use Jace's super awesome custom gearbox or not" },
 	};
 #endif
@@ -259,7 +259,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent4W, 2562128765);
+	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent4W, 2801166584);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGWheeledVehicleMovementComponent4W>()
 	{
 		return UFGWheeledVehicleMovementComponent4W::StaticClass();

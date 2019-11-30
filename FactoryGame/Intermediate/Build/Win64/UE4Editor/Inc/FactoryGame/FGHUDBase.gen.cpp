@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGHUDBase.h"
+#include "FactoryGame/Public/FGHUDBase.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -56,7 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUDBase() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUDBase_GetBaseUI_Statics::Function_MetaDataParams[] = {
 		{ "Category", "HUD" },
-		{ "ModuleRelativePath", "FGHUDBase.h" },
+		{ "ModuleRelativePath", "Public/FGHUDBase.h" },
 		{ "ToolTip", "Returns base ui" },
 	};
 #endif
@@ -94,20 +94,20 @@ void EmptyLinkFunctionForGeneratedCodeFGHUDBase() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGHUDBase_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGHUDBase_GetBaseUI, "GetBaseUI" }, // 1917269598
+		{ &Z_Construct_UFunction_AFGHUDBase_GetBaseUI, "GetBaseUI" }, // 4031785586
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHUDBase_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Rendering Actor Input Replication" },
 		{ "IncludePath", "FGHUDBase.h" },
-		{ "ModuleRelativePath", "FGHUDBase.h" },
+		{ "ModuleRelativePath", "Public/FGHUDBase.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHUDBase_Statics::NewProp_mBaseUI_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGHUDBase.h" },
+		{ "ModuleRelativePath", "Public/FGHUDBase.h" },
 		{ "ToolTip", "Reference to the UI widget" },
 	};
 #endif
@@ -142,7 +142,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUDBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGHUDBase, 612487367);
+	IMPLEMENT_CLASS(AFGHUDBase, 136637738);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGHUDBase>()
 	{
 		return AFGHUDBase::StaticClass();

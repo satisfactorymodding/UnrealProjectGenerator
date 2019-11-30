@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGEngineCommon.h"
+#include "FactoryGame/Public/FGEngineCommon.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -65,7 +65,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGEngineCommon
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGEngineCommon_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGEngineCommon.h" },
+		{ "ModuleRelativePath", "Public/FGEngineCommon.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FFGEngineCommon_Statics::NewStructOps()
@@ -74,14 +74,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGEngineCommon
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGEngineCommon_Statics::NewProp_HeightFogUpdater_MetaData[] = {
-		{ "ModuleRelativePath", "FGEngineCommon.h" },
+		{ "ModuleRelativePath", "Public/FGEngineCommon.h" },
 		{ "ToolTip", "Height fog properties that's controlled from camera" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FFGEngineCommon_Statics::NewProp_HeightFogUpdater = { "HeightFogUpdater", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFGEngineCommon, HeightFogUpdater), Z_Construct_UClass_UFGDynamicHeightFogUpdater_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FFGEngineCommon_Statics::NewProp_HeightFogUpdater_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGEngineCommon_Statics::NewProp_HeightFogUpdater_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGEngineCommon_Statics::NewProp_CreatedWorlds_MetaData[] = {
-		{ "ModuleRelativePath", "FGEngineCommon.h" },
+		{ "ModuleRelativePath", "Public/FGEngineCommon.h" },
 		{ "ToolTip", "The worlds created through IFGWorldCreationInterface" },
 	};
 #endif
@@ -89,7 +89,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGEngineCommon
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FFGEngineCommon_Statics::NewProp_CreatedWorlds_Inner = { "CreatedWorlds", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UWorld_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGEngineCommon_Statics::NewProp_Engine_MetaData[] = {
-		{ "ModuleRelativePath", "FGEngineCommon.h" },
+		{ "ModuleRelativePath", "Public/FGEngineCommon.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FFGEngineCommon_Statics::NewProp_Engine = { "Engine", nullptr, (EPropertyFlags)0x0020080000002000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFGEngineCommon, Engine), Z_Construct_UClass_UEngine_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FFGEngineCommon_Statics::NewProp_Engine_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGEngineCommon_Statics::NewProp_Engine_MetaData)) };
@@ -127,7 +127,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGEngineCommon
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGEngineCommon_Hash() { return 1781453157U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGEngineCommon_Hash() { return 1118567811U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

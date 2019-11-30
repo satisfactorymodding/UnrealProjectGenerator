@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGUseableInterface.h"
+#include "FactoryGame/Public/FGUseableInterface.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -87,7 +87,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUseState_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "Describes a state of a useable object for the player that tries to use it" },
 	};
 #endif
@@ -98,7 +98,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUseState_Statics::NewProp_State_MetaData[] = {
 		{ "Category", "UseState" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "Contains the usable state of the object, might be a error code" },
 	};
 #endif
@@ -107,7 +107,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseComponent_MetaData[] = {
 		{ "Category", "UseState" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "Component that triggered the use" },
 	};
 #endif
@@ -115,7 +115,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseLocation_MetaData[] = {
 		{ "Category", "UseState" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "Location of where the use happens" },
 	};
 #endif
@@ -123,7 +123,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUseState_Statics::NewProp_AdditionalData_MetaData[] = {
 		{ "Category", "UseState" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "Additional data that might be heavy to calculate several times the same frame, the reason it's cached here and not in the object, is that several players might want to cache different things" },
 	};
 #endif
@@ -162,7 +162,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FUseState_Hash() { return 2916474930U; }
+	uint32 Get_Z_Construct_UScriptStruct_FUseState_Hash() { return 1145851552U; }
 	void UFGUseState::StaticRegisterNativesUFGUseState()
 	{
 	}
@@ -199,13 +199,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGUseableInterface.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseState_Statics::NewProp_mIsUsableState_MetaData[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "If true, we will allocate a instance of the state, so we can store information in the state" },
 	};
 #endif
@@ -217,7 +217,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseState_Statics::NewProp_mWantAdditonalData_MetaData[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "If true, we will allocate a instance of the state, so we can store information in the state" },
 	};
 #endif
@@ -257,7 +257,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState, 1433218122);
+	IMPLEMENT_CLASS(UFGUseState, 3570143031);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState>()
 	{
 		return UFGUseState::StaticClass();
@@ -287,7 +287,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseState_Valid_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGUseableInterface.h" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "Default valid state for things to use whenever things just works as they should" },
 	};
 #endif
@@ -318,7 +318,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_Valid, 1788961463);
+	IMPLEMENT_CLASS(UFGUseState_Valid, 328043658);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_Valid>()
 	{
 		return UFGUseState_Valid::StaticClass();
@@ -411,7 +411,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "Called every frame when we are looked at, get a localized text on how we can be used\n\n@param byCharacter   Character that uses the object.\n@param state                 The state that describes how the object reacts to interaction" },
 	};
 #endif
@@ -446,7 +446,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "Checks if this actor is usable (a good example of a not useable actor is a alive enemy)\nThis should primarily be used when we don't want the outline to show up\n@note Called on both server and client.\n\n@return      true if this object is in a useable state" },
 	};
 #endif
@@ -487,7 +487,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "Called when a character tries to use this actor.\n@note Called on both server and client.\n\n@param byCharacter   Character that uses the object.\n@param state                 The state that describes how the object reacts to interaction" },
 	};
 #endif
@@ -528,7 +528,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "Called when a character releases the use button\n@note Called on both server and client.\n\n@param byCharacter    Character that uses the object.\n@param state                  The state that describes how the object reacts to interaction" },
 	};
 #endif
@@ -558,7 +558,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "Called from widgets that are opened by the use functionality" },
 	};
 #endif
@@ -599,7 +599,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "Called on by the interface if we are looking at something that's useable" },
 	};
 #endif
@@ -640,7 +640,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "Called when we stop looking at the item" },
 	};
 #endif
@@ -670,7 +670,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "Called from widgets that are opened by the use functionality" },
 	};
 #endif
@@ -725,7 +725,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ToolTip", "Get the current use state for a object\n@param byCharacter   The character that want to use the object\n@param atLocation    Location on the object where the use is triggered (simulated location on client).\n@param componentHit  The component that the trace hit when looking at the object" },
 	};
 #endif
@@ -758,21 +758,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGUseableInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription, "GetLookAtDecription" }, // 1321331063
-		{ &Z_Construct_UFunction_UFGUseableInterface_IsUseable, "IsUseable" }, // 1136572136
-		{ &Z_Construct_UFunction_UFGUseableInterface_OnUse, "OnUse" }, // 1743476151
-		{ &Z_Construct_UFunction_UFGUseableInterface_OnUseStop, "OnUseStop" }, // 1988596226
-		{ &Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer, "RegisterInteractingPlayer" }, // 1899526737
-		{ &Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt, "StartIsLookedAt" }, // 1181732175
-		{ &Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt, "StopIsLookedAt" }, // 3822511063
-		{ &Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer, "UnregisterInteractingPlayer" }, // 2999315746
-		{ &Z_Construct_UFunction_UFGUseableInterface_UpdateUseState, "UpdateUseState" }, // 2308972575
+		{ &Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription, "GetLookAtDecription" }, // 241365182
+		{ &Z_Construct_UFunction_UFGUseableInterface_IsUseable, "IsUseable" }, // 756570073
+		{ &Z_Construct_UFunction_UFGUseableInterface_OnUse, "OnUse" }, // 937340050
+		{ &Z_Construct_UFunction_UFGUseableInterface_OnUseStop, "OnUseStop" }, // 2244892187
+		{ &Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer, "RegisterInteractingPlayer" }, // 1401063379
+		{ &Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt, "StartIsLookedAt" }, // 3428691755
+		{ &Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt, "StopIsLookedAt" }, // 1868693734
+		{ &Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer, "UnregisterInteractingPlayer" }, // 3874011242
+		{ &Z_Construct_UFunction_UFGUseableInterface_UpdateUseState, "UpdateUseState" }, // 2725768054
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseableInterface_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGUseableInterface.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
@@ -803,7 +803,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseableInterface, 1675706469);
+	IMPLEMENT_CLASS(UFGUseableInterface, 998911575);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseableInterface>()
 	{
 		return UFGUseableInterface::StaticClass();

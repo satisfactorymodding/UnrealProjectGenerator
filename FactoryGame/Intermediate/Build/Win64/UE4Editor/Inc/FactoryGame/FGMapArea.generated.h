@@ -15,7 +15,7 @@ class UFGMapAreaZoneDescriptor;
 #endif
 #define FACTORYGAME_FGMapArea_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGMapArea_h_15_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetZoneType) \
 	{ \
@@ -45,7 +45,7 @@ class UFGMapAreaZoneDescriptor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGMapArea_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetZoneType) \
 	{ \
@@ -75,7 +75,7 @@ class UFGMapAreaZoneDescriptor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGMapArea_h_15_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGMapArea(); \
 	friend struct Z_Construct_UClass_UFGMapArea_Statics; \
@@ -84,7 +84,7 @@ public: \
 	DECLARE_SERIALIZER(UFGMapArea)
 
 
-#define FactoryGame_Source_FactoryGame_FGMapArea_h_15_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGMapArea(); \
 	friend struct Z_Construct_UClass_UFGMapArea_Statics; \
@@ -93,7 +93,7 @@ public: \
 	DECLARE_SERIALIZER(UFGMapArea)
 
 
-#define FactoryGame_Source_FactoryGame_FGMapArea_h_15_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGMapArea(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGMapArea) \
@@ -106,7 +106,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGMapArea_h_15_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGMapArea(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -119,31 +119,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGMapArea); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGMapArea)
 
 
-#define FactoryGame_Source_FactoryGame_FGMapArea_h_15_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mDisplayName() { return STRUCT_OFFSET(UFGMapArea, mDisplayName); } \
 	FORCEINLINE static uint32 __PPO__mZoneType() { return STRUCT_OFFSET(UFGMapArea, mZoneType); } \
 	FORCEINLINE static uint32 __PPO__mUserSetDisplayName() { return STRUCT_OFFSET(UFGMapArea, mUserSetDisplayName); }
 
 
-#define FactoryGame_Source_FactoryGame_FGMapArea_h_12_PROLOG
-#define FactoryGame_Source_FactoryGame_FGMapArea_h_15_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGMapArea_h_12_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGMapArea_h_15_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGMapArea_h_15_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGMapArea_h_15_INCLASS \
-	FactoryGame_Source_FactoryGame_FGMapArea_h_15_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGMapArea_h_15_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGMapArea_h_15_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGMapArea_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGMapArea_h_15_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGMapArea_h_15_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGMapArea_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -151,7 +151,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class UFGMapArea>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGMapArea_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGMapArea_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

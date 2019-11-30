@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGRailroadInterface.h"
+#include "FactoryGame/Public/FGRailroadInterface.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Interface" },
-		{ "ModuleRelativePath", "FGRailroadInterface.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadInterface.h" },
 		{ "ToolTip", "Get the track id we're on." },
 	};
 #endif
@@ -100,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadInterface_GetTrackPosition_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Interface" },
-		{ "ModuleRelativePath", "FGRailroadInterface.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadInterface.h" },
 		{ "ToolTip", "Get the track location." },
 	};
 #endif
@@ -138,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadInterface_RegisteredOnTrack_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Interface" },
-		{ "ModuleRelativePath", "FGRailroadInterface.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadInterface.h" },
 		{ "ToolTip", "When this is registered on a track." },
 	};
 #endif
@@ -162,7 +162,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadInterface_UnregisteredFromTrack_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Interface" },
-		{ "ModuleRelativePath", "FGRailroadInterface.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadInterface.h" },
 		{ "ToolTip", "When this is unregistered from a track, e.g. the track is dismantled." },
 	};
 #endif
@@ -195,16 +195,16 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGRailroadInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID, "GetTrackGraphID" }, // 3466317063
-		{ &Z_Construct_UFunction_UFGRailroadInterface_GetTrackPosition, "GetTrackPosition" }, // 4246353058
-		{ &Z_Construct_UFunction_UFGRailroadInterface_RegisteredOnTrack, "RegisteredOnTrack" }, // 1127815623
-		{ &Z_Construct_UFunction_UFGRailroadInterface_UnregisteredFromTrack, "UnregisteredFromTrack" }, // 2335245139
+		{ &Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID, "GetTrackGraphID" }, // 1952317451
+		{ &Z_Construct_UFunction_UFGRailroadInterface_GetTrackPosition, "GetTrackPosition" }, // 2933297992
+		{ &Z_Construct_UFunction_UFGRailroadInterface_RegisteredOnTrack, "RegisteredOnTrack" }, // 1048591103
+		{ &Z_Construct_UFunction_UFGRailroadInterface_UnregisteredFromTrack, "UnregisteredFromTrack" }, // 1457693087
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadInterface_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGRailroadInterface.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadInterface.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
@@ -235,7 +235,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRailroadInterface, 2886519254);
+	IMPLEMENT_CLASS(UFGRailroadInterface, 1921011873);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGRailroadInterface>()
 	{
 		return UFGRailroadInterface::StaticClass();

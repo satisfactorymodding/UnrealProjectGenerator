@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGCharacterBase.h"
+#include "FactoryGame/Public/FGCharacterBase.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -109,7 +109,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffectWate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFootstepEffectWater_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FFootstepEffectWater_Statics::NewStructOps()
@@ -119,7 +119,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffectWate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFootstepEffectWater_Statics::NewProp_Effect_MetaData[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ShowOnlyInnerProperties", "" },
 		{ "ToolTip", "The effect we want to play when hitting the surface" },
 	};
@@ -128,7 +128,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffectWate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFootstepEffectWater_Statics::NewProp_MinWaterDepth_MetaData[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "When at this minimum water depth, then use this footstep effect instead" },
 	};
 #endif
@@ -165,7 +165,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffectWate
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffectWater_Hash() { return 1704817410U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffectWater_Hash() { return 3166479586U; }
 class UScriptStruct* FFootstepEffectSurface::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -208,7 +208,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffectSurf
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFootstepEffectSurface_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FFootstepEffectSurface_Statics::NewStructOps()
@@ -218,7 +218,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffectSurf
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFootstepEffectSurface_Statics::NewProp_Effect_MetaData[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ShowOnlyInnerProperties", "" },
 		{ "ToolTip", "The effect we want to play when hitting the surface" },
 	};
@@ -227,7 +227,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffectSurf
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFootstepEffectSurface_Statics::NewProp_Surface_MetaData[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "The surface the foot hit" },
 	};
 #endif
@@ -264,7 +264,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffectSurf
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffectSurface_Hash() { return 2252616446U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffectSurface_Hash() { return 4274289462U; }
 class UScriptStruct* FFootstepEffect::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -307,7 +307,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFootstepEffect_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewStructOps()
@@ -317,7 +317,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_GroundDecal_MetaData[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "UNIMPLEMENTED: The decal to place on the ground when walking around" },
 	};
 #endif
@@ -325,7 +325,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_Particle_MetaData[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "The particle to use when hitting the ground" },
 	};
 #endif
@@ -362,7 +362,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffect_Hash() { return 3467505291U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffect_Hash() { return 921259771U; }
 	static FName NAME_AFGCharacterBase_CalculateFallDamage = FName(TEXT("CalculateFallDamage"));
 	int32 AFGCharacterBase::CalculateFallDamage(float zSpeed) const
 	{
@@ -520,7 +520,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_AdjustDamage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Bound function to our healthcomponent that cares about when we receive damage, passes it on to other AdjustDamage for BP" },
 	};
 #endif
@@ -553,7 +553,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_CalculateFallDamage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Fall Damage" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Calculate damage we take from a fall" },
 	};
 #endif
@@ -576,7 +576,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_CheckIfShouldDestroy_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Called regularly after we have been killed, will destroy us eventually" },
 	};
 #endif
@@ -609,7 +609,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_Died_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Called when we died, need to be UFUNCTION as it's bound as a delegate" },
 	};
 #endif
@@ -643,7 +643,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_GetDeathSound_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sound" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Sound played when pawn dies" },
 	};
 #endif
@@ -677,7 +677,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_GetFallDamageDamageType_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Fall Damage" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Get mFallDamageDamageType" },
 	};
 #endif
@@ -719,7 +719,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_GetHealthComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Health" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Get our current health component" },
 	};
 #endif
@@ -761,7 +761,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_GetMesh3P_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Mesh" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Returns Mesh3P subobject *" },
 	};
 #endif
@@ -795,7 +795,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_GetTakeDamageParticle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "VFX" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Get mTakeDamageParticle" },
 	};
 #endif
@@ -829,7 +829,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_GetTakeDamageSound_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sound" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Sound played when pawn takes damage" },
 	};
 #endif
@@ -868,7 +868,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_IsAliveAndWell_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Health" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "@returns true if this character is alive and well, no health components means yes" },
 	};
 #endif
@@ -907,7 +907,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_IsRagdolled_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Ragdoll" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "returns true if mesh is ragdolled" },
 	};
 #endif
@@ -958,7 +958,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_NotifyOnTakeDamage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Damage" },
 		{ "DisplayName", "OnTakeDamage" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "We have taken damage, called after controller has gotten a chance to response to the damage" },
 	};
 #endif
@@ -1029,7 +1029,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_NotifyOnTakePointDamage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Damage" },
 		{ "DisplayName", "OnTakePointDamage" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "We have taken damage, called after controller has gotten a chance to response to the damage" },
 	};
 #endif
@@ -1080,7 +1080,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_NotifyOnTakeRadialDamage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Damage" },
 		{ "DisplayName", "OnTakeRadialDamage" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "We have taken radial damage, called after controller has gotten a chance to response to the damage" },
 	};
 #endif
@@ -1105,7 +1105,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_NotifyOnWeakspotHit_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Damage" },
 		{ "DisplayName", "OnWeakspotHit" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "We have taken a weakspot hit" },
 	};
 #endif
@@ -1140,7 +1140,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_OnLocallyPossessedChanged_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Character" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Event called when a locally controlled pawn gets possessed/unpossessed" },
 	};
 #endif
@@ -1163,7 +1163,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_OnRep_IsPossessed_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterBase_OnRep_IsPossessed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterBase, nullptr, "OnRep_IsPossessed", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterBase_OnRep_IsPossessed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterBase_OnRep_IsPossessed_Statics::Function_MetaDataParams)) };
@@ -1185,7 +1185,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_OnRep_IsRagdolled_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterBase_OnRep_IsRagdolled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterBase, nullptr, "OnRep_IsRagdolled", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterBase_OnRep_IsRagdolled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterBase_OnRep_IsRagdolled_Statics::Function_MetaDataParams)) };
@@ -1241,7 +1241,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_OnTakeDamage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Notify from our health component" },
 	};
 #endif
@@ -1322,7 +1322,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_OnTakePointDamage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Notify from our health component" },
 	};
 #endif
@@ -1387,7 +1387,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_OnTakeRadialDamage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Notify from our health component" },
 	};
 #endif
@@ -1425,7 +1425,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_PlayFootstepEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Plays the footstep effect of this character, default is: Audio, Particle and Decal\n\n@param footDown - the index specified in UFGAnimNotify_FootDown" },
 	};
 #endif
@@ -1462,7 +1462,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_PushedByVehicle_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Player has collided with a vehicle and has received a push. This may be better as a general case function instead of specifically being for vehicles but it is what it is for now." },
 	};
 #endif
@@ -1501,7 +1501,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_RagdollCharacter_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Ragdoll" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "if newRagdoll is true this function will ragdoll the player\n@Note: ONLY does something if called from the server." },
 	};
 #endif
@@ -1552,7 +1552,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_ReceivedAdjustDamage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Damage" },
 		{ "DisplayName", "AdjustDamage" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Called whenever we receive damage and gives us a chance to adjust it\nSERVER ONLY\n\n@param damageAmount - how much damage we receive\n@param damageType - what damage type the damage is that we receive\n@param instigatedBy - who instigated the damage (Controller)\n@param damageCauser - the actor who damaged us\n@return the adjusted damage" },
 	};
 #endif
@@ -1577,7 +1577,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_ReceiveDied_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Damage" },
 		{ "DisplayName", "Died" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Blueprint version of when we died" },
 	};
 #endif
@@ -1611,7 +1611,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_SetFallDamageOverride_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Fall Damage" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Assign override to fall damage" },
 	};
 #endif
@@ -1666,7 +1666,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_TraceForGround_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Effect" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Traces for the ground, and checks also if we need to go through water to find the ground\n\n@param traceStart - from where the trace should start\n@param traceEnd - where the trace should end end\n@param out_hitResult - the hit on the ground\n@param out_waterDepth - if > 0, then it's how deep the water was before we hit the ground\n\n@return true if we hit something" },
 	};
 #endif
@@ -1845,47 +1845,47 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCharacterBase_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGCharacterBase_AdjustDamage, "AdjustDamage" }, // 1893539004
-		{ &Z_Construct_UFunction_AFGCharacterBase_CalculateFallDamage, "CalculateFallDamage" }, // 3854904722
-		{ &Z_Construct_UFunction_AFGCharacterBase_CheckIfShouldDestroy, "CheckIfShouldDestroy" }, // 540439929
-		{ &Z_Construct_UFunction_AFGCharacterBase_Died, "Died" }, // 628535991
-		{ &Z_Construct_UFunction_AFGCharacterBase_GetDeathSound, "GetDeathSound" }, // 2028043139
-		{ &Z_Construct_UFunction_AFGCharacterBase_GetFallDamageDamageType, "GetFallDamageDamageType" }, // 993898736
-		{ &Z_Construct_UFunction_AFGCharacterBase_GetHealthComponent, "GetHealthComponent" }, // 3499427833
-		{ &Z_Construct_UFunction_AFGCharacterBase_GetMesh3P, "GetMesh3P" }, // 933660915
-		{ &Z_Construct_UFunction_AFGCharacterBase_GetTakeDamageParticle, "GetTakeDamageParticle" }, // 3660551707
-		{ &Z_Construct_UFunction_AFGCharacterBase_GetTakeDamageSound, "GetTakeDamageSound" }, // 681938857
-		{ &Z_Construct_UFunction_AFGCharacterBase_IsAliveAndWell, "IsAliveAndWell" }, // 2110897517
-		{ &Z_Construct_UFunction_AFGCharacterBase_IsRagdolled, "IsRagdolled" }, // 1241119584
-		{ &Z_Construct_UFunction_AFGCharacterBase_NotifyOnTakeDamage, "NotifyOnTakeDamage" }, // 4243067132
-		{ &Z_Construct_UFunction_AFGCharacterBase_NotifyOnTakePointDamage, "NotifyOnTakePointDamage" }, // 499337463
-		{ &Z_Construct_UFunction_AFGCharacterBase_NotifyOnTakeRadialDamage, "NotifyOnTakeRadialDamage" }, // 3389539723
-		{ &Z_Construct_UFunction_AFGCharacterBase_NotifyOnWeakspotHit, "NotifyOnWeakspotHit" }, // 4042415440
-		{ &Z_Construct_UFunction_AFGCharacterBase_OnLocallyPossessedChanged, "OnLocallyPossessedChanged" }, // 1487818467
-		{ &Z_Construct_UFunction_AFGCharacterBase_OnRep_IsPossessed, "OnRep_IsPossessed" }, // 649240830
-		{ &Z_Construct_UFunction_AFGCharacterBase_OnRep_IsRagdolled, "OnRep_IsRagdolled" }, // 948206299
-		{ &Z_Construct_UFunction_AFGCharacterBase_OnTakeDamage, "OnTakeDamage" }, // 3795993118
-		{ &Z_Construct_UFunction_AFGCharacterBase_OnTakePointDamage, "OnTakePointDamage" }, // 1297805476
-		{ &Z_Construct_UFunction_AFGCharacterBase_OnTakeRadialDamage, "OnTakeRadialDamage" }, // 3137949229
-		{ &Z_Construct_UFunction_AFGCharacterBase_PlayFootstepEffect, "PlayFootstepEffect" }, // 229990856
-		{ &Z_Construct_UFunction_AFGCharacterBase_PushedByVehicle, "PushedByVehicle" }, // 129487841
-		{ &Z_Construct_UFunction_AFGCharacterBase_RagdollCharacter, "RagdollCharacter" }, // 2633652786
-		{ &Z_Construct_UFunction_AFGCharacterBase_ReceivedAdjustDamage, "ReceivedAdjustDamage" }, // 2680753613
-		{ &Z_Construct_UFunction_AFGCharacterBase_ReceiveDied, "ReceiveDied" }, // 2604105079
-		{ &Z_Construct_UFunction_AFGCharacterBase_SetFallDamageOverride, "SetFallDamageOverride" }, // 2273815529
-		{ &Z_Construct_UFunction_AFGCharacterBase_TraceForGround, "TraceForGround" }, // 4068491220
+		{ &Z_Construct_UFunction_AFGCharacterBase_AdjustDamage, "AdjustDamage" }, // 2101810353
+		{ &Z_Construct_UFunction_AFGCharacterBase_CalculateFallDamage, "CalculateFallDamage" }, // 1648961133
+		{ &Z_Construct_UFunction_AFGCharacterBase_CheckIfShouldDestroy, "CheckIfShouldDestroy" }, // 2393818956
+		{ &Z_Construct_UFunction_AFGCharacterBase_Died, "Died" }, // 194777375
+		{ &Z_Construct_UFunction_AFGCharacterBase_GetDeathSound, "GetDeathSound" }, // 1093040815
+		{ &Z_Construct_UFunction_AFGCharacterBase_GetFallDamageDamageType, "GetFallDamageDamageType" }, // 92306497
+		{ &Z_Construct_UFunction_AFGCharacterBase_GetHealthComponent, "GetHealthComponent" }, // 1511488404
+		{ &Z_Construct_UFunction_AFGCharacterBase_GetMesh3P, "GetMesh3P" }, // 1674282058
+		{ &Z_Construct_UFunction_AFGCharacterBase_GetTakeDamageParticle, "GetTakeDamageParticle" }, // 567363216
+		{ &Z_Construct_UFunction_AFGCharacterBase_GetTakeDamageSound, "GetTakeDamageSound" }, // 2255539029
+		{ &Z_Construct_UFunction_AFGCharacterBase_IsAliveAndWell, "IsAliveAndWell" }, // 1931417096
+		{ &Z_Construct_UFunction_AFGCharacterBase_IsRagdolled, "IsRagdolled" }, // 2028143044
+		{ &Z_Construct_UFunction_AFGCharacterBase_NotifyOnTakeDamage, "NotifyOnTakeDamage" }, // 2379460201
+		{ &Z_Construct_UFunction_AFGCharacterBase_NotifyOnTakePointDamage, "NotifyOnTakePointDamage" }, // 3196504411
+		{ &Z_Construct_UFunction_AFGCharacterBase_NotifyOnTakeRadialDamage, "NotifyOnTakeRadialDamage" }, // 4079173964
+		{ &Z_Construct_UFunction_AFGCharacterBase_NotifyOnWeakspotHit, "NotifyOnWeakspotHit" }, // 3040358174
+		{ &Z_Construct_UFunction_AFGCharacterBase_OnLocallyPossessedChanged, "OnLocallyPossessedChanged" }, // 4146564184
+		{ &Z_Construct_UFunction_AFGCharacterBase_OnRep_IsPossessed, "OnRep_IsPossessed" }, // 1830910655
+		{ &Z_Construct_UFunction_AFGCharacterBase_OnRep_IsRagdolled, "OnRep_IsRagdolled" }, // 1871322297
+		{ &Z_Construct_UFunction_AFGCharacterBase_OnTakeDamage, "OnTakeDamage" }, // 462514942
+		{ &Z_Construct_UFunction_AFGCharacterBase_OnTakePointDamage, "OnTakePointDamage" }, // 205488500
+		{ &Z_Construct_UFunction_AFGCharacterBase_OnTakeRadialDamage, "OnTakeRadialDamage" }, // 2685442438
+		{ &Z_Construct_UFunction_AFGCharacterBase_PlayFootstepEffect, "PlayFootstepEffect" }, // 3490536680
+		{ &Z_Construct_UFunction_AFGCharacterBase_PushedByVehicle, "PushedByVehicle" }, // 2808565081
+		{ &Z_Construct_UFunction_AFGCharacterBase_RagdollCharacter, "RagdollCharacter" }, // 1570540185
+		{ &Z_Construct_UFunction_AFGCharacterBase_ReceivedAdjustDamage, "ReceivedAdjustDamage" }, // 2451102827
+		{ &Z_Construct_UFunction_AFGCharacterBase_ReceiveDied, "ReceiveDied" }, // 136006429
+		{ &Z_Construct_UFunction_AFGCharacterBase_SetFallDamageOverride, "SetFallDamageOverride" }, // 4260730259
+		{ &Z_Construct_UFunction_AFGCharacterBase_TraceForGround, "TraceForGround" }, // 1042787457
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "FGCharacterBase.h" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mIsPossessed_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Used to let client know when a pawn gets possessed/unpossessed" },
 	};
 #endif
@@ -1897,7 +1897,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mNormalDamageMultiplier_MetaData[] = {
 		{ "Category", "Damage" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Multiplier for this creature and normal damage taken" },
 	};
 #endif
@@ -1905,7 +1905,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mWeakspotBoneNames_MetaData[] = {
 		{ "Category", "Damage" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Bone names that result in a weakspot hit" },
 	};
 #endif
@@ -1914,7 +1914,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mWeakspotMultiplier_MetaData[] = {
 		{ "Category", "Damage" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "How much more damage should be dealt when taking a weakspot hit" },
 	};
 #endif
@@ -1922,7 +1922,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mIgnoredDamageTypes_MetaData[] = {
 		{ "Category", "Damage" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Damage types that this character is immune to" },
 	};
 #endif
@@ -1931,7 +1931,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mApplyDamageMomentum_MetaData[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Should the auto momentum be applied when taking damage?" },
 	};
 #endif
@@ -1943,7 +1943,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mSyncBodyMaxDistance_MetaData[] = {
 		{ "Category", "Ragdoll" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "The maximum sync error distance between the current body location\nand the synced location before we teleport the ragdoll" },
 	};
 #endif
@@ -1951,7 +1951,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mRagdollMeshPhysicsBoneName_MetaData[] = {
 		{ "Category", "Ragdoll" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Name of the bone we take physics velocity from" },
 	};
 #endif
@@ -1959,26 +1959,26 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mRagdollMeshLocBoneName_MetaData[] = {
 		{ "Category", "Ragdoll" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Name of the bone we take mesh location from" },
 	};
 #endif
 	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mRagdollMeshLocBoneName = { "mRagdollMeshLocBoneName", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterBase, mRagdollMeshLocBoneName), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mRagdollMeshLocBoneName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mRagdollMeshLocBoneName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mRagdollMeshVelocity_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mRagdollMeshVelocity = { "mRagdollMeshVelocity", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterBase, mRagdollMeshVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mRagdollMeshVelocity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mRagdollMeshVelocity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mRagdollMeshLoc_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mRagdollMeshLoc = { "mRagdollMeshLoc", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterBase, mRagdollMeshLoc), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mRagdollMeshLoc_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mRagdollMeshLoc_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mIsRagdolled_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "true if ragdolled" },
 	};
 #endif
@@ -1990,7 +1990,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mMaxDistanceMovedToGetUp_MetaData[] = {
 		{ "Category", "Ragdoll" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "the furthest distance we can move during ragdoll before we are considered still enough to stand up from ragdoll" },
 	};
 #endif
@@ -1998,7 +1998,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mTimeToGetUpFromRagdoll_MetaData[] = {
 		{ "Category", "Ragdoll" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "time in seconds until character gets up from ragdoll if alive" },
 	};
 #endif
@@ -2006,7 +2006,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mMinVehiclePushVelocityForRagdoll_MetaData[] = {
 		{ "Category", "Ragdoll" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Min push velocity required to start ragdoll" },
 	};
 #endif
@@ -2014,7 +2014,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mTakeDamageParticle_MetaData[] = {
 		{ "Category", "VFX" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Particle for when pawn takes damage" },
 	};
 #endif
@@ -2022,7 +2022,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mLandEvent_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Event posted when landing" },
 	};
 #endif
@@ -2030,7 +2030,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mDeathSound_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Sound played when pawn dies" },
 	};
 #endif
@@ -2038,7 +2038,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mTakeDamageSound_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Sound played when pawn takes damage" },
 	};
 #endif
@@ -2046,7 +2046,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mEnemyTargetDesirability_MetaData[] = {
 		{ "Category", "Aggro" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Multiplier for targeting desirability" },
 	};
 #endif
@@ -2054,7 +2054,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mDeathRemoveCheckTime_MetaData[] = {
 		{ "Category", "Ragdoll" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "How often will we check if the pawn is in sight of any player" },
 	};
 #endif
@@ -2062,7 +2062,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mMaxDeathStayTime_MetaData[] = {
 		{ "Category", "Ragdoll" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "The maximum time after death (in seconds) the pawn will stay in the world, so it will be removed even if it's in sight after this time" },
 	};
 #endif
@@ -2070,14 +2070,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFallDamageDamageType_MetaData[] = {
 		{ "Category", "Fall Damage" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "@todo: This should not be specified for each pawn" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFallDamageDamageType = { "mFallDamageDamageType", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterBase, mFallDamageDamageType), Z_Construct_UClass_UFGDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFallDamageDamageType_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFallDamageDamageType_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFallDamageCurveOverride_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Overrides the default fall damage curve, utilized by Equipment" },
 	};
 #endif
@@ -2085,7 +2085,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFallDamageCurve_MetaData[] = {
 		{ "Category", "FallDamage" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "How much damage to take falling with a given velocity" },
 	};
 #endif
@@ -2094,7 +2094,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mHealthComponent_MetaData[] = {
 		{ "Category", "FGCharacterBase" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Keeps track of our current health" },
 	};
 #endif
@@ -2102,7 +2102,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFootstepDecalLifetime_MetaData[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Lifetime of footstep decals" },
 	};
 #endif
@@ -2110,7 +2110,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFootstepDecalSize_MetaData[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Size of footstep decals" },
 	};
 #endif
@@ -2118,7 +2118,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mMaxFootstepDecalSpawnDistance_MetaData[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Maximum distance we want to spawn footsteps decals at" },
 	};
 #endif
@@ -2126,7 +2126,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mMaxFootstepParticleSpawnDistance_MetaData[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Maximum distance we want to play footstep particles at" },
 	};
 #endif
@@ -2134,7 +2134,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFootstepAudioEvents_MetaData[] = {
 		{ "Category", "Footstep|Audio" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Audio event to play (where index in array is the feet index passed from AnimNotify_FootDown)" },
 	};
 #endif
@@ -2143,7 +2143,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFootstepEffect_MetaData[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Effects to play when a foot hits the ground" },
 	};
 #endif
@@ -2152,7 +2152,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mDefaultFootstepEffect_MetaData[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "Default effects to play when a foot hits the ground when the material doesn't exist in mFootstepEffects" },
 	};
 #endif
@@ -2160,7 +2160,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFeetNames_MetaData[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
 		{ "ToolTip", "When receiving FootDown on index 2, then we will trace from mFeetNames[2] socket for ground" },
 	};
 #endif
@@ -2237,7 +2237,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCharacterBase, 1848219675);
+	IMPLEMENT_CLASS(AFGCharacterBase, 3591823876);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCharacterBase>()
 	{
 		return AFGCharacterBase::StaticClass();

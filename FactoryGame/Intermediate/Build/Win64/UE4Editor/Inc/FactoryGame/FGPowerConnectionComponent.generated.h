@@ -15,7 +15,7 @@ class UFGPowerInfoComponent;
 #endif
 #define FACTORYGAME_FGPowerConnectionComponent_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetPowerCircuit) \
 	{ \
@@ -43,7 +43,7 @@ class UFGPowerInfoComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetPowerCircuit) \
 	{ \
@@ -71,7 +71,7 @@ class UFGPowerInfoComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGPowerConnectionComponent(); \
 	friend struct Z_Construct_UClass_UFGPowerConnectionComponent_Statics; \
@@ -80,7 +80,7 @@ public: \
 	DECLARE_SERIALIZER(UFGPowerConnectionComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGPowerConnectionComponent(); \
 	friend struct Z_Construct_UClass_UFGPowerConnectionComponent_Statics; \
@@ -89,7 +89,7 @@ public: \
 	DECLARE_SERIALIZER(UFGPowerConnectionComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGPowerConnectionComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGPowerConnectionComponent) \
@@ -102,7 +102,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGPowerConnectionComponent() { }; \
 private: \
@@ -115,29 +115,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGPowerConnectionComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGPowerConnectionComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mPowerInfo() { return STRUCT_OFFSET(UFGPowerConnectionComponent, mPowerInfo); }
 
 
-#define FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_13_PROLOG
-#define FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_13_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_INCLASS \
-	FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h_16_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -145,7 +145,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class UFGPowerConnectionComponent>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGPowerConnectionComponent_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGPowerConnectionComponent_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

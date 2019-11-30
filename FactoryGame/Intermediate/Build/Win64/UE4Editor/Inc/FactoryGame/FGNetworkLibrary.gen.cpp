@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGNetworkLibrary.h"
+#include "FactoryGame/Public/FGNetworkLibrary.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -95,7 +95,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNetworkLibrary() {}
 		return ECantJoinReason_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ECantJoinReason(ECantJoinReason_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ECantJoinReason"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ECantJoinReason_Hash() { return 4235873777U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ECantJoinReason_Hash() { return 1663154240U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ECantJoinReason()
 	{
 #if WITH_HOT_RELOAD
@@ -125,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNetworkLibrary() {}
 				{ "CJR_Ok.DisplayName", "Ok" },
 				{ "CJR_PlayingOtherGame.DisplayName", "Playing Other Game" },
 				{ "CJR_PrivateGame.DisplayName", "Private Game" },
-				{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+				{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -191,7 +191,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUserFeedbackFrontE
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "This is just the data from the feedback widget." },
 	};
 #endif
@@ -202,21 +202,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUserFeedbackFrontE
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_body_MetaData[] = {
 		{ "Category", "User Feedback" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_body = { "body", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUserFeedbackFrontEndData, body), METADATA_PARAMS(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_body_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_body_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_typeOfFeedback_MetaData[] = {
 		{ "Category", "User Feedback" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_typeOfFeedback = { "typeOfFeedback", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUserFeedbackFrontEndData, typeOfFeedback), METADATA_PARAMS(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_typeOfFeedback_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_typeOfFeedback_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_isSatisfactory_MetaData[] = {
 		{ "Category", "User Feedback" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_isSatisfactory_SetBit(void* Obj)
@@ -257,7 +257,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUserFeedbackFrontE
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Hash() { return 2428888769U; }
+	uint32 Get_Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Hash() { return 691152094U; }
 class UScriptStruct* FOnlinePresence::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -291,7 +291,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FOnlinePresence_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FOnlinePresence_Statics::NewStructOps()
@@ -326,7 +326,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FOnlinePresence_Hash() { return 4010856968U; }
+	uint32 Get_Z_Construct_UScriptStruct_FOnlinePresence_Hash() { return 2614044933U; }
 	void UFGPresenceLibrary::StaticRegisterNativesUFGPresenceLibrary()
 	{
 		UClass* Class = UFGPresenceLibrary::StaticClass();
@@ -379,7 +379,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Presence" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Get the presence of a friend" },
 	};
 #endif
@@ -426,7 +426,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Presence" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Get the presence string" },
 	};
 #endif
@@ -472,7 +472,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Presence" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Get the a session for the players presence" },
 	};
 #endif
@@ -524,7 +524,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Presence" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Return true if the presence is online, false if the presence isn't valid" },
 	};
 #endif
@@ -575,7 +575,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Presence" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "@return true if the user is playing another game" },
 	};
 #endif
@@ -626,7 +626,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Presence" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "@return true if the user is playing satisfactory" },
 	};
 #endif
@@ -680,7 +680,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "CompactNodeTitle", "Is Valid" },
 		{ "DisplayName", "Valid (OnlinePresence)" },
 		{ "Keywords", "valid presence" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Returns true if a OnlinePresence is valid" },
 	};
 #endif
@@ -736,7 +736,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Presence" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Get the presence of a friend" },
 	};
 #endif
@@ -769,19 +769,19 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGPresenceLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId, "GetPresenceFromNetId" }, // 1047496072
-		{ &Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString, "GetPresenceString" }, // 3932307219
-		{ &Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence, "GetSessionFromPresence" }, // 897803081
-		{ &Z_Construct_UFunction_UFGPresenceLibrary_IsOnline, "IsOnline" }, // 1393746224
-		{ &Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame, "IsPlayingOtherGame" }, // 3655224186
-		{ &Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame, "IsPlayingThisGame" }, // 146275144
-		{ &Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence, "IsValid_OnlinePresence" }, // 689918543
-		{ &Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence, "NetIdHasValidPresence" }, // 493687076
+		{ &Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId, "GetPresenceFromNetId" }, // 2848817808
+		{ &Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString, "GetPresenceString" }, // 2230902089
+		{ &Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence, "GetSessionFromPresence" }, // 48674846
+		{ &Z_Construct_UFunction_UFGPresenceLibrary_IsOnline, "IsOnline" }, // 2705209704
+		{ &Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame, "IsPlayingOtherGame" }, // 1794172061
+		{ &Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame, "IsPlayingThisGame" }, // 234043082
+		{ &Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence, "IsValid_OnlinePresence" }, // 2562246267
+		{ &Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence, "NetIdHasValidPresence" }, // 3677209327
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPresenceLibrary_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGNetworkLibrary.h" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "@todosession: We assume we always have cached presence for people. So we need to find where a we don't and it matters (friends-friends, discord invites)" },
 	};
 #endif
@@ -812,7 +812,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPresenceLibrary, 2614083734);
+	IMPLEMENT_CLASS(UFGPresenceLibrary, 562964860);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGPresenceLibrary>()
 	{
 		return UFGPresenceLibrary::StaticClass();
@@ -885,7 +885,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "CompactNodeTitle", "==" },
 		{ "DisplayName", "Equal (OnlineFriends)" },
 		{ "Keywords", "== equal" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Test if the input friends are equal\n@param A - friend\n@param B - friend to compare with\n@returns True if the friend are the same, false otherwise" },
 	};
 #endif
@@ -935,7 +935,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Friends" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Get a friend from a net id" },
 	};
 #endif
@@ -994,7 +994,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Friends" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "@return Get the name of the friend" },
 	};
 #endif
@@ -1040,7 +1040,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Friends" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Get the session the current friend is in" },
 	};
 #endif
@@ -1090,7 +1090,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Friends" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Is the friend joinable publicly *" },
 	};
 #endif
@@ -1144,7 +1144,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "CompactNodeTitle", "Is Valid" },
 		{ "DisplayName", "Valid (FGOnlineFriend)" },
 		{ "Keywords", "valid friend" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Returns true if a OnlinePresence is valid" },
 	};
 #endif
@@ -1199,7 +1199,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Friends" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "@return true if the friend is waiting for data, true is bad data is passed in" },
 	};
 #endif
@@ -1232,18 +1232,18 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGFriendsLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend, "EqualEqual_FriendFriend" }, // 2145593094
-		{ &Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId, "GetFriendFromNetId" }, // 1562345132
-		{ &Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName, "GetFriendName" }, // 3229098459
-		{ &Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId, "GetFriendUniqueNetId" }, // 2600367709
-		{ &Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable, "IsFriendJoinable" }, // 626435374
-		{ &Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend, "IsValid_Friend" }, // 1204024570
-		{ &Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData, "IsWaitingForData" }, // 1034481134
+		{ &Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend, "EqualEqual_FriendFriend" }, // 3464421559
+		{ &Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId, "GetFriendFromNetId" }, // 3238335520
+		{ &Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName, "GetFriendName" }, // 211898060
+		{ &Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId, "GetFriendUniqueNetId" }, // 1637245529
+		{ &Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable, "IsFriendJoinable" }, // 2896248051
+		{ &Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend, "IsValid_Friend" }, // 3018848451
+		{ &Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData, "IsWaitingForData" }, // 365371109
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFriendsLibrary_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGNetworkLibrary.h" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGFriendsLibrary_Statics::StaticCppClassTypeInfo = {
@@ -1273,7 +1273,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFriendsLibrary, 1433342690);
+	IMPLEMENT_CLASS(UFGFriendsLibrary, 2980198979);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFriendsLibrary>()
 	{
 		return UFGFriendsLibrary::StaticClass();
@@ -1334,7 +1334,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, nullptr, "CheckIsCompatibleVersion", sizeof(FGSessionLibrary_eventCheckIsCompatibleVersion_Parms), Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams)) };
@@ -1379,7 +1379,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Session" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Get the max number of players in a session" },
 	};
 #endif
@@ -1417,7 +1417,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Session" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Get the session information about my session" },
 	};
 #endif
@@ -1463,7 +1463,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Session" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Get the settings from a session *" },
 	};
 #endif
@@ -1509,7 +1509,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Session" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Get the settings from a session *" },
 	};
 #endif
@@ -1565,7 +1565,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Session" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Check if a local player is in a game session" },
 	};
 #endif
@@ -1608,7 +1608,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Session" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Check if a local player is in a game session" },
 	};
 #endif
@@ -1654,7 +1654,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "CompactNodeTitle", "Is Valid" },
 		{ "DisplayName", "Valid (FBlueprintSessionResult)" },
 		{ "Keywords", "valid session" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "return true if the session is valid" },
 	};
 #endif
@@ -1701,7 +1701,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Session" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Join a session gracefully" },
 	};
 #endif
@@ -1740,7 +1740,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Session" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "@SERVER: Sets the current visibility of the session" },
 	};
 #endif
@@ -1773,21 +1773,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSessionLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion, "CheckIsCompatibleVersion" }, // 1648334523
-		{ &Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers, "GetMaxNumberOfPlayers" }, // 2784721927
-		{ &Z_Construct_UFunction_UFGSessionLibrary_GetMySession, "GetMySession" }, // 4052893357
-		{ &Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings, "GetSessionSettings" }, // 3583771824
-		{ &Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility, "GetSessionVisibility" }, // 1942149798
-		{ &Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession, "InOnlineSession" }, // 283750338
-		{ &Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession, "IsInGameSession" }, // 1461749666
-		{ &Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid, "IsSessionValid" }, // 3771220835
-		{ &Z_Construct_UFunction_UFGSessionLibrary_JoinSession, "JoinSession" }, // 1761835657
-		{ &Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility, "SetSessionVisibility" }, // 1073714301
+		{ &Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion, "CheckIsCompatibleVersion" }, // 3201843619
+		{ &Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers, "GetMaxNumberOfPlayers" }, // 1261630747
+		{ &Z_Construct_UFunction_UFGSessionLibrary_GetMySession, "GetMySession" }, // 2729476186
+		{ &Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings, "GetSessionSettings" }, // 106559841
+		{ &Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility, "GetSessionVisibility" }, // 2990973406
+		{ &Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession, "InOnlineSession" }, // 3472670133
+		{ &Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession, "IsInGameSession" }, // 4147343727
+		{ &Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid, "IsSessionValid" }, // 3831874803
+		{ &Z_Construct_UFunction_UFGSessionLibrary_JoinSession, "JoinSession" }, // 1520411161
+		{ &Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility, "SetSessionVisibility" }, // 2749358806
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSessionLibrary_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGNetworkLibrary.h" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGSessionLibrary_Statics::StaticCppClassTypeInfo = {
@@ -1817,7 +1817,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSessionLibrary, 3867426030);
+	IMPLEMENT_CLASS(UFGSessionLibrary, 3269065482);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSessionLibrary>()
 	{
 		return UFGSessionLibrary::StaticClass();
@@ -1869,7 +1869,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Invite" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Discard a pending invite" },
 	};
 #endif
@@ -1920,7 +1920,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Invite" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Get invites from a sender" },
 	};
 #endif
@@ -1966,7 +1966,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Invite" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Get net id of a invite" },
 	};
 #endif
@@ -2008,7 +2008,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Invite" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Get invites that's not accepted or rejected" },
 	};
 #endif
@@ -2054,7 +2054,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Invite" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Join a pending invite" },
 	};
 #endif
@@ -2100,7 +2100,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online|Invite" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Sends a invite to a friend" },
 	};
 #endif
@@ -2133,17 +2133,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGInviteLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite, "DiscardInvite" }, // 3200505999
-		{ &Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender, "GetInviteFromSender" }, // 1831191547
-		{ &Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId, "GetInviteSenderUniqueNetId" }, // 1210698234
-		{ &Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites, "GetPendingInvites" }, // 3985562397
-		{ &Z_Construct_UFunction_UFGInviteLibrary_JoinInvite, "JoinInvite" }, // 1388819217
-		{ &Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend, "SendInviteToFriend" }, // 1365574273
+		{ &Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite, "DiscardInvite" }, // 2007989168
+		{ &Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender, "GetInviteFromSender" }, // 4282233477
+		{ &Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId, "GetInviteSenderUniqueNetId" }, // 601446593
+		{ &Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites, "GetPendingInvites" }, // 4213681098
+		{ &Z_Construct_UFunction_UFGInviteLibrary_JoinInvite, "JoinInvite" }, // 1969260934
+		{ &Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend, "SendInviteToFriend" }, // 3215336087
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInviteLibrary_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGNetworkLibrary.h" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGInviteLibrary_Statics::StaticCppClassTypeInfo = {
@@ -2173,7 +2173,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInviteLibrary, 2348852762);
+	IMPLEMENT_CLASS(UFGInviteLibrary, 1546557973);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGInviteLibrary>()
 	{
 		return UFGInviteLibrary::StaticClass();
@@ -2235,7 +2235,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, nullptr, "CheckIsCompatibleVersion", sizeof(FGNetworkLibrary_eventCheckIsCompatibleVersion_Parms), Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams)) };
@@ -2300,7 +2300,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "CompactNodeTitle", "==" },
 		{ "DisplayName", "Equal (UniqueNetIdRepl)" },
 		{ "Keywords", "== equal" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Compare two net ids" },
 	};
 #endif
@@ -2342,7 +2342,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Get the last cached value of our NAT-type" },
 	};
 #endif
@@ -2376,7 +2376,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, nullptr, "GetLocalBuildVersion", sizeof(FGNetworkLibrary_eventGetLocalBuildVersion_Parms), Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::Function_MetaDataParams)) };
@@ -2443,7 +2443,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Get the name from a unique net id" },
 	};
 #endif
@@ -2489,7 +2489,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "DefaultToSelf", "worldContext" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "UFGNetworkLibrary::IsServer is deprecated as it's a duplicate of UKismetSystemLibrary::IsServer, please use that function instead" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, nullptr, "IsServer", sizeof(FGNetworkLibrary_eventIsServer_Parms), Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::Function_MetaDataParams)) };
@@ -2542,7 +2542,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "CompactNodeTitle", "Is Valid" },
 		{ "DisplayName", "Valid (UniqueNetIdRepl)" },
 		{ "Keywords", "valid uniquenetid" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Returns true if a UniqueNetId is valid" },
 	};
 #endif
@@ -2586,7 +2586,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "CompactNodeTitle", "ToText" },
 		{ "DisplayName", "ToText (ECachedNATType)" },
 		{ "Keywords", "NAT ToText" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, nullptr, "NATTypeToText", sizeof(FGNetworkLibrary_eventNATTypeToText_Parms), Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::Function_MetaDataParams)) };
@@ -2636,7 +2636,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Network" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Opens a webpage to the specified url.\n(In the case of steam, this opens the steam overlay with a webpage. Dunno what happens elsewhere).\n@note: DO NOT INCLUDE HTTP:// IN THE URL.\n@return returns true if it succeeds." },
 	};
 #endif
@@ -2671,7 +2671,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 		{ "ToolTip", "Query our current NAT-type" },
 	};
 #endif
@@ -2718,7 +2718,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Network" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, nullptr, "SubmitFeedback", sizeof(FGNetworkLibrary_eventSubmitFeedback_Parms), Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::Function_MetaDataParams)) };
@@ -2750,22 +2750,22 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGNetworkLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion, "CheckIsCompatibleVersion" }, // 3524110517
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId, "EqualEqual_NetIdNetId" }, // 3362090596
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType, "GetCachedNATType" }, // 778388715
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion, "GetLocalBuildVersion" }, // 3814116462
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId, "GetNameFromUniqueNetId" }, // 2008797347
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_IsServer, "IsServer" }, // 3199468773
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId, "IsValid_UniqueNetId" }, // 3886795426
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText, "NATTypeToText" }, // 2910955337
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL, "OpenWebURL" }, // 2296282450
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType, "QueryNATType" }, // 3176606502
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback, "SubmitFeedback" }, // 277636267
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion, "CheckIsCompatibleVersion" }, // 1616995902
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId, "EqualEqual_NetIdNetId" }, // 2284593002
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType, "GetCachedNATType" }, // 3536490892
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion, "GetLocalBuildVersion" }, // 3062520631
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId, "GetNameFromUniqueNetId" }, // 4258055281
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_IsServer, "IsServer" }, // 3396344164
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId, "IsValid_UniqueNetId" }, // 149879477
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText, "NATTypeToText" }, // 923151241
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL, "OpenWebURL" }, // 2357111786
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType, "QueryNATType" }, // 2839851428
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback, "SubmitFeedback" }, // 3032825525
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGNetworkLibrary_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGNetworkLibrary.h" },
-		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGNetworkLibrary_Statics::StaticCppClassTypeInfo = {
@@ -2795,7 +2795,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGNetworkLibrary, 3306252934);
+	IMPLEMENT_CLASS(UFGNetworkLibrary, 2074667653);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGNetworkLibrary>()
 	{
 		return UFGNetworkLibrary::StaticClass();

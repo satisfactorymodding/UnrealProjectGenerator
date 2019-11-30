@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Resources/FGItemDescriptorNuclearFuel.h"
+#include "FactoryGame/Public/Resources/FGItemDescriptorNuclearFuel.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -55,7 +55,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|NuclearFuel" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptorNuclearFuel.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptorNuclearFuel.h" },
 		{ "ToolTip", "@return The amount of waste to create" },
 	};
 #endif
@@ -93,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetSpentFuelClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|NuclearFuel" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptorNuclearFuel.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptorNuclearFuel.h" },
 		{ "ToolTip", "@return The descriptor to use when the fuel is removed from the reactor (waste)." },
 	};
 #endif
@@ -135,21 +135,21 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated, "GetAmountWasteCreated" }, // 121528239
-		{ &Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetSpentFuelClass, "GetSpentFuelClass" }, // 691723827
+		{ &Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated, "GetAmountWasteCreated" }, // 818660317
+		{ &Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetSpentFuelClass, "GetSpentFuelClass" }, // 1416512160
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Icon Preview" },
 		{ "IncludePath", "Resources/FGItemDescriptorNuclearFuel.h" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptorNuclearFuel.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptorNuclearFuel.h" },
 		{ "ToolTip", "Base descriptor for nuclear fuel." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::NewProp_mAmountOfWaste_MetaData[] = {
 		{ "Category", "Nuclear Fuel" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptorNuclearFuel.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptorNuclearFuel.h" },
 		{ "ToolTip", "How much waste to produce" },
 	};
 #endif
@@ -157,7 +157,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::NewProp_mSpentFuelClass_MetaData[] = {
 		{ "Category", "Nuclear Fuel" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptorNuclearFuel.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptorNuclearFuel.h" },
 		{ "ToolTip", "The descriptor to use when the fuel is removed from the reactor (waste)." },
 	};
 #endif
@@ -193,7 +193,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGItemDescriptorNuclearFuel, 4256864061);
+	IMPLEMENT_CLASS(UFGItemDescriptorNuclearFuel, 62912438);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGItemDescriptorNuclearFuel>()
 	{
 		return UFGItemDescriptorNuclearFuel::StaticClass();

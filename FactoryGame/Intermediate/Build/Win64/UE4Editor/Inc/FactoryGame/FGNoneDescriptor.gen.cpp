@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Resources/FGNoneDescriptor.h"
+#include "FactoryGame/Public/Resources/FGNoneDescriptor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNoneDescriptor() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGNoneDescriptor_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Icon Preview" },
 		{ "IncludePath", "Resources/FGNoneDescriptor.h" },
-		{ "ModuleRelativePath", "Resources/FGNoneDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGNoneDescriptor.h" },
 		{ "ToolTip", "Not a real resource, used to indicate none in sorting rules." },
 	};
 #endif
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNoneDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGNoneDescriptor, 179918245);
+	IMPLEMENT_CLASS(UFGNoneDescriptor, 3567194039);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGNoneDescriptor>()
 	{
 		return UFGNoneDescriptor::StaticClass();

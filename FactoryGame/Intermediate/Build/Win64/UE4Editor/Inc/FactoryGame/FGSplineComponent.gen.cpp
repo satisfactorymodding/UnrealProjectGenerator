@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSplineComponent.h"
+#include "FactoryGame/Public/FGSplineComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -82,7 +82,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Debug" },
 		{ "CPP_Default_thickness", "0.000000" },
-		{ "ModuleRelativePath", "FGSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
 		{ "ToolTip", "Draw the spline using debug lines." },
 	};
 #endif
@@ -116,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Spline" },
-		{ "ModuleRelativePath", "FGSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
 		{ "ToolTip", "Set the override material to use on the spline meshes, otherwise the default is used." },
 	};
 #endif
@@ -140,7 +140,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSplineComponent_UpdateSplineMeshes_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Spline" },
-		{ "ModuleRelativePath", "FGSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
 		{ "ToolTip", "Update the spline meshes to fit on the spline." },
 	};
 #endif
@@ -223,9 +223,9 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSplineComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline, "DrawDebugSpline" }, // 1131487033
-		{ &Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial, "SetOverrideMaterial" }, // 1026087266
-		{ &Z_Construct_UFunction_UFGSplineComponent_UpdateSplineMeshes, "UpdateSplineMeshes" }, // 3905777524
+		{ &Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline, "DrawDebugSpline" }, // 1541219165
+		{ &Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial, "SetOverrideMaterial" }, // 4202167517
+		{ &Z_Construct_UFunction_UFGSplineComponent_UpdateSplineMeshes, "UpdateSplineMeshes" }, // 3225157271
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::Class_MetaDataParams[] = {
@@ -233,14 +233,14 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		{ "ClassGroupNames", "Utility" },
 		{ "HideCategories", "Physics Lighting Rendering Mobile Trigger" },
 		{ "IncludePath", "FGSplineComponent.h" },
-		{ "ModuleRelativePath", "FGSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
 		{ "ToolTip", "A spline with spline meshes combined in the same component.\nWith this you can create a spline that automatically places meshes along itself.\n\n@note Only use the provided AddSplinePointFromData, RemoveSplinePointData and ClearSplinePointsData to add/remove points." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
 		{ "ToolTip", "The collisions that make up the spline." },
 	};
 #endif
@@ -249,7 +249,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshComponents_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
 		{ "ToolTip", "If we have enabled custom depth pass, then we store the custom depth spline meshes here" },
 	};
 #endif
@@ -258,7 +258,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshComponents_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
 		{ "ToolTip", "The meshes that make up the spline." },
 	};
 #endif
@@ -266,7 +266,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshComponents_Inner = { "mSplineMeshComponents", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_USplineMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mUseInstancing_MetaData[] = {
-		{ "ModuleRelativePath", "FGSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
 		{ "ToolTip", "Whether to use instancing or not." },
 	};
 #endif
@@ -277,7 +277,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mUseInstancing = { "mUseInstancing", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGSplineComponent), &Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mUseInstancing_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mUseInstancing_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mUseInstancing_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mOverrideMaterial_MetaData[] = {
-		{ "ModuleRelativePath", "FGSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
 		{ "ToolTip", "The cached material, we cache this as the number of meshes grow/shrink as we drag the conveyor belt." },
 	};
 #endif
@@ -286,7 +286,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionOffset_MetaData[] = {
 		{ "Category", "Collision|Generated" },
 		{ "EditCondition", "mGenerateCollisions" },
-		{ "ModuleRelativePath", "FGSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
 		{ "ToolTip", "Offset of the collision components. X is forward." },
 	};
 #endif
@@ -295,7 +295,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionExtent_MetaData[] = {
 		{ "Category", "Collision|Generated" },
 		{ "EditCondition", "mGenerateCollisions" },
-		{ "ModuleRelativePath", "FGSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
 		{ "ToolTip", "Extent of the collision components. X is forward." },
 	};
 #endif
@@ -304,7 +304,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionSpacing_MetaData[] = {
 		{ "Category", "Collision|Generated" },
 		{ "EditCondition", "mGenerateCollisions" },
-		{ "ModuleRelativePath", "FGSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
 		{ "ToolTip", "Spacing between the collision components." },
 	};
 #endif
@@ -312,7 +312,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mGenerateCollisions_MetaData[] = {
 		{ "Category", "Collision|Generated" },
-		{ "ModuleRelativePath", "FGSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
 		{ "ToolTip", "Spacing between the collision components." },
 	};
 #endif
@@ -324,7 +324,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshLength_MetaData[] = {
 		{ "Category", "Mesh" },
-		{ "ModuleRelativePath", "FGSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
 		{ "ToolTip", "The size of each spline mesh." },
 	};
 #endif
@@ -332,7 +332,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMesh_MetaData[] = {
 		{ "Category", "Mesh" },
-		{ "ModuleRelativePath", "FGSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
 		{ "ToolTip", "The mesh to repeat on curved sections." },
 	};
 #endif
@@ -380,7 +380,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSplineComponent, 3279579079);
+	IMPLEMENT_CLASS(UFGSplineComponent, 2050463140);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSplineComponent>()
 	{
 		return UFGSplineComponent::StaticClass();

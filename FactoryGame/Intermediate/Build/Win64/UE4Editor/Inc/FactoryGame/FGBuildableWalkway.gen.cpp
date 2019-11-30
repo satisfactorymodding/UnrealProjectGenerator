@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableWalkway.h"
+#include "FactoryGame/Public/Buildables/FGBuildableWalkway.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -55,14 +55,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWalkway() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWalkway_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableWalkway.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableWalkway.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWalkway.h" },
 		{ "ToolTip", "Base class for walkways." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWalkway_Statics::NewProp_mDisableSnapOn_MetaData[] = {
 		{ "Category", "Walkway" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableWalkway.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWalkway.h" },
 		{ "ToolTip", "Disable snapping on specific sides." },
 	};
 #endif
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWalkway() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWalkway_Statics::NewProp_mElevation_MetaData[] = {
 		{ "Category", "Walkway" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableWalkway.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWalkway.h" },
 		{ "ToolTip", "Height of this walkway if ramp, assumes -x to be lower and +x to be higher." },
 	};
 #endif
@@ -78,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWalkway() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWalkway_Statics::NewProp_mSize_MetaData[] = {
 		{ "Category", "Walkway" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableWalkway.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWalkway.h" },
 		{ "ToolTip", "Size of the walkway (size of one side of the square part)." },
 	};
 #endif
@@ -115,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWalkway() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableWalkway, 3881217403);
+	IMPLEMENT_CLASS(AFGBuildableWalkway, 247972790);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableWalkway>()
 	{
 		return AFGBuildableWalkway::StaticClass();

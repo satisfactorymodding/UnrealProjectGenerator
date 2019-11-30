@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSharedPostProcessSettings.h"
+#include "FactoryGame/Public/FGSharedPostProcessSettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -61,14 +61,14 @@ void EmptyLinkFunctionForGeneratedCodeFGSharedPostProcessSettings() {}
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGSharedPostProcessSettings.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGSharedPostProcessSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSharedPostProcessSettings.h" },
 		{ "ToolTip", "Presets for post process settings for water volumes" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mPriority_MetaData[] = {
 		{ "Category", "PostProcess" },
-		{ "ModuleRelativePath", "FGSharedPostProcessSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSharedPostProcessSettings.h" },
 		{ "ToolTip", "Priority of the post process effect" },
 	};
 #endif
@@ -76,7 +76,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSharedPostProcessSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendWeight_MetaData[] = {
 		{ "Category", "PostProcess" },
-		{ "ModuleRelativePath", "FGSharedPostProcessSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSharedPostProcessSettings.h" },
 		{ "ToolTip", "How much do we want to blend in the post process effect" },
 	};
 #endif
@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSharedPostProcessSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendRadius_MetaData[] = {
 		{ "Category", "PostProcess" },
-		{ "ModuleRelativePath", "FGSharedPostProcessSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSharedPostProcessSettings.h" },
 		{ "ToolTip", "At what distance do we want to blend in the post process settings for the water" },
 	};
 #endif
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSharedPostProcessSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mPostProcessSettings_MetaData[] = {
 		{ "Category", "PostProcess" },
-		{ "ModuleRelativePath", "FGSharedPostProcessSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSharedPostProcessSettings.h" },
 		{ "ToolTip", "Normal settings for post process" },
 	};
 #endif
@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSharedPostProcessSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSharedPostProcessSettings, 1903164617);
+	IMPLEMENT_CLASS(UFGSharedPostProcessSettings, 1254125070);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSharedPostProcessSettings>()
 	{
 		return UFGSharedPostProcessSettings::StaticClass();

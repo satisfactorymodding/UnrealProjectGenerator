@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGPassengerSeat.h"
+#include "FactoryGame/Public/FGPassengerSeat.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -54,7 +54,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPassengerSeat() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGPassengerSeat.h" },
+		{ "ModuleRelativePath", "Public/FGPassengerSeat.h" },
 		{ "ToolTip", "Gets the actual vehicle this passenger seat belongs to" },
 	};
 #endif
@@ -78,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPassengerSeat() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPassengerSeat_UpdateCamera_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGPassengerSeat.h" },
+		{ "ModuleRelativePath", "Public/FGPassengerSeat.h" },
 		{ "ToolTip", "Called every frame when we have a local driver in the vehicle" },
 	};
 #endif
@@ -116,20 +116,20 @@ void EmptyLinkFunctionForGeneratedCodeFGPassengerSeat() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGPassengerSeat_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle, "GetOuterVehicle" }, // 2754908471
-		{ &Z_Construct_UFunction_AFGPassengerSeat_UpdateCamera, "UpdateCamera" }, // 3283193783
+		{ &Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle, "GetOuterVehicle" }, // 999682366
+		{ &Z_Construct_UFunction_AFGPassengerSeat_UpdateCamera, "UpdateCamera" }, // 2780030254
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPassengerSeat_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "FGPassengerSeat.h" },
-		{ "ModuleRelativePath", "FGPassengerSeat.h" },
+		{ "ModuleRelativePath", "Public/FGPassengerSeat.h" },
 		{ "ToolTip", "Passenger seat used in FGVehicle" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPassengerSeat_Statics::NewProp_mOuterVehicle_MetaData[] = {
-		{ "ModuleRelativePath", "FGPassengerSeat.h" },
+		{ "ModuleRelativePath", "Public/FGPassengerSeat.h" },
 		{ "ToolTip", "Instance of the vehicle this passenger seat belongs to" },
 	};
 #endif
@@ -164,7 +164,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPassengerSeat() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPassengerSeat, 722410081);
+	IMPLEMENT_CLASS(AFGPassengerSeat, 2725169360);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPassengerSeat>()
 	{
 		return AFGPassengerSeat::StaticClass();

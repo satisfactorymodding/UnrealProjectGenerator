@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/FGListViewSlot.h"
+#include "FactoryGame/Public/UI/FGListViewSlot.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGListViewSlot() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGListViewSlot_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "UI/FGListViewSlot.h" },
-		{ "ModuleRelativePath", "UI/FGListViewSlot.h" },
+		{ "ModuleRelativePath", "Public/UI/FGListViewSlot.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 		{ "ToolTip", "The Slot for the UFGListView, contains the widget that is laid out in the list." },
 	};
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGListViewSlot() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGListViewSlot, 1476529287);
+	IMPLEMENT_CLASS(UFGListViewSlot, 2100678116);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGListViewSlot>()
 	{
 		return UFGListViewSlot::StaticClass();

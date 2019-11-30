@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGConveyorBeltHologram_generated_h
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_ConnectionArrowComponentDirection) \
 	{ \
@@ -32,7 +32,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_ConnectionArrowComponentDirection) \
 	{ \
@@ -51,7 +51,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGConveyorBeltHologram(); \
 	friend struct Z_Construct_UClass_AFGConveyorBeltHologram_Statics; \
@@ -60,7 +60,7 @@ public: \
 	DECLARE_SERIALIZER(AFGConveyorBeltHologram)
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGConveyorBeltHologram(); \
 	friend struct Z_Construct_UClass_AFGConveyorBeltHologram_Statics; \
@@ -69,7 +69,7 @@ public: \
 	DECLARE_SERIALIZER(AFGConveyorBeltHologram)
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGConveyorBeltHologram(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGConveyorBeltHologram) \
@@ -82,7 +82,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGConveyorBeltHologram(AFGConveyorBeltHologram&&); \
@@ -93,7 +93,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGConveyorBeltHologram); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGConveyorBeltHologram)
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mSplineComponent() { return STRUCT_OFFSET(AFGConveyorBeltHologram, mSplineComponent); } \
 	FORCEINLINE static uint32 __PPO__mSplineData() { return STRUCT_OFFSET(AFGConveyorBeltHologram, mSplineData); } \
 	FORCEINLINE static uint32 __PPO__mConnectionComponents() { return STRUCT_OFFSET(AFGConveyorBeltHologram, mConnectionComponents); } \
@@ -108,25 +108,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGConveyorBeltHologram); \
 	FORCEINLINE static uint32 __PPO__mConnectionArrowComponent() { return STRUCT_OFFSET(AFGConveyorBeltHologram, mConnectionArrowComponent); }
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_21_PROLOG
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_21_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_INCLASS \
-	FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h_24_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h_24_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -134,7 +134,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class AFGConveyorBeltHologram>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Hologram_FGConveyorBeltHologram_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorBeltHologram_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

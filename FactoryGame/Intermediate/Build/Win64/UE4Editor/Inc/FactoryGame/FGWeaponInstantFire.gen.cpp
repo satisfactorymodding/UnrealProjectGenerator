@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGWeaponInstantFire.h"
+#include "FactoryGame/Public/Equipment/FGWeaponInstantFire.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -66,7 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponInstantFire() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeaponInstantFire_Server_NotifyHit_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGWeaponInstantFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponInstantFire.h" },
 		{ "ToolTip", "server notified of hit from client to verify" },
 	};
 #endif
@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponInstantFire() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeaponInstantFire_Server_NotifyMiss_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGWeaponInstantFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponInstantFire.h" },
 		{ "ToolTip", "server notified of miss to show trail FX" },
 	};
 #endif
@@ -135,19 +135,19 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponInstantFire() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGWeaponInstantFire_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGWeaponInstantFire_Server_NotifyHit, "Server_NotifyHit" }, // 2912919753
-		{ &Z_Construct_UFunction_AFGWeaponInstantFire_Server_NotifyMiss, "Server_NotifyMiss" }, // 3014090964
+		{ &Z_Construct_UFunction_AFGWeaponInstantFire_Server_NotifyHit, "Server_NotifyHit" }, // 343520335
+		{ &Z_Construct_UFunction_AFGWeaponInstantFire_Server_NotifyMiss, "Server_NotifyMiss" }, // 1385939544
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeaponInstantFire_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGWeaponInstantFire.h" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponInstantFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponInstantFire.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeaponInstantFire_Statics::NewProp_mHitParticleEffect_MetaData[] = {
 		{ "Category", "FGWeaponInstantFire" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponInstantFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponInstantFire.h" },
 		{ "ToolTip", "The particle to use when hitting the ground" },
 	};
 #endif
@@ -155,7 +155,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponInstantFire() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeaponInstantFire_Statics::NewProp_mWeaponTraceLength_MetaData[] = {
 		{ "Category", "FGWeaponInstantFire" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponInstantFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponInstantFire.h" },
 		{ "ToolTip", "How far we should trace for the weapon" },
 	};
 #endif
@@ -163,7 +163,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponInstantFire() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeaponInstantFire_Statics::NewProp_mInstantHitDamage_MetaData[] = {
 		{ "Category", "FGWeaponInstantFire" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponInstantFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponInstantFire.h" },
 		{ "ToolTip", "Instant hit damage" },
 	};
 #endif
@@ -200,7 +200,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponInstantFire() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWeaponInstantFire, 4114667476);
+	IMPLEMENT_CLASS(AFGWeaponInstantFire, 565645270);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWeaponInstantFire>()
 	{
 		return AFGWeaponInstantFire::StaticClass();

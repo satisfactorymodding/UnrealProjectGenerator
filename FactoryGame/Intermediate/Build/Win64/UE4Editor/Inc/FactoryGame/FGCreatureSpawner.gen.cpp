@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Creature/FGCreatureSpawner.h"
+#include "FactoryGame/Public/Creature/FGCreatureSpawner.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -90,7 +90,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSpawnData_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "Data we need to know/save about spawns in this spawner" },
 	};
 #endif
@@ -100,21 +100,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_CreatureClassOverride_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "Overriden subclass of creature to spawn" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_CreatureClassOverride = { "CreatureClassOverride", nullptr, (EPropertyFlags)0x0014000001000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSpawnData, CreatureClassOverride), Z_Construct_UClass_AFGCreature_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_CreatureClassOverride_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_CreatureClassOverride_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_KilledOnDayNr_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "What day we were killed ( -1 if we haven't been killed yet )" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_KilledOnDayNr = { "KilledOnDayNr", nullptr, (EPropertyFlags)0x0010000001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSpawnData, KilledOnDayNr), METADATA_PARAMS(Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_KilledOnDayNr_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_KilledOnDayNr_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_WasKilled_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "We save if the creature was killed so we know if we want to respawn the creature when in range of the spawner" },
 	};
 #endif
@@ -125,14 +125,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_WasKilled = { "WasKilled", nullptr, (EPropertyFlags)0x0010000001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FSpawnData), &Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_WasKilled_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_WasKilled_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_WasKilled_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_Creature_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "Reference to creature" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_Creature = { "Creature", nullptr, (EPropertyFlags)0x0010000001000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSpawnData, Creature), Z_Construct_UClass_AFGCreature_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_Creature_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_Creature_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSpawnData_Statics::NewProp_SpawnLocation_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "Location where we want to spawn" },
 	};
 #endif
@@ -172,7 +172,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSpawnData_Hash() { return 294099525U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSpawnData_Hash() { return 296555547U; }
 	static FName NAME_AFGCreatureSpawner_DestroyCreatures = FName(TEXT("DestroyCreatures"));
 	void AFGCreatureSpawner::DestroyCreatures()
 	{
@@ -217,7 +217,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreatureSpawner_AddCreature_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "Adds a creature to be handled by spawner" },
 	};
 #endif
@@ -257,7 +257,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreatureSpawner_CalculateSpawningLocations_Statics::Function_MetaDataParams[] = {
 		{ "CallInEditor", "true" },
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "Calculates the locations of the spawn locations of the enemies\n@returns false if we didn't manage to fit all the enemies is the radius" },
 	};
 #endif
@@ -290,7 +290,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreatureSpawner_CreatureDied_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "Called when a creature died, need to be UFUNCTION as it's bound as a delegate" },
 	};
 #endif
@@ -314,7 +314,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreatureSpawner_DestroyCreatures_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "Server only - Handles logic for destroying creatures when the spawners becomes active" },
 	};
 #endif
@@ -351,7 +351,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreatureSpawner_GetSplines_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "Gets all splines assigned to this spawner" },
 	};
 #endif
@@ -390,7 +390,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreatureSpawner_IsSpawnerActive_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "Is this spawner within active distance?" },
 	};
 #endif
@@ -414,7 +414,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreatureSpawner_SpawnCreatures_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "Server only - Handles logic for creating creatures when the spawners becomes active" },
 	};
 #endif
@@ -500,38 +500,38 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCreatureSpawner_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGCreatureSpawner_AddCreature, "AddCreature" }, // 2398163061
-		{ &Z_Construct_UFunction_AFGCreatureSpawner_CalculateSpawningLocations, "CalculateSpawningLocations" }, // 247801123
-		{ &Z_Construct_UFunction_AFGCreatureSpawner_CreatureDied, "CreatureDied" }, // 1285586413
-		{ &Z_Construct_UFunction_AFGCreatureSpawner_DestroyCreatures, "DestroyCreatures" }, // 710471974
-		{ &Z_Construct_UFunction_AFGCreatureSpawner_GetSplines, "GetSplines" }, // 3072098661
-		{ &Z_Construct_UFunction_AFGCreatureSpawner_IsSpawnerActive, "IsSpawnerActive" }, // 3059540134
-		{ &Z_Construct_UFunction_AFGCreatureSpawner_SpawnCreatures, "SpawnCreatures" }, // 1423414602
+		{ &Z_Construct_UFunction_AFGCreatureSpawner_AddCreature, "AddCreature" }, // 2726654389
+		{ &Z_Construct_UFunction_AFGCreatureSpawner_CalculateSpawningLocations, "CalculateSpawningLocations" }, // 1299551863
+		{ &Z_Construct_UFunction_AFGCreatureSpawner_CreatureDied, "CreatureDied" }, // 1814111676
+		{ &Z_Construct_UFunction_AFGCreatureSpawner_DestroyCreatures, "DestroyCreatures" }, // 4228577691
+		{ &Z_Construct_UFunction_AFGCreatureSpawner_GetSplines, "GetSplines" }, // 3684736062
+		{ &Z_Construct_UFunction_AFGCreatureSpawner_IsSpawnerActive, "IsSpawnerActive" }, // 3808896626
+		{ &Z_Construct_UFunction_AFGCreatureSpawner_SpawnCreatures, "SpawnCreatures" }, // 812943886
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Creature/FGCreatureSpawner.h" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRespawnTimeIndays_MetaData[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "How many days should pass before creatures start to respawn ( -1 means never )" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRespawnTimeIndays = { "mRespawnTimeIndays", nullptr, (EPropertyFlags)0x0010000000000801, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreatureSpawner, mRespawnTimeIndays), METADATA_PARAMS(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRespawnTimeIndays_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRespawnTimeIndays_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRandomSeed_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRandomSeed = { "mRandomSeed", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreatureSpawner, mRandomSeed), METADATA_PARAMS(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRandomSeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRandomSeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mSplines_MetaData[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "Path splines that enemies in this spawner should set to follow" },
 	};
 #endif
@@ -539,7 +539,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mSplines_Inner = { "mSplines", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGSplinePath_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mSpawnData_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "Structure for keeping all data saved about enemies spawned" },
 	};
 #endif
@@ -547,7 +547,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mSpawnData_Inner = { "mSpawnData", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSpawnData, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mIsActive_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "Indicates if we have spawned our enemies" },
 	};
 #endif
@@ -559,7 +559,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mSpawnHalfHeight_MetaData[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "How much up/down our spawner tries to search for a placeable location" },
 	};
 #endif
@@ -567,7 +567,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mSpawnRadius_MetaData[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "Within what radius do you want to spawn the enemies (the won't go outside of this radius)" },
 	};
 #endif
@@ -575,7 +575,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mNumberOfCreatures_MetaData[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "The number of enemies to spawn, used offline" },
 	};
 #endif
@@ -583,7 +583,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mCreatureClass_MetaData[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "The creature we should spawn" },
 	};
 #endif
@@ -591,21 +591,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mCapsuleComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mCapsuleComponent = { "mCapsuleComponent", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreatureSpawner, mCapsuleComponent), Z_Construct_UClass_UCapsuleComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mCapsuleComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mCapsuleComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mEditorSprite_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mEditorSprite = { "mEditorSprite", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreatureSpawner, mEditorSprite), Z_Construct_UClass_UBillboardComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mEditorSprite_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mEditorSprite_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mDebugComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawner.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 		{ "ToolTip", "For showing a preview of what will happen in the editor" },
 	};
 #endif
@@ -656,7 +656,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreatureSpawner, 3296849453);
+	IMPLEMENT_CLASS(AFGCreatureSpawner, 1727135967);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCreatureSpawner>()
 	{
 		return AFGCreatureSpawner::StaticClass();

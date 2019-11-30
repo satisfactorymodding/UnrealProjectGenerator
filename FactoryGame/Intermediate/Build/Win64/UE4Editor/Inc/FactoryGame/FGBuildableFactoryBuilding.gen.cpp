@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableFactoryBuilding.h"
+#include "FactoryGame/Public/Buildables/FGBuildableFactoryBuilding.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -84,7 +84,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableFactoryBuilding.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFactoryBuilding.h" },
 		{ "ToolTip", "Disable snapping on specific sides." },
 	};
 #endif
@@ -95,7 +95,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Bottom_MetaData[] = {
 		{ "Category", "Sides" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableFactoryBuilding.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFactoryBuilding.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Bottom_SetBit(void* Obj)
@@ -106,7 +106,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Top_MetaData[] = {
 		{ "Category", "Sides" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableFactoryBuilding.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFactoryBuilding.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Top_SetBit(void* Obj)
@@ -117,7 +117,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Left_MetaData[] = {
 		{ "Category", "Sides" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableFactoryBuilding.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFactoryBuilding.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Left_SetBit(void* Obj)
@@ -128,7 +128,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Back_MetaData[] = {
 		{ "Category", "Sides" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableFactoryBuilding.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFactoryBuilding.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Back_SetBit(void* Obj)
@@ -139,7 +139,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Right_MetaData[] = {
 		{ "Category", "Sides" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableFactoryBuilding.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFactoryBuilding.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Right_SetBit(void* Obj)
@@ -150,7 +150,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Front_MetaData[] = {
 		{ "Category", "Sides" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableFactoryBuilding.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFactoryBuilding.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Front_SetBit(void* Obj)
@@ -194,7 +194,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Hash() { return 3585759412U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Hash() { return 362555301U; }
 	void AFGBuildableFactoryBuilding::StaticRegisterNativesAFGBuildableFactoryBuilding()
 	{
 	}
@@ -223,7 +223,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableFactoryBuilding.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableFactoryBuilding.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFactoryBuilding.h" },
 		{ "ToolTip", "Base for all kinds of factory building parts, like foundations, walls etc." },
 	};
 #endif
@@ -231,7 +231,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::NewProp_mMeshComponentProxy_MetaData[] = {
 		{ "Category", "FGBuildableFactoryBuilding" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableFactoryBuilding.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFactoryBuilding.h" },
 		{ "ToolTip", "Mesh component for the factory building." },
 	};
 #endif
@@ -266,7 +266,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableFactoryBuilding, 3224162847);
+	IMPLEMENT_CLASS(AFGBuildableFactoryBuilding, 96692405);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableFactoryBuilding>()
 	{
 		return AFGBuildableFactoryBuilding::StaticClass();

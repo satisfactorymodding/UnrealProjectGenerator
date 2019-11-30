@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGRemoteCallObject.h"
+#include "FactoryGame/Public/FGRemoteCallObject.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -48,7 +48,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRemoteCallObject() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRemoteCallObject_GetGameState_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Game State" },
-		{ "ModuleRelativePath", "FGRemoteCallObject.h" },
+		{ "ModuleRelativePath", "Public/FGRemoteCallObject.h" },
 		{ "ToolTip", "Helper function to get the game state. Can't be done in BluePrint since the GetGameState function hides it world context pin" },
 	};
 #endif
@@ -81,12 +81,12 @@ void EmptyLinkFunctionForGeneratedCodeFGRemoteCallObject() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGRemoteCallObject_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGRemoteCallObject_GetGameState, "GetGameState" }, // 3046557556
+		{ &Z_Construct_UFunction_UFGRemoteCallObject_GetGameState, "GetGameState" }, // 2046685099
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRemoteCallObject_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGRemoteCallObject.h" },
-		{ "ModuleRelativePath", "FGRemoteCallObject.h" },
+		{ "ModuleRelativePath", "Public/FGRemoteCallObject.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGRemoteCallObject_Statics::StaticCppClassTypeInfo = {
@@ -116,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRemoteCallObject() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRemoteCallObject, 2420572653);
+	IMPLEMENT_CLASS(UFGRemoteCallObject, 4015859835);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGRemoteCallObject>()
 	{
 		return UFGRemoteCallObject::StaticClass();

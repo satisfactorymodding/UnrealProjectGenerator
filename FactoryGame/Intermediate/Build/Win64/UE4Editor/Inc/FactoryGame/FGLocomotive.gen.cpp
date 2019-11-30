@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGLocomotive.h"
+#include "FactoryGame/Public/FGLocomotive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -76,7 +76,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGLocomotive_CanSetTrainMultipleUnitMaster_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Locomotive" },
-		{ "ModuleRelativePath", "FGLocomotive.h" },
+		{ "ModuleRelativePath", "Public/FGLocomotive.h" },
 		{ "ToolTip", "@return true if we can set the multiple unit master on locomotive without forcing; false if we cannot." },
 	};
 #endif
@@ -100,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGLocomotive_ClearMultipleUnitControlMaster_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Locomotive" },
-		{ "ModuleRelativePath", "FGLocomotive.h" },
+		{ "ModuleRelativePath", "Public/FGLocomotive.h" },
 		{ "ToolTip", "Clears this vehicle as the MU master.\nReturns the train to MU disabled until another one is set as master." },
 	};
 #endif
@@ -142,7 +142,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGLocomotive_GetLocomotiveMovementComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Locomotive" },
-		{ "ModuleRelativePath", "FGLocomotive.h" },
+		{ "ModuleRelativePath", "Public/FGLocomotive.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGLocomotive_GetLocomotiveMovementComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGLocomotive, nullptr, "GetLocomotiveMovementComponent", sizeof(FGLocomotive_eventGetLocomotiveMovementComponent_Parms), Z_Construct_UFunction_AFGLocomotive_GetLocomotiveMovementComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGLocomotive_GetLocomotiveMovementComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGLocomotive_GetLocomotiveMovementComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGLocomotive_GetLocomotiveMovementComponent_Statics::Function_MetaDataParams)) };
@@ -178,7 +178,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGLocomotive_GetMultipleUnitRole_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Locomotive" },
-		{ "ModuleRelativePath", "FGLocomotive.h" },
+		{ "ModuleRelativePath", "Public/FGLocomotive.h" },
 		{ "ToolTip", "Get the role for this locomotive when MUing.\n@see EMultipleUnitControl." },
 	};
 #endif
@@ -220,7 +220,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGLocomotive_GetPowerInfo_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Locomotive" },
-		{ "ModuleRelativePath", "FGLocomotive.h" },
+		{ "ModuleRelativePath", "Public/FGLocomotive.h" },
 		{ "ToolTip", "Get the power info about this train. If it runs on electricity." },
 	};
 #endif
@@ -244,7 +244,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGLocomotive_OnNameChanged_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Locomotive" },
-		{ "ModuleRelativePath", "FGLocomotive.h" },
+		{ "ModuleRelativePath", "Public/FGLocomotive.h" },
 		{ "ToolTip", "Called when the name of the train this locomotive is part of has changed name" },
 	};
 #endif
@@ -267,7 +267,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGLocomotive_OnRep_ReplicatedMovementTransform_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGLocomotive.h" },
+		{ "ModuleRelativePath", "Public/FGLocomotive.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGLocomotive_OnRep_ReplicatedMovementTransform_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGLocomotive, nullptr, "OnRep_ReplicatedMovementTransform", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGLocomotive_OnRep_ReplicatedMovementTransform_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGLocomotive_OnRep_ReplicatedMovementTransform_Statics::Function_MetaDataParams)) };
@@ -314,7 +314,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGLocomotive_SetMultipleUnitControlMaster_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Locomotive" },
-		{ "ModuleRelativePath", "FGLocomotive.h" },
+		{ "ModuleRelativePath", "Public/FGLocomotive.h" },
 		{ "ToolTip", "Set this vehicle as the MU master.\nThis updates all other vehicles in the train accordingly.\n@param force Force this to be the master, sets any current master to slave.\n@return true on success; false if there is another master and this was not forced." },
 	};
 #endif
@@ -368,20 +368,20 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGLocomotive_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGLocomotive_CanSetTrainMultipleUnitMaster, "CanSetTrainMultipleUnitMaster" }, // 567167856
-		{ &Z_Construct_UFunction_AFGLocomotive_ClearMultipleUnitControlMaster, "ClearMultipleUnitControlMaster" }, // 1665637588
-		{ &Z_Construct_UFunction_AFGLocomotive_GetLocomotiveMovementComponent, "GetLocomotiveMovementComponent" }, // 1456431669
-		{ &Z_Construct_UFunction_AFGLocomotive_GetMultipleUnitRole, "GetMultipleUnitRole" }, // 1451102600
-		{ &Z_Construct_UFunction_AFGLocomotive_GetPowerInfo, "GetPowerInfo" }, // 508971176
-		{ &Z_Construct_UFunction_AFGLocomotive_OnNameChanged, "OnNameChanged" }, // 70779914
-		{ &Z_Construct_UFunction_AFGLocomotive_OnRep_ReplicatedMovementTransform, "OnRep_ReplicatedMovementTransform" }, // 1680929495
-		{ &Z_Construct_UFunction_AFGLocomotive_SetMultipleUnitControlMaster, "SetMultipleUnitControlMaster" }, // 1745727898
+		{ &Z_Construct_UFunction_AFGLocomotive_CanSetTrainMultipleUnitMaster, "CanSetTrainMultipleUnitMaster" }, // 2043919596
+		{ &Z_Construct_UFunction_AFGLocomotive_ClearMultipleUnitControlMaster, "ClearMultipleUnitControlMaster" }, // 1830245848
+		{ &Z_Construct_UFunction_AFGLocomotive_GetLocomotiveMovementComponent, "GetLocomotiveMovementComponent" }, // 4103554051
+		{ &Z_Construct_UFunction_AFGLocomotive_GetMultipleUnitRole, "GetMultipleUnitRole" }, // 4185185184
+		{ &Z_Construct_UFunction_AFGLocomotive_GetPowerInfo, "GetPowerInfo" }, // 1274214422
+		{ &Z_Construct_UFunction_AFGLocomotive_OnNameChanged, "OnNameChanged" }, // 1505516643
+		{ &Z_Construct_UFunction_AFGLocomotive_OnRep_ReplicatedMovementTransform, "OnRep_ReplicatedMovementTransform" }, // 407735772
+		{ &Z_Construct_UFunction_AFGLocomotive_SetMultipleUnitControlMaster, "SetMultipleUnitControlMaster" }, // 3638673258
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGLocomotive_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "FGLocomotive.h" },
-		{ "ModuleRelativePath", "FGLocomotive.h" },
+		{ "ModuleRelativePath", "Public/FGLocomotive.h" },
 		{ "ToolTip", "Base class for locomotives, choo choo!" },
 	};
 #endif
@@ -390,14 +390,14 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Vehicle" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGLocomotive.h" },
+		{ "ModuleRelativePath", "Public/FGLocomotive.h" },
 		{ "ToolTip", "vehicle simulation component" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGLocomotive_Statics::NewProp_mVehicleMovement = { "mVehicleMovement", nullptr, (EPropertyFlags)0x00400000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGLocomotive, mVehicleMovement), Z_Construct_UClass_UFGLocomotiveMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGLocomotive_Statics::NewProp_mVehicleMovement_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGLocomotive_Statics::NewProp_mVehicleMovement_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGLocomotive_Statics::NewProp_mReplicatedMovementTransform_MetaData[] = {
-		{ "ModuleRelativePath", "FGLocomotive.h" },
+		{ "ModuleRelativePath", "Public/FGLocomotive.h" },
 		{ "ToolTip", "@todo Replace when proper physics simulations are done." },
 	};
 #endif
@@ -405,7 +405,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGLocomotive_Statics::NewProp_mPowerInfo_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGLocomotive.h" },
+		{ "ModuleRelativePath", "Public/FGLocomotive.h" },
 		{ "ToolTip", "The power info for this train, draw power from the circuit." },
 	};
 #endif
@@ -413,7 +413,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGLocomotive_Statics::NewProp_mSlidingShoe_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGLocomotive.h" },
+		{ "ModuleRelativePath", "Public/FGLocomotive.h" },
 		{ "ToolTip", "The sliding shoe making contact with the third rail." },
 	};
 #endif
@@ -422,7 +422,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGLocomotive_Statics::NewProp_mPowerConsumption_MetaData[] = {
 		{ "Category", "Power" },
 		{ "ClampMin", "0" },
-		{ "ModuleRelativePath", "FGLocomotive.h" },
+		{ "ModuleRelativePath", "Public/FGLocomotive.h" },
 		{ "ToolTip", "The power consumption of this electric locomotive, min is idle power consumption and max is power consumption at maximum torque." },
 		{ "UIMin", "0" },
 	};
@@ -462,7 +462,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGLocomotive, 4168361332);
+	IMPLEMENT_CLASS(AFGLocomotive, 1858001393);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGLocomotive>()
 	{
 		return AFGLocomotive::StaticClass();

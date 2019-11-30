@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGRiverSpline.h"
+#include "FactoryGame/Public/FGRiverSpline.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -61,13 +61,13 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRiverSpline_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGRiverSpline.h" },
-		{ "ModuleRelativePath", "FGRiverSpline.h" },
+		{ "ModuleRelativePath", "Public/FGRiverSpline.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mShouldHaveAudio_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGRiverSpline.h" },
+		{ "ModuleRelativePath", "Public/FGRiverSpline.h" },
 		{ "ToolTip", "If true, then we should have no audio" },
 	};
 #endif
@@ -79,7 +79,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mSoundSplineComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGRiverSpline.h" },
+		{ "ModuleRelativePath", "Public/FGRiverSpline.h" },
 		{ "ToolTip", "The component that has our sound spline" },
 	};
 #endif
@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 		{ "Category", "Audio" },
 		{ "ClampMin", "50" },
 		{ "EditCondition", "mShouldHaveAudio" },
-		{ "ModuleRelativePath", "FGRiverSpline.h" },
+		{ "ModuleRelativePath", "Public/FGRiverSpline.h" },
 		{ "ToolTip", "Distance between each emitter on the spline" },
 		{ "UIMax", "1000" },
 		{ "UIMin", "100" },
@@ -100,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mAudioEvent_MetaData[] = {
 		{ "Category", "Audio" },
 		{ "EditCondition", "mShouldHaveAudio" },
-		{ "ModuleRelativePath", "FGRiverSpline.h" },
+		{ "ModuleRelativePath", "Public/FGRiverSpline.h" },
 		{ "ToolTip", "The audio event this river plays" },
 	};
 #endif
@@ -138,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRiverSpline, 791521838);
+	IMPLEMENT_CLASS(AFGRiverSpline, 1420730198);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRiverSpline>()
 	{
 		return AFGRiverSpline::StaticClass();

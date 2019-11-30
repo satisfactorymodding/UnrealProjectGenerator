@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Resources/FGWildCardDescriptor.h"
+#include "FactoryGame/Public/Resources/FGWildCardDescriptor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWildCardDescriptor() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWildCardDescriptor_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Icon Preview" },
 		{ "IncludePath", "Resources/FGWildCardDescriptor.h" },
-		{ "ModuleRelativePath", "Resources/FGWildCardDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGWildCardDescriptor.h" },
 		{ "ToolTip", "Not a real resource, used to indicate a wild card in sorting rules." },
 	};
 #endif
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWildCardDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWildCardDescriptor, 2784627706);
+	IMPLEMENT_CLASS(UFGWildCardDescriptor, 3816569682);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGWildCardDescriptor>()
 	{
 		return UFGWildCardDescriptor::StaticClass();

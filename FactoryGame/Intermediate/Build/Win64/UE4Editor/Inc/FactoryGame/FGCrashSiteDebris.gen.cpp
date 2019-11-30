@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGCrashSiteDebris.h"
+#include "FactoryGame/Public/FGCrashSiteDebris.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -68,7 +68,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedItemDropT
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "Struct containing the saved simulation for actors." },
 	};
 #endif
@@ -78,7 +78,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedItemDropT
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::NewProp_ItemDropTransform_MetaData[] = {
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::NewProp_ItemDropTransform = { "ItemDropTransform", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSimulatedItemDropTransform, ItemDropTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::NewProp_ItemDropTransform_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::NewProp_ItemDropTransform_MetaData)) };
@@ -113,7 +113,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedItemDropT
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Hash() { return 951750423U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Hash() { return 3836409501U; }
 class UScriptStruct* FSimulatedActorTransform::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -155,7 +155,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedActorTran
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "Struct containing the saved simulation for actors." },
 	};
 #endif
@@ -165,13 +165,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedActorTran
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorTransform_MetaData[] = {
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorTransform = { "ActorTransform", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSimulatedActorTransform, ActorTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorTransform_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorTransform_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorClass_MetaData[] = {
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorClass = { "ActorClass", nullptr, (EPropertyFlags)0x0014000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSimulatedActorTransform, ActorClass), Z_Construct_UClass_AFGCrashSiteDebrisActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorClass_MetaData)) };
@@ -207,7 +207,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedActorTran
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSimulatedActorTransform_Hash() { return 2321474341U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSimulatedActorTransform_Hash() { return 3905962485U; }
 class UScriptStruct* FSimulatedMeshTransform::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -249,7 +249,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedMeshTrans
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "Struct containing the saved simulation for meshes." },
 	};
 #endif
@@ -259,13 +259,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedMeshTrans
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_MeshTransform_MetaData[] = {
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_MeshTransform = { "MeshTransform", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSimulatedMeshTransform, MeshTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_MeshTransform_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_MeshTransform_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_StaticMesh_MetaData[] = {
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_StaticMesh = { "StaticMesh", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSimulatedMeshTransform, StaticMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_StaticMesh_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_StaticMesh_MetaData)) };
@@ -301,7 +301,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedMeshTrans
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSimulatedMeshTransform_Hash() { return 2024473855U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSimulatedMeshTransform_Hash() { return 2892608634U; }
 class UScriptStruct* FDebrisItemDrop::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -343,7 +343,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisItemDrop
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "Item drops that can be spawned and how many." },
 	};
 #endif
@@ -354,7 +354,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisItemDrop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_ItemClass_MetaData[] = {
 		{ "Category", "Item" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "Item to create pickup for." },
 	};
 #endif
@@ -362,7 +362,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisItemDrop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_NumItems_MetaData[] = {
 		{ "Category", "Item" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "How many items to spawn, note that the upper limit is guaranteed while the lower limit is not." },
 	};
 #endif
@@ -399,7 +399,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisItemDrop
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDebrisItemDrop_Hash() { return 1756849398U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDebrisItemDrop_Hash() { return 1921059796U; }
 class UScriptStruct* FDebrisActor::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -441,7 +441,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisActor
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDebrisActor_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "Debris actors that can be spawned and how many." },
 	};
 #endif
@@ -452,7 +452,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisActor
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_Num_MetaData[] = {
 		{ "Category", "Actor" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "How many to spawn, note that the upper limit is guaranteed while the lower limit is not." },
 	};
 #endif
@@ -460,7 +460,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisActor
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_ActorClass_MetaData[] = {
 		{ "Category", "Actor" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "Mesh to spawn." },
 	};
 #endif
@@ -497,7 +497,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisActor
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDebrisActor_Hash() { return 3867971395U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDebrisActor_Hash() { return 2968599155U; }
 class UScriptStruct* FDebrisMesh::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -539,7 +539,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDebrisMesh_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "Debris meshes that can be spawned and how many." },
 	};
 #endif
@@ -550,7 +550,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Num_MetaData[] = {
 		{ "Category", "Mesh" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "How many to spawn, note that the upper limit is guaranteed while the lower limit is not." },
 	};
 #endif
@@ -558,7 +558,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Mesh_MetaData[] = {
 		{ "Category", "Mesh" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "Mesh to spawn." },
 	};
 #endif
@@ -595,7 +595,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDebrisMesh_Hash() { return 491661459U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDebrisMesh_Hash() { return 3503378384U; }
 	void AFGCrashSiteDebris::StaticRegisterNativesAFGCrashSiteDebris()
 	{
 	}
@@ -689,7 +689,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGCrashSiteDebris.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "Actor for spawning debris around a crash site." },
 	};
 #endif
@@ -697,7 +697,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedItemDropSimulationData_MetaData[] = {
 		{ "Category", "Saved Simulation" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedItemDropSimulationData = { "mSavedItemDropSimulationData", nullptr, (EPropertyFlags)0x0040000800020801, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebris, mSavedItemDropSimulationData), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedItemDropSimulationData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedItemDropSimulationData_MetaData)) };
@@ -705,7 +705,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedActorSimulationData_MetaData[] = {
 		{ "Category", "Saved Simulation" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedActorSimulationData = { "mSavedActorSimulationData", nullptr, (EPropertyFlags)0x0040000800020801, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebris, mSavedActorSimulationData), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedActorSimulationData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedActorSimulationData_MetaData)) };
@@ -713,7 +713,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedMeshSimulationData_MetaData[] = {
 		{ "Category", "Saved Simulation" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "Transforms saved during physics simulation." },
 	};
 #endif
@@ -722,7 +722,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedItemDropActors_MetaData[] = {
 		{ "Category", "Saved Simulation" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedItemDropActors = { "mSavedSimulatedItemDropActors", nullptr, (EPropertyFlags)0x0040000800020801, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebris, mSavedSimulatedItemDropActors), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedItemDropActors_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedItemDropActors_MetaData)) };
@@ -730,7 +730,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedDebrisActors_MetaData[] = {
 		{ "Category", "Saved Simulation" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "Actors spawned by this crash site." },
 	};
 #endif
@@ -739,7 +739,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mRegenerateDebrisNextSimulation_MetaData[] = {
 		{ "Category", "Simulation" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "If true debris will be respawned next simulation." },
 	};
 #endif
@@ -751,7 +751,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDespawnRadius_MetaData[] = {
 		{ "Category", "Simulation" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "Maximum distance from the center debris can end up, debris outside this radius is destroyed." },
 	};
 #endif
@@ -761,7 +761,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		{ "Category", "Simulation" },
 		{ "ClampMax", "1" },
 		{ "ClampMin", "0" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "How much the parts should penetrate the ground." },
 		{ "UIMax", "0.500000" },
 		{ "UIMin", "0" },
@@ -771,7 +771,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSpawnRadiusMultiplier_MetaData[] = {
 		{ "Category", "Simulation" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "If we want the debris to spread a bit more." },
 	};
 #endif
@@ -779,7 +779,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSpawnAltitude_MetaData[] = {
 		{ "Category", "Simulation" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "How far up to spawn the debris." },
 	};
 #endif
@@ -787,7 +787,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mNumItemDrops_MetaData[] = {
 		{ "Category", "Item Drops" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "How many item drops to place, debris must be resimulated when this is updated." },
 	};
 #endif
@@ -795,7 +795,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mItemDrops_MetaData[] = {
 		{ "Category", "Item Drops" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "Description of which parts to spawn." },
 	};
 #endif
@@ -804,7 +804,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisActors_MetaData[] = {
 		{ "Category", "Simulation" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "Description of which actors to spawn." },
 	};
 #endif
@@ -813,7 +813,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisMeshes_MetaData[] = {
 		{ "Category", "Simulation" },
-		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebris.h" },
 		{ "ToolTip", "Description of which meshes to spawn." },
 	};
 #endif
@@ -871,7 +871,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCrashSiteDebris, 422311320);
+	IMPLEMENT_CLASS(AFGCrashSiteDebris, 723946471);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCrashSiteDebris>()
 	{
 		return AFGCrashSiteDebris::StaticClass();

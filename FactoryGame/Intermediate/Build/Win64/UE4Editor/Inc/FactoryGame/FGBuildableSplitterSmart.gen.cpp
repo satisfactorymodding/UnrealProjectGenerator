@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableSplitterSmart.h"
+#include "FactoryGame/Public/Buildables/FGBuildableSplitterSmart.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSplitterSmart() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnSortRulesChanged__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnSortRulesChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnSortRulesChanged__DelegateSignature", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnSortRulesChanged__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnSortRulesChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -95,7 +95,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSplitterSortRule_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FSplitterSortRule_Statics::NewStructOps()
@@ -105,7 +105,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSplitterSortRule_Statics::NewProp_OutputIndex_MetaData[] = {
 		{ "Category", "Sort Rule" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 		{ "ToolTip", "Which output to send this to." },
 	};
 #endif
@@ -113,7 +113,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSplitterSortRule_Statics::NewProp_ItemClass_MetaData[] = {
 		{ "Category", "Sort Rule" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 		{ "ToolTip", "This is the item class to filter out." },
 	};
 #endif
@@ -150,7 +150,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSplitterSortRule_Hash() { return 1704843251U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSplitterSortRule_Hash() { return 1784821917U; }
 	void AFGBuildableSplitterSmart::StaticRegisterNativesAFGBuildableSplitterSmart()
 	{
 		UClass* Class = AFGBuildableSplitterSmart::StaticClass();
@@ -186,7 +186,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSplitterSmart_AddSortRule_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sort" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 		{ "ToolTip", "Adds a new sort rule." },
 	};
 #endif
@@ -220,7 +220,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSplitterSmart_GetMaxNumSortRules_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sort" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 		{ "ToolTip", "Get number of max sort rules." },
 	};
 #endif
@@ -254,7 +254,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSplitterSmart_GetNumSortRules_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sort" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 		{ "ToolTip", "Get the number of sort rules this splitter has." },
 	};
 #endif
@@ -292,7 +292,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSplitterSmart_GetSortRuleAt_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sort" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 		{ "ToolTip", "Get the number of sort rules this splitter has." },
 	};
 #endif
@@ -335,7 +335,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSplitterSmart_IsValidSortRuleAt_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sort" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 		{ "ToolTip", "Is this a valid sort rule index" },
 	};
 #endif
@@ -358,7 +358,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSplitterSmart_OnRep_SortRules_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSplitterSmart_OnRep_SortRules_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSplitterSmart, nullptr, "OnRep_SortRules", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSplitterSmart_OnRep_SortRules_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSplitterSmart_OnRep_SortRules_Statics::Function_MetaDataParams)) };
@@ -391,7 +391,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSplitterSmart_RemoveSortRuleAt_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sort" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 		{ "ToolTip", "Removes the rule at passed index." },
 	};
 #endif
@@ -429,7 +429,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSplitterSmart_SetSortRuleAt_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sort" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 		{ "ToolTip", "Updates the sort rule at the passed index." },
 	};
 #endif
@@ -490,31 +490,31 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableSplitterSmart_AddSortRule, "AddSortRule" }, // 956670054
-		{ &Z_Construct_UFunction_AFGBuildableSplitterSmart_GetMaxNumSortRules, "GetMaxNumSortRules" }, // 2888951846
-		{ &Z_Construct_UFunction_AFGBuildableSplitterSmart_GetNumSortRules, "GetNumSortRules" }, // 2492296574
-		{ &Z_Construct_UFunction_AFGBuildableSplitterSmart_GetSortRuleAt, "GetSortRuleAt" }, // 3880457818
-		{ &Z_Construct_UFunction_AFGBuildableSplitterSmart_IsValidSortRuleAt, "IsValidSortRuleAt" }, // 3640654468
-		{ &Z_Construct_UFunction_AFGBuildableSplitterSmart_OnRep_SortRules, "OnRep_SortRules" }, // 1168242531
-		{ &Z_Construct_UFunction_AFGBuildableSplitterSmart_RemoveSortRuleAt, "RemoveSortRuleAt" }, // 1212109467
-		{ &Z_Construct_UFunction_AFGBuildableSplitterSmart_SetSortRuleAt, "SetSortRuleAt" }, // 2330671074
+		{ &Z_Construct_UFunction_AFGBuildableSplitterSmart_AddSortRule, "AddSortRule" }, // 806928080
+		{ &Z_Construct_UFunction_AFGBuildableSplitterSmart_GetMaxNumSortRules, "GetMaxNumSortRules" }, // 3650266502
+		{ &Z_Construct_UFunction_AFGBuildableSplitterSmart_GetNumSortRules, "GetNumSortRules" }, // 1275580069
+		{ &Z_Construct_UFunction_AFGBuildableSplitterSmart_GetSortRuleAt, "GetSortRuleAt" }, // 3133580357
+		{ &Z_Construct_UFunction_AFGBuildableSplitterSmart_IsValidSortRuleAt, "IsValidSortRuleAt" }, // 1224028020
+		{ &Z_Construct_UFunction_AFGBuildableSplitterSmart_OnRep_SortRules, "OnRep_SortRules" }, // 1155843093
+		{ &Z_Construct_UFunction_AFGBuildableSplitterSmart_RemoveSortRuleAt, "RemoveSortRuleAt" }, // 750772456
+		{ &Z_Construct_UFunction_AFGBuildableSplitterSmart_SetSortRuleAt, "SetSortRuleAt" }, // 3976563701
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableSplitterSmart.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 		{ "ToolTip", "A smart splitter which you can tell where stuff should go!" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastOutputIndex_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastOutputIndex = { "mLastOutputIndex", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSplitterSmart, mLastOutputIndex), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastOutputIndex_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastOutputIndex_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mItemToLastOutputMap_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mItemToLastOutputMap = { "mItemToLastOutputMap", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSplitterSmart, mItemToLastOutputMap), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mItemToLastOutputMap_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mItemToLastOutputMap_MetaData)) };
@@ -522,14 +522,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mItemToLastOutputMap_ValueProp = { "mItemToLastOutputMap", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastItem_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastItem = { "mLastItem", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSplitterSmart, mLastItem), Z_Construct_UScriptStruct_FInventoryItem, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastItem_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastItem_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mMaxNumSortRules_MetaData[] = {
 		{ "Category", "Sort" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 		{ "ToolTip", "How many rules this splitter can have." },
 		{ "UIMax", "64" },
 		{ "UIMin", "1" },
@@ -539,7 +539,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mSortRules_MetaData[] = {
 		{ "Category", "Sort" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "These are the sorting rules the player has entered." },
 	};
@@ -548,7 +548,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mSortRules_Inner = { "mSortRules", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSplitterSortRule, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_OnSortRulesChangedDelegate_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSplitterSmart.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_OnSortRulesChangedDelegate = { "OnSortRulesChangedDelegate", nullptr, (EPropertyFlags)0x0020080010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSplitterSmart, OnSortRulesChangedDelegate), Z_Construct_UDelegateFunction_FactoryGame_OnSortRulesChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_OnSortRulesChangedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_OnSortRulesChangedDelegate_MetaData)) };
@@ -590,7 +590,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSplitterSmart, 1280090509);
+	IMPLEMENT_CLASS(AFGBuildableSplitterSmart, 3042149099);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableSplitterSmart>()
 	{
 		return AFGBuildableSplitterSmart::StaticClass();

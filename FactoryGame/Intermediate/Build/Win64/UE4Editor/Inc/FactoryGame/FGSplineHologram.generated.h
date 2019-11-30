@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGSplineHologram_generated_h
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_SplineData) \
 	{ \
@@ -24,7 +24,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_SplineData) \
 	{ \
@@ -35,7 +35,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGSplineHologram(); \
 	friend struct Z_Construct_UClass_AFGSplineHologram_Statics; \
@@ -44,7 +44,7 @@ public: \
 	DECLARE_SERIALIZER(AFGSplineHologram)
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGSplineHologram(); \
 	friend struct Z_Construct_UClass_AFGSplineHologram_Statics; \
@@ -53,7 +53,7 @@ public: \
 	DECLARE_SERIALIZER(AFGSplineHologram)
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGSplineHologram(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGSplineHologram) \
@@ -66,7 +66,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGSplineHologram(AFGSplineHologram&&); \
@@ -77,30 +77,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGSplineHologram); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGSplineHologram)
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mSplineComponent() { return STRUCT_OFFSET(AFGSplineHologram, mSplineComponent); } \
 	FORCEINLINE static uint32 __PPO__mSplineData() { return STRUCT_OFFSET(AFGSplineHologram, mSplineData); }
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_17_PROLOG
-#define FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_17_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_INCLASS \
-	FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h_20_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -108,7 +108,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class AFGSplineHologram>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Hologram_FGSplineHologram_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_Hologram_FGSplineHologram_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

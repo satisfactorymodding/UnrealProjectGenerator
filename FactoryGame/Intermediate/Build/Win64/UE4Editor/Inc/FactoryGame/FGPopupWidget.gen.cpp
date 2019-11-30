@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/FGPopupWidget.h"
+#include "FactoryGame/Public/UI/FGPopupWidget.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -51,7 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidget() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_PopupClosed__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_PopupClosed__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "PopupClosed__DelegateSignature", sizeof(_Script_FactoryGame_eventPopupClosed_Parms), Z_Construct_UDelegateFunction_FactoryGame_PopupClosed__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PopupClosed__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00120000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_PopupClosed__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PopupClosed__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidget() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_PopupConfirmClicked__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_PopupConfirmClicked__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "PopupConfirmClicked__DelegateSignature", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00120000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_PopupConfirmClicked__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PopupConfirmClicked__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -100,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidget() {}
 		return EPopupId_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EPopupId(EPopupId_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EPopupId"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EPopupId_Hash() { return 1763390484U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EPopupId_Hash() { return 73790694U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EPopupId()
 	{
 #if WITH_HOT_RELOAD
@@ -119,7 +119,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidget() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+				{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -200,7 +200,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPopupData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPopupData_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FPopupData_Statics::NewStructOps()
@@ -209,48 +209,48 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPopupData
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_PopupClosedDelegate_MetaData[] = {
-		{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FDelegatePropertyParams Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_PopupClosedDelegate = { "PopupClosedDelegate", nullptr, (EPropertyFlags)0x0010000000080000, UE4CodeGen_Private::EPropertyGenFlags::Delegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPopupData, PopupClosedDelegate), Z_Construct_UDelegateFunction_FactoryGame_PopupClosed__DelegateSignature, METADATA_PARAMS(Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_PopupClosedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_PopupClosedDelegate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_PopupConfirmClickedDelegate_MetaData[] = {
-		{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FDelegatePropertyParams Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_PopupConfirmClickedDelegate = { "PopupConfirmClickedDelegate", nullptr, (EPropertyFlags)0x0010000020080000, UE4CodeGen_Private::EPropertyGenFlags::Delegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPopupData, PopupConfirmClickedDelegate_DEPRECATED), Z_Construct_UDelegateFunction_FactoryGame_PopupConfirmClicked__DelegateSignature, METADATA_PARAMS(Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_PopupConfirmClickedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_PopupConfirmClickedDelegate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_Instigator_MetaData[] = {
 		{ "Category", "Popup" },
-		{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_Instigator = { "Instigator", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPopupData, Instigator), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_Instigator_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_Instigator_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_PopupClass_MetaData[] = {
 		{ "Category", "Popup" },
-		{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_PopupClass = { "PopupClass", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPopupData, PopupClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_PopupClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_PopupClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_ID_MetaData[] = {
 		{ "Category", "Popup" },
-		{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_ID = { "ID", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPopupData, ID), Z_Construct_UEnum_FactoryGame_EPopupId, METADATA_PARAMS(Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_ID_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_ID_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_Body_MetaData[] = {
 		{ "Category", "Popup" },
-		{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_Body = { "Body", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPopupData, Body), METADATA_PARAMS(Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_Body_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_Body_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_Title_MetaData[] = {
 		{ "Category", "Popup" },
-		{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_Title = { "Title", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPopupData, Title), METADATA_PARAMS(Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_Title_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPopupData_Statics::NewProp_Title_MetaData)) };
@@ -291,7 +291,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPopupData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPopupData_Hash() { return 2384077932U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPopupData_Hash() { return 67707046U; }
 	void UFGPopupWidget::StaticRegisterNativesUFGPopupWidget()
 	{
 		UClass* Class = UFGPopupWidget::StaticClass();
@@ -326,7 +326,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPopupData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPopupWidget_CallPopupClosedClicked_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Popup" },
-		{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPopupWidget_CallPopupClosedClicked_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPopupWidget, nullptr, "CallPopupClosedClicked", sizeof(FGPopupWidget_eventCallPopupClosedClicked_Parms), Z_Construct_UFunction_UFGPopupWidget_CallPopupClosedClicked_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidget_CallPopupClosedClicked_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidget_CallPopupClosedClicked_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidget_CallPopupClosedClicked_Statics::Function_MetaDataParams)) };
@@ -351,7 +351,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPopupData
 		{ "Category", "Popup" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use CallPopupClosedClicked instead" },
-		{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPopupWidget_CallPopupConfirmClicked_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPopupWidget, nullptr, "CallPopupConfirmClicked", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidget_CallPopupConfirmClicked_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidget_CallPopupConfirmClicked_Statics::Function_MetaDataParams)) };
@@ -396,32 +396,32 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPopupData
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGPopupWidget_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGPopupWidget_CallPopupClosedClicked, "CallPopupClosedClicked" }, // 2734699611
-		{ &Z_Construct_UFunction_UFGPopupWidget_CallPopupConfirmClicked, "CallPopupConfirmClicked" }, // 2225117284
+		{ &Z_Construct_UFunction_UFGPopupWidget_CallPopupClosedClicked, "CallPopupClosedClicked" }, // 3239702877
+		{ &Z_Construct_UFunction_UFGPopupWidget_CallPopupConfirmClicked, "CallPopupConfirmClicked" }, // 1406114207
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPopupWidget_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "UI/FGPopupWidget.h" },
-		{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPopupWidget_Statics::NewProp_mInstigator_MetaData[] = {
 		{ "Category", "Popup" },
-		{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGPopupWidget_Statics::NewProp_mInstigator = { "mInstigator", nullptr, (EPropertyFlags)0x0010000000020005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPopupWidget, mInstigator), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGPopupWidget_Statics::NewProp_mInstigator_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPopupWidget_Statics::NewProp_mInstigator_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPopupWidget_Statics::NewProp_mPopupClosedDelegate_MetaData[] = {
-		{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 		{ "ToolTip", "Delegate for when pressing the confirm button in popup" },
 	};
 #endif
 	const UE4CodeGen_Private::FDelegatePropertyParams Z_Construct_UClass_UFGPopupWidget_Statics::NewProp_mPopupClosedDelegate = { "mPopupClosedDelegate", nullptr, (EPropertyFlags)0x0010000000080000, UE4CodeGen_Private::EPropertyGenFlags::Delegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPopupWidget, mPopupClosedDelegate), Z_Construct_UDelegateFunction_FactoryGame_PopupClosed__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGPopupWidget_Statics::NewProp_mPopupClosedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPopupWidget_Statics::NewProp_mPopupClosedDelegate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPopupWidget_Statics::NewProp_mPopupConfirmClickedDelegate_MetaData[] = {
-		{ "ModuleRelativePath", "UI/FGPopupWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGPopupWidget.h" },
 		{ "ToolTip", "Delegate for when pressing the confirm button in popup" },
 	};
 #endif
@@ -458,7 +458,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPopupData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPopupWidget, 7648200);
+	IMPLEMENT_CLASS(UFGPopupWidget, 2245074966);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGPopupWidget>()
 	{
 		return UFGPopupWidget::StaticClass();

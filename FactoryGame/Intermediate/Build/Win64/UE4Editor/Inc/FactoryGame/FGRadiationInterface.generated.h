@@ -15,7 +15,7 @@ class UFGDamageType;
 #endif
 #define FACTORYGAME_FGRadiationInterface_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_RPC_WRAPPERS \
 	virtual void ReceiveRadiation_Implementation(float amount, float duration, FVector direction, TSubclassOf<UFGDamageType>  damageType) {}; \
  \
 	DECLARE_FUNCTION(execReceiveRadiation) \
@@ -31,7 +31,7 @@ class UFGDamageType;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void ReceiveRadiation_Implementation(float amount, float duration, FVector direction, TSubclassOf<UFGDamageType>  damageType) {}; \
  \
 	DECLARE_FUNCTION(execReceiveRadiation) \
@@ -47,7 +47,7 @@ class UFGDamageType;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_EVENT_PARMS \
 	struct FGRadiationInterface_eventReceiveRadiation_Parms \
 	{ \
 		float amount; \
@@ -57,8 +57,8 @@ class UFGDamageType;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGRadiationInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGRadiationInterface) \
@@ -71,7 +71,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGRadiationInterface(UFGRadiationInterface&&); \
@@ -82,7 +82,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGRadiationInterface); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGRadiationInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_GENERATED_UINTERFACE_BODY() \
+#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUFGRadiationInterface(); \
 	friend struct Z_Construct_UClass_UFGRadiationInterface_Statics; \
@@ -91,22 +91,22 @@ public: \
 	DECLARE_SERIALIZER(UFGRadiationInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_GENERATED_BODY_LEGACY \
 		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_STANDARD_CONSTRUCTORS \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IFGRadiationInterface() {} \
 public: \
@@ -116,7 +116,7 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_INCLASS_IINTERFACE \
+#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_INCLASS_IINTERFACE \
 protected: \
 	virtual ~IFGRadiationInterface() {} \
 public: \
@@ -126,26 +126,26 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGRadiationInterface_h_10_PROLOG \
-	FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_10_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGRadiationInterface_h_23_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_23_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_INCLASS_IINTERFACE \
+	FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGRadiationInterface_h_23_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGRadiationInterface_h_14_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -153,7 +153,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class UFGRadiationInterface>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGRadiationInterface_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

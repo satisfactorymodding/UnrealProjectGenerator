@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FACTORYGAME_RailroadNavigation_generated_h
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_RailroadNavigation_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_RailroadNavigation_h
 
 
 #define FOREACH_ENUM_ERAILROADPATHFINDINGRESULT(op) \

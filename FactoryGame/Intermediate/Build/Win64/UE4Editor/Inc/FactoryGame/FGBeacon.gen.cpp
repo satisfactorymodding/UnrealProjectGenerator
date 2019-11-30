@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGBeacon.h"
+#include "FactoryGame/Public/FGBeacon.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -46,7 +46,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBeacon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBeacon_PickUpBeacon_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Beacon" },
-		{ "ModuleRelativePath", "FGBeacon.h" },
+		{ "ModuleRelativePath", "Public/FGBeacon.h" },
 		{ "ToolTip", "Pickup the beacon by the provided player" },
 	};
 #endif
@@ -79,12 +79,12 @@ void EmptyLinkFunctionForGeneratedCodeFGBeacon() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBeacon_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBeacon_PickUpBeacon, "PickUpBeacon" }, // 3542162297
+		{ &Z_Construct_UFunction_AFGBeacon_PickUpBeacon, "PickUpBeacon" }, // 3973651777
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBeacon_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGBeacon.h" },
-		{ "ModuleRelativePath", "FGBeacon.h" },
+		{ "ModuleRelativePath", "Public/FGBeacon.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGBeacon_Statics::StaticCppClassTypeInfo = {
@@ -114,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBeacon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBeacon, 3769356614);
+	IMPLEMENT_CLASS(AFGBeacon, 1780876284);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBeacon>()
 	{
 		return AFGBeacon::StaticClass();

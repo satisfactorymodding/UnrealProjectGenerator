@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGMapArea.h"
+#include "FactoryGame/Public/FGMapArea.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -57,7 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "MapArea" },
-		{ "ModuleRelativePath", "FGMapArea.h" },
+		{ "ModuleRelativePath", "Public/FGMapArea.h" },
 		{ "ToolTip", "Get area display name" },
 	};
 #endif
@@ -95,7 +95,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "MapArea" },
-		{ "ModuleRelativePath", "FGMapArea.h" },
+		{ "ModuleRelativePath", "Public/FGMapArea.h" },
 		{ "ToolTip", "Get area display name" },
 	};
 #endif
@@ -133,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::Function_MetaDataParams[] = {
 		{ "Category", "MapArea" },
-		{ "ModuleRelativePath", "FGMapArea.h" },
+		{ "ModuleRelativePath", "Public/FGMapArea.h" },
 		{ "ToolTip", "Get the CDO of the zone type" },
 	};
 #endif
@@ -179,21 +179,21 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMapArea_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName, "GetAreaDisplayName" }, // 1334393626
-		{ &Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName, "GetUserSetAreaDisplayName" }, // 2354733732
-		{ &Z_Construct_UFunction_UFGMapArea_GetZoneType, "GetZoneType" }, // 487119427
+		{ &Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName, "GetAreaDisplayName" }, // 842284103
+		{ &Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName, "GetUserSetAreaDisplayName" }, // 1354195935
+		{ &Z_Construct_UFunction_UFGMapArea_GetZoneType, "GetZoneType" }, // 3731500562
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapArea_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGMapArea.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGMapArea.h" },
+		{ "ModuleRelativePath", "Public/FGMapArea.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapArea_Statics::NewProp_mUserSetDisplayName_MetaData[] = {
-		{ "ModuleRelativePath", "FGMapArea.h" },
+		{ "ModuleRelativePath", "Public/FGMapArea.h" },
 		{ "ToolTip", "This is the name the player has given this area" },
 	};
 #endif
@@ -201,7 +201,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapArea_Statics::NewProp_mZoneType_MetaData[] = {
 		{ "Category", "MapArea" },
-		{ "ModuleRelativePath", "FGMapArea.h" },
+		{ "ModuleRelativePath", "Public/FGMapArea.h" },
 		{ "ToolTip", "What kind of zone this is" },
 	};
 #endif
@@ -209,7 +209,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapArea_Statics::NewProp_mDisplayName_MetaData[] = {
 		{ "Category", "MapArea" },
-		{ "ModuleRelativePath", "FGMapArea.h" },
+		{ "ModuleRelativePath", "Public/FGMapArea.h" },
 		{ "ToolTip", "This is the name we at CSS gave this area" },
 	};
 #endif
@@ -246,7 +246,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMapArea, 4166395127);
+	IMPLEMENT_CLASS(UFGMapArea, 4293685014);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGMapArea>()
 	{
 		return UFGMapArea::StaticClass();

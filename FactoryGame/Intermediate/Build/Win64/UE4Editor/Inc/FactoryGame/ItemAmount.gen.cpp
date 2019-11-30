@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/ItemAmount.h"
+#include "FactoryGame/Public/ItemAmount.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -60,7 +60,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemAmount
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemAmount_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "ItemAmount.h" },
+		{ "ModuleRelativePath", "Public/ItemAmount.h" },
 		{ "ToolTip", "Struct used to specify an amount of items.\nE.g. a cost, a recipe product or ingredient." },
 	};
 #endif
@@ -72,7 +72,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemAmount
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_Amount_MetaData[] = {
 		{ "Category", "Item" },
 		{ "ClampMin", "0" },
-		{ "ModuleRelativePath", "ItemAmount.h" },
+		{ "ModuleRelativePath", "Public/ItemAmount.h" },
 		{ "ToolTip", "The amount of this item." },
 	};
 #endif
@@ -80,7 +80,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemAmount
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_ItemClass_MetaData[] = {
 		{ "Category", "Item" },
-		{ "ModuleRelativePath", "ItemAmount.h" },
+		{ "ModuleRelativePath", "Public/ItemAmount.h" },
 		{ "ToolTip", "The item." },
 	};
 #endif
@@ -117,7 +117,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemAmount
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemAmount_Hash() { return 367179603U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemAmount_Hash() { return 147549256U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

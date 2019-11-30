@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGSpaceElevatorHologram.h"
+#include "FactoryGame/Public/Hologram/FGSpaceElevatorHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSpaceElevatorHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSpaceElevatorHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGSpaceElevatorHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGSpaceElevatorHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGSpaceElevatorHologram.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGSpaceElevatorHologram_Statics::StaticCppClassTypeInfo = {
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSpaceElevatorHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSpaceElevatorHologram, 123669240);
+	IMPLEMENT_CLASS(AFGSpaceElevatorHologram, 2849821484);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSpaceElevatorHologram>()
 	{
 		return AFGSpaceElevatorHologram::StaticClass();

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGWeaponAttachment.h"
+#include "FactoryGame/Public/Equipment/FGWeaponAttachment.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeaponAttachment_ClientPlayReloadEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Attachment" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponAttachment.h" },
 		{ "ToolTip", "For client only" },
 	};
 #endif
@@ -91,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeaponAttachment_Multicast_PlayReloadEffectMulticast_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Attachment" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponAttachment.h" },
 		{ "ToolTip", "Called on all relevant attachments" },
 	};
 #endif
@@ -129,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Attachment" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponAttachment.h" },
 		{ "ToolTip", "Called on all relevant attachments" },
 	};
 #endif
@@ -159,7 +159,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Attachment" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponAttachment.h" },
 		{ "ToolTip", "Handles playing of effects on remote clients" },
 	};
 #endif
@@ -192,15 +192,15 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachment() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGWeaponAttachment_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGWeaponAttachment_ClientPlayReloadEffect, "ClientPlayReloadEffect" }, // 1391095339
-		{ &Z_Construct_UFunction_AFGWeaponAttachment_Multicast_PlayReloadEffectMulticast, "Multicast_PlayReloadEffectMulticast" }, // 2298775770
-		{ &Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation, "Multicast_SetFlashLocation" }, // 2768745238
-		{ &Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect, "PlayFireEffect" }, // 2701147049
+		{ &Z_Construct_UFunction_AFGWeaponAttachment_ClientPlayReloadEffect, "ClientPlayReloadEffect" }, // 3613027965
+		{ &Z_Construct_UFunction_AFGWeaponAttachment_Multicast_PlayReloadEffectMulticast, "Multicast_PlayReloadEffectMulticast" }, // 1982857922
+		{ &Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation, "Multicast_SetFlashLocation" }, // 134404242
+		{ &Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect, "PlayFireEffect" }, // 2708598400
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeaponAttachment_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGWeaponAttachment.h" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponAttachment.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGWeaponAttachment_Statics::StaticCppClassTypeInfo = {
@@ -230,7 +230,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWeaponAttachment, 3361053024);
+	IMPLEMENT_CLASS(AFGWeaponAttachment, 1927692046);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWeaponAttachment>()
 	{
 		return AFGWeaponAttachment::StaticClass();

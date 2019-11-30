@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGObjectScanner.h"
+#include "FactoryGame/Public/Equipment/FGObjectScanner.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -103,7 +103,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FScannableDetails_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FScannableDetails_Statics::NewStructOps()
@@ -113,7 +113,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FScannableDetails_Statics::NewProp_RequiredSchematic_MetaData[] = {
 		{ "Category", "ScannableDetails" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Required schematic to search for this object. None means no requirement." },
 	};
 #endif
@@ -122,7 +122,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FScannableDetails_Statics::NewProp_NewDetectionRange_MetaData[] = {
 		{ "Category", "ScannableDetails" },
 		{ "EditCondition", "ShouldOverrideDetectionRange" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Override the base detection range of the scanner" },
 	};
 #endif
@@ -130,7 +130,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FScannableDetails_Statics::NewProp_ShouldOverrideDetectionRange_MetaData[] = {
 		{ "Category", "ScannableDetails" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "If true, NewDetectionRange will be used." },
 	};
 #endif
@@ -142,7 +142,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FScannableDetails_Statics::NewProp_PreCacheAllOfType_MetaData[] = {
 		{ "Category", "ScannableDetails" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Should we get all actors at load and cache them? or do we need to update these every frame.\nBetter to cache it, but some things can't be cached (eg. Enemies)" },
 	};
 #endif
@@ -154,7 +154,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FScannableDetails_Statics::NewProp_ScannerLightColor_MetaData[] = {
 		{ "Category", "ScannableDetails" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Scanner light color" },
 	};
 #endif
@@ -162,7 +162,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FScannableDetails_Statics::NewProp_DisplayText_MetaData[] = {
 		{ "Category", "ScannableDetails" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Name of object to scan for" },
 	};
 #endif
@@ -170,7 +170,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FScannableDetails_Statics::NewProp_ScannableClass_MetaData[] = {
 		{ "Category", "ScannableDetails" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Type of object to scan for" },
 	};
 #endif
@@ -212,7 +212,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FScannableDetails_Hash() { return 3957793703U; }
+	uint32 Get_Z_Construct_UScriptStruct_FScannableDetails_Hash() { return 1768471417U; }
 	static FName NAME_AFGObjectScanner_PlayBeep = FName(TEXT("PlayBeep"));
 	void AFGObjectScanner::PlayBeep(bool isObjectInRange)
 	{
@@ -265,7 +265,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGObjectScanner_CycleBackward_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Cycles scannable type backward and updates the light on the attachment\n@return true if there was a setting change, false means there was nothing to cycle to" },
 	};
 #endif
@@ -304,7 +304,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGObjectScanner_CycleForward_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Cycles scannable type forward and updates the light on the attachment\n@return true if there was a setting change, false means there was nothing to cycle to" },
 	};
 #endif
@@ -341,7 +341,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGObjectScanner_GetAvailableObjectDetails_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Returns array with all object details that we can search for" },
 	};
 #endif
@@ -375,7 +375,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGObjectScanner_GetCurrentDetails_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Does what it says on the tin: get's the current details" },
 	};
 #endif
@@ -414,7 +414,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGObjectScanner_IsBeeping_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGObjectScanner_IsBeeping_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGObjectScanner, nullptr, "IsBeeping", sizeof(FGObjectScanner_eventIsBeeping_Parms), Z_Construct_UFunction_AFGObjectScanner_IsBeeping_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGObjectScanner_IsBeeping_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGObjectScanner_IsBeeping_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGObjectScanner_IsBeeping_Statics::Function_MetaDataParams)) };
@@ -448,7 +448,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGObjectScanner_PlayBeep_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "guess what this does." },
 	};
 #endif
@@ -482,7 +482,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGObjectScanner_SetScannableEntry_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Sets to a desired scannable entry" },
 	};
 #endif
@@ -517,7 +517,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGObjectScanner_UpdateScannerVisuals_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Set light color etc.\n@param wasChange is true if there was a scanner setting change, false if not. eg. false when initialising scanner, true when you change what you are scanning for." },
 	};
 #endif
@@ -581,25 +581,25 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGObjectScanner_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGObjectScanner_CycleBackward, "CycleBackward" }, // 1860345406
-		{ &Z_Construct_UFunction_AFGObjectScanner_CycleForward, "CycleForward" }, // 3314757669
-		{ &Z_Construct_UFunction_AFGObjectScanner_GetAvailableObjectDetails, "GetAvailableObjectDetails" }, // 1701553145
-		{ &Z_Construct_UFunction_AFGObjectScanner_GetCurrentDetails, "GetCurrentDetails" }, // 722578728
-		{ &Z_Construct_UFunction_AFGObjectScanner_IsBeeping, "IsBeeping" }, // 1604462409
-		{ &Z_Construct_UFunction_AFGObjectScanner_PlayBeep, "PlayBeep" }, // 1182810619
-		{ &Z_Construct_UFunction_AFGObjectScanner_SetScannableEntry, "SetScannableEntry" }, // 3752967831
-		{ &Z_Construct_UFunction_AFGObjectScanner_UpdateScannerVisuals, "UpdateScannerVisuals" }, // 2422195209
+		{ &Z_Construct_UFunction_AFGObjectScanner_CycleBackward, "CycleBackward" }, // 762079974
+		{ &Z_Construct_UFunction_AFGObjectScanner_CycleForward, "CycleForward" }, // 3532972765
+		{ &Z_Construct_UFunction_AFGObjectScanner_GetAvailableObjectDetails, "GetAvailableObjectDetails" }, // 283834177
+		{ &Z_Construct_UFunction_AFGObjectScanner_GetCurrentDetails, "GetCurrentDetails" }, // 2199957499
+		{ &Z_Construct_UFunction_AFGObjectScanner_IsBeeping, "IsBeeping" }, // 2182566188
+		{ &Z_Construct_UFunction_AFGObjectScanner_PlayBeep, "PlayBeep" }, // 2230684134
+		{ &Z_Construct_UFunction_AFGObjectScanner_SetScannableEntry, "SetScannableEntry" }, // 2353259446
+		{ &Z_Construct_UFunction_AFGObjectScanner_UpdateScannerVisuals, "UpdateScannerVisuals" }, // 3803522533
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGObjectScanner_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGObjectScanner.h" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGObjectScanner_Statics::NewProp_mShouldBeepEvenIfNoObject_MetaData[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "If true, the scanner beeps even if there is nothing within range. If false, it starts beeping if something comes within range." },
 	};
 #endif
@@ -611,7 +611,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGObjectScanner_Statics::NewProp_mClosestObject_MetaData[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "The current closest Object" },
 	};
 #endif
@@ -619,7 +619,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGObjectScanner_Statics::NewProp_mObjectDetails_MetaData[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Details regarding what we should scan.\n@note order is important here. the order this is in is the order that the scanner's toggle will be in." },
 	};
 #endif
@@ -628,7 +628,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGObjectScanner_Statics::NewProp_mUpdateClosestObjectTime_MetaData[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "\"the closest\" Object doesn't really need to be updated every frame. Maybe every second, or 2, or so." },
 	};
 #endif
@@ -636,7 +636,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGObjectScanner_Statics::NewProp_mDetectionRange_MetaData[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Detection range of the scanner" },
 	};
 #endif
@@ -644,7 +644,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGObjectScanner_Statics::NewProp_mBeepDelayMin_MetaData[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Minimum delay (in seconds) between each beep" },
 	};
 #endif
@@ -652,7 +652,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGObjectScanner_Statics::NewProp_mBeepDelayMax_MetaData[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Maximum delay (in seconds) between each beep" },
 	};
 #endif
@@ -694,7 +694,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGObjectScanner, 1672159763);
+	IMPLEMENT_CLASS(AFGObjectScanner, 1948013740);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGObjectScanner>()
 	{
 		return AFGObjectScanner::StaticClass();
@@ -737,7 +737,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGObjectScannerAttachment_GetScannerLightColor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGObjectScannerAttachment_GetScannerLightColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGObjectScannerAttachment, nullptr, "GetScannerLightColor", sizeof(FGObjectScannerAttachment_eventGetScannerLightColor_Parms), Z_Construct_UFunction_AFGObjectScannerAttachment_GetScannerLightColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGObjectScannerAttachment_GetScannerLightColor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGObjectScannerAttachment_GetScannerLightColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGObjectScannerAttachment_GetScannerLightColor_Statics::Function_MetaDataParams)) };
@@ -775,7 +775,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGObjectScannerAttachment_IsBeeping_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGObjectScannerAttachment_IsBeeping_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGObjectScannerAttachment, nullptr, "IsBeeping", sizeof(FGObjectScannerAttachment_eventIsBeeping_Parms), Z_Construct_UFunction_AFGObjectScannerAttachment_IsBeeping_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGObjectScannerAttachment_IsBeeping_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGObjectScannerAttachment_IsBeeping_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGObjectScannerAttachment_IsBeeping_Statics::Function_MetaDataParams)) };
@@ -797,7 +797,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGObjectScannerAttachment_OnRep_IsBeeping_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGObjectScannerAttachment_OnRep_IsBeeping_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGObjectScannerAttachment, nullptr, "OnRep_IsBeeping", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGObjectScannerAttachment_OnRep_IsBeeping_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGObjectScannerAttachment_OnRep_IsBeeping_Statics::Function_MetaDataParams)) };
@@ -819,7 +819,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGObjectScannerAttachment_OnRep_ScannerLightColor_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGObjectScannerAttachment_OnRep_ScannerLightColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGObjectScannerAttachment, nullptr, "OnRep_ScannerLightColor", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGObjectScannerAttachment_OnRep_ScannerLightColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGObjectScannerAttachment_OnRep_ScannerLightColor_Statics::Function_MetaDataParams)) };
@@ -842,7 +842,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGObjectScannerAttachment_UpdateScannerVisuals_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGObjectScannerAttachment_UpdateScannerVisuals_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGObjectScannerAttachment, nullptr, "UpdateScannerVisuals", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGObjectScannerAttachment_UpdateScannerVisuals_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGObjectScannerAttachment_UpdateScannerVisuals_Statics::Function_MetaDataParams)) };
@@ -884,28 +884,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGObjectScannerAttachment_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGObjectScannerAttachment_GetScannerLightColor, "GetScannerLightColor" }, // 3149799633
-		{ &Z_Construct_UFunction_AFGObjectScannerAttachment_IsBeeping, "IsBeeping" }, // 1057722986
-		{ &Z_Construct_UFunction_AFGObjectScannerAttachment_OnRep_IsBeeping, "OnRep_IsBeeping" }, // 101753384
-		{ &Z_Construct_UFunction_AFGObjectScannerAttachment_OnRep_ScannerLightColor, "OnRep_ScannerLightColor" }, // 1505345039
-		{ &Z_Construct_UFunction_AFGObjectScannerAttachment_UpdateScannerVisuals, "UpdateScannerVisuals" }, // 2799378156
+		{ &Z_Construct_UFunction_AFGObjectScannerAttachment_GetScannerLightColor, "GetScannerLightColor" }, // 3550458892
+		{ &Z_Construct_UFunction_AFGObjectScannerAttachment_IsBeeping, "IsBeeping" }, // 3450087419
+		{ &Z_Construct_UFunction_AFGObjectScannerAttachment_OnRep_IsBeeping, "OnRep_IsBeeping" }, // 3427004158
+		{ &Z_Construct_UFunction_AFGObjectScannerAttachment_OnRep_ScannerLightColor, "OnRep_ScannerLightColor" }, // 2712170410
+		{ &Z_Construct_UFunction_AFGObjectScannerAttachment_UpdateScannerVisuals, "UpdateScannerVisuals" }, // 379093099
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGObjectScannerAttachment_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGObjectScanner.h" },
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGObjectScannerAttachment_Statics::NewProp_mScannerLightColor_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "Scanner light color" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGObjectScannerAttachment_Statics::NewProp_mScannerLightColor = { "mScannerLightColor", "OnRep_ScannerLightColor", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGObjectScannerAttachment, mScannerLightColor), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UClass_AFGObjectScannerAttachment_Statics::NewProp_mScannerLightColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGObjectScannerAttachment_Statics::NewProp_mScannerLightColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGObjectScannerAttachment_Statics::NewProp_mIsBeeping_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGObjectScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
 		{ "ToolTip", "True if scanner is beeping" },
 	};
 #endif
@@ -945,7 +945,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGObjectScannerAttachment, 375378849);
+	IMPLEMENT_CLASS(AFGObjectScannerAttachment, 1516485112);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGObjectScannerAttachment>()
 	{
 		return AFGObjectScannerAttachment::StaticClass();

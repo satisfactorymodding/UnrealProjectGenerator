@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGRecipeShortcut.h"
+#include "FactoryGame/Public/FGRecipeShortcut.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -53,7 +53,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeShortcut() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipeShortcut_GetRecipe_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Shortcut" },
-		{ "ModuleRelativePath", "FGRecipeShortcut.h" },
+		{ "ModuleRelativePath", "Public/FGRecipeShortcut.h" },
 		{ "ToolTip", "Get the recipe we want to activate when activating this shortcut" },
 	};
 #endif
@@ -76,7 +76,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeShortcut() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipeShortcut_OnRep_Recipe_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGRecipeShortcut.h" },
+		{ "ModuleRelativePath", "Public/FGRecipeShortcut.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRecipeShortcut_OnRep_Recipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRecipeShortcut, nullptr, "OnRep_Recipe", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRecipeShortcut_OnRep_Recipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipeShortcut_OnRep_Recipe_Statics::Function_MetaDataParams)) };
@@ -109,7 +109,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeShortcut() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipeShortcut_SetRecipe_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Shortcut" },
-		{ "ModuleRelativePath", "FGRecipeShortcut.h" },
+		{ "ModuleRelativePath", "Public/FGRecipeShortcut.h" },
 		{ "ToolTip", "Set the recipe of the current shortcut, the recipe will be saved\n@param recipe - null is valid, then we won't have any shortcut show up" },
 	};
 #endif
@@ -147,19 +147,19 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeShortcut() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGRecipeShortcut_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGRecipeShortcut_GetRecipe, "GetRecipe" }, // 2441737549
-		{ &Z_Construct_UFunction_UFGRecipeShortcut_OnRep_Recipe, "OnRep_Recipe" }, // 316449101
-		{ &Z_Construct_UFunction_UFGRecipeShortcut_SetRecipe, "SetRecipe" }, // 880891521
+		{ &Z_Construct_UFunction_UFGRecipeShortcut_GetRecipe, "GetRecipe" }, // 3029874368
+		{ &Z_Construct_UFunction_UFGRecipeShortcut_OnRep_Recipe, "OnRep_Recipe" }, // 3022446977
+		{ &Z_Construct_UFunction_UFGRecipeShortcut_SetRecipe, "SetRecipe" }, // 2657339964
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRecipeShortcut_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGRecipeShortcut.h" },
-		{ "ModuleRelativePath", "FGRecipeShortcut.h" },
+		{ "ModuleRelativePath", "Public/FGRecipeShortcut.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRecipeShortcut_Statics::NewProp_mRecipeToActivate_MetaData[] = {
-		{ "ModuleRelativePath", "FGRecipeShortcut.h" },
+		{ "ModuleRelativePath", "Public/FGRecipeShortcut.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGRecipeShortcut_Statics::NewProp_mRecipeToActivate = { "mRecipeToActivate", "OnRep_Recipe", (EPropertyFlags)0x0024080101000020, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRecipeShortcut, mRecipeToActivate), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGRecipeShortcut_Statics::NewProp_mRecipeToActivate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRecipeShortcut_Statics::NewProp_mRecipeToActivate_MetaData)) };
@@ -193,7 +193,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeShortcut() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRecipeShortcut, 4076867375);
+	IMPLEMENT_CLASS(UFGRecipeShortcut, 1318240528);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGRecipeShortcut>()
 	{
 		return UFGRecipeShortcut::StaticClass();

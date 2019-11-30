@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGVehicle.h"
+#include "FactoryGame/Public/FGVehicle.h"
 #include "Serialization/ArchiveUObjectFromStructuredArchive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -135,7 +135,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleSeat
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleSeat_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FVehicleSeat_Statics::NewStructOps()
@@ -144,20 +144,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleSeat
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleSeat_Statics::NewProp_mController_MetaData[] = {
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FVehicleSeat_Statics::NewProp_mController = { "mController", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleSeat, mController), Z_Construct_UClass_AController_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleSeat_Statics::NewProp_mController_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleSeat_Statics::NewProp_mController_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleSeat_Statics::NewProp_mCharacter_MetaData[] = {
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Info about the character in this seat." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FVehicleSeat_Statics::NewProp_mCharacter = { "mCharacter", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleSeat, mCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleSeat_Statics::NewProp_mCharacter_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleSeat_Statics::NewProp_mCharacter_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleSeat_Statics::NewProp_mSeatPawn_MetaData[] = {
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Pawn we possess when entering this seat." },
 	};
 #endif
@@ -165,7 +165,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleSeat
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleSeat_Statics::NewProp_DamageMultiplier_MetaData[] = {
 		{ "Category", "VehicleSeat" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "How much damage do we take in this seat." },
 	};
 #endif
@@ -173,7 +173,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleSeat
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleSeat_Statics::NewProp_SitAnimation_MetaData[] = {
 		{ "Category", "VehicleSeat" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Animation to play on characters in this seat." },
 	};
 #endif
@@ -181,7 +181,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleSeat
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleSeat_Statics::NewProp_IsVisible_MetaData[] = {
 		{ "Category", "VehicleSeat" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Is seat and characters in this seat visible." },
 	};
 #endif
@@ -193,7 +193,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleSeat
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleSeat_Statics::NewProp_SitSocket_MetaData[] = {
 		{ "Category", "VehicleSeat" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Socket to attach character to." },
 	};
 #endif
@@ -201,7 +201,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleSeat
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleSeat_Statics::NewProp_SeatClass_MetaData[] = {
 		{ "Category", "VehicleSeat" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Seat class to spawn." },
 	};
 #endif
@@ -244,7 +244,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleSeat
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FVehicleSeat_Hash() { return 1770073556U; }
+	uint32 Get_Z_Construct_UScriptStruct_FVehicleSeat_Hash() { return 515559835U; }
 class UScriptStruct* FVehiclePhysicsData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -277,7 +277,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehiclePhysicsData_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Physics data we want to be able to restore, we store the bone name to be able to change the bone structure in updates" },
 	};
 #endif
@@ -313,7 +313,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FVehiclePhysicsData_Hash() { return 1226713977U; }
+	uint32 Get_Z_Construct_UScriptStruct_FVehiclePhysicsData_Hash() { return 2198823278U; }
 	void UFGUseState_VehicleHasDriver::StaticRegisterNativesUFGUseState_VehicleHasDriver()
 	{
 	}
@@ -337,7 +337,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseState_VehicleHasDriver_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGVehicle.h" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Vehicle has a driver but has empty passenger seats" },
 	};
 #endif
@@ -368,7 +368,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_VehicleHasDriver, 4103423507);
+	IMPLEMENT_CLASS(UFGUseState_VehicleHasDriver, 2322139421);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_VehicleHasDriver>()
 	{
 		return UFGUseState_VehicleHasDriver::StaticClass();
@@ -398,7 +398,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseState_VehicleInWater_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGVehicle.h" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Vehicle is in water, can't enter" },
 	};
 #endif
@@ -429,7 +429,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_VehicleInWater, 905150343);
+	IMPLEMENT_CLASS(UFGUseState_VehicleInWater, 4243459587);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_VehicleInWater>()
 	{
 		return UFGUseState_VehicleInWater::StaticClass();
@@ -459,7 +459,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseState_VehicleOccupied_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGVehicle.h" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Vehicle is fully occupied" },
 	};
 #endif
@@ -490,7 +490,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_VehicleOccupied, 3884982991);
+	IMPLEMENT_CLASS(UFGUseState_VehicleOccupied, 3612949086);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_VehicleOccupied>()
 	{
 		return UFGUseState_VehicleOccupied::StaticClass();
@@ -580,7 +580,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_CanSelfDriverEnter_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle|SelfDriving" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "@return true if an ai can start driving this vehicle; false otherwise. (server only)" },
 	};
 #endif
@@ -613,7 +613,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_Died_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGVehicle_Died_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGVehicle, nullptr, "Died", sizeof(FGVehicle_eventDied_Parms), Z_Construct_UFunction_AFGVehicle_Died_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGVehicle_Died_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGVehicle_Died_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGVehicle_Died_Statics::Function_MetaDataParams)) };
@@ -645,7 +645,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_GetDismantleBlueprintReturns_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Dismantle" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "If blueprint has anything to return when this vehicle is dismantled. Not consolidated." },
 	};
 #endif
@@ -687,7 +687,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_GetHealthComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Damage" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Health component for this vehicle" },
 	};
 #endif
@@ -726,7 +726,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_GetIsSignificant_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Vehicle|Significance" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Getter for significance" },
 	};
 #endif
@@ -765,7 +765,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_HasAnyPassengerSeatAvailable_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Check if any passenger seats are available" },
 	};
 #endif
@@ -804,7 +804,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_IsDestructible_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Damage" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Is this vehicle destructible" },
 	};
 #endif
@@ -843,7 +843,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_IsSelfDriving_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle|SelfDriving" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "@return true if there's an ai controlling this vehicle; false otherwise." },
 	};
 #endif
@@ -867,7 +867,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_KickAllPlayers_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Kicks out all players in the vehicle including its passengers\nCan be called on both client and server." },
 	};
 #endif
@@ -918,7 +918,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_NotifyOnTakeDamage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Damage" },
 		{ "DisplayName", "OnTakeDamage" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "We have taken damage" },
 	};
 #endif
@@ -975,7 +975,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_OnTakeDamage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Notifies from our health component" },
 	};
 #endif
@@ -1006,7 +1006,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_ReceiveDied_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Damage" },
 		{ "DisplayName", "Died" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "We have died" },
 	};
 #endif
@@ -1030,7 +1030,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_ReceiveOnVehicleShutDown_Statics::Function_MetaDataParams[] = {
 		{ "DisplayName", "OnVehicleShutDown" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Called when the vehicle (engine) is shut down." },
 	};
 #endif
@@ -1054,7 +1054,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_ReceiveOnVehicleStartup_Statics::Function_MetaDataParams[] = {
 		{ "DisplayName", "OnVehicleStartup" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Called when the vehicle (engine) is started." },
 	};
 #endif
@@ -1097,7 +1097,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_SelfDriverEnter_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle|SelfDriving" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Let an ai enter the vehicle. Will not succeed if there is a human driver in the vehicle already." },
 	};
 #endif
@@ -1130,7 +1130,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_UpdatePhysicsVolume_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Notifies from out mesh" },
 	};
 #endif
@@ -1260,28 +1260,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGVehicle_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGVehicle_CanSelfDriverEnter, "CanSelfDriverEnter" }, // 52803493
-		{ &Z_Construct_UFunction_AFGVehicle_Died, "Died" }, // 1788384705
-		{ &Z_Construct_UFunction_AFGVehicle_GetDismantleBlueprintReturns, "GetDismantleBlueprintReturns" }, // 74250710
-		{ &Z_Construct_UFunction_AFGVehicle_GetHealthComponent, "GetHealthComponent" }, // 1361142973
-		{ &Z_Construct_UFunction_AFGVehicle_GetIsSignificant, "GetIsSignificant" }, // 3913490599
-		{ &Z_Construct_UFunction_AFGVehicle_HasAnyPassengerSeatAvailable, "HasAnyPassengerSeatAvailable" }, // 3138165151
-		{ &Z_Construct_UFunction_AFGVehicle_IsDestructible, "IsDestructible" }, // 3567261120
-		{ &Z_Construct_UFunction_AFGVehicle_IsSelfDriving, "IsSelfDriving" }, // 2284378074
-		{ &Z_Construct_UFunction_AFGVehicle_KickAllPlayers, "KickAllPlayers" }, // 4001051587
-		{ &Z_Construct_UFunction_AFGVehicle_NotifyOnTakeDamage, "NotifyOnTakeDamage" }, // 4147265546
-		{ &Z_Construct_UFunction_AFGVehicle_OnTakeDamage, "OnTakeDamage" }, // 580932867
-		{ &Z_Construct_UFunction_AFGVehicle_ReceiveDied, "ReceiveDied" }, // 3776376542
-		{ &Z_Construct_UFunction_AFGVehicle_ReceiveOnVehicleShutDown, "ReceiveOnVehicleShutDown" }, // 1925759682
-		{ &Z_Construct_UFunction_AFGVehicle_ReceiveOnVehicleStartup, "ReceiveOnVehicleStartup" }, // 537021935
-		{ &Z_Construct_UFunction_AFGVehicle_SelfDriverEnter, "SelfDriverEnter" }, // 2544565142
-		{ &Z_Construct_UFunction_AFGVehicle_UpdatePhysicsVolume, "UpdatePhysicsVolume" }, // 1665526410
+		{ &Z_Construct_UFunction_AFGVehicle_CanSelfDriverEnter, "CanSelfDriverEnter" }, // 3855167953
+		{ &Z_Construct_UFunction_AFGVehicle_Died, "Died" }, // 1191815471
+		{ &Z_Construct_UFunction_AFGVehicle_GetDismantleBlueprintReturns, "GetDismantleBlueprintReturns" }, // 3143544630
+		{ &Z_Construct_UFunction_AFGVehicle_GetHealthComponent, "GetHealthComponent" }, // 3369566477
+		{ &Z_Construct_UFunction_AFGVehicle_GetIsSignificant, "GetIsSignificant" }, // 2708127494
+		{ &Z_Construct_UFunction_AFGVehicle_HasAnyPassengerSeatAvailable, "HasAnyPassengerSeatAvailable" }, // 3767373702
+		{ &Z_Construct_UFunction_AFGVehicle_IsDestructible, "IsDestructible" }, // 636448827
+		{ &Z_Construct_UFunction_AFGVehicle_IsSelfDriving, "IsSelfDriving" }, // 3165849931
+		{ &Z_Construct_UFunction_AFGVehicle_KickAllPlayers, "KickAllPlayers" }, // 1806509366
+		{ &Z_Construct_UFunction_AFGVehicle_NotifyOnTakeDamage, "NotifyOnTakeDamage" }, // 1133369697
+		{ &Z_Construct_UFunction_AFGVehicle_OnTakeDamage, "OnTakeDamage" }, // 3655952262
+		{ &Z_Construct_UFunction_AFGVehicle_ReceiveDied, "ReceiveDied" }, // 2092455794
+		{ &Z_Construct_UFunction_AFGVehicle_ReceiveOnVehicleShutDown, "ReceiveOnVehicleShutDown" }, // 1341869210
+		{ &Z_Construct_UFunction_AFGVehicle_ReceiveOnVehicleStartup, "ReceiveOnVehicleStartup" }, // 23745970
+		{ &Z_Construct_UFunction_AFGVehicle_SelfDriverEnter, "SelfDriverEnter" }, // 1652230177
+		{ &Z_Construct_UFunction_AFGVehicle_UpdatePhysicsVolume, "UpdatePhysicsVolume" }, // 2656375505
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "FGVehicle.h" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "SerializeToFArchive", "" },
 		{ "ToolTip", "Base class for all vehicles in the game, cars, train etc." },
 	};
@@ -1289,7 +1289,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSignificanceRange_MetaData[] = {
 		{ "Category", "Significance" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Range that this vehicle should be significant within" },
 	};
 #endif
@@ -1297,7 +1297,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mAddToSignificanceManager_MetaData[] = {
 		{ "Category", "Significance" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Indicates if the vehicle should be handled by significance manager" },
 	};
 #endif
@@ -1309,7 +1309,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSignificanceBias_MetaData[] = {
 		{ "Category", "Significance" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "A bias to the significance value" },
 	};
 #endif
@@ -1317,7 +1317,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mGasDamageType_MetaData[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Gas damage typ that should be redirected to the driver" },
 	};
 #endif
@@ -1325,7 +1325,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSubmergedBouyantForce_MetaData[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "upwards force applied to vehicles when underwater" },
 	};
 #endif
@@ -1333,7 +1333,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSubmergedLinearDamping_MetaData[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "increased linear damping when vehicle is under water" },
 	};
 #endif
@@ -1341,14 +1341,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSubmergedAngularDamping_MetaData[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "increased angular damping when vehicle is under water" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSubmergedAngularDamping = { "mSubmergedAngularDamping", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGVehicle, mSubmergedAngularDamping), METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSubmergedAngularDamping_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSubmergedAngularDamping_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mIsSubmergedInWater_MetaData[] = {
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "If true, then we are submerged in water" },
 	};
 #endif
@@ -1360,7 +1360,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mIsDestructible_MetaData[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Can this vehicle be destroyed by damage?" },
 	};
 #endif
@@ -1372,14 +1372,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mConstructSound_MetaData[] = {
 		{ "Category", "Vehicle|Sound" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Sound played when this vehicle is created" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mConstructSound = { "mConstructSound", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGVehicle, mConstructSound), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mConstructSound_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mConstructSound_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mStoredPhysicsData_MetaData[] = {
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Saved like this, as we can't store it in serialize, as it will be killed" },
 	};
 #endif
@@ -1387,14 +1387,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mStoredPhysicsData_Inner = { "mStoredPhysicsData", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FVehiclePhysicsData, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSelfDrivingController_MetaData[] = {
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "The AI that controls this vehicle when self-driving is activated." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSelfDrivingController = { "mSelfDrivingController", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGVehicle, mSelfDrivingController), Z_Construct_UClass_AAIController_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSelfDrivingController_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSelfDrivingController_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mIsSelfDriving_MetaData[] = {
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "If this vehicle is self driving." },
 	};
 #endif
@@ -1405,21 +1405,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mIsSelfDriving = { "mIsSelfDriving", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGVehicle), &Z_Construct_UClass_AFGVehicle_Statics::NewProp_mIsSelfDriving_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mIsSelfDriving_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mIsSelfDriving_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSecondaryColor_MetaData[] = {
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "The primary color of this buildable" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSecondaryColor = { "mSecondaryColor", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGVehicle, mSecondaryColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSecondaryColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSecondaryColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mPrimaryColor_MetaData[] = {
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "The primary color of this buildable" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mPrimaryColor = { "mPrimaryColor", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGVehicle, mPrimaryColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mPrimaryColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mPrimaryColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDismantleRefund_MetaData[] = {
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "How much did we pay when building this." },
 	};
 #endif
@@ -1428,7 +1428,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDisabledByWaterLocations_MetaData[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "If any of these locations enters water, then we are unusable" },
 	};
 #endif
@@ -1438,7 +1438,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mHealthComponent_MetaData[] = {
 		{ "Category", "Health" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Keeps track of our current health" },
 	};
 #endif
@@ -1448,7 +1448,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Vehicle" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "The main skeletal mesh associated with this Vehicle" },
 	};
 #endif
@@ -1456,7 +1456,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mHologramClass_MetaData[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "Hologram to build this class with." },
 	};
 #endif
@@ -1464,7 +1464,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDescription_MetaData[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "MultiLine", "TRUE" },
 		{ "ToolTip", "The human readable description for this vehicle." },
 	};
@@ -1473,7 +1473,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDisplayName_MetaData[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
 		{ "ToolTip", "The human readable name for this vehicle." },
 	};
 #endif
@@ -1540,7 +1540,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGVehicle, 3377612720);
+	IMPLEMENT_CLASS(AFGVehicle, 2846485903);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGVehicle>()
 	{
 		return AFGVehicle::StaticClass();

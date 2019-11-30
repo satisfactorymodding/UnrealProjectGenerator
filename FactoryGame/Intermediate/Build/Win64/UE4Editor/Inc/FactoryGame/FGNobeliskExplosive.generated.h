@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGNobeliskExplosive_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_DetonateIn) \
 	{ \
@@ -24,7 +24,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_DetonateIn) \
 	{ \
@@ -35,7 +35,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGNobeliskExplosive(); \
 	friend struct Z_Construct_UClass_AFGNobeliskExplosive_Statics; \
@@ -44,7 +44,7 @@ public: \
 	DECLARE_SERIALIZER(AFGNobeliskExplosive)
 
 
-#define FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGNobeliskExplosive(); \
 	friend struct Z_Construct_UClass_AFGNobeliskExplosive_Statics; \
@@ -53,7 +53,7 @@ public: \
 	DECLARE_SERIALIZER(AFGNobeliskExplosive)
 
 
-#define FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGNobeliskExplosive(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGNobeliskExplosive) \
@@ -66,7 +66,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGNobeliskExplosive(AFGNobeliskExplosive&&); \
@@ -77,32 +77,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGNobeliskExplosive); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGNobeliskExplosive)
 
 
-#define FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mRotatingMovementComp() { return STRUCT_OFFSET(AFGNobeliskExplosive, mRotatingMovementComp); } \
 	FORCEINLINE static uint32 __PPO__mDetonateIn() { return STRUCT_OFFSET(AFGNobeliskExplosive, mDetonateIn); } \
 	FORCEINLINE static uint32 __PPO__mEnvironmentDestructionSphere() { return STRUCT_OFFSET(AFGNobeliskExplosive, mEnvironmentDestructionSphere); } \
 	FORCEINLINE static uint32 __PPO__mThrowRotation() { return STRUCT_OFFSET(AFGNobeliskExplosive, mThrowRotation); }
 
 
-#define FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_12_PROLOG
-#define FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_12_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_INCLASS \
-	FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h_15_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -110,7 +110,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class AFGNobeliskExplosive>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGNobeliskExplosive_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGNobeliskExplosive_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

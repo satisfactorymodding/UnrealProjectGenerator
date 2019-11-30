@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableGeneratorGeoThermal.h"
+#include "FactoryGame/Public/Buildables/FGBuildableGeneratorGeoThermal.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -47,12 +47,12 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorGeoThermal() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableGeneratorGeoThermal.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorGeoThermal.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorGeoThermal.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractResourceNode_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorGeoThermal.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorGeoThermal.h" },
 		{ "ToolTip", "This is the geyser this generator is placed on" },
 	};
 #endif
@@ -87,7 +87,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorGeoThermal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableGeneratorGeoThermal, 433930259);
+	IMPLEMENT_CLASS(AFGBuildableGeneratorGeoThermal, 3264669752);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableGeneratorGeoThermal>()
 	{
 		return AFGBuildableGeneratorGeoThermal::StaticClass();

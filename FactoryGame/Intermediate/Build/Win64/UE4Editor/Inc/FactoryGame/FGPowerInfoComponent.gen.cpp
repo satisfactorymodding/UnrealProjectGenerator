@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGPowerInfoComponent.h"
+#include "FactoryGame/Public/FGPowerInfoComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerInfoComponent_GetActualConsumption_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerInfo" },
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "Get the power we actually got for this frame.\n@note This is updated once per frame when the power subsystem is ticked.\n@return The actual power consumed." },
 	};
 #endif
@@ -107,7 +107,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerInfoComponent_GetBaseProduction_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerInfo" },
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "Get the base power production." },
 	};
 #endif
@@ -141,7 +141,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerInfoComponent_GetDynamicProductionCapacity_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerInfo" },
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "Get the maximum dynamic power production." },
 	};
 #endif
@@ -175,7 +175,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerInfoComponent_GetDynamicProductionDemandFactor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerInfo" },
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "Get how much of the max output a dynamic producer needs to produce.\nThis is in the range [0,1+] and if >1 the demand is greater than the available production, i.e. the circuit is overloaded.\n@return Dynamic demand factor." },
 	};
 #endif
@@ -209,7 +209,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerInfoComponent_GetPowerCircuit_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerInfo" },
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "@return The power circuit this is connected to; nullptr if not connected.\n@note This can be changed/removed at any time so do not save copies to it." },
 	};
 #endif
@@ -243,7 +243,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerInfoComponent_GetRegulatedDynamicProduction_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerInfo" },
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "Get the dynamic power production we provide to the circuit." },
 	};
 #endif
@@ -277,7 +277,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerInfoComponent_GetTargetConsumption_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerInfo" },
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "Get the target power consumption." },
 	};
 #endif
@@ -316,7 +316,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerInfoComponent_HasPower_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerInfo" },
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "@return true if we have power; false if we do not have power.\n@note This is updated once per frame so if setting target consumption the result is available next frame." },
 	};
 #endif
@@ -355,7 +355,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerInfoComponent_IsConnected_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerInfo" },
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "@return true if the connected to a circuit." },
 	};
 #endif
@@ -394,7 +394,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerInfoComponent_IsFuseTriggered_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerInfo" },
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "@return true if the grid is overloaded and the fuse has been triggered; false otherwise." },
 	};
 #endif
@@ -428,7 +428,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerInfoComponent_SetBaseProduction_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerInfo" },
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "Set the power we always provide to the circuit. This can not be regulated.\nE.g. A wind turbine always generate power when there's wind." },
 	};
 #endif
@@ -462,7 +462,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerInfoComponent_SetDynamicProductionCapacity_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerInfo" },
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "Set the maximum dynamic power production we can provide to the circuit.\nUse GetRegulatedDynamicProduction to see the actual production needed.\n@note Asynchronous." },
 	};
 #endif
@@ -496,7 +496,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerInfoComponent_SetTargetConsumption_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerInfo" },
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "Set the power we want from the circuit.\nThis is only a request, use GetActualConsumption to see what is actually consumed.\n@note This call is asynchronous and the result is available next frame." },
 	};
 #endif
@@ -560,32 +560,32 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGPowerInfoComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGPowerInfoComponent_GetActualConsumption, "GetActualConsumption" }, // 4212426793
-		{ &Z_Construct_UFunction_UFGPowerInfoComponent_GetBaseProduction, "GetBaseProduction" }, // 2660564100
-		{ &Z_Construct_UFunction_UFGPowerInfoComponent_GetDynamicProductionCapacity, "GetDynamicProductionCapacity" }, // 1144260666
-		{ &Z_Construct_UFunction_UFGPowerInfoComponent_GetDynamicProductionDemandFactor, "GetDynamicProductionDemandFactor" }, // 2686671098
-		{ &Z_Construct_UFunction_UFGPowerInfoComponent_GetPowerCircuit, "GetPowerCircuit" }, // 864343606
-		{ &Z_Construct_UFunction_UFGPowerInfoComponent_GetRegulatedDynamicProduction, "GetRegulatedDynamicProduction" }, // 3180565592
-		{ &Z_Construct_UFunction_UFGPowerInfoComponent_GetTargetConsumption, "GetTargetConsumption" }, // 2117101579
-		{ &Z_Construct_UFunction_UFGPowerInfoComponent_HasPower, "HasPower" }, // 702894134
-		{ &Z_Construct_UFunction_UFGPowerInfoComponent_IsConnected, "IsConnected" }, // 1975514757
-		{ &Z_Construct_UFunction_UFGPowerInfoComponent_IsFuseTriggered, "IsFuseTriggered" }, // 93506711
-		{ &Z_Construct_UFunction_UFGPowerInfoComponent_SetBaseProduction, "SetBaseProduction" }, // 1037865827
-		{ &Z_Construct_UFunction_UFGPowerInfoComponent_SetDynamicProductionCapacity, "SetDynamicProductionCapacity" }, // 4002692497
-		{ &Z_Construct_UFunction_UFGPowerInfoComponent_SetTargetConsumption, "SetTargetConsumption" }, // 1009216264
+		{ &Z_Construct_UFunction_UFGPowerInfoComponent_GetActualConsumption, "GetActualConsumption" }, // 1183360991
+		{ &Z_Construct_UFunction_UFGPowerInfoComponent_GetBaseProduction, "GetBaseProduction" }, // 2402768864
+		{ &Z_Construct_UFunction_UFGPowerInfoComponent_GetDynamicProductionCapacity, "GetDynamicProductionCapacity" }, // 3097644287
+		{ &Z_Construct_UFunction_UFGPowerInfoComponent_GetDynamicProductionDemandFactor, "GetDynamicProductionDemandFactor" }, // 4147791572
+		{ &Z_Construct_UFunction_UFGPowerInfoComponent_GetPowerCircuit, "GetPowerCircuit" }, // 3454353035
+		{ &Z_Construct_UFunction_UFGPowerInfoComponent_GetRegulatedDynamicProduction, "GetRegulatedDynamicProduction" }, // 1525746728
+		{ &Z_Construct_UFunction_UFGPowerInfoComponent_GetTargetConsumption, "GetTargetConsumption" }, // 3933657662
+		{ &Z_Construct_UFunction_UFGPowerInfoComponent_HasPower, "HasPower" }, // 1604402321
+		{ &Z_Construct_UFunction_UFGPowerInfoComponent_IsConnected, "IsConnected" }, // 241986731
+		{ &Z_Construct_UFunction_UFGPowerInfoComponent_IsFuseTriggered, "IsFuseTriggered" }, // 3497490153
+		{ &Z_Construct_UFunction_UFGPowerInfoComponent_SetBaseProduction, "SetBaseProduction" }, // 548353224
+		{ &Z_Construct_UFunction_UFGPowerInfoComponent_SetDynamicProductionCapacity, "SetDynamicProductionCapacity" }, // 1427885525
+		{ &Z_Construct_UFunction_UFGPowerInfoComponent_SetTargetConsumption, "SetTargetConsumption" }, // 1971898196
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerInfoComponent_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Custom" },
 		{ "IncludePath", "FGPowerInfoComponent.h" },
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "Default implementation for a powered building." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mIsFuseTriggered_MetaData[] = {
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "true if the circuit is overloaded and the fuse has been triggered." },
 	};
 #endif
@@ -596,42 +596,42 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mIsFuseTriggered = { "mIsFuseTriggered", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UFGPowerInfoComponent), &Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mIsFuseTriggered_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mIsFuseTriggered_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mIsFuseTriggered_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mDynamicProductionDemandFactor_MetaData[] = {
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "The demand for dynamic power (updated each frame)." },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mDynamicProductionDemandFactor = { "mDynamicProductionDemandFactor", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPowerInfoComponent, mDynamicProductionDemandFactor), METADATA_PARAMS(Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mDynamicProductionDemandFactor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mDynamicProductionDemandFactor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mDynamicProductionCapacity_MetaData[] = {
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "Power to optionally provide to the circuit." },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mDynamicProductionCapacity = { "mDynamicProductionCapacity", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPowerInfoComponent, mDynamicProductionCapacity), METADATA_PARAMS(Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mDynamicProductionCapacity_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mDynamicProductionCapacity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mBaseProduction_MetaData[] = {
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "Power to always provide to the circuit." },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mBaseProduction = { "mBaseProduction", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPowerInfoComponent, mBaseProduction), METADATA_PARAMS(Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mBaseProduction_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mBaseProduction_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mActualConsumption_MetaData[] = {
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "The actual power we got from the circuit (updated each frame)." },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mActualConsumption = { "mActualConsumption", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPowerInfoComponent, mActualConsumption), METADATA_PARAMS(Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mActualConsumption_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mActualConsumption_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mTargetConsumption_MetaData[] = {
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "Power to draw from the circuit." },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mTargetConsumption = { "mTargetConsumption", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPowerInfoComponent, mTargetConsumption), METADATA_PARAMS(Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mTargetConsumption_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mTargetConsumption_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerInfoComponent_Statics::NewProp_mCircuitID_MetaData[] = {
-		{ "ModuleRelativePath", "FGPowerInfoComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerInfoComponent.h" },
 		{ "ToolTip", "The circuit we're connected to.\n@note - This ID may change at any time when changes occurs in the circuitry. Do not save copies of it!" },
 	};
 #endif
@@ -675,7 +675,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPowerInfoComponent, 3331360515);
+	IMPLEMENT_CLASS(UFGPowerInfoComponent, 2293567770);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGPowerInfoComponent>()
 	{
 		return UFGPowerInfoComponent::StaticClass();

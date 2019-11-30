@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGPoweredWallHologram.h"
+#include "FactoryGame/Public/Hologram/FGPoweredWallHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPoweredWallHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPoweredWallHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGPoweredWallHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGPoweredWallHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGPoweredWallHologram.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGPoweredWallHologram_Statics::StaticCppClassTypeInfo = {
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPoweredWallHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPoweredWallHologram, 3751816227);
+	IMPLEMENT_CLASS(AFGPoweredWallHologram, 4245839709);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPoweredWallHologram>()
 	{
 		return AFGPoweredWallHologram::StaticClass();

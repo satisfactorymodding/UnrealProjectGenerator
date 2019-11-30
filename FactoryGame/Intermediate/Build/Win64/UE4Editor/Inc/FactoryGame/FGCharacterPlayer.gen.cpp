@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGCharacterPlayer.h"
+#include "FactoryGame/Public/FGCharacterPlayer.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -168,7 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 		return ECameraMode_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ECameraMode(ECameraMode_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ECameraMode"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ECameraMode_Hash() { return 1026291119U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ECameraMode_Hash() { return 4210340133U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ECameraMode()
 	{
 #if WITH_HOT_RELOAD
@@ -187,7 +187,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+				{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -300,7 +300,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "structure that holds variables per input whether it's allowed or not. NOTE: True if input is disabled." },
 	};
 #endif
@@ -311,7 +311,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mVehicleRecording_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mVehicleRecording_SetBit(void* Obj)
@@ -322,7 +322,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mUse_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mUse_SetBit(void* Obj)
@@ -333,7 +333,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mChat_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mChat_SetBit(void* Obj)
@@ -344,7 +344,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mJump_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mJump_SetBit(void* Obj)
@@ -355,7 +355,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mHotbar_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mHotbar_SetBit(void* Obj)
@@ -366,7 +366,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mToggleMap_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mToggleMap_SetBit(void* Obj)
@@ -377,7 +377,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mInventory_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mInventory_SetBit(void* Obj)
@@ -388,7 +388,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mOpenCodex_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mOpenCodex_SetBit(void* Obj)
@@ -399,7 +399,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mResourceScanner_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mResourceScanner_SetBit(void* Obj)
@@ -410,7 +410,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mFlashLight_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mFlashLight_SetBit(void* Obj)
@@ -421,7 +421,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mDismantle_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mDismantle_SetBit(void* Obj)
@@ -432,7 +432,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mBuildGun_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mBuildGun_SetBit(void* Obj)
@@ -482,7 +482,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDisabledInputGate_Hash() { return 4101388521U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDisabledInputGate_Hash() { return 2927764517U; }
 	void UFGUseState_ReviveInvalid_PlayerNotDead::StaticRegisterNativesUFGUseState_ReviveInvalid_PlayerNotDead()
 	{
 	}
@@ -506,7 +506,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseState_ReviveInvalid_PlayerNotDead_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGCharacterPlayer.h" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "not dead, cant revive" },
 	};
 #endif
@@ -537,7 +537,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_ReviveInvalid_PlayerNotDead, 2844783125);
+	IMPLEMENT_CLASS(UFGUseState_ReviveInvalid_PlayerNotDead, 1526677457);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_ReviveInvalid_PlayerNotDead>()
 	{
 		return UFGUseState_ReviveInvalid_PlayerNotDead::StaticClass();
@@ -567,7 +567,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseState_ReviveValid_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGCharacterPlayer.h" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Revive valid" },
 	};
 #endif
@@ -598,7 +598,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_ReviveValid, 1937389390);
+	IMPLEMENT_CLASS(UFGUseState_ReviveValid, 1061940356);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_ReviveValid>()
 	{
 		return UFGUseState_ReviveValid::StaticClass();
@@ -894,7 +894,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radiation" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Adds or removes an amount of radiation" },
 	};
 #endif
@@ -918,7 +918,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Starts the free rotate mode" },
 	};
 #endif
@@ -942,7 +942,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Stops the free rotate mode" },
 	};
 #endif
@@ -966,7 +966,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Revive" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Takes care of client side stuff when revived (eg. Enabling player input)" },
 	};
 #endif
@@ -990,7 +990,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_CrouchPressed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Crouch" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Start and stop crouch, called when player presses/releases Left Ctrl, as standard." },
 	};
 #endif
@@ -1014,7 +1014,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Crouch" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "CrouchReleased", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased_Statics::Function_MetaDataParams)) };
@@ -1047,7 +1047,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Must be called on the owning client for the client to be able to switch the weapon" },
 	};
 #endif
@@ -1084,7 +1084,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "@return - The attachments you have equipped" },
 	};
 #endif
@@ -1117,7 +1117,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::Function_MetaDataParams[] = {
 		{ "Category", "HUD" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "@return - The current desired state for the cross hair polled by the HUD." },
 	};
 #endif
@@ -1158,7 +1158,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "@return The item given equipment slot; nullptr if nothing is equipped." },
 	};
 #endif
@@ -1195,7 +1195,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "@return - The equipments you have equipped" },
 	};
 #endif
@@ -1229,7 +1229,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Returns the arm bone location offset we want to use depending on crouch/stand state *" },
 	};
 #endif
@@ -1271,7 +1271,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "@return This players belt inventory." },
 	};
 #endif
@@ -1305,7 +1305,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "The best usable actor nearby." },
 	};
 #endif
@@ -1339,7 +1339,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGun" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Get Buildgun" },
 	};
 #endif
@@ -1381,7 +1381,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Returns Camera subobject *" },
 	};
 #endif
@@ -1418,7 +1418,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Get current camera mode" },
 	};
 #endif
@@ -1460,7 +1460,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "returns ladder we are currently on" },
 	};
 #endif
@@ -1494,7 +1494,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Gets the camera bobbing animation we want to use when sprinting ( can vary with equipment )" },
 	};
 #endif
@@ -1528,7 +1528,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Gets the camera bobbing animation we want to use when walking ( can vary with equipment )" },
 	};
 #endif
@@ -1562,7 +1562,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "The vehicle we are currently driving" },
 	};
 #endif
@@ -1603,7 +1603,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "@return The active equipment in the given equipment slot; nullptr if nothing is equipped." },
 	};
 #endif
@@ -1652,7 +1652,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "@return The inventory component for the given equipment slot." },
 	};
 #endif
@@ -1694,7 +1694,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "@return This players inventory." },
 	};
 #endif
@@ -1739,7 +1739,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Where to drop a inventory item if we drop one" },
 	};
 #endif
@@ -1781,7 +1781,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Mesh" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Returns Mesh1P subobject *" },
 	};
 #endif
@@ -1823,7 +1823,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Outline" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetOutline", sizeof(FGCharacterPlayer_eventGetOutline_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::Function_MetaDataParams)) };
@@ -1856,7 +1856,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "returns the progress of reviving a player 0..1" },
 	};
 #endif
@@ -1890,7 +1890,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radiation" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Returns the angle from the players view to the accumulated radiation damage *" },
 	};
 #endif
@@ -1924,7 +1924,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radiation" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Returns accumulated radioation immunity *" },
 	};
 #endif
@@ -1958,7 +1958,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radiation" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Returns accumulated normalized radiation intensity at the the players location *" },
 	};
 #endif
@@ -1992,7 +1992,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "@return This players resource miner." },
 	};
 #endif
@@ -2026,7 +2026,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "@return This players resource scanner." },
 	};
 #endif
@@ -2060,7 +2060,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Revive" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "returns the progress of reviving a player 0..1" },
 	};
 #endif
@@ -2102,7 +2102,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Returns spring arm subobject *" },
 	};
 #endif
@@ -2136,7 +2136,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics::Function_MetaDataParams[] = {
 		{ "Category", "General" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetTotalPlayerArmEquipmentSlots", sizeof(FGCharacterPlayer_eventGetTotalPlayerArmEquipmentSlots_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics::Function_MetaDataParams)) };
@@ -2169,7 +2169,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics::Function_MetaDataParams[] = {
 		{ "Category", "General" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetTotalPlayerInventorySlots", sizeof(FGCharacterPlayer_eventGetTotalPlayerInventorySlots_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics::Function_MetaDataParams)) };
@@ -2210,7 +2210,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "@return This players trash inventory." },
 	};
 #endif
@@ -2244,7 +2244,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Returns distance we want to be able to use stuff from" },
 	};
 #endif
@@ -2283,7 +2283,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Getter for mWantsSprintBobbing" },
 	};
 #endif
@@ -2307,7 +2307,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_HotKeyDismantle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Instantly goes to dismantle mode" },
 	};
 #endif
@@ -2341,7 +2341,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Instantly goes to build mode for selected recipe" },
 	};
 #endif
@@ -2380,7 +2380,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Is the build gun equipped" },
 	};
 #endif
@@ -2419,7 +2419,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "The vehicle we are currently driving" },
 	};
 #endif
@@ -2458,7 +2458,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Are we in first person mode?" },
 	};
 #endif
@@ -2497,7 +2497,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_IsSliding_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Gets sliding status" },
 	};
 #endif
@@ -2530,7 +2530,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Called when we unlock more arms slots" },
 	};
 #endif
@@ -2560,7 +2560,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnDisabledInputGateChanged", sizeof(FGCharacterPlayer_eventOnDisabledInputGateChanged_Parms), Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::Function_MetaDataParams)) };
@@ -2592,7 +2592,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Called when we unlock more inventory slots" },
 	};
 #endif
@@ -2629,7 +2629,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnItemAddedToInventory", sizeof(FGCharacterPlayer_eventOnItemAddedToInventory_Parms), Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::Function_MetaDataParams)) };
@@ -2661,7 +2661,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radiation" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Called when we have updated radiation intensity." },
 	};
 #endif
@@ -2685,7 +2685,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStart_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radiation" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Called when we start receiving radiation." },
 	};
 #endif
@@ -2709,7 +2709,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStop_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radiation" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Called when we stop receiving radiation." },
 	};
 #endif
@@ -2732,7 +2732,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnRep_ActiveAttachments", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments_Statics::Function_MetaDataParams)) };
@@ -2754,7 +2754,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveEquipments_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "OnReps" },
 	};
 #endif
@@ -2777,7 +2777,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnRep_DrivenVehicle", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle_Statics::Function_MetaDataParams)) };
@@ -2799,7 +2799,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnRep_InRadioactiveZone", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics::Function_MetaDataParams)) };
@@ -2821,7 +2821,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnRep_IsSliding_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_IsSliding_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnRep_IsSliding", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_IsSliding_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_IsSliding_Statics::Function_MetaDataParams)) };
@@ -2843,7 +2843,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnRep_PickupCounter", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter_Statics::Function_MetaDataParams)) };
@@ -2865,7 +2865,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnRep_RadiationIntensity", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity_Statics::Function_MetaDataParams)) };
@@ -2888,7 +2888,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnReviveComplete_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Revive" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "called when a revive process is complete. Called on the player being revived." },
 	};
 #endif
@@ -2912,7 +2912,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnSlideEndLocal_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Movment" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Called when a slide has ended, local only" },
 	};
 #endif
@@ -2936,7 +2936,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnSlideStartLocal_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Movment" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Called when a slide has started, local only" },
 	};
 #endif
@@ -2960,7 +2960,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnSpawnDeathMarker_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Death" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Called when we respawn but didn't get a death crate, so we can find our last death location." },
 	};
 #endif
@@ -2984,7 +2984,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_PlayPickupEffects_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Character" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Blueprint accessor for when an item was picked up, called on client/server/remote" },
 	};
 #endif
@@ -3013,7 +3013,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Cycles hand equipments in equipment slots" },
 	};
 #endif
@@ -3042,7 +3042,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Server function that are called from public clients of the same name" },
 	};
 #endif
@@ -3066,7 +3066,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUse_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "Server_OnUse", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUse_Statics::Function_MetaDataParams)) };
@@ -3089,7 +3089,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUseReleased_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUseReleased_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "Server_OnUseReleased", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUseReleased_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUseReleased_Statics::Function_MetaDataParams)) };
@@ -3117,7 +3117,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "Server_PickUpItem", sizeof(FGCharacterPlayer_eventServer_PickUpItem_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::Function_MetaDataParams)) };
@@ -3146,7 +3146,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Revive" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "Server_RevivePlayer", sizeof(FGCharacterPlayer_eventServer_RevivePlayer_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::Function_MetaDataParams)) };
@@ -3174,7 +3174,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "@todo This should move to the replicator object... Toggles the switch on the server." },
 	};
 #endif
@@ -3203,7 +3203,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "Server_UnequipEquipment", sizeof(FGCharacterPlayer_eventServer_UnequipEquipment_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::Function_MetaDataParams)) };
@@ -3239,7 +3239,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Set camera mode" },
 	};
 #endif
@@ -3263,7 +3263,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_SetFirstPersonMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Do stuff needed for first person mode" },
 	};
 #endif
@@ -3302,7 +3302,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Sets what mesh is visible on us ( 1p or 3p )" },
 	};
 #endif
@@ -3336,7 +3336,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radiation" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Sets an amount of radiation" },
 	};
 #endif
@@ -3360,7 +3360,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_SetThirdPersonMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Do stuff needed for third person mode" },
 	};
 #endif
@@ -3399,7 +3399,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Setter for mWantsSprintBobbing" },
 	};
 #endif
@@ -3423,7 +3423,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_SnapSpringArmToDesiredLocation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "snaps the camera spring arm to its desired location, so no interp" },
 	};
 #endif
@@ -3447,7 +3447,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "SpawnInitialGear", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear_Statics::Function_MetaDataParams)) };
@@ -3470,7 +3470,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_StartFocusAim_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Start focus aiming" },
 	};
 #endif
@@ -3494,7 +3494,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_StartFreeRotate3P_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Starts the free rotate mode" },
 	};
 #endif
@@ -3517,7 +3517,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "StartReceivingRadiation", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation_Statics::Function_MetaDataParams)) };
@@ -3540,7 +3540,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_StopFocusAim_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Stop focus aiming" },
 	};
 #endif
@@ -3564,7 +3564,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_StopFreeRotate3P_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Stops the free rotate mode" },
 	};
 #endif
@@ -3587,7 +3587,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "StopReceivingRadiation", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics::Function_MetaDataParams)) };
@@ -3616,7 +3616,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Character" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Blueprint function that ticks visual things not needed on dedicated server" },
 	};
 #endif
@@ -3640,7 +3640,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_ToggleBuildGun_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Equips/unequips buildgun" },
 	};
 #endif
@@ -3663,7 +3663,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_ToggleCameraMode_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Switches between camera modes" },
 	};
 #endif
@@ -3697,7 +3697,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Must be called on the owning client to unequip one equipment" },
 	};
 #endif
@@ -3721,7 +3721,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_UsePreferredCameraMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Set the camera mode to the one specified in mPlayerPreferredCameraMode" },
 	};
 #endif
@@ -4010,104 +4010,104 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCharacterPlayer_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity, "AddRadiationImmunity" }, // 2608051743
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn, "CameraZoomIn" }, // 3935644132
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut, "CameraZoomOut" }, // 2421676588
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived, "Client_Revived" }, // 1521793115
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_CrouchPressed, "CrouchPressed" }, // 950647065
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased, "CrouchReleased" }, // 265366650
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment, "EquipEquipment" }, // 2009776303
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments, "GetActiveAttachments" }, // 1399959022
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState, "GetActiveCrosshairState" }, // 34151913
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem, "GetActiveEquipmentItem" }, // 4215714992
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments, "GetActiveEquipments" }, // 1186168559
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation, "GetArmBoneLocation" }, // 396113812
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot, "GetBeltSlot" }, // 4131124130
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor, "GetBestUsableActor" }, // 2787890823
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun, "GetBuildGun" }, // 1144277631
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent, "GetCameraComponent" }, // 2253655128
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode, "GetCameraMode" }, // 606760630
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent, "GetCurrentLadderComponent" }, // 318826101
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake, "GetDesiredSprintHeadBobShake" }, // 4238982665
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake, "GetDesiredWalkHeadBobShake" }, // 2583976197
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle, "GetDrivenVehicle" }, // 3567960073
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot, "GetEquipmentInSlot" }, // 2561004976
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot, "GetEquipmentSlot" }, // 231328968
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetInventory, "GetInventory" }, // 2827060283
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation, "GetInventoryDropLocation" }, // 2807656916
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P, "GetMesh1P" }, // 2848665011
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetOutline, "GetOutline" }, // 1987681733
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress, "GetPickupProgress" }, // 1459759907
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle, "GetRadiationDamageAngle" }, // 1965277011
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity, "GetRadiationImmunity" }, // 3978527836
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity, "GetRadiationIntensity" }, // 1824496867
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner, "GetResourceMiner" }, // 1895884762
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner, "GetResourceScanner" }, // 722783786
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress, "GetReviveProgress" }, // 538257110
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent, "GetSpringArmComponent" }, // 3714147037
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots, "GetTotalPlayerArmEquipmentSlots" }, // 3107248852
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots, "GetTotalPlayerInventorySlots" }, // 1496947095
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot, "GetTrashSlot" }, // 132364014
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance, "GetUseDistance" }, // 885867545
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing, "GetWantSprintBobbing" }, // 3353222126
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_HotKeyDismantle, "HotKeyDismantle" }, // 818809108
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe, "HotKeyRecipe" }, // 4176152380
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped, "IsBuildGunEquipped" }, // 1485150918
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle, "IsDrivingVehicle" }, // 843143681
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson, "IsFirstPerson" }, // 3428935848
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_IsSliding, "IsSliding" }, // 886214051
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked, "OnArmsSlotsUnlocked" }, // 2017181980
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged, "OnDisabledInputGateChanged" }, // 2951731547
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked, "OnInventorySlotsUnlocked" }, // 1165618911
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory, "OnItemAddedToInventory" }, // 340157161
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated, "OnRadiationIntensityUpdated" }, // 2260907307
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStart, "OnReceiveRadiationStart" }, // 608616971
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStop, "OnReceiveRadiationStop" }, // 1906442674
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments, "OnRep_ActiveAttachments" }, // 79215334
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveEquipments, "OnRep_ActiveEquipments" }, // 1493681604
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle, "OnRep_DrivenVehicle" }, // 2822208636
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone, "OnRep_InRadioactiveZone" }, // 3085874586
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_IsSliding, "OnRep_IsSliding" }, // 2630402959
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter, "OnRep_PickupCounter" }, // 2829982152
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity, "OnRep_RadiationIntensity" }, // 1158953770
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnReviveComplete, "OnReviveComplete" }, // 3000033210
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnSlideEndLocal, "OnSlideEndLocal" }, // 1837403260
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnSlideStartLocal, "OnSlideStartLocal" }, // 4109213245
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnSpawnDeathMarker, "OnSpawnDeathMarker" }, // 534926741
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_PlayPickupEffects, "PlayPickupEffects" }, // 3191076148
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed, "Server_CycleHandEquipmentPressed" }, // 3769750983
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment, "Server_EquipEquipment" }, // 1693478236
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUse, "Server_OnUse" }, // 3689236897
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUseReleased, "Server_OnUseReleased" }, // 3529906375
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem, "Server_PickUpItem" }, // 3114903018
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer, "Server_RevivePlayer" }, // 1345170089
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl, "Server_ToggleSwitchControl" }, // 844461310
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment, "Server_UnequipEquipment" }, // 806626353
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode, "SetCameraMode" }, // 3478834752
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetFirstPersonMode, "SetFirstPersonMode" }, // 681097863
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility, "SetMeshVisibility" }, // 3530640653
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity, "SetRadiationImmunity" }, // 3258636662
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetThirdPersonMode, "SetThirdPersonMode" }, // 3583296837
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing, "SetWantSprintBobbing" }, // 1772814833
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_SnapSpringArmToDesiredLocation, "SnapSpringArmToDesiredLocation" }, // 3967830260
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear, "SpawnInitialGear" }, // 3237095322
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_StartFocusAim, "StartFocusAim" }, // 1905143112
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_StartFreeRotate3P, "StartFreeRotate3P" }, // 634281461
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation, "StartReceivingRadiation" }, // 2777292666
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_StopFocusAim, "StopFocusAim" }, // 4103669454
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_StopFreeRotate3P, "StopFreeRotate3P" }, // 2519448203
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation, "StopReceivingRadiation" }, // 1468576868
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals, "TickVisuals" }, // 700109377
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_ToggleBuildGun, "ToggleBuildGun" }, // 3936492869
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_ToggleCameraMode, "ToggleCameraMode" }, // 2206812166
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment, "UnequipEquipment" }, // 1897312537
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_UsePreferredCameraMode, "UsePreferredCameraMode" }, // 1711619187
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity, "AddRadiationImmunity" }, // 2979225087
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn, "CameraZoomIn" }, // 1099745912
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut, "CameraZoomOut" }, // 30076363
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived, "Client_Revived" }, // 1863581026
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_CrouchPressed, "CrouchPressed" }, // 1672970266
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased, "CrouchReleased" }, // 1076937957
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment, "EquipEquipment" }, // 3327495320
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments, "GetActiveAttachments" }, // 3448795696
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState, "GetActiveCrosshairState" }, // 1586919110
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem, "GetActiveEquipmentItem" }, // 2039950294
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments, "GetActiveEquipments" }, // 477267986
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation, "GetArmBoneLocation" }, // 1833656733
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot, "GetBeltSlot" }, // 98720878
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor, "GetBestUsableActor" }, // 329375728
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun, "GetBuildGun" }, // 40725389
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent, "GetCameraComponent" }, // 2954288826
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode, "GetCameraMode" }, // 2982590925
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent, "GetCurrentLadderComponent" }, // 1433143141
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake, "GetDesiredSprintHeadBobShake" }, // 753109296
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake, "GetDesiredWalkHeadBobShake" }, // 2494357169
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle, "GetDrivenVehicle" }, // 4268497652
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot, "GetEquipmentInSlot" }, // 3696278662
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot, "GetEquipmentSlot" }, // 1627640998
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetInventory, "GetInventory" }, // 3115789341
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation, "GetInventoryDropLocation" }, // 1908151455
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P, "GetMesh1P" }, // 3244154481
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetOutline, "GetOutline" }, // 3592108464
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress, "GetPickupProgress" }, // 1859059913
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle, "GetRadiationDamageAngle" }, // 2793522043
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity, "GetRadiationImmunity" }, // 1163403540
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity, "GetRadiationIntensity" }, // 2645839846
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner, "GetResourceMiner" }, // 187859196
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner, "GetResourceScanner" }, // 1837935159
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress, "GetReviveProgress" }, // 3787151490
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent, "GetSpringArmComponent" }, // 3600303478
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots, "GetTotalPlayerArmEquipmentSlots" }, // 1102522122
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots, "GetTotalPlayerInventorySlots" }, // 3856529615
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot, "GetTrashSlot" }, // 3188829715
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance, "GetUseDistance" }, // 2825064439
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing, "GetWantSprintBobbing" }, // 2625281076
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_HotKeyDismantle, "HotKeyDismantle" }, // 3729798615
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe, "HotKeyRecipe" }, // 329585707
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped, "IsBuildGunEquipped" }, // 170509738
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle, "IsDrivingVehicle" }, // 983406595
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson, "IsFirstPerson" }, // 1659403288
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_IsSliding, "IsSliding" }, // 2242340689
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked, "OnArmsSlotsUnlocked" }, // 4406739
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged, "OnDisabledInputGateChanged" }, // 3050768465
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked, "OnInventorySlotsUnlocked" }, // 4090656814
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory, "OnItemAddedToInventory" }, // 3280804578
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated, "OnRadiationIntensityUpdated" }, // 2620854324
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStart, "OnReceiveRadiationStart" }, // 348944098
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStop, "OnReceiveRadiationStop" }, // 2371726283
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments, "OnRep_ActiveAttachments" }, // 914370533
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveEquipments, "OnRep_ActiveEquipments" }, // 643717400
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle, "OnRep_DrivenVehicle" }, // 909606995
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone, "OnRep_InRadioactiveZone" }, // 2036066305
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_IsSliding, "OnRep_IsSliding" }, // 2341815716
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter, "OnRep_PickupCounter" }, // 2200426550
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity, "OnRep_RadiationIntensity" }, // 3427330418
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnReviveComplete, "OnReviveComplete" }, // 470045356
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnSlideEndLocal, "OnSlideEndLocal" }, // 545563080
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnSlideStartLocal, "OnSlideStartLocal" }, // 3154796236
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnSpawnDeathMarker, "OnSpawnDeathMarker" }, // 3261953349
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_PlayPickupEffects, "PlayPickupEffects" }, // 941507873
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed, "Server_CycleHandEquipmentPressed" }, // 1463189365
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment, "Server_EquipEquipment" }, // 2632753807
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUse, "Server_OnUse" }, // 3540295176
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUseReleased, "Server_OnUseReleased" }, // 3713577144
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem, "Server_PickUpItem" }, // 1852108629
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer, "Server_RevivePlayer" }, // 4279228117
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl, "Server_ToggleSwitchControl" }, // 1618084430
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment, "Server_UnequipEquipment" }, // 796201390
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode, "SetCameraMode" }, // 3928582048
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetFirstPersonMode, "SetFirstPersonMode" }, // 3150085190
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility, "SetMeshVisibility" }, // 2312943515
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity, "SetRadiationImmunity" }, // 3730074050
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetThirdPersonMode, "SetThirdPersonMode" }, // 3760145692
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing, "SetWantSprintBobbing" }, // 1673071278
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SnapSpringArmToDesiredLocation, "SnapSpringArmToDesiredLocation" }, // 1777842194
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear, "SpawnInitialGear" }, // 4160418750
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_StartFocusAim, "StartFocusAim" }, // 1174550144
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_StartFreeRotate3P, "StartFreeRotate3P" }, // 1552395004
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation, "StartReceivingRadiation" }, // 3784314484
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_StopFocusAim, "StopFocusAim" }, // 810262734
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_StopFreeRotate3P, "StopFreeRotate3P" }, // 968101735
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation, "StopReceivingRadiation" }, // 2381130755
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals, "TickVisuals" }, // 3973268460
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_ToggleBuildGun, "ToggleBuildGun" }, // 3023652503
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_ToggleCameraMode, "ToggleCameraMode" }, // 2668964309
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment, "UnequipEquipment" }, // 2280783491
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_UsePreferredCameraMode, "UsePreferredCameraMode" }, // 2582935427
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "FGCharacterPlayer.h" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 		{ "ToolTip", "Base class for all player characters in the game." },
 	};
@@ -4115,7 +4115,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mNoUpdate_MetaData[] = {
 		{ "Category", "FactoryGame|Movement|Crouch" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	void Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mNoUpdate_SetBit(void* Obj)
@@ -4126,7 +4126,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSlideToCrouchSpeed_MetaData[] = {
 		{ "Category", "FactoryGame|Movement|Crouch" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "How fast the blend is from slide to crouch" },
 	};
 #endif
@@ -4134,7 +4134,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStandSpeed_MetaData[] = {
 		{ "Category", "FactoryGame|Movement|Crouch" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "How fast the blend is from crouch/slide to stand" },
 	};
 #endif
@@ -4142,14 +4142,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCrouchSpeed_MetaData[] = {
 		{ "Category", "FactoryGame|Movement|Crouch" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "How fast the blend is for crouch and slide" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCrouchSpeed = { "mCrouchSpeed", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mCrouchSpeed), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCrouchSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCrouchSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReplicatedIsSliding_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Replicated value of sliding status. Used to let non owning player know whats happening" },
 	};
 #endif
@@ -4161,14 +4161,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraOffsetBlendSpeed_MetaData[] = {
 		{ "Category", "FactoryGame|Movement|Crouch" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "How fast the blend is" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraOffsetBlendSpeed = { "mCameraOffsetBlendSpeed", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mCameraOffsetBlendSpeed), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraOffsetBlendSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraOffsetBlendSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Are we in a radioactive zone" },
 	};
 #endif
@@ -4179,21 +4179,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone = { "mInRadioactiveZone", "OnRep_InRadioActiveZone", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGCharacterPlayer), &Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "How much immunity do we have for radiation" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity = { "mRadiationImmunity", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mRadiationImmunity), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "The angle from the players view to the accumulated radiation damage *" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle = { "mRadiationDamageAngle", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mRadiationDamageAngle), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationIntensity_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "The accumulated normalized radiation intensity of the players current location" },
 	};
 #endif
@@ -4201,28 +4201,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationWaitTime_MetaData[] = {
 		{ "Category", "HealthGeneration" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationWaitTime = { "mHealthGenerationWaitTime", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mHealthGenerationWaitTime), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationWaitTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationWaitTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationInterval_MetaData[] = {
 		{ "Category", "HealthGeneration" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationInterval = { "mHealthGenerationInterval", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mHealthGenerationInterval), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationInterval_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationAmount_MetaData[] = {
 		{ "Category", "HealthGeneration" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationAmount = { "mHealthGenerationAmount", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mHealthGenerationAmount), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationAmount_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationAmount_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationThreshold_MetaData[] = {
 		{ "Category", "HealthGeneration" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Health Generation" },
 	};
 #endif
@@ -4230,20 +4230,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mOutlineComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mOutlineComponent = { "mOutlineComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mOutlineComponent), Z_Construct_UClass_UFGOutlineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mOutlineComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mOutlineComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSavedDrivenVehicle_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Saved vehicle currently driven by pawn.\nUsed by server to remember which vehicle we drove when saving.\nUsed by client to remember which vehicle we drove when leaving the vehicle." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSavedDrivenVehicle = { "mSavedDrivenVehicle", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mSavedDrivenVehicle), Z_Construct_UClass_AFGDriveablePawn_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSavedDrivenVehicle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSavedDrivenVehicle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrivenVehicle_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Vehicle currently driven by pawn." },
 	};
 #endif
@@ -4251,7 +4251,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultSprintHeadBobShake_MetaData[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Reference to the default sprint head bob shake" },
 	};
 #endif
@@ -4259,21 +4259,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultWalkHeadBobShake_MetaData[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Reference to the default walk head bob shake" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultWalkHeadBobShake = { "mDefaultWalkHeadBobShake", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mDefaultWalkHeadBobShake), Z_Construct_UClass_UCameraShake_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultWalkHeadBobShake_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultWalkHeadBobShake_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviver_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "The player that is reviving me" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviver = { "mReviver", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mReviver), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviver_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviver_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupCounter_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Counter used for replicating to remote clients when something is picked up" },
 	};
 #endif
@@ -4281,7 +4281,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mUseDistance_MetaData[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Maximum distance we use objects on" },
 	};
 #endif
@@ -4289,7 +4289,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllowCameraToggling_MetaData[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Allow toggling of camera modes" },
 	};
 #endif
@@ -4301,7 +4301,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mTrashSlot_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "The players inventory." },
 	};
 #endif
@@ -4309,7 +4309,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBeltSlot_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "The belt slot inventory." },
 	};
 #endif
@@ -4317,7 +4317,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "The players inventory." },
 	};
 #endif
@@ -4325,7 +4325,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerPreferredCameraMode_MetaData[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "What camera mode were we in before we opened the" },
 	};
 #endif
@@ -4333,7 +4333,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerPreferredCameraMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCurrentCameraMode_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Current camera mode for the character" },
 	};
 #endif
@@ -4341,7 +4341,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCurrentCameraMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveAttachments_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Remote client representation of the equipment" },
 	};
 #endif
@@ -4349,7 +4349,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveAttachments_Inner = { "mActiveAttachments", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllAttachments_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "@todo They should be in the inventory later on. But right now this is what you toggle with" },
 	};
 #endif
@@ -4357,7 +4357,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllAttachments_Inner = { "mAllAttachments", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mClientActiveEquipments_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Simulated on the client so they know what to unequip." },
 	};
 #endif
@@ -4365,7 +4365,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mClientActiveEquipments_Inner = { "mClientActiveEquipments", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveEquipments_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "This is the equipment we hold in our hands." },
 	};
 #endif
@@ -4375,7 +4375,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSpringArmComponent_MetaData[] = {
 		{ "Category", "FGCharacterPlayer" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Spring arm for camera" },
 	};
 #endif
@@ -4384,21 +4384,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraComponent_MetaData[] = {
 		{ "Category", "FGCharacterPlayer" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Player camera" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraComponent = { "mCameraComponent", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositionLoopHead_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "used for knowing which is the latest written safe ground position" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositionLoopHead = { "mLastSafeGroundPositionLoopHead", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mLastSafeGroundPositionLoopHead), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositionLoopHead_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositionLoopHead_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositions_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "latest safe ground location positions" },
 	};
 #endif
@@ -4406,7 +4406,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEvent_MetaData[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Effects to play when a foot hits the ground in first person" },
 	};
 #endif
@@ -4415,7 +4415,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEffect_MetaData[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Effects to play when a foot hits the ground in first person" },
 	};
 #endif
@@ -4424,7 +4424,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PDefaultFootstepEffect_MetaData[] = {
 		{ "Category", "Footstep" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Default effects to play when a foot hits the ground when the material doesn't exist in m1PFootstepEffect" },
 	};
 #endif
@@ -4432,7 +4432,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupToCollect_MetaData[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "The pickup we are collecting" },
 	};
 #endif
@@ -4440,7 +4440,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerToRevive_MetaData[] = {
 		{ "Category", "Revive" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "The player that we are reviving" },
 	};
 #endif
@@ -4448,7 +4448,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamageInterval_MetaData[] = {
 		{ "Category", "Swimming" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Time between each application of drowning damage (in seconds)" },
 	};
 #endif
@@ -4456,7 +4456,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamage_MetaData[] = {
 		{ "Category", "Swimming" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "The amount of damage to receive when drowning." },
 	};
 #endif
@@ -4464,7 +4464,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamageDamageType_MetaData[] = {
 		{ "Category", "Swimming" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "@todo: This should not be specified for each pawn" },
 	};
 #endif
@@ -4472,7 +4472,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResourceForTesting_MetaData[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "The starting resources for the player if we are NOT in shipping" },
 	};
 #endif
@@ -4481,7 +4481,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResources_MetaData[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "The starting resources for the player" },
 	};
 #endif
@@ -4490,7 +4490,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviveDuration_MetaData[] = {
 		{ "Category", "Revive" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "time (in seconds) it takes to revive a fellow player" },
 	};
 #endif
@@ -4498,7 +4498,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAnimInstanceClass1P_MetaData[] = {
 		{ "Category", "Character" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Anim instance class to use in first person" },
 	};
 #endif
@@ -4506,7 +4506,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAnimInstanceClass_MetaData[] = {
 		{ "Category", "Character" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Anim instance class to use in third person" },
 	};
 #endif
@@ -4514,28 +4514,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCachedUseState_MetaData[] = {
 		{ "Category", "FGCharacterPlayer" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Of the usable actor we are looking at, UPROPERTY to prevent the AdditionalData to be garbage collected" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCachedUseState = { "mCachedUseState", nullptr, (EPropertyFlags)0x0020088000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mCachedUseState), Z_Construct_UScriptStruct_FUseState, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCachedUseState_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCachedUseState_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBestUsableActor_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "The best usable actor nearby." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBestUsableActor = { "mBestUsableActor", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mBestUsableActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBestUsableActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBestUsableActor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceMiner_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Reference to the resource miner" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceMiner = { "mResourceMiner", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mResourceMiner), Z_Construct_UClass_AFGResourceMiner_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceMiner_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceMiner_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceScanner_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Reference to the resource scanner" },
 	};
 #endif
@@ -4543,7 +4543,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBuildGun_MetaData[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "This is the infamous build gun." },
 	};
 #endif
@@ -4551,7 +4551,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mFoliagePickupProxy_MetaData[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Actor that's used when trying to pickup foliage" },
 	};
 #endif
@@ -4559,7 +4559,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mFoliagePickupProxyClass_MetaData[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "As we have no foliage actor to actually put pickup code in, we use this actor as a proxy" },
 	};
 #endif
@@ -4567,7 +4567,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMesh1PAnimClass_MetaData[] = {
 		{ "Category", "Mesh" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "The default arms animation when we're idle." },
 	};
 #endif
@@ -4576,7 +4576,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMesh3P_MetaData[] = {
 		{ "Category", "Mesh" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Pawn mesh: 3rd person view" },
 	};
 #endif
@@ -4584,7 +4584,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseLookUpRate_MetaData[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Base look up/down rate, in deg/sec. Other scaling may affect final rate." },
 	};
 #endif
@@ -4592,7 +4592,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseTurnRate_MetaData[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
 		{ "ToolTip", "Base turn rate, in deg/sec. Other scaling may affect final turn rate." },
 	};
 #endif
@@ -4701,7 +4701,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCharacterPlayer, 2448390346);
+	IMPLEMENT_CLASS(AFGCharacterPlayer, 2628329061);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCharacterPlayer>()
 	{
 		return AFGCharacterPlayer::StaticClass();

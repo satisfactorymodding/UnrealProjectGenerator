@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableStandaloneSign.h"
+#include "FactoryGame/Public/Buildables/FGBuildableStandaloneSign.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -65,7 +65,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStandaloneSign() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableStandaloneSign_GetCurrentNormalizedTextOffsetZ_Statics::Function_MetaDataParams[] = {
 		{ "Category", "StandaloneSign" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableStandaloneSign_GetCurrentNormalizedTextOffsetZ_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableStandaloneSign, nullptr, "GetCurrentNormalizedTextOffsetZ", sizeof(FGBuildableStandaloneSign_eventGetCurrentNormalizedTextOffsetZ_Parms), Z_Construct_UFunction_AFGBuildableStandaloneSign_GetCurrentNormalizedTextOffsetZ_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableStandaloneSign_GetCurrentNormalizedTextOffsetZ_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableStandaloneSign_GetCurrentNormalizedTextOffsetZ_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableStandaloneSign_GetCurrentNormalizedTextOffsetZ_Statics::Function_MetaDataParams)) };
@@ -98,7 +98,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStandaloneSign() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableStandaloneSign_GetCurrentNormalizedTextScale_Statics::Function_MetaDataParams[] = {
 		{ "Category", "StandaloneSign" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableStandaloneSign_GetCurrentNormalizedTextScale_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableStandaloneSign, nullptr, "GetCurrentNormalizedTextScale", sizeof(FGBuildableStandaloneSign_eventGetCurrentNormalizedTextScale_Parms), Z_Construct_UFunction_AFGBuildableStandaloneSign_GetCurrentNormalizedTextScale_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableStandaloneSign_GetCurrentNormalizedTextScale_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableStandaloneSign_GetCurrentNormalizedTextScale_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableStandaloneSign_GetCurrentNormalizedTextScale_Statics::Function_MetaDataParams)) };
@@ -131,7 +131,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStandaloneSign() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableStandaloneSign_GetSignConstraints_Statics::Function_MetaDataParams[] = {
 		{ "Category", "StandaloneSign" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 		{ "ToolTip", "Begin Widget Getter Functions" },
 	};
 #endif
@@ -169,7 +169,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStandaloneSign() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableStandaloneSign_GetTextScaleFromNormalizedValue_Statics::Function_MetaDataParams[] = {
 		{ "Category", "StandaloneSign" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableStandaloneSign_GetTextScaleFromNormalizedValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableStandaloneSign, nullptr, "GetTextScaleFromNormalizedValue", sizeof(FGBuildableStandaloneSign_eventGetTextScaleFromNormalizedValue_Parms), Z_Construct_UFunction_AFGBuildableStandaloneSign_GetTextScaleFromNormalizedValue_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableStandaloneSign_GetTextScaleFromNormalizedValue_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableStandaloneSign_GetTextScaleFromNormalizedValue_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableStandaloneSign_GetTextScaleFromNormalizedValue_Statics::Function_MetaDataParams)) };
@@ -191,7 +191,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStandaloneSign() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableStandaloneSign_OnRep_SignData_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 		{ "ToolTip", "Update sign components on replication" },
 	};
 #endif
@@ -276,50 +276,50 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStandaloneSign() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableStandaloneSign_GetCurrentNormalizedTextOffsetZ, "GetCurrentNormalizedTextOffsetZ" }, // 2808116691
-		{ &Z_Construct_UFunction_AFGBuildableStandaloneSign_GetCurrentNormalizedTextScale, "GetCurrentNormalizedTextScale" }, // 181218765
-		{ &Z_Construct_UFunction_AFGBuildableStandaloneSign_GetSignConstraints, "GetSignConstraints" }, // 3775406752
-		{ &Z_Construct_UFunction_AFGBuildableStandaloneSign_GetTextScaleFromNormalizedValue, "GetTextScaleFromNormalizedValue" }, // 3036580243
-		{ &Z_Construct_UFunction_AFGBuildableStandaloneSign_OnRep_SignData, "OnRep_SignData" }, // 1674249101
+		{ &Z_Construct_UFunction_AFGBuildableStandaloneSign_GetCurrentNormalizedTextOffsetZ, "GetCurrentNormalizedTextOffsetZ" }, // 3353399753
+		{ &Z_Construct_UFunction_AFGBuildableStandaloneSign_GetCurrentNormalizedTextScale, "GetCurrentNormalizedTextScale" }, // 3001514049
+		{ &Z_Construct_UFunction_AFGBuildableStandaloneSign_GetSignConstraints, "GetSignConstraints" }, // 3212504835
+		{ &Z_Construct_UFunction_AFGBuildableStandaloneSign_GetTextScaleFromNormalizedValue, "GetTextScaleFromNormalizedValue" }, // 3443666327
+		{ &Z_Construct_UFunction_AFGBuildableStandaloneSign_OnRep_SignData, "OnRep_SignData" }, // 61492723
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableStandaloneSign.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 		{ "ToolTip", "Class for the creating of placeable signs. Implements the sign interface for adding and removing element via a widget class" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mSignData_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mSignData = { "mSignData", "OnRep_SignData", (EPropertyFlags)0x0020080101000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableStandaloneSign, mSignData), Z_Construct_UScriptStruct_FSignData, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mSignData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mSignData_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mBackgroundGridSize_MetaData[] = {
 		{ "Category", "StandaloneSign" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mBackgroundGridSize = { "mBackgroundGridSize", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableStandaloneSign, mBackgroundGridSize), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mBackgroundGridSize_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mBackgroundGridSize_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mSignFont_MetaData[] = {
 		{ "Category", "StandaloneSign" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mSignFont = { "mSignFont", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableStandaloneSign, mSignFont), Z_Construct_UClass_UFont_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mSignFont_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mSignFont_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mSignConstraints_MetaData[] = {
 		{ "Category", "StandaloneSign" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mSignConstraints = { "mSignConstraints", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableStandaloneSign, mSignConstraints), Z_Construct_UScriptStruct_FSignElementConstraints, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mSignConstraints_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mSignConstraints_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mGainSignificanceDistance_MetaData[] = {
 		{ "Category", "Significance" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 		{ "ToolTip", "Distance at which to gain significance" },
 	};
 #endif
@@ -328,7 +328,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStandaloneSign() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mHologramParticleComponent_MetaData[] = {
 		{ "Category", "StandaloneSign" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 		{ "ToolTip", "Particle system visual" },
 	};
 #endif
@@ -336,7 +336,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStandaloneSign() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mGridSquareDimensions_MetaData[] = {
 		{ "Category", "StandaloneSign" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 		{ "ToolTip", "The size of each grid square on the this sign" },
 	};
 #endif
@@ -345,7 +345,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStandaloneSign() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mBoundingBox_MetaData[] = {
 		{ "Category", "StandaloneSign" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 		{ "ToolTip", "Bounding box used to cull text mesh. Is assign to the BoundedTextRenderComponents" },
 	};
 #endif
@@ -354,7 +354,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStandaloneSign() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mMeshComponentProxy_MetaData[] = {
 		{ "Category", "StandaloneSign" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mMeshComponentProxy = { "mMeshComponentProxy", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableStandaloneSign, mMeshComponentProxy), Z_Construct_UClass_UFGColoredInstanceMeshProxy_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mMeshComponentProxy_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mMeshComponentProxy_MetaData)) };
@@ -362,7 +362,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStandaloneSign() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mTextDisplayRoot_MetaData[] = {
 		{ "Category", "StandaloneSign" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 		{ "ToolTip", "Root component that parents the text objects" },
 	};
 #endif
@@ -371,7 +371,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStandaloneSign() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mSignDisplayRoot_MetaData[] = {
 		{ "Category", "StandaloneSign" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 		{ "ToolTip", "Root Component that holds all the sign elements, text, mesh etc." },
 	};
 #endif
@@ -379,7 +379,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStandaloneSign() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStandaloneSign_Statics::NewProp_mDataToComponentMap_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStandaloneSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStandaloneSign.h" },
 		{ "ToolTip", "Map of Element Ids to their associated component" },
 	};
 #endif
@@ -433,7 +433,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStandaloneSign() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableStandaloneSign, 2507788220);
+	IMPLEMENT_CLASS(AFGBuildableStandaloneSign, 737759427);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableStandaloneSign>()
 	{
 		return AFGBuildableStandaloneSign::StaticClass();

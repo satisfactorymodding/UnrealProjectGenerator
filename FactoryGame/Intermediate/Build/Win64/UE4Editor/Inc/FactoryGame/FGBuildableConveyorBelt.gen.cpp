@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableConveyorBelt.h"
+#include "FactoryGame/Public/Buildables/FGBuildableConveyorBelt.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseState_ConveyorBeltValid_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableConveyorBelt.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBelt.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorBelt.h" },
 		{ "ToolTip", "Valid state for picking up conveyor belt items." },
 	};
 #endif
@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_ConveyorBeltValid, 3549930011);
+	IMPLEMENT_CLASS(UFGUseState_ConveyorBeltValid, 2327761482);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_ConveyorBeltValid>()
 	{
 		return UFGUseState_ConveyorBeltValid::StaticClass();
@@ -119,7 +119,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseState_ConveyorBeltFullInventory_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableConveyorBelt.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBelt.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorBelt.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGUseState_ConveyorBeltFullInventory_Statics::StaticCppClassTypeInfo = {
@@ -149,7 +149,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_ConveyorBeltFullInventory, 352016813);
+	IMPLEMENT_CLASS(UFGUseState_ConveyorBeltFullInventory, 1752869875);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_ConveyorBeltFullInventory>()
 	{
 		return UFGUseState_ConveyorBeltFullInventory::StaticClass();
@@ -179,7 +179,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseState_ConveyorBeltEmpty_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableConveyorBelt.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBelt.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorBelt.h" },
 		{ "ToolTip", "State for when the belt is empty." },
 	};
 #endif
@@ -210,7 +210,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_ConveyorBeltEmpty, 1114937614);
+	IMPLEMENT_CLASS(UFGUseState_ConveyorBeltEmpty, 2964132608);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_ConveyorBeltEmpty>()
 	{
 		return UFGUseState_ConveyorBeltEmpty::StaticClass();
@@ -256,7 +256,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableConveyorBelt_GetSplineComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Build" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBelt.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorBelt.h" },
 		{ "ToolTip", "Returns the spline component" },
 	};
 #endif
@@ -293,7 +293,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableConveyorBelt_GetSplineData_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Conveyor" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBelt.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorBelt.h" },
 		{ "ToolTip", "Get the spline data for this conveyor." },
 	};
 #endif
@@ -327,7 +327,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableConveyorBelt_GetSplineMesh_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Conveyor" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBelt.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorBelt.h" },
 		{ "ToolTip", "Get the mesh used for this conveyor." },
 	};
 #endif
@@ -350,7 +350,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableConveyorBelt_OnRep_SplineData_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBelt.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorBelt.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableConveyorBelt_OnRep_SplineData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableConveyorBelt, nullptr, "OnRep_SplineData", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableConveyorBelt_OnRep_SplineData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConveyorBelt_OnRep_SplineData_Statics::Function_MetaDataParams)) };
@@ -406,22 +406,22 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableConveyorBelt_GetSplineComponent, "GetSplineComponent" }, // 3075215298
-		{ &Z_Construct_UFunction_AFGBuildableConveyorBelt_GetSplineData, "GetSplineData" }, // 65195504
-		{ &Z_Construct_UFunction_AFGBuildableConveyorBelt_GetSplineMesh, "GetSplineMesh" }, // 786360241
-		{ &Z_Construct_UFunction_AFGBuildableConveyorBelt_OnRep_SplineData, "OnRep_SplineData" }, // 3437006879
+		{ &Z_Construct_UFunction_AFGBuildableConveyorBelt_GetSplineComponent, "GetSplineComponent" }, // 1535111389
+		{ &Z_Construct_UFunction_AFGBuildableConveyorBelt_GetSplineData, "GetSplineData" }, // 3090324076
+		{ &Z_Construct_UFunction_AFGBuildableConveyorBelt_GetSplineMesh, "GetSplineMesh" }, // 3131096674
+		{ &Z_Construct_UFunction_AFGBuildableConveyorBelt_OnRep_SplineData, "OnRep_SplineData" }, // 912852155
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableConveyorBelt.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBelt.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorBelt.h" },
 		{ "ToolTip", "Base for conveyor belts.\nAssumption: Conveyors are never rotated, rotation is always 0,0,0." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::NewProp_mSplineAudioEvent_MetaData[] = {
 		{ "Category", "AkComponent" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBelt.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorBelt.h" },
 		{ "ToolTip", "The ak event to post for the sound spline" },
 	};
 #endif
@@ -430,7 +430,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::NewProp_mSoundSplineComponent_MetaData[] = {
 		{ "Category", "Audio" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBelt.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorBelt.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::NewProp_mSoundSplineComponent = { "mSoundSplineComponent", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableConveyorBelt, mSoundSplineComponent), Z_Construct_UClass_UFGSoundSplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::NewProp_mSoundSplineComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::NewProp_mSoundSplineComponent_MetaData)) };
@@ -438,14 +438,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::NewProp_mSplineComponent_MetaData[] = {
 		{ "Category", "Spline" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBelt.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorBelt.h" },
 		{ "ToolTip", "The spline component for this splined factory." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::NewProp_mSplineComponent = { "mSplineComponent", nullptr, (EPropertyFlags)0x00400000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableConveyorBelt, mSplineComponent), Z_Construct_UClass_UFGSplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::NewProp_mSplineComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::NewProp_mSplineComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::NewProp_mSplineData_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBelt.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorBelt.h" },
 		{ "NoAutoJson", "" },
 		{ "ToolTip", "Compact representation of mSplineComponent, used for replication and save game" },
 	};
@@ -455,7 +455,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::NewProp_mItemMeshMap_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBelt.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorBelt.h" },
 		{ "NoAutoJson", "" },
 		{ "ToolTip", "Meshes for items." },
 	};
@@ -500,7 +500,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConveyorBelt, 1589840972);
+	IMPLEMENT_CLASS(AFGBuildableConveyorBelt, 688394067);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableConveyorBelt>()
 	{
 		return AFGBuildableConveyorBelt::StaticClass();

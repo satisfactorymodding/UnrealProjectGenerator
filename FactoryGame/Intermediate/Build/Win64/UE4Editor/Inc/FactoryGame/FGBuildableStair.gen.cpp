@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableStair.h"
+#include "FactoryGame/Public/Buildables/FGBuildableStair.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStair() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStair_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableStair.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStair.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStair.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGBuildableStair_Statics::StaticCppClassTypeInfo = {
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStair() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableStair, 3964300225);
+	IMPLEMENT_CLASS(AFGBuildableStair, 2944645224);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableStair>()
 	{
 		return AFGBuildableStair::StaticClass();

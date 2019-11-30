@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGPoleHologram.h"
+#include "FactoryGame/Public/Hologram/FGPoleHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -39,7 +39,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPoleHologram() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPoleHologram_OnRep_PoleMesh_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Hologram/FGPoleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGPoleHologram.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPoleHologram_OnRep_PoleMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPoleHologram, nullptr, "OnRep_PoleMesh", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPoleHologram_OnRep_PoleMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPoleHologram_OnRep_PoleMesh_Statics::Function_MetaDataParams)) };
@@ -84,20 +84,20 @@ void EmptyLinkFunctionForGeneratedCodeFGPoleHologram() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGPoleHologram_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGPoleHologram_OnRep_PoleMesh, "OnRep_PoleMesh" }, // 2949998519
+		{ &Z_Construct_UFunction_AFGPoleHologram_OnRep_PoleMesh, "OnRep_PoleMesh" }, // 2494140170
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPoleHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGPoleHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGPoleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGPoleHologram.h" },
 		{ "ToolTip", "Base for holograms that can be raised/lowered, e.g. conveyor poles." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleHeightComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGPoleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGPoleHologram.h" },
 		{ "ToolTip", "The scene component for adjusting the height of the pole." },
 	};
 #endif
@@ -105,14 +105,14 @@ void EmptyLinkFunctionForGeneratedCodeFGPoleHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMeshComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGPoleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGPoleHologram.h" },
 		{ "ToolTip", "The pole mesh." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMeshComponent = { "mPoleMeshComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPoleHologram, mPoleMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMeshComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMesh_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGPoleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGPoleHologram.h" },
 		{ "ToolTip", "The most fitting mesh for our aim height." },
 	};
 #endif
@@ -149,7 +149,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPoleHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPoleHologram, 3286649045);
+	IMPLEMENT_CLASS(AFGPoleHologram, 1293259934);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPoleHologram>()
 	{
 		return AFGPoleHologram::StaticClass();

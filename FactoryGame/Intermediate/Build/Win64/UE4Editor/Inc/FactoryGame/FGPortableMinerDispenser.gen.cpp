@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGPortableMinerDispenser.h"
+#include "FactoryGame/Public/Equipment/FGPortableMinerDispenser.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -52,7 +52,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMinerDispenser() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPortableMinerDispenser_Server_PrimaryFire_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGPortableMinerDispenser.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGPortableMinerDispenser.h" },
 		{ "ToolTip", "Only the server handles the building." },
 	};
 #endif
@@ -81,7 +81,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMinerDispenser() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPortableMinerDispenser_SpawnPortableMiner_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGPortableMinerDispenser.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGPortableMinerDispenser.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPortableMinerDispenser_SpawnPortableMiner_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPortableMinerDispenser, nullptr, "SpawnPortableMiner", sizeof(FGPortableMinerDispenser_eventSpawnPortableMiner_Parms), Z_Construct_UFunction_AFGPortableMinerDispenser_SpawnPortableMiner_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPortableMinerDispenser_SpawnPortableMiner_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPortableMinerDispenser_SpawnPortableMiner_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPortableMinerDispenser_SpawnPortableMiner_Statics::Function_MetaDataParams)) };
@@ -132,25 +132,25 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMinerDispenser() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGPortableMinerDispenser_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGPortableMinerDispenser_Server_PrimaryFire, "Server_PrimaryFire" }, // 2175242258
-		{ &Z_Construct_UFunction_AFGPortableMinerDispenser_SpawnPortableMiner, "SpawnPortableMiner" }, // 2582038513
+		{ &Z_Construct_UFunction_AFGPortableMinerDispenser_Server_PrimaryFire, "Server_PrimaryFire" }, // 884313774
+		{ &Z_Construct_UFunction_AFGPortableMinerDispenser_SpawnPortableMiner, "SpawnPortableMiner" }, // 4016608594
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPortableMinerDispenser_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGPortableMinerDispenser.h" },
-		{ "ModuleRelativePath", "Equipment/FGPortableMinerDispenser.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGPortableMinerDispenser.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPortableMinerDispenser_Statics::NewProp_mInvalidPlacementMaterial_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGPortableMinerDispenser.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGPortableMinerDispenser.h" },
 		{ "ToolTip", "Material on hologram for invalid placement." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPortableMinerDispenser_Statics::NewProp_mInvalidPlacementMaterial = { "mInvalidPlacementMaterial", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPortableMinerDispenser, mInvalidPlacementMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPortableMinerDispenser_Statics::NewProp_mInvalidPlacementMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPortableMinerDispenser_Statics::NewProp_mInvalidPlacementMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPortableMinerDispenser_Statics::NewProp_mValidPlacementMaterial_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGPortableMinerDispenser.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGPortableMinerDispenser.h" },
 		{ "ToolTip", "Material on hologram for valid placement." },
 	};
 #endif
@@ -158,7 +158,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMinerDispenser() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPortableMinerDispenser_Statics::NewProp_mPlaceDistanceMax_MetaData[] = {
 		{ "Category", "Buildable" },
-		{ "ModuleRelativePath", "Equipment/FGPortableMinerDispenser.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGPortableMinerDispenser.h" },
 		{ "ToolTip", "Trace distance when building. * /" },
 	};
 #endif
@@ -166,7 +166,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMinerDispenser() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPortableMinerDispenser_Statics::NewProp_mAllowedResourceForms_MetaData[] = {
 		{ "Category", "FGPortableMinerDispenser" },
-		{ "ModuleRelativePath", "Equipment/FGPortableMinerDispenser.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGPortableMinerDispenser.h" },
 		{ "ToolTip", "What form can the overlapping resources be in." },
 	};
 #endif
@@ -208,7 +208,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMinerDispenser() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPortableMinerDispenser, 1978432714);
+	IMPLEMENT_CLASS(AFGPortableMinerDispenser, 1348556097);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPortableMinerDispenser>()
 	{
 		return AFGPortableMinerDispenser::StaticClass();

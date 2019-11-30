@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGRailroadVehicleHologram.h"
+#include "FactoryGame/Public/Hologram/FGRailroadVehicleHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -57,27 +57,27 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadVehicleHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGRailroadVehicleHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGRailroadVehicleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadVehicleHologram.h" },
 		{ "ToolTip", "Hologram for railroad vehicles, this snaps to train tracks and couple with each other." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadVehicleHologram_Statics::NewProp_mSnappedVehicle_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGRailroadVehicleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadVehicleHologram.h" },
 		{ "ToolTip", "The snapped vehicle." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRailroadVehicleHologram_Statics::NewProp_mSnappedVehicle = { "mSnappedVehicle", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGRailroadVehicleHologram, mSnappedVehicle), Z_Construct_UClass_AFGRailroadVehicle_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRailroadVehicleHologram_Statics::NewProp_mSnappedVehicle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadVehicleHologram_Statics::NewProp_mSnappedVehicle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadVehicleHologram_Statics::NewProp_mTrackPosition_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGRailroadVehicleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadVehicleHologram.h" },
 		{ "ToolTip", "The track position for this hologram. If valid this vehicle has snapped to a track." },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGRailroadVehicleHologram_Statics::NewProp_mTrackPosition = { "mTrackPosition", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGRailroadVehicleHologram, mTrackPosition), Z_Construct_UScriptStruct_FRailroadTrackPosition, METADATA_PARAMS(Z_Construct_UClass_AFGRailroadVehicleHologram_Statics::NewProp_mTrackPosition_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadVehicleHologram_Statics::NewProp_mTrackPosition_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadVehicleHologram_Statics::NewProp_mLength_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGRailroadVehicleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadVehicleHologram.h" },
 		{ "ToolTip", "The length of our vehicle." },
 	};
 #endif
@@ -114,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadVehicleHologram, 4241534526);
+	IMPLEMENT_CLASS(AFGRailroadVehicleHologram, 1545962906);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRailroadVehicleHologram>()
 	{
 		return AFGRailroadVehicleHologram::StaticClass();

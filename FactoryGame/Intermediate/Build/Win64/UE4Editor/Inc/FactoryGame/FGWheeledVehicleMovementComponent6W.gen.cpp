@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGWheeledVehicleMovementComponent6W.h"
+#include "FactoryGame/Public/FGWheeledVehicleMovementComponent6W.h"
 #include "Serialization/ArchiveUObjectFromStructuredArchive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -43,7 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent6W() {}
 		return EWheelOrder6W_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EWheelOrder6W(EWheelOrder6W_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EWheelOrder6W"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EWheelOrder6W_Hash() { return 2612187160U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EWheelOrder6W_Hash() { return 111397408U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EWheelOrder6W()
 	{
 #if WITH_HOT_RELOAD
@@ -64,7 +64,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent6W() {}
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
-				{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+				{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -150,7 +150,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewStructOps()
@@ -161,7 +161,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ClutchStrength_MetaData[] = {
 		{ "Category", "Setup" },
 		{ "ClampMin", "0.0" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Strength of clutch (Kgm^2/s)" },
 		{ "UIMin", "0.0" },
 	};
@@ -172,7 +172,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 		{ "Category", "Setup" },
 		{ "ClampMax", "1.0" },
 		{ "ClampMin", "0.0" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Value of engineRevs/maxEngineRevs that is high enough to increment gear" },
 		{ "UIMax", "1.0" },
 		{ "UIMin", "0.0" },
@@ -182,7 +182,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ReverseGearRatio_MetaData[] = {
 		{ "Category", "Setup" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Reverse gear ratio" },
 	};
 #endif
@@ -190,7 +190,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ForwardGears_MetaData[] = {
 		{ "Category", "Setup" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Forward gear ratios (up to 30)" },
 	};
 #endif
@@ -199,7 +199,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_FinalRatio_MetaData[] = {
 		{ "Category", "Setup" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "The final gear ratio multiplies the transmission gear ratios." },
 	};
 #endif
@@ -209,7 +209,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 		{ "Category", "Setup" },
 		{ "ClampMin", "0.0" },
 		{ "editcondition", "bUseGearAutoBox" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Minimum time it takes the automatic transmission to initiate a gear change (seconds)" },
 		{ "UIMin", "0.0" },
 	};
@@ -219,7 +219,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_GearSwitchTime_MetaData[] = {
 		{ "Category", "Setup" },
 		{ "ClampMin", "0.0" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Time it takes to switch gears (seconds)" },
 		{ "UIMin", "0.0" },
 	};
@@ -229,7 +229,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_bUseGearAutoBox_MetaData[] = {
 		{ "Category", "VehicleSetup" },
 		{ "DisplayName", "Automatic Transmission" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Whether to use automatic transmission" },
 	};
 #endif
@@ -277,7 +277,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Hash() { return 1634306562U; }
+	uint32 Get_Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Hash() { return 663252246U; }
 class UScriptStruct* FVehicleGearData6W::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -323,7 +323,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleGearData6W
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewStructOps()
@@ -335,7 +335,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleGearData6W
 		{ "Category", "Setup" },
 		{ "ClampMax", "1.0" },
 		{ "ClampMin", "0.0" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Value of engineRevs/maxEngineRevs that is high enough to gear up" },
 		{ "UIMax", "1.0" },
 		{ "UIMin", "0.0" },
@@ -347,7 +347,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleGearData6W
 		{ "Category", "Setup" },
 		{ "ClampMax", "1.0" },
 		{ "ClampMin", "0.0" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Value of engineRevs/maxEngineRevs that is low enough to gear down" },
 		{ "UIMax", "1.0" },
 		{ "UIMin", "0.0" },
@@ -357,7 +357,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleGearData6W
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_Ratio_MetaData[] = {
 		{ "Category", "Setup" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Determines the amount of torque multiplication" },
 	};
 #endif
@@ -395,7 +395,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleGearData6W
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FVehicleGearData6W_Hash() { return 3182073983U; }
+	uint32 Get_Z_Construct_UScriptStruct_FVehicleGearData6W_Hash() { return 3181179964U; }
 class UScriptStruct* FVehicleEngineData6W::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -453,7 +453,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewStructOps()
@@ -464,7 +464,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchDisengaged_MetaData[] = {
 		{ "Category", "Setup" },
 		{ "ClampMin", "0.0" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Damping rate of engine in at zero throttle when the clutch is disengaged (in neutral gear) (Kgm^2/s)" },
 		{ "UIMin", "0.0" },
 	};
@@ -474,7 +474,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchEngaged_MetaData[] = {
 		{ "Category", "Setup" },
 		{ "ClampMin", "0.0" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Damping rate of engine in at zero throttle when the clutch is engaged (Kgm^2/s)" },
 		{ "UIMin", "0.0" },
 	};
@@ -484,7 +484,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateFullThrottle_MetaData[] = {
 		{ "Category", "Setup" },
 		{ "ClampMin", "0.0" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Damping rate of engine when full throttle is applied (Kgm^2/s)" },
 		{ "UIMin", "0.0" },
 	};
@@ -494,7 +494,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_MOI_MetaData[] = {
 		{ "Category", "Setup" },
 		{ "ClampMin", "0.01" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Moment of inertia of the engine around the axis of rotation (Kgm^2)." },
 		{ "UIMin", "0.01" },
 	};
@@ -504,7 +504,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_MaxRPM_MetaData[] = {
 		{ "Category", "Setup" },
 		{ "ClampMin", "0.01" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Maximum revolutions per minute of the engine" },
 		{ "UIMin", "0.01" },
 	};
@@ -513,7 +513,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_TorqueCurve_MetaData[] = {
 		{ "Category", "Setup" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Torque (Nm) at a given RPM" },
 	};
 #endif
@@ -554,7 +554,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FVehicleEngineData6W_Hash() { return 870566934U; }
+	uint32 Get_Z_Construct_UScriptStruct_FVehicleEngineData6W_Hash() { return 3348415326U; }
 class UScriptStruct* FVehicleDifferential6WData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -592,7 +592,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleDifferentia
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::NewStructOps()
@@ -602,7 +602,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleDifferentia
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::NewProp_DifferentialConfig_MetaData[] = {
 		{ "Category", "Setup" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Type of differential" },
 	};
 #endif
@@ -638,7 +638,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleDifferentia
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FVehicleDifferential6WData_Hash() { return 158353244U; }
+	uint32 Get_Z_Construct_UScriptStruct_FVehicleDifferential6WData_Hash() { return 3111462469U; }
 class UScriptStruct* FDifferentialSetup6W::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -687,7 +687,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Described which axles are powered by the engine. True == Powered." },
 	};
 #endif
@@ -698,7 +698,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Rear_MetaData[] = {
 		{ "Category", "Setup" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Rear_SetBit(void* Obj)
@@ -709,7 +709,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Mid_MetaData[] = {
 		{ "Category", "Setup" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Mid_SetBit(void* Obj)
@@ -720,7 +720,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Front_MetaData[] = {
 		{ "Category", "Setup" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Front_SetBit(void* Obj)
@@ -761,7 +761,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDifferentialSetup6W_Hash() { return 1641055544U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDifferentialSetup6W_Hash() { return 2136534403U; }
 	void UFGWheeledVehicleMovementComponent6W::StaticRegisterNativesUFGWheeledVehicleMovementComponent6W()
 	{
 		UClass* Class = UFGWheeledVehicleMovementComponent6W::StaticClass();
@@ -792,7 +792,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "returns the current largest lat slip of the vehicle" },
 	};
 #endif
@@ -826,7 +826,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "returns the current largest long slip of the vehicle" },
 	};
 #endif
@@ -860,7 +860,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "returns the current largest tire load of the vehicle" },
 	};
 #endif
@@ -931,16 +931,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip, "GetLargestLateralSlip" }, // 2121909826
-		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip, "GetLargestLongitudinalSlip" }, // 4067107192
-		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue, "GetLargestTireLoadValue" }, // 2216712791
+		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip, "GetLargestLateralSlip" }, // 3592495633
+		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip, "GetLargestLongitudinalSlip" }, // 3431606644
+		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue, "GetLargestTireLoadValue" }, // 1888394343
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "HideCategories", "PlanarMovement Components|Movement|Planar Activation Components|Activation" },
 		{ "IncludePath", "FGWheeledVehicleMovementComponent6W.h" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 		{ "SerializeToFArchive", "" },
 	};
@@ -950,7 +950,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		{ "Category", "SteeringSetup" },
 		{ "ClampMax", "1.0" },
 		{ "ClampMin", "0.0" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Accuracy of Ackermann steer calculation (range: 0..1)" },
 		{ "UIMax", "1.0" },
 		{ "UIMin", "0.0" },
@@ -960,7 +960,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_SteeringCurve_MetaData[] = {
 		{ "Category", "SteeringSetup" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Maximum steering versus forward speed (km/h)" },
 	};
 #endif
@@ -969,7 +969,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mDownShiftLatency_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
 		{ "ClampMin", "0.0" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Multiplier for down shifting latency. Eg. it may be better to have a faster latency when downshifting" },
 		{ "UIMin", "0.0" },
 	};
@@ -978,7 +978,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_TransmissionSetup_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Transmission data" },
 	};
 #endif
@@ -988,7 +988,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		{ "Category", "MechanicalSetup" },
 		{ "ClampMax", "1.0" },
 		{ "ClampMin", "0.0" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Amount of ADDITIONAL required gear ratio in order to shift up or down, given a slope. The result is that on steep slopes, the vehicle will shift up at a higher ratio and shift down at a higher ratio." },
 		{ "UIMax", "1.0" },
 		{ "UIMin", "0.0" },
@@ -999,7 +999,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mDSOLMaxSlopeAngleLimit_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
 		{ "ClampMin", "0.001" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Max slope Angle Limit (in degrees) in order to use all of SlopeShiftRatio" },
 	};
 #endif
@@ -1008,7 +1008,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mUseDSOLGearbox_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
 		{ "DisplayName", "Use Jace's special gearbox" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Use Jace's super awesome custom gearbox or not" },
 	};
 #endif
@@ -1020,7 +1020,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_DifferentialSetup_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Differential" },
 	};
 #endif
@@ -1028,7 +1028,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_EngineSetup_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
-		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicleMovementComponent6W.h" },
 		{ "ToolTip", "Engine" },
 	};
 #endif
@@ -1071,7 +1071,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent6W, 4207984793);
+	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent6W, 3858746935);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGWheeledVehicleMovementComponent6W>()
 	{
 		return UFGWheeledVehicleMovementComponent6W::StaticClass();

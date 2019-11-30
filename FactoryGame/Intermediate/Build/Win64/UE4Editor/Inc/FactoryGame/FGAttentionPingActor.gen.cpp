@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGAttentionPingActor.h"
+#include "FactoryGame/Public/FGAttentionPingActor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -56,7 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttentionPingActor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Attention Ping" },
-		{ "ModuleRelativePath", "FGAttentionPingActor.h" },
+		{ "ModuleRelativePath", "Public/FGAttentionPingActor.h" },
 		{ "ToolTip", "player state of the player that spawned this actor" },
 	};
 #endif
@@ -79,7 +79,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttentionPingActor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGAttentionPingActor_OnRep_OwningPlayerState_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGAttentionPingActor.h" },
+		{ "ModuleRelativePath", "Public/FGAttentionPingActor.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGAttentionPingActor_OnRep_OwningPlayerState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGAttentionPingActor, nullptr, "OnRep_OwningPlayerState", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGAttentionPingActor_OnRep_OwningPlayerState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGAttentionPingActor_OnRep_OwningPlayerState_Statics::Function_MetaDataParams)) };
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttentionPingActor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGAttentionPingActor_SpawnAttentionPingEffects_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Attention Ping" },
-		{ "ModuleRelativePath", "FGAttentionPingActor.h" },
+		{ "ModuleRelativePath", "Public/FGAttentionPingActor.h" },
 		{ "ToolTip", "Called when we have the player state replicated so now we can spawn the effects" },
 	};
 #endif
@@ -140,21 +140,21 @@ void EmptyLinkFunctionForGeneratedCodeFGAttentionPingActor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGAttentionPingActor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState, "GetOwningPlayerState" }, // 1508582624
-		{ &Z_Construct_UFunction_AFGAttentionPingActor_OnRep_OwningPlayerState, "OnRep_OwningPlayerState" }, // 2124312570
-		{ &Z_Construct_UFunction_AFGAttentionPingActor_SpawnAttentionPingEffects, "SpawnAttentionPingEffects" }, // 2663038388
+		{ &Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState, "GetOwningPlayerState" }, // 3375935999
+		{ &Z_Construct_UFunction_AFGAttentionPingActor_OnRep_OwningPlayerState, "OnRep_OwningPlayerState" }, // 3436040063
+		{ &Z_Construct_UFunction_AFGAttentionPingActor_SpawnAttentionPingEffects, "SpawnAttentionPingEffects" }, // 3701474863
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAttentionPingActor_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGAttentionPingActor.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGAttentionPingActor.h" },
+		{ "ModuleRelativePath", "Public/FGAttentionPingActor.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAttentionPingActor_Statics::NewProp_mOwningPlayerState_MetaData[] = {
-		{ "ModuleRelativePath", "FGAttentionPingActor.h" },
+		{ "ModuleRelativePath", "Public/FGAttentionPingActor.h" },
 		{ "ToolTip", "The player state of the pawn that spawned this actor" },
 	};
 #endif
@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttentionPingActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAttentionPingActor, 919832477);
+	IMPLEMENT_CLASS(AFGAttentionPingActor, 487481950);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGAttentionPingActor>()
 	{
 		return AFGAttentionPingActor::StaticClass();

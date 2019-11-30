@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGAudioVolumeSubsystem.h"
+#include "FactoryGame/Public/FGAudioVolumeSubsystem.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAudioVolumeSubsystem() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAudioVolumeSubsystem_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Rendering Actor Tick Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGAudioVolumeSubsystem.h" },
-		{ "ModuleRelativePath", "FGAudioVolumeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGAudioVolumeSubsystem.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAudioVolumeSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAudioVolumeSubsystem, 3212704026);
+	IMPLEMENT_CLASS(AFGAudioVolumeSubsystem, 3688603257);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGAudioVolumeSubsystem>()
 	{
 		return AFGAudioVolumeSubsystem::StaticClass();

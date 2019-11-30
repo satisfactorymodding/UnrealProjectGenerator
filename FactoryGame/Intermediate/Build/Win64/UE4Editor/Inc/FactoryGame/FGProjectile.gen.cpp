@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGProjectile.h"
+#include "FactoryGame/Public/FGProjectile.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "Returns the collision sphere" },
 	};
 #endif
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "Returns the location we are aiming for ( if any )" },
 	};
 #endif
@@ -175,7 +175,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "handle bounce" },
 	};
 #endif
@@ -216,7 +216,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "handle hit" },
 	};
 #endif
@@ -239,7 +239,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGProjectile_OnRep_Exploded_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "[client] explosion happened" },
 	};
 #endif
@@ -262,7 +262,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGProjectile_OnRep_InitialVelocity_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_OnRep_InitialVelocity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, nullptr, "OnRep_InitialVelocity", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_OnRep_InitialVelocity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnRep_InitialVelocity_Statics::Function_MetaDataParams)) };
@@ -285,7 +285,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGProjectile_PlayAttachEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "Called when we attach this actor to something like the world, a factory, a character" },
 	};
 #endif
@@ -309,7 +309,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGProjectile_PlayExplosionEffects_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "Function to set up explosion effects in Blueprint" },
 	};
 #endif
@@ -343,7 +343,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGProjectile_SetInitialVelocity_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "Sets the initial velocity so that it can be replicated to clients" },
 	};
 #endif
@@ -377,7 +377,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGProjectile_SetTargetLocation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "Returns the location we are aiming for ( if any )" },
 	};
 #endif
@@ -451,26 +451,26 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGProjectile_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGProjectile_GetCollisionSphere, "GetCollisionSphere" }, // 3642347848
-		{ &Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation, "GetProjectileTargetLocation" }, // 3301424782
-		{ &Z_Construct_UFunction_AFGProjectile_OnBounce, "OnBounce" }, // 237637872
-		{ &Z_Construct_UFunction_AFGProjectile_OnImpact, "OnImpact" }, // 1367743877
-		{ &Z_Construct_UFunction_AFGProjectile_OnRep_Exploded, "OnRep_Exploded" }, // 2764983391
-		{ &Z_Construct_UFunction_AFGProjectile_OnRep_InitialVelocity, "OnRep_InitialVelocity" }, // 1635662378
-		{ &Z_Construct_UFunction_AFGProjectile_PlayAttachEffect, "PlayAttachEffect" }, // 2097323365
-		{ &Z_Construct_UFunction_AFGProjectile_PlayExplosionEffects, "PlayExplosionEffects" }, // 3582114645
-		{ &Z_Construct_UFunction_AFGProjectile_SetInitialVelocity, "SetInitialVelocity" }, // 3273137485
-		{ &Z_Construct_UFunction_AFGProjectile_SetTargetLocation, "SetTargetLocation" }, // 1615098143
+		{ &Z_Construct_UFunction_AFGProjectile_GetCollisionSphere, "GetCollisionSphere" }, // 1254937530
+		{ &Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation, "GetProjectileTargetLocation" }, // 3429089813
+		{ &Z_Construct_UFunction_AFGProjectile_OnBounce, "OnBounce" }, // 4185528348
+		{ &Z_Construct_UFunction_AFGProjectile_OnImpact, "OnImpact" }, // 1774887412
+		{ &Z_Construct_UFunction_AFGProjectile_OnRep_Exploded, "OnRep_Exploded" }, // 2844100645
+		{ &Z_Construct_UFunction_AFGProjectile_OnRep_InitialVelocity, "OnRep_InitialVelocity" }, // 1500101116
+		{ &Z_Construct_UFunction_AFGProjectile_PlayAttachEffect, "PlayAttachEffect" }, // 2312410129
+		{ &Z_Construct_UFunction_AFGProjectile_PlayExplosionEffects, "PlayExplosionEffects" }, // 2421634861
+		{ &Z_Construct_UFunction_AFGProjectile_SetInitialVelocity, "SetInitialVelocity" }, // 3700259968
+		{ &Z_Construct_UFunction_AFGProjectile_SetTargetLocation, "SetTargetLocation" }, // 3338419792
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGProjectile.h" },
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCachedPC_MetaData[] = {
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "Caching the PC so that we can do damage even without a valid weapon" },
 	};
 #endif
@@ -478,7 +478,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::NewProp_mExplodeAtEndOfLife_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "Should the projectile explode when it dies of lifespan?" },
 	};
 #endif
@@ -490,7 +490,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCanTriggerExplodeBySameClass_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "Indicates if we should explode if we are taking damage from same actor class as ourselves" },
 	};
 #endif
@@ -501,7 +501,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCanTriggerExplodeBySameClass = { "mCanTriggerExplodeBySameClass", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGProjectile), &Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCanTriggerExplodeBySameClass_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCanTriggerExplodeBySameClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCanTriggerExplodeBySameClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::NewProp_mTargetLocation_MetaData[] = {
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "Location we are aiming at ( if any )" },
 	};
 #endif
@@ -511,7 +511,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Movement" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "Projectile movement component" },
 	};
 #endif
@@ -520,21 +520,21 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCollisionComp_MetaData[] = {
 		{ "Category", "Projectile" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "Sphere collision component" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCollisionComp = { "mCollisionComp", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGProjectile, mCollisionComp), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCollisionComp_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCollisionComp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::NewProp_mInitialVelocity_MetaData[] = {
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "Used to get the velocity over to clients" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mInitialVelocity = { "mInitialVelocity", "OnRep_InitialVelocity", (EPropertyFlags)0x0020080100000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGProjectile, mInitialVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mInitialVelocity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mInitialVelocity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::NewProp_mHasExploded_MetaData[] = {
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "did it explode?" },
 	};
 #endif
@@ -546,7 +546,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::NewProp_mProjectileData_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "FGProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGProjectile.h" },
 		{ "ToolTip", "projectile data" },
 	};
 #endif
@@ -592,7 +592,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGProjectile, 1213026488);
+	IMPLEMENT_CLASS(AFGProjectile, 1478177667);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGProjectile>()
 	{
 		return AFGProjectile::StaticClass();

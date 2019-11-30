@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Creature/Enemy/FGGameplayTask_Base.h"
+#include "FactoryGame/Public/Creature/Enemy/FGGameplayTask_Base.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -47,12 +47,12 @@ void EmptyLinkFunctionForGeneratedCodeFGGameplayTask_Base() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameplayTask_Base_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Creature/Enemy/FGGameplayTask_Base.h" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGGameplayTask_Base.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGGameplayTask_Base.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameplayTask_Base_Statics::NewProp_mCachedPawn_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/Enemy/FGGameplayTask_Base.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGGameplayTask_Base.h" },
 		{ "ToolTip", "Cache the pawn that we have" },
 	};
 #endif
@@ -87,7 +87,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameplayTask_Base() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameplayTask_Base, 3307314492);
+	IMPLEMENT_CLASS(UFGGameplayTask_Base, 1842088003);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGGameplayTask_Base>()
 	{
 		return UFGGameplayTask_Base::StaticClass();

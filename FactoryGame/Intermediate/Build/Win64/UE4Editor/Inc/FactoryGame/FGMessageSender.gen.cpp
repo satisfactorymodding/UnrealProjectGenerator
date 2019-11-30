@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/Message/FGMessageSender.h"
+#include "FactoryGame/Public/UI/Message/FGMessageSender.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -55,7 +55,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageSender() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sender|Utilities" },
 		{ "DeterminesOutputType", "inClass" },
-		{ "ModuleRelativePath", "UI/Message/FGMessageSender.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGMessageSender.h" },
 		{ "ToolTip", "Gets the default object so we can access stuff like the texture etc" },
 	};
 #endif
@@ -101,20 +101,20 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageSender() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMessageSender_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject, "GetSenderDefaultObject" }, // 2624292615
+		{ &Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject, "GetSenderDefaultObject" }, // 1319681699
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageSender_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "UI/Message/FGMessageSender.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "UI/Message/FGMessageSender.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGMessageSender.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mTexture_MetaData[] = {
 		{ "Category", "Sender" },
-		{ "ModuleRelativePath", "UI/Message/FGMessageSender.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGMessageSender.h" },
 		{ "ToolTip", "Image of the sender" },
 	};
 #endif
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageSender() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderMail_MetaData[] = {
 		{ "Category", "Sender" },
-		{ "ModuleRelativePath", "UI/Message/FGMessageSender.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGMessageSender.h" },
 		{ "ToolTip", "Mail adress of the sender" },
 	};
 #endif
@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageSender() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderName_MetaData[] = {
 		{ "Category", "Sender" },
-		{ "ModuleRelativePath", "UI/Message/FGMessageSender.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGMessageSender.h" },
 		{ "ToolTip", "Name of the sender" },
 	};
 #endif
@@ -167,7 +167,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageSender() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMessageSender, 1754094290);
+	IMPLEMENT_CLASS(UFGMessageSender, 1910167833);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGMessageSender>()
 	{
 		return UFGMessageSender::StaticClass();

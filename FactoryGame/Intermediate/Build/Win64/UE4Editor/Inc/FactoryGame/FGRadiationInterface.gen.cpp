@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGRadiationInterface.h"
+#include "FactoryGame/Public/FGRadiationInterface.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRadiationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radioactivity" },
-		{ "ModuleRelativePath", "FGRadiationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGRadiationInterface.h" },
 		{ "ToolTip", "@param amount                How much radiation we're exposed to. [units/s]\n@param duration              For how long we've been exposed. [s]\n@param damageType    The type of damage you take from this radiation." },
 	};
 #endif
@@ -92,13 +92,13 @@ void EmptyLinkFunctionForGeneratedCodeFGRadiationInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGRadiationInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation, "ReceiveRadiation" }, // 463502682
+		{ &Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation, "ReceiveRadiation" }, // 2860899415
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRadiationInterface_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGRadiationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGRadiationInterface.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
@@ -129,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRadiationInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRadiationInterface, 253169499);
+	IMPLEMENT_CLASS(UFGRadiationInterface, 2463856767);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGRadiationInterface>()
 	{
 		return UFGRadiationInterface::StaticClass();

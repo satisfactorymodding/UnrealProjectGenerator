@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableWall.h"
+#include "FactoryGame/Public/Buildables/FGBuildableWall.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -50,14 +50,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWall() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWall_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableWall.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableWall.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWall.h" },
 		{ "ToolTip", "A wall that can be build on foundations, floors and other walls." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mHeight_MetaData[] = {
 		{ "Category", "Wall" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableWall.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWall.h" },
 		{ "ToolTip", "Height of the wall" },
 	};
 #endif
@@ -65,7 +65,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWall() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mWidth_MetaData[] = {
 		{ "Category", "Wall" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableWall.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWall.h" },
 		{ "ToolTip", "Width of the wall" },
 	};
 #endif
@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWall() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableWall, 2641757977);
+	IMPLEMENT_CLASS(AFGBuildableWall, 2387688485);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableWall>()
 	{
 		return AFGBuildableWall::StaticClass();

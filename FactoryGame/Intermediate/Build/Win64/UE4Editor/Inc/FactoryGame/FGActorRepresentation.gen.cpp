@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGActorRepresentation.h"
+#include "FactoryGame/Public/FGActorRepresentation.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 		return ECompassViewDistance_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ECompassViewDistance(ECompassViewDistance_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ECompassViewDistance"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ECompassViewDistance_Hash() { return 2891115412U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ECompassViewDistance_Hash() { return 3388126336U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ECompassViewDistance()
 	{
 #if WITH_HOT_RELOAD
@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 				{ "CVD_Mid.DisplayName", "Mid" },
 				{ "CVD_Near.DisplayName", "Near" },
 				{ "CVD_Off.DisplayName", "Off" },
-				{ "ModuleRelativePath", "FGActorRepresentation.h" },
+				{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -117,7 +117,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 		return EFogOfWarRevealType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFogOfWarRevealType(EFogOfWarRevealType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EFogOfWarRevealType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EFogOfWarRevealType_Hash() { return 4052901499U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EFogOfWarRevealType_Hash() { return 4138854606U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EFogOfWarRevealType()
 	{
 #if WITH_HOT_RELOAD
@@ -141,7 +141,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 				{ "FOWRT_Intermittent.DisplayName", "Intermittent" },
 				{ "FOWRT_None.DisplayName", "None" },
 				{ "FOWRT_Static.DisplayName", "Static" },
-				{ "ModuleRelativePath", "FGActorRepresentation.h" },
+				{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -174,7 +174,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 		return ERepresentationType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ERepresentationType(ERepresentationType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ERepresentationType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ERepresentationType_Hash() { return 2495308741U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ERepresentationType_Hash() { return 1687770304U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ERepresentationType()
 	{
 #if WITH_HOT_RELOAD
@@ -204,7 +204,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "FGActorRepresentation.h" },
+				{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 				{ "RT_Beacon.DisplayName", "Beacon" },
 				{ "RT_Crate.DisplayName", "Crate" },
 				{ "RT_Default.DisplayName", "Default" },
@@ -281,7 +281,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_GetActorLocation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "Get the location of the represented actor" },
 	};
 #endif
@@ -315,7 +315,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_GetActorRotation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "Get the rotation of the represented actor" },
 	};
 #endif
@@ -352,7 +352,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_GetCompassViewDistance_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGActorRepresentation_GetCompassViewDistance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGActorRepresentation, nullptr, "GetCompassViewDistance", sizeof(FGActorRepresentation_eventGetCompassViewDistance_Parms), Z_Construct_UFunction_UFGActorRepresentation_GetCompassViewDistance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentation_GetCompassViewDistance_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGActorRepresentation_GetCompassViewDistance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentation_GetCompassViewDistance_Statics::Function_MetaDataParams)) };
@@ -385,7 +385,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_GetFogOfWarRevealRadius_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGActorRepresentation_GetFogOfWarRevealRadius_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGActorRepresentation, nullptr, "GetFogOfWarRevealRadius", sizeof(FGActorRepresentation_eventGetFogOfWarRevealRadius_Parms), Z_Construct_UFunction_UFGActorRepresentation_GetFogOfWarRevealRadius_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentation_GetFogOfWarRevealRadius_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGActorRepresentation_GetFogOfWarRevealRadius_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentation_GetFogOfWarRevealRadius_Statics::Function_MetaDataParams)) };
@@ -421,7 +421,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_GetFogOfWarRevealType_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGActorRepresentation_GetFogOfWarRevealType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGActorRepresentation, nullptr, "GetFogOfWarRevealType", sizeof(FGActorRepresentation_eventGetFogOfWarRevealType_Parms), Z_Construct_UFunction_UFGActorRepresentation_GetFogOfWarRevealType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentation_GetFogOfWarRevealType_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGActorRepresentation_GetFogOfWarRevealType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentation_GetFogOfWarRevealType_Statics::Function_MetaDataParams)) };
@@ -459,7 +459,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_GetIsTemporary_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "If this actor representation is temporary or not" },
 	};
 #endif
@@ -493,7 +493,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_GetRealActor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "Get the Real actor we represent, might not be relevant on client" },
 	};
 #endif
@@ -527,7 +527,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationColor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "This is the color to render in the compass" },
 	};
 #endif
@@ -561,7 +561,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationText_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "This is the text to render in the compass" },
 	};
 #endif
@@ -595,7 +595,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationTexture_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "This is the image to render in the compass" },
 	};
 #endif
@@ -632,7 +632,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationType_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGActorRepresentation, nullptr, "GetRepresentationType", sizeof(FGActorRepresentation_eventGetRepresentationType_Parms), Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationType_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationType_Statics::Function_MetaDataParams)) };
@@ -670,7 +670,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_GetShouldShowInCompass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "If this should be shown in the compass or not" },
 	};
 #endif
@@ -709,7 +709,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_GetShouldShowOnMap_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "If this should be shown on the map or not" },
 	};
 #endif
@@ -748,7 +748,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_IsActorStatic_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "Is this the represented actor static or not" },
 	};
 #endif
@@ -771,7 +771,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_OnRep_ActorRepresentationUpdated_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGActorRepresentation_OnRep_ActorRepresentationUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGActorRepresentation, nullptr, "OnRep_ActorRepresentationUpdated", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGActorRepresentation_OnRep_ActorRepresentationUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentation_OnRep_ActorRepresentationUpdated_Statics::Function_MetaDataParams)) };
@@ -793,7 +793,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_OnRep_ShouldShowInCompass_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "Repnotifies" },
 	};
 #endif
@@ -816,7 +816,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentation_OnRep_ShouldShowOnMap_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGActorRepresentation_OnRep_ShouldShowOnMap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGActorRepresentation, nullptr, "OnRep_ShouldShowOnMap", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGActorRepresentation_OnRep_ShouldShowOnMap_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentation_OnRep_ShouldShowOnMap_Statics::Function_MetaDataParams)) };
@@ -907,36 +907,36 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGActorRepresentation_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGActorRepresentation_GetActorLocation, "GetActorLocation" }, // 875397806
-		{ &Z_Construct_UFunction_UFGActorRepresentation_GetActorRotation, "GetActorRotation" }, // 62052916
-		{ &Z_Construct_UFunction_UFGActorRepresentation_GetCompassViewDistance, "GetCompassViewDistance" }, // 3028716227
-		{ &Z_Construct_UFunction_UFGActorRepresentation_GetFogOfWarRevealRadius, "GetFogOfWarRevealRadius" }, // 3611544963
-		{ &Z_Construct_UFunction_UFGActorRepresentation_GetFogOfWarRevealType, "GetFogOfWarRevealType" }, // 656948652
-		{ &Z_Construct_UFunction_UFGActorRepresentation_GetIsTemporary, "GetIsTemporary" }, // 2673709286
-		{ &Z_Construct_UFunction_UFGActorRepresentation_GetRealActor, "GetRealActor" }, // 2533719915
-		{ &Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationColor, "GetRepresentationColor" }, // 1914708683
-		{ &Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationText, "GetRepresentationText" }, // 1561798526
-		{ &Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationTexture, "GetRepresentationTexture" }, // 2738436004
-		{ &Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationType, "GetRepresentationType" }, // 1881462266
-		{ &Z_Construct_UFunction_UFGActorRepresentation_GetShouldShowInCompass, "GetShouldShowInCompass" }, // 3637676978
-		{ &Z_Construct_UFunction_UFGActorRepresentation_GetShouldShowOnMap, "GetShouldShowOnMap" }, // 916581049
-		{ &Z_Construct_UFunction_UFGActorRepresentation_IsActorStatic, "IsActorStatic" }, // 1585732670
-		{ &Z_Construct_UFunction_UFGActorRepresentation_OnRep_ActorRepresentationUpdated, "OnRep_ActorRepresentationUpdated" }, // 1589422162
-		{ &Z_Construct_UFunction_UFGActorRepresentation_OnRep_ShouldShowInCompass, "OnRep_ShouldShowInCompass" }, // 2769818968
-		{ &Z_Construct_UFunction_UFGActorRepresentation_OnRep_ShouldShowOnMap, "OnRep_ShouldShowOnMap" }, // 2106894295
+		{ &Z_Construct_UFunction_UFGActorRepresentation_GetActorLocation, "GetActorLocation" }, // 1706054515
+		{ &Z_Construct_UFunction_UFGActorRepresentation_GetActorRotation, "GetActorRotation" }, // 1782261579
+		{ &Z_Construct_UFunction_UFGActorRepresentation_GetCompassViewDistance, "GetCompassViewDistance" }, // 3756771867
+		{ &Z_Construct_UFunction_UFGActorRepresentation_GetFogOfWarRevealRadius, "GetFogOfWarRevealRadius" }, // 1809215724
+		{ &Z_Construct_UFunction_UFGActorRepresentation_GetFogOfWarRevealType, "GetFogOfWarRevealType" }, // 2320721795
+		{ &Z_Construct_UFunction_UFGActorRepresentation_GetIsTemporary, "GetIsTemporary" }, // 3266859798
+		{ &Z_Construct_UFunction_UFGActorRepresentation_GetRealActor, "GetRealActor" }, // 2286129792
+		{ &Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationColor, "GetRepresentationColor" }, // 63775070
+		{ &Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationText, "GetRepresentationText" }, // 3079444557
+		{ &Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationTexture, "GetRepresentationTexture" }, // 1429428433
+		{ &Z_Construct_UFunction_UFGActorRepresentation_GetRepresentationType, "GetRepresentationType" }, // 2528350640
+		{ &Z_Construct_UFunction_UFGActorRepresentation_GetShouldShowInCompass, "GetShouldShowInCompass" }, // 2285162401
+		{ &Z_Construct_UFunction_UFGActorRepresentation_GetShouldShowOnMap, "GetShouldShowOnMap" }, // 3226773543
+		{ &Z_Construct_UFunction_UFGActorRepresentation_IsActorStatic, "IsActorStatic" }, // 432148073
+		{ &Z_Construct_UFunction_UFGActorRepresentation_OnRep_ActorRepresentationUpdated, "OnRep_ActorRepresentationUpdated" }, // 1785344895
+		{ &Z_Construct_UFunction_UFGActorRepresentation_OnRep_ShouldShowInCompass, "OnRep_ShouldShowInCompass" }, // 3863705346
+		{ &Z_Construct_UFunction_UFGActorRepresentation_OnRep_ShouldShowOnMap, "OnRep_ShouldShowOnMap" }, // 2094785039
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGActorRepresentation_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGActorRepresentation.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "This object represents an actor in the world. Used in the compass and the minimap." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mCompassViewDistance_MetaData[] = {
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "How far away this representation should be shown in the compass" },
 	};
 #endif
@@ -944,7 +944,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mCompassViewDistance_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mShouldShowOnMap_MetaData[] = {
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "If this should be shown on the map or not" },
 	};
 #endif
@@ -955,7 +955,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mShouldShowOnMap = { "mShouldShowOnMap", "OnRep_ShouldShowOnMap", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGActorRepresentation), &Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mShouldShowOnMap_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mShouldShowOnMap_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mShouldShowOnMap_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mShouldShowInCompass_MetaData[] = {
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "If this should be shown in the compass or not" },
 	};
 #endif
@@ -966,20 +966,20 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mShouldShowInCompass = { "mShouldShowInCompass", "OnRep_ShouldShowInCompass", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGActorRepresentation), &Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mShouldShowInCompass_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mShouldShowInCompass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mShouldShowInCompass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mFogOfWarRevealRadius_MetaData[] = {
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mFogOfWarRevealRadius = { "mFogOfWarRevealRadius", "OnRep_ActorRepresentationUpdated", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGActorRepresentation, mFogOfWarRevealRadius), METADATA_PARAMS(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mFogOfWarRevealRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mFogOfWarRevealRadius_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mFogOfWarRevealType_MetaData[] = {
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mFogOfWarRevealType = { "mFogOfWarRevealType", "OnRep_ActorRepresentationUpdated", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGActorRepresentation, mFogOfWarRevealType), Z_Construct_UEnum_FactoryGame_EFogOfWarRevealType, METADATA_PARAMS(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mFogOfWarRevealType_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mFogOfWarRevealType_MetaData)) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mFogOfWarRevealType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mRepresentationType_MetaData[] = {
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "This helps define how this actor representation should be presented" },
 	};
 #endif
@@ -987,28 +987,28 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mRepresentationType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mRepresentationColor_MetaData[] = {
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "This is the color used for the representation of this actor" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mRepresentationColor = { "mRepresentationColor", "OnRep_ActorRepresentationUpdated", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGActorRepresentation, mRepresentationColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mRepresentationColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mRepresentationColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mRepresentationText_MetaData[] = {
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "This is the text to show for this actor representation" },
 	};
 #endif
 	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mRepresentationText = { "mRepresentationText", "OnRep_ActorRepresentationUpdated", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGActorRepresentation, mRepresentationText), METADATA_PARAMS(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mRepresentationText_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mRepresentationText_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mRepresentationTexture_MetaData[] = {
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "This is the texture to show for this actor representation" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mRepresentationTexture = { "mRepresentationTexture", "OnRep_ActorRepresentationUpdated", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGActorRepresentation, mRepresentationTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mRepresentationTexture_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mRepresentationTexture_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mIsStatic_MetaData[] = {
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "If the actor is static or can be moved" },
 	};
 #endif
@@ -1019,21 +1019,21 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mIsStatic = { "mIsStatic", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGActorRepresentation), &Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mIsStatic_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mIsStatic_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mIsStatic_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mActorRotation_MetaData[] = {
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "This is the actor rotation" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mActorRotation = { "mActorRotation", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGActorRepresentation, mActorRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mActorRotation_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mActorRotation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mActorLocation_MetaData[] = {
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "This is the actor location" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mActorLocation = { "mActorLocation", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGActorRepresentation, mActorLocation), Z_Construct_UScriptStruct_FVector_NetQuantize, METADATA_PARAMS(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mActorLocation_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mActorLocation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGActorRepresentation_Statics::NewProp_mRealActor_MetaData[] = {
-		{ "ModuleRelativePath", "FGActorRepresentation.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentation.h" },
 		{ "ToolTip", "This is the real actor that this representation represents" },
 	};
 #endif
@@ -1083,7 +1083,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGActorRepresentation, 791754851);
+	IMPLEMENT_CLASS(UFGActorRepresentation, 1534726044);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGActorRepresentation>()
 	{
 		return UFGActorRepresentation::StaticClass();

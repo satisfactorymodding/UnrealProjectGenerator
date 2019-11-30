@@ -14,7 +14,7 @@ class UFGInventoryComponent;
 #endif
 #define FACTORYGAME_FGBuildableTradingPost_generated_h
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_RPC_WRAPPERS \
 	virtual void OnTradingPostUpgraded_Implementation(int32 level, bool suppressBuildEffects); \
  \
 	DECLARE_FUNCTION(execOnRep_NeedPlayingBuildEffect) \
@@ -84,7 +84,7 @@ class UFGInventoryComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void OnTradingPostUpgraded_Implementation(int32 level, bool suppressBuildEffects); \
  \
 	DECLARE_FUNCTION(execOnRep_NeedPlayingBuildEffect) \
@@ -154,7 +154,7 @@ class UFGInventoryComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_EVENT_PARMS \
 	struct FGBuildableTradingPost_eventOnTradingPostUpgraded_Parms \
 	{ \
 		int32 level; \
@@ -162,8 +162,8 @@ class UFGInventoryComponent;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildableTradingPost(); \
 	friend struct Z_Construct_UClass_AFGBuildableTradingPost_Statics; \
@@ -172,7 +172,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildableTradingPost)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildableTradingPost(); \
 	friend struct Z_Construct_UClass_AFGBuildableTradingPost_Statics; \
@@ -181,7 +181,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildableTradingPost)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildableTradingPost(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildableTradingPost) \
@@ -194,7 +194,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGBuildableTradingPost(AFGBuildableTradingPost&&); \
@@ -205,7 +205,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableTradingPost); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildableTradingPost)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mInputInventory() { return STRUCT_OFFSET(AFGBuildableTradingPost, mInputInventory); } \
 	FORCEINLINE static uint32 __PPO__mSpawningGroundZOffset() { return STRUCT_OFFSET(AFGBuildableTradingPost, mSpawningGroundZOffset); } \
 	FORCEINLINE static uint32 __PPO__mGroundSearchZDistance() { return STRUCT_OFFSET(AFGBuildableTradingPost, mGroundSearchZDistance); } \
@@ -221,30 +221,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableTradingPost); \
 	FORCEINLINE static uint32 __PPO__mNeedPlayingBuildEffectNotification() { return STRUCT_OFFSET(AFGBuildableTradingPost, mNeedPlayingBuildEffectNotification); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_16_PROLOG \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_16_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_INCLASS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h_19_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -252,7 +252,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class AFGBuildableTradingPost>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Buildables_FGBuildableTradingPost_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableTradingPost_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

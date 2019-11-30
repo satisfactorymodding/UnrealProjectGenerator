@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGPopupWidgetContent.h"
+#include "FactoryGame/Public/FGPopupWidgetContent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -81,7 +81,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::Function_MetaDataParams[] = {
 		{ "Category", "PopupContent" },
-		{ "ModuleRelativePath", "FGPopupWidgetContent.h" },
+		{ "ModuleRelativePath", "Public/FGPopupWidgetContent.h" },
 		{ "ToolTip", "Called by the popup widget to determine if its buttons should be enabled" },
 	};
 #endif
@@ -105,7 +105,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupCanceled_Statics::Function_MetaDataParams[] = {
 		{ "Category", "PopupContent" },
-		{ "ModuleRelativePath", "FGPopupWidgetContent.h" },
+		{ "ModuleRelativePath", "Public/FGPopupWidgetContent.h" },
 		{ "ToolTip", "Called when the containing popup is closed without confirmation" },
 	};
 #endif
@@ -129,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupConfirmed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "PopupContent" },
-		{ "ModuleRelativePath", "FGPopupWidgetContent.h" },
+		{ "ModuleRelativePath", "Public/FGPopupWidgetContent.h" },
 		{ "ToolTip", "Called when the containing popup is confirmed" },
 	};
 #endif
@@ -159,7 +159,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize_Statics::Function_MetaDataParams[] = {
 		{ "Category", "PopupContent" },
-		{ "ModuleRelativePath", "FGPopupWidgetContent.h" },
+		{ "ModuleRelativePath", "Public/FGPopupWidgetContent.h" },
 		{ "ToolTip", "Assigns the UObject which is meant to implement the FGPopupInstigatorInterface" },
 	};
 #endif
@@ -208,7 +208,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::Function_MetaDataParams[] = {
 		{ "Category", "PopupContent" },
-		{ "ModuleRelativePath", "FGPopupWidgetContent.h" },
+		{ "ModuleRelativePath", "Public/FGPopupWidgetContent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPopupWidgetContent, nullptr, "SetOptionalTextElements", sizeof(FGPopupWidgetContent_eventSetOptionalTextElements_Parms), Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C420800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::Function_MetaDataParams)) };
@@ -249,30 +249,30 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGPopupWidgetContent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled, "GetShouldOkayBeEnabled" }, // 558776349
-		{ &Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupCanceled, "NotifyPopupCanceled" }, // 465208617
-		{ &Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupConfirmed, "NotifyPopupConfirmed" }, // 1307409900
-		{ &Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize, "SetInstigatorAndInitialize" }, // 399304943
-		{ &Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements, "SetOptionalTextElements" }, // 4173072725
+		{ &Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled, "GetShouldOkayBeEnabled" }, // 3343956563
+		{ &Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupCanceled, "NotifyPopupCanceled" }, // 601547382
+		{ &Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupConfirmed, "NotifyPopupConfirmed" }, // 1697527899
+		{ &Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize, "SetInstigatorAndInitialize" }, // 123562454
+		{ &Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements, "SetOptionalTextElements" }, // 717776340
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPopupWidgetContent_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGPopupWidgetContent.h" },
-		{ "ModuleRelativePath", "FGPopupWidgetContent.h" },
+		{ "ModuleRelativePath", "Public/FGPopupWidgetContent.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mPopupWidget_MetaData[] = {
 		{ "Category", "PopupContent" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGPopupWidgetContent.h" },
+		{ "ModuleRelativePath", "Public/FGPopupWidgetContent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mPopupWidget = { "mPopupWidget", nullptr, (EPropertyFlags)0x001000000008000c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPopupWidgetContent, mPopupWidget), Z_Construct_UClass_UFGPopupWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mPopupWidget_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mPopupWidget_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mInstigator_MetaData[] = {
 		{ "Category", "PopupContent" },
-		{ "ModuleRelativePath", "FGPopupWidgetContent.h" },
+		{ "ModuleRelativePath", "Public/FGPopupWidgetContent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mInstigator = { "mInstigator", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPopupWidgetContent, mInstigator), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mInstigator_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mInstigator_MetaData)) };
@@ -307,7 +307,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPopupWidgetContent, 3636517974);
+	IMPLEMENT_CLASS(UFGPopupWidgetContent, 3480872091);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGPopupWidgetContent>()
 	{
 		return UFGPopupWidgetContent::StaticClass();

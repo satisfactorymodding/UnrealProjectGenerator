@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableFloor.h"
+#include "FactoryGame/Public/Buildables/FGBuildableFloor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -46,14 +46,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFloor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableFloor_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableFloor.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableFloor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFloor.h" },
 		{ "ToolTip", "DEPRECATED - We only want foundations for now.\nA floor, must be placed on a foundation." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableFloor_Statics::NewProp_mSize_MetaData[] = {
 		{ "Category", "Foundation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableFloor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFloor.h" },
 		{ "ToolTip", "Size of the floor, width and depth." },
 	};
 #endif
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFloor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableFloor, 1896657619);
+	IMPLEMENT_CLASS(AFGBuildableFloor, 3199279687);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableFloor>()
 	{
 		return AFGBuildableFloor::StaticClass();

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/Message/FGMessageBase.h"
+#include "FactoryGame/Public/UI/Message/FGMessageBase.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -38,7 +38,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 		return EMessageType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EMessageType(EMessageType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EMessageType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EMessageType_Hash() { return 699706088U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EMessageType_Hash() { return 1761539402U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EMessageType()
 	{
 #if WITH_HOT_RELOAD
@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "UI/Message/FGMessageBase.h" },
+				{ "ModuleRelativePath", "Public/UI/Message/FGMessageBase.h" },
 				{ "MT_PIMARY.DisplayName", "Inbox" },
 				{ "MT_SPAM.DisplayName", "Spam" },
 				{ "MT_TUTORIAL.DisplayName", "Tutorial" },
@@ -114,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Message|Utilities" },
 		{ "DeterminesOutputType", "inClass" },
-		{ "ModuleRelativePath", "UI/Message/FGMessageBase.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGMessageBase.h" },
 		{ "ToolTip", "Gets the default object of the message class" },
 	};
 #endif
@@ -175,20 +175,20 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMessageBase_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject, "GetMessageDefaultObject" }, // 1440512439
+		{ &Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject, "GetMessageDefaultObject" }, // 646706452
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageBase_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "UI/Message/FGMessageBase.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "UI/Message/FGMessageBase.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGMessageBase.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mImages_MetaData[] = {
 		{ "Category", "Message" },
-		{ "ModuleRelativePath", "UI/Message/FGMessageBase.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGMessageBase.h" },
 		{ "ToolTip", "Images to display in the codex" },
 	};
 #endif
@@ -197,7 +197,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mType_MetaData[] = {
 		{ "Category", "Message" },
-		{ "ModuleRelativePath", "UI/Message/FGMessageBase.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGMessageBase.h" },
 		{ "ToolTip", "What type is it" },
 	};
 #endif
@@ -206,7 +206,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mSenderClass_MetaData[] = {
 		{ "Category", "Message" },
-		{ "ModuleRelativePath", "UI/Message/FGMessageBase.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGMessageBase.h" },
 		{ "ToolTip", "Who sent the message" },
 	};
 #endif
@@ -214,7 +214,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mIsPopup_MetaData[] = {
 		{ "Category", "Message" },
-		{ "ModuleRelativePath", "UI/Message/FGMessageBase.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGMessageBase.h" },
 		{ "ToolTip", "Should the message be displayed in a popup?" },
 	};
 #endif
@@ -226,7 +226,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mPreviewText_MetaData[] = {
 		{ "Category", "Message" },
-		{ "ModuleRelativePath", "UI/Message/FGMessageBase.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGMessageBase.h" },
 		{ "ToolTip", "Preview text when a message is added" },
 	};
 #endif
@@ -234,7 +234,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mTitle_MetaData[] = {
 		{ "Category", "Message" },
-		{ "ModuleRelativePath", "UI/Message/FGMessageBase.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGMessageBase.h" },
 		{ "ToolTip", "I think this may be the title" },
 	};
 #endif
@@ -276,7 +276,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMessageBase, 1420781500);
+	IMPLEMENT_CLASS(UFGMessageBase, 3656919975);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGMessageBase>()
 	{
 		return UFGMessageBase::StaticClass();

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGEquipmentAttachment.h"
+#include "FactoryGame/Public/Equipment/FGEquipmentAttachment.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -107,7 +107,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentAttachment_GetAttachedTo_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment|Attachment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "@return character this is attached to; nullptr if not attached." },
 	};
 #endif
@@ -141,7 +141,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentAttachment_GetAttachSocket_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment|Attachment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "@return socket this should attach to, can be none." },
 	};
 #endif
@@ -178,7 +178,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentAttachment_GetEquippedSlot_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment|Attachment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "@return The equipment slot that this attachment is associated with" },
 	};
 #endif
@@ -217,7 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentAttachment_IsAttached_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment|Attachment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "@return true if this is attached; false if not." },
 	};
 #endif
@@ -241,7 +241,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentAttachment_OnAttach_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment|Attachment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "Event called when this equipment has been attached" },
 	};
 #endif
@@ -271,7 +271,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentAttachment_OnAttachmentUseStateUpdated_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment|Attachment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "Event called when use state is updated" },
 	};
 #endif
@@ -295,7 +295,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentAttachment_OnDetach_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment|Attachment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "Event called before this equipment is detached" },
 	};
 #endif
@@ -318,7 +318,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentAttachment_OnRep_OnAnimationStateUpdated_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "Called when the animation state has been updated" },
 	};
 #endif
@@ -341,7 +341,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentAttachment_OnRep_UseLocationUpdated_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "Called when we get a new use location, on client through replication and on server from SetFlashLocation" },
 	};
 #endif
@@ -365,7 +365,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentAttachment_PlayAttachEffects3P_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment|Attachment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "Event called when we should play attach effects" },
 	};
 #endif
@@ -389,7 +389,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentAttachment_PlayDetachEffects3P_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment|Attachment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "Event called when we should play detach" },
 	};
 #endif
@@ -419,7 +419,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentAttachment_PlayUseEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Attachment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "Handles playing of effects on remote clients" },
 	};
 #endif
@@ -488,28 +488,28 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGEquipmentAttachment_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGEquipmentAttachment_GetAttachedTo, "GetAttachedTo" }, // 3538694237
-		{ &Z_Construct_UFunction_AFGEquipmentAttachment_GetAttachSocket, "GetAttachSocket" }, // 200894092
-		{ &Z_Construct_UFunction_AFGEquipmentAttachment_GetEquippedSlot, "GetEquippedSlot" }, // 806013477
-		{ &Z_Construct_UFunction_AFGEquipmentAttachment_IsAttached, "IsAttached" }, // 3275653857
-		{ &Z_Construct_UFunction_AFGEquipmentAttachment_OnAttach, "OnAttach" }, // 1640732729
-		{ &Z_Construct_UFunction_AFGEquipmentAttachment_OnAttachmentUseStateUpdated, "OnAttachmentUseStateUpdated" }, // 580024079
-		{ &Z_Construct_UFunction_AFGEquipmentAttachment_OnDetach, "OnDetach" }, // 896064353
-		{ &Z_Construct_UFunction_AFGEquipmentAttachment_OnRep_OnAnimationStateUpdated, "OnRep_OnAnimationStateUpdated" }, // 4119013662
-		{ &Z_Construct_UFunction_AFGEquipmentAttachment_OnRep_UseLocationUpdated, "OnRep_UseLocationUpdated" }, // 2129453747
-		{ &Z_Construct_UFunction_AFGEquipmentAttachment_PlayAttachEffects3P, "PlayAttachEffects3P" }, // 17665251
-		{ &Z_Construct_UFunction_AFGEquipmentAttachment_PlayDetachEffects3P, "PlayDetachEffects3P" }, // 1963666926
-		{ &Z_Construct_UFunction_AFGEquipmentAttachment_PlayUseEffect, "PlayUseEffect" }, // 1570630063
+		{ &Z_Construct_UFunction_AFGEquipmentAttachment_GetAttachedTo, "GetAttachedTo" }, // 796390152
+		{ &Z_Construct_UFunction_AFGEquipmentAttachment_GetAttachSocket, "GetAttachSocket" }, // 4152713600
+		{ &Z_Construct_UFunction_AFGEquipmentAttachment_GetEquippedSlot, "GetEquippedSlot" }, // 2135914498
+		{ &Z_Construct_UFunction_AFGEquipmentAttachment_IsAttached, "IsAttached" }, // 2658483742
+		{ &Z_Construct_UFunction_AFGEquipmentAttachment_OnAttach, "OnAttach" }, // 3695275035
+		{ &Z_Construct_UFunction_AFGEquipmentAttachment_OnAttachmentUseStateUpdated, "OnAttachmentUseStateUpdated" }, // 2284739117
+		{ &Z_Construct_UFunction_AFGEquipmentAttachment_OnDetach, "OnDetach" }, // 628295259
+		{ &Z_Construct_UFunction_AFGEquipmentAttachment_OnRep_OnAnimationStateUpdated, "OnRep_OnAnimationStateUpdated" }, // 1749265886
+		{ &Z_Construct_UFunction_AFGEquipmentAttachment_OnRep_UseLocationUpdated, "OnRep_UseLocationUpdated" }, // 1324150521
+		{ &Z_Construct_UFunction_AFGEquipmentAttachment_PlayAttachEffects3P, "PlayAttachEffects3P" }, // 4032529720
+		{ &Z_Construct_UFunction_AFGEquipmentAttachment_PlayDetachEffects3P, "PlayDetachEffects3P" }, // 3117743756
+		{ &Z_Construct_UFunction_AFGEquipmentAttachment_PlayUseEffect, "PlayUseEffect" }, // 2166656769
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentAttachment_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGEquipmentAttachment.h" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mAnimationState_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "integer used for animation states" },
 	};
 #endif
@@ -517,7 +517,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mEquipmentSlot_MetaData[] = {
 		{ "Category", "Equipment|Attachment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "To what slot is this attachment attached" },
 	};
 #endif
@@ -525,7 +525,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mEquipmentSlot_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mAttachedTo_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "The character this is attached to." },
 	};
 #endif
@@ -533,7 +533,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mBackAnimation_MetaData[] = {
 		{ "Category", "Equipment|Animation" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "Arms animation this should play on the when the equipment is equipped (only used if mEquipmentSlot == ES_BACK)" },
 	};
 #endif
@@ -542,7 +542,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mArmAnimation_MetaData[] = {
 		{ "Category", "Equipment|Animation" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "Arms animation this should play on the when the equipment is equipped (only used if mEquipmentSlot == ES_ARMS)" },
 	};
 #endif
@@ -551,21 +551,21 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mAttachSocket_MetaData[] = {
 		{ "Category", "Attachment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "If this equipment should attach to a socket, this is the socket." },
 	};
 #endif
 	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mAttachSocket = { "mAttachSocket", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipmentAttachment, mAttachSocket), METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mAttachSocket_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mAttachSocket_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mUseLocation_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "This value get replicated to clients so they can play effect" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mUseLocation = { "mUseLocation", "OnRep_UseLocationUpdated", (EPropertyFlags)0x0020080100000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipmentAttachment, mUseLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mUseLocation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mUseLocation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mEquipmentClass_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentAttachment.h" },
 		{ "ToolTip", "The class of the equipment that spawned this attachment" },
 	};
 #endif
@@ -610,7 +610,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEquipmentAttachment, 3529810330);
+	IMPLEMENT_CLASS(AFGEquipmentAttachment, 3446536087);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGEquipmentAttachment>()
 	{
 		return AFGEquipmentAttachment::StaticClass();

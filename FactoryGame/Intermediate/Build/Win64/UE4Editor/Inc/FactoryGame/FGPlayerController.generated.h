@@ -29,21 +29,21 @@ class UAkComponent;
 #endif
 #define FACTORYGAME_FGPlayerController_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_20_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_20_DELEGATE \
 static inline void FOnShortcutChanged_DelegateWrapper(const FMulticastScriptDelegate& OnShortcutChanged) \
 { \
 	OnShortcutChanged.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_19_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_19_DELEGATE \
 static inline void FOnShortcutsLayoutChanged_DelegateWrapper(const FMulticastScriptDelegate& OnShortcutsLayoutChanged) \
 { \
 	OnShortcutsLayoutChanged.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_18_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_18_DELEGATE \
 struct _Script_FactoryGame_eventOnToggleInteractionUI_Parms \
 { \
 	bool isOpen; \
@@ -58,7 +58,7 @@ static inline void FOnToggleInteractionUI_DelegateWrapper(const FMulticastScript
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_17_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_17_DELEGATE \
 struct _Script_FactoryGame_eventOnToggleInventory_Parms \
 { \
 	bool isOpen; \
@@ -71,7 +71,7 @@ static inline void FOnToggleInventory_DelegateWrapper(const FMulticastScriptDele
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_16_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_16_DELEGATE \
 struct _Script_FactoryGame_eventDisabledInputGateDelegate_Parms \
 { \
 	FDisabledInputGate newDisabledInputGate; \
@@ -84,7 +84,7 @@ static inline void FDisabledInputGateDelegate_DelegateWrapper(const FMulticastSc
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_15_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_15_DELEGATE \
 struct _Script_FactoryGame_eventPlayerEnteredAreaDelegate_Parms \
 { \
 	TSubclassOf<UFGMapArea>  mapArea; \
@@ -97,7 +97,7 @@ static inline void FPlayerEnteredAreaDelegate_DelegateWrapper(const FMulticastSc
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_14_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_14_DELEGATE \
 struct _Script_FactoryGame_eventPawnChangedDelegate_Parms \
 { \
 	APawn* newPawn; \
@@ -110,7 +110,7 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_25_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_RPC_WRAPPERS \
 	virtual void Client_WaitForLevelStreaming_Implementation(); \
 	virtual bool Server_FinishRespawn_Validate(); \
 	virtual void Server_FinishRespawn_Implementation(); \
@@ -686,7 +686,7 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void Client_WaitForLevelStreaming_Implementation(); \
 	virtual bool Server_FinishRespawn_Validate(); \
 	virtual void Server_FinishRespawn_Implementation(); \
@@ -1262,7 +1262,7 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_25_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_EVENT_PARMS \
 	struct FGPlayerController_eventClient_AddMessage_Parms \
 	{ \
 		TSubclassOf<UFGMessageBase>  newMessage; \
@@ -1326,8 +1326,8 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_25_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_25_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGPlayerController(); \
 	friend struct Z_Construct_UClass_AFGPlayerController_Statics; \
@@ -1336,7 +1336,7 @@ public: \
 	DECLARE_SERIALIZER(AFGPlayerController)
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_25_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGPlayerController(); \
 	friend struct Z_Construct_UClass_AFGPlayerController_Statics; \
@@ -1345,7 +1345,7 @@ public: \
 	DECLARE_SERIALIZER(AFGPlayerController)
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_25_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGPlayerController(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGPlayerController) \
@@ -1358,7 +1358,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_25_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGPlayerController(AFGPlayerController&&); \
@@ -1369,7 +1369,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGPlayerController); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGPlayerController)
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_25_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mRemoteCallObjects() { return STRUCT_OFFSET(AFGPlayerController, mRemoteCallObjects); } \
 	FORCEINLINE static uint32 __PPO__mInputComponentChords() { return STRUCT_OFFSET(AFGPlayerController, mInputComponentChords); } \
 	FORCEINLINE static uint32 __PPO__mAttentionPingActorClass() { return STRUCT_OFFSET(AFGPlayerController, mAttentionPingActorClass); } \
@@ -1386,30 +1386,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGPlayerController); \
 	FORCEINLINE static uint32 __PPO__mProximitySubsystem() { return STRUCT_OFFSET(AFGPlayerController, mProximitySubsystem); }
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_22_PROLOG \
-	FactoryGame_Source_FactoryGame_FGPlayerController_h_25_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_22_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_25_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGPlayerController_h_25_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGPlayerController_h_25_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGPlayerController_h_25_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGPlayerController_h_25_INCLASS \
-	FactoryGame_Source_FactoryGame_FGPlayerController_h_25_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerController_h_25_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGPlayerController_h_25_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGPlayerController_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGPlayerController_h_25_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGPlayerController_h_25_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGPlayerController_h_25_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -1417,7 +1417,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class AFGPlayerController>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGPlayerController_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGPlayerController_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

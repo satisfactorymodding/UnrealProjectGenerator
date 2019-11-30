@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGRadioactiveActor.h"
+#include "FactoryGame/Public/FGRadioactiveActor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -48,14 +48,14 @@ void EmptyLinkFunctionForGeneratedCodeFGRadioactiveActor() {}
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGRadioactiveActor.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGRadioactiveActor.h" },
+		{ "ModuleRelativePath", "Public/FGRadioactiveActor.h" },
 		{ "ToolTip", "An actor that is radioactive." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRadioactiveActor_Statics::NewProp_mRadioactiveDecay_MetaData[] = {
 		{ "Category", "Radioactivity" },
-		{ "ModuleRelativePath", "FGRadioactiveActor.h" },
+		{ "ModuleRelativePath", "Public/FGRadioactiveActor.h" },
 		{ "ToolTip", "How much radiation this item gives out in the number of nucleus that decays per second.\n0 means no radiation and 1 is 10^15 (1 quadrillion) decays/s.\nGood values are in the range 0 to 1." },
 	};
 #endif
@@ -90,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRadioactiveActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRadioactiveActor, 3448852314);
+	IMPLEMENT_CLASS(AFGRadioactiveActor, 342180043);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRadioactiveActor>()
 	{
 		return AFGRadioactiveActor::StaticClass();

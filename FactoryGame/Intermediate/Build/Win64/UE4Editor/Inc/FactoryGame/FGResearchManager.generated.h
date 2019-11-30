@@ -22,28 +22,28 @@ class AFGResearchManager;
 #endif
 #define FACTORYGAME_FGResearchManager_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_91_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_91_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FCompletedResearch_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FCompletedResearch>();
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_67_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_67_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FResearchTime_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FResearchTime>();
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_27_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_27_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FResearchCost_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FResearchCost>();
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_19_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_19_DELEGATE \
 struct _Script_FactoryGame_eventResearchNewAvailable_Parms \
 { \
 	TSubclassOf<UFGResearchRecipe>  researchRecipe; \
@@ -56,7 +56,7 @@ static inline void FResearchNewAvailable_DelegateWrapper(const FMulticastScriptD
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_18_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_18_DELEGATE \
 struct _Script_FactoryGame_eventResearchResultsClaimed_Parms \
 { \
 	TSubclassOf<UFGResearchRecipe>  researchRecipe; \
@@ -69,7 +69,7 @@ static inline void FResearchResultsClaimed_DelegateWrapper(const FMulticastScrip
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_17_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_17_DELEGATE \
 struct _Script_FactoryGame_eventResearchCompletedDelegate_Parms \
 { \
 	TSubclassOf<UFGResearchRecipe>  researchRecipe; \
@@ -82,7 +82,7 @@ static inline void FResearchCompletedDelegate_DelegateWrapper(const FMulticastSc
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_16_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_16_DELEGATE \
 struct _Script_FactoryGame_eventPaidOffResearchDelegate_Parms \
 { \
 	TSubclassOf<UFGResearchRecipe>  researchRecipe; \
@@ -95,7 +95,7 @@ static inline void FPaidOffResearchDelegate_DelegateWrapper(const FMulticastScri
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_15_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_15_DELEGATE \
 struct _Script_FactoryGame_eventResearchStartedDelegate_Parms \
 { \
 	TSubclassOf<UFGResearchRecipe>  researchRecipe; \
@@ -108,7 +108,7 @@ static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScri
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_221_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnResearchTimerComplete) \
 	{ \
@@ -429,7 +429,7 @@ static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScri
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_221_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnResearchTimerComplete) \
 	{ \
@@ -750,7 +750,7 @@ static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScri
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_221_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGResearchManager(); \
 	friend struct Z_Construct_UClass_AFGResearchManager_Statics; \
@@ -760,7 +760,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGResearchManager*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_221_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGResearchManager(); \
 	friend struct Z_Construct_UClass_AFGResearchManager_Statics; \
@@ -770,7 +770,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGResearchManager*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_221_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGResearchManager(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGResearchManager) \
@@ -783,7 +783,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_221_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGResearchManager(AFGResearchManager&&); \
@@ -794,7 +794,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGResearchManager); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGResearchManager)
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_221_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mCanConductMultipleResearch() { return STRUCT_OFFSET(AFGResearchManager, mCanConductMultipleResearch); } \
 	FORCEINLINE static uint32 __PPO__mDefaultStartingResearch() { return STRUCT_OFFSET(AFGResearchManager, mDefaultStartingResearch); } \
 	FORCEINLINE static uint32 __PPO__mAllResearchRecipes() { return STRUCT_OFFSET(AFGResearchManager, mAllResearchRecipes); } \
@@ -806,25 +806,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGResearchManager); \
 	FORCEINLINE static uint32 __PPO__mStructurePoints() { return STRUCT_OFFSET(AFGResearchManager, mStructurePoints); }
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_218_PROLOG
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_221_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_218_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGResearchManager_h_221_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGResearchManager_h_221_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGResearchManager_h_221_INCLASS \
-	FactoryGame_Source_FactoryGame_FGResearchManager_h_221_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchManager_h_221_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGResearchManager_h_221_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGResearchManager_h_221_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGResearchManager_h_221_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGResearchManager_h_221_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -832,7 +832,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class AFGResearchManager>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGResearchManager_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGResearchManager_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

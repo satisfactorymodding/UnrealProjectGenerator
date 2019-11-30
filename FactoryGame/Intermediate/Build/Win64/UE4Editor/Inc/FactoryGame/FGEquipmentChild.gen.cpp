@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGEquipmentChild.h"
+#include "FactoryGame/Public/FGEquipmentChild.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -66,7 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGEquipmentChild.h" },
+		{ "ModuleRelativePath", "Public/FGEquipmentChild.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentChild, nullptr, "GetAttachSocketTransform", sizeof(FGEquipmentChild_eventGetAttachSocketTransform_Parms), Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::Function_MetaDataParams)) };
@@ -95,7 +95,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentChild_OnEquip_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGEquipmentChild.h" },
+		{ "ModuleRelativePath", "Public/FGEquipmentChild.h" },
 		{ "ToolTip", "Called by after equip has run allowing for blueprint functionality" },
 	};
 #endif
@@ -119,7 +119,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentChild_OnUnEquip_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGEquipmentChild.h" },
+		{ "ModuleRelativePath", "Public/FGEquipmentChild.h" },
 		{ "ToolTip", "Called by after Unequip has run allowing for blueprint functionality" },
 	};
 #endif
@@ -161,21 +161,21 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGEquipmentChild_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform, "GetAttachSocketTransform" }, // 1764723219
-		{ &Z_Construct_UFunction_AFGEquipmentChild_OnEquip, "OnEquip" }, // 2355441045
-		{ &Z_Construct_UFunction_AFGEquipmentChild_OnUnEquip, "OnUnEquip" }, // 3449365434
+		{ &Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform, "GetAttachSocketTransform" }, // 1148112488
+		{ &Z_Construct_UFunction_AFGEquipmentChild_OnEquip, "OnEquip" }, // 4249749183
+		{ &Z_Construct_UFunction_AFGEquipmentChild_OnUnEquip, "OnUnEquip" }, // 2039151033
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentChild_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGEquipmentChild.h" },
-		{ "ModuleRelativePath", "FGEquipmentChild.h" },
+		{ "ModuleRelativePath", "Public/FGEquipmentChild.h" },
 		{ "ToolTip", "Equipment children are a second actor spawned when the FGEquipable parent is spawned from FGCharacterPlayer\nThey are not saved and thus all actions should be driven by their parent.\nIf the FGEquipable parent is loaded from save, then their FGEquipmentChild (this) is spawned in PostLoadGame()" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mAttachSocket_MetaData[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGEquipmentChild.h" },
+		{ "ModuleRelativePath", "Public/FGEquipmentChild.h" },
 		{ "ToolTip", "The socket to attach any child equipment to" },
 	};
 #endif
@@ -183,7 +183,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mParentEquipment_MetaData[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGEquipmentChild.h" },
+		{ "ModuleRelativePath", "Public/FGEquipmentChild.h" },
 		{ "ToolTip", "stores a reference to the FGEquipment that spawned this class" },
 	};
 #endif
@@ -219,7 +219,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEquipmentChild, 2652076615);
+	IMPLEMENT_CLASS(AFGEquipmentChild, 42318956);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGEquipmentChild>()
 	{
 		return AFGEquipmentChild::StaticClass();

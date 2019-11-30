@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGFactoryBuildingHologram.h"
+#include "FactoryGame/Public/Hologram/FGFactoryBuildingHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -48,13 +48,13 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryBuildingHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFactoryBuildingHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGFactoryBuildingHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGFactoryBuildingHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGFactoryBuildingHologram.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFactoryBuildingHologram_Statics::NewProp_mBuildingMesh_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGFactoryBuildingHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGFactoryBuildingHologram.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFactoryBuildingHologram_Statics::NewProp_mBuildingMesh = { "mBuildingMesh", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFactoryBuildingHologram, mBuildingMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFactoryBuildingHologram_Statics::NewProp_mBuildingMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFactoryBuildingHologram_Statics::NewProp_mBuildingMesh_MetaData)) };
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryBuildingHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFactoryBuildingHologram, 1001396973);
+	IMPLEMENT_CLASS(AFGFactoryBuildingHologram, 485378765);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGFactoryBuildingHologram>()
 	{
 		return AFGFactoryBuildingHologram::StaticClass();

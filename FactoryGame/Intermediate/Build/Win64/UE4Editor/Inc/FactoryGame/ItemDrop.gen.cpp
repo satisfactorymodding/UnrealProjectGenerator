@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/ItemDrop.h"
+#include "FactoryGame/Public/ItemDrop.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -62,7 +62,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDropWithChance
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemDropWithChance_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "ItemDrop.h" },
+		{ "ModuleRelativePath", "Public/ItemDrop.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewStructOps()
@@ -72,7 +72,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDropWithChance
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_Drop_MetaData[] = {
 		{ "Category", "ItemDropWithChance" },
-		{ "ModuleRelativePath", "ItemDrop.h" },
+		{ "ModuleRelativePath", "Public/ItemDrop.h" },
 		{ "ShowOnlyInnerProperties", "" },
 		{ "ToolTip", "The drop to be given if we gain the item" },
 	};
@@ -81,7 +81,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDropWithChance
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_DropChance_MetaData[] = {
 		{ "Category", "DropPackage" },
-		{ "ModuleRelativePath", "ItemDrop.h" },
+		{ "ModuleRelativePath", "Public/ItemDrop.h" },
 		{ "ToolTip", "A chance between 0->1, 1 means 100% drop chance" },
 		{ "UIMax", "1.000000" },
 		{ "UIMin", "0.000000" },
@@ -120,7 +120,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDropWithChance
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemDropWithChance_Hash() { return 584611836U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemDropWithChance_Hash() { return 470312236U; }
 class UScriptStruct* FItemDrop::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -163,7 +163,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDrop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemDrop_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "ItemDrop.h" },
+		{ "ModuleRelativePath", "Public/ItemDrop.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FItemDrop_Statics::NewStructOps()
@@ -173,7 +173,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDrop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_NumItems_MetaData[] = {
 		{ "Category", "DropPackage" },
-		{ "ModuleRelativePath", "ItemDrop.h" },
+		{ "ModuleRelativePath", "Public/ItemDrop.h" },
 		{ "ToolTip", "Range of items you can get" },
 	};
 #endif
@@ -181,7 +181,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDrop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_ItemClass_MetaData[] = {
 		{ "Category", "DropPackage" },
-		{ "ModuleRelativePath", "ItemDrop.h" },
+		{ "ModuleRelativePath", "Public/ItemDrop.h" },
 		{ "ToolTip", "Item class" },
 	};
 #endif
@@ -218,7 +218,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDrop
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemDrop_Hash() { return 3801932516U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemDrop_Hash() { return 2633068347U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

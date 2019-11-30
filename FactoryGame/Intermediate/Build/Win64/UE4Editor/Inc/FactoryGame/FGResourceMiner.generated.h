@@ -14,7 +14,7 @@ class AFGResourceNode;
 #endif
 #define FACTORYGAME_FGResourceMiner_generated_h
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_RPC_WRAPPERS \
 	virtual bool Server_ExtractResources_Validate(); \
 	virtual void Server_ExtractResources_Implementation(); \
  \
@@ -65,7 +65,7 @@ class AFGResourceNode;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool Server_ExtractResources_Validate(); \
 	virtual void Server_ExtractResources_Implementation(); \
  \
@@ -116,9 +116,9 @@ class AFGResourceNode;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_EVENT_PARMS
-#define FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGResourceMiner(); \
 	friend struct Z_Construct_UClass_AFGResourceMiner_Statics; \
@@ -127,7 +127,7 @@ public: \
 	DECLARE_SERIALIZER(AFGResourceMiner)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGResourceMiner(); \
 	friend struct Z_Construct_UClass_AFGResourceMiner_Statics; \
@@ -136,7 +136,7 @@ public: \
 	DECLARE_SERIALIZER(AFGResourceMiner)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGResourceMiner(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGResourceMiner) \
@@ -149,7 +149,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGResourceMiner(AFGResourceMiner&&); \
@@ -160,36 +160,36 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGResourceMiner); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGResourceMiner)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mPickParticleSystem() { return STRUCT_OFFSET(AFGResourceMiner, mPickParticleSystem); } \
 	FORCEINLINE static uint32 __PPO__mPickArmsAnim() { return STRUCT_OFFSET(AFGResourceMiner, mPickArmsAnim); } \
 	FORCEINLINE static uint32 __PPO__mCachedResouceNode() { return STRUCT_OFFSET(AFGResourceMiner, mCachedResouceNode); }
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_11_PROLOG \
-	FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_11_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_INCLASS \
-	FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h_14_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -197,7 +197,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class AFGResourceMiner>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Equipment_FGResourceMiner_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_Equipment_FGResourceMiner_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

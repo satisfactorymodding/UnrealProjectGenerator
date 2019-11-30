@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Creature/FGCreatureSpawnerDebugComponent.h"
+#include "FactoryGame/Public/Creature/FGCreatureSpawnerDebugComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -44,7 +44,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSpawnerDebugComponent() {}
 		{ "ClassGroupNames", "Custom" },
 		{ "HideCategories", "Tags Activation" },
 		{ "IncludePath", "Creature/FGCreatureSpawnerDebugComponent.h" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSpawnerDebugComponent.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawnerDebugComponent.h" },
 		{ "ToolTip", "@todo: Do we maybe want to create a scene proxy for this, so that we can always draw cylinders, even when we ain't clicked (see USphereComponent)" },
 	};
 #endif
@@ -75,7 +75,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSpawnerDebugComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCreatureSpawnerDebugComponent, 3520706675);
+	IMPLEMENT_CLASS(UFGCreatureSpawnerDebugComponent, 2456345589);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCreatureSpawnerDebugComponent>()
 	{
 		return UFGCreatureSpawnerDebugComponent::StaticClass();

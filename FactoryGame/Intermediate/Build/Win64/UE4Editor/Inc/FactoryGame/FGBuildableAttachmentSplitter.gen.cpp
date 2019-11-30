@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableAttachmentSplitter.h"
+#include "FactoryGame/Public/Buildables/FGBuildableAttachmentSplitter.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -56,12 +56,12 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAttachmentSplitter() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableAttachmentSplitter_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableAttachmentSplitter.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableAttachmentSplitter.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableAttachmentSplitter.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableAttachmentSplitter_Statics::NewProp_mDistributionTable_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableAttachmentSplitter.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableAttachmentSplitter.h" },
 		{ "ToolTip", "Table of all items in the inventory mapped to a desired output. The array is filled from a call to FillDistributionTable which runs in factory tick" },
 	};
 #endif
@@ -69,14 +69,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAttachmentSplitter() {}
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableAttachmentSplitter_Statics::NewProp_mDistributionTable_Inner = { "mDistributionTable", nullptr, (EPropertyFlags)0x0000008000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FConnectionItemStruct, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableAttachmentSplitter_Statics::NewProp_mCurrentInventoryIndex_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableAttachmentSplitter.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableAttachmentSplitter.h" },
 		{ "NoAutoJson", "" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableAttachmentSplitter_Statics::NewProp_mCurrentInventoryIndex = { "mCurrentInventoryIndex", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableAttachmentSplitter, mCurrentInventoryIndex), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableAttachmentSplitter_Statics::NewProp_mCurrentInventoryIndex_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableAttachmentSplitter_Statics::NewProp_mCurrentInventoryIndex_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableAttachmentSplitter_Statics::NewProp_mCurrentOutputIndex_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableAttachmentSplitter.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableAttachmentSplitter.h" },
 		{ "NoAutoJson", "" },
 		{ "ToolTip", "Cycles through the outputs, stores the output we want to put mItem on. Index is for the mOutputs array." },
 	};
@@ -115,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAttachmentSplitter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableAttachmentSplitter, 194835311);
+	IMPLEMENT_CLASS(AFGBuildableAttachmentSplitter, 3838880797);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableAttachmentSplitter>()
 	{
 		return AFGBuildableAttachmentSplitter::StaticClass();

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGJetPack.h"
+#include "FactoryGame/Public/Equipment/FGJetPack.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGJetPack.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGJetPack.h" },
 		{ "ToolTip", "This function calculates our new velocity when we are thrusting" },
 	};
 #endif
@@ -129,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGJetPack_GetCurrentFuel_Statics::Function_MetaDataParams[] = {
 		{ "Category", "JetPack" },
-		{ "ModuleRelativePath", "Equipment/FGJetPack.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGJetPack.h" },
 		{ "ToolTip", "Returns the current amount of fuel for the jet pack. Please override." },
 	};
 #endif
@@ -159,7 +159,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGJetPack_GetMaxFuel_Statics::Function_MetaDataParams[] = {
 		{ "Category", "JetPack" },
-		{ "ModuleRelativePath", "Equipment/FGJetPack.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGJetPack.h" },
 		{ "ToolTip", "Returns the maximum amount of fuel for the jet pack. Please override." },
 	};
 #endif
@@ -191,7 +191,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGJetPack.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGJetPack.h" },
 		{ "ToolTip", "This function calculates our new velocity when we are thrusting" },
 	};
 #endif
@@ -214,7 +214,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGJetPack_OnStartThrusting_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGJetPack.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGJetPack.h" },
 		{ "ToolTip", "Called when we start thrusting" },
 	};
 #endif
@@ -237,7 +237,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGJetPack_OnStopThrusting_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGJetPack.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGJetPack.h" },
 		{ "ToolTip", "Called when we stop thrusting" },
 	};
 #endif
@@ -280,23 +280,23 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGJetPack_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGJetPack_CanThrust, "CanThrust" }, // 2541720872
-		{ &Z_Construct_UFunction_AFGJetPack_GetCurrentFuel, "GetCurrentFuel" }, // 3655661050
-		{ &Z_Construct_UFunction_AFGJetPack_GetMaxFuel, "GetMaxFuel" }, // 313433666
-		{ &Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting, "GetNewVelocityWhenThrusting" }, // 3345946806
-		{ &Z_Construct_UFunction_AFGJetPack_OnStartThrusting, "OnStartThrusting" }, // 2196058554
-		{ &Z_Construct_UFunction_AFGJetPack_OnStopThrusting, "OnStopThrusting" }, // 1791571486
+		{ &Z_Construct_UFunction_AFGJetPack_CanThrust, "CanThrust" }, // 3718550909
+		{ &Z_Construct_UFunction_AFGJetPack_GetCurrentFuel, "GetCurrentFuel" }, // 93551544
+		{ &Z_Construct_UFunction_AFGJetPack_GetMaxFuel, "GetMaxFuel" }, // 3239697884
+		{ &Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting, "GetNewVelocityWhenThrusting" }, // 1274775159
+		{ &Z_Construct_UFunction_AFGJetPack_OnStartThrusting, "OnStartThrusting" }, // 2453073908
+		{ &Z_Construct_UFunction_AFGJetPack_OnStopThrusting, "OnStopThrusting" }, // 3693481129
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGJetPack_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGJetPack.h" },
-		{ "ModuleRelativePath", "Equipment/FGJetPack.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGJetPack.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGJetPack_Statics::NewProp_mIsThrusting_MetaData[] = {
 		{ "Category", "FGJetPack" },
-		{ "ModuleRelativePath", "Equipment/FGJetPack.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGJetPack.h" },
 		{ "ToolTip", "If we are actually thrusting or not" },
 	};
 #endif
@@ -308,7 +308,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGJetPack_Statics::NewProp_mJumpTimeStamp_MetaData[] = {
 		{ "Category", "FGJetPack" },
-		{ "ModuleRelativePath", "Equipment/FGJetPack.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGJetPack.h" },
 		{ "ToolTip", "The duration we've held down thrust this flight, only resets when Landed" },
 	};
 #endif
@@ -344,7 +344,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGJetPack, 1998977880);
+	IMPLEMENT_CLASS(AFGJetPack, 1462160341);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGJetPack>()
 	{
 		return AFGJetPack::StaticClass();
@@ -378,7 +378,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGJetPackAttachment_OnRep_IsThrusting_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGJetPack.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGJetPack.h" },
 		{ "ToolTip", "Called when mIsThrusting is replicated" },
 	};
 #endif
@@ -401,7 +401,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGJetPackAttachment_OnStartThrusting_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGJetPack.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGJetPack.h" },
 		{ "ToolTip", "Called when we start thrusting" },
 	};
 #endif
@@ -424,7 +424,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGJetPackAttachment_OnStopThrusting_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGJetPack.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGJetPack.h" },
 		{ "ToolTip", "Called when we stop thrusting" },
 	};
 #endif
@@ -463,19 +463,19 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGJetPackAttachment_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGJetPackAttachment_OnRep_IsThrusting, "OnRep_IsThrusting" }, // 686487633
-		{ &Z_Construct_UFunction_AFGJetPackAttachment_OnStartThrusting, "OnStartThrusting" }, // 654993587
-		{ &Z_Construct_UFunction_AFGJetPackAttachment_OnStopThrusting, "OnStopThrusting" }, // 176493907
+		{ &Z_Construct_UFunction_AFGJetPackAttachment_OnRep_IsThrusting, "OnRep_IsThrusting" }, // 1756972509
+		{ &Z_Construct_UFunction_AFGJetPackAttachment_OnStartThrusting, "OnStartThrusting" }, // 750869613
+		{ &Z_Construct_UFunction_AFGJetPackAttachment_OnStopThrusting, "OnStopThrusting" }, // 2772247539
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGJetPackAttachment_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGJetPack.h" },
-		{ "ModuleRelativePath", "Equipment/FGJetPack.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGJetPack.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGJetPackAttachment_Statics::NewProp_mIsThrusting_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGJetPack.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGJetPack.h" },
 	};
 #endif
 	void Z_Construct_UClass_AFGJetPackAttachment_Statics::NewProp_mIsThrusting_SetBit(void* Obj)
@@ -513,7 +513,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGJetPackAttachment, 3978622721);
+	IMPLEMENT_CLASS(AFGJetPackAttachment, 766771250);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGJetPackAttachment>()
 	{
 		return AFGJetPackAttachment::StaticClass();

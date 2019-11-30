@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGRecipe.h"
+#include "FactoryGame/Public/FGRecipe.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_GetIngredients_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Recipe" },
-		{ "ModuleRelativePath", "FGRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
 		{ "ToolTip", "Used to get the ingredients in blueprint. @todo: Make return value a out value instead" },
 	};
 #endif
@@ -110,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_GetManufacturingDuration_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Recipe" },
-		{ "ModuleRelativePath", "FGRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
 		{ "ToolTip", "Used to get the manufacturing duration in blueprint." },
 	};
 #endif
@@ -151,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_GetProducedIn_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Recipe" },
-		{ "ModuleRelativePath", "FGRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
 		{ "ToolTip", "@todo: change return value to out variable. Used to get the produced in buildings in blueprint." },
 	};
 #endif
@@ -202,7 +202,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_GetProducts_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Recipe" },
 		{ "CPP_Default_allowChildRecipes", "false" },
-		{ "ModuleRelativePath", "FGRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
 		{ "ToolTip", "Used to get the products in blueprint. @todo: Make return value a out value instead, @todo remove unused allowChildRecipes." },
 	};
 #endif
@@ -240,7 +240,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_GetRecipeName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Recipe" },
-		{ "ModuleRelativePath", "FGRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
 		{ "ToolTip", "Used to get the recipe name in blueprint." },
 	};
 #endif
@@ -283,7 +283,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 		{ "Category", "Recipe" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "MAM is rewritten, use the new system instead!" },
-		{ "ModuleRelativePath", "FGRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
 		{ "ToolTip", "Used to get the products in blueprint. @todo Deprecated since 2018-10-23, but have been unused since MAM refactor." },
 	};
 #endif
@@ -330,7 +330,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_IsRecipeAffordable_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Recipe" },
-		{ "ModuleRelativePath", "FGRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
 		{ "ToolTip", "Can the given player afford the recipe" },
 	};
 #endif
@@ -367,7 +367,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_SortByName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Recipe" },
-		{ "ModuleRelativePath", "FGRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
 		{ "ToolTip", "Sort a array dependent on their names" },
 	};
 #endif
@@ -429,14 +429,14 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGRecipe_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGRecipe_GetIngredients, "GetIngredients" }, // 2597774063
-		{ &Z_Construct_UFunction_UFGRecipe_GetManufacturingDuration, "GetManufacturingDuration" }, // 2975663737
-		{ &Z_Construct_UFunction_UFGRecipe_GetProducedIn, "GetProducedIn" }, // 3129919147
-		{ &Z_Construct_UFunction_UFGRecipe_GetProducts, "GetProducts" }, // 2197153695
-		{ &Z_Construct_UFunction_UFGRecipe_GetRecipeName, "GetRecipeName" }, // 1558931035
-		{ &Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes, "GetRewardedRecipes" }, // 2186325076
-		{ &Z_Construct_UFunction_UFGRecipe_IsRecipeAffordable, "IsRecipeAffordable" }, // 3226488685
-		{ &Z_Construct_UFunction_UFGRecipe_SortByName, "SortByName" }, // 3290312723
+		{ &Z_Construct_UFunction_UFGRecipe_GetIngredients, "GetIngredients" }, // 4029993028
+		{ &Z_Construct_UFunction_UFGRecipe_GetManufacturingDuration, "GetManufacturingDuration" }, // 1694024716
+		{ &Z_Construct_UFunction_UFGRecipe_GetProducedIn, "GetProducedIn" }, // 502630461
+		{ &Z_Construct_UFunction_UFGRecipe_GetProducts, "GetProducts" }, // 925976853
+		{ &Z_Construct_UFunction_UFGRecipe_GetRecipeName, "GetRecipeName" }, // 911879690
+		{ &Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes, "GetRewardedRecipes" }, // 2416267019
+		{ &Z_Construct_UFunction_UFGRecipe_IsRecipeAffordable, "IsRecipeAffordable" }, // 1178674021
+		{ &Z_Construct_UFunction_UFGRecipe_SortByName, "SortByName" }, // 2303391373
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRecipe_Statics::Class_MetaDataParams[] = {
@@ -444,14 +444,14 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGRecipe.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
 		{ "ToolTip", "This is a class describing a recipe, subclass this in blueprint to make a new recipe." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRecipe_Statics::NewProp_mProducedIn_MetaData[] = {
 		{ "Category", "Recipe" },
-		{ "ModuleRelativePath", "FGRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
 		{ "MustImplement", "FGRecipeProducerInterface" },
 		{ "ToolTip", "Defines where this recipe can be produced" },
 	};
@@ -461,7 +461,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRecipe_Statics::NewProp_mManufactoringDuration_MetaData[] = {
 		{ "Category", "Recipe" },
-		{ "ModuleRelativePath", "FGRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
 		{ "ToolTip", "The time it takes to produce the output." },
 	};
 #endif
@@ -469,7 +469,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRecipe_Statics::NewProp_mProduct_MetaData[] = {
 		{ "Category", "Rewards" },
-		{ "ModuleRelativePath", "FGRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
 		{ "ToolTip", "The products produced from this recipe." },
 	};
 #endif
@@ -478,7 +478,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRecipe_Statics::NewProp_mIngredients_MetaData[] = {
 		{ "Category", "Recipe" },
-		{ "ModuleRelativePath", "FGRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
 		{ "ToolTip", "Ingredients needed to produce the products." },
 	};
 #endif
@@ -488,14 +488,14 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRecipe_Statics::NewProp_mDisplayName_MetaData[] = {
 		{ "Category", "Recipe" },
 		{ "EditCondition", "mDisplayNameOverride" },
-		{ "ModuleRelativePath", "FGRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
 		{ "ToolTip", "Overridden name for this recipe, if mDisplayNameOverride is false the first product's item name is used." },
 	};
 #endif
 	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGRecipe_Statics::NewProp_mDisplayName = { "mDisplayName", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRecipe, mDisplayName), METADATA_PARAMS(Z_Construct_UClass_UFGRecipe_Statics::NewProp_mDisplayName_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRecipe_Statics::NewProp_mDisplayName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRecipe_Statics::NewProp_mDisplayNameOverride_MetaData[] = {
-		{ "ModuleRelativePath", "FGRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "If we override the display name or get it from the first products item name." },
 	};
@@ -543,7 +543,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRecipe, 2267736559);
+	IMPLEMENT_CLASS(UFGRecipe, 524677784);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGRecipe>()
 	{
 		return UFGRecipe::StaticClass();

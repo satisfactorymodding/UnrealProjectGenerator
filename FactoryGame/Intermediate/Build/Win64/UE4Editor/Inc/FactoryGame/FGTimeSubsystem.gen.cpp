@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGTimeSubsystem.h"
+#include "FactoryGame/Public/FGTimeSubsystem.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_NewDayDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_NewDayDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "NewDayDelegate__DelegateSignature", sizeof(_Script_FactoryGame_eventNewDayDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_NewDayDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_NewDayDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_NewDayDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_NewDayDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 		{ "Category", "Time" },
 		{ "DefaultToSelf", "worldContext" },
 		{ "DisplayName", "GetTimeSubsystem" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "Get the current time subsystem" },
 	};
 #endif
@@ -156,7 +156,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetDayMinutes_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "How many (game) minutes has passed in our current day (0->1440)" },
 	};
 #endif
@@ -190,7 +190,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetDayPct_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "Get a value of how much \"day\" it is (0 means night, 1 means that the sun is at it's highest, and 0.5 means that it's halfway to day)" },
 	};
 #endif
@@ -224,7 +224,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetDaySeconds_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "How many (game) seconds has passed in our current day (0->86400)" },
 	};
 #endif
@@ -258,7 +258,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetDaytimeSeconds_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "Get how many real seconds the daytime consists of" },
 	};
 #endif
@@ -292,7 +292,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetHours_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "How many (game) hours has passed in our current day (0->24)" },
 	};
 #endif
@@ -326,7 +326,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetMinutes_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "How many (game) minutes has passed since our last hour (0->60)" },
 	};
 #endif
@@ -360,7 +360,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetNightPct_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "Get a value of how much \"night\" it is (0 means day, 1 means that it's \"in the middle of the night\", and 0.5 means that it's halfway there)" },
 	};
 #endif
@@ -394,7 +394,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetNighttimeSeconds_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "Get how many real seconds the nighttime consists of" },
 	};
 #endif
@@ -428,7 +428,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetNormalizedTimeOfDay_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "Get the (game) time of day as a normalized form (0->1, where 0 is 00:00 and 1 is 24:00)" },
 	};
 #endif
@@ -462,7 +462,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetPassedDays_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "How many (game) days has passed since we started the server" },
 	};
 #endif
@@ -496,7 +496,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetSeconds_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "How many (game) seconds has passed since our last minute (0->60)" },
 	};
 #endif
@@ -530,7 +530,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetTimeOfDayHours_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "Get the (game) time of day as a float in the range (0->24)" },
 	};
 #endif
@@ -569,7 +569,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_IsDay_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "Return true if it's daytime" },
 	};
 #endif
@@ -608,7 +608,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_IsNight_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "Return true if it's nighttime" },
 	};
 #endif
@@ -631,7 +631,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_OnRep_ReplicatedDaySeconds_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "Called on client whenever we update the server time" },
 	};
 #endif
@@ -665,7 +665,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_SetTimeSpeedMultiplier_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "Sets multiplier for speed of time" },
 	};
 #endif
@@ -688,7 +688,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTimeOfDaySubsystem_UpdateServerDaySeconds_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "Update the current time of day to be replicated to clients" },
 	};
 #endif
@@ -768,24 +768,24 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_Get, "Get" }, // 3229340910
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetDayMinutes, "GetDayMinutes" }, // 1402503920
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetDayPct, "GetDayPct" }, // 824303639
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetDaySeconds, "GetDaySeconds" }, // 236505482
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetDaytimeSeconds, "GetDaytimeSeconds" }, // 33535963
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetHours, "GetHours" }, // 1746482055
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetMinutes, "GetMinutes" }, // 217038841
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetNightPct, "GetNightPct" }, // 3666477848
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetNighttimeSeconds, "GetNighttimeSeconds" }, // 209354213
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetNormalizedTimeOfDay, "GetNormalizedTimeOfDay" }, // 3432034715
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetPassedDays, "GetPassedDays" }, // 2899322666
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetSeconds, "GetSeconds" }, // 2934096023
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetTimeOfDayHours, "GetTimeOfDayHours" }, // 2689337021
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_IsDay, "IsDay" }, // 1151335479
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_IsNight, "IsNight" }, // 2894267190
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_OnRep_ReplicatedDaySeconds, "OnRep_ReplicatedDaySeconds" }, // 3152281091
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_SetTimeSpeedMultiplier, "SetTimeSpeedMultiplier" }, // 3866428814
-		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_UpdateServerDaySeconds, "UpdateServerDaySeconds" }, // 3201640797
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_Get, "Get" }, // 206731385
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetDayMinutes, "GetDayMinutes" }, // 1280778037
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetDayPct, "GetDayPct" }, // 888613148
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetDaySeconds, "GetDaySeconds" }, // 1714104029
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetDaytimeSeconds, "GetDaytimeSeconds" }, // 3907069059
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetHours, "GetHours" }, // 52803577
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetMinutes, "GetMinutes" }, // 2995492435
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetNightPct, "GetNightPct" }, // 3868677146
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetNighttimeSeconds, "GetNighttimeSeconds" }, // 1623843542
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetNormalizedTimeOfDay, "GetNormalizedTimeOfDay" }, // 3383599420
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetPassedDays, "GetPassedDays" }, // 2432012458
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetSeconds, "GetSeconds" }, // 3017253630
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_GetTimeOfDayHours, "GetTimeOfDayHours" }, // 3718464306
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_IsDay, "IsDay" }, // 3619636336
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_IsNight, "IsNight" }, // 4075590596
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_OnRep_ReplicatedDaySeconds, "OnRep_ReplicatedDaySeconds" }, // 3987943119
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_SetTimeSpeedMultiplier, "SetTimeSpeedMultiplier" }, // 3515846205
+		{ &Z_Construct_UFunction_AFGTimeOfDaySubsystem_UpdateServerDaySeconds, "UpdateServerDaySeconds" }, // 2438124042
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::Class_MetaDataParams[] = {
@@ -793,7 +793,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 		{ "HideCategories", "Actor Input Rendering Actor Tick Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGTimeSubsystem.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
@@ -801,7 +801,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mOnNewDayDelegate_MetaData[] = {
 		{ "Category", "Events|Time" },
 		{ "DisplayName", "OnNewDay" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "Server and Client | Called when a new day starts" },
 	};
 #endif
@@ -809,7 +809,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mUpdateTime_MetaData[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "Will only update the time if we set this to true" },
 	};
 #endif
@@ -820,21 +820,21 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mUpdateTime = { "mUpdateTime", nullptr, (EPropertyFlags)0x0020080000010021, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGTimeOfDaySubsystem), &Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mUpdateTime_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mUpdateTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mUpdateTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mNumberOfPassedDays_MetaData[] = {
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "The current day that has passed" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mNumberOfPassedDays = { "mNumberOfPassedDays", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTimeOfDaySubsystem, mNumberOfPassedDays), METADATA_PARAMS(Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mNumberOfPassedDays_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mNumberOfPassedDays_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mReplicatedDaySeconds_MetaData[] = {
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "Written to by server, sends over the time that the server currently have" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mReplicatedDaySeconds = { "mReplicatedDaySeconds", "OnRep_ReplicatedDaySeconds", (EPropertyFlags)0x0020080100000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTimeOfDaySubsystem, mReplicatedDaySeconds), METADATA_PARAMS(Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mReplicatedDaySeconds_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mReplicatedDaySeconds_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mDaySeconds_MetaData[] = {
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "How many seconds that has passed into our current day" },
 	};
 #endif
@@ -842,7 +842,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mSpeedMultiplier_MetaData[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "Multiplier for speeding up the day/night cycle" },
 	};
 #endif
@@ -850,7 +850,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mNightStartTime_MetaData[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "In hours, when does the night start (if you want 19.10, enter 19.1666667)" },
 	};
 #endif
@@ -858,7 +858,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mDayStartTime_MetaData[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "In hours, when does the day start (if you want 06.45, enter 06.75)" },
 	};
 #endif
@@ -866,7 +866,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mNightLengthMinutes_MetaData[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "In minutes, how long is the night part of a day? (normally 18-06).\nthat is, how many minutes should it take to for the time 18 -> 06 to pass?" },
 	};
 #endif
@@ -874,7 +874,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mDayLengthMinutes_MetaData[] = {
 		{ "Category", "Time" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "In minutes, how long is the day part of a day? (normally 06-18).\nthat is, how many minutes should it take to for the time 06 -> 18 to pass?" },
 	};
 #endif
@@ -882,7 +882,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTimeOfDaySubsystem_Statics::NewProp_mSyncronizeTimeOfDayInterval_MetaData[] = {
 		{ "Category", "Time Replication" },
-		{ "ModuleRelativePath", "FGTimeSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTimeSubsystem.h" },
 		{ "ToolTip", "How often (in seconds) we should synchronize the time of day with the server" },
 	};
 #endif
@@ -930,7 +930,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGTimeOfDaySubsystem, 642813840);
+	IMPLEMENT_CLASS(AFGTimeOfDaySubsystem, 2493224394);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGTimeOfDaySubsystem>()
 	{
 		return AFGTimeOfDaySubsystem::StaticClass();

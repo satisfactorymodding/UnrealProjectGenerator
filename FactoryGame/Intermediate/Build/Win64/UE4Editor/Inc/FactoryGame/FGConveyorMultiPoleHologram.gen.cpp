@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGConveyorMultiPoleHologram.h"
+#include "FactoryGame/Public/Hologram/FGConveyorMultiPoleHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorMultiPoleHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorMultiPoleHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGConveyorMultiPoleHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGConveyorMultiPoleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorMultiPoleHologram.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGConveyorMultiPoleHologram_Statics::StaticCppClassTypeInfo = {
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorMultiPoleHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorMultiPoleHologram, 2434970690);
+	IMPLEMENT_CLASS(AFGConveyorMultiPoleHologram, 3526874528);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGConveyorMultiPoleHologram>()
 	{
 		return AFGConveyorMultiPoleHologram::StaticClass();

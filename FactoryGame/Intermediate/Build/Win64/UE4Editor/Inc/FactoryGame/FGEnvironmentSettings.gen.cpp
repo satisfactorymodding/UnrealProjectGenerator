@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGEnvironmentSettings.h"
+#include "FactoryGame/Public/FGEnvironmentSettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -47,14 +47,14 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvironmentSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEnvironmentSettings_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGEnvironmentSettings.h" },
-		{ "ModuleRelativePath", "FGEnvironmentSettings.h" },
+		{ "ModuleRelativePath", "Public/FGEnvironmentSettings.h" },
 		{ "ToolTip", "Settings for the environment" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEnvironmentSettings_Statics::NewProp_mWorldBoundsParameters_MetaData[] = {
 		{ "Category", "FGEnvironmentSettings" },
-		{ "ModuleRelativePath", "FGEnvironmentSettings.h" },
+		{ "ModuleRelativePath", "Public/FGEnvironmentSettings.h" },
 		{ "ToolTip", "The collection containing the world bounds" },
 	};
 #endif
@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvironmentSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEnvironmentSettings, 3146956719);
+	IMPLEMENT_CLASS(UFGEnvironmentSettings, 1711075465);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGEnvironmentSettings>()
 	{
 		return UFGEnvironmentSettings::StaticClass();

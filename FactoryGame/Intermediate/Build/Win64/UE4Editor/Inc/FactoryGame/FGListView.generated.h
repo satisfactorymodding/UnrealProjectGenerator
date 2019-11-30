@@ -14,7 +14,7 @@ class UWidget;
 #endif
 #define FACTORYGAME_FGListView_generated_h
 
-#define FactoryGame_Source_FactoryGame_UI_FGListView_h_36_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_36_DELEGATE \
 struct FGListView_eventGetNumRows_Parms \
 { \
 	int32 ReturnValue; \
@@ -33,7 +33,7 @@ static inline int32 FGetNumRows_DelegateWrapper(const FScriptDelegate& GetNumRow
 }
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGListView_h_33_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_33_DELEGATE \
 struct FGListView_eventOnGenerateRow_Parms \
 { \
 	int32 item; \
@@ -54,7 +54,7 @@ static inline UWidget* FOnGenerateRow_DelegateWrapper(const FScriptDelegate& OnG
 }
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGListView_h_29_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execRefresh) \
 	{ \
@@ -65,7 +65,7 @@ static inline UWidget* FOnGenerateRow_DelegateWrapper(const FScriptDelegate& OnG
 	}
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGListView_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execRefresh) \
 	{ \
@@ -76,7 +76,7 @@ static inline UWidget* FOnGenerateRow_DelegateWrapper(const FScriptDelegate& OnG
 	}
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGListView_h_29_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGListView(); \
 	friend struct Z_Construct_UClass_UFGListView_Statics; \
@@ -85,7 +85,7 @@ public: \
 	DECLARE_SERIALIZER(UFGListView)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGListView_h_29_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGListView(); \
 	friend struct Z_Construct_UClass_UFGListView_Statics; \
@@ -94,7 +94,7 @@ public: \
 	DECLARE_SERIALIZER(UFGListView)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGListView_h_29_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGListView(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGListView) \
@@ -107,7 +107,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGListView_h_29_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGListView(UFGListView&&); \
@@ -118,29 +118,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGListView); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGListView)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGListView_h_29_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mSelectionMode() { return STRUCT_OFFSET(UFGListView, mSelectionMode); }
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGListView_h_25_PROLOG
-#define FactoryGame_Source_FactoryGame_UI_FGListView_h_29_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_25_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_UI_FGListView_h_29_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_UI_FGListView_h_29_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGListView_h_29_INCLASS \
-	FactoryGame_Source_FactoryGame_UI_FGListView_h_29_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGListView_h_29_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_UI_FGListView_h_29_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_UI_FGListView_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_UI_FGListView_h_29_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_UI_FGListView_h_29_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_UI_FGListView_h_29_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -148,7 +148,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class UFGListView>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_UI_FGListView_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_UI_FGListView_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

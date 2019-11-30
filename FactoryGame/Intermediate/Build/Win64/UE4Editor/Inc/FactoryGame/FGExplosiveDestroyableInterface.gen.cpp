@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGExplosiveDestroyableInterface.h"
+#include "FactoryGame/Public/FGExplosiveDestroyableInterface.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeFGExplosiveDestroyableInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Explosive Destroy Interface" },
-		{ "ModuleRelativePath", "FGExplosiveDestroyableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGExplosiveDestroyableInterface.h" },
 		{ "ToolTip", "Particle System to be played when destroyed" },
 	};
 #endif
@@ -93,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeFGExplosiveDestroyableInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Explosive Destroy Interface" },
-		{ "ModuleRelativePath", "FGExplosiveDestroyableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGExplosiveDestroyableInterface.h" },
 		{ "ToolTip", "Blueprint event for modifying BP objects when they are exploded" },
 	};
 #endif
@@ -126,14 +126,14 @@ void EmptyLinkFunctionForGeneratedCodeFGExplosiveDestroyableInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGExplosiveDestroyableInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect, "GetDestroyEffect" }, // 4263826654
-		{ &Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded, "NotifyExploded" }, // 2722007027
+		{ &Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect, "GetDestroyEffect" }, // 2472011615
+		{ &Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded, "NotifyExploded" }, // 222749876
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGExplosiveDestroyableInterface_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGExplosiveDestroyableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGExplosiveDestroyableInterface.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGExplosiveDestroyableInterface_Statics::StaticCppClassTypeInfo = {
@@ -163,7 +163,7 @@ void EmptyLinkFunctionForGeneratedCodeFGExplosiveDestroyableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGExplosiveDestroyableInterface, 1594347886);
+	IMPLEMENT_CLASS(UFGExplosiveDestroyableInterface, 366485046);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGExplosiveDestroyableInterface>()
 	{
 		return UFGExplosiveDestroyableInterface::StaticClass();

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/FGCompassObjectWidget.h"
+#include "FactoryGame/Public/UI/FGCompassObjectWidget.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -94,7 +94,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCompassObjectWidget_GetActorRepresentation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 		{ "ToolTip", "Getter for the Actor Representation that this CompassObject is set to represent" },
 	};
 #endif
@@ -128,7 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCompassObjectWidget_GetAlphaAmount_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCompassObjectWidget_GetAlphaAmount_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCompassObjectWidget, nullptr, "GetAlphaAmount", sizeof(FGCompassObjectWidget_eventGetAlphaAmount_Parms), Z_Construct_UFunction_UFGCompassObjectWidget_GetAlphaAmount_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCompassObjectWidget_GetAlphaAmount_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCompassObjectWidget_GetAlphaAmount_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCompassObjectWidget_GetAlphaAmount_Statics::Function_MetaDataParams)) };
@@ -165,7 +165,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCompassObjectWidget_GetAngleFromDirection_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCompassObjectWidget_GetAngleFromDirection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCompassObjectWidget, nullptr, "GetAngleFromDirection", sizeof(FGCompassObjectWidget_eventGetAngleFromDirection_Parms), Z_Construct_UFunction_UFGCompassObjectWidget_GetAngleFromDirection_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCompassObjectWidget_GetAngleFromDirection_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04880401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCompassObjectWidget_GetAngleFromDirection_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCompassObjectWidget_GetAngleFromDirection_Statics::Function_MetaDataParams)) };
@@ -198,7 +198,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCompassObjectWidget_GetBlockingAmount_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCompassObjectWidget_GetBlockingAmount_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCompassObjectWidget, nullptr, "GetBlockingAmount", sizeof(FGCompassObjectWidget_eventGetBlockingAmount_Parms), Z_Construct_UFunction_UFGCompassObjectWidget_GetBlockingAmount_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCompassObjectWidget_GetBlockingAmount_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCompassObjectWidget_GetBlockingAmount_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCompassObjectWidget_GetBlockingAmount_Statics::Function_MetaDataParams)) };
@@ -235,7 +235,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCompassObjectWidget_GetDirectionFromLocation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCompassObjectWidget_GetDirectionFromLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCompassObjectWidget, nullptr, "GetDirectionFromLocation", sizeof(FGCompassObjectWidget_eventGetDirectionFromLocation_Parms), Z_Construct_UFunction_UFGCompassObjectWidget_GetDirectionFromLocation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCompassObjectWidget_GetDirectionFromLocation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04880401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCompassObjectWidget_GetDirectionFromLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCompassObjectWidget_GetDirectionFromLocation_Statics::Function_MetaDataParams)) };
@@ -271,7 +271,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCompassObjectWidget_GetRepresentationType_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCompassObjectWidget_GetRepresentationType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCompassObjectWidget, nullptr, "GetRepresentationType", sizeof(FGCompassObjectWidget_eventGetRepresentationType_Parms), Z_Construct_UFunction_UFGCompassObjectWidget_GetRepresentationType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCompassObjectWidget_GetRepresentationType_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCompassObjectWidget_GetRepresentationType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCompassObjectWidget_GetRepresentationType_Statics::Function_MetaDataParams)) };
@@ -308,7 +308,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCompassObjectWidget_OnCompassObjectAddedToPanel_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 		{ "ToolTip", "This function is called when the compass object is added to the compass. This function should deal with layouts, anchoring, positioning, etc." },
 	};
 #endif
@@ -332,7 +332,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCompassObjectWidget_OnCompassObjectUpdated_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 		{ "ToolTip", "This function is called when the representation of the compass object is updated." },
 	};
 #endif
@@ -367,7 +367,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCompassObjectWidget_OnObjectCentered_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 		{ "ToolTip", "This function is called when the representation of the compass object is updated." },
 	};
 #endif
@@ -401,7 +401,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCompassObjectWidget_SetActorRepresentation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 		{ "ToolTip", "Setter for the Actor Representations that this CompassObject is set to represent" },
 	};
 #endif
@@ -435,7 +435,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCompassObjectWidget_SetAsStaticDirection_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 		{ "ToolTip", "Sets this CompassObject as a static direction in relation to the player's location (e.g. cardinal coordinates). Must be normalized!" },
 	};
 #endif
@@ -473,7 +473,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCompassObjectWidget_SetCompassObjectVisbility_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCompassObjectWidget_SetCompassObjectVisbility_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCompassObjectWidget, nullptr, "SetCompassObjectVisbility", sizeof(FGCompassObjectWidget_eventSetCompassObjectVisbility_Parms), Z_Construct_UFunction_UFGCompassObjectWidget_SetCompassObjectVisbility_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCompassObjectWidget_SetCompassObjectVisbility_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCompassObjectWidget_SetCompassObjectVisbility_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCompassObjectWidget_SetCompassObjectVisbility_Statics::Function_MetaDataParams)) };
@@ -550,29 +550,29 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGCompassObjectWidget_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGCompassObjectWidget_GetActorRepresentation, "GetActorRepresentation" }, // 478830321
-		{ &Z_Construct_UFunction_UFGCompassObjectWidget_GetAlphaAmount, "GetAlphaAmount" }, // 481632219
-		{ &Z_Construct_UFunction_UFGCompassObjectWidget_GetAngleFromDirection, "GetAngleFromDirection" }, // 1416714722
-		{ &Z_Construct_UFunction_UFGCompassObjectWidget_GetBlockingAmount, "GetBlockingAmount" }, // 3933469125
-		{ &Z_Construct_UFunction_UFGCompassObjectWidget_GetDirectionFromLocation, "GetDirectionFromLocation" }, // 3094885924
-		{ &Z_Construct_UFunction_UFGCompassObjectWidget_GetRepresentationType, "GetRepresentationType" }, // 1056746804
-		{ &Z_Construct_UFunction_UFGCompassObjectWidget_OnCompassObjectAddedToPanel, "OnCompassObjectAddedToPanel" }, // 2882374255
-		{ &Z_Construct_UFunction_UFGCompassObjectWidget_OnCompassObjectUpdated, "OnCompassObjectUpdated" }, // 3319356910
-		{ &Z_Construct_UFunction_UFGCompassObjectWidget_OnObjectCentered, "OnObjectCentered" }, // 1728198716
-		{ &Z_Construct_UFunction_UFGCompassObjectWidget_SetActorRepresentation, "SetActorRepresentation" }, // 2058853269
-		{ &Z_Construct_UFunction_UFGCompassObjectWidget_SetAsStaticDirection, "SetAsStaticDirection" }, // 2781088788
-		{ &Z_Construct_UFunction_UFGCompassObjectWidget_SetCompassObjectVisbility, "SetCompassObjectVisbility" }, // 1187885606
+		{ &Z_Construct_UFunction_UFGCompassObjectWidget_GetActorRepresentation, "GetActorRepresentation" }, // 2022125628
+		{ &Z_Construct_UFunction_UFGCompassObjectWidget_GetAlphaAmount, "GetAlphaAmount" }, // 1781470665
+		{ &Z_Construct_UFunction_UFGCompassObjectWidget_GetAngleFromDirection, "GetAngleFromDirection" }, // 2483537086
+		{ &Z_Construct_UFunction_UFGCompassObjectWidget_GetBlockingAmount, "GetBlockingAmount" }, // 2391174477
+		{ &Z_Construct_UFunction_UFGCompassObjectWidget_GetDirectionFromLocation, "GetDirectionFromLocation" }, // 3529872200
+		{ &Z_Construct_UFunction_UFGCompassObjectWidget_GetRepresentationType, "GetRepresentationType" }, // 2017585523
+		{ &Z_Construct_UFunction_UFGCompassObjectWidget_OnCompassObjectAddedToPanel, "OnCompassObjectAddedToPanel" }, // 1239304917
+		{ &Z_Construct_UFunction_UFGCompassObjectWidget_OnCompassObjectUpdated, "OnCompassObjectUpdated" }, // 433659851
+		{ &Z_Construct_UFunction_UFGCompassObjectWidget_OnObjectCentered, "OnObjectCentered" }, // 3127308217
+		{ &Z_Construct_UFunction_UFGCompassObjectWidget_SetActorRepresentation, "SetActorRepresentation" }, // 4182592723
+		{ &Z_Construct_UFunction_UFGCompassObjectWidget_SetAsStaticDirection, "SetAsStaticDirection" }, // 986566545
+		{ &Z_Construct_UFunction_UFGCompassObjectWidget_SetCompassObjectVisbility, "SetCompassObjectVisbility" }, // 2505113325
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCompassObjectWidget_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "UI/FGCompassObjectWidget.h" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mIsBlocking_MetaData[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 	void Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mIsBlocking_SetBit(void* Obj)
@@ -583,7 +583,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mStaticDirection_MetaData[] = {
 		{ "Category", "FGCompassObjectWidget" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mStaticDirection = { "mStaticDirection", nullptr, (EPropertyFlags)0x0020080000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCompassObjectWidget, mStaticDirection), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mStaticDirection_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mStaticDirection_MetaData)) };
@@ -591,14 +591,14 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mActorRepresentation_MetaData[] = {
 		{ "Category", "Compass" },
 		{ "ExposeOnSpawn", "" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mActorRepresentation = { "mActorRepresentation", nullptr, (EPropertyFlags)0x0021080000000004, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCompassObjectWidget, mActorRepresentation), Z_Construct_UClass_UFGActorRepresentation_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mActorRepresentation_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mActorRepresentation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mCheckForBlockingInCompass_MetaData[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 	void Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mCheckForBlockingInCompass_SetBit(void* Obj)
@@ -611,14 +611,14 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 		{ "BindWidget", "" },
 		{ "Category", "FGCompassObjectWidget" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mImage = { "mImage", nullptr, (EPropertyFlags)0x002008000008001c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCompassObjectWidget, mImage), Z_Construct_UClass_UImage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mImage_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mImage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mShouldFadeInEdges_MetaData[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 	void Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mShouldFadeInEdges_SetBit(void* Obj)
@@ -629,7 +629,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mClampPosition_MetaData[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 	void Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mClampPosition_SetBit(void* Obj)
@@ -640,21 +640,21 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mPositionOffset_MetaData[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mPositionOffset = { "mPositionOffset", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCompassObjectWidget, mPositionOffset), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mPositionOffset_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mPositionOffset_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mText_MetaData[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mText = { "mText", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCompassObjectWidget, mText), METADATA_PARAMS(Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mText_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mText_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mTexture_MetaData[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "UI/FGCompassObjectWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGCompassObjectWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mTexture = { "mTexture", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCompassObjectWidget, mTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mTexture_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCompassObjectWidget_Statics::NewProp_mTexture_MetaData)) };
@@ -697,7 +697,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassObjectWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCompassObjectWidget, 3927478836);
+	IMPLEMENT_CLASS(UFGCompassObjectWidget, 1994915898);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCompassObjectWidget>()
 	{
 		return UFGCompassObjectWidget::StaticClass();

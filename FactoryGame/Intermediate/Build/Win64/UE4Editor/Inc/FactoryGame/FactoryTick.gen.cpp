@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FactoryTick.h"
+#include "FactoryGame/Public/FactoryTick.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -49,7 +49,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryTickFunctio
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFactoryTickFunction_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FactoryTick.h" },
+		{ "ModuleRelativePath", "Public/FactoryTick.h" },
 		{ "ToolTip", "Tick function that calls AFGBuildable::TickFactory" },
 	};
 #endif
@@ -85,7 +85,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryTickFunctio
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFactoryTickFunction_Hash() { return 563007292U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFactoryTickFunction_Hash() { return 1037726458U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

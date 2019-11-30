@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGBlueprintFunctionLibrary.h"
+#include "FactoryGame/Public/FGBlueprintFunctionLibrary.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -104,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		return EOutlineColor_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EOutlineColor(EOutlineColor_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EOutlineColor"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EOutlineColor_Hash() { return 2596582559U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EOutlineColor_Hash() { return 2701900829U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EOutlineColor()
 	{
 #if WITH_HOT_RELOAD
@@ -124,7 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+				{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 				{ "OC_HOLOGRAM.DisplayName", "Hologram" },
 				{ "OC_NONE.DisplayName", "None" },
 				{ "OC_RED.DisplayName", "Disabled" },
@@ -227,7 +227,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddAmbientSoundSplineToSignificanceManager_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Game" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Adds an AmbientSoundSpline that should gain/lose significance on distance" },
 		{ "WorldContext", "WorldContextObject" },
 	};
@@ -266,7 +266,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddAudioVolumeToSignificanceManager_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Game" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Adds an audio volume that should gain/lose significance on distance" },
 		{ "WorldContext", "WorldContextObject" },
 	};
@@ -305,7 +305,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddConveyorBeltToSignificanceManager_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Game" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Adds conveyor belt be handled by significance manager" },
 		{ "WorldContext", "WorldContextObject" },
 	};
@@ -344,7 +344,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddFactoryObjectToSignificanceManager_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Game" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Adds a factory object to be handled by significance manager" },
 		{ "WorldContext", "WorldContextObject" },
 	};
@@ -387,7 +387,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddGainSignificanceObjectToSignificanceManager_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Game" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Adds an object that should gain/lose significance on distance" },
 		{ "WorldContext", "WorldContextObject" },
 	};
@@ -426,7 +426,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddGenericTickObjectToSignificanceManager_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Game" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Adds a generic tickable object to be handled by significance manager" },
 		{ "WorldContext", "WorldContextObject" },
 	};
@@ -499,7 +499,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ "CPP_Default_popupInstigator", "None" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Please use AddPopupWithCloseDelegate instead" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Adds a popup to the qu\xef\xbf\xbd" },
 	};
 #endif
@@ -569,7 +569,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ "CPP_Default_popupClass", "None" },
 		{ "CPP_Default_PopupID", "PID_OK" },
 		{ "CPP_Default_popupInstigator", "None" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Adds a popup to the qu\xef\xbf\xbd" },
 	};
 #endif
@@ -607,7 +607,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Trains|Optimization" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Adds a train to be handled by significance manager" },
 		{ "WorldContext", "WorldContextObject" },
 	};
@@ -651,7 +651,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CanBeOnConveyor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resource" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Returns true if the passed descriptor can be on a conveyor belt." },
 	};
 #endif
@@ -686,7 +686,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ChangeLanguage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Localization" },
 		{ "DisplayName", "Change Language" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Change Localization at Runtime." },
 	};
 #endif
@@ -723,7 +723,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_Cheat_GetAllDescriptors_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Descriptors" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Get all the item descriptors in the game" },
 	};
 #endif
@@ -757,7 +757,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClosePopup_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Close the popup that is currently showing. If no popup is showing, don't do anything" },
 	};
 #endif
@@ -797,7 +797,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ "Category", "Math" },
 		{ "CompactNodeTitle", "CmS2KmH" },
 		{ "DisplayName", "cm/s to km/h" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Returns km/h value based on the input cm/s." },
 	};
 #endif
@@ -871,7 +871,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CreateSessionAndTravelToMap_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Helper function that takes care of creating a session and travel to the map" },
 	};
 #endif
@@ -912,7 +912,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllBuildCategories_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Build Category" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Gives you all categories that can be unlocked in this game" },
 	};
 #endif
@@ -954,7 +954,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllDescriptorsSorted_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Descriptors" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Does what Cheat_GetAllDescriptors does, but tries to do in in a more reliable way,\nand not only hoping for the descriptor to be loaded in memory. This is probably slow!" },
 	};
 #endif
@@ -999,7 +999,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Item Category" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Returns all items in a item category" },
 	};
 #endif
@@ -1063,7 +1063,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ "DefaultToSelf", "hierarchyContext" },
 		{ "DeterminesOutputType", "widgetClass" },
 		{ "DynamicOutputParam", "foundWidgets" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Finds a widget of a certain class in the hierarchy of the passed widget. Does a breadth-first search of the tree." },
 	};
 #endif
@@ -1108,7 +1108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInCategory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Build Category" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Returns all recipes with product of a certain category" },
 	};
 #endif
@@ -1153,7 +1153,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Build Category" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Returns all recipes with product of a certain sub category" },
 	};
 #endif
@@ -1198,7 +1198,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableSubCategoriesForCategory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Build Category" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Returns all sub categories with product of a certain category" },
 	};
 #endif
@@ -1243,7 +1243,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Item Category" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Returns all categories that have available recipes in them" },
 	};
 #endif
@@ -1277,7 +1277,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Component Flags" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "GetComponentFlagSoftLanding", sizeof(FGBlueprintFunctionLibrary_eventGetComponentFlagSoftLanding_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics::Function_MetaDataParams)) };
@@ -1311,7 +1311,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetLanguage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Localization" },
 		{ "DisplayName", "Get Language" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Return current language code" },
 	};
 #endif
@@ -1357,7 +1357,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetOuterActor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Object" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Helper function to try to fetch the owning actor of a object" },
 	};
 #endif
@@ -1393,7 +1393,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ "Category", "Version" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use GetVersionString from FGVersionBlueprintLibrary instead" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetVersionString_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "GetVersionString", sizeof(FGBlueprintFunctionLibrary_eventGetVersionString_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetVersionString_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetVersionString_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetVersionString_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetVersionString_Statics::Function_MetaDataParams)) };
@@ -1434,7 +1434,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_HideOutline_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Useable" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "hide the outline for the following primitive component" },
 	};
 #endif
@@ -1506,7 +1506,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ "CPP_Default_skipLOSCheck", "true" },
 		{ "CPP_Default_visibleCullDistance", "5000.000000" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Checks if a impact effect is relevant for any local player\n\n@param instigator - the actor making the sound (human instigators of effects are more prone to be relevant)\n@param spawnLocation - the location where we want to spawn the effect\n@param visibleCullDistance - when outside this distance, then we shouldn't spawn the effect\n@param alwaysSuccessDistance - if the effect is spawned within this distance, then we should always spawn the effect (even if it's not visible)\n@param skipLOSCheck - if true, then we don't check if the effect is visible with traces\n\n@return true if the impact effect is relevant" },
 	};
 #endif
@@ -1563,7 +1563,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ "Category", "Effect" },
 		{ "CPP_Default_visibleCullDistance", "5000.000000" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Checks if a impact effect is within a certain distance from a local player\n\n@param instigator - the actor making the sound (human instigators of effects are more prone to be relevant)\n@param spawnLocation - the location where we want to spawn the effect\n@param visibleCullDistance - when outside this distance, then we shouldn't spawn the effect\n\n@return true if the impact effect is relevant" },
 	};
 #endif
@@ -1604,7 +1604,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ "Category", "Version" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use IsPublicBuild from FGVersionBlueprintLibrary instead" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsAlphaBuild_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "IsAlphaBuild", sizeof(FGBlueprintFunctionLibrary_eventIsAlphaBuild_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsAlphaBuild_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsAlphaBuild_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsAlphaBuild_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsAlphaBuild_Statics::Function_MetaDataParams)) };
@@ -1646,7 +1646,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsEditorWorld_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Editor" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Determine if the world is a editor world, will return false if the worldContext isn't in any world" },
 	};
 #endif
@@ -1689,7 +1689,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsGameWorld_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Game" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Determine if the world is a game world, will return false if the worldContext isn't in any world" },
 	};
 #endif
@@ -1732,7 +1732,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsInAlwaysLoadedLevel_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Level" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Returns true if the actor resides in a level that is always loaded, returns false if actor is null" },
 	};
 #endif
@@ -1775,7 +1775,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsLocallyHumanControlled_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Control" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Checks if a pawn is controlled by a human on the current computer\n\n@param pawn - the pawn we want to check if it's controlled by a human on the current computer\n@return false if pawn is null, else true if locally human controlled" },
 	};
 #endif
@@ -1835,7 +1835,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsLocationNearABase_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Factory" },
 		{ "CPP_Default_closeDistance", "-1.000000" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Checks if a location is close to a base\n@param worldContext - if null or invalid, function will return false\n@param inLocation - the location we want to check\n@param closeDistance - the distance we considers as close, if < 0, then we will use the default value specified in buildable susbystem\n\n@return if we consider the location as close to a factory" },
 	};
 #endif
@@ -1873,7 +1873,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_LinearColorToHex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Factory" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Get a FLinearColor and returns a hex string like \"FF00AA88\"." },
 	};
 #endif
@@ -1915,7 +1915,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_LogX_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Math" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "I wanted to use non natural logarithm in blueprints." },
 	};
 #endif
@@ -1953,7 +1953,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveAmbientSoundSplineFromSignificanceManager_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Game" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Removes an AmbientSoundSpline that should gain/lose significance on distance" },
 		{ "WorldContext", "WorldContextObject" },
 	};
@@ -1992,7 +1992,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveAudioVolumeFromSignificanceManager_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Game" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Removes an audio volume that should gain/lose significance on distance" },
 		{ "WorldContext", "WorldContextObject" },
 	};
@@ -2031,7 +2031,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveConveyorBeltFromSignificanceManager_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Game" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Removes conveyor belt be handled by significance manager" },
 		{ "WorldContext", "WorldContextObject" },
 	};
@@ -2070,7 +2070,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFactoryObjectFromSignificanceManager_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Game" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "removes a factory object to be handled by significance manager" },
 		{ "WorldContext", "WorldContextObject" },
 	};
@@ -2109,7 +2109,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGainSignificanceObjectFromSignificanceManager_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Game" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Removes an object that should gain/lose significance on distance" },
 		{ "WorldContext", "WorldContextObject" },
 	};
@@ -2148,7 +2148,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGenericTickObjectFromSignificanceManager_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Game" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "removes a generic tickable object to be handled by significance manager" },
 		{ "WorldContext", "WorldContextObject" },
 	};
@@ -2187,7 +2187,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Trains|Optimization" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "removes a train from being handled by significance manager" },
 		{ "WorldContext", "WorldContextObject" },
 	};
@@ -2230,7 +2230,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Math" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Returns a rounded float with a maximum of fractional digits" },
 	};
 #endif
@@ -2279,7 +2279,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ShowOutline_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Useable" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Show a outline for the following primitive component" },
 	};
 #endif
@@ -2314,7 +2314,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_TravelToMainMenu_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Utils" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 		{ "ToolTip", "Travel gracefully to main menu, kicking clients if host, and tearing down the game session" },
 	};
 #endif
@@ -2352,7 +2352,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_UpdateUseState_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_UpdateUseState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "UpdateUseState", sizeof(FGBlueprintFunctionLibrary_eventUpdateUseState_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_UpdateUseState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_UpdateUseState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_UpdateUseState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_UpdateUseState_Statics::Function_MetaDataParams)) };
@@ -2384,60 +2384,60 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGBlueprintFunctionLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddAmbientSoundSplineToSignificanceManager, "AddAmbientSoundSplineToSignificanceManager" }, // 1471049941
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddAudioVolumeToSignificanceManager, "AddAudioVolumeToSignificanceManager" }, // 2702202838
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddConveyorBeltToSignificanceManager, "AddConveyorBeltToSignificanceManager" }, // 4191494537
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddFactoryObjectToSignificanceManager, "AddFactoryObjectToSignificanceManager" }, // 3506675058
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddGainSignificanceObjectToSignificanceManager, "AddGainSignificanceObjectToSignificanceManager" }, // 225353423
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddGenericTickObjectToSignificanceManager, "AddGenericTickObjectToSignificanceManager" }, // 447426223
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup, "AddPopup" }, // 2344541925
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate, "AddPopupWithCloseDelegate" }, // 2446557371
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager, "AddTrainToSignificanceManager" }, // 4279093220
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CanBeOnConveyor, "CanBeOnConveyor" }, // 2301887590
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ChangeLanguage, "ChangeLanguage" }, // 175395069
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_Cheat_GetAllDescriptors, "Cheat_GetAllDescriptors" }, // 2415270817
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClosePopup, "ClosePopup" }, // 2289387614
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CmS2KmH, "CmS2KmH" }, // 2621351999
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CreateSessionAndTravelToMap, "CreateSessionAndTravelToMap" }, // 2146221186
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllBuildCategories, "GetAllBuildCategories" }, // 104564890
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllDescriptorsSorted, "GetAllDescriptorsSorted" }, // 3707572836
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory, "GetAllItemsInCategory" }, // 2483048477
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllWidgetsOfClassInHierarchy, "GetAllWidgetsOfClassInHierarchy" }, // 2618117477
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInCategory, "GetAvailableRecipesInCategory" }, // 4254624122
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory, "GetAvailableRecipesInSubCategory" }, // 2342225025
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableSubCategoriesForCategory, "GetAvailableSubCategoriesForCategory" }, // 1956816209
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes, "GetCategoriesWithAffordableRecipes" }, // 281391433
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding, "GetComponentFlagSoftLanding" }, // 883401098
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetLanguage, "GetLanguage" }, // 494419844
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetOuterActor, "GetOuterActor" }, // 2980580252
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetVersionString, "GetVersionString" }, // 395167733
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_HideOutline, "HideOutline" }, // 3981131765
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ImpactEffectIsRelevant, "ImpactEffectIsRelevant" }, // 4094942821
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ImpactEffectIsWithinDistance, "ImpactEffectIsWithinDistance" }, // 1923187540
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsAlphaBuild, "IsAlphaBuild" }, // 3737332870
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsEditorWorld, "IsEditorWorld" }, // 3400630527
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsGameWorld, "IsGameWorld" }, // 2790824946
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsInAlwaysLoadedLevel, "IsInAlwaysLoadedLevel" }, // 789340828
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsLocallyHumanControlled, "IsLocallyHumanControlled" }, // 3715233170
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsLocationNearABase, "IsLocationNearABase" }, // 3179894506
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_LinearColorToHex, "LinearColorToHex" }, // 2843220114
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_LogX, "LogX" }, // 247817438
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveAmbientSoundSplineFromSignificanceManager, "RemoveAmbientSoundSplineFromSignificanceManager" }, // 2072726701
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveAudioVolumeFromSignificanceManager, "RemoveAudioVolumeFromSignificanceManager" }, // 1657754909
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveConveyorBeltFromSignificanceManager, "RemoveConveyorBeltFromSignificanceManager" }, // 2706146648
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFactoryObjectFromSignificanceManager, "RemoveFactoryObjectFromSignificanceManager" }, // 3198488413
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGainSignificanceObjectFromSignificanceManager, "RemoveGainSignificanceObjectFromSignificanceManager" }, // 505710841
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGenericTickObjectFromSignificanceManager, "RemoveGenericTickObjectFromSignificanceManager" }, // 1110677239
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager, "RemoveTrainFromSignificanceManager" }, // 2069017261
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision, "RoundFloatWithPrecision" }, // 2626324975
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ShowOutline, "ShowOutline" }, // 4121009028
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_TravelToMainMenu, "TravelToMainMenu" }, // 2666713825
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_UpdateUseState, "UpdateUseState" }, // 2756112341
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddAmbientSoundSplineToSignificanceManager, "AddAmbientSoundSplineToSignificanceManager" }, // 1065240125
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddAudioVolumeToSignificanceManager, "AddAudioVolumeToSignificanceManager" }, // 3803817060
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddConveyorBeltToSignificanceManager, "AddConveyorBeltToSignificanceManager" }, // 319339291
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddFactoryObjectToSignificanceManager, "AddFactoryObjectToSignificanceManager" }, // 1600138593
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddGainSignificanceObjectToSignificanceManager, "AddGainSignificanceObjectToSignificanceManager" }, // 3828982640
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddGenericTickObjectToSignificanceManager, "AddGenericTickObjectToSignificanceManager" }, // 2173544489
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup, "AddPopup" }, // 461572345
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate, "AddPopupWithCloseDelegate" }, // 1369502213
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager, "AddTrainToSignificanceManager" }, // 3299310731
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CanBeOnConveyor, "CanBeOnConveyor" }, // 1540077428
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ChangeLanguage, "ChangeLanguage" }, // 3610996405
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_Cheat_GetAllDescriptors, "Cheat_GetAllDescriptors" }, // 1053097055
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClosePopup, "ClosePopup" }, // 1900240891
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CmS2KmH, "CmS2KmH" }, // 1700875787
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CreateSessionAndTravelToMap, "CreateSessionAndTravelToMap" }, // 1200337555
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllBuildCategories, "GetAllBuildCategories" }, // 1168119367
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllDescriptorsSorted, "GetAllDescriptorsSorted" }, // 3483552823
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory, "GetAllItemsInCategory" }, // 1403863260
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllWidgetsOfClassInHierarchy, "GetAllWidgetsOfClassInHierarchy" }, // 3718229033
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInCategory, "GetAvailableRecipesInCategory" }, // 1964911783
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory, "GetAvailableRecipesInSubCategory" }, // 3363372787
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableSubCategoriesForCategory, "GetAvailableSubCategoriesForCategory" }, // 1223268619
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes, "GetCategoriesWithAffordableRecipes" }, // 3109750103
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding, "GetComponentFlagSoftLanding" }, // 317730531
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetLanguage, "GetLanguage" }, // 3694274269
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetOuterActor, "GetOuterActor" }, // 1964601451
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetVersionString, "GetVersionString" }, // 183866322
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_HideOutline, "HideOutline" }, // 2188302825
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ImpactEffectIsRelevant, "ImpactEffectIsRelevant" }, // 1086567788
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ImpactEffectIsWithinDistance, "ImpactEffectIsWithinDistance" }, // 3084321062
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsAlphaBuild, "IsAlphaBuild" }, // 4163738701
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsEditorWorld, "IsEditorWorld" }, // 470510794
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsGameWorld, "IsGameWorld" }, // 556345085
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsInAlwaysLoadedLevel, "IsInAlwaysLoadedLevel" }, // 178029363
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsLocallyHumanControlled, "IsLocallyHumanControlled" }, // 4229975631
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsLocationNearABase, "IsLocationNearABase" }, // 1729101379
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_LinearColorToHex, "LinearColorToHex" }, // 2686380369
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_LogX, "LogX" }, // 1173872524
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveAmbientSoundSplineFromSignificanceManager, "RemoveAmbientSoundSplineFromSignificanceManager" }, // 3063985632
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveAudioVolumeFromSignificanceManager, "RemoveAudioVolumeFromSignificanceManager" }, // 2461207999
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveConveyorBeltFromSignificanceManager, "RemoveConveyorBeltFromSignificanceManager" }, // 2019425873
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFactoryObjectFromSignificanceManager, "RemoveFactoryObjectFromSignificanceManager" }, // 3064620130
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGainSignificanceObjectFromSignificanceManager, "RemoveGainSignificanceObjectFromSignificanceManager" }, // 2798074806
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGenericTickObjectFromSignificanceManager, "RemoveGenericTickObjectFromSignificanceManager" }, // 3537046192
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager, "RemoveTrainFromSignificanceManager" }, // 1396949231
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision, "RoundFloatWithPrecision" }, // 305901074
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ShowOutline, "ShowOutline" }, // 940980626
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_TravelToMainMenu, "TravelToMainMenu" }, // 210701956
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_UpdateUseState, "UpdateUseState" }, // 3002951925
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBlueprintFunctionLibrary_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGBlueprintFunctionLibrary.h" },
-		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGBlueprintFunctionLibrary_Statics::StaticCppClassTypeInfo = {
@@ -2467,7 +2467,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 1895116690);
+	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 1353542390);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBlueprintFunctionLibrary>()
 	{
 		return UFGBlueprintFunctionLibrary::StaticClass();

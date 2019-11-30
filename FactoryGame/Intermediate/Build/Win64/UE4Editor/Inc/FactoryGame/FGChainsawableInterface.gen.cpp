@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGChainsawableInterface.h"
+#include "FactoryGame/Public/FGChainsawableInterface.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -66,7 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeFGChainsawableInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGChainsawableInterface_GetMeshComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Chainsaw" },
-		{ "ModuleRelativePath", "FGChainsawableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGChainsawableInterface.h" },
 		{ "ToolTip", "@returns true if this thing is chainsawable" },
 	};
 #endif
@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeFGChainsawableInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGChainsawableInterface_IsChainsawable_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Chainsaw" },
-		{ "ModuleRelativePath", "FGChainsawableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGChainsawableInterface.h" },
 		{ "ToolTip", "@returns true if this thing is chainsawable" },
 	};
 #endif
@@ -134,14 +134,14 @@ void EmptyLinkFunctionForGeneratedCodeFGChainsawableInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGChainsawableInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGChainsawableInterface_GetMeshComponent, "GetMeshComponent" }, // 1414606711
-		{ &Z_Construct_UFunction_UFGChainsawableInterface_IsChainsawable, "IsChainsawable" }, // 1030802329
+		{ &Z_Construct_UFunction_UFGChainsawableInterface_GetMeshComponent, "GetMeshComponent" }, // 128245421
+		{ &Z_Construct_UFunction_UFGChainsawableInterface_IsChainsawable, "IsChainsawable" }, // 2518094307
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGChainsawableInterface_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGChainsawableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGChainsawableInterface.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
@@ -172,7 +172,7 @@ void EmptyLinkFunctionForGeneratedCodeFGChainsawableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGChainsawableInterface, 109504536);
+	IMPLEMENT_CLASS(UFGChainsawableInterface, 3390016956);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGChainsawableInterface>()
 	{
 		return UFGChainsawableInterface::StaticClass();

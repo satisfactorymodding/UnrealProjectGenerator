@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGFoliageIdentifier.h"
+#include "FactoryGame/Public/FGFoliageIdentifier.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -55,7 +55,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGFoliageIdentifier.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGFoliageIdentifier.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageIdentifier.h" },
 		{ "ToolTip", "Class to identify different types of foliage" },
 	};
 #endif
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier, 2887081962);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier, 2511015126);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier>()
 	{
 		return UFGFoliageIdentifier::StaticClass();
@@ -116,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageIdentifier_RemovableByBuildings_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFoliageIdentifier.h" },
-		{ "ModuleRelativePath", "FGFoliageIdentifier.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageIdentifier.h" },
 		{ "ToolTip", "Foliage that can be removed by buildings" },
 	};
 #endif
@@ -147,7 +147,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_RemovableByBuildings, 1474122112);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_RemovableByBuildings, 390699547);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_RemovableByBuildings>()
 	{
 		return UFGFoliageIdentifier_RemovableByBuildings::StaticClass();
@@ -177,7 +177,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageIdentifier_Pickupable_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFoliageIdentifier.h" },
-		{ "ModuleRelativePath", "FGFoliageIdentifier.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageIdentifier.h" },
 		{ "ToolTip", "Foliage that can be picked up by hand" },
 	};
 #endif
@@ -208,7 +208,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_Pickupable, 3893083148);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_Pickupable, 3239662710);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_Pickupable>()
 	{
 		return UFGFoliageIdentifier_Pickupable::StaticClass();
@@ -238,7 +238,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageIdentifier_Chainsawable_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFoliageIdentifier.h" },
-		{ "ModuleRelativePath", "FGFoliageIdentifier.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageIdentifier.h" },
 		{ "ToolTip", "Foliage that you need a chainsaw to be able to remove" },
 	};
 #endif
@@ -269,7 +269,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_Chainsawable, 7690970);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_Chainsawable, 1865870276);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_Chainsawable>()
 	{
 		return UFGFoliageIdentifier_Chainsawable::StaticClass();
@@ -299,7 +299,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageIdentifier_ChainsawableXmasTree_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFoliageIdentifier.h" },
-		{ "ModuleRelativePath", "FGFoliageIdentifier.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageIdentifier.h" },
 		{ "ToolTip", "xmas tree :3" },
 	};
 #endif
@@ -330,7 +330,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_ChainsawableXmasTree, 598918567);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_ChainsawableXmasTree, 1594318683);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_ChainsawableXmasTree>()
 	{
 		return UFGFoliageIdentifier_ChainsawableXmasTree::StaticClass();
@@ -360,7 +360,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageIdentifier_VehicleDestroyable_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFoliageIdentifier.h" },
-		{ "ModuleRelativePath", "FGFoliageIdentifier.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageIdentifier.h" },
 		{ "ToolTip", "Will be destroyed by a vehicle that runs over it" },
 	};
 #endif
@@ -391,7 +391,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_VehicleDestroyable, 2917437116);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_VehicleDestroyable, 426641423);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_VehicleDestroyable>()
 	{
 		return UFGFoliageIdentifier_VehicleDestroyable::StaticClass();
@@ -421,7 +421,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageIdentifier_ExplosiveDestroyable_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFoliageIdentifier.h" },
-		{ "ModuleRelativePath", "FGFoliageIdentifier.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageIdentifier.h" },
 		{ "ToolTip", "Will be destroyed by explosives" },
 	};
 #endif
@@ -452,7 +452,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_ExplosiveDestroyable, 2826231819);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_ExplosiveDestroyable, 595293994);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_ExplosiveDestroyable>()
 	{
 		return UFGFoliageIdentifier_ExplosiveDestroyable::StaticClass();

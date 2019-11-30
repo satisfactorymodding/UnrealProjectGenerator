@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGGasMask.h"
+#include "FactoryGame/Public/Equipment/FGGasMask.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -44,7 +44,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGasMask_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGGasMask.h" },
-		{ "ModuleRelativePath", "Equipment/FGGasMask.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGGasMask.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGGasMask_Statics::StaticCppClassTypeInfo = {
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGasMask, 1107624167);
+	IMPLEMENT_CLASS(AFGGasMask, 3674106695);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGasMask>()
 	{
 		return AFGGasMask::StaticClass();
@@ -104,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGasMaskAttachment_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGGasMask.h" },
-		{ "ModuleRelativePath", "Equipment/FGGasMask.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGGasMask.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGGasMaskAttachment_Statics::StaticCppClassTypeInfo = {
@@ -134,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGasMaskAttachment, 1842852081);
+	IMPLEMENT_CLASS(AFGGasMaskAttachment, 1731953366);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGasMaskAttachment>()
 	{
 		return AFGGasMaskAttachment::StaticClass();

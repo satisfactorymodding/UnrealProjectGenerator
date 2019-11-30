@@ -23,7 +23,7 @@ class AFGSchematicManager;
 #endif
 #define FACTORYGAME_FGGameState_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGGameState_h_21_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_21_DELEGATE \
 struct _Script_FactoryGame_eventVisitedMapAreaDelegate_Parms \
 { \
 	TSubclassOf<UFGMapArea>  mapArea; \
@@ -36,7 +36,7 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGGameState_h_29_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_RPC_WRAPPERS \
 	virtual bool SetAndReplicateBuildingColorInSlot_Validate(uint8 , FColor , FColor ); \
 	virtual void SetAndReplicateBuildingColorInSlot_Implementation(uint8 slot, FColor pColor, FColor sColor); \
  \
@@ -250,7 +250,7 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGGameState_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool SetAndReplicateBuildingColorInSlot_Validate(uint8 , FColor , FColor ); \
 	virtual void SetAndReplicateBuildingColorInSlot_Implementation(uint8 slot, FColor pColor, FColor sColor); \
  \
@@ -464,7 +464,7 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGGameState_h_29_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_EVENT_PARMS \
 	struct FGGameState_eventSetAndReplicateBuildingColorInSlot_Parms \
 	{ \
 		uint8 slot; \
@@ -473,34 +473,34 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGGameState_h_29_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGGameState_h_29_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(AFGGameState, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_FGGameState_h_29_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGGameState(); \
 	friend struct Z_Construct_UClass_AFGGameState_Statics; \
 public: \
 	DECLARE_CLASS(AFGGameState, AGameState, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGGameState) \
-	FactoryGame_Source_FactoryGame_FGGameState_h_29_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGGameState*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGGameState_h_29_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGGameState(); \
 	friend struct Z_Construct_UClass_AFGGameState_Statics; \
 public: \
 	DECLARE_CLASS(AFGGameState, AGameState, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGGameState) \
-	FactoryGame_Source_FactoryGame_FGGameState_h_29_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGGameState*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGGameState_h_29_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGGameState(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGGameState) \
@@ -513,7 +513,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGGameState_h_29_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGGameState(AFGGameState&&); \
@@ -524,7 +524,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGameState); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGGameState)
 
 
-#define FactoryGame_Source_FactoryGame_FGGameState_h_29_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mTimeSubsystem() { return STRUCT_OFFSET(AFGGameState, mTimeSubsystem); } \
 	FORCEINLINE static uint32 __PPO__mStorySubsystem() { return STRUCT_OFFSET(AFGGameState, mStorySubsystem); } \
 	FORCEINLINE static uint32 __PPO__mRailroadSubsystem() { return STRUCT_OFFSET(AFGGameState, mRailroadSubsystem); } \
@@ -553,30 +553,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGameState); \
 	FORCEINLINE static uint32 __PPO__mBuildingColorSlots() { return STRUCT_OFFSET(AFGGameState, mBuildingColorSlots); }
 
 
-#define FactoryGame_Source_FactoryGame_FGGameState_h_26_PROLOG \
-	FactoryGame_Source_FactoryGame_FGGameState_h_29_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_26_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGGameState_h_29_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGGameState_h_29_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGGameState_h_29_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGGameState_h_29_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGGameState_h_29_INCLASS \
-	FactoryGame_Source_FactoryGame_FGGameState_h_29_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGGameState_h_29_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGGameState_h_29_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGGameState_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGGameState_h_29_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGGameState_h_29_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGGameState_h_29_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -584,7 +584,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class AFGGameState>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGGameState_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGGameState_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableWindTurbine.h"
+#include "FactoryGame/Public/Buildables/FGBuildableWindTurbine.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWindTurbine() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWindTurbine_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableWindTurbine.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableWindTurbine.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWindTurbine.h" },
 		{ "ToolTip", "Generates power from wind." },
 	};
 #endif
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWindTurbine() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableWindTurbine, 1646359188);
+	IMPLEMENT_CLASS(AFGBuildableWindTurbine, 3170527721);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableWindTurbine>()
 	{
 		return AFGBuildableWindTurbine::StaticClass();

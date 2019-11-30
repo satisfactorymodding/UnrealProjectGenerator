@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Creature/Enemy/FGGameplayTask_AttackJump.h"
+#include "FactoryGame/Public/Creature/Enemy/FGGameplayTask_AttackJump.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -64,7 +64,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameplayTask_AttackJump() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameplayTask_AttackJump_OnLandedCallback_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Creature/Enemy/FGGameplayTask_AttackJump.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGGameplayTask_AttackJump.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameplayTask_AttackJump_OnLandedCallback_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameplayTask_AttackJump, nullptr, "OnLandedCallback", sizeof(FGGameplayTask_AttackJump_eventOnLandedCallback_Parms), Z_Construct_UFunction_UFGGameplayTask_AttackJump_OnLandedCallback_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGameplayTask_AttackJump_OnLandedCallback_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00480401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameplayTask_AttackJump_OnLandedCallback_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameplayTask_AttackJump_OnLandedCallback_Statics::Function_MetaDataParams)) };
@@ -105,7 +105,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameplayTask_AttackJump() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameplayTask_AttackJump_OnMontageEnded_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Creature/Enemy/FGGameplayTask_AttackJump.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGGameplayTask_AttackJump.h" },
 		{ "ToolTip", "Called when pre jump animation ended" },
 	};
 #endif
@@ -159,7 +159,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameplayTask_AttackJump() {}
 		{ "Category", "Tasks" },
 		{ "DefaultToSelf", "Controller" },
 		{ "DisplayName", "Jump attack" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGGameplayTask_AttackJump.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGGameplayTask_AttackJump.h" },
 		{ "ToolTip", "Starts the task of doing a jump attack" },
 	};
 #endif
@@ -206,20 +206,20 @@ void EmptyLinkFunctionForGeneratedCodeFGGameplayTask_AttackJump() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGGameplayTask_AttackJump_OnLandedCallback, "OnLandedCallback" }, // 2935861997
-		{ &Z_Construct_UFunction_UFGGameplayTask_AttackJump_OnMontageEnded, "OnMontageEnded" }, // 3238390910
-		{ &Z_Construct_UFunction_UFGGameplayTask_AttackJump_StartJump, "StartJump" }, // 2872567741
+		{ &Z_Construct_UFunction_UFGGameplayTask_AttackJump_OnLandedCallback, "OnLandedCallback" }, // 3812820508
+		{ &Z_Construct_UFunction_UFGGameplayTask_AttackJump_OnMontageEnded, "OnMontageEnded" }, // 1719621946
+		{ &Z_Construct_UFunction_UFGGameplayTask_AttackJump_StartJump, "StartJump" }, // 790724784
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Creature/Enemy/FGGameplayTask_AttackJump.h" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGGameplayTask_AttackJump.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGGameplayTask_AttackJump.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics::NewProp_mDoJump_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/Enemy/FGGameplayTask_AttackJump.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGGameplayTask_AttackJump.h" },
 		{ "ToolTip", "Should jump logic be handled in the task" },
 	};
 #endif
@@ -230,13 +230,13 @@ void EmptyLinkFunctionForGeneratedCodeFGGameplayTask_AttackJump() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics::NewProp_mDoJump = { "mDoJump", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGGameplayTask_AttackJump), &Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics::NewProp_mDoJump_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics::NewProp_mDoJump_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics::NewProp_mDoJump_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics::NewProp_mOnJumpAttackFailed_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/Enemy/FGGameplayTask_AttackJump.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGGameplayTask_AttackJump.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics::NewProp_mOnJumpAttackFailed = { "mOnJumpAttackFailed", nullptr, (EPropertyFlags)0x0020080010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGGameplayTask_AttackJump, mOnJumpAttackFailed), Z_Construct_UDelegateFunction_UGameplayTask_GenericGameplayTaskDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics::NewProp_mOnJumpAttackFailed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics::NewProp_mOnJumpAttackFailed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics::NewProp_mOnJumpAttackFinished_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/Enemy/FGGameplayTask_AttackJump.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGGameplayTask_AttackJump.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics::NewProp_mOnJumpAttackFinished = { "mOnJumpAttackFinished", nullptr, (EPropertyFlags)0x0020080010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGGameplayTask_AttackJump, mOnJumpAttackFinished), Z_Construct_UDelegateFunction_UGameplayTask_GenericGameplayTaskDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics::NewProp_mOnJumpAttackFinished_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics::NewProp_mOnJumpAttackFinished_MetaData)) };
@@ -272,7 +272,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameplayTask_AttackJump() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameplayTask_AttackJump, 3002041593);
+	IMPLEMENT_CLASS(UFGGameplayTask_AttackJump, 3986764130);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGGameplayTask_AttackJump>()
 	{
 		return UFGGameplayTask_AttackJump::StaticClass();

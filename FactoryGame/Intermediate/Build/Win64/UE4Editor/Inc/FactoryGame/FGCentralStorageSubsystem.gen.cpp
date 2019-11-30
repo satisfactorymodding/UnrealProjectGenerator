@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGCentralStorageSubsystem.h"
+#include "FactoryGame/Public/FGCentralStorageSubsystem.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -37,7 +37,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageSubsystem() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_CentralStorageAddedOrRemovedDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCentralStorageSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCentralStorageSubsystem.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_CentralStorageAddedOrRemovedDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "CentralStorageAddedOrRemovedDelegate__DelegateSignature", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_CentralStorageAddedOrRemovedDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_CentralStorageAddedOrRemovedDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageSubsystem() {}
 		{ "Category", "Central Storage" },
 		{ "DefaultToSelf", "worldContext" },
 		{ "DisplayName", "GetCentralStorage" },
-		{ "ModuleRelativePath", "FGCentralStorageSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCentralStorageSubsystem.h" },
 		{ "ToolTip", "Get the central storage from a world context, this should always return something unless you call it really early." },
 	};
 #endif
@@ -125,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCentralStorageSubsystem_GetCentralStorageContainers_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Central Storage" },
-		{ "ModuleRelativePath", "FGCentralStorageSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCentralStorageSubsystem.h" },
 		{ "ToolTip", "@return All central storages built; empty if none built." },
 	};
 #endif
@@ -163,7 +163,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCentralStorageSubsystem_GetNumItemsFromCentralStorage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Central Storage" },
-		{ "ModuleRelativePath", "FGCentralStorageSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCentralStorageSubsystem.h" },
 		{ "ToolTip", "@return Number of items available across all the central storages." },
 	};
 #endif
@@ -202,7 +202,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCentralStorageSubsystem_IsCentralStorageBuilt_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Central Storage" },
-		{ "ModuleRelativePath", "FGCentralStorageSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCentralStorageSubsystem.h" },
 		{ "ToolTip", "@return True if we've at least 1 central storage built; false if 0." },
 	};
 #endif
@@ -240,7 +240,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCentralStorageSubsystem_RemoveItemsFromCentralStorage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Central Storage" },
-		{ "ModuleRelativePath", "FGCentralStorageSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCentralStorageSubsystem.h" },
 		{ "ToolTip", "Removes the number of specified items across all central storages.\n\n@param itemClass - Type of items to remove.\n@param num - Number of items to remove. Must be >= 0. If count is more than the items available, a partial remove is done and a warning is raised." },
 	};
 #endif
@@ -283,11 +283,11 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageSubsystem() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCentralStorageSubsystem_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGCentralStorageSubsystem_Get, "Get" }, // 3155320843
-		{ &Z_Construct_UFunction_AFGCentralStorageSubsystem_GetCentralStorageContainers, "GetCentralStorageContainers" }, // 3179809327
-		{ &Z_Construct_UFunction_AFGCentralStorageSubsystem_GetNumItemsFromCentralStorage, "GetNumItemsFromCentralStorage" }, // 949987405
-		{ &Z_Construct_UFunction_AFGCentralStorageSubsystem_IsCentralStorageBuilt, "IsCentralStorageBuilt" }, // 1338976975
-		{ &Z_Construct_UFunction_AFGCentralStorageSubsystem_RemoveItemsFromCentralStorage, "RemoveItemsFromCentralStorage" }, // 179937954
+		{ &Z_Construct_UFunction_AFGCentralStorageSubsystem_Get, "Get" }, // 2418875404
+		{ &Z_Construct_UFunction_AFGCentralStorageSubsystem_GetCentralStorageContainers, "GetCentralStorageContainers" }, // 1023112428
+		{ &Z_Construct_UFunction_AFGCentralStorageSubsystem_GetNumItemsFromCentralStorage, "GetNumItemsFromCentralStorage" }, // 4209529759
+		{ &Z_Construct_UFunction_AFGCentralStorageSubsystem_IsCentralStorageBuilt, "IsCentralStorageBuilt" }, // 2464899306
+		{ &Z_Construct_UFunction_AFGCentralStorageSubsystem_RemoveItemsFromCentralStorage, "RemoveItemsFromCentralStorage" }, // 2127757299
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCentralStorageSubsystem_Statics::Class_MetaDataParams[] = {
@@ -295,14 +295,14 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageSubsystem() {}
 		{ "HideCategories", "Actor Input Rendering Actor Tick Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGCentralStorageSubsystem.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGCentralStorageSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCentralStorageSubsystem.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 		{ "ToolTip", "Handles the central storage system in the game." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCentralStorageSubsystem_Statics::NewProp_mCentralStorages_MetaData[] = {
-		{ "ModuleRelativePath", "FGCentralStorageSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCentralStorageSubsystem.h" },
 		{ "ToolTip", "All the central storages built." },
 	};
 #endif
@@ -312,7 +312,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageSubsystem() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCentralStorageSubsystem_Statics::NewProp_CentralStorageAddedOrRemoved_MetaData[] = {
 		{ "Category", "Central Storage" },
 		{ "DisplayName", "OnCentralStorageAddedOrRemoved" },
-		{ "ModuleRelativePath", "FGCentralStorageSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCentralStorageSubsystem.h" },
 		{ "ToolTip", "Called when a central storage has been removed" },
 	};
 #endif
@@ -349,7 +349,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCentralStorageSubsystem, 1719693800);
+	IMPLEMENT_CLASS(AFGCentralStorageSubsystem, 2959945532);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCentralStorageSubsystem>()
 	{
 		return AFGCentralStorageSubsystem::StaticClass();

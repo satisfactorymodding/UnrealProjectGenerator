@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/AI/FGAttack.h"
+#include "FactoryGame/Public/AI/FGAttack.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -66,7 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Enemy|Attack" },
-		{ "ModuleRelativePath", "AI/FGAttack.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttack.h" },
 		{ "ToolTip", "Get attack activation distance ( returns the attack range if the activation distance has not been set )" },
 	};
 #endif
@@ -104,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Enemy|Attack" },
-		{ "ModuleRelativePath", "AI/FGAttack.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttack.h" },
 		{ "ToolTip", "Get angle needed for this attack to hit" },
 	};
 #endif
@@ -142,7 +142,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Enemy|Attack" },
-		{ "ModuleRelativePath", "AI/FGAttack.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttack.h" },
 		{ "ToolTip", "Get attack montage" },
 	};
 #endif
@@ -180,7 +180,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Enemy|Attack" },
-		{ "ModuleRelativePath", "AI/FGAttack.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttack.h" },
 		{ "ToolTip", "Get attack range" },
 	};
 #endif
@@ -218,7 +218,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAttack_GetDamage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Enemy|Attack" },
-		{ "ModuleRelativePath", "AI/FGAttack.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttack.h" },
 		{ "ToolTip", "Get damage this attack does" },
 	};
 #endif
@@ -256,7 +256,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Enemy|Attack" },
-		{ "ModuleRelativePath", "AI/FGAttack.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttack.h" },
 		{ "ToolTip", "Get damage type for this attack" },
 	};
 #endif
@@ -299,7 +299,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Enemy|Attack" },
-		{ "ModuleRelativePath", "AI/FGAttack.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttack.h" },
 		{ "ToolTip", "Get for stop movement" },
 	};
 #endif
@@ -362,25 +362,25 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGAttack_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance, "GetAttackActivationDistance" }, // 2342107993
-		{ &Z_Construct_UFunction_UFGAttack_GetAttackAngle, "GetAttackAngle" }, // 4192248135
-		{ &Z_Construct_UFunction_UFGAttack_GetAttackMontage, "GetAttackMontage" }, // 1731027452
-		{ &Z_Construct_UFunction_UFGAttack_GetAttackRange, "GetAttackRange" }, // 3794884838
-		{ &Z_Construct_UFunction_UFGAttack_GetDamage, "GetDamage" }, // 1837302200
-		{ &Z_Construct_UFunction_UFGAttack_GetDamageType, "GetDamageType" }, // 1344224665
-		{ &Z_Construct_UFunction_UFGAttack_GetStopsMovement, "GetStopsMovement" }, // 4128449449
+		{ &Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance, "GetAttackActivationDistance" }, // 2907732573
+		{ &Z_Construct_UFunction_UFGAttack_GetAttackAngle, "GetAttackAngle" }, // 1135792145
+		{ &Z_Construct_UFunction_UFGAttack_GetAttackMontage, "GetAttackMontage" }, // 277687614
+		{ &Z_Construct_UFunction_UFGAttack_GetAttackRange, "GetAttackRange" }, // 624193438
+		{ &Z_Construct_UFunction_UFGAttack_GetDamage, "GetDamage" }, // 2240968933
+		{ &Z_Construct_UFunction_UFGAttack_GetDamageType, "GetDamageType" }, // 3866495508
+		{ &Z_Construct_UFunction_UFGAttack_GetStopsMovement, "GetStopsMovement" }, // 3648940137
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttack_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "AI/FGAttack.h" },
-		{ "ModuleRelativePath", "AI/FGAttack.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttack.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackAngle_MetaData[] = {
 		{ "Category", "FGAttack" },
-		{ "ModuleRelativePath", "AI/FGAttack.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttack.h" },
 		{ "ToolTip", "Angle that target must be within in order to hit with attack ( 180 = full circle hit area )" },
 	};
 #endif
@@ -388,7 +388,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamageType_MetaData[] = {
 		{ "Category", "FGAttack" },
-		{ "ModuleRelativePath", "AI/FGAttack.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttack.h" },
 		{ "ToolTip", "Damage type that this attack uses" },
 	};
 #endif
@@ -396,7 +396,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamage_MetaData[] = {
 		{ "Category", "FGAttack" },
-		{ "ModuleRelativePath", "AI/FGAttack.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttack.h" },
 		{ "ToolTip", "How much damage to do when hitting" },
 	};
 #endif
@@ -404,7 +404,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackActivationDistance_MetaData[] = {
 		{ "Category", "FGAttack" },
-		{ "ModuleRelativePath", "AI/FGAttack.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttack.h" },
 		{ "ToolTip", "How far can we attack" },
 	};
 #endif
@@ -412,7 +412,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackRange_MetaData[] = {
 		{ "Category", "FGAttack" },
-		{ "ModuleRelativePath", "AI/FGAttack.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttack.h" },
 		{ "ToolTip", "How far can we attack" },
 	};
 #endif
@@ -420,7 +420,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttack_Statics::NewProp_mStopsMovement_MetaData[] = {
 		{ "Category", "FGAttack" },
-		{ "ModuleRelativePath", "AI/FGAttack.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttack.h" },
 		{ "ToolTip", "True if this attack stops movement" },
 	};
 #endif
@@ -432,7 +432,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackMontage_MetaData[] = {
 		{ "Category", "FGAttack" },
-		{ "ModuleRelativePath", "AI/FGAttack.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttack.h" },
 		{ "ToolTip", "Animation to play when attacking" },
 	};
 #endif
@@ -473,7 +473,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttack, 3538317322);
+	IMPLEMENT_CLASS(UFGAttack, 3766606854);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGAttack>()
 	{
 		return UFGAttack::StaticClass();

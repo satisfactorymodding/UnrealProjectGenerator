@@ -14,9 +14,9 @@ class UUserWidget;
 #endif
 #define FACTORYGAME_FGPopupInstigatorInterface_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_EVENT_PARMS \
 	struct FGPopupInstigatorInterface_eventNotifyPopupClosed_Parms \
 	{ \
 		TSubclassOf<UUserWidget>  popupClass; \
@@ -29,8 +29,8 @@ class UUserWidget;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGPopupInstigatorInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGPopupInstigatorInterface) \
@@ -43,7 +43,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGPopupInstigatorInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -56,7 +56,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGPopupInstigatorInterface); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGPopupInstigatorInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_GENERATED_UINTERFACE_BODY() \
+#define FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUFGPopupInstigatorInterface(); \
 	friend struct Z_Construct_UClass_UFGPopupInstigatorInterface_Statics; \
@@ -65,22 +65,22 @@ public: \
 	DECLARE_SERIALIZER(UFGPopupInstigatorInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_GENERATED_BODY_LEGACY \
 		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_STANDARD_CONSTRUCTORS \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IFGPopupInstigatorInterface() {} \
 public: \
@@ -91,7 +91,7 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_INCLASS_IINTERFACE \
+#define FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_INCLASS_IINTERFACE \
 protected: \
 	virtual ~IFGPopupInstigatorInterface() {} \
 public: \
@@ -102,26 +102,26 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_13_PROLOG \
-	FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_13_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_24_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_24_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_INCLASS_IINTERFACE \
+	FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_24_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_24_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h_16_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -129,7 +129,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class UFGPopupInstigatorInterface>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGPopupInstigatorInterface_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGPopupInstigatorInterface.h"
+#include "FactoryGame/Public/FGPopupInstigatorInterface.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -52,7 +52,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupInstigatorInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPopupInstigatorInterface_NotifyPopupClosed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Popup" },
-		{ "ModuleRelativePath", "FGPopupInstigatorInterface.h" },
+		{ "ModuleRelativePath", "Public/FGPopupInstigatorInterface.h" },
 		{ "ToolTip", "Called when the popup is closed and returns an int that can be used to interpret selection" },
 	};
 #endif
@@ -96,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupInstigatorInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPopupInstigatorInterface_WidgetFactory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Popup" },
-		{ "ModuleRelativePath", "FGPopupInstigatorInterface.h" },
+		{ "ModuleRelativePath", "Public/FGPopupInstigatorInterface.h" },
 		{ "ToolTip", "Called from FGPopupWidgetContent to fill its contents" },
 	};
 #endif
@@ -129,14 +129,14 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupInstigatorInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGPopupInstigatorInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGPopupInstigatorInterface_NotifyPopupClosed, "NotifyPopupClosed" }, // 1658631877
-		{ &Z_Construct_UFunction_UFGPopupInstigatorInterface_WidgetFactory, "WidgetFactory" }, // 3793965699
+		{ &Z_Construct_UFunction_UFGPopupInstigatorInterface_NotifyPopupClosed, "NotifyPopupClosed" }, // 3730082929
+		{ &Z_Construct_UFunction_UFGPopupInstigatorInterface_WidgetFactory, "WidgetFactory" }, // 3823515253
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPopupInstigatorInterface_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGPopupInstigatorInterface.h" },
+		{ "ModuleRelativePath", "Public/FGPopupInstigatorInterface.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGPopupInstigatorInterface_Statics::StaticCppClassTypeInfo = {
@@ -166,7 +166,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupInstigatorInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPopupInstigatorInterface, 4144596215);
+	IMPLEMENT_CLASS(UFGPopupInstigatorInterface, 3793127721);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGPopupInstigatorInterface>()
 	{
 		return UFGPopupInstigatorInterface::StaticClass();

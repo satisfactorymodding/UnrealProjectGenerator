@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGInventoryComponentEquipment.h"
+#include "FactoryGame/Public/FGInventoryComponentEquipment.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -51,7 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponentEquipment_GetActiveIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGInventoryComponentEquipment.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponentEquipment.h" },
 		{ "ToolTip", "Returns the EEquipmentSlost for this inventory" },
 	};
 #endif
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponentEquipment_GetEquipmentSlotEnum_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGInventoryComponentEquipment.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponentEquipment.h" },
 		{ "ToolTip", "Returns the EEquipmentSlost for this inventory" },
 	};
 #endif
@@ -139,25 +139,25 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentEquipment() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGInventoryComponentEquipment_GetActiveIndex, "GetActiveIndex" }, // 1143906396
-		{ &Z_Construct_UFunction_UFGInventoryComponentEquipment_GetEquipmentSlotEnum, "GetEquipmentSlotEnum" }, // 2608430879
+		{ &Z_Construct_UFunction_UFGInventoryComponentEquipment_GetActiveIndex, "GetActiveIndex" }, // 4027439344
+		{ &Z_Construct_UFunction_UFGInventoryComponentEquipment_GetEquipmentSlotEnum, "GetEquipmentSlotEnum" }, // 112706916
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGInventoryComponentEquipment.h" },
-		{ "ModuleRelativePath", "FGInventoryComponentEquipment.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponentEquipment.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::NewProp_mActiveEquipmentIndex_MetaData[] = {
-		{ "ModuleRelativePath", "FGInventoryComponentEquipment.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponentEquipment.h" },
 		{ "ToolTip", "Index of the active equipment" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::NewProp_mActiveEquipmentIndex = { "mActiveEquipmentIndex", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGInventoryComponentEquipment, mActiveEquipmentIndex), METADATA_PARAMS(Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::NewProp_mActiveEquipmentIndex_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::NewProp_mActiveEquipmentIndex_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::NewProp_mEquipmentInventorySlot_MetaData[] = {
-		{ "ModuleRelativePath", "FGInventoryComponentEquipment.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponentEquipment.h" },
 		{ "ToolTip", "This inventory will only accept equipments that are supposed to be on this slot" },
 	};
 #endif
@@ -165,14 +165,14 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentEquipment() {}
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::NewProp_mEquipmentInventorySlot_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::NewProp_mEquipmentInSlot_MetaData[] = {
-		{ "ModuleRelativePath", "FGInventoryComponentEquipment.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponentEquipment.h" },
 		{ "ToolTip", "This is the actual equipment in the slot" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::NewProp_mEquipmentInSlot = { "mEquipmentInSlot", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGInventoryComponentEquipment, mEquipmentInSlot), Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::NewProp_mEquipmentInSlot_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::NewProp_mEquipmentInSlot_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::NewProp_mOverrideEquipmentInSlot_MetaData[] = {
-		{ "ModuleRelativePath", "FGInventoryComponentEquipment.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponentEquipment.h" },
 		{ "ToolTip", "If the equipment in the slot has been overridden, this is the equipment.\nNo need to save this, the kinds of equipments that are placed here are not good candidates for saving (e.g. build gun)\nNo need to replicate, this is simulated locally on the client." },
 	};
 #endif
@@ -211,7 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentEquipment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryComponentEquipment, 2794920652);
+	IMPLEMENT_CLASS(UFGInventoryComponentEquipment, 2370147834);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGInventoryComponentEquipment>()
 	{
 		return UFGInventoryComponentEquipment::StaticClass();

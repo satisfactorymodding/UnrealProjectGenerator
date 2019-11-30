@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Creature/FGLootSettings.h"
+#include "FactoryGame/Public/Creature/FGLootSettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -54,7 +54,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLootSettings() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLootSettings_GetLootSettingsDefaultObject_Statics::Function_MetaDataParams[] = {
 		{ "Category", "LootSettings|Utilities" },
 		{ "DeterminesOutputType", "inClass" },
-		{ "ModuleRelativePath", "Creature/FGLootSettings.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGLootSettings.h" },
 		{ "ToolTip", "Gets default object for loot settings" },
 	};
 #endif
@@ -87,14 +87,14 @@ void EmptyLinkFunctionForGeneratedCodeFGLootSettings() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGLootSettings_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGLootSettings_GetLootSettingsDefaultObject, "GetLootSettingsDefaultObject" }, // 963438670
+		{ &Z_Construct_UFunction_UFGLootSettings_GetLootSettingsDefaultObject, "GetLootSettingsDefaultObject" }, // 3194792148
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGLootSettings_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "Creature/FGLootSettings.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "Creature/FGLootSettings.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGLootSettings.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGLootSettings_Statics::StaticCppClassTypeInfo = {
@@ -124,7 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLootSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGLootSettings, 3692397602);
+	IMPLEMENT_CLASS(UFGLootSettings, 16437623);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGLootSettings>()
 	{
 		return UFGLootSettings::StaticClass();

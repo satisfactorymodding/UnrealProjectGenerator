@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGMusicManager.h"
+#include "FactoryGame/Public/FGMusicManager.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		{ "Category", "Music" },
 		{ "DefaultToSelf", "worldContext" },
 		{ "DisplayName", "GetMusicManager" },
-		{ "ModuleRelativePath", "FGMusicManager.h" },
+		{ "ModuleRelativePath", "Public/FGMusicManager.h" },
 		{ "ToolTip", "To easy access the music manager from anywhere, can return null if world context is invalid or no music manager is spawned." },
 	};
 #endif
@@ -136,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audio" },
 		{ "DisplayName", "OnPostLoadMap" },
-		{ "ModuleRelativePath", "FGMusicManager.h" },
+		{ "ModuleRelativePath", "Public/FGMusicManager.h" },
 		{ "ToolTip", "Notify that a new map has been loaded." },
 	};
 #endif
@@ -166,7 +166,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGMusicManager.h" },
+		{ "ModuleRelativePath", "Public/FGMusicManager.h" },
 		{ "ToolTip", "Called whenever a player enters an area" },
 	};
 #endif
@@ -201,7 +201,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGMusicManager.h" },
+		{ "ModuleRelativePath", "Public/FGMusicManager.h" },
 		{ "ToolTip", "Called whenever a player enters" },
 	};
 #endif
@@ -225,7 +225,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMusicManager_Pause_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGMusicManager.h" },
+		{ "ModuleRelativePath", "Public/FGMusicManager.h" },
 		{ "ToolTip", "Pause music playback." },
 	};
 #endif
@@ -249,7 +249,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMusicManager_Play_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGMusicManager.h" },
+		{ "ModuleRelativePath", "Public/FGMusicManager.h" },
 		{ "ToolTip", "Start/Continue music playback." },
 	};
 #endif
@@ -273,7 +273,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMusicManager_Stop_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGMusicManager.h" },
+		{ "ModuleRelativePath", "Public/FGMusicManager.h" },
 		{ "ToolTip", "Stop music playback." },
 	};
 #endif
@@ -319,25 +319,25 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMusicManager_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMusicManager_Get, "Get" }, // 1879584131
-		{ &Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap, "NotifyPostLoadMap" }, // 1840100226
-		{ &Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea, "OnPlayerEnteredArea" }, // 765309870
-		{ &Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged, "OnPlayerNearBaseChanged" }, // 524045429
-		{ &Z_Construct_UFunction_UFGMusicManager_Pause, "Pause" }, // 788048311
-		{ &Z_Construct_UFunction_UFGMusicManager_Play, "Play" }, // 1388297259
-		{ &Z_Construct_UFunction_UFGMusicManager_Stop, "Stop" }, // 1474362068
+		{ &Z_Construct_UFunction_UFGMusicManager_Get, "Get" }, // 1795968153
+		{ &Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap, "NotifyPostLoadMap" }, // 2593472944
+		{ &Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea, "OnPlayerEnteredArea" }, // 1917984316
+		{ &Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged, "OnPlayerNearBaseChanged" }, // 3025628962
+		{ &Z_Construct_UFunction_UFGMusicManager_Pause, "Pause" }, // 996371590
+		{ &Z_Construct_UFunction_UFGMusicManager_Play, "Play" }, // 1331187474
+		{ &Z_Construct_UFunction_UFGMusicManager_Stop, "Stop" }, // 3621238350
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMusicManager_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGMusicManager.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGMusicManager.h" },
+		{ "ModuleRelativePath", "Public/FGMusicManager.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mMusicManagerClassName_MetaData[] = {
-		{ "ModuleRelativePath", "FGMusicManager.h" },
+		{ "ModuleRelativePath", "Public/FGMusicManager.h" },
 		{ "ToolTip", "Music manager class name" },
 	};
 #endif
@@ -345,7 +345,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mFactoryCloseDistance_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGMusicManager.h" },
+		{ "ModuleRelativePath", "Public/FGMusicManager.h" },
 		{ "ToolTip", "The distance that we considers a factory as close" },
 	};
 #endif
@@ -353,7 +353,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mUpdateInterval_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGMusicManager.h" },
+		{ "ModuleRelativePath", "Public/FGMusicManager.h" },
 		{ "ToolTip", "How often (in seconds) we want to check if we are close to a factory" },
 	};
 #endif
@@ -390,7 +390,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMusicManager, 2985190898);
+	IMPLEMENT_CLASS(UFGMusicManager, 826571840);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGMusicManager>()
 	{
 		return UFGMusicManager::StaticClass();

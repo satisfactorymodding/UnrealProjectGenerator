@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGEquipmentStunSpear.h"
+#include "FactoryGame/Public/Equipment/FGEquipmentStunSpear.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -62,7 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentStunSpear_DoAttack_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Stun Spear" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentStunSpear.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentStunSpear.h" },
 		{ "ToolTip", "Start the damage chain" },
 	};
 #endif
@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Stun Spear" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentStunSpear.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentStunSpear.h" },
 		{ "ToolTip", "Getter for mShouldPlaySecondSwing" },
 	};
 #endif
@@ -125,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentStunSpear_OnHitTarget_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Hit Response" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentStunSpear.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentStunSpear.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentStunSpear_OnHitTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentStunSpear, nullptr, "OnHitTarget", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentStunSpear_OnHitTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentStunSpear_OnHitTarget_Statics::Function_MetaDataParams)) };
@@ -148,7 +148,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentStunSpear_PlayStunEffects_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Stun Spear" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentStunSpear.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentStunSpear.h" },
 		{ "ToolTip", "Called when the player clicks to \"fire\"" },
 	};
 #endif
@@ -171,7 +171,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipmentStunSpear_Server_ShockEnemy_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGEquipmentStunSpear.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentStunSpear.h" },
 		{ "ToolTip", "server notified of hit from client to verify" },
 	};
 #endif
@@ -229,22 +229,22 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGEquipmentStunSpear_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_DoAttack, "DoAttack" }, // 2785508344
-		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing, "GetShouldPlaySecondSwing" }, // 3469920913
-		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_OnHitTarget, "OnHitTarget" }, // 2879609905
-		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_PlayStunEffects, "PlayStunEffects" }, // 638156427
-		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_Server_ShockEnemy, "Server_ShockEnemy" }, // 2867397826
+		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_DoAttack, "DoAttack" }, // 1309845888
+		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing, "GetShouldPlaySecondSwing" }, // 1262879271
+		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_OnHitTarget, "OnHitTarget" }, // 2343169773
+		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_PlayStunEffects, "PlayStunEffects" }, // 1760222865
+		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_Server_ShockEnemy, "Server_ShockEnemy" }, // 2644050694
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentStunSpear_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGEquipmentStunSpear.h" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentStunSpear.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentStunSpear.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mAttackDistance_MetaData[] = {
 		{ "Category", "Stun Spear" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentStunSpear.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentStunSpear.h" },
 		{ "ToolTip", "How much inf ront of character the attack is" },
 	};
 #endif
@@ -252,7 +252,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamage_MetaData[] = {
 		{ "Category", "Stun Spear" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentStunSpear.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentStunSpear.h" },
 		{ "ToolTip", "Damage amount" },
 	};
 #endif
@@ -260,7 +260,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mSecondSwingCooldDownTime_MetaData[] = {
 		{ "Category", "Stun Spear" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentStunSpear.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentStunSpear.h" },
 		{ "ToolTip", "The max amount of time between the first swing that will still trigger the second swing" },
 	};
 #endif
@@ -268,7 +268,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mSecondSwingMaxTime_MetaData[] = {
 		{ "Category", "Stun Spear" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentStunSpear.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentStunSpear.h" },
 		{ "ToolTip", "The max amount of time between the first swing that will still trigger the second swing" },
 	};
 #endif
@@ -276,7 +276,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamageTypeClass_MetaData[] = {
 		{ "Category", "Stun Spear" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentStunSpear.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentStunSpear.h" },
 		{ "ToolTip", "Damage type to use when hitting others" },
 	};
 #endif
@@ -285,7 +285,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mCollisionComp_MetaData[] = {
 		{ "Category", "Stun Spear" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Equipment/FGEquipmentStunSpear.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipmentStunSpear.h" },
 		{ "ToolTip", "Sphere collision component" },
 	};
 #endif
@@ -325,7 +325,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEquipmentStunSpear, 430052538);
+	IMPLEMENT_CLASS(AFGEquipmentStunSpear, 897086039);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGEquipmentStunSpear>()
 	{
 		return AFGEquipmentStunSpear::StaticClass();

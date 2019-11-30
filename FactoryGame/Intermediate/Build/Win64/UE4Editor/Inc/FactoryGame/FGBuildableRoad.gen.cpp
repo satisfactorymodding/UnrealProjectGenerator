@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableRoad.h"
+#include "FactoryGame/Public/Buildables/FGBuildableRoad.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -63,13 +63,13 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRoad() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRoad_Statics::Class_MetaDataParams[] = {
 		{ "AutoJson", "FALSE" },
 		{ "IncludePath", "Buildables/FGBuildableRoad.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRoad.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRoad.h" },
 		{ "ToolTip", "Roads for the wroom wroom." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineData_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableRoad.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRoad.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Spline data saved in a compact form for saving and replicating. All the vectors are in local space." },
 	};
@@ -80,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRoad() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineComponent_MetaData[] = {
 		{ "Category", "Spline" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRoad.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRoad.h" },
 		{ "ToolTip", "The spline component for this train track." },
 	};
 #endif
@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRoad() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mConnection1_MetaData[] = {
 		{ "Category", "Road" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRoad.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRoad.h" },
 		{ "ToolTip", "Second connection on tack" },
 	};
 #endif
@@ -98,7 +98,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRoad() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mConnection0_MetaData[] = {
 		{ "Category", "Road" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRoad.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRoad.h" },
 		{ "ToolTip", "First connection on track" },
 	};
 #endif
@@ -137,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRoad() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRoad, 407238927);
+	IMPLEMENT_CLASS(AFGBuildableRoad, 3034832394);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableRoad>()
 	{
 		return AFGBuildableRoad::StaticClass();

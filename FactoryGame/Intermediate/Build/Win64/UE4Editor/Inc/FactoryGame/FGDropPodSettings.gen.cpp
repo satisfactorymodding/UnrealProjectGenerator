@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGDropPodSettings.h"
+#include "FactoryGame/Public/FGDropPodSettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -75,7 +75,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDropPackage_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGDropPodSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDropPodSettings.h" },
 		{ "ToolTip", "Describes a package of items you can get in a drop." },
 	};
 #endif
@@ -86,7 +86,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_RequiredSchematic_MetaData[] = {
 		{ "Category", "DropPackage" },
-		{ "ModuleRelativePath", "FGDropPodSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDropPodSettings.h" },
 		{ "ToolTip", "We can not find this package if we haven't purchased this schematic." },
 	};
 #endif
@@ -94,7 +94,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_Items_MetaData[] = {
 		{ "Category", "DropPackage" },
-		{ "ModuleRelativePath", "FGDropPodSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDropPodSettings.h" },
 		{ "ToolTip", "Item contained in the package" },
 	};
 #endif
@@ -103,7 +103,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_DropChance_MetaData[] = {
 		{ "Category", "DropPackage" },
-		{ "ModuleRelativePath", "FGDropPodSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDropPodSettings.h" },
 		{ "ToolTip", "Chance in roulette selection to get the package." },
 	};
 #endif
@@ -111,7 +111,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_DropDisplayText_MetaData[] = {
 		{ "Category", "DropPackage" },
-		{ "ModuleRelativePath", "FGDropPodSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDropPodSettings.h" },
 		{ "ToolTip", "Text showing up when finding the drop." },
 	};
 #endif
@@ -151,7 +151,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDropPackage_Hash() { return 2674586695U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDropPackage_Hash() { return 1945558816U; }
 	void UFGDropPodSettings::StaticRegisterNativesUFGDropPodSettings()
 	{
 		UClass* Class = UFGDropPodSettings::StaticClass();
@@ -192,7 +192,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "DropPackage" },
-		{ "ModuleRelativePath", "FGDropPodSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDropPodSettings.h" },
 		{ "ToolTip", "Get a random drop package" },
 	};
 #endif
@@ -231,19 +231,19 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGDropPodSettings_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage, "GetRandomDropPackage" }, // 3242720232
+		{ &Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage, "GetRandomDropPackage" }, // 1051285065
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDropPodSettings_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGDropPodSettings.h" },
-		{ "ModuleRelativePath", "FGDropPodSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDropPodSettings.h" },
 		{ "ToolTip", "Settings for the drop pods." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDropPodSettings_Statics::NewProp_mDropTable_MetaData[] = {
 		{ "Category", "DropPackage" },
-		{ "ModuleRelativePath", "FGDropPodSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDropPodSettings.h" },
 		{ "ToolTip", "List of all available drop packages" },
 	};
 #endif
@@ -280,7 +280,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDropPodSettings, 475153193);
+	IMPLEMENT_CLASS(UFGDropPodSettings, 1887530462);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGDropPodSettings>()
 	{
 		return UFGDropPodSettings::StaticClass();

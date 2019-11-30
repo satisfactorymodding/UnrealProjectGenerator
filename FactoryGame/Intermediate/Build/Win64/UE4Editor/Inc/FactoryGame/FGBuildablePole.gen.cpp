@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildablePole.h"
+#include "FactoryGame/Public/Buildables/FGBuildablePole.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -75,14 +75,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePole_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildablePole.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePole.h" },
 		{ "ToolTip", "An arbitrarily high pole." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mUseStaticHeight_MetaData[] = {
 		{ "Category", "Pole" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePole.h" },
 		{ "ToolTip", "Should the stack height only be calculated using the mStackHeight?" },
 	};
 #endif
@@ -93,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mUseStaticHeight = { "mUseStaticHeight", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildablePole), &Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mUseStaticHeight_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mUseStaticHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mUseStaticHeight_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleMesh_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildablePole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePole.h" },
 		{ "ToolTip", "This poles mesh. @save 2018-10-24, this is here so old poles < alpha 2 path will still have a correct mesh, resaving an old save" },
 	};
 #endif
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mSnapOnly0_MetaData[] = {
 		{ "Category", "Pole" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePole.h" },
 		{ "ToolTip", "Connection component used" },
 	};
 #endif
@@ -111,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleComponentProxy_MetaData[] = {
 		{ "Category", "Pole" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePole.h" },
 		{ "ToolTip", "The component we want to use with the pole" },
 	};
 #endif
@@ -119,7 +119,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mStackHeight_MetaData[] = {
 		{ "Category", "Pole" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePole.h" },
 		{ "ToolTip", "Height between two stacked poles excluding the poles height." },
 	};
 #endif
@@ -127,7 +127,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mCanStack_MetaData[] = {
 		{ "Category", "Pole" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePole.h" },
 		{ "ToolTip", "Can this pole stack." },
 	};
 #endif
@@ -138,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mCanStack = { "mCanStack", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildablePole), &Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mCanStack_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mCanStack_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mCanStack_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mHeight_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildablePole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePole.h" },
 		{ "ToolTip", "This poles height." },
 	};
 #endif
@@ -179,7 +179,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildablePole, 2372926730);
+	IMPLEMENT_CLASS(AFGBuildablePole, 2431261286);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildablePole>()
 	{
 		return AFGBuildablePole::StaticClass();

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGWeaponAttachmentProjectile.h"
+#include "FactoryGame/Public/FGWeaponAttachmentProjectile.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachmentProjectile() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeaponAttachmentProjectile_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGWeaponAttachmentProjectile.h" },
-		{ "ModuleRelativePath", "FGWeaponAttachmentProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGWeaponAttachmentProjectile.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGWeaponAttachmentProjectile_Statics::StaticCppClassTypeInfo = {
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachmentProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWeaponAttachmentProjectile, 581787571);
+	IMPLEMENT_CLASS(AFGWeaponAttachmentProjectile, 3940887690);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWeaponAttachmentProjectile>()
 	{
 		return AFGWeaponAttachmentProjectile::StaticClass();

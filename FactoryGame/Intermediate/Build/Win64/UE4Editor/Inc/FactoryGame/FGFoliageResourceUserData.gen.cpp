@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGFoliageResourceUserData.h"
+#include "FactoryGame/Public/FGFoliageResourceUserData.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -81,13 +81,13 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageResourceUserData_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFoliageResourceUserData.h" },
-		{ "ModuleRelativePath", "FGFoliageResourceUserData.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageResourceUserData.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFoliageIdentifiers_MetaData[] = {
 		{ "Category", "FGFoliageResourceUserData" },
-		{ "ModuleRelativePath", "FGFoliageResourceUserData.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageResourceUserData.h" },
 		{ "ToolTip", "What does this foliage identify itself as" },
 	};
 #endif
@@ -96,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFXPriority_MetaData[] = {
 		{ "Category", "FGFoliageResourceUserData" },
-		{ "ModuleRelativePath", "FGFoliageResourceUserData.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageResourceUserData.h" },
 		{ "ToolTip", "Specifies priority for spawning against other effects. Must be implemented by the spawning class. ex: FGDestructiveProjectile" },
 	};
 #endif
@@ -104,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mExplosionDestroyedEffect_MetaData[] = {
 		{ "Category", "FGFoliageResourceUserData" },
-		{ "ModuleRelativePath", "FGFoliageResourceUserData.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageResourceUserData.h" },
 		{ "ToolTip", "The effect to play when destroyed by an explosive. If one is not specified it may fall back to either the vehicle effect or pickup effect" },
 	};
 #endif
@@ -112,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mVehicleDestroyedEffect_MetaData[] = {
 		{ "Category", "FGFoliageResourceUserData" },
-		{ "ModuleRelativePath", "FGFoliageResourceUserData.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageResourceUserData.h" },
 		{ "ToolTip", "The effect to play when run over by a vehicle, @todo: Remove BlueprintReadOnly" },
 	};
 #endif
@@ -120,7 +120,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mVehicleDestroyedEvent_MetaData[] = {
 		{ "Category", "FGFoliageResourceUserData" },
-		{ "ModuleRelativePath", "FGFoliageResourceUserData.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageResourceUserData.h" },
 		{ "ToolTip", "Audio event to be posted when run over by a vehicle, @todo: Remove BlueprintReadOnly" },
 	};
 #endif
@@ -128,7 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupEffect_MetaData[] = {
 		{ "Category", "FGFoliageResourceUserData" },
-		{ "ModuleRelativePath", "FGFoliageResourceUserData.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageResourceUserData.h" },
 		{ "ToolTip", "The effect to play where the pickup was, @todo: Remove BlueprintReadOnly" },
 	};
 #endif
@@ -136,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupEvent_MetaData[] = {
 		{ "Category", "FGFoliageResourceUserData" },
-		{ "ModuleRelativePath", "FGFoliageResourceUserData.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageResourceUserData.h" },
 		{ "ToolTip", "Audio event to be posted when picked up, @todo: Remove BlueprintReadOnly" },
 	};
 #endif
@@ -144,7 +144,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupItems_MetaData[] = {
 		{ "Category", "FGFoliageResourceUserData" },
-		{ "ModuleRelativePath", "FGFoliageResourceUserData.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageResourceUserData.h" },
 		{ "ToolTip", "Items we should gain when picking up the item, @todo: Remove BlueprintReadOnly" },
 	};
 #endif
@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageResourceUserData, 504681205);
+	IMPLEMENT_CLASS(UFGFoliageResourceUserData, 3462382167);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageResourceUserData>()
 	{
 		return UFGFoliageResourceUserData::StaticClass();

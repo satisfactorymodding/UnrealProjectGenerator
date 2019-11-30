@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGRailroadSubsystem.h"
+#include "FactoryGame/Public/FGRailroadSubsystem.h"
 #include "Serialization/ArchiveUObjectFromStructuredArchive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -76,7 +76,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTrackGraph_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadSubsystem.h" },
 		{ "ToolTip", "Struct representing a set of interconnected tracks." },
 	};
 #endif
@@ -87,14 +87,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTrackGraph_Statics::NewProp_ThirdRail_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadSubsystem.h" },
 		{ "ToolTip", "This is the third rail the locomotives and stations connect to." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FTrackGraph_Statics::NewProp_ThirdRail = { "ThirdRail", nullptr, (EPropertyFlags)0x0010000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FTrackGraph, ThirdRail), Z_Construct_UClass_UFGPowerConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FTrackGraph_Statics::NewProp_ThirdRail_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FTrackGraph_Statics::NewProp_ThirdRail_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTrackGraph_Statics::NewProp_Tracks_MetaData[] = {
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadSubsystem.h" },
 		{ "ToolTip", "All the tracks that are connected (nodes in the graph)" },
 	};
 #endif
@@ -133,7 +133,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FTrackGraph_Hash() { return 4293822060U; }
+	uint32 Get_Z_Construct_UScriptStruct_FTrackGraph_Hash() { return 2945699254U; }
 	void AFGRailroadSubsystem::StaticRegisterNativesAFGRailroadSubsystem()
 	{
 		UClass* Class = AFGRailroadSubsystem::StaticClass();
@@ -172,7 +172,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 		{ "Category", "FactoryGame|Railroad" },
 		{ "DefaultToSelf", "worldContext" },
 		{ "DisplayName", "GetRailroadSubsystem" },
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadSubsystem.h" },
 		{ "ToolTip", "Get the railroad subsystem from a world context, this should always return something unless you call it really early." },
 	};
 #endif
@@ -209,7 +209,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadSubsystem_GetAllTrains_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad" },
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadSubsystem.h" },
 		{ "ToolTip", "Get all trains." },
 	};
 #endif
@@ -246,7 +246,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadSubsystem_GetAllTrainStations_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad" },
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadSubsystem.h" },
 		{ "ToolTip", "Get all stations." },
 	};
 #endif
@@ -287,7 +287,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadSubsystem_GetTrains_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad" },
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadSubsystem.h" },
 		{ "ToolTip", "Get all trains on the specified track." },
 	};
 #endif
@@ -328,7 +328,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadSubsystem_GetTrainStations_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad" },
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadSubsystem.h" },
 		{ "ToolTip", "Get all stations for the specified track." },
 	};
 #endif
@@ -396,11 +396,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGRailroadSubsystem_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGRailroadSubsystem_Get, "Get" }, // 909522717
-		{ &Z_Construct_UFunction_AFGRailroadSubsystem_GetAllTrains, "GetAllTrains" }, // 3836211140
-		{ &Z_Construct_UFunction_AFGRailroadSubsystem_GetAllTrainStations, "GetAllTrainStations" }, // 55147803
-		{ &Z_Construct_UFunction_AFGRailroadSubsystem_GetTrains, "GetTrains" }, // 2655446417
-		{ &Z_Construct_UFunction_AFGRailroadSubsystem_GetTrainStations, "GetTrainStations" }, // 280345645
+		{ &Z_Construct_UFunction_AFGRailroadSubsystem_Get, "Get" }, // 276381212
+		{ &Z_Construct_UFunction_AFGRailroadSubsystem_GetAllTrains, "GetAllTrains" }, // 2806146996
+		{ &Z_Construct_UFunction_AFGRailroadSubsystem_GetAllTrainStations, "GetAllTrainStations" }, // 3978495660
+		{ &Z_Construct_UFunction_AFGRailroadSubsystem_GetTrains, "GetTrains" }, // 985963464
+		{ &Z_Construct_UFunction_AFGRailroadSubsystem_GetTrainStations, "GetTrainStations" }, // 3287206928
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadSubsystem_Statics::Class_MetaDataParams[] = {
@@ -408,7 +408,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick Actor Input Rendering Actor Tick Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGRailroadSubsystem.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadSubsystem.h" },
 		{ "SerializeToFArchive", "" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 		{ "ToolTip", "Actor for handling the railroad network and the trains on it." },
@@ -416,7 +416,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadSubsystem_Statics::NewProp_mTrains_MetaData[] = {
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadSubsystem.h" },
 		{ "ToolTip", "All the trains in the world." },
 	};
 #endif
@@ -424,7 +424,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRailroadSubsystem_Statics::NewProp_mTrains_Inner = { "mTrains", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGTrain_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadSubsystem_Statics::NewProp_mTrainStationIdentifiers_MetaData[] = {
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadSubsystem.h" },
 		{ "ToolTip", "All station identifiers in the world." },
 	};
 #endif
@@ -432,7 +432,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRailroadSubsystem_Statics::NewProp_mTrainStationIdentifiers_Inner = { "mTrainStationIdentifiers", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGTrainStationIdentifier_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadSubsystem_Statics::NewProp_mTrackGraphs_MetaData[] = {
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadSubsystem.h" },
 		{ "ToolTip", "All the train tracks in the world, separated by connectivity." },
 	};
 #endif
@@ -441,7 +441,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGRailroadSubsystem_Statics::NewProp_mTrackGraphs_ValueProp = { "mTrackGraphs", nullptr, (EPropertyFlags)0x0000008000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UScriptStruct_FTrackGraph, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadSubsystem_Statics::NewProp_mStationNames_MetaData[] = {
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadSubsystem.h" },
 		{ "ToolTip", "A random name is picked from here when placing a stop." },
 	};
 #endif
@@ -450,7 +450,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadSubsystem_Statics::NewProp_mVehicleSoundComponentClass_MetaData[] = {
 		{ "Category", "FGRailroadSubsystem" },
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadSubsystem.h" },
 		{ "ToolTip", "This is sound component used to play sounds on trains." },
 	};
 #endif
@@ -458,7 +458,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadSubsystem_Statics::NewProp_mSwitchControlClass_MetaData[] = {
 		{ "Category", "FGRailroadSubsystem" },
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadSubsystem.h" },
 		{ "ToolTip", "Default switch control to place when building switches." },
 	};
 #endif
@@ -466,7 +466,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadSubsystem_Statics::NewProp_mConnectDistance_MetaData[] = {
 		{ "Category", "FGRailroadSubsystem" },
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadSubsystem.h" },
 		{ "ToolTip", "How far apart can trains connect to each other.\nCan be used as the actor distance or track distance.\n(note that the track distance will be slightly longer than the actor distance in curved sections)" },
 	};
 #endif
@@ -515,7 +515,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadSubsystem, 40722845);
+	IMPLEMENT_CLASS(AFGRailroadSubsystem, 1954721923);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRailroadSubsystem>()
 	{
 		return AFGRailroadSubsystem::StaticClass();

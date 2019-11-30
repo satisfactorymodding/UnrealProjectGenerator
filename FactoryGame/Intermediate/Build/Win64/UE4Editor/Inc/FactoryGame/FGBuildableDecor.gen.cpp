@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableDecor.h"
+#include "FactoryGame/Public/Buildables/FGBuildableDecor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -50,7 +50,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDecor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Decor" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDecor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDecor.h" },
 		{ "ToolTip", "Get the mesh of the decor" },
 	};
 #endif
@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDecor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Decor" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDecor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDecor.h" },
 		{ "ToolTip", "Set the mesh for this decor, should not be called after it has been properly replicated" },
 	};
 #endif
@@ -122,20 +122,20 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDecor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableDecor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh, "GetDecorMesh" }, // 1485750601
-		{ &Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh, "SetDecorMesh" }, // 3339737840
+		{ &Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh, "GetDecorMesh" }, // 2131151454
+		{ &Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh, "SetDecorMesh" }, // 1244720044
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDecor_Statics::Class_MetaDataParams[] = {
 		{ "AutoJson", "FALSE" },
 		{ "IncludePath", "Buildables/FGBuildableDecor.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDecor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDecor.h" },
 		{ "ToolTip", "Base for static non-interactable decor." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDecor_Statics::NewProp_mDecorMesh_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableDecor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDecor.h" },
 		{ "ToolTip", "The mesh we want to have for the decor" },
 	};
 #endif
@@ -170,7 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDecor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableDecor, 481939299);
+	IMPLEMENT_CLASS(AFGBuildableDecor, 4082405484);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableDecor>()
 	{
 		return AFGBuildableDecor::StaticClass();

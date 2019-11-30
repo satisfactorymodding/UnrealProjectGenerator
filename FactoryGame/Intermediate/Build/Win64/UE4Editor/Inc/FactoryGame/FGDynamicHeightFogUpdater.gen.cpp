@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGDynamicHeightFogUpdater.h"
+#include "FactoryGame/Public/FGDynamicHeightFogUpdater.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -48,13 +48,13 @@ void EmptyLinkFunctionForGeneratedCodeFGDynamicHeightFogUpdater() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDynamicHeightFogUpdater_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGDynamicHeightFogUpdater.h" },
-		{ "ModuleRelativePath", "FGDynamicHeightFogUpdater.h" },
+		{ "ModuleRelativePath", "Public/FGDynamicHeightFogUpdater.h" },
 		{ "ToolTip", "Exists both in EditorEngine and GameEngine, encapsulates the interpolation ExponentialHeightFog\n@todo: Should be renamed to something else, as it does more than update height fog" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDynamicHeightFogUpdater_Statics::NewProp_mActiveWorlds_MetaData[] = {
-		{ "ModuleRelativePath", "FGDynamicHeightFogUpdater.h" },
+		{ "ModuleRelativePath", "Public/FGDynamicHeightFogUpdater.h" },
 		{ "ToolTip", "The worlds we want to affect" },
 	};
 #endif
@@ -91,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDynamicHeightFogUpdater() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDynamicHeightFogUpdater, 3388260337);
+	IMPLEMENT_CLASS(UFGDynamicHeightFogUpdater, 3336572646);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGDynamicHeightFogUpdater>()
 	{
 		return UFGDynamicHeightFogUpdater::StaticClass();

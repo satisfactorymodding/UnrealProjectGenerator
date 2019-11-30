@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGWaterAudio.h"
+#include "FactoryGame/Public/FGWaterAudio.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -70,7 +70,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPawnImpactAudio
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPawnImpactAudio_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGWaterAudio.h" },
+		{ "ModuleRelativePath", "Public/FGWaterAudio.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FPawnImpactAudio_Statics::NewStructOps()
@@ -80,7 +80,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPawnImpactAudio
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPawnImpactAudio_Statics::NewProp_ImpactEvent_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGWaterAudio.h" },
+		{ "ModuleRelativePath", "Public/FGWaterAudio.h" },
 		{ "ToolTip", "Event to post if the pawn has the specified velocity" },
 	};
 #endif
@@ -88,7 +88,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPawnImpactAudio
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPawnImpactAudio_Statics::NewProp_MinImpactVelocity_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGWaterAudio.h" },
+		{ "ModuleRelativePath", "Public/FGWaterAudio.h" },
 		{ "ToolTip", "If we have at least this velocity (in Z) when entering the volume, we will post the specified event" },
 	};
 #endif
@@ -125,7 +125,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPawnImpactAudio
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPawnImpactAudio_Hash() { return 3063625176U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPawnImpactAudio_Hash() { return 3921904234U; }
 	static FName NAME_UFGWaterAudio_OnCameraEnteredWater = FName(TEXT("OnCameraEnteredWater"));
 	void UFGWaterAudio::OnCameraEnteredWater(AFGWaterVolume* waterVolume, FVector enterLocation, AFGPlayerController* PC) const
 	{
@@ -185,7 +185,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPawnImpactAudio
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWaterAudio_GetImpactEvent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Water|Audio" },
-		{ "ModuleRelativePath", "FGWaterAudio.h" },
+		{ "ModuleRelativePath", "Public/FGWaterAudio.h" },
 		{ "ToolTip", "Get the impact event that a pawn should post when it hits the water surface" },
 	};
 #endif
@@ -221,7 +221,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPawnImpactAudio
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWaterAudio_OnCameraEnteredWater_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Water|Audio" },
-		{ "ModuleRelativePath", "FGWaterAudio.h" },
+		{ "ModuleRelativePath", "Public/FGWaterAudio.h" },
 		{ "ToolTip", "Called whenever the camera entered water" },
 	};
 #endif
@@ -257,7 +257,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPawnImpactAudio
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWaterAudio_OnCameraExitedWater_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Water|Audio" },
-		{ "ModuleRelativePath", "FGWaterAudio.h" },
+		{ "ModuleRelativePath", "Public/FGWaterAudio.h" },
 		{ "ToolTip", "Called whenever the camera entered water" },
 	};
 #endif
@@ -293,7 +293,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPawnImpactAudio
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWaterAudio_OnPawnHitSurface_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Water|Audio" },
-		{ "ModuleRelativePath", "FGWaterAudio.h" },
+		{ "ModuleRelativePath", "Public/FGWaterAudio.h" },
 		{ "ToolTip", "Called whenever a pawn hits the surface of the water volume" },
 	};
 #endif
@@ -332,23 +332,23 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPawnImpactAudio
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGWaterAudio_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGWaterAudio_GetImpactEvent, "GetImpactEvent" }, // 2417628801
-		{ &Z_Construct_UFunction_UFGWaterAudio_OnCameraEnteredWater, "OnCameraEnteredWater" }, // 2759626082
-		{ &Z_Construct_UFunction_UFGWaterAudio_OnCameraExitedWater, "OnCameraExitedWater" }, // 2704730073
-		{ &Z_Construct_UFunction_UFGWaterAudio_OnPawnHitSurface, "OnPawnHitSurface" }, // 2831014102
+		{ &Z_Construct_UFunction_UFGWaterAudio_GetImpactEvent, "GetImpactEvent" }, // 1795867679
+		{ &Z_Construct_UFunction_UFGWaterAudio_OnCameraEnteredWater, "OnCameraEnteredWater" }, // 2197689995
+		{ &Z_Construct_UFunction_UFGWaterAudio_OnCameraExitedWater, "OnCameraExitedWater" }, // 1544786493
+		{ &Z_Construct_UFunction_UFGWaterAudio_OnPawnHitSurface, "OnPawnHitSurface" }, // 3700887421
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWaterAudio_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGWaterAudio.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGWaterAudio.h" },
+		{ "ModuleRelativePath", "Public/FGWaterAudio.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWaterAudio_Statics::NewProp_mImpactAudioMap_MetaData[] = {
 		{ "Category", "Water|Audio" },
-		{ "ModuleRelativePath", "FGWaterAudio.h" },
+		{ "ModuleRelativePath", "Public/FGWaterAudio.h" },
 		{ "ToolTip", "Audio effects to play whenever a pawn hits the water surface with a specified velocity" },
 	};
 #endif
@@ -385,7 +385,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPawnImpactAudio
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWaterAudio, 1664755630);
+	IMPLEMENT_CLASS(UFGWaterAudio, 3541981043);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGWaterAudio>()
 	{
 		return UFGWaterAudio::StaticClass();

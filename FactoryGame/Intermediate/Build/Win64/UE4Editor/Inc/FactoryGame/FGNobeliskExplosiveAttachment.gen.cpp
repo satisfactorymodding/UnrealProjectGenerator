@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGNobeliskExplosiveAttachment.h"
+#include "FactoryGame/Public/FGNobeliskExplosiveAttachment.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -82,7 +82,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskExplosiveAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_Multicast_PlayBeginFireEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskExplosiveAttachment.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskExplosiveAttachment.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_Multicast_PlayBeginFireEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGNobeliskExplosiveAttachment, nullptr, "Multicast_PlayBeginFireEffect", sizeof(FGNobeliskExplosiveAttachment_eventMulticast_PlayBeginFireEffect_Parms), Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_Multicast_PlayBeginFireEffect_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_Multicast_PlayBeginFireEffect_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00824C40, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_Multicast_PlayBeginFireEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_Multicast_PlayBeginFireEffect_Statics::Function_MetaDataParams)) };
@@ -116,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskExplosiveAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_Multicast_SetIsLoaded_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskExplosiveAttachment.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskExplosiveAttachment.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_Multicast_SetIsLoaded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGNobeliskExplosiveAttachment, nullptr, "Multicast_SetIsLoaded", sizeof(FGNobeliskExplosiveAttachment_eventMulticast_SetIsLoaded_Parms), Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_Multicast_SetIsLoaded_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_Multicast_SetIsLoaded_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00024C40, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_Multicast_SetIsLoaded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_Multicast_SetIsLoaded_Statics::Function_MetaDataParams)) };
@@ -145,7 +145,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskExplosiveAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_OnBeginFireEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskExplosiveAttachment.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskExplosiveAttachment.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_OnBeginFireEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGNobeliskExplosiveAttachment, nullptr, "OnBeginFireEffect", sizeof(FGNobeliskExplosiveAttachment_eventOnBeginFireEffect_Parms), Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_OnBeginFireEffect_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_OnBeginFireEffect_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08820800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_OnBeginFireEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_OnBeginFireEffect_Statics::Function_MetaDataParams)) };
@@ -168,7 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskExplosiveAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_OnIsLoadedSet_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskExplosiveAttachment.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskExplosiveAttachment.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_OnIsLoadedSet_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGNobeliskExplosiveAttachment, nullptr, "OnIsLoadedSet", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_OnIsLoadedSet_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_OnIsLoadedSet_Statics::Function_MetaDataParams)) };
@@ -206,22 +206,22 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskExplosiveAttachment() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGNobeliskExplosiveAttachment_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_Multicast_PlayBeginFireEffect, "Multicast_PlayBeginFireEffect" }, // 672969849
-		{ &Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_Multicast_SetIsLoaded, "Multicast_SetIsLoaded" }, // 2698246752
-		{ &Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_OnBeginFireEffect, "OnBeginFireEffect" }, // 1249452527
-		{ &Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_OnIsLoadedSet, "OnIsLoadedSet" }, // 1460136484
+		{ &Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_Multicast_PlayBeginFireEffect, "Multicast_PlayBeginFireEffect" }, // 2424331084
+		{ &Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_Multicast_SetIsLoaded, "Multicast_SetIsLoaded" }, // 4284511920
+		{ &Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_OnBeginFireEffect, "OnBeginFireEffect" }, // 2641342921
+		{ &Z_Construct_UFunction_AFGNobeliskExplosiveAttachment_OnIsLoadedSet, "OnIsLoadedSet" }, // 736467737
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskExplosiveAttachment_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGNobeliskExplosiveAttachment.h" },
-		{ "ModuleRelativePath", "FGNobeliskExplosiveAttachment.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskExplosiveAttachment.h" },
 		{ "ToolTip", "Specialty Attachment class for handling the unique two-part behaviour of FGNobeliskDetonator Equipment.\nThis is the 3rd person attachment representing the FGWeaponChild of FGNobeliskDetonator Explosive" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskExplosiveAttachment_Statics::NewProp_mIsLoaded_MetaData[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskExplosiveAttachment.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskExplosiveAttachment.h" },
 	};
 #endif
 	void Z_Construct_UClass_AFGNobeliskExplosiveAttachment_Statics::NewProp_mIsLoaded_SetBit(void* Obj)
@@ -259,7 +259,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskExplosiveAttachment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGNobeliskExplosiveAttachment, 3699915562);
+	IMPLEMENT_CLASS(AFGNobeliskExplosiveAttachment, 3691941832);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGNobeliskExplosiveAttachment>()
 	{
 		return AFGNobeliskExplosiveAttachment::StaticClass();

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGBuildGun.h"
+#include "FactoryGame/Public/Equipment/FGBuildGun.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnBuildGunRecipeChanged__DelegateSignature", sizeof(_Script_FactoryGame_eventOnBuildGunRecipeChanged_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -127,7 +127,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnBuildGunStateChanged__DelegateSignature", sizeof(_Script_FactoryGame_eventOnBuildGunStateChanged_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -154,7 +154,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		return EBuildGunState_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EBuildGunState(EBuildGunState_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EBuildGunState"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EBuildGunState_Hash() { return 3195570478U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EBuildGunState_Hash() { return 1530148813U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EBuildGunState()
 	{
 #if WITH_HOT_RELOAD
@@ -180,7 +180,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 				{ "BGS_MENU.DisplayName", "Menu" },
 				{ "BGS_NONE.DisplayName", "None" },
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+				{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 				{ "ToolTip", "States the build gun can be in." },
 			};
 #endif
@@ -290,7 +290,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "BeginBuildGunDelay", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay_Statics::Function_MetaDataParams)) };
@@ -313,7 +313,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_BeginState_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Enter this state." },
 	};
 #endif
@@ -352,7 +352,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "@return true if the build gun delay is complete, or is 0 (ie. always complete)" },
 	};
 #endif
@@ -387,7 +387,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "ChangeGuideLinesSnapMode", sizeof(FGBuildGunState_eventChangeGuideLinesSnapMode_Parms), Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::Function_MetaDataParams)) };
@@ -410,7 +410,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_ChangeNoSnapMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Redirected from the build gun." },
 	};
 #endif
@@ -434,7 +434,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_ChangeScrollMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Redirected from the build gun." },
 	};
 #endif
@@ -458,7 +458,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_EndState_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Exit this state." },
 	};
 #endif
@@ -492,7 +492,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_GetBuildGun_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Get the owning build gun.\n@return A valid build gun." },
 	};
 #endif
@@ -526,7 +526,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Get's the build delay message" },
 	};
 #endif
@@ -560,7 +560,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Get's current percentage of Build delay progress.\n@return Returns between 0-1. Returns 0 if no build is in progress" },
 	};
 #endif
@@ -599,7 +599,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Checks if the outer build gun has authority." },
 	};
 #endif
@@ -638,7 +638,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "@return true if there is an delay on this state." },
 	};
 #endif
@@ -677,7 +677,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Is this state active." },
 	};
 #endif
@@ -701,7 +701,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_PrimaryFire_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Redirected from the build gun." },
 	};
 #endif
@@ -725,7 +725,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_ResetBuildGunDelay_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "sets mActionStartTime to 0" },
 	};
 #endif
@@ -749,7 +749,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_ScrollDown_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Redirected from the build gun." },
 	};
 #endif
@@ -773,7 +773,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_ScrollUp_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Redirected from the build gun." },
 	};
 #endif
@@ -797,7 +797,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_SecondaryFire_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Redirected from the build gun." },
 	};
 #endif
@@ -827,7 +827,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_TickState_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Tick this state." },
 	};
 #endif
@@ -869,39 +869,39 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGBuildGunState_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay, "BeginBuildGunDelay" }, // 3930631018
-		{ &Z_Construct_UFunction_UFGBuildGunState_BeginState, "BeginState" }, // 3787840755
-		{ &Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete, "BuildGunDelayIsComplete" }, // 2281071656
-		{ &Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode, "ChangeGuideLinesSnapMode" }, // 3931995086
-		{ &Z_Construct_UFunction_UFGBuildGunState_ChangeNoSnapMode, "ChangeNoSnapMode" }, // 2384149572
-		{ &Z_Construct_UFunction_UFGBuildGunState_ChangeScrollMode, "ChangeScrollMode" }, // 4293768472
-		{ &Z_Construct_UFunction_UFGBuildGunState_EndState, "EndState" }, // 2608376391
-		{ &Z_Construct_UFunction_UFGBuildGunState_GetBuildGun, "GetBuildGun" }, // 1201442245
-		{ &Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage, "GetBuildGunDelayMessage" }, // 562267842
-		{ &Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage, "GetBuildGunDelayPercentage" }, // 3593829898
-		{ &Z_Construct_UFunction_UFGBuildGunState_HasAuthority, "HasAuthority" }, // 1168352917
-		{ &Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay, "HasBuildGunDelay" }, // 2378604941
-		{ &Z_Construct_UFunction_UFGBuildGunState_IsActive, "IsActive" }, // 1488687704
-		{ &Z_Construct_UFunction_UFGBuildGunState_PrimaryFire, "PrimaryFire" }, // 1363611746
-		{ &Z_Construct_UFunction_UFGBuildGunState_ResetBuildGunDelay, "ResetBuildGunDelay" }, // 1110326921
-		{ &Z_Construct_UFunction_UFGBuildGunState_ScrollDown, "ScrollDown" }, // 2747470315
-		{ &Z_Construct_UFunction_UFGBuildGunState_ScrollUp, "ScrollUp" }, // 1358528872
-		{ &Z_Construct_UFunction_UFGBuildGunState_SecondaryFire, "SecondaryFire" }, // 3900099140
-		{ &Z_Construct_UFunction_UFGBuildGunState_TickState, "TickState" }, // 1848428936
+		{ &Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay, "BeginBuildGunDelay" }, // 1862849918
+		{ &Z_Construct_UFunction_UFGBuildGunState_BeginState, "BeginState" }, // 1693571103
+		{ &Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete, "BuildGunDelayIsComplete" }, // 621571915
+		{ &Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode, "ChangeGuideLinesSnapMode" }, // 564095188
+		{ &Z_Construct_UFunction_UFGBuildGunState_ChangeNoSnapMode, "ChangeNoSnapMode" }, // 1184458808
+		{ &Z_Construct_UFunction_UFGBuildGunState_ChangeScrollMode, "ChangeScrollMode" }, // 512437620
+		{ &Z_Construct_UFunction_UFGBuildGunState_EndState, "EndState" }, // 1902403555
+		{ &Z_Construct_UFunction_UFGBuildGunState_GetBuildGun, "GetBuildGun" }, // 3935036655
+		{ &Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage, "GetBuildGunDelayMessage" }, // 3276136552
+		{ &Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage, "GetBuildGunDelayPercentage" }, // 3738854403
+		{ &Z_Construct_UFunction_UFGBuildGunState_HasAuthority, "HasAuthority" }, // 2724091778
+		{ &Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay, "HasBuildGunDelay" }, // 985164700
+		{ &Z_Construct_UFunction_UFGBuildGunState_IsActive, "IsActive" }, // 4275491382
+		{ &Z_Construct_UFunction_UFGBuildGunState_PrimaryFire, "PrimaryFire" }, // 3418204167
+		{ &Z_Construct_UFunction_UFGBuildGunState_ResetBuildGunDelay, "ResetBuildGunDelay" }, // 4294889783
+		{ &Z_Construct_UFunction_UFGBuildGunState_ScrollDown, "ScrollDown" }, // 2043001156
+		{ &Z_Construct_UFunction_UFGBuildGunState_ScrollUp, "ScrollUp" }, // 2647397192
+		{ &Z_Construct_UFunction_UFGBuildGunState_SecondaryFire, "SecondaryFire" }, // 419340186
+		{ &Z_Construct_UFunction_UFGBuildGunState_TickState, "TickState" }, // 3603012843
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildGunState_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "Equipment/FGBuildGun.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Represents a state in the build gun, e.g. build, dismantle etc." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionMessage_MetaData[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Text to show while action is in progress" },
 	};
 #endif
@@ -909,7 +909,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionDelay_MetaData[] = {
 		{ "Category", "BuildGunState" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Time (in seconds) it takes for the action (eg. Build, dismantle)" },
 	};
 #endif
@@ -945,7 +945,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildGunState, 347845125);
+	IMPLEMENT_CLASS(UFGBuildGunState, 1837280949);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBuildGunState>()
 	{
 		return UFGBuildGunState::StaticClass();
@@ -1051,7 +1051,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGun|Recipe" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "@return true if the produce the same buildable; false if not." },
 	};
 #endif
@@ -1088,7 +1088,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGun|Recipe" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Gets all the recipes that can be built using this build gun.\n@note This is an expensive operation so cache the result.\n@param out_recipes Returns all recipes available to this build gun." },
 	};
 #endif
@@ -1129,7 +1129,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGun|State" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Gets BuildGunState depending on the enum passed" },
 	};
 #endif
@@ -1170,7 +1170,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGun|Recipe" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Convenience function to get the cost for a recipe." },
 	};
 #endif
@@ -1204,7 +1204,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGun|State" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Gets the build gun delay message from current state" },
 	};
 #endif
@@ -1238,7 +1238,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGun|State" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Gets the build gun delay progress from current state as a percentage between 0-1" },
 	};
 #endif
@@ -1280,7 +1280,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGun|Inventory" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Get the inventory to charge when building and refunding when dismantling." },
 	};
 #endif
@@ -1314,7 +1314,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_GotoBuildState_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGun" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "(Simulated)\nSet the build gun in building mode and activates the given recipe.\n@note Must be called on the local player.\n\n@param recipe The recipe to set as active. This may be nullptr, e.g. to hide hologram." },
 	};
 #endif
@@ -1338,7 +1338,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_GotoDismantleState_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGun" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "(Simulated)\nSet the build gun in dismantling mode.\n@note Must be called on the local player." },
 	};
 #endif
@@ -1362,7 +1362,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_GotoMenuState_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGun" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "(Simulated)\nSet the build gun in dismantling mode.\n@note Must be called on the local player." },
 	};
 #endif
@@ -1408,7 +1408,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGun" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Checks if the buildgun is in the state we send in" },
 	};
 #endif
@@ -1437,7 +1437,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Lets the server switch to build state." },
 	};
 #endif
@@ -1469,7 +1469,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Lets the server switch state." },
 	};
 #endif
@@ -1492,7 +1492,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_Server_NoSnapMode_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Lets the server handle the action." },
 	};
 #endif
@@ -1515,7 +1515,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_Server_PrimaryFire_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Lets the server handle the action." },
 	};
 #endif
@@ -1538,7 +1538,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_Server_ScrollDown_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Lets the server handle the action." },
 	};
 #endif
@@ -1561,7 +1561,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_Server_ScrollMode_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Lets the server handle the action." },
 	};
 #endif
@@ -1584,7 +1584,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_Server_ScrollUp_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Lets the server handle the action." },
 	};
 #endif
@@ -1607,7 +1607,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGun_Server_SecondaryFire_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Lets the server handle the action." },
 	};
 #endif
@@ -1683,43 +1683,43 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildGun_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo, "CompareActiveRecipeTo" }, // 4158286154
-		{ &Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes, "GetAvailableRecipes" }, // 3090392972
-		{ &Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor, "GetBuildGunStateFor" }, // 3873904944
-		{ &Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe, "GetCostForRecipe" }, // 1612393034
-		{ &Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage, "GetCurrentBuildGunDelayMessage" }, // 4008069817
-		{ &Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage, "GetCurrentBuildGunDelayPercentage" }, // 3874392914
-		{ &Z_Construct_UFunction_AFGBuildGun_GetInventory, "GetInventory" }, // 3603403598
-		{ &Z_Construct_UFunction_AFGBuildGun_GotoBuildState, "GotoBuildState" }, // 3194144982
-		{ &Z_Construct_UFunction_AFGBuildGun_GotoDismantleState, "GotoDismantleState" }, // 1682580182
-		{ &Z_Construct_UFunction_AFGBuildGun_GotoMenuState, "GotoMenuState" }, // 1729647367
-		{ &Z_Construct_UFunction_AFGBuildGun_IsInState, "IsInState" }, // 3651198268
-		{ &Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState, "Server_GotoBuildState" }, // 2396917326
-		{ &Z_Construct_UFunction_AFGBuildGun_Server_GotoState, "Server_GotoState" }, // 345225899
-		{ &Z_Construct_UFunction_AFGBuildGun_Server_NoSnapMode, "Server_NoSnapMode" }, // 3699604190
-		{ &Z_Construct_UFunction_AFGBuildGun_Server_PrimaryFire, "Server_PrimaryFire" }, // 836552304
-		{ &Z_Construct_UFunction_AFGBuildGun_Server_ScrollDown, "Server_ScrollDown" }, // 3360729330
-		{ &Z_Construct_UFunction_AFGBuildGun_Server_ScrollMode, "Server_ScrollMode" }, // 566710216
-		{ &Z_Construct_UFunction_AFGBuildGun_Server_ScrollUp, "Server_ScrollUp" }, // 947693500
-		{ &Z_Construct_UFunction_AFGBuildGun_Server_SecondaryFire, "Server_SecondaryFire" }, // 2434080841
+		{ &Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo, "CompareActiveRecipeTo" }, // 10422839
+		{ &Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes, "GetAvailableRecipes" }, // 325277245
+		{ &Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor, "GetBuildGunStateFor" }, // 4047873396
+		{ &Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe, "GetCostForRecipe" }, // 3166684828
+		{ &Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage, "GetCurrentBuildGunDelayMessage" }, // 1893967140
+		{ &Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage, "GetCurrentBuildGunDelayPercentage" }, // 1471608962
+		{ &Z_Construct_UFunction_AFGBuildGun_GetInventory, "GetInventory" }, // 691075464
+		{ &Z_Construct_UFunction_AFGBuildGun_GotoBuildState, "GotoBuildState" }, // 3330523489
+		{ &Z_Construct_UFunction_AFGBuildGun_GotoDismantleState, "GotoDismantleState" }, // 1205008697
+		{ &Z_Construct_UFunction_AFGBuildGun_GotoMenuState, "GotoMenuState" }, // 1274327976
+		{ &Z_Construct_UFunction_AFGBuildGun_IsInState, "IsInState" }, // 2089928553
+		{ &Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState, "Server_GotoBuildState" }, // 2803887500
+		{ &Z_Construct_UFunction_AFGBuildGun_Server_GotoState, "Server_GotoState" }, // 4180704307
+		{ &Z_Construct_UFunction_AFGBuildGun_Server_NoSnapMode, "Server_NoSnapMode" }, // 2522541463
+		{ &Z_Construct_UFunction_AFGBuildGun_Server_PrimaryFire, "Server_PrimaryFire" }, // 117782482
+		{ &Z_Construct_UFunction_AFGBuildGun_Server_ScrollDown, "Server_ScrollDown" }, // 286837354
+		{ &Z_Construct_UFunction_AFGBuildGun_Server_ScrollMode, "Server_ScrollMode" }, // 3715316029
+		{ &Z_Construct_UFunction_AFGBuildGun_Server_ScrollUp, "Server_ScrollUp" }, // 4273755259
+		{ &Z_Construct_UFunction_AFGBuildGun_Server_SecondaryFire, "Server_SecondaryFire" }, // 4219294867
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGBuildGun.h" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "The latest iteration of a pink box with a red button." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentState_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "@see mCurrentStateIndex." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentState = { "mCurrentState", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildGun, mCurrentState), Z_Construct_UClass_UFGBuildGunState_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentState_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentState_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentStateEnum_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "(Simulated)\nCurrent build gun state.\nThe client sets this locally and tells the server I want this state." },
 	};
 #endif
@@ -1727,14 +1727,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentStateEnum_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mHitResult_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Result of the latest trace." },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mHitResult = { "mHitResult", nullptr, (EPropertyFlags)0x0040008000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildGun, mHitResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mHitResult_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mHitResult_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mStates_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "All the states." },
 	};
 #endif
@@ -1742,7 +1742,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mDismantleStateClass_MetaData[] = {
 		{ "Category", "BuildGun|State" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "The state to use when dismantling." },
 	};
 #endif
@@ -1750,7 +1750,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildStateClass_MetaData[] = {
 		{ "Category", "BuildGun|State" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "The state to use when building." },
 	};
 #endif
@@ -1758,7 +1758,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mMenuStateClass_MetaData[] = {
 		{ "Category", "BuildGun|State" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "The state to use when operating the menus." },
 	};
 #endif
@@ -1766,7 +1766,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildDistanceMax_MetaData[] = {
 		{ "Category", "BuildGun" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Trace distance for this build gun when building and dismantling." },
 	};
 #endif
@@ -1774,7 +1774,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnRecipeChanged_MetaData[] = {
 		{ "Category", "BuildGun|Recipe" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Called when the build gun build state receives a new recipe. This May be called prior to OnStateChanged." },
 	};
 #endif
@@ -1782,7 +1782,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnStateChanged_MetaData[] = {
 		{ "Category", "BuildGun|State" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Called when the build gun state changes." },
 	};
 #endif
@@ -1830,7 +1830,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildGun, 3706589676);
+	IMPLEMENT_CLASS(AFGBuildGun, 1019214187);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildGun>()
 	{
 		return AFGBuildGun::StaticClass();
@@ -1860,7 +1860,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGunAttachment_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGBuildGun.h" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Attachment for the build gun." },
 	};
 #endif
@@ -1891,7 +1891,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildGunAttachment, 1791040372);
+	IMPLEMENT_CLASS(AFGBuildGunAttachment, 3684660327);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildGunAttachment>()
 	{
 		return AFGBuildGunAttachment::StaticClass();

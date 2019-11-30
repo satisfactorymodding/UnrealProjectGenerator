@@ -21,14 +21,14 @@ class AFGSplinePath;
 #endif
 #define FACTORYGAME_FGCreature_generated_h
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_36_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_36_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMoveSpeedPair_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMoveSpeedPair>();
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_13_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_13_DELEGATE \
 struct _Script_FactoryGame_eventRotationDoneDelegate_Parms \
 { \
 	APawn* PawnRotated; \
@@ -41,7 +41,7 @@ static inline void FRotationDoneDelegate_DelegateWrapper(const FMulticastScriptD
 }
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_RPC_WRAPPERS \
 	virtual void SpawnDeathItem_Implementation(); \
 	virtual void Multicast_ConsumeItem_Implementation(TSubclassOf<UFGItemDescriptor>  itemDescriptor, int32 amount); \
 	virtual void ConfigureArachnophobiaMode_Implementation(bool isArachnophobiaMode); \
@@ -223,7 +223,7 @@ static inline void FRotationDoneDelegate_DelegateWrapper(const FMulticastScriptD
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void SpawnDeathItem_Implementation(); \
 	virtual void Multicast_ConsumeItem_Implementation(TSubclassOf<UFGItemDescriptor>  itemDescriptor, int32 amount); \
 	virtual void ConfigureArachnophobiaMode_Implementation(bool isArachnophobiaMode); \
@@ -405,7 +405,7 @@ static inline void FRotationDoneDelegate_DelegateWrapper(const FMulticastScriptD
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_EVENT_PARMS \
 	struct FGCreature_eventConfigureArachnophobiaMode_Parms \
 	{ \
 		bool isArachnophobiaMode; \
@@ -426,8 +426,8 @@ static inline void FRotationDoneDelegate_DelegateWrapper(const FMulticastScriptD
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGCreature(); \
 	friend struct Z_Construct_UClass_AFGCreature_Statics; \
@@ -436,7 +436,7 @@ public: \
 	DECLARE_SERIALIZER(AFGCreature)
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGCreature(); \
 	friend struct Z_Construct_UClass_AFGCreature_Statics; \
@@ -445,7 +445,7 @@ public: \
 	DECLARE_SERIALIZER(AFGCreature)
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGCreature(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGCreature) \
@@ -458,7 +458,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGCreature(AFGCreature&&); \
@@ -469,7 +469,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCreature); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGCreature)
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mNavigationGenerationRadius() { return STRUCT_OFFSET(AFGCreature, mNavigationGenerationRadius); } \
 	FORCEINLINE static uint32 __PPO__mNavigationRemovalRadius() { return STRUCT_OFFSET(AFGCreature, mNavigationRemovalRadius); } \
 	FORCEINLINE static uint32 __PPO__mArachnophobiaModeMaterials() { return STRUCT_OFFSET(AFGCreature, mArachnophobiaModeMaterials); } \
@@ -492,30 +492,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCreature); \
 	FORCEINLINE static uint32 __PPO__mOwningSpawner() { return STRUCT_OFFSET(AFGCreature, mOwningSpawner); }
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_48_PROLOG \
-	FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_48_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_INCLASS \
-	FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Creature_FGCreature_h_51_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -523,7 +523,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class AFGCreature>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Creature_FGCreature_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h
 
 
 #define FOREACH_ENUM_EMOVESPEED(op) \

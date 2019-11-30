@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGFoliageRemoval.h"
+#include "FactoryGame/Public/FGFoliageRemoval.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -71,7 +71,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstanceArr
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemoval.h" },
 		{ "ToolTip", "Wrapper around the Items struct to enable custom delta serialization (we send a part of the data to the client every frame instead of sending it all in one frame)" },
 	};
 #endif
@@ -81,7 +81,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstanceArr
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_Items_MetaData[] = {
-		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemoval.h" },
 		{ "ToolTip", "All the items that has been removed from the AFGFoliageRemoval" },
 	};
 #endif
@@ -89,7 +89,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstanceArr
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_Items_Inner = { "Items", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FRemovedInstance, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_FoliageRemover_MetaData[] = {
-		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemoval.h" },
 		{ "ToolTip", "Used to invoke the callback directly on the foliage removal instead of on FRemovedInstance" },
 	};
 #endif
@@ -127,7 +127,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstanceArr
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_Hash() { return 1540106362U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_Hash() { return 3875971942U; }
 class UScriptStruct* FRemovedInstance::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -169,7 +169,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRemovedInstance_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemoval.h" },
 		{ "ToolTip", "We can't send the id of the instance to clients, as that requires us to maintain a commandbuffer with all done commands to be able to get the same id's a server/client" },
 	};
 #endif
@@ -179,14 +179,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Transform_MetaData[] = {
-		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemoval.h" },
 		{ "ToolTip", "Stored in localspace" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Transform = { "Transform", nullptr, (EPropertyFlags)0x0010000081000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FRemovedInstance, Transform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Transform_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Transform_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Location_MetaData[] = {
-		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemoval.h" },
 		{ "ToolTip", "Stored in localspace. Compressed location to get the id of the item, @todo: Toy around with different FVector_NetQuantize and see what works best" },
 	};
 #endif
@@ -223,7 +223,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstance_Hash() { return 2462011515U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstance_Hash() { return 70485297U; }
 	void AFGFoliageRemoval::StaticRegisterNativesAFGFoliageRemoval()
 	{
 		UClass* Class = AFGFoliageRemoval::StaticClass();
@@ -242,7 +242,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGFoliageRemoval_RegisterWithSubsystem_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemoval.h" },
 		{ "ToolTip", "Register with the foliage removal subsystem, retries if no one is created yet" },
 	};
 #endif
@@ -300,7 +300,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		{ "Category", "Foliage" },
 		{ "CPP_Default_instanceId", "-1" },
 		{ "CPP_Default_localSpace", "false" },
-		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemoval.h" },
 		{ "ToolTip", "Remove a instance from the level\n\nSERVER ONLY\n@param foliageTransform - a transform for the instance\n@param localSpace - if true, then the foliageTransform is sent in localspace\n@param instanceId - optional, if this is set (not -1), then we can faster lookup the instance, sadly, it's not stable, so we won't be able to rely only on these" },
 	};
 #endif
@@ -355,32 +355,32 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGFoliageRemoval_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGFoliageRemoval_RegisterWithSubsystem, "RegisterWithSubsystem" }, // 4002995082
-		{ &Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance, "RemoveInstance" }, // 1184918758
+		{ &Z_Construct_UFunction_AFGFoliageRemoval_RegisterWithSubsystem, "RegisterWithSubsystem" }, // 3956992841
+		{ &Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance, "RemoveInstance" }, // 4286600609
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoliageRemoval_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFoliageRemoval.h" },
-		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemoval.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelBounds_MetaData[] = {
-		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemoval.h" },
 		{ "ToolTip", "ServerOnly: The bounds of the level we have foliage in (@todo: Can we remove this savegame tag?)" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelBounds = { "mLevelBounds", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFoliageRemoval, mLevelBounds), Z_Construct_UScriptStruct_FBox, METADATA_PARAMS(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelBounds_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelBounds_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mFoliageTypeName_MetaData[] = {
-		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemoval.h" },
 		{ "ToolTip", "The name of mesh component to use the level" },
 	};
 #endif
 	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mFoliageTypeName = { "mFoliageTypeName", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFoliageRemoval, mFoliageTypeName), METADATA_PARAMS(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mFoliageTypeName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mFoliageTypeName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelName_MetaData[] = {
-		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemoval.h" },
 		{ "ToolTip", "The name of the level that this actor removes foliage from, so that the foliage system can find it" },
 	};
 #endif
@@ -388,14 +388,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mMeshComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemoval.h" },
 		{ "ToolTip", "This needs to be a UPROPERTY as it will become null:ed when the level this actor is associated with is streamed out" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mMeshComponent = { "mMeshComponent", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFoliageRemoval, mMeshComponent), Z_Construct_UClass_UHierarchicalInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mMeshComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mRemovedInstances_MetaData[] = {
-		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemoval.h" },
 		{ "ToolTip", "Instances to remove, has custom \"ReplicatedUsing\", so we get a notify for each instance replicated" },
 	};
 #endif
@@ -437,7 +437,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoliageRemoval, 1058553210);
+	IMPLEMENT_CLASS(AFGFoliageRemoval, 2981427103);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGFoliageRemoval>()
 	{
 		return AFGFoliageRemoval::StaticClass();

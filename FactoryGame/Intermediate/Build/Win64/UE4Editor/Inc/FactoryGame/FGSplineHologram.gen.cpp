@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGSplineHologram.h"
+#include "FactoryGame/Public/Hologram/FGSplineHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -38,7 +38,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineHologram() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSplineHologram_OnRep_SplineData_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Hologram/FGSplineHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGSplineHologram.h" },
 		{ "ToolTip", "Update the spline on the client." },
 	};
 #endif
@@ -81,19 +81,19 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineHologram() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGSplineHologram_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGSplineHologram_OnRep_SplineData, "OnRep_SplineData" }, // 2572620666
+		{ &Z_Construct_UFunction_AFGSplineHologram_OnRep_SplineData, "OnRep_SplineData" }, // 331249101
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSplineHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGSplineHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGSplineHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGSplineHologram.h" },
 		{ "ToolTip", "Base hologram for all spline type holograms." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineData_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGSplineHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGSplineHologram.h" },
 		{ "ToolTip", "This is the data needed to create the spline component (local space)." },
 	};
 #endif
@@ -103,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineComponent_MetaData[] = {
 		{ "Category", "Spline" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGSplineHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGSplineHologram.h" },
 		{ "ToolTip", "The spline component we're placing." },
 	};
 #endif
@@ -140,7 +140,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSplineHologram, 166043190);
+	IMPLEMENT_CLASS(AFGSplineHologram, 173611250);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSplineHologram>()
 	{
 		return AFGSplineHologram::StaticClass();

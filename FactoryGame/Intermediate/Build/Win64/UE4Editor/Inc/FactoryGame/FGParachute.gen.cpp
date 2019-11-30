@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGParachute.h"
+#include "FactoryGame/Public/Equipment/FGParachute.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -55,7 +55,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGParachuteCameraShake_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGParachute.h" },
-		{ "ModuleRelativePath", "Equipment/FGParachute.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGParachute.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGParachuteCameraShake_Statics::StaticCppClassTypeInfo = {
@@ -85,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGParachuteCameraShake, 2956796272);
+	IMPLEMENT_CLASS(UFGParachuteCameraShake, 188660238);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGParachuteCameraShake>()
 	{
 		return UFGParachuteCameraShake::StaticClass();
@@ -144,7 +144,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGParachute.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGParachute.h" },
 		{ "ToolTip", "Is the parachute deployed or not" },
 	};
 #endif
@@ -187,7 +187,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGParachute.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGParachute.h" },
 		{ "ToolTip", "This function calculates our new velocity when we are deployed" },
 	};
 #endif
@@ -210,7 +210,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGParachute_OnDeployed_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGParachute.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGParachute.h" },
 		{ "ToolTip", "Called when we start deploying" },
 	};
 #endif
@@ -233,7 +233,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGParachute_OnDeployStop_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGParachute.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGParachute.h" },
 		{ "ToolTip", "Called when we stop deploying" },
 	};
 #endif
@@ -271,21 +271,21 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGParachute_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGParachute_IsDeployed, "IsDeployed" }, // 2427173322
-		{ &Z_Construct_UFunction_AFGParachute_ModifyVelocity, "ModifyVelocity" }, // 1579390082
-		{ &Z_Construct_UFunction_AFGParachute_OnDeployed, "OnDeployed" }, // 4208656223
-		{ &Z_Construct_UFunction_AFGParachute_OnDeployStop, "OnDeployStop" }, // 884656037
+		{ &Z_Construct_UFunction_AFGParachute_IsDeployed, "IsDeployed" }, // 2142868176
+		{ &Z_Construct_UFunction_AFGParachute_ModifyVelocity, "ModifyVelocity" }, // 2986812394
+		{ &Z_Construct_UFunction_AFGParachute_OnDeployed, "OnDeployed" }, // 1789322329
+		{ &Z_Construct_UFunction_AFGParachute_OnDeployStop, "OnDeployStop" }, // 571857329
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGParachute_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGParachute.h" },
-		{ "ModuleRelativePath", "Equipment/FGParachute.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGParachute.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGParachute_Statics::NewProp_mTerminalVelocityZ_MetaData[] = {
 		{ "Category", "Parachute" },
-		{ "ModuleRelativePath", "Equipment/FGParachute.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGParachute.h" },
 		{ "ToolTip", "The velocity we fall at using the parachute." },
 	};
 #endif
@@ -320,7 +320,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGParachute, 3848771483);
+	IMPLEMENT_CLASS(AFGParachute, 1910120111);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGParachute>()
 	{
 		return AFGParachute::StaticClass();
@@ -354,7 +354,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGParachuteAttachment_OnDeployed_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGParachute.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGParachute.h" },
 		{ "ToolTip", "Called when we start thrusting" },
 	};
 #endif
@@ -377,7 +377,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGParachuteAttachment_OnDeployStop_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGParachute.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGParachute.h" },
 		{ "ToolTip", "Called when we start thrusting" },
 	};
 #endif
@@ -400,7 +400,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGParachuteAttachment_OnRep_IsDeployed_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGParachute.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGParachute.h" },
 		{ "ToolTip", "Called when mIsDeployed is replicated" },
 	};
 #endif
@@ -439,19 +439,19 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGParachuteAttachment_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGParachuteAttachment_OnDeployed, "OnDeployed" }, // 2352062841
-		{ &Z_Construct_UFunction_AFGParachuteAttachment_OnDeployStop, "OnDeployStop" }, // 783279460
-		{ &Z_Construct_UFunction_AFGParachuteAttachment_OnRep_IsDeployed, "OnRep_IsDeployed" }, // 2591403985
+		{ &Z_Construct_UFunction_AFGParachuteAttachment_OnDeployed, "OnDeployed" }, // 3557421534
+		{ &Z_Construct_UFunction_AFGParachuteAttachment_OnDeployStop, "OnDeployStop" }, // 3729345795
+		{ &Z_Construct_UFunction_AFGParachuteAttachment_OnRep_IsDeployed, "OnRep_IsDeployed" }, // 1894335058
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGParachuteAttachment_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGParachute.h" },
-		{ "ModuleRelativePath", "Equipment/FGParachute.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGParachute.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGParachuteAttachment_Statics::NewProp_mIsDeployed_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGParachute.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGParachute.h" },
 	};
 #endif
 	void Z_Construct_UClass_AFGParachuteAttachment_Statics::NewProp_mIsDeployed_SetBit(void* Obj)
@@ -489,7 +489,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGParachuteAttachment, 2809662395);
+	IMPLEMENT_CLASS(AFGParachuteAttachment, 739217871);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGParachuteAttachment>()
 	{
 		return AFGParachuteAttachment::StaticClass();

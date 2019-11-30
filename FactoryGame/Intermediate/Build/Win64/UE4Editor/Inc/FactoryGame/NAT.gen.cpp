@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/NAT.h"
+#include "FactoryGame/Public/NAT.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -30,7 +30,7 @@ void EmptyLinkFunctionForGeneratedCodeNAT() {}
 		return ECachedNATType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ECachedNATType(ECachedNATType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ECachedNATType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ECachedNATType_Hash() { return 2331737932U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ECachedNATType_Hash() { return 2860115828U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ECachedNATType()
 	{
 #if WITH_HOT_RELOAD
@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeNAT() {}
 				{ "CNT_Strict.ToolTip", "You can only directly-connect to Open peers" },
 				{ "CNT_TBD.DisplayName", "TBD" },
 				{ "CNT_TBD.ToolTip", "NAT type has is not yet determined" },
-				{ "ModuleRelativePath", "NAT.h" },
+				{ "ModuleRelativePath", "Public/NAT.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {

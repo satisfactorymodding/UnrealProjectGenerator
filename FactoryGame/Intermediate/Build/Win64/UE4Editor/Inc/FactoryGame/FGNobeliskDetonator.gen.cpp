@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGNobeliskDetonator.h"
+#include "FactoryGame/Public/FGNobeliskDetonator.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGNobeliskDetonator_ExecutePrimaryFire_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 		{ "ToolTip", "Called by an anim notify to actually trigger the throwing of the explosive" },
 	};
 #endif
@@ -110,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGNobeliskDetonator_ExecuteSecondaryFire_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 		{ "ToolTip", "Called by an anim notify to actually trigger the detonation sequence" },
 	};
 #endif
@@ -144,7 +144,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGNobeliskDetonator_GetChargePct_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 		{ "ToolTip", "Return the current charge in percent" },
 	};
 #endif
@@ -168,7 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGNobeliskDetonator_OnSecondaryFirePressed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 		{ "ToolTip", "Call animation from blueprint that will contain notify to trigger actual detonation" },
 	};
 #endif
@@ -210,7 +210,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGNobeliskDetonator_OnViewportFocusChanged_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 		{ "ToolTip", "Called from Hotbar status change, to indicate we have change SceneViewport Focus" },
 	};
 #endif
@@ -233,7 +233,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGNobeliskDetonator_Server_ExecutePrimaryFire_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 		{ "ToolTip", "Called by client to start throw on server." },
 	};
 #endif
@@ -256,7 +256,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGNobeliskDetonator_Server_ExecuteSecondaryFire_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 		{ "ToolTip", "Called by client to start fire on server." },
 	};
 #endif
@@ -288,7 +288,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGNobeliskDetonator_Server_SpawnExplosive_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 		{ "ToolTip", "Called from client to Spawn Explosive on server" },
 	};
 #endif
@@ -311,7 +311,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGNobeliskDetonator_Server_StartDetonations_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGNobeliskDetonator_Server_StartDetonations_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGNobeliskDetonator, nullptr, "Server_StartDetonations", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80280CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGNobeliskDetonator_Server_StartDetonations_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskDetonator_Server_StartDetonations_Statics::Function_MetaDataParams)) };
@@ -378,26 +378,26 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGNobeliskDetonator_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGNobeliskDetonator_ExecutePrimaryFire, "ExecutePrimaryFire" }, // 1444104304
-		{ &Z_Construct_UFunction_AFGNobeliskDetonator_ExecuteSecondaryFire, "ExecuteSecondaryFire" }, // 1006309233
-		{ &Z_Construct_UFunction_AFGNobeliskDetonator_GetChargePct, "GetChargePct" }, // 3864984550
-		{ &Z_Construct_UFunction_AFGNobeliskDetonator_OnSecondaryFirePressed, "OnSecondaryFirePressed" }, // 3335448665
-		{ &Z_Construct_UFunction_AFGNobeliskDetonator_OnViewportFocusChanged, "OnViewportFocusChanged" }, // 603913502
-		{ &Z_Construct_UFunction_AFGNobeliskDetonator_Server_ExecutePrimaryFire, "Server_ExecutePrimaryFire" }, // 768168587
-		{ &Z_Construct_UFunction_AFGNobeliskDetonator_Server_ExecuteSecondaryFire, "Server_ExecuteSecondaryFire" }, // 599885972
-		{ &Z_Construct_UFunction_AFGNobeliskDetonator_Server_SpawnExplosive, "Server_SpawnExplosive" }, // 4203959657
-		{ &Z_Construct_UFunction_AFGNobeliskDetonator_Server_StartDetonations, "Server_StartDetonations" }, // 3975937129
+		{ &Z_Construct_UFunction_AFGNobeliskDetonator_ExecutePrimaryFire, "ExecutePrimaryFire" }, // 3138149567
+		{ &Z_Construct_UFunction_AFGNobeliskDetonator_ExecuteSecondaryFire, "ExecuteSecondaryFire" }, // 720382022
+		{ &Z_Construct_UFunction_AFGNobeliskDetonator_GetChargePct, "GetChargePct" }, // 3288491811
+		{ &Z_Construct_UFunction_AFGNobeliskDetonator_OnSecondaryFirePressed, "OnSecondaryFirePressed" }, // 430705404
+		{ &Z_Construct_UFunction_AFGNobeliskDetonator_OnViewportFocusChanged, "OnViewportFocusChanged" }, // 2150623231
+		{ &Z_Construct_UFunction_AFGNobeliskDetonator_Server_ExecutePrimaryFire, "Server_ExecutePrimaryFire" }, // 1718771842
+		{ &Z_Construct_UFunction_AFGNobeliskDetonator_Server_ExecuteSecondaryFire, "Server_ExecuteSecondaryFire" }, // 3617728559
+		{ &Z_Construct_UFunction_AFGNobeliskDetonator_Server_SpawnExplosive, "Server_SpawnExplosive" }, // 381614730
+		{ &Z_Construct_UFunction_AFGNobeliskDetonator_Server_StartDetonations, "Server_StartDetonations" }, // 3037490604
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskDetonator_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGNobeliskDetonator.h" },
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskDetonator_Statics::NewProp_mDelayBetweenExplosions_MetaData[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 		{ "ToolTip", "When we blow shit up we want a small delay in between each explosion" },
 	};
 #endif
@@ -405,7 +405,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskDetonator_Statics::NewProp_mMinThrowForce_MetaData[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 		{ "ToolTip", "If we tap the throw, this is the minimum force to throw with" },
 	};
 #endif
@@ -413,7 +413,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskDetonator_Statics::NewProp_mMaxThrowForce_MetaData[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 		{ "ToolTip", "If we charge the throw to the max we will throw with this force" },
 	};
 #endif
@@ -421,7 +421,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskDetonator_Statics::NewProp_mMaxChargeTime_MetaData[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 		{ "ToolTip", "If we charge the throw for this amount of time we will get max throw velocity" },
 	};
 #endif
@@ -429,7 +429,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskDetonator_Statics::NewProp_mIsPendingExecuteFire_MetaData[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 		{ "ToolTip", "Tracks waiting for execute fire" },
 	};
 #endif
@@ -440,7 +440,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGNobeliskDetonator_Statics::NewProp_mIsPendingExecuteFire = { "mIsPendingExecuteFire", nullptr, (EPropertyFlags)0x0020080000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGNobeliskDetonator), &Z_Construct_UClass_AFGNobeliskDetonator_Statics::NewProp_mIsPendingExecuteFire_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGNobeliskDetonator_Statics::NewProp_mIsPendingExecuteFire_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGNobeliskDetonator_Statics::NewProp_mIsPendingExecuteFire_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskDetonator_Statics::NewProp_mDispensedExplosives_MetaData[] = {
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 		{ "ToolTip", "Keeps track of the explosives we have dispensed" },
 	};
 #endif
@@ -449,7 +449,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskDetonator_Statics::NewProp_mExplosiveClass_MetaData[] = {
 		{ "Category", "Explosion" },
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 		{ "ToolTip", "What types of bombs we should spawn" },
 	};
 #endif
@@ -457,7 +457,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskDetonator_Statics::NewProp_mExplosiveData_MetaData[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskDetonator.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonator.h" },
 		{ "ToolTip", "Explosive Data (Applied to the explosive projectile on spawn)" },
 	};
 #endif
@@ -500,7 +500,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGNobeliskDetonator, 1929139934);
+	IMPLEMENT_CLASS(AFGNobeliskDetonator, 275372514);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGNobeliskDetonator>()
 	{
 		return AFGNobeliskDetonator::StaticClass();

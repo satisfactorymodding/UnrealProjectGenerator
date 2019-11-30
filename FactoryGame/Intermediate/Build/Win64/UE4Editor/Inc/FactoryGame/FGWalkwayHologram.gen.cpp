@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGWalkwayHologram.h"
+#include "FactoryGame/Public/Hologram/FGWalkwayHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWalkwayHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWalkwayHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGWalkwayHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGWalkwayHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGWalkwayHologram.h" },
 		{ "ToolTip", "Hologram for walkways." },
 	};
 #endif
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWalkwayHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWalkwayHologram, 3818786961);
+	IMPLEMENT_CLASS(AFGWalkwayHologram, 2078955684);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWalkwayHologram>()
 	{
 		return AFGWalkwayHologram::StaticClass();

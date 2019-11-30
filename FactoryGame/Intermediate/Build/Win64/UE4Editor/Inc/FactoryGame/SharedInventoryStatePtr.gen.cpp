@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/SharedInventoryStatePtr.h"
+#include "FactoryGame/Public/SharedInventoryStatePtr.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -54,7 +54,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSharedInventorySta
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "SharedInventoryStatePtr.h" },
+		{ "ModuleRelativePath", "Public/SharedInventoryStatePtr.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::NewStructOps()
@@ -63,7 +63,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSharedInventorySta
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::NewProp_ActorPtr_MetaData[] = {
-		{ "ModuleRelativePath", "SharedInventoryStatePtr.h" },
+		{ "ModuleRelativePath", "Public/SharedInventoryStatePtr.h" },
 		{ "ToolTip", "The actor we've shared ownership over." },
 	};
 #endif
@@ -99,7 +99,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSharedInventorySta
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Hash() { return 3985599718U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Hash() { return 3126017265U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

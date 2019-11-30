@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGEquipment.h"
+#include "FactoryGame/Public/Equipment/FGEquipment.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -66,7 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		return EEquipmentSlot_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EEquipmentSlot(EEquipmentSlot_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EEquipmentSlot"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EEquipmentSlot_Hash() { return 890801681U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EEquipmentSlot_Hash() { return 2628233146U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EEquipmentSlot()
 	{
 #if WITH_HOT_RELOAD
@@ -90,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 				{ "ES_BACK.DisplayName", "Body" },
 				{ "ES_MAX.Hidden", "" },
 				{ "ES_NONE.DisplayName", "Please specify a slot." },
-				{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+				{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 				{ "ToolTip", "Equipments are equip on different slots on the player. One EQ per slot. These are the slots." },
 			};
 #endif
@@ -208,7 +208,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Damage" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Called whenever our owner is damaged and gives us a chance to adjust it\nSERVER ONLY\n\n@param damageAmount - how much damage we receive\n@param damageType - what damage type the damage is that we receive\n@param instigatedBy - who instigated the damage (Controller)\n@param damageCauser - the actor who damaged us\n@return the adjusted damage" },
 	};
 #endif
@@ -247,7 +247,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "True if we can afford the cost of using this equipment" },
 	};
 #endif
@@ -271,7 +271,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_ChargeForUse_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Consumes the cost of using this equipment, will call Server_ChargeForUse if we don't have authority" },
 	};
 #endif
@@ -295,7 +295,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_DidNotAffordUse_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Called if we couldn't afford to use the equipment" },
 	};
 #endif
@@ -329,7 +329,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_Equip_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Equips the equipment." },
 	};
 #endif
@@ -363,7 +363,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_GetAttachment_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Get the attachment for this equipment." },
 	};
 #endif
@@ -404,7 +404,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Returns the enum for the equipment slot, ARMS, BACK etc." },
 	};
 #endif
@@ -438,7 +438,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Convenience blueprint function to return Instigator as a FGCharacterPlayer\n@return The instigator for this equipment; nullptr if not equipped or Instigator is not an FGCharacterPlayer." },
 	};
 #endif
@@ -472,7 +472,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "GetSecondaryAttachment", sizeof(FGEquipment_eventGetSecondaryAttachment_Parms), Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::Function_MetaDataParams)) };
@@ -510,7 +510,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Is this equipment equipped.\n@return - true if equiped; otherwise false." },
 	};
 #endif
@@ -549,7 +549,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "@return Is the instigator locally controlled; false if no instigator." },
 	};
 #endif
@@ -572,7 +572,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_Server_ChargeForUse_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Will call ChargeForUse_Internal on server" },
 	};
 #endif
@@ -602,7 +602,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "This is called to update the relevant attachments' use state so that animations can be played etc." },
 	};
 #endif
@@ -641,7 +641,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Should we play stinger animation" },
 	};
 #endif
@@ -665,7 +665,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_UnEquip_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Put the equipment away." },
 	};
 #endif
@@ -689,7 +689,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_WasEquipped_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Was the equipment equipped." },
 	};
 #endif
@@ -713,7 +713,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_WasUnEquipped_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Was the equipment put away." },
 	};
 #endif
@@ -821,42 +821,42 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGEquipment_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGEquipment_AdjustDamage, "AdjustDamage" }, // 3619945697
-		{ &Z_Construct_UFunction_AFGEquipment_CanAffordUse, "CanAffordUse" }, // 3445129838
-		{ &Z_Construct_UFunction_AFGEquipment_ChargeForUse, "ChargeForUse" }, // 1745862750
-		{ &Z_Construct_UFunction_AFGEquipment_DidNotAffordUse, "DidNotAffordUse" }, // 3500450655
-		{ &Z_Construct_UFunction_AFGEquipment_Equip, "Equip" }, // 841801913
-		{ &Z_Construct_UFunction_AFGEquipment_GetAttachment, "GetAttachment" }, // 1355050489
-		{ &Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot, "GetEquipmentSlot" }, // 2939788128
-		{ &Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter, "GetInstigatorCharacter" }, // 664701142
-		{ &Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment, "GetSecondaryAttachment" }, // 2275757078
-		{ &Z_Construct_UFunction_AFGEquipment_IsEquipped, "IsEquipped" }, // 4230900845
-		{ &Z_Construct_UFunction_AFGEquipment_IsLocalInstigator, "IsLocalInstigator" }, // 2840923305
-		{ &Z_Construct_UFunction_AFGEquipment_Server_ChargeForUse, "Server_ChargeForUse" }, // 3422267886
-		{ &Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState, "Server_UpdateAttachmentUseState" }, // 3804148483
-		{ &Z_Construct_UFunction_AFGEquipment_ShouldShowStinger, "ShouldShowStinger" }, // 3105702491
-		{ &Z_Construct_UFunction_AFGEquipment_UnEquip, "UnEquip" }, // 1712762649
-		{ &Z_Construct_UFunction_AFGEquipment_WasEquipped, "WasEquipped" }, // 1980839195
-		{ &Z_Construct_UFunction_AFGEquipment_WasUnEquipped, "WasUnEquipped" }, // 540561654
+		{ &Z_Construct_UFunction_AFGEquipment_AdjustDamage, "AdjustDamage" }, // 2123092923
+		{ &Z_Construct_UFunction_AFGEquipment_CanAffordUse, "CanAffordUse" }, // 1279622743
+		{ &Z_Construct_UFunction_AFGEquipment_ChargeForUse, "ChargeForUse" }, // 281518113
+		{ &Z_Construct_UFunction_AFGEquipment_DidNotAffordUse, "DidNotAffordUse" }, // 2427668082
+		{ &Z_Construct_UFunction_AFGEquipment_Equip, "Equip" }, // 1154103562
+		{ &Z_Construct_UFunction_AFGEquipment_GetAttachment, "GetAttachment" }, // 1355833451
+		{ &Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot, "GetEquipmentSlot" }, // 4264523525
+		{ &Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter, "GetInstigatorCharacter" }, // 2402283366
+		{ &Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment, "GetSecondaryAttachment" }, // 166809483
+		{ &Z_Construct_UFunction_AFGEquipment_IsEquipped, "IsEquipped" }, // 2716866894
+		{ &Z_Construct_UFunction_AFGEquipment_IsLocalInstigator, "IsLocalInstigator" }, // 3420174075
+		{ &Z_Construct_UFunction_AFGEquipment_Server_ChargeForUse, "Server_ChargeForUse" }, // 1456808497
+		{ &Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState, "Server_UpdateAttachmentUseState" }, // 2983167717
+		{ &Z_Construct_UFunction_AFGEquipment_ShouldShowStinger, "ShouldShowStinger" }, // 1543518827
+		{ &Z_Construct_UFunction_AFGEquipment_UnEquip, "UnEquip" }, // 3375215488
+		{ &Z_Construct_UFunction_AFGEquipment_WasEquipped, "WasEquipped" }, // 2794726766
+		{ &Z_Construct_UFunction_AFGEquipment_WasUnEquipped, "WasUnEquipped" }, // 869939147
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::Class_MetaDataParams[] = {
 		{ "AutoJson", "TRUE" },
 		{ "IncludePath", "Equipment/FGEquipment.h" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Base class for all kinds of equipment in the game." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachment_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "This is a potential secondary attachment" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachment = { "mSecondaryAttachment", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mSecondaryAttachment), Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachment_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachment_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachment_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "This is the attachment of this equipment" },
 	};
 #endif
@@ -864,7 +864,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mHasPersistentOwner_MetaData[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "If the owner is persistent throughout the lifetime of this equipment" },
 	};
 #endif
@@ -876,7 +876,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mBackAnimation_MetaData[] = {
 		{ "Category", "Equipment|Animation" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Arms animation this should play on the when the equipment is equipped (only used if mEquipmentSlot == ES_BACK)" },
 	};
 #endif
@@ -885,7 +885,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mArmAnimation_MetaData[] = {
 		{ "Category", "Equipment|Animation" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Arms animation this should play on the when the equipment is equipped (only used if mEquipmentSlot == ES_ARMS)" },
 	};
 #endif
@@ -894,7 +894,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mCostToUse_MetaData[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "The cost of using this equipment" },
 	};
 #endif
@@ -903,7 +903,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mChildEquipmentClass_MetaData[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "The class (if any) to use to spawn a child equipment" },
 	};
 #endif
@@ -911,7 +911,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachSocket_MetaData[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "If this equipment should attach to a socket, this is the socket." },
 	};
 #endif
@@ -919,14 +919,14 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_m1PAnimClass_MetaData[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "The AnimBlueprint class to use for the 1p anim for our pawn, specifying none here means that the pawn default 1p anim will be used" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_m1PAnimClass = { "m1PAnimClass", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, m1PAnimClass), Z_Construct_UClass_UAnimInstance_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_m1PAnimClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_m1PAnimClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mChildEquipment_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Holds a reference to the child equipment that may be spawned with this" },
 	};
 #endif
@@ -934,7 +934,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentWidget_MetaData[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Class of widget to add when equipping this equipment" },
 	};
 #endif
@@ -942,7 +942,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mUnequipSound_MetaData[] = {
 		{ "Category", "Sound" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Sound played when unequipping" },
 	};
 #endif
@@ -950,7 +950,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipSound_MetaData[] = {
 		{ "Category", "Sound" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Sound played when equipping" },
 	};
 #endif
@@ -958,7 +958,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSprintHeadBobShake_MetaData[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "Camera shake to play when sprinting" },
 	};
 #endif
@@ -966,7 +966,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentSlot_MetaData[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "To what slot is this limited to?" },
 	};
 #endif
@@ -975,7 +975,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachmentClass_MetaData[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "This is the secondary attachment for this class" },
 	};
 #endif
@@ -983,7 +983,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachmentClass_MetaData[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
 		{ "ToolTip", "This is the attachment for this class" },
 	};
 #endif
@@ -1042,7 +1042,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEquipment, 3968149455);
+	IMPLEMENT_CLASS(AFGEquipment, 2592171925);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGEquipment>()
 	{
 		return AFGEquipment::StaticClass();

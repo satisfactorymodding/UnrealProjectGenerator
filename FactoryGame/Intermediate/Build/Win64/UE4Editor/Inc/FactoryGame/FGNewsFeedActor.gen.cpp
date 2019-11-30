@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGNewsFeedActor.h"
+#include "FactoryGame/Public/FGNewsFeedActor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNewsFeedActor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnNewsReceived__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGNewsFeedActor.h" },
+		{ "ModuleRelativePath", "Public/FGNewsFeedActor.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnNewsReceived__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnNewsReceived__DelegateSignature", sizeof(_Script_FactoryGame_eventOnNewsReceived_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnNewsReceived__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnNewsReceived__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnNewsReceived__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnNewsReceived__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -95,7 +95,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNewsFeedMap
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNewsFeedMap_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGNewsFeedActor.h" },
+		{ "ModuleRelativePath", "Public/FGNewsFeedActor.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FNewsFeedMap_Statics::NewStructOps()
@@ -104,13 +104,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNewsFeedMap
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNewsFeedMap_Statics::NewProp_URL_MetaData[] = {
-		{ "ModuleRelativePath", "FGNewsFeedActor.h" },
+		{ "ModuleRelativePath", "Public/FGNewsFeedActor.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FNewsFeedMap_Statics::NewProp_URL = { "URL", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FNewsFeedMap, URL), METADATA_PARAMS(Z_Construct_UScriptStruct_FNewsFeedMap_Statics::NewProp_URL_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FNewsFeedMap_Statics::NewProp_URL_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNewsFeedMap_Statics::NewProp_GameVersion_MetaData[] = {
-		{ "ModuleRelativePath", "FGNewsFeedActor.h" },
+		{ "ModuleRelativePath", "Public/FGNewsFeedActor.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FNewsFeedMap_Statics::NewProp_GameVersion = { "GameVersion", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FNewsFeedMap, GameVersion), Z_Construct_UEnum_FactoryGame_EGameVersion, METADATA_PARAMS(Z_Construct_UScriptStruct_FNewsFeedMap_Statics::NewProp_GameVersion_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FNewsFeedMap_Statics::NewProp_GameVersion_MetaData)) };
@@ -148,7 +148,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNewsFeedMap
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FNewsFeedMap_Hash() { return 2651632357U; }
+	uint32 Get_Z_Construct_UScriptStruct_FNewsFeedMap_Hash() { return 3866075094U; }
 	void AFGNewsFeedActor::StaticRegisterNativesAFGNewsFeedActor()
 	{
 	}
@@ -191,12 +191,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNewsFeedMap
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNewsFeedActor_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGNewsFeedActor.h" },
-		{ "ModuleRelativePath", "FGNewsFeedActor.h" },
+		{ "ModuleRelativePath", "Public/FGNewsFeedActor.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNewsFeedActor_Statics::NewProp_mNewsFeedURLs_MetaData[] = {
-		{ "ModuleRelativePath", "FGNewsFeedActor.h" },
+		{ "ModuleRelativePath", "Public/FGNewsFeedActor.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGNewsFeedActor_Statics::NewProp_mNewsFeedURLs = { "mNewsFeedURLs", nullptr, (EPropertyFlags)0x0020080000004000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGNewsFeedActor, mNewsFeedURLs), METADATA_PARAMS(Z_Construct_UClass_AFGNewsFeedActor_Statics::NewProp_mNewsFeedURLs_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGNewsFeedActor_Statics::NewProp_mNewsFeedURLs_MetaData)) };
@@ -204,7 +204,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNewsFeedMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNewsFeedActor_Statics::NewProp_mNewsFeedRequestFailedText_MetaData[] = {
 		{ "Category", "News Feed" },
-		{ "ModuleRelativePath", "FGNewsFeedActor.h" },
+		{ "ModuleRelativePath", "Public/FGNewsFeedActor.h" },
 		{ "ToolTip", "Display this text if we fail to get the news feed text" },
 	};
 #endif
@@ -212,14 +212,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNewsFeedMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNewsFeedActor_Statics::NewProp_mNewFeedText_MetaData[] = {
 		{ "Category", "FGNewsFeedActor" },
-		{ "ModuleRelativePath", "FGNewsFeedActor.h" },
+		{ "ModuleRelativePath", "Public/FGNewsFeedActor.h" },
 		{ "ToolTip", "Yeah yeah, this is only a prototype class it breaks code convention, fix it when we make a proper news feed" },
 	};
 #endif
 	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_AFGNewsFeedActor_Statics::NewProp_mNewFeedText = { "mNewFeedText", nullptr, (EPropertyFlags)0x0020080000000014, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGNewsFeedActor, mNewFeedText), METADATA_PARAMS(Z_Construct_UClass_AFGNewsFeedActor_Statics::NewProp_mNewFeedText_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGNewsFeedActor_Statics::NewProp_mNewFeedText_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNewsFeedActor_Statics::NewProp_mOnNewsReceived_MetaData[] = {
-		{ "ModuleRelativePath", "FGNewsFeedActor.h" },
+		{ "ModuleRelativePath", "Public/FGNewsFeedActor.h" },
 		{ "ToolTip", "Fired when we get the result back from the HTTP Get request" },
 	};
 #endif
@@ -258,7 +258,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNewsFeedMap
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGNewsFeedActor, 4114645959);
+	IMPLEMENT_CLASS(AFGNewsFeedActor, 2264201233);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGNewsFeedActor>()
 	{
 		return AFGNewsFeedActor::StaticClass();

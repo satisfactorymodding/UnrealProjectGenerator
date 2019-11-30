@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGGameEngine.h"
+#include "FactoryGame/Public/FGGameEngine.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -49,12 +49,12 @@ void EmptyLinkFunctionForGeneratedCodeFGGameEngine() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameEngine_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGGameEngine.h" },
-		{ "ModuleRelativePath", "FGGameEngine.h" },
+		{ "ModuleRelativePath", "Public/FGGameEngine.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameEngine_Statics::NewProp_mEngineCommonImp_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameEngine.h" },
+		{ "ModuleRelativePath", "Public/FGGameEngine.h" },
 		{ "ToolTip", "Shared implementation for world creation" },
 	};
 #endif
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameEngine() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameEngine, 148122932);
+	IMPLEMENT_CLASS(UFGGameEngine, 2518470321);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGGameEngine>()
 	{
 		return UFGGameEngine::StaticClass();

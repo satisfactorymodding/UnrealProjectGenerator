@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGResourceNodeGeyser.h"
+#include "FactoryGame/Public/FGResourceNodeGeyser.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceNodeGeyser() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNodeGeyser_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGResourceNodeGeyser.h" },
-		{ "ModuleRelativePath", "FGResourceNodeGeyser.h" },
+		{ "ModuleRelativePath", "Public/FGResourceNodeGeyser.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGResourceNodeGeyser_Statics::StaticCppClassTypeInfo = {
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceNodeGeyser() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceNodeGeyser, 1027293322);
+	IMPLEMENT_CLASS(AFGResourceNodeGeyser, 2955506320);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGResourceNodeGeyser>()
 	{
 		return AFGResourceNodeGeyser::StaticClass();

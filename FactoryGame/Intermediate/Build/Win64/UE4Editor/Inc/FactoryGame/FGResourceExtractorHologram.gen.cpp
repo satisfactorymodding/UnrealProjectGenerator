@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGResourceExtractorHologram.h"
+#include "FactoryGame/Public/Hologram/FGResourceExtractorHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -55,20 +55,20 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceExtractorHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceExtractorHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGResourceExtractorHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGResourceExtractorHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGResourceExtractorHologram.h" },
 		{ "ToolTip", "Hologram for buildings that can only be placed (snapped) on resource nodes." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedResourceNode_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGResourceExtractorHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGResourceExtractorHologram.h" },
 		{ "ToolTip", "The resource node we snapped to." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedResourceNode = { "mSnappedResourceNode", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceExtractorHologram, mSnappedResourceNode), Z_Construct_UClass_AFGResourceNode_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedResourceNode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedResourceNode_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGResourceExtractorHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGResourceExtractorHologram.h" },
 		{ "ToolTip", "What form can the overlapping resources be in." },
 	};
 #endif
@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceExtractorHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceExtractorHologram, 2514663477);
+	IMPLEMENT_CLASS(AFGResourceExtractorHologram, 122095009);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGResourceExtractorHologram>()
 	{
 		return AFGResourceExtractorHologram::StaticClass();

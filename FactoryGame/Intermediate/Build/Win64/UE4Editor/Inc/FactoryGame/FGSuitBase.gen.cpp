@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGSuitBase.h"
+#include "FactoryGame/Public/Equipment/FGSuitBase.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -65,7 +65,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialAndSlotName_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Equipment/FGSuitBase.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGSuitBase.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FMaterialAndSlotName_Statics::NewStructOps()
@@ -75,7 +75,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialAndSlotName_Statics::NewProp_Material_MetaData[] = {
 		{ "Category", "MaterialAndSlotName" },
-		{ "ModuleRelativePath", "Equipment/FGSuitBase.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGSuitBase.h" },
 		{ "ToolTip", "The material to put on that slot name" },
 	};
 #endif
@@ -83,7 +83,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialAndSlotName_Statics::NewProp_SlotName_MetaData[] = {
 		{ "Category", "MaterialAndSlotName" },
-		{ "ModuleRelativePath", "Equipment/FGSuitBase.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGSuitBase.h" },
 		{ "ToolTip", "This is the slot name on the character" },
 	};
 #endif
@@ -120,7 +120,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMaterialAndSlotName_Hash() { return 423793927U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMaterialAndSlotName_Hash() { return 3460683883U; }
 	void AFGSuitBase::StaticRegisterNativesAFGSuitBase()
 	{
 	}
@@ -150,14 +150,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSuitBase_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGSuitBase.h" },
-		{ "ModuleRelativePath", "Equipment/FGSuitBase.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGSuitBase.h" },
 		{ "ToolTip", "Base class for \"suit\"-like equipment. Updates visuals on equip/unequip etc." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSuitBase_Statics::NewProp_mSuit1PMeshMaterials_MetaData[] = {
 		{ "Category", "Materials" },
-		{ "ModuleRelativePath", "Equipment/FGSuitBase.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGSuitBase.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGSuitBase_Statics::NewProp_mSuit1PMeshMaterials = { "mSuit1PMeshMaterials", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSuitBase, mSuit1PMeshMaterials), METADATA_PARAMS(Z_Construct_UClass_AFGSuitBase_Statics::NewProp_mSuit1PMeshMaterials_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSuitBase_Statics::NewProp_mSuit1PMeshMaterials_MetaData)) };
@@ -193,7 +193,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSuitBase, 4195759482);
+	IMPLEMENT_CLASS(AFGSuitBase, 1369098838);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSuitBase>()
 	{
 		return AFGSuitBase::StaticClass();
@@ -229,13 +229,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSuitBaseAttachment_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGSuitBase.h" },
-		{ "ModuleRelativePath", "Equipment/FGSuitBase.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGSuitBase.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSuitBaseAttachment_Statics::NewProp_mSuit3PMeshMaterials_MetaData[] = {
 		{ "Category", "Materials" },
-		{ "ModuleRelativePath", "Equipment/FGSuitBase.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGSuitBase.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGSuitBaseAttachment_Statics::NewProp_mSuit3PMeshMaterials = { "mSuit3PMeshMaterials", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSuitBaseAttachment, mSuit3PMeshMaterials), METADATA_PARAMS(Z_Construct_UClass_AFGSuitBaseAttachment_Statics::NewProp_mSuit3PMeshMaterials_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSuitBaseAttachment_Statics::NewProp_mSuit3PMeshMaterials_MetaData)) };
@@ -271,7 +271,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSuitBaseAttachment, 2743496077);
+	IMPLEMENT_CLASS(AFGSuitBaseAttachment, 4243561062);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSuitBaseAttachment>()
 	{
 		return AFGSuitBaseAttachment::StaticClass();

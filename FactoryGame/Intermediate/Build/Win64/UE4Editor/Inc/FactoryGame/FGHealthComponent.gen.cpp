@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGHealthComponent.h"
+#include "FactoryGame/Public/FGHealthComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_HealDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_HealDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "HealDelegate__DelegateSignature", sizeof(_Script_FactoryGame_eventHealDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_HealDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_HealDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_HealDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_HealDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -128,7 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_AdjustDamageDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_AdjustDamageDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "AdjustDamageDelegate__DelegateSignature", sizeof(_Script_FactoryGame_eventAdjustDamageDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_AdjustDamageDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_AdjustDamageDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00120000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_AdjustDamageDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_AdjustDamageDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -184,7 +184,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_TakeAnyDamageDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_TakeAnyDamageDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "TakeAnyDamageDelegate__DelegateSignature", sizeof(_Script_FactoryGame_eventTakeAnyDamageDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_TakeAnyDamageDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_TakeAnyDamageDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_TakeAnyDamageDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_TakeAnyDamageDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -216,7 +216,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_DeathDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_DeathDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "DeathDelegate__DelegateSignature", sizeof(_Script_FactoryGame_eventDeathDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_DeathDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_DeathDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_DeathDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_DeathDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -327,7 +327,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_AddAdjustDamageListener_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Health" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 		{ "ToolTip", "Add a listener for when we take damage. Last added listener will be called first if multiple is added\nThe return value of the listener will be the adjusted damage and is passed on to the next listener that\nget the call" },
 	};
 #endif
@@ -356,7 +356,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_Client_Died_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHealthComponent_Client_Died_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHealthComponent, nullptr, "Client_Died", sizeof(FGHealthComponent_eventClient_Died_Parms), Z_Construct_UFunction_UFGHealthComponent_Client_Died_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_Client_Died_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00024CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHealthComponent_Client_Died_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_Client_Died_Statics::Function_MetaDataParams)) };
@@ -384,7 +384,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_Client_Heal_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHealthComponent_Client_Heal_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHealthComponent, nullptr, "Client_Heal", sizeof(FGHealthComponent_eventClient_Heal_Parms), Z_Construct_UFunction_UFGHealthComponent_Client_Heal_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_Client_Heal_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00024CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHealthComponent_Client_Heal_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_Client_Heal_Statics::Function_MetaDataParams)) };
@@ -432,7 +432,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_Client_TakeDamage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHealthComponent_Client_TakeDamage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHealthComponent, nullptr, "Client_TakeDamage", sizeof(FGHealthComponent_eventClient_TakeDamage_Parms), Z_Construct_UFunction_UFGHealthComponent_Client_TakeDamage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_Client_TakeDamage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00024CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHealthComponent_Client_TakeDamage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_Client_TakeDamage_Statics::Function_MetaDataParams)) };
@@ -500,7 +500,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_Client_TakePointDamage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHealthComponent_Client_TakePointDamage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHealthComponent, nullptr, "Client_TakePointDamage", sizeof(FGHealthComponent_eventClient_TakePointDamage_Parms), Z_Construct_UFunction_UFGHealthComponent_Client_TakePointDamage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_Client_TakePointDamage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00824CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHealthComponent_Client_TakePointDamage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_Client_TakePointDamage_Statics::Function_MetaDataParams)) };
@@ -554,7 +554,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_Client_TakeRadialDamage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHealthComponent_Client_TakeRadialDamage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHealthComponent, nullptr, "Client_TakeRadialDamage", sizeof(FGHealthComponent_eventClient_TakeRadialDamage_Parms), Z_Construct_UFunction_UFGHealthComponent_Client_TakeRadialDamage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_Client_TakeRadialDamage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00824CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHealthComponent_Client_TakeRadialDamage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_Client_TakeRadialDamage_Statics::Function_MetaDataParams)) };
@@ -587,7 +587,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_GetCurrentHealth_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Health" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 		{ "ToolTip", "Gets our current health" },
 	};
 #endif
@@ -621,7 +621,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_GetMaxHealth_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Health" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 		{ "ToolTip", "Gets our current health" },
 	};
 #endif
@@ -655,7 +655,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_Heal_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Health" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHealthComponent_Heal_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHealthComponent, nullptr, "Heal", sizeof(FGHealthComponent_eventHeal_Parms), Z_Construct_UFunction_UFGHealthComponent_Heal_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_Heal_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHealthComponent_Heal_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_Heal_Statics::Function_MetaDataParams)) };
@@ -693,7 +693,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_IsDead_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Health" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 		{ "ToolTip", "@return true if our owner is dead" },
 	};
 #endif
@@ -717,7 +717,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_Kill_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Damage" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 		{ "ToolTip", "Instantly kill, bypass AdjustDamage event. Will trigger DeathDelegate" },
 	};
 #endif
@@ -751,7 +751,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_RemoveAdjustDamageListener_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Health" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 		{ "ToolTip", "Remove a listener of damage" },
 	};
 #endif
@@ -775,7 +775,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_ResetHealth_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Health" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHealthComponent_ResetHealth_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHealthComponent, nullptr, "ResetHealth", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHealthComponent_ResetHealth_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_ResetHealth_Statics::Function_MetaDataParams)) };
@@ -798,7 +798,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_ResetHealthFromDeath_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Health" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHealthComponent_ResetHealthFromDeath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHealthComponent, nullptr, "ResetHealthFromDeath", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHealthComponent_ResetHealthFromDeath_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_ResetHealthFromDeath_Statics::Function_MetaDataParams)) };
@@ -821,7 +821,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_ReviveResetHealth_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Health" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHealthComponent_ReviveResetHealth_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHealthComponent, nullptr, "ReviveResetHealth", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHealthComponent_ReviveResetHealth_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_ReviveResetHealth_Statics::Function_MetaDataParams)) };
@@ -877,7 +877,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_TakeDamage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 		{ "ToolTip", "Apply damage to this actor.\n@see https://www.unrealengine.com/blog/damage-in-ue4\n@param DamageAmount           How much damage to apply\n@param DamageType                     Damage type of the damage\n@param InstigatedBy           The Controller responsible for the damage.\n@param DamageCauser           The Actor that directly caused the damage (e.g. the projectile that exploded, the rock that landed on you)\n@return                                       The amount of damage actually applied." },
 	};
 #endif
@@ -958,7 +958,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_TakePointDamage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHealthComponent_TakePointDamage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHealthComponent, nullptr, "TakePointDamage", sizeof(FGHealthComponent_eventTakePointDamage_Parms), Z_Construct_UFunction_UFGHealthComponent_TakePointDamage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_TakePointDamage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00820400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHealthComponent_TakePointDamage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_TakePointDamage_Statics::Function_MetaDataParams)) };
@@ -1022,7 +1022,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHealthComponent_TakeRadialDamage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHealthComponent_TakeRadialDamage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHealthComponent, nullptr, "TakeRadialDamage", sizeof(FGHealthComponent_eventTakeRadialDamage_Parms), Z_Construct_UFunction_UFGHealthComponent_TakeRadialDamage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_TakeRadialDamage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00820400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHealthComponent_TakeRadialDamage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHealthComponent_TakeRadialDamage_Statics::Function_MetaDataParams)) };
@@ -1108,36 +1108,36 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGHealthComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGHealthComponent_AddAdjustDamageListener, "AddAdjustDamageListener" }, // 3489541546
-		{ &Z_Construct_UFunction_UFGHealthComponent_Client_Died, "Client_Died" }, // 2921420481
-		{ &Z_Construct_UFunction_UFGHealthComponent_Client_Heal, "Client_Heal" }, // 670501970
-		{ &Z_Construct_UFunction_UFGHealthComponent_Client_TakeDamage, "Client_TakeDamage" }, // 318617102
-		{ &Z_Construct_UFunction_UFGHealthComponent_Client_TakePointDamage, "Client_TakePointDamage" }, // 3154087144
-		{ &Z_Construct_UFunction_UFGHealthComponent_Client_TakeRadialDamage, "Client_TakeRadialDamage" }, // 3010386388
-		{ &Z_Construct_UFunction_UFGHealthComponent_GetCurrentHealth, "GetCurrentHealth" }, // 2699078571
-		{ &Z_Construct_UFunction_UFGHealthComponent_GetMaxHealth, "GetMaxHealth" }, // 1461400429
-		{ &Z_Construct_UFunction_UFGHealthComponent_Heal, "Heal" }, // 71218542
-		{ &Z_Construct_UFunction_UFGHealthComponent_IsDead, "IsDead" }, // 1833136680
-		{ &Z_Construct_UFunction_UFGHealthComponent_Kill, "Kill" }, // 9930734
-		{ &Z_Construct_UFunction_UFGHealthComponent_RemoveAdjustDamageListener, "RemoveAdjustDamageListener" }, // 1480533951
-		{ &Z_Construct_UFunction_UFGHealthComponent_ResetHealth, "ResetHealth" }, // 804152358
-		{ &Z_Construct_UFunction_UFGHealthComponent_ResetHealthFromDeath, "ResetHealthFromDeath" }, // 2869370464
-		{ &Z_Construct_UFunction_UFGHealthComponent_ReviveResetHealth, "ReviveResetHealth" }, // 334257967
-		{ &Z_Construct_UFunction_UFGHealthComponent_TakeDamage, "TakeDamage" }, // 3843590591
-		{ &Z_Construct_UFunction_UFGHealthComponent_TakePointDamage, "TakePointDamage" }, // 3623069688
-		{ &Z_Construct_UFunction_UFGHealthComponent_TakeRadialDamage, "TakeRadialDamage" }, // 207888197
+		{ &Z_Construct_UFunction_UFGHealthComponent_AddAdjustDamageListener, "AddAdjustDamageListener" }, // 247510889
+		{ &Z_Construct_UFunction_UFGHealthComponent_Client_Died, "Client_Died" }, // 1948375064
+		{ &Z_Construct_UFunction_UFGHealthComponent_Client_Heal, "Client_Heal" }, // 2244132197
+		{ &Z_Construct_UFunction_UFGHealthComponent_Client_TakeDamage, "Client_TakeDamage" }, // 709746801
+		{ &Z_Construct_UFunction_UFGHealthComponent_Client_TakePointDamage, "Client_TakePointDamage" }, // 1986869185
+		{ &Z_Construct_UFunction_UFGHealthComponent_Client_TakeRadialDamage, "Client_TakeRadialDamage" }, // 2540055914
+		{ &Z_Construct_UFunction_UFGHealthComponent_GetCurrentHealth, "GetCurrentHealth" }, // 786360710
+		{ &Z_Construct_UFunction_UFGHealthComponent_GetMaxHealth, "GetMaxHealth" }, // 1423602838
+		{ &Z_Construct_UFunction_UFGHealthComponent_Heal, "Heal" }, // 2776320628
+		{ &Z_Construct_UFunction_UFGHealthComponent_IsDead, "IsDead" }, // 3174728776
+		{ &Z_Construct_UFunction_UFGHealthComponent_Kill, "Kill" }, // 2959476450
+		{ &Z_Construct_UFunction_UFGHealthComponent_RemoveAdjustDamageListener, "RemoveAdjustDamageListener" }, // 3684279765
+		{ &Z_Construct_UFunction_UFGHealthComponent_ResetHealth, "ResetHealth" }, // 6378649
+		{ &Z_Construct_UFunction_UFGHealthComponent_ResetHealthFromDeath, "ResetHealthFromDeath" }, // 540132566
+		{ &Z_Construct_UFunction_UFGHealthComponent_ReviveResetHealth, "ReviveResetHealth" }, // 2705814801
+		{ &Z_Construct_UFunction_UFGHealthComponent_TakeDamage, "TakeDamage" }, // 3824281082
+		{ &Z_Construct_UFunction_UFGHealthComponent_TakePointDamage, "TakePointDamage" }, // 4122528990
+		{ &Z_Construct_UFunction_UFGHealthComponent_TakeRadialDamage, "TakeRadialDamage" }, // 3741263591
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHealthComponent_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGHealthComponent.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mReplicateDeathEvents_MetaData[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 		{ "ToolTip", "If true, then the client will trigger the following event: DeathDelegate" },
 	};
 #endif
@@ -1148,7 +1148,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mReplicateDeathEvents = { "mReplicateDeathEvents", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UFGHealthComponent), &Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mReplicateDeathEvents_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mReplicateDeathEvents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mReplicateDeathEvents_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mReplicateDamageEvents_MetaData[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 		{ "ToolTip", "If true, then the client will trigger the following events: OnTakeAnyDamageDelegate, OnTakePointDamageDelegate, OnTakeRadialDamageDelegate" },
 	};
 #endif
@@ -1159,7 +1159,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mReplicateDamageEvents = { "mReplicateDamageEvents", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UFGHealthComponent), &Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mReplicateDamageEvents_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mReplicateDamageEvents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mReplicateDamageEvents_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mIsDead_MetaData[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 		{ "ToolTip", "If true, then we are dead. This is replicated to clients and they get the death event based on this." },
 	};
 #endif
@@ -1171,14 +1171,14 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mRespawnHealthFactor_MetaData[] = {
 		{ "Category", "Health" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 		{ "ToolTip", "Scale of max health to use when respawning" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mRespawnHealthFactor = { "mRespawnHealthFactor", nullptr, (EPropertyFlags)0x0020080001010021, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGHealthComponent, mRespawnHealthFactor), METADATA_PARAMS(Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mRespawnHealthFactor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mRespawnHealthFactor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mCurrentHealth_MetaData[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 		{ "ToolTip", "Our current health" },
 	};
 #endif
@@ -1186,14 +1186,14 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mMaxHealth_MetaData[] = {
 		{ "Category", "Health" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 		{ "ToolTip", "Our maximum health" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mMaxHealth = { "mMaxHealth", nullptr, (EPropertyFlags)0x0020080001010021, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGHealthComponent, mMaxHealth), METADATA_PARAMS(Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mMaxHealth_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mMaxHealth_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_mOnAdjustDamage_MetaData[] = {
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 		{ "ToolTip", "Interested listeners for the adjust damage delegates" },
 	};
 #endif
@@ -1203,7 +1203,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_HealDelegate_MetaData[] = {
 		{ "Category", "Events|Health" },
 		{ "DisplayName", "OnHeal" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_HealDelegate = { "HealDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGHealthComponent, HealDelegate), Z_Construct_UDelegateFunction_FactoryGame_HealDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_HealDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_HealDelegate_MetaData)) };
@@ -1211,7 +1211,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_DeathDelegate_MetaData[] = {
 		{ "Category", "Events|Health" },
 		{ "DisplayName", "OnDeath" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 		{ "ToolTip", "SERVER ONLY: Called when we die" },
 	};
 #endif
@@ -1219,21 +1219,21 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_OnTakeRadialDamageDelegate_MetaData[] = {
 		{ "Category", "Events|Health" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_OnTakeRadialDamageDelegate = { "OnTakeRadialDamageDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGHealthComponent, OnTakeRadialDamageDelegate), Z_Construct_UDelegateFunction_Engine_TakeRadialDamageSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_OnTakeRadialDamageDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_OnTakeRadialDamageDelegate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_OnTakePointDamageDelegate_MetaData[] = {
 		{ "Category", "Events|Health" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_OnTakePointDamageDelegate = { "OnTakePointDamageDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGHealthComponent, OnTakePointDamageDelegate), Z_Construct_UDelegateFunction_Engine_TakePointDamageSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_OnTakePointDamageDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_OnTakePointDamageDelegate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_OnTakeAnyDamageDelegate_MetaData[] = {
 		{ "Category", "Events|Health" },
-		{ "ModuleRelativePath", "FGHealthComponent.h" },
+		{ "ModuleRelativePath", "Public/FGHealthComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_OnTakeAnyDamageDelegate = { "OnTakeAnyDamageDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGHealthComponent, OnTakeAnyDamageDelegate), Z_Construct_UDelegateFunction_FactoryGame_TakeAnyDamageDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_OnTakeAnyDamageDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGHealthComponent_Statics::NewProp_OnTakeAnyDamageDelegate_MetaData)) };
@@ -1282,7 +1282,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGHealthComponent, 3684580773);
+	IMPLEMENT_CLASS(UFGHealthComponent, 3981218612);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGHealthComponent>()
 	{
 		return UFGHealthComponent::StaticClass();

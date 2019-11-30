@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGConveyorAttachmentHologram.h"
+#include "FactoryGame/Public/Hologram/FGConveyorAttachmentHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -56,13 +56,13 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorAttachmentHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGConveyorAttachmentHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGConveyorAttachmentHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorAttachmentHologram.h" },
 		{ "ToolTip", "Hologram for conveyor attachments, such as splitters/mergers." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mSnappedConveyor_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGConveyorAttachmentHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorAttachmentHologram.h" },
 		{ "ToolTip", "The conveyor we snapped to." },
 	};
 #endif
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorAttachmentHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnAngle_MetaData[] = {
 		{ "Category", "Conveyor Attachment" },
-		{ "ModuleRelativePath", "Hologram/FGConveyorAttachmentHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorAttachmentHologram.h" },
 		{ "ToolTip", "Used to limit the placement in turns. What's the maximum angle." },
 	};
 #endif
@@ -78,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorAttachmentHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnOffset_MetaData[] = {
 		{ "Category", "Conveyor Attachment" },
-		{ "ModuleRelativePath", "Hologram/FGConveyorAttachmentHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorAttachmentHologram.h" },
 		{ "ToolTip", "Used to limit the placement in turns. What's the maximum offset to check from center to detect the curve." },
 	};
 #endif
@@ -115,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorAttachmentHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorAttachmentHologram, 1014019513);
+	IMPLEMENT_CLASS(AFGConveyorAttachmentHologram, 2226794878);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGConveyorAttachmentHologram>()
 	{
 		return AFGConveyorAttachmentHologram::StaticClass();

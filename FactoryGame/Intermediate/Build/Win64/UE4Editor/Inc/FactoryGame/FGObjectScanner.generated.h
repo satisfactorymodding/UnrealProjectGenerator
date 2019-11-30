@@ -16,7 +16,7 @@ struct FColor;
 #endif
 #define FACTORYGAME_FGObjectScanner_generated_h
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_17_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FScannableDetails_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__RequiredSchematic() { return STRUCT_OFFSET(FScannableDetails, RequiredSchematic); }
@@ -24,7 +24,7 @@ struct FColor;
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FScannableDetails>();
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execSetScannableEntry) \
 	{ \
@@ -76,7 +76,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FScannableDetails>
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSetScannableEntry) \
 	{ \
@@ -128,7 +128,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FScannableDetails>
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_EVENT_PARMS \
 	struct FGObjectScanner_eventPlayBeep_Parms \
 	{ \
 		bool isObjectInRange; \
@@ -139,8 +139,8 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FScannableDetails>
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGObjectScanner(); \
 	friend struct Z_Construct_UClass_AFGObjectScanner_Statics; \
@@ -149,7 +149,7 @@ public: \
 	DECLARE_SERIALIZER(AFGObjectScanner)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGObjectScanner(); \
 	friend struct Z_Construct_UClass_AFGObjectScanner_Statics; \
@@ -158,7 +158,7 @@ public: \
 	DECLARE_SERIALIZER(AFGObjectScanner)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGObjectScanner(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGObjectScanner) \
@@ -171,7 +171,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGObjectScanner(AFGObjectScanner&&); \
@@ -182,7 +182,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGObjectScanner); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGObjectScanner)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mBeepDelayMax() { return STRUCT_OFFSET(AFGObjectScanner, mBeepDelayMax); } \
 	FORCEINLINE static uint32 __PPO__mBeepDelayMin() { return STRUCT_OFFSET(AFGObjectScanner, mBeepDelayMin); } \
 	FORCEINLINE static uint32 __PPO__mDetectionRange() { return STRUCT_OFFSET(AFGObjectScanner, mDetectionRange); } \
@@ -192,37 +192,37 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGObjectScanner); \
 	FORCEINLINE static uint32 __PPO__mShouldBeepEvenIfNoObject() { return STRUCT_OFFSET(AFGObjectScanner, mShouldBeepEvenIfNoObject); }
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_70_PROLOG \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_70_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_INCLASS \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_73_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> FACTORYGAME_API UClass* StaticClass<class AFGObjectScanner>();
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_ScannerLightColor) \
 	{ \
@@ -257,7 +257,7 @@ template<> FACTORYGAME_API UClass* StaticClass<class AFGObjectScanner>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_ScannerLightColor) \
 	{ \
@@ -292,9 +292,9 @@ template<> FACTORYGAME_API UClass* StaticClass<class AFGObjectScanner>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_EVENT_PARMS
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGObjectScannerAttachment(); \
 	friend struct Z_Construct_UClass_AFGObjectScannerAttachment_Statics; \
@@ -303,7 +303,7 @@ public: \
 	DECLARE_SERIALIZER(AFGObjectScannerAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGObjectScannerAttachment(); \
 	friend struct Z_Construct_UClass_AFGObjectScannerAttachment_Statics; \
@@ -312,7 +312,7 @@ public: \
 	DECLARE_SERIALIZER(AFGObjectScannerAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGObjectScannerAttachment(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGObjectScannerAttachment) \
@@ -325,7 +325,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGObjectScannerAttachment() { }; \
 private: \
@@ -338,35 +338,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGObjectScannerAttachment); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGObjectScannerAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mIsBeeping() { return STRUCT_OFFSET(AFGObjectScannerAttachment, mIsBeeping); } \
 	FORCEINLINE static uint32 __PPO__mScannerLightColor() { return STRUCT_OFFSET(AFGObjectScannerAttachment, mScannerLightColor); }
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_216_PROLOG \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_216_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_INCLASS \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h_219_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -374,7 +374,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class AFGObjectScannerAttachment>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_Equipment_FGObjectScanner_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

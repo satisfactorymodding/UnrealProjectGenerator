@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGConveyorBeltHologram.h"
+#include "FactoryGame/Public/Hologram/FGConveyorBeltHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -47,7 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_ConnectionArrowComponentDirection_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Hologram/FGConveyorBeltHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
 		{ "ToolTip", "Create connection arrow component on the client." },
 	};
 #endif
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_SplineData_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Hologram/FGConveyorBeltHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
 		{ "ToolTip", "Update the spline on the client." },
 	};
 #endif
@@ -154,28 +154,28 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGConveyorBeltHologram_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_ConnectionArrowComponentDirection, "OnRep_ConnectionArrowComponentDirection" }, // 3738322276
-		{ &Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_SplineData, "OnRep_SplineData" }, // 3964901632
+		{ &Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_ConnectionArrowComponentDirection, "OnRep_ConnectionArrowComponentDirection" }, // 1492826348
+		{ &Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_SplineData, "OnRep_SplineData" }, // 1127110618
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGConveyorBeltHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGConveyorBeltHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
 		{ "ToolTip", "Hologram for the conveyor belts, contains all the curve bending magic." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionArrowComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGConveyorBeltHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
 		{ "ToolTip", "Arrow to indicate the direction of the conveyor while placing it." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionArrowComponent = { "mConnectionArrowComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorBeltHologram, mConnectionArrowComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionArrowComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionArrowComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionArrowComponentDirection_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGConveyorBeltHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
 		{ "ToolTip", "Used to replicate the direction arrow." },
 	};
 #endif
@@ -184,7 +184,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMaxIncline_MetaData[] = {
 		{ "Category", "Conveyor Belt" },
-		{ "ModuleRelativePath", "Hologram/FGConveyorBeltHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
 		{ "ToolTip", "What is the maximum incline of the conveyor belt (degrees)." },
 	};
 #endif
@@ -192,7 +192,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMaxLength_MetaData[] = {
 		{ "Category", "Conveyor Belt" },
-		{ "ModuleRelativePath", "Hologram/FGConveyorBeltHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
 		{ "ToolTip", "What is the maximum length of one segment." },
 	};
 #endif
@@ -200,7 +200,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mBendRadius_MetaData[] = {
 		{ "Category", "Conveyor Belt" },
-		{ "ModuleRelativePath", "Hologram/FGConveyorBeltHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
 		{ "ToolTip", "What radius will the bends have." },
 	};
 #endif
@@ -208,21 +208,21 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mDefaultConveyorPoleRecipe_MetaData[] = {
 		{ "Category", "Conveyor Belt" },
-		{ "ModuleRelativePath", "Hologram/FGConveyorBeltHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
 		{ "ToolTip", "Class of conveyor pole to place at the end." },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mDefaultConveyorPoleRecipe = { "mDefaultConveyorPoleRecipe", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorBeltHologram, mDefaultConveyorPoleRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mDefaultConveyorPoleRecipe_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mDefaultConveyorPoleRecipe_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mUpgradedConveyorBelt_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGConveyorBeltHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
 		{ "ToolTip", "If we upgrade another conveyor belt this is the belt we replaces." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mUpgradedConveyorBelt = { "mUpgradedConveyorBelt", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorBeltHologram, mUpgradedConveyorBelt), Z_Construct_UClass_AFGBuildableConveyorBelt_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mUpgradedConveyorBelt_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mUpgradedConveyorBelt_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConveyorPoles_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGConveyorBeltHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
 		{ "ToolTip", "The poles we may place automatically." },
 	};
 #endif
@@ -230,7 +230,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGConveyorBeltHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
 		{ "ToolTip", "The connections we've made." },
 	};
 #endif
@@ -238,14 +238,14 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionComponents_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGConveyorBeltHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
 		{ "ToolTip", "The two connection components for this conveyor." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionComponents = { "mConnectionComponents", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mConnectionComponents, AFGConveyorBeltHologram), STRUCT_OFFSET(AFGConveyorBeltHologram, mConnectionComponents), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionComponents_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineData_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGConveyorBeltHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
 		{ "ToolTip", "This is the data needed to create the spline component (local space)." },
 	};
 #endif
@@ -254,7 +254,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGConveyorBeltHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
 		{ "ToolTip", "The spline component we're placing." },
 	};
 #endif
@@ -302,7 +302,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorBeltHologram, 1609851049);
+	IMPLEMENT_CLASS(AFGConveyorBeltHologram, 3249607118);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGConveyorBeltHologram>()
 	{
 		return AFGConveyorBeltHologram::StaticClass();

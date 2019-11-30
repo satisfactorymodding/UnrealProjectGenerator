@@ -16,14 +16,14 @@ struct FInventoryStack;
 #endif
 #define FACTORYGAME_FGBuildGunDismantle_generated_h
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_17_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FDismantleRefunds_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FDismantleRefunds>();
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_34_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_34_DELEGATE \
 struct _Script_FactoryGame_eventOnMultiDismantleStateChanged_Parms \
 { \
 	bool newState; \
@@ -36,14 +36,14 @@ static inline void FOnMultiDismantleStateChanged_DelegateWrapper(const FMulticas
 }
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_33_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_33_DELEGATE \
 static inline void FOnPendingDismantleActorListChanged_DelegateWrapper(const FMulticastScriptDelegate& OnPendingDismantleActorListChanged) \
 { \
 	OnPendingDismantleActorListChanged.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_32_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_32_DELEGATE \
 struct _Script_FactoryGame_eventOnDismantleRefundsChanged_Parms \
 { \
 	UFGBuildGunStateDismantle* dismantleGun; \
@@ -56,7 +56,7 @@ static inline void FOnDismantleRefundsChanged_DelegateWrapper(const FMulticastSc
 }
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_RPC_WRAPPERS \
 	virtual bool Server_PeekAtDismantleRefund_Validate(TArray<AActor*> const& ); \
 	virtual void Server_PeekAtDismantleRefund_Implementation(TArray<AActor*> const& selectedActors); \
 	virtual bool Server_DismantleActors_Validate(TArray<AActor*> const& ); \
@@ -181,7 +181,7 @@ static inline void FOnDismantleRefundsChanged_DelegateWrapper(const FMulticastSc
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool Server_PeekAtDismantleRefund_Validate(TArray<AActor*> const& ); \
 	virtual void Server_PeekAtDismantleRefund_Implementation(TArray<AActor*> const& selectedActors); \
 	virtual bool Server_DismantleActors_Validate(TArray<AActor*> const& ); \
@@ -306,7 +306,7 @@ static inline void FOnDismantleRefundsChanged_DelegateWrapper(const FMulticastSc
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_EVENT_PARMS \
 	struct FGBuildGunStateDismantle_eventServer_DismantleActor_Parms \
 	{ \
 		AActor* actorToDismantle; \
@@ -321,8 +321,8 @@ static inline void FOnDismantleRefundsChanged_DelegateWrapper(const FMulticastSc
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGBuildGunStateDismantle(); \
 	friend struct Z_Construct_UClass_UFGBuildGunStateDismantle_Statics; \
@@ -331,7 +331,7 @@ public: \
 	DECLARE_SERIALIZER(UFGBuildGunStateDismantle)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGBuildGunStateDismantle(); \
 	friend struct Z_Construct_UClass_UFGBuildGunStateDismantle_Statics; \
@@ -340,7 +340,7 @@ public: \
 	DECLARE_SERIALIZER(UFGBuildGunStateDismantle)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGBuildGunStateDismantle(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGBuildGunStateDismantle) \
@@ -353,7 +353,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGBuildGunStateDismantle(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -366,36 +366,36 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGBuildGunStateDismantle); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGBuildGunStateDismantle)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mCurrentlySelectedActor() { return STRUCT_OFFSET(UFGBuildGunStateDismantle, mCurrentlySelectedActor); } \
 	FORCEINLINE static uint32 __PPO__mPendingDismantleActors() { return STRUCT_OFFSET(UFGBuildGunStateDismantle, mPendingDismantleActors); } \
 	FORCEINLINE static uint32 __PPO__mPeekDismantleRefund() { return STRUCT_OFFSET(UFGBuildGunStateDismantle, mPeekDismantleRefund); }
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_40_PROLOG \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_40_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_INCLASS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -403,7 +403,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class UFGBuildGunStateDismantle>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

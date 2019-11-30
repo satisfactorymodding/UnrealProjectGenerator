@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGWaterVolume.h"
+#include "FactoryGame/Public/FGWaterVolume.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGWaterVolume.h" },
+		{ "ModuleRelativePath", "Public/FGWaterVolume.h" },
 		{ "ToolTip", "Called whenever a primitive component enters the water, used to create effects on the water surface" },
 	};
 #endif
@@ -169,7 +169,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGWaterVolume.h" },
+		{ "ModuleRelativePath", "Public/FGWaterVolume.h" },
 		{ "ToolTip", "Called whenever a primitive component exits the water, used to create effects on the water surface" },
 	};
 #endif
@@ -224,21 +224,21 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGWaterVolume_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered, "OnPrimitiveComponentEntered" }, // 1683102450
-		{ &Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited, "OnPrimitiveComponentExited" }, // 666422828
+		{ &Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered, "OnPrimitiveComponentEntered" }, // 3809310069
+		{ &Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited, "OnPrimitiveComponentExited" }, // 3051171573
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWaterVolume_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Collision Brush Physics Object Display Rendering Physics Input Blueprint" },
 		{ "IncludePath", "FGWaterVolume.h" },
-		{ "ModuleRelativePath", "FGWaterVolume.h" },
+		{ "ModuleRelativePath", "Public/FGWaterVolume.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
 #if WITH_EDITORONLY_DATA
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAssociatedPostProcessVolume_MetaData[] = {
-		{ "ModuleRelativePath", "FGWaterVolume.h" },
+		{ "ModuleRelativePath", "Public/FGWaterVolume.h" },
 		{ "ToolTip", "Old deprecated data that isn't used anymore, but we want to be sure that the post process volumes will be deleted" },
 	};
 #endif
@@ -247,7 +247,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mPostProcessSettings_MetaData[] = {
 		{ "Category", "PostProcess" },
-		{ "ModuleRelativePath", "FGWaterVolume.h" },
+		{ "ModuleRelativePath", "Public/FGWaterVolume.h" },
 		{ "ToolTip", "A template of settings for our post process settings" },
 	};
 #endif
@@ -255,7 +255,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mWaterAudio_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGWaterVolume.h" },
+		{ "ModuleRelativePath", "Public/FGWaterVolume.h" },
 		{ "ToolTip", "Audio settings for the this water volume" },
 	};
 #endif
@@ -263,7 +263,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAreaClass_MetaData[] = {
 		{ "Category", "Navigation" },
-		{ "ModuleRelativePath", "FGWaterVolume.h" },
+		{ "ModuleRelativePath", "Public/FGWaterVolume.h" },
 		{ "ToolTip", "Specify what typ of nav area blocker this is ( defaults to null )" },
 	};
 #endif
@@ -308,7 +308,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWaterVolume, 1613847027);
+	IMPLEMENT_CLASS(AFGWaterVolume, 198979901);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWaterVolume>()
 	{
 		return AFGWaterVolume::StaticClass();

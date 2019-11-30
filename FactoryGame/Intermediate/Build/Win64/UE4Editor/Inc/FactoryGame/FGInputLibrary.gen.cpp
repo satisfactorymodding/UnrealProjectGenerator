@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGInputLibrary.h"
+#include "FactoryGame/Public/FGInputLibrary.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -89,7 +89,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGKeyMapping_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FFGKeyMapping_Statics::NewStructOps()
@@ -99,7 +99,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGKeyMapping_Statics::NewProp_IsAxisMapping_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FFGKeyMapping_Statics::NewProp_IsAxisMapping_SetBit(void* Obj)
@@ -110,14 +110,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGKeyMapping_Statics::NewProp_AxisKeyMapping_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FFGKeyMapping_Statics::NewProp_AxisKeyMapping = { "AxisKeyMapping", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFGKeyMapping, AxisKeyMapping), Z_Construct_UScriptStruct_FInputAxisKeyMapping, METADATA_PARAMS(Z_Construct_UScriptStruct_FFGKeyMapping_Statics::NewProp_AxisKeyMapping_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGKeyMapping_Statics::NewProp_AxisKeyMapping_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGKeyMapping_Statics::NewProp_ActionKeyMapping_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FFGKeyMapping_Statics::NewProp_ActionKeyMapping = { "ActionKeyMapping", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFGKeyMapping, ActionKeyMapping), Z_Construct_UScriptStruct_FInputActionKeyMapping, METADATA_PARAMS(Z_Construct_UScriptStruct_FFGKeyMapping_Statics::NewProp_ActionKeyMapping_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGKeyMapping_Statics::NewProp_ActionKeyMapping_MetaData)) };
@@ -154,7 +154,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGKeyMapping_Hash() { return 2679544554U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGKeyMapping_Hash() { return 2394555839U; }
 	void UFGInputLibrary::StaticRegisterNativesUFGInputLibrary()
 	{
 		UClass* Class = UFGInputLibrary::StaticClass();
@@ -230,7 +230,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_CreateFGKeyMappingStruct_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Create new FG key mapping struct" },
 	};
 #endif
@@ -282,7 +282,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_FormatStringWithKeyNames_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
 		{ "CPP_Default_abbreviateKeyNames", "true" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Replaces action names in the provided text with the corresponding key e.g. ({PrimaryFire} = LMB)" },
 	};
 #endif
@@ -320,7 +320,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_GetAbbreviatedKeyName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Returns a shortened name for a key" },
 	};
 #endif
@@ -380,7 +380,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_GetKeyForAxis_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Returns the FKey for the axis we specify" },
 	};
 #endif
@@ -431,7 +431,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_GetKeyMappingForAction_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Returns the action key mapping for the action we specify" },
 	};
 #endif
@@ -492,7 +492,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_GetKeyNameForAction_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
 		{ "CPP_Default_abbreviateKeyName", "true" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Returns readable name for an action" },
 	};
 #endif
@@ -552,7 +552,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_GetKeyNameForAxis_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Returns readable name for an axis" },
 	};
 #endif
@@ -602,7 +602,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_GetOverlappingKeyMapping_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Returns the key mapping that uses the same relevant keys" },
 	};
 #endif
@@ -665,7 +665,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_IsActionAndAxisMappingUsingSameKeys_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Check if an action and axis mapping is using the same relevant keys" },
 	};
 #endif
@@ -720,7 +720,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_IsActionKeyMappingAvailable_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Check if a action key mapping is available" },
 	};
 #endif
@@ -783,7 +783,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_IsActionMappingUsingSameKeys_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Check if action mappings is using the same relevant keys" },
 	};
 #endif
@@ -838,7 +838,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_IsAxisKeyMappingAvailable_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Check if a axis key mapping is available" },
 	};
 #endif
@@ -901,7 +901,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_IsAxisMappingUsingSameKeys_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Check if axis mappings is using the same relevant keys" },
 	};
 #endif
@@ -956,7 +956,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_IsFGKeyMappingAvailable_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Check if a FG key mapping is available" },
 	};
 #endif
@@ -999,7 +999,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_IsKeyMappingRelevant_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Check if a key mapping is relevant for rebinding" },
 	};
 #endif
@@ -1045,7 +1045,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_NullKeyMappingWithSameKeyCombo_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Find and set overlapping key mapping to none" },
 	};
 #endif
@@ -1100,7 +1100,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_RebindKey_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Rebind a key mapping" },
 	};
 #endif
@@ -1134,7 +1134,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInputLibrary_UpdateInputMappings_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 		{ "ToolTip", "Update the provided playercontrollers input mappings" },
 	};
 #endif
@@ -1167,29 +1167,29 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGInputLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGInputLibrary_CreateFGKeyMappingStruct, "CreateFGKeyMappingStruct" }, // 1152966356
-		{ &Z_Construct_UFunction_UFGInputLibrary_FormatStringWithKeyNames, "FormatStringWithKeyNames" }, // 3312714991
-		{ &Z_Construct_UFunction_UFGInputLibrary_GetAbbreviatedKeyName, "GetAbbreviatedKeyName" }, // 4129443734
-		{ &Z_Construct_UFunction_UFGInputLibrary_GetKeyForAxis, "GetKeyForAxis" }, // 2337959566
-		{ &Z_Construct_UFunction_UFGInputLibrary_GetKeyMappingForAction, "GetKeyMappingForAction" }, // 4131364993
-		{ &Z_Construct_UFunction_UFGInputLibrary_GetKeyNameForAction, "GetKeyNameForAction" }, // 4082350255
-		{ &Z_Construct_UFunction_UFGInputLibrary_GetKeyNameForAxis, "GetKeyNameForAxis" }, // 2705568392
-		{ &Z_Construct_UFunction_UFGInputLibrary_GetOverlappingKeyMapping, "GetOverlappingKeyMapping" }, // 1083959602
-		{ &Z_Construct_UFunction_UFGInputLibrary_IsActionAndAxisMappingUsingSameKeys, "IsActionAndAxisMappingUsingSameKeys" }, // 3043371663
-		{ &Z_Construct_UFunction_UFGInputLibrary_IsActionKeyMappingAvailable, "IsActionKeyMappingAvailable" }, // 3700382212
-		{ &Z_Construct_UFunction_UFGInputLibrary_IsActionMappingUsingSameKeys, "IsActionMappingUsingSameKeys" }, // 2013055522
-		{ &Z_Construct_UFunction_UFGInputLibrary_IsAxisKeyMappingAvailable, "IsAxisKeyMappingAvailable" }, // 2575164846
-		{ &Z_Construct_UFunction_UFGInputLibrary_IsAxisMappingUsingSameKeys, "IsAxisMappingUsingSameKeys" }, // 1016512349
-		{ &Z_Construct_UFunction_UFGInputLibrary_IsFGKeyMappingAvailable, "IsFGKeyMappingAvailable" }, // 598303184
-		{ &Z_Construct_UFunction_UFGInputLibrary_IsKeyMappingRelevant, "IsKeyMappingRelevant" }, // 3712636886
-		{ &Z_Construct_UFunction_UFGInputLibrary_NullKeyMappingWithSameKeyCombo, "NullKeyMappingWithSameKeyCombo" }, // 2872339047
-		{ &Z_Construct_UFunction_UFGInputLibrary_RebindKey, "RebindKey" }, // 2071205268
-		{ &Z_Construct_UFunction_UFGInputLibrary_UpdateInputMappings, "UpdateInputMappings" }, // 1118356012
+		{ &Z_Construct_UFunction_UFGInputLibrary_CreateFGKeyMappingStruct, "CreateFGKeyMappingStruct" }, // 1860508701
+		{ &Z_Construct_UFunction_UFGInputLibrary_FormatStringWithKeyNames, "FormatStringWithKeyNames" }, // 1153507046
+		{ &Z_Construct_UFunction_UFGInputLibrary_GetAbbreviatedKeyName, "GetAbbreviatedKeyName" }, // 2763457349
+		{ &Z_Construct_UFunction_UFGInputLibrary_GetKeyForAxis, "GetKeyForAxis" }, // 1824883551
+		{ &Z_Construct_UFunction_UFGInputLibrary_GetKeyMappingForAction, "GetKeyMappingForAction" }, // 1171948004
+		{ &Z_Construct_UFunction_UFGInputLibrary_GetKeyNameForAction, "GetKeyNameForAction" }, // 1720444459
+		{ &Z_Construct_UFunction_UFGInputLibrary_GetKeyNameForAxis, "GetKeyNameForAxis" }, // 146805550
+		{ &Z_Construct_UFunction_UFGInputLibrary_GetOverlappingKeyMapping, "GetOverlappingKeyMapping" }, // 3453518024
+		{ &Z_Construct_UFunction_UFGInputLibrary_IsActionAndAxisMappingUsingSameKeys, "IsActionAndAxisMappingUsingSameKeys" }, // 2560286117
+		{ &Z_Construct_UFunction_UFGInputLibrary_IsActionKeyMappingAvailable, "IsActionKeyMappingAvailable" }, // 4132815483
+		{ &Z_Construct_UFunction_UFGInputLibrary_IsActionMappingUsingSameKeys, "IsActionMappingUsingSameKeys" }, // 3672958907
+		{ &Z_Construct_UFunction_UFGInputLibrary_IsAxisKeyMappingAvailable, "IsAxisKeyMappingAvailable" }, // 675777372
+		{ &Z_Construct_UFunction_UFGInputLibrary_IsAxisMappingUsingSameKeys, "IsAxisMappingUsingSameKeys" }, // 2806331324
+		{ &Z_Construct_UFunction_UFGInputLibrary_IsFGKeyMappingAvailable, "IsFGKeyMappingAvailable" }, // 2844324820
+		{ &Z_Construct_UFunction_UFGInputLibrary_IsKeyMappingRelevant, "IsKeyMappingRelevant" }, // 4059176781
+		{ &Z_Construct_UFunction_UFGInputLibrary_NullKeyMappingWithSameKeyCombo, "NullKeyMappingWithSameKeyCombo" }, // 2113863764
+		{ &Z_Construct_UFunction_UFGInputLibrary_RebindKey, "RebindKey" }, // 1457520720
+		{ &Z_Construct_UFunction_UFGInputLibrary_UpdateInputMappings, "UpdateInputMappings" }, // 2069823846
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInputLibrary_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGInputLibrary.h" },
-		{ "ModuleRelativePath", "FGInputLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInputLibrary.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGInputLibrary_Statics::StaticCppClassTypeInfo = {
@@ -1219,7 +1219,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInputLibrary, 3078582751);
+	IMPLEMENT_CLASS(UFGInputLibrary, 594016783);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGInputLibrary>()
 	{
 		return UFGInputLibrary::StaticClass();

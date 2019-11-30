@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGRadioactivitySubsystem.h"
+#include "FactoryGame/Public/FGRadioactivitySubsystem.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -68,7 +68,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSetEmitterID
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSetEmitterID_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRadioactivitySubsystem.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FSetEmitterID_Statics::NewStructOps()
@@ -78,13 +78,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSetEmitterID
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSetEmitterID_Statics::NewProp_AttachRoot_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRadioactivitySubsystem.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSetEmitterID_Statics::NewProp_AttachRoot = { "AttachRoot", nullptr, (EPropertyFlags)0x0010000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSetEmitterID, AttachRoot), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSetEmitterID_Statics::NewProp_AttachRoot_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSetEmitterID_Statics::NewProp_AttachRoot_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSetEmitterID_Statics::NewProp_Owner_MetaData[] = {
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRadioactivitySubsystem.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSetEmitterID_Statics::NewProp_Owner = { "Owner", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSetEmitterID, Owner), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSetEmitterID_Statics::NewProp_Owner_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSetEmitterID_Statics::NewProp_Owner_MetaData)) };
@@ -120,7 +120,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSetEmitterID
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSetEmitterID_Hash() { return 893732978U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSetEmitterID_Hash() { return 1592702347U; }
 class UScriptStruct* FRemoveEmitterID::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -158,7 +158,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemoveEmitterID
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRemoveEmitterID_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRadioactivitySubsystem.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FRemoveEmitterID_Statics::NewStructOps()
@@ -167,7 +167,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemoveEmitterID
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRemoveEmitterID_Statics::NewProp_Owner_MetaData[] = {
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRadioactivitySubsystem.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FRemoveEmitterID_Statics::NewProp_Owner = { "Owner", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FRemoveEmitterID, Owner), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FRemoveEmitterID_Statics::NewProp_Owner_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemoveEmitterID_Statics::NewProp_Owner_MetaData)) };
@@ -202,7 +202,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemoveEmitterID
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRemoveEmitterID_Hash() { return 865671370U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRemoveEmitterID_Hash() { return 2807449640U; }
 class UScriptStruct* FRadioactiveSource::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -240,7 +240,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRadioactiveSource
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRadioactiveSource_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRadioactivitySubsystem.h" },
 		{ "ToolTip", "Description of a radioactive source." },
 	};
 #endif
@@ -251,7 +251,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRadioactiveSource
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRadioactiveSource_Statics::NewProp_AttachRoot_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRadioactivitySubsystem.h" },
 		{ "ToolTip", "Where the emitters are attached." },
 	};
 #endif
@@ -287,7 +287,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRadioactiveSource
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRadioactiveSource_Hash() { return 3721334676U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRadioactiveSource_Hash() { return 1857438793U; }
 	void AFGRadioactivitySubsystem::StaticRegisterNativesAFGRadioactivitySubsystem()
 	{
 		UClass* Class = AFGRadioactivitySubsystem::StaticClass();
@@ -324,7 +324,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRadioactiveSource
 		{ "Category", "Radioactivity" },
 		{ "DefaultToSelf", "worldContext" },
 		{ "DisplayName", "GetRadioactivitySubsystem" },
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRadioactivitySubsystem.h" },
 		{ "ToolTip", "Get the radioactivity subsystem from a world context, this should always return something unless you call it really early." },
 	};
 #endif
@@ -357,7 +357,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRadioactiveSource
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRadioactivitySubsystem_OnActorDestroyed_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRadioactivitySubsystem.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRadioactivitySubsystem_OnActorDestroyed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRadioactivitySubsystem, nullptr, "OnActorDestroyed", sizeof(FGRadioactivitySubsystem_eventOnActorDestroyed_Parms), Z_Construct_UFunction_AFGRadioactivitySubsystem_OnActorDestroyed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRadioactivitySubsystem_OnActorDestroyed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRadioactivitySubsystem_OnActorDestroyed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRadioactivitySubsystem_OnActorDestroyed_Statics::Function_MetaDataParams)) };
@@ -389,7 +389,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRadioactiveSource
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRadioactivitySubsystem_OnActorSpawned_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRadioactivitySubsystem.h" },
 		{ "ToolTip", "End AActor interface" },
 	};
 #endif
@@ -434,9 +434,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRadioactiveSource
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGRadioactivitySubsystem_Get, "Get" }, // 2294389502
-		{ &Z_Construct_UFunction_AFGRadioactivitySubsystem_OnActorDestroyed, "OnActorDestroyed" }, // 2915440111
-		{ &Z_Construct_UFunction_AFGRadioactivitySubsystem_OnActorSpawned, "OnActorSpawned" }, // 140662956
+		{ &Z_Construct_UFunction_AFGRadioactivitySubsystem_Get, "Get" }, // 2403755356
+		{ &Z_Construct_UFunction_AFGRadioactivitySubsystem_OnActorDestroyed, "OnActorDestroyed" }, // 1526789012
+		{ &Z_Construct_UFunction_AFGRadioactivitySubsystem_OnActorSpawned, "OnActorSpawned" }, // 198771103
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::Class_MetaDataParams[] = {
@@ -444,14 +444,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRadioactiveSource
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick Actor Input Rendering Actor Tick Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGRadioactivitySubsystem.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRadioactivitySubsystem.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 		{ "ToolTip", "Actor for handling the radioactive items." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mAffectedActors_MetaData[] = {
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRadioactivitySubsystem.h" },
 		{ "ToolTip", "All actors that can take damage from radiation." },
 	};
 #endif
@@ -459,7 +459,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRadioactiveSource
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mAffectedActors_Inner = { "mAffectedActors", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mSources_MetaData[] = {
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGRadioactivitySubsystem.h" },
 		{ "ToolTip", "All the radioactive sources." },
 	};
 #endif
@@ -500,7 +500,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRadioactiveSource
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRadioactivitySubsystem, 2081683544);
+	IMPLEMENT_CLASS(AFGRadioactivitySubsystem, 3639880953);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRadioactivitySubsystem>()
 	{
 		return AFGRadioactivitySubsystem::StaticClass();

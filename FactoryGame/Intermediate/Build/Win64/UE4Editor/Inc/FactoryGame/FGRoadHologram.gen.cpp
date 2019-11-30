@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGRoadHologram.h"
+#include "FactoryGame/Public/Hologram/FGRoadHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -52,14 +52,14 @@ void EmptyLinkFunctionForGeneratedCodeFGRoadHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRoadHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGRoadHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGRoadHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRoadHologram.h" },
 		{ "ToolTip", "Hologram for spline roads." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGRoadHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRoadHologram.h" },
 		{ "ToolTip", "The connection we snapped to." },
 	};
 #endif
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRoadHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mConnectionComponents_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGRoadHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRoadHologram.h" },
 		{ "ToolTip", "The connections we have." },
 	};
 #endif
@@ -103,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRoadHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRoadHologram, 3591167036);
+	IMPLEMENT_CLASS(AFGRoadHologram, 2785824874);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRoadHologram>()
 	{
 		return AFGRoadHologram::StaticClass();

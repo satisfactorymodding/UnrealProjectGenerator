@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGTradingPostHologram.h"
+#include "FactoryGame/Public/Hologram/FGTradingPostHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -87,13 +87,13 @@ void EmptyLinkFunctionForGeneratedCodeFGTradingPostHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTradingPostHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGTradingPostHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGTradingPostHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGTradingPostHologram.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mWorkBenchLocation_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGTradingPostHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGTradingPostHologram.h" },
 		{ "ToolTip", "component matching the location where the work bench is placed" },
 	};
 #endif
@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTradingPostHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mHubTerminalLocation_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGTradingPostHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGTradingPostHologram.h" },
 		{ "ToolTip", "component matching the location where the hub terminal is placed" },
 	};
 #endif
@@ -109,7 +109,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTradingPostHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mMAMLocation_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGTradingPostHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGTradingPostHologram.h" },
 		{ "ToolTip", "component matching the location where the mam is placed" },
 	};
 #endif
@@ -117,7 +117,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTradingPostHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mStorageLocation_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGTradingPostHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGTradingPostHologram.h" },
 		{ "ToolTip", "component matching the location where the storage is placed" },
 	};
 #endif
@@ -125,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTradingPostHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mGeneratorLocations_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGTradingPostHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGTradingPostHologram.h" },
 		{ "ToolTip", "Array of components matching the location where generators are placed" },
 	};
 #endif
@@ -133,35 +133,35 @@ void EmptyLinkFunctionForGeneratedCodeFGTradingPostHologram() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mGeneratorLocations_Inner = { "mGeneratorLocations", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mWorkBenchHologram_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGTradingPostHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGTradingPostHologram.h" },
 		{ "ToolTip", "The work bench holograms" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mWorkBenchHologram = { "mWorkBenchHologram", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTradingPostHologram, mWorkBenchHologram), Z_Construct_UClass_AFGBuildableHologram_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mWorkBenchHologram_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mWorkBenchHologram_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mHubTerminalHologram_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGTradingPostHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGTradingPostHologram.h" },
 		{ "ToolTip", "The hub terminal holograms" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mHubTerminalHologram = { "mHubTerminalHologram", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTradingPostHologram, mHubTerminalHologram), Z_Construct_UClass_AFGBuildableHologram_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mHubTerminalHologram_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mHubTerminalHologram_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mMAMHologram_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGTradingPostHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGTradingPostHologram.h" },
 		{ "ToolTip", "The mam hologram" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mMAMHologram = { "mMAMHologram", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTradingPostHologram, mMAMHologram), Z_Construct_UClass_AFGBuildableHologram_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mMAMHologram_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mMAMHologram_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mStorageHologram_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGTradingPostHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGTradingPostHologram.h" },
 		{ "ToolTip", "The storage hologram" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mStorageHologram = { "mStorageHologram", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTradingPostHologram, mStorageHologram), Z_Construct_UClass_AFGBuildableHologram_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mStorageHologram_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mStorageHologram_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTradingPostHologram_Statics::NewProp_mGeneratorHolograms_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGTradingPostHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGTradingPostHologram.h" },
 		{ "ToolTip", "The generator holograms" },
 	};
 #endif
@@ -206,7 +206,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTradingPostHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGTradingPostHologram, 127027526);
+	IMPLEMENT_CLASS(AFGTradingPostHologram, 2175153443);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGTradingPostHologram>()
 	{
 		return AFGTradingPostHologram::StaticClass();

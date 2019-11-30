@@ -17,21 +17,21 @@ class AFGGamePhaseManager;
 #endif
 #define FACTORYGAME_FGGamePhaseManager_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_70_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_70_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPhaseCost_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FPhaseCost>();
 
-#define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_37_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_37_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPhaseTierInfo_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FPhaseTierInfo>();
 
-#define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_87_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_87_DELEGATE \
 struct _Script_FactoryGame_eventOnGamePhaseUpdated_Parms \
 { \
 	TEnumAsByte<EGamePhase> gamePhase; \
@@ -44,7 +44,7 @@ static inline void FOnGamePhaseUpdated_DelegateWrapper(const FMulticastScriptDel
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_GamePhase) \
 	{ \
@@ -138,7 +138,7 @@ static inline void FOnGamePhaseUpdated_DelegateWrapper(const FMulticastScriptDel
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_GamePhase) \
 	{ \
@@ -232,7 +232,7 @@ static inline void FOnGamePhaseUpdated_DelegateWrapper(const FMulticastScriptDel
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGGamePhaseManager(); \
 	friend struct Z_Construct_UClass_AFGGamePhaseManager_Statics; \
@@ -242,7 +242,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGGamePhaseManager*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGGamePhaseManager(); \
 	friend struct Z_Construct_UClass_AFGGamePhaseManager_Statics; \
@@ -252,7 +252,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGGamePhaseManager*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGGamePhaseManager(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGGamePhaseManager) \
@@ -265,7 +265,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGGamePhaseManager(AFGGamePhaseManager&&); \
@@ -276,31 +276,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGamePhaseManager); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGGamePhaseManager)
 
 
-#define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mGamePhase() { return STRUCT_OFFSET(AFGGamePhaseManager, mGamePhase); } \
 	FORCEINLINE static uint32 __PPO__mGamePhaseTierInfo() { return STRUCT_OFFSET(AFGGamePhaseManager, mGamePhaseTierInfo); } \
 	FORCEINLINE static uint32 __PPO__mGamePhaseCosts() { return STRUCT_OFFSET(AFGGamePhaseManager, mGamePhaseCosts); }
 
 
-#define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_89_PROLOG
-#define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_89_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_INCLASS \
-	FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_92_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h_92_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -308,7 +308,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class AFGGamePhaseManager>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGGamePhaseManager_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGGamePhaseManager_h
 
 
 #define FOREACH_ENUM_EGAMEPHASE(op) \

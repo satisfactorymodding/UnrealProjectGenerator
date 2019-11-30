@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSubsystem.h"
+#include "FactoryGame/Public/FGSubsystem.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystem() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSubsystem_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Rendering Actor Tick Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGSubsystem.h" },
-		{ "ModuleRelativePath", "FGSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGSubsystem.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 		{ "ToolTip", "Base for all subsystems we use in the game." },
 	};
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSubsystem, 2300369995);
+	IMPLEMENT_CLASS(AFGSubsystem, 2105881139);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSubsystem>()
 	{
 		return AFGSubsystem::StaticClass();

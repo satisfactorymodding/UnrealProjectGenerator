@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGWeaponProjectileFire.h"
+#include "FactoryGame/Public/Equipment/FGWeaponProjectileFire.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -102,7 +102,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGWeaponProjectileFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponProjectileFire.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FProjectileData_Statics::NewStructOps()
@@ -112,7 +112,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageTypeExplode_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponProjectileFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponProjectileFire.h" },
 		{ "ToolTip", "type of damage used for detonation" },
 	};
 #endif
@@ -120,7 +120,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageType_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponProjectileFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponProjectileFire.h" },
 		{ "ToolTip", "type of damage used for impact damage" },
 	};
 #endif
@@ -128,7 +128,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplodeAtEndOfLife_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponProjectileFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponProjectileFire.h" },
 		{ "ToolTip", "Should the projectile explode when it dies of lifespan?" },
 	};
 #endif
@@ -140,7 +140,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_CanTriggerExplodeBySameClass_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponProjectileFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponProjectileFire.h" },
 		{ "ToolTip", "Indicates if we should explode if we are taking damage from same actor class as ourselves" },
 	};
 #endif
@@ -152,7 +152,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ShouldExplodeOnImpact_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponProjectileFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponProjectileFire.h" },
 		{ "ToolTip", "If we impact something, should this projectile explode so that it deals radius damage?" },
 	};
 #endif
@@ -164,7 +164,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ImpactDamage_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponProjectileFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponProjectileFire.h" },
 		{ "ToolTip", "Damage dealt to actor that get hit or impacted by this projectile" },
 	};
 #endif
@@ -172,7 +172,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplosionRadius_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponProjectileFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponProjectileFire.h" },
 		{ "ToolTip", "radius of damage" },
 	};
 #endif
@@ -180,7 +180,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplosionDamage_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponProjectileFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponProjectileFire.h" },
 		{ "ToolTip", "damage at impact point" },
 	};
 #endif
@@ -188,7 +188,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileStickSpan_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponProjectileFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponProjectileFire.h" },
 		{ "ToolTip", "How long the projectile will live after it has gotten stuck to something" },
 	};
 #endif
@@ -196,7 +196,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileLifeSpan_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponProjectileFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponProjectileFire.h" },
 		{ "ToolTip", "life time" },
 	};
 #endif
@@ -204,7 +204,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileClass_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponProjectileFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponProjectileFire.h" },
 		{ "ToolTip", "projectile class" },
 	};
 #endif
@@ -250,7 +250,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FProjectileData_Hash() { return 2590313576U; }
+	uint32 Get_Z_Construct_UScriptStruct_FProjectileData_Hash() { return 3190874452U; }
 	void AFGWeaponProjectileFire::StaticRegisterNativesAFGWeaponProjectileFire()
 	{
 	}
@@ -279,14 +279,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeaponProjectileFire_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGWeaponProjectileFire.h" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponProjectileFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponProjectileFire.h" },
 		{ "ToolTip", "Weapon that fires client side projectiles." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeaponProjectileFire_Statics::NewProp_mProjectileData_MetaData[] = {
 		{ "Category", "Weapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeaponProjectileFire.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeaponProjectileFire.h" },
 		{ "ToolTip", "weapon config" },
 	};
 #endif
@@ -321,7 +321,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWeaponProjectileFire, 2649348448);
+	IMPLEMENT_CLASS(AFGWeaponProjectileFire, 1735807442);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWeaponProjectileFire>()
 	{
 		return AFGWeaponProjectileFire::StaticClass();

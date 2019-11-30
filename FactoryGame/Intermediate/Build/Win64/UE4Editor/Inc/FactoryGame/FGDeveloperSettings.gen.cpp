@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGDeveloperSettings.h"
+#include "FactoryGame/Public/FGDeveloperSettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -84,62 +84,62 @@ void EmptyLinkFunctionForGeneratedCodeFGDeveloperSettings() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDeveloperSettings_Statics::Class_MetaDataParams[] = {
 		{ "DisplayName", "Satisfactory Developer Settings" },
 		{ "IncludePath", "FGDeveloperSettings.h" },
-		{ "ModuleRelativePath", "FGDeveloperSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDeveloperSettings.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockArmEquipmentClass_MetaData[] = {
 		{ "Category", "Unlock Classes For Migrating To New Unlock System" },
-		{ "ModuleRelativePath", "FGDeveloperSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDeveloperSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockArmEquipmentClass = { "mUnlockArmEquipmentClass", nullptr, (EPropertyFlags)0x0014000000004001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDeveloperSettings, mUnlockArmEquipmentClass), Z_Construct_UClass_UFGUnlockArmEquipmentSlot_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockArmEquipmentClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockArmEquipmentClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockInvetorySlotClass_MetaData[] = {
 		{ "Category", "Unlock Classes For Migrating To New Unlock System" },
-		{ "ModuleRelativePath", "FGDeveloperSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDeveloperSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockInvetorySlotClass = { "mUnlockInvetorySlotClass", nullptr, (EPropertyFlags)0x0014000000004001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDeveloperSettings, mUnlockInvetorySlotClass), Z_Construct_UClass_UFGUnlockInventorySlot_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockInvetorySlotClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockInvetorySlotClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockBuildOverclockClass_MetaData[] = {
 		{ "Category", "Unlock Classes For Migrating To New Unlock System" },
-		{ "ModuleRelativePath", "FGDeveloperSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDeveloperSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockBuildOverclockClass = { "mUnlockBuildOverclockClass", nullptr, (EPropertyFlags)0x0014000000004001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDeveloperSettings, mUnlockBuildOverclockClass), Z_Construct_UClass_UFGUnlockBuildOverclock_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockBuildOverclockClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockBuildOverclockClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockBuildEfficiencyClass_MetaData[] = {
 		{ "Category", "Unlock Classes For Migrating To New Unlock System" },
-		{ "ModuleRelativePath", "FGDeveloperSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDeveloperSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockBuildEfficiencyClass = { "mUnlockBuildEfficiencyClass", nullptr, (EPropertyFlags)0x0014000000004001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDeveloperSettings, mUnlockBuildEfficiencyClass), Z_Construct_UClass_UFGUnlockBuildEfficiency_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockBuildEfficiencyClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockBuildEfficiencyClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockMapClass_MetaData[] = {
 		{ "Category", "Unlock Classes For Migrating To New Unlock System" },
-		{ "ModuleRelativePath", "FGDeveloperSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDeveloperSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockMapClass = { "mUnlockMapClass", nullptr, (EPropertyFlags)0x0014000000004001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDeveloperSettings, mUnlockMapClass), Z_Construct_UClass_UFGUnlockMap_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockMapClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockMapClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockScannerResourceClass_MetaData[] = {
 		{ "Category", "Unlock Classes For Migrating To New Unlock System" },
-		{ "ModuleRelativePath", "FGDeveloperSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDeveloperSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockScannerResourceClass = { "mUnlockScannerResourceClass", nullptr, (EPropertyFlags)0x0014000000004001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDeveloperSettings, mUnlockScannerResourceClass), Z_Construct_UClass_UFGUnlockScannableResource_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockScannerResourceClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockScannerResourceClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockRecipeClass_MetaData[] = {
 		{ "Category", "Unlock Classes For Migrating To New Unlock System" },
-		{ "ModuleRelativePath", "FGDeveloperSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDeveloperSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockRecipeClass = { "mUnlockRecipeClass", nullptr, (EPropertyFlags)0x0014000000004001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDeveloperSettings, mUnlockRecipeClass), Z_Construct_UClass_UFGUnlockRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockRecipeClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockRecipeClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mGreedyFocusInPIE_MetaData[] = {
 		{ "Category", "Focus" },
-		{ "ModuleRelativePath", "FGDeveloperSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDeveloperSettings.h" },
 		{ "ToolTip", "Should widgets grab focus back on focus lost in PIE. Default is off to avoid intrusive behaviour when trying to work. You can override this value in Game.ini. Ask K2 how" },
 	};
 #endif
@@ -185,7 +185,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDeveloperSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDeveloperSettings, 2150796797);
+	IMPLEMENT_CLASS(UFGDeveloperSettings, 2842521239);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGDeveloperSettings>()
 	{
 		return UFGDeveloperSettings::StaticClass();

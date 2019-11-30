@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGDamageOverTimeVolume.h"
+#include "FactoryGame/Public/FGDamageOverTimeVolume.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -56,7 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTimeVolume() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Mobile Physics Cooking Collision Brush Physics Object Display Rendering Physics Input Blueprint" },
 		{ "IncludePath", "FGDamageOverTimeVolume.h" },
-		{ "ModuleRelativePath", "FGDamageOverTimeVolume.h" },
+		{ "ModuleRelativePath", "Public/FGDamageOverTimeVolume.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
@@ -64,7 +64,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTimeVolume() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mDotComponent_MetaData[] = {
 		{ "Category", "Damage" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGDamageOverTimeVolume.h" },
+		{ "ModuleRelativePath", "Public/FGDamageOverTimeVolume.h" },
 		{ "ToolTip", "The component that will do the damage to actors" },
 	};
 #endif
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTimeVolume() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mPostProcessSettings_MetaData[] = {
 		{ "Category", "PostProcess" },
-		{ "ModuleRelativePath", "FGDamageOverTimeVolume.h" },
+		{ "ModuleRelativePath", "Public/FGDamageOverTimeVolume.h" },
 		{ "ToolTip", "Some damage over time volumes will want a post process effect attached to it" },
 	};
 #endif
@@ -111,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTimeVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDamageOverTimeVolume, 3668720524);
+	IMPLEMENT_CLASS(AFGDamageOverTimeVolume, 962050680);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGDamageOverTimeVolume>()
 	{
 		return AFGDamageOverTimeVolume::StaticClass();

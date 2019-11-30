@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGC4Dispenser.h"
+#include "FactoryGame/Public/Equipment/FGC4Dispenser.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -65,7 +65,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Dispenser() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGC4Dispenser_GetChargePct_Statics::Function_MetaDataParams[] = {
 		{ "Category", "C4" },
-		{ "ModuleRelativePath", "Equipment/FGC4Dispenser.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGC4Dispenser.h" },
 		{ "ToolTip", "Return the current charge in percent" },
 	};
 #endif
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Dispenser() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGC4Dispenser_Server_DetonatePressed_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGC4Dispenser.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGC4Dispenser.h" },
 		{ "ToolTip", "Called by client to start fire on server." },
 	};
 #endif
@@ -117,7 +117,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Dispenser() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGC4Dispenser_Server_SpawnC4_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGC4Dispenser.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGC4Dispenser.h" },
 		{ "ToolTip", "Spawns and throws out a C4 charge" },
 	};
 #endif
@@ -172,20 +172,20 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Dispenser() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGC4Dispenser_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGC4Dispenser_GetChargePct, "GetChargePct" }, // 1116852972
-		{ &Z_Construct_UFunction_AFGC4Dispenser_Server_DetonatePressed, "Server_DetonatePressed" }, // 3921791248
-		{ &Z_Construct_UFunction_AFGC4Dispenser_Server_SpawnC4, "Server_SpawnC4" }, // 1067031932
+		{ &Z_Construct_UFunction_AFGC4Dispenser_GetChargePct, "GetChargePct" }, // 1471451534
+		{ &Z_Construct_UFunction_AFGC4Dispenser_Server_DetonatePressed, "Server_DetonatePressed" }, // 1191203922
+		{ &Z_Construct_UFunction_AFGC4Dispenser_Server_SpawnC4, "Server_SpawnC4" }, // 4239363858
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGC4Dispenser_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGC4Dispenser.h" },
-		{ "ModuleRelativePath", "Equipment/FGC4Dispenser.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGC4Dispenser.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGC4Dispenser_Statics::NewProp_mDelayBetweenExplosions_MetaData[] = {
 		{ "Category", "C4" },
-		{ "ModuleRelativePath", "Equipment/FGC4Dispenser.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGC4Dispenser.h" },
 		{ "ToolTip", "When we blow shit up we want a small delay in between each explosion" },
 	};
 #endif
@@ -193,7 +193,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Dispenser() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGC4Dispenser_Statics::NewProp_mMaxThrowForce_MetaData[] = {
 		{ "Category", "C4" },
-		{ "ModuleRelativePath", "Equipment/FGC4Dispenser.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGC4Dispenser.h" },
 		{ "ToolTip", "If we charge the throw to the max we will throw with this force" },
 	};
 #endif
@@ -201,14 +201,14 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Dispenser() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGC4Dispenser_Statics::NewProp_mMaxChargeTime_MetaData[] = {
 		{ "Category", "C4" },
-		{ "ModuleRelativePath", "Equipment/FGC4Dispenser.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGC4Dispenser.h" },
 		{ "ToolTip", "If we charge the throw for this amount of time we will get max throw velocity" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGC4Dispenser_Statics::NewProp_mMaxChargeTime = { "mMaxChargeTime", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGC4Dispenser, mMaxChargeTime), METADATA_PARAMS(Z_Construct_UClass_AFGC4Dispenser_Statics::NewProp_mMaxChargeTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGC4Dispenser_Statics::NewProp_mMaxChargeTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGC4Dispenser_Statics::NewProp_mDispensedExplosives_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGC4Dispenser.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGC4Dispenser.h" },
 		{ "ToolTip", "Keeps track of the explosives we have dispensed" },
 	};
 #endif
@@ -217,7 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Dispenser() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGC4Dispenser_Statics::NewProp_mC4ExplosiveClass_MetaData[] = {
 		{ "Category", "C4" },
-		{ "ModuleRelativePath", "Equipment/FGC4Dispenser.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGC4Dispenser.h" },
 		{ "ToolTip", "What types of bombs we should spawn" },
 	};
 #endif
@@ -257,7 +257,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Dispenser() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGC4Dispenser, 4036419657);
+	IMPLEMENT_CLASS(AFGC4Dispenser, 2211629495);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGC4Dispenser>()
 	{
 		return AFGC4Dispenser::StaticClass();

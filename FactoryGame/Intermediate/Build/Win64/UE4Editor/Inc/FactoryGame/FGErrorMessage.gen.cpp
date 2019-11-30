@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGErrorMessage.h"
+#include "FactoryGame/Public/FGErrorMessage.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -35,7 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 		return EErrorResponse_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EErrorResponse(EErrorResponse_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EErrorResponse"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EErrorResponse_Hash() { return 592569954U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EErrorResponse_Hash() { return 1983649693U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EErrorResponse()
 	{
 #if WITH_HOT_RELOAD
@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 				{ "ER_Quit.ToolTip", "Sends the user to main menu and then shows a error message" },
 				{ "ER_SendToMainMenu.DisplayName", "SendToMainMenu" },
 				{ "ER_SendToMainMenu.ToolTip", "Shows a popup ingame or a popup in the main menu" },
-				{ "ModuleRelativePath", "FGErrorMessage.h" },
+				{ "ModuleRelativePath", "Public/FGErrorMessage.h" },
 				{ "ToolTip", "Enum describing how the error should be handled by the system" },
 			};
 #endif
@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Error" },
-		{ "ModuleRelativePath", "FGErrorMessage.h" },
+		{ "ModuleRelativePath", "Public/FGErrorMessage.h" },
 		{ "ToolTip", "Get a localized error message" },
 	};
 #endif
@@ -142,7 +142,7 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Error" },
-		{ "ModuleRelativePath", "FGErrorMessage.h" },
+		{ "ModuleRelativePath", "Public/FGErrorMessage.h" },
 		{ "ToolTip", "Get if the error sends the user to main menu" },
 	};
 #endif
@@ -184,22 +184,22 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGErrorMessage_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage, "GetErrorMessage" }, // 415187787
-		{ &Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse, "GetErrorResponse" }, // 2881122100
+		{ &Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage, "GetErrorMessage" }, // 1329863546
+		{ &Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse, "GetErrorResponse" }, // 2557317803
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGErrorMessage_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGErrorMessage.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGErrorMessage.h" },
+		{ "ModuleRelativePath", "Public/FGErrorMessage.h" },
 		{ "ToolTip", "@todo: Should we rename UFGErrorMessage to something else (like: UFGUIMessage and have a subclass that UFGErrorMessage,\n                      then we could implement messages about autosave and other in the same system)\n@todo: Move UFGErrorMesssage to another file" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorResponse_MetaData[] = {
 		{ "Category", "Error" },
-		{ "ModuleRelativePath", "FGErrorMessage.h" },
+		{ "ModuleRelativePath", "Public/FGErrorMessage.h" },
 		{ "ToolTip", "Shows how this error should be handled" },
 	};
 #endif
@@ -207,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorMessage_MetaData[] = {
 		{ "Category", "Error" },
-		{ "ModuleRelativePath", "FGErrorMessage.h" },
+		{ "ModuleRelativePath", "Public/FGErrorMessage.h" },
 		{ "ToolTip", "Localized error message that we can push" },
 	};
 #endif
@@ -243,7 +243,7 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGErrorMessage, 1771918338);
+	IMPLEMENT_CLASS(UFGErrorMessage, 2073093435);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGErrorMessage>()
 	{
 		return UFGErrorMessage::StaticClass();

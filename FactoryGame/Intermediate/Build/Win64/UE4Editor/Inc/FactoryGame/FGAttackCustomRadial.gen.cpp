@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/AI/FGAttackCustomRadial.h"
+#include "FactoryGame/Public/AI/FGAttackCustomRadial.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -43,7 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackCustomRadial() {}
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "AI/FGAttackCustomRadial.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "AI/FGAttackCustomRadial.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttackCustomRadial.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGAttackCustomRadial_Statics::StaticCppClassTypeInfo = {
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackCustomRadial() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttackCustomRadial, 4025253920);
+	IMPLEMENT_CLASS(UFGAttackCustomRadial, 618559660);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGAttackCustomRadial>()
 	{
 		return UFGAttackCustomRadial::StaticClass();

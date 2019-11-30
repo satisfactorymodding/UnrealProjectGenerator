@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGBuildSubCategory.h"
+#include "FactoryGame/Public/FGBuildSubCategory.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildSubCategory() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildSubCategory_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGBuildSubCategory.h" },
-		{ "ModuleRelativePath", "FGBuildSubCategory.h" },
+		{ "ModuleRelativePath", "Public/FGBuildSubCategory.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGBuildSubCategory_Statics::StaticCppClassTypeInfo = {
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildSubCategory() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildSubCategory, 838384400);
+	IMPLEMENT_CLASS(UFGBuildSubCategory, 2579440753);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBuildSubCategory>()
 	{
 		return UFGBuildSubCategory::StaticClass();

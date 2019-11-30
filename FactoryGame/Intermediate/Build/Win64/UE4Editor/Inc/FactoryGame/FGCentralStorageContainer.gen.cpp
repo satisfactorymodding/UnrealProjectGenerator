@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGCentralStorageContainer.h"
+#include "FactoryGame/Public/Buildables/FGCentralStorageContainer.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -36,7 +36,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageContainer() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCentralStorageContainer_AddToCentralStorageSubsystem_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGCentralStorageContainer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGCentralStorageContainer.h" },
 		{ "ToolTip", "Recalled if the storage subsystem isn't created" },
 	};
 #endif
@@ -69,12 +69,12 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageContainer() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCentralStorageContainer_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGCentralStorageContainer_AddToCentralStorageSubsystem, "AddToCentralStorageSubsystem" }, // 3640264886
+		{ &Z_Construct_UFunction_AFGCentralStorageContainer_AddToCentralStorageSubsystem, "AddToCentralStorageSubsystem" }, // 3387458818
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCentralStorageContainer_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGCentralStorageContainer.h" },
-		{ "ModuleRelativePath", "Buildables/FGCentralStorageContainer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGCentralStorageContainer.h" },
 		{ "ToolTip", "Storage container connected to the central storage interface." },
 	};
 #endif
@@ -105,7 +105,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageContainer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCentralStorageContainer, 3356734914);
+	IMPLEMENT_CLASS(AFGCentralStorageContainer, 4128087686);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCentralStorageContainer>()
 	{
 		return AFGCentralStorageContainer::StaticClass();

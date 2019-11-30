@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Creature/Enemy/FGGameplayResource_Attack.h"
+#include "FactoryGame/Public/Creature/Enemy/FGGameplayResource_Attack.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameplayResource_Attack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGameplayTaskResource_Attack_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Creature/Enemy/FGGameplayResource_Attack.h" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGGameplayResource_Attack.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGGameplayResource_Attack.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGameplayTaskResource_Attack_Statics::StaticCppClassTypeInfo = {
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameplayResource_Attack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGameplayTaskResource_Attack, 1514977008);
+	IMPLEMENT_CLASS(UFGameplayTaskResource_Attack, 3364483489);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGameplayTaskResource_Attack>()
 	{
 		return UFGameplayTaskResource_Attack::StaticClass();

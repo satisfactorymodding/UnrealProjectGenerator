@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGResearchManager.h"
+#include "FactoryGame/Public/FGResearchManager.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchManager() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "ResearchNewAvailable__DelegateSignature", sizeof(_Script_FactoryGame_eventResearchNewAvailable_Parms), Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -121,7 +121,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchManager() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "ResearchResultsClaimed__DelegateSignature", sizeof(_Script_FactoryGame_eventResearchResultsClaimed_Parms), Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -153,7 +153,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchManager() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "ResearchCompletedDelegate__DelegateSignature", sizeof(_Script_FactoryGame_eventResearchCompletedDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -185,7 +185,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchManager() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "PaidOffResearchDelegate__DelegateSignature", sizeof(_Script_FactoryGame_eventPaidOffResearchDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -217,7 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchManager() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "ResearchStartedDelegate__DelegateSignature", sizeof(_Script_FactoryGame_eventResearchStartedDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -283,7 +283,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCompletedResearch
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCompletedResearch_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "This struct defines data related to any research that has been completed. Once research is complete\nthe player can choose to collect the rewards affiliated with research. This struct keep track of\nwhether the rewards have been claimed." },
 	};
 #endif
@@ -294,7 +294,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCompletedResearch
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_PendingRewards_MetaData[] = {
 		{ "Category", "CompletedResearch" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_PendingRewards = { "PendingRewards", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCompletedResearch, PendingRewards), METADATA_PARAMS(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_PendingRewards_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_PendingRewards_MetaData)) };
@@ -302,7 +302,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCompletedResearch
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardHasBeenClaimed_MetaData[] = {
 		{ "Category", "CompletedResearch" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardHasBeenClaimed_SetBit(void* Obj)
@@ -313,14 +313,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCompletedResearch
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_ResearchRecipe_MetaData[] = {
 		{ "Category", "CompletedResearch" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_ResearchRecipe = { "ResearchRecipe", nullptr, (EPropertyFlags)0x0014000001010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCompletedResearch, ResearchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_ResearchRecipe_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_ResearchRecipe_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardRequiresSelection_MetaData[] = {
 		{ "Category", "CompletedResearch" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardRequiresSelection_SetBit(void* Obj)
@@ -363,7 +363,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCompletedResearch
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCompletedResearch_Hash() { return 3756757626U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCompletedResearch_Hash() { return 3974763819U; }
 class UScriptStruct* FResearchTime::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -405,7 +405,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchTime
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResearchTime_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Keeps track of ongoing research and when it's supposed to be completed." },
 	};
 #endif
@@ -416,14 +416,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchTime
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchCompleteTimestamp_MetaData[] = {
 		{ "Category", "ResearchTime" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchCompleteTimestamp = { "ResearchCompleteTimestamp", nullptr, (EPropertyFlags)0x0010000001010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FResearchTime, ResearchCompleteTimestamp), METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchCompleteTimestamp_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchCompleteTimestamp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchRecipe_MetaData[] = {
 		{ "Category", "ResearchTime" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchRecipe = { "ResearchRecipe", nullptr, (EPropertyFlags)0x0014000001010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FResearchTime, ResearchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchRecipe_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchRecipe_MetaData)) };
@@ -459,7 +459,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchTime
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResearchTime_Hash() { return 1619184378U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResearchTime_Hash() { return 2611202088U; }
 class UScriptStruct* FResearchCost::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -503,7 +503,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResearchCost_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Keeps track of research that is in a state of being paid off." },
 	};
 #endif
@@ -514,7 +514,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_Cost_MetaData[] = {
 		{ "Category", "ResearchCost" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_Cost = { "Cost", nullptr, (EPropertyFlags)0x0010000001010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FResearchCost, Cost), METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_Cost_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_Cost_MetaData)) };
@@ -522,7 +522,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_ResearchRecipe_MetaData[] = {
 		{ "Category", "ResearchCost" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_ResearchRecipe = { "ResearchRecipe", nullptr, (EPropertyFlags)0x0014000001010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FResearchCost, ResearchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_ResearchRecipe_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_ResearchRecipe_MetaData)) };
@@ -559,7 +559,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResearchCost_Hash() { return 3122897991U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResearchCost_Hash() { return 2462979450U; }
 	void AFGResearchManager::StaticRegisterNativesAFGResearchManager()
 	{
 		UClass* Class = AFGResearchManager::StaticClass();
@@ -622,7 +622,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_AddDecorPoints_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Decor" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Adds decor points to the ResearchManager" },
 	};
 #endif
@@ -656,7 +656,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_AddStructurePoints_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Structure" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Adds structure points to the ResearchManager" },
 	};
 #endif
@@ -699,7 +699,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Decor" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Returns whether or not the amount of decor points can be fully consumed." },
 	};
 #endif
@@ -742,7 +742,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Structure" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Returns whether or not the amount of structure points can be fully consumed." },
 	};
 #endif
@@ -785,7 +785,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "CanResearchBeInitiated", sizeof(FGResearchManager_eventCanResearchBeInitiated_Parms), Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::Function_MetaDataParams)) };
@@ -827,7 +827,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Checks to see if rewards can be claimed for research. Will also return false if research hasn't been completed." },
 	};
 #endif
@@ -878,7 +878,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Tries to claim rewards from completed research. If rewards have already been claimed then no results will be returned. Returns true if research could be claimed." },
 	};
 #endif
@@ -916,7 +916,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Decor" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Tries to consume the amount of decor points that is inputed. Returns the amount of points that were actually consumed." },
 	};
 #endif
@@ -954,7 +954,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Structure" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Tries to consume the amount of structure points that is inputed. Returns the amount of points that were actually consumed." },
 	};
 #endif
@@ -993,7 +993,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Whether or not there is any research that has been completed but not claimed." },
 	};
 #endif
@@ -1033,7 +1033,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "Category", "Research" },
 		{ "DefaultToSelf", "worldContext" },
 		{ "DisplayName", "GetResearchManager" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "Get", sizeof(FGResearchManager_eventGet_Parms), Z_Construct_UFunction_AFGResearchManager_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_Get_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_Get_Statics::Function_MetaDataParams)) };
@@ -1069,7 +1069,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Returns all available research in the M.A.M." },
 	};
 #endif
@@ -1106,7 +1106,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Returns all research that has both been completed and have had their rewards claimed." },
 	};
 #endif
@@ -1143,7 +1143,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Returns every possible research recipe that is in the game\n@note Calling this is only valid after PopulateResearchLists has been run." },
 	};
 #endif
@@ -1189,7 +1189,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Get the research reward package from a given completed recipe" },
 	};
 #endif
@@ -1223,7 +1223,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_GetDecorPoints_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Decor" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Returns the amount of decor points the ResearchManager currently has." },
 	};
 #endif
@@ -1261,7 +1261,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Returns how much time there is left for a specific research. If the research in question isn't ongoing it will return -1.f" },
 	};
 #endif
@@ -1302,7 +1302,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Returns how much is left to pay off for a specific type of research (if available)." },
 	};
 #endif
@@ -1336,7 +1336,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "GetResearchBeingConducted", sizeof(FGResearchManager_eventGetResearchBeingConducted_Parms), Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::Function_MetaDataParams)) };
@@ -1373,7 +1373,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "GetResearchDuration", sizeof(FGResearchManager_eventGetResearchDuration_Parms), Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::Function_MetaDataParams)) };
@@ -1421,7 +1421,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Get the rewards associated with a completed research" },
 	};
 #endif
@@ -1455,7 +1455,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_GetStructurePoints_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Structure" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Returns the amount of structure points the ResearchManager currently has." },
 	};
 #endif
@@ -1499,7 +1499,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
 		{ "CPP_Default_accessedViaCheats", "false" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Gives access to a research recipe in the M.A.M." },
 	};
 #endif
@@ -1542,7 +1542,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Initiates research if the given research has been payed off and ready to start\nReturns whether research was successfully started." },
 	};
 #endif
@@ -1581,7 +1581,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "IsAnyResearchBeingConducted", sizeof(FGResearchManager_eventIsAnyResearchBeingConducted_Parms), Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::Function_MetaDataParams)) };
@@ -1623,7 +1623,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "IsCompletedResearchResultSelectable", sizeof(FGResearchManager_eventIsCompletedResearchResultSelectable_Parms), Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::Function_MetaDataParams)) };
@@ -1665,7 +1665,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Checks whether a piece of research is accessible and paid off (i.e. can be initiated/conducted)." },
 	};
 #endif
@@ -1708,7 +1708,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Checks whether a piece of research is currently being conducted." },
 	};
 #endif
@@ -1751,7 +1751,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Checks whether a specific piece of research has completed (i.e. can be claimed)" },
 	};
 #endif
@@ -1794,7 +1794,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Returns whether a piece of research available/unlocked for the player?" },
 	};
 #endif
@@ -1827,7 +1827,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "OnResearchTimerComplete", sizeof(FGResearchManager_eventOnResearchTimerComplete_Parms), Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::Function_MetaDataParams)) };
@@ -1880,7 +1880,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Attempts to pay off research from inventory slot at given index" },
 	};
 #endif
@@ -1922,7 +1922,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Pays off a specific type of research. Durp." },
 	};
 #endif
@@ -1960,7 +1960,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Set the selected reward index for a given researchRecipe" },
 	};
 #endif
@@ -1994,7 +1994,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Tries to unlock research with item. If no research is affiliated with the item or already unlocked, nothing happens.." },
 	};
 #endif
@@ -2092,41 +2092,41 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGResearchManager_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGResearchManager_AddDecorPoints, "AddDecorPoints" }, // 4036727841
-		{ &Z_Construct_UFunction_AFGResearchManager_AddStructurePoints, "AddStructurePoints" }, // 492745429
-		{ &Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints, "CanConsumeDecorPoints" }, // 4006510360
-		{ &Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints, "CanConsumeStructurePoints" }, // 2725082600
-		{ &Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated, "CanResearchBeInitiated" }, // 2027346470
-		{ &Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed, "CanResearchRewardBeClaimed" }, // 1185623805
-		{ &Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults, "ClaimResearchResults" }, // 3071058131
-		{ &Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints, "ConsumeDecorPoints" }, // 945903225
-		{ &Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints, "ConsumeStructurePoints" }, // 2043332209
-		{ &Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch, "ContainsAnyCompletedButUnclaimedResearch" }, // 3809021826
-		{ &Z_Construct_UFunction_AFGResearchManager_Get, "Get" }, // 4040491394
-		{ &Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch, "GetAllAccessibleResearch" }, // 2158610314
-		{ &Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch, "GetAllCompletedAndClaimedResearch" }, // 1658350709
-		{ &Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes, "GetAllResearchRecipes" }, // 3174806619
-		{ &Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe, "GetCompletedResearchRewardByRecipe" }, // 3799518327
-		{ &Z_Construct_UFunction_AFGResearchManager_GetDecorPoints, "GetDecorPoints" }, // 1880992630
-		{ &Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft, "GetOngoingResearchTimeLeft" }, // 3464297366
-		{ &Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch, "GetPayOffBalanceForResearch" }, // 821486509
-		{ &Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted, "GetResearchBeingConducted" }, // 408630131
-		{ &Z_Construct_UFunction_AFGResearchManager_GetResearchDuration, "GetResearchDuration" }, // 1398767548
-		{ &Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch, "GetRewardsFromCompletedResearch" }, // 1040492859
-		{ &Z_Construct_UFunction_AFGResearchManager_GetStructurePoints, "GetStructurePoints" }, // 3368814688
-		{ &Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch, "GiveAccessToResearch" }, // 2657929417
-		{ &Z_Construct_UFunction_AFGResearchManager_InitiateResearch, "InitiateResearch" }, // 903259925
-		{ &Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted, "IsAnyResearchBeingConducted" }, // 1641428747
-		{ &Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable, "IsCompletedResearchResultSelectable" }, // 178339233
-		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff, "IsResearchAccessibleAndPaidOff" }, // 2653296141
-		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted, "IsResearchBeingConducted" }, // 3869048919
-		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchComplete, "IsResearchComplete" }, // 225343110
-		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible, "IsResearchRecipeAccessible" }, // 3806281653
-		{ &Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete, "OnResearchTimerComplete" }, // 3454405069
-		{ &Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory, "PayOffFromInventory" }, // 3104822460
-		{ &Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch, "PayOffOnResearch" }, // 3073491311
-		{ &Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe, "SetSelectedRewardIndexByRecipe" }, // 2891776681
-		{ &Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem, "UnlockResearchWithItem" }, // 3518116383
+		{ &Z_Construct_UFunction_AFGResearchManager_AddDecorPoints, "AddDecorPoints" }, // 2580795242
+		{ &Z_Construct_UFunction_AFGResearchManager_AddStructurePoints, "AddStructurePoints" }, // 508095089
+		{ &Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints, "CanConsumeDecorPoints" }, // 2671536064
+		{ &Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints, "CanConsumeStructurePoints" }, // 3355438980
+		{ &Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated, "CanResearchBeInitiated" }, // 990669950
+		{ &Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed, "CanResearchRewardBeClaimed" }, // 2326044073
+		{ &Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults, "ClaimResearchResults" }, // 3919366265
+		{ &Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints, "ConsumeDecorPoints" }, // 3843257167
+		{ &Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints, "ConsumeStructurePoints" }, // 1712959552
+		{ &Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch, "ContainsAnyCompletedButUnclaimedResearch" }, // 3380752533
+		{ &Z_Construct_UFunction_AFGResearchManager_Get, "Get" }, // 2189356881
+		{ &Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch, "GetAllAccessibleResearch" }, // 1433867473
+		{ &Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch, "GetAllCompletedAndClaimedResearch" }, // 2220555136
+		{ &Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes, "GetAllResearchRecipes" }, // 2840049006
+		{ &Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe, "GetCompletedResearchRewardByRecipe" }, // 3673538507
+		{ &Z_Construct_UFunction_AFGResearchManager_GetDecorPoints, "GetDecorPoints" }, // 3507642121
+		{ &Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft, "GetOngoingResearchTimeLeft" }, // 3032033763
+		{ &Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch, "GetPayOffBalanceForResearch" }, // 1419512796
+		{ &Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted, "GetResearchBeingConducted" }, // 2689759041
+		{ &Z_Construct_UFunction_AFGResearchManager_GetResearchDuration, "GetResearchDuration" }, // 1569845512
+		{ &Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch, "GetRewardsFromCompletedResearch" }, // 3644984863
+		{ &Z_Construct_UFunction_AFGResearchManager_GetStructurePoints, "GetStructurePoints" }, // 2859942088
+		{ &Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch, "GiveAccessToResearch" }, // 982854426
+		{ &Z_Construct_UFunction_AFGResearchManager_InitiateResearch, "InitiateResearch" }, // 2074509009
+		{ &Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted, "IsAnyResearchBeingConducted" }, // 1205692647
+		{ &Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable, "IsCompletedResearchResultSelectable" }, // 3076382978
+		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff, "IsResearchAccessibleAndPaidOff" }, // 1877526980
+		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted, "IsResearchBeingConducted" }, // 949435811
+		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchComplete, "IsResearchComplete" }, // 3513531350
+		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible, "IsResearchRecipeAccessible" }, // 1768880347
+		{ &Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete, "OnResearchTimerComplete" }, // 2362774263
+		{ &Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory, "PayOffFromInventory" }, // 753026782
+		{ &Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch, "PayOffOnResearch" }, // 368401202
+		{ &Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe, "SetSelectedRewardIndexByRecipe" }, // 3707183010
+		{ &Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem, "UnlockResearchWithItem" }, // 1126966835
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::Class_MetaDataParams[] = {
@@ -2134,25 +2134,25 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "HideCategories", "Actor Tick Rendering Replication Input Actor Actor Input Rendering Actor Tick Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGResearchManager.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mStructurePoints_MetaData[] = {
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mStructurePoints = { "mStructurePoints", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, mStructurePoints), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mStructurePoints_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mStructurePoints_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDecorPoints_MetaData[] = {
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDecorPoints = { "mDecorPoints", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, mDecorPoints), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDecorPoints_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDecorPoints_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mSavedOngoingResearch_MetaData[] = {
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Used to track timestamps during saving" },
 	};
 #endif
@@ -2160,7 +2160,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mSavedOngoingResearch_Inner = { "mSavedOngoingResearch", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FResearchTime, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mOngoingResearch_MetaData[] = {
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "What research that is currently being analyzed. i.e. that has started their timer and is ticking down." },
 	};
 #endif
@@ -2168,7 +2168,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mOngoingResearch_Inner = { "mOngoingResearch", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FResearchTime, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCompletedResearch_MetaData[] = {
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "What research has been conducted and is complete." },
 	};
 #endif
@@ -2176,7 +2176,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCompletedResearch_Inner = { "mCompletedResearch", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FCompletedResearch, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mResearchCosts_MetaData[] = {
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Keeps track of what research is available to be conducted by the player and how much they've been paid off" },
 	};
 #endif
@@ -2184,7 +2184,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mResearchCosts_Inner = { "mResearchCosts", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FResearchCost, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchRecipes_MetaData[] = {
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchRecipes = { "mAllResearchRecipes", nullptr, (EPropertyFlags)0x0024080000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, mAllResearchRecipes), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchRecipes_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchRecipes_MetaData)) };
@@ -2192,7 +2192,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDefaultStartingResearch_MetaData[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "What research that is available at start of the game." },
 	};
 #endif
@@ -2201,7 +2201,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCanConductMultipleResearch_MetaData[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Whether multiple concurrent research can be conducted, or only one at a time." },
 	};
 #endif
@@ -2214,7 +2214,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchNewAvailableDelegate_MetaData[] = {
 		{ "Category", "Events|Research" },
 		{ "DisplayName", "OnResearchAvailable" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Called when new research is available" },
 	};
 #endif
@@ -2223,7 +2223,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchResultsClaimedDelegate_MetaData[] = {
 		{ "Category", "Events|Research" },
 		{ "DisplayName", "OnResearchClaimed" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Called when research results are collected from completed research" },
 	};
 #endif
@@ -2232,7 +2232,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchCompletedDelegate_MetaData[] = {
 		{ "Category", "Events|Research" },
 		{ "DisplayName", "OnResearchCompleted" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Called when ongoing research has completed" },
 	};
 #endif
@@ -2241,7 +2241,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_PaidOffResearchDelegate_MetaData[] = {
 		{ "Category", "Events|Research" },
 		{ "DisplayName", "OnPaidOffResearch" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Called when a piece of research has been payed off in full" },
 	};
 #endif
@@ -2250,7 +2250,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchStartedDelegate_MetaData[] = {
 		{ "Category", "Events|Research" },
 		{ "DisplayName", "OnResearchStarted" },
-		{ "ModuleRelativePath", "FGResearchManager.h" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
 		{ "ToolTip", "Called when a research recipe is started" },
 	};
 #endif
@@ -2307,7 +2307,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResearchManager, 2876528765);
+	IMPLEMENT_CLASS(AFGResearchManager, 3659281971);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGResearchManager>()
 	{
 		return AFGResearchManager::StaticClass();

@@ -21,14 +21,14 @@ enum class ESchematicType : uint8;
 #endif
 #define FACTORYGAME_FGSchematic_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGSchematic_h_44_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_44_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMultipleItemStruct_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMultipleItemStruct>();
 
-#define FactoryGame_Source_FactoryGame_FGSchematic_h_57_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execIsIncludedInBuild) \
 	{ \
@@ -211,7 +211,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMultipleItemStruc
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematic_h_57_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execIsIncludedInBuild) \
 	{ \
@@ -394,31 +394,31 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMultipleItemStruc
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematic_h_57_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(UFGSchematic, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematic_h_57_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGSchematic(); \
 	friend struct Z_Construct_UClass_UFGSchematic_Statics; \
 public: \
 	DECLARE_CLASS(UFGSchematic, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGSchematic) \
-	FactoryGame_Source_FactoryGame_FGSchematic_h_57_ARCHIVESERIALIZER
+	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_ARCHIVESERIALIZER
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematic_h_57_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGSchematic(); \
 	friend struct Z_Construct_UClass_UFGSchematic_Statics; \
 public: \
 	DECLARE_CLASS(UFGSchematic, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGSchematic) \
-	FactoryGame_Source_FactoryGame_FGSchematic_h_57_ARCHIVESERIALIZER
+	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_ARCHIVESERIALIZER
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematic_h_57_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGSchematic(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGSchematic) \
@@ -431,7 +431,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematic_h_57_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGSchematic(UFGSchematic&&); \
@@ -442,7 +442,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGSchematic); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGSchematic)
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematic_h_57_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mType() { return STRUCT_OFFSET(UFGSchematic, mType); } \
 	FORCEINLINE static uint32 __PPO__mDisplayName() { return STRUCT_OFFSET(UFGSchematic, mDisplayName); } \
 	FORCEINLINE static uint32 __PPO__mSchematicCategory() { return STRUCT_OFFSET(UFGSchematic, mSchematicCategory); } \
@@ -463,25 +463,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGSchematic); \
 	FORCEINLINE static uint32 __PPO__mAssetBundleData() { return STRUCT_OFFSET(UFGSchematic, mAssetBundleData); }
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematic_h_54_PROLOG
-#define FactoryGame_Source_FactoryGame_FGSchematic_h_57_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_54_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGSchematic_h_57_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGSchematic_h_57_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGSchematic_h_57_INCLASS \
-	FactoryGame_Source_FactoryGame_FGSchematic_h_57_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematic_h_57_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGSchematic_h_57_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGSchematic_h_57_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGSchematic_h_57_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGSchematic_h_57_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -489,7 +489,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class UFGSchematic>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGSchematic_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGSchematic_h
 
 
 #define FOREACH_ENUM_ESCHEMATICTYPE(op) \

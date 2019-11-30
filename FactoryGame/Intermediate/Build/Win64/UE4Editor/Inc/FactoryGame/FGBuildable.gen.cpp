@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildable.h"
+#include "FactoryGame/Public/Buildables/FGBuildable.h"
 #include "Serialization/ArchiveUObjectFromStructuredArchive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_BuildableDismantledSignature__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "@todo There's a duplicate of this in the CPP file." },
 	};
 #endif
@@ -202,7 +202,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_Factory_GrabOutput_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Buildable|Connections" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "For custom connections, if we want a custom implementation for peek\nCalled if mForwardPeekAndGrabToProxy is set in the connection." },
 	};
 #endif
@@ -258,7 +258,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_Factory_PeekOutput_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Buildable|Connections" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "For custom connections, if we want a custom implementation for\nCalled if mForwardPeekAndGrabToProxy is set in the connection." },
 	};
 #endif
@@ -289,7 +289,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_Factory_ReceiveTick_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Tick" },
 		{ "DisplayName", "Factory_Tick" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Blueprint version of Factory_Tick" },
 	};
 #endif
@@ -331,7 +331,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_GetClearanceComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Buildable" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildable_GetClearanceComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildable, nullptr, "GetClearanceComponent", sizeof(FGBuildable_eventGetClearanceComponent_Parms), Z_Construct_UFunction_AFGBuildable_GetClearanceComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildable_GetClearanceComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildable_GetClearanceComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildable_GetClearanceComponent_Statics::Function_MetaDataParams)) };
@@ -363,7 +363,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_GetDismantleBlueprintReturns_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Buildable|Dismantle" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "If blueprint has anything to return when this buildable is dismantled. Not consolidated." },
 	};
 #endif
@@ -397,7 +397,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_GetInteractWidgetClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Buildable|Interaction" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Get the widget used to interact with this buildable." },
 	};
 #endif
@@ -443,7 +443,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_GetMainMeshes_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Buildable" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Finds, caches and returns the MainMesh of this buildable" },
 	};
 #endif
@@ -477,7 +477,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Buildable|Connections" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Get the number of power connections" },
 	};
 #endif
@@ -500,7 +500,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_OnRep_ColorSlot_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Let the client set colors." },
 	};
 #endif
@@ -523,7 +523,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_OnRep_DidFirstTimeUse_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Let client see the highlight" },
 	};
 #endif
@@ -557,7 +557,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_PlayBuildEffects_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Buildable|Build Effect" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Build/Dismantle Effects\n@param instigator Actor who triggered the effect (i.e. where to throw the resources from)." },
 	};
 #endif
@@ -581,7 +581,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_PlayConstructSound_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Buildable|Build Effect" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Plays construction sound, override this event to play a custom sound." },
 	};
 #endif
@@ -604,7 +604,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_PlayDismantleEffects_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildable_PlayDismantleEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildable, nullptr, "PlayDismantleEffects", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00024CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildable_PlayDismantleEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildable_PlayDismantleEffects_Statics::Function_MetaDataParams)) };
@@ -627,7 +627,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_PlayDismantleSound_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Buildable|Build Effect" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Plays dismantle sound, override this event to play a custom sound." },
 	};
 #endif
@@ -650,7 +650,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_ReapplyColorSlot_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Update the color from the current color slot" },
 	};
 #endif
@@ -674,7 +674,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_RemoveHighlightEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Buildable" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Removes the highlight effect" },
 	};
 #endif
@@ -698,7 +698,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_ShowHighlightEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Buildable" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Display the highlight effect" },
 	};
 #endif
@@ -865,29 +865,29 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildable_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildable_Factory_GrabOutput, "Factory_GrabOutput" }, // 1396604345
-		{ &Z_Construct_UFunction_AFGBuildable_Factory_PeekOutput, "Factory_PeekOutput" }, // 49231750
-		{ &Z_Construct_UFunction_AFGBuildable_Factory_ReceiveTick, "Factory_ReceiveTick" }, // 725866329
-		{ &Z_Construct_UFunction_AFGBuildable_GetClearanceComponent, "GetClearanceComponent" }, // 1556480323
-		{ &Z_Construct_UFunction_AFGBuildable_GetDismantleBlueprintReturns, "GetDismantleBlueprintReturns" }, // 1774081638
-		{ &Z_Construct_UFunction_AFGBuildable_GetInteractWidgetClass, "GetInteractWidgetClass" }, // 1599407541
-		{ &Z_Construct_UFunction_AFGBuildable_GetMainMeshes, "GetMainMeshes" }, // 873475833
-		{ &Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections, "GetNumPowerConnections" }, // 1376711401
-		{ &Z_Construct_UFunction_AFGBuildable_OnRep_ColorSlot, "OnRep_ColorSlot" }, // 831759044
-		{ &Z_Construct_UFunction_AFGBuildable_OnRep_DidFirstTimeUse, "OnRep_DidFirstTimeUse" }, // 2884518725
-		{ &Z_Construct_UFunction_AFGBuildable_PlayBuildEffects, "PlayBuildEffects" }, // 3330771551
-		{ &Z_Construct_UFunction_AFGBuildable_PlayConstructSound, "PlayConstructSound" }, // 1614677764
-		{ &Z_Construct_UFunction_AFGBuildable_PlayDismantleEffects, "PlayDismantleEffects" }, // 3558951003
-		{ &Z_Construct_UFunction_AFGBuildable_PlayDismantleSound, "PlayDismantleSound" }, // 4258106756
-		{ &Z_Construct_UFunction_AFGBuildable_ReapplyColorSlot, "ReapplyColorSlot" }, // 3285088846
-		{ &Z_Construct_UFunction_AFGBuildable_RemoveHighlightEffect, "RemoveHighlightEffect" }, // 928801411
-		{ &Z_Construct_UFunction_AFGBuildable_ShowHighlightEffect, "ShowHighlightEffect" }, // 3692295604
+		{ &Z_Construct_UFunction_AFGBuildable_Factory_GrabOutput, "Factory_GrabOutput" }, // 479208918
+		{ &Z_Construct_UFunction_AFGBuildable_Factory_PeekOutput, "Factory_PeekOutput" }, // 673979081
+		{ &Z_Construct_UFunction_AFGBuildable_Factory_ReceiveTick, "Factory_ReceiveTick" }, // 2882255094
+		{ &Z_Construct_UFunction_AFGBuildable_GetClearanceComponent, "GetClearanceComponent" }, // 1425940691
+		{ &Z_Construct_UFunction_AFGBuildable_GetDismantleBlueprintReturns, "GetDismantleBlueprintReturns" }, // 3600741589
+		{ &Z_Construct_UFunction_AFGBuildable_GetInteractWidgetClass, "GetInteractWidgetClass" }, // 2305487648
+		{ &Z_Construct_UFunction_AFGBuildable_GetMainMeshes, "GetMainMeshes" }, // 191074800
+		{ &Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections, "GetNumPowerConnections" }, // 3599393772
+		{ &Z_Construct_UFunction_AFGBuildable_OnRep_ColorSlot, "OnRep_ColorSlot" }, // 3462040775
+		{ &Z_Construct_UFunction_AFGBuildable_OnRep_DidFirstTimeUse, "OnRep_DidFirstTimeUse" }, // 2615305437
+		{ &Z_Construct_UFunction_AFGBuildable_PlayBuildEffects, "PlayBuildEffects" }, // 248352647
+		{ &Z_Construct_UFunction_AFGBuildable_PlayConstructSound, "PlayConstructSound" }, // 3980785889
+		{ &Z_Construct_UFunction_AFGBuildable_PlayDismantleEffects, "PlayDismantleEffects" }, // 369788939
+		{ &Z_Construct_UFunction_AFGBuildable_PlayDismantleSound, "PlayDismantleSound" }, // 1831215285
+		{ &Z_Construct_UFunction_AFGBuildable_ReapplyColorSlot, "ReapplyColorSlot" }, // 3910453491
+		{ &Z_Construct_UFunction_AFGBuildable_RemoveHighlightEffect, "RemoveHighlightEffect" }, // 1750409208
+		{ &Z_Construct_UFunction_AFGBuildable_ShowHighlightEffect, "ShowHighlightEffect" }, // 3338263692
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::Class_MetaDataParams[] = {
 		{ "AutoJson", "TRUE" },
 		{ "IncludePath", "Buildables/FGBuildable.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "SerializeToFArchive", "" },
 		{ "ToolTip", "Base for everything buildable, buildable things can have factory connections, power connections etc.\n\nThere are two tick functions on buildables, PrimaryActorTick and FactoryTick.\nPrimaryActorTick is disabled when the buildable is to far away to to not waste cycles on animations and other effects.\nFactoryTick is always enabled (as long as bCanEverTick is true) so that the factory part of buildings always can simulate." },
 	};
@@ -895,14 +895,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCachedShapeComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Caching the shapecomponent once we have gotten it" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCachedShapeComponent = { "mCachedShapeComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mCachedShapeComponent), Z_Construct_UClass_UShapeComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCachedShapeComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCachedShapeComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildTimeStamp_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Time when this building was built" },
 	};
@@ -910,7 +910,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildTimeStamp = { "mBuildTimeStamp", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mBuildTimeStamp), METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildTimeStamp_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildTimeStamp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuiltWithRecipe_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Recipe this building was built with." },
 	};
 #endif
@@ -918,7 +918,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mIsUseable_MetaData[] = {
 		{ "Category", "Interaction" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "If you can interact with this buildable." },
 	};
 #endif
@@ -929,7 +929,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mIsUseable = { "mIsUseable", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(AFGBuildable), &Z_Construct_UClass_AFGBuildable_Statics::NewProp_mIsUseable_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mIsUseable_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mIsUseable_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mInteractingPlayers_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Players interacting with this building" },
 	};
 #endif
@@ -939,14 +939,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mInteractWidgetClass_MetaData[] = {
 		{ "Category", "Interaction" },
 		{ "EditCondition", "mIsUseable" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "The widget that will present our UI." },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mInteractWidgetClass = { "mInteractWidgetClass", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mInteractWidgetClass), Z_Construct_UClass_UFGInteractWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mInteractWidgetClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mInteractWidgetClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleRefund_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "How much did we pay when building this." },
 	};
@@ -955,7 +955,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleRefund_Inner = { "mDismantleRefund", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildingID_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "The building ID this belongs to." },
 	};
@@ -963,7 +963,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildingID = { "mBuildingID", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mBuildingID), METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildingID_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildingID_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCameraDistanceSq_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Squared distance to closest camera" },
 	};
@@ -972,7 +972,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mShouldShowHighlight_MetaData[] = {
 		{ "Category", "Buildable" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Should we show highlight when building this building" },
 	};
 #endif
@@ -983,7 +983,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mShouldShowHighlight = { "mShouldShowHighlight", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildable), &Z_Construct_UClass_AFGBuildable_Statics::NewProp_mShouldShowHighlight_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mShouldShowHighlight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mShouldShowHighlight_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDidFirstTimeUse_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "If this building should show highlight before first use, save when it has been shown" },
 	};
@@ -997,7 +997,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightParticleSystemComponent_MetaData[] = {
 		{ "Category", "Buildable" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Particle system component" },
 	};
 #endif
@@ -1005,14 +1005,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightParticleSystemTemplate_MetaData[] = {
 		{ "Category", "Buildable" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Particle system component" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightParticleSystemTemplate = { "mHighlightParticleSystemTemplate", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mHighlightParticleSystemTemplate), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightParticleSystemTemplate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightParticleSystemTemplate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightParticleClassName_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Name read from config" },
 	};
@@ -1021,7 +1021,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mForceNetUpdateOnRegisterPlayer_MetaData[] = {
 		{ "Category", "Replication" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Whether or not this building should use ForceNetUpdate() when a player registers/unregisters from it." },
 	};
 #endif
@@ -1033,14 +1033,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectSpeed_MetaData[] = {
 		{ "Category", "Build Effect" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Build effect speed, a constant speed (distance over time) that the build effect should have, so bigger buildings take longer" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectSpeed = { "mBuildEffectSpeed", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mBuildEffectSpeed), METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectClassName_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Name read from config" },
 	};
@@ -1048,7 +1048,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectClassName = { "mBuildEffectClassName", nullptr, (EPropertyFlags)0x0020080002004000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mBuildEffectClassName), Z_Construct_UScriptStruct_FSoftClassPath, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectClassName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectClassName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleEffectClassName_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Name read from config" },
 	};
@@ -1056,7 +1056,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleEffectClassName = { "mDismantleEffectClassName", nullptr, (EPropertyFlags)0x0020080002004000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mDismantleEffectClassName), Z_Construct_UScriptStruct_FSoftClassPath, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleEffectClassName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleEffectClassName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectInstignator_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Used to sync and start build effect on buildings when created, but not after creation. Set's to true when creating a building, turns off in the construction effect finish play." },
 	};
@@ -1064,21 +1064,21 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectInstignator = { "mBuildEffectInstignator", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mBuildEffectInstignator), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectInstignator_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectInstignator_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleEffectTemplate_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "What build effect to use when dismantling this building" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleEffectTemplate = { "mDismantleEffectTemplate", nullptr, (EPropertyFlags)0x0024080000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mDismantleEffectTemplate), Z_Construct_UClass_UFGMaterialEffect_Build_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleEffectTemplate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleEffectTemplate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectTemplate_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "What build effect to use when building this building" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectTemplate = { "mBuildEffectTemplate", nullptr, (EPropertyFlags)0x0024080000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mBuildEffectTemplate), Z_Construct_UClass_UFGMaterialEffect_Build_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectTemplate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectTemplate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mColorSlot_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "The color slot of this buildable" },
 	};
@@ -1086,7 +1086,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mColorSlot = { "mColorSlot", "OnRep_ColorSlot", (EPropertyFlags)0x0020080101000020, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mColorSlot), nullptr, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mColorSlot_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mColorSlot_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mSecondaryColor_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "The primary color of this buildable" },
 	};
@@ -1094,7 +1094,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mSecondaryColor = { "mSecondaryColor", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mSecondaryColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mSecondaryColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mSecondaryColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mPrimaryColor_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "The primary color of this buildable" },
 	};
@@ -1102,7 +1102,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mPrimaryColor = { "mPrimaryColor", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mPrimaryColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mPrimaryColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mPrimaryColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mMaterialNameToInstanceManager_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Map of colorable mesh materials to their respective colored factory material instance manager" },
 	};
 #endif
@@ -1112,7 +1112,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mFactoryTickFunction_MetaData[] = {
 		{ "Category", "Factory Tick" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Controls if we should receive Factory_Tick and how frequent." },
 	};
@@ -1121,7 +1121,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightVector_MetaData[] = {
 		{ "Category", "Buildable" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Vector used to determine highlighteffects location" },
 	};
 #endif
@@ -1129,7 +1129,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_MaxRenderDistance_MetaData[] = {
 		{ "Category", "Rendering" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Max draw distance, inactive when < 0" },
 	};
 #endif
@@ -1137,7 +1137,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDescription_MetaData[] = {
 		{ "Category", "Buildable" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "MultiLine", "TRUE" },
 		{ "ToolTip", "The human readable description of this object." },
 	};
@@ -1146,7 +1146,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDisplayName_MetaData[] = {
 		{ "Category", "Buildable" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "The human readable display name of this object." },
 	};
 #endif
@@ -1154,7 +1154,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHologramClass_MetaData[] = {
 		{ "Category", "Buildable" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "The hologram class to use for constructing this object." },
 	};
 #endif
@@ -1229,7 +1229,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildable, 3426185308);
+	IMPLEMENT_CLASS(AFGBuildable, 4079016921);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildable>()
 	{
 		return AFGBuildable::StaticClass();

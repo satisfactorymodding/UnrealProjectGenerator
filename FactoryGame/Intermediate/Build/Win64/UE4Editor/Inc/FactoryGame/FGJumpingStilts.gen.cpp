@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGJumpingStilts.h"
+#include "FactoryGame/Public/FGJumpingStilts.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -63,7 +63,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJumpingStilts() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGJumpingStilts_GetAdjustedMaxSpeed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Jumping Stilts" },
-		{ "ModuleRelativePath", "FGJumpingStilts.h" },
+		{ "ModuleRelativePath", "Public/FGJumpingStilts.h" },
 		{ "ToolTip", "Is called by the MovementComponent to determine a new maximum speed" },
 	};
 #endif
@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJumpingStilts() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGJumpingStilts_GetAdjustedZJumpSpeed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Jumping Stilts" },
-		{ "ModuleRelativePath", "FGJumpingStilts.h" },
+		{ "ModuleRelativePath", "Public/FGJumpingStilts.h" },
 		{ "ToolTip", "Called by the MovementComponent to determine a new JumpZ scalar" },
 	};
 #endif
@@ -135,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJumpingStilts() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGJumpingStilts_GetCurrentFallSpeed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Jumping Stilts" },
-		{ "ModuleRelativePath", "FGJumpingStilts.h" },
+		{ "ModuleRelativePath", "Public/FGJumpingStilts.h" },
 		{ "ToolTip", "Returns the current movement components Z velocity" },
 	};
 #endif
@@ -169,7 +169,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJumpingStilts() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGJumpingStilts_GetMaxFallSpeedBeforeDamage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Jumping Stilts" },
-		{ "ModuleRelativePath", "FGJumpingStilts.h" },
+		{ "ModuleRelativePath", "Public/FGJumpingStilts.h" },
 		{ "ToolTip", "Returns the speed at which a player will now take damage when falling" },
 	};
 #endif
@@ -203,7 +203,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJumpingStilts() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGJumpingStilts_GetNormalizedFallSpeedUntilDamaged_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Jumping Stilts" },
-		{ "ModuleRelativePath", "FGJumpingStilts.h" },
+		{ "ModuleRelativePath", "Public/FGJumpingStilts.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJumpingStilts_GetNormalizedFallSpeedUntilDamaged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJumpingStilts, nullptr, "GetNormalizedFallSpeedUntilDamaged", sizeof(FGJumpingStilts_eventGetNormalizedFallSpeedUntilDamaged_Parms), Z_Construct_UFunction_AFGJumpingStilts_GetNormalizedFallSpeedUntilDamaged_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGJumpingStilts_GetNormalizedFallSpeedUntilDamaged_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJumpingStilts_GetNormalizedFallSpeedUntilDamaged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJumpingStilts_GetNormalizedFallSpeedUntilDamaged_Statics::Function_MetaDataParams)) };
@@ -248,22 +248,22 @@ void EmptyLinkFunctionForGeneratedCodeFGJumpingStilts() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGJumpingStilts_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGJumpingStilts_GetAdjustedMaxSpeed, "GetAdjustedMaxSpeed" }, // 2400842314
-		{ &Z_Construct_UFunction_AFGJumpingStilts_GetAdjustedZJumpSpeed, "GetAdjustedZJumpSpeed" }, // 3753169770
-		{ &Z_Construct_UFunction_AFGJumpingStilts_GetCurrentFallSpeed, "GetCurrentFallSpeed" }, // 2057537661
-		{ &Z_Construct_UFunction_AFGJumpingStilts_GetMaxFallSpeedBeforeDamage, "GetMaxFallSpeedBeforeDamage" }, // 2909875455
-		{ &Z_Construct_UFunction_AFGJumpingStilts_GetNormalizedFallSpeedUntilDamaged, "GetNormalizedFallSpeedUntilDamaged" }, // 439732193
+		{ &Z_Construct_UFunction_AFGJumpingStilts_GetAdjustedMaxSpeed, "GetAdjustedMaxSpeed" }, // 2511989554
+		{ &Z_Construct_UFunction_AFGJumpingStilts_GetAdjustedZJumpSpeed, "GetAdjustedZJumpSpeed" }, // 404413876
+		{ &Z_Construct_UFunction_AFGJumpingStilts_GetCurrentFallSpeed, "GetCurrentFallSpeed" }, // 1026912768
+		{ &Z_Construct_UFunction_AFGJumpingStilts_GetMaxFallSpeedBeforeDamage, "GetMaxFallSpeedBeforeDamage" }, // 2705108541
+		{ &Z_Construct_UFunction_AFGJumpingStilts_GetNormalizedFallSpeedUntilDamaged, "GetNormalizedFallSpeedUntilDamaged" }, // 1932063487
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGJumpingStilts_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGJumpingStilts.h" },
-		{ "ModuleRelativePath", "FGJumpingStilts.h" },
+		{ "ModuleRelativePath", "Public/FGJumpingStilts.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGJumpingStilts_Statics::NewProp_mJumpSpeedFactor_MetaData[] = {
 		{ "Category", "Jumping Stilts" },
-		{ "ModuleRelativePath", "FGJumpingStilts.h" },
+		{ "ModuleRelativePath", "Public/FGJumpingStilts.h" },
 		{ "ToolTip", "The factor by which the default JumpZ is multiplied while equipped" },
 	};
 #endif
@@ -271,7 +271,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJumpingStilts() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGJumpingStilts_Statics::NewProp_mSprintSpeedFactor_MetaData[] = {
 		{ "Category", "Jumping Stilts" },
-		{ "ModuleRelativePath", "FGJumpingStilts.h" },
+		{ "ModuleRelativePath", "Public/FGJumpingStilts.h" },
 		{ "ToolTip", "The factor by which the default sprint speed is multiplied while equipped" },
 	};
 #endif
@@ -279,7 +279,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJumpingStilts() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGJumpingStilts_Statics::NewProp_mFallDamageCurveOverride_MetaData[] = {
 		{ "Category", "Jumping Stilts" },
-		{ "ModuleRelativePath", "FGJumpingStilts.h" },
+		{ "ModuleRelativePath", "Public/FGJumpingStilts.h" },
 		{ "ToolTip", "The UCurveFloat to use to override the default fall damage curve" },
 	};
 #endif
@@ -316,7 +316,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJumpingStilts() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGJumpingStilts, 2158252875);
+	IMPLEMENT_CLASS(AFGJumpingStilts, 2805546549);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGJumpingStilts>()
 	{
 		return AFGJumpingStilts::StaticClass();
@@ -346,7 +346,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJumpingStilts() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGJumpingStiltsAttachment_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGJumpingStilts.h" },
-		{ "ModuleRelativePath", "FGJumpingStilts.h" },
+		{ "ModuleRelativePath", "Public/FGJumpingStilts.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGJumpingStiltsAttachment_Statics::StaticCppClassTypeInfo = {
@@ -376,7 +376,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJumpingStilts() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGJumpingStiltsAttachment, 3283157735);
+	IMPLEMENT_CLASS(AFGJumpingStiltsAttachment, 3386876737);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGJumpingStiltsAttachment>()
 	{
 		return AFGJumpingStiltsAttachment::StaticClass();

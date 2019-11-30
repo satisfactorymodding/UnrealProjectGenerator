@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Resources/FGItemDescriptorBiomass.h"
+#include "FactoryGame/Public/Resources/FGItemDescriptorBiomass.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorBiomass() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptorBiomass_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Icon Preview" },
 		{ "IncludePath", "Resources/FGItemDescriptorBiomass.h" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptorBiomass.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptorBiomass.h" },
 		{ "ToolTip", "Base descriptor for types of biomass." },
 	};
 #endif
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorBiomass() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGItemDescriptorBiomass, 3676129715);
+	IMPLEMENT_CLASS(UFGItemDescriptorBiomass, 371017418);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGItemDescriptorBiomass>()
 	{
 		return UFGItemDescriptorBiomass::StaticClass();

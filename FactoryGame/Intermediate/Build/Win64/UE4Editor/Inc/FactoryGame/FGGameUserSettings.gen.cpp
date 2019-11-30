@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGGameUserSettings.h"
+#include "FactoryGame/Public/FGGameUserSettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -79,7 +79,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUserSettings() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OptionUpdated__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OptionUpdated__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OptionUpdated__DelegateSignature", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00120000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OptionUpdated__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OptionUpdated__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -116,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUserSettings() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_ArachnophobiaModeChangedDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ArachnophobiaModeChangedDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "ArachnophobiaModeChangedDelegate__DelegateSignature", sizeof(_Script_FactoryGame_eventArachnophobiaModeChangedDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_ArachnophobiaModeChangedDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ArachnophobiaModeChangedDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ArachnophobiaModeChangedDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ArachnophobiaModeChangedDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -167,7 +167,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOptionUpdateDelega
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FOptionUpdateDelegateData_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Holds delegates to be called when a specific option is changed" },
 	};
 #endif
@@ -177,7 +177,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOptionUpdateDelega
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FOptionUpdateDelegateData_Statics::NewProp_OptionUpdatedDelegates_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FOptionUpdateDelegateData_Statics::NewProp_OptionUpdatedDelegates = { "OptionUpdatedDelegates", nullptr, (EPropertyFlags)0x0010008000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FOptionUpdateDelegateData, OptionUpdatedDelegates), METADATA_PARAMS(Z_Construct_UScriptStruct_FOptionUpdateDelegateData_Statics::NewProp_OptionUpdatedDelegates_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FOptionUpdateDelegateData_Statics::NewProp_OptionUpdatedDelegates_MetaData)) };
@@ -214,7 +214,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOptionUpdateDelega
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FOptionUpdateDelegateData_Hash() { return 1887593482U; }
+	uint32 Get_Z_Construct_UScriptStruct_FOptionUpdateDelegateData_Hash() { return 301611679U; }
 class UScriptStruct* FAudioVolumeMap::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -256,7 +256,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAudioVolumeMap_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Name and value combination for the options with audio" },
 	};
 #endif
@@ -266,14 +266,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAudioVolumeMap_Statics::NewProp_Value_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "The stored value of the RTPC" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FAudioVolumeMap_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FAudioVolumeMap, Value), METADATA_PARAMS(Z_Construct_UScriptStruct_FAudioVolumeMap_Statics::NewProp_Value_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FAudioVolumeMap_Statics::NewProp_Value_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAudioVolumeMap_Statics::NewProp_Name_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Name of the RTPC that this maps to" },
 	};
 #endif
@@ -310,7 +310,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FAudioVolumeMap_Hash() { return 1881615868U; }
+	uint32 Get_Z_Construct_UScriptStruct_FAudioVolumeMap_Hash() { return 3166424083U; }
 	void UFGGameUserSettings::StaticRegisterNativesUFGGameUserSettings()
 	{
 		UClass* Class = UFGGameUserSettings::StaticClass();
@@ -374,7 +374,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_ApplyRestartRequiredChanges_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Apply changes that require a restart, only do this when exiting the game" },
 	};
 #endif
@@ -398,7 +398,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_ClearRequireRestart_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Clear that we require restart for setting to apply" },
 	};
 #endif
@@ -437,7 +437,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetAnalyticsDisabled_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameUserSettings_GetAnalyticsDisabled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameUserSettings, nullptr, "GetAnalyticsDisabled", sizeof(FGGameUserSettings_eventGetAnalyticsDisabled_Parms), Z_Construct_UFunction_UFGGameUserSettings_GetAnalyticsDisabled_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUserSettings_GetAnalyticsDisabled_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameUserSettings_GetAnalyticsDisabled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUserSettings_GetAnalyticsDisabled_Statics::Function_MetaDataParams)) };
@@ -475,7 +475,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetArachnophobiaMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Get Arachnophobia Mode" },
 	};
 #endif
@@ -513,7 +513,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetAudioVolume_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Gets the audio volumes for all channels" },
 	};
 #endif
@@ -547,7 +547,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Gets the autosave interval" },
 	};
 #endif
@@ -586,7 +586,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetAutoSortInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Get whether inventory should auto sort" },
 	};
 #endif
@@ -629,7 +629,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetBoolOptionValue_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Get the option value for a bool" },
 	};
 #endif
@@ -667,7 +667,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetDefaultQualitySetting_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Returns the default quality setting value" },
 	};
 #endif
@@ -701,7 +701,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetFGGameUserSettings_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Returns the game local machine settings (resolution, windowing mode, scalability settings, etc...)" },
 	};
 #endif
@@ -739,7 +739,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetFloatOptionValue_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Get the option value for a float" },
 	};
 #endif
@@ -773,7 +773,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetFOV_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Get FOV" },
 	};
 #endif
@@ -807,7 +807,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetHeadBobScale_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Get mHeadBobScale" },
 	};
 #endif
@@ -846,7 +846,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetHoldToSprint_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Get HoldToSprint" },
 	};
 #endif
@@ -884,7 +884,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetIntOptionValue_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Get the option value for a integer" },
 	};
 #endif
@@ -923,7 +923,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetInvertedLook_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Get Inverty Y mode" },
 	};
 #endif
@@ -960,7 +960,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetKeyMappings_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Get custom bindings" },
 	};
 #endif
@@ -994,7 +994,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetNeworkQuality_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Returns the user setting for network quality" },
 	};
 #endif
@@ -1033,7 +1033,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetRequireRestart_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Get if we require restart for the setting to apply" },
 	};
 #endif
@@ -1072,7 +1072,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetShowBreakNotification_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Gets if we should show the take break notification" },
 	};
 #endif
@@ -1111,7 +1111,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_IsHZBOEnabled_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameUserSettings_IsHZBOEnabled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameUserSettings, nullptr, "IsHZBOEnabled", sizeof(FGGameUserSettings_eventIsHZBOEnabled_Parms), Z_Construct_UFunction_UFGGameUserSettings_IsHZBOEnabled_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUserSettings_IsHZBOEnabled_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameUserSettings_IsHZBOEnabled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUserSettings_IsHZBOEnabled_Statics::Function_MetaDataParams)) };
@@ -1149,7 +1149,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_IsMotionBlurDirty_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Checks if the motion blur user setting is different from current system setting" },
 	};
 #endif
@@ -1188,7 +1188,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_IsMotionBlurEnabled_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Returns the user setting for motion blur" },
 	};
 #endif
@@ -1227,7 +1227,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_IsPostProcessUsingCustomSettings_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Is post process using a custom setting" },
 	};
 #endif
@@ -1270,7 +1270,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_IsUsingCustomQualitySetting_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Is the provided setting using a custom quality setting" },
 	};
 #endif
@@ -1294,7 +1294,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_ResetAudioToCurrentSettings_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Reset audio settings to current settings" },
 	};
 #endif
@@ -1333,7 +1333,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_SetArachnophobiaMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Set Arachnophobia Mode" },
 	};
 #endif
@@ -1357,7 +1357,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_SetAudioToDefaults_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Reset audio settings to default settings" },
 	};
 #endif
@@ -1395,7 +1395,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_SetAudioVolume_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Set the audio volume for a specified channel" },
 	};
 #endif
@@ -1429,7 +1429,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Updates the autosave interval" },
 	};
 #endif
@@ -1468,7 +1468,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_SetAutoSortInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Set AutoSortInventory" },
 	};
 #endif
@@ -1531,7 +1531,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		{ "Category", "FactoryGame|Settings" },
 		{ "CPP_Default_requireRestart", "false" },
 		{ "CPP_Default_updateInstantly", "false" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Set the option value for a bool" },
 	};
 #endif
@@ -1589,7 +1589,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		{ "Category", "FactoryGame|Settings" },
 		{ "CPP_Default_requireRestart", "false" },
 		{ "CPP_Default_updateInstantly", "false" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Set the option value for a float" },
 	};
 #endif
@@ -1623,7 +1623,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_SetFOV_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Set FOV" },
 	};
 #endif
@@ -1657,7 +1657,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_SetHeadBobScale_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Set mHeadBobScale" },
 	};
 #endif
@@ -1696,7 +1696,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_SetHoldToSprint_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Set HoldToSprint" },
 	};
 #endif
@@ -1735,7 +1735,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_SetHZBOEnabled_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameUserSettings_SetHZBOEnabled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameUserSettings, nullptr, "SetHZBOEnabled", sizeof(FGGameUserSettings_eventSetHZBOEnabled_Parms), Z_Construct_UFunction_UFGGameUserSettings_SetHZBOEnabled_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUserSettings_SetHZBOEnabled_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameUserSettings_SetHZBOEnabled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUserSettings_SetHZBOEnabled_Statics::Function_MetaDataParams)) };
@@ -1792,7 +1792,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		{ "Category", "FactoryGame|Settings" },
 		{ "CPP_Default_requireRestart", "false" },
 		{ "CPP_Default_updateInstantly", "false" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Set the option value for a integer" },
 	};
 #endif
@@ -1831,7 +1831,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_SetInvertedLook_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Set Inverty Y mode" },
 	};
 #endif
@@ -1870,7 +1870,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_SetMotionBlurEnabled_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Sets the user setting for motion blur" },
 	};
 #endif
@@ -1904,7 +1904,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_SetNeworkQuality_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Sets the user setting for network quality" },
 	};
 #endif
@@ -1943,7 +1943,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_SetShowBreakNotification_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Sets if we should show the take break notification" },
 	};
 #endif
@@ -1989,7 +1989,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_SubscribeToDynamicOptionUpdate_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Subscribe to changes for this option. The given delegate will be called when cvar is updated" },
 	};
 #endif
@@ -2023,7 +2023,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_UnsubscribeToAllDynamicOptionUpdate_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Unsubscribe to all changes for options this object have subscribed to" },
 	};
 #endif
@@ -2069,7 +2069,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_UnsubscribeToDynamicOptionUpdate_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Unsubscribe to changes for this option" },
 	};
 #endif
@@ -2093,7 +2093,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_UpdatePostProcessSettings_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Settings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Update the custom post process settings like motion blur etc." },
 	};
 #endif
@@ -2212,63 +2212,63 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGGameUserSettings_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGGameUserSettings_ApplyRestartRequiredChanges, "ApplyRestartRequiredChanges" }, // 3015442553
-		{ &Z_Construct_UFunction_UFGGameUserSettings_ClearRequireRestart, "ClearRequireRestart" }, // 3749266560
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetAnalyticsDisabled, "GetAnalyticsDisabled" }, // 4179739094
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetArachnophobiaMode, "GetArachnophobiaMode" }, // 3899326711
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetAudioVolume, "GetAudioVolume" }, // 1358946648
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval, "GetAutosaveInterval" }, // 2882245539
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetAutoSortInventory, "GetAutoSortInventory" }, // 1671653788
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetBoolOptionValue, "GetBoolOptionValue" }, // 1890087092
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetDefaultQualitySetting, "GetDefaultQualitySetting" }, // 2674012381
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetFGGameUserSettings, "GetFGGameUserSettings" }, // 3343248354
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetFloatOptionValue, "GetFloatOptionValue" }, // 3208451598
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetFOV, "GetFOV" }, // 587534629
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetHeadBobScale, "GetHeadBobScale" }, // 2902566788
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetHoldToSprint, "GetHoldToSprint" }, // 3169736178
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetIntOptionValue, "GetIntOptionValue" }, // 1360526517
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetInvertedLook, "GetInvertedLook" }, // 866929047
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetKeyMappings, "GetKeyMappings" }, // 1333715986
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetNeworkQuality, "GetNeworkQuality" }, // 2175452299
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetRequireRestart, "GetRequireRestart" }, // 1716135488
-		{ &Z_Construct_UFunction_UFGGameUserSettings_GetShowBreakNotification, "GetShowBreakNotification" }, // 1841537700
-		{ &Z_Construct_UFunction_UFGGameUserSettings_IsHZBOEnabled, "IsHZBOEnabled" }, // 1151305628
-		{ &Z_Construct_UFunction_UFGGameUserSettings_IsMotionBlurDirty, "IsMotionBlurDirty" }, // 489162921
-		{ &Z_Construct_UFunction_UFGGameUserSettings_IsMotionBlurEnabled, "IsMotionBlurEnabled" }, // 2947541112
-		{ &Z_Construct_UFunction_UFGGameUserSettings_IsPostProcessUsingCustomSettings, "IsPostProcessUsingCustomSettings" }, // 2981630933
-		{ &Z_Construct_UFunction_UFGGameUserSettings_IsUsingCustomQualitySetting, "IsUsingCustomQualitySetting" }, // 615876847
-		{ &Z_Construct_UFunction_UFGGameUserSettings_ResetAudioToCurrentSettings, "ResetAudioToCurrentSettings" }, // 2605411661
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SetArachnophobiaMode, "SetArachnophobiaMode" }, // 1276561692
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SetAudioToDefaults, "SetAudioToDefaults" }, // 1413147723
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SetAudioVolume, "SetAudioVolume" }, // 1999595055
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval, "SetAutosaveInterval" }, // 612469082
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SetAutoSortInventory, "SetAutoSortInventory" }, // 706439391
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SetBoolOptionValue, "SetBoolOptionValue" }, // 2182912995
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SetFloatOptionValue, "SetFloatOptionValue" }, // 2553428661
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SetFOV, "SetFOV" }, // 55376254
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SetHeadBobScale, "SetHeadBobScale" }, // 3167492778
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SetHoldToSprint, "SetHoldToSprint" }, // 358300889
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SetHZBOEnabled, "SetHZBOEnabled" }, // 2393215966
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SetIntOptionValue, "SetIntOptionValue" }, // 55452847
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SetInvertedLook, "SetInvertedLook" }, // 1419453829
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SetMotionBlurEnabled, "SetMotionBlurEnabled" }, // 2798721514
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SetNeworkQuality, "SetNeworkQuality" }, // 2859262704
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SetShowBreakNotification, "SetShowBreakNotification" }, // 3443798265
-		{ &Z_Construct_UFunction_UFGGameUserSettings_SubscribeToDynamicOptionUpdate, "SubscribeToDynamicOptionUpdate" }, // 522188762
-		{ &Z_Construct_UFunction_UFGGameUserSettings_UnsubscribeToAllDynamicOptionUpdate, "UnsubscribeToAllDynamicOptionUpdate" }, // 116967800
-		{ &Z_Construct_UFunction_UFGGameUserSettings_UnsubscribeToDynamicOptionUpdate, "UnsubscribeToDynamicOptionUpdate" }, // 3019102745
-		{ &Z_Construct_UFunction_UFGGameUserSettings_UpdatePostProcessSettings, "UpdatePostProcessSettings" }, // 1825788126
+		{ &Z_Construct_UFunction_UFGGameUserSettings_ApplyRestartRequiredChanges, "ApplyRestartRequiredChanges" }, // 4093787603
+		{ &Z_Construct_UFunction_UFGGameUserSettings_ClearRequireRestart, "ClearRequireRestart" }, // 2388432352
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetAnalyticsDisabled, "GetAnalyticsDisabled" }, // 2199810428
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetArachnophobiaMode, "GetArachnophobiaMode" }, // 2158777389
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetAudioVolume, "GetAudioVolume" }, // 1891546880
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval, "GetAutosaveInterval" }, // 1279743469
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetAutoSortInventory, "GetAutoSortInventory" }, // 1622171490
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetBoolOptionValue, "GetBoolOptionValue" }, // 1936904942
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetDefaultQualitySetting, "GetDefaultQualitySetting" }, // 4125481023
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetFGGameUserSettings, "GetFGGameUserSettings" }, // 250788622
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetFloatOptionValue, "GetFloatOptionValue" }, // 2489614628
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetFOV, "GetFOV" }, // 1593991328
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetHeadBobScale, "GetHeadBobScale" }, // 3819494062
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetHoldToSprint, "GetHoldToSprint" }, // 929744359
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetIntOptionValue, "GetIntOptionValue" }, // 4100636392
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetInvertedLook, "GetInvertedLook" }, // 4267655148
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetKeyMappings, "GetKeyMappings" }, // 2552613423
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetNeworkQuality, "GetNeworkQuality" }, // 2646430417
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetRequireRestart, "GetRequireRestart" }, // 2364406613
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetShowBreakNotification, "GetShowBreakNotification" }, // 597517876
+		{ &Z_Construct_UFunction_UFGGameUserSettings_IsHZBOEnabled, "IsHZBOEnabled" }, // 3805372108
+		{ &Z_Construct_UFunction_UFGGameUserSettings_IsMotionBlurDirty, "IsMotionBlurDirty" }, // 3954111256
+		{ &Z_Construct_UFunction_UFGGameUserSettings_IsMotionBlurEnabled, "IsMotionBlurEnabled" }, // 3659359774
+		{ &Z_Construct_UFunction_UFGGameUserSettings_IsPostProcessUsingCustomSettings, "IsPostProcessUsingCustomSettings" }, // 3653347439
+		{ &Z_Construct_UFunction_UFGGameUserSettings_IsUsingCustomQualitySetting, "IsUsingCustomQualitySetting" }, // 2925565868
+		{ &Z_Construct_UFunction_UFGGameUserSettings_ResetAudioToCurrentSettings, "ResetAudioToCurrentSettings" }, // 3556275902
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetArachnophobiaMode, "SetArachnophobiaMode" }, // 1577351308
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetAudioToDefaults, "SetAudioToDefaults" }, // 1927552699
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetAudioVolume, "SetAudioVolume" }, // 167828050
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval, "SetAutosaveInterval" }, // 3202834212
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetAutoSortInventory, "SetAutoSortInventory" }, // 3935532064
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetBoolOptionValue, "SetBoolOptionValue" }, // 3143225227
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetFloatOptionValue, "SetFloatOptionValue" }, // 638840992
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetFOV, "SetFOV" }, // 3560694190
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetHeadBobScale, "SetHeadBobScale" }, // 1472964033
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetHoldToSprint, "SetHoldToSprint" }, // 2842554479
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetHZBOEnabled, "SetHZBOEnabled" }, // 152945915
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetIntOptionValue, "SetIntOptionValue" }, // 488609867
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetInvertedLook, "SetInvertedLook" }, // 3944374976
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetMotionBlurEnabled, "SetMotionBlurEnabled" }, // 2884328256
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetNeworkQuality, "SetNeworkQuality" }, // 3241776871
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetShowBreakNotification, "SetShowBreakNotification" }, // 1453278335
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SubscribeToDynamicOptionUpdate, "SubscribeToDynamicOptionUpdate" }, // 3458237360
+		{ &Z_Construct_UFunction_UFGGameUserSettings_UnsubscribeToAllDynamicOptionUpdate, "UnsubscribeToAllDynamicOptionUpdate" }, // 3640007401
+		{ &Z_Construct_UFunction_UFGGameUserSettings_UnsubscribeToDynamicOptionUpdate, "UnsubscribeToDynamicOptionUpdate" }, // 3045631667
+		{ &Z_Construct_UFunction_UFGGameUserSettings_UpdatePostProcessSettings, "UpdatePostProcessSettings" }, // 1030722703
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGGameUserSettings.h" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mFloatValues_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mFloatValues = { "mFloatValues", nullptr, (EPropertyFlags)0x0040000000004000, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGGameUserSettings, mFloatValues), METADATA_PARAMS(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mFloatValues_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mFloatValues_MetaData)) };
@@ -2276,7 +2276,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mFloatValues_ValueProp = { "mFloatValues", nullptr, (EPropertyFlags)0x0000000000004000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mIntValues_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "The changed values that we want to save to file" },
 	};
 #endif
@@ -2285,14 +2285,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mIntValues_ValueProp = { "mIntValues", nullptr, (EPropertyFlags)0x0000000000004000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_OptionUpdatedDelegate_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Delegate used for broadcasting updates to subscribed options" },
 	};
 #endif
 	const UE4CodeGen_Private::FDelegatePropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_OptionUpdatedDelegate = { "OptionUpdatedDelegate", nullptr, (EPropertyFlags)0x0020080000080000, UE4CodeGen_Private::EPropertyGenFlags::Delegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGGameUserSettings, OptionUpdatedDelegate), Z_Construct_UDelegateFunction_FactoryGame_OptionUpdated__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_OptionUpdatedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_OptionUpdatedDelegate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mShowBreakNotification_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Whether or not we should show the take break notification" },
 	};
 #endif
@@ -2303,14 +2303,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mShowBreakNotification = { "mShowBreakNotification", nullptr, (EPropertyFlags)0x0020080000004000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGGameUserSettings), &Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mShowBreakNotification_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mShowBreakNotification_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mShowBreakNotification_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAutosaveInterval_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "How often in seconds to autosave" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAutosaveInterval = { "mAutosaveInterval", nullptr, (EPropertyFlags)0x0020080000004000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGGameUserSettings, mAutosaveInterval), METADATA_PARAMS(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAutosaveInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAutosaveInterval_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAnalyticsDisabled_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Whether the user has opted out of analytics or not" },
 	};
 #endif
@@ -2321,7 +2321,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAnalyticsDisabled = { "mAnalyticsDisabled", nullptr, (EPropertyFlags)0x0020080000004000, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UFGGameUserSettings), &Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAnalyticsDisabled_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAnalyticsDisabled_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAnalyticsDisabled_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAutoSortInventory_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 	};
 #endif
 	void Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAutoSortInventory_SetBit(void* Obj)
@@ -2331,7 +2331,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAutoSortInventory = { "mAutoSortInventory", nullptr, (EPropertyFlags)0x0020080000004000, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UFGGameUserSettings), &Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAutoSortInventory_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAutoSortInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAutoSortInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mHoldToSprint_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "True means old-school hold down key to sprint, false = toggle sprint by pressing" },
 	};
 #endif
@@ -2342,7 +2342,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mHoldToSprint = { "mHoldToSprint", nullptr, (EPropertyFlags)0x0020080000004000, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UFGGameUserSettings), &Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mHoldToSprint_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mHoldToSprint_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mHoldToSprint_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mInvertY_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Sets the Look-axis to inverted" },
 	};
 #endif
@@ -2353,7 +2353,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mInvertY = { "mInvertY", nullptr, (EPropertyFlags)0x0020080000004000, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UFGGameUserSettings), &Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mInvertY_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mInvertY_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mInvertY_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mIsArachnophobiaMode_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "When true, arachnid-like creatures are replaced with cats." },
 	};
 #endif
@@ -2364,14 +2364,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mIsArachnophobiaMode = { "mIsArachnophobiaMode", nullptr, (EPropertyFlags)0x0020080000004000, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UFGGameUserSettings), &Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mIsArachnophobiaMode_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mIsArachnophobiaMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mIsArachnophobiaMode_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mHeadBobScale_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Scale of headbobbing" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mHeadBobScale = { "mHeadBobScale", nullptr, (EPropertyFlags)0x0020080000004000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGGameUserSettings, mHeadBobScale), METADATA_PARAMS(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mHeadBobScale_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mHeadBobScale_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mNetworkQuality_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "The current network quality setting" },
 	};
 #endif
@@ -2379,7 +2379,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mCustomKeyMappings_MetaData[] = {
 		{ "Category", "Bindings" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "List of remapped key Mappings" },
 	};
 #endif
@@ -2387,7 +2387,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mCustomKeyMappings_Inner = { "mCustomKeyMappings", nullptr, (EPropertyFlags)0x0000000000004000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FFGKeyMapping, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mHZBOEnabled_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Is HZBO enabled" },
 	};
 #endif
@@ -2398,21 +2398,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mHZBOEnabled = { "mHZBOEnabled", nullptr, (EPropertyFlags)0x0020080000004000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGGameUserSettings), &Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mHZBOEnabled_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mHZBOEnabled_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mHZBOEnabled_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mMotionBlurQuality_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Motion blur quality. 0 = off" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mMotionBlurQuality = { "mMotionBlurQuality", nullptr, (EPropertyFlags)0x0020080000004000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGGameUserSettings, mMotionBlurQuality), METADATA_PARAMS(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mMotionBlurQuality_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mMotionBlurQuality_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mFOV_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Sets Field of View" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mFOV = { "mFOV", nullptr, (EPropertyFlags)0x0020080000004000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGGameUserSettings, mFOV), METADATA_PARAMS(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mFOV_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mFOV_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAudioVolumes_MetaData[] = {
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Audio volumes for the options" },
 	};
 #endif
@@ -2422,7 +2422,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_OnArachnophobiaModeChangedDelegate_MetaData[] = {
 		{ "Category", "Arachnophobia" },
 		{ "DisplayName", "OnArachnophobiaModeChanged" },
-		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGameUserSettings.h" },
 		{ "ToolTip", "Called when arachnophobia mode is changed" },
 	};
 #endif
@@ -2480,7 +2480,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameUserSettings, 3982820234);
+	IMPLEMENT_CLASS(UFGGameUserSettings, 706152257);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGGameUserSettings>()
 	{
 		return UFGGameUserSettings::StaticClass();

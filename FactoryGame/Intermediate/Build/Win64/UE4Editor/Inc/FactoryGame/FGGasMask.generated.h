@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGGasMask_generated_h
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGGasMask(); \
 	friend struct Z_Construct_UClass_AFGGasMask_Statics; \
@@ -24,7 +24,7 @@ public: \
 	DECLARE_SERIALIZER(AFGGasMask)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGGasMask(); \
 	friend struct Z_Construct_UClass_AFGGasMask_Statics; \
@@ -33,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(AFGGasMask)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGGasMask(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGGasMask) \
@@ -46,7 +46,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGGasMask(AFGGasMask&&); \
@@ -57,35 +57,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGasMask); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGGasMask)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_10_PROLOG
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_10_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_INCLASS \
-	FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_13_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> FACTORYGAME_API UClass* StaticClass<class AFGGasMask>();
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGGasMaskAttachment(); \
 	friend struct Z_Construct_UClass_AFGGasMaskAttachment_Statics; \
@@ -94,7 +94,7 @@ public: \
 	DECLARE_SERIALIZER(AFGGasMaskAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGGasMaskAttachment(); \
 	friend struct Z_Construct_UClass_AFGGasMaskAttachment_Statics; \
@@ -103,7 +103,7 @@ public: \
 	DECLARE_SERIALIZER(AFGGasMaskAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGGasMaskAttachment(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGGasMaskAttachment) \
@@ -116,7 +116,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGGasMaskAttachment() { }; \
 private: \
@@ -129,26 +129,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGasMaskAttachment); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGGasMaskAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_19_PROLOG
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_19_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_INCLASS \
-	FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h_22_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -156,7 +156,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class AFGGasMaskAttachment>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Equipment_FGGasMask_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_Equipment_FGGasMask_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

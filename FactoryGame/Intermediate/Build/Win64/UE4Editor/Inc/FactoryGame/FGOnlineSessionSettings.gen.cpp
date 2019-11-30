@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGOnlineSessionSettings.h"
+#include "FactoryGame/Public/FGOnlineSessionSettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -33,7 +33,7 @@ void EmptyLinkFunctionForGeneratedCodeFGOnlineSessionSettings() {}
 		return ESessionVisibility_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ESessionVisibility(ESessionVisibility_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ESessionVisibility"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ESessionVisibility_Hash() { return 1609036651U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ESessionVisibility_Hash() { return 3045359888U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ESessionVisibility()
 	{
 #if WITH_HOT_RELOAD
@@ -52,7 +52,7 @@ void EmptyLinkFunctionForGeneratedCodeFGOnlineSessionSettings() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "FGOnlineSessionSettings.h" },
+				{ "ModuleRelativePath", "Public/FGOnlineSessionSettings.h" },
 				{ "SV_FriendsOnly.DisplayName", "FriendsOnly" },
 				{ "SV_Invalid.Hidden", "" },
 				{ "SV_Private.DisplayName", "Private" },
@@ -141,7 +141,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGOnlineSessionSettings.h" },
+		{ "ModuleRelativePath", "Public/FGOnlineSessionSettings.h" },
 		{ "ToolTip", "The content of this struct is used to populate the session settings automatically\nusing the Unreal Reflection system, the keys names used to propagate the settings is\nthe variable name, then the variables is converted to strings and back." },
 	};
 #endif
@@ -152,7 +152,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NATType_MetaData[] = {
 		{ "Category", "FGOnlineSessionSettings" },
-		{ "ModuleRelativePath", "FGOnlineSessionSettings.h" },
+		{ "ModuleRelativePath", "Public/FGOnlineSessionSettings.h" },
 		{ "ToolTip", "Hosts nat type" },
 	};
 #endif
@@ -161,7 +161,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_SessionName_MetaData[] = {
 		{ "Category", "FGOnlineSessionSettings" },
-		{ "ModuleRelativePath", "FGOnlineSessionSettings.h" },
+		{ "ModuleRelativePath", "Public/FGOnlineSessionSettings.h" },
 		{ "ToolTip", "Name of the session, same as the name exposed in the Save/Load menus" },
 	};
 #endif
@@ -169,7 +169,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_BuildVersion_MetaData[] = {
 		{ "Category", "FGOnlineSessionSettings" },
-		{ "ModuleRelativePath", "FGOnlineSessionSettings.h" },
+		{ "ModuleRelativePath", "Public/FGOnlineSessionSettings.h" },
 		{ "ToolTip", "The build version on the form ++FactoryGame+Main-4.20-CL-123456" },
 	};
 #endif
@@ -177,7 +177,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_PlayDuration_MetaData[] = {
 		{ "Category", "FGOnlineSessionSettings" },
-		{ "ModuleRelativePath", "FGOnlineSessionSettings.h" },
+		{ "ModuleRelativePath", "Public/FGOnlineSessionSettings.h" },
 		{ "ToolTip", "For how long has the game been played in seconds" },
 	};
 #endif
@@ -185,28 +185,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NumConnectedPlayers_MetaData[] = {
 		{ "Category", "FGOnlineSessionSettings" },
-		{ "ModuleRelativePath", "FGOnlineSessionSettings.h" },
+		{ "ModuleRelativePath", "Public/FGOnlineSessionSettings.h" },
 		{ "ToolTip", "Number of players currently connected to the game" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NumConnectedPlayers = { "NumConnectedPlayers", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFGOnlineSessionSettings, NumConnectedPlayers), METADATA_PARAMS(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NumConnectedPlayers_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NumConnectedPlayers_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostPort_MetaData[] = {
-		{ "ModuleRelativePath", "FGOnlineSessionSettings.h" },
+		{ "ModuleRelativePath", "Public/FGOnlineSessionSettings.h" },
 		{ "ToolTip", "IMPORTANT: Don't rename this! This is parsed in engine code" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostPort = { "HostPort", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFGOnlineSessionSettings, HostPort), METADATA_PARAMS(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostPort_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostPort_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostAddress_MetaData[] = {
-		{ "ModuleRelativePath", "FGOnlineSessionSettings.h" },
+		{ "ModuleRelativePath", "Public/FGOnlineSessionSettings.h" },
 		{ "ToolTip", "IMPORTANT: Don't rename this! This is parsed in engine code, @todo: Maybe make this something else than a string?" },
 	};
 #endif
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostAddress = { "HostAddress", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFGOnlineSessionSettings, HostAddress), METADATA_PARAMS(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostAddress_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostAddress_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostId_MetaData[] = {
-		{ "ModuleRelativePath", "FGOnlineSessionSettings.h" },
+		{ "ModuleRelativePath", "Public/FGOnlineSessionSettings.h" },
 		{ "ToolTip", "IMPORTANT: Don't rename this! This is parsed in engine code" },
 	};
 #endif
@@ -250,7 +250,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Hash() { return 2434325565U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Hash() { return 4236033068U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

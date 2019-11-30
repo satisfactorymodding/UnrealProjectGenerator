@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Creature/Enemy/FGGameplayTask_Attack.h"
+#include "FactoryGame/Public/Creature/Enemy/FGGameplayTask_Attack.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -49,7 +49,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameplayTask_Attack() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameplayTask_Attack_GetAttackClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Attack" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGGameplayTask_Attack.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGGameplayTask_Attack.h" },
 		{ "ToolTip", "Gets the attack class" },
 	};
 #endif
@@ -87,18 +87,18 @@ void EmptyLinkFunctionForGeneratedCodeFGGameplayTask_Attack() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGGameplayTask_Attack_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGGameplayTask_Attack_GetAttackClass, "GetAttackClass" }, // 3247746995
+		{ &Z_Construct_UFunction_UFGGameplayTask_Attack_GetAttackClass, "GetAttackClass" }, // 404955768
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameplayTask_Attack_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Creature/Enemy/FGGameplayTask_Attack.h" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGGameplayTask_Attack.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGGameplayTask_Attack.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameplayTask_Attack_Statics::NewProp_mAttackClass_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/Enemy/FGGameplayTask_Attack.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGGameplayTask_Attack.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGGameplayTask_Attack_Statics::NewProp_mAttackClass = { "mAttackClass", nullptr, (EPropertyFlags)0x0024080000000020, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGGameplayTask_Attack, mAttackClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGGameplayTask_Attack_Statics::NewProp_mAttackClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameplayTask_Attack_Statics::NewProp_mAttackClass_MetaData)) };
@@ -132,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameplayTask_Attack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameplayTask_Attack, 705839145);
+	IMPLEMENT_CLASS(UFGGameplayTask_Attack, 3456869092);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGGameplayTask_Attack>()
 	{
 		return UFGGameplayTask_Attack::StaticClass();

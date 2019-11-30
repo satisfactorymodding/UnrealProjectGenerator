@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/AI/FGNavArea_Water.h"
+#include "FactoryGame/Public/AI/FGNavArea_Water.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNavArea_Water() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGNavArea_Water_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "AI/FGNavArea_Water.h" },
-		{ "ModuleRelativePath", "AI/FGNavArea_Water.h" },
+		{ "ModuleRelativePath", "Public/AI/FGNavArea_Water.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNavArea_Water() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGNavArea_Water, 1138583285);
+	IMPLEMENT_CLASS(UFGNavArea_Water, 4248366735);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGNavArea_Water>()
 	{
 		return UFGNavArea_Water::StaticClass();

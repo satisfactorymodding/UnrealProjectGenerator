@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Resources/FGEquipmentDescriptor.h"
+#include "FactoryGame/Public/Resources/FGEquipmentDescriptor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -54,7 +54,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentDescriptor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGEquipmentDescriptor_GetEquipmentClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Equipment" },
-		{ "ModuleRelativePath", "Resources/FGEquipmentDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGEquipmentDescriptor.h" },
 		{ "ToolTip", "Get the equipment that is linked to this descriptor." },
 	};
 #endif
@@ -92,19 +92,19 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentDescriptor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGEquipmentDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGEquipmentDescriptor_GetEquipmentClass, "GetEquipmentClass" }, // 1148859567
+		{ &Z_Construct_UFunction_UFGEquipmentDescriptor_GetEquipmentClass, "GetEquipmentClass" }, // 802535858
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEquipmentDescriptor_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Icon Preview" },
 		{ "IncludePath", "Resources/FGEquipmentDescriptor.h" },
-		{ "ModuleRelativePath", "Resources/FGEquipmentDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGEquipmentDescriptor.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEquipmentDescriptor_Statics::NewProp_mEquipmentClass_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGEquipmentDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGEquipmentDescriptor.h" },
 		{ "ToolTip", "The equipment that is linked to this descriptor." },
 	};
 #endif
@@ -139,7 +139,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEquipmentDescriptor, 2218569317);
+	IMPLEMENT_CLASS(UFGEquipmentDescriptor, 1084467757);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGEquipmentDescriptor>()
 	{
 		return UFGEquipmentDescriptor::StaticClass();

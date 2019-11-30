@@ -20,7 +20,7 @@ struct FVector;
 #endif
 #define FACTORYGAME_FGActorRepresentationInterface_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_RPC_WRAPPERS \
 	virtual ECompassViewDistance SetActorCompassViewDistance_Implementation(ECompassViewDistance compassViewDistance) { return (ECompassViewDistance)0; }; \
 	virtual ECompassViewDistance GetActorCompassViewDistance_Implementation() { return (ECompassViewDistance)0; }; \
 	virtual float GetActorFogOfWarRevealRadius_Implementation() { return 0; }; \
@@ -188,7 +188,7 @@ struct FVector;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual ECompassViewDistance SetActorCompassViewDistance_Implementation(ECompassViewDistance compassViewDistance) { return (ECompassViewDistance)0; }; \
 	virtual ECompassViewDistance GetActorCompassViewDistance_Implementation() { return (ECompassViewDistance)0; }; \
 	virtual float GetActorFogOfWarRevealRadius_Implementation() { return 0; }; \
@@ -356,7 +356,7 @@ struct FVector;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_EVENT_PARMS \
 	struct FGActorRepresentationInterface_eventAddAsRepresentation_Parms \
 	{ \
 		bool ReturnValue; \
@@ -523,8 +523,8 @@ struct FVector;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGActorRepresentationInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGActorRepresentationInterface) \
@@ -537,7 +537,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGActorRepresentationInterface(UFGActorRepresentationInterface&&); \
@@ -548,7 +548,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGActorRepresentationInterface); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGActorRepresentationInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_GENERATED_UINTERFACE_BODY() \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUFGActorRepresentationInterface(); \
 	friend struct Z_Construct_UClass_UFGActorRepresentationInterface_Statics; \
@@ -557,22 +557,22 @@ public: \
 	DECLARE_SERIALIZER(UFGActorRepresentationInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_GENERATED_BODY_LEGACY \
 		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_STANDARD_CONSTRUCTORS \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IFGActorRepresentationInterface() {} \
 public: \
@@ -599,7 +599,7 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_INCLASS_IINTERFACE \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_INCLASS_IINTERFACE \
 protected: \
 	virtual ~IFGActorRepresentationInterface() {} \
 public: \
@@ -626,26 +626,26 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_11_PROLOG \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_11_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_24_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_24_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_INCLASS_IINTERFACE \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_24_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_24_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -653,7 +653,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class UFGActorRepresentationInterface>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

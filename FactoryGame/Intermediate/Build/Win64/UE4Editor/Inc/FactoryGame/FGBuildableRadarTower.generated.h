@@ -13,14 +13,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGBuildableRadarTower_generated_h
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_11_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_11_DELEGATE \
 static inline void FRadarTowerRadiusUpdated_DelegateWrapper(const FMulticastScriptDelegate& RadarTowerRadiusUpdated) \
 { \
 	RadarTowerRadiusUpdated.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_OnRadiusUpdated) \
 	{ \
@@ -88,7 +88,7 @@ static inline void FRadarTowerRadiusUpdated_DelegateWrapper(const FMulticastScri
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_OnRadiusUpdated) \
 	{ \
@@ -156,7 +156,7 @@ static inline void FRadarTowerRadiusUpdated_DelegateWrapper(const FMulticastScri
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildableRadarTower(); \
 	friend struct Z_Construct_UClass_AFGBuildableRadarTower_Statics; \
@@ -165,7 +165,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildableRadarTower)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildableRadarTower(); \
 	friend struct Z_Construct_UClass_AFGBuildableRadarTower_Statics; \
@@ -174,7 +174,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildableRadarTower)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildableRadarTower(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildableRadarTower) \
@@ -187,7 +187,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGBuildableRadarTower(AFGBuildableRadarTower&&); \
@@ -198,7 +198,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableRadarTower); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildableRadarTower)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mMinRevealRadius() { return STRUCT_OFFSET(AFGBuildableRadarTower, mMinRevealRadius); } \
 	FORCEINLINE static uint32 __PPO__mMaxRevealRadius() { return STRUCT_OFFSET(AFGBuildableRadarTower, mMaxRevealRadius); } \
 	FORCEINLINE static uint32 __PPO__mNumRadarExpansionSteps() { return STRUCT_OFFSET(AFGBuildableRadarTower, mNumRadarExpansionSteps); } \
@@ -207,25 +207,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableRadarTower); \
 	FORCEINLINE static uint32 __PPO__mTimeToNextExpansion() { return STRUCT_OFFSET(AFGBuildableRadarTower, mTimeToNextExpansion); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_17_PROLOG
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_17_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_INCLASS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h_20_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -233,7 +233,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class AFGBuildableRadarTower>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Buildables_FGBuildableRadarTower_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableRadarTower_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

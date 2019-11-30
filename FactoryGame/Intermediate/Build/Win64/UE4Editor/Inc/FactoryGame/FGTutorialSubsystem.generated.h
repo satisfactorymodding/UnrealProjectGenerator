@@ -15,14 +15,14 @@ class UObject;
 #endif
 #define FACTORYGAME_FGTutorialSubsystem_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_17_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTutorialData_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FTutorialData>();
 
-#define FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execClearBuiltData) \
 	{ \
@@ -51,7 +51,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FTutorialData>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execClearBuiltData) \
 	{ \
@@ -80,7 +80,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FTutorialData>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGTutorialSubsystem(); \
 	friend struct Z_Construct_UClass_UFGTutorialSubsystem_Statics; \
@@ -90,7 +90,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<UFGTutorialSubsystem*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGTutorialSubsystem(); \
 	friend struct Z_Construct_UClass_UFGTutorialSubsystem_Statics; \
@@ -100,7 +100,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<UFGTutorialSubsystem*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGTutorialSubsystem(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGTutorialSubsystem) \
@@ -113,7 +113,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGTutorialSubsystem(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -126,32 +126,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGTutorialSubsystem); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGTutorialSubsystem)
 
 
-#define FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mBuildingsBuilt() { return STRUCT_OFFSET(UFGTutorialSubsystem, mBuildingsBuilt); } \
 	FORCEINLINE static uint32 __PPO__mHasSeenIntroTutorial() { return STRUCT_OFFSET(UFGTutorialSubsystem, mHasSeenIntroTutorial); } \
 	FORCEINLINE static uint32 __PPO__mIntroTutorialMessages() { return STRUCT_OFFSET(UFGTutorialSubsystem, mIntroTutorialMessages); } \
 	FORCEINLINE static uint32 __PPO__mTutorialData() { return STRUCT_OFFSET(UFGTutorialSubsystem, mTutorialData); }
 
 
-#define FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_41_PROLOG
-#define FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_41_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_INCLASS \
-	FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h_44_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -159,7 +159,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class UFGTutorialSubsystem>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGTutorialSubsystem_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

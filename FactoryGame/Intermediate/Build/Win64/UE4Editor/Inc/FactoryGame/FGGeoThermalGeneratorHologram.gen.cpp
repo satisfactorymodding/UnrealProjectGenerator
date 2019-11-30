@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGGeoThermalGeneratorHologram.h"
+#include "FactoryGame/Public/Hologram/FGGeoThermalGeneratorHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGeoThermalGeneratorHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGeoThermalGeneratorHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGGeoThermalGeneratorHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGGeoThermalGeneratorHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGGeoThermalGeneratorHologram.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGGeoThermalGeneratorHologram_Statics::StaticCppClassTypeInfo = {
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGeoThermalGeneratorHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGeoThermalGeneratorHologram, 1951501792);
+	IMPLEMENT_CLASS(AFGGeoThermalGeneratorHologram, 1270088767);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGeoThermalGeneratorHologram>()
 	{
 		return AFGGeoThermalGeneratorHologram::StaticClass();

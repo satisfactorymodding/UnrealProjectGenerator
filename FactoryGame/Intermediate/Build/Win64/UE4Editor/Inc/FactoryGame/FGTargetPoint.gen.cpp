@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGTargetPoint.h"
+#include "FactoryGame/Public/FGTargetPoint.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTargetPoint() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTargetPoint_GetOwningVehicle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Target Point" },
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 		{ "ToolTip", "Gets owning vehicle" },
 	};
 #endif
@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTargetPoint() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTargetPoint_GetTargetSpeed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Target Point" },
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 		{ "ToolTip", "Getter for target speed" },
 	};
 #endif
@@ -135,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTargetPoint() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTargetPoint_GetWaitTime_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Target Point" },
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 		{ "ToolTip", "Returns current wait time" },
 	};
 #endif
@@ -170,7 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTargetPoint() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTargetPoint_IncreaseWaitTime_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Target Point" },
 		{ "CPP_Default_addedWaitTime", "-1.000000" },
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 		{ "ToolTip", "Increase wait time\n@param addedWaitTime - if not specified we add the default wait time" },
 	};
 #endif
@@ -209,7 +209,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTargetPoint() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTargetPoint_IsTargetSpeedStill_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Target Point" },
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 		{ "ToolTip", "Is target speed low enough to count as still" },
 	};
 #endif
@@ -232,7 +232,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTargetPoint() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTargetPoint_OnRep_Visibility_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 		{ "ToolTip", "Onrep for visibility" },
 	};
 #endif
@@ -266,7 +266,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTargetPoint() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTargetPoint_SetOwningVehicle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Target Point" },
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 		{ "ToolTip", "Set which vehicle this belongs to" },
 	};
 #endif
@@ -300,7 +300,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTargetPoint() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTargetPoint_SetTargetSpeed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Target Point" },
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 		{ "ToolTip", "Sets new target speed" },
 	};
 #endif
@@ -339,7 +339,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTargetPoint() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTargetPoint_SetVisibility_Statics::Function_MetaDataParams[] = {
 		{ "Category", "TargetPoint" },
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 		{ "ToolTip", "Sets visibility for this point" },
 	};
 #endif
@@ -373,7 +373,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTargetPoint() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTargetPoint_SetWaitTime_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Target Point" },
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 		{ "ToolTip", "Sets the wait time\n@param newWaitTime - time to wait ( seconds )" },
 	};
 #endif
@@ -433,28 +433,28 @@ void EmptyLinkFunctionForGeneratedCodeFGTargetPoint() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGTargetPoint_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGTargetPoint_GetOwningVehicle, "GetOwningVehicle" }, // 4127669707
-		{ &Z_Construct_UFunction_AFGTargetPoint_GetTargetSpeed, "GetTargetSpeed" }, // 4115378899
-		{ &Z_Construct_UFunction_AFGTargetPoint_GetWaitTime, "GetWaitTime" }, // 1934687907
-		{ &Z_Construct_UFunction_AFGTargetPoint_IncreaseWaitTime, "IncreaseWaitTime" }, // 2219549038
-		{ &Z_Construct_UFunction_AFGTargetPoint_IsTargetSpeedStill, "IsTargetSpeedStill" }, // 1393132311
-		{ &Z_Construct_UFunction_AFGTargetPoint_OnRep_Visibility, "OnRep_Visibility" }, // 2554741691
-		{ &Z_Construct_UFunction_AFGTargetPoint_SetOwningVehicle, "SetOwningVehicle" }, // 157848384
-		{ &Z_Construct_UFunction_AFGTargetPoint_SetTargetSpeed, "SetTargetSpeed" }, // 1046052752
-		{ &Z_Construct_UFunction_AFGTargetPoint_SetVisibility, "SetVisibility" }, // 390983770
-		{ &Z_Construct_UFunction_AFGTargetPoint_SetWaitTime, "SetWaitTime" }, // 3922627054
+		{ &Z_Construct_UFunction_AFGTargetPoint_GetOwningVehicle, "GetOwningVehicle" }, // 747231937
+		{ &Z_Construct_UFunction_AFGTargetPoint_GetTargetSpeed, "GetTargetSpeed" }, // 3931176099
+		{ &Z_Construct_UFunction_AFGTargetPoint_GetWaitTime, "GetWaitTime" }, // 2543001442
+		{ &Z_Construct_UFunction_AFGTargetPoint_IncreaseWaitTime, "IncreaseWaitTime" }, // 2213443005
+		{ &Z_Construct_UFunction_AFGTargetPoint_IsTargetSpeedStill, "IsTargetSpeedStill" }, // 3982613840
+		{ &Z_Construct_UFunction_AFGTargetPoint_OnRep_Visibility, "OnRep_Visibility" }, // 2932244141
+		{ &Z_Construct_UFunction_AFGTargetPoint_SetOwningVehicle, "SetOwningVehicle" }, // 3449826222
+		{ &Z_Construct_UFunction_AFGTargetPoint_SetTargetSpeed, "SetTargetSpeed" }, // 3174845906
+		{ &Z_Construct_UFunction_AFGTargetPoint_SetVisibility, "SetVisibility" }, // 2283064062
+		{ &Z_Construct_UFunction_AFGTargetPoint_SetWaitTime, "SetWaitTime" }, // 4143839569
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTargetPoint_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGTargetPoint.h" },
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mTargetSpeed_MetaData[] = {
 		{ "Category", "Target Point" },
 		{ "ExposeOnSpawn", "true" },
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 		{ "ToolTip", "Target speed at this node" },
 	};
 #endif
@@ -462,21 +462,21 @@ void EmptyLinkFunctionForGeneratedCodeFGTargetPoint() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mDefaultWaitTime_MetaData[] = {
 		{ "Category", "Target Point" },
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 		{ "ToolTip", "Default wait time if this target point has no target speed" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mDefaultWaitTime = { "mDefaultWaitTime", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTargetPoint, mDefaultWaitTime), METADATA_PARAMS(Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mDefaultWaitTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mDefaultWaitTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mWaitTime_MetaData[] = {
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 		{ "ToolTip", "Accumulated wait time for this node" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mWaitTime = { "mWaitTime", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTargetPoint, mWaitTime), METADATA_PARAMS(Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mWaitTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mWaitTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mIsVisible_MetaData[] = {
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 		{ "ToolTip", "Update visibility" },
 	};
 #endif
@@ -487,14 +487,14 @@ void EmptyLinkFunctionForGeneratedCodeFGTargetPoint() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mIsVisible = { "mIsVisible", "OnRep_Visibility", (EPropertyFlags)0x0010000101000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGTargetPoint), &Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mIsVisible_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mIsVisible_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mIsVisible_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mOwningVehicle_MetaData[] = {
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 		{ "ToolTip", "Vehicle that created this node" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mOwningVehicle = { "mOwningVehicle", nullptr, (EPropertyFlags)0x0010000001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTargetPoint, mOwningVehicle), Z_Construct_UClass_AFGWheeledVehicle_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mOwningVehicle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mOwningVehicle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTargetPoint_Statics::NewProp_mNext_MetaData[] = {
-		{ "ModuleRelativePath", "FGTargetPoint.h" },
+		{ "ModuleRelativePath", "Public/FGTargetPoint.h" },
 		{ "ToolTip", "Reference to the next target point ( used in linked list )" },
 	};
 #endif
@@ -537,7 +537,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTargetPoint() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGTargetPoint, 2983598040);
+	IMPLEMENT_CLASS(AFGTargetPoint, 1368813821);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGTargetPoint>()
 	{
 		return AFGTargetPoint::StaticClass();

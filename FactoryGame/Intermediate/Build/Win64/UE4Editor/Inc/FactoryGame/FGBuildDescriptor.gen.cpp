@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Resources/FGBuildDescriptor.h"
+#include "FactoryGame/Public/Resources/FGBuildDescriptor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildDescriptor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildDescriptor_GetBuildCategory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Build" },
-		{ "ModuleRelativePath", "Resources/FGBuildDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGBuildDescriptor.h" },
 		{ "ToolTip", "Get the category for this building descriptor." },
 	};
 #endif
@@ -96,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildDescriptor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildDescriptor_GetBuildMenuPriority_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Build" },
-		{ "ModuleRelativePath", "Resources/FGBuildDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGBuildDescriptor.h" },
 		{ "ToolTip", "The order we want stuff in the build menu, lower is earlier" },
 	};
 #endif
@@ -137,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildDescriptor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildDescriptor_GetSubCategories_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Build" },
-		{ "ModuleRelativePath", "Resources/FGBuildDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGBuildDescriptor.h" },
 		{ "ToolTip", "Get the category for this building descriptor." },
 	};
 #endif
@@ -184,22 +184,22 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildDescriptor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGBuildDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGBuildDescriptor_GetBuildCategory, "GetBuildCategory" }, // 710144982
-		{ &Z_Construct_UFunction_UFGBuildDescriptor_GetBuildMenuPriority, "GetBuildMenuPriority" }, // 300747160
-		{ &Z_Construct_UFunction_UFGBuildDescriptor_GetSubCategories, "GetSubCategories" }, // 2935863628
+		{ &Z_Construct_UFunction_UFGBuildDescriptor_GetBuildCategory, "GetBuildCategory" }, // 2996457014
+		{ &Z_Construct_UFunction_UFGBuildDescriptor_GetBuildMenuPriority, "GetBuildMenuPriority" }, // 1743737622
+		{ &Z_Construct_UFunction_UFGBuildDescriptor_GetSubCategories, "GetSubCategories" }, // 3354511689
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildDescriptor_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Icon Preview" },
 		{ "IncludePath", "Resources/FGBuildDescriptor.h" },
-		{ "ModuleRelativePath", "Resources/FGBuildDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGBuildDescriptor.h" },
 		{ "ToolTip", "Descriptor for things that can be built in the BuildGun." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildDescriptor_Statics::NewProp_mBuildMenuPriority_MetaData[] = {
 		{ "Category", "Build" },
-		{ "ModuleRelativePath", "Resources/FGBuildDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGBuildDescriptor.h" },
 		{ "ToolTip", "The order in the Build Menu is decided by this value. Lower values means earlier in menu. Negative values are allowed. [-N..0..N]" },
 	};
 #endif
@@ -207,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildDescriptor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildDescriptor_Statics::NewProp_mSubCategories_MetaData[] = {
 		{ "Category", "Build" },
-		{ "ModuleRelativePath", "Resources/FGBuildDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGBuildDescriptor.h" },
 		{ "ToolTip", "The sub categories in the build menu for this building" },
 	};
 #endif
@@ -216,7 +216,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildDescriptor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildDescriptor_Statics::NewProp_mBuildCategory_MetaData[] = {
 		{ "Category", "Build" },
-		{ "ModuleRelativePath", "Resources/FGBuildDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGBuildDescriptor.h" },
 		{ "ToolTip", "The category in the build menu for this building" },
 	};
 #endif
@@ -254,7 +254,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildDescriptor, 2523619103);
+	IMPLEMENT_CLASS(UFGBuildDescriptor, 1534127532);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBuildDescriptor>()
 	{
 		return UFGBuildDescriptor::StaticClass();

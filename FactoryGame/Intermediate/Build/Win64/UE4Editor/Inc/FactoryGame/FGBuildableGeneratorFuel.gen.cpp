@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableGeneratorFuel.h"
+#include "FactoryGame/Public/Buildables/FGBuildableGeneratorFuel.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -78,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGeneratorFuel_FilterFuelClasses_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 		{ "ToolTip", "Filter out what we consider as fuel for our fuel inventory.\n@see IsValidFuel" },
 	};
 #endif
@@ -115,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetAvailableFuelClasses_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Power" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 		{ "ToolTip", "Returns all fuel classes this generator can use" },
 	};
 #endif
@@ -149,7 +149,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Power" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 		{ "ToolTip", "Returns the currently used fuel class" },
 	};
 #endif
@@ -183,7 +183,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetFuelAmount_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Power" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 		{ "ToolTip", "How much of the fuel have we burned? In range [0,1]." },
 	};
 #endif
@@ -225,7 +225,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetFuelInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 		{ "ToolTip", "@return a valid pointer to the inventory if this machine runs on fuel. Can be nullptr on client." },
 	};
 #endif
@@ -264,7 +264,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGeneratorFuel_HasFuel_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Power" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 		{ "ToolTip", "Check if this generator has fuel.\n@return - true if this generator has fuel; false if it has no fuel." },
 	};
 #endif
@@ -307,7 +307,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGeneratorFuel_IsValidFuel_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Power" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 		{ "ToolTip", "Check if a resource is valid as fuel for this generator.\n@param resource - Resource class to check.\n@return - true if resource valid as fuel; false if not valid or if generator does not run on fuel." },
 	};
 #endif
@@ -330,7 +330,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGeneratorFuel_OnRep_FuelInventory_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 		{ "ToolTip", "Set up the fuel inventory when replicated" },
 	};
 #endif
@@ -400,24 +400,24 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_FilterFuelClasses, "FilterFuelClasses" }, // 4207539161
-		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetAvailableFuelClasses, "GetAvailableFuelClasses" }, // 807597435
-		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass, "GetCurrentFuelClass" }, // 1663795452
-		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetFuelAmount, "GetFuelAmount" }, // 1456704431
-		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetFuelInventory, "GetFuelInventory" }, // 2504742815
-		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_HasFuel, "HasFuel" }, // 3650819101
-		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_IsValidFuel, "IsValidFuel" }, // 2322346988
-		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_OnRep_FuelInventory, "OnRep_FuelInventory" }, // 3640290684
+		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_FilterFuelClasses, "FilterFuelClasses" }, // 3742630274
+		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetAvailableFuelClasses, "GetAvailableFuelClasses" }, // 356435113
+		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass, "GetCurrentFuelClass" }, // 3347948340
+		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetFuelAmount, "GetFuelAmount" }, // 2518741022
+		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetFuelInventory, "GetFuelInventory" }, // 339935215
+		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_HasFuel, "HasFuel" }, // 3863233563
+		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_IsValidFuel, "IsValidFuel" }, // 3503863537
+		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_OnRep_FuelInventory, "OnRep_FuelInventory" }, // 3691552978
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableGeneratorFuel.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mCurrentFuelClass_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Type of the currently burned piece of fuel." },
 	};
@@ -425,7 +425,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mCurrentFuelClass = { "mCurrentFuelClass", nullptr, (EPropertyFlags)0x0024080001000020, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableGeneratorFuel, mCurrentFuelClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mCurrentFuelClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mCurrentFuelClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mHasFuleCached_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Used so clients know how if they have available fuel or not. Could be removed later if we start syncing the production indicator state" },
 	};
@@ -437,7 +437,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mHasFuleCached = { "mHasFuleCached", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildableGeneratorFuel), &Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mHasFuleCached_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mHasFuleCached_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mHasFuleCached_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mCurrentFuelAmount_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Amount left of the currently burned piece of fuel. In megawatt seconds (MWs)." },
 	};
@@ -446,14 +446,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mFuelInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 		{ "ToolTip", "@todo: Cleanup, this shouldn't need to be replicated, clients should be able to fetch this anyway. Static index of fuel slot?" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mFuelInventory = { "mFuelInventory", "OnRep_FuelInventory", (EPropertyFlags)0x0020080101080028, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableGeneratorFuel, mFuelInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mFuelInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mFuelInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mAvailableFuelClasses_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 		{ "ToolTip", "Current fuel classes of the generator, useful for runtime adding of fuel classes" },
 	};
 #endif
@@ -462,7 +462,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mDefaultFuelClasses_MetaData[] = {
 		{ "Category", "Power" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 		{ "MustImplement", "FGInventoryInterface" },
 		{ "ToolTip", "Fuel classes this machine can run on. Leave empty if it does not run on fuel." },
 	};
@@ -471,7 +471,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mDefaultFuelClasses_Inner = { "mDefaultFuelClasses", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::SoftClass, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGItemDescriptor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mFuelClasses_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 		{ "ToolTip", "Fuel classes this machine can run on. Leave empty if it does not run on fuel." },
 	};
 #endif
@@ -480,7 +480,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::NewProp_mFuelInventoryHandler_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorFuel.h" },
 		{ "ToolTip", "Maintainer of the active storage component for this actor. Use this to get the active inventory component." },
 	};
 #endif
@@ -525,7 +525,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableGeneratorFuel, 3010161114);
+	IMPLEMENT_CLASS(AFGBuildableGeneratorFuel, 2816322512);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableGeneratorFuel>()
 	{
 		return AFGBuildableGeneratorFuel::StaticClass();

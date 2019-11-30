@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/AI/FGAttackMelee.h"
+#include "FactoryGame/Public/AI/FGAttackMelee.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -43,7 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMelee() {}
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "AI/FGAttackMelee.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "AI/FGAttackMelee.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttackMelee.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGAttackMelee_Statics::StaticCppClassTypeInfo = {
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMelee() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttackMelee, 2138530809);
+	IMPLEMENT_CLASS(UFGAttackMelee, 3610968531);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGAttackMelee>()
 	{
 		return UFGAttackMelee::StaticClass();

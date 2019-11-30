@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/FGTitleButton.h"
+#include "FactoryGame/Public/UI/FGTitleButton.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTitleButton() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGTitleButton_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "UI/FGTitleButton.h" },
-		{ "ModuleRelativePath", "UI/FGTitleButton.h" },
+		{ "ModuleRelativePath", "Public/UI/FGTitleButton.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGTitleButton_Statics::StaticCppClassTypeInfo = {
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTitleButton() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGTitleButton, 92660758);
+	IMPLEMENT_CLASS(UFGTitleButton, 1278062858);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGTitleButton>()
 	{
 		return UFGTitleButton::StaticClass();

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSplinePath.h"
+#include "FactoryGame/Public/FGSplinePath.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -47,14 +47,14 @@ void EmptyLinkFunctionForGeneratedCodeFGSplinePath() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSplinePath_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGSplinePath.h" },
-		{ "ModuleRelativePath", "FGSplinePath.h" },
+		{ "ModuleRelativePath", "Public/FGSplinePath.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSplinePath_Statics::NewProp_mSpline_MetaData[] = {
 		{ "Category", "Spline" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGSplinePath.h" },
+		{ "ModuleRelativePath", "Public/FGSplinePath.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGSplinePath_Statics::NewProp_mSpline = { "mSpline", nullptr, (EPropertyFlags)0x001000000008001c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSplinePath, mSpline), Z_Construct_UClass_USplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGSplinePath_Statics::NewProp_mSpline_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSplinePath_Statics::NewProp_mSpline_MetaData)) };
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplinePath() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSplinePath, 4117807601);
+	IMPLEMENT_CLASS(AFGSplinePath, 118151477);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSplinePath>()
 	{
 		return AFGSplinePath::StaticClass();

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGOutlineComponent.h"
+#include "FactoryGame/Public/FGOutlineComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -84,7 +84,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedSplineMeshTo
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_Statics::NewStructOps()
@@ -93,14 +93,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedSplineMeshTo
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_Statics::NewProp_InstancedMaterialInterfaces_MetaData[] = {
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_Statics::NewProp_InstancedMaterialInterfaces = { "InstancedMaterialInterfaces", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCachedSplineMeshToMaterialObject, InstancedMaterialInterfaces), METADATA_PARAMS(Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_Statics::NewProp_InstancedMaterialInterfaces_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_Statics::NewProp_InstancedMaterialInterfaces_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_Statics::NewProp_InstancedMaterialInterfaces_Inner = { "InstancedMaterialInterfaces", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_Statics::NewProp_CachedMaterialInterfaces_MetaData[] = {
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_Statics::NewProp_CachedMaterialInterfaces = { "CachedMaterialInterfaces", nullptr, (EPropertyFlags)0x0010008000000000, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCachedSplineMeshToMaterialObject, CachedMaterialInterfaces), METADATA_PARAMS(Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_Statics::NewProp_CachedMaterialInterfaces_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_Statics::NewProp_CachedMaterialInterfaces_MetaData)) };
@@ -141,7 +141,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedSplineMeshTo
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_Hash() { return 507654893U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_Hash() { return 605957275U; }
 class UScriptStruct* FCachedMeshToMaterialObject::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -181,7 +181,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMeshToMateri
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCachedMeshToMaterialObject_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FCachedMeshToMaterialObject_Statics::NewStructOps()
@@ -190,7 +190,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMeshToMateri
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCachedMeshToMaterialObject_Statics::NewProp_CachedMaterialInterfaces_MetaData[] = {
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FCachedMeshToMaterialObject_Statics::NewProp_CachedMaterialInterfaces = { "CachedMaterialInterfaces", nullptr, (EPropertyFlags)0x0010008000000000, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCachedMeshToMaterialObject, CachedMaterialInterfaces), METADATA_PARAMS(Z_Construct_UScriptStruct_FCachedMeshToMaterialObject_Statics::NewProp_CachedMaterialInterfaces_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCachedMeshToMaterialObject_Statics::NewProp_CachedMaterialInterfaces_MetaData)) };
@@ -229,7 +229,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMeshToMateri
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCachedMeshToMaterialObject_Hash() { return 4237976723U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCachedMeshToMaterialObject_Hash() { return 4179405944U; }
 class UScriptStruct* FCachedMaterialInterfaceArray::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -268,7 +268,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCachedMaterialInterfaceArray_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FCachedMaterialInterfaceArray_Statics::NewStructOps()
@@ -277,7 +277,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCachedMaterialInterfaceArray_Statics::NewProp_MaterialInterfaces_MetaData[] = {
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCachedMaterialInterfaceArray_Statics::NewProp_MaterialInterfaces = { "MaterialInterfaces", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCachedMaterialInterfaceArray, MaterialInterfaces), METADATA_PARAMS(Z_Construct_UScriptStruct_FCachedMaterialInterfaceArray_Statics::NewProp_MaterialInterfaces_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCachedMaterialInterfaceArray_Statics::NewProp_MaterialInterfaces_MetaData)) };
@@ -314,7 +314,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCachedMaterialInterfaceArray_Hash() { return 3414082363U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCachedMaterialInterfaceArray_Hash() { return 2546655245U; }
 	void UFGOutlineComponent::StaticRegisterNativesUFGOutlineComponent()
 	{
 		UClass* Class = UFGOutlineComponent::StaticClass();
@@ -353,7 +353,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGOutlineComponent_GetOutlineColor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Outline" },
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 		{ "ToolTip", "Gets the current outline color. If the outline isn't visible the color will be OC_NONE." },
 	};
 #endif
@@ -377,7 +377,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGOutlineComponent_HideOutline_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Outline" },
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 		{ "ToolTip", "Disables highlight if it is visible." },
 	};
 #endif
@@ -416,7 +416,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGOutlineComponent_IsOutlineVisible_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Outline" },
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 		{ "ToolTip", "Checks if any outline is visible." },
 	};
 #endif
@@ -460,7 +460,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGOutlineComponent_ShowMultiActorOutline_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Outline" },
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 		{ "ToolTip", "Shows outline for multiple actors at the same time." },
 	};
 #endif
@@ -501,7 +501,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGOutlineComponent_ShowOutline_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Outline" },
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 		{ "ToolTip", "Shows outline using actor's mesh components. Default way to show outline." },
 	};
 #endif
@@ -554,7 +554,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGOutlineComponent_ShowProxyOutline_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Outline" },
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 		{ "ToolTip", "Shows outline using a proxy components. Should only be used if used on instanced actors where default usage fails." },
 	};
 #endif
@@ -592,7 +592,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGOutlineComponent_UpdateProxyOutlineLocationAndRotation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Outline" },
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 		{ "ToolTip", "Updates the current proxy outline mesh's world location and rotation" },
 	};
 #endif
@@ -626,7 +626,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGOutlineComponent_UpdateProxyOutlineMesh_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Outline" },
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 		{ "ToolTip", "Will change the static mesh used for proxy outlines." },
 	};
 #endif
@@ -685,14 +685,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGOutlineComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGOutlineComponent_GetOutlineColor, "GetOutlineColor" }, // 1314314286
-		{ &Z_Construct_UFunction_UFGOutlineComponent_HideOutline, "HideOutline" }, // 194993613
-		{ &Z_Construct_UFunction_UFGOutlineComponent_IsOutlineVisible, "IsOutlineVisible" }, // 564853984
-		{ &Z_Construct_UFunction_UFGOutlineComponent_ShowMultiActorOutline, "ShowMultiActorOutline" }, // 3536579178
-		{ &Z_Construct_UFunction_UFGOutlineComponent_ShowOutline, "ShowOutline" }, // 2580610108
-		{ &Z_Construct_UFunction_UFGOutlineComponent_ShowProxyOutline, "ShowProxyOutline" }, // 3860597505
-		{ &Z_Construct_UFunction_UFGOutlineComponent_UpdateProxyOutlineLocationAndRotation, "UpdateProxyOutlineLocationAndRotation" }, // 1371599613
-		{ &Z_Construct_UFunction_UFGOutlineComponent_UpdateProxyOutlineMesh, "UpdateProxyOutlineMesh" }, // 524847828
+		{ &Z_Construct_UFunction_UFGOutlineComponent_GetOutlineColor, "GetOutlineColor" }, // 207442979
+		{ &Z_Construct_UFunction_UFGOutlineComponent_HideOutline, "HideOutline" }, // 2971219449
+		{ &Z_Construct_UFunction_UFGOutlineComponent_IsOutlineVisible, "IsOutlineVisible" }, // 1256185405
+		{ &Z_Construct_UFunction_UFGOutlineComponent_ShowMultiActorOutline, "ShowMultiActorOutline" }, // 3704194573
+		{ &Z_Construct_UFunction_UFGOutlineComponent_ShowOutline, "ShowOutline" }, // 2972673285
+		{ &Z_Construct_UFunction_UFGOutlineComponent_ShowProxyOutline, "ShowProxyOutline" }, // 132916862
+		{ &Z_Construct_UFunction_UFGOutlineComponent_UpdateProxyOutlineLocationAndRotation, "UpdateProxyOutlineLocationAndRotation" }, // 3301673983
+		{ &Z_Construct_UFunction_UFGOutlineComponent_UpdateProxyOutlineMesh, "UpdateProxyOutlineMesh" }, // 661647851
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGOutlineComponent_Statics::Class_MetaDataParams[] = {
@@ -700,12 +700,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 		{ "ClassGroupNames", "Custom" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "FGOutlineComponent.h" },
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mCachedSplineComponentMaterials_MetaData[] = {
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mCachedSplineComponentMaterials = { "mCachedSplineComponentMaterials", nullptr, (EPropertyFlags)0x0020088000000000, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGOutlineComponent, mCachedSplineComponentMaterials), METADATA_PARAMS(Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mCachedSplineComponentMaterials_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mCachedSplineComponentMaterials_MetaData)) };
@@ -713,7 +713,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mCachedSplineComponentMaterials_ValueProp = { "mCachedSplineComponentMaterials", nullptr, (EPropertyFlags)0x0000008000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mCachedActorMaterials_MetaData[] = {
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mCachedActorMaterials = { "mCachedActorMaterials", nullptr, (EPropertyFlags)0x0020088000000000, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGOutlineComponent, mCachedActorMaterials), METADATA_PARAMS(Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mCachedActorMaterials_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mCachedActorMaterials_MetaData)) };
@@ -721,21 +721,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mCachedActorMaterials_ValueProp = { "mCachedActorMaterials", nullptr, (EPropertyFlags)0x0000008000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UScriptStruct_FCachedMeshToMaterialObject, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mActiveMultiOutlineActors_MetaData[] = {
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mActiveMultiOutlineActors = { "mActiveMultiOutlineActors", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGOutlineComponent, mActiveMultiOutlineActors), METADATA_PARAMS(Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mActiveMultiOutlineActors_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mActiveMultiOutlineActors_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mActiveMultiOutlineActors_Inner = { "mActiveMultiOutlineActors", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mActiveOutlineActor_MetaData[] = {
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mActiveOutlineActor = { "mActiveOutlineActor", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGOutlineComponent, mActiveOutlineActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mActiveOutlineActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mActiveOutlineActor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mOutlineProxy_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGOutlineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGOutlineComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mOutlineProxy = { "mOutlineProxy", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGOutlineComponent, mOutlineProxy), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mOutlineProxy_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGOutlineComponent_Statics::NewProp_mOutlineProxy_MetaData)) };
@@ -778,7 +778,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGOutlineComponent, 3995071332);
+	IMPLEMENT_CLASS(UFGOutlineComponent, 1992202120);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGOutlineComponent>()
 	{
 		return UFGOutlineComponent::StaticClass();

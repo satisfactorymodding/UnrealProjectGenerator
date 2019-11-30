@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSchematic.h"
+#include "FactoryGame/Public/FGSchematic.h"
 #include "Serialization/ArchiveUObjectFromStructuredArchive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -64,7 +64,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematic() {}
 		return ESchematicType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ESchematicType(ESchematicType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ESchematicType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ESchematicType_Hash() { return 615175853U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ESchematicType_Hash() { return 409756076U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ESchematicType()
 	{
 #if WITH_HOT_RELOAD
@@ -96,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematic() {}
 				{ "EST_Story.DisplayName", "Story" },
 				{ "EST_TradingPostUpgrade.DisplayName", "Hub upgrade" },
 				{ "EST_Tutorial.DisplayName", "Tutorial" },
-				{ "ModuleRelativePath", "FGSchematic.h" },
+				{ "ModuleRelativePath", "Public/FGSchematic.h" },
 				{ "ToolTip", "@todo [MODSUPPORT] This should maybe be implemented the same way as UFGBuildCategories?" },
 			};
 #endif
@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematic() {}
 		return ESchematicCategory_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ESchematicCategory(ESchematicCategory_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ESchematicCategory"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ESchematicCategory_Hash() { return 3622476704U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ESchematicCategory_Hash() { return 671807633U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ESchematicCategory()
 	{
 #if WITH_HOT_RELOAD
@@ -154,7 +154,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematic() {}
 				{ "ESC_LOGISTICS.DisplayName", "Logistics" },
 				{ "ESC_ORGANISATION.DisplayName", "Organisation" },
 				{ "ESC_PRODUCTION.DisplayName", "Production" },
-				{ "ModuleRelativePath", "FGSchematic.h" },
+				{ "ModuleRelativePath", "Public/FGSchematic.h" },
 				{ "ToolTip", "@todo [MODSUPPORT] This should maybe be implemented the same way as UFGBuildCategories?" },
 			};
 #endif
@@ -213,7 +213,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMultipleItemStruct_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Holds info about a schematic cost." },
 	};
 #endif
@@ -224,7 +224,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMultipleItemStruct_Statics::NewProp_ItemCost_MetaData[] = {
 		{ "Category", "MultipleItemStruct" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Cost of schematic if there are more than once item in this array the true cost will be randomly selected." },
 	};
 #endif
@@ -262,7 +262,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMultipleItemStruct_Hash() { return 381134819U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMultipleItemStruct_Hash() { return 75850898U; }
 	void UFGSchematic::StaticRegisterNativesUFGSchematic()
 	{
 		UClass* Class = UFGSchematic::StaticClass();
@@ -317,7 +317,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetAdditionalSchematicDependencies_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Gets an additional array of dependencies for this schematic to be available" },
 	};
 #endif
@@ -358,7 +358,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetCost_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Returns the cost of this schematic" },
 	};
 #endif
@@ -396,7 +396,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetDependentOnSchematic_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Gets the schematic this is dependent on for being unlocked" },
 	};
 #endif
@@ -434,7 +434,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetItemIcon_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Item" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "The icon to be used in UI." },
 	};
 #endif
@@ -472,7 +472,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "How many arm equipment slots are unlocked by schematic" },
 	};
 #endif
@@ -510,7 +510,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "How many inventory slots are unlocked by schematic" },
 	};
 #endif
@@ -551,7 +551,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetRecipes_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Returns the recipes granted by this schematic" },
 	};
 #endif
@@ -592,7 +592,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Returns mResourcesToAddToScanner" },
 	};
 #endif
@@ -633,7 +633,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetSchematicCategory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Returns the category of this schematic" },
 	};
 #endif
@@ -671,7 +671,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetSchematicDisplayName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Returns the display name of this schematic" },
 	};
 #endif
@@ -709,7 +709,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Returns mShipTravelTimeAfterPurchase" },
 	};
 #endif
@@ -747,7 +747,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetTechTier_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Returns mTechOnionTier" },
 	};
 #endif
@@ -788,7 +788,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetType_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Returns the type of schematic." },
 	};
 #endif
@@ -837,7 +837,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetUnlocks_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Returns the unlocks granted by this schematic" },
 	};
 #endif
@@ -880,7 +880,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Does this schematic unlock any arm equipment slots" },
 	};
 #endif
@@ -923,7 +923,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Does this schematic unlock the build efficiency display" },
 	};
 #endif
@@ -966,7 +966,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Does this schematic unlock the build overclock system" },
 	};
 #endif
@@ -1009,7 +1009,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Does this schematic unlock any inventory slots" },
 	};
 #endif
@@ -1052,7 +1052,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetUnlocksMap_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Does this schematic unlock the map" },
 	};
 #endif
@@ -1095,7 +1095,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_IsIncludedInBuild_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Return true if we should include this schematic in the current build" },
 	};
 #endif
@@ -1223,26 +1223,26 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSchematic_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGSchematic_GetAdditionalSchematicDependencies, "GetAdditionalSchematicDependencies" }, // 23420994
-		{ &Z_Construct_UFunction_UFGSchematic_GetCost, "GetCost" }, // 3501785153
-		{ &Z_Construct_UFunction_UFGSchematic_GetDependentOnSchematic, "GetDependentOnSchematic" }, // 3435796931
-		{ &Z_Construct_UFunction_UFGSchematic_GetItemIcon, "GetItemIcon" }, // 2398911534
-		{ &Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked, "GetNumArmEquipmentSlotsUnlocked" }, // 3818835537
-		{ &Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked, "GetNumInventorySlotsUnlocked" }, // 3576352342
-		{ &Z_Construct_UFunction_UFGSchematic_GetRecipes, "GetRecipes" }, // 2847491650
-		{ &Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner, "GetResourceToAddToScanner" }, // 19705156
-		{ &Z_Construct_UFunction_UFGSchematic_GetSchematicCategory, "GetSchematicCategory" }, // 930790284
-		{ &Z_Construct_UFunction_UFGSchematic_GetSchematicDisplayName, "GetSchematicDisplayName" }, // 2540022183
-		{ &Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase, "GetShipTravelTimeAfterPurchase" }, // 249156555
-		{ &Z_Construct_UFunction_UFGSchematic_GetTechTier, "GetTechTier" }, // 525503583
-		{ &Z_Construct_UFunction_UFGSchematic_GetType, "GetType" }, // 2043649855
-		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocks, "GetUnlocks" }, // 1632615020
-		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots, "GetUnlocksArmEquipmentSlots" }, // 3628323211
-		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay, "GetUnlocksBuildEfficiencyDisplay" }, // 2127620402
-		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock, "GetUnlocksBuildOverclock" }, // 1987756149
-		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots, "GetUnlocksInventorySlots" }, // 3522405133
-		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocksMap, "GetUnlocksMap" }, // 1158859349
-		{ &Z_Construct_UFunction_UFGSchematic_IsIncludedInBuild, "IsIncludedInBuild" }, // 4045102792
+		{ &Z_Construct_UFunction_UFGSchematic_GetAdditionalSchematicDependencies, "GetAdditionalSchematicDependencies" }, // 128793614
+		{ &Z_Construct_UFunction_UFGSchematic_GetCost, "GetCost" }, // 2532838687
+		{ &Z_Construct_UFunction_UFGSchematic_GetDependentOnSchematic, "GetDependentOnSchematic" }, // 3649984223
+		{ &Z_Construct_UFunction_UFGSchematic_GetItemIcon, "GetItemIcon" }, // 2329714181
+		{ &Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked, "GetNumArmEquipmentSlotsUnlocked" }, // 4236542078
+		{ &Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked, "GetNumInventorySlotsUnlocked" }, // 3352235123
+		{ &Z_Construct_UFunction_UFGSchematic_GetRecipes, "GetRecipes" }, // 2322489056
+		{ &Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner, "GetResourceToAddToScanner" }, // 1220219266
+		{ &Z_Construct_UFunction_UFGSchematic_GetSchematicCategory, "GetSchematicCategory" }, // 2562789139
+		{ &Z_Construct_UFunction_UFGSchematic_GetSchematicDisplayName, "GetSchematicDisplayName" }, // 3485346695
+		{ &Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase, "GetShipTravelTimeAfterPurchase" }, // 1420982024
+		{ &Z_Construct_UFunction_UFGSchematic_GetTechTier, "GetTechTier" }, // 3026545383
+		{ &Z_Construct_UFunction_UFGSchematic_GetType, "GetType" }, // 3990321040
+		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocks, "GetUnlocks" }, // 3715193085
+		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots, "GetUnlocksArmEquipmentSlots" }, // 11393491
+		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay, "GetUnlocksBuildEfficiencyDisplay" }, // 3695215058
+		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock, "GetUnlocksBuildOverclock" }, // 2170990321
+		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots, "GetUnlocksInventorySlots" }, // 1156041814
+		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocksMap, "GetUnlocksMap" }, // 2992316538
+		{ &Z_Construct_UFunction_UFGSchematic_IsIncludedInBuild, "IsIncludedInBuild" }, // 560645726
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::Class_MetaDataParams[] = {
@@ -1250,7 +1250,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGSchematic.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "SerializeToFArchive", "" },
 		{ "ToolTip", "This is a schematic. It is purchased in the trading post and grants the player resources and/or recipes." },
 	};
@@ -1259,7 +1259,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mIncludeInBuilds_MetaData[] = {
 		{ "Category", "Cooking" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Slightly misleading name, as this doesn't only apply to builds. If set to Never, it won't show up in editor" },
 	};
 #endif
@@ -1268,7 +1268,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #endif // WITH_EDITORONLY_DATA
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mAssetBundleData_MetaData[] = {
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Asset Bundle data computed at save time. In cooked builds this is accessible from AssetRegistry" },
 	};
 #endif
@@ -1276,7 +1276,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mAdditionalSchematicDependencies_MetaData[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Additional list of schematics for more specific dependency checking" },
 	};
 #endif
@@ -1285,7 +1285,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mDependsOnSchematic_MetaData[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Is this schematic dependant on any other for being unlocked?" },
 	};
 #endif
@@ -1293,7 +1293,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicIcon_MetaData[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Icon used when displaying this schematic" },
 	};
@@ -1302,7 +1302,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mNumArmEquipmentSlotsToUnlock_MetaData[] = {
 		{ "Category", "Unlocks" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Number of arm equipment slots this schematic adds to the players inventory" },
 	};
 #endif
@@ -1310,7 +1310,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mNumInventorySlotsToUnlock_MetaData[] = {
 		{ "Category", "Unlocks" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Number of inventory slots this schematic adds to the players inventory" },
 	};
 #endif
@@ -1318,7 +1318,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksBuildOverclock_MetaData[] = {
 		{ "Category", "Unlocks" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Does this schematic unlock the build overclock functionality?" },
 	};
 #endif
@@ -1330,7 +1330,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksBuildEfficiency_MetaData[] = {
 		{ "Category", "Unlocks" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Does this schematic unlock the build efficiency display?" },
 	};
 #endif
@@ -1342,7 +1342,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksMap_MetaData[] = {
 		{ "Category", "Unlocks" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "Does this schematic unlock the map?" },
 	};
 #endif
@@ -1354,7 +1354,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mResourcesToAddToScanner_MetaData[] = {
 		{ "Category", "Unlocks" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "These are the resources that are scannable" },
 	};
 #endif
@@ -1363,7 +1363,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mRecipes_MetaData[] = {
 		{ "Category", "Unlocks" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "The recipes you get when purchasing" },
 	};
 #endif
@@ -1373,7 +1373,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocks_MetaData[] = {
 		{ "Category", "Unlocks" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "The unlocks you get when purchasing" },
 	};
 #endif
@@ -1382,7 +1382,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocks_Inner_MetaData[] = {
 		{ "Category", "Unlocks" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "The unlocks you get when purchasing" },
 	};
 #endif
@@ -1390,7 +1390,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mShipTravelTimeAfterPurchase_MetaData[] = {
 		{ "Category", "Cost" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "When we purchase this schematic how long does it take the ship to come back?" },
 	};
 #endif
@@ -1398,7 +1398,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mCost_MetaData[] = {
 		{ "Category", "Cost" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "The cost of this schematic." },
 	};
 #endif
@@ -1407,7 +1407,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mTechTier_MetaData[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "The tech tier that this Schematic belongs to. [0...N]" },
 	};
 #endif
@@ -1415,7 +1415,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategory_MetaData[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "The category this schematic belongs to." },
 	};
 #endif
@@ -1424,7 +1424,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mDisplayName_MetaData[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "The name to be displayed to the player" },
 	};
 #endif
@@ -1432,7 +1432,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mType_MetaData[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematic.h" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "What type of schematic is this." },
 	};
 #endif
@@ -1496,7 +1496,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSchematic, 146070780);
+	IMPLEMENT_CLASS(UFGSchematic, 4063291852);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSchematic>()
 	{
 		return UFGSchematic::StaticClass();

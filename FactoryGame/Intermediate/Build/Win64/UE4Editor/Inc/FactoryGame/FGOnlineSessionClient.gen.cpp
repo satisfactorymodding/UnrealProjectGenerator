@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGOnlineSessionClient.h"
+#include "FactoryGame/Public/FGOnlineSessionClient.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -52,7 +52,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPendingInvite_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGOnlineSessionClient.h" },
+		{ "ModuleRelativePath", "Public/FGOnlineSessionClient.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FPendingInvite_Statics::NewStructOps()
@@ -87,7 +87,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPendingInvite_Hash() { return 382559858U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPendingInvite_Hash() { return 2798566434U; }
 	void UFGOnlineSessionClient::StaticRegisterNativesUFGOnlineSessionClient()
 	{
 	}
@@ -111,7 +111,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGOnlineSessionClient_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGOnlineSessionClient.h" },
-		{ "ModuleRelativePath", "FGOnlineSessionClient.h" },
+		{ "ModuleRelativePath", "Public/FGOnlineSessionClient.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGOnlineSessionClient_Statics::StaticCppClassTypeInfo = {
@@ -141,7 +141,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGOnlineSessionClient, 3518845603);
+	IMPLEMENT_CLASS(UFGOnlineSessionClient, 1438450428);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGOnlineSessionClient>()
 	{
 		return UFGOnlineSessionClient::StaticClass();

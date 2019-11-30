@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSaveInterface.h"
+#include "FactoryGame/Public/FGSaveInterface.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -90,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSaveInterface.h" },
+		{ "ModuleRelativePath", "Public/FGSaveInterface.h" },
 		{ "ToolTip", "Called before PreSaveGame, used to determine the order the objects is to be saved on disc @warning: make sure to NOT create any cyclic\ndependencies\n\n@param out_dependentObjects -        populate this with the object you are dependent on, no need to care about outer/owner, they are automatically\n                                                                     handled by calling code" },
 	};
 #endif
@@ -124,7 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSaveInterface.h" },
+		{ "ModuleRelativePath", "Public/FGSaveInterface.h" },
 		{ "ToolTip", "Only relevant for actors.\nIf returning true, then when loading, we are returned to the location that was stored when saving" },
 	};
 #endif
@@ -156,7 +156,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSaveInterface.h" },
+		{ "ModuleRelativePath", "Public/FGSaveInterface.h" },
 		{ "ToolTip", "Called on all UObjects when they have gotten their data from serialization\n\n@param saveVersion - the version of the save game, incremented when doing native conversions\n@param gameVersion - the version of the game, is the CL of our internal Perforce server, will be a large number > 40k" },
 	};
 #endif
@@ -188,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSaveInterface.h" },
+		{ "ModuleRelativePath", "Public/FGSaveInterface.h" },
 		{ "ToolTip", "Called on all UObjects right after they have written their data, so they can cleanup any mess done in PreSave\n\n@param saveVersion - the version of the save game, incremented when doing native conversions\n@param gameVersion - the version of the game, is the CL of our internal Perforce server, will be a large number > 40k" },
 	};
 #endif
@@ -220,7 +220,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSaveInterface.h" },
+		{ "ModuleRelativePath", "Public/FGSaveInterface.h" },
 		{ "ToolTip", "Called on all UObjects right after they will be loaded (or created prior to getting their data)\n\n@param saveVersion - the version of the save game, incremented when doing native conversions\n@param gameVersion - the version of the game, is the CL of our internal Perforce server, will be a large number > 40k" },
 	};
 #endif
@@ -252,7 +252,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSaveInterface.h" },
+		{ "ModuleRelativePath", "Public/FGSaveInterface.h" },
 		{ "ToolTip", "Called on all UObjects that will be saved right before the save is done\n\n@param saveVersion - the version of the save game, incremented when doing native conversions\n@param gameVersion - the version of the game, is the CL of our internal Perforce server, will be a large number > 40k" },
 	};
 #endif
@@ -286,7 +286,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSaveInterface.h" },
+		{ "ModuleRelativePath", "Public/FGSaveInterface.h" },
 		{ "ToolTip", "Called before PreSaveGame, used to determine if the object want to be saved\n\n@return true if the object want to be saved" },
 	};
 #endif
@@ -319,19 +319,19 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSaveInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGSaveInterface_GatherDependencies, "GatherDependencies" }, // 2582680917
-		{ &Z_Construct_UFunction_UFGSaveInterface_NeedTransform, "NeedTransform" }, // 1236149979
-		{ &Z_Construct_UFunction_UFGSaveInterface_PostLoadGame, "PostLoadGame" }, // 1429941774
-		{ &Z_Construct_UFunction_UFGSaveInterface_PostSaveGame, "PostSaveGame" }, // 1852312937
-		{ &Z_Construct_UFunction_UFGSaveInterface_PreLoadGame, "PreLoadGame" }, // 575205336
-		{ &Z_Construct_UFunction_UFGSaveInterface_PreSaveGame, "PreSaveGame" }, // 1213409714
-		{ &Z_Construct_UFunction_UFGSaveInterface_ShouldSave, "ShouldSave" }, // 220128015
+		{ &Z_Construct_UFunction_UFGSaveInterface_GatherDependencies, "GatherDependencies" }, // 3229574380
+		{ &Z_Construct_UFunction_UFGSaveInterface_NeedTransform, "NeedTransform" }, // 1913437544
+		{ &Z_Construct_UFunction_UFGSaveInterface_PostLoadGame, "PostLoadGame" }, // 3351486243
+		{ &Z_Construct_UFunction_UFGSaveInterface_PostSaveGame, "PostSaveGame" }, // 4165616475
+		{ &Z_Construct_UFunction_UFGSaveInterface_PreLoadGame, "PreLoadGame" }, // 2345123196
+		{ &Z_Construct_UFunction_UFGSaveInterface_PreSaveGame, "PreSaveGame" }, // 596148663
+		{ &Z_Construct_UFunction_UFGSaveInterface_ShouldSave, "ShouldSave" }, // 1698108161
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveInterface_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGSaveInterface.h" },
+		{ "ModuleRelativePath", "Public/FGSaveInterface.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
@@ -362,7 +362,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSaveInterface, 375511563);
+	IMPLEMENT_CLASS(UFGSaveInterface, 2292489956);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSaveInterface>()
 	{
 		return UFGSaveInterface::StaticClass();

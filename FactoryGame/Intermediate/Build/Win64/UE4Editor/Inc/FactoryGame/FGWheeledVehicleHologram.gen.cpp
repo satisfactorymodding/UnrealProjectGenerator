@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGWheeledVehicleHologram.h"
+#include "FactoryGame/Public/Hologram/FGWheeledVehicleHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWheeledVehicleHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGWheeledVehicleHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGWheeledVehicleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGWheeledVehicleHologram.h" },
 		{ "ToolTip", "The base class for wheeled vehicle holograms." },
 	};
 #endif
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWheeledVehicleHologram, 1752819153);
+	IMPLEMENT_CLASS(AFGWheeledVehicleHologram, 3781087014);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWheeledVehicleHologram>()
 	{
 		return AFGWheeledVehicleHologram::StaticClass();

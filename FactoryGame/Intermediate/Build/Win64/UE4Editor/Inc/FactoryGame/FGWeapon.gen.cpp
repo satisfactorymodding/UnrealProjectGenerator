@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGWeapon.h"
+#include "FactoryGame/Public/Equipment/FGWeapon.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -113,7 +113,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_ActualReload_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "When we \"actually\" has reloaded (reload logic goes here), need to be UFUNCTION as it used as a delegate" },
 	};
 #endif
@@ -152,7 +152,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_CanReload_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Return true if we currently can reload with the weapon" },
 	};
 #endif
@@ -176,7 +176,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_FireAmmunition_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Checks what type of fire modes and call corresponding fire function" },
 	};
 #endif
@@ -210,7 +210,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_GetAssosiatedHud_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Hud" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Returns the assosiated hud object if there is one assigned" },
 	};
 #endif
@@ -244,7 +244,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_GetCurrentAmmo_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Returns how much ammo we have in current clip" },
 	};
 #endif
@@ -283,7 +283,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_GetIsFiring_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Returns mIsFiring" },
 	};
 #endif
@@ -322,7 +322,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_GetIsReloading_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Returns whether we are reloading or not" },
 	};
 #endif
@@ -356,7 +356,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_GetMagSize_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Returns mMagSize" },
 	};
 #endif
@@ -390,7 +390,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_GetReloadTimeLeft_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Returns -1 if not reloading, else, returns the time left on our reload" },
 	};
 #endif
@@ -424,7 +424,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_GetSpareAmmunition_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "How much ammunition do our owner have in their inventory" },
 	};
 #endif
@@ -463,7 +463,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_HasAmmunition_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Returns true if we have ammunition loaded" },
 	};
 #endif
@@ -487,7 +487,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_PlayFailedToFireEffects_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Projectile" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Called when you tried to fire and CanFire returned false. You will have to check the reason yourself and play effects accordingly" },
 	};
 #endif
@@ -511,7 +511,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_PlayFireEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Handles playing of effects both on server and on client." },
 	};
 #endif
@@ -535,7 +535,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_PlayFireReleasedEffects_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Called when the player releases the primary fire so that special animations can be triggered from this. The neccesity is rare, use PlayFireEffect() in most cases" },
 	};
 #endif
@@ -559,7 +559,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_PlayReloadEffects_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeapon_PlayReloadEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeapon, nullptr, "PlayReloadEffects", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeapon_PlayReloadEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeapon_PlayReloadEffects_Statics::Function_MetaDataParams)) };
@@ -581,7 +581,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_Server_EndPrimaryFire_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Called by client to start fire on server." },
 	};
 #endif
@@ -604,7 +604,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_Server_Reload_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Client tells server to reload" },
 	};
 #endif
@@ -627,7 +627,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWeapon_Server_StartPrimaryFire_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Called by client to start fire on server." },
 	};
 #endif
@@ -708,43 +708,43 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGWeapon_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGWeapon_ActualReload, "ActualReload" }, // 2655856227
-		{ &Z_Construct_UFunction_AFGWeapon_CanReload, "CanReload" }, // 3787642075
-		{ &Z_Construct_UFunction_AFGWeapon_FireAmmunition, "FireAmmunition" }, // 4084729787
-		{ &Z_Construct_UFunction_AFGWeapon_GetAssosiatedHud, "GetAssosiatedHud" }, // 1376629380
-		{ &Z_Construct_UFunction_AFGWeapon_GetCurrentAmmo, "GetCurrentAmmo" }, // 1382508955
-		{ &Z_Construct_UFunction_AFGWeapon_GetIsFiring, "GetIsFiring" }, // 512468568
-		{ &Z_Construct_UFunction_AFGWeapon_GetIsReloading, "GetIsReloading" }, // 792660141
-		{ &Z_Construct_UFunction_AFGWeapon_GetMagSize, "GetMagSize" }, // 3287280871
-		{ &Z_Construct_UFunction_AFGWeapon_GetReloadTimeLeft, "GetReloadTimeLeft" }, // 100000579
-		{ &Z_Construct_UFunction_AFGWeapon_GetSpareAmmunition, "GetSpareAmmunition" }, // 3366544011
-		{ &Z_Construct_UFunction_AFGWeapon_HasAmmunition, "HasAmmunition" }, // 233053163
-		{ &Z_Construct_UFunction_AFGWeapon_PlayFailedToFireEffects, "PlayFailedToFireEffects" }, // 714612401
-		{ &Z_Construct_UFunction_AFGWeapon_PlayFireEffect, "PlayFireEffect" }, // 2998039643
-		{ &Z_Construct_UFunction_AFGWeapon_PlayFireReleasedEffects, "PlayFireReleasedEffects" }, // 1432831819
-		{ &Z_Construct_UFunction_AFGWeapon_PlayReloadEffects, "PlayReloadEffects" }, // 1829981647
-		{ &Z_Construct_UFunction_AFGWeapon_Server_EndPrimaryFire, "Server_EndPrimaryFire" }, // 2852518086
-		{ &Z_Construct_UFunction_AFGWeapon_Server_Reload, "Server_Reload" }, // 312536495
-		{ &Z_Construct_UFunction_AFGWeapon_Server_StartPrimaryFire, "Server_StartPrimaryFire" }, // 1643134835
+		{ &Z_Construct_UFunction_AFGWeapon_ActualReload, "ActualReload" }, // 1598956677
+		{ &Z_Construct_UFunction_AFGWeapon_CanReload, "CanReload" }, // 3921164461
+		{ &Z_Construct_UFunction_AFGWeapon_FireAmmunition, "FireAmmunition" }, // 2171958610
+		{ &Z_Construct_UFunction_AFGWeapon_GetAssosiatedHud, "GetAssosiatedHud" }, // 68646368
+		{ &Z_Construct_UFunction_AFGWeapon_GetCurrentAmmo, "GetCurrentAmmo" }, // 332392713
+		{ &Z_Construct_UFunction_AFGWeapon_GetIsFiring, "GetIsFiring" }, // 1466924895
+		{ &Z_Construct_UFunction_AFGWeapon_GetIsReloading, "GetIsReloading" }, // 1960372180
+		{ &Z_Construct_UFunction_AFGWeapon_GetMagSize, "GetMagSize" }, // 2858080501
+		{ &Z_Construct_UFunction_AFGWeapon_GetReloadTimeLeft, "GetReloadTimeLeft" }, // 1420695828
+		{ &Z_Construct_UFunction_AFGWeapon_GetSpareAmmunition, "GetSpareAmmunition" }, // 3743426422
+		{ &Z_Construct_UFunction_AFGWeapon_HasAmmunition, "HasAmmunition" }, // 28885710
+		{ &Z_Construct_UFunction_AFGWeapon_PlayFailedToFireEffects, "PlayFailedToFireEffects" }, // 1776351191
+		{ &Z_Construct_UFunction_AFGWeapon_PlayFireEffect, "PlayFireEffect" }, // 444988385
+		{ &Z_Construct_UFunction_AFGWeapon_PlayFireReleasedEffects, "PlayFireReleasedEffects" }, // 3770826595
+		{ &Z_Construct_UFunction_AFGWeapon_PlayReloadEffects, "PlayReloadEffects" }, // 2250029483
+		{ &Z_Construct_UFunction_AFGWeapon_Server_EndPrimaryFire, "Server_EndPrimaryFire" }, // 232173993
+		{ &Z_Construct_UFunction_AFGWeapon_Server_Reload, "Server_Reload" }, // 3171752243
+		{ &Z_Construct_UFunction_AFGWeapon_Server_StartPrimaryFire, "Server_StartPrimaryFire" }, // 2672866551
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeapon_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGWeapon.h" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Base class for a weapon in the game, this provides basic firing logic only and does not specify if it's a instant hit or projectile weapon." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeapon_Statics::NewProp_mReloadSound_MetaData[] = {
 		{ "Category", "Sound" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Sound played when reloading" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWeapon_Statics::NewProp_mReloadSound = { "mReloadSound", nullptr, (EPropertyFlags)0x0020080000010005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWeapon, mReloadSound), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGWeapon_Statics::NewProp_mReloadSound_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWeapon_Statics::NewProp_mReloadSound_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeapon_Statics::NewProp_mIsReloading_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "True if we are currently reloading" },
 	};
@@ -757,7 +757,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeapon_Statics::NewProp_mIsPendingFire_MetaData[] = {
 		{ "Category", "FGWeapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "The player wants to shoot" },
 	};
@@ -770,7 +770,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeapon_Statics::NewProp_mIsFiring_MetaData[] = {
 		{ "Category", "FGWeapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Are we firing?" },
 	};
@@ -783,7 +783,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeapon_Statics::NewProp_mFireRate_MetaData[] = {
 		{ "Category", "FGWeapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "How many seconds between between shots" },
 	};
 #endif
@@ -791,7 +791,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeapon_Statics::NewProp_mReloadTime_MetaData[] = {
 		{ "Category", "FGWeapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "In seconds, how long time does it take to reload the weapon" },
 	};
 #endif
@@ -799,7 +799,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeapon_Statics::NewProp_mDamageTypeClass_MetaData[] = {
 		{ "Category", "FGWeapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "Damage type to use when hitting others" },
 	};
 #endif
@@ -807,14 +807,14 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeapon_Statics::NewProp_mAmmunitionClass_MetaData[] = {
 		{ "Category", "FGWeapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "The item we shoot" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGWeapon_Statics::NewProp_mAmmunitionClass = { "mAmmunitionClass", nullptr, (EPropertyFlags)0x0024080000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWeapon, mAmmunitionClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGWeapon_Statics::NewProp_mAmmunitionClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWeapon_Statics::NewProp_mAmmunitionClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeapon_Statics::NewProp_mCurrentAmmo_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "How much ammo is loaded into the weapon" },
 	};
 #endif
@@ -822,14 +822,14 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeapon_Statics::NewProp_mMagSize_MetaData[] = {
 		{ "Category", "FGWeapon" },
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 		{ "ToolTip", "How much ammo does a magazine cover" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGWeapon_Statics::NewProp_mMagSize = { "mMagSize", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWeapon, mMagSize), METADATA_PARAMS(Z_Construct_UClass_AFGWeapon_Statics::NewProp_mMagSize_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWeapon_Statics::NewProp_mMagSize_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeapon_Statics::NewProp_mAssosiatedHud_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGWeapon.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGWeapon.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWeapon_Statics::NewProp_mAssosiatedHud = { "mAssosiatedHud", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWeapon, mAssosiatedHud), Z_Construct_UClass_AFGHUD_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGWeapon_Statics::NewProp_mAssosiatedHud_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWeapon_Statics::NewProp_mAssosiatedHud_MetaData)) };
@@ -873,7 +873,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWeapon, 1319279648);
+	IMPLEMENT_CLASS(AFGWeapon, 1205118673);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWeapon>()
 	{
 		return AFGWeapon::StaticClass();

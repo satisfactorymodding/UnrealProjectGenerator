@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildablePowerPole.h"
+#include "FactoryGame/Public/Buildables/FGBuildablePowerPole.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -63,7 +63,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePowerPole() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildablePowerPole_GetCachedNumConnections_Statics::Function_MetaDataParams[] = {
 		{ "Category", "PowerPole" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePowerPole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePowerPole.h" },
 		{ "ToolTip", "Faster way to query how many connections this power pole currently have connected to it" },
 	};
 #endif
@@ -97,7 +97,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePowerPole() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildablePowerPole_GetPowerCircuit_Statics::Function_MetaDataParams[] = {
 		{ "Category", "PowerPole" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePowerPole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePowerPole.h" },
 		{ "ToolTip", "@return The power circuit this pole is connected to; nullptr if not connected." },
 	};
 #endif
@@ -139,7 +139,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePowerPole() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildablePowerPole_GetPowerConnection_Statics::Function_MetaDataParams[] = {
 		{ "Category", "PowerPole" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePowerPole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePowerPole.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildablePowerPole_GetPowerConnection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildablePowerPole, nullptr, "GetPowerConnection", sizeof(FGBuildablePowerPole_eventGetPowerConnection_Parms), Z_Construct_UFunction_AFGBuildablePowerPole_GetPowerConnection_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildablePowerPole_GetPowerConnection_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildablePowerPole_GetPowerConnection_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildablePowerPole_GetPowerConnection_Statics::Function_MetaDataParams)) };
@@ -162,7 +162,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePowerPole() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildablePowerPole_OnShowConnectionFeedback_Statics::Function_MetaDataParams[] = {
 		{ "Category", "PowerPole" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePowerPole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePowerPole.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildablePowerPole_OnShowConnectionFeedback_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildablePowerPole, nullptr, "OnShowConnectionFeedback", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildablePowerPole_OnShowConnectionFeedback_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildablePowerPole_OnShowConnectionFeedback_Statics::Function_MetaDataParams)) };
@@ -215,21 +215,21 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePowerPole() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildablePowerPole_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildablePowerPole_GetCachedNumConnections, "GetCachedNumConnections" }, // 1626187063
-		{ &Z_Construct_UFunction_AFGBuildablePowerPole_GetPowerCircuit, "GetPowerCircuit" }, // 3246554952
-		{ &Z_Construct_UFunction_AFGBuildablePowerPole_GetPowerConnection, "GetPowerConnection" }, // 811802947
-		{ &Z_Construct_UFunction_AFGBuildablePowerPole_OnShowConnectionFeedback, "OnShowConnectionFeedback" }, // 644697869
+		{ &Z_Construct_UFunction_AFGBuildablePowerPole_GetCachedNumConnections, "GetCachedNumConnections" }, // 4119702202
+		{ &Z_Construct_UFunction_AFGBuildablePowerPole_GetPowerCircuit, "GetPowerCircuit" }, // 789612497
+		{ &Z_Construct_UFunction_AFGBuildablePowerPole_GetPowerConnection, "GetPowerConnection" }, // 302569205
+		{ &Z_Construct_UFunction_AFGBuildablePowerPole_OnShowConnectionFeedback, "OnShowConnectionFeedback" }, // 3186148067
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePowerPole_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildablePowerPole.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePowerPole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePowerPole.h" },
 		{ "ToolTip", "Base class for all power poles." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePowerPole_Statics::NewProp_mCachedNumConnectionsToPole_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildablePowerPole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePowerPole.h" },
 		{ "NoAutoJson", "TRUE" },
 	};
 #endif
@@ -238,7 +238,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePowerPole() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePowerPole_Statics::NewProp_mMeshComponentProxy_MetaData[] = {
 		{ "Category", "FGBuildablePowerPole" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePowerPole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePowerPole.h" },
 		{ "ToolTip", "The mesh component for this pole." },
 	};
 #endif
@@ -247,7 +247,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePowerPole() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePowerPole_Statics::NewProp_mPowerConnection_MetaData[] = {
 		{ "Category", "PowerPole" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePowerPole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePowerPole.h" },
 		{ "ToolTip", "The connection on this pole." },
 	};
 #endif
@@ -255,7 +255,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePowerPole() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePowerPole_Statics::NewProp_mConnectionWidgetClass_MetaData[] = {
 		{ "Category", "PowerPole" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePowerPole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePowerPole.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildablePowerPole_Statics::NewProp_mConnectionWidgetClass = { "mConnectionWidgetClass", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildablePowerPole, mConnectionWidgetClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePowerPole_Statics::NewProp_mConnectionWidgetClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePowerPole_Statics::NewProp_mConnectionWidgetClass_MetaData)) };
@@ -263,7 +263,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePowerPole() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePowerPole_Statics::NewProp_mConnectionsWidgetComponent_MetaData[] = {
 		{ "Category", "PowerPole" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePowerPole.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePowerPole.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildablePowerPole_Statics::NewProp_mConnectionsWidgetComponent = { "mConnectionsWidgetComponent", nullptr, (EPropertyFlags)0x00200800000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildablePowerPole, mConnectionsWidgetComponent), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePowerPole_Statics::NewProp_mConnectionsWidgetComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePowerPole_Statics::NewProp_mConnectionsWidgetComponent_MetaData)) };
@@ -301,7 +301,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePowerPole() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildablePowerPole, 3863695503);
+	IMPLEMENT_CLASS(AFGBuildablePowerPole, 3244443466);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildablePowerPole>()
 	{
 		return AFGBuildablePowerPole::StaticClass();

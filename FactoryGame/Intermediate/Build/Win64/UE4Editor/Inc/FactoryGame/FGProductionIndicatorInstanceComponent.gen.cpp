@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGProductionIndicatorInstanceComponent.h"
+#include "FactoryGame/Public/FGProductionIndicatorInstanceComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -46,7 +46,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorInstanceComponent() {
 		{ "HideCategories", "Object Activation Components|Activation Trigger" },
 		{ "IncludePath", "FGProductionIndicatorInstanceComponent.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGProductionIndicatorInstanceComponent.h" },
+		{ "ModuleRelativePath", "Public/FGProductionIndicatorInstanceComponent.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGProductionIndicatorInstanceComponent_Statics::StaticCppClassTypeInfo = {
@@ -76,7 +76,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorInstanceComponent() {
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGProductionIndicatorInstanceComponent, 2012764611);
+	IMPLEMENT_CLASS(UFGProductionIndicatorInstanceComponent, 394681935);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGProductionIndicatorInstanceComponent>()
 	{
 		return UFGProductionIndicatorInstanceComponent::StaticClass();

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableRailroadTrack.h"
+#include "FactoryGame/Public/Buildables/FGBuildableRailroadTrack.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -71,7 +71,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadTrack.h" },
 		{ "ToolTip", "This is a way to represent a position on the railroad." },
 	};
 #endif
@@ -81,21 +81,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Forward_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadTrack.h" },
 		{ "ToolTip", "How are we rotated on this segment.\n 1: We travel forward by increasing the offset (Along the spline).\n-1: We travel forward by decreasing the offset (Against the spine)." },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Forward = { "Forward", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FRailroadTrackPosition, Forward), METADATA_PARAMS(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Forward_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Forward_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Offset_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadTrack.h" },
 		{ "ToolTip", "Offset along the track." },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Offset = { "Offset", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FRailroadTrackPosition, Offset), METADATA_PARAMS(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Offset_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Offset_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Track_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadTrack.h" },
 		{ "ToolTip", "This is the track segment this position is on.\nIf null then this is not a valid position." },
 	};
 #endif
@@ -133,7 +133,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRailroadTrackPosition_Hash() { return 3810159560U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRailroadTrackPosition_Hash() { return 2474350543U; }
 	void AFGBuildableRailroadTrack::StaticRegisterNativesAFGBuildableRailroadTrack()
 	{
 		UClass* Class = AFGBuildableRailroadTrack::StaticClass();
@@ -163,7 +163,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Track" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadTrack.h" },
 		{ "ToolTip", "Get the length of this track." },
 	};
 #endif
@@ -205,7 +205,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Track" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadTrack.h" },
 		{ "ToolTip", "Get the spline for this track." },
 	};
 #endif
@@ -265,20 +265,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength, "GetLength" }, // 729292308
-		{ &Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent, "GetSplineComponent" }, // 225020497
+		{ &Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength, "GetLength" }, // 1145789232
+		{ &Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent, "GetSplineComponent" }, // 1487867761
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableRailroadTrack.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadTrack.h" },
 		{ "ToolTip", "A piece of train track, it has a spline and to ends." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform_MetaData[] = {
 		{ "Category", "Track" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadTrack.h" },
 		{ "ToolTip", "Was this track created and is owned by a platform." },
 	};
 #endif
@@ -290,14 +290,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mConnections_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadTrack.h" },
 		{ "ToolTip", "This tracks connection component." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mConnections = { "mConnections", nullptr, (EPropertyFlags)0x0040000001080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mConnections, AFGBuildableRailroadTrack), STRUCT_OFFSET(AFGBuildableRailroadTrack, mConnections), Z_Construct_UClass_UFGRailroadTrackConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mConnections_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mConnections_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineData_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadTrack.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Spline data saved in a compact form for saving and replicating. All the vectors are in local space." },
 	};
@@ -308,7 +308,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineComponent_MetaData[] = {
 		{ "Category", "Spline" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadTrack.h" },
 		{ "ToolTip", "The spline component for this train track." },
 	};
 #endif
@@ -316,7 +316,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMeshLength_MetaData[] = {
 		{ "Category", "Track" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadTrack.h" },
 		{ "ToolTip", "Length of the mesh to use for this track" },
 	};
 #endif
@@ -324,7 +324,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMesh_MetaData[] = {
 		{ "Category", "Track" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadTrack.h" },
 		{ "ToolTip", "Mesh to use for his track." },
 	};
 #endif
@@ -365,7 +365,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadTrack, 4121056373);
+	IMPLEMENT_CLASS(AFGBuildableRailroadTrack, 2173597816);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableRailroadTrack>()
 	{
 		return AFGBuildableRailroadTrack::StaticClass();

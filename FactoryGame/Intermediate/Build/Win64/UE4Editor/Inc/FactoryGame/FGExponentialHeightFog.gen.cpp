@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGExponentialHeightFog.h"
+#include "FactoryGame/Public/FGExponentialHeightFog.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -103,7 +103,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewStructOps()
@@ -113,7 +113,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogCutoffDistance_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Scene elements past this distance will not have fog applied.  This is useful for excluding skyboxes which already have fog baked in." },
 		{ "UIMax", "20000000" },
 		{ "UIMin", "100000" },
@@ -123,7 +123,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_StartDistance_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Distance from the camera that the fog will start, in world units." },
 		{ "UIMax", "5000" },
 		{ "UIMin", "0" },
@@ -133,7 +133,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogMaxOpacity_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Maximum opacity of the fog.\nA value of 1 means the fog can become fully opaque at a distance and replace scene color completely,\nA value of 0 means the fog color will not be factored in at all." },
 		{ "UIMax", "1" },
 		{ "UIMin", "0" },
@@ -143,7 +143,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogHeightFalloff_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Height density factor, controls how the density increases as height decreases.\nSmaller values make the visible transition larger." },
 		{ "UIMax", "2" },
 		{ "UIMin", "0.001" },
@@ -153,7 +153,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringColor_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Controls the color of the directional inscattering, which is used to approximate inscattering from a directional light.\nNote: there must be a directional light with bUsedAsAtmosphereSunLight enabled for DirectionalInscattering to be used." },
 	};
 #endif
@@ -161,7 +161,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringStartDistance_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Controls the start distance from the viewer of the directional inscattering, which is used to approximate inscattering from a directional light.\nNote: there must be a directional light with bUsedAsAtmosphereSunLight enabled for DirectionalInscattering to be used." },
 	};
 #endif
@@ -169,7 +169,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringExponent_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Controls the size of the directional inscattering cone, which is used to approximate inscattering from a directional light.\nNote: there must be a directional light with bUsedAsAtmosphereSunLight enabled for DirectionalInscattering to be used." },
 		{ "UIMax", "64" },
 		{ "UIMin", "2" },
@@ -179,7 +179,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_NonDirectionalInscatteringColorDistance_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Distance at which only the average color of InscatteringColorCubemap should be used as Inscattering Color." },
 		{ "UIMax", "1000000" },
 		{ "UIMin", "1000" },
@@ -189,7 +189,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FullyDirectionalInscatteringColorDistance_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Distance at which InscatteringColorCubemap should be used directly for the Inscattering Color." },
 		{ "UIMax", "1000000" },
 		{ "UIMin", "1000" },
@@ -199,14 +199,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogInscatteringColor_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogInscatteringColor = { "FogInscatteringColor", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FExponentialFogSettings, FogInscatteringColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogInscatteringColor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogInscatteringColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogDensity_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Density of the fog" },
 		{ "UIMax", ".05" },
 		{ "UIMin", "0" },
@@ -216,7 +216,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogHeight_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "The ZValue of the fog" },
 	};
 #endif
@@ -263,7 +263,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FExponentialFogSettings_Hash() { return 394251653U; }
+	uint32 Get_Z_Construct_UScriptStruct_FExponentialFogSettings_Hash() { return 31530332U; }
 	void AFGDynamicExponentialFogVolume::StaticRegisterNativesAFGDynamicExponentialFogVolume()
 	{
 	}
@@ -393,7 +393,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Collision Tags Cooking Actor Mobile Brush Physics Object Display Rendering Physics Input Blueprint" },
 		{ "IncludePath", "FGExponentialHeightFog.h" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 		{ "ToolTip", "@todo: Should be renamed to something else, as it does a lot more than give settings to fog" },
 	};
@@ -402,7 +402,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPreviewSettings_MetaData[] = {
 		{ "Category", "Preview" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ShowOnlyInnerProperties", "" },
 		{ "ToolTip", "A preview of all the settings in the current fog-volume" },
 	};
@@ -413,7 +413,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "Category", "Preview" },
 		{ "ClampMax", "24" },
 		{ "ClampMin", "0" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "A stampdown in time, where we want to show of the preview settings" },
 		{ "UIMax", "24" },
 		{ "UIMin", "0" },
@@ -425,7 +425,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableGain_MetaData[] = {
 		{ "Category", "PostProcess" },
 		{ "InlineEditConditionToggle", "" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "PinHiddenByDefault", "" },
 		{ "ToolTip", "MODDING EDIT\nInterpolate the contrast during the day\nUPROPERTY( EditAnywhere, BlueprintReadOnly, Category = \"PostProcess\", meta = ( EditCondition = \"mEnableContrast\" ) )\nFRuntimeCurveLinearColor mContrast;" },
 	};
@@ -439,7 +439,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableContrast_MetaData[] = {
 		{ "Category", "PostProcess" },
 		{ "InlineEditConditionToggle", "" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "PinHiddenByDefault", "" },
 		{ "ToolTip", "MODDING EDIT\nInterpolate the saturation during the day\nUPROPERTY( EditAnywhere, BlueprintReadOnly, Category = \"PostProcess\", meta=(EditCondition=\"mEnableSaturation\"))\nFRuntimeCurveLinearColor mSaturation;" },
 	};
@@ -453,7 +453,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableSaturation_MetaData[] = {
 		{ "Category", "PostProcess" },
 		{ "InlineEditConditionToggle", "" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "PinHiddenByDefault", "" },
 	};
 #endif
@@ -465,7 +465,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mBlendWeight_MetaData[] = {
 		{ "Category", "PostProcess" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "The blend weight of the post process volume" },
 	};
 #endif
@@ -474,7 +474,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mCloudOpacity_MetaData[] = {
 		{ "Category", "SkySphere" },
 		{ "EditCondition", "mOverrideCloudOpacity" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "How the opakeness of the clouds change during the day" },
 	};
 #endif
@@ -483,7 +483,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudOpacity_MetaData[] = {
 		{ "Category", "SkySphere" },
 		{ "InlineEditConditionToggle", "" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "PinHiddenByDefault", "" },
 		{ "ToolTip", "MODDING EDIT\nHow the color of clouds zenith changes during the day\nUPROPERTY( EditAnywhere, BlueprintReadOnly, Category = \"SkySphere\", meta = (EditCondition = \"mOverrideCloudColor\") )\nFRuntimeCurveLinearColor mCloudColorCurve;" },
 	};
@@ -497,7 +497,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudColor_MetaData[] = {
 		{ "Category", "SkySphere" },
 		{ "InlineEditConditionToggle", "" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "PinHiddenByDefault", "" },
 		{ "ToolTip", "MODDING EDIT\nHow the color of the zenith changes during the day\nUPROPERTY( EditAnywhere, BlueprintReadOnly, Category = \"SkySphere\", meta = (EditCondition = \"mOverrideZenithColor\") )\nFRuntimeCurveLinearColor mZenithColorCurve;" },
 	};
@@ -511,7 +511,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideZenithColor_MetaData[] = {
 		{ "Category", "SkySphere" },
 		{ "InlineEditConditionToggle", "" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "PinHiddenByDefault", "" },
 		{ "ToolTip", "MODDING EDIT\nHow the color of the horizon changes during the day\nUPROPERTY( EditAnywhere, BlueprintReadOnly, Category = \"SkySphere\", meta = (EditCondition = \"mOverrideHorizonColor\") )\nFRuntimeCurveLinearColor mHorizonColorCurve;" },
 	};
@@ -525,7 +525,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideHorizonColor_MetaData[] = {
 		{ "Category", "SkySphere" },
 		{ "InlineEditConditionToggle", "" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "PinHiddenByDefault", "" },
 	};
 #endif
@@ -537,7 +537,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogCutoffDistance_MetaData[] = {
 		{ "Category", "HeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
@@ -545,7 +545,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mStartDistance_MetaData[] = {
 		{ "Category", "HeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
@@ -553,7 +553,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogMaxOpacity_MetaData[] = {
 		{ "Category", "HeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
@@ -561,7 +561,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogHeightFalloff_MetaData[] = {
 		{ "Category", "HeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
@@ -569,7 +569,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mDirectionalInscatteringStartDistance_MetaData[] = {
 		{ "Category", "HeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
@@ -577,7 +577,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mDirectionalInscatteringExponent_MetaData[] = {
 		{ "Category", "HeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
@@ -585,7 +585,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mNonDirectionalInscatteringColorDistance_MetaData[] = {
 		{ "Category", "HeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
@@ -593,7 +593,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFullyDirectionalInscatteringColorDistance_MetaData[] = {
 		{ "Category", "HeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
@@ -601,7 +601,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogDensity_MetaData[] = {
 		{ "Category", "HeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
@@ -609,7 +609,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogHeight_MetaData[] = {
 		{ "Category", "HeightFog" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
@@ -617,7 +617,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mBlendDistance_MetaData[] = {
 		{ "Category", "Shared" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 		{ "ToolTip", "The distance that the fog blends over" },
 	};
 #endif
@@ -625,7 +625,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPriority_MetaData[] = {
 		{ "Category", "Shared" },
-		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
+		{ "ModuleRelativePath", "Public/FGExponentialHeightFog.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPriority = { "mPriority", nullptr, (EPropertyFlags)0x0020080000000801, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mPriority), METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPriority_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPriority_MetaData)) };
@@ -686,7 +686,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDynamicExponentialFogVolume, 2360811240);
+	IMPLEMENT_CLASS(AFGDynamicExponentialFogVolume, 1492219576);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGDynamicExponentialFogVolume>()
 	{
 		return AFGDynamicExponentialFogVolume::StaticClass();

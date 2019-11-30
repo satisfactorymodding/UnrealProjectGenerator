@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FactoryGameGameModeBase.h"
+#include "FactoryGame/Public/FactoryGameGameModeBase.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGameGameModeBase() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFactoryGameGameModeBase_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FactoryGameGameModeBase.h" },
-		{ "ModuleRelativePath", "FactoryGameGameModeBase.h" },
+		{ "ModuleRelativePath", "Public/FactoryGameGameModeBase.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGameGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFactoryGameGameModeBase, 3053817614);
+	IMPLEMENT_CLASS(AFactoryGameGameModeBase, 312007883);
 	template<> FACTORYGAME_API UClass* StaticClass<AFactoryGameGameModeBase>()
 	{
 		return AFactoryGameGameModeBase::StaticClass();

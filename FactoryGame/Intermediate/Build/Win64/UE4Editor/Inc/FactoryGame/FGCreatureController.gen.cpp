@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/AI/FGCreatureController.h"
+#include "FactoryGame/Public/AI/FGCreatureController.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "AI/FGCreatureController.h" },
+		{ "ModuleRelativePath", "Public/AI/FGCreatureController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreatureController, nullptr, "OnTargetPerceptionUpdated", sizeof(FGCreatureController_eventOnTargetPerceptionUpdated_Parms), Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::Function_MetaDataParams)) };
@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|AI|Optimization" },
-		{ "ModuleRelativePath", "AI/FGCreatureController.h" },
+		{ "ModuleRelativePath", "Public/AI/FGCreatureController.h" },
 		{ "ToolTip", "toggles if the ai should be active" },
 	};
 #endif
@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreatureController_StartPanic_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|AI" },
-		{ "ModuleRelativePath", "AI/FGCreatureController.h" },
+		{ "ModuleRelativePath", "Public/AI/FGCreatureController.h" },
 		{ "ToolTip", "Started panicking for some reason" },
 	};
 #endif
@@ -154,7 +154,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreatureController_StopPanic_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|AI" },
-		{ "ModuleRelativePath", "AI/FGCreatureController.h" },
+		{ "ModuleRelativePath", "Public/AI/FGCreatureController.h" },
 		{ "ToolTip", "now chilling tha grill" },
 	};
 #endif
@@ -187,16 +187,16 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureController() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCreatureController_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated, "OnTargetPerceptionUpdated" }, // 788324772
-		{ &Z_Construct_UFunction_AFGCreatureController_SetEnabled, "SetEnabled" }, // 4006090076
-		{ &Z_Construct_UFunction_AFGCreatureController_StartPanic, "StartPanic" }, // 3009644547
-		{ &Z_Construct_UFunction_AFGCreatureController_StopPanic, "StopPanic" }, // 3749666725
+		{ &Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated, "OnTargetPerceptionUpdated" }, // 909324379
+		{ &Z_Construct_UFunction_AFGCreatureController_SetEnabled, "SetEnabled" }, // 2545143883
+		{ &Z_Construct_UFunction_AFGCreatureController_StartPanic, "StartPanic" }, // 865418031
+		{ &Z_Construct_UFunction_AFGCreatureController_StopPanic, "StopPanic" }, // 316934372
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureController_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "AI/FGCreatureController.h" },
-		{ "ModuleRelativePath", "AI/FGCreatureController.h" },
+		{ "ModuleRelativePath", "Public/AI/FGCreatureController.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
@@ -227,7 +227,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreatureController, 1862963299);
+	IMPLEMENT_CLASS(AFGCreatureController, 522150409);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCreatureController>()
 	{
 		return AFGCreatureController::StaticClass();

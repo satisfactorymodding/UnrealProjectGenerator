@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableSpaceElevator.h"
+#include "FactoryGame/Public/Buildables/FGBuildableSpaceElevator.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -80,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSpaceElevator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSpaceElevator_GetInputInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Space Elevator" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSpaceElevator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSpaceElevator.h" },
 		{ "ToolTip", "Get the input inventory from this building." },
 	};
 #endif
@@ -117,7 +117,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSpaceElevator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSpaceElevator_GetNextPhaseCost_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Space Elevator" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSpaceElevator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSpaceElevator.h" },
 		{ "ToolTip", "Returns the cost for the next upgrade" },
 	};
 #endif
@@ -156,7 +156,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSpaceElevator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSpaceElevator_IsFullyUpgraded_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Space Elevator" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSpaceElevator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSpaceElevator.h" },
 		{ "ToolTip", "@returns true when we are fully upgraded." },
 	};
 #endif
@@ -195,7 +195,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSpaceElevator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSpaceElevator_IsReadyToUpgrade_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Space Elevator" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSpaceElevator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSpaceElevator.h" },
 		{ "ToolTip", "*@returns True if we have eaten up all the items needed to upgrade. Returns false if not, but also if there is no current recipe available." },
 	};
 #endif
@@ -219,7 +219,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSpaceElevator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSpaceElevator_LaunchTowTruck_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Space Elevator" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSpaceElevator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSpaceElevator.h" },
 		{ "ToolTip", "When the player is on the last step of the game, sending the tow truck will end the game" },
 	};
 #endif
@@ -265,7 +265,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSpaceElevator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSpaceElevator_PayOffFromInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Space Elevator" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSpaceElevator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSpaceElevator.h" },
 		{ "ToolTip", "Player has dropped items onto the pay off widget from their inventory" },
 	};
 #endif
@@ -289,7 +289,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSpaceElevator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSpaceElevator_UpgradeTowTruck_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Space Elevator" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSpaceElevator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSpaceElevator.h" },
 		{ "ToolTip", "Called when the player presses to send more stuff to the tow truck" },
 	};
 #endif
@@ -331,23 +331,23 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSpaceElevator() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableSpaceElevator_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableSpaceElevator_GetInputInventory, "GetInputInventory" }, // 550623736
-		{ &Z_Construct_UFunction_AFGBuildableSpaceElevator_GetNextPhaseCost, "GetNextPhaseCost" }, // 2799788373
-		{ &Z_Construct_UFunction_AFGBuildableSpaceElevator_IsFullyUpgraded, "IsFullyUpgraded" }, // 4201691145
-		{ &Z_Construct_UFunction_AFGBuildableSpaceElevator_IsReadyToUpgrade, "IsReadyToUpgrade" }, // 1552820564
-		{ &Z_Construct_UFunction_AFGBuildableSpaceElevator_LaunchTowTruck, "LaunchTowTruck" }, // 4001942559
-		{ &Z_Construct_UFunction_AFGBuildableSpaceElevator_PayOffFromInventory, "PayOffFromInventory" }, // 770068301
-		{ &Z_Construct_UFunction_AFGBuildableSpaceElevator_UpgradeTowTruck, "UpgradeTowTruck" }, // 1833728768
+		{ &Z_Construct_UFunction_AFGBuildableSpaceElevator_GetInputInventory, "GetInputInventory" }, // 1976920125
+		{ &Z_Construct_UFunction_AFGBuildableSpaceElevator_GetNextPhaseCost, "GetNextPhaseCost" }, // 3458266683
+		{ &Z_Construct_UFunction_AFGBuildableSpaceElevator_IsFullyUpgraded, "IsFullyUpgraded" }, // 882459776
+		{ &Z_Construct_UFunction_AFGBuildableSpaceElevator_IsReadyToUpgrade, "IsReadyToUpgrade" }, // 1760495663
+		{ &Z_Construct_UFunction_AFGBuildableSpaceElevator_LaunchTowTruck, "LaunchTowTruck" }, // 3812702823
+		{ &Z_Construct_UFunction_AFGBuildableSpaceElevator_PayOffFromInventory, "PayOffFromInventory" }, // 3007710383
+		{ &Z_Construct_UFunction_AFGBuildableSpaceElevator_UpgradeTowTruck, "UpgradeTowTruck" }, // 627942102
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSpaceElevator_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableSpaceElevator.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSpaceElevator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSpaceElevator.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSpaceElevator_Statics::NewProp_mGamePhaseManager_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableSpaceElevator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSpaceElevator.h" },
 		{ "ToolTip", "A cached version of the game phase manager" },
 	};
 #endif
@@ -355,7 +355,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSpaceElevator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSpaceElevator_Statics::NewProp_mInputInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSpaceElevator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSpaceElevator.h" },
 		{ "ToolTip", "Our input inventory, shared for all input connections." },
 	};
 #endif
@@ -391,7 +391,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSpaceElevator() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSpaceElevator, 682462422);
+	IMPLEMENT_CLASS(AFGBuildableSpaceElevator, 538667312);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableSpaceElevator>()
 	{
 		return AFGBuildableSpaceElevator::StaticClass();

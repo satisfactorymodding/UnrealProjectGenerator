@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGWorldSettings.h"
+#include "FactoryGame/Public/FGWorldSettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -62,7 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWorldSettings_GetLevelStartedAkEvent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Level|Audio" },
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 		{ "ToolTip", "Get the event to post when we start the level" },
 	};
 #endif
@@ -87,7 +87,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWorldSettings_UpdateWorldBounds_Statics::Function_MetaDataParams[] = {
 		{ "CallInEditor", "true" },
 		{ "Category", "FactoryGame|Level" },
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 		{ "ToolTip", "Update the world bounds" },
 	};
 #endif
@@ -189,14 +189,14 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGWorldSettings_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGWorldSettings_GetLevelStartedAkEvent, "GetLevelStartedAkEvent" }, // 3780881521
-		{ &Z_Construct_UFunction_AFGWorldSettings_UpdateWorldBounds, "UpdateWorldBounds" }, // 32089797
+		{ &Z_Construct_UFunction_AFGWorldSettings_GetLevelStartedAkEvent, "GetLevelStartedAkEvent" }, // 3413888621
+		{ &Z_Construct_UFunction_AFGWorldSettings_UpdateWorldBounds, "UpdateWorldBounds" }, // 1147709826
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWorldSettings_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Advanced Display Events Object Attachment Info Input Blueprint Layers Tags Replication Input Movement Collision Utilities|Transformation" },
 		{ "IncludePath", "FGWorldSettings.h" },
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
@@ -206,7 +206,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 		{ "Category", "Time" },
 		{ "ClampMax", "24" },
 		{ "ClampMin", "0" },
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 		{ "ToolTip", "Set the hour you want to preview here, 16.25 means 16h 15min" },
 		{ "UIMax", "24" },
 		{ "UIMin", "0" },
@@ -216,25 +216,25 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 #endif // WITH_EDITORONLY_DATA
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mFoliageRemovalSubsystem_MetaData[] = {
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mFoliageRemovalSubsystem = { "mFoliageRemovalSubsystem", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWorldSettings, mFoliageRemovalSubsystem), Z_Construct_UClass_AFGFoliageRemovalSubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mFoliageRemovalSubsystem_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mFoliageRemovalSubsystem_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mAudioVolumeSubsystem_MetaData[] = {
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mAudioVolumeSubsystem = { "mAudioVolumeSubsystem", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWorldSettings, mAudioVolumeSubsystem), Z_Construct_UClass_AFGAudioVolumeSubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mAudioVolumeSubsystem_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mAudioVolumeSubsystem_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mFoundationSubsystem_MetaData[] = {
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mFoundationSubsystem = { "mFoundationSubsystem", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWorldSettings, mFoundationSubsystem), Z_Construct_UClass_AFGFoundationSubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mFoundationSubsystem_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mFoundationSubsystem_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mBuildableSubsystem_MetaData[] = {
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mBuildableSubsystem = { "mBuildableSubsystem", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWorldSettings, mBuildableSubsystem), Z_Construct_UClass_AFGBuildableSubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mBuildableSubsystem_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mBuildableSubsystem_MetaData)) };
@@ -243,7 +243,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 		{ "Category", "Time" },
 		{ "ClampMax", "24" },
 		{ "ClampMin", "0" },
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 		{ "ToolTip", "Time of day to start the day (in hours)" },
 		{ "UIMax", "24" },
 		{ "UIMin", "0" },
@@ -253,7 +253,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mDefaultLoadSave_MetaData[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 		{ "ToolTip", "Save game that we should load by default when entering the map" },
 	};
 #endif
@@ -261,7 +261,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mLevelStartedEvent_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 		{ "ToolTip", "Different events for different levels, so they can start different playlists" },
 	};
 #endif
@@ -269,7 +269,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mMinimapCaptureActor_MetaData[] = {
 		{ "Category", "Minimap" },
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 		{ "ToolTip", "The minimap capture actor of this level, might be null" },
 	};
 #endif
@@ -277,7 +277,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mSkySphere_MetaData[] = {
 		{ "Category", "HeightFog" },
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 		{ "ToolTip", "Set the sky sphere that's placed in the world here" },
 	};
 #endif
@@ -285,7 +285,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mExponentialHeightFog_MetaData[] = {
 		{ "Category", "HeightFog" },
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 		{ "ToolTip", "Set the height fog that's placed in the world here" },
 	};
 #endif
@@ -293,14 +293,14 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mDefaultHeightFogSettings_MetaData[] = {
 		{ "Category", "HeightFog" },
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 		{ "ToolTip", "The default settings of the exponential height fog to apply" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mDefaultHeightFogSettings = { "mDefaultHeightFogSettings", nullptr, (EPropertyFlags)0x0010000000000801, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWorldSettings, mDefaultHeightFogSettings), Z_Construct_UScriptStruct_FExponentialFogSettings, METADATA_PARAMS(Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mDefaultHeightFogSettings_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mDefaultHeightFogSettings_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mWaterVolumes_MetaData[] = {
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 		{ "ToolTip", "All the water volumes currently streamed in" },
 	};
 #endif
@@ -308,7 +308,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mWaterVolumes_Inner = { "mWaterVolumes", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGWaterVolume_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mAmbientVolumes_MetaData[] = {
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 		{ "ToolTip", "All the ambient volumes currently streamed in" },
 	};
 #endif
@@ -316,7 +316,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mAmbientVolumes_Inner = { "mAmbientVolumes", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGAmbientVolume_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mFogVolumes_MetaData[] = {
-		{ "ModuleRelativePath", "FGWorldSettings.h" },
+		{ "ModuleRelativePath", "Public/FGWorldSettings.h" },
 		{ "ToolTip", "All the fog volumes currently streamed in, sorted in ascending order of priority." },
 	};
 #endif
@@ -374,7 +374,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWorldSettings, 2739010346);
+	IMPLEMENT_CLASS(AFGWorldSettings, 387390593);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWorldSettings>()
 	{
 		return AFGWorldSettings::StaticClass();

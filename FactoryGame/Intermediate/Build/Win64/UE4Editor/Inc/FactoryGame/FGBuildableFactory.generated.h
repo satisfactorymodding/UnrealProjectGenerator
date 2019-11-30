@@ -20,7 +20,7 @@ class UFGFactoryConnectionComponent;
 #endif
 #define FACTORYGAME_FGBuildableFactory_generated_h
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_37_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_37_DELEGATE \
 struct _Script_FactoryGame_eventBuildingStateChanged_Parms \
 { \
 	bool state; \
@@ -33,7 +33,7 @@ static inline void FBuildingStateChanged_DelegateWrapper(const FMulticastScriptD
 }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_18_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_18_DELEGATE \
 struct _Script_FactoryGame_eventOnReplicationDetailActorCreated_Parms \
 { \
 	AActor* replicationDetailActorOwner; \
@@ -46,7 +46,7 @@ static inline void FOnReplicationDetailActorCreated_DelegateWrapper(const FMulti
 }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_RPC_WRAPPERS \
 	virtual void Factory_CollectInput_Implementation(); \
 	virtual bool CanProduce_Implementation() const; \
  \
@@ -314,7 +314,7 @@ static inline void FOnReplicationDetailActorCreated_DelegateWrapper(const FMulti
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void Factory_CollectInput_Implementation(); \
 	virtual bool CanProduce_Implementation() const; \
  \
@@ -582,7 +582,7 @@ static inline void FOnReplicationDetailActorCreated_DelegateWrapper(const FMulti
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_EVENT_PARMS \
 	struct FGBuildableFactory_eventCanProduce_Parms \
 	{ \
 		bool ReturnValue; \
@@ -619,8 +619,8 @@ static inline void FOnReplicationDetailActorCreated_DelegateWrapper(const FMulti
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildableFactory(); \
 	friend struct Z_Construct_UClass_AFGBuildableFactory_Statics; \
@@ -630,7 +630,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGBuildableFactory*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildableFactory(); \
 	friend struct Z_Construct_UClass_AFGBuildableFactory_Statics; \
@@ -640,7 +640,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGBuildableFactory*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildableFactory(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildableFactory) \
@@ -653,7 +653,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGBuildableFactory(AFGBuildableFactory&&); \
@@ -664,7 +664,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableFactory); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildableFactory)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mPowerInfo() { return STRUCT_OFFSET(AFGBuildableFactory, mPowerInfo); } \
 	FORCEINLINE static uint32 __PPO__mOnHasPowerChanged() { return STRUCT_OFFSET(AFGBuildableFactory, mOnHasPowerChanged); } \
 	FORCEINLINE static uint32 __PPO__mOnHasProductionChanged() { return STRUCT_OFFSET(AFGBuildableFactory, mOnHasProductionChanged); } \
@@ -687,30 +687,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableFactory); \
 	FORCEINLINE static uint32 __PPO__mCurrentProductivity() { return STRUCT_OFFSET(AFGBuildableFactory, mCurrentProductivity); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_43_PROLOG \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_43_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_INCLASS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -718,7 +718,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class AFGBuildableFactory>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h
 
 
 #define FOREACH_ENUM_EPRODUCTIONSTATUS(op) \

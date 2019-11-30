@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGFactoryConnectionComponent.h"
+#include "FactoryGame/Public/FGFactoryConnectionComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -47,7 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		return EFactoryConnectionDirection_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFactoryConnectionDirection(EFactoryConnectionDirection_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EFactoryConnectionDirection"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EFactoryConnectionDirection_Hash() { return 941565608U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EFactoryConnectionDirection_Hash() { return 557678175U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EFactoryConnectionDirection()
 	{
 #if WITH_HOT_RELOAD
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 				{ "FCD_MAX.ToolTip", "Special case for conveyor poles, may need refactor later." },
 				{ "FCD_OUTPUT.DisplayName", "Output" },
 				{ "FCD_SNAP_ONLY.DisplayName", "Snap Only" },
-				{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+				{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 				{ "ToolTip", "Type of connections in the game." },
 			};
 #endif
@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		return EFactoryConnectionConnector_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFactoryConnectionConnector(EFactoryConnectionConnector_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EFactoryConnectionConnector"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector_Hash() { return 4260268664U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector_Hash() { return 4019510425U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector()
 	{
 #if WITH_HOT_RELOAD
@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 				{ "FCC_CONVEYOR.DisplayName", "Conveyor" },
 				{ "FCC_MAX.Hidden", "" },
 				{ "FCC_PIPE.DisplayName", "Pipe" },
-				{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+				{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 				{ "ToolTip", "Type of connections in the game." },
 			};
 #endif
@@ -204,7 +204,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Connection" },
 		{ "CPP_Default_type", "None" },
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Grab the output on a connection (Grabs 1 resource).\n@param type - Type to grab if output has multiple types, nullptr for any.\n@param offset - if we are grabbing from a belt the item might have an offset beyond the belt's length\n@return valid resource descriptor on success; nullptr if no output of given type exists." },
 	};
 #endif
@@ -251,7 +251,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Connection" },
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Internal function, for when overloading how to handle a grab, grabs our output from a inventory" },
 	};
 #endif
@@ -301,7 +301,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Connection" },
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Internal function, for when overloading how to handle a peek, peeks our output from a inventory" },
 	};
 #endif
@@ -352,7 +352,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Connection" },
 		{ "CPP_Default_type", "None" },
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Check this connection has a output\n@param type - Optionally check the type of the output, nullptr for any.\n@return true if it has output; false if no output or" },
 	};
 #endif
@@ -389,7 +389,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Connection" },
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Return the connector used for this connection." },
 	};
 #endif
@@ -423,7 +423,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Connection" },
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Return the clearance needed when routing a conveyor belt from this connection." },
 	};
 #endif
@@ -460,7 +460,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Connection" },
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Return the direction for this connection." },
 	};
 #endif
@@ -502,7 +502,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Connection" },
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Return the inventory associated with this connection." },
 	};
 #endif
@@ -541,7 +541,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Connection" },
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Is this connection connected to anything.\n@return - true if connected; otherwise false. Always false if attached to hologram, snap only or bad index configuration." },
 	};
 #endif
@@ -607,15 +607,15 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput, "Factory_GrabOutput" }, // 855034474
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory, "Factory_Internal_GrabOutputInventory" }, // 4060364343
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory, "Factory_Internal_PeekOutputInventory" }, // 2414149410
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput, "Factory_PeekOutput" }, // 488760587
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector, "GetConnector" }, // 3194377030
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance, "GetConnectorClearance" }, // 1768990620
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection, "GetDirection" }, // 2499514412
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory, "GetInventory" }, // 3928213840
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected, "IsConnected" }, // 2243851271
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput, "Factory_GrabOutput" }, // 3531708920
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory, "Factory_Internal_GrabOutputInventory" }, // 3385693308
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory, "Factory_Internal_PeekOutputInventory" }, // 1683836884
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput, "Factory_PeekOutput" }, // 151769315
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector, "GetConnector" }, // 1167721320
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance, "GetConnectorClearance" }, // 726917012
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection, "GetDirection" }, // 4259024102
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory, "GetInventory" }, // 3594924891
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected, "IsConnected" }, // 1352320899
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::Class_MetaDataParams[] = {
@@ -623,14 +623,14 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		{ "ClassGroupNames", "Custom" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "FGFactoryConnectionComponent.h" },
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "This component is used on factories to connect to." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable_MetaData[] = {
 		{ "Category", "Connection" },
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Forward implementation details to our owner." },
 	};
 #endif
@@ -642,14 +642,14 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "The inventory of this connection" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory = { "mConnectionInventory", nullptr, (EPropertyFlags)0x0020080001080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactoryConnectionComponent, mConnectionInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent_MetaData[] = {
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 	};
 #endif
 	void Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent_SetBit(void* Obj)
@@ -660,7 +660,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectedComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Connection to another component. If this is set we're connected." },
 	};
 #endif
@@ -668,7 +668,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectorClearance_MetaData[] = {
 		{ "Category", "Connection" },
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "How long the connector is extending, indicates where the connected conveyor may start turning." },
 	};
 #endif
@@ -676,7 +676,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mDirection_MetaData[] = {
 		{ "Category", "Connection" },
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Direction for this connection." },
 	};
 #endif
@@ -685,7 +685,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnector_MetaData[] = {
 		{ "Category", "Connection" },
-		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Physical type of connector used for this connection." },
 	};
 #endif
@@ -729,7 +729,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFactoryConnectionComponent, 563679631);
+	IMPLEMENT_CLASS(UFGFactoryConnectionComponent, 846089112);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFactoryConnectionComponent>()
 	{
 		return UFGFactoryConnectionComponent::StaticClass();

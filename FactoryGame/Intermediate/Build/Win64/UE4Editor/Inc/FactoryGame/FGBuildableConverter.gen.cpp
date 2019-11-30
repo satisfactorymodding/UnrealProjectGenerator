@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableConverter.h"
+#include "FactoryGame/Public/Buildables/FGBuildableConverter.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -65,7 +65,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableConverter.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConverter.h" },
 		{ "ToolTip", "Bound to mItemFilter to filter what items can be used in the item slots." },
 	};
 #endif
@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Converter" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConverter.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConverter.h" },
 		{ "ToolTip", "@todo Converter can maybe use a recipe with the wildcard resource so the UI does not need to cast and take different path depending on if it's a converter or manufacturer, or move this to base.\nGet number of input connections" },
 	};
 #endif
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableConverter_SetupItemFilter_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableConverter.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConverter.h" },
 		{ "ToolTip", "Setups the item filter without crashing" },
 	};
 #endif
@@ -160,9 +160,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableConverter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses, "FilterIngredientClasses" }, // 1470495264
-		{ &Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs, "GetNumberOfInputs" }, // 1283480066
-		{ &Z_Construct_UFunction_AFGBuildableConverter_SetupItemFilter, "SetupItemFilter" }, // 1101684865
+		{ &Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses, "FilterIngredientClasses" }, // 3936740323
+		{ &Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs, "GetNumberOfInputs" }, // 2975806410
+		{ &Z_Construct_UFunction_AFGBuildableConverter_SetupItemFilter, "SetupItemFilter" }, // 3484300764
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConverter_Statics::Class_MetaDataParams[] = {
@@ -170,13 +170,13 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "Buildables/FGBuildableConverter.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConverter.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConverter.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConverter_Statics::NewProp_mNumberOfIngredientsNeeded_MetaData[] = {
 		{ "Category", "Converter" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConverter.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConverter.h" },
 		{ "ToolTip", "Number of ingredients needed to consume to produce" },
 	};
 #endif
@@ -211,7 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConverter, 2375885934);
+	IMPLEMENT_CLASS(AFGBuildableConverter, 3770845848);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableConverter>()
 	{
 		return AFGBuildableConverter::StaticClass();

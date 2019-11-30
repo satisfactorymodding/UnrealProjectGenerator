@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGLocalPlayer.h"
+#include "FactoryGame/Public/FGLocalPlayer.h"
 #include "Engine/Classes/Engine/Engine.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -66,7 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocalPlayer() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnLoginStateChanged__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnLoginStateChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnLoginStateChanged__DelegateSignature", sizeof(_Script_FactoryGame_eventOnLoginStateChanged_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnLoginStateChanged__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnLoginStateChanged__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnLoginStateChanged__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnLoginStateChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocalPlayer() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnGameInviteReceived__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnGameInviteReceived__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnGameInviteReceived__DelegateSignature", sizeof(_Script_FactoryGame_eventOnGameInviteReceived_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnGameInviteReceived__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnGameInviteReceived__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnGameInviteReceived__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnGameInviteReceived__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -146,7 +146,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocalPlayer() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnFriendPresenceUpdated__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnFriendPresenceUpdated__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnFriendPresenceUpdated__DelegateSignature", sizeof(_Script_FactoryGame_eventOnFriendPresenceUpdated_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnFriendPresenceUpdated__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnFriendPresenceUpdated__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnFriendPresenceUpdated__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnFriendPresenceUpdated__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -178,7 +178,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocalPlayer() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnFriendsListUpdated__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 		{ "ToolTip", "DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnFriendsListUpdated);" },
 	};
 #endif
@@ -201,7 +201,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocalPlayer() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnFriendsListQueried__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 		{ "ToolTip", "Called when the friends list is done with it's initial query" },
 	};
 #endif
@@ -229,7 +229,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocalPlayer() {}
 		return ELoginState_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ELoginState(ELoginState_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ELoginState"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ELoginState_Hash() { return 3970904262U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ELoginState_Hash() { return 3060167348U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ELoginState()
 	{
 #if WITH_HOT_RELOAD
@@ -253,7 +253,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocalPlayer() {}
 				{ "LS_LoggedIn.DisplayName", "LoggedIn" },
 				{ "LS_LoggingIn.DisplayName", "LoggingIn" },
 				{ "LS_NotLoggedIn.DisplayName", "NotLoggedIn" },
-				{ "ModuleRelativePath", "FGLocalPlayer.h" },
+				{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -311,7 +311,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUpdatedFriends
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUpdatedFriends_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 		{ "ToolTip", "Workaround as it seems like you can't have a TArray<FFGOnlineFriends> exposed to a Dynamic multicast delegate" },
 	};
 #endif
@@ -322,7 +322,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUpdatedFriends
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUpdatedFriends_Statics::NewProp_Friends_MetaData[] = {
 		{ "Category", "UpdatedFriends" },
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FUpdatedFriends_Statics::NewProp_Friends = { "Friends", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUpdatedFriends, Friends), METADATA_PARAMS(Z_Construct_UScriptStruct_FUpdatedFriends_Statics::NewProp_Friends_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUpdatedFriends_Statics::NewProp_Friends_MetaData)) };
@@ -359,7 +359,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUpdatedFriends
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FUpdatedFriends_Hash() { return 3412092741U; }
+	uint32 Get_Z_Construct_UScriptStruct_FUpdatedFriends_Hash() { return 1712781222U; }
 class UScriptStruct* FFGOnlineFriend::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -393,7 +393,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineFriend_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FFGOnlineFriend_Statics::NewStructOps()
@@ -428,7 +428,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineFriend_Hash() { return 3262440439U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineFriend_Hash() { return 2587161863U; }
 	void UFGEM_LoggedOutFromOnlineService::StaticRegisterNativesUFGEM_LoggedOutFromOnlineService()
 	{
 	}
@@ -452,7 +452,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEM_LoggedOutFromOnlineService_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGLocalPlayer.h" },
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGEM_LoggedOutFromOnlineService_Statics::StaticCppClassTypeInfo = {
@@ -482,7 +482,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEM_LoggedOutFromOnlineService, 2113759007);
+	IMPLEMENT_CLASS(UFGEM_LoggedOutFromOnlineService, 1714605755);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGEM_LoggedOutFromOnlineService>()
 	{
 		return UFGEM_LoggedOutFromOnlineService::StaticClass();
@@ -512,7 +512,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEM_LostConnectionWithOnlineService_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGLocalPlayer.h" },
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGEM_LostConnectionWithOnlineService_Statics::StaticCppClassTypeInfo = {
@@ -542,7 +542,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEM_LostConnectionWithOnlineService, 2583918539);
+	IMPLEMENT_CLASS(UFGEM_LostConnectionWithOnlineService, 3835248436);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGEM_LostConnectionWithOnlineService>()
 	{
 		return UFGEM_LostConnectionWithOnlineService::StaticClass();
@@ -572,7 +572,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEM_FailedToLoginToOnlineService_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGLocalPlayer.h" },
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGEM_FailedToLoginToOnlineService_Statics::StaticCppClassTypeInfo = {
@@ -602,7 +602,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEM_FailedToLoginToOnlineService, 3903970874);
+	IMPLEMENT_CLASS(UFGEM_FailedToLoginToOnlineService, 2859778466);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGEM_FailedToLoginToOnlineService>()
 	{
 		return UFGEM_FailedToLoginToOnlineService::StaticClass();
@@ -633,7 +633,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocalPlayer_AutoLogin_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online" },
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 		{ "ToolTip", "Try to autologin to online service, don't try again if we have failed" },
 	};
 #endif
@@ -671,7 +671,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocalPlayer_CreateOfflineSession_SetupServer_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 		{ "ToolTip", "Create a offline session" },
 	};
 #endif
@@ -716,7 +716,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocalPlayer_GetFriendList_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 		{ "ToolTip", "Get the list of friends of the current user\n@param out_friends - the list of the friends if this returns true\n@return true if we have access to the list of friends, if false, then the list will be empty, then wait for mOnFriendListQueried to trigger and it will be populated" },
 	};
 #endif
@@ -750,7 +750,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocalPlayer_GetLoginState_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online" },
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 		{ "ToolTip", "Get in what state our login is" },
 	};
 #endif
@@ -784,7 +784,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocalPlayer_GetUsername_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online" },
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 		{ "ToolTip", "Get in what state our login is" },
 	};
 #endif
@@ -807,7 +807,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocalPlayer_OpenMap_SetupServer_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 		{ "ToolTip", "Called on end of SetupServer-chain, opening the map" },
 	};
 #endif
@@ -830,7 +830,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocalPlayer_UpdatePresence_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 		{ "ToolTip", "Called regularly to update the users presence, can also be called to force update presence and delays the next presence update" },
 	};
 #endif
@@ -880,25 +880,25 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGLocalPlayer_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGLocalPlayer_AutoLogin, "AutoLogin" }, // 3158357641
-		{ &Z_Construct_UFunction_UFGLocalPlayer_CreateOfflineSession_SetupServer, "CreateOfflineSession_SetupServer" }, // 1641931415
-		{ &Z_Construct_UFunction_UFGLocalPlayer_GetFriendList, "GetFriendList" }, // 1518881746
-		{ &Z_Construct_UFunction_UFGLocalPlayer_GetLoginState, "GetLoginState" }, // 138484454
-		{ &Z_Construct_UFunction_UFGLocalPlayer_GetUsername, "GetUsername" }, // 1372956701
-		{ &Z_Construct_UFunction_UFGLocalPlayer_OpenMap_SetupServer, "OpenMap_SetupServer" }, // 3707599886
-		{ &Z_Construct_UFunction_UFGLocalPlayer_UpdatePresence, "UpdatePresence" }, // 1572136929
+		{ &Z_Construct_UFunction_UFGLocalPlayer_AutoLogin, "AutoLogin" }, // 3296627244
+		{ &Z_Construct_UFunction_UFGLocalPlayer_CreateOfflineSession_SetupServer, "CreateOfflineSession_SetupServer" }, // 1405817842
+		{ &Z_Construct_UFunction_UFGLocalPlayer_GetFriendList, "GetFriendList" }, // 2369849139
+		{ &Z_Construct_UFunction_UFGLocalPlayer_GetLoginState, "GetLoginState" }, // 2308886935
+		{ &Z_Construct_UFunction_UFGLocalPlayer_GetUsername, "GetUsername" }, // 3062294964
+		{ &Z_Construct_UFunction_UFGLocalPlayer_OpenMap_SetupServer, "OpenMap_SetupServer" }, // 550143548
+		{ &Z_Construct_UFunction_UFGLocalPlayer_UpdatePresence, "UpdatePresence" }, // 2479033202
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGLocalPlayer_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGLocalPlayer.h" },
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGLocalPlayer_Statics::NewProp_mOnInviteReceived_MetaData[] = {
 		{ "Category", "Online" },
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 		{ "ToolTip", "Called a friends presence is updated" },
 	};
 #endif
@@ -906,7 +906,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGLocalPlayer_Statics::NewProp_mOnFriendsPresenceUpdated_MetaData[] = {
 		{ "Category", "Online" },
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 		{ "ToolTip", "Called a friends presence is updated" },
 	};
 #endif
@@ -914,7 +914,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGLocalPlayer_Statics::NewProp_mOnFriendsListUpdated_MetaData[] = {
 		{ "Category", "Online" },
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 		{ "ToolTip", "Called when the friendslist has been updated (that is, a user is has added/removed you as a friend)" },
 	};
 #endif
@@ -922,7 +922,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGLocalPlayer_Statics::NewProp_mOnLoginStateChanged_MetaData[] = {
 		{ "Category", "Online" },
-		{ "ModuleRelativePath", "FGLocalPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UFGLocalPlayer_Statics::NewProp_mOnLoginStateChanged = { "mOnLoginStateChanged", nullptr, (EPropertyFlags)0x0020080010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGLocalPlayer, mOnLoginStateChanged), Z_Construct_UDelegateFunction_FactoryGame_OnLoginStateChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGLocalPlayer_Statics::NewProp_mOnLoginStateChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGLocalPlayer_Statics::NewProp_mOnLoginStateChanged_MetaData)) };
@@ -959,7 +959,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGLocalPlayer, 4294965621);
+	IMPLEMENT_CLASS(UFGLocalPlayer, 3078154695);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGLocalPlayer>()
 	{
 		return UFGLocalPlayer::StaticClass();

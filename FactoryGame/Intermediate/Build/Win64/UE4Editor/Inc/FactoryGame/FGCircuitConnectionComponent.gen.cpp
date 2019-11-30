@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGCircuitConnectionComponent.h"
+#include "FactoryGame/Public/FGCircuitConnectionComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -78,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCircuitConnectionComponent_AddHiddenConnection_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|Connection" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "Add a hidden connection to another connection component. One of the connections must be hidden for this to be valid.\nConnects both ends of the connection and the circuits." },
 	};
 #endif
@@ -112,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCircuitConnectionComponent_GetCircuitID_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|Connection" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "Get the circuit this is connected to; -1 if not connected to a circuit." },
 	};
 #endif
@@ -146,7 +146,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCircuitConnectionComponent_GetMaxNumConnections_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|Connection" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "Get the maximum allowed connections to this connection." },
 	};
 #endif
@@ -180,7 +180,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCircuitConnectionComponent_GetNumConnections_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|Connection" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "Get the number of connections to this connection, excluding hidden." },
 	};
 #endif
@@ -214,7 +214,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCircuitConnectionComponent_GetNumFreeConnections_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|Connection" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "Get How many free connections this connection has." },
 	};
 #endif
@@ -248,7 +248,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCircuitConnectionComponent_GetNumHiddenConnections_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|Connection" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "Get the number of hidden connections to this connection." },
 	};
 #endif
@@ -282,7 +282,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCircuitConnectionComponent_IsConnected_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|Connection" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "@return true if this is connected to a circuit; false if not connected." },
 	};
 #endif
@@ -321,7 +321,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCircuitConnectionComponent_IsHidden_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|Connection" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "Is this a hidden connection, you cannot connect a wire to it but connect it through code." },
 	};
 #endif
@@ -346,7 +346,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCircuitConnectionComponent_ReceiveOnCircuitIDChanged_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|Connection" },
 		{ "DisplayName", "OnCircuitIDChanged" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "Called when the circuit changes, this can happen at any time when the circuitry is changed, e.g. when circuits are split or merged." },
 	};
 #endif
@@ -388,7 +388,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCircuitConnectionComponent_RemoveHiddenConnection_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|Connection" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "Remove a hidden connection to another connection component.\nDisconnects both ends of the connection and the circuits." },
 	};
 #endif
@@ -449,16 +449,16 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_AddHiddenConnection, "AddHiddenConnection" }, // 2163032555
-		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_GetCircuitID, "GetCircuitID" }, // 2876686272
-		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_GetMaxNumConnections, "GetMaxNumConnections" }, // 3779507174
-		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_GetNumConnections, "GetNumConnections" }, // 826431388
-		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_GetNumFreeConnections, "GetNumFreeConnections" }, // 2522151710
-		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_GetNumHiddenConnections, "GetNumHiddenConnections" }, // 3581315994
-		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_IsConnected, "IsConnected" }, // 2688698030
-		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_IsHidden, "IsHidden" }, // 3724088088
-		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_ReceiveOnCircuitIDChanged, "ReceiveOnCircuitIDChanged" }, // 1312299363
-		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_RemoveHiddenConnection, "RemoveHiddenConnection" }, // 942783434
+		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_AddHiddenConnection, "AddHiddenConnection" }, // 664111920
+		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_GetCircuitID, "GetCircuitID" }, // 2162640675
+		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_GetMaxNumConnections, "GetMaxNumConnections" }, // 299488177
+		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_GetNumConnections, "GetNumConnections" }, // 1252355802
+		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_GetNumFreeConnections, "GetNumFreeConnections" }, // 356771345
+		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_GetNumHiddenConnections, "GetNumHiddenConnections" }, // 3543260798
+		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_IsConnected, "IsConnected" }, // 846451865
+		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_IsHidden, "IsHidden" }, // 1151436687
+		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_ReceiveOnCircuitIDChanged, "ReceiveOnCircuitIDChanged" }, // 2924008868
+		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_RemoveHiddenConnection, "RemoveHiddenConnection" }, // 3608864394
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::Class_MetaDataParams[] = {
@@ -466,14 +466,14 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 		{ "ClassGroupNames", "Custom" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "FGCircuitConnectionComponent.h" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "A scene component used for adding circuit connectors to a building.\nA wire can be connected between two connectors, making it a circuit in the circuit subsystem." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mCircuitID_MetaData[] = {
 		{ "Category", "Connection" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "The circuit this connection is connected to. INDEX_NONE if not connected.\n@note - This ID may change at any time when changes occurs in the circuitry. Do not save copies of it!" },
 	};
 #endif
@@ -482,7 +482,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mHiddenConnections_MetaData[] = {
 		{ "Category", "FGCircuitConnectionComponent" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "The non-wired (if this or the other is hidden) connections to this." },
 	};
 #endif
@@ -491,7 +491,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mNbWiresConnected_MetaData[] = {
 		{ "Category", "Connection" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "The wired connections to this." },
 	};
 #endif
@@ -499,7 +499,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mWires_MetaData[] = {
 		{ "Category", "Connection" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "The wired connections to this." },
 	};
 #endif
@@ -508,7 +508,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mIsHiddenConnection_MetaData[] = {
 		{ "Category", "Connection" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "This connection is hidden and can only be connected through the code. E.g. powered walls have a hidden connection all machines connect to." },
 	};
 #endif
@@ -520,7 +520,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mMaxNumConnectionLinks_MetaData[] = {
 		{ "Category", "Connection" },
-		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "How many connections this component can have connected." },
 	};
 #endif
@@ -562,7 +562,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCircuitConnectionComponent, 1898326415);
+	IMPLEMENT_CLASS(UFGCircuitConnectionComponent, 871994789);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCircuitConnectionComponent>()
 	{
 		return UFGCircuitConnectionComponent::StaticClass();

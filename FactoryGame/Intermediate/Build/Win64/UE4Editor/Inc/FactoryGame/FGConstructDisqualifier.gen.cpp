@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGConstructDisqualifier.h"
+#include "FactoryGame/Public/FGConstructDisqualifier.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -107,7 +107,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGConstructDisqualifier_GetDisqualifyingText_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 		{ "ToolTip", "Getter for mDisfualifyingText" },
 	};
 #endif
@@ -145,21 +145,21 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGConstructDisqualifier_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGConstructDisqualifier_GetDisqualifyingText, "GetDisqualifyingText" }, // 2380051917
+		{ &Z_Construct_UFunction_UFGConstructDisqualifier_GetDisqualifyingText, "GetDisqualifyingText" }, // 1250102579
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGConstructDisqualifier_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGConstructDisqualifier.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 		{ "ToolTip", "This specifies the reason why the player could not build." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGConstructDisqualifier_Statics::NewProp_mDisqfualifyingText_MetaData[] = {
 		{ "Category", "FGConstructDisqualifier" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 		{ "ToolTip", "Text displayed to the player when they couldn't build" },
 	};
 #endif
@@ -194,7 +194,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGConstructDisqualifier, 845143644);
+	IMPLEMENT_CLASS(UFGConstructDisqualifier, 761953597);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGConstructDisqualifier>()
 	{
 		return UFGConstructDisqualifier::StaticClass();
@@ -224,7 +224,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDInitializing_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDInitializing_Statics::StaticCppClassTypeInfo = {
@@ -254,7 +254,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDInitializing, 4145569185);
+	IMPLEMENT_CLASS(UFGCDInitializing, 2411469921);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDInitializing>()
 	{
 		return UFGCDInitializing::StaticClass();
@@ -284,7 +284,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDInvalidAimLocation_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDInvalidAimLocation_Statics::StaticCppClassTypeInfo = {
@@ -314,7 +314,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDInvalidAimLocation, 3866366640);
+	IMPLEMENT_CLASS(UFGCDInvalidAimLocation, 1673919840);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDInvalidAimLocation>()
 	{
 		return UFGCDInvalidAimLocation::StaticClass();
@@ -344,7 +344,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDUnaffordable_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDUnaffordable_Statics::StaticCppClassTypeInfo = {
@@ -374,7 +374,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDUnaffordable, 2649859191);
+	IMPLEMENT_CLASS(UFGCDUnaffordable, 840316958);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDUnaffordable>()
 	{
 		return UFGCDUnaffordable::StaticClass();
@@ -404,7 +404,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDInvalidPlacement_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDInvalidPlacement_Statics::StaticCppClassTypeInfo = {
@@ -434,7 +434,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDInvalidPlacement, 4173356254);
+	IMPLEMENT_CLASS(UFGCDInvalidPlacement, 217948768);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDInvalidPlacement>()
 	{
 		return UFGCDInvalidPlacement::StaticClass();
@@ -464,7 +464,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDEncroachingClearance_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDEncroachingClearance_Statics::StaticCppClassTypeInfo = {
@@ -494,7 +494,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDEncroachingClearance, 4131173166);
+	IMPLEMENT_CLASS(UFGCDEncroachingClearance, 4278057644);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDEncroachingClearance>()
 	{
 		return UFGCDEncroachingClearance::StaticClass();
@@ -524,7 +524,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDEncroachingPlayer_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDEncroachingPlayer_Statics::StaticCppClassTypeInfo = {
@@ -554,7 +554,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDEncroachingPlayer, 3543078594);
+	IMPLEMENT_CLASS(UFGCDEncroachingPlayer, 2191373879);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDEncroachingPlayer>()
 	{
 		return UFGCDEncroachingPlayer::StaticClass();
@@ -584,7 +584,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDInvalidFloor_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDInvalidFloor_Statics::StaticCppClassTypeInfo = {
@@ -614,7 +614,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDInvalidFloor, 594151566);
+	IMPLEMENT_CLASS(UFGCDInvalidFloor, 1420952342);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDInvalidFloor>()
 	{
 		return UFGCDInvalidFloor::StaticClass();
@@ -644,7 +644,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDUniqueBuilding_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDUniqueBuilding_Statics::StaticCppClassTypeInfo = {
@@ -674,7 +674,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDUniqueBuilding, 3726054379);
+	IMPLEMENT_CLASS(UFGCDUniqueBuilding, 4175529428);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDUniqueBuilding>()
 	{
 		return UFGCDUniqueBuilding::StaticClass();
@@ -704,7 +704,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDMustSnap_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDMustSnap_Statics::StaticCppClassTypeInfo = {
@@ -734,7 +734,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDMustSnap, 1030571788);
+	IMPLEMENT_CLASS(UFGCDMustSnap, 3545892904);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDMustSnap>()
 	{
 		return UFGCDMustSnap::StaticClass();
@@ -764,7 +764,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDShouldntSnap_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDShouldntSnap_Statics::StaticCppClassTypeInfo = {
@@ -794,7 +794,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDShouldntSnap, 2884388995);
+	IMPLEMENT_CLASS(UFGCDShouldntSnap, 922723764);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDShouldntSnap>()
 	{
 		return UFGCDShouldntSnap::StaticClass();
@@ -824,7 +824,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDNeedsResourceNode_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDNeedsResourceNode_Statics::StaticCppClassTypeInfo = {
@@ -854,7 +854,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDNeedsResourceNode, 2677329562);
+	IMPLEMENT_CLASS(UFGCDNeedsResourceNode, 4156216044);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDNeedsResourceNode>()
 	{
 		return UFGCDNeedsResourceNode::StaticClass();
@@ -884,7 +884,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDResourceNodeIsOccuped_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDResourceNodeIsOccuped_Statics::StaticCppClassTypeInfo = {
@@ -914,7 +914,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDResourceNodeIsOccuped, 2757979903);
+	IMPLEMENT_CLASS(UFGCDResourceNodeIsOccuped, 2452904350);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDResourceNodeIsOccuped>()
 	{
 		return UFGCDResourceNodeIsOccuped::StaticClass();
@@ -944,7 +944,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDResourceDeposit_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDResourceDeposit_Statics::StaticCppClassTypeInfo = {
@@ -974,7 +974,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDResourceDeposit, 1809300186);
+	IMPLEMENT_CLASS(UFGCDResourceDeposit, 2977868711);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDResourceDeposit>()
 	{
 		return UFGCDResourceDeposit::StaticClass();
@@ -1004,7 +1004,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDWireSnap_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDWireSnap_Statics::StaticCppClassTypeInfo = {
@@ -1034,7 +1034,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDWireSnap, 1866750035);
+	IMPLEMENT_CLASS(UFGCDWireSnap, 3426684783);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDWireSnap>()
 	{
 		return UFGCDWireSnap::StaticClass();
@@ -1064,7 +1064,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDWireTooLong_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDWireTooLong_Statics::StaticCppClassTypeInfo = {
@@ -1094,7 +1094,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDWireTooLong, 1886948352);
+	IMPLEMENT_CLASS(UFGCDWireTooLong, 3323604355);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDWireTooLong>()
 	{
 		return UFGCDWireTooLong::StaticClass();
@@ -1124,7 +1124,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDWireTooManyConnections_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDWireTooManyConnections_Statics::StaticCppClassTypeInfo = {
@@ -1154,7 +1154,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDWireTooManyConnections, 1950251561);
+	IMPLEMENT_CLASS(UFGCDWireTooManyConnections, 1871449670);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDWireTooManyConnections>()
 	{
 		return UFGCDWireTooManyConnections::StaticClass();
@@ -1184,7 +1184,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDBeltMustSnap_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDBeltMustSnap_Statics::StaticCppClassTypeInfo = {
@@ -1214,7 +1214,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDBeltMustSnap, 260593182);
+	IMPLEMENT_CLASS(UFGCDBeltMustSnap, 3625238485);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDBeltMustSnap>()
 	{
 		return UFGCDBeltMustSnap::StaticClass();
@@ -1244,7 +1244,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDConveyorTooLong_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDConveyorTooLong_Statics::StaticCppClassTypeInfo = {
@@ -1274,7 +1274,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDConveyorTooLong, 4225828145);
+	IMPLEMENT_CLASS(UFGCDConveyorTooLong, 587892705);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDConveyorTooLong>()
 	{
 		return UFGCDConveyorTooLong::StaticClass();
@@ -1304,7 +1304,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDConveyorTooShort_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDConveyorTooShort_Statics::StaticCppClassTypeInfo = {
@@ -1334,7 +1334,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDConveyorTooShort, 2002866521);
+	IMPLEMENT_CLASS(UFGCDConveyorTooShort, 2070924490);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDConveyorTooShort>()
 	{
 		return UFGCDConveyorTooShort::StaticClass();
@@ -1364,7 +1364,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDConveyorTooSteep_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDConveyorTooSteep_Statics::StaticCppClassTypeInfo = {
@@ -1394,7 +1394,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDConveyorTooSteep, 785952995);
+	IMPLEMENT_CLASS(UFGCDConveyorTooSteep, 4180697627);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDConveyorTooSteep>()
 	{
 		return UFGCDConveyorTooSteep::StaticClass();
@@ -1424,7 +1424,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDConveyorInvalidShape_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDConveyorInvalidShape_Statics::StaticCppClassTypeInfo = {
@@ -1454,7 +1454,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDConveyorInvalidShape, 2480597181);
+	IMPLEMENT_CLASS(UFGCDConveyorInvalidShape, 210772608);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDConveyorInvalidShape>()
 	{
 		return UFGCDConveyorInvalidShape::StaticClass();
@@ -1484,7 +1484,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDConveyorAttachmentTooSharpTurn_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDConveyorAttachmentTooSharpTurn_Statics::StaticCppClassTypeInfo = {
@@ -1514,7 +1514,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDConveyorAttachmentTooSharpTurn, 2179556103);
+	IMPLEMENT_CLASS(UFGCDConveyorAttachmentTooSharpTurn, 1202550368);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDConveyorAttachmentTooSharpTurn>()
 	{
 		return UFGCDConveyorAttachmentTooSharpTurn::StaticClass();
@@ -1544,7 +1544,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDMustHaveRailRoadTrack_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDMustHaveRailRoadTrack_Statics::StaticCppClassTypeInfo = {
@@ -1574,7 +1574,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDMustHaveRailRoadTrack, 2713012789);
+	IMPLEMENT_CLASS(UFGCDMustHaveRailRoadTrack, 2840332223);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDMustHaveRailRoadTrack>()
 	{
 		return UFGCDMustHaveRailRoadTrack::StaticClass();
@@ -1604,7 +1604,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDMustAttachToTrainPlatform_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDMustAttachToTrainPlatform_Statics::StaticCppClassTypeInfo = {
@@ -1634,7 +1634,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDMustAttachToTrainPlatform, 4122772101);
+	IMPLEMENT_CLASS(UFGCDMustAttachToTrainPlatform, 627512593);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDMustAttachToTrainPlatform>()
 	{
 		return UFGCDMustAttachToTrainPlatform::StaticClass();
@@ -1664,7 +1664,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDTrackTooLong_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDTrackTooLong_Statics::StaticCppClassTypeInfo = {
@@ -1694,7 +1694,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDTrackTooLong, 4130087447);
+	IMPLEMENT_CLASS(UFGCDTrackTooLong, 3046908193);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDTrackTooLong>()
 	{
 		return UFGCDTrackTooLong::StaticClass();
@@ -1724,7 +1724,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDTrackTooShort_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDTrackTooShort_Statics::StaticCppClassTypeInfo = {
@@ -1754,7 +1754,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDTrackTooShort, 3565998719);
+	IMPLEMENT_CLASS(UFGCDTrackTooShort, 2490966109);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDTrackTooShort>()
 	{
 		return UFGCDTrackTooShort::StaticClass();
@@ -1784,7 +1784,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDTrackTooSteep_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDTrackTooSteep_Statics::StaticCppClassTypeInfo = {
@@ -1814,7 +1814,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDTrackTooSteep, 4098469388);
+	IMPLEMENT_CLASS(UFGCDTrackTooSteep, 1923948449);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDTrackTooSteep>()
 	{
 		return UFGCDTrackTooSteep::StaticClass();
@@ -1844,7 +1844,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDTrackTrunToSharp_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGConstructDisqualifier.h" },
-		{ "ModuleRelativePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDTrackTrunToSharp_Statics::StaticCppClassTypeInfo = {
@@ -1874,7 +1874,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCDTrackTrunToSharp, 2941591146);
+	IMPLEMENT_CLASS(UFGCDTrackTrunToSharp, 3594905448);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCDTrackTrunToSharp>()
 	{
 		return UFGCDTrackTrunToSharp::StaticClass();

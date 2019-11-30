@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSignificanceInterface.h"
+#include "FactoryGame/Public/FGSignificanceInterface.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -51,7 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Significance" },
-		{ "ModuleRelativePath", "FGSignificanceInterface.h" },
+		{ "ModuleRelativePath", "Public/FGSignificanceInterface.h" },
 		{ "ToolTip", "Call when actor gained significance" },
 	};
 #endif
@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSignificanceInterface.h" },
+		{ "ModuleRelativePath", "Public/FGSignificanceInterface.h" },
 		{ "ToolTip", "Defaults to 0.0f" },
 	};
 #endif
@@ -117,7 +117,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSignificanceInterface.h" },
+		{ "ModuleRelativePath", "Public/FGSignificanceInterface.h" },
 		{ "ToolTip", "Defaults to 10000.0ff" },
 	};
 #endif
@@ -141,7 +141,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Significance" },
-		{ "ModuleRelativePath", "FGSignificanceInterface.h" },
+		{ "ModuleRelativePath", "Public/FGSignificanceInterface.h" },
 		{ "ToolTip", "Call when actor gained significance" },
 	};
 #endif
@@ -174,16 +174,16 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSignificanceInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance, "GainedSignificance" }, // 131544425
-		{ &Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias, "GetSignificanceBias" }, // 1810399280
-		{ &Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange, "GetSignificanceRange" }, // 3759457827
-		{ &Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance, "LostSignificance" }, // 1192939176
+		{ &Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance, "GainedSignificance" }, // 2173954804
+		{ &Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias, "GetSignificanceBias" }, // 964078474
+		{ &Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange, "GetSignificanceRange" }, // 2405665593
+		{ &Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance, "LostSignificance" }, // 4146223408
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignificanceInterface_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGSignificanceInterface.h" },
+		{ "ModuleRelativePath", "Public/FGSignificanceInterface.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGSignificanceInterface_Statics::StaticCppClassTypeInfo = {
@@ -213,7 +213,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSignificanceInterface, 166508141);
+	IMPLEMENT_CLASS(UFGSignificanceInterface, 870923318);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSignificanceInterface>()
 	{
 		return UFGSignificanceInterface::StaticClass();

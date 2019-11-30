@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FactoryTick_generated_h
 
-#define FactoryGame_Source_FactoryGame_FactoryTick_h_13_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FactoryTick_h_13_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFactoryTickFunction_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FTickFunction Super;
@@ -22,7 +22,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFactoryTickFunction>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FactoryTick_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FactoryTick_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

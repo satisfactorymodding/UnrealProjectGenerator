@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGPlayerState.h"
+#include "FactoryGame/Public/FGPlayerState.h"
 #include "Serialization/ArchiveUObjectFromStructuredArchive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -82,7 +82,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedNew__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedNew__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnBuildableConstructedNew__DelegateSignature", sizeof(_Script_FactoryGame_eventOnBuildableConstructedNew_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedNew__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedNew__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedNew__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedNew__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -138,7 +138,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMessageData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMessageData_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Data associated with a message" },
 	};
 #endif
@@ -149,7 +149,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMessageData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMessageData_Statics::NewProp_MessageClass_MetaData[] = {
 		{ "Category", "Message" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "What class is the message" },
 	};
 #endif
@@ -157,7 +157,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMessageData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMessageData_Statics::NewProp_WasRead_MetaData[] = {
 		{ "Category", "Message" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Has message been read" },
 	};
 #endif
@@ -198,7 +198,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMessageData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMessageData_Hash() { return 1245439689U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMessageData_Hash() { return 490320232U; }
 class UScriptStruct* FSlotData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -241,7 +241,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSlotData_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Collected data for a slot that is specified" },
 	};
 #endif
@@ -252,7 +252,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSlotData_Statics::NewProp_NametagColor_MetaData[] = {
 		{ "Category", "Color" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "The color of the players nametag above their head, and in the UI" },
 	};
 #endif
@@ -260,7 +260,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSlotData_Statics::NewProp_PingColor_MetaData[] = {
 		{ "Category", "Color" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "The color of the players ping" },
 	};
 #endif
@@ -297,7 +297,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSlotData_Hash() { return 2255475979U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSlotData_Hash() { return 2838140562U; }
 	static FName NAME_AFGPlayerState_Server_RemoveRecipe = FName(TEXT("Server_RemoveRecipe"));
 	void AFGPlayerState::Server_RemoveRecipe(TSubclassOf<UFGRecipe>  recipe)
 	{
@@ -390,7 +390,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_AddArmSlots_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Adds more arm slots ( can also be a negative number to decrease number of slots )" },
 	};
 #endif
@@ -423,7 +423,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_AddMessage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerState_AddMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerState, nullptr, "AddMessage", sizeof(FGPlayerState_eventAddMessage_Parms), Z_Construct_UFunction_AFGPlayerState_AddMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_AddMessage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerState_AddMessage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_AddMessage_Statics::Function_MetaDataParams)) };
@@ -461,7 +461,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_CreateShortcut_Statics::Function_MetaDataParams[] = {
 		{ "DeterminesOutputType", "shortcutClass" },
 		{ "DisplayName", "CreateShortcut" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Create a shortcut of a specified class, only valid on server" },
 	};
 #endif
@@ -498,7 +498,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetAllMessageData_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Message" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Gets all messagedata from messages we have received" },
 	};
 #endif
@@ -543,7 +543,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetAllMessages_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Message" },
 		{ "CPP_Default_messageType", "MT_UNDEFINED" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Gets all messages we have received" },
 	};
 #endif
@@ -580,7 +580,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetCollapsedItemCategories_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ItemCategory" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Get the item categories that the user have collapsed in manufacturing widgets" },
 	};
 #endif
@@ -614,7 +614,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Color" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerState, nullptr, "GetNametagColor", sizeof(FGPlayerState_eventGetNametagColor_Parms), Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::Function_MetaDataParams)) };
@@ -647,7 +647,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetNumArmSlots_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Gets number of slots for arm equipment" },
 	};
 #endif
@@ -686,7 +686,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetOnlyShowAffordableRecipes_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Recipes" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Get if we only should show affordable recipes in manufacturing widgets" },
 	};
 #endif
@@ -720,7 +720,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Color" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerState, nullptr, "GetPingColor", sizeof(FGPlayerState_eventGetPingColor_Parms), Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics::Function_MetaDataParams)) };
@@ -753,7 +753,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetSlotNum_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Slots" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Get the slot the player has claimed" },
 	};
 #endif
@@ -789,7 +789,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		{ "Category", "Networking" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Please use GetUserID instead" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerState_GetSteamID_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerState, nullptr, "GetSteamID", sizeof(FGPlayerState_eventGetSteamID_Parms), Z_Construct_UFunction_AFGPlayerState_GetSteamID_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_GetSteamID_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerState_GetSteamID_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_GetSteamID_Statics::Function_MetaDataParams)) };
@@ -822,7 +822,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetTutorialSubsystem_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Tutorial" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Gets the subsystem for BP usage" },
 	};
 #endif
@@ -856,7 +856,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetUniqeNetId_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Networking" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Get the unique ID of the user from the online subsystem" },
 	};
 #endif
@@ -890,7 +890,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetUserID_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Networking" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Get the unique ID of the user from the online subsystem" },
 	};
 #endif
@@ -924,7 +924,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetUserName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Networking" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Get the unique ID of the user from the online subsystem" },
 	};
 #endif
@@ -947,7 +947,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_OnRep_HotbarShortcuts_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Client get notified that the hotbar has changed" },
 	};
 #endif
@@ -981,7 +981,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_ReadMessage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Message" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Change read status of a message" },
 	};
 #endif
@@ -1014,7 +1014,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_RemoveMessage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Used primarily to reset tutorial flow, verifies it exists before attempting removal" },
 	};
 #endif
@@ -1048,7 +1048,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_RemoveRecipe_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Recipes" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Removes a recipe from the list of new recipes. This is only for UI feedback and doesn't remove the players ability to use the recipe" },
 	};
 #endif
@@ -1077,7 +1077,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_Server_RemoveRecipe_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Lets the server remove a recipe from the list of new recipes" },
 	};
 #endif
@@ -1118,7 +1118,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_Server_SetCompassFilter_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Let server set the compass filter visibility for the given representation" },
 	};
 #endif
@@ -1156,7 +1156,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_Server_SetItemCategoryCollapsed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ItemCategory" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Let server set if an item category is collapsed in manufacturing widgets" },
 	};
 #endif
@@ -1197,7 +1197,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_Server_SetMapFilter_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Let server set the map filter visibility for the given representation" },
 	};
 #endif
@@ -1232,7 +1232,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_Server_SetOnlyShowAffordableRecipes_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Recipes" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Let server set if we only should show affordable recipes in manufacturing widgets" },
 	};
 #endif
@@ -1275,7 +1275,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_SetItemCategoryCollapsed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ItemCategory" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Set if an item category is collapsed in manufacturing widgets" },
 	};
 #endif
@@ -1314,7 +1314,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_SetOnlyShowAffordableRecipes_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Recipes" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Set if we only should show affordable recipes in manufacturing widgets" },
 	};
 #endif
@@ -1434,46 +1434,46 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGPlayerState_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGPlayerState_AddArmSlots, "AddArmSlots" }, // 1467577571
-		{ &Z_Construct_UFunction_AFGPlayerState_AddMessage, "AddMessage" }, // 4241981980
-		{ &Z_Construct_UFunction_AFGPlayerState_CreateShortcut, "CreateShortcut" }, // 4094161125
-		{ &Z_Construct_UFunction_AFGPlayerState_GetAllMessageData, "GetAllMessageData" }, // 3353399564
-		{ &Z_Construct_UFunction_AFGPlayerState_GetAllMessages, "GetAllMessages" }, // 794165588
-		{ &Z_Construct_UFunction_AFGPlayerState_GetCollapsedItemCategories, "GetCollapsedItemCategories" }, // 1626213538
-		{ &Z_Construct_UFunction_AFGPlayerState_GetNametagColor, "GetNametagColor" }, // 3268266338
-		{ &Z_Construct_UFunction_AFGPlayerState_GetNumArmSlots, "GetNumArmSlots" }, // 3237322191
-		{ &Z_Construct_UFunction_AFGPlayerState_GetOnlyShowAffordableRecipes, "GetOnlyShowAffordableRecipes" }, // 1128767138
-		{ &Z_Construct_UFunction_AFGPlayerState_GetPingColor, "GetPingColor" }, // 3155100392
-		{ &Z_Construct_UFunction_AFGPlayerState_GetSlotNum, "GetSlotNum" }, // 4148544942
-		{ &Z_Construct_UFunction_AFGPlayerState_GetSteamID, "GetSteamID" }, // 2716934087
-		{ &Z_Construct_UFunction_AFGPlayerState_GetTutorialSubsystem, "GetTutorialSubsystem" }, // 253191668
-		{ &Z_Construct_UFunction_AFGPlayerState_GetUniqeNetId, "GetUniqeNetId" }, // 1766970829
-		{ &Z_Construct_UFunction_AFGPlayerState_GetUserID, "GetUserID" }, // 1793772956
-		{ &Z_Construct_UFunction_AFGPlayerState_GetUserName, "GetUserName" }, // 3293860656
-		{ &Z_Construct_UFunction_AFGPlayerState_OnRep_HotbarShortcuts, "OnRep_HotbarShortcuts" }, // 4000896478
-		{ &Z_Construct_UFunction_AFGPlayerState_ReadMessage, "ReadMessage" }, // 1664861710
-		{ &Z_Construct_UFunction_AFGPlayerState_RemoveMessage, "RemoveMessage" }, // 1197963009
-		{ &Z_Construct_UFunction_AFGPlayerState_RemoveRecipe, "RemoveRecipe" }, // 4241493609
-		{ &Z_Construct_UFunction_AFGPlayerState_Server_RemoveRecipe, "Server_RemoveRecipe" }, // 2933614026
-		{ &Z_Construct_UFunction_AFGPlayerState_Server_SetCompassFilter, "Server_SetCompassFilter" }, // 2778690572
-		{ &Z_Construct_UFunction_AFGPlayerState_Server_SetItemCategoryCollapsed, "Server_SetItemCategoryCollapsed" }, // 1648200520
-		{ &Z_Construct_UFunction_AFGPlayerState_Server_SetMapFilter, "Server_SetMapFilter" }, // 1514815067
-		{ &Z_Construct_UFunction_AFGPlayerState_Server_SetOnlyShowAffordableRecipes, "Server_SetOnlyShowAffordableRecipes" }, // 2549438690
-		{ &Z_Construct_UFunction_AFGPlayerState_SetItemCategoryCollapsed, "SetItemCategoryCollapsed" }, // 539422343
-		{ &Z_Construct_UFunction_AFGPlayerState_SetOnlyShowAffordableRecipes, "SetOnlyShowAffordableRecipes" }, // 3450795749
+		{ &Z_Construct_UFunction_AFGPlayerState_AddArmSlots, "AddArmSlots" }, // 4006429848
+		{ &Z_Construct_UFunction_AFGPlayerState_AddMessage, "AddMessage" }, // 799764994
+		{ &Z_Construct_UFunction_AFGPlayerState_CreateShortcut, "CreateShortcut" }, // 527159467
+		{ &Z_Construct_UFunction_AFGPlayerState_GetAllMessageData, "GetAllMessageData" }, // 2739088286
+		{ &Z_Construct_UFunction_AFGPlayerState_GetAllMessages, "GetAllMessages" }, // 3635712456
+		{ &Z_Construct_UFunction_AFGPlayerState_GetCollapsedItemCategories, "GetCollapsedItemCategories" }, // 3333134614
+		{ &Z_Construct_UFunction_AFGPlayerState_GetNametagColor, "GetNametagColor" }, // 743155674
+		{ &Z_Construct_UFunction_AFGPlayerState_GetNumArmSlots, "GetNumArmSlots" }, // 2588865827
+		{ &Z_Construct_UFunction_AFGPlayerState_GetOnlyShowAffordableRecipes, "GetOnlyShowAffordableRecipes" }, // 3438359642
+		{ &Z_Construct_UFunction_AFGPlayerState_GetPingColor, "GetPingColor" }, // 279979998
+		{ &Z_Construct_UFunction_AFGPlayerState_GetSlotNum, "GetSlotNum" }, // 1873042723
+		{ &Z_Construct_UFunction_AFGPlayerState_GetSteamID, "GetSteamID" }, // 22660408
+		{ &Z_Construct_UFunction_AFGPlayerState_GetTutorialSubsystem, "GetTutorialSubsystem" }, // 2598357797
+		{ &Z_Construct_UFunction_AFGPlayerState_GetUniqeNetId, "GetUniqeNetId" }, // 2313777711
+		{ &Z_Construct_UFunction_AFGPlayerState_GetUserID, "GetUserID" }, // 2303994178
+		{ &Z_Construct_UFunction_AFGPlayerState_GetUserName, "GetUserName" }, // 3570322201
+		{ &Z_Construct_UFunction_AFGPlayerState_OnRep_HotbarShortcuts, "OnRep_HotbarShortcuts" }, // 1858748135
+		{ &Z_Construct_UFunction_AFGPlayerState_ReadMessage, "ReadMessage" }, // 1880578345
+		{ &Z_Construct_UFunction_AFGPlayerState_RemoveMessage, "RemoveMessage" }, // 4185757974
+		{ &Z_Construct_UFunction_AFGPlayerState_RemoveRecipe, "RemoveRecipe" }, // 993487598
+		{ &Z_Construct_UFunction_AFGPlayerState_Server_RemoveRecipe, "Server_RemoveRecipe" }, // 1236358063
+		{ &Z_Construct_UFunction_AFGPlayerState_Server_SetCompassFilter, "Server_SetCompassFilter" }, // 1239289064
+		{ &Z_Construct_UFunction_AFGPlayerState_Server_SetItemCategoryCollapsed, "Server_SetItemCategoryCollapsed" }, // 3322303055
+		{ &Z_Construct_UFunction_AFGPlayerState_Server_SetMapFilter, "Server_SetMapFilter" }, // 1328989696
+		{ &Z_Construct_UFunction_AFGPlayerState_Server_SetOnlyShowAffordableRecipes, "Server_SetOnlyShowAffordableRecipes" }, // 3142966661
+		{ &Z_Construct_UFunction_AFGPlayerState_SetItemCategoryCollapsed, "SetItemCategoryCollapsed" }, // 1678981195
+		{ &Z_Construct_UFunction_AFGPlayerState_SetOnlyShowAffordableRecipes, "SetOnlyShowAffordableRecipes" }, // 2934222331
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGPlayerState.h" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "SerializeToFArchive", "" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mFilteredOutCompassTypes_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mFilteredOutCompassTypes = { "mFilteredOutCompassTypes", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, mFilteredOutCompassTypes), METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mFilteredOutCompassTypes_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mFilteredOutCompassTypes_MetaData)) };
@@ -1481,7 +1481,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mFilteredOutCompassTypes_Inner_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mFilteredOutMapTypes_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mFilteredOutMapTypes = { "mFilteredOutMapTypes", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, mFilteredOutMapTypes), METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mFilteredOutMapTypes_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mFilteredOutMapTypes_MetaData)) };
@@ -1489,7 +1489,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mFilteredOutMapTypes_Inner_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mCollapsedItemCategories_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "The item categories that the user have collapsed in manufacturing widgets" },
 	};
 #endif
@@ -1497,7 +1497,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mCollapsedItemCategories_Inner = { "mCollapsedItemCategories", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGItemCategory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mOnlyShowAffordableRecipes_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "True if we only should show affordable recipes in manufacturing widgets" },
 	};
 #endif
@@ -1508,14 +1508,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mOnlyShowAffordableRecipes = { "mOnlyShowAffordableRecipes", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGPlayerState), &Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mOnlyShowAffordableRecipes_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mOnlyShowAffordableRecipes_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mOnlyShowAffordableRecipes_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNumArmSlots_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Total number of arm equipment slots for this player" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNumArmSlots = { "mNumArmSlots", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, mNumArmSlots), METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNumArmSlots_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNumArmSlots_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mRememberedFirstTimeEquipmentClasses_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "List of equipment classes that have been equipped at least once." },
 	};
 #endif
@@ -1523,7 +1523,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mRememberedFirstTimeEquipmentClasses_Inner = { "mRememberedFirstTimeEquipmentClasses", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGEquipment_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mMessageData_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Data about all messages that can be displayed in the codex" },
 	};
 #endif
@@ -1532,21 +1532,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mTutorialSubsystemClass_MetaData[] = {
 		{ "Category", "Tutorial" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Class of tutorial subsystem to spawn" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mTutorialSubsystemClass = { "mTutorialSubsystemClass", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, mTutorialSubsystemClass), Z_Construct_UClass_UFGTutorialSubsystem_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mTutorialSubsystemClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mTutorialSubsystemClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mTutorialSubsystem_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Each local player has their own tutorial subsystem" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mTutorialSubsystem = { "mTutorialSubsystem", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, mTutorialSubsystem), Z_Construct_UClass_UFGTutorialSubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mTutorialSubsystem_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mTutorialSubsystem_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasSetupDefaultShortcuts_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Set to true after we have setup our initial shortcuts" },
 	};
 #endif
@@ -1557,7 +1557,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasSetupDefaultShortcuts = { "mHasSetupDefaultShortcuts", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(AFGPlayerState), &Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasSetupDefaultShortcuts_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasSetupDefaultShortcuts_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasSetupDefaultShortcuts_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasReceivedInitialItems_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Set to true after we have received our initial items" },
 	};
 #endif
@@ -1568,21 +1568,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasReceivedInitialItems = { "mHasReceivedInitialItems", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(AFGPlayerState), &Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasReceivedInitialItems_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasReceivedInitialItems_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasReceivedInitialItems_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mOwnedPawn_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Pawn we should take control of when rejoining game/loading game" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mOwnedPawn = { "mOwnedPawn", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, mOwnedPawn), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mOwnedPawn_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mOwnedPawn_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotData_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "This players color container" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotData = { "mSlotData", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, mSlotData), Z_Construct_UScriptStruct_FSlotData, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotData_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotNum_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "The slot num of this player state" },
 	};
 #endif
@@ -1590,7 +1590,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNewRecipes_MetaData[] = {
 		{ "Category", "Recipes" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Recipes that are new to the player. This is only for UI feedback and doesn't affect the players ability to use the recipe" },
 	};
 #endif
@@ -1599,7 +1599,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mDefaultRecipeShortcuts_MetaData[] = {
 		{ "Category", "Shortcuts" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Default recipes to have shortcuts to" },
 	};
 #endif
@@ -1607,7 +1607,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mDefaultRecipeShortcuts_Inner = { "mDefaultRecipeShortcuts", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHotbarShortcuts_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "All hotbar actions assigned" },
 	};
 #endif
@@ -1617,7 +1617,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_BuildableConstructedDelegate_MetaData[] = {
 		{ "Category", "Build" },
 		{ "DisplayName", "OnBuildableConstructed" },
-		{ "ModuleRelativePath", "FGPlayerState.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Broadcast when a buildable or decor has been constructed." },
 	};
 #endif
@@ -1682,7 +1682,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerState, 3046339748);
+	IMPLEMENT_CLASS(AFGPlayerState, 2890981753);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlayerState>()
 	{
 		return AFGPlayerState::StaticClass();

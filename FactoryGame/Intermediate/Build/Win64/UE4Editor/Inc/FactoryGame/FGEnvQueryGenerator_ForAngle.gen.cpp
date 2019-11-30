@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/AI/FGEnvQueryGenerator_ForAngle.h"
+#include "FactoryGame/Public/AI/FGEnvQueryGenerator_ForAngle.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -66,14 +66,14 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvQueryGenerator_ForAngle() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEnvQueryGenerator_ForAngle_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "AI/FGEnvQueryGenerator_ForAngle.h" },
-		{ "ModuleRelativePath", "AI/FGEnvQueryGenerator_ForAngle.h" },
+		{ "ModuleRelativePath", "Public/AI/FGEnvQueryGenerator_ForAngle.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEnvQueryGenerator_ForAngle_Statics::NewProp_mCenterActor_MetaData[] = {
 		{ "Category", "Generator" },
-		{ "ModuleRelativePath", "AI/FGEnvQueryGenerator_ForAngle.h" },
+		{ "ModuleRelativePath", "Public/AI/FGEnvQueryGenerator_ForAngle.h" },
 		{ "ToolTip", "The actor (or actors) that will generate a cone in their facing direction" },
 	};
 #endif
@@ -81,7 +81,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvQueryGenerator_ForAngle() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEnvQueryGenerator_ForAngle_Statics::NewProp_mGenerateMirroredPoints_MetaData[] = {
 		{ "Category", "Generator" },
-		{ "ModuleRelativePath", "AI/FGEnvQueryGenerator_ForAngle.h" },
+		{ "ModuleRelativePath", "Public/AI/FGEnvQueryGenerator_ForAngle.h" },
 		{ "ToolTip", "Should we also generate points for the negative angle value?" },
 	};
 #endif
@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvQueryGenerator_ForAngle() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEnvQueryGenerator_ForAngle_Statics::NewProp_mStepSize_MetaData[] = {
 		{ "Category", "Generator" },
-		{ "ModuleRelativePath", "AI/FGEnvQueryGenerator_ForAngle.h" },
+		{ "ModuleRelativePath", "Public/AI/FGEnvQueryGenerator_ForAngle.h" },
 		{ "ToolTip", "The step of the angle increase. Angle step must be >=1\nSmaller values generate less items" },
 	};
 #endif
@@ -97,7 +97,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvQueryGenerator_ForAngle() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEnvQueryGenerator_ForAngle_Statics::NewProp_mAngle_MetaData[] = {
 		{ "Category", "Generator" },
-		{ "ModuleRelativePath", "AI/FGEnvQueryGenerator_ForAngle.h" },
+		{ "ModuleRelativePath", "Public/AI/FGEnvQueryGenerator_ForAngle.h" },
 		{ "ToolTip", "Angle to generate points for" },
 	};
 #endif
@@ -105,7 +105,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvQueryGenerator_ForAngle() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEnvQueryGenerator_ForAngle_Statics::NewProp_mDistance_MetaData[] = {
 		{ "Category", "Generator" },
-		{ "ModuleRelativePath", "AI/FGEnvQueryGenerator_ForAngle.h" },
+		{ "ModuleRelativePath", "Public/AI/FGEnvQueryGenerator_ForAngle.h" },
 		{ "ToolTip", "Total distance for point generation" },
 	};
 #endif
@@ -144,7 +144,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvQueryGenerator_ForAngle() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEnvQueryGenerator_ForAngle, 534384126);
+	IMPLEMENT_CLASS(UFGEnvQueryGenerator_ForAngle, 2902355365);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGEnvQueryGenerator_ForAngle>()
 	{
 		return UFGEnvQueryGenerator_ForAngle::StaticClass();

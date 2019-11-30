@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGMapAreaZoneDescriptor.h"
+#include "FactoryGame/Public/FGMapAreaZoneDescriptor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -47,7 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapAreaZoneDescriptor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::Function_MetaDataParams[] = {
 		{ "Category", "MapAreaZone" },
-		{ "ModuleRelativePath", "FGMapAreaZoneDescriptor.h" },
+		{ "ModuleRelativePath", "Public/FGMapAreaZoneDescriptor.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapAreaZoneDescriptor, nullptr, "GetZoneType", sizeof(FGMapAreaZoneDescriptor_eventGetZoneType_Parms), Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::Function_MetaDataParams)) };
@@ -84,21 +84,21 @@ void EmptyLinkFunctionForGeneratedCodeFGMapAreaZoneDescriptor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType, "GetZoneType" }, // 613255036
+		{ &Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType, "GetZoneType" }, // 3629146105
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGMapAreaZoneDescriptor.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGMapAreaZoneDescriptor.h" },
+		{ "ModuleRelativePath", "Public/FGMapAreaZoneDescriptor.h" },
 		{ "ToolTip", "Used by different zones so that different zones can have different audio" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::NewProp_mZoneType_MetaData[] = {
 		{ "Category", "Description" },
-		{ "ModuleRelativePath", "FGMapAreaZoneDescriptor.h" },
+		{ "ModuleRelativePath", "Public/FGMapAreaZoneDescriptor.h" },
 		{ "ToolTip", "Descriptive name of the zone type, this will be sent to music so that it can depend on it" },
 	};
 #endif
@@ -133,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapAreaZoneDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMapAreaZoneDescriptor, 673317138);
+	IMPLEMENT_CLASS(UFGMapAreaZoneDescriptor, 2406050089);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGMapAreaZoneDescriptor>()
 	{
 		return UFGMapAreaZoneDescriptor::StaticClass();

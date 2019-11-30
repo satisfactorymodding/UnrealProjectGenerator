@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGFoundationSubsystem.h"
+#include "FactoryGame/Public/FGFoundationSubsystem.h"
 #include "Serialization/ArchiveUObjectFromStructuredArchive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -60,7 +60,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBuilding_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGFoundationSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGFoundationSubsystem.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FBuilding_Statics::NewStructOps()
@@ -69,7 +69,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBuilding_Statics::NewProp_Buildables_MetaData[] = {
-		{ "ModuleRelativePath", "FGFoundationSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGFoundationSubsystem.h" },
 		{ "ToolTip", "Which buildables belong to this building." },
 	};
 #endif
@@ -107,7 +107,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FBuilding_Hash() { return 282739653U; }
+	uint32 Get_Z_Construct_UScriptStruct_FBuilding_Hash() { return 1995753389U; }
 	void AFGFoundationSubsystem::StaticRegisterNativesAFGFoundationSubsystem()
 	{
 	}
@@ -140,7 +140,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoundationSubsystem_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Rendering Actor Tick Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGFoundationSubsystem.h" },
-		{ "ModuleRelativePath", "FGFoundationSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGFoundationSubsystem.h" },
 		{ "SerializeToFArchive", "" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 		{ "ToolTip", "Class keeping track of which buildables that for a building." },
@@ -148,7 +148,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoundationSubsystem_Statics::NewProp_mBuildings_MetaData[] = {
-		{ "ModuleRelativePath", "FGFoundationSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGFoundationSubsystem.h" },
 		{ "ToolTip", "All the buildings in the game, map with foundation ID and the building struct." },
 	};
 #endif
@@ -190,7 +190,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoundationSubsystem, 1117539155);
+	IMPLEMENT_CLASS(AFGFoundationSubsystem, 410269522);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGFoundationSubsystem>()
 	{
 		return AFGFoundationSubsystem::StaticClass();

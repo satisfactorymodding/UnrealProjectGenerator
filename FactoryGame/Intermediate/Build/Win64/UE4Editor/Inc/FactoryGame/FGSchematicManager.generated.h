@@ -18,14 +18,14 @@ class UObject;
 #endif
 #define FACTORYGAME_FGSchematicManager_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGSchematicManager_h_24_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_24_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSchematicCost_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSchematicCost>();
 
-#define FactoryGame_Source_FactoryGame_FGSchematicManager_h_18_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_18_DELEGATE \
 struct _Script_FactoryGame_eventOnActiveSchematicChanged_Parms \
 { \
 	TSubclassOf<UFGSchematic>  activeSchematic; \
@@ -38,7 +38,7 @@ static inline void FOnActiveSchematicChanged_DelegateWrapper(const FMulticastScr
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematicManager_h_17_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_17_DELEGATE \
 struct _Script_FactoryGame_eventPaidOffOnSchematicDelegate_Parms \
 { \
 	AFGSchematicManager* schematicManager; \
@@ -51,7 +51,7 @@ static inline void FPaidOffOnSchematicDelegate_DelegateWrapper(const FMulticastS
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematicManager_h_16_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_16_DELEGATE \
 struct _Script_FactoryGame_eventPurchasedSchematicDelegate_Parms \
 { \
 	TSubclassOf<UFGSchematic>  purchasedSchematic; \
@@ -64,7 +64,7 @@ static inline void FPurchasedSchematicDelegate_DelegateWrapper(const FMulticastS
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_PaidOffOnSchematic) \
 	{ \
@@ -277,7 +277,7 @@ static inline void FPurchasedSchematicDelegate_DelegateWrapper(const FMulticastS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_PaidOffOnSchematic) \
 	{ \
@@ -490,7 +490,7 @@ static inline void FPurchasedSchematicDelegate_DelegateWrapper(const FMulticastS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGSchematicManager(); \
 	friend struct Z_Construct_UClass_AFGSchematicManager_Statics; \
@@ -500,7 +500,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGSchematicManager*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGSchematicManager(); \
 	friend struct Z_Construct_UClass_AFGSchematicManager_Statics; \
@@ -510,7 +510,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGSchematicManager*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGSchematicManager(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGSchematicManager) \
@@ -523,7 +523,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGSchematicManager(AFGSchematicManager&&); \
@@ -534,7 +534,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGSchematicManager); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGSchematicManager)
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mAllSchematics() { return STRUCT_OFFSET(AFGSchematicManager, mAllSchematics); } \
 	FORCEINLINE static uint32 __PPO__mAvailableSchematics() { return STRUCT_OFFSET(AFGSchematicManager, mAvailableSchematics); } \
 	FORCEINLINE static uint32 __PPO__mPurchasedSchematics() { return STRUCT_OFFSET(AFGSchematicManager, mPurchasedSchematics); } \
@@ -548,25 +548,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGSchematicManager); \
 	FORCEINLINE static uint32 __PPO__mShipReturnedMessage() { return STRUCT_OFFSET(AFGSchematicManager, mShipReturnedMessage); }
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematicManager_h_37_PROLOG
-#define FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_37_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_INCLASS \
-	FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGSchematicManager_h_40_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h_40_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -574,7 +574,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FACTORYGAME_API UClass* StaticClass<class AFGSchematicManager>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGSchematicManager_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGSchematicManager_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

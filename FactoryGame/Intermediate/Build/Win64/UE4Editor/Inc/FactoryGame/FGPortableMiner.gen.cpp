@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGPortableMiner.h"
+#include "FactoryGame/Public/FGPortableMiner.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPortableMiner_CanProduce_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Production" },
-		{ "ModuleRelativePath", "FGPortableMiner.h" },
+		{ "ModuleRelativePath", "Public/FGPortableMiner.h" },
 		{ "ToolTip", "Can we start production i.e. do we have the items needed for assembly etc.\n\n@return - true if we can start production; otherwise false." },
 	};
 #endif
@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPortableMiner_GetDismantleInventoryReturns_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGPortableMiner.h" },
+		{ "ModuleRelativePath", "Public/FGPortableMiner.h" },
 		{ "ToolTip", "What do we get back when dismantling this" },
 	};
 #endif
@@ -140,7 +140,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPortableMiner_GetExtractionProgress_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Production" },
-		{ "ModuleRelativePath", "FGPortableMiner.h" },
+		{ "ModuleRelativePath", "Public/FGPortableMiner.h" },
 		{ "ToolTip", "@return Get the progress for the current bit of ore." },
 	};
 #endif
@@ -182,7 +182,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPortableMiner_GetOutputInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGPortableMiner.h" },
+		{ "ModuleRelativePath", "Public/FGPortableMiner.h" },
 		{ "ToolTip", "@return The miners output inventory" },
 	};
 #endif
@@ -221,7 +221,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPortableMiner_IsProducing_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Production" },
-		{ "ModuleRelativePath", "FGPortableMiner.h" },
+		{ "ModuleRelativePath", "Public/FGPortableMiner.h" },
 		{ "ToolTip", "Are we producing?\n\n@return - true if producing; otherwise false." },
 	};
 #endif
@@ -244,7 +244,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMiner() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPortableMiner_OnRep_IsProducing_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPortableMiner.h" },
+		{ "ModuleRelativePath", "Public/FGPortableMiner.h" },
 		{ "ToolTip", "Calls Start/Stop Producing on client" },
 	};
 #endif
@@ -308,23 +308,23 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMiner() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGPortableMiner_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGPortableMiner_CanProduce, "CanProduce" }, // 1250104408
-		{ &Z_Construct_UFunction_AFGPortableMiner_GetDismantleInventoryReturns, "GetDismantleInventoryReturns" }, // 1342652968
-		{ &Z_Construct_UFunction_AFGPortableMiner_GetExtractionProgress, "GetExtractionProgress" }, // 3784919742
-		{ &Z_Construct_UFunction_AFGPortableMiner_GetOutputInventory, "GetOutputInventory" }, // 1159858065
-		{ &Z_Construct_UFunction_AFGPortableMiner_IsProducing, "IsProducing" }, // 315983563
-		{ &Z_Construct_UFunction_AFGPortableMiner_OnRep_IsProducing, "OnRep_IsProducing" }, // 2096905615
+		{ &Z_Construct_UFunction_AFGPortableMiner_CanProduce, "CanProduce" }, // 2772389288
+		{ &Z_Construct_UFunction_AFGPortableMiner_GetDismantleInventoryReturns, "GetDismantleInventoryReturns" }, // 2691177533
+		{ &Z_Construct_UFunction_AFGPortableMiner_GetExtractionProgress, "GetExtractionProgress" }, // 2446558223
+		{ &Z_Construct_UFunction_AFGPortableMiner_GetOutputInventory, "GetOutputInventory" }, // 942789476
+		{ &Z_Construct_UFunction_AFGPortableMiner_IsProducing, "IsProducing" }, // 192952053
+		{ &Z_Construct_UFunction_AFGPortableMiner_OnRep_IsProducing, "OnRep_IsProducing" }, // 1364613288
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPortableMiner_Statics::Class_MetaDataParams[] = {
 		{ "AutoJson", "TRUE" },
 		{ "IncludePath", "FGPortableMiner.h" },
-		{ "ModuleRelativePath", "FGPortableMiner.h" },
+		{ "ModuleRelativePath", "Public/FGPortableMiner.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPortableMiner_Statics::NewProp_mIsProducing_MetaData[] = {
-		{ "ModuleRelativePath", "FGPortableMiner.h" },
+		{ "ModuleRelativePath", "Public/FGPortableMiner.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Are we producing?" },
 	};
@@ -337,7 +337,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPortableMiner_Statics::NewProp_mInventorySize_MetaData[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGPortableMiner.h" },
+		{ "ModuleRelativePath", "Public/FGPortableMiner.h" },
 		{ "ToolTip", "How many slots is the inventory" },
 	};
 #endif
@@ -345,14 +345,14 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPortableMiner_Statics::NewProp_mInteractWidgetClass_MetaData[] = {
 		{ "Category", "Interaction" },
-		{ "ModuleRelativePath", "FGPortableMiner.h" },
+		{ "ModuleRelativePath", "Public/FGPortableMiner.h" },
 		{ "ToolTip", "The widget that will present our UI." },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGPortableMiner_Statics::NewProp_mInteractWidgetClass = { "mInteractWidgetClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPortableMiner, mInteractWidgetClass), Z_Construct_UClass_UFGInteractWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGPortableMiner_Statics::NewProp_mInteractWidgetClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPortableMiner_Statics::NewProp_mInteractWidgetClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPortableMiner_Statics::NewProp_mCurrentExtractProgress_MetaData[] = {
-		{ "ModuleRelativePath", "FGPortableMiner.h" },
+		{ "ModuleRelativePath", "Public/FGPortableMiner.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Current extract progress in the range [0, 1]" },
 	};
@@ -361,7 +361,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPortableMiner_Statics::NewProp_mOutputInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGPortableMiner.h" },
+		{ "ModuleRelativePath", "Public/FGPortableMiner.h" },
 		{ "ToolTip", "The inventory of the factory node" },
 	};
 #endif
@@ -369,7 +369,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPortableMiner_Statics::NewProp_mExtractResourceNode_MetaData[] = {
 		{ "Category", "Resource" },
-		{ "ModuleRelativePath", "FGPortableMiner.h" },
+		{ "ModuleRelativePath", "Public/FGPortableMiner.h" },
 		{ "ToolTip", "The resource node we want to extract from" },
 	};
 #endif
@@ -377,7 +377,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPortableMiner_Statics::NewProp_mExtractCycleTime_MetaData[] = {
 		{ "Category", "Resource" },
-		{ "ModuleRelativePath", "FGPortableMiner.h" },
+		{ "ModuleRelativePath", "Public/FGPortableMiner.h" },
 		{ "ToolTip", "How fast we mine expressed as 1.0f / ( mExtractCycleTime * resourceSpeedMultiplier ) * dt." },
 	};
 #endif
@@ -422,7 +422,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMiner() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPortableMiner, 663495936);
+	IMPLEMENT_CLASS(AFGPortableMiner, 1926690558);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPortableMiner>()
 	{
 		return AFGPortableMiner::StaticClass();

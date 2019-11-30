@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGDestructibleActor.h"
+#include "FactoryGame/Public/FGDestructibleActor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -80,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDestructibleActor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDestructibleActor_Multicast_OnDestructibleFractured_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGDestructibleActor.h" },
+		{ "ModuleRelativePath", "Public/FGDestructibleActor.h" },
 		{ "ToolTip", "Called on client when this is fractured" },
 	};
 #endif
@@ -133,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDestructibleActor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDestructibleActor_OnDestructibleFractured_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGDestructibleActor.h" },
+		{ "ModuleRelativePath", "Public/FGDestructibleActor.h" },
 		{ "ToolTip", "Called when this actor is fractured" },
 	};
 #endif
@@ -157,7 +157,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDestructibleActor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDestructibleActor_PlayDestructEffects_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Destructible" },
-		{ "ModuleRelativePath", "FGDestructibleActor.h" },
+		{ "ModuleRelativePath", "Public/FGDestructibleActor.h" },
 		{ "ToolTip", "Called on server and client when we destruct this actor" },
 	};
 #endif
@@ -201,22 +201,22 @@ void EmptyLinkFunctionForGeneratedCodeFGDestructibleActor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGDestructibleActor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGDestructibleActor_Multicast_OnDestructibleFractured, "Multicast_OnDestructibleFractured" }, // 770797848
-		{ &Z_Construct_UFunction_AFGDestructibleActor_OnDestructibleFractured, "OnDestructibleFractured" }, // 219055468
-		{ &Z_Construct_UFunction_AFGDestructibleActor_PlayDestructEffects, "PlayDestructEffects" }, // 2561084676
+		{ &Z_Construct_UFunction_AFGDestructibleActor_Multicast_OnDestructibleFractured, "Multicast_OnDestructibleFractured" }, // 1251681436
+		{ &Z_Construct_UFunction_AFGDestructibleActor_OnDestructibleFractured, "OnDestructibleFractured" }, // 3205700707
+		{ &Z_Construct_UFunction_AFGDestructibleActor_PlayDestructEffects, "PlayDestructEffects" }, // 2155023326
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDestructibleActor_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Input" },
 		{ "IncludePath", "FGDestructibleActor.h" },
-		{ "ModuleRelativePath", "FGDestructibleActor.h" },
+		{ "ModuleRelativePath", "Public/FGDestructibleActor.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 		{ "ToolTip", "This is an actor that should be able to be destroyed by explosions and stuff. Can block cave entrances and stuff.\nIf you make a new rock that should be destructible, then you should make a data only blueprint of this" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDestructibleActor_Statics::NewProp_mHasBeenFractured_MetaData[] = {
-		{ "ModuleRelativePath", "FGDestructibleActor.h" },
+		{ "ModuleRelativePath", "Public/FGDestructibleActor.h" },
 		{ "ToolTip", "So we can save if this has been fractured" },
 	};
 #endif
@@ -229,7 +229,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDestructibleActor() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDestructibleActor_Statics::NewProp_mStaticMeshProxy_MetaData[] = {
 		{ "Category", "Destructible" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGDestructibleActor.h" },
+		{ "ModuleRelativePath", "Public/FGDestructibleActor.h" },
 		{ "ToolTip", "The mesh that should be rendered before we start going destructible. Used for optimization as it has less triangles" },
 	};
 #endif
@@ -268,7 +268,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDestructibleActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDestructibleActor, 1153108247);
+	IMPLEMENT_CLASS(AFGDestructibleActor, 3880788873);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGDestructibleActor>()
 	{
 		return AFGDestructibleActor::StaticClass();

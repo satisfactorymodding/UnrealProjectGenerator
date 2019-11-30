@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGFoliageRemovalSubsystem.h"
+#include "FactoryGame/Public/FGFoliageRemovalSubsystem.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -127,7 +127,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetClosestFoliage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Foliage" },
-		{ "ModuleRelativePath", "FGFoliageRemovalSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemovalSubsystem.h" },
 		{ "ToolTip", "Finds the closest foliage instance to a location\n\n@network: Server and Client\n\n@param location - the location you want to look around\n@param maxDistance - max distance from the location that the foliage needs to exist (note, looks at the root location of the foliage, not the bounds)\n@param foliageIdentifier - find foliage that matches this tag\n@param out_component - the closest component of foliage, only valid if we return true\n@param out_instanceId - id of the foliage we want to remove, only valid if we return true\n@param out_instanceLocation - the location of the instance, only valid if we return true\n@return true if there was any foliage close by" },
 	};
 #endif
@@ -205,7 +205,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetClosestFoliageArrayForComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Foliage" },
-		{ "ModuleRelativePath", "FGFoliageRemovalSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemovalSubsystem.h" },
 		{ "ToolTip", "Takes several locations into considerations and find the closest foliage closest to those locations. Use this when you want to get several\nfoliage locations instead of using GetClosestFoliage several times. As this takes into consideration the locations passed in. So once instance has\nbeen added once to the array, it won't be added again\n\n@param locations - the locations that we want to find foliage close to\n@param maxDistance - maximum distance to any foliage\n@param component - component to search in\n@param isLocalSpace - set this to true if the locations is in local-space\n@param out_instanceArray - id's in component for all the foliage instances" },
 	};
 #endif
@@ -290,7 +290,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetClosestFoliageForComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Foliage" },
-		{ "ModuleRelativePath", "FGFoliageRemovalSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemovalSubsystem.h" },
 		{ "ToolTip", "Finds the closest foliage instance to a location in a specified component\n\n@network: Server and Client\n\n@param location - the location you want to look around\n@param maxDistance - max distance from the location that the foliage needs to exist (note, looks at the root location of the foliage, not the bounds)\n@param component - the component we want to search for foliage\n@param isLocalSpace - set this to true if location is in localspace\n@param out_instanceId - id of the foliage we want to remove, only valid if we return true\n@param out_instanceLocation - the location of the instance, only valid if we return true\n@return true if there was any foliage close by" },
 	};
 #endif
@@ -336,7 +336,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetFoliageRemovalActor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Foliage" },
-		{ "ModuleRelativePath", "FGFoliageRemovalSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemovalSubsystem.h" },
 		{ "ToolTip", "Get the foliage removal actor that is associated with the component" },
 	};
 #endif
@@ -375,7 +375,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetFoliageRemovalSubsystem_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Foliage" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGFoliageRemovalSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemovalSubsystem.h" },
 		{ "ToolTip", "Get the foliage removal subsystem from a world context, this should always return something unless you call it really early" },
 	};
 #endif
@@ -468,7 +468,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetFoliageWithinRadius_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Foliage" },
-		{ "ModuleRelativePath", "FGFoliageRemovalSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemovalSubsystem.h" },
 		{ "ToolTip", "Finds foliage within a provided radius to a specified location." },
 	};
 #endif
@@ -555,7 +555,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetLookAtFoliage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Foliage" },
-		{ "ModuleRelativePath", "FGFoliageRemovalSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemovalSubsystem.h" },
 		{ "ToolTip", "Tries to emulate looking at a location from a location, and get the closest actor you are looking at\n\n@network: Server and Client\n\n@param viewLocation - from where you are looking\n@param endViewLocation - end of look trace\n@param foliageIdentifier - find foliage that matches this tag\n@param out_component - the component we are looking at, only valid if we return true\n@param out_instanceId - id that we are looking at, only valid if we return true\n@param out_instanceLocation - the location of the instance, only valid if we return true\n@return true if we looked at any foliage" },
 	};
 #endif
@@ -611,7 +611,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGFoliageRemovalSubsystem_HasIdentifier_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Foliage" },
-		{ "ModuleRelativePath", "FGFoliageRemovalSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemovalSubsystem.h" },
 		{ "ToolTip", "@param component - UHierarchicalInstanctedStaticMeshComponent to check\n@param foliageIdentifier - find foliage that matches this tag\n@returns true if the UHierarchicalInstanctedStaticMeshComponent has the given foliageIdentifier." },
 	};
 #endif
@@ -648,7 +648,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGFoliageRemovalSubsystem_OnLevelAddedToWorld_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGFoliageRemovalSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemovalSubsystem.h" },
 		{ "ToolTip", "Called whenever a level is added to the world, used to gather more potential components to get foliage from" },
 	};
 #endif
@@ -685,7 +685,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGFoliageRemovalSubsystem_OnLevelRemovedFromWorld_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGFoliageRemovalSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemovalSubsystem.h" },
 		{ "ToolTip", "Called whenever a level is removed from the world, used to remove components that is no longer relevant for to be able to pickup" },
 	};
 #endif
@@ -718,22 +718,22 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGFoliageRemovalSubsystem_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetClosestFoliage, "GetClosestFoliage" }, // 1273311784
-		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetClosestFoliageArrayForComponent, "GetClosestFoliageArrayForComponent" }, // 273966281
-		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetClosestFoliageForComponent, "GetClosestFoliageForComponent" }, // 1861610130
-		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetFoliageRemovalActor, "GetFoliageRemovalActor" }, // 712602108
-		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetFoliageRemovalSubsystem, "GetFoliageRemovalSubsystem" }, // 1400529022
-		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetFoliageWithinRadius, "GetFoliageWithinRadius" }, // 1163211186
-		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetLookAtFoliage, "GetLookAtFoliage" }, // 742715161
-		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_HasIdentifier, "HasIdentifier" }, // 4136602075
-		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_OnLevelAddedToWorld, "OnLevelAddedToWorld" }, // 3879205544
-		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_OnLevelRemovedFromWorld, "OnLevelRemovedFromWorld" }, // 1605884483
+		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetClosestFoliage, "GetClosestFoliage" }, // 417752266
+		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetClosestFoliageArrayForComponent, "GetClosestFoliageArrayForComponent" }, // 3314873316
+		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetClosestFoliageForComponent, "GetClosestFoliageForComponent" }, // 2801153632
+		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetFoliageRemovalActor, "GetFoliageRemovalActor" }, // 4241903655
+		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetFoliageRemovalSubsystem, "GetFoliageRemovalSubsystem" }, // 2228076123
+		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetFoliageWithinRadius, "GetFoliageWithinRadius" }, // 3306155241
+		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_GetLookAtFoliage, "GetLookAtFoliage" }, // 4110697943
+		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_HasIdentifier, "HasIdentifier" }, // 1659418204
+		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_OnLevelAddedToWorld, "OnLevelAddedToWorld" }, // 2299886300
+		{ &Z_Construct_UFunction_AFGFoliageRemovalSubsystem_OnLevelRemovedFromWorld, "OnLevelRemovedFromWorld" }, // 4071048059
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoliageRemovalSubsystem_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Rendering Actor Tick Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGFoliageRemovalSubsystem.h" },
-		{ "ModuleRelativePath", "FGFoliageRemovalSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageRemovalSubsystem.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
@@ -764,7 +764,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoliageRemovalSubsystem, 1886564263);
+	IMPLEMENT_CLASS(AFGFoliageRemovalSubsystem, 1047063493);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGFoliageRemovalSubsystem>()
 	{
 		return AFGFoliageRemovalSubsystem::StaticClass();

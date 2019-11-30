@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGDockableInterface.h"
+#include "FactoryGame/Public/FGDockableInterface.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -43,7 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 		return EDockStationType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EDockStationType(EDockStationType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EDockStationType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EDockStationType_Hash() { return 1814561054U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EDockStationType_Hash() { return 1526654286U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EDockStationType()
 	{
 #if WITH_HOT_RELOAD
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 				{ "DST_NONE.DisplayName", "None" },
 				{ "DST_TRAIN.DisplayName", "Train" },
 				{ "DST_TRUCK.DisplayName", "Truck" },
-				{ "ModuleRelativePath", "FGDockableInterface.h" },
+				{ "ModuleRelativePath", "Public/FGDockableInterface.h" },
 				{ "ToolTip", "@todo: Change this in favour for more flexible docking stations (for instance, boats) that can be done in mods\nDifferent type of docks." },
 			};
 #endif
@@ -167,7 +167,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDockableInterface_CanDock_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Docking" },
-		{ "ModuleRelativePath", "FGDockableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDockableInterface.h" },
 		{ "ToolTip", "Check if this thing can dock at the given type of docking station." },
 	};
 #endif
@@ -205,7 +205,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDockableInterface_GetDockFuelInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Docking" },
-		{ "ModuleRelativePath", "FGDockableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDockableInterface.h" },
 		{ "ToolTip", "Get the fuel inventory for this dockable thing." },
 	};
 #endif
@@ -243,7 +243,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDockableInterface_GetDockInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Docking" },
-		{ "ModuleRelativePath", "FGDockableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDockableInterface.h" },
 		{ "ToolTip", "Get the input/output inventory for this dockable thing." },
 	};
 #endif
@@ -267,7 +267,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDockableInterface_OnBeginLoadVehicle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Docking" },
-		{ "ModuleRelativePath", "FGDockableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDockableInterface.h" },
 		{ "ToolTip", "Called when we start loading the vehicle" },
 	};
 #endif
@@ -291,7 +291,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDockableInterface_OnBeginUnloadVehicle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Docking" },
-		{ "ModuleRelativePath", "FGDockableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDockableInterface.h" },
 		{ "ToolTip", "Called when we start unloading the vehicle" },
 	};
 #endif
@@ -315,7 +315,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDockableInterface_OnTransferComplete_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Docking" },
-		{ "ModuleRelativePath", "FGDockableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDockableInterface.h" },
 		{ "ToolTip", "Notify for when loading/unloading are completed" },
 	};
 #endif
@@ -345,7 +345,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDockableInterface_WasDocked_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Docking" },
-		{ "ModuleRelativePath", "FGDockableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDockableInterface.h" },
 		{ "ToolTip", "Called when it was docked to the station." },
 	};
 #endif
@@ -369,7 +369,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDockableInterface_WasUndocked_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Docking" },
-		{ "ModuleRelativePath", "FGDockableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDockableInterface.h" },
 		{ "ToolTip", "Called when it was undocked from the station." },
 	};
 #endif
@@ -402,20 +402,20 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGDockableInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGDockableInterface_CanDock, "CanDock" }, // 1478511744
-		{ &Z_Construct_UFunction_UFGDockableInterface_GetDockFuelInventory, "GetDockFuelInventory" }, // 3846694044
-		{ &Z_Construct_UFunction_UFGDockableInterface_GetDockInventory, "GetDockInventory" }, // 1818518503
-		{ &Z_Construct_UFunction_UFGDockableInterface_OnBeginLoadVehicle, "OnBeginLoadVehicle" }, // 2144231021
-		{ &Z_Construct_UFunction_UFGDockableInterface_OnBeginUnloadVehicle, "OnBeginUnloadVehicle" }, // 3861292535
-		{ &Z_Construct_UFunction_UFGDockableInterface_OnTransferComplete, "OnTransferComplete" }, // 1178348541
-		{ &Z_Construct_UFunction_UFGDockableInterface_WasDocked, "WasDocked" }, // 4141998766
-		{ &Z_Construct_UFunction_UFGDockableInterface_WasUndocked, "WasUndocked" }, // 4090689223
+		{ &Z_Construct_UFunction_UFGDockableInterface_CanDock, "CanDock" }, // 4046130534
+		{ &Z_Construct_UFunction_UFGDockableInterface_GetDockFuelInventory, "GetDockFuelInventory" }, // 1999162022
+		{ &Z_Construct_UFunction_UFGDockableInterface_GetDockInventory, "GetDockInventory" }, // 1101973787
+		{ &Z_Construct_UFunction_UFGDockableInterface_OnBeginLoadVehicle, "OnBeginLoadVehicle" }, // 1535411125
+		{ &Z_Construct_UFunction_UFGDockableInterface_OnBeginUnloadVehicle, "OnBeginUnloadVehicle" }, // 19956289
+		{ &Z_Construct_UFunction_UFGDockableInterface_OnTransferComplete, "OnTransferComplete" }, // 2394414226
+		{ &Z_Construct_UFunction_UFGDockableInterface_WasDocked, "WasDocked" }, // 3637025706
+		{ &Z_Construct_UFunction_UFGDockableInterface_WasUndocked, "WasUndocked" }, // 1034262055
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDockableInterface_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGDockableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDockableInterface.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
@@ -446,7 +446,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDockableInterface, 645013896);
+	IMPLEMENT_CLASS(UFGDockableInterface, 1986450289);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGDockableInterface>()
 	{
 		return UFGDockableInterface::StaticClass();

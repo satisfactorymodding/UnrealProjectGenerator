@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGPlanet.h"
+#include "FactoryGame/Public/FGPlanet.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -37,7 +37,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlanet() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlanet_UpdatePreview_Statics::Function_MetaDataParams[] = {
 		{ "CallInEditor", "true" },
-		{ "ModuleRelativePath", "FGPlanet.h" },
+		{ "ModuleRelativePath", "Public/FGPlanet.h" },
 		{ "ToolTip", "Update the preview of the planet in the editor" },
 	};
 #endif
@@ -77,12 +77,12 @@ void EmptyLinkFunctionForGeneratedCodeFGPlanet() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGPlanet_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGPlanet_UpdatePreview, "UpdatePreview" }, // 1438773675
+		{ &Z_Construct_UFunction_AFGPlanet_UpdatePreview, "UpdatePreview" }, // 1426092352
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlanet_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGPlanet.h" },
-		{ "ModuleRelativePath", "FGPlanet.h" },
+		{ "ModuleRelativePath", "Public/FGPlanet.h" },
 	};
 #endif
 #if WITH_EDITORONLY_DATA
@@ -91,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlanet() {}
 		{ "Category", "Preview" },
 		{ "ClampMax", "24" },
 		{ "ClampMin", "0" },
-		{ "ModuleRelativePath", "FGPlanet.h" },
+		{ "ModuleRelativePath", "Public/FGPlanet.h" },
 		{ "ToolTip", "How the sunlight changes during the day" },
 		{ "UIMax", "24" },
 		{ "UIMin", "0" },
@@ -129,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlanet() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlanet, 1523110047);
+	IMPLEMENT_CLASS(AFGPlanet, 3013745046);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlanet>()
 	{
 		return AFGPlanet::StaticClass();
