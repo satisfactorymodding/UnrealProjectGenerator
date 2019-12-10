@@ -277,8 +277,10 @@ protected:
 	UFUNCTION( BlueprintPure, Category = "Map" )
 	TSubclassOf< UFGMapArea > GetCurrentMapArea() const;
 
+public: // MODDING EDIT
 	UFUNCTION( BlueprintCallable, Category = "Chat" )
 	void EnterChatMessage( const FString& inMessage );
+protected: // MODDING EDIT
 
 	UFUNCTION( BlueprintNativeEvent, Category = "Input" )
 	void OnDisabledInputGateChanged();
