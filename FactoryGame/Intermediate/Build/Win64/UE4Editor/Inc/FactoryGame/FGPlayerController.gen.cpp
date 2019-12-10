@@ -763,9 +763,10 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Chat" },
 		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "MODDING EDIT" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "EnterChatMessage", sizeof(FGPlayerController_eventEnterChatMessage_Parms), Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "EnterChatMessage", sizeof(FGPlayerController_eventEnterChatMessage_Parms), Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGPlayerController_EnterChatMessage()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1602,6 +1603,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_OnDisabledInputGateChanged_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
 		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "MODDING EDIT" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_OnDisabledInputGateChanged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "OnDisabledInputGateChanged", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_OnDisabledInputGateChanged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnDisabledInputGateChanged_Statics::Function_MetaDataParams)) };
@@ -2642,7 +2644,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		{ &Z_Construct_UFunction_AFGPlayerController_CreateSequenceList, "CreateSequenceList" }, // 837020434
 		{ &Z_Construct_UFunction_AFGPlayerController_DecrementPhotoModeFOV, "DecrementPhotoModeFOV" }, // 3922106814
 		{ &Z_Construct_UFunction_AFGPlayerController_EnablePhotoMode, "EnablePhotoMode" }, // 1301107203
-		{ &Z_Construct_UFunction_AFGPlayerController_EnterChatMessage, "EnterChatMessage" }, // 1247870686
+		{ &Z_Construct_UFunction_AFGPlayerController_EnterChatMessage, "EnterChatMessage" }, // 2244120735
 		{ &Z_Construct_UFunction_AFGPlayerController_ExecuteShortcut, "ExecuteShortcut" }, // 703699298
 		{ &Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts, "GetAllShortcuts" }, // 3852800978
 		{ &Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea, "GetCurrentMapArea" }, // 2009137642
@@ -2665,7 +2667,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		{ &Z_Construct_UFunction_AFGPlayerController_MaterialFlowAnalysis, "MaterialFlowAnalysis" }, // 3413876097
 		{ &Z_Construct_UFunction_AFGPlayerController_MaterialLookup, "MaterialLookup" }, // 3728815114
 		{ &Z_Construct_UFunction_AFGPlayerController_NeedRespawn, "NeedRespawn" }, // 1118282371
-		{ &Z_Construct_UFunction_AFGPlayerController_OnDisabledInputGateChanged, "OnDisabledInputGateChanged" }, // 2590564762
+		{ &Z_Construct_UFunction_AFGPlayerController_OnDisabledInputGateChanged, "OnDisabledInputGateChanged" }, // 1467507323
 		{ &Z_Construct_UFunction_AFGPlayerController_OnDismantlePortableMiner, "OnDismantlePortableMiner" }, // 980886990
 		{ &Z_Construct_UFunction_AFGPlayerController_OnFinishRespawn, "OnFinishRespawn" }, // 2433442839
 		{ &Z_Construct_UFunction_AFGPlayerController_OnPrimaryFire, "OnPrimaryFire" }, // 946398369
@@ -2937,7 +2939,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerController, 2022940073);
+	IMPLEMENT_CLASS(AFGPlayerController, 3753860059);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlayerController>()
 	{
 		return AFGPlayerController::StaticClass();
