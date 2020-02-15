@@ -83,13 +83,15 @@ namespace ImplementCSS_UEHeaders
             }
         }
 
+        private const string CSSRegex = @"(\s*)\/\/\s*<CSS>((?:.|\n)*?)^\1\/\/\s*<\/CSS>";
+
         private static List<string> ImplementFile(string filePath)
         {
             string fileContents;
             using (StreamReader reader = new StreamReader(filePath))
                 fileContents = reader.ReadToEnd();
             List<string> implementations = new List<string>();
-            foreach (Match cssEditMatch in Regex.Matches(fileContents, @"//<CSS>((?:.|\n)*?)//</CSS>"))
+            foreach (Match cssEditMatch in Regex.Matches(fileContents, CSSRegex, RegexOptions.Multiline))
             {
                 foreach (Match match in Regex.Matches(cssEditMatch.Value, @"^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?.*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match class/struct definition
                 {
@@ -97,7 +99,7 @@ namespace ImplementCSS_UEHeaders
                     string classContents = match.Groups[6].Value;
                     if (!IsValidClassName(className))
                         continue;
-                    implementations.AddRange(ImplementClass(className, classContents));
+                    implementations.AddRange(ImplementClass(className, classContents, true));
                 }
                 fileContents.Replace(cssEditMatch.Value, "");
             }
@@ -112,7 +114,7 @@ namespace ImplementCSS_UEHeaders
             return implementations;
         }
 
-        private static List<string> ImplementClass(string className, string classContents)
+        private static List<string> ImplementClass(string className, string classContents, bool isCSS = false)
         {
             List<string> implementations = new List<string>();
             classContents = Regex.Replace(classContents, @"\/+\*(?:.|\s)*?\*\/", ""); // fix for comments containing brackets being matched as functions
@@ -131,12 +133,12 @@ namespace ImplementCSS_UEHeaders
                     string innerClassContents = match.Groups[6].Value;
                     if (!IsValidClassName(innerClassName))
                         continue;
-                    implementations.AddRange(ImplementClass(className + "::" + innerClassName, innerClassContents));
+                    implementations.AddRange(ImplementClass(className + "::" + innerClassName, innerClassContents, isCSS));
                     ifContents = ifContents.Replace(match.Value, "");
                 }
                 List<string> ifImplementations = new List<string>();
-                ifImplementations.AddRange(ImplementFunctions(ifContents, className));
-                ifImplementations.AddRange(ImplementStaticVars(ifContents, className));
+                ifImplementations.AddRange(ImplementFunctions(ifContents, className, isCSS));
+                ifImplementations.AddRange(ImplementStaticVars(ifContents, className, isCSS));
                 if (ifImplementations.Count > 0)
                 {
                     implementations.Add($"#if {ifMacro.Groups[1].Value.Trim()}");
@@ -151,19 +153,22 @@ namespace ImplementCSS_UEHeaders
                 string innerClassContents = match.Groups[6].Value;
                 if (!IsValidClassName(innerClassName))
                     continue;
-                implementations.AddRange(ImplementClass(className + "::" + innerClassName, innerClassContents));
+                implementations.AddRange(ImplementClass(className + "::" + innerClassName, innerClassContents, isCSS));
                 classContents = classContents.Replace(match.Value, "");
             }
-            implementations.AddRange(ImplementFunctions(classContents, className));
-            implementations.AddRange(ImplementStaticVars(classContents, className));
+            implementations.AddRange(ImplementFunctions(classContents, className, isCSS));
+            implementations.AddRange(ImplementStaticVars(classContents, className, isCSS));
             return implementations;
         }
 
-        private static List<string> ImplementStaticVars(string content, string className)
+        private static List<string> ImplementStaticVars(string content, string className, bool isCSS = false)
         {
             List<string> implementations = new List<string>();
-            foreach (Match cssEditMatch in Regex.Matches(content, @"//<CSS>((?:.|\n)*?)//</CSS>"))
-                foreach (Match function in Regex.Matches(cssEditMatch.Value, @"(const\s)?static\s(const\s)?\s*([\w\d_]*?)\s+([\w\d_]*?);", RegexOptions.Multiline))
+            if (!isCSS)
+                foreach (Match cssEditMatch in Regex.Matches(content, CSSRegex, RegexOptions.Multiline))
+                    implementations.AddRange(ImplementFunctions(cssEditMatch.Value, className, true));
+            else
+                foreach (Match function in Regex.Matches(content, @"(const\s)?static\s(const\s)?\s*([\w\d_]*?)\s+([\w\d_]*?);", RegexOptions.Multiline))
                 {
                     string isConst = function.Groups[1].Value + function.Groups[2].Value;
                     string type = FixReturnType(function.Groups[3].Value).Trim();
@@ -176,15 +181,19 @@ namespace ImplementCSS_UEHeaders
             return implementations;
         }
 
-        private static List<string> ImplementFunctions(string content, string className)
+        private static List<string> ImplementFunctions(string content, string className, bool isCSS = false)
         {
             content = Regex.Replace(content, @"\r\n\s*public:", "\r\n");
             content = Regex.Replace(content, @"\r\n\s*private:", "\r\n");
             content = Regex.Replace(content, @"\r\n\s*protected:", "\r\n");
             List<string> implementations = new List<string>();
-            // Match function definition (including UFUNCTIONs), nothing to see here ... just walk away ... probably the reason for many missing implementations...
-            foreach (Match cssEditMatch in Regex.Matches(content, @"//<CSS>((?:.|\n)*?)//</CSS>"))
-                foreach (Match function in Regex.Matches(cssEditMatch.Value, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual\s?)?(static\s?)?(const\s?)?(class\s?)?(explicit\s?)?([^=()\n{}]*?\s)?\n*((?:[^=<>()\n{}]|operator.+)*?)(\([^{}]*?\))(\s*const)?(\s*override)?(.*);", RegexOptions.Multiline))
+            if (!isCSS)
+                foreach (Match cssEditMatch in Regex.Matches(content, CSSRegex, RegexOptions.Multiline))
+                    implementations.AddRange(ImplementFunctions(cssEditMatch.Value, className, true));
+            else
+            {
+                // Match function definition (including UFUNCTIONs), nothing to see here ... just walk away ... probably the reason for many missing implementations...
+                foreach (Match function in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual\s?)?(static\s?)?(const\s?)?(class\s?)?(explicit\s?)?([^=()\n{}]*?_API\s)?([^=()\n{}]*?\s)?\n*((?:[^=<>()\n{}]|operator.+)*?)(\([^{}]*?\))(\s*const)?(\s*override)?(.*);", RegexOptions.Multiline))
                 {
                     // string comment = function.Groups[1].Value; // removed because regex took too long
                     string ufunction = function.Groups[1].Value;
@@ -194,12 +203,13 @@ namespace ImplementCSS_UEHeaders
                     string isReturnConst = function.Groups[5].Value;
                     string isClass = function.Groups[6].Value;
                     string isExplicit = function.Groups[7].Value;
-                    string returnType = function.Groups[8].Value;
-                    string functionName = function.Groups[9].Value;
-                    string parameters = function.Groups[10].Value;
-                    string isConst = function.Groups[11].Value;
-                    string isOverride = function.Groups[12].Value;
-                    string extras = function.Groups[13].Value;
+                    string api = function.Groups[8].Value;
+                    string returnType = function.Groups[9].Value;
+                    string functionName = function.Groups[10].Value;
+                    string parameters = function.Groups[11].Value;
+                    string isConst = function.Groups[12].Value;
+                    string isOverride = function.Groups[13].Value;
+                    string extras = function.Groups[14].Value;
 
                     if (extras.Contains("PURE_VIRTUAL")) // ignore pure virtual macro
                         continue;
@@ -264,6 +274,7 @@ namespace ImplementCSS_UEHeaders
                     else
                         ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName, parameters, isConst, template, isStatic);
                 }
+            }
             return implementations;
         }
 
