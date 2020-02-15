@@ -17,7 +17,11 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceExtractorHologram() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGResourceExtractorHologram();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGFactoryHologram();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
-	FACTORYGAME_API UClass* Z_Construct_UClass_AFGResourceNode_NoRegister();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGExtractableResourceInterface_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGResourceDescriptor_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGConstructDisqualifier_NoRegister();
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EResourceForm();
 // End Cross Module References
 	void AFGResourceExtractorHologram::StaticRegisterNativesAFGResourceExtractorHologram()
@@ -34,9 +38,23 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceExtractorHologram() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSnappedResourceNode_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMinimumDepthPoints_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mSnappedResourceNode;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mMinimumDepthPoints;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mMinimumDepthPoints_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSnappedExtractableResource_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FInterfacePropertyParams NewProp_mSnappedExtractableResource;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAllowedResources_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mAllowedResources;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mAllowedResources_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMustPlaceOnResourceDisqualifier_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mMustPlaceOnResourceDisqualifier;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAllowedResourceForms_MetaData[];
 #endif
@@ -60,12 +78,35 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceExtractorHologram() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedResourceNode_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mMinimumDepthPoints_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Hologram/FGResourceExtractorHologram.h" },
+		{ "ToolTip", "Array of points in local space to use for minimum depth trace testing downward" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mMinimumDepthPoints = { "mMinimumDepthPoints", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceExtractorHologram, mMinimumDepthPoints), METADATA_PARAMS(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mMinimumDepthPoints_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mMinimumDepthPoints_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mMinimumDepthPoints_Inner = { "mMinimumDepthPoints", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedExtractableResource_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Hologram/FGResourceExtractorHologram.h" },
 		{ "ToolTip", "The resource node we snapped to." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedResourceNode = { "mSnappedResourceNode", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceExtractorHologram, mSnappedResourceNode), Z_Construct_UClass_AFGResourceNode_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedResourceNode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedResourceNode_MetaData)) };
+	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedExtractableResource = { "mSnappedExtractableResource", nullptr, (EPropertyFlags)0x0024080000000000, UE4CodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceExtractorHologram, mSnappedExtractableResource), Z_Construct_UClass_UFGExtractableResourceInterface_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedExtractableResource_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedExtractableResource_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResources_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Hologram/FGResourceExtractorHologram.h" },
+		{ "ToolTip", "If this buildable only allows certain resources for placement, this is the list of those taken from the buildable" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResources = { "mAllowedResources", nullptr, (EPropertyFlags)0x0024080000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceExtractorHologram, mAllowedResources), METADATA_PARAMS(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResources_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResources_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResources_Inner = { "mAllowedResources", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mMustPlaceOnResourceDisqualifier_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Hologram/FGResourceExtractorHologram.h" },
+		{ "ToolTip", "Class of disqualifier to display when not snapped to a resource ( copied from buildable )" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mMustPlaceOnResourceDisqualifier = { "mMustPlaceOnResourceDisqualifier", nullptr, (EPropertyFlags)0x0024080000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceExtractorHologram, mMustPlaceOnResourceDisqualifier), Z_Construct_UClass_UFGConstructDisqualifier_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mMustPlaceOnResourceDisqualifier_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mMustPlaceOnResourceDisqualifier_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Hologram/FGResourceExtractorHologram.h" },
@@ -76,7 +117,12 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceExtractorHologram() {}
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms_Inner = { "mAllowedResourceForms", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UEnum_FactoryGame_EResourceForm, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms_Inner_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGResourceExtractorHologram_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedResourceNode,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mMinimumDepthPoints,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mMinimumDepthPoints_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedExtractableResource,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResources,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResources_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mMustPlaceOnResourceDisqualifier,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms_Inner_Underlying,
@@ -108,7 +154,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceExtractorHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceExtractorHologram, 122095009);
+	IMPLEMENT_CLASS(AFGResourceExtractorHologram, 3142561565);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGResourceExtractorHologram>()
 	{
 		return AFGResourceExtractorHologram::StaticClass();

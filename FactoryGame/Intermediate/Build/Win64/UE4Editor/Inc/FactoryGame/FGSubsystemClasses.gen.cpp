@@ -18,6 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSettings();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGAdminInterface_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGResourceSinkSubsystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGUnlockSubsystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGProximitySubsystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGFoliageRemovalSubsystem_NoRegister();
@@ -48,6 +50,14 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAdminInterfaceClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mAdminInterfaceClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mResourceSinkSubsystemClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mResourceSinkSubsystemClass;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mUnlockSubsystem_MetaData[];
 #endif
@@ -127,6 +137,22 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 		{ "ToolTip", "All subsystems" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mAdminInterfaceClass_MetaData[] = {
+		{ "Category", "Subsystem" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
+		{ "ToolTip", "Handles administration task of servers" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mAdminInterfaceClass = { "mAdminInterfaceClass", nullptr, (EPropertyFlags)0x0014000000014001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSubsystemClasses, mAdminInterfaceClass), Z_Construct_UClass_AFGAdminInterface_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mAdminInterfaceClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mAdminInterfaceClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mResourceSinkSubsystemClass_MetaData[] = {
+		{ "Category", "Subsystem" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
+		{ "ToolTip", "Subsystem that handles the resource sink system" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mResourceSinkSubsystemClass = { "mResourceSinkSubsystemClass", nullptr, (EPropertyFlags)0x0014000000014001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSubsystemClasses, mResourceSinkSubsystemClass), Z_Construct_UClass_AFGResourceSinkSubsystem_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mResourceSinkSubsystemClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mResourceSinkSubsystemClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mUnlockSubsystem_MetaData[] = {
 		{ "Category", "Subsystem" },
@@ -256,6 +282,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mStorySubsystemClass = { "mStorySubsystemClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSubsystemClasses, mStorySubsystemClass), Z_Construct_UClass_AFGStorySubsystem_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mStorySubsystemClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mStorySubsystemClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGSubsystemClasses_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mAdminInterfaceClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mResourceSinkSubsystemClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mUnlockSubsystem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mProximitySubsystemClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mFoliageRemovalSubsystemClass,
@@ -300,7 +328,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSubsystemClasses, 2062957202);
+	IMPLEMENT_CLASS(UFGSubsystemClasses, 3100370265);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSubsystemClasses>()
 	{
 		return UFGSubsystemClasses::StaticClass();

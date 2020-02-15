@@ -589,7 +589,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGMinimapCaptureActor, 3699305740);
+	IMPLEMENT_CLASS(AFGMinimapCaptureActor, 2650908350);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGMinimapCaptureActor>()
 	{
 		return AFGMinimapCaptureActor::StaticClass();

@@ -3,8 +3,9 @@
 #pragma once
 
 #include "FGCreatureController.h"
-#include "FGAggroTargetInterface.h"
 #include "FGEnemyController.generated.h"
+
+class FGAggroTargetInterface;
 
 UENUM( BlueprintType )
 enum class EIgnore : uint8

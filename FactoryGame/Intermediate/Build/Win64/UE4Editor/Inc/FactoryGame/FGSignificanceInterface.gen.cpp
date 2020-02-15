@@ -18,9 +18,12 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UInterface();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Native();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance_Native();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSignificanceInterface_SetupForSignificance();
 // End Cross Module References
 	void IFGSignificanceInterface::GainedSignificance()
 	{
@@ -35,9 +38,12 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 		UClass* Class = UFGSignificanceInterface::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GainedSignificance", &IFGSignificanceInterface::execGainedSignificance },
+			{ "GainedSignificance_Native", &IFGSignificanceInterface::execGainedSignificance_Native },
 			{ "GetSignificanceBias", &IFGSignificanceInterface::execGetSignificanceBias },
 			{ "GetSignificanceRange", &IFGSignificanceInterface::execGetSignificanceRange },
 			{ "LostSignificance", &IFGSignificanceInterface::execLostSignificance },
+			{ "LostSignificance_Native", &IFGSignificanceInterface::execLostSignificance_Native },
+			{ "SetupForSignificance", &IFGSignificanceInterface::execSetupForSignificance },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -62,6 +68,28 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Native_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Native_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGSignificanceInterface.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Native_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSignificanceInterface, nullptr, "GainedSignificance_Native", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Native_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Native_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Native()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Native_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -155,6 +183,51 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance_Native_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance_Native_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGSignificanceInterface.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance_Native_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSignificanceInterface, nullptr, "LostSignificance_Native", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance_Native_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance_Native_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance_Native()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance_Native_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGSignificanceInterface_SetupForSignificance_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSignificanceInterface_SetupForSignificance_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGSignificanceInterface.h" },
+		{ "ToolTip", "Call before adding object to significance in order to prepare it. ( Set up bounds and stuff )" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSignificanceInterface_SetupForSignificance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSignificanceInterface, nullptr, "SetupForSignificance", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSignificanceInterface_SetupForSignificance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSignificanceInterface_SetupForSignificance_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGSignificanceInterface_SetupForSignificance()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSignificanceInterface_SetupForSignificance_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UFGSignificanceInterface_NoRegister()
 	{
 		return UFGSignificanceInterface::StaticClass();
@@ -175,9 +248,12 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSignificanceInterface_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance, "GainedSignificance" }, // 2173954804
+		{ &Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Native, "GainedSignificance_Native" }, // 3729876922
 		{ &Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias, "GetSignificanceBias" }, // 964078474
 		{ &Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange, "GetSignificanceRange" }, // 2405665593
 		{ &Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance, "LostSignificance" }, // 4146223408
+		{ &Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance_Native, "LostSignificance_Native" }, // 3707653283
+		{ &Z_Construct_UFunction_UFGSignificanceInterface_SetupForSignificance, "SetupForSignificance" }, // 1433826045
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignificanceInterface_Statics::Class_MetaDataParams[] = {
@@ -213,7 +289,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSignificanceInterface, 870923318);
+	IMPLEMENT_CLASS(UFGSignificanceInterface, 4155041382);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSignificanceInterface>()
 	{
 		return UFGSignificanceInterface::StaticClass();

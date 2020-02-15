@@ -25,13 +25,14 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGResearchMachine_OnRep_ResearchMesh();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGResearchRecipe_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSchematic_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGResearchMachine_SetMachineUser();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale();
 	ENGINE_API UClass* Z_Construct_UClass_UCurveFloat_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGResearchRecipe_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipeProducerInterface_NoRegister();
 // End Cross Module References
@@ -192,18 +193,18 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 	{
 		struct FGResearchMachine_eventOnResearchConcluded_Parms
 		{
-			TSubclassOf<UFGResearchRecipe>  researchRecipe;
+			TSubclassOf<UFGSchematic>  schematic;
 		};
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_researchRecipe;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_schematic;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchMachine_eventOnResearchConcluded_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::NewProp_schematic = { "schematic", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchMachine_eventOnResearchConcluded_Parms, schematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::NewProp_researchRecipe,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::NewProp_schematic,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::Function_MetaDataParams[] = {
@@ -224,18 +225,18 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 	{
 		struct FGResearchMachine_eventOnResearchStarted_Parms
 		{
-			TSubclassOf<UFGResearchRecipe>  researchRecipe;
+			TSubclassOf<UFGSchematic>  schematic;
 		};
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_researchRecipe;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_schematic;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchMachine_eventOnResearchStarted_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::NewProp_schematic = { "schematic", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchMachine_eventOnResearchStarted_Parms, schematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::NewProp_researchRecipe,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::NewProp_schematic,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::Function_MetaDataParams[] = {
@@ -439,8 +440,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		{ &Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent, "GetResearchMeshComponent" }, // 3614393575
 		{ &Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted, "IsResearchBeingConducted" }, // 1929310933
 		{ &Z_Construct_UFunction_UFGResearchMachine_OnRep_ResearchMesh, "OnRep_ResearchMesh" }, // 4024691406
-		{ &Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded, "OnResearchConcluded" }, // 2209528256
-		{ &Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted, "OnResearchStarted" }, // 431543033
+		{ &Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded, "OnResearchConcluded" }, // 1889889072
+		{ &Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted, "OnResearchStarted" }, // 675887608
 		{ &Z_Construct_UFunction_UFGResearchMachine_SetMachineUser, "SetMachineUser" }, // 941539562
 		{ &Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent, "SetResearchMeshComponent" }, // 2888612031
 		{ &Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale, "SetResearchMeshCurveScale" }, // 374828478
@@ -525,7 +526,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResearchMachine, 1532779514);
+	IMPLEMENT_CLASS(UFGResearchMachine, 1508626125);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGResearchMachine>()
 	{
 		return UFGResearchMachine::StaticClass();

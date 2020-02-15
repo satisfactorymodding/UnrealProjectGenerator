@@ -13,8 +13,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFGFactorySettings() {}
 // Cross Module References
-	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FCategory();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FViscosityToPuddlePair();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FCategory();
 	SLATECORE_API UScriptStruct* Z_Construct_UScriptStruct_FSlateBrush();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGFactorySettings_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGFactorySettings();
@@ -34,6 +35,108 @@ void EmptyLinkFunctionForGeneratedCodeFGFactorySettings() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCrate_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UMaterialInstance_NoRegister();
 // End Cross Module References
+class UScriptStruct* FViscosityToPuddlePair::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FViscosityToPuddlePair_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FViscosityToPuddlePair, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ViscosityToPuddlePair"), sizeof(FViscosityToPuddlePair), Get_Z_Construct_UScriptStruct_FViscosityToPuddlePair_Hash());
+	}
+	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FViscosityToPuddlePair>()
+{
+	return FViscosityToPuddlePair::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FViscosityToPuddlePair(FViscosityToPuddlePair::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("ViscosityToPuddlePair"), false, nullptr, nullptr);
+static struct FScriptStruct_FactoryGame_StaticRegisterNativesFViscosityToPuddlePair
+{
+	FScriptStruct_FactoryGame_StaticRegisterNativesFViscosityToPuddlePair()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("ViscosityToPuddlePair")),new UScriptStruct::TCppStructOps<FViscosityToPuddlePair>);
+	}
+} ScriptStruct_FactoryGame_StaticRegisterNativesFViscosityToPuddlePair;
+	struct Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Puddle_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Puddle;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Viscosity_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Viscosity;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FViscosityToPuddlePair>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::NewProp_Puddle_MetaData[] = {
+		{ "Category", "ViscosityToPuddlePair" },
+		{ "ClampMax", "1.0" },
+		{ "ClampMin", "0.0" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
+		{ "ToolTip", "Required puddle amount before this fluid viscosity can be moved from a fluid box [ 0 , 1 ] normalized fill amount" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::NewProp_Puddle = { "Puddle", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FViscosityToPuddlePair, Puddle), METADATA_PARAMS(Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::NewProp_Puddle_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::NewProp_Puddle_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::NewProp_Viscosity_MetaData[] = {
+		{ "Category", "ViscosityToPuddlePair" },
+		{ "ClampMax", "100.0" },
+		{ "ClampMin", "0.0" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
+		{ "ToolTip", "Viscosity for this entry" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::NewProp_Viscosity = { "Viscosity", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FViscosityToPuddlePair, Viscosity), METADATA_PARAMS(Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::NewProp_Viscosity_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::NewProp_Viscosity_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::NewProp_Puddle,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::NewProp_Viscosity,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+		nullptr,
+		&NewStructOps,
+		"ViscosityToPuddlePair",
+		sizeof(FViscosityToPuddlePair),
+		alignof(FViscosityToPuddlePair),
+		Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000201),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FViscosityToPuddlePair()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FViscosityToPuddlePair_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ViscosityToPuddlePair"), sizeof(FViscosityToPuddlePair), Get_Z_Construct_UScriptStruct_FViscosityToPuddlePair_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FViscosityToPuddlePair_Hash() { return 840629036U; }
 class UScriptStruct* FCategory::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -221,6 +324,23 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mViscosityToPuddlePairs_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mViscosityToPuddlePairs;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mViscosityToPuddlePairs_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAddedPipeProductionPressure_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mAddedPipeProductionPressure;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mInventoryStackToFluidRate_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mInventoryStackToFluidRate;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mFluidToInventoryStackRate_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mFluidToInventoryStackRate;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mShortcutMap_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mShortcutMap;
@@ -316,6 +436,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mDefaultPowerConnectionMesh;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDefaultPipeConnectionArrowMesh_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mDefaultPipeConnectionArrowMesh;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDefaultPipeConnectionFrameMesh_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mDefaultPipeConnectionFrameMesh;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDefaultConveyorConnectionArrowMesh_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mDefaultConveyorConnectionArrowMesh;
@@ -327,6 +455,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDefaultPowerConnectionMaterial_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mDefaultPowerConnectionMaterial;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDefaultNeutralConnectionMaterial_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mDefaultNeutralConnectionMaterial;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDefaultOutputConnectionMaterial_MetaData[];
 #endif
@@ -366,6 +498,39 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Common settings for the factory buildings and their holograms." },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mViscosityToPuddlePairs_MetaData[] = {
+		{ "Category", "Pipes" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
+		{ "ToolTip", "Float to float pairing the required normalized fill amount [ 0 , 1 ] a pipe must be before it can transfer liquid out for a given viscosity\n     Higher viscosities should require more significant puddling to get the feel of sluggishness through pipe segments. Intermediate values will be lerped to." },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mViscosityToPuddlePairs = { "mViscosityToPuddlePairs", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mViscosityToPuddlePairs), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mViscosityToPuddlePairs_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mViscosityToPuddlePairs_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mViscosityToPuddlePairs_Inner = { "mViscosityToPuddlePairs", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FViscosityToPuddlePair, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mAddedPipeProductionPressure_MetaData[] = {
+		{ "Category", "Pipes" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
+		{ "ToolTip", "Pressure to add to all buildables with a PipeConnection output Fluid Box. This acts as a default pressure as if there was a pump inside every producing buildable.\nThis can be disabled per connection on the PipeConnectionFactory component" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mAddedPipeProductionPressure = { "mAddedPipeProductionPressure", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mAddedPipeProductionPressure), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mAddedPipeProductionPressure_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mAddedPipeProductionPressure_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mInventoryStackToFluidRate_MetaData[] = {
+		{ "Category", "Pipes" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
+		{ "ToolTip", "Default rate of converting Inventory stacks in to Fluid for FluidBox content. Measured in Liters / Second" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mInventoryStackToFluidRate = { "mInventoryStackToFluidRate", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mInventoryStackToFluidRate), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mInventoryStackToFluidRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mInventoryStackToFluidRate_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFluidToInventoryStackRate_MetaData[] = {
+		{ "Category", "Pipes" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
+		{ "ToolTip", "Default rate of converting FluidBox content into inventory stacks. Measured in Liters / Second" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFluidToInventoryStackRate = { "mFluidToInventoryStackRate", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mFluidToInventoryStackRate), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFluidToInventoryStackRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFluidToInventoryStackRate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap_MetaData[] = {
 		{ "Category", "Shortcuts" },
@@ -554,6 +719,22 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMesh = { "mDefaultPowerConnectionMesh", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDefaultPowerConnectionMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMesh_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPipeConnectionArrowMesh_MetaData[] = {
+		{ "Category", "Hologram|Connections" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
+		{ "ToolTip", "Mesh used to visualize pipeline connections direction (Consumer / Producer) @note Do not set in code!" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPipeConnectionArrowMesh = { "mDefaultPipeConnectionArrowMesh", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDefaultPipeConnectionArrowMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPipeConnectionArrowMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPipeConnectionArrowMesh_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPipeConnectionFrameMesh_MetaData[] = {
+		{ "Category", "Hologram|Connections" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
+		{ "ToolTip", "Mesh used to visualize pipeline connections location  @note Do not set in Code!" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPipeConnectionFrameMesh = { "mDefaultPipeConnectionFrameMesh", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDefaultPipeConnectionFrameMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPipeConnectionFrameMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPipeConnectionFrameMesh_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionArrowMesh_MetaData[] = {
 		{ "Category", "Hologram|Connections" },
 		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
@@ -577,6 +758,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMaterial = { "mDefaultPowerConnectionMaterial", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDefaultPowerConnectionMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMaterial_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultNeutralConnectionMaterial_MetaData[] = {
+		{ "Category", "Hologram|Material" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
+		{ "ToolTip", "Material on hologram for directionally neutral connections. @note Do not set in code!" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultNeutralConnectionMaterial = { "mDefaultNeutralConnectionMaterial", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDefaultNeutralConnectionMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultNeutralConnectionMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultNeutralConnectionMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultOutputConnectionMaterial_MetaData[] = {
 		{ "Category", "Hologram|Material" },
@@ -618,6 +807,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterial = { "mDefaultValidPlacementMaterial", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDefaultValidPlacementMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterial_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGFactorySettings_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mViscosityToPuddlePairs,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mViscosityToPuddlePairs_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mAddedPipeProductionPressure,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mInventoryStackToFluidRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFluidToInventoryStackRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mRecipeShortcutClass,
@@ -644,9 +838,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMaterial,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMesh,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPipeConnectionArrowMesh,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPipeConnectionFrameMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionArrowMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionFrameMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMaterial,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultNeutralConnectionMaterial,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultOutputConnectionMaterial,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInputConnectionMaterial,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInvalidPlacementMaterial,
@@ -680,7 +877,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFactorySettings, 1551759202);
+	IMPLEMENT_CLASS(UFGFactorySettings, 2582449447);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFactorySettings>()
 	{
 		return UFGFactorySettings::StaticClass();

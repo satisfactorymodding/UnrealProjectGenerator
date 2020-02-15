@@ -247,7 +247,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractableMarker() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGInteractableMarker, 3967811136);
+	IMPLEMENT_CLASS(AFGInteractableMarker, 1599039659);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGInteractableMarker>()
 	{
 		return AFGInteractableMarker::StaticClass();

@@ -179,7 +179,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildablePole, 2431261286);
+	IMPLEMENT_CLASS(AFGBuildablePole, 1476723309);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildablePole>()
 	{
 		return AFGBuildablePole::StaticClass();

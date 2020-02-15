@@ -15,16 +15,16 @@ class UFGResourceDescriptor;
 #endif
 #define FACTORYGAME_FGResourceNode_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_44_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_48_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPurityTextPair_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FPurityTextPair>();
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGUseState_NodeFullInventory(); \
 	friend struct Z_Construct_UClass_UFGUseState_NodeFullInventory_Statics; \
@@ -33,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_NodeFullInventory)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGUseState_NodeFullInventory(); \
 	friend struct Z_Construct_UClass_UFGUseState_NodeFullInventory_Statics; \
@@ -42,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_NodeFullInventory)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGUseState_NodeFullInventory(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGUseState_NodeFullInventory) \
@@ -55,7 +55,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGUseState_NodeFullInventory(UFGUseState_NodeFullInventory&&); \
@@ -66,35 +66,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGUseState_NodeFullInventory); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGUseState_NodeFullInventory)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_64_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_68_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_67_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_71_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_NodeFullInventory>();
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGUseState_NonConveyorResource(); \
 	friend struct Z_Construct_UClass_UFGUseState_NonConveyorResource_Statics; \
@@ -103,7 +103,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_NonConveyorResource)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGUseState_NonConveyorResource(); \
 	friend struct Z_Construct_UClass_UFGUseState_NonConveyorResource_Statics; \
@@ -112,7 +112,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_NonConveyorResource)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGUseState_NonConveyorResource(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGUseState_NonConveyorResource) \
@@ -125,7 +125,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGUseState_NonConveyorResource(UFGUseState_NonConveyorResource&&); \
@@ -136,33 +136,33 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGUseState_NonConveyorResource); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGUseState_NonConveyorResource)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_75_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_79_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_78_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_82_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_NonConveyorResource>();
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetResourceAmount) \
 	{ \
@@ -180,14 +180,6 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_NonConveyorReso
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execCanPlaceResourceExtractor) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->CanPlaceResourceExtractor(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execExtractResourceAndGiveToPlayer) \
 	{ \
 		P_GET_OBJECT(AFGCharacterPlayer,Z_Param_toPlayer); \
@@ -195,14 +187,6 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_NonConveyorReso
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->ExtractResourceAndGiveToPlayer(Z_Param_toPlayer,Z_Param_amount); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execIsOccupied) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->IsOccupied(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -214,44 +198,11 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_NonConveyorReso
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execSetIsOccupied) \
-	{ \
-		P_GET_UBOOL(Z_Param_occupied); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetIsOccupied(Z_Param_occupied); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execHasAnyResources) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->HasAnyResources(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetIsLonerNode) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->GetIsLonerNode(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetExtractionSpeedMultiplier) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=P_THIS->GetExtractionSpeedMultiplier(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetResourceClass) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TSubclassOf<UFGResourceDescriptor> *)Z_Param__Result=P_THIS->GetResourceClass(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -299,7 +250,7 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_NonConveyorReso
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetResourceAmount) \
 	{ \
@@ -317,14 +268,6 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_NonConveyorReso
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execCanPlaceResourceExtractor) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->CanPlaceResourceExtractor(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execExtractResourceAndGiveToPlayer) \
 	{ \
 		P_GET_OBJECT(AFGCharacterPlayer,Z_Param_toPlayer); \
@@ -332,14 +275,6 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_NonConveyorReso
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->ExtractResourceAndGiveToPlayer(Z_Param_toPlayer,Z_Param_amount); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execIsOccupied) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->IsOccupied(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -351,44 +286,11 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_NonConveyorReso
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execSetIsOccupied) \
-	{ \
-		P_GET_UBOOL(Z_Param_occupied); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetIsOccupied(Z_Param_occupied); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execHasAnyResources) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->HasAnyResources(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetIsLonerNode) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->GetIsLonerNode(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetExtractionSpeedMultiplier) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=P_THIS->GetExtractionSpeedMultiplier(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetResourceClass) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TSubclassOf<UFGResourceDescriptor> *)Z_Param__Result=P_THIS->GetResourceClass(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -436,7 +338,7 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_NonConveyorReso
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_EVENT_PARMS \
 	struct FGResourceNode_eventOnIsOccupiedChanged_Parms \
 	{ \
 		bool newIsOccupied; \
@@ -447,8 +349,8 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_NonConveyorReso
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGResourceNode(); \
 	friend struct Z_Construct_UClass_AFGResourceNode_Statics; \
@@ -458,7 +360,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGResourceNode*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGResourceNode(); \
 	friend struct Z_Construct_UClass_AFGResourceNode_Statics; \
@@ -468,7 +370,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGResourceNode*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGResourceNode(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGResourceNode) \
@@ -481,7 +383,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGResourceNode(AFGResourceNode&&); \
@@ -492,7 +394,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGResourceNode); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGResourceNode)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mResourceClass() { return STRUCT_OFFSET(AFGResourceNode, mResourceClass); } \
 	FORCEINLINE static uint32 __PPO__mPurity() { return STRUCT_OFFSET(AFGResourceNode, mPurity); } \
 	FORCEINLINE static uint32 __PPO__mAmount() { return STRUCT_OFFSET(AFGResourceNode, mAmount); } \
@@ -509,30 +411,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGResourceNode); \
 	FORCEINLINE static uint32 __PPO__mPurityTextArray() { return STRUCT_OFFSET(AFGResourceNode, mPurityTextArray); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_83_PROLOG \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_87_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_86_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_90_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

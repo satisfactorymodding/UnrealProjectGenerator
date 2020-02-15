@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+enum class EStackSize : uint8;
 class UFGResourceDescriptor;
 class AActor;
 struct FResourceDepositPackage;
@@ -32,6 +33,15 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemSettings>();
 
 #define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetStackSizeFromEnum) \
+	{ \
+		P_GET_ENUM(EStackSize,Z_Param_stackSize); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetStackSizeFromEnum(EStackSize(Z_Param_stackSize)); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetResourceDepositDataFromClass) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_desiredResourceClass); \
@@ -55,6 +65,15 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemSettings>();
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetStackSizeFromEnum) \
+	{ \
+		P_GET_ENUM(EStackSize,Z_Param_stackSize); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetStackSizeFromEnum(EStackSize(Z_Param_stackSize)); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetResourceDepositDataFromClass) \
 	{ \

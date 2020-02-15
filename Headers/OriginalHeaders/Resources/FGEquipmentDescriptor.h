@@ -3,6 +3,7 @@
 #pragma once
 
 #include "Resources/FGItemDescriptor.h"
+#include "FGEquipment.h" // I really want to get rid of this include, but removing it adds compile errors
 #include "FGEquipmentDescriptor.generated.h"
 
 /**
@@ -15,7 +16,7 @@ class FACTORYGAME_API UFGEquipmentDescriptor : public UFGItemDescriptor
 public:
 	/** Get the equipment that is linked to this descriptor. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Descriptor|Equipment" )
-	static TSubclassOf< class AFGEquipment > GetEquipmentClass( TSubclassOf< UFGItemDescriptor > inClass );
+	static TSubclassOf< class AFGEquipment > GetEquipmentClass( TSubclassOf< class UFGItemDescriptor > inClass );
 
 public:
 	/** The equipment that is linked to this descriptor. */

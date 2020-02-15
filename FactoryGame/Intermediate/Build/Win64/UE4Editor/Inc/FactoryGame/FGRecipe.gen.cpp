@@ -17,33 +17,78 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipe();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRecipe_GetDescriptorForRecipe();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRecipe_GetIngredients();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FItemAmount();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRecipe_GetManualManufacturingDuration();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRecipe_GetManufacturingDuration();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRecipe_GetProducedIn();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRecipe_GetProducts();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRecipe_GetRecipeName();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRecipe_IsRecipeAffordable();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCharacterPlayer_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRecipe_SetProduct();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRecipe_SortByName();
 // End Cross Module References
 	void UFGRecipe::StaticRegisterNativesUFGRecipe()
 	{
 		UClass* Class = UFGRecipe::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "GetDescriptorForRecipe", &UFGRecipe::execGetDescriptorForRecipe },
 			{ "GetIngredients", &UFGRecipe::execGetIngredients },
+			{ "GetManualManufacturingDuration", &UFGRecipe::execGetManualManufacturingDuration },
 			{ "GetManufacturingDuration", &UFGRecipe::execGetManufacturingDuration },
 			{ "GetProducedIn", &UFGRecipe::execGetProducedIn },
 			{ "GetProducts", &UFGRecipe::execGetProducts },
 			{ "GetRecipeName", &UFGRecipe::execGetRecipeName },
-			{ "GetRewardedRecipes", &UFGRecipe::execGetRewardedRecipes },
 			{ "IsRecipeAffordable", &UFGRecipe::execIsRecipeAffordable },
+#if WITH_EDITOR
+			{ "SetProduct", &UFGRecipe::execSetProduct },
+#endif // WITH_EDITOR
 			{ "SortByName", &UFGRecipe::execSortByName },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UFGRecipe_GetDescriptorForRecipe_Statics
+	{
+		struct FGRecipe_eventGetDescriptorForRecipe_Parms
+		{
+			TSubclassOf<UFGRecipe>  recipe;
+			TSubclassOf<UFGItemDescriptor>  ReturnValue;
+		};
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_recipe;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGRecipe_GetDescriptorForRecipe_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRecipe_eventGetDescriptorForRecipe_Parms, ReturnValue), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGRecipe_GetDescriptorForRecipe_Statics::NewProp_recipe = { "recipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRecipe_eventGetDescriptorForRecipe_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRecipe_GetDescriptorForRecipe_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRecipe_GetDescriptorForRecipe_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRecipe_GetDescriptorForRecipe_Statics::NewProp_recipe,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_GetDescriptorForRecipe_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Recipe" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
+		{ "ToolTip", "Get descriptor for recipe specified" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRecipe_GetDescriptorForRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRecipe, nullptr, "GetDescriptorForRecipe", sizeof(FGRecipe_eventGetDescriptorForRecipe_Parms), Z_Construct_UFunction_UFGRecipe_GetDescriptorForRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_GetDescriptorForRecipe_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRecipe_GetDescriptorForRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_GetDescriptorForRecipe_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGRecipe_GetDescriptorForRecipe()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRecipe_GetDescriptorForRecipe_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UFGRecipe_GetIngredients_Statics
 	{
@@ -71,9 +116,9 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_GetIngredients_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Recipe" },
+		{ "Category", "FactoryGame|Recipe" },
 		{ "ModuleRelativePath", "Public/FGRecipe.h" },
-		{ "ToolTip", "Used to get the ingredients in blueprint. @todo: Make return value a out value instead" },
+		{ "ToolTip", "Get the ingredients for this recipe." },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRecipe_GetIngredients_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRecipe, nullptr, "GetIngredients", sizeof(FGRecipe_eventGetIngredients_Parms), Z_Construct_UFunction_UFGRecipe_GetIngredients_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_GetIngredients_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRecipe_GetIngredients_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_GetIngredients_Statics::Function_MetaDataParams)) };
@@ -83,6 +128,44 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRecipe_GetIngredients_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGRecipe_GetManualManufacturingDuration_Statics
+	{
+		struct FGRecipe_eventGetManualManufacturingDuration_Parms
+		{
+			TSubclassOf<UFGRecipe>  inClass;
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRecipe_GetManualManufacturingDuration_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRecipe_eventGetManualManufacturingDuration_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGRecipe_GetManualManufacturingDuration_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRecipe_eventGetManualManufacturingDuration_Parms, inClass), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRecipe_GetManualManufacturingDuration_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRecipe_GetManualManufacturingDuration_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRecipe_GetManualManufacturingDuration_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_GetManualManufacturingDuration_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Recipe" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
+		{ "ToolTip", "Get the manual manufacturing duration." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRecipe_GetManualManufacturingDuration_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRecipe, nullptr, "GetManualManufacturingDuration", sizeof(FGRecipe_eventGetManualManufacturingDuration_Parms), Z_Construct_UFunction_UFGRecipe_GetManualManufacturingDuration_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_GetManualManufacturingDuration_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRecipe_GetManualManufacturingDuration_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_GetManualManufacturingDuration_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGRecipe_GetManualManufacturingDuration()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRecipe_GetManualManufacturingDuration_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -109,9 +192,9 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_GetManufacturingDuration_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Recipe" },
+		{ "Category", "FactoryGame|Recipe" },
 		{ "ModuleRelativePath", "Public/FGRecipe.h" },
-		{ "ToolTip", "Used to get the manufacturing duration in blueprint." },
+		{ "ToolTip", "Get the base manufacturing duration for this recipe." },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRecipe_GetManufacturingDuration_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRecipe, nullptr, "GetManufacturingDuration", sizeof(FGRecipe_eventGetManufacturingDuration_Parms), Z_Construct_UFunction_UFGRecipe_GetManufacturingDuration_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_GetManufacturingDuration_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRecipe_GetManufacturingDuration_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_GetManufacturingDuration_Statics::Function_MetaDataParams)) };
@@ -150,9 +233,9 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_GetProducedIn_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Recipe" },
+		{ "Category", "FactoryGame|Recipe" },
 		{ "ModuleRelativePath", "Public/FGRecipe.h" },
-		{ "ToolTip", "@todo: change return value to out variable. Used to get the produced in buildings in blueprint." },
+		{ "ToolTip", "Get which buildings/or build gun this recipe can be used in." },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRecipe_GetProducedIn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRecipe, nullptr, "GetProducedIn", sizeof(FGRecipe_eventGetProducedIn_Parms), Z_Construct_UFunction_UFGRecipe_GetProducedIn_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_GetProducedIn_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRecipe_GetProducedIn_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_GetProducedIn_Statics::Function_MetaDataParams)) };
@@ -200,10 +283,10 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_GetProducts_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Recipe" },
+		{ "Category", "FactoryGame|Recipe" },
 		{ "CPP_Default_allowChildRecipes", "false" },
 		{ "ModuleRelativePath", "Public/FGRecipe.h" },
-		{ "ToolTip", "Used to get the products in blueprint. @todo: Make return value a out value instead, @todo remove unused allowChildRecipes." },
+		{ "ToolTip", "Get the products for this recipe. @todo remove unused allowChildRecipes." },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRecipe_GetProducts_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRecipe, nullptr, "GetProducts", sizeof(FGRecipe_eventGetProducts_Parms), Z_Construct_UFunction_UFGRecipe_GetProducts_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_GetProducts_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRecipe_GetProducts_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_GetProducts_Statics::Function_MetaDataParams)) };
@@ -239,9 +322,9 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_GetRecipeName_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Recipe" },
+		{ "Category", "FactoryGame|Recipe" },
 		{ "ModuleRelativePath", "Public/FGRecipe.h" },
-		{ "ToolTip", "Used to get the recipe name in blueprint." },
+		{ "ToolTip", "Get the display name for this recipe." },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRecipe_GetRecipeName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRecipe, nullptr, "GetRecipeName", sizeof(FGRecipe_eventGetRecipeName_Parms), Z_Construct_UFunction_UFGRecipe_GetRecipeName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_GetRecipeName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRecipe_GetRecipeName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_GetRecipeName_Statics::Function_MetaDataParams)) };
@@ -251,49 +334,6 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRecipe_GetRecipeName_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes_Statics
-	{
-		struct FGRecipe_eventGetRewardedRecipes_Parms
-		{
-			TSubclassOf<UFGRecipe>  inClass;
-			TArray<TSubclassOf<UFGRecipe> > ReturnValue;
-		};
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ReturnValue_Inner;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRecipe_eventGetRewardedRecipes_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRecipe_eventGetRewardedRecipes_Parms, inClass), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes_Statics::NewProp_ReturnValue_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes_Statics::NewProp_inClass,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Recipe" },
-		{ "DeprecatedFunction", "" },
-		{ "DeprecationMessage", "MAM is rewritten, use the new system instead!" },
-		{ "ModuleRelativePath", "Public/FGRecipe.h" },
-		{ "ToolTip", "Used to get the products in blueprint. @todo Deprecated since 2018-10-23, but have been unused since MAM refactor." },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRecipe, nullptr, "GetRewardedRecipes", sizeof(FGRecipe_eventGetRewardedRecipes_Parms), Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -329,9 +369,9 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_IsRecipeAffordable_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Recipe" },
+		{ "Category", "FactoryGame|Recipe" },
 		{ "ModuleRelativePath", "Public/FGRecipe.h" },
-		{ "ToolTip", "Can the given player afford the recipe" },
+		{ "ToolTip", "Can the given player afford the recipe." },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRecipe_IsRecipeAffordable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRecipe, nullptr, "IsRecipeAffordable", sizeof(FGRecipe_eventIsRecipeAffordable_Parms), Z_Construct_UFunction_UFGRecipe_IsRecipeAffordable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_IsRecipeAffordable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRecipe_IsRecipeAffordable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_IsRecipeAffordable_Statics::Function_MetaDataParams)) };
@@ -344,6 +384,49 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 		}
 		return ReturnFunction;
 	}
+#if WITH_EDITOR
+	struct Z_Construct_UFunction_UFGRecipe_SetProduct_Statics
+	{
+		struct FGRecipe_eventSetProduct_Parms
+		{
+			TSubclassOf<UFGRecipe>  recipe;
+			TArray<FItemAmount> product;
+		};
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_product;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_product_Inner;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_recipe;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGRecipe_SetProduct_Statics::NewProp_product = { "product", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRecipe_eventSetProduct_Parms, product), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGRecipe_SetProduct_Statics::NewProp_product_Inner = { "product", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGRecipe_SetProduct_Statics::NewProp_recipe = { "recipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRecipe_eventSetProduct_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRecipe_SetProduct_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRecipe_SetProduct_Statics::NewProp_product,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRecipe_SetProduct_Statics::NewProp_product_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRecipe_SetProduct_Statics::NewProp_recipe,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_SetProduct_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Editor|Recipe" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
+		{ "ToolTip", "Sets the products produced from this recipe. Only for editor use" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRecipe_SetProduct_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRecipe, nullptr, "SetProduct", sizeof(FGRecipe_eventSetProduct_Parms), Z_Construct_UFunction_UFGRecipe_SetProduct_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_SetProduct_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x24022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRecipe_SetProduct_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_SetProduct_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGRecipe_SetProduct()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRecipe_SetProduct_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+#endif //WITH_EDITOR
 	struct Z_Construct_UFunction_UFGRecipe_SortByName_Statics
 	{
 		struct FGRecipe_eventSortByName_Parms
@@ -366,9 +449,9 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRecipe_SortByName_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Recipe" },
+		{ "Category", "FactoryGame|Recipe" },
 		{ "ModuleRelativePath", "Public/FGRecipe.h" },
-		{ "ToolTip", "Sort a array dependent on their names" },
+		{ "ToolTip", "Sort an array dependent on their name." },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRecipe_SortByName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRecipe, nullptr, "SortByName", sizeof(FGRecipe_eventSortByName_Parms), Z_Construct_UFunction_UFGRecipe_SortByName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_SortByName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRecipe_SortByName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRecipe_SortByName_Statics::Function_MetaDataParams)) };
@@ -397,6 +480,10 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mProducedIn;
 		static const UE4CodeGen_Private::FSoftClassPropertyParams NewProp_mProducedIn_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mManualManufacturingMultiplier_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mManualManufacturingMultiplier;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mManufactoringDuration_MetaData[];
 #endif
@@ -429,14 +516,18 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGRecipe_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGRecipe_GetIngredients, "GetIngredients" }, // 4029993028
-		{ &Z_Construct_UFunction_UFGRecipe_GetManufacturingDuration, "GetManufacturingDuration" }, // 1694024716
-		{ &Z_Construct_UFunction_UFGRecipe_GetProducedIn, "GetProducedIn" }, // 502630461
-		{ &Z_Construct_UFunction_UFGRecipe_GetProducts, "GetProducts" }, // 925976853
-		{ &Z_Construct_UFunction_UFGRecipe_GetRecipeName, "GetRecipeName" }, // 911879690
-		{ &Z_Construct_UFunction_UFGRecipe_GetRewardedRecipes, "GetRewardedRecipes" }, // 2416267019
-		{ &Z_Construct_UFunction_UFGRecipe_IsRecipeAffordable, "IsRecipeAffordable" }, // 1178674021
-		{ &Z_Construct_UFunction_UFGRecipe_SortByName, "SortByName" }, // 2303391373
+		{ &Z_Construct_UFunction_UFGRecipe_GetDescriptorForRecipe, "GetDescriptorForRecipe" }, // 1951184102
+		{ &Z_Construct_UFunction_UFGRecipe_GetIngredients, "GetIngredients" }, // 3335389319
+		{ &Z_Construct_UFunction_UFGRecipe_GetManualManufacturingDuration, "GetManualManufacturingDuration" }, // 987108211
+		{ &Z_Construct_UFunction_UFGRecipe_GetManufacturingDuration, "GetManufacturingDuration" }, // 3373529190
+		{ &Z_Construct_UFunction_UFGRecipe_GetProducedIn, "GetProducedIn" }, // 2988789635
+		{ &Z_Construct_UFunction_UFGRecipe_GetProducts, "GetProducts" }, // 252936886
+		{ &Z_Construct_UFunction_UFGRecipe_GetRecipeName, "GetRecipeName" }, // 2927523974
+		{ &Z_Construct_UFunction_UFGRecipe_IsRecipeAffordable, "IsRecipeAffordable" }, // 485781539
+#if WITH_EDITOR
+		{ &Z_Construct_UFunction_UFGRecipe_SetProduct, "SetProduct" }, // 1181023898
+#endif //WITH_EDITOR
+		{ &Z_Construct_UFunction_UFGRecipe_SortByName, "SortByName" }, // 1751231802
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRecipe_Statics::Class_MetaDataParams[] = {
@@ -459,6 +550,14 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGRecipe_Statics::NewProp_mProducedIn = { "mProducedIn", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRecipe, mProducedIn), METADATA_PARAMS(Z_Construct_UClass_UFGRecipe_Statics::NewProp_mProducedIn_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRecipe_Statics::NewProp_mProducedIn_MetaData)) };
 	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UClass_UFGRecipe_Statics::NewProp_mProducedIn_Inner = { "mProducedIn", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::SoftClass, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRecipe_Statics::NewProp_mManualManufacturingMultiplier_MetaData[] = {
+		{ "Category", "Recipe" },
+		{ "ModuleRelativePath", "Public/FGRecipe.h" },
+		{ "ToolTip", "The time it takes to produce the output." },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRecipe_Statics::NewProp_mManualManufacturingMultiplier = { "mManualManufacturingMultiplier", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRecipe, mManualManufacturingMultiplier), METADATA_PARAMS(Z_Construct_UClass_UFGRecipe_Statics::NewProp_mManualManufacturingMultiplier_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRecipe_Statics::NewProp_mManualManufacturingMultiplier_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRecipe_Statics::NewProp_mManufactoringDuration_MetaData[] = {
 		{ "Category", "Recipe" },
 		{ "ModuleRelativePath", "Public/FGRecipe.h" },
@@ -468,7 +567,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRecipe_Statics::NewProp_mManufactoringDuration = { "mManufactoringDuration", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRecipe, mManufactoringDuration), METADATA_PARAMS(Z_Construct_UClass_UFGRecipe_Statics::NewProp_mManufactoringDuration_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRecipe_Statics::NewProp_mManufactoringDuration_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRecipe_Statics::NewProp_mProduct_MetaData[] = {
-		{ "Category", "Rewards" },
+		{ "Category", "Recipe" },
 		{ "ModuleRelativePath", "Public/FGRecipe.h" },
 		{ "ToolTip", "The products produced from this recipe." },
 	};
@@ -508,6 +607,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGRecipe_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGRecipe_Statics::NewProp_mProducedIn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGRecipe_Statics::NewProp_mProducedIn_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGRecipe_Statics::NewProp_mManualManufacturingMultiplier,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGRecipe_Statics::NewProp_mManufactoringDuration,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGRecipe_Statics::NewProp_mProduct,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGRecipe_Statics::NewProp_mProduct_Inner,
@@ -543,7 +643,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRecipe, 524677784);
+	IMPLEMENT_CLASS(UFGRecipe, 672076792);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGRecipe>()
 	{
 		return UFGRecipe::StaticClass();

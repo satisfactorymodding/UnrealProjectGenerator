@@ -39,7 +39,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGSubsystemClasses_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGSubsystemClasses(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API UFGSubsystemClasses(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGSubsystemClasses) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGSubsystemClasses); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGSubsystemClasses); \
@@ -51,8 +51,6 @@ public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGSubsystemClasses_h_16_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGSubsystemClasses(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGSubsystemClasses(UFGSubsystemClasses&&); \
@@ -60,7 +58,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGSubsystemClasses); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGSubsystemClasses); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGSubsystemClasses)
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGSubsystemClasses)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGSubsystemClasses_h_16_PRIVATE_PROPERTY_OFFSET

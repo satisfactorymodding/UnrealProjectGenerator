@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSignal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadSignal, 3132419277);
+	IMPLEMENT_CLASS(AFGBuildableRailroadSignal, 2611683714);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableRailroadSignal>()
 	{
 		return AFGBuildableRailroadSignal::StaticClass();

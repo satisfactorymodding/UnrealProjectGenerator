@@ -193,7 +193,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorLiftHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopTransform_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Hologram/FGConveyorLiftHologram.h" },
-		{ "ToolTip", "Transform of the top part of the lift." },
+		{ "ToolTip", ", CustomSerialization" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopTransform = { "mTopTransform", "OnRep_TopTransform", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorLiftHologram, mTopTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopTransform_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopTransform_MetaData)) };
@@ -260,7 +260,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorLiftHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorLiftHologram, 3888969806);
+	IMPLEMENT_CLASS(AFGConveyorLiftHologram, 1046548462);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGConveyorLiftHologram>()
 	{
 		return AFGConveyorLiftHologram::StaticClass();

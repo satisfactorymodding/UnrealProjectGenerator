@@ -1,7 +1,6 @@
 #pragma once
 
 #include "FGHotbarShortcut.h"
-#include "FGRecipe.h"
 #include "FGRecipeShortcut.generated.h"
 
 UCLASS()

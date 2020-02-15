@@ -13,7 +13,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_AggroTargetAddedSignature__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_AggroTargetRemovedSignature__DelegateSignature();
-	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_InventoryResized__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_GetItemDropLocation__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnItemAdded__DelegateSignature();
@@ -31,18 +30,10 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_RotationDoneDelegate__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_SplineModeChangedDelegate__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnDismantleRefundsChanged__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnPendingDismantleActorListChanged__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnMultiDismantleStateChanged__DelegateSignature();
-	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnGamePhaseUpdated__DelegateSignature();
-	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedNew__DelegateSignature();
-	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature();
-	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature();
-	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature();
-	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature();
-	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature();
-	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_UnlockMoreInventorySlots__DelegateSignature();
-	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_VisitedMapAreaDelegate__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationAdded__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationRemoved__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationUpdated__DelegateSignature();
@@ -50,17 +41,33 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationUpdatedMapShow__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnAdminEnumerateSaveGamesComplete__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnAdminDeleteSaveGameComplete__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnAdminSaveGameComplete__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_EffectDoneDelegate__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_CentralStorageAddedOrRemovedDelegate__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_ChatMessageAdded__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnGamePhaseUpdated__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnJoinSessionStateChanged__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnNewError__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnNatTypeUpdated__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedNew__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_ResearchStateChangedDelegate__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_ResearchTreeUnlocked__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_UnlockMoreInventorySlots__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_VisitedMapAreaDelegate__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_ArachnophobiaModeChangedDelegate__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OptionUpdated__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_DeathDelegate__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_TakeAnyDamageDelegate__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_AdjustDamageDelegate__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_HealDelegate__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnCreateSessionStateChanged__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnFriendsListQueried__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnFriendsListUpdated__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnFriendPresenceUpdated__DelegateSignature();
@@ -99,7 +106,6 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 			static UObject* (*const SingletonFuncArray[])() = {
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_AggroTargetAddedSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_AggroTargetRemovedSignature__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_InventoryResized__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_GetItemDropLocation__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnItemAdded__DelegateSignature,
@@ -117,18 +123,10 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_RotationDoneDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_SplineModeChangedDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnDismantleRefundsChanged__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnPendingDismantleActorListChanged__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnMultiDismantleStateChanged__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnGamePhaseUpdated__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedNew__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_UnlockMoreInventorySlots__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_VisitedMapAreaDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationAdded__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationRemoved__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationUpdated__DelegateSignature,
@@ -136,17 +134,33 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationUpdatedMapShow__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnAdminEnumerateSaveGamesComplete__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnAdminDeleteSaveGameComplete__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnAdminSaveGameComplete__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_EffectDoneDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_CentralStorageAddedOrRemovedDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_ChatMessageAdded__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnGamePhaseUpdated__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnJoinSessionStateChanged__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnNewError__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnNatTypeUpdated__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedNew__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_ResearchStateChangedDelegate__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_ResearchTreeUnlocked__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_UnlockMoreInventorySlots__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_VisitedMapAreaDelegate__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_ArachnophobiaModeChangedDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OptionUpdated__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_DeathDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_TakeAnyDamageDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_AdjustDamageDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_HealDelegate__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnCreateSessionStateChanged__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnFriendsListQueried__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnFriendsListUpdated__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnFriendPresenceUpdated__DelegateSignature,
@@ -183,8 +197,8 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 				SingletonFuncArray,
 				ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x587E76E3,
-				0xA09AAE3D,
+				0x22A96D11,
+				0xA042B373,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

@@ -123,6 +123,14 @@ enum class EFGColorGunTargetType : uint8;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetNumColorSlotsExposedToPlayers) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(uint8*)Z_Param__Result=P_THIS->GetNumColorSlotsExposedToPlayers(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetMaxNumColorSlots) \
 	{ \
 		P_FINISH; \
@@ -260,6 +268,14 @@ enum class EFGColorGunTargetType : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->SetPrimaryColorForSlot(Z_Param_slotIndex,Z_Param_newColor); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNumColorSlotsExposedToPlayers) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(uint8*)Z_Param__Result=P_THIS->GetNumColorSlotsExposedToPlayers(); \
 		P_NATIVE_END; \
 	} \
  \

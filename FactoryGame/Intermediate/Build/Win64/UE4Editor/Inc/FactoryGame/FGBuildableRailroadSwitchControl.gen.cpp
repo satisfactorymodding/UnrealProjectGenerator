@@ -240,7 +240,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSwitchControl() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadSwitchControl, 4253180927);
+	IMPLEMENT_CLASS(AFGBuildableRailroadSwitchControl, 1704939127);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableRailroadSwitchControl>()
 	{
 		return AFGBuildableRailroadSwitchControl::StaticClass();

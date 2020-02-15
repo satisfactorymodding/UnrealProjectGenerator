@@ -129,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlanet() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlanet, 3013745046);
+	IMPLEMENT_CLASS(AFGPlanet, 3557353521);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlanet>()
 	{
 		return AFGPlanet::StaticClass();

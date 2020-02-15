@@ -17,6 +17,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual void LostSignificance_Implementation() {}; \
 	virtual void GainedSignificance_Implementation() {}; \
  \
+	DECLARE_FUNCTION(execLostSignificance_Native) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->LostSignificance_Native(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGainedSignificance_Native) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GainedSignificance_Native(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetSignificanceRange) \
 	{ \
 		P_FINISH; \
@@ -30,6 +46,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(float*)Z_Param__Result=P_THIS->GetSignificanceBias(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetupForSignificance) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetupForSignificance(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -54,6 +78,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual void LostSignificance_Implementation() {}; \
 	virtual void GainedSignificance_Implementation() {}; \
  \
+	DECLARE_FUNCTION(execLostSignificance_Native) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->LostSignificance_Native(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGainedSignificance_Native) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GainedSignificance_Native(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetSignificanceRange) \
 	{ \
 		P_FINISH; \
@@ -67,6 +107,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(float*)Z_Param__Result=P_THIS->GetSignificanceBias(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetupForSignificance) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetupForSignificance(); \
 		P_NATIVE_END; \
 	} \
  \

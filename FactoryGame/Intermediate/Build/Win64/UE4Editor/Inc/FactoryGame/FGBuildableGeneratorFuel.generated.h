@@ -10,6 +10,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UObject;
 class UFGItemDescriptor;
+enum class EResourceForm : uint8;
 class UFGInventoryComponent;
 #ifdef FACTORYGAME_FGBuildableGeneratorFuel_generated_h
 #error "FGBuildableGeneratorFuel.generated.h already included, missing '#pragma once' in FGBuildableGeneratorFuel.h"
@@ -36,6 +37,14 @@ class UFGInventoryComponent;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetSupplementalResourceClass) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TSubclassOf<UFGItemDescriptor> *)Z_Param__Result=P_THIS->GetSupplementalResourceClass(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetAvailableFuelClasses) \
 	{ \
 		P_FINISH; \
@@ -52,11 +61,59 @@ class UFGInventoryComponent;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetSupplementalAmount) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetSupplementalAmount(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetFuelAmount) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(float*)Z_Param__Result=P_THIS->GetFuelAmount(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetSupplementalConsumptionRateMaximum) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetSupplementalConsumptionRateMaximum(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetSupplementalConsumptionRateCurrent) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetSupplementalConsumptionRateCurrent(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetRequiresSupplementalResource) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetRequiresSupplementalResource(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasSuppleentalResource) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->HasSuppleentalResource(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFuelResourceForm) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(EResourceForm*)Z_Param__Result=P_THIS->GetFuelResourceForm(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -73,6 +130,15 @@ class UFGInventoryComponent;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(UFGInventoryComponent**)Z_Param__Result=P_THIS->GetFuelInventory(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsValidSupplementalResource) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_resource); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsValidSupplementalResource(Z_Param_resource); \
 		P_NATIVE_END; \
 	} \
  \
@@ -106,6 +172,14 @@ class UFGInventoryComponent;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetSupplementalResourceClass) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TSubclassOf<UFGItemDescriptor> *)Z_Param__Result=P_THIS->GetSupplementalResourceClass(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetAvailableFuelClasses) \
 	{ \
 		P_FINISH; \
@@ -122,11 +196,59 @@ class UFGInventoryComponent;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetSupplementalAmount) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetSupplementalAmount(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetFuelAmount) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(float*)Z_Param__Result=P_THIS->GetFuelAmount(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetSupplementalConsumptionRateMaximum) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetSupplementalConsumptionRateMaximum(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetSupplementalConsumptionRateCurrent) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetSupplementalConsumptionRateCurrent(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetRequiresSupplementalResource) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetRequiresSupplementalResource(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasSuppleentalResource) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->HasSuppleentalResource(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFuelResourceForm) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(EResourceForm*)Z_Param__Result=P_THIS->GetFuelResourceForm(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -143,6 +265,15 @@ class UFGInventoryComponent;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(UFGInventoryComponent**)Z_Param__Result=P_THIS->GetFuelInventory(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsValidSupplementalResource) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_resource); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsValidSupplementalResource(Z_Param_resource); \
 		P_NATIVE_END; \
 	} \
  \
@@ -203,9 +334,18 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableGeneratorFuel); \
 	FORCEINLINE static uint32 __PPO__mFuelClasses_DEPRECATED() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mFuelClasses_DEPRECATED); } \
 	FORCEINLINE static uint32 __PPO__mDefaultFuelClasses() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mDefaultFuelClasses); } \
 	FORCEINLINE static uint32 __PPO__mAvailableFuelClasses() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mAvailableFuelClasses); } \
+	FORCEINLINE static uint32 __PPO__mFuelResourceForm() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mFuelResourceForm); } \
+	FORCEINLINE static uint32 __PPO__mRequiresSupplementalResource() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mRequiresSupplementalResource); } \
+	FORCEINLINE static uint32 __PPO__mSupplementalResourceClass() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mSupplementalResourceClass); } \
+	FORCEINLINE static uint32 __PPO__mSupplementalLoadAmount() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mSupplementalLoadAmount); } \
+	FORCEINLINE static uint32 __PPO__mSupplementalToPowerRatio() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mSupplementalToPowerRatio); } \
 	FORCEINLINE static uint32 __PPO__mFuelInventory() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mFuelInventory); } \
+	FORCEINLINE static uint32 __PPO__mCachedInputConnections() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mCachedInputConnections); } \
+	FORCEINLINE static uint32 __PPO__mCachedPipeInputConnections() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mCachedPipeInputConnections); } \
 	FORCEINLINE static uint32 __PPO__mCurrentFuelAmount() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mCurrentFuelAmount); } \
-	FORCEINLINE static uint32 __PPO__mHasFuleCached() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mHasFuleCached); } \
+	FORCEINLINE static uint32 __PPO__mCurrentSupplementalAmount() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mCurrentSupplementalAmount); } \
+	FORCEINLINE static uint32 __PPO__mHasFuelCached() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mHasFuelCached); } \
+	FORCEINLINE static uint32 __PPO__mHasSupplementalCached() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mHasSupplementalCached); } \
 	FORCEINLINE static uint32 __PPO__mCurrentFuelClass() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mCurrentFuelClass); }
 
 

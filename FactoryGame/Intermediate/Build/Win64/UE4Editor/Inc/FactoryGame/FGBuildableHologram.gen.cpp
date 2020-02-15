@@ -22,7 +22,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHologram() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureComponents();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGFactoryLegsComponent_NoRegister();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 // End Cross Module References
 	static FName NAME_AFGBuildableHologram_ReceiveConfigureActor = FName(TEXT("ReceiveConfigureActor"));
 	void AFGBuildableHologram::ReceiveConfigureActor(AFGBuildable* inBuildable)
@@ -58,7 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureActor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Hologram" },
 		{ "ModuleRelativePath", "Public/Hologram/FGBuildableHologram.h" },
-		{ "ToolTip", "Configure the actor with values from the hologram here.\n@note DO NOT TOUCH COMPONENTS HERE as they'll be overwritten! Use ConfigureComponents for that" },
+		{ "ToolTip", "For notifying the blueprint. Called after the native equivalent.\nConfigure function: Configuring the actor created from the hologram when executed.\nConfigure functions are called in the following order and can thus override each others steps. Be careful:\n               -   ConfigureActor( buildable );\n               -   ConfigureBuildEffect( buildable );\n               -   //Perform the actual spawning in the world\n               -   ConfigureComponents( buildable );\n               -   ConfigureSnappedBuilding( buildable );\n               -   //Begin play called on the buildable\n               -   ConfigureSnappedPower( buildable );\n@param inBuildable - The resulting buildable placed in the world that we are to configure before it's finished.\n@note DO NOT TOUCH COMPONENTS HERE as they'll be overwritten! Use ConfigureComponents for that" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableHologram, nullptr, "ReceiveConfigureActor", sizeof(FGBuildableHologram_eventReceiveConfigureActor_Parms), Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureActor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureActor_Statics::Function_MetaDataParams)) };
@@ -88,7 +87,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureComponents_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Hologram" },
 		{ "ModuleRelativePath", "Public/Hologram/FGBuildableHologram.h" },
-		{ "ToolTip", "Configure the actor's components with values from the hologram here.\n@note This is a good place to initialize snapped connections etc." },
+		{ "ToolTip", "For notifying the blueprint. Called after the native equivalent.\nConfigure function: Configuring the actor's components created from the hologram when executed.\nConfigure functions are called in the following order and can thus override each others steps. Be careful:\n               -   ConfigureActor( buildable );\n               -   ConfigureBuildEffect( buildable );\n               -   //Perform the actual spawning in the world\n               -   ConfigureComponents( buildable );\n               -   ConfigureSnappedBuilding( buildable );\n               -   //Begin play called on the buildable\n               -   ConfigureSnappedPower( buildable );\n@param inBuildable - The resulting buildable placed in the world that we are to configure before it's finished.\n@note This is a good place to initialize snapped connections etc." },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureComponents_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableHologram, nullptr, "ReceiveConfigureComponents", sizeof(FGBuildableHologram_eventReceiveConfigureComponents_Parms), Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureComponents_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureComponents_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureComponents_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureComponents_Statics::Function_MetaDataParams)) };
@@ -124,10 +123,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHologram() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMaxPlacementFloorAngle_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMaxPlacementFloorAngle;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBuildableClass_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mBuildableClass;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -137,8 +132,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHologram() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableHologram_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureActor, "ReceiveConfigureActor" }, // 4233319649
-		{ &Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureComponents, "ReceiveConfigureComponents" }, // 3705750634
+		{ &Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureActor, "ReceiveConfigureActor" }, // 2101905963
+		{ &Z_Construct_UFunction_AFGBuildableHologram_ReceiveConfigureComponents, "ReceiveConfigureComponents" }, // 1988210008
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableHologram_Statics::Class_MetaDataParams[] = {
@@ -175,18 +170,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHologram() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mMaxPlacementFloorAngle = { "mMaxPlacementFloorAngle", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableHologram, mMaxPlacementFloorAngle), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mMaxPlacementFloorAngle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mMaxPlacementFloorAngle_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mBuildableClass_MetaData[] = {
-		{ "ModuleRelativePath", "Public/Hologram/FGBuildableHologram.h" },
-		{ "ToolTip", "The class for the buildable this hologram wants to construct. Set on spawn." },
-	};
-#endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mBuildableClass = { "mBuildableClass", nullptr, (EPropertyFlags)0x0024080000000020, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableHologram, mBuildableClass), Z_Construct_UClass_AFGBuildable_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mBuildableClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mBuildableClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableHologram_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mClearanceBox,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mLegs,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mMaxPlacementFloorAngle,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mBuildableClass,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGBuildableHologram_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFGBuildableHologram>::IsAbstract,
@@ -215,7 +202,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableHologram, 1585658907);
+	IMPLEMENT_CLASS(AFGBuildableHologram, 2910067844);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableHologram>()
 	{
 		return AFGBuildableHologram::StaticClass();

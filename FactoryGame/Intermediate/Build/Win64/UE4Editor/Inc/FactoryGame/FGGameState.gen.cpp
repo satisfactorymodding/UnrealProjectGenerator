@@ -14,8 +14,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 // Cross Module References
-	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_VisitedMapAreaDelegate__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_VisitedMapAreaDelegate__DelegateSignature();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGMapArea_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGGameState_NoRegister();
@@ -37,6 +38,8 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGTutorialIntroManager_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_GetVisitedMapAreas();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_HasInitalTradingPostLandAnimPlayed();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_IsMapAreaVisisted();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_IsSpaceElevatorBuilt();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_IsTradingPostBuilt();
@@ -44,6 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCharacterPlayer_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlot();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_OnRep_MapAreaVisited();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_OnRep_PlannedRestartTime();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_SendMessageToAllPlayers();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGMessageBase_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_SendMessageToPlayer();
@@ -55,8 +59,9 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_SetHasInitalTradingPostLandAnimPlayed();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_SetIsSpaceElevatorBuilt();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGResourceSinkSubsystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGUnlockSubsystem_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGPipeSubsystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCentralStorageSubsystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGChatManager_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGRadioactivitySubsystem_NoRegister();
@@ -69,6 +74,38 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipe_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveInterface_NoRegister();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature_Statics
+	{
+		struct _Script_FactoryGame_eventOnRestartTimeNotification_Parms
+		{
+			float timeLeft;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_timeLeft;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature_Statics::NewProp_timeLeft = { "timeLeft", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventOnRestartTimeNotification_Parms, timeLeft), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature_Statics::NewProp_timeLeft,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnRestartTimeNotification__DelegateSignature", sizeof(_Script_FactoryGame_eventOnRestartTimeNotification_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UDelegateFunction_FactoryGame_VisitedMapAreaDelegate__DelegateSignature_Statics
 	{
 		struct _Script_FactoryGame_eventVisitedMapAreaDelegate_Parms
@@ -125,12 +162,14 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 			{ "GetTutorialIntroManager", &AFGGameState::execGetTutorialIntroManager },
 			{ "GetVisitedMapAreas", &AFGGameState::execGetVisitedMapAreas },
 			{ "HasInitalTradingPostLandAnimPlayed", &AFGGameState::execHasInitalTradingPostLandAnimPlayed },
+			{ "IsItemEverPickedUp", &AFGGameState::execIsItemEverPickedUp },
 			{ "IsMapAreaVisisted", &AFGGameState::execIsMapAreaVisisted },
 			{ "IsSpaceElevatorBuilt", &AFGGameState::execIsSpaceElevatorBuilt },
 			{ "IsTradingPostBuilt", &AFGGameState::execIsTradingPostBuilt },
 			{ "NotifyPlayerAdded", &AFGGameState::execNotifyPlayerAdded },
 			{ "OnRep_BuildingColorSlot", &AFGGameState::execOnRep_BuildingColorSlot },
 			{ "OnRep_MapAreaVisited", &AFGGameState::execOnRep_MapAreaVisited },
+			{ "OnRep_PlannedRestartTime", &AFGGameState::execOnRep_PlannedRestartTime },
 			{ "SendMessageToAllPlayers", &AFGGameState::execSendMessageToAllPlayers },
 			{ "SendMessageToPlayer", &AFGGameState::execSendMessageToPlayer },
 			{ "SetAndReplicateBuildingColorInSlot", &AFGGameState::execSetAndReplicateBuildingColorInSlot },
@@ -160,7 +199,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_GetActorRepresentationManager_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Representation" },
+		{ "Category", "FactoryGame|Representation" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use global getter instead" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
@@ -201,7 +240,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_GetCheatNoCost_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Cheat" },
+		{ "Category", "FactoryGame|Cheat" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 		{ "ToolTip", "Getter for NoCost" },
 	};
@@ -240,7 +279,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_GetCheatNoPower_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Cheat" },
+		{ "Category", "FactoryGame|Cheat" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 		{ "ToolTip", "Getter for NoPower" },
 	};
@@ -274,7 +313,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_GetGamePhaseManager_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Game Phase" },
+		{ "Category", "FactoryGame|Game Phase" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use global getter instead" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
@@ -310,7 +349,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_GetResearchManager_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Research" },
+		{ "Category", "FactoryGame|Research" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecatedMessage", "Use global getter instead" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
@@ -346,7 +385,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_GetSchematicManager_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Schematic" },
+		{ "Category", "FactoryGame|Schematic" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use global getter instead" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
@@ -382,7 +421,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_GetSessionName_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Session" },
+		{ "Category", "FactoryGame|Session" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 	};
 #endif
@@ -415,7 +454,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_GetTotalPlayDuration_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
+		{ "Category", "FactoryGame|Save" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 		{ "ToolTip", "The total time that has been played, including previous saves\n@note this will return wrong values between PreSave and PostSave." },
 	};
@@ -449,7 +488,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_GetTutorialIntroManager_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Tutorial Intro" },
+		{ "Category", "FactoryGame|Tutorial Intro" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use global getter instead" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
@@ -488,7 +527,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_GetVisitedMapAreas_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Map Area" },
+		{ "Category", "FactoryGame|Map Area" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 		{ "ToolTip", "Gives you all the visited map areas on the current level" },
 	};
@@ -527,7 +566,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_HasInitalTradingPostLandAnimPlayed_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Trading Post" },
+		{ "Category", "FactoryGame|Trading Post" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 		{ "ToolTip", "Have we played the initial trading post land anim?" },
 	};
@@ -539,6 +578,49 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGGameState_HasInitalTradingPostLandAnimPlayed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp_Statics
+	{
+		struct FGGameState_eventIsItemEverPickedUp_Parms
+		{
+			TSubclassOf<UFGItemDescriptor>  itemClass;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_itemClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGGameState_eventIsItemEverPickedUp_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGGameState_eventIsItemEverPickedUp_Parms), &Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp_Statics::NewProp_itemClass = { "itemClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGGameState_eventIsItemEverPickedUp_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp_Statics::NewProp_itemClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Item" },
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+		{ "ToolTip", "return true if we have picked up and item of the given item class and it is marked to be remembered when picked up" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGGameState, nullptr, "IsItemEverPickedUp", sizeof(FGGameState_eventIsItemEverPickedUp_Parms), Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -570,7 +652,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_IsMapAreaVisisted_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Map Area" },
+		{ "Category", "FactoryGame|Map Area" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 		{ "ToolTip", "Returns true if any of the players has visited the passed area" },
 	};
@@ -609,7 +691,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_IsSpaceElevatorBuilt_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Tow Truck" },
+		{ "Category", "FactoryGame|Tow Truck" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 		{ "ToolTip", "Is a towtruck built? Works on both client and server" },
 	};
@@ -648,7 +730,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_IsTradingPostBuilt_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Trading Post" },
+		{ "Category", "FactoryGame|Trading Post" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 		{ "ToolTip", "Is a trading post built? Works on both client and server" },
 	};
@@ -740,6 +822,29 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGGameState_OnRep_PlannedRestartTime_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_OnRep_PlannedRestartTime_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+		{ "ToolTip", "Restart time has been replicated, recheck if the time has been updated" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGGameState_OnRep_PlannedRestartTime_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGGameState, nullptr, "OnRep_PlannedRestartTime", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGGameState_OnRep_PlannedRestartTime_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGGameState_OnRep_PlannedRestartTime_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGGameState_OnRep_PlannedRestartTime()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGGameState_OnRep_PlannedRestartTime_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGGameState_SendMessageToAllPlayers_Statics
 	{
 		struct FGGameState_eventSendMessageToAllPlayers_Parms
@@ -759,7 +864,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_SendMessageToAllPlayers_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Message" },
+		{ "Category", "FactoryGame|Message" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 		{ "ToolTip", "Sends message to all players, will only be called on clients" },
 	};
@@ -797,7 +902,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_SendMessageToPlayer_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Message" },
+		{ "Category", "FactoryGame|Message" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 		{ "ToolTip", "Sends message to specified player, will only be called on clients" },
 	};
@@ -870,7 +975,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_SetCheatNoCost_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Cheat" },
+		{ "Category", "FactoryGame|Cheat" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 		{ "ToolTip", "Setter for no cost" },
 	};
@@ -909,7 +1014,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_SetCheatNoPower_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Cheat" },
+		{ "Category", "FactoryGame|Cheat" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 		{ "ToolTip", "Setter for no power" },
 	};
@@ -933,7 +1038,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_SetHasInitalTradingPostLandAnimPlayed_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Trading Post" },
+		{ "Category", "FactoryGame|Trading Post" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 		{ "ToolTip", "Set if the trading post is built or not" },
 	};
@@ -972,7 +1077,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_SetIsSpaceElevatorBuilt_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Tow Truck" },
+		{ "Category", "FactoryGame|Tow Truck" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 		{ "ToolTip", "Set if the trading post is built or not" },
 	};
@@ -999,27 +1104,6 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBuildingColorSlots_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mBuildingColorSlots;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mForceAddHubPartOnSpawn_MetaData[];
-#endif
-		static void NewProp_mForceAddHubPartOnSpawn_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mForceAddHubPartOnSpawn;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mReplicatedSessionName_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_mReplicatedSessionName;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPlayDurationWhenLoaded_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mPlayDurationWhenLoaded;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mHubPartClass_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mHubPartClass;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mIsSpaceElevatorBuilt_MetaData[];
 #endif
 		static void NewProp_mIsSpaceElevatorBuilt_SetBit(void* Obj);
@@ -1045,14 +1129,56 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		static void NewProp_mCheatNoCost_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mCheatNoCost;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mForceAddHubPartOnSpawn_MetaData[];
+#endif
+		static void NewProp_mForceAddHubPartOnSpawn_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mForceAddHubPartOnSpawn;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mHubPartClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mHubPartClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mOnRestartTimeNotification_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_mOnRestartTimeNotification;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPlannedRestartTime_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mPlannedRestartTime;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBuildingColorSlots_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mBuildingColorSlots;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mReplicatedSessionName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_mReplicatedSessionName;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPlayDurationWhenLoaded_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mPlayDurationWhenLoaded;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPickedUpItems_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mPickedUpItems;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mPickedUpItems_Inner;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mVisitedMapAreas_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mVisitedMapAreas;
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mVisitedMapAreas_Inner;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mResourceSinkSubsystem_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mResourceSinkSubsystem;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mUnlockSubsystem_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mUnlockSubsystem;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPipeSubsystem_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mPipeSubsystem;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCentralStorageSubsystem_MetaData[];
 #endif
@@ -1136,30 +1262,32 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGGameState_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGGameState_GetActorRepresentationManager, "GetActorRepresentationManager" }, // 3597968551
-		{ &Z_Construct_UFunction_AFGGameState_GetCheatNoCost, "GetCheatNoCost" }, // 1405040928
-		{ &Z_Construct_UFunction_AFGGameState_GetCheatNoPower, "GetCheatNoPower" }, // 3038235252
-		{ &Z_Construct_UFunction_AFGGameState_GetGamePhaseManager, "GetGamePhaseManager" }, // 1942731890
-		{ &Z_Construct_UFunction_AFGGameState_GetResearchManager, "GetResearchManager" }, // 4027131027
-		{ &Z_Construct_UFunction_AFGGameState_GetSchematicManager, "GetSchematicManager" }, // 3832939478
-		{ &Z_Construct_UFunction_AFGGameState_GetSessionName, "GetSessionName" }, // 1886589640
-		{ &Z_Construct_UFunction_AFGGameState_GetTotalPlayDuration, "GetTotalPlayDuration" }, // 1898580291
-		{ &Z_Construct_UFunction_AFGGameState_GetTutorialIntroManager, "GetTutorialIntroManager" }, // 3224681243
-		{ &Z_Construct_UFunction_AFGGameState_GetVisitedMapAreas, "GetVisitedMapAreas" }, // 3990138401
-		{ &Z_Construct_UFunction_AFGGameState_HasInitalTradingPostLandAnimPlayed, "HasInitalTradingPostLandAnimPlayed" }, // 699923917
-		{ &Z_Construct_UFunction_AFGGameState_IsMapAreaVisisted, "IsMapAreaVisisted" }, // 3568341896
-		{ &Z_Construct_UFunction_AFGGameState_IsSpaceElevatorBuilt, "IsSpaceElevatorBuilt" }, // 3910415062
-		{ &Z_Construct_UFunction_AFGGameState_IsTradingPostBuilt, "IsTradingPostBuilt" }, // 2344534602
+		{ &Z_Construct_UFunction_AFGGameState_GetActorRepresentationManager, "GetActorRepresentationManager" }, // 3333218211
+		{ &Z_Construct_UFunction_AFGGameState_GetCheatNoCost, "GetCheatNoCost" }, // 1503578727
+		{ &Z_Construct_UFunction_AFGGameState_GetCheatNoPower, "GetCheatNoPower" }, // 3103391122
+		{ &Z_Construct_UFunction_AFGGameState_GetGamePhaseManager, "GetGamePhaseManager" }, // 3450059651
+		{ &Z_Construct_UFunction_AFGGameState_GetResearchManager, "GetResearchManager" }, // 180698605
+		{ &Z_Construct_UFunction_AFGGameState_GetSchematicManager, "GetSchematicManager" }, // 402790479
+		{ &Z_Construct_UFunction_AFGGameState_GetSessionName, "GetSessionName" }, // 2498391708
+		{ &Z_Construct_UFunction_AFGGameState_GetTotalPlayDuration, "GetTotalPlayDuration" }, // 2387762014
+		{ &Z_Construct_UFunction_AFGGameState_GetTutorialIntroManager, "GetTutorialIntroManager" }, // 1665897507
+		{ &Z_Construct_UFunction_AFGGameState_GetVisitedMapAreas, "GetVisitedMapAreas" }, // 2693404700
+		{ &Z_Construct_UFunction_AFGGameState_HasInitalTradingPostLandAnimPlayed, "HasInitalTradingPostLandAnimPlayed" }, // 1025290559
+		{ &Z_Construct_UFunction_AFGGameState_IsItemEverPickedUp, "IsItemEverPickedUp" }, // 2272998054
+		{ &Z_Construct_UFunction_AFGGameState_IsMapAreaVisisted, "IsMapAreaVisisted" }, // 196356886
+		{ &Z_Construct_UFunction_AFGGameState_IsSpaceElevatorBuilt, "IsSpaceElevatorBuilt" }, // 562389222
+		{ &Z_Construct_UFunction_AFGGameState_IsTradingPostBuilt, "IsTradingPostBuilt" }, // 625526960
 		{ &Z_Construct_UFunction_AFGGameState_NotifyPlayerAdded, "NotifyPlayerAdded" }, // 1436631101
 		{ &Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlot, "OnRep_BuildingColorSlot" }, // 858052387
 		{ &Z_Construct_UFunction_AFGGameState_OnRep_MapAreaVisited, "OnRep_MapAreaVisited" }, // 1471420699
-		{ &Z_Construct_UFunction_AFGGameState_SendMessageToAllPlayers, "SendMessageToAllPlayers" }, // 1969352955
-		{ &Z_Construct_UFunction_AFGGameState_SendMessageToPlayer, "SendMessageToPlayer" }, // 1447665546
+		{ &Z_Construct_UFunction_AFGGameState_OnRep_PlannedRestartTime, "OnRep_PlannedRestartTime" }, // 4057503137
+		{ &Z_Construct_UFunction_AFGGameState_SendMessageToAllPlayers, "SendMessageToAllPlayers" }, // 2388771310
+		{ &Z_Construct_UFunction_AFGGameState_SendMessageToPlayer, "SendMessageToPlayer" }, // 2762689636
 		{ &Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot, "SetAndReplicateBuildingColorInSlot" }, // 2126943025
-		{ &Z_Construct_UFunction_AFGGameState_SetCheatNoCost, "SetCheatNoCost" }, // 1106232334
-		{ &Z_Construct_UFunction_AFGGameState_SetCheatNoPower, "SetCheatNoPower" }, // 3379788884
-		{ &Z_Construct_UFunction_AFGGameState_SetHasInitalTradingPostLandAnimPlayed, "SetHasInitalTradingPostLandAnimPlayed" }, // 2641072986
-		{ &Z_Construct_UFunction_AFGGameState_SetIsSpaceElevatorBuilt, "SetIsSpaceElevatorBuilt" }, // 1687059496
+		{ &Z_Construct_UFunction_AFGGameState_SetCheatNoCost, "SetCheatNoCost" }, // 1355687342
+		{ &Z_Construct_UFunction_AFGGameState_SetCheatNoPower, "SetCheatNoPower" }, // 4030225188
+		{ &Z_Construct_UFunction_AFGGameState_SetHasInitalTradingPostLandAnimPlayed, "SetHasInitalTradingPostLandAnimPlayed" }, // 3082713072
+		{ &Z_Construct_UFunction_AFGGameState_SetIsSpaceElevatorBuilt, "SetIsSpaceElevatorBuilt" }, // 619344943
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::Class_MetaDataParams[] = {
@@ -1170,46 +1298,6 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlots_MetaData[] = {
-		{ "Category", "Customization" },
-		{ "ModuleRelativePath", "Public/FGGameState.h" },
-		{ "ToolTip", "*      System to keep track of color slot changes and comapre to buildable system to update and mark dirty" },
-	};
-#endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlots = { "mBuildingColorSlots", "OnRep_BuildingColorSlot", (EPropertyFlags)0x0040000100010021, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mBuildingColorSlots, AFGGameState), STRUCT_OFFSET(AFGGameState, mBuildingColorSlots), Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlots_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlots_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mForceAddHubPartOnSpawn_MetaData[] = {
-		{ "ModuleRelativePath", "Public/FGGameState.h" },
-		{ "ToolTip", "Track if a hub part is needed for adding to player inventory when they respawn" },
-	};
-#endif
-	void Z_Construct_UClass_AFGGameState_Statics::NewProp_mForceAddHubPartOnSpawn_SetBit(void* Obj)
-	{
-		((AFGGameState*)Obj)->mForceAddHubPartOnSpawn = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mForceAddHubPartOnSpawn = { "mForceAddHubPartOnSpawn", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGGameState), &Z_Construct_UClass_AFGGameState_Statics::NewProp_mForceAddHubPartOnSpawn_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mForceAddHubPartOnSpawn_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mForceAddHubPartOnSpawn_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedSessionName_MetaData[] = {
-		{ "ModuleRelativePath", "Public/FGGameState.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedSessionName = { "mReplicatedSessionName", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mReplicatedSessionName), METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedSessionName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedSessionName_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlayDurationWhenLoaded_MetaData[] = {
-		{ "ModuleRelativePath", "Public/FGGameState.h" },
-		{ "ToolTip", "The total play time when loaded this save" },
-	};
-#endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlayDurationWhenLoaded = { "mPlayDurationWhenLoaded", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mPlayDurationWhenLoaded), METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlayDurationWhenLoaded_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlayDurationWhenLoaded_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mHubPartClass_MetaData[] = {
-		{ "Category", "FGGameState" },
-		{ "ModuleRelativePath", "Public/FGGameState.h" },
-		{ "ToolTip", "Class used to construct the hub, this is used to guarantee players always have one if they don't have a hub" },
-	};
-#endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mHubPartClass = { "mHubPartClass", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mHubPartClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mHubPartClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mHubPartClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mIsSpaceElevatorBuilt_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
@@ -1266,6 +1354,70 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mCheatNoCost = { "mCheatNoCost", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGGameState), &Z_Construct_UClass_AFGGameState_Statics::NewProp_mCheatNoCost_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mCheatNoCost_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mCheatNoCost_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mForceAddHubPartOnSpawn_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+		{ "ToolTip", "Track if a hub part is needed for adding to player inventory when they respawn" },
+	};
+#endif
+	void Z_Construct_UClass_AFGGameState_Statics::NewProp_mForceAddHubPartOnSpawn_SetBit(void* Obj)
+	{
+		((AFGGameState*)Obj)->mForceAddHubPartOnSpawn = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mForceAddHubPartOnSpawn = { "mForceAddHubPartOnSpawn", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGGameState), &Z_Construct_UClass_AFGGameState_Statics::NewProp_mForceAddHubPartOnSpawn_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mForceAddHubPartOnSpawn_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mForceAddHubPartOnSpawn_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mHubPartClass_MetaData[] = {
+		{ "Category", "FGGameState" },
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+		{ "ToolTip", "Class used to construct the hub, this is used to guarantee players always have one if they don't have a hub" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mHubPartClass = { "mHubPartClass", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mHubPartClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mHubPartClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mHubPartClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mOnRestartTimeNotification_MetaData[] = {
+		{ "Category", "Notification" },
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+		{ "ToolTip", "Called at regular times when the restart time reaches specific thresholds" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mOnRestartTimeNotification = { "mOnRestartTimeNotification", nullptr, (EPropertyFlags)0x0040000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mOnRestartTimeNotification), Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mOnRestartTimeNotification_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mOnRestartTimeNotification_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlannedRestartTime_MetaData[] = {
+		{ "Category", "Server" },
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+		{ "ToolTip", "Next time the server is planned to restart" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlannedRestartTime = { "mPlannedRestartTime", "OnRep_PlannedRestartTime", (EPropertyFlags)0x0040000100020821, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mPlannedRestartTime), METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlannedRestartTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlannedRestartTime_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlots_MetaData[] = {
+		{ "Category", "Customization" },
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+		{ "ToolTip", "*      System to keep track of color slot changes and comapre to buildable system to update and mark dirty" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlots = { "mBuildingColorSlots", "OnRep_BuildingColorSlot", (EPropertyFlags)0x0040000100010021, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mBuildingColorSlots, AFGGameState), STRUCT_OFFSET(AFGGameState, mBuildingColorSlots), Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlots_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlots_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedSessionName_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedSessionName = { "mReplicatedSessionName", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mReplicatedSessionName), METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedSessionName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedSessionName_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlayDurationWhenLoaded_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+		{ "ToolTip", "The total play time when loaded this save" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlayDurationWhenLoaded = { "mPlayDurationWhenLoaded", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mPlayDurationWhenLoaded), METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlayDurationWhenLoaded_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlayDurationWhenLoaded_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mPickedUpItems_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+		{ "ToolTip", "All items we have picked up that also are relevant to know if we picked up" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mPickedUpItems = { "mPickedUpItems", nullptr, (EPropertyFlags)0x0044000001000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mPickedUpItems), METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mPickedUpItems_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mPickedUpItems_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mPickedUpItems_Inner = { "mPickedUpItems", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 		{ "ToolTip", "This array keeps track of what map areas have been visited this game" },
@@ -1274,11 +1426,23 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas = { "mVisitedMapAreas", "OnRep_MapAreaVisited", (EPropertyFlags)0x0044000101000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mVisitedMapAreas), METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas_MetaData)) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas_Inner = { "mVisitedMapAreas", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mResourceSinkSubsystem_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mResourceSinkSubsystem = { "mResourceSinkSubsystem", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mResourceSinkSubsystem), Z_Construct_UClass_AFGResourceSinkSubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mResourceSinkSubsystem_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mResourceSinkSubsystem_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mUnlockSubsystem_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mUnlockSubsystem = { "mUnlockSubsystem", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mUnlockSubsystem), Z_Construct_UClass_AFGUnlockSubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mUnlockSubsystem_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mUnlockSubsystem_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mPipeSubsystem_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mPipeSubsystem = { "mPipeSubsystem", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mPipeSubsystem), Z_Construct_UClass_AFGPipeSubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mPipeSubsystem_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mPipeSubsystem_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mCentralStorageSubsystem_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
@@ -1390,7 +1554,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mTurboModeMultiplier = { "mTurboModeMultiplier", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mTurboModeMultiplier), METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mTurboModeMultiplier_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mTurboModeMultiplier_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_MapAreaVisistedDelegate_MetaData[] = {
-		{ "Category", "Map Area" },
+		{ "Category", "FactoryGame|Map Area" },
 		{ "DisplayName", "OnNewMapAreaEntered" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 		{ "ToolTip", "Called on all players when any player enters a new map area." },
@@ -1398,19 +1562,25 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_MapAreaVisistedDelegate = { "MapAreaVisistedDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, MapAreaVisistedDelegate), Z_Construct_UDelegateFunction_FactoryGame_VisitedMapAreaDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_MapAreaVisistedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_MapAreaVisistedDelegate_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGGameState_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlots,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mForceAddHubPartOnSpawn,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedSessionName,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlayDurationWhenLoaded,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mHubPartClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mIsSpaceElevatorBuilt,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mHasInitalTradingPostLandAnimPlayed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mIsTradingPostBuilt,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mCheatNoPower,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mCheatNoCost,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mForceAddHubPartOnSpawn,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mHubPartClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mOnRestartTimeNotification,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlannedRestartTime,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlots,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedSessionName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlayDurationWhenLoaded,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mPickedUpItems,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mPickedUpItems_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mResourceSinkSubsystem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mUnlockSubsystem,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mPipeSubsystem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mCentralStorageSubsystem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mChatManager,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mRadioactivitySubsystem,
@@ -1461,7 +1631,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGameState, 590121251);
+	IMPLEMENT_CLASS(AFGGameState, 2325521638);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGameState>()
 	{
 		return AFGGameState::StaticClass();

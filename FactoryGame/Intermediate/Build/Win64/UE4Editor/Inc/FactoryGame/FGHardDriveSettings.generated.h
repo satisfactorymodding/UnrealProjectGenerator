@@ -8,9 +8,9 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UFGSchematic;
+struct FItemAmount;
 class UWorld;
-class UFGResearchRecipe;
-struct FResearchRecipeReward;
 #ifdef FACTORYGAME_FGHardDriveSettings_generated_h
 #error "FGHardDriveSettings.generated.h already included, missing '#pragma once' in FGHardDriveSettings.h"
 #endif
@@ -26,26 +26,56 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FHardDriveSchemati
 
 #define FactoryGame_Source_FactoryGame_Public_FGHardDriveSettings_h_43_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetHardDriveResearchSchematic) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TSubclassOf<UFGSchematic> *)Z_Param__Result=UFGHardDriveSettings::GetHardDriveResearchSchematic(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFallbackReturnItem) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FItemAmount*)Z_Param__Result=P_THIS->GetFallbackReturnItem(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetResearchRewardPackages) \
 	{ \
 		P_GET_OBJECT(UWorld,Z_Param_world); \
-		P_GET_OBJECT(UClass,Z_Param_calledByResearch); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(TArray<FResearchRecipeReward>*)Z_Param__Result=UFGHardDriveSettings::GetResearchRewardPackages(Z_Param_world,Z_Param_calledByResearch); \
+		*(TArray<TSubclassOf<UFGSchematic> >*)Z_Param__Result=UFGHardDriveSettings::GetResearchRewardPackages(Z_Param_world); \
 		P_NATIVE_END; \
 	}
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGHardDriveSettings_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetHardDriveResearchSchematic) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TSubclassOf<UFGSchematic> *)Z_Param__Result=UFGHardDriveSettings::GetHardDriveResearchSchematic(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFallbackReturnItem) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FItemAmount*)Z_Param__Result=P_THIS->GetFallbackReturnItem(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetResearchRewardPackages) \
 	{ \
 		P_GET_OBJECT(UWorld,Z_Param_world); \
-		P_GET_OBJECT(UClass,Z_Param_calledByResearch); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(TArray<FResearchRecipeReward>*)Z_Param__Result=UFGHardDriveSettings::GetResearchRewardPackages(Z_Param_world,Z_Param_calledByResearch); \
+		*(TArray<TSubclassOf<UFGSchematic> >*)Z_Param__Result=UFGHardDriveSettings::GetResearchRewardPackages(Z_Param_world); \
 		P_NATIVE_END; \
 	}
 
@@ -97,7 +127,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGHardDriveSettings); \
 #define FactoryGame_Source_FactoryGame_Public_FGHardDriveSettings_h_43_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mUniqueItemCount() { return STRUCT_OFFSET(UFGHardDriveSettings, mUniqueItemCount); } \
 	FORCEINLINE static uint32 __PPO__mPotentialSchematicDrops() { return STRUCT_OFFSET(UFGHardDriveSettings, mPotentialSchematicDrops); } \
-	FORCEINLINE static uint32 __PPO__mFallbackReturnItem() { return STRUCT_OFFSET(UFGHardDriveSettings, mFallbackReturnItem); }
+	FORCEINLINE static uint32 __PPO__mFallbackReturnItem() { return STRUCT_OFFSET(UFGHardDriveSettings, mFallbackReturnItem); } \
+	FORCEINLINE static uint32 __PPO__mHardDriveResearchSchematic() { return STRUCT_OFFSET(UFGHardDriveSettings, mHardDriveResearchSchematic); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGHardDriveSettings_h_40_PROLOG

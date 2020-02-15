@@ -16,7 +16,7 @@ class AActor;
 #endif
 #define FACTORYGAME_FGRadioactivitySubsystem_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_77_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_80_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSetEmitterID_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -37,7 +37,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FRemoveEmitterID>(
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FRadioactiveSource>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGet) \
 	{ \
@@ -67,7 +67,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FRadioactiveSource
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGet) \
 	{ \
@@ -97,7 +97,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FRadioactiveSource
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGRadioactivitySubsystem(); \
 	friend struct Z_Construct_UClass_AFGRadioactivitySubsystem_Statics; \
@@ -106,7 +106,7 @@ public: \
 	DECLARE_SERIALIZER(AFGRadioactivitySubsystem)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGRadioactivitySubsystem(); \
 	friend struct Z_Construct_UClass_AFGRadioactivitySubsystem_Statics; \
@@ -115,7 +115,7 @@ public: \
 	DECLARE_SERIALIZER(AFGRadioactivitySubsystem)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGRadioactivitySubsystem(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGRadioactivitySubsystem) \
@@ -128,7 +128,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGRadioactivitySubsystem(AFGRadioactivitySubsystem&&); \
@@ -139,30 +139,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGRadioactivitySubsystem); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGRadioactivitySubsystem)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mSources() { return STRUCT_OFFSET(AFGRadioactivitySubsystem, mSources); } \
 	FORCEINLINE static uint32 __PPO__mAffectedActors() { return STRUCT_OFFSET(AFGRadioactivitySubsystem, mAffectedActors); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_115_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_122_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_118_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGRadioactivitySubsystem_h_125_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

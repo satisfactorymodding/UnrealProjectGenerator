@@ -3,7 +3,7 @@
 #pragma once
 
 #include "AIController.h"
-#include "Perception/AIPerceptionComponent.h"
+#include "Perception/AIPerceptionTypes.h"
 #include "FGCreatureController.generated.h"
 
 /**

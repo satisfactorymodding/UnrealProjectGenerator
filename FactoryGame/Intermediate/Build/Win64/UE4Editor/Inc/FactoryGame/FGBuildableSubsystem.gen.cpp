@@ -22,6 +22,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSubsystem() {}
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FBuildableBucket();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FDistanceBasedTickRate();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FNetConstructionID();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableSubsystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableSubsystem();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGSubsystem();
@@ -33,6 +34,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSubsystem() {}
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FLinearColor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetNbColorSlotsExposedToPlayers();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_ReplayBuildingEffects();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary();
@@ -425,6 +427,111 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		return ReturnStruct;
 	}
 	uint32 Get_Z_Construct_UScriptStruct_FDistanceBasedTickRate_Hash() { return 3330047725U; }
+class UScriptStruct* FNetConstructionID::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FNetConstructionID_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FNetConstructionID, Z_Construct_UPackage__Script_FactoryGame(), TEXT("NetConstructionID"), sizeof(FNetConstructionID), Get_Z_Construct_UScriptStruct_FNetConstructionID_Hash());
+	}
+	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FNetConstructionID>()
+{
+	return FNetConstructionID::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FNetConstructionID(FNetConstructionID::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("NetConstructionID"), false, nullptr, nullptr);
+static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNetConstructionID
+{
+	FScriptStruct_FactoryGame_StaticRegisterNativesFNetConstructionID()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("NetConstructionID")),new UScriptStruct::TCppStructOps<FNetConstructionID>);
+	}
+} ScriptStruct_FactoryGame_StaticRegisterNativesFNetConstructionID;
+	struct Z_Construct_UScriptStruct_FNetConstructionID_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Client_ID_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUInt16PropertyParams NewProp_Client_ID;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Server_ID_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUInt16PropertyParams NewProp_Server_ID;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_NetPlayerID_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FInt8PropertyParams NewProp_NetPlayerID;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNetConstructionID_Statics::Struct_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGBuildableSubsystem.h" },
+		{ "ToolTip", "Used to track constructed (spawned) buildables matched with their holograms between client and server" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FNetConstructionID_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FNetConstructionID>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNetConstructionID_Statics::NewProp_Client_ID_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGBuildableSubsystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUInt16PropertyParams Z_Construct_UScriptStruct_FNetConstructionID_Statics::NewProp_Client_ID = { "Client_ID", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::UInt16, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FNetConstructionID, Client_ID), METADATA_PARAMS(Z_Construct_UScriptStruct_FNetConstructionID_Statics::NewProp_Client_ID_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FNetConstructionID_Statics::NewProp_Client_ID_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNetConstructionID_Statics::NewProp_Server_ID_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGBuildableSubsystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUInt16PropertyParams Z_Construct_UScriptStruct_FNetConstructionID_Statics::NewProp_Server_ID = { "Server_ID", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::UInt16, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FNetConstructionID, Server_ID), METADATA_PARAMS(Z_Construct_UScriptStruct_FNetConstructionID_Statics::NewProp_Server_ID_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FNetConstructionID_Statics::NewProp_Server_ID_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNetConstructionID_Statics::NewProp_NetPlayerID_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGBuildableSubsystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FInt8PropertyParams Z_Construct_UScriptStruct_FNetConstructionID_Statics::NewProp_NetPlayerID = { "NetPlayerID", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int8, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FNetConstructionID, NetPlayerID), METADATA_PARAMS(Z_Construct_UScriptStruct_FNetConstructionID_Statics::NewProp_NetPlayerID_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FNetConstructionID_Statics::NewProp_NetPlayerID_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FNetConstructionID_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FNetConstructionID_Statics::NewProp_Client_ID,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FNetConstructionID_Statics::NewProp_Server_ID,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FNetConstructionID_Statics::NewProp_NetPlayerID,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FNetConstructionID_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+		nullptr,
+		&NewStructOps,
+		"NetConstructionID",
+		sizeof(FNetConstructionID),
+		alignof(FNetConstructionID),
+		Z_Construct_UScriptStruct_FNetConstructionID_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FNetConstructionID_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000201),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FNetConstructionID_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FNetConstructionID_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FNetConstructionID()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FNetConstructionID_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("NetConstructionID"), sizeof(FNetConstructionID), Get_Z_Construct_UScriptStruct_FNetConstructionID_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FNetConstructionID_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FNetConstructionID_Hash() { return 2418165690U; }
 	void AFGBuildableSubsystem::StaticRegisterNativesAFGBuildableSubsystem()
 	{
 		UClass* Class = AFGBuildableSubsystem::StaticClass();
@@ -434,6 +541,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 			{ "GetColorSlotPrimaryLinear", &AFGBuildableSubsystem::execGetColorSlotPrimaryLinear },
 			{ "GetColorSlotSecondary", &AFGBuildableSubsystem::execGetColorSlotSecondary },
 			{ "GetColorSlotSecondaryLinear", &AFGBuildableSubsystem::execGetColorSlotSecondaryLinear },
+			{ "GetNbColorSlotsExposedToPlayers", &AFGBuildableSubsystem::execGetNbColorSlotsExposedToPlayers },
 			{ "GetTypedBuildable", &AFGBuildableSubsystem::execGetTypedBuildable },
 			{ "ReplayBuildingEffects", &AFGBuildableSubsystem::execReplayBuildingEffects },
 			{ "SetColorSlotPrimary", &AFGBuildableSubsystem::execSetColorSlotPrimary },
@@ -626,6 +734,39 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGBuildableSubsystem_GetNbColorSlotsExposedToPlayers_Statics
+	{
+		struct FGBuildableSubsystem_eventGetNbColorSlotsExposedToPlayers_Parms
+		{
+			uint8 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetNbColorSlotsExposedToPlayers_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventGetNbColorSlotsExposedToPlayers_Parms, ReturnValue), nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_GetNbColorSlotsExposedToPlayers_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_GetNbColorSlotsExposedToPlayers_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSubsystem_GetNbColorSlotsExposedToPlayers_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Factory|Customization" },
+		{ "ModuleRelativePath", "Public/FGBuildableSubsystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_GetNbColorSlotsExposedToPlayers_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, nullptr, "GetNbColorSlotsExposedToPlayers", sizeof(FGBuildableSubsystem_eventGetNbColorSlotsExposedToPlayers_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_GetNbColorSlotsExposedToPlayers_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetNbColorSlotsExposedToPlayers_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_GetNbColorSlotsExposedToPlayers_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetNbColorSlotsExposedToPlayers_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetNbColorSlotsExposedToPlayers()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableSubsystem_GetNbColorSlotsExposedToPlayers_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -828,6 +969,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		static const UE4CodeGen_Private::FStrPropertyParams NewProp_mFactoryColoredMaterialMap_Key_KeyProp;
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mFactoryColoredMaterialMap_ValueProp;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mNbPlayerExposedSlots_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_mNbPlayerExposedSlots;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mColorSlotsSecondary_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mColorSlotsSecondary;
@@ -886,6 +1031,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		{ &Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear, "GetColorSlotPrimaryLinear" }, // 852653572
 		{ &Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary, "GetColorSlotSecondary" }, // 79318864
 		{ &Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear, "GetColorSlotSecondaryLinear" }, // 1109091925
+		{ &Z_Construct_UFunction_AFGBuildableSubsystem_GetNbColorSlotsExposedToPlayers, "GetNbColorSlotsExposedToPlayers" }, // 2822728060
 		{ &Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable, "GetTypedBuildable" }, // 3467098575
 		{ &Z_Construct_UFunction_AFGBuildableSubsystem_ReplayBuildingEffects, "ReplayBuildingEffects" }, // 1832441842
 		{ &Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary, "SetColorSlotPrimary" }, // 2268161680
@@ -994,6 +1140,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryColoredMaterialMap_Key_KeyProp = { "mFactoryColoredMaterialMap_Key", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryColoredMaterialMap_ValueProp = { "mFactoryColoredMaterialMap", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UClass_UFGFactoryMaterialInstanceManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mNbPlayerExposedSlots_MetaData[] = {
+		{ "Category", "Customization" },
+		{ "ModuleRelativePath", "Public/FGBuildableSubsystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mNbPlayerExposedSlots = { "mNbPlayerExposedSlots", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mNbPlayerExposedSlots), nullptr, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mNbPlayerExposedSlots_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mNbPlayerExposedSlots_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsSecondary_MetaData[] = {
 		{ "Category", "Customization" },
 		{ "ModuleRelativePath", "Public/FGBuildableSubsystem.h" },
@@ -1086,6 +1239,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryColoredMaterialMap,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryColoredMaterialMap_Key_KeyProp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryColoredMaterialMap_ValueProp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mNbPlayerExposedSlots,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsSecondary,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsPrimary,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColoredInstances,
@@ -1131,7 +1285,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSubsystem, 4216133086);
+	IMPLEMENT_CLASS(AFGBuildableSubsystem, 820369398);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableSubsystem>()
 	{
 		return AFGBuildableSubsystem::StaticClass();

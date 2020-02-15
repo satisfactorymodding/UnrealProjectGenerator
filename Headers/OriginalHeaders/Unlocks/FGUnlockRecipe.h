@@ -17,15 +17,18 @@ class FACTORYGAME_API UFGUnlockRecipe : public UFGUnlock
 public:
 	// Begin FGUnlock interface
 	virtual void Unlock( class AFGUnlockSubsystem* unlockSubssytem ) override;
+	virtual void Apply( class AFGUnlockSubsystem* unlockSubssytem ) override;
 	// End FGUnlock interface
 
 #if WITH_EDITORONLY_DATA
+	// For migration
 	void Init( TArray< TSubclassOf< class UFGRecipe > > recipes ) { mRecipes = recipes; }
+	// For adding a recipe to this schematic with editor tools
+	void AddRecipe( TSubclassOf< class UFGRecipe > recipe ) { mRecipes.AddUnique( recipe ); }
 #endif
 
-protected:
 	UFUNCTION( BlueprintPure, Category=Unlocks )
-	FORCEINLINE TArray< TSubclassOf< class UFGRecipe > > GetRecipes() const { return mRecipes; }
+	FORCEINLINE TArray< TSubclassOf< class UFGRecipe > > GetRecipesToUnlock() const { return mRecipes; }
 
 protected:
 	/** The recipes you get from this unlock */

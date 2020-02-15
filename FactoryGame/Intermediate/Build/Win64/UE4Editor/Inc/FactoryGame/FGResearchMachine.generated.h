@@ -9,9 +9,10 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AFGCharacterPlayer;
-class UFGResearchRecipe;
+class UFGSchematic;
 class UCurveFloat;
 class UStaticMeshComponent;
+class UFGResearchRecipe;
 #ifdef FACTORYGAME_FGResearchMachine_generated_h
 #error "FGResearchMachine.generated.h already included, missing '#pragma once' in FGResearchMachine.h"
 #endif
@@ -46,19 +47,19 @@ class UStaticMeshComponent;
  \
 	DECLARE_FUNCTION(execOnResearchConcluded) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OnResearchConcluded(Z_Param_researchRecipe); \
+		P_THIS->OnResearchConcluded(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execOnResearchStarted) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OnResearchStarted(Z_Param_researchRecipe); \
+		P_THIS->OnResearchStarted(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
@@ -135,19 +136,19 @@ class UStaticMeshComponent;
  \
 	DECLARE_FUNCTION(execOnResearchConcluded) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OnResearchConcluded(Z_Param_researchRecipe); \
+		P_THIS->OnResearchConcluded(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execOnResearchStarted) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OnResearchStarted(Z_Param_researchRecipe); \
+		P_THIS->OnResearchStarted(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \

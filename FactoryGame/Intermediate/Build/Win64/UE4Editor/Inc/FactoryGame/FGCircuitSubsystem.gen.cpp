@@ -299,7 +299,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCircuitSubsystem, 2909229510);
+	IMPLEMENT_CLASS(AFGCircuitSubsystem, 1454198771);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCircuitSubsystem>()
 	{
 		return AFGCircuitSubsystem::StaticClass();

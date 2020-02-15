@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UFGManufacturingButton;
 class AFGCharacterPlayer;
 class UFGInventoryComponent;
 class UFGRecipe;
@@ -18,28 +19,36 @@ class UFGRecipe;
 
 #define FactoryGame_Source_FactoryGame_Public_FGWorkBench_h_19_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execGetProduceClickSpeed) \
+	DECLARE_FUNCTION(execSetupManufacturingButton) \
 	{ \
+		P_GET_OBJECT(UFGManufacturingButton,Z_Param_inButton); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=P_THIS->GetProduceClickSpeed(); \
+		P_THIS->SetupManufacturingButton(Z_Param_inButton); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execSetHoldToProduce) \
+	DECLARE_FUNCTION(execGetActiveManufacturingTime) \
 	{ \
-		P_GET_UBOOL(Z_Param_newHold); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->SetHoldToProduce(Z_Param_newHold); \
+		*(float*)Z_Param__Result=P_THIS->GetActiveManufacturingTime(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetHoldToProduce) \
+	DECLARE_FUNCTION(execGetCurrentDuration) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->GetHoldToProduce(); \
+		*(float*)Z_Param__Result=P_THIS->GetCurrentDuration(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCurrentFatigue) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetCurrentFatigue(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -121,19 +130,10 @@ class UFGRecipe;
  \
 	DECLARE_FUNCTION(execProduce) \
 	{ \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_produceSpeed); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_dt); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->Produce(Z_Param_produceSpeed); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetIsPressingProduce) \
-	{ \
-		P_GET_UBOOL(Z_Param_isPressingProduce); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetIsPressingProduce(Z_Param_isPressingProduce); \
+		P_THIS->Produce(Z_Param_dt); \
 		P_NATIVE_END; \
 	} \
  \
@@ -167,28 +167,36 @@ class UFGRecipe;
 
 #define FactoryGame_Source_FactoryGame_Public_FGWorkBench_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execGetProduceClickSpeed) \
+	DECLARE_FUNCTION(execSetupManufacturingButton) \
 	{ \
+		P_GET_OBJECT(UFGManufacturingButton,Z_Param_inButton); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=P_THIS->GetProduceClickSpeed(); \
+		P_THIS->SetupManufacturingButton(Z_Param_inButton); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execSetHoldToProduce) \
+	DECLARE_FUNCTION(execGetActiveManufacturingTime) \
 	{ \
-		P_GET_UBOOL(Z_Param_newHold); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->SetHoldToProduce(Z_Param_newHold); \
+		*(float*)Z_Param__Result=P_THIS->GetActiveManufacturingTime(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetHoldToProduce) \
+	DECLARE_FUNCTION(execGetCurrentDuration) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->GetHoldToProduce(); \
+		*(float*)Z_Param__Result=P_THIS->GetCurrentDuration(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCurrentFatigue) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetCurrentFatigue(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -270,19 +278,10 @@ class UFGRecipe;
  \
 	DECLARE_FUNCTION(execProduce) \
 	{ \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_produceSpeed); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_dt); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->Produce(Z_Param_produceSpeed); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetIsPressingProduce) \
-	{ \
-		P_GET_UBOOL(Z_Param_isPressingProduce); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetIsPressingProduce(Z_Param_isPressingProduce); \
+		P_THIS->Produce(Z_Param_dt); \
 		P_NATIVE_END; \
 	} \
  \
@@ -365,8 +364,14 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGWorkBench); \
 	FORCEINLINE static uint32 __PPO__mRecipeRate() { return STRUCT_OFFSET(UFGWorkBench, mRecipeRate); } \
 	FORCEINLINE static uint32 __PPO__mIsProducing() { return STRUCT_OFFSET(UFGWorkBench, mIsProducing); } \
 	FORCEINLINE static uint32 __PPO__mInventory() { return STRUCT_OFFSET(UFGWorkBench, mInventory); } \
-	FORCEINLINE static uint32 __PPO__mProduceClickSpeed() { return STRUCT_OFFSET(UFGWorkBench, mProduceClickSpeed); } \
-	FORCEINLINE static uint32 __PPO__mHoldToProduce() { return STRUCT_OFFSET(UFGWorkBench, mHoldToProduce); }
+	FORCEINLINE static uint32 __PPO__mFatigueMultiplier() { return STRUCT_OFFSET(UFGWorkBench, mFatigueMultiplier); } \
+	FORCEINLINE static uint32 __PPO__mFatigueDecreaseSpeedMultiplier() { return STRUCT_OFFSET(UFGWorkBench, mFatigueDecreaseSpeedMultiplier); } \
+	FORCEINLINE static uint32 __PPO__mHoldProduceTime() { return STRUCT_OFFSET(UFGWorkBench, mHoldProduceTime); } \
+	FORCEINLINE static uint32 __PPO__mManufacturingButton() { return STRUCT_OFFSET(UFGWorkBench, mManufacturingButton); } \
+	FORCEINLINE static uint32 __PPO__mFatigueUpdaterInterval() { return STRUCT_OFFSET(UFGWorkBench, mFatigueUpdaterInterval); } \
+	FORCEINLINE static uint32 __PPO__mRecipeDuration() { return STRUCT_OFFSET(UFGWorkBench, mRecipeDuration); } \
+	FORCEINLINE static uint32 __PPO__mCooldownDelay() { return STRUCT_OFFSET(UFGWorkBench, mCooldownDelay); } \
+	FORCEINLINE static uint32 __PPO__mIsFatigueEnabled() { return STRUCT_OFFSET(UFGWorkBench, mIsFatigueEnabled); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGWorkBench_h_16_PROLOG \

@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStair() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableStair, 2944645224);
+	IMPLEMENT_CLASS(AFGBuildableStair, 374270157);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableStair>()
 	{
 		return AFGBuildableStair::StaticClass();

@@ -297,7 +297,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGManta, 3204263022);
+	IMPLEMENT_CLASS(AFGManta, 1051029410);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGManta>()
 	{
 		return AFGManta::StaticClass();

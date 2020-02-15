@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UAnimSequence;
 class AFGEquipment;
 enum class EEquipmentSlot : uint8;
 class UDamageType;
@@ -29,6 +30,9 @@ class AFGCharacterPlayer;
 	virtual float AdjustDamage_Implementation(float damageAmount, const UDamageType* damageType, AController* instigatedBy, AActor* damageCauser); \
 	virtual bool Server_UpdateAttachmentUseState_Validate(int32 ); \
 	virtual void Server_UpdateAttachmentUseState_Implementation(int32 newUseState); \
+	virtual bool CanDoDefaultPrimaryFire_Implementation(); \
+	virtual bool Server_DefaultPrimaryFire_Validate(); \
+	virtual void Server_DefaultPrimaryFire_Implementation(); \
  \
 	DECLARE_FUNCTION(execServer_ChargeForUse) \
 	{ \
@@ -80,6 +84,22 @@ class AFGCharacterPlayer;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->WasEquipped_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIdlePoseAnimation3p) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UAnimSequence**)Z_Param__Result=P_THIS->GetIdlePoseAnimation3p(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIdlePoseAnimation) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UAnimSequence**)Z_Param__Result=P_THIS->GetIdlePoseAnimation(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -163,6 +183,35 @@ class AFGCharacterPlayer;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->IsEquipped(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCanDoDefaultPrimaryFire) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->CanDoDefaultPrimaryFire_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDoDefaultPrimaryFire_Native) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DoDefaultPrimaryFire_Native(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_DefaultPrimaryFire) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_DefaultPrimaryFire_Validate()) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_DefaultPrimaryFire_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_DefaultPrimaryFire_Implementation(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -193,6 +242,9 @@ class AFGCharacterPlayer;
 	virtual float AdjustDamage_Implementation(float damageAmount, const UDamageType* damageType, AController* instigatedBy, AActor* damageCauser); \
 	virtual bool Server_UpdateAttachmentUseState_Validate(int32 ); \
 	virtual void Server_UpdateAttachmentUseState_Implementation(int32 newUseState); \
+	virtual bool CanDoDefaultPrimaryFire_Implementation(); \
+	virtual bool Server_DefaultPrimaryFire_Validate(); \
+	virtual void Server_DefaultPrimaryFire_Implementation(); \
  \
 	DECLARE_FUNCTION(execServer_ChargeForUse) \
 	{ \
@@ -244,6 +296,22 @@ class AFGCharacterPlayer;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->WasEquipped_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIdlePoseAnimation3p) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UAnimSequence**)Z_Param__Result=P_THIS->GetIdlePoseAnimation3p(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIdlePoseAnimation) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UAnimSequence**)Z_Param__Result=P_THIS->GetIdlePoseAnimation(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -327,6 +395,35 @@ class AFGCharacterPlayer;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->IsEquipped(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCanDoDefaultPrimaryFire) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->CanDoDefaultPrimaryFire_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDoDefaultPrimaryFire_Native) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DoDefaultPrimaryFire_Native(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_DefaultPrimaryFire) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_DefaultPrimaryFire_Validate()) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_DefaultPrimaryFire_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_DefaultPrimaryFire_Implementation(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -360,6 +457,16 @@ class AFGCharacterPlayer;
 		/** Constructor, initializes return property only **/ \
 		FGEquipment_eventAdjustDamage_Parms() \
 			: ReturnValue(0) \
+		{ \
+		} \
+	}; \
+	struct FGEquipment_eventCanDoDefaultPrimaryFire_Parms \
+	{ \
+		bool ReturnValue; \
+ \
+		/** Constructor, initializes return property only **/ \
+		FGEquipment_eventCanDoDefaultPrimaryFire_Parms() \
+			: ReturnValue(false) \
 		{ \
 		} \
 	}; \
@@ -423,7 +530,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGEquipment); \
 	FORCEINLINE static uint32 __PPO__mBackAnimation() { return STRUCT_OFFSET(AFGEquipment, mBackAnimation); } \
 	FORCEINLINE static uint32 __PPO__mHasPersistentOwner() { return STRUCT_OFFSET(AFGEquipment, mHasPersistentOwner); } \
 	FORCEINLINE static uint32 __PPO__mAttachment() { return STRUCT_OFFSET(AFGEquipment, mAttachment); } \
-	FORCEINLINE static uint32 __PPO__mSecondaryAttachment() { return STRUCT_OFFSET(AFGEquipment, mSecondaryAttachment); }
+	FORCEINLINE static uint32 __PPO__mSecondaryAttachment() { return STRUCT_OFFSET(AFGEquipment, mSecondaryAttachment); } \
+	FORCEINLINE static uint32 __PPO__mIdlePoseAnimation() { return STRUCT_OFFSET(AFGEquipment, mIdlePoseAnimation); } \
+	FORCEINLINE static uint32 __PPO__mIdlePoseAnimation3p() { return STRUCT_OFFSET(AFGEquipment, mIdlePoseAnimation3p); } \
+	FORCEINLINE static uint32 __PPO__mUseDefaultPrimaryFire() { return STRUCT_OFFSET(AFGEquipment, mUseDefaultPrimaryFire); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_Equipment_FGEquipment_h_33_PROLOG \

@@ -60,7 +60,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableGeneratorGeoThermal); \
 
 
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableGeneratorGeoThermal_h_16_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mExtractResourceNode() { return STRUCT_OFFSET(AFGBuildableGeneratorGeoThermal, mExtractResourceNode); }
+	FORCEINLINE static uint32 __PPO__mExtractResourceNode() { return STRUCT_OFFSET(AFGBuildableGeneratorGeoThermal, mExtractResourceNode); } \
+	FORCEINLINE static uint32 __PPO__mExtractableResource() { return STRUCT_OFFSET(AFGBuildableGeneratorGeoThermal, mExtractableResource); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableGeneratorGeoThermal_h_13_PROLOG

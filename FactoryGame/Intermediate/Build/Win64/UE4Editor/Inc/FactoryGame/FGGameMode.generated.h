@@ -9,7 +9,6 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGRemoteCallObject;
-class APlayerState;
 #ifdef FACTORYGAME_FGGameMode_generated_h
 #error "FGGameMode.generated.h already included, missing '#pragma once' in FGGameMode.h"
 #endif
@@ -35,6 +34,14 @@ class APlayerState;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execRebootSession) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->RebootSession(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execRegisterRemoteCallObjectClass) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
@@ -49,15 +56,6 @@ class APlayerState;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->IsMainMenuGameMode(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execKickPlayer) \
-	{ \
-		P_GET_OBJECT(APlayerState,Z_Param_ps); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->KickPlayer(Z_Param_ps); \
 		P_NATIVE_END; \
 	}
 
@@ -82,6 +80,14 @@ class APlayerState;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execRebootSession) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->RebootSession(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execRegisterRemoteCallObjectClass) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
@@ -96,15 +102,6 @@ class APlayerState;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->IsMainMenuGameMode(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execKickPlayer) \
-	{ \
-		P_GET_OBJECT(APlayerState,Z_Param_ps); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->KickPlayer(Z_Param_ps); \
 		P_NATIVE_END; \
 	}
 
@@ -167,8 +164,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGameMode); \
 	FORCEINLINE static uint32 __PPO__mSaveSessionName() { return STRUCT_OFFSET(AFGGameMode, mSaveSessionName); } \
 	FORCEINLINE static uint32 __PPO__mStartingPointTagName() { return STRUCT_OFFSET(AFGGameMode, mStartingPointTagName); } \
 	FORCEINLINE static uint32 __PPO__mDebugStartingPointTagName() { return STRUCT_OFFSET(AFGGameMode, mDebugStartingPointTagName); } \
-	FORCEINLINE static uint32 __PPO__mIsMainMenu() { return STRUCT_OFFSET(AFGGameMode, mIsMainMenu); } \
-	FORCEINLINE static uint32 __PPO__mDefaultRemoteCallObjectsClassNames() { return STRUCT_OFFSET(AFGGameMode, mDefaultRemoteCallObjectsClassNames); }
+	FORCEINLINE static uint32 __PPO__mDefaultRemoteCallObjectsClassNames() { return STRUCT_OFFSET(AFGGameMode, mDefaultRemoteCallObjectsClassNames); } \
+	FORCEINLINE static uint32 __PPO__mServerRestartTimeHours() { return STRUCT_OFFSET(AFGGameMode, mServerRestartTimeHours); } \
+	FORCEINLINE static uint32 __PPO__mSkipTutorialInPIE() { return STRUCT_OFFSET(AFGGameMode, mSkipTutorialInPIE); } \
+	FORCEINLINE static uint32 __PPO__mIsMainMenu() { return STRUCT_OFFSET(AFGGameMode, mIsMainMenu); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGGameMode_h_17_PROLOG

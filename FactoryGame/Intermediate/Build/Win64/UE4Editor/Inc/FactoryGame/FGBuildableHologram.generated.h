@@ -71,7 +71,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableHologram); \
 
 
 #define FactoryGame_Source_FactoryGame_Public_Hologram_FGBuildableHologram_h_22_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mBuildableClass() { return STRUCT_OFFSET(AFGBuildableHologram, mBuildableClass); } \
 	FORCEINLINE static uint32 __PPO__mMaxPlacementFloorAngle() { return STRUCT_OFFSET(AFGBuildableHologram, mMaxPlacementFloorAngle); } \
 	FORCEINLINE static uint32 __PPO__mLegs() { return STRUCT_OFFSET(AFGBuildableHologram, mLegs); } \
 	FORCEINLINE static uint32 __PPO__mClearanceBox() { return STRUCT_OFFSET(AFGBuildableHologram, mClearanceBox); }

@@ -871,7 +871,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCrashSiteDebris, 723946471);
+	IMPLEMENT_CLASS(AFGCrashSiteDebris, 235653859);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCrashSiteDebris>()
 	{
 		return AFGCrashSiteDebris::StaticClass();

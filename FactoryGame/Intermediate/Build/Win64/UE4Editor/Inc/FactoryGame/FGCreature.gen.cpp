@@ -1532,7 +1532,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreature, 1724571955);
+	IMPLEMENT_CLASS(AFGCreature, 3172208238);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCreature>()
 	{
 		return AFGCreature::StaticClass();

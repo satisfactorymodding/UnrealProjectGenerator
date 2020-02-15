@@ -325,7 +325,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEquipmentStunSpear, 897086039);
+	IMPLEMENT_CLASS(AFGEquipmentStunSpear, 2245364502);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGEquipmentStunSpear>()
 	{
 		return AFGEquipmentStunSpear::StaticClass();

@@ -59,10 +59,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGVehicleHologram); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGVehicleHologram)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Hologram_FGVehicleHologram_h_18_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mVehicleClass() { return STRUCT_OFFSET(AFGVehicleHologram, mVehicleClass); }
-
-
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGVehicleHologram_h_18_PRIVATE_PROPERTY_OFFSET
 #define FactoryGame_Source_FactoryGame_Public_Hologram_FGVehicleHologram_h_15_PROLOG
 #define FactoryGame_Source_FactoryGame_Public_Hologram_FGVehicleHologram_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

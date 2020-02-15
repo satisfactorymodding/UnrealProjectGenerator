@@ -324,7 +324,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHookshot() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGHookshot, 237216480);
+	IMPLEMENT_CLASS(AFGHookshot, 3169053757);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGHookshot>()
 	{
 		return AFGHookshot::StaticClass();

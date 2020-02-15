@@ -188,7 +188,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionItemStru
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConveyorAttachment, 4046613678);
+	IMPLEMENT_CLASS(AFGBuildableConveyorAttachment, 1823618559);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableConveyorAttachment>()
 	{
 		return AFGBuildableConveyorAttachment::StaticClass();

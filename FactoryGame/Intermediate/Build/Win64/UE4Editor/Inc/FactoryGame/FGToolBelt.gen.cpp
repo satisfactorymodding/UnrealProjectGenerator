@@ -87,7 +87,7 @@ void EmptyLinkFunctionForGeneratedCodeFGToolBelt() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGToolBelt, 3601507788);
+	IMPLEMENT_CLASS(AFGToolBelt, 1633635696);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGToolBelt>()
 	{
 		return AFGToolBelt::StaticClass();

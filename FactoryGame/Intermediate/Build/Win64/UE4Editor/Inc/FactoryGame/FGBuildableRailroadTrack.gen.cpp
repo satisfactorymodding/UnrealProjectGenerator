@@ -22,7 +22,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadTrack() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent();
 	ENGINE_API UClass* Z_Construct_UClass_USplineComponent_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRailroadTrackConnectionComponent_NoRegister();
-	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FSplinePointData();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FSplinePointData();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
 // End Cross Module References
 class UScriptStruct* FRailroadTrackPosition::StaticStruct()
@@ -365,7 +365,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadTrack, 2173597816);
+	IMPLEMENT_CLASS(AFGBuildableRailroadTrack, 1923124386);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableRailroadTrack>()
 	{
 		return AFGBuildableRailroadTrack::StaticClass();

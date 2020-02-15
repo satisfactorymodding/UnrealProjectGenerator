@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceManager() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSignificanceManager_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSignificanceManager();
 	SIGNIFICANCEMANAGER_API UClass* Z_Construct_UClass_USignificanceManager();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildablePipeBase_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableConveyorBase_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableFactory_NoRegister();
 // End Cross Module References
@@ -103,6 +104,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPreviousSignificantPipelines_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mPreviousSignificantPipelines;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mPreviousSignificantPipelines_Inner;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPreviousSignificantConveyorBases_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mPreviousSignificantConveyorBases;
@@ -134,6 +140,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantPipelines_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGSignificanceManager.h" },
+		{ "ToolTip", "List of pipelines that were significant last time we checked" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantPipelines = { "mPreviousSignificantPipelines", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSignificanceManager, mPreviousSignificantPipelines), METADATA_PARAMS(Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantPipelines_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantPipelines_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantPipelines_Inner = { "mPreviousSignificantPipelines", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGBuildablePipeBase_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantConveyorBases_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGSignificanceManager.h" },
 		{ "ToolTip", "List of conveyor bases (belts and lifts) that were significant last time we checked" },
@@ -162,6 +176,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mIsEnabled = { "mIsEnabled", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGSignificanceManager), &Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mIsEnabled_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mIsEnabled_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mIsEnabled_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGSignificanceManager_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantPipelines,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantPipelines_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantConveyorBases,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantConveyorBases_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantFactories,
@@ -195,7 +211,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSignificanceManager, 1095274913);
+	IMPLEMENT_CLASS(UFGSignificanceManager, 335694689);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSignificanceManager>()
 	{
 		return UFGSignificanceManager::StaticClass();

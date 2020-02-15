@@ -596,7 +596,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResearchRecipe, 2237826017);
+	IMPLEMENT_CLASS(UFGResearchRecipe, 499809244);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGResearchRecipe>()
 	{
 		return UFGResearchRecipe::StaticClass();

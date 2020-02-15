@@ -61,8 +61,6 @@ static inline void FOnDismantleRefundsChanged_DelegateWrapper(const FMulticastSc
 	virtual void Server_PeekAtDismantleRefund_Implementation(TArray<AActor*> const& selectedActors); \
 	virtual bool Server_DismantleActors_Validate(TArray<AActor*> const& ); \
 	virtual void Server_DismantleActors_Implementation(TArray<AActor*> const& selectedActors); \
-	virtual bool Server_DismantleActor_Validate(AActor* ); \
-	virtual void Server_DismantleActor_Implementation(AActor* actorToDismantle); \
  \
 	DECLARE_FUNCTION(execOnRep_PeekDismantleRefund) \
 	{ \
@@ -97,20 +95,6 @@ static inline void FOnDismantleRefundsChanged_DelegateWrapper(const FMulticastSc
 			return; \
 		} \
 		P_THIS->Server_DismantleActors_Implementation(Z_Param_selectedActors); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execServer_DismantleActor) \
-	{ \
-		P_GET_OBJECT(AActor,Z_Param_actorToDismantle); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		if (!P_THIS->Server_DismantleActor_Validate(Z_Param_actorToDismantle)) \
-		{ \
-			RPC_ValidateFailed(TEXT("Server_DismantleActor_Validate")); \
-			return; \
-		} \
-		P_THIS->Server_DismantleActor_Implementation(Z_Param_actorToDismantle); \
 		P_NATIVE_END; \
 	} \
  \
@@ -186,8 +170,6 @@ static inline void FOnDismantleRefundsChanged_DelegateWrapper(const FMulticastSc
 	virtual void Server_PeekAtDismantleRefund_Implementation(TArray<AActor*> const& selectedActors); \
 	virtual bool Server_DismantleActors_Validate(TArray<AActor*> const& ); \
 	virtual void Server_DismantleActors_Implementation(TArray<AActor*> const& selectedActors); \
-	virtual bool Server_DismantleActor_Validate(AActor* ); \
-	virtual void Server_DismantleActor_Implementation(AActor* actorToDismantle); \
  \
 	DECLARE_FUNCTION(execOnRep_PeekDismantleRefund) \
 	{ \
@@ -222,20 +204,6 @@ static inline void FOnDismantleRefundsChanged_DelegateWrapper(const FMulticastSc
 			return; \
 		} \
 		P_THIS->Server_DismantleActors_Implementation(Z_Param_selectedActors); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execServer_DismantleActor) \
-	{ \
-		P_GET_OBJECT(AActor,Z_Param_actorToDismantle); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		if (!P_THIS->Server_DismantleActor_Validate(Z_Param_actorToDismantle)) \
-		{ \
-			RPC_ValidateFailed(TEXT("Server_DismantleActor_Validate")); \
-			return; \
-		} \
-		P_THIS->Server_DismantleActor_Implementation(Z_Param_actorToDismantle); \
 		P_NATIVE_END; \
 	} \
  \
@@ -307,10 +275,6 @@ static inline void FOnDismantleRefundsChanged_DelegateWrapper(const FMulticastSc
 
 
 #define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunDismantle_h_43_EVENT_PARMS \
-	struct FGBuildGunStateDismantle_eventServer_DismantleActor_Parms \
-	{ \
-		AActor* actorToDismantle; \
-	}; \
 	struct FGBuildGunStateDismantle_eventServer_DismantleActors_Parms \
 	{ \
 		TArray<AActor*> selectedActors; \

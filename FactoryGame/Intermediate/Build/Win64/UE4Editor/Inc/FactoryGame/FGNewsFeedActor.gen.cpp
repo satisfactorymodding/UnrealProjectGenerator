@@ -258,7 +258,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNewsFeedMap
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGNewsFeedActor, 2264201233);
+	IMPLEMENT_CLASS(AFGNewsFeedActor, 463698077);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGNewsFeedActor>()
 	{
 		return AFGNewsFeedActor::StaticClass();

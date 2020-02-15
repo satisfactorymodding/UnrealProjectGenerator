@@ -38,6 +38,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicle() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWheeledVehicle_FilterFuelClasses();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWheeledVehicle_GetCachedSurfaceMaterial();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWheeledVehicle_GetDriftForceOffset();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWheeledVehicle_GetForwardSpeed();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWheeledVehicle_GetFuelInventory();
@@ -803,6 +804,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 		static const FNameNativePtrPair Funcs[] = {
 			{ "CreateInventoryItemDrops", &AFGWheeledVehicle::execCreateInventoryItemDrops },
 			{ "FilterFuelClasses", &AFGWheeledVehicle::execFilterFuelClasses },
+			{ "GetCachedSurfaceMaterial", &AFGWheeledVehicle::execGetCachedSurfaceMaterial },
 			{ "GetForwardSpeed", &AFGWheeledVehicle::execGetForwardSpeed },
 			{ "GetFuelInventory", &AFGWheeledVehicle::execGetFuelInventory },
 			{ "GetIsDrifting", &AFGWheeledVehicle::execGetIsDrifting },
@@ -969,6 +971,40 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGWheeledVehicle_FilterFuelClasses_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGWheeledVehicle_GetCachedSurfaceMaterial_Statics
+	{
+		struct FGWheeledVehicle_eventGetCachedSurfaceMaterial_Parms
+		{
+			UPhysicalMaterial* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGWheeledVehicle_GetCachedSurfaceMaterial_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWheeledVehicle_eventGetCachedSurfaceMaterial_Parms, ReturnValue), Z_Construct_UClass_UPhysicalMaterial_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGWheeledVehicle_GetCachedSurfaceMaterial_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGWheeledVehicle_GetCachedSurfaceMaterial_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWheeledVehicle_GetCachedSurfaceMaterial_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Vehicle" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicle.h" },
+		{ "ToolTip", "Returns the cached surface material" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWheeledVehicle_GetCachedSurfaceMaterial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWheeledVehicle, nullptr, "GetCachedSurfaceMaterial", sizeof(FGWheeledVehicle_eventGetCachedSurfaceMaterial_Parms), Z_Construct_UFunction_AFGWheeledVehicle_GetCachedSurfaceMaterial_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGWheeledVehicle_GetCachedSurfaceMaterial_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWheeledVehicle_GetCachedSurfaceMaterial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWheeledVehicle_GetCachedSurfaceMaterial_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGWheeledVehicle_GetCachedSurfaceMaterial()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGWheeledVehicle_GetCachedSurfaceMaterial_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1924,7 +1960,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 		{ "ToolTip", "Pass current state to server" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWheeledVehicle_ServerUpdateAssistedVelocitiesState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWheeledVehicle, nullptr, "ServerUpdateAssistedVelocitiesState", sizeof(FGWheeledVehicle_eventServerUpdateAssistedVelocitiesState_Parms), Z_Construct_UFunction_AFGWheeledVehicle_ServerUpdateAssistedVelocitiesState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGWheeledVehicle_ServerUpdateAssistedVelocitiesState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80280CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWheeledVehicle_ServerUpdateAssistedVelocitiesState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWheeledVehicle_ServerUpdateAssistedVelocitiesState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWheeledVehicle_ServerUpdateAssistedVelocitiesState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWheeledVehicle, nullptr, "ServerUpdateAssistedVelocitiesState", sizeof(FGWheeledVehicle_eventServerUpdateAssistedVelocitiesState_Parms), Z_Construct_UFunction_AFGWheeledVehicle_ServerUpdateAssistedVelocitiesState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGWheeledVehicle_ServerUpdateAssistedVelocitiesState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80280C40, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWheeledVehicle_ServerUpdateAssistedVelocitiesState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWheeledVehicle_ServerUpdateAssistedVelocitiesState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGWheeledVehicle_ServerUpdateAssistedVelocitiesState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2232,6 +2268,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mNeedsFuelToDrive_MetaData[];
+#endif
+		static void NewProp_mNeedsFuelToDrive_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mNeedsFuelToDrive;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCachedSurfaceMaterial_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mCachedSurfaceMaterial;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMinAngleForDrift_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMinAngleForDrift;
@@ -2517,6 +2562,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_CloseVehicleTrunk, "CloseVehicleTrunk" }, // 539728864
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_CreateInventoryItemDrops, "CreateInventoryItemDrops" }, // 174760971
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_FilterFuelClasses, "FilterFuelClasses" }, // 3185179852
+		{ &Z_Construct_UFunction_AFGWheeledVehicle_GetCachedSurfaceMaterial, "GetCachedSurfaceMaterial" }, // 3534962681
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_GetDriftForceOffset, "GetDriftForceOffset" }, // 817475081
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_GetForwardSpeed, "GetForwardSpeed" }, // 1808863683
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_GetFuelInventory, "GetFuelInventory" }, // 1955801655
@@ -2541,7 +2587,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_OpenVehicleTrunk, "OpenVehicleTrunk" }, // 1968614019
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_RemoveTargetPoint, "RemoveTargetPoint" }, // 3969865571
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_ResetAddedAngularVelocityValues, "ResetAddedAngularVelocityValues" }, // 1144879499
-		{ &Z_Construct_UFunction_AFGWheeledVehicle_ServerUpdateAssistedVelocitiesState, "ServerUpdateAssistedVelocitiesState" }, // 3610135447
+		{ &Z_Construct_UFunction_AFGWheeledVehicle_ServerUpdateAssistedVelocitiesState, "ServerUpdateAssistedVelocitiesState" }, // 2325925617
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_SetAddedAngularVelocityPitch, "SetAddedAngularVelocityPitch" }, // 2889473238
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_SetAddedAngularVelocityYaw, "SetAddedAngularVelocityYaw" }, // 670794031
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_SetIsDrifting, "SetIsDrifting" }, // 3930357434
@@ -2560,6 +2606,25 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 		{ "ToolTip", "This is our implementation of a wheeled vehicle, we want a base class FGVehicle that can be shared by wheeled vehicles, trains etc.\n@see AWheeledVehicle" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mNeedsFuelToDrive_MetaData[] = {
+		{ "Category", "Vehicle" },
+		{ "ModuleRelativePath", "Public/FGWheeledVehicle.h" },
+		{ "ToolTip", "Do we need fuel to drive" },
+	};
+#endif
+	void Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mNeedsFuelToDrive_SetBit(void* Obj)
+	{
+		((AFGWheeledVehicle*)Obj)->mNeedsFuelToDrive = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mNeedsFuelToDrive = { "mNeedsFuelToDrive", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGWheeledVehicle), &Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mNeedsFuelToDrive_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mNeedsFuelToDrive_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mNeedsFuelToDrive_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mCachedSurfaceMaterial_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGWheeledVehicle.h" },
+		{ "ToolTip", "Cached surface material under the first tire" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mCachedSurfaceMaterial = { "mCachedSurfaceMaterial", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWheeledVehicle, mCachedSurfaceMaterial), Z_Construct_UClass_UPhysicalMaterial_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mCachedSurfaceMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mCachedSurfaceMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mMinAngleForDrift_MetaData[] = {
 		{ "Category", "Vehicle" },
@@ -3117,6 +3182,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mWorkBench = { "mWorkBench", nullptr, (EPropertyFlags)0x001000000008001c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWheeledVehicle, mWorkBench), Z_Construct_UClass_UFGWorkBench_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mWorkBench_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mWorkBench_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGWheeledVehicle_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mNeedsFuelToDrive,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mCachedSurfaceMaterial,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mMinAngleForDrift,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mDriftForceBones,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mDriftForceBones_Inner,
@@ -3216,7 +3283,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWheeledVehicle, 695423742);
+	IMPLEMENT_CLASS(AFGWheeledVehicle, 1488518855);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWheeledVehicle>()
 	{
 		return AFGWheeledVehicle::StaticClass();

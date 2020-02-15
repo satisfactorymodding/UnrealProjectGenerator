@@ -16,6 +16,14 @@ class UFGCircuitConnectionComponent;
 
 #define FactoryGame_Source_FactoryGame_Public_FGCircuitConnectionComponent_h_22_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execOnRep_CircuitIDChanged) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRep_CircuitIDChanged(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetCircuitID) \
 	{ \
 		P_FINISH; \
@@ -92,6 +100,14 @@ class UFGCircuitConnectionComponent;
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGCircuitConnectionComponent_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnRep_CircuitIDChanged) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRep_CircuitIDChanged(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetCircuitID) \
 	{ \

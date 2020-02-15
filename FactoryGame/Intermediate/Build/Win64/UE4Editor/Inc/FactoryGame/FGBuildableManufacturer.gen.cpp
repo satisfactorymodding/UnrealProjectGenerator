@@ -31,6 +31,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableManufacturer_MoveOrDropOutputInventory();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableManufacturer_OnRep_CurrentRecipe();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableManufacturer_SetRecipe();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGPipeConnectionComponent_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipeProducerInterface_NoRegister();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_FactoryGame_OnNewRecipeDelegate__DelegateSignature_Statics
@@ -433,6 +435,26 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mOutputInventory;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPipeOutputConnections_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mPipeOutputConnections;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mPipeOutputConnections_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mFactoryOutputConnections_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mFactoryOutputConnections;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mFactoryOutputConnections_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPipeInputConnections_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mPipeInputConnections;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mPipeInputConnections_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mFactoryInputConnections_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mFactoryInputConnections;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mFactoryInputConnections_Inner;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mInputInventory_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mInputInventory;
@@ -492,6 +514,42 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mOutputInventory = { "mOutputInventory", nullptr, (EPropertyFlags)0x0020080001080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableManufacturer, mOutputInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mOutputInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mOutputInventory_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mPipeOutputConnections_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
+		{ "ToolTip", "Cached output pipe connections" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mPipeOutputConnections = { "mPipeOutputConnections", nullptr, (EPropertyFlags)0x0020088000000008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableManufacturer, mPipeOutputConnections), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mPipeOutputConnections_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mPipeOutputConnections_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mPipeOutputConnections_Inner = { "mPipeOutputConnections", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGPipeConnectionComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mFactoryOutputConnections_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
+		{ "ToolTip", "Cached factory output connections" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mFactoryOutputConnections = { "mFactoryOutputConnections", nullptr, (EPropertyFlags)0x0020088000000008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableManufacturer, mFactoryOutputConnections), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mFactoryOutputConnections_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mFactoryOutputConnections_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mFactoryOutputConnections_Inner = { "mFactoryOutputConnections", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mPipeInputConnections_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
+		{ "ToolTip", "Cached input pipe connections" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mPipeInputConnections = { "mPipeInputConnections", nullptr, (EPropertyFlags)0x0020088000000008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableManufacturer, mPipeInputConnections), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mPipeInputConnections_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mPipeInputConnections_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mPipeInputConnections_Inner = { "mPipeInputConnections", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGPipeConnectionComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mFactoryInputConnections_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
+		{ "ToolTip", "Cached factory input connections" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mFactoryInputConnections = { "mFactoryInputConnections", nullptr, (EPropertyFlags)0x0020088000000008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableManufacturer, mFactoryInputConnections), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mFactoryInputConnections_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mFactoryInputConnections_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mFactoryInputConnections_Inner = { "mFactoryInputConnections", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mInputInventory_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
@@ -526,6 +584,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableManufacturer_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mCurrentRecipe,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mOutputInventory,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mPipeOutputConnections,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mPipeOutputConnections_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mFactoryOutputConnections,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mFactoryOutputConnections_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mPipeInputConnections,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mPipeInputConnections_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mFactoryInputConnections,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mFactoryInputConnections_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mInputInventory,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mCurrentManufacturingProgress,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mManufacturingSpeed,
@@ -561,7 +627,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableManufacturer, 865570143);
+	IMPLEMENT_CLASS(AFGBuildableManufacturer, 600214409);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableManufacturer>()
 	{
 		return AFGBuildableManufacturer::StaticClass();

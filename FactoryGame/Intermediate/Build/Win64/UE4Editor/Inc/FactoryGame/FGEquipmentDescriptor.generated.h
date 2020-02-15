@@ -15,7 +15,7 @@ class AFGEquipment;
 #endif
 #define FACTORYGAME_FGEquipmentDescriptor_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetEquipmentClass) \
 	{ \
@@ -27,7 +27,7 @@ class AFGEquipment;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetEquipmentClass) \
 	{ \
@@ -39,7 +39,7 @@ class AFGEquipment;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGEquipmentDescriptor(); \
 	friend struct Z_Construct_UClass_UFGEquipmentDescriptor_Statics; \
@@ -48,7 +48,7 @@ public: \
 	DECLARE_SERIALIZER(UFGEquipmentDescriptor)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGEquipmentDescriptor(); \
 	friend struct Z_Construct_UClass_UFGEquipmentDescriptor_Statics; \
@@ -57,7 +57,7 @@ public: \
 	DECLARE_SERIALIZER(UFGEquipmentDescriptor)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGEquipmentDescriptor(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGEquipmentDescriptor) \
@@ -70,7 +70,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGEquipmentDescriptor() { }; \
 private: \
@@ -83,26 +83,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGEquipmentDescriptor); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGEquipmentDescriptor)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_13_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_15_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_16_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGEquipmentDescriptor_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

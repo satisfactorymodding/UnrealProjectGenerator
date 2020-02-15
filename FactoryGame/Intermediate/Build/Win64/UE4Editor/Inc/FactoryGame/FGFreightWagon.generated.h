@@ -15,7 +15,7 @@ class UFGInventoryComponent;
 #endif
 #define FACTORYGAME_FGFreightWagon_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execInitializeInventoryComponent) \
 	{ \
@@ -62,7 +62,7 @@ class UFGInventoryComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execInitializeInventoryComponent) \
 	{ \
@@ -109,7 +109,7 @@ class UFGInventoryComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGFreightWagon(); \
 	friend struct Z_Construct_UClass_AFGFreightWagon_Statics; \
@@ -118,7 +118,7 @@ public: \
 	DECLARE_SERIALIZER(AFGFreightWagon)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGFreightWagon(); \
 	friend struct Z_Construct_UClass_AFGFreightWagon_Statics; \
@@ -127,7 +127,7 @@ public: \
 	DECLARE_SERIALIZER(AFGFreightWagon)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGFreightWagon(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGFreightWagon) \
@@ -140,7 +140,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGFreightWagon(AFGFreightWagon&&); \
@@ -151,35 +151,39 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGFreightWagon); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGFreightWagon)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__mFreightCargoType() { return STRUCT_OFFSET(AFGFreightWagon, mFreightCargoType); } \
+	FORCEINLINE static uint32 __PPO__mTransitoryCargoType() { return STRUCT_OFFSET(AFGFreightWagon, mTransitoryCargoType); } \
 	FORCEINLINE static uint32 __PPO__mLaunchedCharacters() { return STRUCT_OFFSET(AFGFreightWagon, mLaunchedCharacters); } \
 	FORCEINLINE static uint32 __PPO__mVehicleMovement() { return STRUCT_OFFSET(AFGFreightWagon, mVehicleMovement); } \
 	FORCEINLINE static uint32 __PPO__mStorageInventory() { return STRUCT_OFFSET(AFGFreightWagon, mStorageInventory); } \
+	FORCEINLINE static uint32 __PPO__mContainerMeshStandard() { return STRUCT_OFFSET(AFGFreightWagon, mContainerMeshStandard); } \
+	FORCEINLINE static uint32 __PPO__mContainerMeshLiquid() { return STRUCT_OFFSET(AFGFreightWagon, mContainerMeshLiquid); } \
 	FORCEINLINE static uint32 __PPO__mInventorySize() { return STRUCT_OFFSET(AFGFreightWagon, mInventorySize); } \
 	FORCEINLINE static uint32 __PPO__mCargoMeshComponent() { return STRUCT_OFFSET(AFGFreightWagon, mCargoMeshComponent); } \
 	FORCEINLINE static uint32 __PPO__mLaunchCharacterScalar() { return STRUCT_OFFSET(AFGFreightWagon, mLaunchCharacterScalar); } \
 	FORCEINLINE static uint32 __PPO__mCargoOverlapCollision() { return STRUCT_OFFSET(AFGFreightWagon, mCargoOverlapCollision); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_15_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_26_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_18_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h_29_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -189,5 +193,13 @@ template<> FACTORYGAME_API UClass* StaticClass<class AFGFreightWagon>();
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGFreightWagon_h
 
+
+#define FOREACH_ENUM_EFREIGHTCARGOTYPE(op) \
+	op(EFreightCargoType::FCT_NONE) \
+	op(EFreightCargoType::FCT_Standard) \
+	op(EFreightCargoType::FCT_Liquid) 
+
+enum class EFreightCargoType : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EFreightCargoType>();
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

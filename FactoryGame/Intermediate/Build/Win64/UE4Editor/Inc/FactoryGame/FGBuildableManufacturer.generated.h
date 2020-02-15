@@ -236,6 +236,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableManufacturer); \
 	FORCEINLINE static uint32 __PPO__mManufacturingSpeed() { return STRUCT_OFFSET(AFGBuildableManufacturer, mManufacturingSpeed); } \
 	FORCEINLINE static uint32 __PPO__mCurrentManufacturingProgress() { return STRUCT_OFFSET(AFGBuildableManufacturer, mCurrentManufacturingProgress); } \
 	FORCEINLINE static uint32 __PPO__mInputInventory() { return STRUCT_OFFSET(AFGBuildableManufacturer, mInputInventory); } \
+	FORCEINLINE static uint32 __PPO__mFactoryInputConnections() { return STRUCT_OFFSET(AFGBuildableManufacturer, mFactoryInputConnections); } \
+	FORCEINLINE static uint32 __PPO__mPipeInputConnections() { return STRUCT_OFFSET(AFGBuildableManufacturer, mPipeInputConnections); } \
+	FORCEINLINE static uint32 __PPO__mFactoryOutputConnections() { return STRUCT_OFFSET(AFGBuildableManufacturer, mFactoryOutputConnections); } \
+	FORCEINLINE static uint32 __PPO__mPipeOutputConnections() { return STRUCT_OFFSET(AFGBuildableManufacturer, mPipeOutputConnections); } \
 	FORCEINLINE static uint32 __PPO__mOutputInventory() { return STRUCT_OFFSET(AFGBuildableManufacturer, mOutputInventory); } \
 	FORCEINLINE static uint32 __PPO__mCurrentRecipe() { return STRUCT_OFFSET(AFGBuildableManufacturer, mCurrentRecipe); }
 

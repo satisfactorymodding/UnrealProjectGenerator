@@ -736,7 +736,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableTradingPost, 345137867);
+	IMPLEMENT_CLASS(AFGBuildableTradingPost, 2149233808);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableTradingPost>()
 	{
 		return AFGBuildableTradingPost::StaticClass();

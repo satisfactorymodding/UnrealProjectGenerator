@@ -27,6 +27,13 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptor() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon();
 	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetFluidColor();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FColor();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetFluidColorLinear();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FLinearColor();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetFluidDensity();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetFluidFriction();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetFluidViscosity();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetForm();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetIconView();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory();
@@ -41,6 +48,8 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptor() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetStackSize();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetStackSizeConverted();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp();
 // End Cross Module References
 	static UEnum* EStackSize_StaticEnum()
 	{
@@ -56,7 +65,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptor() {}
 		return EStackSize_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EStackSize(EStackSize_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EStackSize"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EStackSize_Hash() { return 748399736U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EStackSize_Hash() { return 31186050U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EStackSize()
 	{
 #if WITH_HOT_RELOAD
@@ -73,6 +82,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptor() {}
 				{ "EStackSize::SS_MEDIUM", (int64)EStackSize::SS_MEDIUM },
 				{ "EStackSize::SS_BIG", (int64)EStackSize::SS_BIG },
 				{ "EStackSize::SS_HUGE", (int64)EStackSize::SS_HUGE },
+				{ "EStackSize::SS_FLUID", (int64)EStackSize::SS_FLUID },
 				{ "EStackSize::SS_LAST_ENUM", (int64)EStackSize::SS_LAST_ENUM },
 			};
 #if WITH_METADATA
@@ -80,6 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptor() {}
 				{ "BlueprintType", "true" },
 				{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 				{ "SS_BIG.DisplayName", "Big" },
+				{ "SS_FLUID.DisplayName", "Fluid" },
 				{ "SS_HUGE.DisplayName", "Huge" },
 				{ "SS_LAST_ENUM.Hidden", "" },
 				{ "SS_MEDIUM.DisplayName", "Medium" },
@@ -285,6 +296,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 			{ "CanBeDiscarded", &UFGItemDescriptor::execCanBeDiscarded },
 			{ "GetBigIcon", &UFGItemDescriptor::execGetBigIcon },
 			{ "GetEnergyValue", &UFGItemDescriptor::execGetEnergyValue },
+			{ "GetFluidColor", &UFGItemDescriptor::execGetFluidColor },
+			{ "GetFluidColorLinear", &UFGItemDescriptor::execGetFluidColorLinear },
+			{ "GetFluidDensity", &UFGItemDescriptor::execGetFluidDensity },
+			{ "GetFluidFriction", &UFGItemDescriptor::execGetFluidFriction },
+			{ "GetFluidViscosity", &UFGItemDescriptor::execGetFluidViscosity },
 			{ "GetForm", &UFGItemDescriptor::execGetForm },
 			{ "GetIconView", &UFGItemDescriptor::execGetIconView },
 			{ "GetItemCategory", &UFGItemDescriptor::execGetItemCategory },
@@ -296,6 +312,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 			{ "GetRadioactiveDecay", &UFGItemDescriptor::execGetRadioactiveDecay },
 			{ "GetSmallIcon", &UFGItemDescriptor::execGetSmallIcon },
 			{ "GetStackSize", &UFGItemDescriptor::execGetStackSize },
+			{ "GetStackSizeConverted", &UFGItemDescriptor::execGetStackSizeConverted },
+			{ "RememberPickUp", &UFGItemDescriptor::execRememberPickUp },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -415,6 +433,196 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGItemDescriptor_GetFluidColor_Statics
+	{
+		struct FGItemDescriptor_eventGetFluidColor_Parms
+		{
+			TSubclassOf<UFGItemDescriptor>  inClass;
+			FColor ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetFluidColor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetFluidColor_Parms, ReturnValue), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetFluidColor_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetFluidColor_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetFluidColor_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetFluidColor_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetFluidColor_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetFluidColor_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Descriptor|Fluid" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
+		{ "ToolTip", "Returns the color of this is a fluid." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetFluidColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetFluidColor", sizeof(FGItemDescriptor_eventGetFluidColor_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetFluidColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetFluidColor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14822401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetFluidColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetFluidColor_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetFluidColor()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGItemDescriptor_GetFluidColor_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGItemDescriptor_GetFluidColorLinear_Statics
+	{
+		struct FGItemDescriptor_eventGetFluidColorLinear_Parms
+		{
+			TSubclassOf<UFGItemDescriptor>  inClass;
+			FLinearColor ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetFluidColorLinear_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetFluidColorLinear_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetFluidColorLinear_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetFluidColorLinear_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetFluidColorLinear_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetFluidColorLinear_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetFluidColorLinear_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetFluidColorLinear_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Descriptor|Fluid" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
+		{ "ToolTip", "Returns the color of this fluid ( if it is one ) as type FLinearColor" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetFluidColorLinear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetFluidColorLinear", sizeof(FGItemDescriptor_eventGetFluidColorLinear_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetFluidColorLinear_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetFluidColorLinear_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14822401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetFluidColorLinear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetFluidColorLinear_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetFluidColorLinear()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGItemDescriptor_GetFluidColorLinear_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGItemDescriptor_GetFluidDensity_Statics
+	{
+		struct FGItemDescriptor_eventGetFluidDensity_Parms
+		{
+			TSubclassOf<UFGItemDescriptor>  inClass;
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetFluidDensity_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetFluidDensity_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetFluidDensity_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetFluidDensity_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetFluidDensity_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetFluidDensity_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetFluidDensity_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetFluidDensity_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Descriptor|Fluid" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
+		{ "ToolTip", "Returns the density if this is a fluid." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetFluidDensity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetFluidDensity", sizeof(FGItemDescriptor_eventGetFluidDensity_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetFluidDensity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetFluidDensity_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetFluidDensity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetFluidDensity_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetFluidDensity()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGItemDescriptor_GetFluidDensity_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGItemDescriptor_GetFluidFriction_Statics
+	{
+		struct FGItemDescriptor_eventGetFluidFriction_Parms
+		{
+			TSubclassOf<UFGItemDescriptor>  inClass;
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetFluidFriction_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetFluidFriction_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetFluidFriction_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetFluidFriction_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetFluidFriction_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetFluidFriction_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetFluidFriction_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetFluidFriction_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Descriptor|Fluid" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
+		{ "ToolTip", "Returns the friction of this fluid." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetFluidFriction_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetFluidFriction", sizeof(FGItemDescriptor_eventGetFluidFriction_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetFluidFriction_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetFluidFriction_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetFluidFriction_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetFluidFriction_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetFluidFriction()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGItemDescriptor_GetFluidFriction_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGItemDescriptor_GetFluidViscosity_Statics
+	{
+		struct FGItemDescriptor_eventGetFluidViscosity_Parms
+		{
+			TSubclassOf<UFGItemDescriptor>  inClass;
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetFluidViscosity_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetFluidViscosity_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetFluidViscosity_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetFluidViscosity_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetFluidViscosity_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetFluidViscosity_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetFluidViscosity_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetFluidViscosity_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Descriptor|Fluid" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
+		{ "ToolTip", "Returns the viscosity if this is a fluid." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetFluidViscosity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetFluidViscosity", sizeof(FGItemDescriptor_eventGetFluidViscosity_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetFluidViscosity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetFluidViscosity_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetFluidViscosity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetFluidViscosity_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetFluidViscosity()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGItemDescriptor_GetFluidViscosity_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -842,6 +1050,87 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGItemDescriptor_GetStackSizeConverted_Statics
+	{
+		struct FGItemDescriptor_eventGetStackSizeConverted_Parms
+		{
+			TSubclassOf<UFGItemDescriptor>  inClass;
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetStackSizeConverted_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetStackSizeConverted_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetStackSizeConverted_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetStackSizeConverted_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetStackSizeConverted_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetStackSizeConverted_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetStackSizeConverted_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetStackSizeConverted_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Descriptor|Item" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
+		{ "ToolTip", "Returns the number of items of a certain type we can stack in one inventory slot converted by its resource form to match a unit specification\neg. Liquid Descriptors will divided by 1000 to switch from liters to m^3" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetStackSizeConverted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetStackSizeConverted", sizeof(FGItemDescriptor_eventGetStackSizeConverted_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetStackSizeConverted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetStackSizeConverted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetStackSizeConverted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetStackSizeConverted_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetStackSizeConverted()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGItemDescriptor_GetStackSizeConverted_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp_Statics
+	{
+		struct FGItemDescriptor_eventRememberPickUp_Parms
+		{
+			TSubclassOf<UFGItemDescriptor>  inClass;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGItemDescriptor_eventRememberPickUp_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGItemDescriptor_eventRememberPickUp_Parms), &Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventRememberPickUp_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Descriptor|Item" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
+		{ "ToolTip", "Returns if we should store if this item ever has been picked up" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "RememberPickUp", sizeof(FGItemDescriptor_eventRememberPickUp_Parms), Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister()
 	{
 		return UFGItemDescriptor::StaticClass();
@@ -853,6 +1142,22 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mFluidColor_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mFluidColor;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mFluidFriction_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mFluidFriction;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mFluidViscosity_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mFluidViscosity;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mFluidDensity_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mFluidDensity;
 #if WITH_EDITORONLY_DATA
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mIconView_MetaData[];
@@ -893,6 +1198,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_mForm;
 		static const UE4CodeGen_Private::FBytePropertyParams NewProp_mForm_Underlying;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mResourceSinkPoints_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mResourceSinkPoints;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRadioactiveDecay_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mRadioactiveDecay;
@@ -900,6 +1209,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mEnergyValue_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mEnergyValue;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRememberPickUp_MetaData[];
+#endif
+		static void NewProp_mRememberPickUp_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mRememberPickUp;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCanBeDiscarded_MetaData[];
 #endif
@@ -937,6 +1251,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ &Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded, "CanBeDiscarded" }, // 3529950035
 		{ &Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon, "GetBigIcon" }, // 1012280671
 		{ &Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue, "GetEnergyValue" }, // 2089772057
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetFluidColor, "GetFluidColor" }, // 1906759735
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetFluidColorLinear, "GetFluidColorLinear" }, // 3056967700
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetFluidDensity, "GetFluidDensity" }, // 1571651130
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetFluidFriction, "GetFluidFriction" }, // 2494553372
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetFluidViscosity, "GetFluidViscosity" }, // 1829700407
 		{ &Z_Construct_UFunction_UFGItemDescriptor_GetForm, "GetForm" }, // 3250843866
 		{ &Z_Construct_UFunction_UFGItemDescriptor_GetIconView, "GetIconView" }, // 1586904406
 		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory, "GetItemCategory" }, // 2181251282
@@ -948,6 +1267,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ &Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay, "GetRadioactiveDecay" }, // 1261059143
 		{ &Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon, "GetSmallIcon" }, // 2531341629
 		{ &Z_Construct_UFunction_UFGItemDescriptor_GetStackSize, "GetStackSize" }, // 532216439
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetStackSizeConverted, "GetStackSizeConverted" }, // 3012118798
+		{ &Z_Construct_UFunction_UFGItemDescriptor_RememberPickUp, "RememberPickUp" }, // 2773887726
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::Class_MetaDataParams[] = {
@@ -961,6 +1282,38 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Base for all descriptors in the game like resource, equipment etc." },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidColor_MetaData[] = {
+		{ "Category", "Item|Fluid" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
+		{ "ToolTip", "Color for this fluid, RGB is the color and A is the transparency of the fluid.\nForm must be liquid or gas for this to be useful." },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidColor = { "mFluidColor", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mFluidColor), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidColor_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidFriction_MetaData[] = {
+		{ "Category", "Item|Fluid" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
+		{ "ToolTip", "Friction for this fluid, this is the friction between the fluid and the pipe.\nForm must be liquid or gas for this to be useful." },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidFriction = { "mFluidFriction", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mFluidFriction), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidFriction_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidFriction_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidViscosity_MetaData[] = {
+		{ "Category", "Item|Fluid" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
+		{ "ToolTip", "Friction for this fluid, this is the friction inside the fluid itself.\nForm must be liquid or gas for this to be useful." },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidViscosity = { "mFluidViscosity", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mFluidViscosity), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidViscosity_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidViscosity_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidDensity_MetaData[] = {
+		{ "Category", "Item|Fluid" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
+		{ "ToolTip", "Density for this fluid.\nForm must be liquid or gas for this to be useful." },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidDensity = { "mFluidDensity", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mFluidDensity), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidDensity_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidDensity_MetaData)) };
 #if WITH_EDITORONLY_DATA
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconView_MetaData[] = {
@@ -1043,6 +1396,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm = { "mForm", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mForm), Z_Construct_UEnum_FactoryGame_EResourceForm, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm_MetaData)) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mResourceSinkPoints_MetaData[] = {
+		{ "Category", "Item" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
+		{ "ToolTip", "How many points you get from this item when consuming it in the resource sink" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mResourceSinkPoints = { "mResourceSinkPoints", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mResourceSinkPoints), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mResourceSinkPoints_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mResourceSinkPoints_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRadioactiveDecay_MetaData[] = {
 		{ "Category", "Item" },
 		{ "ClampMin", "0" },
@@ -1061,6 +1422,18 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mEnergyValue = { "mEnergyValue", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mEnergyValue), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mEnergyValue_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mEnergyValue_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRememberPickUp_MetaData[] = {
+		{ "Category", "Item" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
+		{ "ToolTip", "Do we want to know if this item ever has been picked up" },
+	};
+#endif
+	void Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRememberPickUp_SetBit(void* Obj)
+	{
+		((UFGItemDescriptor*)Obj)->mRememberPickUp = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRememberPickUp = { "mRememberPickUp", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGItemDescriptor), &Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRememberPickUp_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRememberPickUp_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRememberPickUp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mCanBeDiscarded_MetaData[] = {
 		{ "Category", "Item" },
@@ -1116,6 +1489,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription = { "mUseDisplayNameAndDescription", nullptr, (EPropertyFlags)0x0010000000012001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGItemDescriptor), &Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGItemDescriptor_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidColor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidFriction,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidViscosity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidDensity,
 #if WITH_EDITORONLY_DATA
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconView,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconYaw,
@@ -1128,8 +1505,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mInventoryIcon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mResourceSinkPoints,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRadioactiveDecay,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mEnergyValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRememberPickUp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mCanBeDiscarded,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mStackSize,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mStackSize_Underlying,
@@ -1164,7 +1543,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGItemDescriptor, 599669396);
+	IMPLEMENT_CLASS(UFGItemDescriptor, 3356574480);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGItemDescriptor>()
 	{
 		return UFGItemDescriptor::StaticClass();

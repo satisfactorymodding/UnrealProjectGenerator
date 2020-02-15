@@ -37,8 +37,9 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterBase() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGDamageType_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterBase_GetHealthComponent();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGHealthComponent_NoRegister();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterBase_GetMesh3P();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterBase_GetMainMesh();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterBase_GetMesh3P();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterBase_GetTakeDamageParticle();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterBase_GetTakeDamageSound();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterBase_IsAliveAndWell();
@@ -294,9 +295,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #endif
 		static void* NewStructOps();
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GroundDecal_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GroundDecals_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_GroundDecal;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_GroundDecals;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_GroundDecals_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Particle_MetaData[];
 #endif
@@ -315,13 +317,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FFootstepEffect>();
 	}
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_GroundDecal_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_GroundDecals_MetaData[] = {
 		{ "Category", "Footstep" },
 		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
-		{ "ToolTip", "UNIMPLEMENTED: The decal to place on the ground when walking around" },
+		{ "ToolTip", "The decal to place on the ground when walking around" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_GroundDecal = { "GroundDecal", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFootstepEffect, GroundDecal), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_GroundDecal_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_GroundDecal_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_GroundDecals = { "GroundDecals", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFootstepEffect, GroundDecals), METADATA_PARAMS(Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_GroundDecals_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_GroundDecals_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_GroundDecals_Inner = { "GroundDecals", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_Particle_MetaData[] = {
 		{ "Category", "Footstep" },
@@ -331,7 +334,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_Particle = { "Particle", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFootstepEffect, Particle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_Particle_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_Particle_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FFootstepEffect_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_GroundDecal,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_GroundDecals,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_GroundDecals_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFootstepEffect_Statics::NewProp_Particle,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FFootstepEffect_Statics::ReturnStructParams = {
@@ -362,7 +366,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffect_Hash() { return 921259771U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffect_Hash() { return 1793896112U; }
 	static FName NAME_AFGCharacterBase_CalculateFallDamage = FName(TEXT("CalculateFallDamage"));
 	int32 AFGCharacterBase::CalculateFallDamage(float zSpeed) const
 	{
@@ -455,6 +459,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 			{ "GetDeathSound", &AFGCharacterBase::execGetDeathSound },
 			{ "GetFallDamageDamageType", &AFGCharacterBase::execGetFallDamageDamageType },
 			{ "GetHealthComponent", &AFGCharacterBase::execGetHealthComponent },
+			{ "GetMainMesh", &AFGCharacterBase::execGetMainMesh },
 			{ "GetMesh3P", &AFGCharacterBase::execGetMesh3P },
 			{ "GetTakeDamageParticle", &AFGCharacterBase::execGetTakeDamageParticle },
 			{ "GetTakeDamageSound", &AFGCharacterBase::execGetTakeDamageSound },
@@ -730,6 +735,48 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterBase_GetHealthComponent_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterBase_GetMainMesh_Statics
+	{
+		struct FGCharacterBase_eventGetMainMesh_Parms
+		{
+			USkeletalMeshComponent* ReturnValue;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_GetMainMesh_Statics::NewProp_ReturnValue_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterBase_GetMainMesh_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterBase_eventGetMainMesh_Parms, ReturnValue), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterBase_GetMainMesh_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterBase_GetMainMesh_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterBase_GetMainMesh_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterBase_GetMainMesh_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterBase_GetMainMesh_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Mesh" },
+		{ "ModuleRelativePath", "Public/FGCharacterBase.h" },
+		{ "ToolTip", "Returns mesh depending on what camera mode we are in 1p or 3p *" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterBase_GetMainMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterBase, nullptr, "GetMainMesh", sizeof(FGCharacterBase_eventGetMainMesh_Parms), Z_Construct_UFunction_AFGCharacterBase_GetMainMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterBase_GetMainMesh_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterBase_GetMainMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterBase_GetMainMesh_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterBase_GetMainMesh()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterBase_GetMainMesh_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1807,7 +1854,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mFootstepDecalSize_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mFootstepDecalSize;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mFootstepDecalSize;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mFootstepDecalSize_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMaxFootstepDecalSpawnDistance_MetaData[];
 #endif
@@ -1852,6 +1900,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		{ &Z_Construct_UFunction_AFGCharacterBase_GetDeathSound, "GetDeathSound" }, // 1093040815
 		{ &Z_Construct_UFunction_AFGCharacterBase_GetFallDamageDamageType, "GetFallDamageDamageType" }, // 92306497
 		{ &Z_Construct_UFunction_AFGCharacterBase_GetHealthComponent, "GetHealthComponent" }, // 1511488404
+		{ &Z_Construct_UFunction_AFGCharacterBase_GetMainMesh, "GetMainMesh" }, // 2073263209
 		{ &Z_Construct_UFunction_AFGCharacterBase_GetMesh3P, "GetMesh3P" }, // 1674282058
 		{ &Z_Construct_UFunction_AFGCharacterBase_GetTakeDamageParticle, "GetTakeDamageParticle" }, // 567363216
 		{ &Z_Construct_UFunction_AFGCharacterBase_GetTakeDamageSound, "GetTakeDamageSound" }, // 2255539029
@@ -2114,7 +2163,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		{ "ToolTip", "Size of footstep decals" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFootstepDecalSize = { "mFootstepDecalSize", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterBase, mFootstepDecalSize), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFootstepDecalSize_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFootstepDecalSize_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFootstepDecalSize = { "mFootstepDecalSize", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterBase, mFootstepDecalSize), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFootstepDecalSize_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFootstepDecalSize_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFootstepDecalSize_Inner = { "mFootstepDecalSize", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mMaxFootstepDecalSpawnDistance_MetaData[] = {
 		{ "Category", "Footstep" },
@@ -2197,6 +2247,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mHealthComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFootstepDecalLifetime,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFootstepDecalSize,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFootstepDecalSize_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mMaxFootstepDecalSpawnDistance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mMaxFootstepParticleSpawnDistance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFootstepAudioEvents,
@@ -2237,7 +2288,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCharacterBase, 3591823876);
+	IMPLEMENT_CLASS(AFGCharacterBase, 1386060209);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCharacterBase>()
 	{
 		return AFGCharacterBase::StaticClass();

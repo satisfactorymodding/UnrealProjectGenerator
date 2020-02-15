@@ -16,6 +16,38 @@ class UFGItemDescriptor;
 
 #define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execToggleDebuggingOnPipe) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ToggleDebuggingOnPipe(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execResetAllPipes) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ResetAllPipes(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execEmptyAllPipes) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->EmptyAllPipes(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execFillFirstPipeInEachNetwork) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->FillFirstPipeInEachNetwork(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execToggleTrainSelfDriving) \
 	{ \
 		P_FINISH; \
@@ -106,20 +138,11 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execPrintStatichMeshesHirarchy) \
+	DECLARE_FUNCTION(execPrintStaticMeshesHierarchy) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->PrintStatichMeshesHirarchy(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execFixupBuiltByRecipeInOldSave) \
-	{ \
-		P_GET_UBOOL(Z_Param_reapplyRecipeIfBetterMatchFound); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->FixupBuiltByRecipeInOldSave(Z_Param_reapplyRecipeIfBetterMatchFound); \
+		P_THIS->PrintStaticMeshesHierarchy(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -263,16 +286,6 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->GetVehicleInfo(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSaveWithNewSessionName) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_saveName); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_sessionName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SaveWithNewSessionName(Z_Param_saveName,Z_Param_sessionName); \
 		P_NATIVE_END; \
 	} \
  \
@@ -491,14 +504,6 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->GiveSchematicsOfTier(Z_Param_tier); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execDumpFactoryStatsToLog) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->DumpFactoryStatsToLog(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -841,6 +846,15 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->PlayerFly(Z_Param_flyModeEnabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGiveResourceSinkCoupons) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_NumCoupons); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GiveResourceSinkCoupons(Z_Param_NumCoupons); \
 		P_NATIVE_END; \
 	} \
  \
@@ -952,6 +966,38 @@ class UFGItemDescriptor;
 
 #define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execToggleDebuggingOnPipe) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ToggleDebuggingOnPipe(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execResetAllPipes) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ResetAllPipes(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execEmptyAllPipes) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->EmptyAllPipes(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execFillFirstPipeInEachNetwork) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->FillFirstPipeInEachNetwork(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execToggleTrainSelfDriving) \
 	{ \
 		P_FINISH; \
@@ -1042,20 +1088,11 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execPrintStatichMeshesHirarchy) \
+	DECLARE_FUNCTION(execPrintStaticMeshesHierarchy) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->PrintStatichMeshesHirarchy(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execFixupBuiltByRecipeInOldSave) \
-	{ \
-		P_GET_UBOOL(Z_Param_reapplyRecipeIfBetterMatchFound); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->FixupBuiltByRecipeInOldSave(Z_Param_reapplyRecipeIfBetterMatchFound); \
+		P_THIS->PrintStaticMeshesHierarchy(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1199,16 +1236,6 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->GetVehicleInfo(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSaveWithNewSessionName) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_saveName); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_sessionName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SaveWithNewSessionName(Z_Param_saveName,Z_Param_sessionName); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1427,14 +1454,6 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->GiveSchematicsOfTier(Z_Param_tier); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execDumpFactoryStatsToLog) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->DumpFactoryStatsToLog(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1777,6 +1796,15 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->PlayerFly(Z_Param_flyModeEnabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGiveResourceSinkCoupons) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_NumCoupons); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GiveResourceSinkCoupons(Z_Param_NumCoupons); \
 		P_NATIVE_END; \
 	} \
  \

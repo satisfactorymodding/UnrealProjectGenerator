@@ -114,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBeacon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBeacon, 1780876284);
+	IMPLEMENT_CLASS(AFGBeacon, 3327868559);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBeacon>()
 	{
 		return AFGBeacon::StaticClass();

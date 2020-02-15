@@ -15,7 +15,7 @@ class AActor;
 #endif
 #define FACTORYGAME_FGAISystem_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_15_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_14_DELEGATE \
 struct _Script_FactoryGame_eventAggroTargetRemovedSignature_Parms \
 { \
 	TScriptInterface<IFGAggroTargetInterface> aggroTarget; \
@@ -28,7 +28,7 @@ static inline void FAggroTargetRemovedSignature_DelegateWrapper(const FMulticast
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_14_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_13_DELEGATE \
 struct _Script_FactoryGame_eventAggroTargetAddedSignature_Parms \
 { \
 	TScriptInterface<IFGAggroTargetInterface> aggroTarget; \
@@ -41,7 +41,7 @@ static inline void FAggroTargetAddedSignature_DelegateWrapper(const FMulticastSc
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execPlayerDestroyed) \
 	{ \
@@ -132,7 +132,7 @@ static inline void FAggroTargetAddedSignature_DelegateWrapper(const FMulticastSc
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execPlayerDestroyed) \
 	{ \
@@ -223,7 +223,7 @@ static inline void FAggroTargetAddedSignature_DelegateWrapper(const FMulticastSc
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGAISystem(); \
 	friend struct Z_Construct_UClass_UFGAISystem_Statics; \
@@ -232,7 +232,7 @@ public: \
 	DECLARE_SERIALIZER(UFGAISystem)
 
 
-#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGAISystem(); \
 	friend struct Z_Construct_UClass_UFGAISystem_Statics; \
@@ -241,7 +241,7 @@ public: \
 	DECLARE_SERIALIZER(UFGAISystem)
 
 
-#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGAISystem(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGAISystem) \
@@ -254,7 +254,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGAISystem(UFGAISystem&&); \
@@ -265,32 +265,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGAISystem); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGAISystem)
 
 
-#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mActivateSpawnerDistance() { return STRUCT_OFFSET(UFGAISystem, mActivateSpawnerDistance); } \
 	FORCEINLINE static uint32 __PPO__mDisablePawnMovement() { return STRUCT_OFFSET(UFGAISystem, mDisablePawnMovement); } \
 	FORCEINLINE static uint32 __PPO__mMaxCreatureIterationsPerTick() { return STRUCT_OFFSET(UFGAISystem, mMaxCreatureIterationsPerTick); } \
 	FORCEINLINE static uint32 __PPO__mMaxSpawnerIterationsPerTick() { return STRUCT_OFFSET(UFGAISystem, mMaxSpawnerIterationsPerTick); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_20_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_19_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_23_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAISystem_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -33,7 +33,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGunDismantle() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunStateDismantle_OnRep_PeekDismantleRefund();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunStateDismantle_OnStartDismantle();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunStateDismantle_OnStopDismantle();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActors();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_PeekAtDismantleRefund();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunStateDismantle_SetMultiDismantleState();
@@ -235,13 +234,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDismantleRefunds
 	{
 		ProcessEvent(FindFunctionChecked(NAME_UFGBuildGunStateDismantle_OnStopDismantle),NULL);
 	}
-	static FName NAME_UFGBuildGunStateDismantle_Server_DismantleActor = FName(TEXT("Server_DismantleActor"));
-	void UFGBuildGunStateDismantle::Server_DismantleActor(AActor* actorToDismantle)
-	{
-		FGBuildGunStateDismantle_eventServer_DismantleActor_Parms Parms;
-		Parms.actorToDismantle=actorToDismantle;
-		ProcessEvent(FindFunctionChecked(NAME_UFGBuildGunStateDismantle_Server_DismantleActor),&Parms);
-	}
 	static FName NAME_UFGBuildGunStateDismantle_Server_DismantleActors = FName(TEXT("Server_DismantleActors"));
 	void UFGBuildGunStateDismantle::Server_DismantleActors(TArray<AActor*> const& selectedActors)
 	{
@@ -268,7 +260,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDismantleRefunds
 			{ "GetSelectedActor", &UFGBuildGunStateDismantle::execGetSelectedActor },
 			{ "HasReachedMaxNumPendingDismantleActors", &UFGBuildGunStateDismantle::execHasReachedMaxNumPendingDismantleActors },
 			{ "OnRep_PeekDismantleRefund", &UFGBuildGunStateDismantle::execOnRep_PeekDismantleRefund },
-			{ "Server_DismantleActor", &UFGBuildGunStateDismantle::execServer_DismantleActor },
 			{ "Server_DismantleActors", &UFGBuildGunStateDismantle::execServer_DismantleActors },
 			{ "Server_PeekAtDismantleRefund", &UFGBuildGunStateDismantle::execServer_PeekAtDismantleRefund },
 			{ "SetMultiDismantleState", &UFGBuildGunStateDismantle::execSetMultiDismantleState },
@@ -607,34 +598,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDismantleRefunds
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActor_Statics
-	{
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_actorToDismantle;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActor_Statics::NewProp_actorToDismantle = { "actorToDismantle", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGunStateDismantle_eventServer_DismantleActor_Parms, actorToDismantle), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActor_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActor_Statics::NewProp_actorToDismantle,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActor_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunDismantle.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunStateDismantle, nullptr, "Server_DismantleActor", sizeof(FGBuildGunStateDismantle_eventServer_DismantleActor_Parms), Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActor_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActor()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActor_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActors_Statics
 	{
 #if WITH_METADATA
@@ -808,7 +771,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDismantleRefunds
 		{ &Z_Construct_UFunction_UFGBuildGunStateDismantle_OnRep_PeekDismantleRefund, "OnRep_PeekDismantleRefund" }, // 1742559310
 		{ &Z_Construct_UFunction_UFGBuildGunStateDismantle_OnStartDismantle, "OnStartDismantle" }, // 3189503200
 		{ &Z_Construct_UFunction_UFGBuildGunStateDismantle_OnStopDismantle, "OnStopDismantle" }, // 2859435029
-		{ &Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActor, "Server_DismantleActor" }, // 3072144320
 		{ &Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_DismantleActors, "Server_DismantleActors" }, // 1206224402
 		{ &Z_Construct_UFunction_UFGBuildGunStateDismantle_Server_PeekAtDismantleRefund, "Server_PeekAtDismantleRefund" }, // 3432498888
 		{ &Z_Construct_UFunction_UFGBuildGunStateDismantle_SetMultiDismantleState, "SetMultiDismantleState" }, // 535928231
@@ -900,7 +862,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDismantleRefunds
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildGunStateDismantle, 4121967861);
+	IMPLEMENT_CLASS(UFGBuildGunStateDismantle, 3169686842);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBuildGunStateDismantle>()
 	{
 		return UFGBuildGunStateDismantle::StaticClass();

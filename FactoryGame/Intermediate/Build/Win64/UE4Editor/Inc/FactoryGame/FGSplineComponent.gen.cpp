@@ -380,7 +380,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSplineComponent, 2050463140);
+	IMPLEMENT_CLASS(UFGSplineComponent, 2857755421);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSplineComponent>()
 	{
 		return UFGSplineComponent::StaticClass();

@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AFGAdminInterface;
 struct FFGKeyMapping;
 #ifdef FACTORYGAME_FGPlayerControllerBase_generated_h
 #error "FGPlayerControllerBase.generated.h already included, missing '#pragma once' in FGPlayerControllerBase.h"
@@ -22,6 +23,10 @@ static inline void FOnInputChanged_DelegateWrapper(const FMulticastScriptDelegat
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGPlayerControllerBase_h_17_RPC_WRAPPERS \
+	virtual bool ServerAdmin_Validate(const FString& ); \
+	virtual void ServerAdmin_Implementation(const FString& command); \
+	virtual bool Server_AdminLogin_Validate(const FString& ); \
+	virtual void Server_AdminLogin_Implementation(const FString& hashedPassword); \
 	virtual bool Server_UpdateCappedBandwidth_Validate(int32 ); \
 	virtual void Server_UpdateCappedBandwidth_Implementation(int32 cap); \
 	virtual void Client_UpdateCappedBandwidth_Implementation(int32 cap); \
@@ -32,6 +37,60 @@ static inline void FOnInputChanged_DelegateWrapper(const FMulticastScriptDelegat
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->DiscardInput(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAdminInterface) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(AFGAdminInterface**)Z_Param__Result=P_THIS->GetAdminInterface(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServerAdmin) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_command); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->ServerAdmin_Validate(Z_Param_command)) \
+		{ \
+			RPC_ValidateFailed(TEXT("ServerAdmin_Validate")); \
+			return; \
+		} \
+		P_THIS->ServerAdmin_Implementation(Z_Param_command); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdmin) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_command); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Admin(Z_Param_command); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_AdminLogin) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_hashedPassword); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_AdminLogin_Validate(Z_Param_hashedPassword)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_AdminLogin_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_AdminLogin_Implementation(Z_Param_hashedPassword); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdminLogin) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_password); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->AdminLogin(Z_Param_password); \
 		P_NATIVE_END; \
 	} \
  \
@@ -177,6 +236,10 @@ static inline void FOnInputChanged_DelegateWrapper(const FMulticastScriptDelegat
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGPlayerControllerBase_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual bool ServerAdmin_Validate(const FString& ); \
+	virtual void ServerAdmin_Implementation(const FString& command); \
+	virtual bool Server_AdminLogin_Validate(const FString& ); \
+	virtual void Server_AdminLogin_Implementation(const FString& hashedPassword); \
 	virtual bool Server_UpdateCappedBandwidth_Validate(int32 ); \
 	virtual void Server_UpdateCappedBandwidth_Implementation(int32 cap); \
 	virtual void Client_UpdateCappedBandwidth_Implementation(int32 cap); \
@@ -187,6 +250,60 @@ static inline void FOnInputChanged_DelegateWrapper(const FMulticastScriptDelegat
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->DiscardInput(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAdminInterface) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(AFGAdminInterface**)Z_Param__Result=P_THIS->GetAdminInterface(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServerAdmin) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_command); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->ServerAdmin_Validate(Z_Param_command)) \
+		{ \
+			RPC_ValidateFailed(TEXT("ServerAdmin_Validate")); \
+			return; \
+		} \
+		P_THIS->ServerAdmin_Implementation(Z_Param_command); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdmin) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_command); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Admin(Z_Param_command); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_AdminLogin) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_hashedPassword); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_AdminLogin_Validate(Z_Param_hashedPassword)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_AdminLogin_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_AdminLogin_Implementation(Z_Param_hashedPassword); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdminLogin) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_password); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->AdminLogin(Z_Param_password); \
 		P_NATIVE_END; \
 	} \
  \
@@ -340,9 +457,17 @@ static inline void FOnInputChanged_DelegateWrapper(const FMulticastScriptDelegat
 	{ \
 		FString ReturnValue; \
 	}; \
+	struct FGPlayerControllerBase_eventServer_AdminLogin_Parms \
+	{ \
+		FString hashedPassword; \
+	}; \
 	struct FGPlayerControllerBase_eventServer_UpdateCappedBandwidth_Parms \
 	{ \
 		int32 cap; \
+	}; \
+	struct FGPlayerControllerBase_eventServerAdmin_Parms \
+	{ \
+		FString command; \
 	};
 
 
@@ -390,6 +515,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGPlayerControllerBase); \
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGPlayerControllerBase_h_17_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__mAdminInterface() { return STRUCT_OFFSET(AFGPlayerControllerBase, mAdminInterface); } \
+	FORCEINLINE static uint32 __PPO__mReplicatedCheatManager() { return STRUCT_OFFSET(AFGPlayerControllerBase, mReplicatedCheatManager); } \
 	FORCEINLINE static uint32 __PPO__mDisableInputComponent() { return STRUCT_OFFSET(AFGPlayerControllerBase, mDisableInputComponent); } \
 	FORCEINLINE static uint32 __PPO__mEnableInputComponent() { return STRUCT_OFFSET(AFGPlayerControllerBase, mEnableInputComponent); } \
 	FORCEINLINE static uint32 __PPO__mAllowedInputWhenDead() { return STRUCT_OFFSET(AFGPlayerControllerBase, mAllowedInputWhenDead); }

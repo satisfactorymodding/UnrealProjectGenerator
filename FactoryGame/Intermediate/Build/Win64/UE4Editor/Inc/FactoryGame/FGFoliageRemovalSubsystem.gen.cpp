@@ -764,7 +764,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoliageRemovalSubsystem, 1047063493);
+	IMPLEMENT_CLASS(AFGFoliageRemovalSubsystem, 870290049);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGFoliageRemovalSubsystem>()
 	{
 		return AFGFoliageRemovalSubsystem::StaticClass();

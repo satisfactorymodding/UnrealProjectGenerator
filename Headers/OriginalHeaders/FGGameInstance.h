@@ -2,6 +2,7 @@
 
 #include "Engine/GameInstance.h"
 #include "NAT.h"
+#include "eos_common.h"
 #include "EpicPeerManager.h"
 #include "AnalyticsService.h"
 #include "FGAnalyticsMacros.h"
@@ -9,46 +10,52 @@
 #include "Interfaces/OnlineSessionInterface.h"
 #include "FGGameInstance.generated.h"
 
+UENUM(BlueprintType)
+enum class EJoinSessionState : uint8
+{
+	JSS_NotJoiningSession,
+	JSS_WaitingForLoginToComplete,
+	JSS_QueryingHostsId,
+	JSS_DestroyingOldSession,
+	JSS_ConnectingToHost
+};
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnJoinSessionStateChanged, EJoinSessionState, newState );
 
 USTRUCT()
 struct FOnJoinSessionData
 {
 	GENERATED_BODY()
 
-	void Init( ULocalPlayer* player, const FOnlineSessionSearchResult& session )
+	void Init( class UFGLocalPlayer* player, const FOnlineSessionSearchResult& session )
 	{
 		LocalPlayer = player;
 		Session = session;
 
 		JoinInProgress = true;
-		HasDestoryedExistingSession = false;
-	}
-
-	// We have destroyed a existing progress
-	void DestroyedExistingSession()
-	{
-		HasDestoryedExistingSession = true;
 	}
 
 	void Done()
 	{
 		JoinInProgress = false;
-		HasDestoryedExistingSession = false;
+		LocalPlayer = nullptr;
 	}
+
+	void SetState( EJoinSessionState newState, FOnJoinSessionStateChanged& onStateChangedDelegate );
+
+	FORCEINLINE EJoinSessionState GetState() const { return State; }
 
 	/** Player that want to join the session */
 	UPROPERTY()
-	ULocalPlayer* LocalPlayer;
+	class UFGLocalPlayer* LocalPlayer;
 
 	/** Session to join */
 	FOnlineSessionSearchResult Session;
 
 	/** True if we are currently joining a session */
-	bool JoinInProgress;
-
-	/** If true, then we have just destroyed a exsting session */
-	bool HasDestoryedExistingSession;
+	uint8 JoinInProgress:1;
+private:
+	EJoinSessionState State;
 };
 
 /**
@@ -134,7 +141,7 @@ public:
 	FORCEINLINE class UAnalyticsService* GetAnalyticsService() const { return mAnalyticsService; }
 
 	/** Returns the relative analytics services from the world context holder */
-	UFUNCTION( BlueprintPure, Category = "GameAnalytics", DisplayName = "GetGameAnalyticsService", Meta = ( DefaultToSelf = "WorldContext" ) )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|GameAnalytics", DisplayName = "GetGameAnalyticsService", Meta = ( DefaultToSelf = "WorldContext" ) )
 	static UAnalyticsService* GetGameAnalyticsService( UObject* worldContext );
 
 	/** Returns the relative analytics services from the world context holder */
@@ -145,21 +152,21 @@ public:
 	void PushError( TSubclassOf<class UFGErrorMessage> errorMessage );
 
 	/** Pushes a error to the game, that handles it appropriately */
-	UFUNCTION( BlueprintCallable, Category="Error", meta=(DefaultToSelf = "worldContext"))
+	UFUNCTION( BlueprintCallable, Category="FactoryGame|ErrorHandling", meta=(DefaultToSelf = "worldContext"))
 	static void PushError( UObject* worldContext, TSubclassOf<class UFGErrorMessage> errorMessage );
 	
 	/** Get the next error and removes it from the error queue, returns null when there is no more errors */
 	class UFGErrorMessage* GetNextError();
 
 	/** Get the next error and removes it from the error queue, returns null when there is no more errors */
-	UFUNCTION( BlueprintCallable, Category="Error", meta=(DefaultToSelf = "worldContext"))
+	UFUNCTION( BlueprintCallable, Category="FactoryGame|ErrorHandling", meta=(DefaultToSelf = "worldContext"))
 	static class UFGErrorMessage* GetNextError( UObject* worldContext );
 
 	/** Peek at the next error and keep it in the error queue, returns null when there is no more errors */
 	class UFGErrorMessage* PeekNextError() const;
 
 	/** Peek at the next error and keep it in the error queue, returns null when there is no more errors */
-	UFUNCTION( BlueprintPure, Category="Error", meta=(DefaultToSelf = "worldContext"))
+	UFUNCTION( BlueprintPure, Category="FactoryGame|ErrorHandling", meta=(DefaultToSelf = "worldContext"))
 	static class UFGErrorMessage* PeekNextError( UObject* worldContext );
 
 	/** Set if the player has seen alpha info screen */
@@ -171,22 +178,22 @@ public:
 	FORCEINLINE bool HasPlayerSeenAlphaInfoScreen() const { return mHasSeenAlphaInfo; }
 
 	// Finds non-original content and populates ModPackages
-	UFUNCTION( BlueprintCallable, Category = "Modding" )
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Modding" )
 	bool FindModPackages();
 
 	// Populates UGC arrays with data from ModPackages, Updates ModPackages Information with contents
-	UFUNCTION( BlueprintCallable, Category = "Modding" )
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Modding" )
 	void GetFGUGC( UClass* WeaponClass, UClass* EnemyClass, UClass* BossClass, UClass *PlayerPawnClass );
 
 	// Called when exiting to desktop/shutting down
 	virtual void Shutdown() override;
 
 	/** Setter for  mSkipOnboarding*/
-	UFUNCTION( BlueprintCallable, Category = "Onboarding" ) 
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Onboarding" ) 
 	void SetSkipOnboarding( bool doSkip );
 
 	/** Getter for  mSkipOnboarding*/
-	UFUNCTION( BlueprintPure, Category = "Onboarding" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Onboarding" )
 	FORCEINLINE bool GetSkipOnboarding() { return mSkipOnboarding; }
 
 	/** Query our current NAT-type */
@@ -197,18 +204,28 @@ public:
 
 
 	/* returns true if there were an error, and fills in the enum and string. If there were no error the type and msg will be undefined, and the function returns false. To get the next message or reset the error state, call PopLatestNetworkError function*/
-	UFUNCTION( BlueprintPure, Category = "ErrorHandling" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|ErrorHandling" )
 	bool GetLatestNetworkError( FFGGameNetworkErrorMsg& msg );
 
 	/* Pops the latest network message, removing it from the queue and resetting the error state. If there is more messages left after the pop it will return true, otherwise false. */
-	UFUNCTION( BlueprintCallable, Category = "ErrorHandling" )
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|ErrorHandling" )
 	bool PopLatestNetworkError();
+
+	UFUNCTION(BlueprintPure, Category="FactoryGame|Online")
+	EJoinSessionState GetCurrentJoinSessionState() const;
 protected:
 	// Called when a map has loaded properly in Standalone
 	virtual void LoadComplete( const float loadTime, const FString& mapName ) override;
 
-	/** Called after we have destroyed a session for joining a invite */
-	virtual void OnDestroySessionComplete_JoinInvite( FName gameSessionName, bool wasSuccessful );
+	/** Called after we have destroyed a old session for joining a new session */
+	virtual void OnDestroySessionComplete_JoinSession( FName gameSessionName, bool wasSuccessful );
+
+	/** Called after we have queried a friends product id */
+	virtual void OnQueryFriendProductIdCompleted_JoinSession( bool wasSuccessful, FString EpicId, EOS_ProductUserId ProductId );
+
+	/** Called after we have queried a friends product id */
+	UFUNCTION()
+	virtual void PollHostProductUserId_JoinSession();
 
 	/** Called when we receive a callback about our current NAT-type */
 	void OnNATQueryCompleted( const struct FOnlineError& requestStatus, TOptional<ENATType> foundNATType );
@@ -227,14 +244,6 @@ private:
 
 	/** Initializes the Game Analytics Service. Requires that the Epic Online Services handle has been created beforehand. */
 	void InitGameAnalytics();
-
-	/** 
-	* Update 'tick' for EOS services. Consider routing the regular tick functionality to this GameInstance UObject 
-	* if Epic Online Services seems to require quicker tick rates. 
-	**/
-	void UpdateEOSHandle();
-	FTimerHandle mAnalyticsUpdateTimerHandle;
-
 protected:
 	/** The global save system */
 	UPROPERTY()
@@ -245,9 +254,8 @@ protected:
 	UPROPERTY(BlueprintAssignable)
 	FOnNewError mOnNewError;
 
-
-
 	TArray< FFGGameNetworkErrorMsg > mNetworkErrorQueue;
+
 	UPROPERTY( BlueprintAssignable )
 	FOnNetworkErrorRecieved mOnNetworkErrorRecieved;
 
@@ -262,6 +270,10 @@ protected:
 	/** Storing data for joining a session */
 	UPROPERTY()
 	FOnJoinSessionData mJoinSessionData;
+
+	/** Called when the state of joining session has been updated */
+	UPROPERTY(BlueprintAssignable)
+	FOnJoinSessionStateChanged mOnJoinSessionStateUpdated;
 
 	/** Join session complete handle */
 	FDelegateHandle mOnJoinSessionCompleteHandle;
@@ -293,4 +305,6 @@ public:
 
 	/** Has the player seen the alpha info screen, used to only show it once per session */
 	bool mHasSeenAlphaInfo;
+private:
+	void JoinSession_Internal();
 };

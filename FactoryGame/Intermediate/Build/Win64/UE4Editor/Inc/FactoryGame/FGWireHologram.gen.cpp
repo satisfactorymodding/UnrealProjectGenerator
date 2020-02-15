@@ -201,7 +201,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWireHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWireHologram, 3999269039);
+	IMPLEMENT_CLASS(AFGWireHologram, 2969179739);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWireHologram>()
 	{
 		return AFGWireHologram::StaticClass();

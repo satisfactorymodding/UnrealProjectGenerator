@@ -13,8 +13,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFGObjectScanner() {}
 // Cross Module References
-	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FScannableDetails();
+	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ECycleDirection();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FScannableDetails();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSchematic_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FColor();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
@@ -26,6 +27,7 @@ void EmptyLinkFunctionForGeneratedCodeFGObjectScanner() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGObjectScanner_CycleForward();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGObjectScanner_GetAvailableObjectDetails();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGObjectScanner_GetCurrentDetails();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGObjectScanner_HasValidCurrentDetails();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGObjectScanner_IsBeeping();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGObjectScanner_PlayBeep();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGObjectScanner_SetScannableEntry();
@@ -39,6 +41,56 @@ void EmptyLinkFunctionForGeneratedCodeFGObjectScanner() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGObjectScannerAttachment_OnRep_ScannerLightColor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGObjectScannerAttachment_UpdateScannerVisuals();
 // End Cross Module References
+	static UEnum* ECycleDirection_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_FactoryGame_ECycleDirection, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ECycleDirection"));
+		}
+		return Singleton;
+	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<ECycleDirection>()
+	{
+		return ECycleDirection_StaticEnum();
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ECycleDirection(ECycleDirection_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ECycleDirection"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ECycleDirection_Hash() { return 2060392200U; }
+	UEnum* Z_Construct_UEnum_FactoryGame_ECycleDirection()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("ECycleDirection"), 0, Get_Z_Construct_UEnum_FactoryGame_ECycleDirection_Hash(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "ECycleDirection::CD_Forward", (int64)ECycleDirection::CD_Forward },
+				{ "ECycleDirection::CD_Backward", (int64)ECycleDirection::CD_Backward },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
+				nullptr,
+				"ECycleDirection",
+				"ECycleDirection",
+				Enumerators,
+				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
+				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
 class UScriptStruct* FScannableDetails::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -235,6 +287,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 			{ "CycleForward", &AFGObjectScanner::execCycleForward },
 			{ "GetAvailableObjectDetails", &AFGObjectScanner::execGetAvailableObjectDetails },
 			{ "GetCurrentDetails", &AFGObjectScanner::execGetCurrentDetails },
+			{ "HasValidCurrentDetails", &AFGObjectScanner::execHasValidCurrentDetails },
 			{ "IsBeeping", &AFGObjectScanner::execIsBeeping },
 			{ "SetScannableEntry", &AFGObjectScanner::execSetScannableEntry },
 		};
@@ -386,6 +439,45 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGObjectScanner_GetCurrentDetails_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGObjectScanner_HasValidCurrentDetails_Statics
+	{
+		struct FGObjectScanner_eventHasValidCurrentDetails_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGObjectScanner_HasValidCurrentDetails_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGObjectScanner_eventHasValidCurrentDetails_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGObjectScanner_HasValidCurrentDetails_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGObjectScanner_eventHasValidCurrentDetails_Parms), &Z_Construct_UFunction_AFGObjectScanner_HasValidCurrentDetails_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGObjectScanner_HasValidCurrentDetails_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGObjectScanner_HasValidCurrentDetails_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGObjectScanner_HasValidCurrentDetails_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Scanner" },
+		{ "ModuleRelativePath", "Public/Equipment/FGObjectScanner.h" },
+		{ "ToolTip", "Returns whether or not object scanner has a valid currently selected object" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGObjectScanner_HasValidCurrentDetails_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGObjectScanner, nullptr, "HasValidCurrentDetails", sizeof(FGObjectScanner_eventHasValidCurrentDetails_Parms), Z_Construct_UFunction_AFGObjectScanner_HasValidCurrentDetails_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGObjectScanner_HasValidCurrentDetails_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGObjectScanner_HasValidCurrentDetails_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGObjectScanner_HasValidCurrentDetails_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGObjectScanner_HasValidCurrentDetails()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGObjectScanner_HasValidCurrentDetails_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -585,6 +677,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		{ &Z_Construct_UFunction_AFGObjectScanner_CycleForward, "CycleForward" }, // 3532972765
 		{ &Z_Construct_UFunction_AFGObjectScanner_GetAvailableObjectDetails, "GetAvailableObjectDetails" }, // 283834177
 		{ &Z_Construct_UFunction_AFGObjectScanner_GetCurrentDetails, "GetCurrentDetails" }, // 2199957499
+		{ &Z_Construct_UFunction_AFGObjectScanner_HasValidCurrentDetails, "HasValidCurrentDetails" }, // 3266922416
 		{ &Z_Construct_UFunction_AFGObjectScanner_IsBeeping, "IsBeeping" }, // 2182566188
 		{ &Z_Construct_UFunction_AFGObjectScanner_PlayBeep, "PlayBeep" }, // 2230684134
 		{ &Z_Construct_UFunction_AFGObjectScanner_SetScannableEntry, "SetScannableEntry" }, // 2353259446
@@ -694,7 +787,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGObjectScanner, 1948013740);
+	IMPLEMENT_CLASS(AFGObjectScanner, 1969687904);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGObjectScanner>()
 	{
 		return AFGObjectScanner::StaticClass();
@@ -945,7 +1038,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGObjectScannerAttachment, 1516485112);
+	IMPLEMENT_CLASS(AFGObjectScannerAttachment, 1933728848);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGObjectScannerAttachment>()
 	{
 		return AFGObjectScannerAttachment::StaticClass();

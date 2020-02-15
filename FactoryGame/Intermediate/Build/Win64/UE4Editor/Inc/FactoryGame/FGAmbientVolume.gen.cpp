@@ -137,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAmbientVolume, 57079059);
+	IMPLEMENT_CLASS(AFGAmbientVolume, 2369817750);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGAmbientVolume>()
 	{
 		return AFGAmbientVolume::StaticClass();

@@ -166,6 +166,28 @@ class UFGCDResourceNodeIsOccuped : public UFGConstructDisqualifier
 };
 
 UCLASS()
+class UFGCDResourceIsTooShallow : public UFGConstructDisqualifier
+{
+	GENERATED_BODY()
+
+	UFGCDResourceIsTooShallow()
+	{
+		mDisqfualifyingText = LOCTEXT( "UFGCDResourceIsTooShallow", "Resource is not Deep Enough!" );
+	}
+};
+
+UCLASS()
+class UFGCDNeedsWaterVolume : public UFGConstructDisqualifier
+{
+	GENERATED_BODY()
+
+	UFGCDNeedsWaterVolume()
+	{
+		mDisqfualifyingText = LOCTEXT( "UFGCDNeedsWaterVolume", "You need to place this on Deep Water!" );
+	}
+};
+
+UCLASS()
 class UFGCDResourceDeposit : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
@@ -340,5 +362,83 @@ class UFGCDTrackTrunToSharp : public UFGConstructDisqualifier
 		mDisqfualifyingText = LOCTEXT( "UFGCDTrackTrunToSharp", "The Railroad Track has a too sharp turn" );
 	}
 };
+
+UCLASS()
+class UFGCDPipeTooShort : public UFGConstructDisqualifier
+{
+	GENERATED_BODY()
+
+	UFGCDPipeTooShort()
+	{
+		mDisqfualifyingText = LOCTEXT( "UFGCDPipeTooShort", "The Pipe is too short" );
+	}
+};
+
+UCLASS()
+class UFGCDPipeTooLong : public UFGConstructDisqualifier
+{
+	GENERATED_BODY()
+
+	UFGCDPipeTooLong()
+	{
+		mDisqfualifyingText = LOCTEXT( "UFGCDPipeTooLong", "The Pipe is too long" );
+	}
+};
+
+UCLASS()
+class UFGCDPipeAttachmentTooSharpTurn : public UFGConstructDisqualifier
+{
+	GENERATED_BODY()
+
+	UFGCDPipeAttachmentTooSharpTurn()
+	{
+		mDisqfualifyingText = LOCTEXT( "UFGCDPipeAttachmentTooSharpTurn", "The turn of the Pipe is too sharp for attachment!" );
+	}
+};
+
+UCLASS()
+class UFGCDPipeMustSnap : public UFGConstructDisqualifier
+{
+	GENERATED_BODY()
+
+	UFGCDPipeMustSnap()
+	{
+		mDisqfualifyingText = LOCTEXT( "UFGCDPipeMustSnap", "The Pipe must snap to a Pipe Support or a building connection!" );
+	}
+};
+
+UCLASS()
+class UFGCDPipeFluidTypeMismatch : public UFGConstructDisqualifier
+{
+	GENERATED_BODY()
+
+	UFGCDPipeFluidTypeMismatch()
+	{
+		mDisqfualifyingText = LOCTEXT( "UFGCDPipeFluidTypeMismatch", "Cannot connect pipe networks containing different fluids!" );
+	}
+};
+
+UCLASS()
+class UFGCDPipeInvalidShape : public UFGConstructDisqualifier
+{
+	GENERATED_BODY()
+
+	UFGCDPipeInvalidShape()
+	{
+		mDisqfualifyingText = LOCTEXT( "UFGCDPipeInvalidShape", "The Pipe has an invalid shape!" );
+	}
+};
+
+UCLASS()
+class UFGCDPipeNoPathFound : public UFGConstructDisqualifier
+{
+	GENERATED_BODY()
+	
+	UFGCDPipeNoPathFound()
+	{
+		mDisqfualifyingText = LOCTEXT( "UFGCDPipeNoPathFound", "No path could be found to construct the pipe" );
+	}
+};
+
 
 #undef LOCTEXT_NAMESPACE 

@@ -47,6 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorInstanceComponent() {
 		{ "IncludePath", "FGProductionIndicatorInstanceComponent.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/FGProductionIndicatorInstanceComponent.h" },
+		{ "ToolTip", "Instanced production indicator, used on factories instead of the old non instanced variant." },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGProductionIndicatorInstanceComponent_Statics::StaticCppClassTypeInfo = {
@@ -76,7 +77,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorInstanceComponent() {
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGProductionIndicatorInstanceComponent, 394681935);
+	IMPLEMENT_CLASS(UFGProductionIndicatorInstanceComponent, 3016433402);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGProductionIndicatorInstanceComponent>()
 	{
 		return UFGProductionIndicatorInstanceComponent::StaticClass();

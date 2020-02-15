@@ -28,20 +28,20 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpAllAvailableRecipes();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpAttachedToSkelMesh();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpDynamicOptionsSettings();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpFactoryStatsToLog();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpGamePhases();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpNonDormantActors();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpPlayerStates();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpSchematics();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpSignificanceManagedObjects();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpTicking();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_EmptyAllPipes();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_EnableAudioDebug();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_EnableBuildableTick();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_EnableBuildableTick_Get();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_EnableInstancingOnFactory();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_EnablePlayerFOV();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_EnablePlayerFOV_Get();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_FixupBuiltByRecipeInOldSave();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_FillFirstPipeInEachNetwork();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_FlipVehicle();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_ForceSpawnCreatures();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_GetVehicleInfo();
@@ -53,6 +53,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_GiveItemStacks();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_GiveResourceSinkCoupons();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_GiveSchematicsOfTier();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_GiveStartingResearch();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_GiveStorySchematics();
@@ -83,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_PlayerFly_Get();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly_Get();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_PrintStatichMeshesHirarchy();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_PrintStaticMeshesHierarchy();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_PumpiMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_PumpiMode_Get();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_PurgeAllBeaconsFromSave();
@@ -95,13 +96,13 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_RemoveAllFoliage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_ReplayBuildingEffects();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_ResetAllFactoryLegsToZero();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_ResetAllPipes();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_ResetFuses();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_ResetGamePhases();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_ResetHubTutorial();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_ResetRecipes();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_ResetSchematics();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_RunDebugMetric();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_SendInviteToFriend();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_SetAITickDistance();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_SetDebugStartingPoint();
@@ -124,6 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_ToggleAudioDebug();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_ToggleAudioLandingDebug();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_ToggleCameraMode();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_ToggleDebuggingOnPipe();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_ToggleTrainSelfDriving();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_TriggerPresenceUpdate();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_TurboBuildMode();
@@ -148,20 +150,20 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 			{ "DumpAllAvailableRecipes", &UFGCheatManager::execDumpAllAvailableRecipes },
 			{ "DumpAttachedToSkelMesh", &UFGCheatManager::execDumpAttachedToSkelMesh },
 			{ "DumpDynamicOptionsSettings", &UFGCheatManager::execDumpDynamicOptionsSettings },
-			{ "DumpFactoryStatsToLog", &UFGCheatManager::execDumpFactoryStatsToLog },
 			{ "DumpGamePhases", &UFGCheatManager::execDumpGamePhases },
 			{ "DumpNonDormantActors", &UFGCheatManager::execDumpNonDormantActors },
 			{ "DumpPlayerStates", &UFGCheatManager::execDumpPlayerStates },
 			{ "DumpSchematics", &UFGCheatManager::execDumpSchematics },
 			{ "DumpSignificanceManagedObjects", &UFGCheatManager::execDumpSignificanceManagedObjects },
 			{ "DumpTicking", &UFGCheatManager::execDumpTicking },
+			{ "EmptyAllPipes", &UFGCheatManager::execEmptyAllPipes },
 			{ "EnableAudioDebug", &UFGCheatManager::execEnableAudioDebug },
 			{ "EnableBuildableTick", &UFGCheatManager::execEnableBuildableTick },
 			{ "EnableBuildableTick_Get", &UFGCheatManager::execEnableBuildableTick_Get },
 			{ "EnableInstancingOnFactory", &UFGCheatManager::execEnableInstancingOnFactory },
 			{ "EnablePlayerFOV", &UFGCheatManager::execEnablePlayerFOV },
 			{ "EnablePlayerFOV_Get", &UFGCheatManager::execEnablePlayerFOV_Get },
-			{ "FixupBuiltByRecipeInOldSave", &UFGCheatManager::execFixupBuiltByRecipeInOldSave },
+			{ "FillFirstPipeInEachNetwork", &UFGCheatManager::execFillFirstPipeInEachNetwork },
 			{ "FlipVehicle", &UFGCheatManager::execFlipVehicle },
 			{ "ForceSpawnCreatures", &UFGCheatManager::execForceSpawnCreatures },
 			{ "GetVehicleInfo", &UFGCheatManager::execGetVehicleInfo },
@@ -171,6 +173,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 			{ "GiveCheatSchematics", &UFGCheatManager::execGiveCheatSchematics },
 			{ "GiveItemsSingle", &UFGCheatManager::execGiveItemsSingle },
 			{ "GiveItemStacks", &UFGCheatManager::execGiveItemStacks },
+			{ "GiveResourceSinkCoupons", &UFGCheatManager::execGiveResourceSinkCoupons },
 			{ "GiveSchematicsOfTier", &UFGCheatManager::execGiveSchematicsOfTier },
 			{ "GiveStartingResearch", &UFGCheatManager::execGiveStartingResearch },
 			{ "GiveStorySchematics", &UFGCheatManager::execGiveStorySchematics },
@@ -201,7 +204,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 			{ "PlayerFly_Get", &UFGCheatManager::execPlayerFly_Get },
 			{ "PlayerNoClipModeOnFly", &UFGCheatManager::execPlayerNoClipModeOnFly },
 			{ "PlayerNoClipModeOnFly_Get", &UFGCheatManager::execPlayerNoClipModeOnFly_Get },
-			{ "PrintStatichMeshesHirarchy", &UFGCheatManager::execPrintStatichMeshesHirarchy },
+			{ "PrintStaticMeshesHierarchy", &UFGCheatManager::execPrintStaticMeshesHierarchy },
 			{ "PumpiMode", &UFGCheatManager::execPumpiMode },
 			{ "PumpiMode_Get", &UFGCheatManager::execPumpiMode_Get },
 			{ "PurgeAllBeaconsFromSave", &UFGCheatManager::execPurgeAllBeaconsFromSave },
@@ -213,13 +216,13 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 			{ "RemoveAllFoliage", &UFGCheatManager::execRemoveAllFoliage },
 			{ "ReplayBuildingEffects", &UFGCheatManager::execReplayBuildingEffects },
 			{ "ResetAllFactoryLegsToZero", &UFGCheatManager::execResetAllFactoryLegsToZero },
+			{ "ResetAllPipes", &UFGCheatManager::execResetAllPipes },
 			{ "ResetFuses", &UFGCheatManager::execResetFuses },
 			{ "ResetGamePhases", &UFGCheatManager::execResetGamePhases },
 			{ "ResetHubTutorial", &UFGCheatManager::execResetHubTutorial },
 			{ "ResetRecipes", &UFGCheatManager::execResetRecipes },
 			{ "ResetSchematics", &UFGCheatManager::execResetSchematics },
 			{ "RunDebugMetric", &UFGCheatManager::execRunDebugMetric },
-			{ "SaveWithNewSessionName", &UFGCheatManager::execSaveWithNewSessionName },
 			{ "SendInviteToFriend", &UFGCheatManager::execSendInviteToFriend },
 			{ "SetAITickDistance", &UFGCheatManager::execSetAITickDistance },
 			{ "SetDebugStartingPoint", &UFGCheatManager::execSetDebugStartingPoint },
@@ -241,6 +244,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 			{ "ToggleAudioDebug", &UFGCheatManager::execToggleAudioDebug },
 			{ "ToggleAudioLandingDebug", &UFGCheatManager::execToggleAudioLandingDebug },
 			{ "ToggleCameraMode", &UFGCheatManager::execToggleCameraMode },
+			{ "ToggleDebuggingOnPipe", &UFGCheatManager::execToggleDebuggingOnPipe },
 			{ "ToggleTrainSelfDriving", &UFGCheatManager::execToggleTrainSelfDriving },
 			{ "TriggerPresenceUpdate", &UFGCheatManager::execTriggerPresenceUpdate },
 			{ "TurboBuildMode", &UFGCheatManager::execTurboBuildMode },
@@ -496,29 +500,6 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGCheatManager_DumpFactoryStatsToLog_Statics
-	{
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_DumpFactoryStatsToLog_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Log" },
-		{ "ModuleRelativePath", "Public/FGCheatManager.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_DumpFactoryStatsToLog_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, nullptr, "DumpFactoryStatsToLog", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_DumpFactoryStatsToLog_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_DumpFactoryStatsToLog_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGCheatManager_DumpFactoryStatsToLog()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_DumpFactoryStatsToLog_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_UFGCheatManager_DumpGamePhases_Statics
 	{
 #if WITH_METADATA
@@ -669,6 +650,28 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_DumpTicking_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGCheatManager_EmptyAllPipes_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_EmptyAllPipes_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGCheatManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_EmptyAllPipes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, nullptr, "EmptyAllPipes", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_EmptyAllPipes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_EmptyAllPipes_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGCheatManager_EmptyAllPipes()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_EmptyAllPipes_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -901,41 +904,25 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGCheatManager_FixupBuiltByRecipeInOldSave_Statics
+	struct Z_Construct_UFunction_UFGCheatManager_FillFirstPipeInEachNetwork_Statics
 	{
-		struct FGCheatManager_eventFixupBuiltByRecipeInOldSave_Parms
-		{
-			bool reapplyRecipeIfBetterMatchFound;
-		};
-		static void NewProp_reapplyRecipeIfBetterMatchFound_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_reapplyRecipeIfBetterMatchFound;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	void Z_Construct_UFunction_UFGCheatManager_FixupBuiltByRecipeInOldSave_Statics::NewProp_reapplyRecipeIfBetterMatchFound_SetBit(void* Obj)
-	{
-		((FGCheatManager_eventFixupBuiltByRecipeInOldSave_Parms*)Obj)->reapplyRecipeIfBetterMatchFound = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGCheatManager_FixupBuiltByRecipeInOldSave_Statics::NewProp_reapplyRecipeIfBetterMatchFound = { "reapplyRecipeIfBetterMatchFound", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCheatManager_eventFixupBuiltByRecipeInOldSave_Parms), &Z_Construct_UFunction_UFGCheatManager_FixupBuiltByRecipeInOldSave_Statics::NewProp_reapplyRecipeIfBetterMatchFound_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCheatManager_FixupBuiltByRecipeInOldSave_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCheatManager_FixupBuiltByRecipeInOldSave_Statics::NewProp_reapplyRecipeIfBetterMatchFound,
-	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_FixupBuiltByRecipeInOldSave_Statics::Function_MetaDataParams[] = {
-		{ "CPP_Default_reapplyRecipeIfBetterMatchFound", "false" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_FillFirstPipeInEachNetwork_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/FGCheatManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_FixupBuiltByRecipeInOldSave_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, nullptr, "FixupBuiltByRecipeInOldSave", sizeof(FGCheatManager_eventFixupBuiltByRecipeInOldSave_Parms), Z_Construct_UFunction_UFGCheatManager_FixupBuiltByRecipeInOldSave_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_FixupBuiltByRecipeInOldSave_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_FixupBuiltByRecipeInOldSave_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_FixupBuiltByRecipeInOldSave_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGCheatManager_FixupBuiltByRecipeInOldSave()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_FillFirstPipeInEachNetwork_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, nullptr, "FillFirstPipeInEachNetwork", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_FillFirstPipeInEachNetwork_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_FillFirstPipeInEachNetwork_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGCheatManager_FillFirstPipeInEachNetwork()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_FixupBuiltByRecipeInOldSave_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_FillFirstPipeInEachNetwork_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1173,6 +1160,40 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_GiveItemStacks_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGCheatManager_GiveResourceSinkCoupons_Statics
+	{
+		struct FGCheatManager_eventGiveResourceSinkCoupons_Parms
+		{
+			int32 NumCoupons;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_NumCoupons;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGCheatManager_GiveResourceSinkCoupons_Statics::NewProp_NumCoupons = { "NumCoupons", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCheatManager_eventGiveResourceSinkCoupons_Parms, NumCoupons), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCheatManager_GiveResourceSinkCoupons_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCheatManager_GiveResourceSinkCoupons_Statics::NewProp_NumCoupons,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_GiveResourceSinkCoupons_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Resources" },
+		{ "ModuleRelativePath", "Public/FGCheatManager.h" },
+		{ "ToolTip", "Give the number of coupons specified" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_GiveResourceSinkCoupons_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, nullptr, "GiveResourceSinkCoupons", sizeof(FGCheatManager_eventGiveResourceSinkCoupons_Parms), Z_Construct_UFunction_UFGCheatManager_GiveResourceSinkCoupons_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_GiveResourceSinkCoupons_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020600, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_GiveResourceSinkCoupons_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_GiveResourceSinkCoupons_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGCheatManager_GiveResourceSinkCoupons()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_GiveResourceSinkCoupons_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2124,7 +2145,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGCheatManager_PrintStatichMeshesHirarchy_Statics
+	struct Z_Construct_UFunction_UFGCheatManager_PrintStaticMeshesHierarchy_Statics
 	{
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -2132,17 +2153,17 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_PrintStatichMeshesHirarchy_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_PrintStaticMeshesHierarchy_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/FGCheatManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_PrintStatichMeshesHirarchy_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, nullptr, "PrintStatichMeshesHirarchy", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_PrintStatichMeshesHirarchy_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_PrintStatichMeshesHirarchy_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGCheatManager_PrintStatichMeshesHirarchy()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_PrintStaticMeshesHierarchy_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, nullptr, "PrintStaticMeshesHierarchy", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_PrintStaticMeshesHierarchy_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_PrintStaticMeshesHierarchy_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGCheatManager_PrintStaticMeshesHierarchy()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_PrintStatichMeshesHirarchy_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_PrintStaticMeshesHierarchy_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2478,6 +2499,28 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGCheatManager_ResetAllPipes_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_ResetAllPipes_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGCheatManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_ResetAllPipes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, nullptr, "ResetAllPipes", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_ResetAllPipes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_ResetAllPipes_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGCheatManager_ResetAllPipes()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_ResetAllPipes_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGCheatManager_ResetFuses_Statics
 	{
 #if WITH_METADATA
@@ -2609,59 +2652,6 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_RunDebugMetric_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics
-	{
-		struct FGCheatManager_eventSaveWithNewSessionName_Parms
-		{
-			FString saveName;
-			FString sessionName;
-		};
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_sessionName_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_sessionName;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_saveName_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_saveName;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::NewProp_sessionName_MetaData[] = {
-		{ "NativeConst", "" },
-	};
-#endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::NewProp_sessionName = { "sessionName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCheatManager_eventSaveWithNewSessionName_Parms, sessionName), METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::NewProp_sessionName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::NewProp_sessionName_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::NewProp_saveName_MetaData[] = {
-		{ "NativeConst", "" },
-	};
-#endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::NewProp_saveName = { "saveName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCheatManager_eventSaveWithNewSessionName_Parms, saveName), METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::NewProp_saveName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::NewProp_saveName_MetaData)) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::NewProp_sessionName,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::NewProp_saveName,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save/Load" },
-		{ "ModuleRelativePath", "Public/FGCheatManager.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, nullptr, "SaveWithNewSessionName", sizeof(FGCheatManager_eventSaveWithNewSessionName_Parms), Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -3306,6 +3296,28 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGCheatManager_ToggleDebuggingOnPipe_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_ToggleDebuggingOnPipe_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGCheatManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_ToggleDebuggingOnPipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, nullptr, "ToggleDebuggingOnPipe", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_ToggleDebuggingOnPipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_ToggleDebuggingOnPipe_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGCheatManager_ToggleDebuggingOnPipe()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_ToggleDebuggingOnPipe_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGCheatManager_ToggleTrainSelfDriving_Statics
 	{
 #if WITH_METADATA
@@ -3580,20 +3592,20 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpAllAvailableRecipes, "DumpAllAvailableRecipes" }, // 2401554217
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpAttachedToSkelMesh, "DumpAttachedToSkelMesh" }, // 1758419862
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpDynamicOptionsSettings, "DumpDynamicOptionsSettings" }, // 834798225
-		{ &Z_Construct_UFunction_UFGCheatManager_DumpFactoryStatsToLog, "DumpFactoryStatsToLog" }, // 1809987376
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpGamePhases, "DumpGamePhases" }, // 2574384835
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpNonDormantActors, "DumpNonDormantActors" }, // 1318859643
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpPlayerStates, "DumpPlayerStates" }, // 1084478457
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpSchematics, "DumpSchematics" }, // 153533480
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpSignificanceManagedObjects, "DumpSignificanceManagedObjects" }, // 32639872
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpTicking, "DumpTicking" }, // 519487670
+		{ &Z_Construct_UFunction_UFGCheatManager_EmptyAllPipes, "EmptyAllPipes" }, // 799469859
 		{ &Z_Construct_UFunction_UFGCheatManager_EnableAudioDebug, "EnableAudioDebug" }, // 424752970
 		{ &Z_Construct_UFunction_UFGCheatManager_EnableBuildableTick, "EnableBuildableTick" }, // 3373987435
 		{ &Z_Construct_UFunction_UFGCheatManager_EnableBuildableTick_Get, "EnableBuildableTick_Get" }, // 2813114679
 		{ &Z_Construct_UFunction_UFGCheatManager_EnableInstancingOnFactory, "EnableInstancingOnFactory" }, // 6880416
 		{ &Z_Construct_UFunction_UFGCheatManager_EnablePlayerFOV, "EnablePlayerFOV" }, // 2583035952
 		{ &Z_Construct_UFunction_UFGCheatManager_EnablePlayerFOV_Get, "EnablePlayerFOV_Get" }, // 2704969189
-		{ &Z_Construct_UFunction_UFGCheatManager_FixupBuiltByRecipeInOldSave, "FixupBuiltByRecipeInOldSave" }, // 154380790
+		{ &Z_Construct_UFunction_UFGCheatManager_FillFirstPipeInEachNetwork, "FillFirstPipeInEachNetwork" }, // 365872035
 		{ &Z_Construct_UFunction_UFGCheatManager_FlipVehicle, "FlipVehicle" }, // 1368720504
 		{ &Z_Construct_UFunction_UFGCheatManager_ForceSpawnCreatures, "ForceSpawnCreatures" }, // 4109034846
 		{ &Z_Construct_UFunction_UFGCheatManager_GetVehicleInfo, "GetVehicleInfo" }, // 2283729142
@@ -3603,6 +3615,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		{ &Z_Construct_UFunction_UFGCheatManager_GiveCheatSchematics, "GiveCheatSchematics" }, // 801974641
 		{ &Z_Construct_UFunction_UFGCheatManager_GiveItemsSingle, "GiveItemsSingle" }, // 3605939617
 		{ &Z_Construct_UFunction_UFGCheatManager_GiveItemStacks, "GiveItemStacks" }, // 3163046204
+		{ &Z_Construct_UFunction_UFGCheatManager_GiveResourceSinkCoupons, "GiveResourceSinkCoupons" }, // 675413408
 		{ &Z_Construct_UFunction_UFGCheatManager_GiveSchematicsOfTier, "GiveSchematicsOfTier" }, // 3161295442
 		{ &Z_Construct_UFunction_UFGCheatManager_GiveStartingResearch, "GiveStartingResearch" }, // 2823066944
 		{ &Z_Construct_UFunction_UFGCheatManager_GiveStorySchematics, "GiveStorySchematics" }, // 1206204325
@@ -3633,7 +3646,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		{ &Z_Construct_UFunction_UFGCheatManager_PlayerFly_Get, "PlayerFly_Get" }, // 3711013199
 		{ &Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly, "PlayerNoClipModeOnFly" }, // 1080878172
 		{ &Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly_Get, "PlayerNoClipModeOnFly_Get" }, // 3111646091
-		{ &Z_Construct_UFunction_UFGCheatManager_PrintStatichMeshesHirarchy, "PrintStatichMeshesHirarchy" }, // 3392054624
+		{ &Z_Construct_UFunction_UFGCheatManager_PrintStaticMeshesHierarchy, "PrintStaticMeshesHierarchy" }, // 3207147406
 		{ &Z_Construct_UFunction_UFGCheatManager_PumpiMode, "PumpiMode" }, // 1130754275
 		{ &Z_Construct_UFunction_UFGCheatManager_PumpiMode_Get, "PumpiMode_Get" }, // 3982799257
 		{ &Z_Construct_UFunction_UFGCheatManager_PurgeAllBeaconsFromSave, "PurgeAllBeaconsFromSave" }, // 1504544944
@@ -3645,13 +3658,13 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		{ &Z_Construct_UFunction_UFGCheatManager_RemoveAllFoliage, "RemoveAllFoliage" }, // 3874647119
 		{ &Z_Construct_UFunction_UFGCheatManager_ReplayBuildingEffects, "ReplayBuildingEffects" }, // 1010841356
 		{ &Z_Construct_UFunction_UFGCheatManager_ResetAllFactoryLegsToZero, "ResetAllFactoryLegsToZero" }, // 2928036189
+		{ &Z_Construct_UFunction_UFGCheatManager_ResetAllPipes, "ResetAllPipes" }, // 3795794702
 		{ &Z_Construct_UFunction_UFGCheatManager_ResetFuses, "ResetFuses" }, // 4083224963
 		{ &Z_Construct_UFunction_UFGCheatManager_ResetGamePhases, "ResetGamePhases" }, // 824332929
 		{ &Z_Construct_UFunction_UFGCheatManager_ResetHubTutorial, "ResetHubTutorial" }, // 3257356300
 		{ &Z_Construct_UFunction_UFGCheatManager_ResetRecipes, "ResetRecipes" }, // 2157025363
 		{ &Z_Construct_UFunction_UFGCheatManager_ResetSchematics, "ResetSchematics" }, // 855641484
 		{ &Z_Construct_UFunction_UFGCheatManager_RunDebugMetric, "RunDebugMetric" }, // 2222572714
-		{ &Z_Construct_UFunction_UFGCheatManager_SaveWithNewSessionName, "SaveWithNewSessionName" }, // 1769679326
 		{ &Z_Construct_UFunction_UFGCheatManager_SendInviteToFriend, "SendInviteToFriend" }, // 3605260675
 		{ &Z_Construct_UFunction_UFGCheatManager_SetAITickDistance, "SetAITickDistance" }, // 295228857
 		{ &Z_Construct_UFunction_UFGCheatManager_SetDebugStartingPoint, "SetDebugStartingPoint" }, // 1701882523
@@ -3673,6 +3686,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		{ &Z_Construct_UFunction_UFGCheatManager_ToggleAudioDebug, "ToggleAudioDebug" }, // 1041371022
 		{ &Z_Construct_UFunction_UFGCheatManager_ToggleAudioLandingDebug, "ToggleAudioLandingDebug" }, // 1483473372
 		{ &Z_Construct_UFunction_UFGCheatManager_ToggleCameraMode, "ToggleCameraMode" }, // 3512545765
+		{ &Z_Construct_UFunction_UFGCheatManager_ToggleDebuggingOnPipe, "ToggleDebuggingOnPipe" }, // 1262346319
 		{ &Z_Construct_UFunction_UFGCheatManager_ToggleTrainSelfDriving, "ToggleTrainSelfDriving" }, // 1902533989
 		{ &Z_Construct_UFunction_UFGCheatManager_TriggerPresenceUpdate, "TriggerPresenceUpdate" }, // 3281204278
 		{ &Z_Construct_UFunction_UFGCheatManager_TurboBuildMode, "TurboBuildMode" }, // 55218265
@@ -3727,7 +3741,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCheatManager, 1810670144);
+	IMPLEMENT_CLASS(UFGCheatManager, 242275813);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCheatManager>()
 	{
 		return UFGCheatManager::StaticClass();

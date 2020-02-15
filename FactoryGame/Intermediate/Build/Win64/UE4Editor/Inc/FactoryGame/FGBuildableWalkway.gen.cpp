@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWalkway() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWalkway_Statics::NewProp_mElevation_MetaData[] = {
 		{ "Category", "Walkway" },
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWalkway.h" },
-		{ "ToolTip", "Height of this walkway if ramp, assumes -x to be lower and +x to be higher." },
+		{ "ToolTip", "Elevation of this walkway if ramp, assumes the ramp to go up towards a positive X." },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableWalkway_Statics::NewProp_mElevation = { "mElevation", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableWalkway, mElevation), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableWalkway_Statics::NewProp_mElevation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableWalkway_Statics::NewProp_mElevation_MetaData)) };
@@ -115,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWalkway() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableWalkway, 247972790);
+	IMPLEMENT_CLASS(AFGBuildableWalkway, 1144254686);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableWalkway>()
 	{
 		return AFGBuildableWalkway::StaticClass();

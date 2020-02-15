@@ -7,6 +7,7 @@
 #include "GameFramework/PhysicsVolume.h"
 #include "AI/Navigation/NavRelevantInterface.h"
 #include "NavAreas/NavArea.h"
+#include "FGExtractableResourceInterface.h"
 #include "FGSignificanceInterface.h"
 #include "FGWaterVolume.generated.h"
 
@@ -14,7 +15,7 @@
  * 
  */
 UCLASS(HideCategories=(Collision))
-class FACTORYGAME_API AFGWaterVolume : public APhysicsVolume, public IInterface_PostProcessVolume, public INavRelevantInterface, public IFGSignificanceInterface
+class FACTORYGAME_API AFGWaterVolume : public APhysicsVolume, public IFGExtractableResourceInterface, public IInterface_PostProcessVolume, public INavRelevantInterface, public IFGSignificanceInterface
 {
 	GENERATED_BODY()
 public:
@@ -31,6 +32,8 @@ public:
 	//IFGSignificanceInterface
 	virtual void GainedSignificance_Implementation() override;
 	virtual	void LostSignificance_Implementation() override;
+	virtual void GainedSignificance_Native() override;
+	virtual void LostSignificance_Native() override;
 	virtual float GetSignificanceRange() override;
 	//End
 
@@ -59,6 +62,18 @@ public:
 	/** Getter for significance */
 	FORCEINLINE bool GetIsSignificant() { return mIsSignificant; }
 
+	// Begin Extractable Resource Interface
+	virtual void SetIsOccupied_Implementation( bool occupied ) override;
+	virtual bool IsOccupied_Implementation() const override;
+	virtual bool CanBecomeOccupied_Implementation() const override;
+	virtual bool HasAnyResources_Implementation() const override;
+	virtual TSubclassOf<class UFGResourceDescriptor> GetResourceClass_Implementation() const override;
+	virtual int32 ExtractResource_Implementation( int32 amount ) override;
+	virtual float GetExtractionSpeedMultiplier_Implementation() const override;
+	virtual FVector GetPlacementLocation_Implementation( const FVector& hitLocation ) const override;
+	virtual bool CanPlaceResourceExtractor_Implementation() const override;
+	// End Extractable Resource Interface
+
 #if WITH_EDITOR
 	// Begin UObject interface
 	virtual void PostLoad() override;
@@ -70,6 +85,8 @@ public:
 	virtual void CheckForErrors() override;
 	// End AActor interface
 #endif
+
+
 protected:
 	/** Called whenever a primitive component enters the water, used to create effects on the water surface */
 	UFUNCTION()
@@ -93,6 +110,9 @@ protected:
 	UPROPERTY( EditInstanceOnly, Category="Audio")
 	TSubclassOf<class UFGWaterAudio> mWaterAudio;
 
+	UPROPERTY( EditDefaultsOnly, Category="Resource" )
+	bool mCanPlaceExtractor;
+
 	/** A template of settings for our post process settings */
 	UPROPERTY( EditInstanceOnly, Category = "PostProcess" )
 	TSubclassOf<class UFGSharedPostProcessSettings> mPostProcessSettings;
@@ -106,9 +126,14 @@ protected:
 	/** If true, then the camera is inside the volume */
 	bool mCameraIsInside;
 private:
+	/** Reference to the Water Descriptor specified in FGResourceSettings. Assigned in begin play */
+	UPROPERTY()
+	TSubclassOf< class UFGResourceDescriptor > mResourceClass;
+
 	/** Is this volume in significance range */
 	bool mIsSignificant;
 
 	/** Significance range of water volume */
 	float mSignificanceRange;
+
 };

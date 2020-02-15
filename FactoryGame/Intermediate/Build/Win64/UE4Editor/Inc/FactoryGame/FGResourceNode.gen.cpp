@@ -25,27 +25,21 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceNode() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGResourceNode_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGResourceNode();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_ClearWidget();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_ExtractResourceAndGiveToPlayer();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCharacterPlayer_NoRegister();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_GetExtractMultiplier();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_GetIsLonerNode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_GetResoucePurity();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_GetResoucePurityText();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_GetResoucesLeftText();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_GetResourceAmount();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_GetResourceClass();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_GetResourceName();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_InitResource();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGResourceDescriptor_NoRegister();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_GetResourceName();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_HasAnyResources();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_InitResource();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_IsOccupied();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_OnIsOccupiedChanged();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_OnRep_IsOccupied();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_SetIsOccupied();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResourceNode_ToggleResourcePickUI();
 	ENGINE_API UClass* Z_Construct_UClass_UParticleSystemComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
@@ -53,6 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceNode() {}
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UDecalComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGExtractableResourceInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGUseableInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSignificanceInterface_NoRegister();
@@ -417,63 +412,18 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 	{
 		UClass* Class = AFGResourceNode::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
-			{ "CanPlaceResourceExtractor", &AFGResourceNode::execCanPlaceResourceExtractor },
 			{ "ExtractResourceAndGiveToPlayer", &AFGResourceNode::execExtractResourceAndGiveToPlayer },
-			{ "GetExtractionSpeedMultiplier", &AFGResourceNode::execGetExtractionSpeedMultiplier },
 			{ "GetExtractMultiplier", &AFGResourceNode::execGetExtractMultiplier },
 			{ "GetIsLonerNode", &AFGResourceNode::execGetIsLonerNode },
 			{ "GetResoucePurity", &AFGResourceNode::execGetResoucePurity },
 			{ "GetResoucePurityText", &AFGResourceNode::execGetResoucePurityText },
 			{ "GetResoucesLeftText", &AFGResourceNode::execGetResoucesLeftText },
 			{ "GetResourceAmount", &AFGResourceNode::execGetResourceAmount },
-			{ "GetResourceClass", &AFGResourceNode::execGetResourceClass },
 			{ "GetResourceName", &AFGResourceNode::execGetResourceName },
-			{ "HasAnyResources", &AFGResourceNode::execHasAnyResources },
 			{ "InitResource", &AFGResourceNode::execInitResource },
-			{ "IsOccupied", &AFGResourceNode::execIsOccupied },
 			{ "OnRep_IsOccupied", &AFGResourceNode::execOnRep_IsOccupied },
-			{ "SetIsOccupied", &AFGResourceNode::execSetIsOccupied },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
-	}
-	struct Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor_Statics
-	{
-		struct FGResourceNode_eventCanPlaceResourceExtractor_Parms
-		{
-			bool ReturnValue;
-		};
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((FGResourceNode_eventCanPlaceResourceExtractor_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResourceNode_eventCanPlaceResourceExtractor_Parms), &Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
-		{ "ToolTip", "Is this resource node valid for placing an extractor on?" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResourceNode, nullptr, "CanPlaceResourceExtractor", sizeof(FGResourceNode_eventCanPlaceResourceExtractor_Parms), Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor_Statics::FuncParams);
-		}
-		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AFGResourceNode_ClearWidget_Statics
 	{
@@ -534,40 +484,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGResourceNode_ExtractResourceAndGiveToPlayer_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier_Statics
-	{
-		struct FGResourceNode_eventGetExtractionSpeedMultiplier_Parms
-		{
-			float ReturnValue;
-		};
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceNode_eventGetExtractionSpeedMultiplier_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
-		{ "ToolTip", "Get a speed multiplier when extracting from this resource" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResourceNode, nullptr, "GetExtractionSpeedMultiplier", sizeof(FGResourceNode_eventGetExtractionSpeedMultiplier_Parms), Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -779,40 +695,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGResourceNode_GetResourceClass_Statics
-	{
-		struct FGResourceNode_eventGetResourceClass_Parms
-		{
-			TSubclassOf<UFGResourceDescriptor>  ReturnValue;
-		};
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResourceNode_GetResourceClass_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceNode_eventGetResourceClass_Parms, ReturnValue), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResourceNode_GetResourceClass_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResourceNode_GetResourceClass_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_GetResourceClass_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
-		{ "ToolTip", "Query the resource node what kind of resource class is of" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResourceNode_GetResourceClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResourceNode, nullptr, "GetResourceClass", sizeof(FGResourceNode_eventGetResourceClass_Parms), Z_Construct_UFunction_AFGResourceNode_GetResourceClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResourceNode_GetResourceClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResourceNode_GetResourceClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResourceNode_GetResourceClass_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGResourceNode_GetResourceClass()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGResourceNode_GetResourceClass_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_AFGResourceNode_GetResourceName_Statics
 	{
 		struct FGResourceNode_eventGetResourceName_Parms
@@ -844,44 +726,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGResourceNode_GetResourceName_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics
-	{
-		struct FGResourceNode_eventHasAnyResources_Parms
-		{
-			bool ReturnValue;
-		};
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((FGResourceNode_eventHasAnyResources_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResourceNode_eventHasAnyResources_Parms), &Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResourceNode, nullptr, "HasAnyResources", sizeof(FGResourceNode_eventHasAnyResources_Parms), Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGResourceNode_HasAnyResources()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -924,45 +768,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGResourceNode_InitResource_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AFGResourceNode_IsOccupied_Statics
-	{
-		struct FGResourceNode_eventIsOccupied_Parms
-		{
-			bool ReturnValue;
-		};
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_AFGResourceNode_IsOccupied_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((FGResourceNode_eventIsOccupied_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResourceNode_IsOccupied_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResourceNode_eventIsOccupied_Parms), &Z_Construct_UFunction_AFGResourceNode_IsOccupied_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResourceNode_IsOccupied_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResourceNode_IsOccupied_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_IsOccupied_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
-		{ "ToolTip", "Return true if the resource is occupied" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResourceNode_IsOccupied_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResourceNode, nullptr, "IsOccupied", sizeof(FGResourceNode_eventIsOccupied_Parms), Z_Construct_UFunction_AFGResourceNode_IsOccupied_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResourceNode_IsOccupied_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResourceNode_IsOccupied_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResourceNode_IsOccupied_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGResourceNode_IsOccupied()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGResourceNode_IsOccupied_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1021,45 +826,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGResourceNode_OnRep_IsOccupied_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AFGResourceNode_SetIsOccupied_Statics
-	{
-		struct FGResourceNode_eventSetIsOccupied_Parms
-		{
-			bool occupied;
-		};
-		static void NewProp_occupied_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_occupied;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_AFGResourceNode_SetIsOccupied_Statics::NewProp_occupied_SetBit(void* Obj)
-	{
-		((FGResourceNode_eventSetIsOccupied_Parms*)Obj)->occupied = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResourceNode_SetIsOccupied_Statics::NewProp_occupied = { "occupied", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResourceNode_eventSetIsOccupied_Parms), &Z_Construct_UFunction_AFGResourceNode_SetIsOccupied_Statics::NewProp_occupied_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResourceNode_SetIsOccupied_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResourceNode_SetIsOccupied_Statics::NewProp_occupied,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_SetIsOccupied_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
-		{ "ToolTip", "Set if the node is occupied by something" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResourceNode_SetIsOccupied_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResourceNode, nullptr, "SetIsOccupied", sizeof(FGResourceNode_eventSetIsOccupied_Parms), Z_Construct_UFunction_AFGResourceNode_SetIsOccupied_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResourceNode_SetIsOccupied_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResourceNode_SetIsOccupied_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResourceNode_SetIsOccupied_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGResourceNode_SetIsOccupied()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGResourceNode_SetIsOccupied_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1189,24 +955,18 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGResourceNode_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor, "CanPlaceResourceExtractor" }, // 3387764398
 		{ &Z_Construct_UFunction_AFGResourceNode_ClearWidget, "ClearWidget" }, // 2709791572
 		{ &Z_Construct_UFunction_AFGResourceNode_ExtractResourceAndGiveToPlayer, "ExtractResourceAndGiveToPlayer" }, // 4033549465
-		{ &Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier, "GetExtractionSpeedMultiplier" }, // 758721569
 		{ &Z_Construct_UFunction_AFGResourceNode_GetExtractMultiplier, "GetExtractMultiplier" }, // 902223937
 		{ &Z_Construct_UFunction_AFGResourceNode_GetIsLonerNode, "GetIsLonerNode" }, // 1652799101
 		{ &Z_Construct_UFunction_AFGResourceNode_GetResoucePurity, "GetResoucePurity" }, // 625154186
 		{ &Z_Construct_UFunction_AFGResourceNode_GetResoucePurityText, "GetResoucePurityText" }, // 4201869952
 		{ &Z_Construct_UFunction_AFGResourceNode_GetResoucesLeftText, "GetResoucesLeftText" }, // 1325472573
 		{ &Z_Construct_UFunction_AFGResourceNode_GetResourceAmount, "GetResourceAmount" }, // 213050338
-		{ &Z_Construct_UFunction_AFGResourceNode_GetResourceClass, "GetResourceClass" }, // 3842531044
 		{ &Z_Construct_UFunction_AFGResourceNode_GetResourceName, "GetResourceName" }, // 2100079236
-		{ &Z_Construct_UFunction_AFGResourceNode_HasAnyResources, "HasAnyResources" }, // 4245315869
 		{ &Z_Construct_UFunction_AFGResourceNode_InitResource, "InitResource" }, // 3104392614
-		{ &Z_Construct_UFunction_AFGResourceNode_IsOccupied, "IsOccupied" }, // 2234239992
 		{ &Z_Construct_UFunction_AFGResourceNode_OnIsOccupiedChanged, "OnIsOccupiedChanged" }, // 3923640050
 		{ &Z_Construct_UFunction_AFGResourceNode_OnRep_IsOccupied, "OnRep_IsOccupied" }, // 184432606
-		{ &Z_Construct_UFunction_AFGResourceNode_SetIsOccupied, "SetIsOccupied" }, // 3388524975
 		{ &Z_Construct_UFunction_AFGResourceNode_ToggleResourcePickUI, "ToggleResourcePickUI" }, // 2390165337
 	};
 #if WITH_METADATA
@@ -1399,6 +1159,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourceClass,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AFGResourceNode_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UFGExtractableResourceInterface_NoRegister, (int32)VTABLE_OFFSET(AFGResourceNode, IFGExtractableResourceInterface), false },
 			{ Z_Construct_UClass_UFGSaveInterface_NoRegister, (int32)VTABLE_OFFSET(AFGResourceNode, IFGSaveInterface), false },
 			{ Z_Construct_UClass_UFGUseableInterface_NoRegister, (int32)VTABLE_OFFSET(AFGResourceNode, IFGUseableInterface), false },
 			{ Z_Construct_UClass_UFGSignificanceInterface_NoRegister, (int32)VTABLE_OFFSET(AFGResourceNode, IFGSignificanceInterface), false },
@@ -1430,7 +1191,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceNode, 2974260139);
+	IMPLEMENT_CLASS(AFGResourceNode, 2232913214);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGResourceNode>()
 	{
 		return AFGResourceNode::StaticClass();

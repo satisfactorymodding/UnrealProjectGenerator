@@ -330,7 +330,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGConveyorRemoteCallObject, 3764078347);
+	IMPLEMENT_CLASS(UFGConveyorRemoteCallObject, 1760220512);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGConveyorRemoteCallObject>()
 	{
 		return UFGConveyorRemoteCallObject::StaticClass();
@@ -571,7 +571,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConveyorBase, 4057391959);
+	IMPLEMENT_CLASS(AFGBuildableConveyorBase, 2478715888);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableConveyorBase>()
 	{
 		return AFGBuildableConveyorBase::StaticClass();

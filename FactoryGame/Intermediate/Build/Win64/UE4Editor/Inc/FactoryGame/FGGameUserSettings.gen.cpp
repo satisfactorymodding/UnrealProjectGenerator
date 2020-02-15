@@ -2480,7 +2480,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameUserSettings, 706152257);
+	IMPLEMENT_CLASS(UFGGameUserSettings, 3464171850);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGGameUserSettings>()
 	{
 		return UFGGameUserSettings::StaticClass();

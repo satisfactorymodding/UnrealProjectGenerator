@@ -8,33 +8,24 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class AFGCharacterPlayer;
 class UFGRecipe;
-class UObject;
 struct FItemAmount;
+class UFGItemDescriptor;
+class AFGCharacterPlayer;
+class UObject;
 #ifdef FACTORYGAME_FGRecipe_generated_h
 #error "FGRecipe.generated.h already included, missing '#pragma once' in FGRecipe.h"
 #endif
 #define FACTORYGAME_FGRecipe_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execIsRecipeAffordable) \
+	DECLARE_FUNCTION(execGetDescriptorForRecipe) \
 	{ \
-		P_GET_OBJECT(AFGCharacterPlayer,Z_Param_player); \
 		P_GET_OBJECT(UClass,Z_Param_recipe); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UFGRecipe::IsRecipeAffordable(Z_Param_player,Z_Param_recipe); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetRewardedRecipes) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<TSubclassOf<UFGRecipe> >*)Z_Param__Result=UFGRecipe::GetRewardedRecipes(Z_Param_inClass); \
+		*(TSubclassOf<UFGItemDescriptor> *)Z_Param__Result=UFGRecipe::GetDescriptorForRecipe(Z_Param_recipe); \
 		P_NATIVE_END; \
 	} \
  \
@@ -47,12 +38,31 @@ struct FItemAmount;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execIsRecipeAffordable) \
+	{ \
+		P_GET_OBJECT(AFGCharacterPlayer,Z_Param_player); \
+		P_GET_OBJECT(UClass,Z_Param_recipe); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UFGRecipe::IsRecipeAffordable(Z_Param_player,Z_Param_recipe); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetProducedIn) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(TArray<TSubclassOf<UObject> >*)Z_Param__Result=UFGRecipe::GetProducedIn(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetManualManufacturingDuration) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGRecipe::GetManualManufacturingDuration(Z_Param_inClass); \
 		P_NATIVE_END; \
 	} \
  \
@@ -94,24 +104,14 @@ struct FItemAmount;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execIsRecipeAffordable) \
+	DECLARE_FUNCTION(execGetDescriptorForRecipe) \
 	{ \
-		P_GET_OBJECT(AFGCharacterPlayer,Z_Param_player); \
 		P_GET_OBJECT(UClass,Z_Param_recipe); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UFGRecipe::IsRecipeAffordable(Z_Param_player,Z_Param_recipe); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetRewardedRecipes) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<TSubclassOf<UFGRecipe> >*)Z_Param__Result=UFGRecipe::GetRewardedRecipes(Z_Param_inClass); \
+		*(TSubclassOf<UFGItemDescriptor> *)Z_Param__Result=UFGRecipe::GetDescriptorForRecipe(Z_Param_recipe); \
 		P_NATIVE_END; \
 	} \
  \
@@ -124,12 +124,31 @@ struct FItemAmount;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execIsRecipeAffordable) \
+	{ \
+		P_GET_OBJECT(AFGCharacterPlayer,Z_Param_player); \
+		P_GET_OBJECT(UClass,Z_Param_recipe); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UFGRecipe::IsRecipeAffordable(Z_Param_player,Z_Param_recipe); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetProducedIn) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(TArray<TSubclassOf<UObject> >*)Z_Param__Result=UFGRecipe::GetProducedIn(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetManualManufacturingDuration) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGRecipe::GetManualManufacturingDuration(Z_Param_inClass); \
 		P_NATIVE_END; \
 	} \
  \
@@ -171,7 +190,38 @@ struct FItemAmount;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_INCLASS_NO_PURE_DECLS \
+#if WITH_EDITOR
+#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_EDITOR_ONLY_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSetProduct) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_recipe); \
+		P_GET_TARRAY(FItemAmount,Z_Param_product); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGRecipe::SetProduct(Z_Param_recipe,Z_Param_product); \
+		P_NATIVE_END; \
+	}
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_EDITOR_ONLY_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSetProduct) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_recipe); \
+		P_GET_TARRAY(FItemAmount,Z_Param_product); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGRecipe::SetProduct(Z_Param_recipe,Z_Param_product); \
+		P_NATIVE_END; \
+	}
+
+
+#else
+#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_EDITOR_ONLY_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_EDITOR_ONLY_RPC_WRAPPERS_NO_PURE_DECLS
+#endif //WITH_EDITOR
+#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGRecipe(); \
 	friend struct Z_Construct_UClass_UFGRecipe_Statics; \
@@ -180,7 +230,7 @@ public: \
 	DECLARE_SERIALIZER(UFGRecipe)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGRecipe(); \
 	friend struct Z_Construct_UClass_UFGRecipe_Statics; \
@@ -189,7 +239,7 @@ public: \
 	DECLARE_SERIALIZER(UFGRecipe)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGRecipe(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGRecipe) \
@@ -202,7 +252,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGRecipe(UFGRecipe&&); \
@@ -213,34 +263,37 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGRecipe); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGRecipe)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mDisplayNameOverride() { return STRUCT_OFFSET(UFGRecipe, mDisplayNameOverride); } \
 	FORCEINLINE static uint32 __PPO__mDisplayName() { return STRUCT_OFFSET(UFGRecipe, mDisplayName); } \
 	FORCEINLINE static uint32 __PPO__mIngredients() { return STRUCT_OFFSET(UFGRecipe, mIngredients); } \
 	FORCEINLINE static uint32 __PPO__mProduct() { return STRUCT_OFFSET(UFGRecipe, mProduct); } \
 	FORCEINLINE static uint32 __PPO__mManufactoringDuration() { return STRUCT_OFFSET(UFGRecipe, mManufactoringDuration); } \
+	FORCEINLINE static uint32 __PPO__mManualManufacturingMultiplier() { return STRUCT_OFFSET(UFGRecipe, mManualManufacturingMultiplier); } \
 	FORCEINLINE static uint32 __PPO__mProducedIn() { return STRUCT_OFFSET(UFGRecipe, mProducedIn); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_15_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_16_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_EDITOR_ONLY_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_18_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_EDITOR_ONLY_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -8,10 +8,12 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-struct FItemAmount;
 struct FInventoryStack;
+enum class EResourceForm : uint8;
+struct FItemAmount;
 class UFGInventoryComponent;
 class UFGItemDescriptor;
+class AFGBuildableFactory;
 struct FInventoryItem;
 class AActor;
 #ifdef FACTORYGAME_FGInventoryLibrary_generated_h
@@ -20,6 +22,16 @@ class AActor;
 #define FACTORYGAME_FGInventoryLibrary_generated_h
 
 #define FactoryGame_Source_FactoryGame_Public_FGInventoryLibrary_h_20_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execRemoveAllItemsNotOfResourceForm) \
+	{ \
+		P_GET_TARRAY_REF(FInventoryStack,Z_Param_Out_items); \
+		P_GET_ENUM(EResourceForm,Z_Param_validForm); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGInventoryLibrary::RemoveAllItemsNotOfResourceForm(Z_Param_Out_items,EResourceForm(Z_Param_validForm)); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execConsolidateItemsAmount) \
 	{ \
@@ -87,6 +99,73 @@ class AActor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=UFGInventoryLibrary::HasItems(Z_Param_Out_stack); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUIDataFullForInventoryStack) \
+	{ \
+		P_GET_STRUCT_REF(FInventoryStack,Z_Param_Out_inventoryStack); \
+		P_GET_OBJECT(UClass,Z_Param_buildableFactory); \
+		P_GET_OBJECT_REF_NO_PTR(TSubclassOf<UFGItemDescriptor> ,Z_Param_Out_itemClass); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_numItemsConverted); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_maxItemsConverted); \
+		P_GET_PROPERTY_REF(UTextProperty,Z_Param_Out_suffix); \
+		P_GET_ENUM_REF(EResourceForm,Z_Param_Out_form); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGInventoryLibrary::GetUIDataFullForInventoryStack(Z_Param_Out_inventoryStack,Z_Param_buildableFactory,Z_Param_Out_itemClass,Z_Param_Out_numItemsConverted,Z_Param_Out_maxItemsConverted,Z_Param_Out_suffix,(EResourceForm&)(Z_Param_Out_form)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUIDataPartialForInventoryStack) \
+	{ \
+		P_GET_STRUCT_REF(FInventoryStack,Z_Param_Out_inventoryStack); \
+		P_GET_OBJECT(UClass,Z_Param_buildableFactory); \
+		P_GET_OBJECT_REF_NO_PTR(TSubclassOf<UFGItemDescriptor> ,Z_Param_Out_itemClass); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_numItemsConverted); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_maxItemsConverted); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGInventoryLibrary::GetUIDataPartialForInventoryStack(Z_Param_Out_inventoryStack,Z_Param_buildableFactory,Z_Param_Out_itemClass,Z_Param_Out_numItemsConverted,Z_Param_Out_maxItemsConverted); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAmountConvertedFromItemAmount) \
+	{ \
+		P_GET_STRUCT_REF(FItemAmount,Z_Param_Out_itemAmount); \
+		P_GET_OBJECT_REF_NO_PTR(TSubclassOf<UFGItemDescriptor> ,Z_Param_Out_itemClass); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_amountConverted); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGInventoryLibrary::GetAmountConvertedFromItemAmount(Z_Param_Out_itemAmount,Z_Param_Out_itemClass,Z_Param_Out_amountConverted); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetConversionScalarByForm) \
+	{ \
+		P_GET_ENUM(EResourceForm,Z_Param_form); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGInventoryLibrary::GetConversionScalarByForm(EResourceForm(Z_Param_form)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetProductionSuffixFromFormType) \
+	{ \
+		P_GET_ENUM(EResourceForm,Z_Param_form); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FText*)Z_Param__Result=UFGInventoryLibrary::GetProductionSuffixFromFormType(EResourceForm(Z_Param_form)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAmountConvertedByForm) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_amount); \
+		P_GET_ENUM(EResourceForm,Z_Param_form); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGInventoryLibrary::GetAmountConvertedByForm(Z_Param_amount,EResourceForm(Z_Param_form)); \
 		P_NATIVE_END; \
 	} \
  \
@@ -173,6 +252,16 @@ class AActor;
 
 #define FactoryGame_Source_FactoryGame_Public_FGInventoryLibrary_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execRemoveAllItemsNotOfResourceForm) \
+	{ \
+		P_GET_TARRAY_REF(FInventoryStack,Z_Param_Out_items); \
+		P_GET_ENUM(EResourceForm,Z_Param_validForm); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGInventoryLibrary::RemoveAllItemsNotOfResourceForm(Z_Param_Out_items,EResourceForm(Z_Param_validForm)); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execConsolidateItemsAmount) \
 	{ \
 		P_GET_TARRAY_REF(FItemAmount,Z_Param_Out_items); \
@@ -239,6 +328,73 @@ class AActor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=UFGInventoryLibrary::HasItems(Z_Param_Out_stack); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUIDataFullForInventoryStack) \
+	{ \
+		P_GET_STRUCT_REF(FInventoryStack,Z_Param_Out_inventoryStack); \
+		P_GET_OBJECT(UClass,Z_Param_buildableFactory); \
+		P_GET_OBJECT_REF_NO_PTR(TSubclassOf<UFGItemDescriptor> ,Z_Param_Out_itemClass); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_numItemsConverted); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_maxItemsConverted); \
+		P_GET_PROPERTY_REF(UTextProperty,Z_Param_Out_suffix); \
+		P_GET_ENUM_REF(EResourceForm,Z_Param_Out_form); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGInventoryLibrary::GetUIDataFullForInventoryStack(Z_Param_Out_inventoryStack,Z_Param_buildableFactory,Z_Param_Out_itemClass,Z_Param_Out_numItemsConverted,Z_Param_Out_maxItemsConverted,Z_Param_Out_suffix,(EResourceForm&)(Z_Param_Out_form)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUIDataPartialForInventoryStack) \
+	{ \
+		P_GET_STRUCT_REF(FInventoryStack,Z_Param_Out_inventoryStack); \
+		P_GET_OBJECT(UClass,Z_Param_buildableFactory); \
+		P_GET_OBJECT_REF_NO_PTR(TSubclassOf<UFGItemDescriptor> ,Z_Param_Out_itemClass); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_numItemsConverted); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_maxItemsConverted); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGInventoryLibrary::GetUIDataPartialForInventoryStack(Z_Param_Out_inventoryStack,Z_Param_buildableFactory,Z_Param_Out_itemClass,Z_Param_Out_numItemsConverted,Z_Param_Out_maxItemsConverted); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAmountConvertedFromItemAmount) \
+	{ \
+		P_GET_STRUCT_REF(FItemAmount,Z_Param_Out_itemAmount); \
+		P_GET_OBJECT_REF_NO_PTR(TSubclassOf<UFGItemDescriptor> ,Z_Param_Out_itemClass); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_amountConverted); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGInventoryLibrary::GetAmountConvertedFromItemAmount(Z_Param_Out_itemAmount,Z_Param_Out_itemClass,Z_Param_Out_amountConverted); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetConversionScalarByForm) \
+	{ \
+		P_GET_ENUM(EResourceForm,Z_Param_form); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGInventoryLibrary::GetConversionScalarByForm(EResourceForm(Z_Param_form)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetProductionSuffixFromFormType) \
+	{ \
+		P_GET_ENUM(EResourceForm,Z_Param_form); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FText*)Z_Param__Result=UFGInventoryLibrary::GetProductionSuffixFromFormType(EResourceForm(Z_Param_form)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAmountConvertedByForm) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_amount); \
+		P_GET_ENUM(EResourceForm,Z_Param_form); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGInventoryLibrary::GetAmountConvertedByForm(Z_Param_amount,EResourceForm(Z_Param_form)); \
 		P_NATIVE_END; \
 	} \
  \

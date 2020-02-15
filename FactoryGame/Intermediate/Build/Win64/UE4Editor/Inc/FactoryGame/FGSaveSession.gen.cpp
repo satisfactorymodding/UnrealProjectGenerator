@@ -13,11 +13,10 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 // Cross Module References
-	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature();
-	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveSession_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveSession();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
+	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSession_Autosave();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSession_Get();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
@@ -37,52 +36,9 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSession_GetSessionID();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSession_GetSessionName();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSession_GetVersion();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSession_LoadGame();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSession_SaveGame();
 // End Cross Module References
-	struct Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics
-	{
-		struct _Script_FactoryGame_eventSaveWorldImplementationSignature_Parms
-		{
-			bool wasSuccessful;
-			FText errorMessage;
-		};
-		static const UE4CodeGen_Private::FTextPropertyParams NewProp_errorMessage;
-		static void NewProp_wasSuccessful_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_wasSuccessful;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::NewProp_errorMessage = { "errorMessage", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventSaveWorldImplementationSignature_Parms, errorMessage), METADATA_PARAMS(nullptr, 0) };
-	void Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::NewProp_wasSuccessful_SetBit(void* Obj)
-	{
-		((_Script_FactoryGame_eventSaveWorldImplementationSignature_Parms*)Obj)->wasSuccessful = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::NewProp_wasSuccessful = { "wasSuccessful", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(_Script_FactoryGame_eventSaveWorldImplementationSignature_Parms), &Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::NewProp_wasSuccessful_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::NewProp_errorMessage,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::NewProp_wasSuccessful,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "SaveWorldImplementationSignature__DelegateSignature", sizeof(_Script_FactoryGame_eventSaveWorldImplementationSignature_Parms), Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	void UFGSaveSession::StaticRegisterNativesUFGSaveSession()
 	{
 		UClass* Class = UFGSaveSession::StaticClass();
@@ -101,9 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 			{ "GetSessionID", &UFGSaveSession::execGetSessionID },
 			{ "GetSessionName", &UFGSaveSession::execGetSessionName },
 			{ "GetVersion", &UFGSaveSession::execGetVersion },
-			{ "LoadGame", &UFGSaveSession::execLoadGame },
 			{ "OnActorDestroyed", &UFGSaveSession::execOnActorDestroyed },
-			{ "SaveGame", &UFGSaveSession::execSaveGame },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -153,7 +107,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_Get_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
+		{ "Category", "FactoryGame|Save" },
 		{ "DisplayName", "GetSaveSession" },
 		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Get the save system from a world" },
@@ -192,7 +146,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
+		{ "Category", "FactoryGame|Save" },
 		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Get the build version this save was saved with" },
 	};
@@ -230,7 +184,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
+		{ "Category", "FactoryGame|Save" },
 		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Get the map that this save was saved with" },
 	};
@@ -306,7 +260,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetName_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
+		{ "Category", "FactoryGame|Save" },
 		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "The name of the save game" },
 	};
@@ -344,7 +298,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
+		{ "Category", "FactoryGame|Save" },
 		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "The name of the save game" },
 	};
@@ -382,7 +336,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
+		{ "Category", "FactoryGame|Save" },
 		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "The time this was saved" },
 	};
@@ -420,7 +374,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save Session" },
+		{ "Category", "FactoryGame|Save Session" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use GetSaveSessionName instead" },
 		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
@@ -459,7 +413,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save Session" },
+		{ "Category", "FactoryGame|Save Session" },
 		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Returns the name of this session" },
 	};
@@ -497,7 +451,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save Session" },
+		{ "Category", "FactoryGame|Save Session" },
 		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Returns saved visibility of the session" },
 	};
@@ -535,7 +489,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
+		{ "Category", "FactoryGame|Save" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use GetSessionName instead" },
 		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
@@ -574,7 +528,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
+		{ "Category", "FactoryGame|Save" },
 		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "The session name of the save game" },
 	};
@@ -612,7 +566,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
+		{ "Category", "FactoryGame|Save" },
 		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Get the save version of a header" },
 	};
@@ -624,49 +578,6 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics
-	{
-		struct FGSaveSession_eventLoadGame_Parms
-		{
-			FString saveName;
-			bool ReturnValue;
-		};
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_saveName;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((FGSaveSession_eventLoadGame_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSaveSession_eventLoadGame_Parms), &Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::NewProp_saveName = { "saveName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventLoadGame_Parms, saveName), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::NewProp_saveName,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
-		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
-		{ "ToolTip", "Starts loading a game\n\n@param saveName - the save file's name without extension\n@return true if a save game with that name exists and load happend successfully" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "LoadGame", sizeof(FGSaveSession_eventLoadGame_Parms), Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGSaveSession_LoadGame()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -703,49 +614,6 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics
-	{
-		struct FGSaveSession_eventSaveGame_Parms
-		{
-			FString fileName;
-			bool ReturnValue;
-		};
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_fileName;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((FGSaveSession_eventSaveGame_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSaveSession_eventSaveGame_Parms), &Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::NewProp_fileName = { "fileName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventSaveGame_Parms, fileName), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::NewProp_fileName,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
-		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
-		{ "ToolTip", "Starts off the chain that triggers a save, save won't happen immidiately, but at end of frame\nto ensure that we don't save a incorrect state (i.e, half the worlds actors is ticked)\n\n@param fileName - a valid filename that we want to save the game to\n@param return true if the file name is a valid file name" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "SaveGame", sizeof(FGSaveSession_eventSaveGame_Parms), Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGSaveSession_SaveGame()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	UClass* Z_Construct_UClass_UFGSaveSession_NoRegister()
 	{
 		return UFGSaveSession::StaticClass();
@@ -765,10 +633,6 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAutosaveInterval_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mAutosaveInterval;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mOnSaveWorld_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_mOnSaveWorld;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -779,22 +643,20 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSaveSession_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UFGSaveSession_Autosave, "Autosave" }, // 2493763561
-		{ &Z_Construct_UFunction_UFGSaveSession_Get, "Get" }, // 514973396
-		{ &Z_Construct_UFunction_UFGSaveSession_GetBuildVersion, "GetBuildVersion" }, // 23003728
-		{ &Z_Construct_UFunction_UFGSaveSession_GetMapName, "GetMapName" }, // 772522026
+		{ &Z_Construct_UFunction_UFGSaveSession_Get, "Get" }, // 69897912
+		{ &Z_Construct_UFunction_UFGSaveSession_GetBuildVersion, "GetBuildVersion" }, // 3847092175
+		{ &Z_Construct_UFunction_UFGSaveSession_GetMapName, "GetMapName" }, // 241059233
 		{ &Z_Construct_UFunction_UFGSaveSession_GetMapOptions, "GetMapOptions" }, // 2180184310
-		{ &Z_Construct_UFunction_UFGSaveSession_GetName, "GetName" }, // 1734820868
-		{ &Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds, "GetPlayDurationSeconds" }, // 1854452959
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime, "GetSaveDateTime" }, // 1010810733
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID, "GetSaveSessionID" }, // 2893470576
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName, "GetSaveSessionName" }, // 3286937083
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility, "GetSaveSessionVisibility" }, // 3259889737
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSessionID, "GetSessionID" }, // 3971023095
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSessionName, "GetSessionName" }, // 3267733218
-		{ &Z_Construct_UFunction_UFGSaveSession_GetVersion, "GetVersion" }, // 1680930328
-		{ &Z_Construct_UFunction_UFGSaveSession_LoadGame, "LoadGame" }, // 3446443701
+		{ &Z_Construct_UFunction_UFGSaveSession_GetName, "GetName" }, // 379592307
+		{ &Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds, "GetPlayDurationSeconds" }, // 1519290784
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime, "GetSaveDateTime" }, // 3513021934
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID, "GetSaveSessionID" }, // 4040969809
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName, "GetSaveSessionName" }, // 461921514
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility, "GetSaveSessionVisibility" }, // 12680674
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSessionID, "GetSessionID" }, // 4252150807
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSessionName, "GetSessionName" }, // 3329179618
+		{ &Z_Construct_UFunction_UFGSaveSession_GetVersion, "GetVersion" }, // 1347616039
 		{ &Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed, "OnActorDestroyed" }, // 3127579883
-		{ &Z_Construct_UFunction_UFGSaveSession_SaveGame, "SaveGame" }, // 550677169
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveSession_Statics::Class_MetaDataParams[] = {
@@ -817,18 +679,9 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval = { "mAutosaveInterval", nullptr, (EPropertyFlags)0x0020080000002000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSaveSession, mAutosaveInterval), METADATA_PARAMS(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mOnSaveWorld_MetaData[] = {
-		{ "Category", "Save" },
-		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
-		{ "ToolTip", "Delegate to listen for the result of the SaveWorldImpelementation" },
-	};
-#endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mOnSaveWorld = { "mOnSaveWorld", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSaveSession, mOnSaveWorld), Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mOnSaveWorld_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mOnSaveWorld_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGSaveSession_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mNumRotatingAutosaves,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mOnSaveWorld,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGSaveSession_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UFGSaveSession>::IsAbstract,
@@ -845,7 +698,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGSaveSession_Statics::PropPointers),
 		0,
-		0x009000A4u,
+		0x001000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSaveSession_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSaveSession_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGSaveSession()
@@ -857,7 +710,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSaveSession, 2440454165);
+	IMPLEMENT_CLASS(UFGSaveSession, 2058780725);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSaveSession>()
 	{
 		return UFGSaveSession::StaticClass();

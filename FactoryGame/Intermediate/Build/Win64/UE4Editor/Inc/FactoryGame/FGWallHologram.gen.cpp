@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWallHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWallHologram, 1453070931);
+	IMPLEMENT_CLASS(AFGWallHologram, 1965829334);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWallHologram>()
 	{
 		return AFGWallHologram::StaticClass();

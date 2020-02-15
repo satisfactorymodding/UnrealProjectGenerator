@@ -592,7 +592,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGProjectile, 1478177667);
+	IMPLEMENT_CLASS(AFGProjectile, 4284134937);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGProjectile>()
 	{
 		return AFGProjectile::StaticClass();

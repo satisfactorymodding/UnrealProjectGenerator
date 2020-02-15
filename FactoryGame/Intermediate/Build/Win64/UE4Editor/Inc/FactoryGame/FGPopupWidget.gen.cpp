@@ -458,7 +458,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPopupData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPopupWidget, 2245074966);
+	IMPLEMENT_CLASS(UFGPopupWidget, 3922368290);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGPopupWidget>()
 	{
 		return UFGPopupWidget::StaticClass();

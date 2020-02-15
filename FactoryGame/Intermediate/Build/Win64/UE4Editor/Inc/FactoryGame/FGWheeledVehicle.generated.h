@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPhysicalMaterial;
 class UPrimitiveComponent;
 class AActor;
 struct FHitResult;
@@ -162,6 +163,14 @@ static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptD
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->CreateInventoryItemDrops_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCachedSurfaceMaterial) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UPhysicalMaterial**)Z_Param__Result=P_THIS->GetCachedSurfaceMaterial(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -465,6 +474,14 @@ static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptD
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->CreateInventoryItemDrops_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCachedSurfaceMaterial) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UPhysicalMaterial**)Z_Param__Result=P_THIS->GetCachedSurfaceMaterial(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -828,7 +845,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGWheeledVehicle); \
 	FORCEINLINE static uint32 __PPO__mDriftingUpwardForce() { return STRUCT_OFFSET(AFGWheeledVehicle, mDriftingUpwardForce); } \
 	FORCEINLINE static uint32 __PPO__mDriftForwardForceStrengthCurve() { return STRUCT_OFFSET(AFGWheeledVehicle, mDriftForwardForceStrengthCurve); } \
 	FORCEINLINE static uint32 __PPO__mDriftForceBones() { return STRUCT_OFFSET(AFGWheeledVehicle, mDriftForceBones); } \
-	FORCEINLINE static uint32 __PPO__mMinAngleForDrift() { return STRUCT_OFFSET(AFGWheeledVehicle, mMinAngleForDrift); }
+	FORCEINLINE static uint32 __PPO__mMinAngleForDrift() { return STRUCT_OFFSET(AFGWheeledVehicle, mMinAngleForDrift); } \
+	FORCEINLINE static uint32 __PPO__mCachedSurfaceMaterial() { return STRUCT_OFFSET(AFGWheeledVehicle, mCachedSurfaceMaterial); } \
+	FORCEINLINE static uint32 __PPO__mNeedsFuelToDrive() { return STRUCT_OFFSET(AFGWheeledVehicle, mNeedsFuelToDrive); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGWheeledVehicle_h_144_PROLOG \

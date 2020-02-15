@@ -1,5 +1,6 @@
 #pragma once
 
+#include "FGSchematic.h"
 #include "FGDeveloperSettings.generated.h"
 
 UCLASS( config = Game, defaultconfig, meta = ( DisplayName = "Satisfactory Developer Settings" ) )
@@ -31,4 +32,7 @@ public:
 
 	UPROPERTY( EditAnywhere, config, Category = "Unlock Classes For Migrating To New Unlock System" )
 	TSubclassOf< class UFGUnlockArmEquipmentSlot > mUnlockArmEquipmentClass;
+
+	UPROPERTY( EditAnywhere, config, Category = "Schematic category classes for migrating from old enum to new object based type" )
+	TMap< ESchematicCategory, TSubclassOf< class UFGSchematicCategory > > mSchematicCategoryMigrationData;
 };

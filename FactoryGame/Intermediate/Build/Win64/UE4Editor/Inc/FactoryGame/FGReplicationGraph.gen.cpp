@@ -23,8 +23,11 @@ void EmptyLinkFunctionForGeneratedCodeFGReplicationGraph() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGReplicationGraphNode_ConditionallyAlwaysRelevant_NoRegister();
 	REPLICATIONGRAPH_API UClass* Z_Construct_UClass_UReplicationGraphNode_ActorList_NoRegister();
 	REPLICATIONGRAPH_API UClass* Z_Construct_UClass_UReplicationGraphNode_GridSpatialization2D_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGReplicationGraphNode_ConditionallyAlwaysRelevant();
+	REPLICATIONGRAPH_API UClass* Z_Construct_UClass_UReplicationGraphNode_ActorList();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGReplicationGraphNode_AlwaysRelevant_ForConnection_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGReplicationGraphNode_AlwaysRelevant_ForConnection();
 	REPLICATIONGRAPH_API UClass* Z_Construct_UClass_UReplicationGraphNode_AlwaysRelevant_ForConnection();
@@ -151,6 +154,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mAlwaysRelevantForConnectionList;
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mAlwaysRelevantForConnectionList_Inner;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mConditionalRelevancyNode_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mConditionalRelevancyNode;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAlwaysRelevantNode_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mAlwaysRelevantNode;
@@ -215,6 +222,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantForConnectionList = { "mAlwaysRelevantForConnectionList", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGReplicationGraph, mAlwaysRelevantForConnectionList), METADATA_PARAMS(Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantForConnectionList_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantForConnectionList_MetaData)) };
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantForConnectionList_Inner = { "mAlwaysRelevantForConnectionList", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mConditionalRelevancyNode_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Replication/FGReplicationGraph.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mConditionalRelevancyNode = { "mConditionalRelevancyNode", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGReplicationGraph, mConditionalRelevancyNode), Z_Construct_UClass_UFGReplicationGraphNode_ConditionallyAlwaysRelevant_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mConditionalRelevancyNode_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mConditionalRelevancyNode_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantNode_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Replication/FGReplicationGraph.h" },
 		{ "ToolTip", "Node that holds a list of actors that are always Net Relevant." },
@@ -263,6 +276,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mPersistentDependencyClasses_ElementProp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantForConnectionList,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantForConnectionList_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mConditionalRelevancyNode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantNode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mPrioritizedGridNode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mGridNode,
@@ -300,13 +314,73 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGReplicationGraph, 1451348863);
+	IMPLEMENT_CLASS(UFGReplicationGraph, 2482200789);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGReplicationGraph>()
 	{
 		return UFGReplicationGraph::StaticClass();
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGReplicationGraph(Z_Construct_UClass_UFGReplicationGraph, &UFGReplicationGraph::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGReplicationGraph"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGReplicationGraph);
+	void UFGReplicationGraphNode_ConditionallyAlwaysRelevant::StaticRegisterNativesUFGReplicationGraphNode_ConditionallyAlwaysRelevant()
+	{
+	}
+	UClass* Z_Construct_UClass_UFGReplicationGraphNode_ConditionallyAlwaysRelevant_NoRegister()
+	{
+		return UFGReplicationGraphNode_ConditionallyAlwaysRelevant::StaticClass();
+	}
+	struct Z_Construct_UClass_UFGReplicationGraphNode_ConditionallyAlwaysRelevant_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UFGReplicationGraphNode_ConditionallyAlwaysRelevant_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UReplicationGraphNode_ActorList,
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGReplicationGraphNode_ConditionallyAlwaysRelevant_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "Replication/FGReplicationGraph.h" },
+		{ "ModuleRelativePath", "Public/Replication/FGReplicationGraph.h" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGReplicationGraphNode_ConditionallyAlwaysRelevant_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UFGReplicationGraphNode_ConditionallyAlwaysRelevant>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGReplicationGraphNode_ConditionallyAlwaysRelevant_Statics::ClassParams = {
+		&UFGReplicationGraphNode_ConditionallyAlwaysRelevant::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A8u,
+		METADATA_PARAMS(Z_Construct_UClass_UFGReplicationGraphNode_ConditionallyAlwaysRelevant_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGReplicationGraphNode_ConditionallyAlwaysRelevant_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UFGReplicationGraphNode_ConditionallyAlwaysRelevant()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UFGReplicationGraphNode_ConditionallyAlwaysRelevant_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UFGReplicationGraphNode_ConditionallyAlwaysRelevant, 1743248428);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGReplicationGraphNode_ConditionallyAlwaysRelevant>()
+	{
+		return UFGReplicationGraphNode_ConditionallyAlwaysRelevant::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGReplicationGraphNode_ConditionallyAlwaysRelevant(Z_Construct_UClass_UFGReplicationGraphNode_ConditionallyAlwaysRelevant, &UFGReplicationGraphNode_ConditionallyAlwaysRelevant::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGReplicationGraphNode_ConditionallyAlwaysRelevant"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGReplicationGraphNode_ConditionallyAlwaysRelevant);
 	void UFGReplicationGraphNode_AlwaysRelevant_ForConnection::StaticRegisterNativesUFGReplicationGraphNode_AlwaysRelevant_ForConnection()
 	{
 	}

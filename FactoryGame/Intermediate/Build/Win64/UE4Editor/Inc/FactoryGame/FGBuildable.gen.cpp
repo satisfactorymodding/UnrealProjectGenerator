@@ -44,10 +44,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_PlayDismantleSound();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_ReapplyColorSlot();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_RemoveHighlightEffect();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_ShowHighlightEffect();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipe_NoRegister();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FNetConstructionID();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCharacterPlayer_NoRegister();
-	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FItemAmount();
 	ENGINE_API UClass* Z_Construct_UClass_UParticleSystemComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FSoftClassPath();
@@ -56,7 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGFactoryMaterialInstanceManager_NoRegister();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFactoryTickFunction();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
-	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableHologram_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGHologram_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGDismantleInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGColorInterface_NoRegister();
@@ -157,6 +158,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 			{ "PlayDismantleSound", &AFGBuildable::execPlayDismantleSound },
 			{ "ReapplyColorSlot", &AFGBuildable::execReapplyColorSlot },
 			{ "RemoveHighlightEffect", &AFGBuildable::execRemoveHighlightEffect },
+#if WITH_EDITOR
+			{ "SetBuildableDisplayName", &AFGBuildable::execSetBuildableDisplayName },
+#endif // WITH_EDITOR
 			{ "ShowHighlightEffect", &AFGBuildable::execShowHighlightEffect },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
@@ -688,6 +692,46 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		}
 		return ReturnFunction;
 	}
+#if WITH_EDITOR
+	struct Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName_Statics
+	{
+		struct FGBuildable_eventSetBuildableDisplayName_Parms
+		{
+			TSubclassOf<AFGBuildable>  inClass;
+			FText displayName;
+		};
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_displayName;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName_Statics::NewProp_displayName = { "displayName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildable_eventSetBuildableDisplayName_Parms, displayName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildable_eventSetBuildableDisplayName_Parms, inClass), Z_Construct_UClass_AFGBuildable_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName_Statics::NewProp_displayName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Editor|Buildable" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
+		{ "ToolTip", "Sets the display name for this buildable. Only for editor use" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildable, nullptr, "SetBuildableDisplayName", sizeof(FGBuildable_eventSetBuildableDisplayName_Parms), Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x24022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+#endif //WITH_EDITOR
 	struct Z_Construct_UFunction_AFGBuildable_ShowHighlightEffect_Statics
 	{
 #if WITH_METADATA
@@ -736,6 +780,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mBuiltWithRecipe;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mNetConstructionID_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mNetConstructionID;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mIsUseable_MetaData[];
 #endif
 		static void NewProp_mIsUseable_SetBit(void* Obj);
@@ -750,11 +798,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mInteractWidgetClass;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDismantleRefund_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mDismantleRefund;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mDismantleRefund_Inner;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBuildingID_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mBuildingID;
@@ -762,6 +805,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCameraDistanceSq_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mCameraDistanceSq;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAllowCleranceSeparationEvenIfStackedOn_MetaData[];
+#endif
+		static void NewProp_mAllowCleranceSeparationEvenIfStackedOn_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mAllowCleranceSeparationEvenIfStackedOn;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mShouldShowHighlight_MetaData[];
 #endif
@@ -793,6 +841,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBuildEffectSpeed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mBuildEffectSpeed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSkipBuildEffect_MetaData[];
+#endif
+		static void NewProp_mSkipBuildEffect_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mSkipBuildEffect;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBuildEffectClassName_MetaData[];
 #endif
@@ -881,6 +934,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		{ &Z_Construct_UFunction_AFGBuildable_PlayDismantleSound, "PlayDismantleSound" }, // 1831215285
 		{ &Z_Construct_UFunction_AFGBuildable_ReapplyColorSlot, "ReapplyColorSlot" }, // 3910453491
 		{ &Z_Construct_UFunction_AFGBuildable_RemoveHighlightEffect, "RemoveHighlightEffect" }, // 1750409208
+#if WITH_EDITOR
+		{ &Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName, "SetBuildableDisplayName" }, // 911655052
+#endif //WITH_EDITOR
 		{ &Z_Construct_UFunction_AFGBuildable_ShowHighlightEffect, "ShowHighlightEffect" }, // 3338263692
 	};
 #if WITH_METADATA
@@ -896,7 +952,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCachedShapeComponent_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
-		{ "ToolTip", "Caching the shapecomponent once we have gotten it" },
+		{ "ToolTip", "Caching the shape component once we have gotten it" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCachedShapeComponent = { "mCachedShapeComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mCachedShapeComponent), Z_Construct_UClass_UShapeComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCachedShapeComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCachedShapeComponent_MetaData)) };
@@ -911,10 +967,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuiltWithRecipe_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
-		{ "ToolTip", "Recipe this building was built with." },
+		{ "ToolTip", "Recipe this building was built with, e.g. used for refunds and stats." },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuiltWithRecipe = { "mBuiltWithRecipe", nullptr, (EPropertyFlags)0x0044000001000020, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mBuiltWithRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuiltWithRecipe_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuiltWithRecipe_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mNetConstructionID_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
+		{ "ToolTip", "ID given from server when constructed. Has not been assigned a value by server if 0." },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mNetConstructionID = { "mNetConstructionID", nullptr, (EPropertyFlags)0x0040000000002020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mNetConstructionID), Z_Construct_UScriptStruct_FNetConstructionID, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mNetConstructionID_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mNetConstructionID_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mIsUseable_MetaData[] = {
 		{ "Category", "Interaction" },
@@ -945,15 +1008,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mInteractWidgetClass = { "mInteractWidgetClass", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mInteractWidgetClass), Z_Construct_UClass_UFGInteractWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mInteractWidgetClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mInteractWidgetClass_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleRefund_MetaData[] = {
-		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
-		{ "NoAutoJson", "TRUE" },
-		{ "ToolTip", "How much did we pay when building this." },
-	};
-#endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleRefund = { "mDismantleRefund", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mDismantleRefund), METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleRefund_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleRefund_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleRefund_Inner = { "mDismantleRefund", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildingID_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "NoAutoJson", "TRUE" },
@@ -969,6 +1023,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCameraDistanceSq = { "mCameraDistanceSq", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mCameraDistanceSq), METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCameraDistanceSq_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCameraDistanceSq_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mAllowCleranceSeparationEvenIfStackedOn_MetaData[] = {
+		{ "Category", "Stacking" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
+	};
+#endif
+	void Z_Construct_UClass_AFGBuildable_Statics::NewProp_mAllowCleranceSeparationEvenIfStackedOn_SetBit(void* Obj)
+	{
+		((AFGBuildable*)Obj)->mAllowCleranceSeparationEvenIfStackedOn = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mAllowCleranceSeparationEvenIfStackedOn = { "mAllowCleranceSeparationEvenIfStackedOn", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildable), &Z_Construct_UClass_AFGBuildable_Statics::NewProp_mAllowCleranceSeparationEvenIfStackedOn_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mAllowCleranceSeparationEvenIfStackedOn_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mAllowCleranceSeparationEvenIfStackedOn_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mShouldShowHighlight_MetaData[] = {
 		{ "Category", "Buildable" },
@@ -1039,6 +1104,18 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectSpeed = { "mBuildEffectSpeed", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mBuildEffectSpeed), METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectSpeed_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mSkipBuildEffect_MetaData[] = {
+		{ "Category", "Build Effect" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
+		{ "ToolTip", "Skip the build effect." },
+	};
+#endif
+	void Z_Construct_UClass_AFGBuildable_Statics::NewProp_mSkipBuildEffect_SetBit(void* Obj)
+	{
+		((AFGBuildable*)Obj)->mSkipBuildEffect = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mSkipBuildEffect = { "mSkipBuildEffect", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildable), &Z_Construct_UClass_AFGBuildable_Statics::NewProp_mSkipBuildEffect_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mSkipBuildEffect_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mSkipBuildEffect_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectClassName_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "NoAutoJson", "TRUE" },
@@ -1078,12 +1155,13 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectTemplate = { "mBuildEffectTemplate", nullptr, (EPropertyFlags)0x0024080000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mBuildEffectTemplate), Z_Construct_UClass_UFGMaterialEffect_Build_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectTemplate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectTemplate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mColorSlot_MetaData[] = {
+		{ "Category", "FGBuildable" },
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "The color slot of this buildable" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mColorSlot = { "mColorSlot", "OnRep_ColorSlot", (EPropertyFlags)0x0020080101000020, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mColorSlot), nullptr, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mColorSlot_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mColorSlot_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mColorSlot = { "mColorSlot", "OnRep_ColorSlot", (EPropertyFlags)0x0020080101000021, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mColorSlot), nullptr, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mColorSlot_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mColorSlot_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mSecondaryColor_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
@@ -1122,7 +1200,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightVector_MetaData[] = {
 		{ "Category", "Buildable" },
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
-		{ "ToolTip", "Vector used to determine highlighteffects location" },
+		{ "ToolTip", "Vector used to determine highlight effects location" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightVector = { "mHighlightVector", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mHighlightVector), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightVector_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightVector_MetaData)) };
@@ -1158,19 +1236,19 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		{ "ToolTip", "The hologram class to use for constructing this object." },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHologramClass = { "mHologramClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mHologramClass), Z_Construct_UClass_AFGBuildableHologram_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHologramClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHologramClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHologramClass = { "mHologramClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mHologramClass), Z_Construct_UClass_AFGHologram_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHologramClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHologramClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCachedShapeComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildTimeStamp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuiltWithRecipe,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mNetConstructionID,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mIsUseable,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mInteractingPlayers,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mInteractingPlayers_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mInteractWidgetClass,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleRefund,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleRefund_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildingID,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCameraDistanceSq,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mAllowCleranceSeparationEvenIfStackedOn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mShouldShowHighlight,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDidFirstTimeUse,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightParticleSystemComponent,
@@ -1178,6 +1256,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightParticleClassName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mForceNetUpdateOnRegisterPlayer,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mSkipBuildEffect,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectClassName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleEffectClassName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectInstignator,
@@ -1229,7 +1308,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildable, 4079016921);
+	IMPLEMENT_CLASS(AFGBuildable, 1959667638);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildable>()
 	{
 		return AFGBuildable::StaticClass();

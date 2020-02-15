@@ -6,8 +6,9 @@
 #include "FGSubsystem.h"
 #include "FGSaveInterface.h"
 #include "FGGamePhaseManager.h"
-#include "FGRecipe.h"
 #include "FGRecipeManager.generated.h"
+
+class UFGRecipe;
 
 /**
  * Handles everything to do with recipes in the game.

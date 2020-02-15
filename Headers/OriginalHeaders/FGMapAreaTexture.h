@@ -12,6 +12,9 @@ struct FColorMapAreaPair
 	GENERATED_BODY();
 
 	FColorMapAreaPair() :
+#if WITH_EDITORONLY_DATA
+		PaletteColor(EForceInit::ForceInitToZero),
+#endif
 		MinX( MAX_int32 ),
 		MinY( MAX_int32 ),
 		MaxX( 0 ),

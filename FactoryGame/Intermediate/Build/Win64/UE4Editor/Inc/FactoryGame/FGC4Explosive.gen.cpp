@@ -197,7 +197,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGC4Explosive, 127664058);
+	IMPLEMENT_CLASS(AFGC4Explosive, 3925643549);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGC4Explosive>()
 	{
 		return AFGC4Explosive::StaticClass();

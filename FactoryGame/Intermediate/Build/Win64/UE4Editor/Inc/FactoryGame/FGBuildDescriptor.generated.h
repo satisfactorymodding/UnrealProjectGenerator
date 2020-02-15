@@ -9,6 +9,8 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGBuildDescriptor;
+class AActor;
+class UObject;
 class UFGBuildSubCategory;
 class UFGBuildCategory;
 #ifdef FACTORYGAME_FGBuildDescriptor_generated_h
@@ -16,7 +18,25 @@ class UFGBuildCategory;
 #endif
 #define FACTORYGAME_FGBuildDescriptor_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetBuildClass) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TSubclassOf<AActor> *)Z_Param__Result=UFGBuildDescriptor::GetBuildClass(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetHologramClass) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UClass**)Z_Param__Result=UFGBuildDescriptor::GetHologramClass(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetBuildMenuPriority) \
 	{ \
@@ -47,7 +67,25 @@ class UFGBuildCategory;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetBuildClass) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TSubclassOf<AActor> *)Z_Param__Result=UFGBuildDescriptor::GetBuildClass(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetHologramClass) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UClass**)Z_Param__Result=UFGBuildDescriptor::GetHologramClass(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetBuildMenuPriority) \
 	{ \
@@ -78,7 +116,7 @@ class UFGBuildCategory;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGBuildDescriptor(); \
 	friend struct Z_Construct_UClass_UFGBuildDescriptor_Statics; \
@@ -87,7 +125,7 @@ public: \
 	DECLARE_SERIALIZER(UFGBuildDescriptor)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGBuildDescriptor(); \
 	friend struct Z_Construct_UClass_UFGBuildDescriptor_Statics; \
@@ -96,9 +134,9 @@ public: \
 	DECLARE_SERIALIZER(UFGBuildDescriptor)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGBuildDescriptor(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API UFGBuildDescriptor(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGBuildDescriptor) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGBuildDescriptor); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGBuildDescriptor); \
@@ -109,9 +147,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGBuildDescriptor() { }; \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGBuildDescriptor(UFGBuildDescriptor&&); \
@@ -122,31 +158,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGBuildDescriptor); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGBuildDescriptor)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mBuildCategory() { return STRUCT_OFFSET(UFGBuildDescriptor, mBuildCategory); } \
 	FORCEINLINE static uint32 __PPO__mSubCategories() { return STRUCT_OFFSET(UFGBuildDescriptor, mSubCategories); } \
 	FORCEINLINE static uint32 __PPO__mBuildMenuPriority() { return STRUCT_OFFSET(UFGBuildDescriptor, mBuildMenuPriority); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_14_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_15_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_17_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGBuildDescriptor_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

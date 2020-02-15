@@ -80,7 +80,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGPoleHologram); \
 #define FactoryGame_Source_FactoryGame_Public_Hologram_FGPoleHologram_h_20_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mPoleMesh() { return STRUCT_OFFSET(AFGPoleHologram, mPoleMesh); } \
 	FORCEINLINE static uint32 __PPO__mPoleMeshComponent() { return STRUCT_OFFSET(AFGPoleHologram, mPoleMeshComponent); } \
-	FORCEINLINE static uint32 __PPO__mPoleHeightComponent() { return STRUCT_OFFSET(AFGPoleHologram, mPoleHeightComponent); }
+	FORCEINLINE static uint32 __PPO__mPoleHeightComponent() { return STRUCT_OFFSET(AFGPoleHologram, mPoleHeightComponent); } \
+	FORCEINLINE static uint32 __PPO__mPoleHeight() { return STRUCT_OFFSET(AFGPoleHologram, mPoleHeight); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_Hologram_FGPoleHologram_h_17_PROLOG

@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplinePath() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSplinePath, 118151477);
+	IMPLEMENT_CLASS(AFGSplinePath, 2110541375);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSplinePath>()
 	{
 		return AFGSplinePath::StaticClass();

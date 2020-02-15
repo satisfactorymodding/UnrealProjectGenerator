@@ -230,6 +230,16 @@ static inline void FPurchasedSchematicDelegate_DelegateWrapper(const FMulticastS
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetAllSchematicsOfTypeFilteredOnDependency) \
+	{ \
+		P_GET_ENUM(ESchematicType,Z_Param_type); \
+		P_GET_TARRAY_REF(TSubclassOf<UFGSchematic> ,Z_Param_Out_out_schematics); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetAllSchematicsOfTypeFilteredOnDependency(ESchematicType(Z_Param_type),Z_Param_Out_out_schematics); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetAllSchematicsOfType) \
 	{ \
 		P_GET_ENUM(ESchematicType,Z_Param_type); \
@@ -249,12 +259,22 @@ static inline void FPurchasedSchematicDelegate_DelegateWrapper(const FMulticastS
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetPurchasedSchematics) \
+	DECLARE_FUNCTION(execGetAllPurchasedSchematics) \
 	{ \
 		P_GET_TARRAY_REF(TSubclassOf<UFGSchematic> ,Z_Param_Out_out_schematics); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GetPurchasedSchematics(Z_Param_Out_out_schematics); \
+		P_THIS->GetAllPurchasedSchematics(Z_Param_Out_out_schematics); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetPurchasedSchematicsOfTypes) \
+	{ \
+		P_GET_TARRAY(ESchematicType,Z_Param_types); \
+		P_GET_TARRAY_REF(TSubclassOf<UFGSchematic> ,Z_Param_Out_out_schematics); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetPurchasedSchematicsOfTypes(Z_Param_types,Z_Param_Out_out_schematics); \
 		P_NATIVE_END; \
 	} \
  \
@@ -443,6 +463,16 @@ static inline void FPurchasedSchematicDelegate_DelegateWrapper(const FMulticastS
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetAllSchematicsOfTypeFilteredOnDependency) \
+	{ \
+		P_GET_ENUM(ESchematicType,Z_Param_type); \
+		P_GET_TARRAY_REF(TSubclassOf<UFGSchematic> ,Z_Param_Out_out_schematics); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetAllSchematicsOfTypeFilteredOnDependency(ESchematicType(Z_Param_type),Z_Param_Out_out_schematics); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetAllSchematicsOfType) \
 	{ \
 		P_GET_ENUM(ESchematicType,Z_Param_type); \
@@ -462,12 +492,22 @@ static inline void FPurchasedSchematicDelegate_DelegateWrapper(const FMulticastS
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetPurchasedSchematics) \
+	DECLARE_FUNCTION(execGetAllPurchasedSchematics) \
 	{ \
 		P_GET_TARRAY_REF(TSubclassOf<UFGSchematic> ,Z_Param_Out_out_schematics); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GetPurchasedSchematics(Z_Param_Out_out_schematics); \
+		P_THIS->GetAllPurchasedSchematics(Z_Param_Out_out_schematics); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetPurchasedSchematicsOfTypes) \
+	{ \
+		P_GET_TARRAY(ESchematicType,Z_Param_types); \
+		P_GET_TARRAY_REF(TSubclassOf<UFGSchematic> ,Z_Param_Out_out_schematics); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetPurchasedSchematicsOfTypes(Z_Param_types,Z_Param_Out_out_schematics); \
 		P_NATIVE_END; \
 	} \
  \

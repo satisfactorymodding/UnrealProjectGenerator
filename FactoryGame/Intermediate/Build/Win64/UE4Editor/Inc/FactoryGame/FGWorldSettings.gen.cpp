@@ -30,7 +30,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FExponentialFogSettings();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGWaterVolume_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGAmbientVolume_NoRegister();
-	FACTORYGAME_API UClass* Z_Construct_UClass_AFGDynamicExponentialFogVolume_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGAtmosphereVolume_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveInterface_NoRegister();
 // End Cross Module References
 	void AFGWorldSettings::StaticRegisterNativesAFGWorldSettings()
@@ -321,7 +321,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mFogVolumes = { "mFogVolumes", nullptr, (EPropertyFlags)0x0010000000002000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWorldSettings, mFogVolumes), METADATA_PARAMS(Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mFogVolumes_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mFogVolumes_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mFogVolumes_Inner = { "mFogVolumes", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGDynamicExponentialFogVolume_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mFogVolumes_Inner = { "mFogVolumes", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGAtmosphereVolume_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGWorldSettings_Statics::PropPointers[] = {
 #if WITH_EDITORONLY_DATA
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWorldSettings_Statics::NewProp_mPreviewHour,
@@ -374,7 +374,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWorldSettings, 387390593);
+	IMPLEMENT_CLASS(AFGWorldSettings, 1822516297);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWorldSettings>()
 	{
 		return AFGWorldSettings::StaticClass();

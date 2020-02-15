@@ -61,6 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCharacterPlayer_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGRenderTargetStage_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UWorld_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UInputComponent_NoRegister();
 // End Cross Module References
 	static UEnum* ECrosshairState_StaticEnum()
 	{
@@ -227,7 +228,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_AddEquipmentHUD_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Called when we want to add HUD for equipment\n@param widgetClass - class to use for widget\n@param slot - which slot the equipment is using" },
 	};
@@ -265,7 +266,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_AddPawnHUD_Statics::Function_MetaDataParams[] = {
-		{ "Category", "UI" },
+		{ "Category", "FactoryGame|UI" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Adds a HUD of the widget class for the provided pawn. Needs a valid pawn" },
 	};
@@ -289,7 +290,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_BeginPreviewActor_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ActorPreview" },
+		{ "Category", "FactoryGame|ActorPreview" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Start rendering the preview actor" },
 	};
@@ -313,7 +314,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_CloseRespawnUI_Statics::Function_MetaDataParams[] = {
-		{ "Category", "UI" },
+		{ "Category", "FactoryGame|UI" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Closes the respawn UI and enables the GameUI if not already enabled." },
 	};
@@ -337,7 +338,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_EndPreviewActor_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ActorPreview" },
+		{ "Category", "FactoryGame|ActorPreview" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "stop rendering the preview actor" },
 	};
@@ -374,7 +375,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_GetCrosshairState_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Getter for Crosshair State" },
 	};
@@ -416,7 +417,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_GetGameUI_Statics::Function_MetaDataParams[] = {
-		{ "Category", "UI" },
+		{ "Category", "FactoryGame|UI" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 	};
 #endif
@@ -454,7 +455,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_GetHUDVisibility_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Getter" },
 	};
@@ -493,7 +494,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_GetPartialPumpiMode_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "HUD visibility" },
 	};
@@ -535,7 +536,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_GetPawnHUD_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Returns the latest created pawn HUD widget. Can return nullptr" },
 	};
@@ -569,7 +570,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_GetPreviewTexture_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ActorPreview" },
+		{ "Category", "FactoryGame|ActorPreview" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Get the texture that we use to preview the actor" },
 	};
@@ -608,7 +609,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_GetPumpiMode_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "HUD visibility" },
 	};
@@ -647,7 +648,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_GetShowCrosshair_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Getter" },
 	};
@@ -680,7 +681,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_OpenInteractUI_Statics::Function_MetaDataParams[] = {
-		{ "Category", "UI" },
+		{ "Category", "FactoryGame|UI" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "All widgets that inherits from UFGInteractWidget can be opened by calling this" },
 	};
@@ -713,7 +714,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_RemoveEquipmentHUD_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Removes all equipment HUD from a certain slot" },
 	};
@@ -750,7 +751,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_SetCrosshairState_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Setter for Crosshair State" },
 	};
@@ -780,7 +781,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_SetCrustomCrosshairTexture_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Updates the crosshair to match set the proper CrosshairState" },
 	};
@@ -819,7 +820,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_SetForceHideCrossHair_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Setter" },
 	};
@@ -858,7 +859,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_SetHUDVisibility_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Setter" },
 	};
@@ -897,7 +898,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_SetPartialPumpiMode_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Hides all HUD including crosshair" },
 	};
@@ -931,7 +932,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_SetPreviewActorClass_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ActorPreview" },
+		{ "Category", "FactoryGame|ActorPreview" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Set the actor class to preview in a rendertarget" },
 	};
@@ -965,7 +966,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_SetPreviewDistance_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ActorPreview" },
+		{ "Category", "FactoryGame|ActorPreview" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "SetPreviewDistance is deprecated, use SetPreviewView instead" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
@@ -1008,7 +1009,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_SetPreviewView_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ActorPreview" },
+		{ "Category", "FactoryGame|ActorPreview" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Set the view we preview the actor from" },
 	};
@@ -1047,7 +1048,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_SetPumpiMode_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Hides all HUD including crosshair" },
 	};
@@ -1086,7 +1087,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_SetShowCrossHair_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Setter" },
 	};
@@ -1110,7 +1111,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_ShowRespawnUI_Statics::Function_MetaDataParams[] = {
-		{ "Category", "UI" },
+		{ "Category", "FactoryGame|UI" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 	};
 #endif
@@ -1147,7 +1148,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_UpdateCrosshairColorState_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Updates the crosshair color for weapons" },
 	};
@@ -1177,7 +1178,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_UpdateCrosshairState_Statics::Function_MetaDataParams[] = {
-		{ "Category", "HUD" },
+		{ "Category", "FactoryGame|HUD" },
 		{ "ModuleRelativePath", "Public/FGHUD.h" },
 		{ "ToolTip", "Updates the crosshair to match set the proper CrosshairState" },
 	};
@@ -1227,6 +1228,10 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRespawnUI_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mRespawnUI;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRespawnInputComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mRespawnInputComponent;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mGeneralCrosshair_MetaData[];
 #endif
@@ -1280,34 +1285,34 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGHUD_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGHUD_AddEquipmentHUD, "AddEquipmentHUD" }, // 628854056
-		{ &Z_Construct_UFunction_AFGHUD_AddPawnHUD, "AddPawnHUD" }, // 3054328714
-		{ &Z_Construct_UFunction_AFGHUD_BeginPreviewActor, "BeginPreviewActor" }, // 2922418719
-		{ &Z_Construct_UFunction_AFGHUD_CloseRespawnUI, "CloseRespawnUI" }, // 1312748381
-		{ &Z_Construct_UFunction_AFGHUD_EndPreviewActor, "EndPreviewActor" }, // 1020677316
-		{ &Z_Construct_UFunction_AFGHUD_GetCrosshairState, "GetCrosshairState" }, // 3561308472
-		{ &Z_Construct_UFunction_AFGHUD_GetGameUI, "GetGameUI" }, // 1644397803
-		{ &Z_Construct_UFunction_AFGHUD_GetHUDVisibility, "GetHUDVisibility" }, // 3585977479
-		{ &Z_Construct_UFunction_AFGHUD_GetPartialPumpiMode, "GetPartialPumpiMode" }, // 1616729311
-		{ &Z_Construct_UFunction_AFGHUD_GetPawnHUD, "GetPawnHUD" }, // 1969122475
-		{ &Z_Construct_UFunction_AFGHUD_GetPreviewTexture, "GetPreviewTexture" }, // 1136870210
-		{ &Z_Construct_UFunction_AFGHUD_GetPumpiMode, "GetPumpiMode" }, // 301887274
-		{ &Z_Construct_UFunction_AFGHUD_GetShowCrosshair, "GetShowCrosshair" }, // 3263824092
-		{ &Z_Construct_UFunction_AFGHUD_OpenInteractUI, "OpenInteractUI" }, // 2995712669
-		{ &Z_Construct_UFunction_AFGHUD_RemoveEquipmentHUD, "RemoveEquipmentHUD" }, // 4255201586
-		{ &Z_Construct_UFunction_AFGHUD_SetCrosshairState, "SetCrosshairState" }, // 1005534131
-		{ &Z_Construct_UFunction_AFGHUD_SetCrustomCrosshairTexture, "SetCrustomCrosshairTexture" }, // 2946865045
-		{ &Z_Construct_UFunction_AFGHUD_SetForceHideCrossHair, "SetForceHideCrossHair" }, // 378617961
-		{ &Z_Construct_UFunction_AFGHUD_SetHUDVisibility, "SetHUDVisibility" }, // 3281544445
-		{ &Z_Construct_UFunction_AFGHUD_SetPartialPumpiMode, "SetPartialPumpiMode" }, // 592040592
-		{ &Z_Construct_UFunction_AFGHUD_SetPreviewActorClass, "SetPreviewActorClass" }, // 594466531
-		{ &Z_Construct_UFunction_AFGHUD_SetPreviewDistance, "SetPreviewDistance" }, // 1330933276
-		{ &Z_Construct_UFunction_AFGHUD_SetPreviewView, "SetPreviewView" }, // 1444128402
-		{ &Z_Construct_UFunction_AFGHUD_SetPumpiMode, "SetPumpiMode" }, // 2734314364
-		{ &Z_Construct_UFunction_AFGHUD_SetShowCrossHair, "SetShowCrossHair" }, // 1334191860
-		{ &Z_Construct_UFunction_AFGHUD_ShowRespawnUI, "ShowRespawnUI" }, // 1989480665
-		{ &Z_Construct_UFunction_AFGHUD_UpdateCrosshairColorState, "UpdateCrosshairColorState" }, // 352568566
-		{ &Z_Construct_UFunction_AFGHUD_UpdateCrosshairState, "UpdateCrosshairState" }, // 1744674814
+		{ &Z_Construct_UFunction_AFGHUD_AddEquipmentHUD, "AddEquipmentHUD" }, // 2857464707
+		{ &Z_Construct_UFunction_AFGHUD_AddPawnHUD, "AddPawnHUD" }, // 1691371969
+		{ &Z_Construct_UFunction_AFGHUD_BeginPreviewActor, "BeginPreviewActor" }, // 3741133545
+		{ &Z_Construct_UFunction_AFGHUD_CloseRespawnUI, "CloseRespawnUI" }, // 2347986283
+		{ &Z_Construct_UFunction_AFGHUD_EndPreviewActor, "EndPreviewActor" }, // 1098987683
+		{ &Z_Construct_UFunction_AFGHUD_GetCrosshairState, "GetCrosshairState" }, // 1995837320
+		{ &Z_Construct_UFunction_AFGHUD_GetGameUI, "GetGameUI" }, // 2477623650
+		{ &Z_Construct_UFunction_AFGHUD_GetHUDVisibility, "GetHUDVisibility" }, // 190819384
+		{ &Z_Construct_UFunction_AFGHUD_GetPartialPumpiMode, "GetPartialPumpiMode" }, // 736592175
+		{ &Z_Construct_UFunction_AFGHUD_GetPawnHUD, "GetPawnHUD" }, // 4069982816
+		{ &Z_Construct_UFunction_AFGHUD_GetPreviewTexture, "GetPreviewTexture" }, // 2671476847
+		{ &Z_Construct_UFunction_AFGHUD_GetPumpiMode, "GetPumpiMode" }, // 711255489
+		{ &Z_Construct_UFunction_AFGHUD_GetShowCrosshair, "GetShowCrosshair" }, // 3747358739
+		{ &Z_Construct_UFunction_AFGHUD_OpenInteractUI, "OpenInteractUI" }, // 3127144090
+		{ &Z_Construct_UFunction_AFGHUD_RemoveEquipmentHUD, "RemoveEquipmentHUD" }, // 3906800921
+		{ &Z_Construct_UFunction_AFGHUD_SetCrosshairState, "SetCrosshairState" }, // 2359966259
+		{ &Z_Construct_UFunction_AFGHUD_SetCrustomCrosshairTexture, "SetCrustomCrosshairTexture" }, // 9686959
+		{ &Z_Construct_UFunction_AFGHUD_SetForceHideCrossHair, "SetForceHideCrossHair" }, // 1834685622
+		{ &Z_Construct_UFunction_AFGHUD_SetHUDVisibility, "SetHUDVisibility" }, // 2616055670
+		{ &Z_Construct_UFunction_AFGHUD_SetPartialPumpiMode, "SetPartialPumpiMode" }, // 2105177647
+		{ &Z_Construct_UFunction_AFGHUD_SetPreviewActorClass, "SetPreviewActorClass" }, // 3871252700
+		{ &Z_Construct_UFunction_AFGHUD_SetPreviewDistance, "SetPreviewDistance" }, // 2994841087
+		{ &Z_Construct_UFunction_AFGHUD_SetPreviewView, "SetPreviewView" }, // 3430346976
+		{ &Z_Construct_UFunction_AFGHUD_SetPumpiMode, "SetPumpiMode" }, // 3874052650
+		{ &Z_Construct_UFunction_AFGHUD_SetShowCrossHair, "SetShowCrossHair" }, // 3199352472
+		{ &Z_Construct_UFunction_AFGHUD_ShowRespawnUI, "ShowRespawnUI" }, // 3922225081
+		{ &Z_Construct_UFunction_AFGHUD_UpdateCrosshairColorState, "UpdateCrosshairColorState" }, // 2297162989
+		{ &Z_Construct_UFunction_AFGHUD_UpdateCrosshairState, "UpdateCrosshairState" }, // 1180705086
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHUD_Statics::Class_MetaDataParams[] = {
@@ -1361,6 +1366,14 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGHUD_Statics::NewProp_mRespawnUI = { "mRespawnUI", nullptr, (EPropertyFlags)0x0040000000082008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGHUD, mRespawnUI), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGHUD_Statics::NewProp_mRespawnUI_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHUD_Statics::NewProp_mRespawnUI_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHUD_Statics::NewProp_mRespawnInputComponent_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/FGHUD.h" },
+		{ "ToolTip", "Input component for blocking input during respawn" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGHUD_Statics::NewProp_mRespawnInputComponent = { "mRespawnInputComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGHUD, mRespawnInputComponent), Z_Construct_UClass_UInputComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGHUD_Statics::NewProp_mRespawnInputComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHUD_Statics::NewProp_mRespawnInputComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHUD_Statics::NewProp_mGeneralCrosshair_MetaData[] = {
 		{ "Category", "Crosshair" },
@@ -1445,6 +1458,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGHUD_Statics::NewProp_mPreviewBuildingWorld,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGHUD_Statics::NewProp_mGameUI,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGHUD_Statics::NewProp_mRespawnUI,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGHUD_Statics::NewProp_mRespawnInputComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGHUD_Statics::NewProp_mGeneralCrosshair,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGHUD_Statics::NewProp_mCustomCrosshair,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGHUD_Statics::NewProp_mDismantleCrosshair,
@@ -1484,7 +1498,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGHUD, 1646952937);
+	IMPLEMENT_CLASS(AFGHUD, 4189480339);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGHUD>()
 	{
 		return AFGHUD::StaticClass();

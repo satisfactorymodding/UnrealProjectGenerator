@@ -58,10 +58,11 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicle() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGDamageType_NoRegister();
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkAudioEvent_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FLinearColor();
-	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FItemAmount();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipe_NoRegister();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FNetConstructionID();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
-	FACTORYGAME_API UClass* Z_Construct_UClass_AFGVehicleHologram_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGHologram_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGUseableInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGDismantleInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGAggroTargetInterface_NoRegister();
@@ -1221,10 +1222,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mPrimaryColor;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDismantleRefund_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBuiltWithRecipe_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mDismantleRefund;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mDismantleRefund_Inner;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mBuiltWithRecipe;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mNetConstructionID_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mNetConstructionID;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDisabledByWaterLocations_MetaData[];
 #endif
@@ -1418,13 +1422,19 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mPrimaryColor = { "mPrimaryColor", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGVehicle, mPrimaryColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mPrimaryColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mPrimaryColor_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDismantleRefund_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mBuiltWithRecipe_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGVehicle.h" },
-		{ "ToolTip", "How much did we pay when building this." },
+		{ "ToolTip", "Recipe this vehicle was built with, e.g. used for refunds and stats." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDismantleRefund = { "mDismantleRefund", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGVehicle, mDismantleRefund), METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDismantleRefund_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDismantleRefund_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDismantleRefund_Inner = { "mDismantleRefund", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mBuiltWithRecipe = { "mBuiltWithRecipe", nullptr, (EPropertyFlags)0x0044000001000020, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGVehicle, mBuiltWithRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mBuiltWithRecipe_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mBuiltWithRecipe_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mNetConstructionID_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGVehicle.h" },
+		{ "ToolTip", "ID given from server when constructed. Has not been assigned a value by server if 0." },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mNetConstructionID = { "mNetConstructionID", nullptr, (EPropertyFlags)0x0020080000002020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGVehicle, mNetConstructionID), Z_Construct_UScriptStruct_FNetConstructionID, METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mNetConstructionID_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mNetConstructionID_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDisabledByWaterLocations_MetaData[] = {
 		{ "Category", "Vehicle" },
@@ -1452,7 +1462,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		{ "ToolTip", "The main skeletal mesh associated with this Vehicle" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mMesh = { "mMesh", nullptr, (EPropertyFlags)0x00200800000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGVehicle, mMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mMesh = { "mMesh", nullptr, (EPropertyFlags)0x002008000009001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGVehicle, mMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mHologramClass_MetaData[] = {
 		{ "Category", "Vehicle" },
@@ -1460,7 +1470,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		{ "ToolTip", "Hologram to build this class with." },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mHologramClass = { "mHologramClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGVehicle, mHologramClass), Z_Construct_UClass_AFGVehicleHologram_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mHologramClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mHologramClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mHologramClass = { "mHologramClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGVehicle, mHologramClass), Z_Construct_UClass_AFGHologram_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mHologramClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mHologramClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDescription_MetaData[] = {
 		{ "Category", "Vehicle" },
@@ -1495,8 +1505,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGVehicle_Statics::NewProp_mIsSelfDriving,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSecondaryColor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGVehicle_Statics::NewProp_mPrimaryColor,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDismantleRefund,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDismantleRefund_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGVehicle_Statics::NewProp_mBuiltWithRecipe,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGVehicle_Statics::NewProp_mNetConstructionID,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDisabledByWaterLocations,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDisabledByWaterLocations_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGVehicle_Statics::NewProp_mHealthComponent,
@@ -1540,7 +1550,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGVehicle, 2846485903);
+	IMPLEMENT_CLASS(AFGVehicle, 2194269187);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGVehicle>()
 	{
 		return AFGVehicle::StaticClass();

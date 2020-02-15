@@ -14,8 +14,7 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-# *.dll
-*-[0-9]{0,3}.dll
+*.dll
 
 !*.pdb
 
@@ -49,7 +48,7 @@ SourceArt/**/*.png
 SourceArt/**/*.tga
 
 # Binary Files
-# Binaries/*
+Binaries/*
 Plugins/*/Binaries/*
 
 # Builds

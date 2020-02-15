@@ -16,9 +16,10 @@ struct FFogOfWarQueuePair
 {
 	GENERATED_BODY()
 
-	FFogOfWarQueuePair()
+	FFogOfWarQueuePair() :
+		playerController( nullptr ),
+		currentPackageIndex( 0 )
 	{
-		currentPackageIndex = 0;
 	}
 
 	UPROPERTY()

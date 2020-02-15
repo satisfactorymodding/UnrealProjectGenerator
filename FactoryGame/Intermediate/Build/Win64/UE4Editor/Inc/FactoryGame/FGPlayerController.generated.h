@@ -15,6 +15,7 @@ class APawn;
 struct FVector;
 struct FChatMessageStruct;
 class UFGRecipe;
+class AFGWheeledVehicle;
 class AFGPortableMiner;
 struct FHitResult;
 class UDamageType;
@@ -127,6 +128,7 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 	virtual bool Server_SetRecipeShortcutOnIndex_Validate(TSubclassOf<UFGRecipe>  , int32 ); \
 	virtual void Server_SetRecipeShortcutOnIndex_Implementation(TSubclassOf<UFGRecipe>  recipe, int32 onIndex); \
 	virtual void OnDisabledInputGateChanged_Implementation(); \
+	virtual void OnDismantleGolfCart_Implementation(AFGWheeledVehicle* inGolfCart); \
 	virtual void OnDismantlePortableMiner_Implementation(AFGPortableMiner* PortableMiner); \
 	virtual bool Server_DealRadialDamage_Validate(FHitResult const& , float , float , TSubclassOf<UDamageType>  , AActor* ); \
 	virtual void Server_DealRadialDamage_Implementation(FHitResult const& impact, float damage, float radius, TSubclassOf<UDamageType>  damageType, AActor* inInstigator); \
@@ -350,6 +352,15 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execOnDismantleGolfCart) \
+	{ \
+		P_GET_OBJECT(AFGWheeledVehicle,Z_Param_inGolfCart); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnDismantleGolfCart_Implementation(Z_Param_inGolfCart); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execOnDismantlePortableMiner) \
 	{ \
 		P_GET_OBJECT(AFGPortableMiner,Z_Param_PortableMiner); \
@@ -364,40 +375,6 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnPrimaryFire(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execTrackAkComponentsWithNoPositionOrOwner) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->TrackAkComponentsWithNoPositionOrOwner(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execTrackAkMemoryPools) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->TrackAkMemoryPools(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execTrackAkComponents) \
-	{ \
-		P_GET_UBOOL(Z_Param_byClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->TrackAkComponents(Z_Param_byClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetSessionName) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_newSessionName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetSessionName(Z_Param_newSessionName); \
 		P_NATIVE_END; \
 	} \
  \
@@ -446,6 +423,15 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execSetTutorialMode) \
+	{ \
+		P_GET_UBOOL(Z_Param_active); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetTutorialMode(Z_Param_active); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execIsInTutorialMode) \
 	{ \
 		P_FINISH; \
@@ -468,24 +454,6 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->SetDisabledInputGate(Z_Param_newDisabledInputGate); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execMaterialLookup) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_itemName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->MaterialLookup(Z_Param_itemName); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execMaterialFlowAnalysis) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_recipeName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->MaterialFlowAnalysis(Z_Param_recipeName); \
 		P_NATIVE_END; \
 	} \
  \
@@ -703,6 +671,7 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 	virtual bool Server_SetRecipeShortcutOnIndex_Validate(TSubclassOf<UFGRecipe>  , int32 ); \
 	virtual void Server_SetRecipeShortcutOnIndex_Implementation(TSubclassOf<UFGRecipe>  recipe, int32 onIndex); \
 	virtual void OnDisabledInputGateChanged_Implementation(); \
+	virtual void OnDismantleGolfCart_Implementation(AFGWheeledVehicle* inGolfCart); \
 	virtual void OnDismantlePortableMiner_Implementation(AFGPortableMiner* PortableMiner); \
 	virtual bool Server_DealRadialDamage_Validate(FHitResult const& , float , float , TSubclassOf<UDamageType>  , AActor* ); \
 	virtual void Server_DealRadialDamage_Implementation(FHitResult const& impact, float damage, float radius, TSubclassOf<UDamageType>  damageType, AActor* inInstigator); \
@@ -926,6 +895,15 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execOnDismantleGolfCart) \
+	{ \
+		P_GET_OBJECT(AFGWheeledVehicle,Z_Param_inGolfCart); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnDismantleGolfCart_Implementation(Z_Param_inGolfCart); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execOnDismantlePortableMiner) \
 	{ \
 		P_GET_OBJECT(AFGPortableMiner,Z_Param_PortableMiner); \
@@ -940,40 +918,6 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnPrimaryFire(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execTrackAkComponentsWithNoPositionOrOwner) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->TrackAkComponentsWithNoPositionOrOwner(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execTrackAkMemoryPools) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->TrackAkMemoryPools(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execTrackAkComponents) \
-	{ \
-		P_GET_UBOOL(Z_Param_byClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->TrackAkComponents(Z_Param_byClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetSessionName) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_newSessionName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetSessionName(Z_Param_newSessionName); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1022,6 +966,15 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execSetTutorialMode) \
+	{ \
+		P_GET_UBOOL(Z_Param_active); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetTutorialMode(Z_Param_active); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execIsInTutorialMode) \
 	{ \
 		P_FINISH; \
@@ -1044,24 +997,6 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->SetDisabledInputGate(Z_Param_newDisabledInputGate); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execMaterialLookup) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_itemName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->MaterialLookup(Z_Param_itemName); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execMaterialFlowAnalysis) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_recipeName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->MaterialFlowAnalysis(Z_Param_recipeName); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1272,6 +1207,10 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		TArray<uint8> fogOfWarRawData; \
 		int32 index; \
 	}; \
+	struct FGPlayerController_eventOnDismantleGolfCart_Parms \
+	{ \
+		AFGWheeledVehicle* inGolfCart; \
+	}; \
 	struct FGPlayerController_eventOnDismantlePortableMiner_Parms \
 	{ \
 		AFGPortableMiner* PortableMiner; \
@@ -1370,6 +1309,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGPlayerController); \
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__mConsoleCommandManager() { return STRUCT_OFFSET(AFGPlayerController, mConsoleCommandManager); } \
 	FORCEINLINE static uint32 __PPO__mRemoteCallObjects() { return STRUCT_OFFSET(AFGPlayerController, mRemoteCallObjects); } \
 	FORCEINLINE static uint32 __PPO__mInputComponentChords() { return STRUCT_OFFSET(AFGPlayerController, mInputComponentChords); } \
 	FORCEINLINE static uint32 __PPO__mAttentionPingActorClass() { return STRUCT_OFFSET(AFGPlayerController, mAttentionPingActorClass); } \

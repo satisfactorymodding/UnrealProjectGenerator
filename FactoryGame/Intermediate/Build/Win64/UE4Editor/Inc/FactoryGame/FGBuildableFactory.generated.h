@@ -47,6 +47,8 @@ static inline void FOnReplicationDetailActorCreated_DelegateWrapper(const FMulti
 
 
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_RPC_WRAPPERS \
+	virtual void Factory_PushPipeOutput_Implementation(float dt); \
+	virtual void Factory_PullPipeInput_Implementation(float dt); \
 	virtual void Factory_CollectInput_Implementation(); \
 	virtual bool CanProduce_Implementation() const; \
  \
@@ -76,6 +78,24 @@ static inline void FOnReplicationDetailActorCreated_DelegateWrapper(const FMulti
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execFactory_PushPipeOutput) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_dt); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Factory_PushPipeOutput_Implementation(Z_Param_dt); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execFactory_PullPipeInput) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_dt); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Factory_PullPipeInput_Implementation(Z_Param_dt); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execFactory_CollectInput) \
 	{ \
 		P_FINISH; \
@@ -84,11 +104,81 @@ static inline void FOnReplicationDetailActorCreated_DelegateWrapper(const FMulti
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execOnHasPowerChanged_Native) \
+	{ \
+		P_GET_UBOOL(Z_Param_newHasPower); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnHasPowerChanged_Native(Z_Param_newHasPower); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnIsProducingChanged_Native) \
+	{ \
+		P_GET_UBOOL(Z_Param_newIsProducing); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnIsProducingChanged_Native(Z_Param_newIsProducing); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execTryStopProductionLoopEffects) \
+	{ \
+		P_GET_UBOOL(Z_Param_didStopProducing); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->TryStopProductionLoopEffects(Z_Param_didStopProducing); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execTryStartProductionLoopEffects) \
+	{ \
+		P_GET_UBOOL(Z_Param_didStartProducing); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->TryStartProductionLoopEffects(Z_Param_didStartProducing); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execTryStartIdlingLoopEffects) \
+	{ \
+		P_GET_UBOOL(Z_Param_didGainPower); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->TryStartIdlingLoopEffects(Z_Param_didGainPower); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execTryStopIdlingLoopEffects) \
+	{ \
+		P_GET_UBOOL(Z_Param_didLosePower); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->TryStopIdlingLoopEffects(Z_Param_didLosePower); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetIsSignificant) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->GetIsSignificant(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetScaledFluidStackSize) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetScaledFluidStackSize(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFluidInventoryStackSizeScalar) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetFluidInventoryStackSizeScalar(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -315,6 +405,8 @@ static inline void FOnReplicationDetailActorCreated_DelegateWrapper(const FMulti
 
 
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void Factory_PushPipeOutput_Implementation(float dt); \
+	virtual void Factory_PullPipeInput_Implementation(float dt); \
 	virtual void Factory_CollectInput_Implementation(); \
 	virtual bool CanProduce_Implementation() const; \
  \
@@ -344,6 +436,24 @@ static inline void FOnReplicationDetailActorCreated_DelegateWrapper(const FMulti
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execFactory_PushPipeOutput) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_dt); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Factory_PushPipeOutput_Implementation(Z_Param_dt); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execFactory_PullPipeInput) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_dt); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Factory_PullPipeInput_Implementation(Z_Param_dt); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execFactory_CollectInput) \
 	{ \
 		P_FINISH; \
@@ -352,11 +462,81 @@ static inline void FOnReplicationDetailActorCreated_DelegateWrapper(const FMulti
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execOnHasPowerChanged_Native) \
+	{ \
+		P_GET_UBOOL(Z_Param_newHasPower); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnHasPowerChanged_Native(Z_Param_newHasPower); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnIsProducingChanged_Native) \
+	{ \
+		P_GET_UBOOL(Z_Param_newIsProducing); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnIsProducingChanged_Native(Z_Param_newIsProducing); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execTryStopProductionLoopEffects) \
+	{ \
+		P_GET_UBOOL(Z_Param_didStopProducing); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->TryStopProductionLoopEffects(Z_Param_didStopProducing); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execTryStartProductionLoopEffects) \
+	{ \
+		P_GET_UBOOL(Z_Param_didStartProducing); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->TryStartProductionLoopEffects(Z_Param_didStartProducing); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execTryStartIdlingLoopEffects) \
+	{ \
+		P_GET_UBOOL(Z_Param_didGainPower); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->TryStartIdlingLoopEffects(Z_Param_didGainPower); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execTryStopIdlingLoopEffects) \
+	{ \
+		P_GET_UBOOL(Z_Param_didLosePower); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->TryStopIdlingLoopEffects(Z_Param_didLosePower); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetIsSignificant) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->GetIsSignificant(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetScaledFluidStackSize) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetScaledFluidStackSize(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFluidInventoryStackSizeScalar) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetFluidInventoryStackSizeScalar(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -593,6 +773,14 @@ static inline void FOnReplicationDetailActorCreated_DelegateWrapper(const FMulti
 		{ \
 		} \
 	}; \
+	struct FGBuildableFactory_eventFactory_PullPipeInput_Parms \
+	{ \
+		float dt; \
+	}; \
+	struct FGBuildableFactory_eventFactory_PushPipeOutput_Parms \
+	{ \
+		float dt; \
+	}; \
 	struct FGBuildableFactory_eventFactory_ReceiveTickProducing_Parms \
 	{ \
 		float deltaTime; \
@@ -609,9 +797,17 @@ static inline void FOnReplicationDetailActorCreated_DelegateWrapper(const FMulti
 	{ \
 		float DeltaSeconds; \
 	}; \
+	struct FGBuildableFactory_eventStartIdlingLoopEffects_Parms \
+	{ \
+		bool didGainPower; \
+	}; \
 	struct FGBuildableFactory_eventStartProductionLoopEffects_Parms \
 	{ \
 		bool didStartProducing; \
+	}; \
+	struct FGBuildableFactory_eventStopIdlingLoopEffects_Parms \
+	{ \
+		bool didLosePower; \
 	}; \
 	struct FGBuildableFactory_eventStopProductionLoopEffects_Parms \
 	{ \
@@ -678,13 +874,16 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableFactory); \
 	FORCEINLINE static uint32 __PPO__mMinPotential() { return STRUCT_OFFSET(AFGBuildableFactory, mMinPotential); } \
 	FORCEINLINE static uint32 __PPO__mMaxPotential() { return STRUCT_OFFSET(AFGBuildableFactory, mMaxPotential); } \
 	FORCEINLINE static uint32 __PPO__mMaxPotentialIncreasePerCrystal() { return STRUCT_OFFSET(AFGBuildableFactory, mMaxPotentialIncreasePerCrystal); } \
+	FORCEINLINE static uint32 __PPO__mFluidStackSizeDefault() { return STRUCT_OFFSET(AFGBuildableFactory, mFluidStackSizeDefault); } \
+	FORCEINLINE static uint32 __PPO__mFluidStackSizeMultiplier() { return STRUCT_OFFSET(AFGBuildableFactory, mFluidStackSizeMultiplier); } \
 	FORCEINLINE static uint32 __PPO__mIsProductionPaused() { return STRUCT_OFFSET(AFGBuildableFactory, mIsProductionPaused); } \
 	FORCEINLINE static uint32 __PPO__mReplicationDetailActor() { return STRUCT_OFFSET(AFGBuildableFactory, mReplicationDetailActor); } \
 	FORCEINLINE static uint32 __PPO__OnReplicationDetailActorCreatedEvent() { return STRUCT_OFFSET(AFGBuildableFactory, OnReplicationDetailActorCreatedEvent); } \
 	FORCEINLINE static uint32 __PPO__mInventoryPotential() { return STRUCT_OFFSET(AFGBuildableFactory, mInventoryPotential); } \
 	FORCEINLINE static uint32 __PPO__mSignificanceBias() { return STRUCT_OFFSET(AFGBuildableFactory, mSignificanceBias); } \
 	FORCEINLINE static uint32 __PPO__mEffectUpdateInterval() { return STRUCT_OFFSET(AFGBuildableFactory, mEffectUpdateInterval); } \
-	FORCEINLINE static uint32 __PPO__mCurrentProductivity() { return STRUCT_OFFSET(AFGBuildableFactory, mCurrentProductivity); }
+	FORCEINLINE static uint32 __PPO__mCurrentProductivity() { return STRUCT_OFFSET(AFGBuildableFactory, mCurrentProductivity); } \
+	FORCEINLINE static uint32 __PPO__mSignificanceRange() { return STRUCT_OFFSET(AFGBuildableFactory, mSignificanceRange); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactory_h_43_PROLOG \

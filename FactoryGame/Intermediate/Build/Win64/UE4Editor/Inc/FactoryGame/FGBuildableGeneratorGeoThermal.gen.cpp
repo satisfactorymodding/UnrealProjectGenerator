@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorGeoThermal() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableGeneratorGeoThermal();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableGenerator();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGExtractableResourceInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGResourceNode_NoRegister();
 // End Cross Module References
 	void AFGBuildableGeneratorGeoThermal::StaticRegisterNativesAFGBuildableGeneratorGeoThermal()
@@ -32,6 +33,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorGeoThermal() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mExtractableResource_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FInterfacePropertyParams NewProp_mExtractableResource;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mExtractResourceNode_MetaData[];
 #endif
@@ -51,13 +56,21 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorGeoThermal() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractableResource_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorGeoThermal.h" },
+		{ "ToolTip", "Saved interface to the object we are extracting resrouces from" },
+	};
+#endif
+	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractableResource = { "mExtractableResource", nullptr, (EPropertyFlags)0x0044000001000000, UE4CodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableGeneratorGeoThermal, mExtractableResource), Z_Construct_UClass_UFGExtractableResourceInterface_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractableResource_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractableResource_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractResourceNode_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorGeoThermal.h" },
-		{ "ToolTip", "This is the geyser this generator is placed on" },
+		{ "ToolTip", "DEPRICATED - Use mExtractableResource instead. This exists for save functionality\n     This is the geyser this generator is placed on" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractResourceNode = { "mExtractResourceNode", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableGeneratorGeoThermal, mExtractResourceNode), Z_Construct_UClass_AFGResourceNode_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractResourceNode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractResourceNode_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractableResource,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractResourceNode,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::StaticCppClassTypeInfo = {
@@ -87,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorGeoThermal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableGeneratorGeoThermal, 3264669752);
+	IMPLEMENT_CLASS(AFGBuildableGeneratorGeoThermal, 3495376740);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableGeneratorGeoThermal>()
 	{
 		return AFGBuildableGeneratorGeoThermal::StaticClass();

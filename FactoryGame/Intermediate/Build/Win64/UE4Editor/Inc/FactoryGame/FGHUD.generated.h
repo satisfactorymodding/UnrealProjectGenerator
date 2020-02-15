@@ -550,6 +550,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGHUD); \
 	FORCEINLINE static uint32 __PPO__mDismantleCrosshair() { return STRUCT_OFFSET(AFGHUD, mDismantleCrosshair); } \
 	FORCEINLINE static uint32 __PPO__mCustomCrosshair() { return STRUCT_OFFSET(AFGHUD, mCustomCrosshair); } \
 	FORCEINLINE static uint32 __PPO__mGeneralCrosshair() { return STRUCT_OFFSET(AFGHUD, mGeneralCrosshair); } \
+	FORCEINLINE static uint32 __PPO__mRespawnInputComponent() { return STRUCT_OFFSET(AFGHUD, mRespawnInputComponent); } \
 	FORCEINLINE static uint32 __PPO__mRespawnUI() { return STRUCT_OFFSET(AFGHUD, mRespawnUI); } \
 	FORCEINLINE static uint32 __PPO__mGameUI() { return STRUCT_OFFSET(AFGHUD, mGameUI); } \
 	FORCEINLINE static uint32 __PPO__mPreviewBuildingWorld() { return STRUCT_OFFSET(AFGHUD, mPreviewBuildingWorld); } \

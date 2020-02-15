@@ -9,6 +9,8 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGItemDescriptor;
+struct FLinearColor;
+struct FColor;
 class UFGItemCategory;
 class UStaticMesh;
 class UTexture2D;
@@ -20,14 +22,59 @@ enum class EResourceForm : uint8;
 #endif
 #define FACTORYGAME_FGItemDescriptor_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_47_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_48_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemView_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemView>();
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetFluidColorLinear) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FLinearColor*)Z_Param__Result=UFGItemDescriptor::GetFluidColorLinear(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFluidColor) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FColor*)Z_Param__Result=UFGItemDescriptor::GetFluidColor(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFluidFriction) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGItemDescriptor::GetFluidFriction(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFluidViscosity) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGItemDescriptor::GetFluidViscosity(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFluidDensity) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGItemDescriptor::GetFluidDensity(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetItemCategory) \
 	{ \
@@ -38,12 +85,30 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemView>();
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execRememberPickUp) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UFGItemDescriptor::RememberPickUp(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execCanBeDiscarded) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=UFGItemDescriptor::CanBeDiscarded(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetStackSizeConverted) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGItemDescriptor::GetStackSizeConverted(Z_Param_inClass); \
 		P_NATIVE_END; \
 	} \
  \
@@ -158,7 +223,52 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemView>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetFluidColorLinear) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FLinearColor*)Z_Param__Result=UFGItemDescriptor::GetFluidColorLinear(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFluidColor) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FColor*)Z_Param__Result=UFGItemDescriptor::GetFluidColor(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFluidFriction) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGItemDescriptor::GetFluidFriction(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFluidViscosity) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGItemDescriptor::GetFluidViscosity(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFluidDensity) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGItemDescriptor::GetFluidDensity(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetItemCategory) \
 	{ \
@@ -169,12 +279,30 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemView>();
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execRememberPickUp) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UFGItemDescriptor::RememberPickUp(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execCanBeDiscarded) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=UFGItemDescriptor::CanBeDiscarded(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetStackSizeConverted) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGItemDescriptor::GetStackSizeConverted(Z_Param_inClass); \
 		P_NATIVE_END; \
 	} \
  \
@@ -289,31 +417,31 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemView>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(UFGItemDescriptor, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGItemDescriptor(); \
 	friend struct Z_Construct_UClass_UFGItemDescriptor_Statics; \
 public: \
 	DECLARE_CLASS(UFGItemDescriptor, UObject, COMPILED_IN_FLAGS(CLASS_Abstract), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGItemDescriptor) \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_ARCHIVESERIALIZER
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_ARCHIVESERIALIZER
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGItemDescriptor(); \
 	friend struct Z_Construct_UClass_UFGItemDescriptor_Statics; \
 public: \
 	DECLARE_CLASS(UFGItemDescriptor, UObject, COMPILED_IN_FLAGS(CLASS_Abstract), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGItemDescriptor) \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_ARCHIVESERIALIZER
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_ARCHIVESERIALIZER
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGItemDescriptor(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGItemDescriptor) \
@@ -326,7 +454,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGItemDescriptor(UFGItemDescriptor&&); \
@@ -337,39 +465,45 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGItemDescriptor); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGItemDescriptor)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mStackSize() { return STRUCT_OFFSET(UFGItemDescriptor, mStackSize); } \
 	FORCEINLINE static uint32 __PPO__mCanBeDiscarded() { return STRUCT_OFFSET(UFGItemDescriptor, mCanBeDiscarded); } \
+	FORCEINLINE static uint32 __PPO__mRememberPickUp() { return STRUCT_OFFSET(UFGItemDescriptor, mRememberPickUp); } \
 	FORCEINLINE static uint32 __PPO__mEnergyValue() { return STRUCT_OFFSET(UFGItemDescriptor, mEnergyValue); } \
 	FORCEINLINE static uint32 __PPO__mRadioactiveDecay() { return STRUCT_OFFSET(UFGItemDescriptor, mRadioactiveDecay); } \
+	FORCEINLINE static uint32 __PPO__mResourceSinkPoints() { return STRUCT_OFFSET(UFGItemDescriptor, mResourceSinkPoints); } \
 	FORCEINLINE static uint32 __PPO__mForm() { return STRUCT_OFFSET(UFGItemDescriptor, mForm); } \
 	FORCEINLINE static uint32 __PPO__mInventoryIcon() { return STRUCT_OFFSET(UFGItemDescriptor, mInventoryIcon); } \
 	FORCEINLINE static uint32 __PPO__mSmallIcon() { return STRUCT_OFFSET(UFGItemDescriptor, mSmallIcon); } \
 	FORCEINLINE static uint32 __PPO__mPersistentBigIcon() { return STRUCT_OFFSET(UFGItemDescriptor, mPersistentBigIcon); } \
 	FORCEINLINE static uint32 __PPO__mConveyorMesh() { return STRUCT_OFFSET(UFGItemDescriptor, mConveyorMesh); } \
 	FORCEINLINE static uint32 __PPO__mPreviewView() { return STRUCT_OFFSET(UFGItemDescriptor, mPreviewView); } \
-	FORCEINLINE static uint32 __PPO__mItemCategory() { return STRUCT_OFFSET(UFGItemDescriptor, mItemCategory); }
+	FORCEINLINE static uint32 __PPO__mItemCategory() { return STRUCT_OFFSET(UFGItemDescriptor, mItemCategory); } \
+	FORCEINLINE static uint32 __PPO__mFluidDensity() { return STRUCT_OFFSET(UFGItemDescriptor, mFluidDensity); } \
+	FORCEINLINE static uint32 __PPO__mFluidViscosity() { return STRUCT_OFFSET(UFGItemDescriptor, mFluidViscosity); } \
+	FORCEINLINE static uint32 __PPO__mFluidFriction() { return STRUCT_OFFSET(UFGItemDescriptor, mFluidFriction); } \
+	FORCEINLINE static uint32 __PPO__mFluidColor() { return STRUCT_OFFSET(UFGItemDescriptor, mFluidColor); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_72_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_73_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_75_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -386,6 +520,7 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGItemDescriptor>();
 	op(EStackSize::SS_MEDIUM) \
 	op(EStackSize::SS_BIG) \
 	op(EStackSize::SS_HUGE) \
+	op(EStackSize::SS_FLUID) \
 	op(EStackSize::SS_LAST_ENUM) 
 
 enum class EStackSize : uint8;

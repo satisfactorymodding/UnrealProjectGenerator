@@ -8,13 +8,11 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class UFGResearchRecipe;
-struct FCompletedResearch;
-struct FResearchRecipeReward;
-class AFGCharacterPlayer;
-struct FItemAmount;
+class UFGResearchTree;
+class UFGSchematic;
+enum class EResearchState : uint8;
 class UFGInventoryComponent;
-class UFGItemDescriptor;
+class AFGCharacterPlayer;
 class UObject;
 class AFGResearchManager;
 #ifdef FACTORYGAME_FGResearchManager_generated_h
@@ -22,179 +20,156 @@ class AFGResearchManager;
 #endif
 #define FACTORYGAME_FGResearchManager_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_91_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FCompletedResearch_Statics; \
-	static class UScriptStruct* StaticStruct();
-
-
-template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FCompletedResearch>();
-
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_67_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_74_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FResearchTime_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FResearchTime>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_27_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FResearchCost_Statics; \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_37_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FResearchData_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
-template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FResearchCost>();
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FResearchData>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_19_DELEGATE \
-struct _Script_FactoryGame_eventResearchNewAvailable_Parms \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_29_DELEGATE \
+struct _Script_FactoryGame_eventResearchTreeUnlocked_Parms \
 { \
-	TSubclassOf<UFGResearchRecipe>  researchRecipe; \
+	TSubclassOf<UFGResearchTree>  researchTree; \
 }; \
-static inline void FResearchNewAvailable_DelegateWrapper(const FMulticastScriptDelegate& ResearchNewAvailable, TSubclassOf<UFGResearchRecipe>  researchRecipe) \
+static inline void FResearchTreeUnlocked_DelegateWrapper(const FMulticastScriptDelegate& ResearchTreeUnlocked, TSubclassOf<UFGResearchTree>  researchTree) \
 { \
-	_Script_FactoryGame_eventResearchNewAvailable_Parms Parms; \
-	Parms.researchRecipe=researchRecipe; \
-	ResearchNewAvailable.ProcessMulticastDelegate<UObject>(&Parms); \
+	_Script_FactoryGame_eventResearchTreeUnlocked_Parms Parms; \
+	Parms.researchTree=researchTree; \
+	ResearchTreeUnlocked.ProcessMulticastDelegate<UObject>(&Parms); \
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_18_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_28_DELEGATE \
 struct _Script_FactoryGame_eventResearchResultsClaimed_Parms \
 { \
-	TSubclassOf<UFGResearchRecipe>  researchRecipe; \
+	TSubclassOf<UFGSchematic>  schematic; \
 }; \
-static inline void FResearchResultsClaimed_DelegateWrapper(const FMulticastScriptDelegate& ResearchResultsClaimed, TSubclassOf<UFGResearchRecipe>  researchRecipe) \
+static inline void FResearchResultsClaimed_DelegateWrapper(const FMulticastScriptDelegate& ResearchResultsClaimed, TSubclassOf<UFGSchematic>  schematic) \
 { \
 	_Script_FactoryGame_eventResearchResultsClaimed_Parms Parms; \
-	Parms.researchRecipe=researchRecipe; \
+	Parms.schematic=schematic; \
 	ResearchResultsClaimed.ProcessMulticastDelegate<UObject>(&Parms); \
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_17_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_27_DELEGATE \
+struct _Script_FactoryGame_eventResearchStateChangedDelegate_Parms \
+{ \
+	EResearchState researchState; \
+}; \
+static inline void FResearchStateChangedDelegate_DelegateWrapper(const FMulticastScriptDelegate& ResearchStateChangedDelegate, EResearchState researchState) \
+{ \
+	_Script_FactoryGame_eventResearchStateChangedDelegate_Parms Parms; \
+	Parms.researchState=researchState; \
+	ResearchStateChangedDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_26_DELEGATE \
 struct _Script_FactoryGame_eventResearchCompletedDelegate_Parms \
 { \
-	TSubclassOf<UFGResearchRecipe>  researchRecipe; \
+	TSubclassOf<UFGSchematic>  schematic; \
 }; \
-static inline void FResearchCompletedDelegate_DelegateWrapper(const FMulticastScriptDelegate& ResearchCompletedDelegate, TSubclassOf<UFGResearchRecipe>  researchRecipe) \
+static inline void FResearchCompletedDelegate_DelegateWrapper(const FMulticastScriptDelegate& ResearchCompletedDelegate, TSubclassOf<UFGSchematic>  schematic) \
 { \
 	_Script_FactoryGame_eventResearchCompletedDelegate_Parms Parms; \
-	Parms.researchRecipe=researchRecipe; \
+	Parms.schematic=schematic; \
 	ResearchCompletedDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_16_DELEGATE \
-struct _Script_FactoryGame_eventPaidOffResearchDelegate_Parms \
-{ \
-	TSubclassOf<UFGResearchRecipe>  researchRecipe; \
-}; \
-static inline void FPaidOffResearchDelegate_DelegateWrapper(const FMulticastScriptDelegate& PaidOffResearchDelegate, TSubclassOf<UFGResearchRecipe>  researchRecipe) \
-{ \
-	_Script_FactoryGame_eventPaidOffResearchDelegate_Parms Parms; \
-	Parms.researchRecipe=researchRecipe; \
-	PaidOffResearchDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
-}
-
-
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_15_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_25_DELEGATE \
 struct _Script_FactoryGame_eventResearchStartedDelegate_Parms \
 { \
-	TSubclassOf<UFGResearchRecipe>  researchRecipe; \
+	TSubclassOf<UFGSchematic>  schematic; \
 }; \
-static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScriptDelegate& ResearchStartedDelegate, TSubclassOf<UFGResearchRecipe>  researchRecipe) \
+static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScriptDelegate& ResearchStartedDelegate, TSubclassOf<UFGSchematic>  schematic) \
 { \
 	_Script_FactoryGame_eventResearchStartedDelegate_Parms Parms; \
-	Parms.researchRecipe=researchRecipe; \
+	Parms.schematic=schematic; \
 	ResearchStartedDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_RPC_WRAPPERS \
+	virtual void Client_NewResearchStarted_Implementation(TSubclassOf<UFGSchematic>  research); \
  \
 	DECLARE_FUNCTION(execOnResearchTimerComplete) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OnResearchTimerComplete(Z_Param_researchRecipe); \
+		P_THIS->OnResearchTimerComplete(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execCanConsumeStructurePoints) \
+	DECLARE_FUNCTION(execClient_NewResearchStarted) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_amount); \
+		P_GET_OBJECT(UClass,Z_Param_research); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->CanConsumeStructurePoints(Z_Param_amount); \
+		P_THIS->Client_NewResearchStarted_Implementation(Z_Param_research); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execConsumeStructurePoints) \
+	DECLARE_FUNCTION(execOnRep_OngoingResearch) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_amount); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->ConsumeStructurePoints(Z_Param_amount); \
+		P_THIS->OnRep_OngoingResearch(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execAddStructurePoints) \
+	DECLARE_FUNCTION(execGetPendingRewards) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_amount); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
+		P_GET_TARRAY_REF(TSubclassOf<UFGSchematic> ,Z_Param_Out_out_rewards); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->AddStructurePoints(Z_Param_amount); \
+		P_THIS->GetPendingRewards(Z_Param_schematic,Z_Param_Out_out_rewards); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetStructurePoints) \
+	DECLARE_FUNCTION(execGetInitiatingResearchTree) \
 	{ \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetStructurePoints(); \
+		*(TSubclassOf<UFGResearchTree> *)Z_Param__Result=P_THIS->GetInitiatingResearchTree(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execCanConsumeDecorPoints) \
+	DECLARE_FUNCTION(execCanConductMultipleResearch) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_amount); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->CanConsumeDecorPoints(Z_Param_amount); \
+		*(bool*)Z_Param__Result=P_THIS->CanConductMultipleResearch(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execConsumeDecorPoints) \
+	DECLARE_FUNCTION(execGetCurrentResearchState) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_amount); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->ConsumeDecorPoints(Z_Param_amount); \
+		*(EResearchState*)Z_Param__Result=P_THIS->GetCurrentResearchState(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execAddDecorPoints) \
+	DECLARE_FUNCTION(execCanAffordResearch) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_amount); \
+		P_GET_OBJECT(UFGInventoryComponent,Z_Param_playerInventory); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->AddDecorPoints(Z_Param_amount); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetDecorPoints) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetDecorPoints(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execInitiateResearch) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->InitiateResearch(Z_Param_researchRecipe); \
+		*(bool*)Z_Param__Result=P_THIS->CanAffordResearch(Z_Param_playerInventory,Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
@@ -206,60 +181,14 @@ static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScri
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execCanResearchRewardBeClaimed) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->CanResearchRewardBeClaimed(Z_Param_researchRecipe); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetRewardsFromCompletedResearch) \
-	{ \
-		P_GET_STRUCT(FCompletedResearch,Z_Param_completedResearch); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<FResearchRecipeReward>*)Z_Param__Result=P_THIS->GetRewardsFromCompletedResearch(Z_Param_completedResearch); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetSelectedRewardIndexByRecipe) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_completedResearch); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_selectedIndex); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetSelectedRewardIndexByRecipe(Z_Param_completedResearch,Z_Param_selectedIndex); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetCompletedResearchRewardByRecipe) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_completedResearch); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FCompletedResearch*)Z_Param__Result=P_THIS->GetCompletedResearchRewardByRecipe(Z_Param_completedResearch); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execClaimResearchResults) \
 	{ \
 		P_GET_OBJECT(AFGCharacterPlayer,Z_Param_instigatorPlayer); \
-		P_GET_OBJECT(UClass,Z_Param_completedResearch); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_GET_PROPERTY(UIntProperty,Z_Param_selectedRewardIndex); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->ClaimResearchResults(Z_Param_instigatorPlayer,Z_Param_completedResearch,Z_Param_selectedRewardIndex); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execIsCompletedResearchResultSelectable) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->IsCompletedResearchResultSelectable(Z_Param_researchRecipe); \
+		*(bool*)Z_Param__Result=P_THIS->ClaimResearchResults(Z_Param_instigatorPlayer,Z_Param_schematic,Z_Param_selectedRewardIndex); \
 		P_NATIVE_END; \
 	} \
  \
@@ -267,155 +196,80 @@ static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScri
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(TSubclassOf<UFGResearchRecipe> *)Z_Param__Result=P_THIS->GetResearchBeingConducted(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetResearchDuration) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=P_THIS->GetResearchDuration(Z_Param_researchRecipe); \
+		*(TSubclassOf<UFGSchematic> *)Z_Param__Result=P_THIS->GetResearchBeingConducted(); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execGetOngoingResearchTimeLeft) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=P_THIS->GetOngoingResearchTimeLeft(Z_Param_researchRecipe); \
+		*(float*)Z_Param__Result=P_THIS->GetOngoingResearchTimeLeft(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execContainsAnyCompletedButUnclaimedResearch) \
+	DECLARE_FUNCTION(execGetAllCompletedResearch) \
+	{ \
+		P_GET_TARRAY_REF(TSubclassOf<UFGSchematic> ,Z_Param_Out_out_schematics); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetAllCompletedResearch(Z_Param_Out_out_schematics); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execContainsAnyCompletedResearch) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->ContainsAnyCompletedButUnclaimedResearch(); \
+		*(bool*)Z_Param__Result=P_THIS->ContainsAnyCompletedResearch(); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execIsResearchComplete) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->IsResearchComplete(Z_Param_researchRecipe); \
+		*(bool*)Z_Param__Result=P_THIS->IsResearchComplete(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execIsResearchBeingConducted) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->IsResearchBeingConducted(Z_Param_researchRecipe); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execIsResearchAccessibleAndPaidOff) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->IsResearchAccessibleAndPaidOff(Z_Param_researchRecipe); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execIsResearchRecipeAccessible) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->IsResearchRecipeAccessible(Z_Param_researchRecipe); \
+		*(bool*)Z_Param__Result=P_THIS->IsResearchBeingConducted(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execCanResearchBeInitiated) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->CanResearchBeInitiated(Z_Param_researchRecipe); \
+		*(bool*)Z_Param__Result=P_THIS->CanResearchBeInitiated(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiveAccessToResearch) \
+	DECLARE_FUNCTION(execInitiateResearch) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipeClass); \
-		P_GET_UBOOL(Z_Param_accessedViaCheats); \
+		P_GET_OBJECT(UFGInventoryComponent,Z_Param_playerInventory); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
+		P_GET_OBJECT(UClass,Z_Param_initiatingResearchTree); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiveAccessToResearch(Z_Param_researchRecipeClass,Z_Param_accessedViaCheats); \
+		*(bool*)Z_Param__Result=P_THIS->InitiateResearch(Z_Param_playerInventory,Z_Param_schematic,Z_Param_initiatingResearchTree); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetAllCompletedAndClaimedResearch) \
+	DECLARE_FUNCTION(execGetAllResearchTrees) \
 	{ \
-		P_GET_TARRAY_REF(TSubclassOf<UFGResearchRecipe> ,Z_Param_Out_out_ResearchRecipes); \
+		P_GET_TARRAY_REF(TSubclassOf<UFGResearchTree> ,Z_Param_Out_out_ResearchTrees); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GetAllCompletedAndClaimedResearch(Z_Param_Out_out_ResearchRecipes); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetAllAccessibleResearch) \
-	{ \
-		P_GET_TARRAY_REF(TSubclassOf<UFGResearchRecipe> ,Z_Param_Out_out_ResearchRecipes); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->GetAllAccessibleResearch(Z_Param_Out_out_ResearchRecipes); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetAllResearchRecipes) \
-	{ \
-		P_GET_TARRAY_REF(TSubclassOf<UFGResearchRecipe> ,Z_Param_Out_out_ResearchRecipes); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->GetAllResearchRecipes(Z_Param_Out_out_ResearchRecipes); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetPayOffBalanceForResearch) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_GET_TARRAY_REF(FItemAmount,Z_Param_Out_out_cost); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->GetPayOffBalanceForResearch(Z_Param_researchRecipe,Z_Param_Out_out_cost); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execPayOffFromInventory) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_GET_OBJECT(UFGInventoryComponent,Z_Param_inventory); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_inventorySlotIndex); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->PayOffFromInventory(Z_Param_researchRecipe,Z_Param_inventory,Z_Param_inventorySlotIndex); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execPayOffOnResearch) \
-	{ \
-		P_GET_STRUCT(FItemAmount,Z_Param_payOff); \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->PayOffOnResearch(Z_Param_payOff,Z_Param_researchRecipe); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execUnlockResearchWithItem) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_itemClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->UnlockResearchWithItem(Z_Param_itemClass); \
+		P_THIS->GetAllResearchTrees(Z_Param_Out_out_ResearchTrees); \
 		P_NATIVE_END; \
 	} \
  \
@@ -429,93 +283,77 @@ static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScri
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void Client_NewResearchStarted_Implementation(TSubclassOf<UFGSchematic>  research); \
  \
 	DECLARE_FUNCTION(execOnResearchTimerComplete) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OnResearchTimerComplete(Z_Param_researchRecipe); \
+		P_THIS->OnResearchTimerComplete(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execCanConsumeStructurePoints) \
+	DECLARE_FUNCTION(execClient_NewResearchStarted) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_amount); \
+		P_GET_OBJECT(UClass,Z_Param_research); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->CanConsumeStructurePoints(Z_Param_amount); \
+		P_THIS->Client_NewResearchStarted_Implementation(Z_Param_research); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execConsumeStructurePoints) \
+	DECLARE_FUNCTION(execOnRep_OngoingResearch) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_amount); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->ConsumeStructurePoints(Z_Param_amount); \
+		P_THIS->OnRep_OngoingResearch(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execAddStructurePoints) \
+	DECLARE_FUNCTION(execGetPendingRewards) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_amount); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
+		P_GET_TARRAY_REF(TSubclassOf<UFGSchematic> ,Z_Param_Out_out_rewards); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->AddStructurePoints(Z_Param_amount); \
+		P_THIS->GetPendingRewards(Z_Param_schematic,Z_Param_Out_out_rewards); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetStructurePoints) \
+	DECLARE_FUNCTION(execGetInitiatingResearchTree) \
 	{ \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetStructurePoints(); \
+		*(TSubclassOf<UFGResearchTree> *)Z_Param__Result=P_THIS->GetInitiatingResearchTree(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execCanConsumeDecorPoints) \
+	DECLARE_FUNCTION(execCanConductMultipleResearch) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_amount); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->CanConsumeDecorPoints(Z_Param_amount); \
+		*(bool*)Z_Param__Result=P_THIS->CanConductMultipleResearch(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execConsumeDecorPoints) \
+	DECLARE_FUNCTION(execGetCurrentResearchState) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_amount); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->ConsumeDecorPoints(Z_Param_amount); \
+		*(EResearchState*)Z_Param__Result=P_THIS->GetCurrentResearchState(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execAddDecorPoints) \
+	DECLARE_FUNCTION(execCanAffordResearch) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_amount); \
+		P_GET_OBJECT(UFGInventoryComponent,Z_Param_playerInventory); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->AddDecorPoints(Z_Param_amount); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetDecorPoints) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetDecorPoints(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execInitiateResearch) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->InitiateResearch(Z_Param_researchRecipe); \
+		*(bool*)Z_Param__Result=P_THIS->CanAffordResearch(Z_Param_playerInventory,Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
@@ -527,60 +365,14 @@ static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScri
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execCanResearchRewardBeClaimed) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->CanResearchRewardBeClaimed(Z_Param_researchRecipe); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetRewardsFromCompletedResearch) \
-	{ \
-		P_GET_STRUCT(FCompletedResearch,Z_Param_completedResearch); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<FResearchRecipeReward>*)Z_Param__Result=P_THIS->GetRewardsFromCompletedResearch(Z_Param_completedResearch); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetSelectedRewardIndexByRecipe) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_completedResearch); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_selectedIndex); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetSelectedRewardIndexByRecipe(Z_Param_completedResearch,Z_Param_selectedIndex); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetCompletedResearchRewardByRecipe) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_completedResearch); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FCompletedResearch*)Z_Param__Result=P_THIS->GetCompletedResearchRewardByRecipe(Z_Param_completedResearch); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execClaimResearchResults) \
 	{ \
 		P_GET_OBJECT(AFGCharacterPlayer,Z_Param_instigatorPlayer); \
-		P_GET_OBJECT(UClass,Z_Param_completedResearch); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_GET_PROPERTY(UIntProperty,Z_Param_selectedRewardIndex); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->ClaimResearchResults(Z_Param_instigatorPlayer,Z_Param_completedResearch,Z_Param_selectedRewardIndex); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execIsCompletedResearchResultSelectable) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->IsCompletedResearchResultSelectable(Z_Param_researchRecipe); \
+		*(bool*)Z_Param__Result=P_THIS->ClaimResearchResults(Z_Param_instigatorPlayer,Z_Param_schematic,Z_Param_selectedRewardIndex); \
 		P_NATIVE_END; \
 	} \
  \
@@ -588,155 +380,80 @@ static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScri
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(TSubclassOf<UFGResearchRecipe> *)Z_Param__Result=P_THIS->GetResearchBeingConducted(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetResearchDuration) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=P_THIS->GetResearchDuration(Z_Param_researchRecipe); \
+		*(TSubclassOf<UFGSchematic> *)Z_Param__Result=P_THIS->GetResearchBeingConducted(); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execGetOngoingResearchTimeLeft) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=P_THIS->GetOngoingResearchTimeLeft(Z_Param_researchRecipe); \
+		*(float*)Z_Param__Result=P_THIS->GetOngoingResearchTimeLeft(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execContainsAnyCompletedButUnclaimedResearch) \
+	DECLARE_FUNCTION(execGetAllCompletedResearch) \
+	{ \
+		P_GET_TARRAY_REF(TSubclassOf<UFGSchematic> ,Z_Param_Out_out_schematics); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetAllCompletedResearch(Z_Param_Out_out_schematics); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execContainsAnyCompletedResearch) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->ContainsAnyCompletedButUnclaimedResearch(); \
+		*(bool*)Z_Param__Result=P_THIS->ContainsAnyCompletedResearch(); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execIsResearchComplete) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->IsResearchComplete(Z_Param_researchRecipe); \
+		*(bool*)Z_Param__Result=P_THIS->IsResearchComplete(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execIsResearchBeingConducted) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->IsResearchBeingConducted(Z_Param_researchRecipe); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execIsResearchAccessibleAndPaidOff) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->IsResearchAccessibleAndPaidOff(Z_Param_researchRecipe); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execIsResearchRecipeAccessible) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->IsResearchRecipeAccessible(Z_Param_researchRecipe); \
+		*(bool*)Z_Param__Result=P_THIS->IsResearchBeingConducted(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execCanResearchBeInitiated) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->CanResearchBeInitiated(Z_Param_researchRecipe); \
+		*(bool*)Z_Param__Result=P_THIS->CanResearchBeInitiated(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiveAccessToResearch) \
+	DECLARE_FUNCTION(execInitiateResearch) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipeClass); \
-		P_GET_UBOOL(Z_Param_accessedViaCheats); \
+		P_GET_OBJECT(UFGInventoryComponent,Z_Param_playerInventory); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
+		P_GET_OBJECT(UClass,Z_Param_initiatingResearchTree); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiveAccessToResearch(Z_Param_researchRecipeClass,Z_Param_accessedViaCheats); \
+		*(bool*)Z_Param__Result=P_THIS->InitiateResearch(Z_Param_playerInventory,Z_Param_schematic,Z_Param_initiatingResearchTree); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetAllCompletedAndClaimedResearch) \
+	DECLARE_FUNCTION(execGetAllResearchTrees) \
 	{ \
-		P_GET_TARRAY_REF(TSubclassOf<UFGResearchRecipe> ,Z_Param_Out_out_ResearchRecipes); \
+		P_GET_TARRAY_REF(TSubclassOf<UFGResearchTree> ,Z_Param_Out_out_ResearchTrees); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GetAllCompletedAndClaimedResearch(Z_Param_Out_out_ResearchRecipes); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetAllAccessibleResearch) \
-	{ \
-		P_GET_TARRAY_REF(TSubclassOf<UFGResearchRecipe> ,Z_Param_Out_out_ResearchRecipes); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->GetAllAccessibleResearch(Z_Param_Out_out_ResearchRecipes); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetAllResearchRecipes) \
-	{ \
-		P_GET_TARRAY_REF(TSubclassOf<UFGResearchRecipe> ,Z_Param_Out_out_ResearchRecipes); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->GetAllResearchRecipes(Z_Param_Out_out_ResearchRecipes); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetPayOffBalanceForResearch) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_GET_TARRAY_REF(FItemAmount,Z_Param_Out_out_cost); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->GetPayOffBalanceForResearch(Z_Param_researchRecipe,Z_Param_Out_out_cost); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execPayOffFromInventory) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_GET_OBJECT(UFGInventoryComponent,Z_Param_inventory); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_inventorySlotIndex); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->PayOffFromInventory(Z_Param_researchRecipe,Z_Param_inventory,Z_Param_inventorySlotIndex); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execPayOffOnResearch) \
-	{ \
-		P_GET_STRUCT(FItemAmount,Z_Param_payOff); \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->PayOffOnResearch(Z_Param_payOff,Z_Param_researchRecipe); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execUnlockResearchWithItem) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_itemClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->UnlockResearchWithItem(Z_Param_itemClass); \
+		P_THIS->GetAllResearchTrees(Z_Param_Out_out_ResearchTrees); \
 		P_NATIVE_END; \
 	} \
  \
@@ -750,7 +467,15 @@ static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScri
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_EVENT_PARMS \
+	struct FGResearchManager_eventClient_NewResearchStarted_Parms \
+	{ \
+		TSubclassOf<UFGSchematic>  research; \
+	};
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGResearchManager(); \
 	friend struct Z_Construct_UClass_AFGResearchManager_Statics; \
@@ -760,7 +485,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGResearchManager*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGResearchManager(); \
 	friend struct Z_Construct_UClass_AFGResearchManager_Statics; \
@@ -770,7 +495,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGResearchManager*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGResearchManager(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGResearchManager) \
@@ -783,7 +508,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGResearchManager(AFGResearchManager&&); \
@@ -794,37 +519,39 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGResearchManager); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGResearchManager)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mCanConductMultipleResearch() { return STRUCT_OFFSET(AFGResearchManager, mCanConductMultipleResearch); } \
-	FORCEINLINE static uint32 __PPO__mDefaultStartingResearch() { return STRUCT_OFFSET(AFGResearchManager, mDefaultStartingResearch); } \
-	FORCEINLINE static uint32 __PPO__mAllResearchRecipes() { return STRUCT_OFFSET(AFGResearchManager, mAllResearchRecipes); } \
-	FORCEINLINE static uint32 __PPO__mResearchCosts() { return STRUCT_OFFSET(AFGResearchManager, mResearchCosts); } \
+	FORCEINLINE static uint32 __PPO__mAllResearchTrees() { return STRUCT_OFFSET(AFGResearchManager, mAllResearchTrees); } \
+	FORCEINLINE static uint32 __PPO__mUnlockedResearchTrees() { return STRUCT_OFFSET(AFGResearchManager, mUnlockedResearchTrees); } \
 	FORCEINLINE static uint32 __PPO__mCompletedResearch() { return STRUCT_OFFSET(AFGResearchManager, mCompletedResearch); } \
 	FORCEINLINE static uint32 __PPO__mOngoingResearch() { return STRUCT_OFFSET(AFGResearchManager, mOngoingResearch); } \
-	FORCEINLINE static uint32 __PPO__mSavedOngoingResearch() { return STRUCT_OFFSET(AFGResearchManager, mSavedOngoingResearch); } \
-	FORCEINLINE static uint32 __PPO__mDecorPoints() { return STRUCT_OFFSET(AFGResearchManager, mDecorPoints); } \
-	FORCEINLINE static uint32 __PPO__mStructurePoints() { return STRUCT_OFFSET(AFGResearchManager, mStructurePoints); }
+	FORCEINLINE static uint32 __PPO__mSavedOngoingResearch() { return STRUCT_OFFSET(AFGResearchManager, mSavedOngoingResearch); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_218_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_107_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_EVENT_PARMS
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_221_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_110_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -834,5 +561,12 @@ template<> FACTORYGAME_API UClass* StaticClass<class AFGResearchManager>();
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGResearchManager_h
 
+
+#define FOREACH_ENUM_ERESEARCHSTATE(op) \
+	op(EResearchState::ERS_NotResearching) \
+	op(EResearchState::ERS_Researching) 
+
+enum class EResearchState : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EResearchState>();
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

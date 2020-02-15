@@ -127,12 +127,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGManufacturingButton); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGManufacturingButton)
 
 
-#define FactoryGame_Source_FactoryGame_Public_UI_FGManufacturingButton_h_18_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mMinTimeBetweenPress() { return STRUCT_OFFSET(UFGManufacturingButton, mMinTimeBetweenPress); } \
-	FORCEINLINE static uint32 __PPO__mHoldTimeMax() { return STRUCT_OFFSET(UFGManufacturingButton, mHoldTimeMax); } \
-	FORCEINLINE static uint32 __PPO__mHoldProduceSpeed() { return STRUCT_OFFSET(UFGManufacturingButton, mHoldProduceSpeed); }
-
-
+#define FactoryGame_Source_FactoryGame_Public_UI_FGManufacturingButton_h_18_PRIVATE_PROPERTY_OFFSET
 #define FactoryGame_Source_FactoryGame_Public_UI_FGManufacturingButton_h_15_PROLOG
 #define FactoryGame_Source_FactoryGame_Public_UI_FGManufacturingButton_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

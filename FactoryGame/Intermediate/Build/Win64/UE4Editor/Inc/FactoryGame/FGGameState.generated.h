@@ -9,6 +9,7 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGMapArea;
+class UFGItemDescriptor;
 struct FColor;
 class UFGMessageBase;
 class APlayerController;
@@ -24,6 +25,19 @@ class AFGSchematicManager;
 #define FACTORYGAME_FGGameState_generated_h
 
 #define FactoryGame_Source_FactoryGame_Public_FGGameState_h_21_DELEGATE \
+struct _Script_FactoryGame_eventOnRestartTimeNotification_Parms \
+{ \
+	float timeLeft; \
+}; \
+static inline void FOnRestartTimeNotification_DelegateWrapper(const FMulticastScriptDelegate& OnRestartTimeNotification, float timeLeft) \
+{ \
+	_Script_FactoryGame_eventOnRestartTimeNotification_Parms Parms; \
+	Parms.timeLeft=timeLeft; \
+	OnRestartTimeNotification.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_20_DELEGATE \
 struct _Script_FactoryGame_eventVisitedMapAreaDelegate_Parms \
 { \
 	TSubclassOf<UFGMapArea>  mapArea; \
@@ -39,6 +53,23 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 #define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_RPC_WRAPPERS \
 	virtual bool SetAndReplicateBuildingColorInSlot_Validate(uint8 , FColor , FColor ); \
 	virtual void SetAndReplicateBuildingColorInSlot_Implementation(uint8 slot, FColor pColor, FColor sColor); \
+ \
+	DECLARE_FUNCTION(execOnRep_PlannedRestartTime) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRep_PlannedRestartTime(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsItemEverPickedUp) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_itemClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsItemEverPickedUp(Z_Param_itemClass); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execOnRep_BuildingColorSlot) \
 	{ \
@@ -253,6 +284,23 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 #define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool SetAndReplicateBuildingColorInSlot_Validate(uint8 , FColor , FColor ); \
 	virtual void SetAndReplicateBuildingColorInSlot_Implementation(uint8 slot, FColor pColor, FColor sColor); \
+ \
+	DECLARE_FUNCTION(execOnRep_PlannedRestartTime) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRep_PlannedRestartTime(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsItemEverPickedUp) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_itemClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsItemEverPickedUp(Z_Param_itemClass); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execOnRep_BuildingColorSlot) \
 	{ \
@@ -539,18 +587,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGameState); \
 	FORCEINLINE static uint32 __PPO__mRadioactivitySubsystem() { return STRUCT_OFFSET(AFGGameState, mRadioactivitySubsystem); } \
 	FORCEINLINE static uint32 __PPO__mChatManager() { return STRUCT_OFFSET(AFGGameState, mChatManager); } \
 	FORCEINLINE static uint32 __PPO__mCentralStorageSubsystem() { return STRUCT_OFFSET(AFGGameState, mCentralStorageSubsystem); } \
+	FORCEINLINE static uint32 __PPO__mPipeSubsystem() { return STRUCT_OFFSET(AFGGameState, mPipeSubsystem); } \
 	FORCEINLINE static uint32 __PPO__mUnlockSubsystem() { return STRUCT_OFFSET(AFGGameState, mUnlockSubsystem); } \
+	FORCEINLINE static uint32 __PPO__mResourceSinkSubsystem() { return STRUCT_OFFSET(AFGGameState, mResourceSinkSubsystem); } \
 	FORCEINLINE static uint32 __PPO__mVisitedMapAreas() { return STRUCT_OFFSET(AFGGameState, mVisitedMapAreas); } \
+	FORCEINLINE static uint32 __PPO__mPickedUpItems() { return STRUCT_OFFSET(AFGGameState, mPickedUpItems); } \
+	FORCEINLINE static uint32 __PPO__mPlayDurationWhenLoaded() { return STRUCT_OFFSET(AFGGameState, mPlayDurationWhenLoaded); } \
+	FORCEINLINE static uint32 __PPO__mReplicatedSessionName() { return STRUCT_OFFSET(AFGGameState, mReplicatedSessionName); } \
+	FORCEINLINE static uint32 __PPO__mBuildingColorSlots() { return STRUCT_OFFSET(AFGGameState, mBuildingColorSlots); } \
+	FORCEINLINE static uint32 __PPO__mPlannedRestartTime() { return STRUCT_OFFSET(AFGGameState, mPlannedRestartTime); } \
+	FORCEINLINE static uint32 __PPO__mOnRestartTimeNotification() { return STRUCT_OFFSET(AFGGameState, mOnRestartTimeNotification); } \
+	FORCEINLINE static uint32 __PPO__mHubPartClass() { return STRUCT_OFFSET(AFGGameState, mHubPartClass); } \
+	FORCEINLINE static uint32 __PPO__mForceAddHubPartOnSpawn() { return STRUCT_OFFSET(AFGGameState, mForceAddHubPartOnSpawn); } \
 	FORCEINLINE static uint32 __PPO__mCheatNoCost() { return STRUCT_OFFSET(AFGGameState, mCheatNoCost); } \
 	FORCEINLINE static uint32 __PPO__mCheatNoPower() { return STRUCT_OFFSET(AFGGameState, mCheatNoPower); } \
 	FORCEINLINE static uint32 __PPO__mIsTradingPostBuilt() { return STRUCT_OFFSET(AFGGameState, mIsTradingPostBuilt); } \
 	FORCEINLINE static uint32 __PPO__mHasInitalTradingPostLandAnimPlayed() { return STRUCT_OFFSET(AFGGameState, mHasInitalTradingPostLandAnimPlayed); } \
-	FORCEINLINE static uint32 __PPO__mIsSpaceElevatorBuilt() { return STRUCT_OFFSET(AFGGameState, mIsSpaceElevatorBuilt); } \
-	FORCEINLINE static uint32 __PPO__mHubPartClass() { return STRUCT_OFFSET(AFGGameState, mHubPartClass); } \
-	FORCEINLINE static uint32 __PPO__mPlayDurationWhenLoaded() { return STRUCT_OFFSET(AFGGameState, mPlayDurationWhenLoaded); } \
-	FORCEINLINE static uint32 __PPO__mReplicatedSessionName() { return STRUCT_OFFSET(AFGGameState, mReplicatedSessionName); } \
-	FORCEINLINE static uint32 __PPO__mForceAddHubPartOnSpawn() { return STRUCT_OFFSET(AFGGameState, mForceAddHubPartOnSpawn); } \
-	FORCEINLINE static uint32 __PPO__mBuildingColorSlots() { return STRUCT_OFFSET(AFGGameState, mBuildingColorSlots); }
+	FORCEINLINE static uint32 __PPO__mIsSpaceElevatorBuilt() { return STRUCT_OFFSET(AFGGameState, mIsSpaceElevatorBuilt); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGGameState_h_26_PROLOG \

@@ -90,7 +90,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstanceArr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_FoliageRemover_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGFoliageRemoval.h" },
-		{ "ToolTip", "Used to invoke the callback directly on the foliage removal instead of on FRemovedInstance" },
+		{ "ToolTip", "Used to invoke the callback directly on the foliage removal instead of on FRemovedInstance // @todogc: Investigate if we can move this into a TWeakObjectPointer to reduce strain on gc" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_FoliageRemover = { "FoliageRemover", nullptr, (EPropertyFlags)0x0010000080000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FRemovedInstanceArray, FoliageRemover), Z_Construct_UClass_AFGFoliageRemoval_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_FoliageRemover_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_FoliageRemover_MetaData)) };
@@ -127,7 +127,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstanceArr
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_Hash() { return 3875971942U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_Hash() { return 845729448U; }
 class UScriptStruct* FRemovedInstance::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -389,7 +389,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mMeshComponent_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/FGFoliageRemoval.h" },
-		{ "ToolTip", "This needs to be a UPROPERTY as it will become null:ed when the level this actor is associated with is streamed out" },
+		{ "ToolTip", "This needs to be a UPROPERTY as it will become null:ed when the level this actor is associated with is streamed out // @todogc: Investigate if we can change this to a TWeakObjectPtr to reduce strain on gc" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mMeshComponent = { "mMeshComponent", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFoliageRemoval, mMeshComponent), Z_Construct_UClass_UHierarchicalInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mMeshComponent_MetaData)) };
@@ -437,7 +437,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoliageRemoval, 2981427103);
+	IMPLEMENT_CLASS(AFGFoliageRemoval, 3292794730);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGFoliageRemoval>()
 	{
 		return AFGFoliageRemoval::StaticClass();

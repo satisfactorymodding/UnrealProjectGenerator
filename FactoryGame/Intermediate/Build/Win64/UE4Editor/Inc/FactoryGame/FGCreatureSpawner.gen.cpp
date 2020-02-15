@@ -656,7 +656,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreatureSpawner, 1727135967);
+	IMPLEMENT_CLASS(AFGCreatureSpawner, 2538761715);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCreatureSpawner>()
 	{
 		return AFGCreatureSpawner::StaticClass();

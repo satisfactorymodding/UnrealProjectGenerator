@@ -43,6 +43,10 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDNeedsResourceNode();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDResourceNodeIsOccuped_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDResourceNodeIsOccuped();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDResourceIsTooShallow_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDResourceIsTooShallow();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDNeedsWaterVolume_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDNeedsWaterVolume();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDResourceDeposit_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDResourceDeposit();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDWireSnap_NoRegister();
@@ -75,6 +79,20 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDTrackTooSteep();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDTrackTrunToSharp_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDTrackTrunToSharp();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDPipeTooShort_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDPipeTooShort();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDPipeTooLong_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDPipeTooLong();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDPipeAttachmentTooSharpTurn_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDPipeAttachmentTooSharpTurn();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDPipeMustSnap_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDPipeMustSnap();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDPipeFluidTypeMismatch_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDPipeFluidTypeMismatch();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDPipeInvalidShape_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDPipeInvalidShape();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDPipeNoPathFound_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCDPipeNoPathFound();
 // End Cross Module References
 	void UFGConstructDisqualifier::StaticRegisterNativesUFGConstructDisqualifier()
 	{
@@ -921,6 +939,126 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCDResourceNodeIsOccuped(Z_Construct_UClass_UFGCDResourceNodeIsOccuped, &UFGCDResourceNodeIsOccuped::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCDResourceNodeIsOccuped"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCDResourceNodeIsOccuped);
+	void UFGCDResourceIsTooShallow::StaticRegisterNativesUFGCDResourceIsTooShallow()
+	{
+	}
+	UClass* Z_Construct_UClass_UFGCDResourceIsTooShallow_NoRegister()
+	{
+		return UFGCDResourceIsTooShallow::StaticClass();
+	}
+	struct Z_Construct_UClass_UFGCDResourceIsTooShallow_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UFGCDResourceIsTooShallow_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UFGConstructDisqualifier,
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDResourceIsTooShallow_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDResourceIsTooShallow_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UFGCDResourceIsTooShallow>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGCDResourceIsTooShallow_Statics::ClassParams = {
+		&UFGCDResourceIsTooShallow::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UFGCDResourceIsTooShallow_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGCDResourceIsTooShallow_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UFGCDResourceIsTooShallow()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UFGCDResourceIsTooShallow_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UFGCDResourceIsTooShallow, 4291973247);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGCDResourceIsTooShallow>()
+	{
+		return UFGCDResourceIsTooShallow::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCDResourceIsTooShallow(Z_Construct_UClass_UFGCDResourceIsTooShallow, &UFGCDResourceIsTooShallow::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCDResourceIsTooShallow"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCDResourceIsTooShallow);
+	void UFGCDNeedsWaterVolume::StaticRegisterNativesUFGCDNeedsWaterVolume()
+	{
+	}
+	UClass* Z_Construct_UClass_UFGCDNeedsWaterVolume_NoRegister()
+	{
+		return UFGCDNeedsWaterVolume::StaticClass();
+	}
+	struct Z_Construct_UClass_UFGCDNeedsWaterVolume_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UFGCDNeedsWaterVolume_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UFGConstructDisqualifier,
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDNeedsWaterVolume_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDNeedsWaterVolume_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UFGCDNeedsWaterVolume>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGCDNeedsWaterVolume_Statics::ClassParams = {
+		&UFGCDNeedsWaterVolume::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UFGCDNeedsWaterVolume_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGCDNeedsWaterVolume_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UFGCDNeedsWaterVolume()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UFGCDNeedsWaterVolume_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UFGCDNeedsWaterVolume, 1750867296);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGCDNeedsWaterVolume>()
+	{
+		return UFGCDNeedsWaterVolume::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCDNeedsWaterVolume(Z_Construct_UClass_UFGCDNeedsWaterVolume, &UFGCDNeedsWaterVolume::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCDNeedsWaterVolume"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCDNeedsWaterVolume);
 	void UFGCDResourceDeposit::StaticRegisterNativesUFGCDResourceDeposit()
 	{
 	}
@@ -1881,6 +2019,426 @@ void EmptyLinkFunctionForGeneratedCodeFGConstructDisqualifier() {}
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCDTrackTrunToSharp(Z_Construct_UClass_UFGCDTrackTrunToSharp, &UFGCDTrackTrunToSharp::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCDTrackTrunToSharp"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCDTrackTrunToSharp);
+	void UFGCDPipeTooShort::StaticRegisterNativesUFGCDPipeTooShort()
+	{
+	}
+	UClass* Z_Construct_UClass_UFGCDPipeTooShort_NoRegister()
+	{
+		return UFGCDPipeTooShort::StaticClass();
+	}
+	struct Z_Construct_UClass_UFGCDPipeTooShort_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UFGCDPipeTooShort_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UFGConstructDisqualifier,
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDPipeTooShort_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDPipeTooShort_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UFGCDPipeTooShort>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGCDPipeTooShort_Statics::ClassParams = {
+		&UFGCDPipeTooShort::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UFGCDPipeTooShort_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGCDPipeTooShort_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UFGCDPipeTooShort()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UFGCDPipeTooShort_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UFGCDPipeTooShort, 2141944493);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGCDPipeTooShort>()
+	{
+		return UFGCDPipeTooShort::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCDPipeTooShort(Z_Construct_UClass_UFGCDPipeTooShort, &UFGCDPipeTooShort::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCDPipeTooShort"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCDPipeTooShort);
+	void UFGCDPipeTooLong::StaticRegisterNativesUFGCDPipeTooLong()
+	{
+	}
+	UClass* Z_Construct_UClass_UFGCDPipeTooLong_NoRegister()
+	{
+		return UFGCDPipeTooLong::StaticClass();
+	}
+	struct Z_Construct_UClass_UFGCDPipeTooLong_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UFGCDPipeTooLong_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UFGConstructDisqualifier,
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDPipeTooLong_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDPipeTooLong_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UFGCDPipeTooLong>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGCDPipeTooLong_Statics::ClassParams = {
+		&UFGCDPipeTooLong::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UFGCDPipeTooLong_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGCDPipeTooLong_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UFGCDPipeTooLong()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UFGCDPipeTooLong_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UFGCDPipeTooLong, 525338282);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGCDPipeTooLong>()
+	{
+		return UFGCDPipeTooLong::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCDPipeTooLong(Z_Construct_UClass_UFGCDPipeTooLong, &UFGCDPipeTooLong::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCDPipeTooLong"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCDPipeTooLong);
+	void UFGCDPipeAttachmentTooSharpTurn::StaticRegisterNativesUFGCDPipeAttachmentTooSharpTurn()
+	{
+	}
+	UClass* Z_Construct_UClass_UFGCDPipeAttachmentTooSharpTurn_NoRegister()
+	{
+		return UFGCDPipeAttachmentTooSharpTurn::StaticClass();
+	}
+	struct Z_Construct_UClass_UFGCDPipeAttachmentTooSharpTurn_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UFGCDPipeAttachmentTooSharpTurn_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UFGConstructDisqualifier,
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDPipeAttachmentTooSharpTurn_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDPipeAttachmentTooSharpTurn_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UFGCDPipeAttachmentTooSharpTurn>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGCDPipeAttachmentTooSharpTurn_Statics::ClassParams = {
+		&UFGCDPipeAttachmentTooSharpTurn::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UFGCDPipeAttachmentTooSharpTurn_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGCDPipeAttachmentTooSharpTurn_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UFGCDPipeAttachmentTooSharpTurn()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UFGCDPipeAttachmentTooSharpTurn_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UFGCDPipeAttachmentTooSharpTurn, 979348105);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGCDPipeAttachmentTooSharpTurn>()
+	{
+		return UFGCDPipeAttachmentTooSharpTurn::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCDPipeAttachmentTooSharpTurn(Z_Construct_UClass_UFGCDPipeAttachmentTooSharpTurn, &UFGCDPipeAttachmentTooSharpTurn::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCDPipeAttachmentTooSharpTurn"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCDPipeAttachmentTooSharpTurn);
+	void UFGCDPipeMustSnap::StaticRegisterNativesUFGCDPipeMustSnap()
+	{
+	}
+	UClass* Z_Construct_UClass_UFGCDPipeMustSnap_NoRegister()
+	{
+		return UFGCDPipeMustSnap::StaticClass();
+	}
+	struct Z_Construct_UClass_UFGCDPipeMustSnap_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UFGCDPipeMustSnap_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UFGConstructDisqualifier,
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDPipeMustSnap_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDPipeMustSnap_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UFGCDPipeMustSnap>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGCDPipeMustSnap_Statics::ClassParams = {
+		&UFGCDPipeMustSnap::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UFGCDPipeMustSnap_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGCDPipeMustSnap_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UFGCDPipeMustSnap()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UFGCDPipeMustSnap_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UFGCDPipeMustSnap, 1069477034);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGCDPipeMustSnap>()
+	{
+		return UFGCDPipeMustSnap::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCDPipeMustSnap(Z_Construct_UClass_UFGCDPipeMustSnap, &UFGCDPipeMustSnap::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCDPipeMustSnap"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCDPipeMustSnap);
+	void UFGCDPipeFluidTypeMismatch::StaticRegisterNativesUFGCDPipeFluidTypeMismatch()
+	{
+	}
+	UClass* Z_Construct_UClass_UFGCDPipeFluidTypeMismatch_NoRegister()
+	{
+		return UFGCDPipeFluidTypeMismatch::StaticClass();
+	}
+	struct Z_Construct_UClass_UFGCDPipeFluidTypeMismatch_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UFGCDPipeFluidTypeMismatch_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UFGConstructDisqualifier,
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDPipeFluidTypeMismatch_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDPipeFluidTypeMismatch_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UFGCDPipeFluidTypeMismatch>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGCDPipeFluidTypeMismatch_Statics::ClassParams = {
+		&UFGCDPipeFluidTypeMismatch::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UFGCDPipeFluidTypeMismatch_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGCDPipeFluidTypeMismatch_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UFGCDPipeFluidTypeMismatch()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UFGCDPipeFluidTypeMismatch_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UFGCDPipeFluidTypeMismatch, 3958482430);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGCDPipeFluidTypeMismatch>()
+	{
+		return UFGCDPipeFluidTypeMismatch::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCDPipeFluidTypeMismatch(Z_Construct_UClass_UFGCDPipeFluidTypeMismatch, &UFGCDPipeFluidTypeMismatch::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCDPipeFluidTypeMismatch"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCDPipeFluidTypeMismatch);
+	void UFGCDPipeInvalidShape::StaticRegisterNativesUFGCDPipeInvalidShape()
+	{
+	}
+	UClass* Z_Construct_UClass_UFGCDPipeInvalidShape_NoRegister()
+	{
+		return UFGCDPipeInvalidShape::StaticClass();
+	}
+	struct Z_Construct_UClass_UFGCDPipeInvalidShape_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UFGCDPipeInvalidShape_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UFGConstructDisqualifier,
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDPipeInvalidShape_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDPipeInvalidShape_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UFGCDPipeInvalidShape>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGCDPipeInvalidShape_Statics::ClassParams = {
+		&UFGCDPipeInvalidShape::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UFGCDPipeInvalidShape_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGCDPipeInvalidShape_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UFGCDPipeInvalidShape()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UFGCDPipeInvalidShape_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UFGCDPipeInvalidShape, 4026443055);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGCDPipeInvalidShape>()
+	{
+		return UFGCDPipeInvalidShape::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCDPipeInvalidShape(Z_Construct_UClass_UFGCDPipeInvalidShape, &UFGCDPipeInvalidShape::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCDPipeInvalidShape"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCDPipeInvalidShape);
+	void UFGCDPipeNoPathFound::StaticRegisterNativesUFGCDPipeNoPathFound()
+	{
+	}
+	UClass* Z_Construct_UClass_UFGCDPipeNoPathFound_NoRegister()
+	{
+		return UFGCDPipeNoPathFound::StaticClass();
+	}
+	struct Z_Construct_UClass_UFGCDPipeNoPathFound_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UFGCDPipeNoPathFound_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UFGConstructDisqualifier,
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCDPipeNoPathFound_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "FGConstructDisqualifier.h" },
+		{ "ModuleRelativePath", "Public/FGConstructDisqualifier.h" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCDPipeNoPathFound_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UFGCDPipeNoPathFound>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGCDPipeNoPathFound_Statics::ClassParams = {
+		&UFGCDPipeNoPathFound::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UFGCDPipeNoPathFound_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGCDPipeNoPathFound_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UFGCDPipeNoPathFound()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UFGCDPipeNoPathFound_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UFGCDPipeNoPathFound, 1919022463);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGCDPipeNoPathFound>()
+	{
+		return UFGCDPipeNoPathFound::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCDPipeNoPathFound(Z_Construct_UClass_UFGCDPipeNoPathFound, &UFGCDPipeNoPathFound::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCDPipeNoPathFound"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCDPipeNoPathFound);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

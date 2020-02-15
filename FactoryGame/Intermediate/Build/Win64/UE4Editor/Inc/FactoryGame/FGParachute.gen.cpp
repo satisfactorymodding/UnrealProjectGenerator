@@ -320,7 +320,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGParachute, 1910120111);
+	IMPLEMENT_CLASS(AFGParachute, 3972923123);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGParachute>()
 	{
 		return AFGParachute::StaticClass();
@@ -489,7 +489,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGParachuteAttachment, 739217871);
+	IMPLEMENT_CLASS(AFGParachuteAttachment, 1270554080);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGParachuteAttachment>()
 	{
 		return AFGParachuteAttachment::StaticClass();

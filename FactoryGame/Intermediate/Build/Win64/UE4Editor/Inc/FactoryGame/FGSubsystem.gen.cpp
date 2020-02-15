@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSubsystem, 2105881139);
+	IMPLEMENT_CLASS(AFGSubsystem, 2965743678);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSubsystem>()
 	{
 		return AFGSubsystem::StaticClass();

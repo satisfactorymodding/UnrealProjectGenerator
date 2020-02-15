@@ -462,7 +462,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGLocomotive, 1858001393);
+	IMPLEMENT_CLASS(AFGLocomotive, 1822240790);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGLocomotive>()
 	{
 		return AFGLocomotive::StaticClass();

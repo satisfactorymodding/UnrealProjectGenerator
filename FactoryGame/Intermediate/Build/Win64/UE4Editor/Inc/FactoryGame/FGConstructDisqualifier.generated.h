@@ -953,44 +953,44 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGCDResourceNodeIsOccuped>
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_173_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_173_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGCDResourceDeposit(); \
-	friend struct Z_Construct_UClass_UFGCDResourceDeposit_Statics; \
+	static void StaticRegisterNativesUFGCDResourceIsTooShallow(); \
+	friend struct Z_Construct_UClass_UFGCDResourceIsTooShallow_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDResourceDeposit, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDResourceDeposit)
+	DECLARE_CLASS(UFGCDResourceIsTooShallow, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDResourceIsTooShallow)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_173_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGCDResourceDeposit(); \
-	friend struct Z_Construct_UClass_UFGCDResourceDeposit_Statics; \
+	static void StaticRegisterNativesUFGCDResourceIsTooShallow(); \
+	friend struct Z_Construct_UClass_UFGCDResourceIsTooShallow_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDResourceDeposit, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDResourceDeposit)
+	DECLARE_CLASS(UFGCDResourceIsTooShallow, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDResourceIsTooShallow)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_173_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGCDResourceDeposit(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDResourceDeposit) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDResourceDeposit); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDResourceDeposit); \
+	NO_API UFGCDResourceIsTooShallow(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDResourceIsTooShallow) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDResourceIsTooShallow); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDResourceIsTooShallow); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDResourceDeposit(UFGCDResourceDeposit&&); \
-	NO_API UFGCDResourceDeposit(const UFGCDResourceDeposit&); \
+	NO_API UFGCDResourceIsTooShallow(UFGCDResourceIsTooShallow&&); \
+	NO_API UFGCDResourceIsTooShallow(const UFGCDResourceIsTooShallow&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_173_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDResourceDeposit(UFGCDResourceDeposit&&); \
-	NO_API UFGCDResourceDeposit(const UFGCDResourceDeposit&); \
+	NO_API UFGCDResourceIsTooShallow(UFGCDResourceIsTooShallow&&); \
+	NO_API UFGCDResourceIsTooShallow(const UFGCDResourceIsTooShallow&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDResourceDeposit); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDResourceDeposit); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDResourceDeposit)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDResourceIsTooShallow); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDResourceIsTooShallow); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDResourceIsTooShallow)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_173_PRIVATE_PROPERTY_OFFSET
@@ -1017,50 +1017,50 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> FACTORYGAME_API UClass* StaticClass<class UFGCDResourceDeposit>();
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDResourceIsTooShallow>();
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_184_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_184_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_184_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGCDWireSnap(); \
-	friend struct Z_Construct_UClass_UFGCDWireSnap_Statics; \
+	static void StaticRegisterNativesUFGCDNeedsWaterVolume(); \
+	friend struct Z_Construct_UClass_UFGCDNeedsWaterVolume_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDWireSnap, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDWireSnap)
+	DECLARE_CLASS(UFGCDNeedsWaterVolume, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDNeedsWaterVolume)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_184_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGCDWireSnap(); \
-	friend struct Z_Construct_UClass_UFGCDWireSnap_Statics; \
+	static void StaticRegisterNativesUFGCDNeedsWaterVolume(); \
+	friend struct Z_Construct_UClass_UFGCDNeedsWaterVolume_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDWireSnap, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDWireSnap)
+	DECLARE_CLASS(UFGCDNeedsWaterVolume, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDNeedsWaterVolume)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_184_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGCDWireSnap(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDWireSnap) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDWireSnap); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDWireSnap); \
+	NO_API UFGCDNeedsWaterVolume(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDNeedsWaterVolume) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDNeedsWaterVolume); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDNeedsWaterVolume); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDWireSnap(UFGCDWireSnap&&); \
-	NO_API UFGCDWireSnap(const UFGCDWireSnap&); \
+	NO_API UFGCDNeedsWaterVolume(UFGCDNeedsWaterVolume&&); \
+	NO_API UFGCDNeedsWaterVolume(const UFGCDNeedsWaterVolume&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_184_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDWireSnap(UFGCDWireSnap&&); \
-	NO_API UFGCDWireSnap(const UFGCDWireSnap&); \
+	NO_API UFGCDNeedsWaterVolume(UFGCDNeedsWaterVolume&&); \
+	NO_API UFGCDNeedsWaterVolume(const UFGCDNeedsWaterVolume&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDWireSnap); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDWireSnap); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDWireSnap)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDNeedsWaterVolume); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDNeedsWaterVolume); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDNeedsWaterVolume)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_184_PRIVATE_PROPERTY_OFFSET
@@ -1087,50 +1087,50 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> FACTORYGAME_API UClass* StaticClass<class UFGCDWireSnap>();
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDNeedsWaterVolume>();
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_195_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_195_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_195_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGCDWireTooLong(); \
-	friend struct Z_Construct_UClass_UFGCDWireTooLong_Statics; \
+	static void StaticRegisterNativesUFGCDResourceDeposit(); \
+	friend struct Z_Construct_UClass_UFGCDResourceDeposit_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDWireTooLong, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDWireTooLong)
+	DECLARE_CLASS(UFGCDResourceDeposit, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDResourceDeposit)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_195_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGCDWireTooLong(); \
-	friend struct Z_Construct_UClass_UFGCDWireTooLong_Statics; \
+	static void StaticRegisterNativesUFGCDResourceDeposit(); \
+	friend struct Z_Construct_UClass_UFGCDResourceDeposit_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDWireTooLong, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDWireTooLong)
+	DECLARE_CLASS(UFGCDResourceDeposit, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDResourceDeposit)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_195_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGCDWireTooLong(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDWireTooLong) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDWireTooLong); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDWireTooLong); \
+	NO_API UFGCDResourceDeposit(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDResourceDeposit) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDResourceDeposit); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDResourceDeposit); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDWireTooLong(UFGCDWireTooLong&&); \
-	NO_API UFGCDWireTooLong(const UFGCDWireTooLong&); \
+	NO_API UFGCDResourceDeposit(UFGCDResourceDeposit&&); \
+	NO_API UFGCDResourceDeposit(const UFGCDResourceDeposit&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_195_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDWireTooLong(UFGCDWireTooLong&&); \
-	NO_API UFGCDWireTooLong(const UFGCDWireTooLong&); \
+	NO_API UFGCDResourceDeposit(UFGCDResourceDeposit&&); \
+	NO_API UFGCDResourceDeposit(const UFGCDResourceDeposit&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDWireTooLong); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDWireTooLong); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDWireTooLong)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDResourceDeposit); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDResourceDeposit); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDResourceDeposit)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_195_PRIVATE_PROPERTY_OFFSET
@@ -1157,50 +1157,50 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> FACTORYGAME_API UClass* StaticClass<class UFGCDWireTooLong>();
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDResourceDeposit>();
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_206_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_206_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_206_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGCDWireTooManyConnections(); \
-	friend struct Z_Construct_UClass_UFGCDWireTooManyConnections_Statics; \
+	static void StaticRegisterNativesUFGCDWireSnap(); \
+	friend struct Z_Construct_UClass_UFGCDWireSnap_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDWireTooManyConnections, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDWireTooManyConnections)
+	DECLARE_CLASS(UFGCDWireSnap, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDWireSnap)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_206_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGCDWireTooManyConnections(); \
-	friend struct Z_Construct_UClass_UFGCDWireTooManyConnections_Statics; \
+	static void StaticRegisterNativesUFGCDWireSnap(); \
+	friend struct Z_Construct_UClass_UFGCDWireSnap_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDWireTooManyConnections, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDWireTooManyConnections)
+	DECLARE_CLASS(UFGCDWireSnap, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDWireSnap)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_206_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGCDWireTooManyConnections(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDWireTooManyConnections) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDWireTooManyConnections); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDWireTooManyConnections); \
+	NO_API UFGCDWireSnap(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDWireSnap) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDWireSnap); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDWireSnap); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDWireTooManyConnections(UFGCDWireTooManyConnections&&); \
-	NO_API UFGCDWireTooManyConnections(const UFGCDWireTooManyConnections&); \
+	NO_API UFGCDWireSnap(UFGCDWireSnap&&); \
+	NO_API UFGCDWireSnap(const UFGCDWireSnap&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_206_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDWireTooManyConnections(UFGCDWireTooManyConnections&&); \
-	NO_API UFGCDWireTooManyConnections(const UFGCDWireTooManyConnections&); \
+	NO_API UFGCDWireSnap(UFGCDWireSnap&&); \
+	NO_API UFGCDWireSnap(const UFGCDWireSnap&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDWireTooManyConnections); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDWireTooManyConnections); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDWireTooManyConnections)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDWireSnap); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDWireSnap); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDWireSnap)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_206_PRIVATE_PROPERTY_OFFSET
@@ -1227,50 +1227,50 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> FACTORYGAME_API UClass* StaticClass<class UFGCDWireTooManyConnections>();
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDWireSnap>();
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_217_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_217_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_217_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGCDBeltMustSnap(); \
-	friend struct Z_Construct_UClass_UFGCDBeltMustSnap_Statics; \
+	static void StaticRegisterNativesUFGCDWireTooLong(); \
+	friend struct Z_Construct_UClass_UFGCDWireTooLong_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDBeltMustSnap, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDBeltMustSnap)
+	DECLARE_CLASS(UFGCDWireTooLong, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDWireTooLong)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_217_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGCDBeltMustSnap(); \
-	friend struct Z_Construct_UClass_UFGCDBeltMustSnap_Statics; \
+	static void StaticRegisterNativesUFGCDWireTooLong(); \
+	friend struct Z_Construct_UClass_UFGCDWireTooLong_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDBeltMustSnap, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDBeltMustSnap)
+	DECLARE_CLASS(UFGCDWireTooLong, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDWireTooLong)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_217_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGCDBeltMustSnap(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDBeltMustSnap) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDBeltMustSnap); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDBeltMustSnap); \
+	NO_API UFGCDWireTooLong(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDWireTooLong) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDWireTooLong); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDWireTooLong); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDBeltMustSnap(UFGCDBeltMustSnap&&); \
-	NO_API UFGCDBeltMustSnap(const UFGCDBeltMustSnap&); \
+	NO_API UFGCDWireTooLong(UFGCDWireTooLong&&); \
+	NO_API UFGCDWireTooLong(const UFGCDWireTooLong&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_217_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDBeltMustSnap(UFGCDBeltMustSnap&&); \
-	NO_API UFGCDBeltMustSnap(const UFGCDBeltMustSnap&); \
+	NO_API UFGCDWireTooLong(UFGCDWireTooLong&&); \
+	NO_API UFGCDWireTooLong(const UFGCDWireTooLong&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDBeltMustSnap); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDBeltMustSnap); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDBeltMustSnap)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDWireTooLong); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDWireTooLong); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDWireTooLong)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_217_PRIVATE_PROPERTY_OFFSET
@@ -1297,50 +1297,50 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> FACTORYGAME_API UClass* StaticClass<class UFGCDBeltMustSnap>();
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDWireTooLong>();
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_228_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_228_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_228_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGCDConveyorTooLong(); \
-	friend struct Z_Construct_UClass_UFGCDConveyorTooLong_Statics; \
+	static void StaticRegisterNativesUFGCDWireTooManyConnections(); \
+	friend struct Z_Construct_UClass_UFGCDWireTooManyConnections_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDConveyorTooLong, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDConveyorTooLong)
+	DECLARE_CLASS(UFGCDWireTooManyConnections, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDWireTooManyConnections)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_228_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGCDConveyorTooLong(); \
-	friend struct Z_Construct_UClass_UFGCDConveyorTooLong_Statics; \
+	static void StaticRegisterNativesUFGCDWireTooManyConnections(); \
+	friend struct Z_Construct_UClass_UFGCDWireTooManyConnections_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDConveyorTooLong, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDConveyorTooLong)
+	DECLARE_CLASS(UFGCDWireTooManyConnections, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDWireTooManyConnections)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_228_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGCDConveyorTooLong(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDConveyorTooLong) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorTooLong); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorTooLong); \
+	NO_API UFGCDWireTooManyConnections(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDWireTooManyConnections) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDWireTooManyConnections); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDWireTooManyConnections); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDConveyorTooLong(UFGCDConveyorTooLong&&); \
-	NO_API UFGCDConveyorTooLong(const UFGCDConveyorTooLong&); \
+	NO_API UFGCDWireTooManyConnections(UFGCDWireTooManyConnections&&); \
+	NO_API UFGCDWireTooManyConnections(const UFGCDWireTooManyConnections&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_228_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDConveyorTooLong(UFGCDConveyorTooLong&&); \
-	NO_API UFGCDConveyorTooLong(const UFGCDConveyorTooLong&); \
+	NO_API UFGCDWireTooManyConnections(UFGCDWireTooManyConnections&&); \
+	NO_API UFGCDWireTooManyConnections(const UFGCDWireTooManyConnections&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorTooLong); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorTooLong); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDConveyorTooLong)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDWireTooManyConnections); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDWireTooManyConnections); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDWireTooManyConnections)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_228_PRIVATE_PROPERTY_OFFSET
@@ -1367,50 +1367,50 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> FACTORYGAME_API UClass* StaticClass<class UFGCDConveyorTooLong>();
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDWireTooManyConnections>();
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_239_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_239_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_239_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGCDConveyorTooShort(); \
-	friend struct Z_Construct_UClass_UFGCDConveyorTooShort_Statics; \
+	static void StaticRegisterNativesUFGCDBeltMustSnap(); \
+	friend struct Z_Construct_UClass_UFGCDBeltMustSnap_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDConveyorTooShort, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDConveyorTooShort)
+	DECLARE_CLASS(UFGCDBeltMustSnap, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDBeltMustSnap)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_239_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGCDConveyorTooShort(); \
-	friend struct Z_Construct_UClass_UFGCDConveyorTooShort_Statics; \
+	static void StaticRegisterNativesUFGCDBeltMustSnap(); \
+	friend struct Z_Construct_UClass_UFGCDBeltMustSnap_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDConveyorTooShort, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDConveyorTooShort)
+	DECLARE_CLASS(UFGCDBeltMustSnap, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDBeltMustSnap)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_239_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGCDConveyorTooShort(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDConveyorTooShort) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorTooShort); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorTooShort); \
+	NO_API UFGCDBeltMustSnap(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDBeltMustSnap) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDBeltMustSnap); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDBeltMustSnap); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDConveyorTooShort(UFGCDConveyorTooShort&&); \
-	NO_API UFGCDConveyorTooShort(const UFGCDConveyorTooShort&); \
+	NO_API UFGCDBeltMustSnap(UFGCDBeltMustSnap&&); \
+	NO_API UFGCDBeltMustSnap(const UFGCDBeltMustSnap&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_239_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDConveyorTooShort(UFGCDConveyorTooShort&&); \
-	NO_API UFGCDConveyorTooShort(const UFGCDConveyorTooShort&); \
+	NO_API UFGCDBeltMustSnap(UFGCDBeltMustSnap&&); \
+	NO_API UFGCDBeltMustSnap(const UFGCDBeltMustSnap&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorTooShort); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorTooShort); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDConveyorTooShort)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDBeltMustSnap); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDBeltMustSnap); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDBeltMustSnap)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_239_PRIVATE_PROPERTY_OFFSET
@@ -1437,50 +1437,50 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> FACTORYGAME_API UClass* StaticClass<class UFGCDConveyorTooShort>();
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDBeltMustSnap>();
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_250_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_250_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_250_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGCDConveyorTooSteep(); \
-	friend struct Z_Construct_UClass_UFGCDConveyorTooSteep_Statics; \
+	static void StaticRegisterNativesUFGCDConveyorTooLong(); \
+	friend struct Z_Construct_UClass_UFGCDConveyorTooLong_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDConveyorTooSteep, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDConveyorTooSteep)
+	DECLARE_CLASS(UFGCDConveyorTooLong, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDConveyorTooLong)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_250_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGCDConveyorTooSteep(); \
-	friend struct Z_Construct_UClass_UFGCDConveyorTooSteep_Statics; \
+	static void StaticRegisterNativesUFGCDConveyorTooLong(); \
+	friend struct Z_Construct_UClass_UFGCDConveyorTooLong_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDConveyorTooSteep, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDConveyorTooSteep)
+	DECLARE_CLASS(UFGCDConveyorTooLong, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDConveyorTooLong)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_250_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGCDConveyorTooSteep(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDConveyorTooSteep) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorTooSteep); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorTooSteep); \
+	NO_API UFGCDConveyorTooLong(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDConveyorTooLong) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorTooLong); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorTooLong); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDConveyorTooSteep(UFGCDConveyorTooSteep&&); \
-	NO_API UFGCDConveyorTooSteep(const UFGCDConveyorTooSteep&); \
+	NO_API UFGCDConveyorTooLong(UFGCDConveyorTooLong&&); \
+	NO_API UFGCDConveyorTooLong(const UFGCDConveyorTooLong&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_250_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDConveyorTooSteep(UFGCDConveyorTooSteep&&); \
-	NO_API UFGCDConveyorTooSteep(const UFGCDConveyorTooSteep&); \
+	NO_API UFGCDConveyorTooLong(UFGCDConveyorTooLong&&); \
+	NO_API UFGCDConveyorTooLong(const UFGCDConveyorTooLong&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorTooSteep); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorTooSteep); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDConveyorTooSteep)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorTooLong); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorTooLong); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDConveyorTooLong)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_250_PRIVATE_PROPERTY_OFFSET
@@ -1507,50 +1507,50 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> FACTORYGAME_API UClass* StaticClass<class UFGCDConveyorTooSteep>();
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDConveyorTooLong>();
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_261_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_261_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_261_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGCDConveyorInvalidShape(); \
-	friend struct Z_Construct_UClass_UFGCDConveyorInvalidShape_Statics; \
+	static void StaticRegisterNativesUFGCDConveyorTooShort(); \
+	friend struct Z_Construct_UClass_UFGCDConveyorTooShort_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDConveyorInvalidShape, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDConveyorInvalidShape)
+	DECLARE_CLASS(UFGCDConveyorTooShort, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDConveyorTooShort)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_261_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGCDConveyorInvalidShape(); \
-	friend struct Z_Construct_UClass_UFGCDConveyorInvalidShape_Statics; \
+	static void StaticRegisterNativesUFGCDConveyorTooShort(); \
+	friend struct Z_Construct_UClass_UFGCDConveyorTooShort_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDConveyorInvalidShape, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDConveyorInvalidShape)
+	DECLARE_CLASS(UFGCDConveyorTooShort, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDConveyorTooShort)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_261_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGCDConveyorInvalidShape(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDConveyorInvalidShape) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorInvalidShape); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorInvalidShape); \
+	NO_API UFGCDConveyorTooShort(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDConveyorTooShort) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorTooShort); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorTooShort); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDConveyorInvalidShape(UFGCDConveyorInvalidShape&&); \
-	NO_API UFGCDConveyorInvalidShape(const UFGCDConveyorInvalidShape&); \
+	NO_API UFGCDConveyorTooShort(UFGCDConveyorTooShort&&); \
+	NO_API UFGCDConveyorTooShort(const UFGCDConveyorTooShort&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_261_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDConveyorInvalidShape(UFGCDConveyorInvalidShape&&); \
-	NO_API UFGCDConveyorInvalidShape(const UFGCDConveyorInvalidShape&); \
+	NO_API UFGCDConveyorTooShort(UFGCDConveyorTooShort&&); \
+	NO_API UFGCDConveyorTooShort(const UFGCDConveyorTooShort&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorInvalidShape); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorInvalidShape); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDConveyorInvalidShape)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorTooShort); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorTooShort); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDConveyorTooShort)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_261_PRIVATE_PROPERTY_OFFSET
@@ -1577,50 +1577,50 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> FACTORYGAME_API UClass* StaticClass<class UFGCDConveyorInvalidShape>();
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDConveyorTooShort>();
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_272_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_272_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_272_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGCDConveyorAttachmentTooSharpTurn(); \
-	friend struct Z_Construct_UClass_UFGCDConveyorAttachmentTooSharpTurn_Statics; \
+	static void StaticRegisterNativesUFGCDConveyorTooSteep(); \
+	friend struct Z_Construct_UClass_UFGCDConveyorTooSteep_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDConveyorAttachmentTooSharpTurn, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDConveyorAttachmentTooSharpTurn)
+	DECLARE_CLASS(UFGCDConveyorTooSteep, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDConveyorTooSteep)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_272_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGCDConveyorAttachmentTooSharpTurn(); \
-	friend struct Z_Construct_UClass_UFGCDConveyorAttachmentTooSharpTurn_Statics; \
+	static void StaticRegisterNativesUFGCDConveyorTooSteep(); \
+	friend struct Z_Construct_UClass_UFGCDConveyorTooSteep_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDConveyorAttachmentTooSharpTurn, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDConveyorAttachmentTooSharpTurn)
+	DECLARE_CLASS(UFGCDConveyorTooSteep, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDConveyorTooSteep)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_272_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGCDConveyorAttachmentTooSharpTurn(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDConveyorAttachmentTooSharpTurn) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorAttachmentTooSharpTurn); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorAttachmentTooSharpTurn); \
+	NO_API UFGCDConveyorTooSteep(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDConveyorTooSteep) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorTooSteep); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorTooSteep); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDConveyorAttachmentTooSharpTurn(UFGCDConveyorAttachmentTooSharpTurn&&); \
-	NO_API UFGCDConveyorAttachmentTooSharpTurn(const UFGCDConveyorAttachmentTooSharpTurn&); \
+	NO_API UFGCDConveyorTooSteep(UFGCDConveyorTooSteep&&); \
+	NO_API UFGCDConveyorTooSteep(const UFGCDConveyorTooSteep&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_272_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDConveyorAttachmentTooSharpTurn(UFGCDConveyorAttachmentTooSharpTurn&&); \
-	NO_API UFGCDConveyorAttachmentTooSharpTurn(const UFGCDConveyorAttachmentTooSharpTurn&); \
+	NO_API UFGCDConveyorTooSteep(UFGCDConveyorTooSteep&&); \
+	NO_API UFGCDConveyorTooSteep(const UFGCDConveyorTooSteep&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorAttachmentTooSharpTurn); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorAttachmentTooSharpTurn); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDConveyorAttachmentTooSharpTurn)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorTooSteep); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorTooSteep); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDConveyorTooSteep)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_272_PRIVATE_PROPERTY_OFFSET
@@ -1647,50 +1647,50 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> FACTORYGAME_API UClass* StaticClass<class UFGCDConveyorAttachmentTooSharpTurn>();
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDConveyorTooSteep>();
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_283_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_283_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_283_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGCDMustHaveRailRoadTrack(); \
-	friend struct Z_Construct_UClass_UFGCDMustHaveRailRoadTrack_Statics; \
+	static void StaticRegisterNativesUFGCDConveyorInvalidShape(); \
+	friend struct Z_Construct_UClass_UFGCDConveyorInvalidShape_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDMustHaveRailRoadTrack, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDMustHaveRailRoadTrack)
+	DECLARE_CLASS(UFGCDConveyorInvalidShape, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDConveyorInvalidShape)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_283_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGCDMustHaveRailRoadTrack(); \
-	friend struct Z_Construct_UClass_UFGCDMustHaveRailRoadTrack_Statics; \
+	static void StaticRegisterNativesUFGCDConveyorInvalidShape(); \
+	friend struct Z_Construct_UClass_UFGCDConveyorInvalidShape_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDMustHaveRailRoadTrack, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDMustHaveRailRoadTrack)
+	DECLARE_CLASS(UFGCDConveyorInvalidShape, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDConveyorInvalidShape)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_283_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGCDMustHaveRailRoadTrack(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDMustHaveRailRoadTrack) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDMustHaveRailRoadTrack); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDMustHaveRailRoadTrack); \
+	NO_API UFGCDConveyorInvalidShape(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDConveyorInvalidShape) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorInvalidShape); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorInvalidShape); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDMustHaveRailRoadTrack(UFGCDMustHaveRailRoadTrack&&); \
-	NO_API UFGCDMustHaveRailRoadTrack(const UFGCDMustHaveRailRoadTrack&); \
+	NO_API UFGCDConveyorInvalidShape(UFGCDConveyorInvalidShape&&); \
+	NO_API UFGCDConveyorInvalidShape(const UFGCDConveyorInvalidShape&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_283_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDMustHaveRailRoadTrack(UFGCDMustHaveRailRoadTrack&&); \
-	NO_API UFGCDMustHaveRailRoadTrack(const UFGCDMustHaveRailRoadTrack&); \
+	NO_API UFGCDConveyorInvalidShape(UFGCDConveyorInvalidShape&&); \
+	NO_API UFGCDConveyorInvalidShape(const UFGCDConveyorInvalidShape&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDMustHaveRailRoadTrack); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDMustHaveRailRoadTrack); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDMustHaveRailRoadTrack)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorInvalidShape); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorInvalidShape); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDConveyorInvalidShape)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_283_PRIVATE_PROPERTY_OFFSET
@@ -1717,50 +1717,50 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> FACTORYGAME_API UClass* StaticClass<class UFGCDMustHaveRailRoadTrack>();
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDConveyorInvalidShape>();
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_294_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_294_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_294_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGCDMustAttachToTrainPlatform(); \
-	friend struct Z_Construct_UClass_UFGCDMustAttachToTrainPlatform_Statics; \
+	static void StaticRegisterNativesUFGCDConveyorAttachmentTooSharpTurn(); \
+	friend struct Z_Construct_UClass_UFGCDConveyorAttachmentTooSharpTurn_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDMustAttachToTrainPlatform, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDMustAttachToTrainPlatform)
+	DECLARE_CLASS(UFGCDConveyorAttachmentTooSharpTurn, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDConveyorAttachmentTooSharpTurn)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_294_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGCDMustAttachToTrainPlatform(); \
-	friend struct Z_Construct_UClass_UFGCDMustAttachToTrainPlatform_Statics; \
+	static void StaticRegisterNativesUFGCDConveyorAttachmentTooSharpTurn(); \
+	friend struct Z_Construct_UClass_UFGCDConveyorAttachmentTooSharpTurn_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDMustAttachToTrainPlatform, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDMustAttachToTrainPlatform)
+	DECLARE_CLASS(UFGCDConveyorAttachmentTooSharpTurn, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDConveyorAttachmentTooSharpTurn)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_294_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGCDMustAttachToTrainPlatform(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDMustAttachToTrainPlatform) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDMustAttachToTrainPlatform); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDMustAttachToTrainPlatform); \
+	NO_API UFGCDConveyorAttachmentTooSharpTurn(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDConveyorAttachmentTooSharpTurn) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorAttachmentTooSharpTurn); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorAttachmentTooSharpTurn); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDMustAttachToTrainPlatform(UFGCDMustAttachToTrainPlatform&&); \
-	NO_API UFGCDMustAttachToTrainPlatform(const UFGCDMustAttachToTrainPlatform&); \
+	NO_API UFGCDConveyorAttachmentTooSharpTurn(UFGCDConveyorAttachmentTooSharpTurn&&); \
+	NO_API UFGCDConveyorAttachmentTooSharpTurn(const UFGCDConveyorAttachmentTooSharpTurn&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_294_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDMustAttachToTrainPlatform(UFGCDMustAttachToTrainPlatform&&); \
-	NO_API UFGCDMustAttachToTrainPlatform(const UFGCDMustAttachToTrainPlatform&); \
+	NO_API UFGCDConveyorAttachmentTooSharpTurn(UFGCDConveyorAttachmentTooSharpTurn&&); \
+	NO_API UFGCDConveyorAttachmentTooSharpTurn(const UFGCDConveyorAttachmentTooSharpTurn&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDMustAttachToTrainPlatform); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDMustAttachToTrainPlatform); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDMustAttachToTrainPlatform)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDConveyorAttachmentTooSharpTurn); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDConveyorAttachmentTooSharpTurn); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDConveyorAttachmentTooSharpTurn)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_294_PRIVATE_PROPERTY_OFFSET
@@ -1787,50 +1787,50 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> FACTORYGAME_API UClass* StaticClass<class UFGCDMustAttachToTrainPlatform>();
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDConveyorAttachmentTooSharpTurn>();
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_305_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_305_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_305_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGCDTrackTooLong(); \
-	friend struct Z_Construct_UClass_UFGCDTrackTooLong_Statics; \
+	static void StaticRegisterNativesUFGCDMustHaveRailRoadTrack(); \
+	friend struct Z_Construct_UClass_UFGCDMustHaveRailRoadTrack_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDTrackTooLong, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDTrackTooLong)
+	DECLARE_CLASS(UFGCDMustHaveRailRoadTrack, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDMustHaveRailRoadTrack)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_305_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGCDTrackTooLong(); \
-	friend struct Z_Construct_UClass_UFGCDTrackTooLong_Statics; \
+	static void StaticRegisterNativesUFGCDMustHaveRailRoadTrack(); \
+	friend struct Z_Construct_UClass_UFGCDMustHaveRailRoadTrack_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDTrackTooLong, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDTrackTooLong)
+	DECLARE_CLASS(UFGCDMustHaveRailRoadTrack, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDMustHaveRailRoadTrack)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_305_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGCDTrackTooLong(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDTrackTooLong) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDTrackTooLong); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDTrackTooLong); \
+	NO_API UFGCDMustHaveRailRoadTrack(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDMustHaveRailRoadTrack) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDMustHaveRailRoadTrack); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDMustHaveRailRoadTrack); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDTrackTooLong(UFGCDTrackTooLong&&); \
-	NO_API UFGCDTrackTooLong(const UFGCDTrackTooLong&); \
+	NO_API UFGCDMustHaveRailRoadTrack(UFGCDMustHaveRailRoadTrack&&); \
+	NO_API UFGCDMustHaveRailRoadTrack(const UFGCDMustHaveRailRoadTrack&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_305_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDTrackTooLong(UFGCDTrackTooLong&&); \
-	NO_API UFGCDTrackTooLong(const UFGCDTrackTooLong&); \
+	NO_API UFGCDMustHaveRailRoadTrack(UFGCDMustHaveRailRoadTrack&&); \
+	NO_API UFGCDMustHaveRailRoadTrack(const UFGCDMustHaveRailRoadTrack&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDTrackTooLong); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDTrackTooLong); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDTrackTooLong)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDMustHaveRailRoadTrack); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDMustHaveRailRoadTrack); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDMustHaveRailRoadTrack)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_305_PRIVATE_PROPERTY_OFFSET
@@ -1857,50 +1857,50 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> FACTORYGAME_API UClass* StaticClass<class UFGCDTrackTooLong>();
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDMustHaveRailRoadTrack>();
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_316_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_316_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_316_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGCDTrackTooShort(); \
-	friend struct Z_Construct_UClass_UFGCDTrackTooShort_Statics; \
+	static void StaticRegisterNativesUFGCDMustAttachToTrainPlatform(); \
+	friend struct Z_Construct_UClass_UFGCDMustAttachToTrainPlatform_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDTrackTooShort, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDTrackTooShort)
+	DECLARE_CLASS(UFGCDMustAttachToTrainPlatform, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDMustAttachToTrainPlatform)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_316_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGCDTrackTooShort(); \
-	friend struct Z_Construct_UClass_UFGCDTrackTooShort_Statics; \
+	static void StaticRegisterNativesUFGCDMustAttachToTrainPlatform(); \
+	friend struct Z_Construct_UClass_UFGCDMustAttachToTrainPlatform_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDTrackTooShort, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDTrackTooShort)
+	DECLARE_CLASS(UFGCDMustAttachToTrainPlatform, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDMustAttachToTrainPlatform)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_316_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGCDTrackTooShort(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDTrackTooShort) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDTrackTooShort); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDTrackTooShort); \
+	NO_API UFGCDMustAttachToTrainPlatform(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDMustAttachToTrainPlatform) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDMustAttachToTrainPlatform); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDMustAttachToTrainPlatform); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDTrackTooShort(UFGCDTrackTooShort&&); \
-	NO_API UFGCDTrackTooShort(const UFGCDTrackTooShort&); \
+	NO_API UFGCDMustAttachToTrainPlatform(UFGCDMustAttachToTrainPlatform&&); \
+	NO_API UFGCDMustAttachToTrainPlatform(const UFGCDMustAttachToTrainPlatform&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_316_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDTrackTooShort(UFGCDTrackTooShort&&); \
-	NO_API UFGCDTrackTooShort(const UFGCDTrackTooShort&); \
+	NO_API UFGCDMustAttachToTrainPlatform(UFGCDMustAttachToTrainPlatform&&); \
+	NO_API UFGCDMustAttachToTrainPlatform(const UFGCDMustAttachToTrainPlatform&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDTrackTooShort); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDTrackTooShort); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDTrackTooShort)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDMustAttachToTrainPlatform); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDMustAttachToTrainPlatform); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDMustAttachToTrainPlatform)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_316_PRIVATE_PROPERTY_OFFSET
@@ -1927,50 +1927,50 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> FACTORYGAME_API UClass* StaticClass<class UFGCDTrackTooShort>();
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDMustAttachToTrainPlatform>();
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_327_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_327_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_327_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGCDTrackTooSteep(); \
-	friend struct Z_Construct_UClass_UFGCDTrackTooSteep_Statics; \
+	static void StaticRegisterNativesUFGCDTrackTooLong(); \
+	friend struct Z_Construct_UClass_UFGCDTrackTooLong_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDTrackTooSteep, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDTrackTooSteep)
+	DECLARE_CLASS(UFGCDTrackTooLong, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDTrackTooLong)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_327_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGCDTrackTooSteep(); \
-	friend struct Z_Construct_UClass_UFGCDTrackTooSteep_Statics; \
+	static void StaticRegisterNativesUFGCDTrackTooLong(); \
+	friend struct Z_Construct_UClass_UFGCDTrackTooLong_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDTrackTooSteep, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDTrackTooSteep)
+	DECLARE_CLASS(UFGCDTrackTooLong, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDTrackTooLong)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_327_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGCDTrackTooSteep(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDTrackTooSteep) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDTrackTooSteep); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDTrackTooSteep); \
+	NO_API UFGCDTrackTooLong(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDTrackTooLong) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDTrackTooLong); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDTrackTooLong); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDTrackTooSteep(UFGCDTrackTooSteep&&); \
-	NO_API UFGCDTrackTooSteep(const UFGCDTrackTooSteep&); \
+	NO_API UFGCDTrackTooLong(UFGCDTrackTooLong&&); \
+	NO_API UFGCDTrackTooLong(const UFGCDTrackTooLong&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_327_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDTrackTooSteep(UFGCDTrackTooSteep&&); \
-	NO_API UFGCDTrackTooSteep(const UFGCDTrackTooSteep&); \
+	NO_API UFGCDTrackTooLong(UFGCDTrackTooLong&&); \
+	NO_API UFGCDTrackTooLong(const UFGCDTrackTooLong&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDTrackTooSteep); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDTrackTooSteep); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDTrackTooSteep)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDTrackTooLong); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDTrackTooLong); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDTrackTooLong)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_327_PRIVATE_PROPERTY_OFFSET
@@ -1997,50 +1997,50 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> FACTORYGAME_API UClass* StaticClass<class UFGCDTrackTooSteep>();
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDTrackTooLong>();
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_338_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_338_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_338_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGCDTrackTrunToSharp(); \
-	friend struct Z_Construct_UClass_UFGCDTrackTrunToSharp_Statics; \
+	static void StaticRegisterNativesUFGCDTrackTooShort(); \
+	friend struct Z_Construct_UClass_UFGCDTrackTooShort_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDTrackTrunToSharp, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDTrackTrunToSharp)
+	DECLARE_CLASS(UFGCDTrackTooShort, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDTrackTooShort)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_338_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGCDTrackTrunToSharp(); \
-	friend struct Z_Construct_UClass_UFGCDTrackTrunToSharp_Statics; \
+	static void StaticRegisterNativesUFGCDTrackTooShort(); \
+	friend struct Z_Construct_UClass_UFGCDTrackTooShort_Statics; \
 public: \
-	DECLARE_CLASS(UFGCDTrackTrunToSharp, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGCDTrackTrunToSharp)
+	DECLARE_CLASS(UFGCDTrackTooShort, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDTrackTooShort)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_338_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGCDTrackTrunToSharp(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDTrackTrunToSharp) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDTrackTrunToSharp); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDTrackTrunToSharp); \
+	NO_API UFGCDTrackTooShort(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDTrackTooShort) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDTrackTooShort); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDTrackTooShort); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDTrackTrunToSharp(UFGCDTrackTrunToSharp&&); \
-	NO_API UFGCDTrackTrunToSharp(const UFGCDTrackTrunToSharp&); \
+	NO_API UFGCDTrackTooShort(UFGCDTrackTooShort&&); \
+	NO_API UFGCDTrackTooShort(const UFGCDTrackTooShort&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_338_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGCDTrackTrunToSharp(UFGCDTrackTrunToSharp&&); \
-	NO_API UFGCDTrackTrunToSharp(const UFGCDTrackTrunToSharp&); \
+	NO_API UFGCDTrackTooShort(UFGCDTrackTooShort&&); \
+	NO_API UFGCDTrackTooShort(const UFGCDTrackTooShort&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDTrackTrunToSharp); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDTrackTrunToSharp); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDTrackTrunToSharp)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDTrackTooShort); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDTrackTooShort); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDTrackTooShort)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_338_PRIVATE_PROPERTY_OFFSET
@@ -2067,7 +2067,637 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDTrackTooShort>();
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUFGCDTrackTooSteep(); \
+	friend struct Z_Construct_UClass_UFGCDTrackTooSteep_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDTrackTooSteep, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDTrackTooSteep)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_INCLASS \
+private: \
+	static void StaticRegisterNativesUFGCDTrackTooSteep(); \
+	friend struct Z_Construct_UClass_UFGCDTrackTooSteep_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDTrackTooSteep, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDTrackTooSteep)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UFGCDTrackTooSteep(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDTrackTooSteep) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDTrackTooSteep); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDTrackTooSteep); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDTrackTooSteep(UFGCDTrackTooSteep&&); \
+	NO_API UFGCDTrackTooSteep(const UFGCDTrackTooSteep&); \
+public:
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDTrackTooSteep(UFGCDTrackTooSteep&&); \
+	NO_API UFGCDTrackTooSteep(const UFGCDTrackTooSteep&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDTrackTooSteep); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDTrackTooSteep); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDTrackTooSteep)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_346_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_349_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDTrackTooSteep>();
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUFGCDTrackTrunToSharp(); \
+	friend struct Z_Construct_UClass_UFGCDTrackTrunToSharp_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDTrackTrunToSharp, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDTrackTrunToSharp)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_INCLASS \
+private: \
+	static void StaticRegisterNativesUFGCDTrackTrunToSharp(); \
+	friend struct Z_Construct_UClass_UFGCDTrackTrunToSharp_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDTrackTrunToSharp, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDTrackTrunToSharp)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UFGCDTrackTrunToSharp(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDTrackTrunToSharp) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDTrackTrunToSharp); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDTrackTrunToSharp); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDTrackTrunToSharp(UFGCDTrackTrunToSharp&&); \
+	NO_API UFGCDTrackTrunToSharp(const UFGCDTrackTrunToSharp&); \
+public:
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDTrackTrunToSharp(UFGCDTrackTrunToSharp&&); \
+	NO_API UFGCDTrackTrunToSharp(const UFGCDTrackTrunToSharp&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDTrackTrunToSharp); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDTrackTrunToSharp); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDTrackTrunToSharp)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_357_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_360_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
 template<> FACTORYGAME_API UClass* StaticClass<class UFGCDTrackTrunToSharp>();
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUFGCDPipeTooShort(); \
+	friend struct Z_Construct_UClass_UFGCDPipeTooShort_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDPipeTooShort, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDPipeTooShort)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_INCLASS \
+private: \
+	static void StaticRegisterNativesUFGCDPipeTooShort(); \
+	friend struct Z_Construct_UClass_UFGCDPipeTooShort_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDPipeTooShort, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDPipeTooShort)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UFGCDPipeTooShort(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDPipeTooShort) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDPipeTooShort); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDPipeTooShort); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDPipeTooShort(UFGCDPipeTooShort&&); \
+	NO_API UFGCDPipeTooShort(const UFGCDPipeTooShort&); \
+public:
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDPipeTooShort(UFGCDPipeTooShort&&); \
+	NO_API UFGCDPipeTooShort(const UFGCDPipeTooShort&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDPipeTooShort); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDPipeTooShort); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDPipeTooShort)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_368_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_371_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDPipeTooShort>();
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUFGCDPipeTooLong(); \
+	friend struct Z_Construct_UClass_UFGCDPipeTooLong_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDPipeTooLong, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDPipeTooLong)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_INCLASS \
+private: \
+	static void StaticRegisterNativesUFGCDPipeTooLong(); \
+	friend struct Z_Construct_UClass_UFGCDPipeTooLong_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDPipeTooLong, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDPipeTooLong)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UFGCDPipeTooLong(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDPipeTooLong) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDPipeTooLong); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDPipeTooLong); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDPipeTooLong(UFGCDPipeTooLong&&); \
+	NO_API UFGCDPipeTooLong(const UFGCDPipeTooLong&); \
+public:
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDPipeTooLong(UFGCDPipeTooLong&&); \
+	NO_API UFGCDPipeTooLong(const UFGCDPipeTooLong&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDPipeTooLong); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDPipeTooLong); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDPipeTooLong)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_379_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_382_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDPipeTooLong>();
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUFGCDPipeAttachmentTooSharpTurn(); \
+	friend struct Z_Construct_UClass_UFGCDPipeAttachmentTooSharpTurn_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDPipeAttachmentTooSharpTurn, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDPipeAttachmentTooSharpTurn)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_INCLASS \
+private: \
+	static void StaticRegisterNativesUFGCDPipeAttachmentTooSharpTurn(); \
+	friend struct Z_Construct_UClass_UFGCDPipeAttachmentTooSharpTurn_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDPipeAttachmentTooSharpTurn, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDPipeAttachmentTooSharpTurn)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UFGCDPipeAttachmentTooSharpTurn(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDPipeAttachmentTooSharpTurn) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDPipeAttachmentTooSharpTurn); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDPipeAttachmentTooSharpTurn); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDPipeAttachmentTooSharpTurn(UFGCDPipeAttachmentTooSharpTurn&&); \
+	NO_API UFGCDPipeAttachmentTooSharpTurn(const UFGCDPipeAttachmentTooSharpTurn&); \
+public:
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDPipeAttachmentTooSharpTurn(UFGCDPipeAttachmentTooSharpTurn&&); \
+	NO_API UFGCDPipeAttachmentTooSharpTurn(const UFGCDPipeAttachmentTooSharpTurn&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDPipeAttachmentTooSharpTurn); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDPipeAttachmentTooSharpTurn); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDPipeAttachmentTooSharpTurn)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_390_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_393_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDPipeAttachmentTooSharpTurn>();
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUFGCDPipeMustSnap(); \
+	friend struct Z_Construct_UClass_UFGCDPipeMustSnap_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDPipeMustSnap, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDPipeMustSnap)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_INCLASS \
+private: \
+	static void StaticRegisterNativesUFGCDPipeMustSnap(); \
+	friend struct Z_Construct_UClass_UFGCDPipeMustSnap_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDPipeMustSnap, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDPipeMustSnap)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UFGCDPipeMustSnap(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDPipeMustSnap) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDPipeMustSnap); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDPipeMustSnap); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDPipeMustSnap(UFGCDPipeMustSnap&&); \
+	NO_API UFGCDPipeMustSnap(const UFGCDPipeMustSnap&); \
+public:
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDPipeMustSnap(UFGCDPipeMustSnap&&); \
+	NO_API UFGCDPipeMustSnap(const UFGCDPipeMustSnap&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDPipeMustSnap); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDPipeMustSnap); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDPipeMustSnap)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_401_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_404_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDPipeMustSnap>();
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUFGCDPipeFluidTypeMismatch(); \
+	friend struct Z_Construct_UClass_UFGCDPipeFluidTypeMismatch_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDPipeFluidTypeMismatch, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDPipeFluidTypeMismatch)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_INCLASS \
+private: \
+	static void StaticRegisterNativesUFGCDPipeFluidTypeMismatch(); \
+	friend struct Z_Construct_UClass_UFGCDPipeFluidTypeMismatch_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDPipeFluidTypeMismatch, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDPipeFluidTypeMismatch)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UFGCDPipeFluidTypeMismatch(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDPipeFluidTypeMismatch) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDPipeFluidTypeMismatch); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDPipeFluidTypeMismatch); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDPipeFluidTypeMismatch(UFGCDPipeFluidTypeMismatch&&); \
+	NO_API UFGCDPipeFluidTypeMismatch(const UFGCDPipeFluidTypeMismatch&); \
+public:
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDPipeFluidTypeMismatch(UFGCDPipeFluidTypeMismatch&&); \
+	NO_API UFGCDPipeFluidTypeMismatch(const UFGCDPipeFluidTypeMismatch&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDPipeFluidTypeMismatch); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDPipeFluidTypeMismatch); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDPipeFluidTypeMismatch)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_412_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_415_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDPipeFluidTypeMismatch>();
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUFGCDPipeInvalidShape(); \
+	friend struct Z_Construct_UClass_UFGCDPipeInvalidShape_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDPipeInvalidShape, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDPipeInvalidShape)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_INCLASS \
+private: \
+	static void StaticRegisterNativesUFGCDPipeInvalidShape(); \
+	friend struct Z_Construct_UClass_UFGCDPipeInvalidShape_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDPipeInvalidShape, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDPipeInvalidShape)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UFGCDPipeInvalidShape(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDPipeInvalidShape) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDPipeInvalidShape); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDPipeInvalidShape); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDPipeInvalidShape(UFGCDPipeInvalidShape&&); \
+	NO_API UFGCDPipeInvalidShape(const UFGCDPipeInvalidShape&); \
+public:
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDPipeInvalidShape(UFGCDPipeInvalidShape&&); \
+	NO_API UFGCDPipeInvalidShape(const UFGCDPipeInvalidShape&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDPipeInvalidShape); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDPipeInvalidShape); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDPipeInvalidShape)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_423_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_426_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDPipeInvalidShape>();
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUFGCDPipeNoPathFound(); \
+	friend struct Z_Construct_UClass_UFGCDPipeNoPathFound_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDPipeNoPathFound, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDPipeNoPathFound)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_INCLASS \
+private: \
+	static void StaticRegisterNativesUFGCDPipeNoPathFound(); \
+	friend struct Z_Construct_UClass_UFGCDPipeNoPathFound_Statics; \
+public: \
+	DECLARE_CLASS(UFGCDPipeNoPathFound, UFGConstructDisqualifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGCDPipeNoPathFound)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UFGCDPipeNoPathFound(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCDPipeNoPathFound) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDPipeNoPathFound); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDPipeNoPathFound); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDPipeNoPathFound(UFGCDPipeNoPathFound&&); \
+	NO_API UFGCDPipeNoPathFound(const UFGCDPipeNoPathFound&); \
+public:
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGCDPipeNoPathFound(UFGCDPipeNoPathFound&&); \
+	NO_API UFGCDPipeNoPathFound(const UFGCDPipeNoPathFound&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGCDPipeNoPathFound); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCDPipeNoPathFound); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCDPipeNoPathFound)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_434_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h_437_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDPipeNoPathFound>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGConstructDisqualifier_h

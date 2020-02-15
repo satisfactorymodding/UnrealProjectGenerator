@@ -15,7 +15,7 @@ class AFGVehicle;
 #endif
 #define FACTORYGAME_FGVehicleDescriptor_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetVehicleClass) \
 	{ \
@@ -27,7 +27,7 @@ class AFGVehicle;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetVehicleClass) \
 	{ \
@@ -39,7 +39,7 @@ class AFGVehicle;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGVehicleDescriptor(); \
 	friend struct Z_Construct_UClass_UFGVehicleDescriptor_Statics; \
@@ -48,7 +48,7 @@ public: \
 	DECLARE_SERIALIZER(UFGVehicleDescriptor)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGVehicleDescriptor(); \
 	friend struct Z_Construct_UClass_UFGVehicleDescriptor_Statics; \
@@ -57,7 +57,7 @@ public: \
 	DECLARE_SERIALIZER(UFGVehicleDescriptor)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGVehicleDescriptor(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGVehicleDescriptor) \
@@ -70,7 +70,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGVehicleDescriptor(UFGVehicleDescriptor&&); \
@@ -81,26 +81,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGVehicleDescriptor); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGVehicleDescriptor)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_13_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_14_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_16_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGVehicleDescriptor_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

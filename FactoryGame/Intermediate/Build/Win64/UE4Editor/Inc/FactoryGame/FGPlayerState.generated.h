@@ -9,6 +9,7 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGItemDescriptor;
+class UFGSchematicCategory;
 struct FLinearColor;
 enum class ERepresentationType : uint8;
 class UFGItemCategory;
@@ -68,6 +69,31 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_HotbarShortcuts(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetLastSelectedResourceSinkShopCategory) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_selectedCategory); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetLastSelectedResourceSinkShopCategory(Z_Param_selectedCategory); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetLastSelectedResourceSinkShopCategory) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TSubclassOf<UFGSchematicCategory> *)Z_Param__Result=P_THIS->GetLastSelectedResourceSinkShopCategory(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsServerAdmin) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsServerAdmin(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -340,6 +366,31 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_HotbarShortcuts(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetLastSelectedResourceSinkShopCategory) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_selectedCategory); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetLastSelectedResourceSinkShopCategory(Z_Param_selectedCategory); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetLastSelectedResourceSinkShopCategory) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TSubclassOf<UFGSchematicCategory> *)Z_Param__Result=P_THIS->GetLastSelectedResourceSinkShopCategory(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsServerAdmin) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsServerAdmin(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -687,7 +738,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGPlayerState); \
 	FORCEINLINE static uint32 __PPO__mOnlyShowAffordableRecipes() { return STRUCT_OFFSET(AFGPlayerState, mOnlyShowAffordableRecipes); } \
 	FORCEINLINE static uint32 __PPO__mCollapsedItemCategories() { return STRUCT_OFFSET(AFGPlayerState, mCollapsedItemCategories); } \
 	FORCEINLINE static uint32 __PPO__mFilteredOutMapTypes() { return STRUCT_OFFSET(AFGPlayerState, mFilteredOutMapTypes); } \
-	FORCEINLINE static uint32 __PPO__mFilteredOutCompassTypes() { return STRUCT_OFFSET(AFGPlayerState, mFilteredOutCompassTypes); }
+	FORCEINLINE static uint32 __PPO__mFilteredOutCompassTypes() { return STRUCT_OFFSET(AFGPlayerState, mFilteredOutCompassTypes); } \
+	FORCEINLINE static uint32 __PPO__mLastSelectedResourceSinkShopCategory() { return STRUCT_OFFSET(AFGPlayerState, mLastSelectedResourceSinkShopCategory); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGPlayerState_h_71_PROLOG \

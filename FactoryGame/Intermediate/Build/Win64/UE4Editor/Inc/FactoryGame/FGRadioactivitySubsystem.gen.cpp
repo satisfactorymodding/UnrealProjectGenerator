@@ -500,7 +500,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRadioactiveSource
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRadioactivitySubsystem, 3639880953);
+	IMPLEMENT_CLASS(AFGRadioactivitySubsystem, 3917635573);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRadioactivitySubsystem>()
 	{
 		return AFGRadioactivitySubsystem::StaticClass();

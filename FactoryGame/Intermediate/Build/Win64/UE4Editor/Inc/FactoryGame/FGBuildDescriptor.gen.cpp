@@ -20,7 +20,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildDescriptor() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildDescriptor_GetBuildCategory();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGBuildCategory_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildDescriptor_GetBuildClass();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildDescriptor_GetBuildMenuPriority();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildDescriptor_GetHologramClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildDescriptor_GetSubCategories();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGBuildSubCategory_NoRegister();
 // End Cross Module References
@@ -29,7 +33,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildDescriptor() {}
 		UClass* Class = UFGBuildDescriptor::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GetBuildCategory", &UFGBuildDescriptor::execGetBuildCategory },
+			{ "GetBuildClass", &UFGBuildDescriptor::execGetBuildClass },
 			{ "GetBuildMenuPriority", &UFGBuildDescriptor::execGetBuildMenuPriority },
+			{ "GetHologramClass", &UFGBuildDescriptor::execGetHologramClass },
 			{ "GetSubCategories", &UFGBuildDescriptor::execGetSubCategories },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
@@ -72,6 +78,44 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildDescriptor() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGBuildDescriptor_GetBuildClass_Statics
+	{
+		struct FGBuildDescriptor_eventGetBuildClass_Parms
+		{
+			TSubclassOf<UFGBuildDescriptor>  inClass;
+			TSubclassOf<AActor>  ReturnValue;
+		};
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBuildDescriptor_GetBuildClass_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildDescriptor_eventGetBuildClass_Parms, ReturnValue), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBuildDescriptor_GetBuildClass_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildDescriptor_eventGetBuildClass_Parms, inClass), Z_Construct_UClass_UFGBuildDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildDescriptor_GetBuildClass_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildDescriptor_GetBuildClass_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildDescriptor_GetBuildClass_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildDescriptor_GetBuildClass_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Descriptor|Building" },
+		{ "ModuleRelativePath", "Public/Resources/FGBuildDescriptor.h" },
+		{ "ToolTip", "Get the build actor class for this building descriptor." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildDescriptor_GetBuildClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildDescriptor, nullptr, "GetBuildClass", sizeof(FGBuildDescriptor_eventGetBuildClass_Parms), Z_Construct_UFunction_UFGBuildDescriptor_GetBuildClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildDescriptor_GetBuildClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildDescriptor_GetBuildClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildDescriptor_GetBuildClass_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBuildDescriptor_GetBuildClass()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBuildDescriptor_GetBuildClass_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGBuildDescriptor_GetBuildMenuPriority_Statics
 	{
 		struct FGBuildDescriptor_eventGetBuildMenuPriority_Parms
@@ -107,6 +151,44 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildDescriptor() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBuildDescriptor_GetBuildMenuPriority_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGBuildDescriptor_GetHologramClass_Statics
+	{
+		struct FGBuildDescriptor_eventGetHologramClass_Parms
+		{
+			TSubclassOf<UFGBuildDescriptor>  inClass;
+			UClass* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBuildDescriptor_GetHologramClass_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildDescriptor_eventGetHologramClass_Parms, ReturnValue), Z_Construct_UClass_UObject_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBuildDescriptor_GetHologramClass_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildDescriptor_eventGetHologramClass_Parms, inClass), Z_Construct_UClass_UFGBuildDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildDescriptor_GetHologramClass_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildDescriptor_GetHologramClass_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildDescriptor_GetHologramClass_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildDescriptor_GetHologramClass_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Descriptor|Build" },
+		{ "ModuleRelativePath", "Public/Resources/FGBuildDescriptor.h" },
+		{ "ToolTip", "The order we want stuff in the build menu, lower is earlier" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildDescriptor_GetHologramClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildDescriptor, nullptr, "GetHologramClass", sizeof(FGBuildDescriptor_eventGetHologramClass_Parms), Z_Construct_UFunction_UFGBuildDescriptor_GetHologramClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildDescriptor_GetHologramClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildDescriptor_GetHologramClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildDescriptor_GetHologramClass_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBuildDescriptor_GetHologramClass()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBuildDescriptor_GetHologramClass_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -185,7 +267,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildDescriptor() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGBuildDescriptor_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UFGBuildDescriptor_GetBuildCategory, "GetBuildCategory" }, // 2996457014
+		{ &Z_Construct_UFunction_UFGBuildDescriptor_GetBuildClass, "GetBuildClass" }, // 3979691553
 		{ &Z_Construct_UFunction_UFGBuildDescriptor_GetBuildMenuPriority, "GetBuildMenuPriority" }, // 1743737622
+		{ &Z_Construct_UFunction_UFGBuildDescriptor_GetHologramClass, "GetHologramClass" }, // 1931106419
 		{ &Z_Construct_UFunction_UFGBuildDescriptor_GetSubCategories, "GetSubCategories" }, // 3354511689
 	};
 #if WITH_METADATA
@@ -254,7 +338,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildDescriptor, 1534127532);
+	IMPLEMENT_CLASS(UFGBuildDescriptor, 3485395981);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBuildDescriptor>()
 	{
 		return UFGBuildDescriptor::StaticClass();

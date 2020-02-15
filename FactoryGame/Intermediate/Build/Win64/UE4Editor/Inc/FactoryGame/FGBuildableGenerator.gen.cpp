@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 		{ "ToolTip", "Called to check if power production can be started." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableGenerator_CanStartPowerProduction_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableGenerator, nullptr, "CanStartPowerProduction", sizeof(FGBuildableGenerator_eventCanStartPowerProduction_Parms), Z_Construct_UFunction_AFGBuildableGenerator_CanStartPowerProduction_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableGenerator_CanStartPowerProduction_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x5C080C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableGenerator_CanStartPowerProduction_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableGenerator_CanStartPowerProduction_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableGenerator_CanStartPowerProduction_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableGenerator, nullptr, "CanStartPowerProduction", sizeof(FGBuildableGenerator_eventCanStartPowerProduction_Parms), Z_Construct_UFunction_AFGBuildableGenerator_CanStartPowerProduction_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableGenerator_CanStartPowerProduction_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x5C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableGenerator_CanStartPowerProduction_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableGenerator_CanStartPowerProduction_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableGenerator_CanStartPowerProduction()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -392,7 +392,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableGenerator_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AFGBuildableGenerator_CalcPowerProductionCapacityForPotential, "CalcPowerProductionCapacityForPotential" }, // 865971264
-		{ &Z_Construct_UFunction_AFGBuildableGenerator_CanStartPowerProduction, "CanStartPowerProduction" }, // 1613984155
+		{ &Z_Construct_UFunction_AFGBuildableGenerator_CanStartPowerProduction, "CanStartPowerProduction" }, // 362945492
 		{ &Z_Construct_UFunction_AFGBuildableGenerator_Factory_StartPowerProduction, "Factory_StartPowerProduction" }, // 1467526595
 		{ &Z_Construct_UFunction_AFGBuildableGenerator_Factory_StopPowerProduction, "Factory_StopPowerProduction" }, // 4233060358
 		{ &Z_Construct_UFunction_AFGBuildableGenerator_Factory_TickPowerProduction, "Factory_TickPowerProduction" }, // 483505934
@@ -478,7 +478,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableGenerator, 3255510472);
+	IMPLEMENT_CLASS(AFGBuildableGenerator, 3063051546);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableGenerator>()
 	{
 		return AFGBuildableGenerator::StaticClass();

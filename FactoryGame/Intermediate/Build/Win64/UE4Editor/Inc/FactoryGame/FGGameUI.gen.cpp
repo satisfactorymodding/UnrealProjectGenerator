@@ -35,6 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_CancelPressed();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_CanReceiveMessage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_ClearHintOnTutorialStepCompleted();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_FindWidgetByClass();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_GetCurrentAudioMessage();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGAudioMessage_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_GetInteractWidgetStack();
@@ -46,6 +47,8 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStart();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_OnResumeGame();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_PlayAudioMessage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_PopAllWidgets();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_PopWidget();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_PushWidget();
@@ -53,6 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_RemoveAudioMessage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_RemoveInteractWidget();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_RemovePawnHUD();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_ResumeGame();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_SetCurrentAudioMessage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_SetShowInventory();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_SetWindowWantsInventoryAddon();
@@ -183,6 +187,18 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 	{
 		ProcessEvent(FindFunctionChecked(NAME_UFGGameUI_OnReceiveRadiationStop),NULL);
 	}
+	static FName NAME_UFGGameUI_OnResumeGame = FName(TEXT("OnResumeGame"));
+	void UFGGameUI::OnResumeGame()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UFGGameUI_OnResumeGame),NULL);
+	}
+	static FName NAME_UFGGameUI_PlayAudioMessage = FName(TEXT("PlayAudioMessage"));
+	void UFGGameUI::PlayAudioMessage(TSubclassOf<UFGAudioMessage>  messageClass)
+	{
+		FGGameUI_eventPlayAudioMessage_Parms Parms;
+		Parms.messageClass=messageClass;
+		ProcessEvent(FindFunctionChecked(NAME_UFGGameUI_PlayAudioMessage),&Parms);
+	}
 	static FName NAME_UFGGameUI_PopAllWidgets = FName(TEXT("PopAllWidgets"));
 	void UFGGameUI::PopAllWidgets()
 	{
@@ -245,6 +261,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 			{ "AddPendingMessage", &UFGGameUI::execAddPendingMessage },
 			{ "CancelPressed", &UFGGameUI::execCancelPressed },
 			{ "CanReceiveMessage", &UFGGameUI::execCanReceiveMessage },
+			{ "FindWidgetByClass", &UFGGameUI::execFindWidgetByClass },
 			{ "GetCurrentAudioMessage", &UFGGameUI::execGetCurrentAudioMessage },
 			{ "GetInteractWidgetStack", &UFGGameUI::execGetInteractWidgetStack },
 			{ "GetPendingMessages", &UFGGameUI::execGetPendingMessages },
@@ -254,6 +271,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 			{ "PopAllWidgets", &UFGGameUI::execPopAllWidgets },
 			{ "RemoveAudioMessage", &UFGGameUI::execRemoveAudioMessage },
 			{ "RemoveInteractWidget", &UFGGameUI::execRemoveInteractWidget },
+			{ "ResumeGame", &UFGGameUI::execResumeGame },
 			{ "SetCurrentAudioMessage", &UFGGameUI::execSetCurrentAudioMessage },
 			{ "SetShowInventory", &UFGGameUI::execSetShowInventory },
 			{ "SetWindowWantsInventoryAddon", &UFGGameUI::execSetWindowWantsInventoryAddon },
@@ -527,6 +545,52 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGGameUI_FindWidgetByClass_Statics
+	{
+		struct FGGameUI_eventFindWidgetByClass_Parms
+		{
+			TSubclassOf<UFGInteractWidget>  widgetClass;
+			UFGInteractWidget* ReturnValue;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_widgetClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_FindWidgetByClass_Statics::NewProp_ReturnValue_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGGameUI_FindWidgetByClass_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGGameUI_eventFindWidgetByClass_Parms, ReturnValue), Z_Construct_UClass_UFGInteractWidget_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGGameUI_FindWidgetByClass_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUI_FindWidgetByClass_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGGameUI_FindWidgetByClass_Statics::NewProp_widgetClass = { "widgetClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGGameUI_eventFindWidgetByClass_Parms, widgetClass), Z_Construct_UClass_UFGInteractWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGGameUI_FindWidgetByClass_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGGameUI_FindWidgetByClass_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGGameUI_FindWidgetByClass_Statics::NewProp_widgetClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_FindWidgetByClass_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|UI" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
+		{ "ToolTip", "Finds a widget in the interact widget stack, returns null if not found" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameUI_FindWidgetByClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameUI, nullptr, "FindWidgetByClass", sizeof(FGGameUI_eventFindWidgetByClass_Parms), Z_Construct_UFunction_UFGGameUI_FindWidgetByClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUI_FindWidgetByClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameUI_FindWidgetByClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUI_FindWidgetByClass_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGGameUI_FindWidgetByClass()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameUI_FindWidgetByClass_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGGameUI_GetCurrentAudioMessage_Statics
 	{
 		struct FGGameUI_eventGetCurrentAudioMessage_Parms
@@ -795,7 +859,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Radiation" },
+		{ "Category", "FactoryGame|Radiation" },
 		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Called when we have updated radiation intensity." },
 	};
@@ -819,7 +883,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStart_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Radiation" },
+		{ "Category", "FactoryGame|Radiation" },
 		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Called when we start receiving radiation." },
 	};
@@ -843,7 +907,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Radiation" },
+		{ "Category", "FactoryGame|Radiation" },
 		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Called when we stop receiving radiation." },
 	};
@@ -855,6 +919,60 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGGameUI_OnResumeGame_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_OnResumeGame_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|HUD" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
+		{ "ToolTip", "Blueprint event called when resuming the game" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameUI_OnResumeGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameUI, nullptr, "OnResumeGame", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameUI_OnResumeGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUI_OnResumeGame_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGGameUI_OnResumeGame()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameUI_OnResumeGame_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGGameUI_PlayAudioMessage_Statics
+	{
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_messageClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGGameUI_PlayAudioMessage_Statics::NewProp_messageClass = { "messageClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGGameUI_eventPlayAudioMessage_Parms, messageClass), Z_Construct_UClass_UFGAudioMessage_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGGameUI_PlayAudioMessage_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGGameUI_PlayAudioMessage_Statics::NewProp_messageClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_PlayAudioMessage_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Message" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
+		{ "ToolTip", "Play a audio message in the UI" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameUI_PlayAudioMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameUI, nullptr, "PlayAudioMessage", sizeof(FGGameUI_eventPlayAudioMessage_Parms), Z_Construct_UFunction_UFGGameUI_PlayAudioMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUI_PlayAudioMessage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameUI_PlayAudioMessage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUI_PlayAudioMessage_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGGameUI_PlayAudioMessage()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameUI_PlayAudioMessage_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1083,6 +1201,30 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameUI_RemovePawnHUD_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGGameUI_ResumeGame_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_ResumeGame_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|HUD" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
+		{ "ToolTip", "Call this to setup the hud for resuming the game" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameUI_ResumeGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameUI, nullptr, "ResumeGame", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameUI_ResumeGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUI_ResumeGame_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGGameUI_ResumeGame()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameUI_ResumeGame_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1333,6 +1475,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		{ &Z_Construct_UFunction_UFGGameUI_CancelPressed, "CancelPressed" }, // 3783231742
 		{ &Z_Construct_UFunction_UFGGameUI_CanReceiveMessage, "CanReceiveMessage" }, // 819594815
 		{ &Z_Construct_UFunction_UFGGameUI_ClearHintOnTutorialStepCompleted, "ClearHintOnTutorialStepCompleted" }, // 3350109600
+		{ &Z_Construct_UFunction_UFGGameUI_FindWidgetByClass, "FindWidgetByClass" }, // 2018200851
 		{ &Z_Construct_UFunction_UFGGameUI_GetCurrentAudioMessage, "GetCurrentAudioMessage" }, // 2747324523
 		{ &Z_Construct_UFunction_UFGGameUI_GetInteractWidgetStack, "GetInteractWidgetStack" }, // 1730503436
 		{ &Z_Construct_UFunction_UFGGameUI_GetPendingMessages, "GetPendingMessages" }, // 894240333
@@ -1340,9 +1483,11 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		{ &Z_Construct_UFunction_UFGGameUI_GetWindowWantsInventoryAddon, "GetWindowWantsInventoryAddon" }, // 2582081652
 		{ &Z_Construct_UFunction_UFGGameUI_HandleFocusLost, "HandleFocusLost" }, // 2729257722
 		{ &Z_Construct_UFunction_UFGGameUI_HandlePendingMessages, "HandlePendingMessages" }, // 1087233068
-		{ &Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated, "OnRadiationIntensityUpdated" }, // 2721678387
-		{ &Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStart, "OnReceiveRadiationStart" }, // 3596556944
-		{ &Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop, "OnReceiveRadiationStop" }, // 4279937303
+		{ &Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated, "OnRadiationIntensityUpdated" }, // 3048685188
+		{ &Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStart, "OnReceiveRadiationStart" }, // 1930895941
+		{ &Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop, "OnReceiveRadiationStop" }, // 1930109886
+		{ &Z_Construct_UFunction_UFGGameUI_OnResumeGame, "OnResumeGame" }, // 3723823320
+		{ &Z_Construct_UFunction_UFGGameUI_PlayAudioMessage, "PlayAudioMessage" }, // 1610900139
 		{ &Z_Construct_UFunction_UFGGameUI_PopAllWidgets, "PopAllWidgets" }, // 4199136635
 		{ &Z_Construct_UFunction_UFGGameUI_PopWidget, "PopWidget" }, // 2633039739
 		{ &Z_Construct_UFunction_UFGGameUI_PushWidget, "PushWidget" }, // 1737220337
@@ -1350,6 +1495,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		{ &Z_Construct_UFunction_UFGGameUI_RemoveAudioMessage, "RemoveAudioMessage" }, // 148536135
 		{ &Z_Construct_UFunction_UFGGameUI_RemoveInteractWidget, "RemoveInteractWidget" }, // 2081848344
 		{ &Z_Construct_UFunction_UFGGameUI_RemovePawnHUD, "RemovePawnHUD" }, // 2502990174
+		{ &Z_Construct_UFunction_UFGGameUI_ResumeGame, "ResumeGame" }, // 2975547427
 		{ &Z_Construct_UFunction_UFGGameUI_SetCurrentAudioMessage, "SetCurrentAudioMessage" }, // 2630149751
 		{ &Z_Construct_UFunction_UFGGameUI_SetShowInventory, "SetShowInventory" }, // 3917786348
 		{ &Z_Construct_UFunction_UFGGameUI_SetWindowWantsInventoryAddon, "SetWindowWantsInventoryAddon" }, // 1976105991
@@ -1430,7 +1576,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameUI, 2036898699);
+	IMPLEMENT_CLASS(UFGGameUI, 2427537753);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGGameUI>()
 	{
 		return UFGGameUI::StaticClass();

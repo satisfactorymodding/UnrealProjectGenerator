@@ -17,6 +17,7 @@ class AFGCharacterPlayer;
 class UFGItemCategory;
 class UFGItemDescriptor;
 class UWidget;
+class UFGSchematicCategory;
 class UFGBuildCategory;
 class UFGBuildSubCategory;
 class UFGRecipe;
@@ -31,7 +32,7 @@ enum class EOutlineColor : uint8;
 #endif
 #define FACTORYGAME_FGBlueprintFunctionLibrary_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execClosePopup) \
 	{ \
@@ -142,6 +143,17 @@ enum class EOutlineColor : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		UFGBlueprintFunctionLibrary::GetAllWidgetsOfClassInHierarchy(Z_Param_hierarchyContext,Z_Param_widgetClass,Z_Param_Out_foundWidgets); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetSubCategoriesForSchematicCategory) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_worldContext); \
+		P_GET_OBJECT(UClass,Z_Param_buildCategory); \
+		P_GET_TARRAY_REF(TSubclassOf<UFGSchematicCategory> ,Z_Param_Out_out_subCategories); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::GetSubCategoriesForSchematicCategory(Z_Param_worldContext,Z_Param_buildCategory,Z_Param_Out_out_subCategories); \
 		P_NATIVE_END; \
 	} \
  \
@@ -329,6 +341,26 @@ enum class EOutlineColor : uint8;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execRemoveFromSignificanceManagerGeneric) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
+		P_GET_OBJECT(UObject,Z_Param_obj); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::RemoveFromSignificanceManagerGeneric(Z_Param_WorldContextObject,Z_Param_obj); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAddPipelineToSignificanceManager) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
+		P_GET_OBJECT(UObject,Z_Param_obj); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::AddPipelineToSignificanceManager(Z_Param_WorldContextObject,Z_Param_obj); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execRemoveConveyorBeltFromSignificanceManager) \
 	{ \
 		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
@@ -508,6 +540,26 @@ enum class EOutlineColor : uint8;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execOccludeOutlineByActor) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_actor); \
+		P_GET_UBOOL(Z_Param_occlude); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::OccludeOutlineByActor(Z_Param_actor,Z_Param_occlude); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOccludeOutlineByComponent) \
+	{ \
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_comp); \
+		P_GET_UBOOL(Z_Param_occlude); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::OccludeOutlineByComponent(Z_Param_comp,Z_Param_occlude); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execShowOutline) \
 	{ \
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_comp); \
@@ -528,7 +580,7 @@ enum class EOutlineColor : uint8;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execClosePopup) \
 	{ \
@@ -639,6 +691,17 @@ enum class EOutlineColor : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		UFGBlueprintFunctionLibrary::GetAllWidgetsOfClassInHierarchy(Z_Param_hierarchyContext,Z_Param_widgetClass,Z_Param_Out_foundWidgets); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetSubCategoriesForSchematicCategory) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_worldContext); \
+		P_GET_OBJECT(UClass,Z_Param_buildCategory); \
+		P_GET_TARRAY_REF(TSubclassOf<UFGSchematicCategory> ,Z_Param_Out_out_subCategories); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::GetSubCategoriesForSchematicCategory(Z_Param_worldContext,Z_Param_buildCategory,Z_Param_Out_out_subCategories); \
 		P_NATIVE_END; \
 	} \
  \
@@ -826,6 +889,26 @@ enum class EOutlineColor : uint8;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execRemoveFromSignificanceManagerGeneric) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
+		P_GET_OBJECT(UObject,Z_Param_obj); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::RemoveFromSignificanceManagerGeneric(Z_Param_WorldContextObject,Z_Param_obj); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAddPipelineToSignificanceManager) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
+		P_GET_OBJECT(UObject,Z_Param_obj); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::AddPipelineToSignificanceManager(Z_Param_WorldContextObject,Z_Param_obj); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execRemoveConveyorBeltFromSignificanceManager) \
 	{ \
 		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
@@ -1005,6 +1088,26 @@ enum class EOutlineColor : uint8;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execOccludeOutlineByActor) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_actor); \
+		P_GET_UBOOL(Z_Param_occlude); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::OccludeOutlineByActor(Z_Param_actor,Z_Param_occlude); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOccludeOutlineByComponent) \
+	{ \
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_comp); \
+		P_GET_UBOOL(Z_Param_occlude); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::OccludeOutlineByComponent(Z_Param_comp,Z_Param_occlude); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execShowOutline) \
 	{ \
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_comp); \
@@ -1025,7 +1128,7 @@ enum class EOutlineColor : uint8;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGBlueprintFunctionLibrary(); \
 	friend struct Z_Construct_UClass_UFGBlueprintFunctionLibrary_Statics; \
@@ -1034,7 +1137,7 @@ public: \
 	DECLARE_SERIALIZER(UFGBlueprintFunctionLibrary)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGBlueprintFunctionLibrary(); \
 	friend struct Z_Construct_UClass_UFGBlueprintFunctionLibrary_Statics; \
@@ -1043,7 +1146,7 @@ public: \
 	DECLARE_SERIALIZER(UFGBlueprintFunctionLibrary)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGBlueprintFunctionLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGBlueprintFunctionLibrary) \
@@ -1056,7 +1159,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGBlueprintFunctionLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -1069,26 +1172,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGBlueprintFunctionLibrary); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGBlueprintFunctionLibrary)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_27_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_28_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_30_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

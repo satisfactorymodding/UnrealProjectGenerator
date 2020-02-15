@@ -53,29 +53,25 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #endif
 		static void* NewStructOps();
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OverrideCloudOpacity_MetaData[];
-#endif
-		static void NewProp_OverrideCloudOpacity_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_OverrideCloudOpacity;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OverrideCloudColor_MetaData[];
-#endif
-		static void NewProp_OverrideCloudColor_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_OverrideCloudColor;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OverrideZenithColor_MetaData[];
-#endif
-		static void NewProp_OverrideZenithColor_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_OverrideZenithColor;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OverrideHorizonColor_MetaData[];
-#endif
-		static void NewProp_OverrideHorizonColor_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_OverrideHorizonColor;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CloudOpacity_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_CloudOpacity;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MoonIntensity_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MoonIntensity;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MoonLightColor_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_MoonLightColor;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SunIntensity_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SunIntensity;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SunLightColor_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_SunLightColor;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CloudColor_MetaData[];
 #endif
@@ -102,46 +98,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FSkySphereSettings>();
 	}
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudOpacity_MetaData[] = {
-		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
-	};
-#endif
-	void Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudOpacity_SetBit(void* Obj)
-	{
-		((FSkySphereSettings*)Obj)->OverrideCloudOpacity = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudOpacity = { "OverrideCloudOpacity", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FSkySphereSettings), &Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudOpacity_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudOpacity_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudOpacity_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudColor_MetaData[] = {
-		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
-	};
-#endif
-	void Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudColor_SetBit(void* Obj)
-	{
-		((FSkySphereSettings*)Obj)->OverrideCloudColor = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudColor = { "OverrideCloudColor", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FSkySphereSettings), &Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudColor_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudColor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudColor_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideZenithColor_MetaData[] = {
-		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
-	};
-#endif
-	void Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideZenithColor_SetBit(void* Obj)
-	{
-		((FSkySphereSettings*)Obj)->OverrideZenithColor = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideZenithColor = { "OverrideZenithColor", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FSkySphereSettings), &Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideZenithColor_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideZenithColor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideZenithColor_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideHorizonColor_MetaData[] = {
-		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
-	};
-#endif
-	void Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideHorizonColor_SetBit(void* Obj)
-	{
-		((FSkySphereSettings*)Obj)->OverrideHorizonColor = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideHorizonColor = { "OverrideHorizonColor", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FSkySphereSettings), &Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideHorizonColor_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideHorizonColor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideHorizonColor_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_CloudOpacity_MetaData[] = {
 		{ "Category", "SkySphere" },
 		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
@@ -149,6 +105,38 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_CloudOpacity = { "CloudOpacity", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSkySphereSettings, CloudOpacity), METADATA_PARAMS(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_CloudOpacity_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_CloudOpacity_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_MoonIntensity_MetaData[] = {
+		{ "Category", "SkySphere" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
+		{ "ToolTip", "Color of the clouds after blending the skysphere curve with all volumes curves" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_MoonIntensity = { "MoonIntensity", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSkySphereSettings, MoonIntensity), METADATA_PARAMS(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_MoonIntensity_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_MoonIntensity_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_MoonLightColor_MetaData[] = {
+		{ "Category", "SkySphere" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
+		{ "ToolTip", "Color of the clouds after blending the skysphere curve with all volumes curves" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_MoonLightColor = { "MoonLightColor", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSkySphereSettings, MoonLightColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_MoonLightColor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_MoonLightColor_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_SunIntensity_MetaData[] = {
+		{ "Category", "SkySphere" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
+		{ "ToolTip", "Color of the clouds after blending the skysphere curve with all volumes curves" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_SunIntensity = { "SunIntensity", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSkySphereSettings, SunIntensity), METADATA_PARAMS(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_SunIntensity_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_SunIntensity_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_SunLightColor_MetaData[] = {
+		{ "Category", "SkySphere" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
+		{ "ToolTip", "Color of the clouds after blending the skysphere curve with all volumes curves" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_SunLightColor = { "SunLightColor", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSkySphereSettings, SunLightColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_SunLightColor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_SunLightColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_CloudColor_MetaData[] = {
 		{ "Category", "SkySphere" },
@@ -174,11 +162,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_HorizonColor = { "HorizonColor", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSkySphereSettings, HorizonColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_HorizonColor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_HorizonColor_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSkySphereSettings_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudOpacity,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudColor,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideZenithColor,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideHorizonColor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_CloudOpacity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_MoonIntensity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_MoonLightColor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_SunIntensity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_SunLightColor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_CloudColor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_ZenithColor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_HorizonColor,
@@ -211,7 +199,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSkySphereSettings_Hash() { return 944061855U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSkySphereSettings_Hash() { return 996099622U; }
 	static FName NAME_AFGSkySphere_ApplySkySphereSettings = FName(TEXT("ApplySkySphereSettings"));
 	void AFGSkySphere::ApplySkySphereSettings(FSkySphereSettings const& settings)
 	{
@@ -459,6 +447,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mCloudOpacity_MetaData[] = {
 		{ "Category", "Curves|SkySphere" },
+		{ "DisplayName", "Cloudiness" },
 		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "How the opakeness of the clouds change during the day" },
 	};
@@ -562,7 +551,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSkySphere, 296779843);
+	IMPLEMENT_CLASS(AFGSkySphere, 3497365320);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSkySphere>()
 	{
 		return AFGSkySphere::StaticClass();

@@ -170,7 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDecor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableDecor, 4082405484);
+	IMPLEMENT_CLASS(AFGBuildableDecor, 1283937532);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableDecor>()
 	{
 		return AFGBuildableDecor::StaticClass();

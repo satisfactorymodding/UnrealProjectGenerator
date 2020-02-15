@@ -343,7 +343,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceMiner() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceMiner, 3297269616);
+	IMPLEMENT_CLASS(AFGResourceMiner, 774037394);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGResourceMiner>()
 	{
 		return AFGResourceMiner::StaticClass();

@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGInteractWidget();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInteractWidget_GetCustomTickRate();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInteractWidget_GetDefaultFocusWidget();
 	UMG_API UClass* Z_Construct_UClass_UWidget_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInteractWidget_GetDesiredAlignmentSize();
@@ -29,6 +30,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInteractWidget_GetUseGamepadCursor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInteractWidget_Init();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInteractWidget_OnConsume();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInteractWidget_OnCustomTick();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInteractWidget_OnEscapePressed();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInteractWidget_SetDefaultFocusWidget();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInteractWidget_SetDesiredAlignmentSize();
@@ -46,6 +48,13 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 	void UFGInteractWidget::Init()
 	{
 		ProcessEvent(FindFunctionChecked(NAME_UFGInteractWidget_Init),NULL);
+	}
+	static FName NAME_UFGInteractWidget_OnCustomTick = FName(TEXT("OnCustomTick"));
+	void UFGInteractWidget::OnCustomTick(float UpdateTime)
+	{
+		FGInteractWidget_eventOnCustomTick_Parms Parms;
+		Parms.UpdateTime=UpdateTime;
+		ProcessEvent(FindFunctionChecked(NAME_UFGInteractWidget_OnCustomTick),&Parms);
 	}
 	static FName NAME_UFGInteractWidget_OnEscapePressed = FName(TEXT("OnEscapePressed"));
 	void UFGInteractWidget::OnEscapePressed()
@@ -76,6 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 	{
 		UClass* Class = UFGInteractWidget::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "GetCustomTickRate", &UFGInteractWidget::execGetCustomTickRate },
 			{ "GetDefaultFocusWidget", &UFGInteractWidget::execGetDefaultFocusWidget },
 			{ "GetDesiredAlignmentSize", &UFGInteractWidget::execGetDesiredAlignmentSize },
 			{ "GetDesiredHorizontalAlignment", &UFGInteractWidget::execGetDesiredHorizontalAlignment },
@@ -95,6 +105,40 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 			{ "UpdateIgnoreMoveInput", &UFGInteractWidget::execUpdateIgnoreMoveInput },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UFGInteractWidget_GetCustomTickRate_Statics
+	{
+		struct FGInteractWidget_eventGetCustomTickRate_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGInteractWidget_GetCustomTickRate_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInteractWidget_eventGetCustomTickRate_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGInteractWidget_GetCustomTickRate_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInteractWidget_GetCustomTickRate_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_GetCustomTickRate_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Custom Tick" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
+		{ "ToolTip", "Get the rate for the timer that triggers the custom tick" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInteractWidget_GetCustomTickRate_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInteractWidget, nullptr, "GetCustomTickRate", sizeof(FGInteractWidget_eventGetCustomTickRate_Parms), Z_Construct_UFunction_UFGInteractWidget_GetCustomTickRate_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInteractWidget_GetCustomTickRate_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInteractWidget_GetCustomTickRate_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInteractWidget_GetCustomTickRate_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGInteractWidget_GetCustomTickRate()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGInteractWidget_GetCustomTickRate_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UFGInteractWidget_GetDefaultFocusWidget_Statics
 	{
@@ -361,6 +405,36 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGInteractWidget_OnConsume_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGInteractWidget_OnCustomTick_Statics
+	{
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_UpdateTime;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGInteractWidget_OnCustomTick_Statics::NewProp_UpdateTime = { "UpdateTime", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInteractWidget_eventOnCustomTick_Parms, UpdateTime), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGInteractWidget_OnCustomTick_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInteractWidget_OnCustomTick_Statics::NewProp_UpdateTime,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_OnCustomTick_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Custom Tick" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
+		{ "ToolTip", "Custom tick event for updating UI that needs frequent updates. If custom tick rate <= 0.f this event will not trigger" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInteractWidget_OnCustomTick_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInteractWidget, nullptr, "OnCustomTick", sizeof(FGInteractWidget_eventOnCustomTick_Parms), Z_Construct_UFunction_UFGInteractWidget_OnCustomTick_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInteractWidget_OnCustomTick_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInteractWidget_OnCustomTick_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInteractWidget_OnCustomTick_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGInteractWidget_OnCustomTick()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGInteractWidget_OnCustomTick_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -645,6 +719,15 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mDefaultFocusWidget;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCallCustomTickOnConstruct_MetaData[];
+#endif
+		static void NewProp_mCallCustomTickOnConstruct_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mCallCustomTickOnConstruct;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCustomTickRate_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mCustomTickRate;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mUseGamepadCursor_MetaData[];
 #endif
 		static void NewProp_mUseGamepadCursor_SetBit(void* Obj);
@@ -703,6 +786,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGInteractWidget_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UFGInteractWidget_GetCustomTickRate, "GetCustomTickRate" }, // 1834673783
 		{ &Z_Construct_UFunction_UFGInteractWidget_GetDefaultFocusWidget, "GetDefaultFocusWidget" }, // 3174517443
 		{ &Z_Construct_UFunction_UFGInteractWidget_GetDesiredAlignmentSize, "GetDesiredAlignmentSize" }, // 3962856190
 		{ &Z_Construct_UFunction_UFGInteractWidget_GetDesiredHorizontalAlignment, "GetDesiredHorizontalAlignment" }, // 3801061424
@@ -711,6 +795,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 		{ &Z_Construct_UFunction_UFGInteractWidget_GetUseGamepadCursor, "GetUseGamepadCursor" }, // 4144504399
 		{ &Z_Construct_UFunction_UFGInteractWidget_Init, "Init" }, // 1963695840
 		{ &Z_Construct_UFunction_UFGInteractWidget_OnConsume, "OnConsume" }, // 1077419299
+		{ &Z_Construct_UFunction_UFGInteractWidget_OnCustomTick, "OnCustomTick" }, // 3165730862
 		{ &Z_Construct_UFunction_UFGInteractWidget_OnEscapePressed, "OnEscapePressed" }, // 2813279018
 		{ &Z_Construct_UFunction_UFGInteractWidget_SetDefaultFocusWidget, "SetDefaultFocusWidget" }, // 2677353105
 		{ &Z_Construct_UFunction_UFGInteractWidget_SetDesiredAlignmentSize, "SetDesiredAlignmentSize" }, // 4033821962
@@ -749,6 +834,26 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mDefaultFocusWidget = { "mDefaultFocusWidget", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGInteractWidget, mDefaultFocusWidget), Z_Construct_UClass_UWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mDefaultFocusWidget_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mDefaultFocusWidget_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mCallCustomTickOnConstruct_MetaData[] = {
+		{ "Category", "Custom Tick" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
+		{ "ToolTip", "True if the custom tick event be called on construct. If <= 0.f no event will be triggered" },
+	};
+#endif
+	void Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mCallCustomTickOnConstruct_SetBit(void* Obj)
+	{
+		((UFGInteractWidget*)Obj)->mCallCustomTickOnConstruct = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mCallCustomTickOnConstruct = { "mCallCustomTickOnConstruct", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGInteractWidget), &Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mCallCustomTickOnConstruct_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mCallCustomTickOnConstruct_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mCallCustomTickOnConstruct_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mCustomTickRate_MetaData[] = {
+		{ "Category", "Custom Tick" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
+		{ "ToolTip", "The rate for the timer that triggers the custom tick. If <= 0.f no timer will be started" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mCustomTickRate = { "mCustomTickRate", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGInteractWidget, mCustomTickRate), METADATA_PARAMS(Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mCustomTickRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mCustomTickRate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mUseGamepadCursor_MetaData[] = {
 		{ "Category", "UI" },
@@ -862,6 +967,8 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGInteractWidget_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mSupportsStacking,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mDefaultFocusWidget,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mCallCustomTickOnConstruct,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mCustomTickRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mUseGamepadCursor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mDefaultFocusWidgetClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mInteractObject,
@@ -902,7 +1009,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInteractWidget, 296627208);
+	IMPLEMENT_CLASS(UFGInteractWidget, 458772603);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGInteractWidget>()
 	{
 		return UFGInteractWidget::StaticClass();

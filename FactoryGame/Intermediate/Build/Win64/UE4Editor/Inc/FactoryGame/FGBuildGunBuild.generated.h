@@ -8,10 +8,13 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+enum class EHologramSplinePathMode : uint8;
 class UPrimitiveComponent;
 class AActor;
 struct FHitResult;
+struct FNetConstructionID;
 class UFGItemDescriptor;
+struct FConstructHologramMessage;
 class AFGHologram;
 struct FItemAmount;
 #ifdef FACTORYGAME_FGBuildGunBuild_generated_h
@@ -19,23 +22,47 @@ struct FItemAmount;
 #endif
 #define FACTORYGAME_FGBuildGunBuild_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_41_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_52_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFactoryClearanceData_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFactoryClearanceData>();
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_17_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_28_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FConnectionRepresentation_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FConnectionRepresentation>();
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_23_DELEGATE \
+struct _Script_FactoryGame_eventSplineModeChangedDelegate_Parms \
+{ \
+	EHologramSplinePathMode newMode; \
+}; \
+static inline void FSplineModeChangedDelegate_DelegateWrapper(const FMulticastScriptDelegate& SplineModeChangedDelegate, EHologramSplinePathMode newMode) \
+{ \
+	_Script_FactoryGame_eventSplineModeChangedDelegate_Parms Parms; \
+	Parms.newMode=newMode; \
+	SplineModeChangedDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_RPC_WRAPPERS \
+	virtual void Client_OnBuildableFailedConstruction_Implementation(FNetConstructionID netConstructionID); \
 	virtual void Client_OnBuildableConstructed_Implementation(TSubclassOf<UFGItemDescriptor>  desc); \
 	virtual void Client_OnResetHologram_Implementation(); \
+	virtual bool Server_ConstructHologram_Validate(FNetConstructionID , FConstructHologramMessage ); \
+	virtual void Server_ConstructHologram_Implementation(FNetConstructionID clientNetConstructID, FConstructHologramMessage data); \
+ \
+	DECLARE_FUNCTION(execOnUserSettingsUpdated) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnUserSettingsUpdated(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execEndClearanceOverlap) \
 	{ \
@@ -60,6 +87,15 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FConnectionReprese
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->BeginClearanceOverlap(Z_Param_OverlappedComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execClient_OnBuildableFailedConstruction) \
+	{ \
+		P_GET_STRUCT(FNetConstructionID,Z_Param_netConstructionID); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Client_OnBuildableFailedConstruction_Implementation(Z_Param_netConstructionID); \
 		P_NATIVE_END; \
 	} \
  \
@@ -96,6 +132,38 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FConnectionReprese
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execSetActiveSplineMode) \
+	{ \
+		P_GET_ENUM(EHologramSplinePathMode,Z_Param_mode); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetActiveSplineMode(EHologramSplinePathMode(Z_Param_mode)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetSupportedSplineModes) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<EHologramSplinePathMode>*)Z_Param__Result=P_THIS->GetSupportedSplineModes(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_ConstructHologram) \
+	{ \
+		P_GET_STRUCT(FNetConstructionID,Z_Param_clientNetConstructID); \
+		P_GET_STRUCT(FConstructHologramMessage,Z_Param_data); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_ConstructHologram_Validate(Z_Param_clientNetConstructID,Z_Param_data)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_ConstructHologram_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_ConstructHologram_Implementation(Z_Param_clientNetConstructID,Z_Param_data); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetHologram) \
 	{ \
 		P_FINISH; \
@@ -121,9 +189,20 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FConnectionReprese
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void Client_OnBuildableFailedConstruction_Implementation(FNetConstructionID netConstructionID); \
 	virtual void Client_OnBuildableConstructed_Implementation(TSubclassOf<UFGItemDescriptor>  desc); \
 	virtual void Client_OnResetHologram_Implementation(); \
+	virtual bool Server_ConstructHologram_Validate(FNetConstructionID , FConstructHologramMessage ); \
+	virtual void Server_ConstructHologram_Implementation(FNetConstructionID clientNetConstructID, FConstructHologramMessage data); \
+ \
+	DECLARE_FUNCTION(execOnUserSettingsUpdated) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnUserSettingsUpdated(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execEndClearanceOverlap) \
 	{ \
@@ -148,6 +227,15 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FConnectionReprese
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->BeginClearanceOverlap(Z_Param_OverlappedComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execClient_OnBuildableFailedConstruction) \
+	{ \
+		P_GET_STRUCT(FNetConstructionID,Z_Param_netConstructionID); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Client_OnBuildableFailedConstruction_Implementation(Z_Param_netConstructionID); \
 		P_NATIVE_END; \
 	} \
  \
@@ -184,6 +272,38 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FConnectionReprese
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execSetActiveSplineMode) \
+	{ \
+		P_GET_ENUM(EHologramSplinePathMode,Z_Param_mode); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetActiveSplineMode(EHologramSplinePathMode(Z_Param_mode)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetSupportedSplineModes) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<EHologramSplinePathMode>*)Z_Param__Result=P_THIS->GetSupportedSplineModes(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_ConstructHologram) \
+	{ \
+		P_GET_STRUCT(FNetConstructionID,Z_Param_clientNetConstructID); \
+		P_GET_STRUCT(FConstructHologramMessage,Z_Param_data); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_ConstructHologram_Validate(Z_Param_clientNetConstructID,Z_Param_data)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_ConstructHologram_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_ConstructHologram_Implementation(Z_Param_clientNetConstructID,Z_Param_data); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetHologram) \
 	{ \
 		P_FINISH; \
@@ -209,19 +329,28 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FConnectionReprese
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_EVENT_PARMS \
 	struct FGBuildGunStateBuild_eventClient_OnBuildableConstructed_Parms \
 	{ \
 		TSubclassOf<UFGItemDescriptor>  desc; \
 	}; \
+	struct FGBuildGunStateBuild_eventClient_OnBuildableFailedConstruction_Parms \
+	{ \
+		FNetConstructionID netConstructionID; \
+	}; \
 	struct FGBuildGunStateBuild_eventOnMultiStepPlacement_Parms \
 	{ \
 		bool isFinalStep; \
+	}; \
+	struct FGBuildGunStateBuild_eventServer_ConstructHologram_Parms \
+	{ \
+		FNetConstructionID clientNetConstructID; \
+		FConstructHologramMessage data; \
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGBuildGunStateBuild(); \
 	friend struct Z_Construct_UClass_UFGBuildGunStateBuild_Statics; \
@@ -230,7 +359,7 @@ public: \
 	DECLARE_SERIALIZER(UFGBuildGunStateBuild)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGBuildGunStateBuild(); \
 	friend struct Z_Construct_UClass_UFGBuildGunStateBuild_Statics; \
@@ -239,7 +368,7 @@ public: \
 	DECLARE_SERIALIZER(UFGBuildGunStateBuild)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGBuildGunStateBuild(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGBuildGunStateBuild) \
@@ -252,7 +381,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGBuildGunStateBuild(UFGBuildGunStateBuild&&); \
@@ -263,7 +392,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGBuildGunStateBuild); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGBuildGunStateBuild)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__mSplineModeSelectHoldDownDurationForUI() { return STRUCT_OFFSET(UFGBuildGunStateBuild, mSplineModeSelectHoldDownDurationForUI); } \
+	FORCEINLINE static uint32 __PPO__mIsWaitingForSelectionUI() { return STRUCT_OFFSET(UFGBuildGunStateBuild, mIsWaitingForSelectionUI); } \
+	FORCEINLINE static uint32 __PPO__mIsUsingPressAndReleaseAsBuildSteps() { return STRUCT_OFFSET(UFGBuildGunStateBuild, mIsUsingPressAndReleaseAsBuildSteps); } \
 	FORCEINLINE static uint32 __PPO__mPendingRecipe() { return STRUCT_OFFSET(UFGBuildGunStateBuild, mPendingRecipe); } \
 	FORCEINLINE static uint32 __PPO__mActiveRecipe() { return STRUCT_OFFSET(UFGBuildGunStateBuild, mActiveRecipe); } \
 	FORCEINLINE static uint32 __PPO__mHologram() { return STRUCT_OFFSET(UFGBuildGunStateBuild, mHologram); } \
@@ -272,30 +404,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGBuildGunStateBuild); \
 	FORCEINLINE static uint32 __PPO__mClearanceDetector() { return STRUCT_OFFSET(UFGBuildGunStateBuild, mClearanceDetector); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_68_PROLOG \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_81_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_84_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

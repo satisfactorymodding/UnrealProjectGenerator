@@ -672,7 +672,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadTimeTable, 331116729);
+	IMPLEMENT_CLASS(AFGRailroadTimeTable, 2915950113);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRailroadTimeTable>()
 	{
 		return AFGRailroadTimeTable::StaticClass();

@@ -22,7 +22,8 @@ public:
 	// Begin AFGHologram interface
 	virtual class USceneComponent* SetupComponent( USceneComponent* attachParent, UActorComponent* componentTemplate, const FName& componentName ) override;
 	virtual void SetHologramLocationAndRotation( const FHitResult& hitResult ) override;
-	virtual bool MultiStepPlacement() override;
+	virtual int32 GetBaseCostMultiplier() const override;
+	virtual bool DoMultiStepPlacement(bool isInputFromARelease) override;
 	// End AFGHologram interface
 
 	// Begin AFGBuildableHologram interface
@@ -47,8 +48,7 @@ protected:
 	// End AFGBuildableHologram interface
 
 	// Begin AFGSplineHologram interface
-	virtual void OnRep_SplineData() override;
-	virtual int32 GetNumCostSections() const override;
+	virtual void UpdateSplineComponent() override;
 	// End AFGSplineHologram interface
 
 private:
@@ -78,9 +78,6 @@ private:
 	/** From how far away we should snap to another track. [cm] */
 	UPROPERTY( EditDefaultsOnly, Category = "Tracks" )
 	float mSnapDistance;
-
-	/** Index of the currently moved point. */
-	int32 mActivePointIdx;
 
 	/** The track connections we have. */
 	UPROPERTY()

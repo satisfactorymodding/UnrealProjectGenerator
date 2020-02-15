@@ -444,7 +444,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRenderTargetStage, 667566861);
+	IMPLEMENT_CLASS(AFGRenderTargetStage, 2037313276);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRenderTargetStage>()
 	{
 		return AFGRenderTargetStage::StaticClass();

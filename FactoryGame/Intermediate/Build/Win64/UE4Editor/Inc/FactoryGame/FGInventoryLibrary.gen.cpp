@@ -30,7 +30,15 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryLibrary_CreateInventoryComponent();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGInventoryComponent_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryLibrary_CreateInventoryComponentOfClass();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm();
+	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EResourceForm();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryLibrary_GetMinNumSlotsForItems();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableFactory_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryLibrary_GrabAllItemsFromInventory();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryLibrary_HasItems();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryLibrary_HasState();
@@ -39,6 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryLibrary_MakeInventoryStack();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryLibrary_MergeInventoryItem();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryLibrary_MoveInventoryItem();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm();
 // End Cross Module References
 	void UFGInventoryLibrary::StaticRegisterNativesUFGInventoryLibrary()
 	{
@@ -50,7 +59,13 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 			{ "ConsolidateItemsAmount", &UFGInventoryLibrary::execConsolidateItemsAmount },
 			{ "CreateInventoryComponent", &UFGInventoryLibrary::execCreateInventoryComponent },
 			{ "CreateInventoryComponentOfClass", &UFGInventoryLibrary::execCreateInventoryComponentOfClass },
+			{ "GetAmountConvertedByForm", &UFGInventoryLibrary::execGetAmountConvertedByForm },
+			{ "GetAmountConvertedFromItemAmount", &UFGInventoryLibrary::execGetAmountConvertedFromItemAmount },
+			{ "GetConversionScalarByForm", &UFGInventoryLibrary::execGetConversionScalarByForm },
 			{ "GetMinNumSlotsForItems", &UFGInventoryLibrary::execGetMinNumSlotsForItems },
+			{ "GetProductionSuffixFromFormType", &UFGInventoryLibrary::execGetProductionSuffixFromFormType },
+			{ "GetUIDataFullForInventoryStack", &UFGInventoryLibrary::execGetUIDataFullForInventoryStack },
+			{ "GetUIDataPartialForInventoryStack", &UFGInventoryLibrary::execGetUIDataPartialForInventoryStack },
 			{ "GrabAllItemsFromInventory", &UFGInventoryLibrary::execGrabAllItemsFromInventory },
 			{ "HasItems", &UFGInventoryLibrary::execHasItems },
 			{ "HasState", &UFGInventoryLibrary::execHasState },
@@ -59,6 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 			{ "MakeInventoryStack", &UFGInventoryLibrary::execMakeInventoryStack },
 			{ "MergeInventoryItem", &UFGInventoryLibrary::execMergeInventoryItem },
 			{ "MoveInventoryItem", &UFGInventoryLibrary::execMoveInventoryItem },
+			{ "RemoveAllItemsNotOfResourceForm", &UFGInventoryLibrary::execRemoveAllItemsNotOfResourceForm },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -380,6 +396,141 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics
+	{
+		struct FGInventoryLibrary_eventGetAmountConvertedByForm_Parms
+		{
+			int32 amount;
+			EResourceForm form;
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_form;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_form_Underlying;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_amount;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetAmountConvertedByForm_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics::NewProp_form = { "form", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetAmountConvertedByForm_Parms, form), Z_Construct_UEnum_FactoryGame_EResourceForm, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics::NewProp_form_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics::NewProp_amount = { "amount", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetAmountConvertedByForm_Parms, amount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics::NewProp_form,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics::NewProp_form_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics::NewProp_amount,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Inventory" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
+		{ "ToolTip", "Returns the amount of inventory items converted to the appropriate units for displaying in the UI\n@param amount - quantity of unmodified inventory items. eg. 1000 Liquid inventory will be divided by 1000.f to return 1 m^3" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInventoryLibrary, nullptr, "GetAmountConvertedByForm", sizeof(FGInventoryLibrary_eventGetAmountConvertedByForm_Parms), Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics
+	{
+		struct FGInventoryLibrary_eventGetAmountConvertedFromItemAmount_Parms
+		{
+			FItemAmount itemAmount;
+			TSubclassOf<UFGItemDescriptor>  itemClass;
+			float amountConverted;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_amountConverted;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_itemClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_itemAmount_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_itemAmount;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::NewProp_amountConverted = { "amountConverted", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetAmountConvertedFromItemAmount_Parms, amountConverted), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::NewProp_itemClass = { "itemClass", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetAmountConvertedFromItemAmount_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::NewProp_itemAmount_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::NewProp_itemAmount = { "itemAmount", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetAmountConvertedFromItemAmount_Parms, itemAmount), Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::NewProp_itemAmount_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::NewProp_itemAmount_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::NewProp_amountConverted,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::NewProp_itemClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::NewProp_itemAmount,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Item" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
+		{ "ToolTip", "Returns the amount of inventory items converted to the appropriate units for displaying in the UI. Also returns the split itemAmount for ease of access in widgets.\n@param itemAmount - FItemAmount to use as the base for conversion. The item form will be pulled from the itemAmount.ItemClass to determine the conversion.\n@param itemClass - (Out) The item class of the FItemAmount\n@param amountConverted - The amount converted to the correct representation in the UI. eg. 1000 Liquid inventory will be divided by 1000.f to return 1.f ( m^3 )" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInventoryLibrary, nullptr, "GetAmountConvertedFromItemAmount", sizeof(FGInventoryLibrary_eventGetAmountConvertedFromItemAmount_Parms), Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm_Statics
+	{
+		struct FGInventoryLibrary_eventGetConversionScalarByForm_Parms
+		{
+			EResourceForm form;
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_form;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_form_Underlying;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetConversionScalarByForm_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm_Statics::NewProp_form = { "form", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetConversionScalarByForm_Parms, form), Z_Construct_UEnum_FactoryGame_EResourceForm, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm_Statics::NewProp_form_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm_Statics::NewProp_form,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm_Statics::NewProp_form_Underlying,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Inventory" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInventoryLibrary, nullptr, "GetConversionScalarByForm", sizeof(FGInventoryLibrary_eventGetConversionScalarByForm_Parms), Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGInventoryLibrary_GetMinNumSlotsForItems_Statics
 	{
 		struct FGInventoryLibrary_eventGetMinNumSlotsForItems_Parms
@@ -418,6 +569,190 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGInventoryLibrary_GetMinNumSlotsForItems_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType_Statics
+	{
+		struct FGInventoryLibrary_eventGetProductionSuffixFromFormType_Parms
+		{
+			EResourceForm form;
+			FText ReturnValue;
+		};
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_form;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_form_Underlying;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetProductionSuffixFromFormType_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType_Statics::NewProp_form = { "form", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetProductionSuffixFromFormType_Parms, form), Z_Construct_UEnum_FactoryGame_EResourceForm, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType_Statics::NewProp_form_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType_Statics::NewProp_form,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType_Statics::NewProp_form_Underlying,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Inventory" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
+		{ "ToolTip", "Returns the UI Suffix for production quantities based on a Resource Form Type" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInventoryLibrary, nullptr, "GetProductionSuffixFromFormType", sizeof(FGInventoryLibrary_eventGetProductionSuffixFromFormType_Parms), Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics
+	{
+		struct FGInventoryLibrary_eventGetUIDataFullForInventoryStack_Parms
+		{
+			FInventoryStack inventoryStack;
+			const TSubclassOf<AFGBuildableFactory>  buildableFactory;
+			TSubclassOf<UFGItemDescriptor>  itemClass;
+			float numItemsConverted;
+			float maxItemsConverted;
+			FText suffix;
+			EResourceForm form;
+		};
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_form;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_form_Underlying;
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_suffix;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_maxItemsConverted;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_numItemsConverted;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_itemClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_buildableFactory_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_buildableFactory;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_inventoryStack_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_inventoryStack;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_form = { "form", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetUIDataFullForInventoryStack_Parms, form), Z_Construct_UEnum_FactoryGame_EResourceForm, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_form_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_suffix = { "suffix", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetUIDataFullForInventoryStack_Parms, suffix), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_maxItemsConverted = { "maxItemsConverted", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetUIDataFullForInventoryStack_Parms, maxItemsConverted), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_numItemsConverted = { "numItemsConverted", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetUIDataFullForInventoryStack_Parms, numItemsConverted), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_itemClass = { "itemClass", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetUIDataFullForInventoryStack_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_buildableFactory_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_buildableFactory = { "buildableFactory", nullptr, (EPropertyFlags)0x0014000000000082, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetUIDataFullForInventoryStack_Parms, buildableFactory), Z_Construct_UClass_AFGBuildableFactory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_buildableFactory_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_buildableFactory_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_inventoryStack_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_inventoryStack = { "inventoryStack", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetUIDataFullForInventoryStack_Parms, inventoryStack), Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_inventoryStack_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_inventoryStack_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_form,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_form_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_suffix,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_maxItemsConverted,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_numItemsConverted,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_itemClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_buildableFactory,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::NewProp_inventoryStack,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Item" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
+		{ "ToolTip", "Returns the amount of stack items converted to the appropriate units for displaying in the UI including suffix and form data. This also returns the split data for ease of access in Widgets.\n@param inventoryStack - (In) FInventoryStack to use as the base for conversion. The item form will be pulled from the stacks ItemClass to determine the conversion.\n@param buildableClass - (In) (Optional) if passed a valid buildable and the resource form is not SOLID, the converted maximimum stack will also be scaled by the buildables stack size\n@param itemClass - (Out) The item class of the inventory stack.\n@param numItemsConverted - (Out) The numItems converted to the correct representation for the UI. eg. 1000 Liquid inventory will be divided by 1000.f to return 1.f ( m^3 )\n@param maxItemsConverted - (Out) The max stack size for this InventoryStack. If a buildableClass was passed and the resource form is not SOLID, this value will also be scaled to by the buildables stack size scalar.\n@param suffix - (Out) The UI suffix for this part form ( Tex. Solid = \"Parts\", Liquid = \"m^3\" )\n@param form - (Out) The resource form of this ItemStack" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInventoryLibrary, nullptr, "GetUIDataFullForInventoryStack", sizeof(FGInventoryLibrary_eventGetUIDataFullForInventoryStack_Parms), Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics
+	{
+		struct FGInventoryLibrary_eventGetUIDataPartialForInventoryStack_Parms
+		{
+			FInventoryStack inventoryStack;
+			const TSubclassOf<AFGBuildableFactory>  buildableFactory;
+			TSubclassOf<UFGItemDescriptor>  itemClass;
+			float numItemsConverted;
+			float maxItemsConverted;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_maxItemsConverted;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_numItemsConverted;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_itemClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_buildableFactory_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_buildableFactory;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_inventoryStack_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_inventoryStack;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::NewProp_maxItemsConverted = { "maxItemsConverted", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetUIDataPartialForInventoryStack_Parms, maxItemsConverted), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::NewProp_numItemsConverted = { "numItemsConverted", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetUIDataPartialForInventoryStack_Parms, numItemsConverted), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::NewProp_itemClass = { "itemClass", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetUIDataPartialForInventoryStack_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::NewProp_buildableFactory_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::NewProp_buildableFactory = { "buildableFactory", nullptr, (EPropertyFlags)0x0014000000000082, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetUIDataPartialForInventoryStack_Parms, buildableFactory), Z_Construct_UClass_AFGBuildableFactory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::NewProp_buildableFactory_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::NewProp_buildableFactory_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::NewProp_inventoryStack_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::NewProp_inventoryStack = { "inventoryStack", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventGetUIDataPartialForInventoryStack_Parms, inventoryStack), Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::NewProp_inventoryStack_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::NewProp_inventoryStack_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::NewProp_maxItemsConverted,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::NewProp_numItemsConverted,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::NewProp_itemClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::NewProp_buildableFactory,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::NewProp_inventoryStack,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Item" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
+		{ "ToolTip", "Returns the amount of stack items converted to the appropriate units for displaying in the UI, excluding suffix and form data. This also returns the split data for ease of access in Widgets.\n@param inventoryStack - (In) FInventoryStack to use as the base for conversion. The item form will be pulled from the stacks ItemClass to determine the conversion.\n@param buildableClass - (In) (Optional) if passed a valid buildable and the resource form is not SOLID, the converted maximimum stack will also be scaled by the buildables stack size\n@param itemClass - (Out) The item class of the inventory stack.\n@param numItemsConverted - (Out) The numItems converted to the correct representation for the UI. eg. 1000 Liquid inventory will be divided by 1000.f to return 1.f ( m^3 )\n@param maxItemsConverted - (Out) The max stack size for this InventoryStack. If a buildableClass was passed and the resource form is not SOLID, this value will also be scaled to by the buildables stack size scalar." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInventoryLibrary, nullptr, "GetUIDataPartialForInventoryStack", sizeof(FGInventoryLibrary_eventGetUIDataPartialForInventoryStack_Parms), Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -850,6 +1185,51 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics
+	{
+		struct FGInventoryLibrary_eventRemoveAllItemsNotOfResourceForm_Parms
+		{
+			TArray<FInventoryStack> items;
+			EResourceForm validForm;
+		};
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_validForm;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_validForm_Underlying;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_items;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_items_Inner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics::NewProp_validForm = { "validForm", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventRemoveAllItemsNotOfResourceForm_Parms, validForm), Z_Construct_UEnum_FactoryGame_EResourceForm, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics::NewProp_validForm_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics::NewProp_items = { "items", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryLibrary_eventRemoveAllItemsNotOfResourceForm_Parms, items), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics::NewProp_items_Inner = { "items", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics::NewProp_validForm,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics::NewProp_validForm_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics::NewProp_items,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics::NewProp_items_Inner,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Inventory" },
+		{ "CPP_Default_validForm", "RF_SOLID" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
+		{ "ToolTip", "Removes all stacks whom's resource form does not match the passed form\n@param items - Array of items by ref to remove from\n@param validForm - Keep items of this form. Default == RF_SOLID" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInventoryLibrary, nullptr, "RemoveAllItemsNotOfResourceForm", sizeof(FGInventoryLibrary_eventRemoveAllItemsNotOfResourceForm_Parms), Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UFGInventoryLibrary_NoRegister()
 	{
 		return UFGInventoryLibrary::StaticClass();
@@ -875,7 +1255,13 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 		{ &Z_Construct_UFunction_UFGInventoryLibrary_ConsolidateItemsAmount, "ConsolidateItemsAmount" }, // 3035905722
 		{ &Z_Construct_UFunction_UFGInventoryLibrary_CreateInventoryComponent, "CreateInventoryComponent" }, // 1279328882
 		{ &Z_Construct_UFunction_UFGInventoryLibrary_CreateInventoryComponentOfClass, "CreateInventoryComponentOfClass" }, // 195531373
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedByForm, "GetAmountConvertedByForm" }, // 259177286
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_GetAmountConvertedFromItemAmount, "GetAmountConvertedFromItemAmount" }, // 828306326
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_GetConversionScalarByForm, "GetConversionScalarByForm" }, // 646368782
 		{ &Z_Construct_UFunction_UFGInventoryLibrary_GetMinNumSlotsForItems, "GetMinNumSlotsForItems" }, // 3901132798
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_GetProductionSuffixFromFormType, "GetProductionSuffixFromFormType" }, // 3087233621
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataFullForInventoryStack, "GetUIDataFullForInventoryStack" }, // 1943188342
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_GetUIDataPartialForInventoryStack, "GetUIDataPartialForInventoryStack" }, // 2403067432
 		{ &Z_Construct_UFunction_UFGInventoryLibrary_GrabAllItemsFromInventory, "GrabAllItemsFromInventory" }, // 1091470000
 		{ &Z_Construct_UFunction_UFGInventoryLibrary_HasItems, "HasItems" }, // 1774446307
 		{ &Z_Construct_UFunction_UFGInventoryLibrary_HasState, "HasState" }, // 2824438847
@@ -884,6 +1270,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 		{ &Z_Construct_UFunction_UFGInventoryLibrary_MakeInventoryStack, "MakeInventoryStack" }, // 1455698016
 		{ &Z_Construct_UFunction_UFGInventoryLibrary_MergeInventoryItem, "MergeInventoryItem" }, // 2740858737
 		{ &Z_Construct_UFunction_UFGInventoryLibrary_MoveInventoryItem, "MoveInventoryItem" }, // 259760545
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_RemoveAllItemsNotOfResourceForm, "RemoveAllItemsNotOfResourceForm" }, // 530867313
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryLibrary_Statics::Class_MetaDataParams[] = {
@@ -919,7 +1306,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryLibrary, 650765114);
+	IMPLEMENT_CLASS(UFGInventoryLibrary, 3152772004);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGInventoryLibrary>()
 	{
 		return UFGInventoryLibrary::StaticClass();

@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRoad() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableRoad();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildable();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
-	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FSplinePointData();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FSplinePointData();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSplineComponent_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRoadConnectionComponent_NoRegister();
 // End Cross Module References
@@ -137,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRoad() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRoad, 3034832394);
+	IMPLEMENT_CLASS(AFGBuildableRoad, 354255569);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableRoad>()
 	{
 		return AFGBuildableRoad::StaticClass();

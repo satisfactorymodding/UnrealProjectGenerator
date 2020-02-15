@@ -35,7 +35,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorPoleHologram_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AFGConveyorPoleHologram(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API AFGConveyorPoleHologram(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGConveyorPoleHologram) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AFGConveyorPoleHologram); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGConveyorPoleHologram); \
@@ -47,8 +47,6 @@ public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_Hologram_FGConveyorPoleHologram_h_16_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AFGConveyorPoleHologram() { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGConveyorPoleHologram(AFGConveyorPoleHologram&&); \

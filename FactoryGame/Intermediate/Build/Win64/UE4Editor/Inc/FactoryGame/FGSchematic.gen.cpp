@@ -22,31 +22,25 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematic() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSchematic_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSchematic();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetAdditionalSchematicDependencies();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_AddRecipe();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipe_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetAdditionalSchematicDependencies();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetCost();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetDependentOnSchematic();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetItemIcon();
 	SLATECORE_API UScriptStruct* Z_Construct_UScriptStruct_FSlateBrush();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetRecipes();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipe_NoRegister();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGResourceDescriptor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetSchematicCategory();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSchematicCategory_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetSchematicDisplayName();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetSubCategories();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetTechTier();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetType();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetUnlocks();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGUnlock_NoRegister();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetUnlocksMap();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_IsIncludedInBuild();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed();
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EIncludeInBuilds();
 	ASSETREGISTRY_API UScriptStruct* Z_Construct_UScriptStruct_FAssetBundleData();
 // End Cross Module References
@@ -64,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematic() {}
 		return ESchematicType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ESchematicType(ESchematicType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ESchematicType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ESchematicType_Hash() { return 409756076U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ESchematicType_Hash() { return 2150935734U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ESchematicType()
 	{
 #if WITH_HOT_RELOAD
@@ -79,11 +73,12 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematic() {}
 				{ "ESchematicType::EST_Custom", (int64)ESchematicType::EST_Custom },
 				{ "ESchematicType::EST_Cheat", (int64)ESchematicType::EST_Cheat },
 				{ "ESchematicType::EST_Tutorial", (int64)ESchematicType::EST_Tutorial },
-				{ "ESchematicType::EST_Research", (int64)ESchematicType::EST_Research },
+				{ "ESchematicType::EST_Milestone", (int64)ESchematicType::EST_Milestone },
 				{ "ESchematicType::EST_Alternate", (int64)ESchematicType::EST_Alternate },
 				{ "ESchematicType::EST_Story", (int64)ESchematicType::EST_Story },
-				{ "ESchematicType::EST_TradingPostUpgrade", (int64)ESchematicType::EST_TradingPostUpgrade },
 				{ "ESchematicType::EST_MAM", (int64)ESchematicType::EST_MAM },
+				{ "ESchematicType::EST_ResourceSink", (int64)ESchematicType::EST_ResourceSink },
+				{ "ESchematicType::EST_HardDrive", (int64)ESchematicType::EST_HardDrive },
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
@@ -91,10 +86,11 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematic() {}
 				{ "EST_Alternate.DisplayName", "Alternate" },
 				{ "EST_Cheat.DisplayName", "Cheat" },
 				{ "EST_Custom.DisplayName", "Custom" },
-				{ "EST_MAM.DisplayName", "MAM unlocked" },
-				{ "EST_Research.DisplayName", "Research" },
+				{ "EST_HardDrive.DisplayName", "Hard Drive" },
+				{ "EST_MAM.DisplayName", "MAM" },
+				{ "EST_Milestone.DisplayName", "Milestone" },
+				{ "EST_ResourceSink.DisplayName", "Resource Sink" },
 				{ "EST_Story.DisplayName", "Story" },
-				{ "EST_TradingPostUpgrade.DisplayName", "Hub upgrade" },
 				{ "EST_Tutorial.DisplayName", "Tutorial" },
 				{ "ModuleRelativePath", "Public/FGSchematic.h" },
 				{ "ToolTip", "@todo [MODSUPPORT] This should maybe be implemented the same way as UFGBuildCategories?" },
@@ -267,29 +263,65 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 	{
 		UClass* Class = UFGSchematic::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+#if WITH_EDITOR
+			{ "AddRecipe", &UFGSchematic::execAddRecipe },
+#endif // WITH_EDITOR
 			{ "GetAdditionalSchematicDependencies", &UFGSchematic::execGetAdditionalSchematicDependencies },
 			{ "GetCost", &UFGSchematic::execGetCost },
 			{ "GetDependentOnSchematic", &UFGSchematic::execGetDependentOnSchematic },
 			{ "GetItemIcon", &UFGSchematic::execGetItemIcon },
-			{ "GetNumArmEquipmentSlotsUnlocked", &UFGSchematic::execGetNumArmEquipmentSlotsUnlocked },
-			{ "GetNumInventorySlotsUnlocked", &UFGSchematic::execGetNumInventorySlotsUnlocked },
-			{ "GetRecipes", &UFGSchematic::execGetRecipes },
-			{ "GetResourceToAddToScanner", &UFGSchematic::execGetResourceToAddToScanner },
 			{ "GetSchematicCategory", &UFGSchematic::execGetSchematicCategory },
 			{ "GetSchematicDisplayName", &UFGSchematic::execGetSchematicDisplayName },
 			{ "GetShipTravelTimeAfterPurchase", &UFGSchematic::execGetShipTravelTimeAfterPurchase },
+			{ "GetSubCategories", &UFGSchematic::execGetSubCategories },
 			{ "GetTechTier", &UFGSchematic::execGetTechTier },
 			{ "GetType", &UFGSchematic::execGetType },
 			{ "GetUnlocks", &UFGSchematic::execGetUnlocks },
-			{ "GetUnlocksArmEquipmentSlots", &UFGSchematic::execGetUnlocksArmEquipmentSlots },
-			{ "GetUnlocksBuildEfficiencyDisplay", &UFGSchematic::execGetUnlocksBuildEfficiencyDisplay },
-			{ "GetUnlocksBuildOverclock", &UFGSchematic::execGetUnlocksBuildOverclock },
-			{ "GetUnlocksInventorySlots", &UFGSchematic::execGetUnlocksInventorySlots },
-			{ "GetUnlocksMap", &UFGSchematic::execGetUnlocksMap },
 			{ "IsIncludedInBuild", &UFGSchematic::execIsIncludedInBuild },
+			{ "IsRepeatPurchasesAllowed", &UFGSchematic::execIsRepeatPurchasesAllowed },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
+#if WITH_EDITOR
+	struct Z_Construct_UFunction_UFGSchematic_AddRecipe_Statics
+	{
+		struct FGSchematic_eventAddRecipe_Parms
+		{
+			TSubclassOf<UFGSchematic>  inClass;
+			TSubclassOf<UFGRecipe>  recipe;
+		};
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_recipe;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_AddRecipe_Statics::NewProp_recipe = { "recipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventAddRecipe_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_AddRecipe_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventAddRecipe_Parms, inClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSchematic_AddRecipe_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_AddRecipe_Statics::NewProp_recipe,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_AddRecipe_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_AddRecipe_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Editor|Schematic" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
+		{ "ToolTip", "Add a recipe to this schematic. Only for editor use" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSchematic_AddRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSchematic, nullptr, "AddRecipe", sizeof(FGSchematic_eventAddRecipe_Parms), Z_Construct_UFunction_UFGSchematic_AddRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_AddRecipe_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x24022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSchematic_AddRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_AddRecipe_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGSchematic_AddRecipe()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSchematic_AddRecipe_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+#endif //WITH_EDITOR
 	struct Z_Construct_UFunction_UFGSchematic_GetAdditionalSchematicDependencies_Statics
 	{
 		struct FGSchematic_eventGetAdditionalSchematicDependencies_Parms
@@ -448,173 +480,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked_Statics
-	{
-		struct FGSchematic_eventGetNumArmEquipmentSlotsUnlocked_Parms
-		{
-			TSubclassOf<UFGSchematic>  inClass;
-			int32 ReturnValue;
-		};
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetNumArmEquipmentSlotsUnlocked_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetNumArmEquipmentSlotsUnlocked_Parms, inClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked_Statics::NewProp_inClass,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "How many arm equipment slots are unlocked by schematic" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSchematic, nullptr, "GetNumArmEquipmentSlotsUnlocked", sizeof(FGSchematic_eventGetNumArmEquipmentSlotsUnlocked_Parms), Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked_Statics
-	{
-		struct FGSchematic_eventGetNumInventorySlotsUnlocked_Parms
-		{
-			TSubclassOf<UFGSchematic>  inClass;
-			int32 ReturnValue;
-		};
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetNumInventorySlotsUnlocked_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetNumInventorySlotsUnlocked_Parms, inClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked_Statics::NewProp_inClass,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "How many inventory slots are unlocked by schematic" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSchematic, nullptr, "GetNumInventorySlotsUnlocked", sizeof(FGSchematic_eventGetNumInventorySlotsUnlocked_Parms), Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UFGSchematic_GetRecipes_Statics
-	{
-		struct FGSchematic_eventGetRecipes_Parms
-		{
-			TSubclassOf<UFGSchematic>  inClass;
-			TArray<TSubclassOf<UFGRecipe> > ReturnValue;
-		};
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ReturnValue_Inner;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGSchematic_GetRecipes_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetRecipes_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetRecipes_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetRecipes_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetRecipes_Parms, inClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSchematic_GetRecipes_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetRecipes_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetRecipes_Statics::NewProp_ReturnValue_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetRecipes_Statics::NewProp_inClass,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetRecipes_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "Returns the recipes granted by this schematic" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSchematic_GetRecipes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSchematic, nullptr, "GetRecipes", sizeof(FGSchematic_eventGetRecipes_Parms), Z_Construct_UFunction_UFGSchematic_GetRecipes_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetRecipes_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSchematic_GetRecipes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetRecipes_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGSchematic_GetRecipes()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSchematic_GetRecipes_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner_Statics
-	{
-		struct FGSchematic_eventGetResourceToAddToScanner_Parms
-		{
-			TSubclassOf<UFGSchematic>  inClass;
-			TArray<TSubclassOf<UFGResourceDescriptor> > ReturnValue;
-		};
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ReturnValue_Inner;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetResourceToAddToScanner_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetResourceToAddToScanner_Parms, inClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner_Statics::NewProp_ReturnValue_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner_Statics::NewProp_inClass,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "Returns mResourcesToAddToScanner" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSchematic, nullptr, "GetResourceToAddToScanner", sizeof(FGSchematic_eventGetResourceToAddToScanner_Parms), Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_UFGSchematic_GetSchematicCategory_Statics
 	{
 		struct FGSchematic_eventGetSchematicCategory_Parms
 		{
 			TSubclassOf<UFGSchematic>  inClass;
-			ESchematicCategory ReturnValue;
+			TSubclassOf<UFGSchematicCategory>  ReturnValue;
 		};
-		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
@@ -622,12 +495,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGSchematic_GetSchematicCategory_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetSchematicCategory_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_ESchematicCategory, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGSchematic_GetSchematicCategory_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetSchematicCategory_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetSchematicCategory_Parms, ReturnValue), Z_Construct_UClass_UFGSchematicCategory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetSchematicCategory_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetSchematicCategory_Parms, inClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSchematic_GetSchematicCategory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetSchematicCategory_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetSchematicCategory_Statics::NewProp_ReturnValue_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetSchematicCategory_Statics::NewProp_inClass,
 	};
 #if WITH_METADATA
@@ -720,6 +591,47 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGSchematic_GetSubCategories_Statics
+	{
+		struct FGSchematic_eventGetSubCategories_Parms
+		{
+			TSubclassOf<UFGSchematic>  inClass;
+			TArray<TSubclassOf<UFGSchematicCategory> > out_subCategories;
+		};
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_subCategories;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_out_subCategories_Inner;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGSchematic_GetSubCategories_Statics::NewProp_out_subCategories = { "out_subCategories", nullptr, (EPropertyFlags)0x0014000008000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetSubCategories_Parms, out_subCategories), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetSubCategories_Statics::NewProp_out_subCategories_Inner = { "out_subCategories", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGSchematicCategory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetSubCategories_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetSubCategories_Parms, inClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSchematic_GetSubCategories_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetSubCategories_Statics::NewProp_out_subCategories,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetSubCategories_Statics::NewProp_out_subCategories_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetSubCategories_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetSubCategories_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Schematic" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
+		{ "ToolTip", "Returns the sub categories of this schematic" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSchematic_GetSubCategories_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSchematic, nullptr, "GetSubCategories", sizeof(FGSchematic_eventGetSubCategories_Parms), Z_Construct_UFunction_UFGSchematic_GetSubCategories_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetSubCategories_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSchematic_GetSubCategories_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetSubCategories_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGSchematic_GetSubCategories()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSchematic_GetSubCategories_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -851,221 +763,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots_Statics
-	{
-		struct FGSchematic_eventGetUnlocksArmEquipmentSlots_Parms
-		{
-			TSubclassOf<UFGSchematic>  inClass;
-			bool ReturnValue;
-		};
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((FGSchematic_eventGetUnlocksArmEquipmentSlots_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSchematic_eventGetUnlocksArmEquipmentSlots_Parms), &Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetUnlocksArmEquipmentSlots_Parms, inClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots_Statics::NewProp_inClass,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "Does this schematic unlock any arm equipment slots" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSchematic, nullptr, "GetUnlocksArmEquipmentSlots", sizeof(FGSchematic_eventGetUnlocksArmEquipmentSlots_Parms), Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay_Statics
-	{
-		struct FGSchematic_eventGetUnlocksBuildEfficiencyDisplay_Parms
-		{
-			TSubclassOf<UFGSchematic>  inClass;
-			bool ReturnValue;
-		};
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((FGSchematic_eventGetUnlocksBuildEfficiencyDisplay_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSchematic_eventGetUnlocksBuildEfficiencyDisplay_Parms), &Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetUnlocksBuildEfficiencyDisplay_Parms, inClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay_Statics::NewProp_inClass,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "Does this schematic unlock the build efficiency display" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSchematic, nullptr, "GetUnlocksBuildEfficiencyDisplay", sizeof(FGSchematic_eventGetUnlocksBuildEfficiencyDisplay_Parms), Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock_Statics
-	{
-		struct FGSchematic_eventGetUnlocksBuildOverclock_Parms
-		{
-			TSubclassOf<UFGSchematic>  inClass;
-			bool ReturnValue;
-		};
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((FGSchematic_eventGetUnlocksBuildOverclock_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSchematic_eventGetUnlocksBuildOverclock_Parms), &Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetUnlocksBuildOverclock_Parms, inClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock_Statics::NewProp_inClass,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "Does this schematic unlock the build overclock system" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSchematic, nullptr, "GetUnlocksBuildOverclock", sizeof(FGSchematic_eventGetUnlocksBuildOverclock_Parms), Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots_Statics
-	{
-		struct FGSchematic_eventGetUnlocksInventorySlots_Parms
-		{
-			TSubclassOf<UFGSchematic>  inClass;
-			bool ReturnValue;
-		};
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((FGSchematic_eventGetUnlocksInventorySlots_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSchematic_eventGetUnlocksInventorySlots_Parms), &Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetUnlocksInventorySlots_Parms, inClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots_Statics::NewProp_inClass,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "Does this schematic unlock any inventory slots" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSchematic, nullptr, "GetUnlocksInventorySlots", sizeof(FGSchematic_eventGetUnlocksInventorySlots_Parms), Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UFGSchematic_GetUnlocksMap_Statics
-	{
-		struct FGSchematic_eventGetUnlocksMap_Parms
-		{
-			TSubclassOf<UFGSchematic>  inClass;
-			bool ReturnValue;
-		};
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_UFGSchematic_GetUnlocksMap_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((FGSchematic_eventGetUnlocksMap_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSchematic_GetUnlocksMap_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSchematic_eventGetUnlocksMap_Parms), &Z_Construct_UFunction_UFGSchematic_GetUnlocksMap_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetUnlocksMap_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetUnlocksMap_Parms, inClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSchematic_GetUnlocksMap_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetUnlocksMap_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetUnlocksMap_Statics::NewProp_inClass,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetUnlocksMap_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "Does this schematic unlock the map" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSchematic_GetUnlocksMap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSchematic, nullptr, "GetUnlocksMap", sizeof(FGSchematic_eventGetUnlocksMap_Parms), Z_Construct_UFunction_UFGSchematic_GetUnlocksMap_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetUnlocksMap_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSchematic_GetUnlocksMap_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetUnlocksMap_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGSchematic_GetUnlocksMap()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSchematic_GetUnlocksMap_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_UFGSchematic_IsIncludedInBuild_Statics
 	{
 		struct FGSchematic_eventIsIncludedInBuild_Parms
@@ -1109,6 +806,49 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed_Statics
+	{
+		struct FGSchematic_eventIsRepeatPurchasesAllowed_Parms
+		{
+			TSubclassOf<UFGSchematic>  inClass;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGSchematic_eventIsRepeatPurchasesAllowed_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSchematic_eventIsRepeatPurchasesAllowed_Parms), &Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventIsRepeatPurchasesAllowed_Parms, inClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Schematic" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
+		{ "ToolTip", "Returns true if this schematic is allowed to be purchased more than once" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSchematic, nullptr, "IsRepeatPurchasesAllowed", sizeof(FGSchematic_eventIsRepeatPurchasesAllowed_Parms), Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UFGSchematic_NoRegister()
 	{
 		return UFGSchematic::StaticClass();
@@ -1132,6 +872,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mAssetBundleData;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSchematicCategoryDeprecated_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_mSchematicCategoryDeprecated;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_mSchematicCategoryDeprecated_Underlying;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAdditionalSchematicDependencies_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mAdditionalSchematicDependencies;
@@ -1144,39 +889,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSchematicIcon_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mSchematicIcon;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mNumArmEquipmentSlotsToUnlock_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mNumArmEquipmentSlotsToUnlock;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mNumInventorySlotsToUnlock_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mNumInventorySlotsToUnlock;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mUnlocksBuildOverclock_MetaData[];
-#endif
-		static void NewProp_mUnlocksBuildOverclock_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mUnlocksBuildOverclock;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mUnlocksBuildEfficiency_MetaData[];
-#endif
-		static void NewProp_mUnlocksBuildEfficiency_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mUnlocksBuildEfficiency;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mUnlocksMap_MetaData[];
-#endif
-		static void NewProp_mUnlocksMap_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mUnlocksMap;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mResourcesToAddToScanner_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mResourcesToAddToScanner;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mResourcesToAddToScanner_Inner;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRecipes_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mRecipes;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mRecipes_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mUnlocks_MetaData[];
 #endif
@@ -1199,10 +911,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mTechTier;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSubCategories_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mSubCategories;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mSubCategories_Inner;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSchematicCategory_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_mSchematicCategory;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_mSchematicCategory_Underlying;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mSchematicCategory;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDisplayName_MetaData[];
 #endif
@@ -1223,26 +939,22 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSchematic_Statics::FuncInfo[] = {
+#if WITH_EDITOR
+		{ &Z_Construct_UFunction_UFGSchematic_AddRecipe, "AddRecipe" }, // 2996688878
+#endif //WITH_EDITOR
 		{ &Z_Construct_UFunction_UFGSchematic_GetAdditionalSchematicDependencies, "GetAdditionalSchematicDependencies" }, // 128793614
 		{ &Z_Construct_UFunction_UFGSchematic_GetCost, "GetCost" }, // 2532838687
 		{ &Z_Construct_UFunction_UFGSchematic_GetDependentOnSchematic, "GetDependentOnSchematic" }, // 3649984223
 		{ &Z_Construct_UFunction_UFGSchematic_GetItemIcon, "GetItemIcon" }, // 2329714181
-		{ &Z_Construct_UFunction_UFGSchematic_GetNumArmEquipmentSlotsUnlocked, "GetNumArmEquipmentSlotsUnlocked" }, // 4236542078
-		{ &Z_Construct_UFunction_UFGSchematic_GetNumInventorySlotsUnlocked, "GetNumInventorySlotsUnlocked" }, // 3352235123
-		{ &Z_Construct_UFunction_UFGSchematic_GetRecipes, "GetRecipes" }, // 2322489056
-		{ &Z_Construct_UFunction_UFGSchematic_GetResourceToAddToScanner, "GetResourceToAddToScanner" }, // 1220219266
-		{ &Z_Construct_UFunction_UFGSchematic_GetSchematicCategory, "GetSchematicCategory" }, // 2562789139
+		{ &Z_Construct_UFunction_UFGSchematic_GetSchematicCategory, "GetSchematicCategory" }, // 2513349240
 		{ &Z_Construct_UFunction_UFGSchematic_GetSchematicDisplayName, "GetSchematicDisplayName" }, // 3485346695
 		{ &Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase, "GetShipTravelTimeAfterPurchase" }, // 1420982024
+		{ &Z_Construct_UFunction_UFGSchematic_GetSubCategories, "GetSubCategories" }, // 2086154296
 		{ &Z_Construct_UFunction_UFGSchematic_GetTechTier, "GetTechTier" }, // 3026545383
 		{ &Z_Construct_UFunction_UFGSchematic_GetType, "GetType" }, // 3990321040
 		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocks, "GetUnlocks" }, // 3715193085
-		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocksArmEquipmentSlots, "GetUnlocksArmEquipmentSlots" }, // 11393491
-		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildEfficiencyDisplay, "GetUnlocksBuildEfficiencyDisplay" }, // 3695215058
-		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocksBuildOverclock, "GetUnlocksBuildOverclock" }, // 2170990321
-		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocksInventorySlots, "GetUnlocksInventorySlots" }, // 1156041814
-		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocksMap, "GetUnlocksMap" }, // 2992316538
 		{ &Z_Construct_UFunction_UFGSchematic_IsIncludedInBuild, "IsIncludedInBuild" }, // 560645726
+		{ &Z_Construct_UFunction_UFGSchematic_IsRepeatPurchasesAllowed, "IsRepeatPurchasesAllowed" }, // 1153250822
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::Class_MetaDataParams[] = {
@@ -1274,6 +986,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mAssetBundleData = { "mAssetBundleData", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSchematic, mAssetBundleData), Z_Construct_UScriptStruct_FAssetBundleData, METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mAssetBundleData_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mAssetBundleData_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategoryDeprecated_MetaData[] = {
+		{ "Category", "Deprecated - To be removed" },
+		{ "DeprecatedProperty", "" },
+		{ "DeprecationMessage", "Use new schematic category object instead" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
+		{ "ToolTip", "The category this schematic belongs to." },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategoryDeprecated = { "mSchematicCategoryDeprecated", nullptr, (EPropertyFlags)0x0020080000030001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSchematic, mSchematicCategoryDeprecated), Z_Construct_UEnum_FactoryGame_ESchematicCategory, METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategoryDeprecated_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategoryDeprecated_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategoryDeprecated_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mAdditionalSchematicDependencies_MetaData[] = {
 		{ "Category", "Schematic" },
 		{ "ModuleRelativePath", "Public/FGSchematic.h" },
@@ -1299,76 +1022,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicIcon = { "mSchematicIcon", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSchematic, mSchematicIcon), Z_Construct_UScriptStruct_FSlateBrush, METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicIcon_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicIcon_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mNumArmEquipmentSlotsToUnlock_MetaData[] = {
-		{ "Category", "Unlocks" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "Number of arm equipment slots this schematic adds to the players inventory" },
-	};
-#endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mNumArmEquipmentSlotsToUnlock = { "mNumArmEquipmentSlotsToUnlock", nullptr, (EPropertyFlags)0x0020080000030001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSchematic, mNumArmEquipmentSlotsToUnlock), METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mNumArmEquipmentSlotsToUnlock_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mNumArmEquipmentSlotsToUnlock_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mNumInventorySlotsToUnlock_MetaData[] = {
-		{ "Category", "Unlocks" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "Number of inventory slots this schematic adds to the players inventory" },
-	};
-#endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mNumInventorySlotsToUnlock = { "mNumInventorySlotsToUnlock", nullptr, (EPropertyFlags)0x0020080000030001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSchematic, mNumInventorySlotsToUnlock), METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mNumInventorySlotsToUnlock_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mNumInventorySlotsToUnlock_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksBuildOverclock_MetaData[] = {
-		{ "Category", "Unlocks" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "Does this schematic unlock the build overclock functionality?" },
-	};
-#endif
-	void Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksBuildOverclock_SetBit(void* Obj)
-	{
-		((UFGSchematic*)Obj)->mUnlocksBuildOverclock = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksBuildOverclock = { "mUnlocksBuildOverclock", nullptr, (EPropertyFlags)0x0020080000030001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGSchematic), &Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksBuildOverclock_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksBuildOverclock_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksBuildOverclock_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksBuildEfficiency_MetaData[] = {
-		{ "Category", "Unlocks" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "Does this schematic unlock the build efficiency display?" },
-	};
-#endif
-	void Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksBuildEfficiency_SetBit(void* Obj)
-	{
-		((UFGSchematic*)Obj)->mUnlocksBuildEfficiency = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksBuildEfficiency = { "mUnlocksBuildEfficiency", nullptr, (EPropertyFlags)0x0020080000030001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGSchematic), &Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksBuildEfficiency_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksBuildEfficiency_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksBuildEfficiency_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksMap_MetaData[] = {
-		{ "Category", "Unlocks" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "Does this schematic unlock the map?" },
-	};
-#endif
-	void Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksMap_SetBit(void* Obj)
-	{
-		((UFGSchematic*)Obj)->mUnlocksMap = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksMap = { "mUnlocksMap", nullptr, (EPropertyFlags)0x0020080000030001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGSchematic), &Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksMap_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksMap_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksMap_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mResourcesToAddToScanner_MetaData[] = {
-		{ "Category", "Unlocks" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "These are the resources that are scannable" },
-	};
-#endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mResourcesToAddToScanner = { "mResourcesToAddToScanner", nullptr, (EPropertyFlags)0x0024080000030001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSchematic, mResourcesToAddToScanner), METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mResourcesToAddToScanner_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mResourcesToAddToScanner_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mResourcesToAddToScanner_Inner = { "mResourcesToAddToScanner", nullptr, (EPropertyFlags)0x0004000000020000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mRecipes_MetaData[] = {
-		{ "Category", "Unlocks" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "The recipes you get when purchasing" },
-	};
-#endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mRecipes = { "mRecipes", nullptr, (EPropertyFlags)0x0024080000030001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSchematic, mRecipes), METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mRecipes_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mRecipes_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mRecipes_Inner = { "mRecipes", nullptr, (EPropertyFlags)0x0004000000020000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocks_MetaData[] = {
 		{ "Category", "Unlocks" },
@@ -1413,14 +1066,22 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mTechTier = { "mTechTier", nullptr, (EPropertyFlags)0x0020090000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSchematic, mTechTier), METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mTechTier_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mTechTier_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSubCategories_MetaData[] = {
+		{ "Category", "Schematic" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
+		{ "ToolTip", "The sub categories this schematic belongs to." },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSubCategories = { "mSubCategories", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSchematic, mSubCategories), METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSubCategories_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSubCategories_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSubCategories_Inner = { "mSubCategories", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGSchematicCategory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategory_MetaData[] = {
 		{ "Category", "Schematic" },
 		{ "ModuleRelativePath", "Public/FGSchematic.h" },
 		{ "ToolTip", "The category this schematic belongs to." },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategory = { "mSchematicCategory", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSchematic, mSchematicCategory), Z_Construct_UEnum_FactoryGame_ESchematicCategory, METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategory_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategory_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategory_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategory = { "mSchematicCategory", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSchematic, mSchematicCategory), Z_Construct_UClass_UFGSchematicCategory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategory_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mDisplayName_MetaData[] = {
 		{ "Category", "Schematic" },
@@ -1444,27 +1105,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mIncludeInBuilds_Underlying,
 #endif // WITH_EDITORONLY_DATA
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mAssetBundleData,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategoryDeprecated,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategoryDeprecated_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mAdditionalSchematicDependencies,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mAdditionalSchematicDependencies_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mDependsOnSchematic,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicIcon,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mNumArmEquipmentSlotsToUnlock,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mNumInventorySlotsToUnlock,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksBuildOverclock,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksBuildEfficiency,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocksMap,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mResourcesToAddToScanner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mResourcesToAddToScanner_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mRecipes,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mRecipes_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocks,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocks_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mShipTravelTimeAfterPurchase,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mCost,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mCost_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mTechTier,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSubCategories,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSubCategories_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategory,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicCategory_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mDisplayName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mType,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mType_Underlying,
@@ -1496,7 +1151,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSchematic, 4063291852);
+	IMPLEMENT_CLASS(UFGSchematic, 1006930892);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSchematic>()
 	{
 		return UFGSchematic::StaticClass();

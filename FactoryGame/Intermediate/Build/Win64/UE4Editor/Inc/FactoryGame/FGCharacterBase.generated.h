@@ -88,6 +88,14 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFootstepEffect>()
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetMainMesh) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(USkeletalMeshComponent**)Z_Param__Result=P_THIS->GetMainMesh(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetMesh3P) \
 	{ \
 		P_FINISH; \
@@ -304,6 +312,14 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFootstepEffect>()
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(float*)Z_Param__Result=P_THIS->AdjustDamage(Z_Param_damagedActor,Z_Param_damageAmount,Z_Param_damageType,Z_Param_instigatedBy,Z_Param_damageCauser); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetMainMesh) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(USkeletalMeshComponent**)Z_Param__Result=P_THIS->GetMainMesh(); \
 		P_NATIVE_END; \
 	} \
  \

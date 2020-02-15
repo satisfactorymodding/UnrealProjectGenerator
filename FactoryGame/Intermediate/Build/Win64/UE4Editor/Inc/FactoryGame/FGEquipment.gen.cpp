@@ -23,19 +23,27 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 	ENGINE_API UClass* Z_Construct_UClass_AController_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_CanAffordUse();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_CanDoDefaultPrimaryFire();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_ChargeForUse();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_DidNotAffordUse();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire_Native();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFireEffects();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_Equip();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCharacterPlayer_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_GetAttachment();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGEquipmentAttachment_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation();
+	ENGINE_API UClass* Z_Construct_UClass_UAnimSequence_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation3p();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_IsEquipped();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_IsLocalInstigator();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_Server_ChargeForUse();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_Server_DefaultPrimaryFire();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_ShouldShowStinger();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipment_UnEquip();
@@ -121,15 +129,37 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		ProcessEvent(FindFunctionChecked(NAME_AFGEquipment_AdjustDamage),&Parms);
 		return Parms.ReturnValue;
 	}
+	static FName NAME_AFGEquipment_CanDoDefaultPrimaryFire = FName(TEXT("CanDoDefaultPrimaryFire"));
+	bool AFGEquipment::CanDoDefaultPrimaryFire()
+	{
+		FGEquipment_eventCanDoDefaultPrimaryFire_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AFGEquipment_CanDoDefaultPrimaryFire),&Parms);
+		return !!Parms.ReturnValue;
+	}
 	static FName NAME_AFGEquipment_DidNotAffordUse = FName(TEXT("DidNotAffordUse"));
 	void AFGEquipment::DidNotAffordUse()
 	{
 		ProcessEvent(FindFunctionChecked(NAME_AFGEquipment_DidNotAffordUse),NULL);
 	}
+	static FName NAME_AFGEquipment_DoDefaultPrimaryFire = FName(TEXT("DoDefaultPrimaryFire"));
+	void AFGEquipment::DoDefaultPrimaryFire()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AFGEquipment_DoDefaultPrimaryFire),NULL);
+	}
+	static FName NAME_AFGEquipment_DoDefaultPrimaryFireEffects = FName(TEXT("DoDefaultPrimaryFireEffects"));
+	void AFGEquipment::DoDefaultPrimaryFireEffects()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AFGEquipment_DoDefaultPrimaryFireEffects),NULL);
+	}
 	static FName NAME_AFGEquipment_Server_ChargeForUse = FName(TEXT("Server_ChargeForUse"));
 	void AFGEquipment::Server_ChargeForUse()
 	{
 		ProcessEvent(FindFunctionChecked(NAME_AFGEquipment_Server_ChargeForUse),NULL);
+	}
+	static FName NAME_AFGEquipment_Server_DefaultPrimaryFire = FName(TEXT("Server_DefaultPrimaryFire"));
+	void AFGEquipment::Server_DefaultPrimaryFire()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AFGEquipment_Server_DefaultPrimaryFire),NULL);
 	}
 	static FName NAME_AFGEquipment_Server_UpdateAttachmentUseState = FName(TEXT("Server_UpdateAttachmentUseState"));
 	void AFGEquipment::Server_UpdateAttachmentUseState(int32 newUseState)
@@ -154,16 +184,21 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "AdjustDamage", &AFGEquipment::execAdjustDamage },
 			{ "CanAffordUse", &AFGEquipment::execCanAffordUse },
+			{ "CanDoDefaultPrimaryFire", &AFGEquipment::execCanDoDefaultPrimaryFire },
 			{ "ChargeForUse", &AFGEquipment::execChargeForUse },
 			{ "DidNotAffordUse", &AFGEquipment::execDidNotAffordUse },
+			{ "DoDefaultPrimaryFire_Native", &AFGEquipment::execDoDefaultPrimaryFire_Native },
 			{ "Equip", &AFGEquipment::execEquip },
 			{ "GetAttachment", &AFGEquipment::execGetAttachment },
 			{ "GetEquipmentSlot", &AFGEquipment::execGetEquipmentSlot },
+			{ "GetIdlePoseAnimation", &AFGEquipment::execGetIdlePoseAnimation },
+			{ "GetIdlePoseAnimation3p", &AFGEquipment::execGetIdlePoseAnimation3p },
 			{ "GetInstigatorCharacter", &AFGEquipment::execGetInstigatorCharacter },
 			{ "GetSecondaryAttachment", &AFGEquipment::execGetSecondaryAttachment },
 			{ "IsEquipped", &AFGEquipment::execIsEquipped },
 			{ "IsLocalInstigator", &AFGEquipment::execIsLocalInstigator },
 			{ "Server_ChargeForUse", &AFGEquipment::execServer_ChargeForUse },
+			{ "Server_DefaultPrimaryFire", &AFGEquipment::execServer_DefaultPrimaryFire },
 			{ "Server_UpdateAttachmentUseState", &AFGEquipment::execServer_UpdateAttachmentUseState },
 			{ "ShouldShowStinger", &AFGEquipment::execShouldShowStinger },
 			{ "UnEquip", &AFGEquipment::execUnEquip },
@@ -261,6 +296,41 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGEquipment_CanDoDefaultPrimaryFire_Statics
+	{
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGEquipment_CanDoDefaultPrimaryFire_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGEquipment_eventCanDoDefaultPrimaryFire_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEquipment_CanDoDefaultPrimaryFire_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGEquipment_eventCanDoDefaultPrimaryFire_Parms), &Z_Construct_UFunction_AFGEquipment_CanDoDefaultPrimaryFire_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipment_CanDoDefaultPrimaryFire_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipment_CanDoDefaultPrimaryFire_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_CanDoDefaultPrimaryFire_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Equipment" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
+		{ "ToolTip", "Native only function that does default stuff needed for the default primary fire event" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_CanDoDefaultPrimaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "CanDoDefaultPrimaryFire", sizeof(FGEquipment_eventCanDoDefaultPrimaryFire_Parms), Z_Construct_UFunction_AFGEquipment_CanDoDefaultPrimaryFire_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_CanDoDefaultPrimaryFire_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_CanDoDefaultPrimaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_CanDoDefaultPrimaryFire_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGEquipment_CanDoDefaultPrimaryFire()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGEquipment_CanDoDefaultPrimaryFire_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGEquipment_ChargeForUse_Statics
 	{
 #if WITH_METADATA
@@ -306,6 +376,77 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGEquipment_DidNotAffordUse_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Equipment" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
+		{ "ToolTip", "BP hook for implementing what should actually happen when pressing fire" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "DoDefaultPrimaryFire", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire_Native_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire_Native_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
+		{ "ToolTip", "Native only function that does default stuff needed for the default primary fire event" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire_Native_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "DoDefaultPrimaryFire_Native", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire_Native_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire_Native_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire_Native()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire_Native_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFireEffects_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFireEffects_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Equipment" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
+		{ "ToolTip", "Plays effects when using default primary fire" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFireEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "DoDefaultPrimaryFireEffects", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFireEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFireEffects_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFireEffects()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFireEffects_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -415,6 +556,74 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation_Statics
+	{
+		struct FGEquipment_eventGetIdlePoseAnimation_Parms
+		{
+			UAnimSequence* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEquipment_eventGetIdlePoseAnimation_Parms, ReturnValue), Z_Construct_UClass_UAnimSequence_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Driveable" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
+		{ "ToolTip", "@return idle pose animation, can be NULL" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "GetIdlePoseAnimation", sizeof(FGEquipment_eventGetIdlePoseAnimation_Parms), Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation3p_Statics
+	{
+		struct FGEquipment_eventGetIdlePoseAnimation3p_Parms
+		{
+			UAnimSequence* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation3p_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEquipment_eventGetIdlePoseAnimation3p_Parms, ReturnValue), Z_Construct_UClass_UAnimSequence_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation3p_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation3p_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation3p_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Driveable" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
+		{ "ToolTip", "@return idle pose animation for 3p, can be NULL" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation3p_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "GetIdlePoseAnimation3p", sizeof(FGEquipment_eventGetIdlePoseAnimation3p_Parms), Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation3p_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation3p_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation3p_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation3p_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation3p()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation3p_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -586,6 +795,29 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGEquipment_Server_DefaultPrimaryFire_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_Server_DefaultPrimaryFire_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
+		{ "ToolTip", "Only server implementation of primary fire" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_Server_DefaultPrimaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "Server_DefaultPrimaryFire", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_Server_DefaultPrimaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_Server_DefaultPrimaryFire_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGEquipment_Server_DefaultPrimaryFire()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGEquipment_Server_DefaultPrimaryFire_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState_Statics
 	{
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_newUseState;
@@ -739,6 +971,19 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mUseDefaultPrimaryFire_MetaData[];
+#endif
+		static void NewProp_mUseDefaultPrimaryFire_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mUseDefaultPrimaryFire;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mIdlePoseAnimation3p_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mIdlePoseAnimation3p;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mIdlePoseAnimation_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mIdlePoseAnimation;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSecondaryAttachment_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mSecondaryAttachment;
@@ -823,16 +1068,23 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGEquipment_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AFGEquipment_AdjustDamage, "AdjustDamage" }, // 2123092923
 		{ &Z_Construct_UFunction_AFGEquipment_CanAffordUse, "CanAffordUse" }, // 1279622743
+		{ &Z_Construct_UFunction_AFGEquipment_CanDoDefaultPrimaryFire, "CanDoDefaultPrimaryFire" }, // 3963819880
 		{ &Z_Construct_UFunction_AFGEquipment_ChargeForUse, "ChargeForUse" }, // 281518113
 		{ &Z_Construct_UFunction_AFGEquipment_DidNotAffordUse, "DidNotAffordUse" }, // 2427668082
+		{ &Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire, "DoDefaultPrimaryFire" }, // 2648577747
+		{ &Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFire_Native, "DoDefaultPrimaryFire_Native" }, // 3438852838
+		{ &Z_Construct_UFunction_AFGEquipment_DoDefaultPrimaryFireEffects, "DoDefaultPrimaryFireEffects" }, // 938217733
 		{ &Z_Construct_UFunction_AFGEquipment_Equip, "Equip" }, // 1154103562
 		{ &Z_Construct_UFunction_AFGEquipment_GetAttachment, "GetAttachment" }, // 1355833451
 		{ &Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot, "GetEquipmentSlot" }, // 4264523525
+		{ &Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation, "GetIdlePoseAnimation" }, // 3714058037
+		{ &Z_Construct_UFunction_AFGEquipment_GetIdlePoseAnimation3p, "GetIdlePoseAnimation3p" }, // 1629192167
 		{ &Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter, "GetInstigatorCharacter" }, // 2402283366
 		{ &Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment, "GetSecondaryAttachment" }, // 166809483
 		{ &Z_Construct_UFunction_AFGEquipment_IsEquipped, "IsEquipped" }, // 2716866894
 		{ &Z_Construct_UFunction_AFGEquipment_IsLocalInstigator, "IsLocalInstigator" }, // 3420174075
 		{ &Z_Construct_UFunction_AFGEquipment_Server_ChargeForUse, "Server_ChargeForUse" }, // 1456808497
+		{ &Z_Construct_UFunction_AFGEquipment_Server_DefaultPrimaryFire, "Server_DefaultPrimaryFire" }, // 2755124191
 		{ &Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState, "Server_UpdateAttachmentUseState" }, // 2983167717
 		{ &Z_Construct_UFunction_AFGEquipment_ShouldShowStinger, "ShouldShowStinger" }, // 1543518827
 		{ &Z_Construct_UFunction_AFGEquipment_UnEquip, "UnEquip" }, // 3375215488
@@ -847,6 +1099,34 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Base class for all kinds of equipment in the game." },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mUseDefaultPrimaryFire_MetaData[] = {
+		{ "Category", "Equipment" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
+		{ "ToolTip", "Should we use the default primary fire implementation" },
+	};
+#endif
+	void Z_Construct_UClass_AFGEquipment_Statics::NewProp_mUseDefaultPrimaryFire_SetBit(void* Obj)
+	{
+		((AFGEquipment*)Obj)->mUseDefaultPrimaryFire = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mUseDefaultPrimaryFire = { "mUseDefaultPrimaryFire", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGEquipment), &Z_Construct_UClass_AFGEquipment_Statics::NewProp_mUseDefaultPrimaryFire_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mUseDefaultPrimaryFire_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mUseDefaultPrimaryFire_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mIdlePoseAnimation3p_MetaData[] = {
+		{ "Category", "Equipment|Animation" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
+		{ "ToolTip", "Idle animation to play when equipped in 3p. Can be null if we don't want to play any special animation" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mIdlePoseAnimation3p = { "mIdlePoseAnimation3p", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mIdlePoseAnimation3p), Z_Construct_UClass_UAnimSequence_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mIdlePoseAnimation3p_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mIdlePoseAnimation3p_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mIdlePoseAnimation_MetaData[] = {
+		{ "Category", "Equipment|Animation" },
+		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
+		{ "ToolTip", "Idle animation to play when equipped. Can be null if we don't want to play any special animation" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mIdlePoseAnimation = { "mIdlePoseAnimation", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mIdlePoseAnimation), Z_Construct_UClass_UAnimSequence_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mIdlePoseAnimation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mIdlePoseAnimation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachment_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Equipment/FGEquipment.h" },
@@ -989,6 +1269,9 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachmentClass = { "mAttachmentClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mAttachmentClass), Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachmentClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachmentClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGEquipment_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipment_Statics::NewProp_mUseDefaultPrimaryFire,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipment_Statics::NewProp_mIdlePoseAnimation3p,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipment_Statics::NewProp_mIdlePoseAnimation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachment,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachment,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipment_Statics::NewProp_mHasPersistentOwner,
@@ -1042,7 +1325,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEquipment, 2592171925);
+	IMPLEMENT_CLASS(AFGEquipment, 1928136764);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGEquipment>()
 	{
 		return AFGEquipment::StaticClass();

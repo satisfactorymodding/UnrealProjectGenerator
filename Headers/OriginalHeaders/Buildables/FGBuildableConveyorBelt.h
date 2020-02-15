@@ -5,7 +5,6 @@
 #include "FGUseableInterface.h"
 #include "FGBuildableConveyorBase.h"
 #include "Components/SplineComponent.h"
-#include "FGSplineComponent.h"
 #include "FGBuildableConveyorBelt.generated.h"
 
 /**
@@ -78,15 +77,17 @@ public:
 	// Begin IFGSignificanceInterface
 	virtual void GainedSignificance_Implementation() override;
 	virtual	void LostSignificance_Implementation() override;
+	virtual	void SetupForSignificance() override;
 	// End IFGSignificanceInterface
 
+	// Begin Buildable interface
+	virtual int32 GetDismantleRefundReturnsMultiplier() const override;
+	// End Buildable interface
 
 	// Begin AFGBuildableConveyorBase interface
 	virtual float FindOffsetClosestToLocation( const FVector& location ) const override;
 	virtual void GetLocationAndDirectionAtOffset( float offset, FVector& out_location, FVector& out_direction ) const override;
 	// End AFGBuildableConveyorBase interface
-
-	virtual void TogglePendingDismantleMaterial( bool enabled ) override;
 
 	/** Get the velocity of the conveyor where the based actor is. */
 	FVector GetVelocityForBase( class AActor* basedActor, class UPrimitiveComponent* baseComponent ) const;
@@ -120,18 +121,15 @@ public:
 
 	/** Get the mesh used for this conveyor. */
 	UFUNCTION( BlueprintPure, Category = "Conveyor" )
-	FORCEINLINE UStaticMesh* GetSplineMesh() const { return mSplineComponent->mSplineMesh; }
+	FORCEINLINE UStaticMesh* GetSplineMesh() const { return mMesh; }
 
 	/** Get the spline data for this conveyor. */
 	UFUNCTION( BlueprintCallable, BlueprintPure = false, Category = "Conveyor" )
 	FORCEINLINE TArray< FSplinePointData > GetSplineData() const { return mSplineData; };
 
-	/** Set the spline data for this conveyor belt, only valid to call prior to begin play. */
-	void SetSplineData( const TArray< FSplinePointData >& points ) { mSplineData = points; }
-
 	/** Returns the spline component */
 	UFUNCTION( BlueprintPure, Category = "Build" )
-	FORCEINLINE class UFGSplineComponent* GetSplineComponent() { return mSplineComponent; }
+	FORCEINLINE class USplineComponent* GetSplineComponent() { return mSplineComponent; }
 
 	void OnUseServerRepInput( class AFGCharacterPlayer* byCharacter, int32 itemIndex, int8 repVersion );
 protected:
@@ -148,6 +146,16 @@ private:
 
 	/** Get the that have the "moving conveyor material" in it */
 	void GetConveyorMaterials( TArray<UMaterialInterface*, TInlineAllocator<4>>& out_materials );
+
+protected:
+	/** Mesh to use for his conveyor. */
+	UPROPERTY( EditDefaultsOnly, Category = "Conveyor Belt" )
+	class UStaticMesh* mMesh;
+
+	/** Length of the mesh to use for this conveyor. */
+	UPROPERTY( EditDefaultsOnly, Category = "Conveyor Belt" )
+	float mMeshLength;
+
 private:
 	friend class AFGConveyorBeltHologram;
 
@@ -155,21 +163,23 @@ private:
 	UPROPERTY( Meta = ( NoAutoJson ) )
 	TMap< FName, class UInstancedStaticMeshComponent* > mItemMeshMap;
 
-	UFUNCTION()
-	void OnRep_SplineData();
-
 	/** Compact representation of mSplineComponent, used for replication and save game */
-	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_SplineData, Meta = (NoAutoJson) )
+	UPROPERTY( SaveGame, Replicated, Meta = ( NoAutoJson ) )
 	TArray< FSplinePointData > mSplineData;
 
-	/** The spline component for this splined factory. */
+	/** The spline component for this conveyor. Note that this is only the spline. */
 	UPROPERTY( VisibleAnywhere, Category = "Spline" )
-	class UFGSplineComponent* mSplineComponent;
+	class USplineComponent* mSplineComponent;
 
-	UPROPERTY( VisibleDefaultsOnly, Category="Audio" )
+	/** The spline meshes for this train track. */
+	UPROPERTY( VisibleAnywhere, Category = "Spline" )
+	class UFGInstancedSplineMeshComponent* mInstancedSplineComponent;
+
+	/** Wwise multiple position playback for the conveyor spline. */
+	UPROPERTY( VisibleDefaultsOnly, Category = "Audio" )
 	class UFGSoundSplineComponent* mSoundSplineComponent;
 
 	/** The ak event to post for the sound spline */
-	UPROPERTY( EditDefaultsOnly, Category = "AkComponent" )
+	UPROPERTY( EditDefaultsOnly, Category = "Audio" )
 	class UAkAudioEvent* mSplineAudioEvent;
 };

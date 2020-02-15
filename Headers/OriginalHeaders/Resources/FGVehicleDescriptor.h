@@ -28,6 +28,9 @@ protected:
 	virtual FText GetItemNameInternal() const override;
 	virtual FText GetItemDescriptionInternal() const override;
 
+	virtual TSubclassOf< class AFGHologram > GetHologramClassInternal() const override;
+	virtual TSubclassOf< AActor > GetBuildClassInternal() const override;
+
 #if WITH_EDITOR
 	virtual void SetupStage() override;
 	virtual FVector GetCenterOfCollision() override;

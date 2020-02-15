@@ -13,23 +13,188 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFGSaveSystem() {}
 // Cross Module References
-	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ESaveExists();
+	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ESaveSortDirection();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ESaveSortMode();
+	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ESaveState();
+	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ESaveExists();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FSessionSaveStruct();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FSaveHeader();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FMapRedirector();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveSystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveSystem();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSystem_DeleteSave();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSystem_FindSaveGames();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSystem_Get();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSystem_GetSaveExists();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSystem_GetSaveState();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSystem_IsSessionNameUsed();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSystem_IsValidSaveName();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSystem_SortSaves();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSaveSystem_SortSessions();
 // End Cross Module References
+	static UEnum* ESaveSortDirection_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_FactoryGame_ESaveSortDirection, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ESaveSortDirection"));
+		}
+		return Singleton;
+	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<ESaveSortDirection>()
+	{
+		return ESaveSortDirection_StaticEnum();
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ESaveSortDirection(ESaveSortDirection_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ESaveSortDirection"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ESaveSortDirection_Hash() { return 3228018793U; }
+	UEnum* Z_Construct_UEnum_FactoryGame_ESaveSortDirection()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("ESaveSortDirection"), 0, Get_Z_Construct_UEnum_FactoryGame_ESaveSortDirection_Hash(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "ESaveSortDirection::SSD_Ascending", (int64)ESaveSortDirection::SSD_Ascending },
+				{ "ESaveSortDirection::SSD_Descending", (int64)ESaveSortDirection::SSD_Descending },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
+				{ "SSD_Ascending.DisplayName", "Ascending" },
+				{ "SSD_Descending.DisplayName", "Descending" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
+				nullptr,
+				"ESaveSortDirection",
+				"ESaveSortDirection",
+				Enumerators,
+				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
+				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
+	static UEnum* ESaveSortMode_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_FactoryGame_ESaveSortMode, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ESaveSortMode"));
+		}
+		return Singleton;
+	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<ESaveSortMode>()
+	{
+		return ESaveSortMode_StaticEnum();
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ESaveSortMode(ESaveSortMode_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ESaveSortMode"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ESaveSortMode_Hash() { return 1006899667U; }
+	UEnum* Z_Construct_UEnum_FactoryGame_ESaveSortMode()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("ESaveSortMode"), 0, Get_Z_Construct_UEnum_FactoryGame_ESaveSortMode_Hash(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "ESaveSortMode::SSM_Name", (int64)ESaveSortMode::SSM_Name },
+				{ "ESaveSortMode::SSM_Time", (int64)ESaveSortMode::SSM_Time },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
+				{ "SSM_Name.DisplayName", "Name" },
+				{ "SSM_Time.DisplayName", "Time" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
+				nullptr,
+				"ESaveSortMode",
+				"ESaveSortMode",
+				Enumerators,
+				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
+				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
+	static UEnum* ESaveState_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_FactoryGame_ESaveState, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ESaveState"));
+		}
+		return Singleton;
+	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<ESaveState>()
+	{
+		return ESaveState_StaticEnum();
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ESaveState(ESaveState_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ESaveState"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ESaveState_Hash() { return 4234671547U; }
+	UEnum* Z_Construct_UEnum_FactoryGame_ESaveState()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("ESaveState"), 0, Get_Z_Construct_UEnum_FactoryGame_ESaveState_Hash(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "ESaveState::SS_Unsupported", (int64)ESaveState::SS_Unsupported },
+				{ "ESaveState::SS_Volatile", (int64)ESaveState::SS_Volatile },
+				{ "ESaveState::SS_Supported", (int64)ESaveState::SS_Supported },
+				{ "ESaveState::SS_Newer", (int64)ESaveState::SS_Newer },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "BlueprintType", "true" },
+				{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
+				{ "SS_Newer.DisplayName", "Newer" },
+				{ "SS_Supported.DisplayName", "Supported" },
+				{ "SS_Unsupported.DisplayName", "Unsupported" },
+				{ "SS_Volatile.DisplayName", "Volatile" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
+				nullptr,
+				"ESaveState",
+				"ESaveState",
+				Enumerators,
+				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
+				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
 	static UEnum* ESaveExists_StaticEnum()
 	{
 		static UEnum* Singleton = nullptr;
@@ -343,104 +508,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 	{
 		UClass* Class = UFGSaveSystem::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
-			{ "DeleteSave", &UFGSaveSystem::execDeleteSave },
-			{ "FindSaveGames", &UFGSaveSystem::execFindSaveGames },
 			{ "Get", &UFGSaveSystem::execGet },
-			{ "GetAllSavesPerSession", &UFGSaveSystem::execGetAllSavesPerSession },
-			{ "GetSaveExists", &UFGSaveSystem::execGetSaveExists },
+			{ "GetCachedSaveExists", &UFGSaveSystem::execGetCachedSaveExists },
+			{ "GetSaveState", &UFGSaveSystem::execGetSaveState },
+			{ "GroupSavesPerSession", &UFGSaveSystem::execGroupSavesPerSession },
 			{ "IsSessionNameUsed", &UFGSaveSystem::execIsSessionNameUsed },
 			{ "IsValidSaveName", &UFGSaveSystem::execIsValidSaveName },
+			{ "SortSaves", &UFGSaveSystem::execSortSaves },
+			{ "SortSessions", &UFGSaveSystem::execSortSessions },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
-	}
-	struct Z_Construct_UFunction_UFGSaveSystem_DeleteSave_Statics
-	{
-		struct FGSaveSystem_eventDeleteSave_Parms
-		{
-			FString saveName;
-			bool ReturnValue;
-		};
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_saveName;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_UFGSaveSystem_DeleteSave_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((FGSaveSystem_eventDeleteSave_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSaveSystem_DeleteSave_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSaveSystem_eventDeleteSave_Parms), &Z_Construct_UFunction_UFGSaveSystem_DeleteSave_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSystem_DeleteSave_Statics::NewProp_saveName = { "saveName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventDeleteSave_Parms, saveName), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSystem_DeleteSave_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_DeleteSave_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_DeleteSave_Statics::NewProp_saveName,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_DeleteSave_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
-		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
-		{ "ToolTip", "Delete a save game\n\n@param saveName - the save file's name without extension\n@return true if we managed to delete the save" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSystem_DeleteSave_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSystem, nullptr, "DeleteSave", sizeof(FGSaveSystem_eventDeleteSave_Parms), Z_Construct_UFunction_UFGSaveSystem_DeleteSave_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_DeleteSave_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_DeleteSave_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_DeleteSave_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGSaveSystem_DeleteSave()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSaveSystem_DeleteSave_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics
-	{
-		struct FGSaveSystem_eventFindSaveGames_Parms
-		{
-			TArray<FSaveHeader> out_saveGames;
-			bool newestFirst;
-		};
-		static void NewProp_newestFirst_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_newestFirst;
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_saveGames;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_out_saveGames_Inner;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::NewProp_newestFirst_SetBit(void* Obj)
-	{
-		((FGSaveSystem_eventFindSaveGames_Parms*)Obj)->newestFirst = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::NewProp_newestFirst = { "newestFirst", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSaveSystem_eventFindSaveGames_Parms), &Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::NewProp_newestFirst_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::NewProp_out_saveGames = { "out_saveGames", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventFindSaveGames_Parms, out_saveGames), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::NewProp_out_saveGames_Inner = { "out_saveGames", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::NewProp_newestFirst,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::NewProp_out_saveGames,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::NewProp_out_saveGames_Inner,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
-		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
-		{ "ToolTip", "Find all available save games from disc\n\n@param out_saveGames a list with the available save games" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSystem, nullptr, "FindSaveGames", sizeof(FGSaveSystem_eventFindSaveGames_Parms), Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGSaveSystem_FindSaveGames()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::FuncParams);
-		}
-		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UFGSaveSystem_Get_Statics
 	{
@@ -465,7 +542,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_Get_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
+		{ "Category", "FactoryGame|Save" },
 		{ "DisplayName", "GetSaveSystem" },
 		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 		{ "ToolTip", "Get the save system from a world" },
@@ -481,47 +558,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession_Statics
+	struct Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics
 	{
-		struct FGSaveSystem_eventGetAllSavesPerSession_Parms
+		struct FGSaveSystem_eventGetCachedSaveExists_Parms
 		{
-			TArray<FSessionSaveStruct> out_sessions;
-		};
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_sessions;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_out_sessions_Inner;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession_Statics::NewProp_out_sessions = { "out_sessions", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventGetAllSavesPerSession_Parms, out_sessions), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession_Statics::NewProp_out_sessions_Inner = { "out_sessions", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSessionSaveStruct, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession_Statics::NewProp_out_sessions,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession_Statics::NewProp_out_sessions_Inner,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
-		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
-		{ "ToolTip", "Loops through all save games and group them by session\nand sorts the saves by dates and then session by last save date" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSystem, nullptr, "GetAllSavesPerSession", sizeof(FGSaveSystem_eventGetAllSavesPerSession_Parms), Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics
-	{
-		struct FGSaveSystem_eventGetSaveExists_Parms
-		{
+			TArray<FSaveHeader> cachedSaves;
 			FString saveName;
 			FString currentSessionName;
 			ESaveExists ReturnValue;
@@ -536,46 +577,161 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_saveName_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStrPropertyParams NewProp_saveName;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cachedSaves_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_cachedSaves;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_cachedSaves_Inner;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventGetSaveExists_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_ESaveExists, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventGetCachedSaveExists_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_ESaveExists, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::NewProp_currentSessionName_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_currentSessionName_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::NewProp_currentSessionName = { "currentSessionName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventGetSaveExists_Parms, currentSessionName), METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::NewProp_currentSessionName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::NewProp_currentSessionName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_currentSessionName = { "currentSessionName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventGetCachedSaveExists_Parms, currentSessionName), METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_currentSessionName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_currentSessionName_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::NewProp_saveName_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_saveName_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::NewProp_saveName = { "saveName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventGetSaveExists_Parms, saveName), METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::NewProp_saveName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::NewProp_saveName_MetaData)) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::NewProp_ReturnValue_Underlying,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::NewProp_currentSessionName,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::NewProp_saveName,
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_saveName = { "saveName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventGetCachedSaveExists_Parms, saveName), METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_saveName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_saveName_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_cachedSaves_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_cachedSaves = { "cachedSaves", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventGetCachedSaveExists_Parms, cachedSaves), METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_cachedSaves_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_cachedSaves_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_cachedSaves_Inner = { "cachedSaves", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_ReturnValue_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_currentSessionName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_saveName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_cachedSaves,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::NewProp_cachedSaves_Inner,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Save" },
 		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
-		{ "ToolTip", "Check if a save game exists, if you don't care about session name, pass in empty currentSessionName and check != ESaveExists::SE_DoesntExist" },
+		{ "ToolTip", "Check if a save game exists in the list of saves. if you don't care about session name, pass in empty currentSessionName and check != ESaveExists::SE_DoesntExist" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSystem, nullptr, "GetSaveExists", sizeof(FGSaveSystem_eventGetSaveExists_Parms), Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGSaveSystem_GetSaveExists()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSystem, nullptr, "GetCachedSaveExists", sizeof(FGSaveSystem_eventGetCachedSaveExists_Parms), Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics
+	{
+		struct FGSaveSystem_eventGetSaveState_Parms
+		{
+			FSaveHeader saveGame;
+			ESaveState ReturnValue;
+		};
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_saveGame_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_saveGame;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventGetSaveState_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_ESaveState, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::NewProp_saveGame_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::NewProp_saveGame = { "saveGame", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventGetSaveState_Parms, saveGame), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::NewProp_saveGame_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::NewProp_saveGame_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::NewProp_ReturnValue_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::NewProp_saveGame,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Save" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
+		{ "ToolTip", "Get the state we consider the save so we can warn if a save is potentially dangerous to load" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSystem, nullptr, "GetSaveState", sizeof(FGSaveSystem_eventGetSaveState_Parms), Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGSaveSystem_GetSaveState()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSaveSystem_GetSaveState_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics
+	{
+		struct FGSaveSystem_eventGroupSavesPerSession_Parms
+		{
+			TArray<FSaveHeader> saves;
+			TArray<FSessionSaveStruct> out_groupedBySession;
+		};
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_groupedBySession;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_out_groupedBySession_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_saves_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_saves;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_saves_Inner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::NewProp_out_groupedBySession = { "out_groupedBySession", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventGroupSavesPerSession_Parms, out_groupedBySession), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::NewProp_out_groupedBySession_Inner = { "out_groupedBySession", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSessionSaveStruct, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::NewProp_saves_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::NewProp_saves = { "saves", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventGroupSavesPerSession_Parms, saves), METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::NewProp_saves_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::NewProp_saves_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::NewProp_saves_Inner = { "saves", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::NewProp_out_groupedBySession,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::NewProp_out_groupedBySession_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::NewProp_saves,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::NewProp_saves_Inner,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Save" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
+		{ "ToolTip", "Groups a save list by their corresponding session" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSystem, nullptr, "GroupSavesPerSession", sizeof(FGSaveSystem_eventGroupSavesPerSession_Parms), Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -607,7 +763,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_IsSessionNameUsed_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
+		{ "Category", "FactoryGame|Save" },
 		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 	};
 #endif
@@ -649,7 +805,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_IsValidSaveName_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Save" },
+		{ "Category", "FactoryGame|Save" },
 		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 		{ "ToolTip", "Helper, used to verify if the save game name is valid" },
 	};
@@ -661,6 +817,108 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSaveSystem_IsValidSaveName_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics
+	{
+		struct FGSaveSystem_eventSortSaves_Parms
+		{
+			TArray<FSaveHeader> saves;
+			ESaveSortMode sortMode;
+			ESaveSortDirection sortDirection;
+		};
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_sortDirection;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_sortDirection_Underlying;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_sortMode;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_sortMode_Underlying;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_saves;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_saves_Inner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::NewProp_sortDirection = { "sortDirection", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventSortSaves_Parms, sortDirection), Z_Construct_UEnum_FactoryGame_ESaveSortDirection, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::NewProp_sortDirection_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::NewProp_sortMode = { "sortMode", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventSortSaves_Parms, sortMode), Z_Construct_UEnum_FactoryGame_ESaveSortMode, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::NewProp_sortMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::NewProp_saves = { "saves", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventSortSaves_Parms, saves), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::NewProp_saves_Inner = { "saves", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::NewProp_sortDirection,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::NewProp_sortDirection_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::NewProp_sortMode,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::NewProp_sortMode_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::NewProp_saves,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::NewProp_saves_Inner,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Save" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
+		{ "ToolTip", "Sort saves" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSystem, nullptr, "SortSaves", sizeof(FGSaveSystem_eventSortSaves_Parms), Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGSaveSystem_SortSaves()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSaveSystem_SortSaves_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics
+	{
+		struct FGSaveSystem_eventSortSessions_Parms
+		{
+			TArray<FSessionSaveStruct> sessions;
+			ESaveSortMode sortMode;
+			ESaveSortDirection sortDirection;
+		};
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_sortDirection;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_sortDirection_Underlying;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_sortMode;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_sortMode_Underlying;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_sessions;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_sessions_Inner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::NewProp_sortDirection = { "sortDirection", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventSortSessions_Parms, sortDirection), Z_Construct_UEnum_FactoryGame_ESaveSortDirection, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::NewProp_sortDirection_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::NewProp_sortMode = { "sortMode", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventSortSessions_Parms, sortMode), Z_Construct_UEnum_FactoryGame_ESaveSortMode, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::NewProp_sortMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::NewProp_sessions = { "sessions", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSystem_eventSortSessions_Parms, sessions), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::NewProp_sessions_Inner = { "sessions", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSessionSaveStruct, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::NewProp_sortDirection,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::NewProp_sortDirection_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::NewProp_sortMode,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::NewProp_sortMode_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::NewProp_sessions,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::NewProp_sessions_Inner,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Save" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
+		{ "ToolTip", "Sort sessions" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSystem, nullptr, "SortSessions", sizeof(FGSaveSystem_eventSortSessions_Parms), Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGSaveSystem_SortSessions()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSaveSystem_SortSessions_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -689,13 +947,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSaveSystem_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGSaveSystem_DeleteSave, "DeleteSave" }, // 890774530
-		{ &Z_Construct_UFunction_UFGSaveSystem_FindSaveGames, "FindSaveGames" }, // 3864687980
-		{ &Z_Construct_UFunction_UFGSaveSystem_Get, "Get" }, // 1801866425
-		{ &Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession, "GetAllSavesPerSession" }, // 1568447356
-		{ &Z_Construct_UFunction_UFGSaveSystem_GetSaveExists, "GetSaveExists" }, // 2737223249
-		{ &Z_Construct_UFunction_UFGSaveSystem_IsSessionNameUsed, "IsSessionNameUsed" }, // 3072947212
-		{ &Z_Construct_UFunction_UFGSaveSystem_IsValidSaveName, "IsValidSaveName" }, // 621307986
+		{ &Z_Construct_UFunction_UFGSaveSystem_Get, "Get" }, // 2938941192
+		{ &Z_Construct_UFunction_UFGSaveSystem_GetCachedSaveExists, "GetCachedSaveExists" }, // 3428905482
+		{ &Z_Construct_UFunction_UFGSaveSystem_GetSaveState, "GetSaveState" }, // 2269408193
+		{ &Z_Construct_UFunction_UFGSaveSystem_GroupSavesPerSession, "GroupSavesPerSession" }, // 2893063986
+		{ &Z_Construct_UFunction_UFGSaveSystem_IsSessionNameUsed, "IsSessionNameUsed" }, // 2768499470
+		{ &Z_Construct_UFunction_UFGSaveSystem_IsValidSaveName, "IsValidSaveName" }, // 2799116681
+		{ &Z_Construct_UFunction_UFGSaveSystem_SortSaves, "SortSaves" }, // 2535056280
+		{ &Z_Construct_UFunction_UFGSaveSystem_SortSessions, "SortSessions" }, // 664550417
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveSystem_Statics::Class_MetaDataParams[] = {
@@ -742,7 +1001,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSaveSystem, 3936625286);
+	IMPLEMENT_CLASS(UFGSaveSystem, 2804863224);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSaveSystem>()
 	{
 		return UFGSaveSystem::StaticClass();

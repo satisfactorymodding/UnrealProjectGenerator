@@ -20,23 +20,23 @@ struct FInventoryStack;
 #endif
 #define FACTORYGAME_FGVehicle_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_76_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_77_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FVehicleSeat_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FVehicleSeat>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_27_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_28_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FVehiclePhysicsData_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FVehiclePhysicsData>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGUseState_VehicleHasDriver(); \
 	friend struct Z_Construct_UClass_UFGUseState_VehicleHasDriver_Statics; \
@@ -45,7 +45,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_VehicleHasDriver)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGUseState_VehicleHasDriver(); \
 	friend struct Z_Construct_UClass_UFGUseState_VehicleHasDriver_Statics; \
@@ -54,7 +54,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_VehicleHasDriver)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGUseState_VehicleHasDriver(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGUseState_VehicleHasDriver) \
@@ -67,7 +67,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGUseState_VehicleHasDriver(UFGUseState_VehicleHasDriver&&); \
@@ -78,35 +78,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGUseState_VehicleHasDriver); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGUseState_VehicleHasDriver)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_43_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_44_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_46_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_47_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_VehicleHasDriver>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGUseState_VehicleInWater(); \
 	friend struct Z_Construct_UClass_UFGUseState_VehicleInWater_Statics; \
@@ -115,7 +115,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_VehicleInWater)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGUseState_VehicleInWater(); \
 	friend struct Z_Construct_UClass_UFGUseState_VehicleInWater_Statics; \
@@ -124,7 +124,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_VehicleInWater)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGUseState_VehicleInWater(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGUseState_VehicleInWater) \
@@ -137,7 +137,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGUseState_VehicleInWater(UFGUseState_VehicleInWater&&); \
@@ -148,35 +148,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGUseState_VehicleInWater); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGUseState_VehicleInWater)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_54_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_55_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_57_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_58_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_VehicleInWater>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGUseState_VehicleOccupied(); \
 	friend struct Z_Construct_UClass_UFGUseState_VehicleOccupied_Statics; \
@@ -185,7 +185,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_VehicleOccupied)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGUseState_VehicleOccupied(); \
 	friend struct Z_Construct_UClass_UFGUseState_VehicleOccupied_Statics; \
@@ -194,7 +194,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_VehicleOccupied)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGUseState_VehicleOccupied(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGUseState_VehicleOccupied) \
@@ -207,7 +207,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGUseState_VehicleOccupied(UFGUseState_VehicleOccupied&&); \
@@ -218,33 +218,33 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGUseState_VehicleOccupied); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGUseState_VehicleOccupied)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_65_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_66_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_68_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_69_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_VehicleOccupied>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execUpdatePhysicsVolume) \
 	{ \
@@ -344,7 +344,7 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_VehicleOccupied
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execUpdatePhysicsVolume) \
 	{ \
@@ -444,7 +444,7 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_VehicleOccupied
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_EVENT_PARMS \
 	struct FGVehicle_eventGetDismantleBlueprintReturns_Parms \
 	{ \
 		TArray<FInventoryStack> out_returns; \
@@ -463,34 +463,34 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_VehicleOccupied
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(AFGVehicle, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGVehicle(); \
 	friend struct Z_Construct_UClass_AFGVehicle_Statics; \
 public: \
 	DECLARE_CLASS(AFGVehicle, AFGDriveablePawn, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGVehicle) \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGVehicle*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGVehicle(); \
 	friend struct Z_Construct_UClass_AFGVehicle_Statics; \
 public: \
 	DECLARE_CLASS(AFGVehicle, AFGDriveablePawn, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGVehicle) \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGVehicle*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGVehicle(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGVehicle) \
@@ -503,7 +503,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGVehicle(AFGVehicle&&); \
@@ -514,11 +514,12 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGVehicle); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGVehicle)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mMesh() { return STRUCT_OFFSET(AFGVehicle, mMesh); } \
 	FORCEINLINE static uint32 __PPO__mHealthComponent() { return STRUCT_OFFSET(AFGVehicle, mHealthComponent); } \
 	FORCEINLINE static uint32 __PPO__mDisabledByWaterLocations() { return STRUCT_OFFSET(AFGVehicle, mDisabledByWaterLocations); } \
-	FORCEINLINE static uint32 __PPO__mDismantleRefund() { return STRUCT_OFFSET(AFGVehicle, mDismantleRefund); } \
+	FORCEINLINE static uint32 __PPO__mNetConstructionID() { return STRUCT_OFFSET(AFGVehicle, mNetConstructionID); } \
+	FORCEINLINE static uint32 __PPO__mBuiltWithRecipe() { return STRUCT_OFFSET(AFGVehicle, mBuiltWithRecipe); } \
 	FORCEINLINE static uint32 __PPO__mPrimaryColor() { return STRUCT_OFFSET(AFGVehicle, mPrimaryColor); } \
 	FORCEINLINE static uint32 __PPO__mSecondaryColor() { return STRUCT_OFFSET(AFGVehicle, mSecondaryColor); } \
 	FORCEINLINE static uint32 __PPO__mIsSelfDriving() { return STRUCT_OFFSET(AFGVehicle, mIsSelfDriving); } \
@@ -533,30 +534,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGVehicle); \
 	FORCEINLINE static uint32 __PPO__mSignificanceRange() { return STRUCT_OFFSET(AFGVehicle, mSignificanceRange); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_114_PROLOG \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_115_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_117_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGVehicle_h_118_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

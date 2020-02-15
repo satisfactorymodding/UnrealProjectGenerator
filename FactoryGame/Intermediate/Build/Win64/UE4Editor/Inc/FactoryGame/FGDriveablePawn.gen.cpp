@@ -770,7 +770,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDriveablePawn, 501716001);
+	IMPLEMENT_CLASS(AFGDriveablePawn, 2348225261);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGDriveablePawn>()
 	{
 		return AFGDriveablePawn::StaticClass();

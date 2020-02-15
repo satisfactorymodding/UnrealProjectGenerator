@@ -17,7 +17,9 @@ void EmptyLinkFunctionForGeneratedCodeFGDeveloperSettings() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGDeveloperSettings();
 	ENGINE_API UClass* Z_Construct_UClass_UDeveloperSettings();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ESchematicCategory();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSchematicCategory_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGUnlockArmEquipmentSlot_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGUnlockInventorySlot_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGUnlockBuildOverclock_NoRegister();
@@ -39,6 +41,13 @@ void EmptyLinkFunctionForGeneratedCodeFGDeveloperSettings() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSchematicCategoryMigrationData_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMapPropertyParams NewProp_mSchematicCategoryMigrationData;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_mSchematicCategoryMigrationData_Key_KeyProp;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_mSchematicCategoryMigrationData_Key_KeyProp_Underlying;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mSchematicCategoryMigrationData_ValueProp;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mUnlockArmEquipmentClass_MetaData[];
 #endif
@@ -87,6 +96,16 @@ void EmptyLinkFunctionForGeneratedCodeFGDeveloperSettings() {}
 		{ "ModuleRelativePath", "Public/FGDeveloperSettings.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mSchematicCategoryMigrationData_MetaData[] = {
+		{ "Category", "Schematic category classes for migrating from old enum to new object based type" },
+		{ "ModuleRelativePath", "Public/FGDeveloperSettings.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mSchematicCategoryMigrationData = { "mSchematicCategoryMigrationData", nullptr, (EPropertyFlags)0x0014000000004001, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDeveloperSettings, mSchematicCategoryMigrationData), METADATA_PARAMS(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mSchematicCategoryMigrationData_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mSchematicCategoryMigrationData_MetaData)) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mSchematicCategoryMigrationData_Key_KeyProp = { "mSchematicCategoryMigrationData_Key", nullptr, (EPropertyFlags)0x0000000000004001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UEnum_FactoryGame_ESchematicCategory, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mSchematicCategoryMigrationData_Key_KeyProp_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mSchematicCategoryMigrationData_ValueProp = { "mSchematicCategoryMigrationData", nullptr, (EPropertyFlags)0x0004000000004001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UClass_UFGSchematicCategory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockArmEquipmentClass_MetaData[] = {
 		{ "Category", "Unlock Classes For Migrating To New Unlock System" },
@@ -149,6 +168,10 @@ void EmptyLinkFunctionForGeneratedCodeFGDeveloperSettings() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mGreedyFocusInPIE = { "mGreedyFocusInPIE", nullptr, (EPropertyFlags)0x0010000000024001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGDeveloperSettings), &Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mGreedyFocusInPIE_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mGreedyFocusInPIE_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mGreedyFocusInPIE_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGDeveloperSettings_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mSchematicCategoryMigrationData,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mSchematicCategoryMigrationData_Key_KeyProp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mSchematicCategoryMigrationData_Key_KeyProp_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mSchematicCategoryMigrationData_ValueProp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockArmEquipmentClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockInvetorySlotClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mUnlockBuildOverclockClass,
@@ -185,7 +208,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDeveloperSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDeveloperSettings, 2842521239);
+	IMPLEMENT_CLASS(UFGDeveloperSettings, 454942730);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGDeveloperSettings>()
 	{
 		return UFGDeveloperSettings::StaticClass();

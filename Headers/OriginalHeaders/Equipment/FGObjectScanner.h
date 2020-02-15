@@ -7,6 +7,13 @@
 #include "FGEquipmentAttachment.h"
 #include "FGObjectScanner.generated.h"
 
+UENUM()
+enum class ECycleDirection : uint8
+{
+	CD_Forward,
+	CD_Backward
+};
+
 USTRUCT( BlueprintType )
 struct FScannableDetails
 {
@@ -48,6 +55,7 @@ struct FScannableDetails
 	float NewDetectionRange;
 
 	FScannableDetails() :
+		ScannerLightColor( FColor::White ),
 		PreCacheAllOfType( true ),
 		ShouldOverrideDetectionRange( false ),
 		NewDetectionRange( 1000.0f )
@@ -114,6 +122,10 @@ public:
 	UFUNCTION( BlueprintImplementableEvent, Category = "Scanner" )
 	void UpdateScannerVisuals( bool wasChange );
 
+	/** Returns whether or not object scanner has a valid currently selected object */
+	UFUNCTION( BlueprintCallable, Category = "Scanner" )
+ 	FORCEINLINE bool HasValidCurrentDetails() const { return mObjectDetails.IsValidIndex( mCurrentObjectSelection ); }
+
 	/** Does what it says on the tin: get's the current details */
 	UFUNCTION( BlueprintPure, Category = "Scanner" )
 	FScannableDetails GetCurrentDetails();
@@ -130,6 +142,8 @@ private:
 	/** Precaches all CACHEABLE objects (as defined by FScannableDetails). */
 	void PrecacheObjects();
 
+	bool Internal_CycleObjects( ECycleDirection direction );
+
 	/**
 	* Removes all nullptr entries from cache. Possible because other players may pick up Objects, thus nulling them,
 	* and this cache does use any replication etc.
@@ -144,6 +158,12 @@ private:
 
 	/** Gets all actors of a class and adds them to an array of weak ptrs */
 	void GetAllActorsOfClassAsWeakPtr( TSubclassOf< class AActor > actorClass, TArray< TWeakObjectPtr< class AActor > > &out_Actors );
+
+	/** Returns array with all object details that we can search for including their index in the list of all object details */
+	TArray<TTuple<FScannableDetails, int32>> GetCurrentDetailsWithIndex();
+
+	/** If no object has been selected, this will try and equip the first available object in the object scanner */
+	void TryToEquipDefaultObject();
 
 protected:
 	/** Maximum delay (in seconds) between each beep */

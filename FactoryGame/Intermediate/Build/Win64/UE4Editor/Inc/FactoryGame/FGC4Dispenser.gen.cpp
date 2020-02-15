@@ -257,7 +257,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Dispenser() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGC4Dispenser, 2211629495);
+	IMPLEMENT_CLASS(AFGC4Dispenser, 1150640601);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGC4Dispenser>()
 	{
 		return AFGC4Dispenser::StaticClass();

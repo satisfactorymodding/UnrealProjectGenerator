@@ -98,6 +98,10 @@ public:
 	virtual bool CanDismantle_Implementation() const override;
 	// End IFGDismantleInterface
 
+	// Begin Buildable interface
+	virtual int32 GetDismantleRefundReturnsMultiplier() const override;
+	// End Buildable interface
+
 	/** Get the spline for this track. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Track" )
 	class USplineComponent* GetSplineComponent() const { return mSplineComponent; }
@@ -139,28 +143,6 @@ public:
 
 	/** @return The track graph this track belongs to. */
 	FORCEINLINE int32 GetTrackGraphID() const { return mTrackGraphID; }
-
-	//@todoconveyor This could be shared with conveyors later.
-	template< typename MeshConstructor >
-	static void BuildSplineMeshes(
-		class USplineComponent* spline,
-		UStaticMesh* mesh,
-		float meshLength,
-		TArray< USplineMeshComponent* >& meshPool,
-		MeshConstructor meshConstructor );
-
-	static void BuildSplineMeshes(
-		class USplineComponent* spline,
-		UStaticMesh* mesh,
-		float meshLength,
-		UFGInstancedSplineMeshComponent* splineInstances );
-
-	static void BuildSplineCollisions(
-		class USplineComponent* spline,
-		const FVector& collisionExtent,
-		float collisionSpacing,
-		const FVector& collisionOffset,
-		FName collisionProfile );
 
 private:
 	void SetTrackGraphID( int32 trackGraphID );
@@ -204,61 +186,3 @@ private:
 	/** Length of this track. [cm] */
 	float mLength;
 };
-
-/**
- * Templated function implementations.
- */
-template< typename MeshConstructor >
-void AFGBuildableRailroadTrack::BuildSplineMeshes(
-	class USplineComponent* spline,
-	UStaticMesh* mesh,
-	float meshLength,
-	TArray< USplineMeshComponent* >& meshPool,
-	MeshConstructor meshConstructor )
-{
-	check( spline );
-
-	const float splineLength = spline->GetSplineLength();
-	const int32 numMeshes = FMath::Max( 1, FMath::RoundToInt( splineLength / meshLength ) + 1 );
-
-	// Create more or remove the excess meshes.
-	if( numMeshes < meshPool.Num() )
-	{
-		while( meshPool.Num() > numMeshes )
-		{
-			meshPool.Last()->DestroyComponent();
-			meshPool.Pop();
-		}
-	}
-	else if( numMeshes > meshPool.Num() )
-	{
-		while( meshPool.Num() < numMeshes )
-		{
-			meshPool.Push( meshConstructor( spline ) );
-		}
-	}
-
-	// Put all pieces along the spline.
-	for( int32 i = 0; i < meshPool.Num(); ++i )
-	{
-		const float segmentLength = splineLength / numMeshes;
-		const float startDistance = ( float )i * segmentLength;
-		const float endDistance = ( float )( i + 1 ) * segmentLength;
-		const FVector startPos = spline->GetLocationAtDistanceAlongSpline( startDistance, ESplineCoordinateSpace::Local );
-		const FVector startTangent = spline->GetTangentAtDistanceAlongSpline( startDistance, ESplineCoordinateSpace::Local ).GetSafeNormal() * segmentLength;
-		const FVector endPos = spline->GetLocationAtDistanceAlongSpline( endDistance, ESplineCoordinateSpace::Local );
-		const FVector endTangent = spline->GetTangentAtDistanceAlongSpline( endDistance, ESplineCoordinateSpace::Local ).GetSafeNormal() * segmentLength;
-
-		meshPool[ i ]->SetStartAndEnd( startPos, startTangent, endPos, endTangent, true );
-		meshPool[ i ]->SetStaticMesh( mesh );
-	}
-
-	// Register new meshes, needs to happen after the properties are set for static components.
-	for( auto meshComp : meshPool )
-	{
-		if( !meshComp->IsRegistered() )
-		{
-			meshComp->RegisterComponent();
-		}
-	}
-}

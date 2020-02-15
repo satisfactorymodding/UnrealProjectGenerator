@@ -294,7 +294,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrate() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCrate, 136183331);
+	IMPLEMENT_CLASS(AFGCrate, 1569818574);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCrate>()
 	{
 		return AFGCrate::StaticClass();

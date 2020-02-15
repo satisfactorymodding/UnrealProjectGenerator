@@ -268,7 +268,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDestructibleActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDestructibleActor, 3880788873);
+	IMPLEMENT_CLASS(AFGDestructibleActor, 3745834863);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGDestructibleActor>()
 	{
 		return AFGDestructibleActor::StaticClass();

@@ -444,7 +444,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGMapManager, 1076485745);
+	IMPLEMENT_CLASS(AFGMapManager, 3302054284);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGMapManager>()
 	{
 		return AFGMapManager::StaticClass();

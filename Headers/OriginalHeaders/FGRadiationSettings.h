@@ -13,7 +13,17 @@ struct FRadiationVisualization
 {
 	GENERATED_BODY()
 public:
-	FRadiationVisualization(){}
+	FRadiationVisualization() :
+		ItemAmount(-1),
+		Decay(0),
+		UnitMultiplier(0),
+		HighestIntensity(0),
+		HighestDamageInterval(0),
+		DistanceForHighestIntensity(0),
+		DistanceForNoticableIntensity(0)
+	{
+	}
+
 	FRadiationVisualization( FName Case, int32 ItemAmount, float Decay, int32 UnitMultiplier ) :
 		Case( Case ),
 		ItemAmount(ItemAmount),

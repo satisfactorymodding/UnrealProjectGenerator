@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		return EFactoryConnectionConnector_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFactoryConnectionConnector(EFactoryConnectionConnector_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EFactoryConnectionConnector"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector_Hash() { return 4019510425U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector_Hash() { return 4210998943U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector()
 	{
 #if WITH_HOT_RELOAD
@@ -131,7 +131,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 				{ "FCC_MAX.Hidden", "" },
 				{ "FCC_PIPE.DisplayName", "Pipe" },
 				{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
-				{ "ToolTip", "Type of connections in the game." },
+				{ "ToolTip", "Type of connections in the game.\n@todoPipes - This is old, we're shifting to a different connection component type for pipes as they don't need most of the special logic in the factory connection" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -572,6 +572,10 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		static void NewProp_mForwardPeekAndGrabToBuildable_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mForwardPeekAndGrabToBuildable;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mInventoryAccessIndex_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mInventoryAccessIndex;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mConnectionInventory_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mConnectionInventory;
@@ -640,6 +644,13 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable = { "mForwardPeekAndGrabToBuildable", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UFGFactoryConnectionComponent), &Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mInventoryAccessIndex_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
+		{ "ToolTip", "The inventory index utilized by this connection ( -1 for none specified )" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mInventoryAccessIndex = { "mInventoryAccessIndex", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactoryConnectionComponent, mInventoryAccessIndex), METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mInventoryAccessIndex_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mInventoryAccessIndex_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
@@ -650,6 +661,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
+		{ "ToolTip", "Light-weight connected indication for clients." },
 	};
 #endif
 	void Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent_SetBit(void* Obj)
@@ -693,6 +705,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnector_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mInventoryAccessIndex,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectedComponent,
@@ -729,7 +742,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFactoryConnectionComponent, 846089112);
+	IMPLEMENT_CLASS(UFGFactoryConnectionComponent, 3846877005);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFactoryConnectionComponent>()
 	{
 		return UFGFactoryConnectionComponent::StaticClass();

@@ -19,22 +19,7 @@ struct FDateTime;
 #endif
 #define FACTORYGAME_FGSaveSession_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_18_DELEGATE \
-struct _Script_FactoryGame_eventSaveWorldImplementationSignature_Parms \
-{ \
-	bool wasSuccessful; \
-	FText errorMessage; \
-}; \
-static inline void FSaveWorldImplementationSignature_DelegateWrapper(const FMulticastScriptDelegate& SaveWorldImplementationSignature, bool wasSuccessful, const FText& errorMessage) \
-{ \
-	_Script_FactoryGame_eventSaveWorldImplementationSignature_Parms Parms; \
-	Parms.wasSuccessful=wasSuccessful ? true : false; \
-	Parms.errorMessage=errorMessage; \
-	SaveWorldImplementationSignature.ProcessMulticastDelegate<UObject>(&Parms); \
-}
-
-
-#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnActorDestroyed) \
 	{ \
@@ -50,24 +35,6 @@ static inline void FSaveWorldImplementationSignature_DelegateWrapper(const FMult
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->Autosave(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execLoadGame) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_saveName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->LoadGame(Z_Param_saveName); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSaveGame) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_fileName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->SaveGame(Z_Param_fileName); \
 		P_NATIVE_END; \
 	} \
  \
@@ -189,7 +156,7 @@ static inline void FSaveWorldImplementationSignature_DelegateWrapper(const FMult
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnActorDestroyed) \
 	{ \
@@ -205,24 +172,6 @@ static inline void FSaveWorldImplementationSignature_DelegateWrapper(const FMult
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->Autosave(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execLoadGame) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_saveName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->LoadGame(Z_Param_saveName); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSaveGame) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_fileName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->SaveGame(Z_Param_fileName); \
 		P_NATIVE_END; \
 	} \
  \
@@ -344,7 +293,7 @@ static inline void FSaveWorldImplementationSignature_DelegateWrapper(const FMult
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGSaveSession(); \
 	friend struct Z_Construct_UClass_UFGSaveSession_Statics; \
@@ -355,7 +304,7 @@ public: \
 
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGSaveSession(); \
 	friend struct Z_Construct_UClass_UFGSaveSession_Statics; \
@@ -366,7 +315,7 @@ public: \
 
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGSaveSession(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGSaveSession) \
@@ -379,7 +328,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGSaveSession(UFGSaveSession&&); \
@@ -390,30 +339,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGSaveSession); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGSaveSession)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mAutosaveInterval() { return STRUCT_OFFSET(UFGSaveSession, mAutosaveInterval); } \
 	FORCEINLINE static uint32 __PPO__mNumRotatingAutosaves() { return STRUCT_OFFSET(UFGSaveSession, mNumRotatingAutosaves); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_23_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_24_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_26_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGSaveSession_h_27_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

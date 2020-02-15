@@ -18,9 +18,13 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGPlayerControllerBase_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGPlayerControllerBase();
 	ENGINE_API UClass* Z_Construct_UClass_APlayerController();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_Admin();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_AdminLogin();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_Client_UpdateCappedBandwidth();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_DiscardInput();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_FlushPressedKeys();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetAdminInterface();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGAdminInterface_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivity();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY();
@@ -33,10 +37,13 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_RebindActionKey();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFGKeyMapping();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_ResetInputBindings();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_Server_UpdateCappedBandwidth();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_SetIsUsingGamepad();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_SetMouseSensitivity();
 	ENGINE_API UClass* Z_Construct_UClass_UInputComponent_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCheatManager_NoRegister();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_FactoryGame_OnInputChanged__DelegateSignature_Statics
 	{
@@ -74,6 +81,13 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 		const_cast<AFGPlayerControllerBase*>(this)->ProcessEvent(FindFunctionChecked(NAME_AFGPlayerControllerBase_GetPresenceString),&Parms);
 		return Parms.ReturnValue;
 	}
+	static FName NAME_AFGPlayerControllerBase_Server_AdminLogin = FName(TEXT("Server_AdminLogin"));
+	void AFGPlayerControllerBase::Server_AdminLogin(const FString& hashedPassword)
+	{
+		FGPlayerControllerBase_eventServer_AdminLogin_Parms Parms;
+		Parms.hashedPassword=hashedPassword;
+		ProcessEvent(FindFunctionChecked(NAME_AFGPlayerControllerBase_Server_AdminLogin),&Parms);
+	}
 	static FName NAME_AFGPlayerControllerBase_Server_UpdateCappedBandwidth = FName(TEXT("Server_UpdateCappedBandwidth"));
 	void AFGPlayerControllerBase::Server_UpdateCappedBandwidth(int32 cap)
 	{
@@ -81,13 +95,23 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 		Parms.cap=cap;
 		ProcessEvent(FindFunctionChecked(NAME_AFGPlayerControllerBase_Server_UpdateCappedBandwidth),&Parms);
 	}
+	static FName NAME_AFGPlayerControllerBase_ServerAdmin = FName(TEXT("ServerAdmin"));
+	void AFGPlayerControllerBase::ServerAdmin(const FString& command)
+	{
+		FGPlayerControllerBase_eventServerAdmin_Parms Parms;
+		Parms.command=command;
+		ProcessEvent(FindFunctionChecked(NAME_AFGPlayerControllerBase_ServerAdmin),&Parms);
+	}
 	void AFGPlayerControllerBase::StaticRegisterNativesAFGPlayerControllerBase()
 	{
 		UClass* Class = AFGPlayerControllerBase::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "Admin", &AFGPlayerControllerBase::execAdmin },
+			{ "AdminLogin", &AFGPlayerControllerBase::execAdminLogin },
 			{ "Client_UpdateCappedBandwidth", &AFGPlayerControllerBase::execClient_UpdateCappedBandwidth },
 			{ "DiscardInput", &AFGPlayerControllerBase::execDiscardInput },
 			{ "FlushPressedKeys", &AFGPlayerControllerBase::execFlushPressedKeys },
+			{ "GetAdminInterface", &AFGPlayerControllerBase::execGetAdminInterface },
 			{ "GetDefaultMouseSensitivity", &AFGPlayerControllerBase::execGetDefaultMouseSensitivity },
 			{ "GetDefaultMouseSensitivityX", &AFGPlayerControllerBase::execGetDefaultMouseSensitivityX },
 			{ "GetDefaultMouseSensitivityY", &AFGPlayerControllerBase::execGetDefaultMouseSensitivityY },
@@ -99,11 +123,86 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 			{ "GetPresenceString", &AFGPlayerControllerBase::execGetPresenceString },
 			{ "RebindActionKey", &AFGPlayerControllerBase::execRebindActionKey },
 			{ "ResetInputBindings", &AFGPlayerControllerBase::execResetInputBindings },
+			{ "Server_AdminLogin", &AFGPlayerControllerBase::execServer_AdminLogin },
 			{ "Server_UpdateCappedBandwidth", &AFGPlayerControllerBase::execServer_UpdateCappedBandwidth },
+			{ "ServerAdmin", &AFGPlayerControllerBase::execServerAdmin },
 			{ "SetIsUsingGamepad", &AFGPlayerControllerBase::execSetIsUsingGamepad },
 			{ "SetMouseSensitivity", &AFGPlayerControllerBase::execSetMouseSensitivity },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AFGPlayerControllerBase_Admin_Statics
+	{
+		struct FGPlayerControllerBase_eventAdmin_Parms
+		{
+			FString command;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_command_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_command;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_Admin_Statics::NewProp_command_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AFGPlayerControllerBase_Admin_Statics::NewProp_command = { "command", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerControllerBase_eventAdmin_Parms, command), METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerControllerBase_Admin_Statics::NewProp_command_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_Admin_Statics::NewProp_command_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerControllerBase_Admin_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerControllerBase_Admin_Statics::NewProp_command,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_Admin_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
+		{ "ToolTip", "Try to run a command on the server, require admin rights" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerControllerBase_Admin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerControllerBase, nullptr, "Admin", sizeof(FGPlayerControllerBase_eventAdmin_Parms), Z_Construct_UFunction_AFGPlayerControllerBase_Admin_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_Admin_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerControllerBase_Admin_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_Admin_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_Admin()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerControllerBase_Admin_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerControllerBase_AdminLogin_Statics
+	{
+		struct FGPlayerControllerBase_eventAdminLogin_Parms
+		{
+			FString password;
+		};
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_password;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AFGPlayerControllerBase_AdminLogin_Statics::NewProp_password = { "password", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerControllerBase_eventAdminLogin_Parms, password), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerControllerBase_AdminLogin_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerControllerBase_AdminLogin_Statics::NewProp_password,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_AdminLogin_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerControllerBase_AdminLogin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerControllerBase, nullptr, "AdminLogin", sizeof(FGPlayerControllerBase_eventAdminLogin_Parms), Z_Construct_UFunction_AFGPlayerControllerBase_AdminLogin_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_AdminLogin_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerControllerBase_AdminLogin_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_AdminLogin_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_AdminLogin()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerControllerBase_AdminLogin_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AFGPlayerControllerBase_Client_UpdateCappedBandwidth_Statics
 	{
@@ -166,7 +265,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_FlushPressedKeys_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "FactoryGame|Input" },
 		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
 		{ "ToolTip", "Exposing flushPressedKeys to BP" },
 	};
@@ -178,6 +277,40 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerControllerBase_FlushPressedKeys_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerControllerBase_GetAdminInterface_Statics
+	{
+		struct FGPlayerControllerBase_eventGetAdminInterface_Parms
+		{
+			AFGAdminInterface* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGPlayerControllerBase_GetAdminInterface_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerControllerBase_eventGetAdminInterface_Parms, ReturnValue), Z_Construct_UClass_AFGAdminInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerControllerBase_GetAdminInterface_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerControllerBase_GetAdminInterface_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_GetAdminInterface_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Online|Admin" },
+		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
+		{ "ToolTip", "@return the admin interface if we are logged in as server admin" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerControllerBase_GetAdminInterface_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerControllerBase, nullptr, "GetAdminInterface", sizeof(FGPlayerControllerBase_eventGetAdminInterface_Parms), Z_Construct_UFunction_AFGPlayerControllerBase_GetAdminInterface_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_GetAdminInterface_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerControllerBase_GetAdminInterface_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_GetAdminInterface_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetAdminInterface()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerControllerBase_GetAdminInterface_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -200,7 +333,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivity_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "FactoryGame|Input" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use GetDefaultMouseSensitivityX/GetDefaultMouseSensitivityY instead" },
 		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
@@ -235,7 +368,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "FactoryGame|Input" },
 		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
 		{ "ToolTip", "Get default value for mouse sensitivity in X axis" },
 	};
@@ -269,7 +402,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "FactoryGame|Input" },
 		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
 		{ "ToolTip", "Get default value for mouse sensitivity in Y axis" },
 	};
@@ -308,7 +441,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_GetIsUsingGamepad_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "FactoryGame|Input" },
 		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
 		{ "ToolTip", "End APlayerController interface" },
 	};
@@ -355,7 +488,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_GetKeyNameForAction_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "FactoryGame|Input" },
 		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
 		{ "ToolTip", "Returns readable name for an action" },
 	};
@@ -389,7 +522,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivity_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "FactoryGame|Input" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use GetMouseSensitivityX/GetMouseSensitivityY instead" },
 		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
@@ -424,7 +557,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "FactoryGame|Input" },
 		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
 		{ "ToolTip", "Get current sensitivity in X axis" },
 	};
@@ -458,7 +591,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "FactoryGame|Input" },
 		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
 		{ "ToolTip", "Get current sensitivity in X axis" },
 	};
@@ -488,7 +621,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_GetPresenceString_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Online|Presence" },
+		{ "Category", "FactoryGame|Online|Presence" },
 		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
 	};
 #endif
@@ -530,7 +663,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_RebindActionKey_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "FactoryGame|Input" },
 		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
 		{ "ToolTip", "Used for rebinding keys" },
 	};
@@ -554,7 +687,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_ResetInputBindings_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "FactoryGame|Input" },
 		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
 		{ "ToolTip", "Removes custom bindings and restores to default" },
 	};
@@ -566,6 +699,43 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerControllerBase_ResetInputBindings_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_hashedPassword_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_hashedPassword;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin_Statics::NewProp_hashedPassword_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin_Statics::NewProp_hashedPassword = { "hashedPassword", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerControllerBase_eventServer_AdminLogin_Parms, hashedPassword), METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin_Statics::NewProp_hashedPassword_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin_Statics::NewProp_hashedPassword_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin_Statics::NewProp_hashedPassword,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
+		{ "ToolTip", "Login a player controller with a password, response comes later" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerControllerBase, nullptr, "Server_AdminLogin", sizeof(FGPlayerControllerBase_eventServer_AdminLogin_Parms), Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -598,6 +768,42 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_command_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_command;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin_Statics::NewProp_command_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin_Statics::NewProp_command = { "command", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerControllerBase_eventServerAdmin_Parms, command), METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin_Statics::NewProp_command_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin_Statics::NewProp_command_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin_Statics::NewProp_command,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerControllerBase, nullptr, "ServerAdmin", sizeof(FGPlayerControllerBase_eventServerAdmin_Parms), Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGPlayerControllerBase_SetIsUsingGamepad_Statics
 	{
 		struct FGPlayerControllerBase_eventSetIsUsingGamepad_Parms
@@ -622,7 +828,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_SetIsUsingGamepad_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "FactoryGame|Input" },
 		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
 	};
 #endif
@@ -655,7 +861,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_SetMouseSensitivity_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "FactoryGame|Input" },
 		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
 		{ "ToolTip", "Sets mouse sensitivity" },
 	};
@@ -695,6 +901,14 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mDisableInputComponent;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mReplicatedCheatManager_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mReplicatedCheatManager;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAdminInterface_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mAdminInterface;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OnInputChanged_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnInputChanged;
@@ -707,23 +921,28 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGPlayerControllerBase_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_Admin, "Admin" }, // 1632102286
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_AdminLogin, "AdminLogin" }, // 3394812698
 		{ &Z_Construct_UFunction_AFGPlayerControllerBase_Client_UpdateCappedBandwidth, "Client_UpdateCappedBandwidth" }, // 1105277740
 		{ &Z_Construct_UFunction_AFGPlayerControllerBase_DiscardInput, "DiscardInput" }, // 627032534
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_FlushPressedKeys, "FlushPressedKeys" }, // 4214596025
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivity, "GetDefaultMouseSensitivity" }, // 3995068288
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX, "GetDefaultMouseSensitivityX" }, // 3898471365
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY, "GetDefaultMouseSensitivityY" }, // 1116349268
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetIsUsingGamepad, "GetIsUsingGamepad" }, // 3694326435
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetKeyNameForAction, "GetKeyNameForAction" }, // 2294398490
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivity, "GetMouseSensitivity" }, // 3269080625
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX, "GetMouseSensitivityX" }, // 3066318497
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY, "GetMouseSensitivityY" }, // 3292325025
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetPresenceString, "GetPresenceString" }, // 2009411240
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_RebindActionKey, "RebindActionKey" }, // 2850040734
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_ResetInputBindings, "ResetInputBindings" }, // 751429272
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_FlushPressedKeys, "FlushPressedKeys" }, // 1230046927
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetAdminInterface, "GetAdminInterface" }, // 1874992495
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivity, "GetDefaultMouseSensitivity" }, // 1650205496
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX, "GetDefaultMouseSensitivityX" }, // 1884999892
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY, "GetDefaultMouseSensitivityY" }, // 4003804554
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetIsUsingGamepad, "GetIsUsingGamepad" }, // 396532617
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetKeyNameForAction, "GetKeyNameForAction" }, // 412948520
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivity, "GetMouseSensitivity" }, // 430630627
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX, "GetMouseSensitivityX" }, // 3332553992
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY, "GetMouseSensitivityY" }, // 2840528900
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetPresenceString, "GetPresenceString" }, // 4194125262
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_RebindActionKey, "RebindActionKey" }, // 255183085
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_ResetInputBindings, "ResetInputBindings" }, // 2104624316
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_Server_AdminLogin, "Server_AdminLogin" }, // 736098747
 		{ &Z_Construct_UFunction_AFGPlayerControllerBase_Server_UpdateCappedBandwidth, "Server_UpdateCappedBandwidth" }, // 877446706
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_SetIsUsingGamepad, "SetIsUsingGamepad" }, // 3075400682
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_SetMouseSensitivity, "SetMouseSensitivity" }, // 3955113545
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_ServerAdmin, "ServerAdmin" }, // 4236352518
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_SetIsUsingGamepad, "SetIsUsingGamepad" }, // 81854938
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_SetMouseSensitivity, "SetMouseSensitivity" }, // 2795864062
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerControllerBase_Statics::Class_MetaDataParams[] = {
@@ -758,6 +977,20 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_mDisableInputComponent = { "mDisableInputComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerControllerBase, mDisableInputComponent), Z_Construct_UClass_UInputComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_mDisableInputComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_mDisableInputComponent_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_mReplicatedCheatManager_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
+		{ "ToolTip", "If we are allowed to cheat, then we replicate the cheat manager" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_mReplicatedCheatManager = { "mReplicatedCheatManager", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerControllerBase, mReplicatedCheatManager), Z_Construct_UClass_UFGCheatManager_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_mReplicatedCheatManager_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_mReplicatedCheatManager_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_mAdminInterface_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
+		{ "ToolTip", "Admin interface if we have one available" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_mAdminInterface = { "mAdminInterface", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerControllerBase, mAdminInterface), Z_Construct_UClass_AFGAdminInterface_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_mAdminInterface_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_mAdminInterface_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_OnInputChanged_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGPlayerControllerBase.h" },
 		{ "ToolTip", "Called when we rebind any key" },
@@ -769,6 +1002,8 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_mAllowedInputWhenDead_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_mEnableInputComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_mDisableInputComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_mReplicatedCheatManager,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_mAdminInterface,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerControllerBase_Statics::NewProp_OnInputChanged,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGPlayerControllerBase_Statics::StaticCppClassTypeInfo = {
@@ -798,7 +1033,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerControllerBase, 383876512);
+	IMPLEMENT_CLASS(AFGPlayerControllerBase, 3322603476);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlayerControllerBase>()
 	{
 		return AFGPlayerControllerBase::StaticClass();

@@ -11,27 +11,28 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct FPendingInvite;
 struct FUniqueNetIdRepl;
 struct FUpdatedFriends;
+enum class ECreateSessionState : uint8;
 struct FFGOnlineFriend;
 #ifdef FACTORYGAME_FGLocalPlayer_generated_h
 #error "FGLocalPlayer.generated.h already included, missing '#pragma once' in FGLocalPlayer.h"
 #endif
 #define FACTORYGAME_FGLocalPlayer_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_149_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_173_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FUpdatedFriends_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FUpdatedFriends>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_64_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_76_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFGOnlineFriend_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFGOnlineFriend>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_166_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_190_DELEGATE \
 struct _Script_FactoryGame_eventOnLoginStateChanged_Parms \
 { \
 	TEnumAsByte<ELoginState> oldState; \
@@ -46,7 +47,7 @@ static inline void FOnLoginStateChanged_DelegateWrapper(const FMulticastScriptDe
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_164_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_188_DELEGATE \
 struct _Script_FactoryGame_eventOnGameInviteReceived_Parms \
 { \
 	FPendingInvite receivedInvite; \
@@ -59,7 +60,7 @@ static inline void FOnGameInviteReceived_DelegateWrapper(const FMulticastScriptD
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_162_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_186_DELEGATE \
 struct _Script_FactoryGame_eventOnFriendPresenceUpdated_Parms \
 { \
 	FUniqueNetIdRepl updatedId; \
@@ -72,7 +73,7 @@ static inline void FOnFriendPresenceUpdated_DelegateWrapper(const FMulticastScri
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_160_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_184_DELEGATE \
 struct _Script_FactoryGame_eventOnFriendsListUpdated_Parms \
 { \
 	FUpdatedFriends updatedFriends; \
@@ -85,10 +86,23 @@ static inline void FOnFriendsListUpdated_DelegateWrapper(const FMulticastScriptD
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_157_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_181_DELEGATE \
 static inline void FOnFriendsListQueried_DelegateWrapper(const FMulticastScriptDelegate& OnFriendsListQueried) \
 { \
 	OnFriendsListQueried.ProcessMulticastDelegate<UObject>(NULL); \
+}
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_117_DELEGATE \
+struct _Script_FactoryGame_eventOnCreateSessionStateChanged_Parms \
+{ \
+	ECreateSessionState newState; \
+}; \
+static inline void FOnCreateSessionStateChanged_DelegateWrapper(const FMulticastScriptDelegate& OnCreateSessionStateChanged, ECreateSessionState newState) \
+{ \
+	_Script_FactoryGame_eventOnCreateSessionStateChanged_Parms Parms; \
+	Parms.newState=newState; \
+	OnCreateSessionStateChanged.ProcessMulticastDelegate<UObject>(&Parms); \
 }
 
 
@@ -302,13 +316,29 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 template<> FACTORYGAME_API UClass* StaticClass<class UFGEM_FailedToLoginToOnlineService>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execOpenMap_SetupServer) \
+	DECLARE_FUNCTION(execGetCurrentCreateSessionState) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OpenMap_SetupServer(); \
+		*(ECreateSessionState*)Z_Param__Result=P_THIS->GetCurrentCreateSessionState(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOpenMap_WaitForProductUserId) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OpenMap_WaitForProductUserId(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOpenMap_WaitForPresence) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OpenMap_WaitForPresence(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -318,6 +348,24 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGEM_FailedToLoginToOnline
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->CreateOfflineSession_SetupServer(Z_Param_startOffline); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnPresenceFailedToUpdate_OpenMap) \
+	{ \
+		P_GET_UBOOL(Z_Param_confirmClicked); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnPresenceFailedToUpdate_OpenMap(Z_Param_confirmClicked); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnLoginFailed_OpenMap) \
+	{ \
+		P_GET_UBOOL(Z_Param_confirmClicked); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnLoginFailed_OpenMap(Z_Param_confirmClicked); \
 		P_NATIVE_END; \
 	} \
  \
@@ -363,13 +411,29 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGEM_FailedToLoginToOnline
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execOpenMap_SetupServer) \
+	DECLARE_FUNCTION(execGetCurrentCreateSessionState) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OpenMap_SetupServer(); \
+		*(ECreateSessionState*)Z_Param__Result=P_THIS->GetCurrentCreateSessionState(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOpenMap_WaitForProductUserId) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OpenMap_WaitForProductUserId(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOpenMap_WaitForPresence) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OpenMap_WaitForPresence(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -379,6 +443,24 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGEM_FailedToLoginToOnline
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->CreateOfflineSession_SetupServer(Z_Param_startOffline); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnPresenceFailedToUpdate_OpenMap) \
+	{ \
+		P_GET_UBOOL(Z_Param_confirmClicked); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnPresenceFailedToUpdate_OpenMap(Z_Param_confirmClicked); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnLoginFailed_OpenMap) \
+	{ \
+		P_GET_UBOOL(Z_Param_confirmClicked); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnLoginFailed_OpenMap(Z_Param_confirmClicked); \
 		P_NATIVE_END; \
 	} \
  \
@@ -424,7 +506,7 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGEM_FailedToLoginToOnline
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGLocalPlayer(); \
 	friend struct Z_Construct_UClass_UFGLocalPlayer_Statics; \
@@ -433,7 +515,7 @@ public: \
 	DECLARE_SERIALIZER(UFGLocalPlayer)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGLocalPlayer(); \
 	friend struct Z_Construct_UClass_UFGLocalPlayer_Statics; \
@@ -442,7 +524,7 @@ public: \
 	DECLARE_SERIALIZER(UFGLocalPlayer)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGLocalPlayer(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGLocalPlayer) \
@@ -455,7 +537,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGLocalPlayer(UFGLocalPlayer&&); \
@@ -466,32 +548,33 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGLocalPlayer); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGLocalPlayer)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mOnLoginStateChanged() { return STRUCT_OFFSET(UFGLocalPlayer, mOnLoginStateChanged); } \
 	FORCEINLINE static uint32 __PPO__mOnFriendsListUpdated() { return STRUCT_OFFSET(UFGLocalPlayer, mOnFriendsListUpdated); } \
+	FORCEINLINE static uint32 __PPO__mOnCreateSessionStateChanged() { return STRUCT_OFFSET(UFGLocalPlayer, mOnCreateSessionStateChanged); } \
 	FORCEINLINE static uint32 __PPO__mOnFriendsPresenceUpdated() { return STRUCT_OFFSET(UFGLocalPlayer, mOnFriendsPresenceUpdated); } \
 	FORCEINLINE static uint32 __PPO__mOnInviteReceived() { return STRUCT_OFFSET(UFGLocalPlayer, mOnInviteReceived); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_173_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_197_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_176_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_200_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -501,6 +584,17 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGLocalPlayer>();
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h
 
+
+#define FOREACH_ENUM_ECREATESESSIONSTATE(op) \
+	op(ECreateSessionState::CSS_NotCreateingSession) \
+	op(ECreateSessionState::CSS_CreatingSession) \
+	op(ECreateSessionState::CSS_DestroyingOldSession) \
+	op(ECreateSessionState::CSS_UpdatingPresence) \
+	op(ECreateSessionState::CSS_WaitingForPresenceToUpdate) \
+	op(ECreateSessionState::CSS_WaitingForLogin) 
+
+enum class ECreateSessionState : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<ECreateSessionState>();
 
 #define FOREACH_ENUM_ELOGINSTATE(op) \
 	op(LS_NotLoggedIn) \

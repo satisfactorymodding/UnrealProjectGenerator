@@ -25,6 +25,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddFactoryObjectToSignificanceManager();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddGainSignificanceObjectToSignificanceManager();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddGenericTickObjectToSignificanceManager();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPipelineToSignificanceManager();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
@@ -60,6 +61,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetLanguage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetOuterActor();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSchematicCategory_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetVersionString();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_HideOutline();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
@@ -76,10 +79,13 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_LinearColorToHex();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FLinearColor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_LogX();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveAmbientSoundSplineFromSignificanceManager();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveAudioVolumeFromSignificanceManager();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveConveyorBeltFromSignificanceManager();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFactoryObjectFromSignificanceManager();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFromSignificanceManagerGeneric();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGainSignificanceObjectFromSignificanceManager();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGenericTickObjectFromSignificanceManager();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager();
@@ -157,6 +163,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 			{ "AddFactoryObjectToSignificanceManager", &UFGBlueprintFunctionLibrary::execAddFactoryObjectToSignificanceManager },
 			{ "AddGainSignificanceObjectToSignificanceManager", &UFGBlueprintFunctionLibrary::execAddGainSignificanceObjectToSignificanceManager },
 			{ "AddGenericTickObjectToSignificanceManager", &UFGBlueprintFunctionLibrary::execAddGenericTickObjectToSignificanceManager },
+			{ "AddPipelineToSignificanceManager", &UFGBlueprintFunctionLibrary::execAddPipelineToSignificanceManager },
 			{ "AddPopup", &UFGBlueprintFunctionLibrary::execAddPopup },
 			{ "AddPopupWithCloseDelegate", &UFGBlueprintFunctionLibrary::execAddPopupWithCloseDelegate },
 			{ "AddTrainToSignificanceManager", &UFGBlueprintFunctionLibrary::execAddTrainToSignificanceManager },
@@ -177,6 +184,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 			{ "GetComponentFlagSoftLanding", &UFGBlueprintFunctionLibrary::execGetComponentFlagSoftLanding },
 			{ "GetLanguage", &UFGBlueprintFunctionLibrary::execGetLanguage },
 			{ "GetOuterActor", &UFGBlueprintFunctionLibrary::execGetOuterActor },
+			{ "GetSubCategoriesForSchematicCategory", &UFGBlueprintFunctionLibrary::execGetSubCategoriesForSchematicCategory },
 			{ "GetVersionString", &UFGBlueprintFunctionLibrary::execGetVersionString },
 			{ "HideOutline", &UFGBlueprintFunctionLibrary::execHideOutline },
 			{ "ImpactEffectIsRelevant", &UFGBlueprintFunctionLibrary::execImpactEffectIsRelevant },
@@ -189,10 +197,13 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 			{ "IsLocationNearABase", &UFGBlueprintFunctionLibrary::execIsLocationNearABase },
 			{ "LinearColorToHex", &UFGBlueprintFunctionLibrary::execLinearColorToHex },
 			{ "LogX", &UFGBlueprintFunctionLibrary::execLogX },
+			{ "OccludeOutlineByActor", &UFGBlueprintFunctionLibrary::execOccludeOutlineByActor },
+			{ "OccludeOutlineByComponent", &UFGBlueprintFunctionLibrary::execOccludeOutlineByComponent },
 			{ "RemoveAmbientSoundSplineFromSignificanceManager", &UFGBlueprintFunctionLibrary::execRemoveAmbientSoundSplineFromSignificanceManager },
 			{ "RemoveAudioVolumeFromSignificanceManager", &UFGBlueprintFunctionLibrary::execRemoveAudioVolumeFromSignificanceManager },
 			{ "RemoveConveyorBeltFromSignificanceManager", &UFGBlueprintFunctionLibrary::execRemoveConveyorBeltFromSignificanceManager },
 			{ "RemoveFactoryObjectFromSignificanceManager", &UFGBlueprintFunctionLibrary::execRemoveFactoryObjectFromSignificanceManager },
+			{ "RemoveFromSignificanceManagerGeneric", &UFGBlueprintFunctionLibrary::execRemoveFromSignificanceManagerGeneric },
 			{ "RemoveGainSignificanceObjectFromSignificanceManager", &UFGBlueprintFunctionLibrary::execRemoveGainSignificanceObjectFromSignificanceManager },
 			{ "RemoveGenericTickObjectFromSignificanceManager", &UFGBlueprintFunctionLibrary::execRemoveGenericTickObjectFromSignificanceManager },
 			{ "RemoveTrainFromSignificanceManager", &UFGBlueprintFunctionLibrary::execRemoveTrainFromSignificanceManager },
@@ -441,6 +452,45 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPipelineToSignificanceManager_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventAddPipelineToSignificanceManager_Parms
+		{
+			UObject* WorldContextObject;
+			UObject* obj;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_obj;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_WorldContextObject;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPipelineToSignificanceManager_Statics::NewProp_obj = { "obj", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventAddPipelineToSignificanceManager_Parms, obj), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPipelineToSignificanceManager_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventAddPipelineToSignificanceManager_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPipelineToSignificanceManager_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPipelineToSignificanceManager_Statics::NewProp_obj,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPipelineToSignificanceManager_Statics::NewProp_WorldContextObject,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPipelineToSignificanceManager_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Game" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
+		{ "ToolTip", "Adds pipeline to be handled by significance manager" },
+		{ "WorldContext", "WorldContextObject" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPipelineToSignificanceManager_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "AddPipelineToSignificanceManager", sizeof(FGBlueprintFunctionLibrary_eventAddPipelineToSignificanceManager_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPipelineToSignificanceManager_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPipelineToSignificanceManager_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPipelineToSignificanceManager_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPipelineToSignificanceManager_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPipelineToSignificanceManager()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPipelineToSignificanceManager_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup_Statics
 	{
 		struct FGBlueprintFunctionLibrary_eventAddPopup_Parms
@@ -500,7 +550,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Please use AddPopupWithCloseDelegate instead" },
 		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
-		{ "ToolTip", "Adds a popup to the qu\xef\xbf\xbd" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "AddPopup", sizeof(FGBlueprintFunctionLibrary_eventAddPopup_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup_Statics::Function_MetaDataParams)) };
@@ -570,7 +619,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ "CPP_Default_PopupID", "PID_OK" },
 		{ "CPP_Default_popupInstigator", "None" },
 		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
-		{ "ToolTip", "Adds a popup to the qu\xef\xbf\xbd" },
+		{ "ToolTip", "Adds a popup to the queue" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "AddPopupWithCloseDelegate", sizeof(FGBlueprintFunctionLibrary_eventAddPopupWithCloseDelegate_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate_Statics::Function_MetaDataParams)) };
@@ -1371,6 +1420,51 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventGetSubCategoriesForSchematicCategory_Parms
+		{
+			UObject* worldContext;
+			TSubclassOf<UFGSchematicCategory>  buildCategory;
+			TArray<TSubclassOf<UFGSchematicCategory> > out_subCategories;
+		};
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_subCategories;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_out_subCategories_Inner;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_buildCategory;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_worldContext;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics::NewProp_out_subCategories = { "out_subCategories", nullptr, (EPropertyFlags)0x0014000008000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetSubCategoriesForSchematicCategory_Parms, out_subCategories), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics::NewProp_out_subCategories_Inner = { "out_subCategories", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGSchematicCategory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics::NewProp_buildCategory = { "buildCategory", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetSubCategoriesForSchematicCategory_Parms, buildCategory), Z_Construct_UClass_UFGSchematicCategory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetSubCategoriesForSchematicCategory_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics::NewProp_out_subCategories,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics::NewProp_out_subCategories_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics::NewProp_buildCategory,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics::NewProp_worldContext,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Build Category" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
+		{ "ToolTip", "Returns all sub categories for a schematic category" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "GetSubCategoriesForSchematicCategory", sizeof(FGBlueprintFunctionLibrary_eventGetSubCategoriesForSchematicCategory_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetVersionString_Statics
 	{
 		struct FGBlueprintFunctionLibrary_eventGetVersionString_Parms
@@ -1929,6 +2023,100 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventOccludeOutlineByActor_Parms
+		{
+			AActor* actor;
+			bool occlude;
+		};
+		static void NewProp_occlude_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_occlude;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_actor;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor_Statics::NewProp_occlude_SetBit(void* Obj)
+	{
+		((FGBlueprintFunctionLibrary_eventOccludeOutlineByActor_Parms*)Obj)->occlude = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor_Statics::NewProp_occlude = { "occlude", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBlueprintFunctionLibrary_eventOccludeOutlineByActor_Parms), &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor_Statics::NewProp_occlude_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor_Statics::NewProp_actor = { "actor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventOccludeOutlineByActor_Parms, actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor_Statics::NewProp_occlude,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor_Statics::NewProp_actor,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Useable" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
+		{ "ToolTip", "Let a actor occlude the outline" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "OccludeOutlineByActor", sizeof(FGBlueprintFunctionLibrary_eventOccludeOutlineByActor_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventOccludeOutlineByComponent_Parms
+		{
+			UPrimitiveComponent* comp;
+			bool occlude;
+		};
+		static void NewProp_occlude_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_occlude;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_comp_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_comp;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::NewProp_occlude_SetBit(void* Obj)
+	{
+		((FGBlueprintFunctionLibrary_eventOccludeOutlineByComponent_Parms*)Obj)->occlude = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::NewProp_occlude = { "occlude", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBlueprintFunctionLibrary_eventOccludeOutlineByComponent_Parms), &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::NewProp_occlude_SetBit, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::NewProp_comp_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::NewProp_comp = { "comp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventOccludeOutlineByComponent_Parms, comp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::NewProp_comp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::NewProp_comp_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::NewProp_occlude,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::NewProp_comp,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Useable" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
+		{ "ToolTip", "Let a component occlude the outline" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "OccludeOutlineByComponent", sizeof(FGBlueprintFunctionLibrary_eventOccludeOutlineByComponent_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveAmbientSoundSplineFromSignificanceManager_Statics
 	{
 		struct FGBlueprintFunctionLibrary_eventRemoveAmbientSoundSplineFromSignificanceManager_Parms
@@ -2082,6 +2270,45 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFactoryObjectFromSignificanceManager_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFromSignificanceManagerGeneric_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventRemoveFromSignificanceManagerGeneric_Parms
+		{
+			UObject* WorldContextObject;
+			UObject* obj;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_obj;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_WorldContextObject;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFromSignificanceManagerGeneric_Statics::NewProp_obj = { "obj", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventRemoveFromSignificanceManagerGeneric_Parms, obj), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFromSignificanceManagerGeneric_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventRemoveFromSignificanceManagerGeneric_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFromSignificanceManagerGeneric_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFromSignificanceManagerGeneric_Statics::NewProp_obj,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFromSignificanceManagerGeneric_Statics::NewProp_WorldContextObject,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFromSignificanceManagerGeneric_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Game" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
+		{ "ToolTip", "Generic removal function for objects in significance manager. Use this if you don't need to do any special operations when removing from significance manager" },
+		{ "WorldContext", "WorldContextObject" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFromSignificanceManagerGeneric_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "RemoveFromSignificanceManagerGeneric", sizeof(FGBlueprintFunctionLibrary_eventRemoveFromSignificanceManagerGeneric_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFromSignificanceManagerGeneric_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFromSignificanceManagerGeneric_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFromSignificanceManagerGeneric_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFromSignificanceManagerGeneric_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFromSignificanceManagerGeneric()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFromSignificanceManagerGeneric_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2390,8 +2617,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddFactoryObjectToSignificanceManager, "AddFactoryObjectToSignificanceManager" }, // 1600138593
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddGainSignificanceObjectToSignificanceManager, "AddGainSignificanceObjectToSignificanceManager" }, // 3828982640
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddGenericTickObjectToSignificanceManager, "AddGenericTickObjectToSignificanceManager" }, // 2173544489
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup, "AddPopup" }, // 461572345
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate, "AddPopupWithCloseDelegate" }, // 1369502213
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPipelineToSignificanceManager, "AddPipelineToSignificanceManager" }, // 3226684935
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup, "AddPopup" }, // 3615083495
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate, "AddPopupWithCloseDelegate" }, // 2940721629
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager, "AddTrainToSignificanceManager" }, // 3299310731
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CanBeOnConveyor, "CanBeOnConveyor" }, // 1540077428
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ChangeLanguage, "ChangeLanguage" }, // 3610996405
@@ -2410,6 +2638,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding, "GetComponentFlagSoftLanding" }, // 317730531
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetLanguage, "GetLanguage" }, // 3694274269
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetOuterActor, "GetOuterActor" }, // 1964601451
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory, "GetSubCategoriesForSchematicCategory" }, // 3034940218
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetVersionString, "GetVersionString" }, // 183866322
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_HideOutline, "HideOutline" }, // 2188302825
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ImpactEffectIsRelevant, "ImpactEffectIsRelevant" }, // 1086567788
@@ -2422,10 +2651,13 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_IsLocationNearABase, "IsLocationNearABase" }, // 1729101379
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_LinearColorToHex, "LinearColorToHex" }, // 2686380369
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_LogX, "LogX" }, // 1173872524
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByActor, "OccludeOutlineByActor" }, // 244503173
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_OccludeOutlineByComponent, "OccludeOutlineByComponent" }, // 3166842118
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveAmbientSoundSplineFromSignificanceManager, "RemoveAmbientSoundSplineFromSignificanceManager" }, // 3063985632
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveAudioVolumeFromSignificanceManager, "RemoveAudioVolumeFromSignificanceManager" }, // 2461207999
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveConveyorBeltFromSignificanceManager, "RemoveConveyorBeltFromSignificanceManager" }, // 2019425873
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFactoryObjectFromSignificanceManager, "RemoveFactoryObjectFromSignificanceManager" }, // 3064620130
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFromSignificanceManagerGeneric, "RemoveFromSignificanceManagerGeneric" }, // 570103505
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGainSignificanceObjectFromSignificanceManager, "RemoveGainSignificanceObjectFromSignificanceManager" }, // 2798074806
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGenericTickObjectFromSignificanceManager, "RemoveGenericTickObjectFromSignificanceManager" }, // 3537046192
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager, "RemoveTrainFromSignificanceManager" }, // 1396949231
@@ -2467,7 +2699,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 1353542390);
+	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 2807027098);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBlueprintFunctionLibrary>()
 	{
 		return UFGBlueprintFunctionLibrary::StaticClass();

@@ -23,6 +23,14 @@ struct FSlateChildSize;
 	virtual void SetInputMode_Implementation(); \
 	virtual void Init_Implementation(); \
  \
+	DECLARE_FUNCTION(execGetCustomTickRate) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetCustomTickRate(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetSupportsStacking) \
 	{ \
 		P_FINISH; \
@@ -172,6 +180,14 @@ struct FSlateChildSize;
 	virtual void SetInputMode_Implementation(); \
 	virtual void Init_Implementation(); \
  \
+	DECLARE_FUNCTION(execGetCustomTickRate) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetCustomTickRate(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetSupportsStacking) \
 	{ \
 		P_FINISH; \
@@ -313,7 +329,13 @@ struct FSlateChildSize;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_UI_FGInteractWidget_h_17_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_UI_FGInteractWidget_h_17_EVENT_PARMS \
+	struct FGInteractWidget_eventOnCustomTick_Parms \
+	{ \
+		float UpdateTime; \
+	};
+
+
 #define FactoryGame_Source_FactoryGame_Public_UI_FGInteractWidget_h_17_CALLBACK_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_UI_FGInteractWidget_h_17_INCLASS_NO_PURE_DECLS \
 private: \
@@ -363,6 +385,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGInteractWidget); \
 
 #define FactoryGame_Source_FactoryGame_Public_UI_FGInteractWidget_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mUseGamepadCursor() { return STRUCT_OFFSET(UFGInteractWidget, mUseGamepadCursor); } \
+	FORCEINLINE static uint32 __PPO__mCustomTickRate() { return STRUCT_OFFSET(UFGInteractWidget, mCustomTickRate); } \
+	FORCEINLINE static uint32 __PPO__mCallCustomTickOnConstruct() { return STRUCT_OFFSET(UFGInteractWidget, mCallCustomTickOnConstruct); } \
 	FORCEINLINE static uint32 __PPO__mDefaultFocusWidget() { return STRUCT_OFFSET(UFGInteractWidget, mDefaultFocusWidget); } \
 	FORCEINLINE static uint32 __PPO__mSupportsStacking() { return STRUCT_OFFSET(UFGInteractWidget, mSupportsStacking); }
 

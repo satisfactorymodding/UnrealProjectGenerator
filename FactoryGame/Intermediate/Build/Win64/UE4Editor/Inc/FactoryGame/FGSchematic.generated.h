@@ -9,12 +9,11 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGSchematic;
-struct FSlateBrush;
-class UFGResourceDescriptor;
-class UFGUnlock;
 class UFGRecipe;
+struct FSlateBrush;
+class UFGUnlock;
 struct FItemAmount;
-enum class ESchematicCategory : uint8;
+class UFGSchematicCategory;
 enum class ESchematicType : uint8;
 #ifdef FACTORYGAME_FGSchematic_generated_h
 #error "FGSchematic.generated.h already included, missing '#pragma once' in FGSchematic.h"
@@ -36,6 +35,15 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMultipleItemStruc
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=UFGSchematic::IsIncludedInBuild(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsRepeatPurchasesAllowed) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UFGSchematic::IsRepeatPurchasesAllowed(Z_Param_inClass); \
 		P_NATIVE_END; \
 	} \
  \
@@ -66,78 +74,6 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMultipleItemStruc
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetUnlocksBuildOverclock) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UFGSchematic::GetUnlocksBuildOverclock(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUnlocksBuildEfficiencyDisplay) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UFGSchematic::GetUnlocksBuildEfficiencyDisplay(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetNumArmEquipmentSlotsUnlocked) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=UFGSchematic::GetNumArmEquipmentSlotsUnlocked(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUnlocksArmEquipmentSlots) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UFGSchematic::GetUnlocksArmEquipmentSlots(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetNumInventorySlotsUnlocked) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=UFGSchematic::GetNumInventorySlotsUnlocked(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUnlocksInventorySlots) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UFGSchematic::GetUnlocksInventorySlots(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUnlocksMap) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UFGSchematic::GetUnlocksMap(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetResourceToAddToScanner) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<TSubclassOf<UFGResourceDescriptor> >*)Z_Param__Result=UFGSchematic::GetResourceToAddToScanner(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetShipTravelTimeAfterPurchase) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
@@ -165,15 +101,6 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMultipleItemStruc
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetRecipes) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<TSubclassOf<UFGRecipe> >*)Z_Param__Result=UFGSchematic::GetRecipes(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetCost) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
@@ -183,12 +110,22 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMultipleItemStruc
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetSubCategories) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_GET_TARRAY_REF(TSubclassOf<UFGSchematicCategory> ,Z_Param_Out_out_subCategories); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGSchematic::GetSubCategories(Z_Param_inClass,Z_Param_Out_out_subCategories); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetSchematicCategory) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(ESchematicCategory*)Z_Param__Result=UFGSchematic::GetSchematicCategory(Z_Param_inClass); \
+		*(TSubclassOf<UFGSchematicCategory> *)Z_Param__Result=UFGSchematic::GetSchematicCategory(Z_Param_inClass); \
 		P_NATIVE_END; \
 	} \
  \
@@ -222,6 +159,15 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMultipleItemStruc
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execIsRepeatPurchasesAllowed) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UFGSchematic::IsRepeatPurchasesAllowed(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetAdditionalSchematicDependencies) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
@@ -246,78 +192,6 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMultipleItemStruc
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(FSlateBrush*)Z_Param__Result=UFGSchematic::GetItemIcon(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUnlocksBuildOverclock) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UFGSchematic::GetUnlocksBuildOverclock(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUnlocksBuildEfficiencyDisplay) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UFGSchematic::GetUnlocksBuildEfficiencyDisplay(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetNumArmEquipmentSlotsUnlocked) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=UFGSchematic::GetNumArmEquipmentSlotsUnlocked(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUnlocksArmEquipmentSlots) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UFGSchematic::GetUnlocksArmEquipmentSlots(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetNumInventorySlotsUnlocked) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=UFGSchematic::GetNumInventorySlotsUnlocked(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUnlocksInventorySlots) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UFGSchematic::GetUnlocksInventorySlots(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUnlocksMap) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UFGSchematic::GetUnlocksMap(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetResourceToAddToScanner) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<TSubclassOf<UFGResourceDescriptor> >*)Z_Param__Result=UFGSchematic::GetResourceToAddToScanner(Z_Param_inClass); \
 		P_NATIVE_END; \
 	} \
  \
@@ -348,15 +222,6 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMultipleItemStruc
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetRecipes) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<TSubclassOf<UFGRecipe> >*)Z_Param__Result=UFGSchematic::GetRecipes(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetCost) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
@@ -366,12 +231,22 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMultipleItemStruc
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetSubCategories) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_GET_TARRAY_REF(TSubclassOf<UFGSchematicCategory> ,Z_Param_Out_out_subCategories); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGSchematic::GetSubCategories(Z_Param_inClass,Z_Param_Out_out_subCategories); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetSchematicCategory) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(ESchematicCategory*)Z_Param__Result=UFGSchematic::GetSchematicCategory(Z_Param_inClass); \
+		*(TSubclassOf<UFGSchematicCategory> *)Z_Param__Result=UFGSchematic::GetSchematicCategory(Z_Param_inClass); \
 		P_NATIVE_END; \
 	} \
  \
@@ -394,6 +269,37 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMultipleItemStruc
 	}
 
 
+#if WITH_EDITOR
+#define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_EDITOR_ONLY_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execAddRecipe) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_GET_OBJECT(UClass,Z_Param_recipe); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGSchematic::AddRecipe(Z_Param_inClass,Z_Param_recipe); \
+		P_NATIVE_END; \
+	}
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_EDITOR_ONLY_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execAddRecipe) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_GET_OBJECT(UClass,Z_Param_recipe); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGSchematic::AddRecipe(Z_Param_inClass,Z_Param_recipe); \
+		P_NATIVE_END; \
+	}
+
+
+#else
+#define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_EDITOR_ONLY_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_EDITOR_ONLY_RPC_WRAPPERS_NO_PURE_DECLS
+#endif //WITH_EDITOR
 #define FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(UFGSchematic, NO_API)
 
@@ -446,20 +352,15 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGSchematic); \
 	FORCEINLINE static uint32 __PPO__mType() { return STRUCT_OFFSET(UFGSchematic, mType); } \
 	FORCEINLINE static uint32 __PPO__mDisplayName() { return STRUCT_OFFSET(UFGSchematic, mDisplayName); } \
 	FORCEINLINE static uint32 __PPO__mSchematicCategory() { return STRUCT_OFFSET(UFGSchematic, mSchematicCategory); } \
+	FORCEINLINE static uint32 __PPO__mSubCategories() { return STRUCT_OFFSET(UFGSchematic, mSubCategories); } \
 	FORCEINLINE static uint32 __PPO__mTechTier() { return STRUCT_OFFSET(UFGSchematic, mTechTier); } \
 	FORCEINLINE static uint32 __PPO__mCost() { return STRUCT_OFFSET(UFGSchematic, mCost); } \
 	FORCEINLINE static uint32 __PPO__mShipTravelTimeAfterPurchase() { return STRUCT_OFFSET(UFGSchematic, mShipTravelTimeAfterPurchase); } \
 	FORCEINLINE static uint32 __PPO__mUnlocks() { return STRUCT_OFFSET(UFGSchematic, mUnlocks); } \
-	FORCEINLINE static uint32 __PPO__mRecipes() { return STRUCT_OFFSET(UFGSchematic, mRecipes); } \
-	FORCEINLINE static uint32 __PPO__mResourcesToAddToScanner() { return STRUCT_OFFSET(UFGSchematic, mResourcesToAddToScanner); } \
-	FORCEINLINE static uint32 __PPO__mUnlocksMap() { return STRUCT_OFFSET(UFGSchematic, mUnlocksMap); } \
-	FORCEINLINE static uint32 __PPO__mUnlocksBuildEfficiency() { return STRUCT_OFFSET(UFGSchematic, mUnlocksBuildEfficiency); } \
-	FORCEINLINE static uint32 __PPO__mUnlocksBuildOverclock() { return STRUCT_OFFSET(UFGSchematic, mUnlocksBuildOverclock); } \
-	FORCEINLINE static uint32 __PPO__mNumInventorySlotsToUnlock() { return STRUCT_OFFSET(UFGSchematic, mNumInventorySlotsToUnlock); } \
-	FORCEINLINE static uint32 __PPO__mNumArmEquipmentSlotsToUnlock() { return STRUCT_OFFSET(UFGSchematic, mNumArmEquipmentSlotsToUnlock); } \
 	FORCEINLINE static uint32 __PPO__mSchematicIcon() { return STRUCT_OFFSET(UFGSchematic, mSchematicIcon); } \
 	FORCEINLINE static uint32 __PPO__mDependsOnSchematic() { return STRUCT_OFFSET(UFGSchematic, mDependsOnSchematic); } \
 	FORCEINLINE static uint32 __PPO__mAdditionalSchematicDependencies() { return STRUCT_OFFSET(UFGSchematic, mAdditionalSchematicDependencies); } \
+	FORCEINLINE static uint32 __PPO__mSchematicCategoryDeprecated() { return STRUCT_OFFSET(UFGSchematic, mSchematicCategoryDeprecated); } \
 	FORCEINLINE static uint32 __PPO__mAssetBundleData() { return STRUCT_OFFSET(UFGSchematic, mAssetBundleData); }
 
 
@@ -469,6 +370,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_PRIVATE_PROPERTY_OFFSET \
 	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_EDITOR_ONLY_RPC_WRAPPERS \
 	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_INCLASS \
 	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_STANDARD_CONSTRUCTORS \
 public: \
@@ -480,6 +382,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_PRIVATE_PROPERTY_OFFSET \
 	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_EDITOR_ONLY_RPC_WRAPPERS_NO_PURE_DECLS \
 	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_INCLASS_NO_PURE_DECLS \
 	FactoryGame_Source_FactoryGame_Public_FGSchematic_h_57_ENHANCED_CONSTRUCTORS \
 private: \
@@ -496,11 +399,12 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGSchematic>();
 	op(ESchematicType::EST_Custom) \
 	op(ESchematicType::EST_Cheat) \
 	op(ESchematicType::EST_Tutorial) \
-	op(ESchematicType::EST_Research) \
+	op(ESchematicType::EST_Milestone) \
 	op(ESchematicType::EST_Alternate) \
 	op(ESchematicType::EST_Story) \
-	op(ESchematicType::EST_TradingPostUpgrade) \
-	op(ESchematicType::EST_MAM) 
+	op(ESchematicType::EST_MAM) \
+	op(ESchematicType::EST_ResourceSink) \
+	op(ESchematicType::EST_HardDrive) 
 
 enum class ESchematicType : uint8;
 template<> FACTORYGAME_API UEnum* StaticEnum<ESchematicType>();

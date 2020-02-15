@@ -391,7 +391,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSpaceElevator() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSpaceElevator, 538667312);
+	IMPLEMENT_CLASS(AFGBuildableSpaceElevator, 1412443455);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableSpaceElevator>()
 	{
 		return AFGBuildableSpaceElevator::StaticClass();

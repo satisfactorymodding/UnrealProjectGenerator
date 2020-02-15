@@ -930,7 +930,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGTimeOfDaySubsystem, 2493224394);
+	IMPLEMENT_CLASS(AFGTimeOfDaySubsystem, 4152100559);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGTimeOfDaySubsystem>()
 	{
 		return AFGTimeOfDaySubsystem::StaticClass();

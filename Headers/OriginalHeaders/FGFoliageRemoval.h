@@ -41,6 +41,7 @@ struct FRemovedInstanceArray : public FFastArraySerializer
 	GENERATED_USTRUCT_BODY()
 
 	/** Used to invoke the callback directly on the foliage removal instead of on FRemovedInstance */
+	// @todogc: Investigate if we can move this into a TWeakObjectPointer to reduce strain on gc
 	UPROPERTY( NotReplicated )
 	class AFGFoliageRemoval* FoliageRemover;
 
@@ -173,7 +174,7 @@ protected:
 	TArray<FRemovedInstance> mClientInstancesToRemove;
 
 	/** This needs to be a UPROPERTY as it will become null:ed when the level this actor is associated with is streamed out */
-	UPROPERTY()
+	UPROPERTY() // @todogc: Investigate if we can change this to a TWeakObjectPtr to reduce strain on gc
 	class UHierarchicalInstancedStaticMeshComponent* mMeshComponent;
 
 	/** The name of the level that this actor removes foliage from, so that the foliage system can find it */

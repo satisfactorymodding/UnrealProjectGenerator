@@ -29,15 +29,17 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematicManager() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSchematicManager_Get();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSchematicManager_GetAllPurchasedSchematics();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType();
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ESchematicType();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSchematicManager_GetCostFor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic();
@@ -256,14 +258,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 			{ "CanSetAsActiveSchematic", &AFGSchematicManager::execCanSetAsActiveSchematic },
 			{ "Get", &AFGSchematicManager::execGet },
 			{ "GetActiveSchematic", &AFGSchematicManager::execGetActiveSchematic },
+			{ "GetAllPurchasedSchematics", &AFGSchematicManager::execGetAllPurchasedSchematics },
 			{ "GetAllSchematics", &AFGSchematicManager::execGetAllSchematics },
 			{ "GetAllSchematicsOfType", &AFGSchematicManager::execGetAllSchematicsOfType },
+			{ "GetAllSchematicsOfTypeFilteredOnDependency", &AFGSchematicManager::execGetAllSchematicsOfTypeFilteredOnDependency },
 			{ "GetAvailableSchematics", &AFGSchematicManager::execGetAvailableSchematics },
 			{ "GetCostFor", &AFGSchematicManager::execGetCostFor },
 			{ "GetHighestAvailableTechTier", &AFGSchematicManager::execGetHighestAvailableTechTier },
 			{ "GetMaxAllowedTechTier", &AFGSchematicManager::execGetMaxAllowedTechTier },
 			{ "GetPaidOffCostFor", &AFGSchematicManager::execGetPaidOffCostFor },
-			{ "GetPurchasedSchematics", &AFGSchematicManager::execGetPurchasedSchematics },
+			{ "GetPurchasedSchematicsOfTypes", &AFGSchematicManager::execGetPurchasedSchematicsOfTypes },
 			{ "GetRemainingCostFor", &AFGSchematicManager::execGetRemainingCostFor },
 			{ "GetTimeUntilShipReturn", &AFGSchematicManager::execGetTimeUntilShipReturn },
 			{ "GiveAccessToSchematic", &AFGSchematicManager::execGiveAccessToSchematic },
@@ -430,6 +434,43 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGSchematicManager_GetAllPurchasedSchematics_Statics
+	{
+		struct FGSchematicManager_eventGetAllPurchasedSchematics_Parms
+		{
+			TArray<TSubclassOf<UFGSchematic> > out_schematics;
+		};
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_schematics;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_out_schematics_Inner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllPurchasedSchematics_Statics::NewProp_out_schematics = { "out_schematics", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetAllPurchasedSchematics_Parms, out_schematics), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllPurchasedSchematics_Statics::NewProp_out_schematics_Inner = { "out_schematics", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_GetAllPurchasedSchematics_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetAllPurchasedSchematics_Statics::NewProp_out_schematics,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetAllPurchasedSchematics_Statics::NewProp_out_schematics_Inner,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_GetAllPurchasedSchematics_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Schematic" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
+		{ "ToolTip", "Returns all schematics the players have purchased." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetAllPurchasedSchematics_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GetAllPurchasedSchematics", sizeof(FGSchematicManager_eventGetAllPurchasedSchematics_Parms), Z_Construct_UFunction_AFGSchematicManager_GetAllPurchasedSchematics_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAllPurchasedSchematics_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x44420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetAllPurchasedSchematics_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAllPurchasedSchematics_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGSchematicManager_GetAllPurchasedSchematics()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGSchematicManager_GetAllPurchasedSchematics_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics
 	{
 		struct FGSchematicManager_eventGetAllSchematics_Parms
@@ -498,7 +539,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
 		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
-		{ "ToolTip", "Returns the all schematics of a type." },
+		{ "ToolTip", "Returns all schematics of a type." },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GetAllSchematicsOfType", sizeof(FGSchematicManager_eventGetAllSchematicsOfType_Parms), Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x44420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::Function_MetaDataParams)) };
@@ -508,6 +549,50 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics
+	{
+		struct FGSchematicManager_eventGetAllSchematicsOfTypeFilteredOnDependency_Parms
+		{
+			ESchematicType type;
+			TArray<TSubclassOf<UFGSchematic> > out_schematics;
+		};
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_schematics;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_out_schematics_Inner;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_type;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_type_Underlying;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics::NewProp_out_schematics = { "out_schematics", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetAllSchematicsOfTypeFilteredOnDependency_Parms, out_schematics), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics::NewProp_out_schematics_Inner = { "out_schematics", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics::NewProp_type = { "type", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetAllSchematicsOfTypeFilteredOnDependency_Parms, type), Z_Construct_UEnum_FactoryGame_ESchematicType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics::NewProp_type_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics::NewProp_out_schematics,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics::NewProp_out_schematics_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics::NewProp_type,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics::NewProp_type_Underlying,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Schematic" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
+		{ "ToolTip", "Returns all schematics of a type that have any of their dependencies met." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GetAllSchematicsOfTypeFilteredOnDependency", sizeof(FGSchematicManager_eventGetAllSchematicsOfTypeFilteredOnDependency_Parms), Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x44420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -699,40 +784,50 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics
+	struct Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics
 	{
-		struct FGSchematicManager_eventGetPurchasedSchematics_Parms
+		struct FGSchematicManager_eventGetPurchasedSchematicsOfTypes_Parms
 		{
+			TArray<ESchematicType> types;
 			TArray<TSubclassOf<UFGSchematic> > out_schematics;
 		};
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_schematics;
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_out_schematics_Inner;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_types;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_types_Inner;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_types_Inner_Underlying;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::NewProp_out_schematics = { "out_schematics", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetPurchasedSchematics_Parms, out_schematics), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::NewProp_out_schematics_Inner = { "out_schematics", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::NewProp_out_schematics,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::NewProp_out_schematics_Inner,
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::NewProp_out_schematics = { "out_schematics", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetPurchasedSchematicsOfTypes_Parms, out_schematics), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::NewProp_out_schematics_Inner = { "out_schematics", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::NewProp_types = { "types", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetPurchasedSchematicsOfTypes_Parms, types), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::NewProp_types_Inner = { "types", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UEnum_FactoryGame_ESchematicType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::NewProp_types_Inner_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::NewProp_out_schematics,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::NewProp_out_schematics_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::NewProp_types,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::NewProp_types_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::NewProp_types_Inner_Underlying,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
 		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
-		{ "ToolTip", "Returns all schematics the players have purchased." },
+		{ "ToolTip", "Returns the schematics the players have purchased of the given types." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GetPurchasedSchematics", sizeof(FGSchematicManager_eventGetPurchasedSchematics_Parms), Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x44420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GetPurchasedSchematicsOfTypes", sizeof(FGSchematicManager_eventGetPurchasedSchematicsOfTypes_Parms), Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x44420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1245,14 +1340,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ &Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic, "CanSetAsActiveSchematic" }, // 231979503
 		{ &Z_Construct_UFunction_AFGSchematicManager_Get, "Get" }, // 3226795529
 		{ &Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic, "GetActiveSchematic" }, // 4283713077
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetAllPurchasedSchematics, "GetAllPurchasedSchematics" }, // 2482547552
 		{ &Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics, "GetAllSchematics" }, // 1754031221
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType, "GetAllSchematicsOfType" }, // 2135419340
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType, "GetAllSchematicsOfType" }, // 1766837625
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfTypeFilteredOnDependency, "GetAllSchematicsOfTypeFilteredOnDependency" }, // 4140930633
 		{ &Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics, "GetAvailableSchematics" }, // 3060499708
 		{ &Z_Construct_UFunction_AFGSchematicManager_GetCostFor, "GetCostFor" }, // 2736101378
 		{ &Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier, "GetHighestAvailableTechTier" }, // 889659190
 		{ &Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier, "GetMaxAllowedTechTier" }, // 1315851438
 		{ &Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor, "GetPaidOffCostFor" }, // 738005820
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics, "GetPurchasedSchematics" }, // 1123778960
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematicsOfTypes, "GetPurchasedSchematicsOfTypes" }, // 586008979
 		{ &Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor, "GetRemainingCostFor" }, // 811511471
 		{ &Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn, "GetTimeUntilShipReturn" }, // 3085195642
 		{ &Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic, "GiveAccessToSchematic" }, // 2350127080
@@ -1437,7 +1534,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSchematicManager, 840799998);
+	IMPLEMENT_CLASS(AFGSchematicManager, 307284451);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSchematicManager>()
 	{
 		return AFGSchematicManager::StaticClass();

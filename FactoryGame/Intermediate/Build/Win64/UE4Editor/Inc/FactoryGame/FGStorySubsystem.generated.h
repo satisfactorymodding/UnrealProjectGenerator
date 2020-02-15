@@ -9,24 +9,24 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGMapArea;
-class UFGResearchRecipe;
+class UFGResearchTree;
+class UFGSchematic;
 class UFGItemDescriptor;
 class AFGCharacterPlayer;
-class UFGSchematic;
 #ifdef FACTORYGAME_FGStorySubsystem_generated_h
 #error "FGStorySubsystem.generated.h already included, missing '#pragma once' in FGStorySubsystem.h"
 #endif
 #define FACTORYGAME_FGStorySubsystem_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_116_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FResearchMessageData_Statics; \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_117_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FResearchTreeMessageData_Statics; \
 	static class UScriptStruct* StaticStruct(); \
-	FORCEINLINE static uint32 __PPO__ResearchCollected() { return STRUCT_OFFSET(FResearchMessageData, ResearchCollected); }
+	FORCEINLINE static uint32 __PPO__ResearchTree() { return STRUCT_OFFSET(FResearchTreeMessageData, ResearchTree); }
 
 
-template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FResearchMessageData>();
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FResearchTreeMessageData>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_99_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_100_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSchematicMessagePair_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__SchematicUnlocked() { return STRUCT_OFFSET(FSchematicMessagePair, SchematicUnlocked); }
@@ -34,7 +34,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FResearchMessageDa
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSchematicMessagePair>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_56_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_57_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemFoundData_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__SchematicClass() { return STRUCT_OFFSET(FItemFoundData, SchematicClass); } \
@@ -43,7 +43,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSchematicMessageP
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemFoundData>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_20_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_21_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__SchematicClass() { return STRUCT_OFFSET(FMapAreaVisitedData, SchematicClass); }
@@ -51,7 +51,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemFoundData>();
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMapAreaVisitedData>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execSetupDelegates) \
 	{ \
@@ -70,30 +70,21 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMapAreaVisitedDat
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execOnResearchRewardClaimed) \
+	DECLARE_FUNCTION(execOnResearchTreeUnlocked) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_researchTree); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OnResearchRewardClaimed(Z_Param_researchRecipe); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOnNewResearchRecipeAvailable) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnNewResearchRecipeAvailable(Z_Param_researchRecipe); \
+		P_THIS->OnResearchTreeUnlocked(Z_Param_researchTree); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execOnResearchRecipeTimerComplete) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OnResearchRecipeTimerComplete(Z_Param_researchRecipe); \
+		P_THIS->OnResearchRecipeTimerComplete(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
@@ -126,7 +117,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMapAreaVisitedDat
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSetupDelegates) \
 	{ \
@@ -145,30 +136,21 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMapAreaVisitedDat
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execOnResearchRewardClaimed) \
+	DECLARE_FUNCTION(execOnResearchTreeUnlocked) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_researchTree); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OnResearchRewardClaimed(Z_Param_researchRecipe); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOnNewResearchRecipeAvailable) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnNewResearchRecipeAvailable(Z_Param_researchRecipe); \
+		P_THIS->OnResearchTreeUnlocked(Z_Param_researchTree); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execOnResearchRecipeTimerComplete) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_researchRecipe); \
+		P_GET_OBJECT(UClass,Z_Param_schematic); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OnResearchRecipeTimerComplete(Z_Param_researchRecipe); \
+		P_THIS->OnResearchRecipeTimerComplete(Z_Param_schematic); \
 		P_NATIVE_END; \
 	} \
  \
@@ -201,7 +183,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMapAreaVisitedDat
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGStorySubsystem(); \
 	friend struct Z_Construct_UClass_AFGStorySubsystem_Statics; \
@@ -211,7 +193,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGStorySubsystem*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGStorySubsystem(); \
 	friend struct Z_Construct_UClass_AFGStorySubsystem_Statics; \
@@ -221,7 +203,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGStorySubsystem*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGStorySubsystem(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGStorySubsystem) \
@@ -234,7 +216,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGStorySubsystem() { }; \
 private: \
@@ -247,33 +229,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGStorySubsystem); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGStorySubsystem)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mSchematicMessageData() { return STRUCT_OFFSET(AFGStorySubsystem, mSchematicMessageData); } \
 	FORCEINLINE static uint32 __PPO__mItemFoundData() { return STRUCT_OFFSET(AFGStorySubsystem, mItemFoundData); } \
-	FORCEINLINE static uint32 __PPO__mResearchMessageData() { return STRUCT_OFFSET(AFGStorySubsystem, mResearchMessageData); } \
-	FORCEINLINE static uint32 __PPO__mResearchTimerCompleteMessage() { return STRUCT_OFFSET(AFGStorySubsystem, mResearchTimerCompleteMessage); } \
-	FORCEINLINE static uint32 __PPO__mNewResearchAvailableMessage() { return STRUCT_OFFSET(AFGStorySubsystem, mNewResearchAvailableMessage); }
+	FORCEINLINE static uint32 __PPO__mResearchTreeMessageData() { return STRUCT_OFFSET(AFGStorySubsystem, mResearchTreeMessageData); } \
+	FORCEINLINE static uint32 __PPO__mResearchTimerCompleteMessage() { return STRUCT_OFFSET(AFGStorySubsystem, mResearchTimerCompleteMessage); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_152_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_138_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_155_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

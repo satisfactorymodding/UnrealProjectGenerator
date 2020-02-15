@@ -37,6 +37,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFoundation() {}
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mDisableSnapOn;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mElevation_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mElevation;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mHeight_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mHeight;
@@ -68,6 +72,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFoundation() {}
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mDisableSnapOn = { "mDisableSnapOn", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableFoundation, mDisableSnapOn), Z_Construct_UScriptStruct_FFoundationSideSelectionFlags, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mDisableSnapOn_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mDisableSnapOn_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mElevation_MetaData[] = {
+		{ "Category", "Foundation" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFoundation.h" },
+		{ "ToolTip", "Elevation of this foundation if ramp, assumes the ramp to go down towards a positive X." },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mElevation = { "mElevation", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableFoundation, mElevation), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mElevation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mElevation_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mHeight_MetaData[] = {
 		{ "Category", "Foundation" },
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFoundation.h" },
@@ -85,6 +97,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFoundation() {}
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mSize = { "mSize", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableFoundation, mSize), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mSize_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mSize_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableFoundation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mDisableSnapOn,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mElevation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mHeight,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mSize,
 	};
@@ -115,7 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFoundation() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableFoundation, 1564491440);
+	IMPLEMENT_CLASS(AFGBuildableFoundation, 1702140438);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableFoundation>()
 	{
 		return AFGBuildableFoundation::StaticClass();

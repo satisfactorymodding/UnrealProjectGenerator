@@ -57,6 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponent() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryComponent_OnRep_InventoryStacks();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryComponent_Remove();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryComponent_RemoveAllFromIndex();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryComponent_RemoveArbitrarySlotSize();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryComponent_RemoveFromIndex();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryComponent_Resize();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInventoryComponent_Server_SortInventory();
@@ -458,6 +459,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 			{ "OnRep_InventoryStacks", &UFGInventoryComponent::execOnRep_InventoryStacks },
 			{ "Remove", &UFGInventoryComponent::execRemove },
 			{ "RemoveAllFromIndex", &UFGInventoryComponent::execRemoveAllFromIndex },
+			{ "RemoveArbitrarySlotSize", &UFGInventoryComponent::execRemoveArbitrarySlotSize },
 			{ "RemoveFromIndex", &UFGInventoryComponent::execRemoveFromIndex },
 			{ "Resize", &UFGInventoryComponent::execResize },
 			{ "Server_SortInventory", &UFGInventoryComponent::execServer_SortInventory },
@@ -1492,6 +1494,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_IsItemAllowed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
 		{ "CPP_Default_idx", "-1" },
+		{ "CustomThunk", "true" },
 		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "@return true if the item is allowed in this inventory" },
 	};
@@ -1684,6 +1687,40 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGInventoryComponent_RemoveAllFromIndex_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGInventoryComponent_RemoveArbitrarySlotSize_Statics
+	{
+		struct FGInventoryComponent_eventRemoveArbitrarySlotSize_Parms
+		{
+			int32 index;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_index;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGInventoryComponent_RemoveArbitrarySlotSize_Statics::NewProp_index = { "index", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInventoryComponent_eventRemoveArbitrarySlotSize_Parms, index), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGInventoryComponent_RemoveArbitrarySlotSize_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInventoryComponent_RemoveArbitrarySlotSize_Statics::NewProp_index,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_RemoveArbitrarySlotSize_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Slot Size" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
+		{ "ToolTip", "Removes an Arbitrary size for a slot." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInventoryComponent_RemoveArbitrarySlotSize_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInventoryComponent, nullptr, "RemoveArbitrarySlotSize", sizeof(FGInventoryComponent_eventRemoveArbitrarySlotSize_Parms), Z_Construct_UFunction_UFGInventoryComponent_RemoveArbitrarySlotSize_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryComponent_RemoveArbitrarySlotSize_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInventoryComponent_RemoveArbitrarySlotSize_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryComponent_RemoveArbitrarySlotSize_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGInventoryComponent_RemoveArbitrarySlotSize()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGInventoryComponent_RemoveArbitrarySlotSize_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2005,12 +2042,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 		{ &Z_Construct_UFunction_UFGInventoryComponent_HasItems, "HasItems" }, // 2408652632
 		{ &Z_Construct_UFunction_UFGInventoryComponent_IsEmpty, "IsEmpty" }, // 1708302466
 		{ &Z_Construct_UFunction_UFGInventoryComponent_IsIndexEmpty, "IsIndexEmpty" }, // 3375446007
-		{ &Z_Construct_UFunction_UFGInventoryComponent_IsItemAllowed, "IsItemAllowed" }, // 712049535
+		{ &Z_Construct_UFunction_UFGInventoryComponent_IsItemAllowed, "IsItemAllowed" }, // 280602684
 		{ &Z_Construct_UFunction_UFGInventoryComponent_IsSomethingOnIndex, "IsSomethingOnIndex" }, // 3660078431
 		{ &Z_Construct_UFunction_UFGInventoryComponent_IsValidIndex, "IsValidIndex" }, // 3327124752
 		{ &Z_Construct_UFunction_UFGInventoryComponent_OnRep_InventoryStacks, "OnRep_InventoryStacks" }, // 4012274103
 		{ &Z_Construct_UFunction_UFGInventoryComponent_Remove, "Remove" }, // 4027311288
 		{ &Z_Construct_UFunction_UFGInventoryComponent_RemoveAllFromIndex, "RemoveAllFromIndex" }, // 3116523697
+		{ &Z_Construct_UFunction_UFGInventoryComponent_RemoveArbitrarySlotSize, "RemoveArbitrarySlotSize" }, // 410917134
 		{ &Z_Construct_UFunction_UFGInventoryComponent_RemoveFromIndex, "RemoveFromIndex" }, // 1702598946
 		{ &Z_Construct_UFunction_UFGInventoryComponent_Resize, "Resize" }, // 2094949393
 		{ &Z_Construct_UFunction_UFGInventoryComponent_Server_SortInventory, "Server_SortInventory" }, // 1943842469
@@ -2151,7 +2189,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryComponent, 1383843957);
+	IMPLEMENT_CLASS(UFGInventoryComponent, 1797709950);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGInventoryComponent>()
 	{
 		return UFGInventoryComponent::StaticClass();

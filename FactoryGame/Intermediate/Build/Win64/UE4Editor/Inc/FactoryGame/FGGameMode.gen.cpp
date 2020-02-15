@@ -19,8 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 	ENGINE_API UClass* Z_Construct_UClass_AGameMode();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameMode_IsMainMenuGameMode();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameMode_KickPlayer();
-	ENGINE_API UClass* Z_Construct_UClass_APlayerState_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameMode_RebootSession();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameMode_RegisterRemoteCallObjectClass();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRemoteCallObject_NoRegister();
@@ -35,7 +34,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 		UClass* Class = AFGGameMode::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "IsMainMenuGameMode", &AFGGameMode::execIsMainMenuGameMode },
-			{ "KickPlayer", &AFGGameMode::execKickPlayer },
+			{ "RebootSession", &AFGGameMode::execRebootSession },
 			{ "RegisterRemoteCallObjectClass", &AFGGameMode::execRegisterRemoteCallObjectClass },
 			{ "TriggerBundledWorldSave", &AFGGameMode::execTriggerBundledWorldSave },
 			{ "TriggerWorldSave", &AFGGameMode::execTriggerWorldSave },
@@ -81,37 +80,26 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGGameMode_KickPlayer_Statics
+	struct Z_Construct_UFunction_AFGGameMode_RebootSession_Statics
 	{
-		struct FGGameMode_eventKickPlayer_Parms
-		{
-			APlayerState* ps;
-		};
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ps;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGGameMode_KickPlayer_Statics::NewProp_ps = { "ps", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGGameMode_eventKickPlayer_Parms, ps), Z_Construct_UClass_APlayerState_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGGameMode_KickPlayer_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGGameMode_KickPlayer_Statics::NewProp_ps,
-	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameMode_KickPlayer_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Online" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameMode_RebootSession_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/FGGameMode.h" },
-		{ "ToolTip", "Kick a player from the game" },
+		{ "ToolTip", "Saves the game, and then restarts from the load" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGGameMode_KickPlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGGameMode, nullptr, "KickPlayer", sizeof(FGGameMode_eventKickPlayer_Parms), Z_Construct_UFunction_AFGGameMode_KickPlayer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGGameMode_KickPlayer_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGGameMode_KickPlayer_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGGameMode_KickPlayer_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGGameMode_KickPlayer()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGGameMode_RebootSession_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGGameMode, nullptr, "RebootSession", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGGameMode_RebootSession_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGGameMode_RebootSession_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGGameMode_RebootSession()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGGameMode_KickPlayer_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGGameMode_RebootSession_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -235,15 +223,24 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDefaultRemoteCallObjectsClassNames_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mDefaultRemoteCallObjectsClassNames;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mDefaultRemoteCallObjectsClassNames_Inner;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mIsMainMenu_MetaData[];
 #endif
 		static void NewProp_mIsMainMenu_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mIsMainMenu;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSkipTutorialInPIE_MetaData[];
+#endif
+		static void NewProp_mSkipTutorialInPIE_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mSkipTutorialInPIE;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mServerRestartTimeHours_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mServerRestartTimeHours;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDefaultRemoteCallObjectsClassNames_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mDefaultRemoteCallObjectsClassNames;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mDefaultRemoteCallObjectsClassNames_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDebugStartingPointTagName_MetaData[];
 #endif
@@ -283,7 +280,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGGameMode_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AFGGameMode_IsMainMenuGameMode, "IsMainMenuGameMode" }, // 3911170188
-		{ &Z_Construct_UFunction_AFGGameMode_KickPlayer, "KickPlayer" }, // 1041234314
+		{ &Z_Construct_UFunction_AFGGameMode_RebootSession, "RebootSession" }, // 2107297474
 		{ &Z_Construct_UFunction_AFGGameMode_RegisterRemoteCallObjectClass, "RegisterRemoteCallObjectClass" }, // 2312576732
 		{ &Z_Construct_UFunction_AFGGameMode_TriggerBundledWorldSave, "TriggerBundledWorldSave" }, // 302075087
 		{ &Z_Construct_UFunction_AFGGameMode_TriggerWorldSave, "TriggerWorldSave" }, // 62837869
@@ -298,14 +295,6 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDefaultRemoteCallObjectsClassNames_MetaData[] = {
-		{ "ModuleRelativePath", "Public/FGGameMode.h" },
-		{ "ToolTip", "These are the default Remote Call Objects for this PlayerController, should be put in config?" },
-	};
-#endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDefaultRemoteCallObjectsClassNames = { "mDefaultRemoteCallObjectsClassNames", nullptr, (EPropertyFlags)0x0040000000004000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameMode, mDefaultRemoteCallObjectsClassNames), METADATA_PARAMS(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDefaultRemoteCallObjectsClassNames_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDefaultRemoteCallObjectsClassNames_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDefaultRemoteCallObjectsClassNames_Inner = { "mDefaultRemoteCallObjectsClassNames", nullptr, (EPropertyFlags)0x0000000000004000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSoftClassPath, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameMode_Statics::NewProp_mIsMainMenu_MetaData[] = {
 		{ "Category", "Default" },
 		{ "ModuleRelativePath", "Public/FGGameMode.h" },
@@ -316,6 +305,33 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 		((AFGGameMode*)Obj)->mIsMainMenu = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGGameMode_Statics::NewProp_mIsMainMenu = { "mIsMainMenu", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGGameMode), &Z_Construct_UClass_AFGGameMode_Statics::NewProp_mIsMainMenu_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mIsMainMenu_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mIsMainMenu_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSkipTutorialInPIE_MetaData[] = {
+		{ "Category", "FGGameMode" },
+		{ "ModuleRelativePath", "Public/FGGameMode.h" },
+		{ "ToolTip", "Skips the tutorial step if we play in PIE" },
+	};
+#endif
+	void Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSkipTutorialInPIE_SetBit(void* Obj)
+	{
+		((AFGGameMode*)Obj)->mSkipTutorialInPIE = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSkipTutorialInPIE = { "mSkipTutorialInPIE", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGGameMode), &Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSkipTutorialInPIE_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSkipTutorialInPIE_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSkipTutorialInPIE_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameMode_Statics::NewProp_mServerRestartTimeHours_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGGameMode.h" },
+		{ "ToolTip", "After how many hours should the server restart itself" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGGameMode_Statics::NewProp_mServerRestartTimeHours = { "mServerRestartTimeHours", nullptr, (EPropertyFlags)0x0040000000004000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameMode, mServerRestartTimeHours), METADATA_PARAMS(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mServerRestartTimeHours_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mServerRestartTimeHours_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDefaultRemoteCallObjectsClassNames_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGGameMode.h" },
+		{ "ToolTip", "Config property to reference remote call objects for player controllers" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDefaultRemoteCallObjectsClassNames = { "mDefaultRemoteCallObjectsClassNames", nullptr, (EPropertyFlags)0x0040000000004000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameMode, mDefaultRemoteCallObjectsClassNames), METADATA_PARAMS(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDefaultRemoteCallObjectsClassNames_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDefaultRemoteCallObjectsClassNames_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDefaultRemoteCallObjectsClassNames_Inner = { "mDefaultRemoteCallObjectsClassNames", nullptr, (EPropertyFlags)0x0000000000004000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSoftClassPath, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDebugStartingPointTagName_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGGameMode.h" },
@@ -365,9 +381,11 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSaveSession = { "mSaveSession", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameMode, mSaveSession), Z_Construct_UClass_UFGSaveSession_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSaveSession_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSaveSession_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGGameMode_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mIsMainMenu,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSkipTutorialInPIE,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mServerRestartTimeHours,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDefaultRemoteCallObjectsClassNames,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDefaultRemoteCallObjectsClassNames_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mIsMainMenu,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDebugStartingPointTagName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mStartingPointTagName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSaveSessionName,
@@ -406,7 +424,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGameMode, 292232915);
+	IMPLEMENT_CLASS(AFGGameMode, 66338418);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGameMode>()
 	{
 		return AFGGameMode::StaticClass();

@@ -22,11 +22,13 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited();
-	ENGINE_API UClass* Z_Construct_UClass_APostProcessVolume_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGResourceDescriptor_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_APostProcessVolume_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSharedPostProcessSettings_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGWaterAudio_NoRegister();
 	NAVIGATIONSYSTEM_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGExtractableResourceInterface_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UInterface_PostProcessVolume_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UNavRelevantInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSignificanceInterface_NoRegister();
@@ -194,6 +196,10 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mResourceClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mResourceClass;
 #if WITH_EDITORONLY_DATA
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAssociatedPostProcessVolume_MetaData[];
@@ -204,6 +210,11 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPostProcessSettings_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mPostProcessSettings;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCanPlaceExtractor_MetaData[];
+#endif
+		static void NewProp_mCanPlaceExtractor_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mCanPlaceExtractor;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mWaterAudio_MetaData[];
 #endif
@@ -235,6 +246,13 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mResourceClass_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGWaterVolume.h" },
+		{ "ToolTip", "Reference to the Water Descriptor specified in FGResourceSettings. Assigned in begin play" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mResourceClass = { "mResourceClass", nullptr, (EPropertyFlags)0x0044000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWaterVolume, mResourceClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mResourceClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mResourceClass_MetaData)) };
 #if WITH_EDITORONLY_DATA
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAssociatedPostProcessVolume_MetaData[] = {
@@ -253,6 +271,17 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mPostProcessSettings = { "mPostProcessSettings", nullptr, (EPropertyFlags)0x0024080000000801, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWaterVolume, mPostProcessSettings), Z_Construct_UClass_UFGSharedPostProcessSettings_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mPostProcessSettings_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mPostProcessSettings_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mCanPlaceExtractor_MetaData[] = {
+		{ "Category", "Resource" },
+		{ "ModuleRelativePath", "Public/FGWaterVolume.h" },
+	};
+#endif
+	void Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mCanPlaceExtractor_SetBit(void* Obj)
+	{
+		((AFGWaterVolume*)Obj)->mCanPlaceExtractor = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mCanPlaceExtractor = { "mCanPlaceExtractor", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGWaterVolume), &Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mCanPlaceExtractor_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mCanPlaceExtractor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mCanPlaceExtractor_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mWaterAudio_MetaData[] = {
 		{ "Category", "Audio" },
 		{ "ModuleRelativePath", "Public/FGWaterVolume.h" },
@@ -269,14 +298,17 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAreaClass = { "mAreaClass", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWaterVolume, mAreaClass), Z_Construct_UClass_UNavArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAreaClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAreaClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGWaterVolume_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mResourceClass,
 #if WITH_EDITORONLY_DATA
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAssociatedPostProcessVolume,
 #endif // WITH_EDITORONLY_DATA
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mPostProcessSettings,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mCanPlaceExtractor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mWaterAudio,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAreaClass,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AFGWaterVolume_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UFGExtractableResourceInterface_NoRegister, (int32)VTABLE_OFFSET(AFGWaterVolume, IFGExtractableResourceInterface), false },
 			{ Z_Construct_UClass_UInterface_PostProcessVolume_NoRegister, (int32)VTABLE_OFFSET(AFGWaterVolume, IInterface_PostProcessVolume), false },
 			{ Z_Construct_UClass_UNavRelevantInterface_NoRegister, (int32)VTABLE_OFFSET(AFGWaterVolume, INavRelevantInterface), false },
 			{ Z_Construct_UClass_UFGSignificanceInterface_NoRegister, (int32)VTABLE_OFFSET(AFGWaterVolume, IFGSignificanceInterface), false },
@@ -308,7 +340,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWaterVolume, 198979901);
+	IMPLEMENT_CLASS(AFGWaterVolume, 1531888257);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWaterVolume>()
 	{
 		return AFGWaterVolume::StaticClass();

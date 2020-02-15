@@ -18,7 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadBridge() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildable();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableRailroadBridge_GetLength();
-	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FSplinePointData();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FSplinePointData();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSplineComponent_NoRegister();
 // End Cross Module References
 	void AFGBuildableRailroadBridge::StaticRegisterNativesAFGBuildableRailroadBridge()
@@ -151,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadBridge() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadBridge, 2902616066);
+	IMPLEMENT_CLASS(AFGBuildableRailroadBridge, 1730423640);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableRailroadBridge>()
 	{
 		return AFGBuildableRailroadBridge::StaticClass();

@@ -14,7 +14,7 @@ class AFGHUD;
 #endif
 #define FACTORYGAME_FGWeapon_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_RPC_WRAPPERS \
 	virtual bool Server_Reload_Validate(); \
 	virtual void Server_Reload_Implementation(); \
 	virtual void PlayReloadEffects_Implementation(); \
@@ -169,7 +169,7 @@ class AFGHUD;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool Server_Reload_Validate(); \
 	virtual void Server_Reload_Implementation(); \
 	virtual void PlayReloadEffects_Implementation(); \
@@ -323,9 +323,9 @@ class AFGHUD;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_EVENT_PARMS
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGWeapon(); \
 	friend struct Z_Construct_UClass_AFGWeapon_Statics; \
@@ -334,7 +334,7 @@ public: \
 	DECLARE_SERIALIZER(AFGWeapon)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGWeapon(); \
 	friend struct Z_Construct_UClass_AFGWeapon_Statics; \
@@ -343,7 +343,7 @@ public: \
 	DECLARE_SERIALIZER(AFGWeapon)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGWeapon(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGWeapon) \
@@ -356,7 +356,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGWeapon(AFGWeapon&&); \
@@ -367,7 +367,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGWeapon); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGWeapon)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mAssosiatedHud() { return STRUCT_OFFSET(AFGWeapon, mAssosiatedHud); } \
 	FORCEINLINE static uint32 __PPO__mMagSize() { return STRUCT_OFFSET(AFGWeapon, mMagSize); } \
 	FORCEINLINE static uint32 __PPO__mCurrentAmmo() { return STRUCT_OFFSET(AFGWeapon, mCurrentAmmo); } \
@@ -381,30 +381,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGWeapon); \
 	FORCEINLINE static uint32 __PPO__mReloadSound() { return STRUCT_OFFSET(AFGWeapon, mReloadSound); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_19_PROLOG \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_18_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_22_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGWeapon_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -15,26 +15,27 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 // Cross Module References
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGConveyorBeltHologram_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGConveyorBeltHologram();
-	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableHologram();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGSplineHologram();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_ConnectionArrowComponentDirection();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_SplineData();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UShapeComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USplineMeshComponent_NoRegister();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EFactoryConnectionDirection();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipe_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableConveyorBelt_NoRegister();
-	FACTORYGAME_API UClass* Z_Construct_UClass_AFGConveyorPoleHologram_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister();
-	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FSplinePointData();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSplineComponent_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGConveyorPoleHologram_NoRegister();
 // End Cross Module References
 	void AFGConveyorBeltHologram::StaticRegisterNativesAFGConveyorBeltHologram()
 	{
 		UClass* Class = AFGConveyorBeltHologram::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "OnRep_ConnectionArrowComponentDirection", &AFGConveyorBeltHologram::execOnRep_ConnectionArrowComponentDirection },
-			{ "OnRep_SplineData", &AFGConveyorBeltHologram::execOnRep_SplineData },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -61,29 +62,6 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_SplineData_Statics
-	{
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_SplineData_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
-		{ "ToolTip", "Update the spline on the client." },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_SplineData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGConveyorBeltHologram, nullptr, "OnRep_SplineData", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_SplineData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_SplineData_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_SplineData()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_SplineData_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	UClass* Z_Construct_UClass_AFGConveyorBeltHologram_NoRegister()
 	{
 		return AFGConveyorBeltHologram::StaticClass();
@@ -95,6 +73,28 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMesh_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mMesh;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCollisionMeshes_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mCollisionMeshes;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mCollisionMeshes_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSplineMeshes_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mSplineMeshes;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mSplineMeshes_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mConstructionPoleRotations_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mConstructionPoleRotations;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mConstructionPoleLocations_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mConstructionPoleLocations;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mConnectionArrowComponent_MetaData[];
 #endif
@@ -125,10 +125,6 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mUpgradedConveyorBelt;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mConveyorPoles_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mConveyorPoles;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSnappedConnectionComponents_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mSnappedConnectionComponents;
@@ -137,25 +133,19 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mConnectionComponents;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSplineData_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mChildPoleHologram_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mSplineData;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mSplineData_Inner;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSplineComponent_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mSplineComponent;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mChildPoleHologram;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_AFGConveyorBeltHologram_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_AFGBuildableHologram,
+		(UObject* (*)())Z_Construct_UClass_AFGSplineHologram,
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGConveyorBeltHologram_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_ConnectionArrowComponentDirection, "OnRep_ConnectionArrowComponentDirection" }, // 1492826348
-		{ &Z_Construct_UFunction_AFGConveyorBeltHologram_OnRep_SplineData, "OnRep_SplineData" }, // 1127110618
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::Class_MetaDataParams[] = {
@@ -165,6 +155,45 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 		{ "ToolTip", "Hologram for the conveyor belts, contains all the curve bending magic." },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMesh_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
+		{ "ToolTip", "Cached from the default buildable." },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMesh = { "mMesh", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorBeltHologram, mMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMesh_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mCollisionMeshes_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
+		{ "ToolTip", "All the generated collision meshes." },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mCollisionMeshes = { "mCollisionMeshes", nullptr, (EPropertyFlags)0x0040008000000008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorBeltHologram, mCollisionMeshes), METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mCollisionMeshes_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mCollisionMeshes_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mCollisionMeshes_Inner = { "mCollisionMeshes", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UShapeComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineMeshes_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
+		{ "ToolTip", "All the generated spline meshes." },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineMeshes = { "mSplineMeshes", nullptr, (EPropertyFlags)0x0040008000000008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorBeltHologram, mSplineMeshes), METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineMeshes_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineMeshes_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineMeshes_Inner = { "mSplineMeshes", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_USplineMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConstructionPoleRotations_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
+		{ "ToolTip", "CustomSerialization" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConstructionPoleRotations = { "mConstructionPoleRotations", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mConstructionPoleRotations, AFGConveyorBeltHologram), STRUCT_OFFSET(AFGConveyorBeltHologram, mConstructionPoleRotations), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConstructionPoleRotations_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConstructionPoleRotations_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConstructionPoleLocations_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
+		{ "ToolTip", "CustomSerialization" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConstructionPoleLocations = { "mConstructionPoleLocations", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mConstructionPoleLocations, AFGConveyorBeltHologram), STRUCT_OFFSET(AFGConveyorBeltHologram, mConstructionPoleLocations), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConstructionPoleLocations_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConstructionPoleLocations_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionArrowComponent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -221,17 +250,10 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mUpgradedConveyorBelt = { "mUpgradedConveyorBelt", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorBeltHologram, mUpgradedConveyorBelt), Z_Construct_UClass_AFGBuildableConveyorBelt_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mUpgradedConveyorBelt_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mUpgradedConveyorBelt_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConveyorPoles_MetaData[] = {
-		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
-		{ "ToolTip", "The poles we may place automatically." },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConveyorPoles = { "mConveyorPoles", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mConveyorPoles, AFGConveyorBeltHologram), STRUCT_OFFSET(AFGConveyorBeltHologram, mConveyorPoles), Z_Construct_UClass_AFGConveyorPoleHologram_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConveyorPoles_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConveyorPoles_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
-		{ "ToolTip", "The connections we've made." },
+		{ "ToolTip", "CustomSerialization" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSnappedConnectionComponents = { "mSnappedConnectionComponents", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mSnappedConnectionComponents, AFGConveyorBeltHologram), STRUCT_OFFSET(AFGConveyorBeltHologram, mSnappedConnectionComponents), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData)) };
@@ -244,22 +266,20 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionComponents = { "mConnectionComponents", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mConnectionComponents, AFGConveyorBeltHologram), STRUCT_OFFSET(AFGConveyorBeltHologram, mConnectionComponents), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionComponents_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineData_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mChildPoleHologram_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
-		{ "ToolTip", "This is the data needed to create the spline component (local space)." },
+		{ "ToolTip", "Used to redirect input and construct poles when needed" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineData = { "mSplineData", "OnRep_SplineData", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorBeltHologram, mSplineData), METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineData_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineData_Inner = { "mSplineData", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSplinePointData, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineComponent_MetaData[] = {
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
-		{ "ToolTip", "The spline component we're placing." },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineComponent = { "mSplineComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorBeltHologram, mSplineComponent), Z_Construct_UClass_UFGSplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mChildPoleHologram = { "mChildPoleHologram", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorBeltHologram, mChildPoleHologram), Z_Construct_UClass_AFGConveyorPoleHologram_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mChildPoleHologram_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mChildPoleHologram_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGConveyorBeltHologram_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMesh,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mCollisionMeshes,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mCollisionMeshes_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineMeshes,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineMeshes_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConstructionPoleRotations,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConstructionPoleLocations,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionArrowComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionArrowComponentDirection,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionArrowComponentDirection_Underlying,
@@ -268,12 +288,9 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mBendRadius,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mDefaultConveyorPoleRecipe,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mUpgradedConveyorBelt,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConveyorPoles,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSnappedConnectionComponents,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionComponents,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineData,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineData_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mSplineComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mChildPoleHologram,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGConveyorBeltHologram_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFGConveyorBeltHologram>::IsAbstract,
@@ -302,7 +319,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorBeltHologram, 3249607118);
+	IMPLEMENT_CLASS(AFGConveyorBeltHologram, 1587124819);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGConveyorBeltHologram>()
 	{
 		return AFGConveyorBeltHologram::StaticClass();

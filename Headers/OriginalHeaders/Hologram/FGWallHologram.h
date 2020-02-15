@@ -32,4 +32,8 @@ private:
 
 	/** Height of the wall, from the default buildable. */
 	float mHeight;
+
+	/** Ratios for the snapping zones, how much of the wall to hit for snap to either direction. */
+	float mSnapSidesHitZoneRatio = 0.2f;
+	float mSnapBottomHitZoneRatio = 0.2f;
 };

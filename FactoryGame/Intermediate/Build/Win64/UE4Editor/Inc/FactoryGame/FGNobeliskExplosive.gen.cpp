@@ -160,7 +160,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskExplosive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGNobeliskExplosive, 3624055302);
+	IMPLEMENT_CLASS(AFGNobeliskExplosive, 315282799);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGNobeliskExplosive>()
 	{
 		return AFGNobeliskExplosive::StaticClass();

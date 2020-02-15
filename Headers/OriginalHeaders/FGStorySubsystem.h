@@ -8,6 +8,7 @@
 #include "UObject/NoExportTypes.h"
 #include "FGSchematic.h"
 #include "FGMapArea.h"
+#include "FGResearchRecipe.h"
 #include "FGStorySubsystem.generated.h"
 
 USTRUCT( BlueprintType )
@@ -107,39 +108,24 @@ private:
 };
 
 USTRUCT(BlueprintType)
-struct FResearchMessageData
+struct FResearchTreeMessageData
 {
 	GENERATED_BODY()
 
-	UPROPERTY( SaveGame )
-	bool wasCollected;
+	/** return false if research tree isn't loaded */
+	FORCEINLINE bool IsValid() const;
 
-	/** return false if research recipe isn't loaded */
-	FORCEINLINE bool IsValid() const;	
-
-	/** returns nullptr if the ResearchCollected isn't loaded */
-	FORCEINLINE TSubclassOf< UFGResearchRecipe > GetResearchRecipe() const;	
+	/** returns nullptr if the tree isn't loaded */
+	FORCEINLINE TSubclassOf<class UFGResearchTree> GetResearchTree() const;
 
 	/** Message to display */
 	UPROPERTY( EditDefaultsOnly, Category = "Story" )
 	TArray<TSubclassOf<class UFGMessageBase>> Messages;
 
 private:
-	/** Associated research */
+	/** Associated research tree */
 	UPROPERTY( EditDefaultsOnly, Category = "Story" )
-	TSoftClassPtr<class UFGResearchRecipe> ResearchCollected;
-};
-
-struct FFindBySchematicUnlocked
-{
-	TSubclassOf< UObject > SchematicUnlocked;
-
-	FFindBySchematicUnlocked( TSubclassOf< UObject > InSchematicUnlocked ) : SchematicUnlocked( InSchematicUnlocked ) { }
-
-	bool operator() ( const FSchematicMessagePair Element ) const
-	{
-		return ( SchematicUnlocked == Element.GetSchematic() );
-	}
+	TSoftClassPtr<class UFGResearchTree> ResearchTree;
 };
 
 /**
@@ -176,17 +162,13 @@ public:
 	UFUNCTION()
 	void OnPlayerAddedItemToInventory( TSubclassOf< class UFGItemDescriptor > itemClass, int32 numAdded );
 
-	/** Called when a recipe has completed is research in the MAM */
+	/** Called when a schematic has completed is research in the MAM */
 	UFUNCTION()
-	void OnResearchRecipeTimerComplete( TSubclassOf<class UFGResearchRecipe> researchRecipe );
+	void OnResearchRecipeTimerComplete( TSubclassOf<class UFGSchematic> schematic );
 
-	/** Called when a recipe has become available for research */
+	/** Called when a new research tree in unlocked */
 	UFUNCTION()
-	void OnNewResearchRecipeAvailable( TSubclassOf<class UFGResearchRecipe> researchRecipe );
-
-	/** Called when the player claims the reward for a completed piece of research */
-	UFUNCTION()
-	void OnResearchRewardClaimed( TSubclassOf<UFGResearchRecipe> researchRecipe );
+	void OnResearchTreeUnlocked( TSubclassOf<UFGResearchTree> researchTree );
 
 	/** Delegate for when a map area is visited for the first time by anyone */
 	UFUNCTION()
@@ -208,13 +190,10 @@ private:
 	TArray< FItemFoundData > mItemFoundData;
 
 	UPROPERTY( EditDefaultsOnly, Category = "Story|Research" )
-	TArray<FResearchMessageData> mResearchMessageData;
+	TArray<FResearchTreeMessageData> mResearchTreeMessageData;
 
 	UPROPERTY( EditDefaultsOnly, Category = "Story|Research" )
 	TSubclassOf<class UFGMessageBase> mResearchTimerCompleteMessage;
-
-	UPROPERTY( EditDefaultsOnly, Category = "Story|Research" )
-	TSubclassOf<class UFGMessageBase> mNewResearchAvailableMessage;
 };
 
 FORCEINLINE TSubclassOf< UFGSchematic > FSchematicMessagePair::GetSchematic() const
@@ -231,17 +210,6 @@ FORCEINLINE TSubclassOf< UFGSchematic > FItemFoundData::GetSchematic() const
 {
 	checkDev(SchematicClass.IsValid());
 	return SchematicClass.Get();
-}
-
-FORCEINLINE bool FResearchMessageData::IsValid() const
-{
-	return ResearchCollected.IsValid();
-}
-
-FORCEINLINE TSubclassOf< UFGResearchRecipe > FResearchMessageData::GetResearchRecipe() const
-{
-	checkDev(ResearchCollected.IsValid());
-	return ResearchCollected.Get();
 }
 
 FORCEINLINE TSubclassOf< class UFGItemDescriptor > FItemFoundData::GetItemDescriptor() const

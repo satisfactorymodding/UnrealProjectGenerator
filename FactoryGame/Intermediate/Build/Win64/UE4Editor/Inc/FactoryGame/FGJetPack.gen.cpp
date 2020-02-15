@@ -344,7 +344,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGJetPack, 1462160341);
+	IMPLEMENT_CLASS(AFGJetPack, 2235409950);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGJetPack>()
 	{
 		return AFGJetPack::StaticClass();
@@ -513,7 +513,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGJetPackAttachment, 766771250);
+	IMPLEMENT_CLASS(AFGJetPackAttachment, 4154380653);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGJetPackAttachment>()
 	{
 		return AFGJetPackAttachment::StaticClass();

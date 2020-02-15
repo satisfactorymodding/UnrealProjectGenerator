@@ -52,7 +52,10 @@ struct FRemoveEmitterID
 {
 	GENERATED_BODY()
 public:
-	FRemoveEmitterID(){}
+	FRemoveEmitterID() :
+		Owner(nullptr)
+	{
+	}
 
 	FRemoveEmitterID( UObject* owner, int32 UID ) :
 		Owner( owner ),
@@ -71,7 +74,11 @@ struct FSetEmitterID
 {
 	GENERATED_BODY()
 public:
-	FSetEmitterID(){}
+	FSetEmitterID() :
+		Owner(nullptr),
+		AttachRoot(nullptr)
+	{
+	}
 
 	FSetEmitterID( UObject* owner,
 				   USceneComponent* attachRoot,

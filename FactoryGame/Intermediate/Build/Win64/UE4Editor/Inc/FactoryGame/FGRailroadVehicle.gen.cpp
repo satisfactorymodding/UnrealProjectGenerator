@@ -524,7 +524,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadVehicle, 2688528870);
+	IMPLEMENT_CLASS(AFGRailroadVehicle, 3060720036);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRailroadVehicle>()
 	{
 		return AFGRailroadVehicle::StaticClass();

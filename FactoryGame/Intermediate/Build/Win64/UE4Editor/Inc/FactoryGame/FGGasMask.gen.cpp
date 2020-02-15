@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGasMask, 3674106695);
+	IMPLEMENT_CLASS(AFGGasMask, 12910080);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGasMask>()
 	{
 		return AFGGasMask::StaticClass();
@@ -134,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGasMaskAttachment, 1731953366);
+	IMPLEMENT_CLASS(AFGGasMaskAttachment, 2284142804);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGasMaskAttachment>()
 	{
 		return AFGGasMaskAttachment::StaticClass();
