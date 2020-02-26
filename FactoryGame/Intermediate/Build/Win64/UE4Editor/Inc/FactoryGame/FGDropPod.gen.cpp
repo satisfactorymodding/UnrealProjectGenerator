@@ -20,21 +20,33 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGDropPod_GenerateDropPodInventory();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGDropPod_GetHasPower();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGDropPod_GetLootInventory();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGInventoryComponent_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGDropPod_GetPowerConnection();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGPowerConnectionComponent_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGDropPod_HasBeenOpened();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGDropPod_OnOpened();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGDropPod_OnRep_HasBeenOpened();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGDropPod_OnRepair();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCharacterPlayer_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGDropPod_Open();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGDropPod_RequiresPowerToOpen();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGDropPod_RollDropPackage();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FDropPackage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGDropPod_RollLoot();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGPowerInfoComponent_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGUseableInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSignificanceInterface_NoRegister();
 // End Cross Module References
+	static FName NAME_AFGDropPod_GetPowerConnection = FName(TEXT("GetPowerConnection"));
+	UFGPowerConnectionComponent* AFGDropPod::GetPowerConnection()
+	{
+		FGDropPod_eventGetPowerConnection_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AFGDropPod_GetPowerConnection),&Parms);
+		return Parms.ReturnValue;
+	}
 	static FName NAME_AFGDropPod_OnOpened = FName(TEXT("OnOpened"));
 	void AFGDropPod::OnOpened()
 	{
@@ -47,6 +59,13 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 		Parms.InteractingCharacter=InteractingCharacter;
 		ProcessEvent(FindFunctionChecked(NAME_AFGDropPod_OnRepair),&Parms);
 	}
+	static FName NAME_AFGDropPod_RequiresPowerToOpen = FName(TEXT("RequiresPowerToOpen"));
+	bool AFGDropPod::RequiresPowerToOpen() const
+	{
+		FGDropPod_eventRequiresPowerToOpen_Parms Parms;
+		const_cast<AFGDropPod*>(this)->ProcessEvent(FindFunctionChecked(NAME_AFGDropPod_RequiresPowerToOpen),&Parms);
+		return !!Parms.ReturnValue;
+	}
 	static FName NAME_AFGDropPod_RollLoot = FName(TEXT("RollLoot"));
 	void AFGDropPod::RollLoot()
 	{
@@ -57,6 +76,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 		UClass* Class = AFGDropPod::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GenerateDropPodInventory", &AFGDropPod::execGenerateDropPodInventory },
+			{ "GetHasPower", &AFGDropPod::execGetHasPower },
 			{ "GetLootInventory", &AFGDropPod::execGetLootInventory },
 			{ "HasBeenOpened", &AFGDropPod::execHasBeenOpened },
 			{ "OnOpened", &AFGDropPod::execOnOpened },
@@ -108,6 +128,44 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGDropPod_GetHasPower_Statics
+	{
+		struct FGDropPod_eventGetHasPower_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGDropPod_GetHasPower_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGDropPod_eventGetHasPower_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDropPod_GetHasPower_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGDropPod_eventGetHasPower_Parms), &Z_Construct_UFunction_AFGDropPod_GetHasPower_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGDropPod_GetHasPower_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDropPod_GetHasPower_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDropPod_GetHasPower_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Drop Pod" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDropPod_GetHasPower_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDropPod, nullptr, "GetHasPower", sizeof(FGDropPod_eventGetHasPower_Parms), Z_Construct_UFunction_AFGDropPod_GetHasPower_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDropPod_GetHasPower_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDropPod_GetHasPower_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDropPod_GetHasPower_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGDropPod_GetHasPower()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGDropPod_GetHasPower_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGDropPod_GetLootInventory_Statics
 	{
 		struct FGDropPod_eventGetLootInventory_Parms
@@ -147,6 +205,44 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGDropPod_GetLootInventory_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGDropPod_GetPowerConnection_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDropPod_GetPowerConnection_Statics::NewProp_ReturnValue_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGDropPod_GetPowerConnection_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDropPod_eventGetPowerConnection_Parms, ReturnValue), Z_Construct_UClass_UFGPowerConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGDropPod_GetPowerConnection_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGDropPod_GetPowerConnection_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGDropPod_GetPowerConnection_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDropPod_GetPowerConnection_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDropPod_GetPowerConnection_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Drop Pod" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
+		{ "ToolTip", "Gets the power connection that's been assigned to the drop pod via blueprint" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDropPod_GetPowerConnection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDropPod, nullptr, "GetPowerConnection", sizeof(FGDropPod_eventGetPowerConnection_Parms), Z_Construct_UFunction_AFGDropPod_GetPowerConnection_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDropPod_GetPowerConnection_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDropPod_GetPowerConnection_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDropPod_GetPowerConnection_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGDropPod_GetPowerConnection()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGDropPod_GetPowerConnection_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -289,6 +385,41 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGDropPod_RequiresPowerToOpen_Statics
+	{
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGDropPod_RequiresPowerToOpen_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGDropPod_eventRequiresPowerToOpen_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDropPod_RequiresPowerToOpen_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGDropPod_eventRequiresPowerToOpen_Parms), &Z_Construct_UFunction_AFGDropPod_RequiresPowerToOpen_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGDropPod_RequiresPowerToOpen_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDropPod_RequiresPowerToOpen_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDropPod_RequiresPowerToOpen_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Drop Pod" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
+		{ "ToolTip", "Necessary to add for optimization reasons. We don't want to tick drop pods that don't require power but this is only set in blueprint." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDropPod_RequiresPowerToOpen_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDropPod, nullptr, "RequiresPowerToOpen", sizeof(FGDropPod_eventRequiresPowerToOpen_Parms), Z_Construct_UFunction_AFGDropPod_RequiresPowerToOpen_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDropPod_RequiresPowerToOpen_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x48080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDropPod_RequiresPowerToOpen_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDropPod_RequiresPowerToOpen_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGDropPod_RequiresPowerToOpen()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGDropPod_RequiresPowerToOpen_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGDropPod_RollDropPackage_Statics
 	{
 		struct FGDropPod_eventRollDropPackage_Parms
@@ -375,6 +506,15 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 		static void NewProp_mHasBeenOpened_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mHasBeenOpened;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mHasPower_MetaData[];
+#endif
+		static void NewProp_mHasPower_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mHasPower;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPowerInfo_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mPowerInfo;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAmountOfInventorySlots_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mAmountOfInventorySlots;
@@ -389,12 +529,15 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGDropPod_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AFGDropPod_GenerateDropPodInventory, "GenerateDropPodInventory" }, // 1825509847
+		{ &Z_Construct_UFunction_AFGDropPod_GetHasPower, "GetHasPower" }, // 2087964821
 		{ &Z_Construct_UFunction_AFGDropPod_GetLootInventory, "GetLootInventory" }, // 3986463015
+		{ &Z_Construct_UFunction_AFGDropPod_GetPowerConnection, "GetPowerConnection" }, // 1447667267
 		{ &Z_Construct_UFunction_AFGDropPod_HasBeenOpened, "HasBeenOpened" }, // 103603215
 		{ &Z_Construct_UFunction_AFGDropPod_OnOpened, "OnOpened" }, // 1546715769
 		{ &Z_Construct_UFunction_AFGDropPod_OnRep_HasBeenOpened, "OnRep_HasBeenOpened" }, // 2611414992
 		{ &Z_Construct_UFunction_AFGDropPod_OnRepair, "OnRepair" }, // 3351296452
 		{ &Z_Construct_UFunction_AFGDropPod_Open, "Open" }, // 2662644111
+		{ &Z_Construct_UFunction_AFGDropPod_RequiresPowerToOpen, "RequiresPowerToOpen" }, // 2829366338
 		{ &Z_Construct_UFunction_AFGDropPod_RollDropPackage, "RollDropPackage" }, // 1374971314
 		{ &Z_Construct_UFunction_AFGDropPod_RollLoot, "RollLoot" }, // 1358906388
 	};
@@ -424,6 +567,25 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDropPod_Statics::NewProp_mHasBeenOpened = { "mHasBeenOpened", "OnRep_HasBeenOpened", (EPropertyFlags)0x0040000101000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGDropPod), &Z_Construct_UClass_AFGDropPod_Statics::NewProp_mHasBeenOpened_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDropPod_Statics::NewProp_mHasBeenOpened_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDropPod_Statics::NewProp_mHasBeenOpened_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDropPod_Statics::NewProp_mHasPower_MetaData[] = {
+		{ "Category", "FGDropPod" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
+	};
+#endif
+	void Z_Construct_UClass_AFGDropPod_Statics::NewProp_mHasPower_SetBit(void* Obj)
+	{
+		((AFGDropPod*)Obj)->mHasPower = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDropPod_Statics::NewProp_mHasPower = { "mHasPower", nullptr, (EPropertyFlags)0x0020080000000034, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGDropPod), &Z_Construct_UClass_AFGDropPod_Statics::NewProp_mHasPower_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDropPod_Statics::NewProp_mHasPower_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDropPod_Statics::NewProp_mHasPower_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDropPod_Statics::NewProp_mPowerInfo_MetaData[] = {
+		{ "Category", "FGDropPod" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGDropPod_Statics::NewProp_mPowerInfo = { "mPowerInfo", nullptr, (EPropertyFlags)0x002008000008003c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDropPod, mPowerInfo), Z_Construct_UClass_UFGPowerInfoComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGDropPod_Statics::NewProp_mPowerInfo_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDropPod_Statics::NewProp_mPowerInfo_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDropPod_Statics::NewProp_mAmountOfInventorySlots_MetaData[] = {
 		{ "Category", "Drop Pod" },
 		{ "ModuleRelativePath", "Public/FGDropPod.h" },
@@ -434,6 +596,8 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGDropPod_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGDropPod_Statics::NewProp_mInventory,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGDropPod_Statics::NewProp_mHasBeenOpened,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGDropPod_Statics::NewProp_mHasPower,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGDropPod_Statics::NewProp_mPowerInfo,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGDropPod_Statics::NewProp_mAmountOfInventorySlots,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AFGDropPod_Statics::InterfaceParams[] = {
@@ -468,7 +632,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDropPod, 3316094338);
+	IMPLEMENT_CLASS(AFGDropPod, 4115385532);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGDropPod>()
 	{
 		return AFGDropPod::StaticClass();

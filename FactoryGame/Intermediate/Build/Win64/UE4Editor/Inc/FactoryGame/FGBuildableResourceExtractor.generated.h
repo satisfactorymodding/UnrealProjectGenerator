@@ -197,12 +197,14 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableResourceExtractor); \
 	FORCEINLINE static uint32 __PPO__mExtractCycleTime() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mExtractCycleTime); } \
 	FORCEINLINE static uint32 __PPO__mItemsPerCycle() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mItemsPerCycle); } \
 	FORCEINLINE static uint32 __PPO__mAllowedResourceForms() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mAllowedResourceForms); } \
-	FORCEINLINE static uint32 __PPO__mMinimumDepthForPlacement() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mMinimumDepthForPlacement); } \
 	FORCEINLINE static uint32 __PPO__mRequireResourceAtMinimumDepthChecks() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mRequireResourceAtMinimumDepthChecks); } \
+	FORCEINLINE static uint32 __PPO__mMinimumDepthForPlacement() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mMinimumDepthForPlacement); } \
+	FORCEINLINE static uint32 __PPO__mDepthTraceOriginOffset() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mDepthTraceOriginOffset); } \
 	FORCEINLINE static uint32 __PPO__mOnlyAllowCertainResources() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mOnlyAllowCertainResources); } \
 	FORCEINLINE static uint32 __PPO__mAllowedResources() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mAllowedResources); } \
 	FORCEINLINE static uint32 __PPO__mExtractionOffset() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mExtractionOffset); } \
 	FORCEINLINE static uint32 __PPO__mMustPlaceOnResourceDisqualifier() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mMustPlaceOnResourceDisqualifier); } \
+	FORCEINLINE static uint32 __PPO__mExtractorTypeName() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mExtractorTypeName); } \
 	FORCEINLINE static uint32 __PPO__mExtractResourceNode() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mExtractResourceNode); } \
 	FORCEINLINE static uint32 __PPO__mExtractableResource() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mExtractableResource); } \
 	FORCEINLINE static uint32 __PPO__mCurrentExtractProgress() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mCurrentExtractProgress); } \

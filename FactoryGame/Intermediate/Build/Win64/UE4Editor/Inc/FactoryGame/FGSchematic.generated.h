@@ -74,12 +74,12 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMultipleItemStruc
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetShipTravelTimeAfterPurchase) \
+	DECLARE_FUNCTION(execGetTimeToComplete) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=UFGSchematic::GetShipTravelTimeAfterPurchase(Z_Param_inClass); \
+		*(float*)Z_Param__Result=UFGSchematic::GetTimeToComplete(Z_Param_inClass); \
 		P_NATIVE_END; \
 	} \
  \
@@ -195,12 +195,12 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMultipleItemStruc
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetShipTravelTimeAfterPurchase) \
+	DECLARE_FUNCTION(execGetTimeToComplete) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=UFGSchematic::GetShipTravelTimeAfterPurchase(Z_Param_inClass); \
+		*(float*)Z_Param__Result=UFGSchematic::GetTimeToComplete(Z_Param_inClass); \
 		P_NATIVE_END; \
 	} \
  \
@@ -355,7 +355,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGSchematic); \
 	FORCEINLINE static uint32 __PPO__mSubCategories() { return STRUCT_OFFSET(UFGSchematic, mSubCategories); } \
 	FORCEINLINE static uint32 __PPO__mTechTier() { return STRUCT_OFFSET(UFGSchematic, mTechTier); } \
 	FORCEINLINE static uint32 __PPO__mCost() { return STRUCT_OFFSET(UFGSchematic, mCost); } \
-	FORCEINLINE static uint32 __PPO__mShipTravelTimeAfterPurchase() { return STRUCT_OFFSET(UFGSchematic, mShipTravelTimeAfterPurchase); } \
+	FORCEINLINE static uint32 __PPO__mTimeToComplete() { return STRUCT_OFFSET(UFGSchematic, mTimeToComplete); } \
 	FORCEINLINE static uint32 __PPO__mUnlocks() { return STRUCT_OFFSET(UFGSchematic, mUnlocks); } \
 	FORCEINLINE static uint32 __PPO__mSchematicIcon() { return STRUCT_OFFSET(UFGSchematic, mSchematicIcon); } \
 	FORCEINLINE static uint32 __PPO__mDependsOnSchematic() { return STRUCT_OFFSET(UFGSchematic, mDependsOnSchematic); } \

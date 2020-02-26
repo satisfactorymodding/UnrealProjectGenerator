@@ -3,7 +3,7 @@
 #include "FGBuildableConveyorBelt.h"
 
 AFGBuildableConveyorBelt::AFGBuildableConveyorBelt(){ 
-	mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("SplineComponent"));
+	mSplineComponent = CreateDefaultSubobject<UFGSplineComponent>(TEXT("SplineComponent"));
 
     mSplineComponent->SetupAttachment(RootComponent);
 }

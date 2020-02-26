@@ -62,7 +62,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGResourceExtractorHologram); \
 	FORCEINLINE static uint32 __PPO__mMustPlaceOnResourceDisqualifier() { return STRUCT_OFFSET(AFGResourceExtractorHologram, mMustPlaceOnResourceDisqualifier); } \
 	FORCEINLINE static uint32 __PPO__mAllowedResources() { return STRUCT_OFFSET(AFGResourceExtractorHologram, mAllowedResources); } \
 	FORCEINLINE static uint32 __PPO__mSnappedExtractableResource() { return STRUCT_OFFSET(AFGResourceExtractorHologram, mSnappedExtractableResource); } \
-	FORCEINLINE static uint32 __PPO__mMinimumDepthPoints() { return STRUCT_OFFSET(AFGResourceExtractorHologram, mMinimumDepthPoints); }
+	FORCEINLINE static uint32 __PPO__mUpgradeTarget() { return STRUCT_OFFSET(AFGResourceExtractorHologram, mUpgradeTarget); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_Hologram_FGResourceExtractorHologram_h_17_PROLOG

@@ -115,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWalkway() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableWalkway, 1144254686);
+	IMPLEMENT_CLASS(AFGBuildableWalkway, 4227304771);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableWalkway>()
 	{
 		return AFGBuildableWalkway::StaticClass();

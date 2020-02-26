@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorAttachmentHologram() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGConveyorAttachmentHologram();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGFactoryHologram();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableConveyorBelt_NoRegister();
 // End Cross Module References
 	void AFGConveyorAttachmentHologram::StaticRegisterNativesAFGConveyorAttachmentHologram()
@@ -32,6 +33,10 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorAttachmentHologram() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSnappedConection_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mSnappedConection;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSnappedConveyor_MetaData[];
 #endif
@@ -61,6 +66,14 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorAttachmentHologram() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mSnappedConection_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorAttachmentHologram.h" },
+		{ "ToolTip", "The connection we snapped to." },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mSnappedConection = { "mSnappedConection", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorAttachmentHologram, mSnappedConection), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mSnappedConection_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mSnappedConection_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mSnappedConveyor_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Hologram/FGConveyorAttachmentHologram.h" },
 		{ "ToolTip", "The conveyor we snapped to." },
@@ -84,6 +97,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorAttachmentHologram() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnOffset = { "mMaxValidTurnOffset", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorAttachmentHologram, mMaxValidTurnOffset), METADATA_PARAMS(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnOffset_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnOffset_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mSnappedConection,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mSnappedConveyor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnAngle,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnOffset,
@@ -115,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorAttachmentHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorAttachmentHologram, 438171990);
+	IMPLEMENT_CLASS(AFGConveyorAttachmentHologram, 3027397480);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGConveyorAttachmentHologram>()
 	{
 		return AFGConveyorAttachmentHologram::StaticClass();

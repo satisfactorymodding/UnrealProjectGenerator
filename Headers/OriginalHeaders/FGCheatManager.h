@@ -92,6 +92,9 @@ public:
 
 	UFUNCTION( exec, CheatBoard, category = "Research" )
 	void GiveStartingResearch();
+
+	UFUNCTION( exec, CheatBoard, category = "Research" )
+	void GiveAllResearchTrees();
 	
 	UFUNCTION( exec, CheatBoard, category = "Factory|Uncommon" )
 	virtual void RebuildPowerCircuits();

@@ -49,6 +49,22 @@ class UFGConsumableDescriptor;
 		P_NATIVE_BEGIN; \
 		P_THIS->GetConsumeable(Z_Param_Out_out_consumeable,Z_Param_Out_out_numConsumeable); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnConsumePressed) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnConsumePressed(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnPrimaryFire) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnPrimaryFire(); \
+		P_NATIVE_END; \
 	}
 
 
@@ -86,6 +102,22 @@ class UFGConsumableDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->GetConsumeable(Z_Param_Out_out_consumeable,Z_Param_Out_out_numConsumeable); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnConsumePressed) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnConsumePressed(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnPrimaryFire) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnPrimaryFire(); \
 		P_NATIVE_END; \
 	}
 

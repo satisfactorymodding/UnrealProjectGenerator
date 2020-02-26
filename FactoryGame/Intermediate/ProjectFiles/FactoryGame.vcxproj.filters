@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FactoryGame.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{E12D3A2E-B1BB-4169-A903-4A084BB6BA92}</UniqueIdentifier>
+      <UniqueIdentifier>{B9CE5D93-EBF0-417C-9948-81FE92E73FB2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FactoryGame.Target.cs">
       <Filter>Source</Filter>
@@ -13,7 +13,7 @@
     </None>
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{A8232303-50A3-4E8C-B995-8A13D06DE1A7}</UniqueIdentifier>
+      <UniqueIdentifier>{1197C41B-BC47-4320-948B-38CB0058B634}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -25,22 +25,22 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Plugins">
-      <UniqueIdentifier>{54C972F0-2623-466E-8784-6B16E6CF9F1F}</UniqueIdentifier>
+      <UniqueIdentifier>{66C6CE89-2FB2-4B94-B534-7A3EF9732782}</UniqueIdentifier>
     </Filter>
     <Filter Include="Plugins\Alpakit">
-      <UniqueIdentifier>{F3BB3B1D-22D3-4FFB-9758-CE926C50110A}</UniqueIdentifier>
+      <UniqueIdentifier>{0227CC77-27AA-44A0-98EF-5008B188F06D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Plugins\Alpakit\Source">
-      <UniqueIdentifier>{EF1653E8-F12D-4312-B74D-45BCE8742E9A}</UniqueIdentifier>
+      <UniqueIdentifier>{61A6C4EF-3E6F-4D3F-9E4F-3727E6AACD2D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Plugins\Alpakit\Source\Alpakit">
-      <UniqueIdentifier>{0E2F61E1-5A52-413A-A75D-17B36E93358F}</UniqueIdentifier>
+      <UniqueIdentifier>{07FC5D02-1A38-4378-864C-F61C9DF8BC0E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Plugins\Alpakit\Source\Alpakit\Alpakit.Build.cs">
       <Filter>Plugins\Alpakit\Source\Alpakit</Filter>
     </None>
     <Filter Include="Plugins\Alpakit\Source\Alpakit\Private">
-      <UniqueIdentifier>{AE6E8420-8972-4C28-8148-5F871C217B61}</UniqueIdentifier>
+      <UniqueIdentifier>{6D4911AB-B266-4D05-91FE-5BDA5FB973EB}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Alpakit\Source\Alpakit\Private\Alpakit.cpp">
       <Filter>Plugins\Alpakit\Source\Alpakit\Private</Filter>
@@ -61,7 +61,7 @@
       <Filter>Plugins\Alpakit\Source\Alpakit\Private</Filter>
     </ClCompile>
     <Filter Include="Plugins\Alpakit\Source\Alpakit\Public">
-      <UniqueIdentifier>{5AB8AE74-A078-49CD-A89E-F12A9573F41C}</UniqueIdentifier>
+      <UniqueIdentifier>{30D7D108-B11A-4044-BFE1-8EA09F65FEEC}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Alpakit\Source\Alpakit\Public\Alpakit.h">
       <Filter>Plugins\Alpakit\Source\Alpakit\Public</Filter>
@@ -85,13 +85,13 @@
       <Filter>Plugins\Alpakit</Filter>
     </None>
     <Filter Include="Plugins\Alpakit\Config">
-      <UniqueIdentifier>{B7EF7396-76AF-4038-B964-6B3A3D475D82}</UniqueIdentifier>
+      <UniqueIdentifier>{ECE89F6B-DC81-451F-98B0-56A1CADFAC1C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Plugins\Alpakit\Config\FilterPlugin.ini">
       <Filter>Plugins\Alpakit\Config</Filter>
     </None>
     <Filter Include="Plugins\Alpakit\Resources">
-      <UniqueIdentifier>{503BAB50-5E78-4CB1-B2EB-EB7A0F779E44}</UniqueIdentifier>
+      <UniqueIdentifier>{17630C3A-5EDD-44F3-8BE4-247580F7C967}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Plugins\Alpakit\Resources\Alpakit128.png">
       <Filter>Plugins\Alpakit\Resources</Filter>
@@ -100,22 +100,283 @@
       <Filter>Plugins\Alpakit\Resources</Filter>
     </None>
     <Filter Include="Plugins\Wwise">
-      <UniqueIdentifier>{3772F85E-C2D7-4207-837C-FE67FD77E6D9}</UniqueIdentifier>
+      <UniqueIdentifier>{2D2239A1-22BE-4D98-8F49-528F229E1939}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Plugins\Wwise\Wwise.uplugin">
       <Filter>Plugins\Wwise</Filter>
     </None>
     <Filter Include="Plugins\Wwise\Resources">
-      <UniqueIdentifier>{DFF56925-CD80-4E2C-92EB-8AF5DE6E9E4F}</UniqueIdentifier>
+      <UniqueIdentifier>{2D170FB7-E5F4-44F4-9575-22A050AC2A3E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Plugins\Wwise\Resources\Icon128.png">
       <Filter>Plugins\Wwise\Resources</Filter>
     </None>
     <Filter Include="Plugins\Wwise\Source">
-      <UniqueIdentifier>{C463D136-D850-41EE-B62D-709B0A4D9E4A}</UniqueIdentifier>
+      <UniqueIdentifier>{422B5262-2A7D-4C13-B9E5-30E0875EF716}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Plugins\Wwise\Source\AudiokineticTools">
+      <UniqueIdentifier>{6351009D-00EA-47E6-B8E4-84775F044851}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\Wwise\Source\AudiokineticTools\AudiokineticTools.Build.cs">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools</Filter>
+    </None>
+    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes">
+      <UniqueIdentifier>{3F09DA74-1939-4504-A9A8-1441E8C78CD1}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\ActorFactoryAkAmbientSound.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\AkAcousticTextureFactory.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\AkAudioBankFactory.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\AkAudioEventFactory.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\AkAuxBusFactory.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\AkJsonFactory.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\GenerateSoundBanksCommandlet.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\InterpTrackAkAudioEventHelper.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\InterpTrackAkAudioRTPCHelper.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\WwiseEventDragDropOp.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms">
+      <UniqueIdentifier>{EFF8DDC7-B1C5-4C63-9D54-EAF97F41C311}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatformInfo.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Android">
+      <UniqueIdentifier>{15C3CC0E-5433-4CC2-8E67-BF1CB6A16D26}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Android\AkAndroidPlatformInfo.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Android</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_iOS">
+      <UniqueIdentifier>{3D42D7DA-9B7C-40DD-BCF9-EEDA03FB77F8}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_iOS\AkIOSPlatformInfo.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_iOS</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Linux">
+      <UniqueIdentifier>{C8D060DF-A8E0-44CF-9EA3-32DBB8156AC5}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Linux\AkLinuxPlatformInfo.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Linux</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Lumin">
+      <UniqueIdentifier>{6C3B6FE5-22C3-4329-A33E-BBA82469EBA3}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Lumin\AkLuminPlatformInfo.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Lumin</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Mac">
+      <UniqueIdentifier>{44CD6D01-F7CA-4CB5-A126-94773D565D78}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Mac\AkMacPlatformInfo.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Mac</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_PS4">
+      <UniqueIdentifier>{6DF4EC75-7A98-4CD8-B250-AF73A5BD1041}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_PS4\AkPS4PlatformInfo.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_PS4</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Switch">
+      <UniqueIdentifier>{3381E8E4-9FDD-47CC-80C5-71A2009FA6BC}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Switch\AkSwitchPlatformInfo.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Switch</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Windows">
+      <UniqueIdentifier>{3800FCD6-AB43-42A8-8ABD-D1798D29608D}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Windows\AkWindowsPlatformInfo.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Windows</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_XboxOne">
+      <UniqueIdentifier>{9F77BF1C-662E-4B49-ACCD-CE746056B5BF}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_XboxOne\AkXboxOnePlatformInfo.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_XboxOne</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\WwisePicker">
+      <UniqueIdentifier>{43A793E3-E3FA-443D-A9FD-1B44F9E10C5C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\WwisePicker\SWwisePicker.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\WwisePicker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\WwisePicker\WwiseWwuParser.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\WwisePicker</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Private">
+      <UniqueIdentifier>{17A87E29-EE08-4806-B61A-78CC9821149A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\ActorFactoryAkAmbientSound.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkAcousticPortalVisualizer.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkAcousticPortalVisualizer.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkAcousticTextureFactory.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkAudioBankFactory.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkAudioBankGenerationHelpers.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkAudioEventFactory.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkAuxBusFactory.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkComponentVisualizer.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkComponentVisualizer.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkEventAssetBroker.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkJsonFactory.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkLateReverbComponentDetailsCustomization.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkLateReverbComponentDetailsCustomization.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkMatineeImportTools.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkMatineeImportTools.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkRoomComponentDetailsCustomization.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkRoomComponentDetailsCustomization.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkSurfaceReflectorSetComponentVisualizer.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkSurfaceReflectorSetComponentVisualizer.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkSurfaceReflectorSetDetailsCustomization.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkSurfaceReflectorSetDetailsCustomization.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAcousticTexture.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAcousticTexture.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAudioBank.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAudioBank.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAudioEvent.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAudioEvent.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAuxBus.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAuxBus.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AudiokineticToolsModule.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AudiokineticToolsPrivatePCH.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\GenerateSoundBanksCommandlet.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\InterpTrackAkAudioEventHelper.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\InterpTrackAkAudioRTPCHelper.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\MovieSceneAkAudioEventTrackEditor.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\MovieSceneAkAudioEventTrackEditor.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\MovieSceneAkAudioRTPCTrackEditor.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\MovieSceneAkAudioRTPCTrackEditor.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\SGenerateSoundBanks.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\SGenerateSoundBanks.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\SMatineeAkEventKeyFrameAdder.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\SMatineeAkEventKeyFrameAdder.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\WwiseEventDragDropOp.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Private\WwisePicker">
+      <UniqueIdentifier>{68BEB83E-D8A8-43A3-9095-97A00BE3F7B4}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\WwisePicker\SWwisePicker.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private\WwisePicker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\WwisePicker\WwiseWwuParser.cpp">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private\WwisePicker</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Public">
+      <UniqueIdentifier>{9D2915E0-98AF-41F6-9BEA-B0D63DA555E8}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Public\AkAudioBankGenerationHelpers.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Public\IAudiokineticTools.h">
+      <Filter>Plugins\Wwise\Source\AudiokineticTools\Public</Filter>
+    </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio">
-      <UniqueIdentifier>{58E6F2C8-101D-4D7A-9D0D-1A0D785FD613}</UniqueIdentifier>
+      <UniqueIdentifier>{D0E63956-850A-41F7-A95E-1E50BD6290E1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Plugins\Wwise\Source\AkAudio\AkAudio.Build.cs">
       <Filter>Plugins\Wwise\Source\AkAudio</Filter>
@@ -148,7 +409,7 @@
       <Filter>Plugins\Wwise\Source\AkAudio</Filter>
     </None>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes">
-      <UniqueIdentifier>{BC16551D-8850-4084-B944-AE5480E16B41}</UniqueIdentifier>
+      <UniqueIdentifier>{7B51BE52-DF46-496B-8DEE-32E35F74FAF2}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\AkAcousticPortal.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes</Filter>
@@ -259,7 +520,7 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Classes</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints">
-      <UniqueIdentifier>{1350944A-7192-4C4B-9E3B-E20AB9CA2B63}</UniqueIdentifier>
+      <UniqueIdentifier>{7EB87FFD-2330-4A5E-AD5C-C8FA3FE156F3}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints\AkWaapiCalls.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints</Filter>
@@ -280,22 +541,22 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\AkWaapiSlate">
-      <UniqueIdentifier>{25832D0A-0C69-4657-8067-475CC78F7B2D}</UniqueIdentifier>
+      <UniqueIdentifier>{17406811-708F-4801-8332-DD1D0341392E}</UniqueIdentifier>
     </Filter>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\AkWaapiSlate\Widgets">
-      <UniqueIdentifier>{4ADF4AE9-49A1-46DB-9560-72084BFDC83D}</UniqueIdentifier>
+      <UniqueIdentifier>{CA672F19-9001-4640-9881-D0DF70D4DCE0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\AkWaapiSlate\Widgets\Input">
-      <UniqueIdentifier>{B0176A1F-796A-465D-BB08-6F57BDA3AACF}</UniqueIdentifier>
+      <UniqueIdentifier>{1851EB47-C017-4837-8DEE-35D01C5CC0B1}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiSlate\Widgets\Input\AkSSlider.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\AkWaapiSlate\Widgets\Input</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG">
-      <UniqueIdentifier>{CC84C20E-DF2C-4BA8-AD14-54FD327FB608}</UniqueIdentifier>
+      <UniqueIdentifier>{BD5F5B11-38E7-4120-A638-3961547DCE40}</UniqueIdentifier>
     </Filter>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG\Components">
-      <UniqueIdentifier>{0502591C-A4E0-4564-9652-BAC44268F794}</UniqueIdentifier>
+      <UniqueIdentifier>{7A5A7ABB-8074-4975-BB94-46E8102DB091}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG\Components\AkBoolPropertyToControlCustomization.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG\Components</Filter>
@@ -340,13 +601,13 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG\Components</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings">
-      <UniqueIdentifier>{EC761E5E-371B-473D-92AE-0DD330B93674}</UniqueIdentifier>
+      <UniqueIdentifier>{8F728947-F078-4E9B-BDBF-96734192B3CF}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings\AkInitializationSettings.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\OcclusionObstructionService">
-      <UniqueIdentifier>{64F951A6-6280-49DC-B1F7-F98C98D976F2}</UniqueIdentifier>
+      <UniqueIdentifier>{5CD94968-0B5B-434B-99A2-36B75B1EB3FC}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\OcclusionObstructionService\AkComponentOcclusionObstructionService.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\OcclusionObstructionService</Filter>
@@ -358,13 +619,13 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\OcclusionObstructionService</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\Platforms">
-      <UniqueIdentifier>{BC22FF09-EDE0-4389-91D7-34AEC0A717DC}</UniqueIdentifier>
+      <UniqueIdentifier>{A09A1740-A962-4D52-B446-D7697C4FA296}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkUEPlatform.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Android">
-      <UniqueIdentifier>{1D27F4D7-86EF-4B64-AFEC-3A6131E4FB20}</UniqueIdentifier>
+      <UniqueIdentifier>{4CE8345B-7880-41D7-BDB1-B80B4D192A32}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Android\AkAndroidInitializationSettings.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Android</Filter>
@@ -373,7 +634,7 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Android</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_iOS">
-      <UniqueIdentifier>{761DF10E-C66B-42BB-A82A-404B359D8568}</UniqueIdentifier>
+      <UniqueIdentifier>{BC8DA1F1-BE89-464D-81F1-F7E4B09C35E8}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_iOS\AkIOSInitializationSettings.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_iOS</Filter>
@@ -382,7 +643,7 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_iOS</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Linux">
-      <UniqueIdentifier>{811E5DFD-BF75-41FE-8ADA-2360E2319C01}</UniqueIdentifier>
+      <UniqueIdentifier>{BF609BDE-357D-4404-A4D2-E3A106416EFE}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Linux\AkLinuxInitializationSettings.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Linux</Filter>
@@ -391,7 +652,7 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Linux</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Lumin">
-      <UniqueIdentifier>{90DA9BBF-D642-478E-AEF7-7BC1D63D6280}</UniqueIdentifier>
+      <UniqueIdentifier>{6DFCED8F-2125-444E-AE61-A84870E64AE4}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Lumin\AkLuminInitializationSettings.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Lumin</Filter>
@@ -400,7 +661,7 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Lumin</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Mac">
-      <UniqueIdentifier>{6F0392C2-AE03-462B-B4A6-02D50593ACD9}</UniqueIdentifier>
+      <UniqueIdentifier>{E8357CC0-8090-499D-8759-82451837A5A5}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Mac\AkMacInitializationSettings.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Mac</Filter>
@@ -409,7 +670,7 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Mac</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_PS4">
-      <UniqueIdentifier>{3C732AEA-5054-4300-989A-3D1BE137A096}</UniqueIdentifier>
+      <UniqueIdentifier>{56F04771-4437-49F8-8EB9-C5E3164AE572}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_PS4\AkPS4InitializationSettings.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_PS4</Filter>
@@ -418,7 +679,7 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_PS4</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Switch">
-      <UniqueIdentifier>{944FD240-014A-459D-9287-E0969F450E3B}</UniqueIdentifier>
+      <UniqueIdentifier>{BCBDAC8B-07B8-42B5-8844-99FF5AB6725A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Switch\AkSwitchInitializationSettings.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Switch</Filter>
@@ -427,7 +688,7 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Switch</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Windows">
-      <UniqueIdentifier>{DEDFB44D-4CE5-42C8-AA42-3857BAACDCF3}</UniqueIdentifier>
+      <UniqueIdentifier>{A58A90BF-F57B-4D43-B142-5A7128123E94}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Windows\AkWindowsInitializationSettings.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Windows</Filter>
@@ -436,7 +697,7 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_Windows</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_XboxOne">
-      <UniqueIdentifier>{86E0D7FD-B0E4-408B-8345-DFF93D49014B}</UniqueIdentifier>
+      <UniqueIdentifier>{E9601456-BAEC-4F3D-9CCE-33665960406C}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_XboxOne\AkXboxOneInitializationSettings.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_XboxOne</Filter>
@@ -445,7 +706,7 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\Platforms\AkPlatform_XboxOne</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Classes\WaapiPicker">
-      <UniqueIdentifier>{EE8BDB71-9E8B-45F2-B5DA-93AA75103C0D}</UniqueIdentifier>
+      <UniqueIdentifier>{B7E7075D-9983-42BD-AACF-5CBF11193D25}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Classes\WaapiPicker\SWaapiPicker.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\WaapiPicker</Filter>
@@ -460,7 +721,7 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Classes\WaapiPicker</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private">
-      <UniqueIdentifier>{6D7EE58E-73E1-4936-810E-72CC609F64C4}</UniqueIdentifier>
+      <UniqueIdentifier>{A1FAE3E4-D1FC-4174-8102-AC50CFCDC680}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\AkAcousticPortal.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private</Filter>
@@ -601,7 +862,7 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Private</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints">
-      <UniqueIdentifier>{982565A2-DC53-475A-BB63-DFA6128C190D}</UniqueIdentifier>
+      <UniqueIdentifier>{3CBC7FD0-9BFC-48F1-AD0E-B1084A50707F}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiCalls.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints</Filter>
@@ -622,22 +883,22 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\AkWaapiSlate">
-      <UniqueIdentifier>{71C2BDB5-5314-4751-B308-3C90E979E8AB}</UniqueIdentifier>
+      <UniqueIdentifier>{4D87351C-7FDC-4BFD-823E-72A326826C90}</UniqueIdentifier>
     </Filter>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\AkWaapiSlate\Widgets">
-      <UniqueIdentifier>{AB545977-4D28-4158-9CFA-FADEDC9A2D09}</UniqueIdentifier>
+      <UniqueIdentifier>{0DDE4909-035B-45DD-96F8-39113B7A0524}</UniqueIdentifier>
     </Filter>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\AkWaapiSlate\Widgets\Input">
-      <UniqueIdentifier>{02CCBE07-0D48-4C61-9CC6-2DF9A1121DB5}</UniqueIdentifier>
+      <UniqueIdentifier>{26D331D9-0729-4140-AED4-F726AD874914}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\AkWaapiSlate\Widgets\Input\AkSSlider.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\AkWaapiSlate\Widgets\Input</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG">
-      <UniqueIdentifier>{50D423AC-416F-4DF3-ABE4-678246803528}</UniqueIdentifier>
+      <UniqueIdentifier>{BE1346A1-1FC6-4CAD-B791-A922E5DE22DA}</UniqueIdentifier>
     </Filter>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components">
-      <UniqueIdentifier>{64CBB497-AB10-4A47-AF34-DCF897E44C10}</UniqueIdentifier>
+      <UniqueIdentifier>{C7C96CD4-F974-4BB2-8A14-E80CAF38AD42}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkBoolPropertyToControlCustomization.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components</Filter>
@@ -673,7 +934,7 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\FilePackageIO">
-      <UniqueIdentifier>{DB91AE25-13F8-4FD8-8DA0-F1116BB483CF}</UniqueIdentifier>
+      <UniqueIdentifier>{9FF27295-5E37-4F1A-BB90-C48B6E203F98}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\FilePackageIO\AkFilePackage.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\FilePackageIO</Filter>
@@ -694,13 +955,13 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Private\FilePackageIO</Filter>
     </ClInclude>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\InitializationSettings">
-      <UniqueIdentifier>{3B7C450D-A1EA-4AAF-9A3E-CA155843BF65}</UniqueIdentifier>
+      <UniqueIdentifier>{3E9FB350-1196-49CD-8655-90CD4F284755}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkInitializationSettings.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\InitializationSettings</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\OcclusionObstructionService">
-      <UniqueIdentifier>{5E86C7A6-BC5E-4ACD-A1C7-99E5FC99E39A}</UniqueIdentifier>
+      <UniqueIdentifier>{B006EC47-D1AF-4636-872B-617F9380230E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\OcclusionObstructionService\AkComponentOcclusionObstructionService.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\OcclusionObstructionService</Filter>
@@ -712,67 +973,67 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Private\OcclusionObstructionService</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\Platforms">
-      <UniqueIdentifier>{0A41FA86-5FB7-408F-B1F1-8F49359FF642}</UniqueIdentifier>
+      <UniqueIdentifier>{771E7969-9816-478B-AB68-6A2F6C1CA114}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\Platforms\AkUEPlatform.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\Platforms</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Android">
-      <UniqueIdentifier>{7E0A28B6-4E55-42CD-B410-C2E94A5EBDF1}</UniqueIdentifier>
+      <UniqueIdentifier>{D68AFB4F-4D19-4332-8D73-88C425F24C25}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Android\AkAndroidInitializationSettings.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Android</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_iOS">
-      <UniqueIdentifier>{675F4EEA-952D-42A5-8C0E-BD05F7A42C49}</UniqueIdentifier>
+      <UniqueIdentifier>{38095308-8B3E-48FB-8CA9-2DF8AABA92B6}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_iOS\AkIOSInitializationSettings.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_iOS</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Linux">
-      <UniqueIdentifier>{98B9AE13-9ADB-4846-8A09-2D91AE0570F2}</UniqueIdentifier>
+      <UniqueIdentifier>{4EE45F15-995B-4322-AB05-C2E2D98947A1}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Linux\AkLinuxInitializationSettings.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Linux</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Lumin">
-      <UniqueIdentifier>{11C316F3-DD1A-4E87-8196-169B19ECDE95}</UniqueIdentifier>
+      <UniqueIdentifier>{396BF357-A17F-453C-9AF0-EA228E3EA64B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Lumin\AkLuminInitializationSettings.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Lumin</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Mac">
-      <UniqueIdentifier>{E34B2E4D-C87D-4CEC-8870-3CD3B61853E0}</UniqueIdentifier>
+      <UniqueIdentifier>{70BD6E0D-11EC-4868-982E-FFF38A64862B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Mac\AkMacInitializationSettings.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Mac</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_PS4">
-      <UniqueIdentifier>{80A6E746-4052-419C-86C8-1B223458A5B9}</UniqueIdentifier>
+      <UniqueIdentifier>{B8CEFCCF-8F9B-4FFC-9468-DDE191147E4E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_PS4\AkPS4InitializationSettings.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_PS4</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Switch">
-      <UniqueIdentifier>{6682C879-5879-40D4-B07C-B129299E468A}</UniqueIdentifier>
+      <UniqueIdentifier>{961869CC-4478-4091-8FDA-3F42F56DF077}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Switch\AkSwitchInitializationSettings.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Switch</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Windows">
-      <UniqueIdentifier>{2865AA38-1CAD-4301-9521-6CF07F5787BC}</UniqueIdentifier>
+      <UniqueIdentifier>{A34A7818-9FD0-4985-A2F9-15DFBFB60094}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Windows\AkWindowsInitializationSettings.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_Windows</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_XboxOne">
-      <UniqueIdentifier>{8DD68369-19F5-430A-B2E2-90A2C22E8AD6}</UniqueIdentifier>
+      <UniqueIdentifier>{BF8AB7BC-9063-4CA9-96B5-F5007CCD9910}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_XboxOne\AkXboxOneInitializationSettings.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\Platforms\AkPlatform_XboxOne</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Private\WaapiPicker">
-      <UniqueIdentifier>{8F8DC402-027C-4239-8F39-1D93431DC594}</UniqueIdentifier>
+      <UniqueIdentifier>{D92FD652-717B-471F-B47E-E1F9C34E2BCC}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\Wwise\Source\AkAudio\Private\WaapiPicker\SWaapiPicker.cpp">
       <Filter>Plugins\Wwise\Source\AkAudio\Private\WaapiPicker</Filter>
@@ -781,7 +1042,7 @@
       <Filter>Plugins\Wwise\Source\AkAudio\Private\WaapiPicker</Filter>
     </ClCompile>
     <Filter Include="Plugins\Wwise\Source\AkAudio\Public">
-      <UniqueIdentifier>{1585278D-E2CC-4403-9BA9-1F1562BC963B}</UniqueIdentifier>
+      <UniqueIdentifier>{68387262-E29D-4F68-B731-4F97ABFB2791}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Public\AkAudioDevice.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Public</Filter>
@@ -795,275 +1056,14 @@
     <ClInclude Include="..\..\Plugins\Wwise\Source\AkAudio\Public\AkWaapiClient.h">
       <Filter>Plugins\Wwise\Source\AkAudio\Public</Filter>
     </ClInclude>
-    <Filter Include="Plugins\Wwise\Source\AudiokineticTools">
-      <UniqueIdentifier>{DF7698D5-0EA1-4BC6-81B0-614E528ADFC2}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Plugins\Wwise\Source\AudiokineticTools\AudiokineticTools.Build.cs">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools</Filter>
-    </None>
-    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes">
-      <UniqueIdentifier>{8929A583-2EF9-49B1-A4EF-F0199909703F}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\ActorFactoryAkAmbientSound.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\AkAcousticTextureFactory.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\AkAudioBankFactory.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\AkAudioEventFactory.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\AkAuxBusFactory.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\AkJsonFactory.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\GenerateSoundBanksCommandlet.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\InterpTrackAkAudioEventHelper.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\InterpTrackAkAudioRTPCHelper.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\WwiseEventDragDropOp.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes</Filter>
-    </ClInclude>
-    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms">
-      <UniqueIdentifier>{2D0E27C0-0A45-4A41-8113-0F9C39416B91}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatformInfo.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms</Filter>
-    </ClInclude>
-    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Android">
-      <UniqueIdentifier>{7D7200D5-ADA2-4ACB-8EC8-BF40362960D2}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Android\AkAndroidPlatformInfo.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Android</Filter>
-    </ClInclude>
-    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_iOS">
-      <UniqueIdentifier>{B720331E-F8B1-4EBB-B15D-D2DD794FCF04}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_iOS\AkIOSPlatformInfo.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_iOS</Filter>
-    </ClInclude>
-    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Linux">
-      <UniqueIdentifier>{7039EA8D-67C4-482C-B8E8-69ECBEF46F23}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Linux\AkLinuxPlatformInfo.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Linux</Filter>
-    </ClInclude>
-    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Lumin">
-      <UniqueIdentifier>{05DF0BC6-FB1F-4AC4-A30F-1BFD344851B3}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Lumin\AkLuminPlatformInfo.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Lumin</Filter>
-    </ClInclude>
-    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Mac">
-      <UniqueIdentifier>{68F13D41-7A9D-4909-8933-42F56BB2F8A5}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Mac\AkMacPlatformInfo.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Mac</Filter>
-    </ClInclude>
-    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_PS4">
-      <UniqueIdentifier>{D7ABCD55-4892-4AC9-B5D6-027CCA78BCB6}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_PS4\AkPS4PlatformInfo.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_PS4</Filter>
-    </ClInclude>
-    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Switch">
-      <UniqueIdentifier>{B79BEBA2-DD69-42A3-B344-D7224FE39F16}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Switch\AkSwitchPlatformInfo.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Switch</Filter>
-    </ClInclude>
-    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Windows">
-      <UniqueIdentifier>{9D83FBC2-D4AF-4784-BA4E-111496B1DE67}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Windows\AkWindowsPlatformInfo.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_Windows</Filter>
-    </ClInclude>
-    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_XboxOne">
-      <UniqueIdentifier>{26A0179D-F050-45D4-BE7C-AE697D3B84C1}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_XboxOne\AkXboxOnePlatformInfo.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\Platforms\AkPlatform_XboxOne</Filter>
-    </ClInclude>
-    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Classes\WwisePicker">
-      <UniqueIdentifier>{98A86194-03C5-4575-9F71-8E7A42A81948}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\WwisePicker\SWwisePicker.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\WwisePicker</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Classes\WwisePicker\WwiseWwuParser.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Classes\WwisePicker</Filter>
-    </ClInclude>
-    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Private">
-      <UniqueIdentifier>{CF85654C-60A2-4BFE-8FED-202E77588084}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\ActorFactoryAkAmbientSound.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkAcousticPortalVisualizer.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkAcousticPortalVisualizer.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkAcousticTextureFactory.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkAudioBankFactory.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkAudioBankGenerationHelpers.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkAudioEventFactory.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkAuxBusFactory.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkComponentVisualizer.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkComponentVisualizer.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkEventAssetBroker.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkJsonFactory.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkLateReverbComponentDetailsCustomization.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkLateReverbComponentDetailsCustomization.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkMatineeImportTools.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkMatineeImportTools.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkRoomComponentDetailsCustomization.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkRoomComponentDetailsCustomization.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkSurfaceReflectorSetComponentVisualizer.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkSurfaceReflectorSetComponentVisualizer.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkSurfaceReflectorSetDetailsCustomization.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AkSurfaceReflectorSetDetailsCustomization.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAcousticTexture.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAcousticTexture.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAudioBank.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAudioBank.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAudioEvent.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAudioEvent.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAuxBus.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAuxBus.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AudiokineticToolsModule.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\AudiokineticToolsPrivatePCH.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\GenerateSoundBanksCommandlet.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\InterpTrackAkAudioEventHelper.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\InterpTrackAkAudioRTPCHelper.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\MovieSceneAkAudioEventTrackEditor.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\MovieSceneAkAudioEventTrackEditor.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\MovieSceneAkAudioRTPCTrackEditor.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\MovieSceneAkAudioRTPCTrackEditor.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\SGenerateSoundBanks.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\SGenerateSoundBanks.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\SMatineeAkEventKeyFrameAdder.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\SMatineeAkEventKeyFrameAdder.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\WwiseEventDragDropOp.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private</Filter>
-    </ClCompile>
-    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Private\WwisePicker">
-      <UniqueIdentifier>{3B7D2C0D-B1A4-4A67-A246-6362630E8C57}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\WwisePicker\SWwisePicker.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private\WwisePicker</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Private\WwisePicker\WwiseWwuParser.cpp">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Private\WwisePicker</Filter>
-    </ClCompile>
-    <Filter Include="Plugins\Wwise\Source\AudiokineticTools\Public">
-      <UniqueIdentifier>{71ED2423-8675-41E7-8C36-8FD8346DB6B4}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Public\AkAudioBankGenerationHelpers.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\Wwise\Source\AudiokineticTools\Public\IAudiokineticTools.h">
-      <Filter>Plugins\Wwise\Source\AudiokineticTools\Public</Filter>
-    </ClInclude>
     <Filter Include="Source\FactoryGame">
-      <UniqueIdentifier>{4E189E15-D311-4421-8F5B-999FBD7FACA7}</UniqueIdentifier>
+      <UniqueIdentifier>{EC01A1A5-DFDF-45B3-9BC1-C3693695DB73}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FactoryGame\FactoryGame.Build.cs">
       <Filter>Source\FactoryGame</Filter>
     </None>
     <Filter Include="Source\FactoryGame\Private">
-      <UniqueIdentifier>{E03E9063-4301-4D8A-B548-984E7ADE551F}</UniqueIdentifier>
+      <UniqueIdentifier>{1584C22D-117B-420D-A2A1-A945CCA54AFD}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\ArchiveObjectDataProxy.cpp">
       <Filter>Source\FactoryGame\Private</Filter>
@@ -1081,9 +1081,6 @@
       <Filter>Source\FactoryGame\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\FactoryGame\Private\FactoryGameCustomVersion.cpp">
-      <Filter>Source\FactoryGame\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\FactoryGame\Private\FactoryGameGameModeBase.cpp">
       <Filter>Source\FactoryGame\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\FactoryGame\Private\FactoryGameModule.cpp">
@@ -1305,9 +1302,6 @@
     <ClCompile Include="..\..\Source\FactoryGame\Private\FGDropPodSettings.cpp">
       <Filter>Source\FactoryGame\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\FactoryGame\Private\FGDynamicHeightFogUpdater.cpp">
-      <Filter>Source\FactoryGame\Private</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\FactoryGame\Private\FGEngineCommon.cpp">
       <Filter>Source\FactoryGame\Private</Filter>
     </ClCompile>
@@ -1321,9 +1315,6 @@
       <Filter>Source\FactoryGame\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\FactoryGame\Private\FGExplosiveDestroyableInterface.cpp">
-      <Filter>Source\FactoryGame\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\FactoryGame\Private\FGExponentialHeightFog.cpp">
       <Filter>Source\FactoryGame\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\FactoryGame\Private\FGFactoryConnectionComponent.cpp">
@@ -1638,9 +1629,6 @@
     <ClCompile Include="..\..\Source\FactoryGame\Private\FGRailroadFunctionLibrary.cpp">
       <Filter>Source\FactoryGame\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\FactoryGame\Private\FGRailroadInterface.cpp">
-      <Filter>Source\FactoryGame\Private</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\FactoryGame\Private\FGRailroadSubsystem.cpp">
       <Filter>Source\FactoryGame\Private</Filter>
     </ClCompile>
@@ -1866,9 +1854,6 @@
     <ClCompile Include="..\..\Source\FactoryGame\Private\FGWorldSettings.cpp">
       <Filter>Source\FactoryGame\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\FactoryGame\Private\FSplinePointData.cpp">
-      <Filter>Source\FactoryGame\Private</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\FactoryGame\Private\IncludeInBuild.cpp">
       <Filter>Source\FactoryGame\Private</Filter>
     </ClCompile>
@@ -1912,7 +1897,7 @@
       <Filter>Source\FactoryGame\Private</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Private\AI">
-      <UniqueIdentifier>{34507C3E-0D91-408E-A316-33840BAADBA0}</UniqueIdentifier>
+      <UniqueIdentifier>{9BBF65FA-5DCC-4341-A0C8-AE3D0662CC8C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\AI\FGAggroTargetInterface.cpp">
       <Filter>Source\FactoryGame\Private\AI</Filter>
@@ -1957,7 +1942,7 @@
       <Filter>Source\FactoryGame\Private\AI</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Private\AvailabilityDependencies">
-      <UniqueIdentifier>{7B78B00B-AF42-4474-A6B3-647DB9ABD1E0}</UniqueIdentifier>
+      <UniqueIdentifier>{307116F6-D493-4AEB-92FF-0EB39C89F020}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\AvailabilityDependencies\FGAvailabilityDependency.cpp">
       <Filter>Source\FactoryGame\Private\AvailabilityDependencies</Filter>
@@ -1966,7 +1951,7 @@
       <Filter>Source\FactoryGame\Private\AvailabilityDependencies</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Private\Buildables">
-      <UniqueIdentifier>{15DF27C6-9C52-4918-8B24-49FF9B40F33D}</UniqueIdentifier>
+      <UniqueIdentifier>{5EC7540E-988F-4DEF-A53A-89F9CBA5F3BB}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Buildables\FGBuildable.cpp">
       <Filter>Source\FactoryGame\Private\Buildables</Filter>
@@ -2059,6 +2044,9 @@
       <Filter>Source\FactoryGame\Private\Buildables</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Buildables\FGBuildablePole.cpp">
+      <Filter>Source\FactoryGame\Private\Buildables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FactoryGame\Private\Buildables\FGBuildablePoleBase.cpp">
       <Filter>Source\FactoryGame\Private\Buildables</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Buildables\FGBuildablePoweredWall.cpp">
@@ -2155,13 +2143,13 @@
       <Filter>Source\FactoryGame\Private\Buildables</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Private\Buildables\Animation">
-      <UniqueIdentifier>{C9B6F8A0-1732-4D85-983D-D6B2472188D0}</UniqueIdentifier>
+      <UniqueIdentifier>{25F05669-195E-4B0D-8A74-D4F554B88755}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Buildables\Animation\FGFAnimInstanceFactory.cpp">
       <Filter>Source\FactoryGame\Private\Buildables\Animation</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Private\Creature">
-      <UniqueIdentifier>{EF545D1A-6ACB-4B97-981E-13D5BFD21D32}</UniqueIdentifier>
+      <UniqueIdentifier>{7A71BBE5-2FB4-4A74-9420-CD91B560CB02}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Creature\FGCreature.cpp">
       <Filter>Source\FactoryGame\Private\Creature</Filter>
@@ -2179,7 +2167,7 @@
       <Filter>Source\FactoryGame\Private\Creature</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Private\Creature\Enemy">
-      <UniqueIdentifier>{C843BB66-7B7F-438E-B774-5813A70A5482}</UniqueIdentifier>
+      <UniqueIdentifier>{AE96F7DA-944B-4C70-A101-F7E491B63AC5}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Creature\Enemy\FGCrabHatcher.cpp">
       <Filter>Source\FactoryGame\Private\Creature\Enemy</Filter>
@@ -2203,13 +2191,13 @@
       <Filter>Source\FactoryGame\Private\Creature\Enemy</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Private\DamageTypes">
-      <UniqueIdentifier>{260F344D-D0BE-4379-92CA-F6011253B009}</UniqueIdentifier>
+      <UniqueIdentifier>{BE39A757-5705-4B79-B23F-6A780BD1F684}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\DamageTypes\FGDamageType.cpp">
       <Filter>Source\FactoryGame\Private\DamageTypes</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Private\Equipment">
-      <UniqueIdentifier>{A7465BFA-FA86-4724-98E0-36E16F3ECD31}</UniqueIdentifier>
+      <UniqueIdentifier>{68F005A7-56DC-4F18-BFA4-E93E5F0251CA}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Equipment\FGBuildGun.cpp">
       <Filter>Source\FactoryGame\Private\Equipment</Filter>
@@ -2293,7 +2281,7 @@
       <Filter>Source\FactoryGame\Private\Equipment</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Private\Hologram">
-      <UniqueIdentifier>{A75276FF-F0BD-4CDD-8B04-0BD4567DCDB0}</UniqueIdentifier>
+      <UniqueIdentifier>{C61EF4FD-BE68-431D-A4E3-2DC2214C6375}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Hologram\FGAttachmentSplitterHologram.cpp">
       <Filter>Source\FactoryGame\Private\Hologram</Filter>
@@ -2373,12 +2361,6 @@
     <ClCompile Include="..\..\Source\FactoryGame\Private\Hologram\FGRailroadBridgeHologram.cpp">
       <Filter>Source\FactoryGame\Private\Hologram</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\FactoryGame\Private\Hologram\FGRailroadHologram.cpp">
-      <Filter>Source\FactoryGame\Private\Hologram</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\FactoryGame\Private\Hologram\FGRailroadSwitchHologram.cpp">
-      <Filter>Source\FactoryGame\Private\Hologram</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Hologram\FGRailroadTrackHologram.cpp">
       <Filter>Source\FactoryGame\Private\Hologram</Filter>
     </ClCompile>
@@ -2440,13 +2422,13 @@
       <Filter>Source\FactoryGame\Private\Hologram</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Private\Particles">
-      <UniqueIdentifier>{0833A11A-864E-4F89-A4AE-49BDB3E1C2C7}</UniqueIdentifier>
+      <UniqueIdentifier>{26ED5098-D57E-47AD-987F-73E5E201D12B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Particles\FGCollectionParamUniformFloat.cpp">
       <Filter>Source\FactoryGame\Private\Particles</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Private\Replication">
-      <UniqueIdentifier>{3978F9B3-8CB9-4A15-8370-0B0B57E59D13}</UniqueIdentifier>
+      <UniqueIdentifier>{7C04E9C1-719D-4D56-8B71-55586ADD0AC5}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Replication\FGReplicationDependencyActorInterface.cpp">
       <Filter>Source\FactoryGame\Private\Replication</Filter>
@@ -2482,7 +2464,7 @@
       <Filter>Source\FactoryGame\Private\Replication</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Private\Resources">
-      <UniqueIdentifier>{7C6D1AAD-A259-4F3F-B9C4-2A8463AE310D}</UniqueIdentifier>
+      <UniqueIdentifier>{E2F8D1F7-00D2-486B-97F8-A84B5DD81B4A}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Resources\FGAnyUndefinedDescriptor.cpp">
       <Filter>Source\FactoryGame\Private\Resources</Filter>
@@ -2542,7 +2524,7 @@
       <Filter>Source\FactoryGame\Private\Resources</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Private\Tests">
-      <UniqueIdentifier>{6B2EA129-F40B-4FE6-A518-E96448D998AE}</UniqueIdentifier>
+      <UniqueIdentifier>{611774BA-D9F4-4017-8C50-B9EA9064690D}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Tests\FGAutomaticProfiling.cpp">
       <Filter>Source\FactoryGame\Private\Tests</Filter>
@@ -2551,7 +2533,7 @@
       <Filter>Source\FactoryGame\Private\Tests</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Private\UI">
-      <UniqueIdentifier>{F666ED07-98EE-417B-BD83-B8A947321F6D}</UniqueIdentifier>
+      <UniqueIdentifier>{B5141193-CB54-4459-A5F5-2F0B91A6F40A}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\UI\FGBaseUI.cpp">
       <Filter>Source\FactoryGame\Private\UI</Filter>
@@ -2647,7 +2629,7 @@
       <Filter>Source\FactoryGame\Private\UI</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Private\UI\Message">
-      <UniqueIdentifier>{0CE14292-2A98-40EE-86D6-B06DF91BF522}</UniqueIdentifier>
+      <UniqueIdentifier>{94607102-8A68-40C4-86F3-1D40DB6C9FEB}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\UI\Message\FGAudioMessage.cpp">
       <Filter>Source\FactoryGame\Private\UI\Message</Filter>
@@ -2659,7 +2641,7 @@
       <Filter>Source\FactoryGame\Private\UI\Message</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Private\Unlocks">
-      <UniqueIdentifier>{7ED163F9-B307-4FD0-A912-C53EC3BA5531}</UniqueIdentifier>
+      <UniqueIdentifier>{C2A8F3AF-96F6-4A73-9551-E35C79597B7D}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Unlocks\FGUnlock.cpp">
       <Filter>Source\FactoryGame\Private\Unlocks</Filter>
@@ -2692,7 +2674,7 @@
       <Filter>Source\FactoryGame\Private\Unlocks</Filter>
     </ClCompile>
     <Filter Include="Source\FactoryGame\Public">
-      <UniqueIdentifier>{F71E9251-914F-44D3-8E48-B47E577AF3A2}</UniqueIdentifier>
+      <UniqueIdentifier>{73D34469-E796-4508-8A1F-72CDC173F214}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\ArchiveObjectDataProxy.h">
       <Filter>Source\FactoryGame\Public</Filter>
@@ -2710,9 +2692,6 @@
       <Filter>Source\FactoryGame\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\FactoryGame\Public\FactoryGameCustomVersion.h">
-      <Filter>Source\FactoryGame\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\FactoryGame\Public\FactoryGameGameModeBase.h">
       <Filter>Source\FactoryGame\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\FactoryGame\Public\FactoryGameModule.h">
@@ -2934,9 +2913,6 @@
     <ClInclude Include="..\..\Source\FactoryGame\Public\FGDropPodSettings.h">
       <Filter>Source\FactoryGame\Public</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\FactoryGame\Public\FGDynamicHeightFogUpdater.h">
-      <Filter>Source\FactoryGame\Public</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\FactoryGame\Public\FGEngineCommon.h">
       <Filter>Source\FactoryGame\Public</Filter>
     </ClInclude>
@@ -2950,9 +2926,6 @@
       <Filter>Source\FactoryGame\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\FactoryGame\Public\FGExplosiveDestroyableInterface.h">
-      <Filter>Source\FactoryGame\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\FactoryGame\Public\FGExponentialHeightFog.h">
       <Filter>Source\FactoryGame\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\FactoryGame\Public\FGFactoryConnectionComponent.h">
@@ -3267,9 +3240,6 @@
     <ClInclude Include="..\..\Source\FactoryGame\Public\FGRailroadFunctionLibrary.h">
       <Filter>Source\FactoryGame\Public</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\FactoryGame\Public\FGRailroadInterface.h">
-      <Filter>Source\FactoryGame\Public</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\FactoryGame\Public\FGRailroadSubsystem.h">
       <Filter>Source\FactoryGame\Public</Filter>
     </ClInclude>
@@ -3538,7 +3508,7 @@
       <Filter>Source\FactoryGame\Public</Filter>
     </ClInclude>
     <Filter Include="Source\FactoryGame\Public\AI">
-      <UniqueIdentifier>{E92DEFAE-CB0C-44BE-B1C1-0ADC4A6EB96A}</UniqueIdentifier>
+      <UniqueIdentifier>{46748A6C-1536-4530-B76C-F9A0B918F3A5}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\AI\FGAggroTargetInterface.h">
       <Filter>Source\FactoryGame\Public\AI</Filter>
@@ -3583,7 +3553,7 @@
       <Filter>Source\FactoryGame\Public\AI</Filter>
     </ClInclude>
     <Filter Include="Source\FactoryGame\Public\AvailabilityDependencies">
-      <UniqueIdentifier>{1100AFA8-7ACC-49A0-B71D-E11DB8076914}</UniqueIdentifier>
+      <UniqueIdentifier>{584378D3-6C1A-4034-9B2E-7C46A4CC69A7}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\AvailabilityDependencies\FGAvailabilityDependency.h">
       <Filter>Source\FactoryGame\Public\AvailabilityDependencies</Filter>
@@ -3592,7 +3562,7 @@
       <Filter>Source\FactoryGame\Public\AvailabilityDependencies</Filter>
     </ClInclude>
     <Filter Include="Source\FactoryGame\Public\Buildables">
-      <UniqueIdentifier>{F2F52FA7-38A6-4366-BDC9-B51E7F10CF8D}</UniqueIdentifier>
+      <UniqueIdentifier>{108034CC-3F1A-4898-84E7-DC2FCC08333E}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Buildables\FGBuildable.h">
       <Filter>Source\FactoryGame\Public\Buildables</Filter>
@@ -3685,6 +3655,9 @@
       <Filter>Source\FactoryGame\Public\Buildables</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Buildables\FGBuildablePole.h">
+      <Filter>Source\FactoryGame\Public\Buildables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FactoryGame\Public\Buildables\FGBuildablePoleBase.h">
       <Filter>Source\FactoryGame\Public\Buildables</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Buildables\FGBuildablePoweredWall.h">
@@ -3781,13 +3754,13 @@
       <Filter>Source\FactoryGame\Public\Buildables</Filter>
     </ClInclude>
     <Filter Include="Source\FactoryGame\Public\Buildables\Animation">
-      <UniqueIdentifier>{3E764532-BBAD-4C2C-8941-6E60CA8BFA19}</UniqueIdentifier>
+      <UniqueIdentifier>{C19A02DF-43FD-42E7-9495-6E28894220B3}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Buildables\Animation\FGFAnimInstanceFactory.h">
       <Filter>Source\FactoryGame\Public\Buildables\Animation</Filter>
     </ClInclude>
     <Filter Include="Source\FactoryGame\Public\Creature">
-      <UniqueIdentifier>{AF64090A-7CA3-4309-B828-669601A06DDE}</UniqueIdentifier>
+      <UniqueIdentifier>{357A071B-304C-4531-8404-D96FBE75E85F}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Creature\FGCreature.h">
       <Filter>Source\FactoryGame\Public\Creature</Filter>
@@ -3805,7 +3778,7 @@
       <Filter>Source\FactoryGame\Public\Creature</Filter>
     </ClInclude>
     <Filter Include="Source\FactoryGame\Public\Creature\Enemy">
-      <UniqueIdentifier>{8609DB75-1350-4FFE-A8D1-FFB2F4D539F0}</UniqueIdentifier>
+      <UniqueIdentifier>{6468E926-2613-4822-B68B-010439F1F0DF}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Creature\Enemy\FGCrabHatcher.h">
       <Filter>Source\FactoryGame\Public\Creature\Enemy</Filter>
@@ -3829,13 +3802,13 @@
       <Filter>Source\FactoryGame\Public\Creature\Enemy</Filter>
     </ClInclude>
     <Filter Include="Source\FactoryGame\Public\DamageTypes">
-      <UniqueIdentifier>{6EB1329B-1175-4A38-BF44-EFB449CE7BFB}</UniqueIdentifier>
+      <UniqueIdentifier>{3EFDDBBD-FDF5-436C-95AC-566390B5B283}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\DamageTypes\FGDamageType.h">
       <Filter>Source\FactoryGame\Public\DamageTypes</Filter>
     </ClInclude>
     <Filter Include="Source\FactoryGame\Public\Equipment">
-      <UniqueIdentifier>{BE47FA81-D350-48E1-AB16-8DF836E7E0A5}</UniqueIdentifier>
+      <UniqueIdentifier>{7502FCF7-674E-4D90-ACC5-2C3DDD653727}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Equipment\FGBuildGun.h">
       <Filter>Source\FactoryGame\Public\Equipment</Filter>
@@ -3919,7 +3892,7 @@
       <Filter>Source\FactoryGame\Public\Equipment</Filter>
     </ClInclude>
     <Filter Include="Source\FactoryGame\Public\Hologram">
-      <UniqueIdentifier>{3E6342F5-4987-4E61-AACE-CF0351D4C457}</UniqueIdentifier>
+      <UniqueIdentifier>{20676D1F-0F2F-46C4-A1DA-EEBB307A8270}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Hologram\FGAttachmentSplitterHologram.h">
       <Filter>Source\FactoryGame\Public\Hologram</Filter>
@@ -3999,12 +3972,6 @@
     <ClInclude Include="..\..\Source\FactoryGame\Public\Hologram\FGRailroadBridgeHologram.h">
       <Filter>Source\FactoryGame\Public\Hologram</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\FactoryGame\Public\Hologram\FGRailroadHologram.h">
-      <Filter>Source\FactoryGame\Public\Hologram</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\FactoryGame\Public\Hologram\FGRailroadSwitchHologram.h">
-      <Filter>Source\FactoryGame\Public\Hologram</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Hologram\FGRailroadTrackHologram.h">
       <Filter>Source\FactoryGame\Public\Hologram</Filter>
     </ClInclude>
@@ -4066,13 +4033,13 @@
       <Filter>Source\FactoryGame\Public\Hologram</Filter>
     </ClInclude>
     <Filter Include="Source\FactoryGame\Public\Particles">
-      <UniqueIdentifier>{42C82C36-8667-4BC6-A794-E1DA2B11C67E}</UniqueIdentifier>
+      <UniqueIdentifier>{D236988D-553A-4AEB-8ADC-0B66E322F1D1}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Particles\FGCollectionParamUniformFloat.h">
       <Filter>Source\FactoryGame\Public\Particles</Filter>
     </ClInclude>
     <Filter Include="Source\FactoryGame\Public\Replication">
-      <UniqueIdentifier>{9ABE9ACE-6B8C-445E-A322-827ED6A181DB}</UniqueIdentifier>
+      <UniqueIdentifier>{C837EE61-096F-4AD0-B087-7399B73B6E64}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Replication\FGReplicationDependencyActorInterface.h">
       <Filter>Source\FactoryGame\Public\Replication</Filter>
@@ -4108,7 +4075,7 @@
       <Filter>Source\FactoryGame\Public\Replication</Filter>
     </ClInclude>
     <Filter Include="Source\FactoryGame\Public\Resources">
-      <UniqueIdentifier>{23B81C79-D1E2-4788-81C9-957E34CF8AB9}</UniqueIdentifier>
+      <UniqueIdentifier>{99218613-E575-4E7F-B892-4B11C406D0A5}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Resources\FGAnyUndefinedDescriptor.h">
       <Filter>Source\FactoryGame\Public\Resources</Filter>
@@ -4168,7 +4135,7 @@
       <Filter>Source\FactoryGame\Public\Resources</Filter>
     </ClInclude>
     <Filter Include="Source\FactoryGame\Public\Tests">
-      <UniqueIdentifier>{5FC4603D-0E70-432C-A887-0E0C4D06D637}</UniqueIdentifier>
+      <UniqueIdentifier>{62D240EF-194E-42E1-BFD5-C1DA383C0BE5}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Tests\FGAutomaticProfiling.h">
       <Filter>Source\FactoryGame\Public\Tests</Filter>
@@ -4177,7 +4144,7 @@
       <Filter>Source\FactoryGame\Public\Tests</Filter>
     </ClInclude>
     <Filter Include="Source\FactoryGame\Public\UI">
-      <UniqueIdentifier>{1A0FF8F6-B635-41E9-9B02-44734D43E602}</UniqueIdentifier>
+      <UniqueIdentifier>{0DA73412-599F-4D0A-A366-68ADC8E376F5}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\UI\FGBaseUI.h">
       <Filter>Source\FactoryGame\Public\UI</Filter>
@@ -4273,7 +4240,7 @@
       <Filter>Source\FactoryGame\Public\UI</Filter>
     </ClInclude>
     <Filter Include="Source\FactoryGame\Public\UI\Message">
-      <UniqueIdentifier>{BCC626DB-A076-44C0-9501-20E1AB0905FC}</UniqueIdentifier>
+      <UniqueIdentifier>{2D399B23-BC77-4268-813E-130E2A905D94}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\UI\Message\FGAudioMessage.h">
       <Filter>Source\FactoryGame\Public\UI\Message</Filter>
@@ -4285,7 +4252,7 @@
       <Filter>Source\FactoryGame\Public\UI\Message</Filter>
     </ClInclude>
     <Filter Include="Source\FactoryGame\Public\Unlocks">
-      <UniqueIdentifier>{9F53C356-CD82-4050-98DD-476E20EBDE20}</UniqueIdentifier>
+      <UniqueIdentifier>{1C070489-FD7E-4E48-A357-69A5E6AD7EDE}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Unlocks\FGUnlock.h">
       <Filter>Source\FactoryGame\Public\Unlocks</Filter>

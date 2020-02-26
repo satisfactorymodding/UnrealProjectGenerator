@@ -1215,7 +1215,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildGunStateBuild, 4000984191);
+	IMPLEMENT_CLASS(UFGBuildGunStateBuild, 81228890);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBuildGunStateBuild>()
 	{
 		return UFGBuildGunStateBuild::StaticClass();

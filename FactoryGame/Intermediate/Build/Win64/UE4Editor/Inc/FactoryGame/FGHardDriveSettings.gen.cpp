@@ -13,117 +13,18 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFGHardDriveSettings() {}
 // Cross Module References
-	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FHardDriveSchematicDrop();
-	UPackage* Z_Construct_UPackage__Script_FactoryGame();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSchematic_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGHardDriveSettings_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGHardDriveSettings();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSettings();
+	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGHardDriveSettings_GetFallbackReturnItem();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FItemAmount();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGHardDriveSettings_GetHardDriveResearchSchematic();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSchematic_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGHardDriveSettings_GetResearchRewardPackages();
 	ENGINE_API UClass* Z_Construct_UClass_UWorld_NoRegister();
 // End Cross Module References
-class UScriptStruct* FHardDriveSchematicDrop::StaticStruct()
-{
-	static class UScriptStruct* Singleton = NULL;
-	if (!Singleton)
-	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Hash();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FHardDriveSchematicDrop, Z_Construct_UPackage__Script_FactoryGame(), TEXT("HardDriveSchematicDrop"), sizeof(FHardDriveSchematicDrop), Get_Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Hash());
-	}
-	return Singleton;
-}
-template<> FACTORYGAME_API UScriptStruct* StaticStruct<FHardDriveSchematicDrop>()
-{
-	return FHardDriveSchematicDrop::StaticStruct();
-}
-static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FHardDriveSchematicDrop(FHardDriveSchematicDrop::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("HardDriveSchematicDrop"), false, nullptr, nullptr);
-static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematicDrop
-{
-	FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematicDrop()
-	{
-		UScriptStruct::DeferCppStructOps(FName(TEXT("HardDriveSchematicDrop")),new UScriptStruct::TCppStructOps<FHardDriveSchematicDrop>);
-	}
-} ScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematicDrop;
-	struct Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics
-	{
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
-#endif
-		static void* NewStructOps();
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Schematic_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FSoftClassPropertyParams NewProp_Schematic;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DropChance_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_DropChance;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::Struct_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Public/FGHardDriveSettings.h" },
-	};
-#endif
-	void* Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FHardDriveSchematicDrop>();
-	}
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::NewProp_Schematic_MetaData[] = {
-		{ "Category", "HardDriveSchematic" },
-		{ "ModuleRelativePath", "Public/FGHardDriveSettings.h" },
-		{ "ToolTip", "@todonow: Remove BlueprintReadOnly on this and make a access function from BP for this Schematic that the hard drive might drop and it's drop chance. This might be null if the schematic isn't included in the build" },
-	};
-#endif
-	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::NewProp_Schematic = { "Schematic", nullptr, (EPropertyFlags)0x0024080000000015, UE4CodeGen_Private::EPropertyGenFlags::SoftClass, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FHardDriveSchematicDrop, Schematic), Z_Construct_UClass_UFGSchematic_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::NewProp_Schematic_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::NewProp_Schematic_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::NewProp_DropChance_MetaData[] = {
-		{ "Category", "HardDriveSchematic" },
-		{ "ModuleRelativePath", "Public/FGHardDriveSettings.h" },
-		{ "ToolTip", "Probability of this schematic showing up AFTER culling those that are not valid drops" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::NewProp_DropChance = { "DropChance", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FHardDriveSchematicDrop, DropChance), METADATA_PARAMS(Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::NewProp_DropChance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::NewProp_DropChance_MetaData)) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::NewProp_Schematic,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::NewProp_DropChance,
-	};
-	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::ReturnStructParams = {
-		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
-		nullptr,
-		&NewStructOps,
-		"HardDriveSchematicDrop",
-		sizeof(FHardDriveSchematicDrop),
-		alignof(FHardDriveSchematicDrop),
-		Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::PropPointers),
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000201),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::Struct_MetaDataParams))
-	};
-	UScriptStruct* Z_Construct_UScriptStruct_FHardDriveSchematicDrop()
-	{
-#if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Hash();
-		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("HardDriveSchematicDrop"), sizeof(FHardDriveSchematicDrop), Get_Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Hash(), false);
-#else
-		static UScriptStruct* ReturnStruct = nullptr;
-#endif
-		if (!ReturnStruct)
-		{
-			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::ReturnStructParams);
-		}
-		return ReturnStruct;
-	}
-	uint32 Get_Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Hash() { return 3253846504U; }
 	void UFGHardDriveSettings::StaticRegisterNativesUFGHardDriveSettings()
 	{
 		UClass* Class = UFGHardDriveSettings::StaticClass();
@@ -270,11 +171,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mFallbackReturnItem;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPotentialSchematicDrops_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mPotentialSchematicDrops;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mPotentialSchematicDrops_Inner;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mUniqueItemCount_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mUniqueItemCount;
@@ -315,15 +211,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mFallbackReturnItem = { "mFallbackReturnItem", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGHardDriveSettings, mFallbackReturnItem), Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mFallbackReturnItem_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mFallbackReturnItem_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mPotentialSchematicDrops_MetaData[] = {
-		{ "Category", "HardDrive" },
-		{ "ModuleRelativePath", "Public/FGHardDriveSettings.h" },
-		{ "ToolTip", "Schematics to fill hard drive reward package with" },
-	};
-#endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mPotentialSchematicDrops = { "mPotentialSchematicDrops", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGHardDriveSettings, mPotentialSchematicDrops), METADATA_PARAMS(Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mPotentialSchematicDrops_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mPotentialSchematicDrops_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mPotentialSchematicDrops_Inner = { "mPotentialSchematicDrops", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FHardDriveSchematicDrop, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mUniqueItemCount_MetaData[] = {
 		{ "Category", "HardDrive" },
 		{ "ModuleRelativePath", "Public/FGHardDriveSettings.h" },
@@ -334,8 +221,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGHardDriveSettings_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mHardDriveResearchSchematic,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mFallbackReturnItem,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mPotentialSchematicDrops,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mPotentialSchematicDrops_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mUniqueItemCount,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGHardDriveSettings_Statics::StaticCppClassTypeInfo = {
@@ -365,7 +250,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGHardDriveSettings, 2183552395);
+	IMPLEMENT_CLASS(UFGHardDriveSettings, 1000834143);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGHardDriveSettings>()
 	{
 		return UFGHardDriveSettings::StaticClass();

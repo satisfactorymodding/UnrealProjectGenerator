@@ -34,15 +34,9 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 	virtual bool Factory_PeekOutput_Implementation(const UFGFactoryConnectionComponent* connection, TArray<FInventoryItem>& out_items, TSubclassOf<UFGItemDescriptor>  type) const; \
 	virtual void PlayDismantleSound_Implementation(); \
 	virtual void PlayConstructSound_Implementation(); \
+	virtual bool ShouldBeConsideredForBase_Implementation(); \
+	virtual bool CanBeSampled_Implementation() const; \
 	virtual void PlayDismantleEffects_Implementation(); \
- \
-	DECLARE_FUNCTION(execGetNumPowerConnections) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(uint8*)Z_Param__Result=P_THIS->GetNumPowerConnections(); \
-		P_NATIVE_END; \
-	} \
  \
 	DECLARE_FUNCTION(execOnRep_DidFirstTimeUse) \
 	{ \
@@ -115,6 +109,22 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execShouldBeConsideredForBase) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->ShouldBeConsideredForBase_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNumPowerConnections) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(uint8*)Z_Param__Result=P_THIS->GetNumPowerConnections(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetClearanceComponent) \
 	{ \
 		P_FINISH; \
@@ -136,6 +146,14 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->ShowHighlightEffect(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCanBeSampled) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->CanBeSampled_Implementation(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -170,15 +188,8 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 	virtual bool Factory_PeekOutput_Implementation(const UFGFactoryConnectionComponent* connection, TArray<FInventoryItem>& out_items, TSubclassOf<UFGItemDescriptor>  type) const; \
 	virtual void PlayDismantleSound_Implementation(); \
 	virtual void PlayConstructSound_Implementation(); \
+	virtual bool CanBeSampled_Implementation() const; \
 	virtual void PlayDismantleEffects_Implementation(); \
- \
-	DECLARE_FUNCTION(execGetNumPowerConnections) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(uint8*)Z_Param__Result=P_THIS->GetNumPowerConnections(); \
-		P_NATIVE_END; \
-	} \
  \
 	DECLARE_FUNCTION(execOnRep_DidFirstTimeUse) \
 	{ \
@@ -251,6 +262,22 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execShouldBeConsideredForBase) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->ShouldBeConsideredForBase_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNumPowerConnections) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(uint8*)Z_Param__Result=P_THIS->GetNumPowerConnections(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetClearanceComponent) \
 	{ \
 		P_FINISH; \
@@ -272,6 +299,14 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->ShowHighlightEffect(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCanBeSampled) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->CanBeSampled_Implementation(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -333,6 +368,16 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildable_h_50_EDITOR_ONLY_RPC_WRAPPERS_NO_PURE_DECLS
 #endif //WITH_EDITOR
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildable_h_50_EVENT_PARMS \
+	struct FGBuildable_eventCanBeSampled_Parms \
+	{ \
+		bool ReturnValue; \
+ \
+		/** Constructor, initializes return property only **/ \
+		FGBuildable_eventCanBeSampled_Parms() \
+			: ReturnValue(false) \
+		{ \
+		} \
+	}; \
 	struct FGBuildable_eventFactory_GrabOutput_Parms \
 	{ \
 		UFGFactoryConnectionComponent* connection; \
@@ -367,6 +412,16 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 	struct FGBuildable_eventGetDismantleBlueprintReturns_Parms \
 	{ \
 		TArray<FInventoryStack> out_returns; \
+	}; \
+	struct FGBuildable_eventShouldBeConsideredForBase_Parms \
+	{ \
+		bool ReturnValue; \
+ \
+		/** Constructor, initializes return property only **/ \
+		FGBuildable_eventShouldBeConsideredForBase_Parms() \
+			: ReturnValue(false) \
+		{ \
+		} \
 	};
 
 

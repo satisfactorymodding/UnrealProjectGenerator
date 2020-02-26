@@ -235,7 +235,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMaterialEffect_Build, 242852071);
+	IMPLEMENT_CLASS(UFGMaterialEffect_Build, 93641259);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGMaterialEffect_Build>()
 	{
 		return UFGMaterialEffect_Build::StaticClass();

@@ -1176,12 +1176,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		struct FGBlueprintFunctionLibrary_eventGetAvailableRecipesInSubCategory_Parms
 		{
 			UObject* worldContext;
+			TSubclassOf<UFGBuildCategory>  buildCategory;
 			TSubclassOf<UFGBuildSubCategory>  subCategory;
 			TArray<TSubclassOf<UFGRecipe> > out_recipes;
 		};
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_recipes;
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_out_recipes_Inner;
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_subCategory;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_buildCategory;
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_worldContext;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
@@ -1192,18 +1194,20 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::NewProp_out_recipes = { "out_recipes", nullptr, (EPropertyFlags)0x0014000008000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetAvailableRecipesInSubCategory_Parms, out_recipes), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::NewProp_out_recipes_Inner = { "out_recipes", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::NewProp_subCategory = { "subCategory", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetAvailableRecipesInSubCategory_Parms, subCategory), Z_Construct_UClass_UFGBuildSubCategory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::NewProp_buildCategory = { "buildCategory", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetAvailableRecipesInSubCategory_Parms, buildCategory), Z_Construct_UClass_UFGBuildCategory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetAvailableRecipesInSubCategory_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::NewProp_out_recipes,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::NewProp_out_recipes_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::NewProp_subCategory,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::NewProp_buildCategory,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::NewProp_worldContext,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Build Category" },
 		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
-		{ "ToolTip", "Returns all recipes with product of a certain sub category" },
+		{ "ToolTip", "Returns all recipes with product of a certain sub category of a certain build category" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "GetAvailableRecipesInSubCategory", sizeof(FGBlueprintFunctionLibrary_eventGetAvailableRecipesInSubCategory_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory_Statics::Function_MetaDataParams)) };
@@ -2632,7 +2636,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory, "GetAllItemsInCategory" }, // 1403863260
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllWidgetsOfClassInHierarchy, "GetAllWidgetsOfClassInHierarchy" }, // 3718229033
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInCategory, "GetAvailableRecipesInCategory" }, // 1964911783
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory, "GetAvailableRecipesInSubCategory" }, // 3363372787
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory, "GetAvailableRecipesInSubCategory" }, // 3786331611
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableSubCategoriesForCategory, "GetAvailableSubCategoriesForCategory" }, // 1223268619
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes, "GetCategoriesWithAffordableRecipes" }, // 3109750103
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding, "GetComponentFlagSoftLanding" }, // 317730531
@@ -2699,7 +2703,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 2807027098);
+	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 2791633720);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBlueprintFunctionLibrary>()
 	{
 		return UFGBlueprintFunctionLibrary::StaticClass();

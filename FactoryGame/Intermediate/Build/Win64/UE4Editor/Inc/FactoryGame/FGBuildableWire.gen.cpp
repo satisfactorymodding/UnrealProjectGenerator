@@ -21,6 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWire() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableWire_GetConnection();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCircuitConnectionComponent_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableWire_GetLength();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableWire_OnRep_Locations();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
@@ -30,6 +31,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWire() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GetConnection", &AFGBuildableWire::execGetConnection },
 			{ "GetLength", &AFGBuildableWire::execGetLength },
+			{ "OnRep_Locations", &AFGBuildableWire::execOnRep_Locations },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -113,6 +115,28 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWire() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGBuildableWire_OnRep_Locations_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableWire_OnRep_Locations_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWire.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableWire_OnRep_Locations_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableWire, nullptr, "OnRep_Locations", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableWire_OnRep_Locations_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableWire_OnRep_Locations_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildableWire_OnRep_Locations()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableWire_OnRep_Locations_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AFGBuildableWire_NoRegister()
 	{
 		return AFGBuildableWire::StaticClass();
@@ -155,6 +179,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWire() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableWire_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AFGBuildableWire_GetConnection, "GetConnection" }, // 2267768907
 		{ &Z_Construct_UFunction_AFGBuildableWire_GetLength, "GetLength" }, // 3866375102
+		{ &Z_Construct_UFunction_AFGBuildableWire_OnRep_Locations, "OnRep_Locations" }, // 2610718690
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWire_Statics::Class_MetaDataParams[] = {
@@ -171,7 +196,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWire() {}
 		{ "ToolTip", "The two locations this wire span." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableWire_Statics::NewProp_mLocations = { "mLocations", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mLocations, AFGBuildableWire), STRUCT_OFFSET(AFGBuildableWire, mLocations), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableWire_Statics::NewProp_mLocations_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableWire_Statics::NewProp_mLocations_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableWire_Statics::NewProp_mLocations = { "mLocations", "OnRep_Locations", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mLocations, AFGBuildableWire), STRUCT_OFFSET(AFGBuildableWire, mLocations), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableWire_Statics::NewProp_mLocations_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableWire_Statics::NewProp_mLocations_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWire_Statics::NewProp_mConnections_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWire.h" },
@@ -238,7 +263,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWire() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableWire, 2931539307);
+	IMPLEMENT_CLASS(AFGBuildableWire, 175243464);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableWire>()
 	{
 		return AFGBuildableWire::StaticClass();

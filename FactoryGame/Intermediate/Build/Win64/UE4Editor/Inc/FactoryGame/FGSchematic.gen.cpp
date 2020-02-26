@@ -33,9 +33,9 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematic() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetSchematicCategory();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSchematicCategory_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetSchematicDisplayName();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetSubCategories();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetTechTier();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetTimeToComplete();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetType();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSchematic_GetUnlocks();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGUnlock_NoRegister();
@@ -272,9 +272,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 			{ "GetItemIcon", &UFGSchematic::execGetItemIcon },
 			{ "GetSchematicCategory", &UFGSchematic::execGetSchematicCategory },
 			{ "GetSchematicDisplayName", &UFGSchematic::execGetSchematicDisplayName },
-			{ "GetShipTravelTimeAfterPurchase", &UFGSchematic::execGetShipTravelTimeAfterPurchase },
 			{ "GetSubCategories", &UFGSchematic::execGetSubCategories },
 			{ "GetTechTier", &UFGSchematic::execGetTechTier },
+			{ "GetTimeToComplete", &UFGSchematic::execGetTimeToComplete },
 			{ "GetType", &UFGSchematic::execGetType },
 			{ "GetUnlocks", &UFGSchematic::execGetUnlocks },
 			{ "IsIncludedInBuild", &UFGSchematic::execIsIncludedInBuild },
@@ -556,44 +556,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase_Statics
-	{
-		struct FGSchematic_eventGetShipTravelTimeAfterPurchase_Parms
-		{
-			TSubclassOf<UFGSchematic>  inClass;
-			float ReturnValue;
-		};
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetShipTravelTimeAfterPurchase_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetShipTravelTimeAfterPurchase_Parms, inClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase_Statics::NewProp_inClass,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "Returns mShipTravelTimeAfterPurchase" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSchematic, nullptr, "GetShipTravelTimeAfterPurchase", sizeof(FGSchematic_eventGetShipTravelTimeAfterPurchase_Parms), Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_UFGSchematic_GetSubCategories_Statics
 	{
 		struct FGSchematic_eventGetSubCategories_Parms
@@ -670,6 +632,44 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSchematic_GetTechTier_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGSchematic_GetTimeToComplete_Statics
+	{
+		struct FGSchematic_eventGetTimeToComplete_Parms
+		{
+			TSubclassOf<UFGSchematic>  inClass;
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGSchematic_GetTimeToComplete_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetTimeToComplete_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGSchematic_GetTimeToComplete_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematic_eventGetTimeToComplete_Parms, inClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSchematic_GetTimeToComplete_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetTimeToComplete_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSchematic_GetTimeToComplete_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSchematic_GetTimeToComplete_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Schematic" },
+		{ "ModuleRelativePath", "Public/FGSchematic.h" },
+		{ "ToolTip", "Returns how long this schematics takes to complete its actions when we acquire it" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSchematic_GetTimeToComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSchematic, nullptr, "GetTimeToComplete", sizeof(FGSchematic_eventGetTimeToComplete_Parms), Z_Construct_UFunction_UFGSchematic_GetTimeToComplete_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetTimeToComplete_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSchematic_GetTimeToComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSchematic_GetTimeToComplete_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGSchematic_GetTimeToComplete()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSchematic_GetTimeToComplete_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -898,9 +898,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mUnlocks_Inner;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mShipTravelTimeAfterPurchase_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mTimeToComplete_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mShipTravelTimeAfterPurchase;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mTimeToComplete;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCost_MetaData[];
 #endif
@@ -948,9 +948,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		{ &Z_Construct_UFunction_UFGSchematic_GetItemIcon, "GetItemIcon" }, // 2329714181
 		{ &Z_Construct_UFunction_UFGSchematic_GetSchematicCategory, "GetSchematicCategory" }, // 2513349240
 		{ &Z_Construct_UFunction_UFGSchematic_GetSchematicDisplayName, "GetSchematicDisplayName" }, // 3485346695
-		{ &Z_Construct_UFunction_UFGSchematic_GetShipTravelTimeAfterPurchase, "GetShipTravelTimeAfterPurchase" }, // 1420982024
 		{ &Z_Construct_UFunction_UFGSchematic_GetSubCategories, "GetSubCategories" }, // 2086154296
 		{ &Z_Construct_UFunction_UFGSchematic_GetTechTier, "GetTechTier" }, // 3026545383
+		{ &Z_Construct_UFunction_UFGSchematic_GetTimeToComplete, "GetTimeToComplete" }, // 3504971091
 		{ &Z_Construct_UFunction_UFGSchematic_GetType, "GetType" }, // 3990321040
 		{ &Z_Construct_UFunction_UFGSchematic_GetUnlocks, "GetUnlocks" }, // 3715193085
 		{ &Z_Construct_UFunction_UFGSchematic_IsIncludedInBuild, "IsIncludedInBuild" }, // 560645726
@@ -1041,13 +1041,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocks_Inner = { "mUnlocks", nullptr, (EPropertyFlags)0x0002000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGUnlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocks_Inner_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocks_Inner_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mShipTravelTimeAfterPurchase_MetaData[] = {
-		{ "Category", "Cost" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mTimeToComplete_MetaData[] = {
+		{ "Category", "Schematic" },
 		{ "ModuleRelativePath", "Public/FGSchematic.h" },
-		{ "ToolTip", "When we purchase this schematic how long does it take the ship to come back?" },
+		{ "ToolTip", "When we acquire this schematic how long does it take for it to complete its actions" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mShipTravelTimeAfterPurchase = { "mShipTravelTimeAfterPurchase", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSchematic, mShipTravelTimeAfterPurchase), METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mShipTravelTimeAfterPurchase_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mShipTravelTimeAfterPurchase_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSchematic_Statics::NewProp_mTimeToComplete = { "mTimeToComplete", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSchematic, mTimeToComplete), METADATA_PARAMS(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mTimeToComplete_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSchematic_Statics::NewProp_mTimeToComplete_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSchematic_Statics::NewProp_mCost_MetaData[] = {
 		{ "Category", "Cost" },
@@ -1113,7 +1113,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mSchematicIcon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocks,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mUnlocks_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mShipTravelTimeAfterPurchase,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mTimeToComplete,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mCost,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mCost_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSchematic_Statics::NewProp_mTechTier,
@@ -1151,7 +1151,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSchematic, 1006930892);
+	IMPLEMENT_CLASS(UFGSchematic, 132280729);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSchematic>()
 	{
 		return UFGSchematic::StaticClass();

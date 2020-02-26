@@ -374,6 +374,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mExtractResourceNode;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mExtractorTypeName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FNamePropertyParams NewProp_mExtractorTypeName;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMustPlaceOnResourceDisqualifier_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mMustPlaceOnResourceDisqualifier;
@@ -392,14 +396,18 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 		static void NewProp_mOnlyAllowCertainResources_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mOnlyAllowCertainResources;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRequireResourceAtMinimumDepthChecks_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDepthTraceOriginOffset_MetaData[];
 #endif
-		static void NewProp_mRequireResourceAtMinimumDepthChecks_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mRequireResourceAtMinimumDepthChecks;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mDepthTraceOriginOffset;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMinimumDepthForPlacement_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMinimumDepthForPlacement;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRequireResourceAtMinimumDepthChecks_MetaData[];
+#endif
+		static void NewProp_mRequireResourceAtMinimumDepthChecks_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mRequireResourceAtMinimumDepthChecks;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAllowedResourceForms_MetaData[];
 #endif
@@ -489,6 +497,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractResourceNode = { "mExtractResourceNode", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableResourceExtractor, mExtractResourceNode), Z_Construct_UClass_AFGResourceNode_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractResourceNode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractResourceNode_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractorTypeName_MetaData[] = {
+		{ "Category", "Extraction" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
+		{ "ToolTip", "name used to mathc types of extractros for compatiblility when upgrading" },
+	};
+#endif
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractorTypeName = { "mExtractorTypeName", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableResourceExtractor, mExtractorTypeName), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractorTypeName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractorTypeName_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mMustPlaceOnResourceDisqualifier_MetaData[] = {
 		{ "Category", "Extraction" },
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
@@ -526,10 +542,28 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mOnlyAllowCertainResources = { "mOnlyAllowCertainResources", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildableResourceExtractor), &Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mOnlyAllowCertainResources_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mOnlyAllowCertainResources_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mOnlyAllowCertainResources_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mDepthTraceOriginOffset_MetaData[] = {
+		{ "Category", "Extraction" },
+		{ "EditCondition", "mRequireResourceAtMinimumDepthChecks" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
+		{ "ToolTip", "Offset from hologram origin to begin and end traces When performing minimum depth checks ( if enabled for this buildable ) during placement" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mDepthTraceOriginOffset = { "mDepthTraceOriginOffset", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableResourceExtractor, mDepthTraceOriginOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mDepthTraceOriginOffset_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mDepthTraceOriginOffset_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mMinimumDepthForPlacement_MetaData[] = {
+		{ "Category", "Extraction" },
+		{ "EditCondition", "mRequireResourceAtMinimumDepthChecks" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
+		{ "ToolTip", "(For Hologram) Minimum depth to collision this extractor requires to be placed ( tex. Water Pumps need to be at least X distance above floor )" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mMinimumDepthForPlacement = { "mMinimumDepthForPlacement", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableResourceExtractor, mMinimumDepthForPlacement), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mMinimumDepthForPlacement_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mMinimumDepthForPlacement_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mRequireResourceAtMinimumDepthChecks_MetaData[] = {
 		{ "Category", "Extraction" },
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
-		{ "ToolTip", "(For Hologram) Require resource at minimum depth checks?\nIf true, this will ensure placement is only allowed where a minimum depth trace collides\nwith the resource class this extractor is snapped to. Will only execute if mMinimumDepthForPlacement is > 0." },
+		{ "ToolTip", "(For Hologram) Require resource at minimum depth checks?\nIf true, this will ensure placement is only allowed where a minimum depth trace collides with the resource class this extractor is snapped to" },
 	};
 #endif
 	void Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mRequireResourceAtMinimumDepthChecks_SetBit(void* Obj)
@@ -537,14 +571,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 		((AFGBuildableResourceExtractor*)Obj)->mRequireResourceAtMinimumDepthChecks = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mRequireResourceAtMinimumDepthChecks = { "mRequireResourceAtMinimumDepthChecks", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildableResourceExtractor), &Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mRequireResourceAtMinimumDepthChecks_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mRequireResourceAtMinimumDepthChecks_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mRequireResourceAtMinimumDepthChecks_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mMinimumDepthForPlacement_MetaData[] = {
-		{ "Category", "Extraction" },
-		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
-		{ "ToolTip", "(For Hologram) Minimum depth to collision this extractor requires to be placed ( tex. Water Pumps need to be at least X distance above floor )" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mMinimumDepthForPlacement = { "mMinimumDepthForPlacement", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableResourceExtractor, mMinimumDepthForPlacement), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mMinimumDepthForPlacement_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mMinimumDepthForPlacement_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mAllowedResourceForms_MetaData[] = {
 		{ "Category", "Extraction" },
@@ -588,13 +614,15 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mCurrentExtractProgress,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractableResource,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractResourceNode,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractorTypeName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mMustPlaceOnResourceDisqualifier,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractionOffset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mAllowedResources,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mAllowedResources_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mOnlyAllowCertainResources,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mRequireResourceAtMinimumDepthChecks,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mDepthTraceOriginOffset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mMinimumDepthForPlacement,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mRequireResourceAtMinimumDepthChecks,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mAllowedResourceForms,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mAllowedResourceForms_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mAllowedResourceForms_Inner_Underlying,
@@ -629,7 +657,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableResourceExtractor, 25560812);
+	IMPLEMENT_CLASS(AFGBuildableResourceExtractor, 4263910001);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableResourceExtractor>()
 	{
 		return AFGBuildableResourceExtractor::StaticClass();

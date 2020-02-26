@@ -308,7 +308,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDeposit() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceDeposit, 4123911031);
+	IMPLEMENT_CLASS(AFGResourceDeposit, 3739871182);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGResourceDeposit>()
 	{
 		return AFGResourceDeposit::StaticClass();

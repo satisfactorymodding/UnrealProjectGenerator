@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorPoleStackable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorPoleStackable, 510310647);
+	IMPLEMENT_CLASS(AFGConveyorPoleStackable, 3863168262);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGConveyorPoleStackable>()
 	{
 		return AFGConveyorPoleStackable::StaticClass();

@@ -142,6 +142,7 @@
 /I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Public
 /I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame
 /I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Public\AI
+/I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Public\AvailabilityDependencies
 /I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Public\Buildables
 /I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Public\Buildables\Animation
 /I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Public\Creature
@@ -489,6 +490,9 @@
 /I ..\Plugins\Runtime\ReplicationGraph
 /I ..\Plugins\Runtime\ReplicationGraph\Source\Public
 /I ..\Plugins\Runtime\ReplicationGraph\Source
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\InstancedSplines
+/I Runtime\InstancedSplines\Classes
+/I Runtime\InstancedSplines
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -518,9 +522,9 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/FI"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h.pch"
+/FI"D:\Programare\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
+/Yu"D:\Programare\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
+/Fp"D:\Programare\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.pch"
 "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\Module.FactoryGame.cpp"
 /FI"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\Definitions.FactoryGame.h"
 /Fo"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\Module.FactoryGame.cpp.obj"

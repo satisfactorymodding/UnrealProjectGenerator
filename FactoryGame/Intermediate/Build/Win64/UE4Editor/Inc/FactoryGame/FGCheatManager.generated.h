@@ -759,6 +759,14 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGiveAllResearchTrees) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GiveAllResearchTrees(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGiveStartingResearch) \
 	{ \
 		P_FINISH; \
@@ -1706,6 +1714,14 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->RebuildPowerCircuits(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGiveAllResearchTrees) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GiveAllResearchTrees(); \
 		P_NATIVE_END; \
 	} \
  \

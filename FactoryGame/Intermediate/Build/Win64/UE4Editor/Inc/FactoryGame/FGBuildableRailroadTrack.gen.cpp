@@ -365,7 +365,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadTrack, 1923124386);
+	IMPLEMENT_CLASS(AFGBuildableRailroadTrack, 1343424304);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableRailroadTrack>()
 	{
 		return AFGBuildableRailroadTrack::StaticClass();

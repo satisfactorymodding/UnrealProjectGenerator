@@ -49,6 +49,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchManager() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResearchManager_IsResearchComplete();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResearchManager_OnRep_OngoingResearch();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveInterface_NoRegister();
@@ -506,6 +507,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchData
 			{ "IsAnyResearchBeingConducted", &AFGResearchManager::execIsAnyResearchBeingConducted },
 			{ "IsResearchBeingConducted", &AFGResearchManager::execIsResearchBeingConducted },
 			{ "IsResearchComplete", &AFGResearchManager::execIsResearchComplete },
+			{ "IsResesearchTreeUnlocked", &AFGResearchManager::execIsResesearchTreeUnlocked },
 			{ "OnRep_OngoingResearch", &AFGResearchManager::execOnRep_OngoingResearch },
 			{ "OnResearchTimerComplete", &AFGResearchManager::execOnResearchTimerComplete },
 		};
@@ -1245,6 +1247,48 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchData
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked_Statics
+	{
+		struct FGResearchManager_eventIsResesearchTreeUnlocked_Parms
+		{
+			TSubclassOf<UFGResearchTree>  researchTree;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_researchTree;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGResearchManager_eventIsResesearchTreeUnlocked_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResearchManager_eventIsResesearchTreeUnlocked_Parms), &Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked_Statics::NewProp_researchTree = { "researchTree", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventIsResesearchTreeUnlocked_Parms, researchTree), Z_Construct_UClass_UFGResearchTree_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked_Statics::NewProp_researchTree,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Research" },
+		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "IsResesearchTreeUnlocked", sizeof(FGResearchManager_eventIsResesearchTreeUnlocked_Parms), Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGResearchManager_OnRep_OngoingResearch_Statics
 	{
 #if WITH_METADATA
@@ -1388,6 +1432,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchData
 		{ &Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted, "IsAnyResearchBeingConducted" }, // 1205692647
 		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted, "IsResearchBeingConducted" }, // 3702871324
 		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchComplete, "IsResearchComplete" }, // 1482252830
+		{ &Z_Construct_UFunction_AFGResearchManager_IsResesearchTreeUnlocked, "IsResesearchTreeUnlocked" }, // 1141026585
 		{ &Z_Construct_UFunction_AFGResearchManager_OnRep_OngoingResearch, "OnRep_OngoingResearch" }, // 630399904
 		{ &Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete, "OnResearchTimerComplete" }, // 1289478172
 	};
@@ -1545,7 +1590,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResearchManager, 2544963110);
+	IMPLEMENT_CLASS(AFGResearchManager, 2184607815);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGResearchManager>()
 	{
 		return AFGResearchManager::StaticClass();

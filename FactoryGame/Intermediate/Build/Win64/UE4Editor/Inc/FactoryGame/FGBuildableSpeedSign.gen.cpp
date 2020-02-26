@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSpeedSign() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSpeedSign, 3144761870);
+	IMPLEMENT_CLASS(AFGBuildableSpeedSign, 665904530);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableSpeedSign>()
 	{
 		return AFGBuildableSpeedSign::StaticClass();

@@ -25,6 +25,14 @@ class UFGInventoryComponent;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execOnRep_HAXX_SubbuildingReplicated) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRep_HAXX_SubbuildingReplicated(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execAreChildBuildingsLoaded) \
 	{ \
 		P_FINISH; \
@@ -46,14 +54,6 @@ class UFGInventoryComponent;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(UFGInventoryComponent**)Z_Param__Result=P_THIS->GetStorageInventory(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execUpdateMAMVisibility) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->UpdateMAMVisibility(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -95,6 +95,14 @@ class UFGInventoryComponent;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execOnRep_HAXX_SubbuildingReplicated) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRep_HAXX_SubbuildingReplicated(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execAreChildBuildingsLoaded) \
 	{ \
 		P_FINISH; \
@@ -116,14 +124,6 @@ class UFGInventoryComponent;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(UFGInventoryComponent**)Z_Param__Result=P_THIS->GetStorageInventory(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execUpdateMAMVisibility) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->UpdateMAMVisibility(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -215,7 +215,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableTradingPost); \
 	FORCEINLINE static uint32 __PPO__mGenerator1Location() { return STRUCT_OFFSET(AFGBuildableTradingPost, mGenerator1Location); } \
 	FORCEINLINE static uint32 __PPO__mGenerator2Location() { return STRUCT_OFFSET(AFGBuildableTradingPost, mGenerator2Location); } \
 	FORCEINLINE static uint32 __PPO__mStorageLocation() { return STRUCT_OFFSET(AFGBuildableTradingPost, mStorageLocation); } \
-	FORCEINLINE static uint32 __PPO__mMAMLocation() { return STRUCT_OFFSET(AFGBuildableTradingPost, mMAMLocation); } \
 	FORCEINLINE static uint32 __PPO__mHubTerminalLocation() { return STRUCT_OFFSET(AFGBuildableTradingPost, mHubTerminalLocation); } \
 	FORCEINLINE static uint32 __PPO__mWorkBenchLocation() { return STRUCT_OFFSET(AFGBuildableTradingPost, mWorkBenchLocation); } \
 	FORCEINLINE static uint32 __PPO__mNeedPlayingBuildEffectNotification() { return STRUCT_OFFSET(AFGBuildableTradingPost, mNeedPlayingBuildEffectNotification); }

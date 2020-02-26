@@ -128,7 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFoundation() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableFoundation, 1702140438);
+	IMPLEMENT_CLASS(AFGBuildableFoundation, 2589368906);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableFoundation>()
 	{
 		return AFGBuildableFoundation::StaticClass();

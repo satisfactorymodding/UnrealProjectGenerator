@@ -46,7 +46,6 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceNode() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UDecalComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGExtractableResourceInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGUseableInterface_NoRegister();
@@ -889,11 +888,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mPurityTextArray;
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mPurityTextArray_Inner;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mUseDefaultMesh_MetaData[];
-#endif
-		static void NewProp_mUseDefaultMesh_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mUseDefaultMesh;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mExtractMultiplier_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mExtractMultiplier;
@@ -929,10 +923,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDecalComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mDecalComponent;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mStaticMeshComponent_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mStaticMeshComponent;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAmount_MetaData[];
 #endif
@@ -1015,18 +1005,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mPurityTextArray = { "mPurityTextArray", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceNode, mPurityTextArray), METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mPurityTextArray_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mPurityTextArray_MetaData)) };
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mPurityTextArray_Inner = { "mPurityTextArray", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FPurityTextPair, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mUseDefaultMesh_MetaData[] = {
-		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
-		{ "ToolTip", "Should we display the default mesh?" },
-	};
-#endif
-	void Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mUseDefaultMesh_SetBit(void* Obj)
-	{
-		((AFGResourceNode*)Obj)->mUseDefaultMesh = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mUseDefaultMesh = { "mUseDefaultMesh", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGResourceNode), &Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mUseDefaultMesh_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mUseDefaultMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mUseDefaultMesh_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mExtractMultiplier_MetaData[] = {
 		{ "Category", "Resources" },
 		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
@@ -1105,15 +1083,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDecalComponent = { "mDecalComponent", nullptr, (EPropertyFlags)0x00200800000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceNode, mDecalComponent), Z_Construct_UClass_UDecalComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDecalComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDecalComponent_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mStaticMeshComponent_MetaData[] = {
-		{ "Category", "Resources" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
-		{ "ToolTip", "The mesh we use for displaying the resource if it has a ground mesh" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mStaticMeshComponent = { "mStaticMeshComponent", nullptr, (EPropertyFlags)0x00200800000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceNode, mStaticMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mStaticMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mStaticMeshComponent_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAmount_MetaData[] = {
 		{ "Category", "Resources" },
 		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
@@ -1143,7 +1112,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mHighlightParticleSystemTemplate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mPurityTextArray,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mPurityTextArray_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mUseDefaultMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mExtractMultiplier,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mCanPlaceResourceExtractor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsLonerNode,
@@ -1153,7 +1121,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourcesLeft,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mBoxComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDecalComponent,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mStaticMeshComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAmount,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mPurity,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourceClass,
@@ -1191,7 +1158,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceNode, 2232913214);
+	IMPLEMENT_CLASS(AFGResourceNode, 2497643946);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGResourceNode>()
 	{
 		return AFGResourceNode::StaticClass();

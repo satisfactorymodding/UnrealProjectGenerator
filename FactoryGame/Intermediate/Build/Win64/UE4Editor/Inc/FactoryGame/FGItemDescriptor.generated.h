@@ -471,7 +471,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGItemDescriptor); \
 	FORCEINLINE static uint32 __PPO__mRememberPickUp() { return STRUCT_OFFSET(UFGItemDescriptor, mRememberPickUp); } \
 	FORCEINLINE static uint32 __PPO__mEnergyValue() { return STRUCT_OFFSET(UFGItemDescriptor, mEnergyValue); } \
 	FORCEINLINE static uint32 __PPO__mRadioactiveDecay() { return STRUCT_OFFSET(UFGItemDescriptor, mRadioactiveDecay); } \
-	FORCEINLINE static uint32 __PPO__mResourceSinkPoints() { return STRUCT_OFFSET(UFGItemDescriptor, mResourceSinkPoints); } \
 	FORCEINLINE static uint32 __PPO__mForm() { return STRUCT_OFFSET(UFGItemDescriptor, mForm); } \
 	FORCEINLINE static uint32 __PPO__mInventoryIcon() { return STRUCT_OFFSET(UFGItemDescriptor, mInventoryIcon); } \
 	FORCEINLINE static uint32 __PPO__mSmallIcon() { return STRUCT_OFFSET(UFGItemDescriptor, mSmallIcon); } \

@@ -62,12 +62,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGTradingPostHologram); \
 #define FactoryGame_Source_FactoryGame_Public_Hologram_FGTradingPostHologram_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mGeneratorHolograms() { return STRUCT_OFFSET(AFGTradingPostHologram, mGeneratorHolograms); } \
 	FORCEINLINE static uint32 __PPO__mStorageHologram() { return STRUCT_OFFSET(AFGTradingPostHologram, mStorageHologram); } \
-	FORCEINLINE static uint32 __PPO__mMAMHologram() { return STRUCT_OFFSET(AFGTradingPostHologram, mMAMHologram); } \
 	FORCEINLINE static uint32 __PPO__mHubTerminalHologram() { return STRUCT_OFFSET(AFGTradingPostHologram, mHubTerminalHologram); } \
 	FORCEINLINE static uint32 __PPO__mWorkBenchHologram() { return STRUCT_OFFSET(AFGTradingPostHologram, mWorkBenchHologram); } \
 	FORCEINLINE static uint32 __PPO__mGeneratorLocations() { return STRUCT_OFFSET(AFGTradingPostHologram, mGeneratorLocations); } \
 	FORCEINLINE static uint32 __PPO__mStorageLocation() { return STRUCT_OFFSET(AFGTradingPostHologram, mStorageLocation); } \
-	FORCEINLINE static uint32 __PPO__mMAMLocation() { return STRUCT_OFFSET(AFGTradingPostHologram, mMAMLocation); } \
 	FORCEINLINE static uint32 __PPO__mHubTerminalLocation() { return STRUCT_OFFSET(AFGTradingPostHologram, mHubTerminalLocation); } \
 	FORCEINLINE static uint32 __PPO__mWorkBenchLocation() { return STRUCT_OFFSET(AFGTradingPostHologram, mWorkBenchLocation); }
 

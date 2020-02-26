@@ -1198,10 +1198,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_mForm;
 		static const UE4CodeGen_Private::FBytePropertyParams NewProp_mForm_Underlying;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mResourceSinkPoints_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mResourceSinkPoints;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRadioactiveDecay_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mRadioactiveDecay;
@@ -1396,14 +1392,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm = { "mForm", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mForm), Z_Construct_UEnum_FactoryGame_EResourceForm, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm_MetaData)) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mResourceSinkPoints_MetaData[] = {
-		{ "Category", "Item" },
-		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
-		{ "ToolTip", "How many points you get from this item when consuming it in the resource sink" },
-	};
-#endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mResourceSinkPoints = { "mResourceSinkPoints", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mResourceSinkPoints), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mResourceSinkPoints_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mResourceSinkPoints_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRadioactiveDecay_MetaData[] = {
 		{ "Category", "Item" },
 		{ "ClampMin", "0" },
@@ -1505,7 +1493,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mInventoryIcon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm_Underlying,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mResourceSinkPoints,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRadioactiveDecay,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mEnergyValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRememberPickUp,
@@ -1543,7 +1530,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGItemDescriptor, 3356574480);
+	IMPLEMENT_CLASS(UFGItemDescriptor, 189718983);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGItemDescriptor>()
 	{
 		return UFGItemDescriptor::StaticClass();

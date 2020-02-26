@@ -16,6 +16,14 @@ class UFGCircuitConnectionComponent;
 
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableWire_h_19_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execOnRep_Locations) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRep_Locations(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetConnection) \
 	{ \
 		P_GET_PROPERTY(UIntProperty,Z_Param_index); \
@@ -35,6 +43,14 @@ class UFGCircuitConnectionComponent;
 
 
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableWire_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnRep_Locations) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRep_Locations(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetConnection) \
 	{ \

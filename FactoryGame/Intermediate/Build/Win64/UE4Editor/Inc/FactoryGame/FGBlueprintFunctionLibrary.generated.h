@@ -171,11 +171,12 @@ enum class EOutlineColor : uint8;
 	DECLARE_FUNCTION(execGetAvailableRecipesInSubCategory) \
 	{ \
 		P_GET_OBJECT(UObject,Z_Param_worldContext); \
+		P_GET_OBJECT(UClass,Z_Param_buildCategory); \
 		P_GET_OBJECT(UClass,Z_Param_subCategory); \
 		P_GET_TARRAY_REF(TSubclassOf<UFGRecipe> ,Z_Param_Out_out_recipes); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		UFGBlueprintFunctionLibrary::GetAvailableRecipesInSubCategory(Z_Param_worldContext,Z_Param_subCategory,Z_Param_Out_out_recipes); \
+		UFGBlueprintFunctionLibrary::GetAvailableRecipesInSubCategory(Z_Param_worldContext,Z_Param_buildCategory,Z_Param_subCategory,Z_Param_Out_out_recipes); \
 		P_NATIVE_END; \
 	} \
  \
@@ -719,11 +720,12 @@ enum class EOutlineColor : uint8;
 	DECLARE_FUNCTION(execGetAvailableRecipesInSubCategory) \
 	{ \
 		P_GET_OBJECT(UObject,Z_Param_worldContext); \
+		P_GET_OBJECT(UClass,Z_Param_buildCategory); \
 		P_GET_OBJECT(UClass,Z_Param_subCategory); \
 		P_GET_TARRAY_REF(TSubclassOf<UFGRecipe> ,Z_Param_Out_out_recipes); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		UFGBlueprintFunctionLibrary::GetAvailableRecipesInSubCategory(Z_Param_worldContext,Z_Param_subCategory,Z_Param_Out_out_recipes); \
+		UFGBlueprintFunctionLibrary::GetAvailableRecipesInSubCategory(Z_Param_worldContext,Z_Param_buildCategory,Z_Param_subCategory,Z_Param_Out_out_recipes); \
 		P_NATIVE_END; \
 	} \
  \

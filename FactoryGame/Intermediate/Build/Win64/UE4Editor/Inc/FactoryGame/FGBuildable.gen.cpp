@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildable_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildable();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_CanBeSampled();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_Factory_GrabOutput();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
@@ -45,6 +46,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_ReapplyColorSlot();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_RemoveHighlightEffect();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_ShouldBeConsideredForBase();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_ShowHighlightEffect();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipe_NoRegister();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FNetConstructionID();
@@ -85,6 +87,13 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_FactoryGame_BuildableDismantledSignature__DelegateSignature_Statics::FuncParams);
 		}
 		return ReturnFunction;
+	}
+	static FName NAME_AFGBuildable_CanBeSampled = FName(TEXT("CanBeSampled"));
+	bool AFGBuildable::CanBeSampled() const
+	{
+		FGBuildable_eventCanBeSampled_Parms Parms;
+		const_cast<AFGBuildable*>(this)->ProcessEvent(FindFunctionChecked(NAME_AFGBuildable_CanBeSampled),&Parms);
+		return !!Parms.ReturnValue;
 	}
 	static FName NAME_AFGBuildable_Factory_GrabOutput = FName(TEXT("Factory_GrabOutput"));
 	bool AFGBuildable::Factory_GrabOutput(UFGFactoryConnectionComponent* connection, FInventoryItem& out_item, float& out_OffsetBeyond, TSubclassOf<UFGItemDescriptor>  type)
@@ -140,10 +149,18 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	{
 		ProcessEvent(FindFunctionChecked(NAME_AFGBuildable_PlayDismantleSound),NULL);
 	}
+	static FName NAME_AFGBuildable_ShouldBeConsideredForBase = FName(TEXT("ShouldBeConsideredForBase"));
+	bool AFGBuildable::ShouldBeConsideredForBase()
+	{
+		FGBuildable_eventShouldBeConsideredForBase_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AFGBuildable_ShouldBeConsideredForBase),&Parms);
+		return !!Parms.ReturnValue;
+	}
 	void AFGBuildable::StaticRegisterNativesAFGBuildable()
 	{
 		UClass* Class = AFGBuildable::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "CanBeSampled", &AFGBuildable::execCanBeSampled },
 			{ "Factory_GrabOutput", &AFGBuildable::execFactory_GrabOutput },
 			{ "Factory_PeekOutput", &AFGBuildable::execFactory_PeekOutput },
 			{ "GetClearanceComponent", &AFGBuildable::execGetClearanceComponent },
@@ -161,9 +178,44 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_EDITOR
 			{ "SetBuildableDisplayName", &AFGBuildable::execSetBuildableDisplayName },
 #endif // WITH_EDITOR
+			{ "ShouldBeConsideredForBase", &AFGBuildable::execShouldBeConsideredForBase },
 			{ "ShowHighlightEffect", &AFGBuildable::execShowHighlightEffect },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AFGBuildable_CanBeSampled_Statics
+	{
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGBuildable_CanBeSampled_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGBuildable_eventCanBeSampled_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildable_CanBeSampled_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildable_eventCanBeSampled_Parms), &Z_Construct_UFunction_AFGBuildable_CanBeSampled_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildable_CanBeSampled_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildable_CanBeSampled_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_CanBeSampled_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
+		{ "ToolTip", "Returns true if this buildable can be sampled" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildable_CanBeSampled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildable, nullptr, "CanBeSampled", sizeof(FGBuildable_eventCanBeSampled_Parms), Z_Construct_UFunction_AFGBuildable_CanBeSampled_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildable_CanBeSampled_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x48020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildable_CanBeSampled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildable_CanBeSampled_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildable_CanBeSampled()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildable_CanBeSampled_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AFGBuildable_Factory_GrabOutput_Statics
 	{
@@ -485,7 +537,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		{ "ToolTip", "Get the number of power connections" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildable, nullptr, "GetNumPowerConnections", sizeof(FGBuildable_eventGetNumPowerConnections_Parms), Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildable, nullptr, "GetNumPowerConnections", sizeof(FGBuildable_eventGetNumPowerConnections_Parms), Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -732,6 +784,41 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		return ReturnFunction;
 	}
 #endif //WITH_EDITOR
+	struct Z_Construct_UFunction_AFGBuildable_ShouldBeConsideredForBase_Statics
+	{
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGBuildable_ShouldBeConsideredForBase_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGBuildable_eventShouldBeConsideredForBase_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildable_ShouldBeConsideredForBase_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildable_eventShouldBeConsideredForBase_Parms), &Z_Construct_UFunction_AFGBuildable_ShouldBeConsideredForBase_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildable_ShouldBeConsideredForBase_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildable_ShouldBeConsideredForBase_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_ShouldBeConsideredForBase_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Buildable" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
+		{ "ToolTip", "Should this buildable be relevant when considering if a location is near a base/factory area" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildable_ShouldBeConsideredForBase_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildable, nullptr, "ShouldBeConsideredForBase", sizeof(FGBuildable_eventShouldBeConsideredForBase_Parms), Z_Construct_UFunction_AFGBuildable_ShouldBeConsideredForBase_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildable_ShouldBeConsideredForBase_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildable_ShouldBeConsideredForBase_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildable_ShouldBeConsideredForBase_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildable_ShouldBeConsideredForBase()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildable_ShouldBeConsideredForBase_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGBuildable_ShowHighlightEffect_Statics
 	{
 #if WITH_METADATA
@@ -918,6 +1005,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildable_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFGBuildable_CanBeSampled, "CanBeSampled" }, // 4281214487
 		{ &Z_Construct_UFunction_AFGBuildable_Factory_GrabOutput, "Factory_GrabOutput" }, // 479208918
 		{ &Z_Construct_UFunction_AFGBuildable_Factory_PeekOutput, "Factory_PeekOutput" }, // 673979081
 		{ &Z_Construct_UFunction_AFGBuildable_Factory_ReceiveTick, "Factory_ReceiveTick" }, // 2882255094
@@ -925,7 +1013,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		{ &Z_Construct_UFunction_AFGBuildable_GetDismantleBlueprintReturns, "GetDismantleBlueprintReturns" }, // 3600741589
 		{ &Z_Construct_UFunction_AFGBuildable_GetInteractWidgetClass, "GetInteractWidgetClass" }, // 2305487648
 		{ &Z_Construct_UFunction_AFGBuildable_GetMainMeshes, "GetMainMeshes" }, // 191074800
-		{ &Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections, "GetNumPowerConnections" }, // 3599393772
+		{ &Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections, "GetNumPowerConnections" }, // 3542330243
 		{ &Z_Construct_UFunction_AFGBuildable_OnRep_ColorSlot, "OnRep_ColorSlot" }, // 3462040775
 		{ &Z_Construct_UFunction_AFGBuildable_OnRep_DidFirstTimeUse, "OnRep_DidFirstTimeUse" }, // 2615305437
 		{ &Z_Construct_UFunction_AFGBuildable_PlayBuildEffects, "PlayBuildEffects" }, // 248352647
@@ -937,6 +1025,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #if WITH_EDITOR
 		{ &Z_Construct_UFunction_AFGBuildable_SetBuildableDisplayName, "SetBuildableDisplayName" }, // 911655052
 #endif //WITH_EDITOR
+		{ &Z_Construct_UFunction_AFGBuildable_ShouldBeConsideredForBase, "ShouldBeConsideredForBase" }, // 441051010
 		{ &Z_Construct_UFunction_AFGBuildable_ShowHighlightEffect, "ShowHighlightEffect" }, // 3338263692
 	};
 #if WITH_METADATA
@@ -1308,7 +1397,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildable, 1959667638);
+	IMPLEMENT_CLASS(AFGBuildable, 3680795635);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildable>()
 	{
 		return AFGBuildable::StaticClass();

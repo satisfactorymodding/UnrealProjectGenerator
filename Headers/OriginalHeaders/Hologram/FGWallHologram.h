@@ -19,6 +19,9 @@ public:
 
 	// Begin AFGHologram interface
 	virtual bool TrySnapToActor( const FHitResult& hitResult ) override;
+	virtual AActor* GetUpgradedActor() const override;
+	virtual bool TryUpgrade( const FHitResult& hitResult ) override;
+	virtual bool DoMultiStepPlacement( bool isInputFromARelease ) override;
 	// End AFGHologram interface
 
 protected:
@@ -36,4 +39,6 @@ private:
 	/** Ratios for the snapping zones, how much of the wall to hit for snap to either direction. */
 	float mSnapSidesHitZoneRatio = 0.2f;
 	float mSnapBottomHitZoneRatio = 0.2f;
+
+	class AFGBuildableWall* mUpgradeTarget = nullptr;
 };

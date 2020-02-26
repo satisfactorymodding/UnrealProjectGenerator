@@ -3,7 +3,6 @@
 #include "FGPipePartHologram.h"
 
 AFGPipePartHologram::AFGPipePartHologram(){ }
-void AFGPipePartHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const { }
 void AFGPipePartHologram::BeginPlay(){ }
 bool AFGPipePartHologram::DoMultiStepPlacement( bool isInputFromARelease){ return bool(); }
 bool AFGPipePartHologram::IsValidHitResult( const FHitResult& hitResult) const{ return bool(); }

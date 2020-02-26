@@ -3,6 +3,7 @@
 #pragma once
 
 #include "FGBuildable.h"
+#include "FGBuildablePoleBase.h"
 #include "FGBuildablePole.generated.h"
 
 
@@ -10,7 +11,7 @@
  * An arbitrarily high pole.
  */
 UCLASS( Abstract )
-class FACTORYGAME_API AFGBuildablePole : public AFGBuildable
+class FACTORYGAME_API AFGBuildablePole : public AFGBuildablePoleBase
 {
 	GENERATED_BODY()
 public:
@@ -20,6 +21,12 @@ public:
 	virtual void GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps ) const override;
 	virtual void BeginPlay() override;
 	// End AActor interface
+
+	virtual float GetStackHeight() override
+	{
+		float baseOffset = mUseStaticHeight ? 0 : mHeight;
+		return baseOffset + mStackHeight;
+	}
 
 
 	/** Set the pole's height. */
@@ -36,13 +43,6 @@ public:
 	UPROPERTY( SaveGame, Replicated )
 	float mHeight;
 
-	/** Can this pole stack. */
-	UPROPERTY( EditDefaultsOnly, Category = "Pole" )
-	bool mCanStack;
-
-	/** Height between two stacked poles excluding the poles height. */
-	UPROPERTY( EditDefaultsOnly, Category = "Pole" )
-	float mStackHeight;
 
 	/** The component we want to use with the pole */
 	UPROPERTY( VisibleAnywhere, Category = "Pole" )

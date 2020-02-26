@@ -203,7 +203,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorSpaceData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableAttachmentSplitter, 95231110);
+	IMPLEMENT_CLASS(AFGBuildableAttachmentSplitter, 102212343);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableAttachmentSplitter>()
 	{
 		return AFGBuildableAttachmentSplitter::StaticClass();

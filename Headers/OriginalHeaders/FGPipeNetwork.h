@@ -131,6 +131,7 @@ private:
 	void UpdateFluidDescriptor( TSubclassOf< UFGItemDescriptor > descriptor );
 
 	int32 CreatePressureGroup();
+	int32 FindTopMostPressureGroupIndex( int32 index );
 	void UpdatePressureGroups( PipeJunction& junction, float dt );
 	void UpdatePressure( PipeJunction& junction, float dt );
 	void PostUpdatePressureGroups( PipeJunction& junction );

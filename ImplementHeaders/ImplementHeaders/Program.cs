@@ -23,9 +23,17 @@ namespace ImplementHeaders
             },
             {
             "AFGBuildableConveyorBelt::AFGBuildableConveyorBelt",
-@"	mSplineComponent = CreateDefaultSubobject<UFGSplineComponent>(TEXT(""SplineComponent""));
+@"	mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT(""SplineComponent""));
 
     mSplineComponent->SetupAttachment(RootComponent);"
+            },
+            { 
+            "AFGBuildableConveyorBase::AFGBuildableConveyorBase",
+@"  mConnection0 = CreateDefaultSubobject<UFGFactoryConnectionComponent>(TEXT(""ConveyorAny0""));
+    mConnection0->SetupAttachment(RootComponent);
+
+    mConnection1 = CreateDefaultSubobject<UFGFactoryConnectionComponent>(TEXT(""ConveyorAny1""));
+    mConnection1->SetupAttachment(RootComponent);"
             }
         };
 

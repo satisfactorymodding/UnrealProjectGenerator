@@ -56,6 +56,9 @@ protected:
 
 	FTransform GetTopTransform() const { return mTopTransform; }
 
+
+	virtual void CheckValidPlacement() override;
+
 private:
 	UFUNCTION()
 	void OnRep_TopTransform();

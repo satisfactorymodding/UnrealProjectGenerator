@@ -398,7 +398,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGResourceNode); \
 	FORCEINLINE static uint32 __PPO__mResourceClass() { return STRUCT_OFFSET(AFGResourceNode, mResourceClass); } \
 	FORCEINLINE static uint32 __PPO__mPurity() { return STRUCT_OFFSET(AFGResourceNode, mPurity); } \
 	FORCEINLINE static uint32 __PPO__mAmount() { return STRUCT_OFFSET(AFGResourceNode, mAmount); } \
-	FORCEINLINE static uint32 __PPO__mStaticMeshComponent() { return STRUCT_OFFSET(AFGResourceNode, mStaticMeshComponent); } \
 	FORCEINLINE static uint32 __PPO__mDecalComponent() { return STRUCT_OFFSET(AFGResourceNode, mDecalComponent); } \
 	FORCEINLINE static uint32 __PPO__mBoxComponent() { return STRUCT_OFFSET(AFGResourceNode, mBoxComponent); } \
 	FORCEINLINE static uint32 __PPO__mResourcesLeft() { return STRUCT_OFFSET(AFGResourceNode, mResourcesLeft); } \
@@ -407,7 +406,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGResourceNode); \
 	FORCEINLINE static uint32 __PPO__mIsLonerNode() { return STRUCT_OFFSET(AFGResourceNode, mIsLonerNode); } \
 	FORCEINLINE static uint32 __PPO__mCanPlaceResourceExtractor() { return STRUCT_OFFSET(AFGResourceNode, mCanPlaceResourceExtractor); } \
 	FORCEINLINE static uint32 __PPO__mExtractMultiplier() { return STRUCT_OFFSET(AFGResourceNode, mExtractMultiplier); } \
-	FORCEINLINE static uint32 __PPO__mUseDefaultMesh() { return STRUCT_OFFSET(AFGResourceNode, mUseDefaultMesh); } \
 	FORCEINLINE static uint32 __PPO__mPurityTextArray() { return STRUCT_OFFSET(AFGResourceNode, mPurityTextArray); }
 
 

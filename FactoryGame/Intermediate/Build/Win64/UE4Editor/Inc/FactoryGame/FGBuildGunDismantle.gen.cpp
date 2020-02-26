@@ -862,7 +862,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDismantleRefunds
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildGunStateDismantle, 3169686842);
+	IMPLEMENT_CLASS(UFGBuildGunStateDismantle, 2937749088);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBuildGunStateDismantle>()
 	{
 		return UFGBuildGunStateDismantle::StaticClass();

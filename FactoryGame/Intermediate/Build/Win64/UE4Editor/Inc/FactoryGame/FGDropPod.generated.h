@@ -12,6 +12,7 @@ class UFGItemDescriptor;
 struct FDropPackage;
 class AFGCharacterPlayer;
 class UFGInventoryComponent;
+class UFGPowerConnectionComponent;
 #ifdef FACTORYGAME_FGDropPod_generated_h
 #error "FGDropPod.generated.h already included, missing '#pragma once' in FGDropPod.h"
 #endif
@@ -79,6 +80,14 @@ class UFGInventoryComponent;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->Open(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetHasPower) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetHasPower(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -164,6 +173,14 @@ class UFGInventoryComponent;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetHasPower) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetHasPower(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetLootInventory) \
 	{ \
 		P_FINISH; \
@@ -182,9 +199,29 @@ class UFGInventoryComponent;
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGDropPod_h_18_EVENT_PARMS \
+	struct FGDropPod_eventGetPowerConnection_Parms \
+	{ \
+		UFGPowerConnectionComponent* ReturnValue; \
+ \
+		/** Constructor, initializes return property only **/ \
+		FGDropPod_eventGetPowerConnection_Parms() \
+			: ReturnValue(NULL) \
+		{ \
+		} \
+	}; \
 	struct FGDropPod_eventOnRepair_Parms \
 	{ \
 		AFGCharacterPlayer* InteractingCharacter; \
+	}; \
+	struct FGDropPod_eventRequiresPowerToOpen_Parms \
+	{ \
+		bool ReturnValue; \
+ \
+		/** Constructor, initializes return property only **/ \
+		FGDropPod_eventRequiresPowerToOpen_Parms() \
+			: ReturnValue(false) \
+		{ \
+		} \
 	};
 
 
@@ -235,6 +272,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGDropPod); \
 
 #define FactoryGame_Source_FactoryGame_Public_FGDropPod_h_18_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mAmountOfInventorySlots() { return STRUCT_OFFSET(AFGDropPod, mAmountOfInventorySlots); } \
+	FORCEINLINE static uint32 __PPO__mPowerInfo() { return STRUCT_OFFSET(AFGDropPod, mPowerInfo); } \
+	FORCEINLINE static uint32 __PPO__mHasPower() { return STRUCT_OFFSET(AFGDropPod, mHasPower); } \
 	FORCEINLINE static uint32 __PPO__mHasBeenOpened() { return STRUCT_OFFSET(AFGDropPod, mHasBeenOpened); } \
 	FORCEINLINE static uint32 __PPO__mInventory() { return STRUCT_OFFSET(AFGDropPod, mInventory); }
 

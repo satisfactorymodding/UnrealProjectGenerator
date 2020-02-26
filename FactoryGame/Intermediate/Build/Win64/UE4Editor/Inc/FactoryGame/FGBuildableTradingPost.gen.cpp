@@ -21,10 +21,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableTradingPost_GetStorageInventory();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGInventoryComponent_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableTradingPost_GetTradingPostLevel();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_HAXX_SubbuildingReplicated();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableTradingPost_OnTradingPostUpgraded();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableTradingPost_UpdateGeneratorVisibility();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableTradingPost_UpdateMAMVisibility();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableTradingPost_UpdateStorageVisibility();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FItemAmount();
@@ -50,10 +50,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 			{ "AreChildBuildingsLoaded", &AFGBuildableTradingPost::execAreChildBuildingsLoaded },
 			{ "GetStorageInventory", &AFGBuildableTradingPost::execGetStorageInventory },
 			{ "GetTradingPostLevel", &AFGBuildableTradingPost::execGetTradingPostLevel },
+			{ "OnRep_HAXX_SubbuildingReplicated", &AFGBuildableTradingPost::execOnRep_HAXX_SubbuildingReplicated },
 			{ "OnRep_NeedPlayingBuildEffect", &AFGBuildableTradingPost::execOnRep_NeedPlayingBuildEffect },
 			{ "OnTradingPostUpgraded", &AFGBuildableTradingPost::execOnTradingPostUpgraded },
 			{ "UpdateGeneratorVisibility", &AFGBuildableTradingPost::execUpdateGeneratorVisibility },
-			{ "UpdateMAMVisibility", &AFGBuildableTradingPost::execUpdateMAMVisibility },
 			{ "UpdateStorageVisibility", &AFGBuildableTradingPost::execUpdateStorageVisibility },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
@@ -173,6 +173,29 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_HAXX_SubbuildingReplicated_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_HAXX_SubbuildingReplicated_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
+		{ "ToolTip", "HAXX: For those that has sampled subbuildings, we tag them with a actor tag so that we know that they are not samplable" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_HAXX_SubbuildingReplicated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableTradingPost, nullptr, "OnRep_HAXX_SubbuildingReplicated", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_HAXX_SubbuildingReplicated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_HAXX_SubbuildingReplicated_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_HAXX_SubbuildingReplicated()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_HAXX_SubbuildingReplicated_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect_Statics
 	{
 #if WITH_METADATA
@@ -258,30 +281,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGBuildableTradingPost_UpdateMAMVisibility_Statics
-	{
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableTradingPost_UpdateMAMVisibility_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
-		{ "ToolTip", "Handles the MAM visibility depending on tutorial step" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableTradingPost_UpdateMAMVisibility_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableTradingPost, nullptr, "UpdateMAMVisibility", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableTradingPost_UpdateMAMVisibility_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableTradingPost_UpdateMAMVisibility_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGBuildableTradingPost_UpdateMAMVisibility()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableTradingPost_UpdateMAMVisibility_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_AFGBuildableTradingPost_UpdateStorageVisibility_Statics
 	{
 #if WITH_METADATA
@@ -331,10 +330,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mHubTerminalLocation;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMAMLocation_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mMAMLocation;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mStorageLocation_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mStorageLocation;
@@ -372,10 +367,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mInputInventory;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMAMVisibilityLevel_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mMAMVisibilityLevel;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mStorageVisibilityLevel_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mStorageVisibilityLevel;
@@ -397,10 +388,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mHubTerminal;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMAM_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mMAM;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mStorage_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mStorage;
@@ -412,10 +399,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDefaultHubTerminalRecipe_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mDefaultHubTerminalRecipe;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDefaultMAMRecipe_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mDefaultMAMRecipe;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDefaultStorageRecipe_MetaData[];
 #endif
@@ -441,10 +424,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 		{ &Z_Construct_UFunction_AFGBuildableTradingPost_AreChildBuildingsLoaded, "AreChildBuildingsLoaded" }, // 3121562495
 		{ &Z_Construct_UFunction_AFGBuildableTradingPost_GetStorageInventory, "GetStorageInventory" }, // 3096871344
 		{ &Z_Construct_UFunction_AFGBuildableTradingPost_GetTradingPostLevel, "GetTradingPostLevel" }, // 4102280232
+		{ &Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_HAXX_SubbuildingReplicated, "OnRep_HAXX_SubbuildingReplicated" }, // 338480388
 		{ &Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect, "OnRep_NeedPlayingBuildEffect" }, // 3493743891
 		{ &Z_Construct_UFunction_AFGBuildableTradingPost_OnTradingPostUpgraded, "OnTradingPostUpgraded" }, // 2172508871
 		{ &Z_Construct_UFunction_AFGBuildableTradingPost_UpdateGeneratorVisibility, "UpdateGeneratorVisibility" }, // 3984418968
-		{ &Z_Construct_UFunction_AFGBuildableTradingPost_UpdateMAMVisibility, "UpdateMAMVisibility" }, // 1420179391
 		{ &Z_Construct_UFunction_AFGBuildableTradingPost_UpdateStorageVisibility, "UpdateStorageVisibility" }, // 3917650051
 	};
 #if WITH_METADATA
@@ -483,15 +466,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminalLocation = { "mHubTerminalLocation", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableTradingPost, mHubTerminalLocation), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminalLocation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminalLocation_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAMLocation_MetaData[] = {
-		{ "Category", "FGBuildableTradingPost" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
-		{ "ToolTip", "Component used to determine MAM location" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAMLocation = { "mMAMLocation", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableTradingPost, mMAMLocation), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAMLocation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAMLocation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorageLocation_MetaData[] = {
 		{ "Category", "FGBuildableTradingPost" },
@@ -568,14 +542,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mInputInventory = { "mInputInventory", nullptr, (EPropertyFlags)0x0020080001080028, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableTradingPost, mInputInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mInputInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mInputInventory_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAMVisibilityLevel_MetaData[] = {
-		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
-		{ "ToolTip", "At what trading post level should the MAM be visible" },
-	};
-#endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAMVisibilityLevel = { "mMAMVisibilityLevel", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableTradingPost, mMAMVisibilityLevel), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAMVisibilityLevel_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAMVisibilityLevel_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorageVisibilityLevel_MetaData[] = {
 		{ "Category", "Trading Post" },
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
@@ -607,28 +573,21 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 		{ "ToolTip", "References to the created work bench" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mWorkBench = { "mWorkBench", nullptr, (EPropertyFlags)0x0010000001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableTradingPost, mWorkBench), Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mWorkBench_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mWorkBench_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mWorkBench = { "mWorkBench", "OnRep_HAXX_SubbuildingReplicated", (EPropertyFlags)0x0010000101000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableTradingPost, mWorkBench), Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mWorkBench_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mWorkBench_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminal_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "References to the created Hub Terminal" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminal = { "mHubTerminal", nullptr, (EPropertyFlags)0x0010000001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableTradingPost, mHubTerminal), Z_Construct_UClass_AFGBuildableHubTerminal_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminal_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminal_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAM_MetaData[] = {
-		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
-		{ "ToolTip", "References to the created MAM" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAM = { "mMAM", nullptr, (EPropertyFlags)0x0010000001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableTradingPost, mMAM), Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAM_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAM_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminal = { "mHubTerminal", "OnRep_HAXX_SubbuildingReplicated", (EPropertyFlags)0x0010000101000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableTradingPost, mHubTerminal), Z_Construct_UClass_AFGBuildableHubTerminal_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminal_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminal_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorage_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "References to the created storage" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorage = { "mStorage", nullptr, (EPropertyFlags)0x0010000001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableTradingPost, mStorage), Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorage_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorage = { "mStorage", "OnRep_HAXX_SubbuildingReplicated", (EPropertyFlags)0x0010000101000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableTradingPost, mStorage), Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultWorkBenchRecipe_MetaData[] = {
 		{ "Category", "Trading Post" },
@@ -646,14 +605,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultHubTerminalRecipe = { "mDefaultHubTerminalRecipe", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableTradingPost, mDefaultHubTerminalRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultHubTerminalRecipe_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultHubTerminalRecipe_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultMAMRecipe_MetaData[] = {
-		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
-		{ "ToolTip", "Class of MAM to create with the trading post" },
-	};
-#endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultMAMRecipe = { "mDefaultMAMRecipe", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableTradingPost, mDefaultMAMRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultMAMRecipe_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultMAMRecipe_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultStorageRecipe_MetaData[] = {
 		{ "Category", "Trading Post" },
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
@@ -667,7 +618,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 		{ "ToolTip", "References to the created generators" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGenerators = { "mGenerators", nullptr, (EPropertyFlags)0x0010000001000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableTradingPost, mGenerators), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGenerators_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGenerators_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGenerators = { "mGenerators", "OnRep_HAXX_SubbuildingReplicated", (EPropertyFlags)0x0010000101000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableTradingPost, mGenerators), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGenerators_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGenerators_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGenerators_Inner = { "mGenerators", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGBuildableGenerator_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultGeneratorRecipe_MetaData[] = {
@@ -681,7 +632,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mNeedPlayingBuildEffectNotification,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mWorkBenchLocation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminalLocation,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAMLocation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorageLocation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGenerator2Location,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGenerator1Location,
@@ -692,18 +642,15 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGroundSearchZDistance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mSpawningGroundZOffset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mInputInventory,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAMVisibilityLevel,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorageVisibilityLevel,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorageInventorySize,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGeneratorVisibilityLevels,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGeneratorVisibilityLevels_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mWorkBench,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminal,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAM,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultWorkBenchRecipe,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultHubTerminalRecipe,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultMAMRecipe,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultStorageRecipe,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGenerators,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGenerators_Inner,
@@ -736,7 +683,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableTradingPost, 2149233808);
+	IMPLEMENT_CLASS(AFGBuildableTradingPost, 2770858673);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableTradingPost>()
 	{
 		return AFGBuildableTradingPost::StaticClass();

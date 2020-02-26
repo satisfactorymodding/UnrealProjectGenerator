@@ -3,7 +3,6 @@
 #include "FGPipelineSupportHologram.h"
 
 AFGPipelineSupportHologram::AFGPipelineSupportHologram(){ }
-void AFGPipelineSupportHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const { }
 void AFGPipelineSupportHologram::BeginPlay(){ }
 bool AFGPipelineSupportHologram::DoMultiStepPlacement( bool isInputFromARelease){ return bool(); }
 bool AFGPipelineSupportHologram::IsValidHitResult( const FHitResult& hitResult) const{ return bool(); }

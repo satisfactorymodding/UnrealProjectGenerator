@@ -140,7 +140,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDecorDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDecorDescriptor, 302334299);
+	IMPLEMENT_CLASS(UFGDecorDescriptor, 3362877370);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGDecorDescriptor>()
 	{
 		return UFGDecorDescriptor::StaticClass();

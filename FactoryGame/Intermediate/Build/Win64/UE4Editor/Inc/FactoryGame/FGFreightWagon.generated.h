@@ -9,6 +9,7 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGItemDescriptor;
+enum class EFreightCargoType : uint8;
 class UFGInventoryComponent;
 #ifdef FACTORYGAME_FGFreightWagon_generated_h
 #error "FGFreightWagon.generated.h already included, missing '#pragma once' in FGFreightWagon.h"
@@ -42,6 +43,22 @@ class UFGInventoryComponent;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnItemAddedToFreight(Z_Param_itemClass,Z_Param_numAdded); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFreightCargoType) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(EFreightCargoType*)Z_Param__Result=P_THIS->GetFreightCargoType(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetScaledFluidStackSize) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetScaledFluidStackSize(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -89,6 +106,22 @@ class UFGInventoryComponent;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnItemAddedToFreight(Z_Param_itemClass,Z_Param_numAdded); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFreightCargoType) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(EFreightCargoType*)Z_Param__Result=P_THIS->GetFreightCargoType(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetScaledFluidStackSize) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetScaledFluidStackSize(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -160,6 +193,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGFreightWagon); \
 	FORCEINLINE static uint32 __PPO__mContainerMeshStandard() { return STRUCT_OFFSET(AFGFreightWagon, mContainerMeshStandard); } \
 	FORCEINLINE static uint32 __PPO__mContainerMeshLiquid() { return STRUCT_OFFSET(AFGFreightWagon, mContainerMeshLiquid); } \
 	FORCEINLINE static uint32 __PPO__mInventorySize() { return STRUCT_OFFSET(AFGFreightWagon, mInventorySize); } \
+	FORCEINLINE static uint32 __PPO__mFluidStackSizeDefault() { return STRUCT_OFFSET(AFGFreightWagon, mFluidStackSizeDefault); } \
+	FORCEINLINE static uint32 __PPO__mFluidStackSizeMultiplier() { return STRUCT_OFFSET(AFGFreightWagon, mFluidStackSizeMultiplier); } \
 	FORCEINLINE static uint32 __PPO__mCargoMeshComponent() { return STRUCT_OFFSET(AFGFreightWagon, mCargoMeshComponent); } \
 	FORCEINLINE static uint32 __PPO__mLaunchCharacterScalar() { return STRUCT_OFFSET(AFGFreightWagon, mLaunchCharacterScalar); } \
 	FORCEINLINE static uint32 __PPO__mCargoOverlapCollision() { return STRUCT_OFFSET(AFGFreightWagon, mCargoOverlapCollision); }

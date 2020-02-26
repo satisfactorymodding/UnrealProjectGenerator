@@ -264,6 +264,15 @@ static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScri
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execIsResesearchTreeUnlocked) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_researchTree); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsResesearchTreeUnlocked(Z_Param_researchTree); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetAllResearchTrees) \
 	{ \
 		P_GET_TARRAY_REF(TSubclassOf<UFGResearchTree> ,Z_Param_Out_out_ResearchTrees); \
@@ -445,6 +454,15 @@ static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScri
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->InitiateResearch(Z_Param_playerInventory,Z_Param_schematic,Z_Param_initiatingResearchTree); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsResesearchTreeUnlocked) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_researchTree); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsResesearchTreeUnlocked(Z_Param_researchTree); \
 		P_NATIVE_END; \
 	} \
  \

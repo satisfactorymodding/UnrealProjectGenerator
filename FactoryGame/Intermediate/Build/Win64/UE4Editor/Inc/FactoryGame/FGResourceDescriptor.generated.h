@@ -12,9 +12,7 @@ class UFGResourceDescriptor;
 class UParticleSystem;
 class UTexture2D;
 struct FLinearColor;
-class UMaterialInstance;
 class UMaterial;
-class UStaticMesh;
 #ifdef FACTORYGAME_FGResourceDescriptor_generated_h
 #error "FGResourceDescriptor.generated.h already included, missing '#pragma once' in FGResourceDescriptor.h"
 #endif
@@ -94,48 +92,12 @@ class UStaticMesh;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetDepositMaterial) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UMaterialInstance**)Z_Param__Result=UFGResourceDescriptor::GetDepositMaterial(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetDecalMaterial) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(UMaterial**)Z_Param__Result=UFGResourceDescriptor::GetDecalMaterial(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetMeshOverrideMaterial) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UMaterialInstance**)Z_Param__Result=UFGResourceDescriptor::GetMeshOverrideMaterial(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetDepositMesh) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UStaticMesh**)Z_Param__Result=UFGResourceDescriptor::GetDepositMesh(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetGroundMesh) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UStaticMesh**)Z_Param__Result=UFGResourceDescriptor::GetGroundMesh(Z_Param_inClass); \
 		P_NATIVE_END; \
 	} \
  \
@@ -223,48 +185,12 @@ class UStaticMesh;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetDepositMaterial) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UMaterialInstance**)Z_Param__Result=UFGResourceDescriptor::GetDepositMaterial(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetDecalMaterial) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(UMaterial**)Z_Param__Result=UFGResourceDescriptor::GetDecalMaterial(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetMeshOverrideMaterial) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UMaterialInstance**)Z_Param__Result=UFGResourceDescriptor::GetMeshOverrideMaterial(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetDepositMesh) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UStaticMesh**)Z_Param__Result=UFGResourceDescriptor::GetDepositMesh(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetGroundMesh) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UStaticMesh**)Z_Param__Result=UFGResourceDescriptor::GetGroundMesh(Z_Param_inClass); \
 		P_NATIVE_END; \
 	} \
  \
@@ -321,10 +247,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGResourceDescriptor); \
 
 
 #define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceDescriptor_h_17_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mGroundMesh() { return STRUCT_OFFSET(UFGResourceDescriptor, mGroundMesh); } \
-	FORCEINLINE static uint32 __PPO__mDepositMesh() { return STRUCT_OFFSET(UFGResourceDescriptor, mDepositMesh); } \
-	FORCEINLINE static uint32 __PPO__mDepositMaterial() { return STRUCT_OFFSET(UFGResourceDescriptor, mDepositMaterial); } \
-	FORCEINLINE static uint32 __PPO__mGroundMeshMaterialOverride() { return STRUCT_OFFSET(UFGResourceDescriptor, mGroundMeshMaterialOverride); } \
 	FORCEINLINE static uint32 __PPO__mDecalMaterial() { return STRUCT_OFFSET(UFGResourceDescriptor, mDecalMaterial); } \
 	FORCEINLINE static uint32 __PPO__mDecalSize() { return STRUCT_OFFSET(UFGResourceDescriptor, mDecalSize); } \
 	FORCEINLINE static uint32 __PPO__mPingColor() { return STRUCT_OFFSET(UFGResourceDescriptor, mPingColor); } \

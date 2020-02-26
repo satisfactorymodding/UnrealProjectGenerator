@@ -433,7 +433,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStandaloneSign() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableStandaloneSign, 479861296);
+	IMPLEMENT_CLASS(AFGBuildableStandaloneSign, 2330002649);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableStandaloneSign>()
 	{
 		return AFGBuildableStandaloneSign::StaticClass();

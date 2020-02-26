@@ -38,10 +38,6 @@ private:
 	UPROPERTY( Replicated )
 	class AFGBuildableHologram* mStorageHologram;
 
-	/** The mam hologram */
-	UPROPERTY( Replicated )
-	class AFGBuildableHologram* mMAMHologram;
-
 	/** The hub terminal holograms */
 	UPROPERTY( Replicated )
 	class AFGBuildableHologram* mHubTerminalHologram;
@@ -57,10 +53,6 @@ private:
 	/** component matching the location where the storage is placed */
 	UPROPERTY()
 	USceneComponent* mStorageLocation;
-
-	/** component matching the location where the mam is placed */
-	UPROPERTY()
-	USceneComponent* mMAMLocation;
 
 	/** component matching the location where the hub terminal is placed */
 	UPROPERTY()

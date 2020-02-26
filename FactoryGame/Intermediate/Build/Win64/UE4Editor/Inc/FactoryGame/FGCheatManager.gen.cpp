@@ -45,6 +45,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_FlipVehicle();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_ForceSpawnCreatures();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_GetVehicleInfo();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_GiveAllResearchTrees();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_GiveALLSchematics();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_GiveAllSchematicsAndPhases();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_GiveAvailableSchematics();
@@ -167,6 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 			{ "FlipVehicle", &UFGCheatManager::execFlipVehicle },
 			{ "ForceSpawnCreatures", &UFGCheatManager::execForceSpawnCreatures },
 			{ "GetVehicleInfo", &UFGCheatManager::execGetVehicleInfo },
+			{ "GiveAllResearchTrees", &UFGCheatManager::execGiveAllResearchTrees },
 			{ "GiveALLSchematics", &UFGCheatManager::execGiveALLSchematics },
 			{ "GiveAllSchematicsAndPhases", &UFGCheatManager::execGiveAllSchematicsAndPhases },
 			{ "GiveAvailableSchematics", &UFGCheatManager::execGiveAvailableSchematics },
@@ -992,6 +994,29 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_GetVehicleInfo_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGCheatManager_GiveAllResearchTrees_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_GiveAllResearchTrees_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Research" },
+		{ "ModuleRelativePath", "Public/FGCheatManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_GiveAllResearchTrees_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, nullptr, "GiveAllResearchTrees", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_GiveAllResearchTrees_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_GiveAllResearchTrees_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGCheatManager_GiveAllResearchTrees()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_GiveAllResearchTrees_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -3609,6 +3634,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		{ &Z_Construct_UFunction_UFGCheatManager_FlipVehicle, "FlipVehicle" }, // 1368720504
 		{ &Z_Construct_UFunction_UFGCheatManager_ForceSpawnCreatures, "ForceSpawnCreatures" }, // 4109034846
 		{ &Z_Construct_UFunction_UFGCheatManager_GetVehicleInfo, "GetVehicleInfo" }, // 2283729142
+		{ &Z_Construct_UFunction_UFGCheatManager_GiveAllResearchTrees, "GiveAllResearchTrees" }, // 3668296235
 		{ &Z_Construct_UFunction_UFGCheatManager_GiveALLSchematics, "GiveALLSchematics" }, // 2072994377
 		{ &Z_Construct_UFunction_UFGCheatManager_GiveAllSchematicsAndPhases, "GiveAllSchematicsAndPhases" }, // 1195469834
 		{ &Z_Construct_UFunction_UFGCheatManager_GiveAvailableSchematics, "GiveAvailableSchematics" }, // 1539859397
@@ -3741,7 +3767,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCheatManager, 242275813);
+	IMPLEMENT_CLASS(UFGCheatManager, 702360616);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCheatManager>()
 	{
 		return UFGCheatManager::StaticClass();

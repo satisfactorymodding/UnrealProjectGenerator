@@ -25,6 +25,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunState_BeginState();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunState_BuildSamplePressed();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunState_BuildSampleRelease();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunState_ChangeNoSnapMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunState_ChangeScrollMode();
@@ -38,6 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunState_IsActive();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunState_ModeSelectPressed();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunState_ModeSelectRelease();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunState_OnRecipeSampled();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunState_PrimaryFire();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunState_PrimaryFireRelease();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunState_ResetBuildGunDelay();
@@ -208,6 +211,16 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	{
 		ProcessEvent(FindFunctionChecked(NAME_UFGBuildGunState_BeginState),NULL);
 	}
+	static FName NAME_UFGBuildGunState_BuildSamplePressed = FName(TEXT("BuildSamplePressed"));
+	void UFGBuildGunState::BuildSamplePressed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UFGBuildGunState_BuildSamplePressed),NULL);
+	}
+	static FName NAME_UFGBuildGunState_BuildSampleRelease = FName(TEXT("BuildSampleRelease"));
+	void UFGBuildGunState::BuildSampleRelease()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UFGBuildGunState_BuildSampleRelease),NULL);
+	}
 	static FName NAME_UFGBuildGunState_ChangeGuideLinesSnapMode = FName(TEXT("ChangeGuideLinesSnapMode"));
 	void UFGBuildGunState::ChangeGuideLinesSnapMode(bool enabled)
 	{
@@ -239,6 +252,13 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	void UFGBuildGunState::ModeSelectRelease()
 	{
 		ProcessEvent(FindFunctionChecked(NAME_UFGBuildGunState_ModeSelectRelease),NULL);
+	}
+	static FName NAME_UFGBuildGunState_OnRecipeSampled = FName(TEXT("OnRecipeSampled"));
+	void UFGBuildGunState::OnRecipeSampled(TSubclassOf<UFGRecipe>  recipe)
+	{
+		FGBuildGunState_eventOnRecipeSampled_Parms Parms;
+		Parms.recipe=recipe;
+		ProcessEvent(FindFunctionChecked(NAME_UFGBuildGunState_OnRecipeSampled),&Parms);
 	}
 	static FName NAME_UFGBuildGunState_PrimaryFire = FName(TEXT("PrimaryFire"));
 	void UFGBuildGunState::PrimaryFire()
@@ -279,6 +299,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 			{ "BeginBuildGunDelay", &UFGBuildGunState::execBeginBuildGunDelay },
 			{ "BeginState", &UFGBuildGunState::execBeginState },
 			{ "BuildGunDelayIsComplete", &UFGBuildGunState::execBuildGunDelayIsComplete },
+			{ "BuildSamplePressed", &UFGBuildGunState::execBuildSamplePressed },
+			{ "BuildSampleRelease", &UFGBuildGunState::execBuildSampleRelease },
 			{ "ChangeGuideLinesSnapMode", &UFGBuildGunState::execChangeGuideLinesSnapMode },
 			{ "ChangeNoSnapMode", &UFGBuildGunState::execChangeNoSnapMode },
 			{ "ChangeScrollMode", &UFGBuildGunState::execChangeScrollMode },
@@ -291,6 +313,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 			{ "IsActive", &UFGBuildGunState::execIsActive },
 			{ "ModeSelectPressed", &UFGBuildGunState::execModeSelectPressed },
 			{ "ModeSelectRelease", &UFGBuildGunState::execModeSelectRelease },
+			{ "OnRecipeSampled", &UFGBuildGunState::execOnRecipeSampled },
 			{ "PrimaryFire", &UFGBuildGunState::execPrimaryFire },
 			{ "PrimaryFireRelease", &UFGBuildGunState::execPrimaryFireRelease },
 			{ "ResetBuildGunDelay", &UFGBuildGunState::execResetBuildGunDelay },
@@ -384,6 +407,54 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGBuildGunState_BuildSamplePressed_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_BuildSamplePressed_Statics::Function_MetaDataParams[] = {
+		{ "Category", "BuildGunState" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
+		{ "ToolTip", "Redirected from the build gun." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_BuildSamplePressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "BuildSamplePressed", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_BuildSamplePressed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_BuildSamplePressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBuildGunState_BuildSamplePressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBuildGunState_BuildSamplePressed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGBuildGunState_BuildSampleRelease_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_BuildSampleRelease_Statics::Function_MetaDataParams[] = {
+		{ "Category", "BuildGunState" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
+		{ "ToolTip", "Redirected from the build gun." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_BuildSampleRelease_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "BuildSampleRelease", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_BuildSampleRelease_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_BuildSampleRelease_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBuildGunState_BuildSampleRelease()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBuildGunState_BuildSampleRelease_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -760,6 +831,36 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGBuildGunState_OnRecipeSampled_Statics
+	{
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_recipe;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBuildGunState_OnRecipeSampled_Statics::NewProp_recipe = { "recipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGunState_eventOnRecipeSampled_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildGunState_OnRecipeSampled_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildGunState_OnRecipeSampled_Statics::NewProp_recipe,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunState_OnRecipeSampled_Statics::Function_MetaDataParams[] = {
+		{ "Category", "BuildGunState|Build" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
+		{ "ToolTip", "We have sampled a new recipe" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_OnRecipeSampled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "OnRecipeSampled", sizeof(FGBuildGunState_eventOnRecipeSampled_Parms), Z_Construct_UFunction_UFGBuildGunState_OnRecipeSampled_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_OnRecipeSampled_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_OnRecipeSampled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_OnRecipeSampled_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBuildGunState_OnRecipeSampled()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBuildGunState_OnRecipeSampled_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGBuildGunState_PrimaryFire_Statics
 	{
 #if WITH_METADATA
@@ -965,6 +1066,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ &Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay, "BeginBuildGunDelay" }, // 1862849918
 		{ &Z_Construct_UFunction_UFGBuildGunState_BeginState, "BeginState" }, // 1693571103
 		{ &Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete, "BuildGunDelayIsComplete" }, // 621571915
+		{ &Z_Construct_UFunction_UFGBuildGunState_BuildSamplePressed, "BuildSamplePressed" }, // 2692151592
+		{ &Z_Construct_UFunction_UFGBuildGunState_BuildSampleRelease, "BuildSampleRelease" }, // 2323946448
 		{ &Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode, "ChangeGuideLinesSnapMode" }, // 564095188
 		{ &Z_Construct_UFunction_UFGBuildGunState_ChangeNoSnapMode, "ChangeNoSnapMode" }, // 1184458808
 		{ &Z_Construct_UFunction_UFGBuildGunState_ChangeScrollMode, "ChangeScrollMode" }, // 512437620
@@ -977,6 +1080,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ &Z_Construct_UFunction_UFGBuildGunState_IsActive, "IsActive" }, // 4275491382
 		{ &Z_Construct_UFunction_UFGBuildGunState_ModeSelectPressed, "ModeSelectPressed" }, // 1036745280
 		{ &Z_Construct_UFunction_UFGBuildGunState_ModeSelectRelease, "ModeSelectRelease" }, // 35348847
+		{ &Z_Construct_UFunction_UFGBuildGunState_OnRecipeSampled, "OnRecipeSampled" }, // 3951316857
 		{ &Z_Construct_UFunction_UFGBuildGunState_PrimaryFire, "PrimaryFire" }, // 3418204167
 		{ &Z_Construct_UFunction_UFGBuildGunState_PrimaryFireRelease, "PrimaryFireRelease" }, // 2122103859
 		{ &Z_Construct_UFunction_UFGBuildGunState_ResetBuildGunDelay, "ResetBuildGunDelay" }, // 4294889783
@@ -1041,7 +1145,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildGunState, 3787045590);
+	IMPLEMENT_CLASS(UFGBuildGunState, 1075912927);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBuildGunState>()
 	{
 		return UFGBuildGunState::StaticClass();
