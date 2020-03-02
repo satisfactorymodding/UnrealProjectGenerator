@@ -55,6 +55,9 @@ public:
 
 	UPROPERTY()
 	EFGChatMessageType MessageType = EFGChatMessageType::CMT_PlayerMessage;
+
+public:
+	FORCEINLINE ~FChatMessageStruct() = default;
 };
 
 /**
@@ -116,4 +119,7 @@ private:
 	UPROPERTY()
 	TArray< FChatMessageStruct > mReceivedMessages;
 
+
+public:
+	FORCEINLINE ~AFGChatManager() = default;
 };

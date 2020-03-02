@@ -26,7 +26,7 @@ struct FInputAxisKeyMapping;
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFGKeyMapping>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execIsKeyMappingRelevant) \
 	{ \
@@ -217,7 +217,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFGKeyMapping>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execIsKeyMappingRelevant) \
 	{ \
@@ -408,7 +408,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFGKeyMapping>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGInputLibrary(); \
 	friend struct Z_Construct_UClass_UFGInputLibrary_Statics; \
@@ -417,7 +417,7 @@ public: \
 	DECLARE_SERIALIZER(UFGInputLibrary)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGInputLibrary(); \
 	friend struct Z_Construct_UClass_UFGInputLibrary_Statics; \
@@ -426,7 +426,7 @@ public: \
 	DECLARE_SERIALIZER(UFGInputLibrary)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGInputLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGInputLibrary) \
@@ -439,7 +439,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGInputLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -452,26 +452,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGInputLibrary); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGInputLibrary)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_38_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_41_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGInputLibrary_h_44_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

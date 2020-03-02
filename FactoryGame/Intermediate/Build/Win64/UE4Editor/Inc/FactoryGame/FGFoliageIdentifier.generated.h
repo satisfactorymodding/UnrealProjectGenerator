@@ -85,9 +85,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 template<> FACTORYGAME_API UClass* StaticClass<class UFGFoliageIdentifier>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGFoliageIdentifier_RemovableByBuildings(); \
 	friend struct Z_Construct_UClass_UFGFoliageIdentifier_RemovableByBuildings_Statics; \
@@ -96,7 +96,7 @@ public: \
 	DECLARE_SERIALIZER(UFGFoliageIdentifier_RemovableByBuildings)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGFoliageIdentifier_RemovableByBuildings(); \
 	friend struct Z_Construct_UClass_UFGFoliageIdentifier_RemovableByBuildings_Statics; \
@@ -105,7 +105,7 @@ public: \
 	DECLARE_SERIALIZER(UFGFoliageIdentifier_RemovableByBuildings)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGFoliageIdentifier_RemovableByBuildings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFoliageIdentifier_RemovableByBuildings) \
@@ -118,7 +118,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGFoliageIdentifier_RemovableByBuildings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -131,35 +131,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGFoliageIdentifier_RemovableByBuildings);
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFoliageIdentifier_RemovableByBuildings)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_19_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_22_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_25_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> FACTORYGAME_API UClass* StaticClass<class UFGFoliageIdentifier_RemovableByBuildings>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGFoliageIdentifier_Pickupable(); \
 	friend struct Z_Construct_UClass_UFGFoliageIdentifier_Pickupable_Statics; \
@@ -168,7 +168,7 @@ public: \
 	DECLARE_SERIALIZER(UFGFoliageIdentifier_Pickupable)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGFoliageIdentifier_Pickupable(); \
 	friend struct Z_Construct_UClass_UFGFoliageIdentifier_Pickupable_Statics; \
@@ -177,7 +177,7 @@ public: \
 	DECLARE_SERIALIZER(UFGFoliageIdentifier_Pickupable)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGFoliageIdentifier_Pickupable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFoliageIdentifier_Pickupable) \
@@ -190,7 +190,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGFoliageIdentifier_Pickupable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -203,35 +203,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGFoliageIdentifier_Pickupable); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFoliageIdentifier_Pickupable)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_28_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_34_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_31_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> FACTORYGAME_API UClass* StaticClass<class UFGFoliageIdentifier_Pickupable>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_49_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_49_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_49_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGFoliageIdentifier_Chainsawable(); \
 	friend struct Z_Construct_UClass_UFGFoliageIdentifier_Chainsawable_Statics; \
@@ -240,7 +240,7 @@ public: \
 	DECLARE_SERIALIZER(UFGFoliageIdentifier_Chainsawable)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_49_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGFoliageIdentifier_Chainsawable(); \
 	friend struct Z_Construct_UClass_UFGFoliageIdentifier_Chainsawable_Statics; \
@@ -249,7 +249,7 @@ public: \
 	DECLARE_SERIALIZER(UFGFoliageIdentifier_Chainsawable)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_49_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGFoliageIdentifier_Chainsawable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFoliageIdentifier_Chainsawable) \
@@ -262,7 +262,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_49_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGFoliageIdentifier_Chainsawable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -273,78 +273,6 @@ public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGFoliageIdentifier_Chainsawable); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGFoliageIdentifier_Chainsawable); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFoliageIdentifier_Chainsawable)
-
-
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_37_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_GENERATED_BODY_LEGACY \
-PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-public: \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_STANDARD_CONSTRUCTORS \
-public: \
-PRAGMA_ENABLE_DEPRECATION_WARNINGS
-
-
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_GENERATED_BODY \
-PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-public: \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_40_ENHANCED_CONSTRUCTORS \
-private: \
-PRAGMA_ENABLE_DEPRECATION_WARNINGS
-
-
-template<> FACTORYGAME_API UClass* StaticClass<class UFGFoliageIdentifier_Chainsawable>();
-
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_49_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_49_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_49_INCLASS_NO_PURE_DECLS \
-private: \
-	static void StaticRegisterNativesUFGFoliageIdentifier_ChainsawableXmasTree(); \
-	friend struct Z_Construct_UClass_UFGFoliageIdentifier_ChainsawableXmasTree_Statics; \
-public: \
-	DECLARE_CLASS(UFGFoliageIdentifier_ChainsawableXmasTree, UFGFoliageIdentifier_Chainsawable, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGFoliageIdentifier_ChainsawableXmasTree)
-
-
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_49_INCLASS \
-private: \
-	static void StaticRegisterNativesUFGFoliageIdentifier_ChainsawableXmasTree(); \
-	friend struct Z_Construct_UClass_UFGFoliageIdentifier_ChainsawableXmasTree_Statics; \
-public: \
-	DECLARE_CLASS(UFGFoliageIdentifier_ChainsawableXmasTree, UFGFoliageIdentifier_Chainsawable, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGFoliageIdentifier_ChainsawableXmasTree)
-
-
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_49_STANDARD_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGFoliageIdentifier_ChainsawableXmasTree(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFoliageIdentifier_ChainsawableXmasTree) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGFoliageIdentifier_ChainsawableXmasTree); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGFoliageIdentifier_ChainsawableXmasTree); \
-private: \
-	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGFoliageIdentifier_ChainsawableXmasTree(UFGFoliageIdentifier_ChainsawableXmasTree&&); \
-	NO_API UFGFoliageIdentifier_ChainsawableXmasTree(const UFGFoliageIdentifier_ChainsawableXmasTree&); \
-public:
-
-
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_49_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGFoliageIdentifier_ChainsawableXmasTree(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
-private: \
-	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGFoliageIdentifier_ChainsawableXmasTree(UFGFoliageIdentifier_ChainsawableXmasTree&&); \
-	NO_API UFGFoliageIdentifier_ChainsawableXmasTree(const UFGFoliageIdentifier_ChainsawableXmasTree&); \
-public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGFoliageIdentifier_ChainsawableXmasTree); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGFoliageIdentifier_ChainsawableXmasTree); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFoliageIdentifier_ChainsawableXmasTree)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_49_PRIVATE_PROPERTY_OFFSET
@@ -371,11 +299,83 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGFoliageIdentifier_Chainsawable>();
+
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUFGFoliageIdentifier_ChainsawableXmasTree(); \
+	friend struct Z_Construct_UClass_UFGFoliageIdentifier_ChainsawableXmasTree_Statics; \
+public: \
+	DECLARE_CLASS(UFGFoliageIdentifier_ChainsawableXmasTree, UFGFoliageIdentifier_Chainsawable, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGFoliageIdentifier_ChainsawableXmasTree)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_INCLASS \
+private: \
+	static void StaticRegisterNativesUFGFoliageIdentifier_ChainsawableXmasTree(); \
+	friend struct Z_Construct_UClass_UFGFoliageIdentifier_ChainsawableXmasTree_Statics; \
+public: \
+	DECLARE_CLASS(UFGFoliageIdentifier_ChainsawableXmasTree, UFGFoliageIdentifier_Chainsawable, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGFoliageIdentifier_ChainsawableXmasTree)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UFGFoliageIdentifier_ChainsawableXmasTree(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFoliageIdentifier_ChainsawableXmasTree) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGFoliageIdentifier_ChainsawableXmasTree); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGFoliageIdentifier_ChainsawableXmasTree); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGFoliageIdentifier_ChainsawableXmasTree(UFGFoliageIdentifier_ChainsawableXmasTree&&); \
+	NO_API UFGFoliageIdentifier_ChainsawableXmasTree(const UFGFoliageIdentifier_ChainsawableXmasTree&); \
+public:
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UFGFoliageIdentifier_ChainsawableXmasTree(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGFoliageIdentifier_ChainsawableXmasTree(UFGFoliageIdentifier_ChainsawableXmasTree&&); \
+	NO_API UFGFoliageIdentifier_ChainsawableXmasTree(const UFGFoliageIdentifier_ChainsawableXmasTree&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGFoliageIdentifier_ChainsawableXmasTree); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGFoliageIdentifier_ChainsawableXmasTree); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFoliageIdentifier_ChainsawableXmasTree)
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_61_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
 template<> FACTORYGAME_API UClass* StaticClass<class UFGFoliageIdentifier_ChainsawableXmasTree>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGFoliageIdentifier_VehicleDestroyable(); \
 	friend struct Z_Construct_UClass_UFGFoliageIdentifier_VehicleDestroyable_Statics; \
@@ -384,7 +384,7 @@ public: \
 	DECLARE_SERIALIZER(UFGFoliageIdentifier_VehicleDestroyable)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGFoliageIdentifier_VehicleDestroyable(); \
 	friend struct Z_Construct_UClass_UFGFoliageIdentifier_VehicleDestroyable_Statics; \
@@ -393,7 +393,7 @@ public: \
 	DECLARE_SERIALIZER(UFGFoliageIdentifier_VehicleDestroyable)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGFoliageIdentifier_VehicleDestroyable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFoliageIdentifier_VehicleDestroyable) \
@@ -406,7 +406,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGFoliageIdentifier_VehicleDestroyable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -419,35 +419,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGFoliageIdentifier_VehicleDestroyable); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFoliageIdentifier_VehicleDestroyable)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_55_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_70_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_58_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_73_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> FACTORYGAME_API UClass* StaticClass<class UFGFoliageIdentifier_VehicleDestroyable>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGFoliageIdentifier_ExplosiveDestroyable(); \
 	friend struct Z_Construct_UClass_UFGFoliageIdentifier_ExplosiveDestroyable_Statics; \
@@ -456,7 +456,7 @@ public: \
 	DECLARE_SERIALIZER(UFGFoliageIdentifier_ExplosiveDestroyable)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGFoliageIdentifier_ExplosiveDestroyable(); \
 	friend struct Z_Construct_UClass_UFGFoliageIdentifier_ExplosiveDestroyable_Statics; \
@@ -465,7 +465,7 @@ public: \
 	DECLARE_SERIALIZER(UFGFoliageIdentifier_ExplosiveDestroyable)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGFoliageIdentifier_ExplosiveDestroyable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFoliageIdentifier_ExplosiveDestroyable) \
@@ -478,7 +478,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGFoliageIdentifier_ExplosiveDestroyable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -491,26 +491,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGFoliageIdentifier_ExplosiveDestroyable);
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFoliageIdentifier_ExplosiveDestroyable)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_64_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_82_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_67_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGFoliageIdentifier_h_85_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

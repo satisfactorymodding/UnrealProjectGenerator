@@ -20,9 +20,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMaterialAndSlotName>();
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGSuitBase(); \
 	friend struct Z_Construct_UClass_AFGSuitBase_Statics; \
@@ -31,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(AFGSuitBase)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGSuitBase(); \
 	friend struct Z_Construct_UClass_AFGSuitBase_Statics; \
@@ -40,7 +40,7 @@ public: \
 	DECLARE_SERIALIZER(AFGSuitBase)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGSuitBase(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGSuitBase) \
@@ -53,7 +53,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGSuitBase(AFGSuitBase&&); \
@@ -64,38 +64,38 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGSuitBase); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGSuitBase)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mSuit1PMeshMaterials() { return STRUCT_OFFSET(AFGSuitBase, mSuit1PMeshMaterials); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_30_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_33_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_36_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> FACTORYGAME_API UClass* StaticClass<class AFGSuitBase>();
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGSuitBaseAttachment(); \
 	friend struct Z_Construct_UClass_AFGSuitBaseAttachment_Statics; \
@@ -104,7 +104,7 @@ public: \
 	DECLARE_SERIALIZER(AFGSuitBaseAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGSuitBaseAttachment(); \
 	friend struct Z_Construct_UClass_AFGSuitBaseAttachment_Statics; \
@@ -113,7 +113,7 @@ public: \
 	DECLARE_SERIALIZER(AFGSuitBaseAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGSuitBaseAttachment(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGSuitBaseAttachment) \
@@ -126,7 +126,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGSuitBaseAttachment() { }; \
 private: \
@@ -139,29 +139,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGSuitBaseAttachment); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGSuitBaseAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mSuit3PMeshMaterials() { return STRUCT_OFFSET(AFGSuitBaseAttachment, mSuit3PMeshMaterials); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_55_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_61_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_58_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGSuitBase_h_64_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

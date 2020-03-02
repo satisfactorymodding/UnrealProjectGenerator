@@ -74,5 +74,8 @@ private:
 
 	/** Array of PhysXWheel User defineable data that are passed to the shader */
 	TArray<FPhysxWheelUserData> mPhysxWheelUserData;
+
+public:
+	FORCEINLINE ~UFGWheeledVehicleMovementComponent4W() = default;
 };
 

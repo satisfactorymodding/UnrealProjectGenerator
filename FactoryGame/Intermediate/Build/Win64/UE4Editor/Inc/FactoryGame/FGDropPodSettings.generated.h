@@ -22,7 +22,7 @@ struct FDropPackage;
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FDropPackage>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetRandomDropPackage) \
 	{ \
@@ -34,7 +34,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FDropPackage>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetRandomDropPackage) \
 	{ \
@@ -46,7 +46,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FDropPackage>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGDropPodSettings(); \
 	friend struct Z_Construct_UClass_UFGDropPodSettings_Statics; \
@@ -55,7 +55,7 @@ public: \
 	DECLARE_SERIALIZER(UFGDropPodSettings)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGDropPodSettings(); \
 	friend struct Z_Construct_UClass_UFGDropPodSettings_Statics; \
@@ -64,7 +64,7 @@ public: \
 	DECLARE_SERIALIZER(UFGDropPodSettings)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGDropPodSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGDropPodSettings) \
@@ -77,7 +77,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGDropPodSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -90,29 +90,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGDropPodSettings); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGDropPodSettings)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mDropTable() { return STRUCT_OFFSET(UFGDropPodSettings, mDropTable); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_47_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_50_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGDropPodSettings_h_53_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

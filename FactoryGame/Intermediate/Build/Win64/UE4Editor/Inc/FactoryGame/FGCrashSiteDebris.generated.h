@@ -13,28 +13,28 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGCrashSiteDebris_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_122_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_137_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSimulatedItemDropTransform>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_104_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_116_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSimulatedActorTransform>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_86_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_95_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSimulatedMeshTransform>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_60_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_66_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FDebrisItemDrop_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__ItemClass() { return STRUCT_OFFSET(FDebrisItemDrop, ItemClass); }
@@ -42,7 +42,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSimulatedMeshTran
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FDebrisItemDrop>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_41_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_44_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FDebrisActor_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -56,9 +56,9 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FDebrisActor>();
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FDebrisMesh>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGCrashSiteDebris(); \
 	friend struct Z_Construct_UClass_AFGCrashSiteDebris_Statics; \
@@ -67,7 +67,7 @@ public: \
 	DECLARE_SERIALIZER(AFGCrashSiteDebris)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGCrashSiteDebris(); \
 	friend struct Z_Construct_UClass_AFGCrashSiteDebris_Statics; \
@@ -76,7 +76,7 @@ public: \
 	DECLARE_SERIALIZER(AFGCrashSiteDebris)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGCrashSiteDebris(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGCrashSiteDebris) \
@@ -89,7 +89,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGCrashSiteDebris(AFGCrashSiteDebris&&); \
@@ -100,26 +100,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCrashSiteDebris); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGCrashSiteDebris)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_133_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_151_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_136_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGCrashSiteDebris_h_154_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

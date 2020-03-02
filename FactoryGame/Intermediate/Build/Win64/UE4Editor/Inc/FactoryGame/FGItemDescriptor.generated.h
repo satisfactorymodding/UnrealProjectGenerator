@@ -29,7 +29,7 @@ enum class EResourceForm : uint8;
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemView>();
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetFluidColorLinear) \
 	{ \
@@ -223,7 +223,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemView>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetFluidColorLinear) \
 	{ \
@@ -417,31 +417,31 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemView>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(UFGItemDescriptor, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGItemDescriptor(); \
 	friend struct Z_Construct_UClass_UFGItemDescriptor_Statics; \
 public: \
 	DECLARE_CLASS(UFGItemDescriptor, UObject, COMPILED_IN_FLAGS(CLASS_Abstract), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGItemDescriptor) \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_ARCHIVESERIALIZER
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_ARCHIVESERIALIZER
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGItemDescriptor(); \
 	friend struct Z_Construct_UClass_UFGItemDescriptor_Statics; \
 public: \
 	DECLARE_CLASS(UFGItemDescriptor, UObject, COMPILED_IN_FLAGS(CLASS_Abstract), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGItemDescriptor) \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_ARCHIVESERIALIZER
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_ARCHIVESERIALIZER
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGItemDescriptor(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGItemDescriptor) \
@@ -454,7 +454,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGItemDescriptor(UFGItemDescriptor&&); \
@@ -465,7 +465,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGItemDescriptor); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGItemDescriptor)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mStackSize() { return STRUCT_OFFSET(UFGItemDescriptor, mStackSize); } \
 	FORCEINLINE static uint32 __PPO__mCanBeDiscarded() { return STRUCT_OFFSET(UFGItemDescriptor, mCanBeDiscarded); } \
 	FORCEINLINE static uint32 __PPO__mRememberPickUp() { return STRUCT_OFFSET(UFGItemDescriptor, mRememberPickUp); } \
@@ -484,25 +484,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGItemDescriptor); \
 	FORCEINLINE static uint32 __PPO__mFluidColor() { return STRUCT_OFFSET(UFGItemDescriptor, mFluidColor); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_73_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

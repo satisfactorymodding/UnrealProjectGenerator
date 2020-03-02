@@ -126,7 +126,7 @@ private:
 	virtual void OnRep_PeekDismantleRefund();
 
 	/** Dismantle a given actor. Refunds that couldn't fit in inventory from dismantled actor will be appended to out_overflowRefunds. Will place overflow refunds on ground if dropRefundsOnDismantle is true. **/
-	void Internal_DismantleActor( class AActor* actorToDismantle, TArray<FInventoryStack>& out_overflowRefunds, bool dropRefundsOnDismantle = true );
+	void Internal_DismantleActor( class AActor* actorToDismantle );
 
 	/** Set the selected actor (Simulated on client). Deselects the actor is selected param is nullptr */
 	void SetAimedAtActor( class AActor* selected );

@@ -77,6 +77,9 @@ struct FACTORYGAME_API TStructOpsTypeTraits< FRailroadTrackPosition > : public T
 	{
 		WithSerializer = true
 	};
+
+public:
+	FORCEINLINE ~TStructOpsTypeTraits< FRailroadTrackPosition >() = default;
 };
 
 
@@ -211,4 +214,7 @@ private:
 
 	/** Length of this track. [cm] */
 	float mLength;
+
+public:
+	FORCEINLINE ~AFGBuildableRailroadTrack() = default;
 };

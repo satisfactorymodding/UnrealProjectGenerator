@@ -20,9 +20,12 @@ void EmptyLinkFunctionForGeneratedCodeFGSkySphere() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGSkySphere();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSkySphere_ApplySkySphereSettings();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FRuntimeCurveLinearColor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSkySphere_GetFloatCurveValue();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FRuntimeFloatCurve();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGSkySphere_UpdatePreview();
+	ENGINE_API UClass* Z_Construct_UClass_UCurvePanningInterface_NoRegister();
 // End Cross Module References
 class UScriptStruct* FSkySphereSettings::StaticStruct()
 {
@@ -216,6 +219,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 	{
 		UClass* Class = AFGSkySphere::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "GetColorCurveValue", &AFGSkySphere::execGetColorCurveValue },
 			{ "GetFloatCurveValue", &AFGSkySphere::execGetFloatCurveValue },
 			{ "UpdatePreview", &AFGSkySphere::execUpdatePreview },
 		};
@@ -257,6 +261,57 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGSkySphere_ApplySkySphereSettings_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics
+	{
+		struct FGSkySphere_eventGetColorCurveValue_Parms
+		{
+			FRuntimeCurveLinearColor curve;
+			float time;
+			FLinearColor ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_time;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_curve_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_curve;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSkySphere_eventGetColorCurveValue_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::NewProp_time = { "time", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSkySphere_eventGetColorCurveValue_Parms, time), METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::NewProp_curve_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::NewProp_curve = { "curve", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSkySphere_eventGetColorCurveValue_Parms, curve), Z_Construct_UScriptStruct_FRuntimeCurveLinearColor, METADATA_PARAMS(Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::NewProp_curve_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::NewProp_curve_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::NewProp_time,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::NewProp_curve,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Color" },
+		{ "DefaultToSelf", "worldContext" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
+		{ "ToolTip", "Expose getting a value from a FRuntimeCurveLinearColor to bp" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSkySphere, nullptr, "GetColorCurveValue", sizeof(FGSkySphere_eventGetColorCurveValue_Parms), Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -357,6 +412,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mSunFogMultiplier;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSkyLightColor_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mSkyLightColor;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mStarBrightness_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mStarBrightness;
@@ -364,6 +423,22 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCloudOpacity_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mCloudOpacity;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCloudColorCurve_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mCloudColorCurve;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mZenithColorCurve_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mZenithColorCurve;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mHorizonColorCurve_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mHorizonColorCurve;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mOcclusionTintColor_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mOcclusionTintColor;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSkyLightIntensity_MetaData[];
 #endif
@@ -381,6 +456,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mMoonIntensity;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMoonLightColorCurve_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mMoonLightColorCurve;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSunLightShaftOcclusionCurve_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mSunLightShaftOcclusionCurve;
@@ -392,9 +471,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSunIntensity_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mSunIntensity;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSunLightColorCurve_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mSunLightColorCurve;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_EDITORONLY_DATA
 #endif // WITH_EDITORONLY_DATA
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -404,6 +488,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGSkySphere_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AFGSkySphere_ApplySkySphereSettings, "ApplySkySphereSettings" }, // 1126575981
+		{ &Z_Construct_UFunction_AFGSkySphere_GetColorCurveValue, "GetColorCurveValue" }, // 2383341941
 		{ &Z_Construct_UFunction_AFGSkySphere_GetFloatCurveValue, "GetFloatCurveValue" }, // 1282729985
 		{ &Z_Construct_UFunction_AFGSkySphere_UpdatePreview, "UpdatePreview" }, // 2877894387
 	};
@@ -437,6 +522,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunFogMultiplier = { "mSunFogMultiplier", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSkySphere, mSunFogMultiplier), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunFogMultiplier_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunFogMultiplier_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSkyLightColor_MetaData[] = {
+		{ "Category", "Curves|SkySphere" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
+		{ "ToolTip", "How does the ambient light color change during the day" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSkyLightColor = { "mSkyLightColor", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSkySphere, mSkyLightColor), Z_Construct_UScriptStruct_FRuntimeCurveLinearColor, METADATA_PARAMS(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSkyLightColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSkyLightColor_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mStarBrightness_MetaData[] = {
 		{ "Category", "Curves|SkySphere" },
 		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
@@ -453,6 +546,38 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mCloudOpacity = { "mCloudOpacity", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSkySphere, mCloudOpacity), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mCloudOpacity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mCloudOpacity_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mCloudColorCurve_MetaData[] = {
+		{ "Category", "Curves|SkySphere" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
+		{ "ToolTip", "How the color of clouds zenith changes during the day" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mCloudColorCurve = { "mCloudColorCurve", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSkySphere, mCloudColorCurve), Z_Construct_UScriptStruct_FRuntimeCurveLinearColor, METADATA_PARAMS(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mCloudColorCurve_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mCloudColorCurve_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mZenithColorCurve_MetaData[] = {
+		{ "Category", "Curves|SkySphere" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
+		{ "ToolTip", "How the color of the zenith changes during the day" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mZenithColorCurve = { "mZenithColorCurve", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSkySphere, mZenithColorCurve), Z_Construct_UScriptStruct_FRuntimeCurveLinearColor, METADATA_PARAMS(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mZenithColorCurve_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mZenithColorCurve_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mHorizonColorCurve_MetaData[] = {
+		{ "Category", "Curves|SkySphere" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
+		{ "ToolTip", "How the color of the horizon changes during the day" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mHorizonColorCurve = { "mHorizonColorCurve", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSkySphere, mHorizonColorCurve), Z_Construct_UScriptStruct_FRuntimeCurveLinearColor, METADATA_PARAMS(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mHorizonColorCurve_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mHorizonColorCurve_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mOcclusionTintColor_MetaData[] = {
+		{ "Category", "Curves|SkyLight" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
+		{ "ToolTip", "How does the occlusion tint intensity change during the day" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mOcclusionTintColor = { "mOcclusionTintColor", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSkySphere, mOcclusionTintColor), Z_Construct_UScriptStruct_FRuntimeCurveLinearColor, METADATA_PARAMS(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mOcclusionTintColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mOcclusionTintColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSkyLightIntensity_MetaData[] = {
 		{ "Category", "Curves|SkyLight" },
@@ -486,6 +611,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mMoonIntensity = { "mMoonIntensity", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSkySphere, mMoonIntensity), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mMoonIntensity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mMoonIntensity_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mMoonLightColorCurve_MetaData[] = {
+		{ "Category", "Curves|Moon" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
+		{ "ToolTip", "How the moonlight changes during the NIGHT" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mMoonLightColorCurve = { "mMoonLightColorCurve", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSkySphere, mMoonLightColorCurve), Z_Construct_UScriptStruct_FRuntimeCurveLinearColor, METADATA_PARAMS(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mMoonLightColorCurve_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mMoonLightColorCurve_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunLightShaftOcclusionCurve_MetaData[] = {
 		{ "Category", "Curves|Sun" },
 		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
@@ -509,21 +642,39 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunIntensity = { "mSunIntensity", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSkySphere, mSunIntensity), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunIntensity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunIntensity_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunLightColorCurve_MetaData[] = {
+		{ "Category", "Curves|Sun" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
+		{ "ToolTip", "How the sunlight changes during the day" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunLightColorCurve = { "mSunLightColorCurve", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSkySphere, mSunLightColorCurve), Z_Construct_UScriptStruct_FRuntimeCurveLinearColor, METADATA_PARAMS(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunLightColorCurve_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunLightColorCurve_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGSkySphere_Statics::PropPointers[] = {
 #if WITH_EDITORONLY_DATA
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mPreviewTime,
 #endif // WITH_EDITORONLY_DATA
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunFogMultiplier,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSkyLightColor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mStarBrightness,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mCloudOpacity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mCloudColorCurve,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mZenithColorCurve,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mHorizonColorCurve,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mOcclusionTintColor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSkyLightIntensity,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mMoonLightShaftOcclusionCurve,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mMoonRotationPitch,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mMoonIntensity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mMoonLightColorCurve,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunLightShaftOcclusionCurve,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunRotationPitch,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunIntensity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunLightColorCurve,
 	};
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AFGSkySphere_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UCurvePanningInterface_NoRegister, (int32)VTABLE_OFFSET(AFGSkySphere, ICurvePanningInterface), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGSkySphere_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFGSkySphere>::IsAbstract,
 	};
@@ -534,11 +685,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		DependentSingletons,
 		FuncInfo,
 		Z_Construct_UClass_AFGSkySphere_Statics::PropPointers,
-		nullptr,
+		InterfaceParams,
 		ARRAY_COUNT(DependentSingletons),
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_AFGSkySphere_Statics::PropPointers),
-		0,
+		ARRAY_COUNT(InterfaceParams),
 		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGSkySphere_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGSkySphere_Statics::Class_MetaDataParams))
 	};
@@ -551,7 +702,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSkySphere, 3497365320);
+	IMPLEMENT_CLASS(AFGSkySphere, 2855003864);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSkySphere>()
 	{
 		return AFGSkySphere::StaticClass();

@@ -14,7 +14,7 @@ struct FVector;
 #endif
 #define FACTORYGAME_FGRailroadVehicleMovementComponent_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_40_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_43_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FCouplerSetup_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -28,7 +28,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FCouplerSetup>();
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FWheelsetSetup>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetCouplerRotationAndExtention) \
 	{ \
@@ -220,7 +220,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FWheelsetSetup>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetCouplerRotationAndExtention) \
 	{ \
@@ -412,7 +412,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FWheelsetSetup>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGRailroadVehicleMovementComponent(); \
 	friend struct Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics; \
@@ -421,7 +421,7 @@ public: \
 	DECLARE_SERIALIZER(UFGRailroadVehicleMovementComponent)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGRailroadVehicleMovementComponent(); \
 	friend struct Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics; \
@@ -430,7 +430,7 @@ public: \
 	DECLARE_SERIALIZER(UFGRailroadVehicleMovementComponent)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGRailroadVehicleMovementComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGRailroadVehicleMovementComponent) \
@@ -443,7 +443,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGRailroadVehicleMovementComponent(UFGRailroadVehicleMovementComponent&&); \
@@ -454,7 +454,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGRailroadVehicleMovementComponent); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGRailroadVehicleMovementComponent)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mWheelsetSetups() { return STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mWheelsetSetups); } \
 	FORCEINLINE static uint32 __PPO__mWheelRadius() { return STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mWheelRadius); } \
 	FORCEINLINE static uint32 __PPO__mCouplerSetups() { return STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mCouplerSetups); } \
@@ -469,25 +469,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGRailroadVehicleMovementComponent); \
 	FORCEINLINE static uint32 __PPO__mMaxAirBrakingEffort() { return STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mMaxAirBrakingEffort); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_90_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_96_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_94_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadVehicleMovementComponent_h_100_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

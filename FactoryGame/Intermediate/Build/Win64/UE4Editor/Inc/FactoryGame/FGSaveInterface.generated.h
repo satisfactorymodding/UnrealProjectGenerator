@@ -296,7 +296,7 @@ public: \
 	FactoryGame_Source_FactoryGame_Public_FGSaveInterface_h_52_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSaveInterface_h_61_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGSaveInterface_h_64_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FactoryGame_Source_FactoryGame_Public_FGSaveInterface_h_52_RPC_WRAPPERS \
@@ -306,7 +306,7 @@ public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSaveInterface_h_61_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGSaveInterface_h_64_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FactoryGame_Source_FactoryGame_Public_FGSaveInterface_h_52_RPC_WRAPPERS_NO_PURE_DECLS \

@@ -1,5 +1,6 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 #pragma once
+#include "Array.h"
 #include "Engine/StaticMesh.h"
 #include "UObject/Class.h"
 
@@ -91,4 +92,7 @@ private:
 	UPROPERTY()
 	class USceneComponent* mSupportLengthComponent;
 
+
+public:
+	FORCEINLINE ~AFGPipePartHologram() = default;
 };

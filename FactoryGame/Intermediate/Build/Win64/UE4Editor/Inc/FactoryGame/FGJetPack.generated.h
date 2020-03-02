@@ -177,7 +177,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 template<> FACTORYGAME_API UClass* StaticClass<class AFGJetPack>();
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_IsThrusting) \
 	{ \
@@ -188,7 +188,7 @@ template<> FACTORYGAME_API UClass* StaticClass<class AFGJetPack>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_IsThrusting) \
 	{ \
@@ -199,9 +199,9 @@ template<> FACTORYGAME_API UClass* StaticClass<class AFGJetPack>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_EVENT_PARMS
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGJetPackAttachment(); \
 	friend struct Z_Construct_UClass_AFGJetPackAttachment_Statics; \
@@ -210,7 +210,7 @@ public: \
 	DECLARE_SERIALIZER(AFGJetPackAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGJetPackAttachment(); \
 	friend struct Z_Construct_UClass_AFGJetPackAttachment_Statics; \
@@ -219,7 +219,7 @@ public: \
 	DECLARE_SERIALIZER(AFGJetPackAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGJetPackAttachment(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGJetPackAttachment) \
@@ -232,7 +232,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGJetPackAttachment() { }; \
 private: \
@@ -245,34 +245,34 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGJetPackAttachment); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGJetPackAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mIsThrusting() { return STRUCT_OFFSET(AFGJetPackAttachment, mIsThrusting); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_90_PROLOG \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_93_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGJetPack_h_96_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

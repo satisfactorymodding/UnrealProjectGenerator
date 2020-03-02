@@ -14,7 +14,7 @@ class UAkAudioEvent;
 #endif
 #define FACTORYGAME_FGFactorySettings_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_41_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_44_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FViscosityToPuddlePair_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -28,7 +28,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FViscosityToPuddle
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FCategory>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetRandomDismantleSound) \
 	{ \
@@ -47,7 +47,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FCategory>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetRandomDismantleSound) \
 	{ \
@@ -66,7 +66,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FCategory>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGFactorySettings(); \
 	friend struct Z_Construct_UClass_UFGFactorySettings_Statics; \
@@ -75,7 +75,7 @@ public: \
 	DECLARE_SERIALIZER(UFGFactorySettings)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGFactorySettings(); \
 	friend struct Z_Construct_UClass_UFGFactorySettings_Statics; \
@@ -84,7 +84,7 @@ public: \
 	DECLARE_SERIALIZER(UFGFactorySettings)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGFactorySettings(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFactorySettings) \
@@ -97,7 +97,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGFactorySettings(UFGFactorySettings&&); \
@@ -108,26 +108,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGFactorySettings); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGFactorySettings)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_60_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_66_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_63_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGFactorySettings_h_69_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

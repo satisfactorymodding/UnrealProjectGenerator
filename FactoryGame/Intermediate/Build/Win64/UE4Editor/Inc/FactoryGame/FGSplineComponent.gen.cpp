@@ -23,6 +23,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 	ENGINE_API UClass* Z_Construct_UClass_UMaterialInterface_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSplineComponent_UpdateSplineMeshes();
 	ENGINE_API UClass* Z_Construct_UClass_UShapeComponent_NoRegister();
+	INSTANCEDSPLINES_API UClass* Z_Construct_UClass_UFGInstancedSplineMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USplineMeshComponent_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
@@ -171,6 +172,14 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mSplineCollisionComponents;
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mSplineCollisionComponents_Inner;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCustomDepthSplineMeshInstances_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mCustomDepthSplineMeshInstances;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSplineMeshInstances_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mSplineMeshInstances;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCustomDepthSplineMeshComponents_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mCustomDepthSplineMeshComponents;
@@ -246,6 +255,22 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents = { "mSplineCollisionComponents", nullptr, (EPropertyFlags)0x0040008000000008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSplineComponent, mSplineCollisionComponents), METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents_Inner = { "mSplineCollisionComponents", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UShapeComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshInstances_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
+		{ "ToolTip", "If we have enabled custom depth pass, this will be non-null" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshInstances = { "mCustomDepthSplineMeshInstances", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSplineComponent, mCustomDepthSplineMeshInstances), Z_Construct_UClass_UFGInstancedSplineMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshInstances_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshInstances_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshInstances_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/FGSplineComponent.h" },
+		{ "ToolTip", "The meshes that make up the spline when instanced." },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshInstances = { "mSplineMeshInstances", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSplineComponent, mSplineMeshInstances), Z_Construct_UClass_UFGInstancedSplineMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshInstances_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshInstances_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshComponents_MetaData[] = {
 		{ "EditInline", "true" },
@@ -340,6 +365,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGSplineComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshInstances,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshInstances,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshComponents,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshComponents_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshComponents,
@@ -380,7 +407,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSplineComponent, 2857755421);
+	IMPLEMENT_CLASS(UFGSplineComponent, 1121045973);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSplineComponent>()
 	{
 		return UFGSplineComponent::StaticClass();

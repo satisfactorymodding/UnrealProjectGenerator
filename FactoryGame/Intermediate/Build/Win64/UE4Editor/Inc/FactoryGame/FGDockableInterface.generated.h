@@ -295,7 +295,7 @@ public: \
 	FactoryGame_Source_FactoryGame_Public_FGDockableInterface_h_29_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGDockableInterface_h_38_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGDockableInterface_h_41_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FactoryGame_Source_FactoryGame_Public_FGDockableInterface_h_29_RPC_WRAPPERS \
@@ -305,7 +305,7 @@ public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGDockableInterface_h_38_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGDockableInterface_h_41_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FactoryGame_Source_FactoryGame_Public_FGDockableInterface_h_29_RPC_WRAPPERS_NO_PURE_DECLS \

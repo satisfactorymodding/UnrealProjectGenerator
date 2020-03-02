@@ -24,7 +24,7 @@ class AFGRailroadSubsystem;
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FTrackGraph>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetAllTrainStations) \
 	{ \
@@ -74,7 +74,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FTrackGraph>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetAllTrainStations) \
 	{ \
@@ -124,33 +124,33 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FTrackGraph>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(AFGRailroadSubsystem, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGRailroadSubsystem(); \
 	friend struct Z_Construct_UClass_AFGRailroadSubsystem_Statics; \
 public: \
 	DECLARE_CLASS(AFGRailroadSubsystem, AFGSubsystem, COMPILED_IN_FLAGS(CLASS_Abstract), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGRailroadSubsystem) \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGRailroadSubsystem*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGRailroadSubsystem(); \
 	friend struct Z_Construct_UClass_AFGRailroadSubsystem_Statics; \
 public: \
 	DECLARE_CLASS(AFGRailroadSubsystem, AFGSubsystem, COMPILED_IN_FLAGS(CLASS_Abstract), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGRailroadSubsystem) \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGRailroadSubsystem*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGRailroadSubsystem(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGRailroadSubsystem) \
@@ -163,7 +163,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGRailroadSubsystem(AFGRailroadSubsystem&&); \
@@ -174,32 +174,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGRailroadSubsystem); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGRailroadSubsystem)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mStationNames() { return STRUCT_OFFSET(AFGRailroadSubsystem, mStationNames); } \
 	FORCEINLINE static uint32 __PPO__mTrackGraphs() { return STRUCT_OFFSET(AFGRailroadSubsystem, mTrackGraphs); } \
 	FORCEINLINE static uint32 __PPO__mTrainStationIdentifiers() { return STRUCT_OFFSET(AFGRailroadSubsystem, mTrainStationIdentifiers); } \
 	FORCEINLINE static uint32 __PPO__mTrains() { return STRUCT_OFFSET(AFGRailroadSubsystem, mTrains); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_53_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_56_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadSubsystem_h_59_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

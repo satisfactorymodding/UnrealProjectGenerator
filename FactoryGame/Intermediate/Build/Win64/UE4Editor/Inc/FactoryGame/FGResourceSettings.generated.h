@@ -17,7 +17,7 @@ struct FResourceDepositPackage;
 #endif
 #define FACTORYGAME_FGResourceSettings_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_51_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_54_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FResourceDepositPackage_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -31,7 +31,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FResourceDepositPa
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemSettings>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetStackSizeFromEnum) \
 	{ \
@@ -64,7 +64,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemSettings>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetStackSizeFromEnum) \
 	{ \
@@ -97,7 +97,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemSettings>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGResourceSettings(); \
 	friend struct Z_Construct_UClass_UFGResourceSettings_Statics; \
@@ -106,7 +106,7 @@ public: \
 	DECLARE_SERIALIZER(UFGResourceSettings)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGResourceSettings(); \
 	friend struct Z_Construct_UClass_UFGResourceSettings_Statics; \
@@ -115,7 +115,7 @@ public: \
 	DECLARE_SERIALIZER(UFGResourceSettings)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGResourceSettings(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGResourceSettings) \
@@ -128,7 +128,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGResourceSettings(UFGResourceSettings&&); \
@@ -139,26 +139,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGResourceSettings); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGResourceSettings)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_77_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_83_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_80_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGResourceSettings_h_86_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

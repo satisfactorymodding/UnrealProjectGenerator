@@ -20,9 +20,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FDestroyedFoliageEffectData>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGDestructiveProjectile(); \
 	friend struct Z_Construct_UClass_AFGDestructiveProjectile_Statics; \
@@ -31,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(AFGDestructiveProjectile)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGDestructiveProjectile(); \
 	friend struct Z_Construct_UClass_AFGDestructiveProjectile_Statics; \
@@ -40,7 +40,7 @@ public: \
 	DECLARE_SERIALIZER(AFGDestructiveProjectile)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGDestructiveProjectile(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGDestructiveProjectile) \
@@ -53,7 +53,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGDestructiveProjectile(AFGDestructiveProjectile&&); \
@@ -64,32 +64,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGDestructiveProjectile); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGDestructiveProjectile)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mDestructionCollisionComp() { return STRUCT_OFFSET(AFGDestructiveProjectile, mDestructionCollisionComp); } \
 	FORCEINLINE static uint32 __PPO__mDestroysRelevantActors() { return STRUCT_OFFSET(AFGDestructiveProjectile, mDestroysRelevantActors); } \
 	FORCEINLINE static uint32 __PPO__mDestroysFoliage() { return STRUCT_OFFSET(AFGDestructiveProjectile, mDestroysFoliage); } \
 	FORCEINLINE static uint32 __PPO__mMaxParticleSpawnsPerDetonation() { return STRUCT_OFFSET(AFGDestructiveProjectile, mMaxParticleSpawnsPerDetonation); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_45_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_48_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGDestructiveProjectile_h_51_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -130,7 +130,7 @@ public: \
 	FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_23_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_26_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_RPC_WRAPPERS \
@@ -140,7 +140,7 @@ public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_23_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_26_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_RPC_WRAPPERS_NO_PURE_DECLS \

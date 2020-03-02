@@ -25,6 +25,10 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial();
 	ENGINE_API UClass* Z_Construct_UClass_UMaterial_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial();
+	ENGINE_API UClass* Z_Construct_UClass_UMaterialInstance_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle();
 	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle();
@@ -42,6 +46,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 			{ "GetCompasTexture", &UFGResourceDescriptor::execGetCompasTexture },
 			{ "GetDecalMaterial", &UFGResourceDescriptor::execGetDecalMaterial },
 			{ "GetDecalSize", &UFGResourceDescriptor::execGetDecalSize },
+			{ "GetDepositMaterial", &UFGResourceDescriptor::execGetDepositMaterial },
+			{ "GetDepositMesh", &UFGResourceDescriptor::execGetDepositMesh },
 			{ "GetDestroyedParticle", &UFGResourceDescriptor::execGetDestroyedParticle },
 			{ "GetFactoryMiningParticle", &UFGResourceDescriptor::execGetFactoryMiningParticle },
 			{ "GetManualMiningAudioName", &UFGResourceDescriptor::execGetManualMiningAudioName },
@@ -242,6 +248,82 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics
+	{
+		struct FGResourceDescriptor_eventGetDepositMaterial_Parms
+		{
+			TSubclassOf<UFGResourceDescriptor>  inClass;
+			UMaterialInstance* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetDepositMaterial_Parms, ReturnValue), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetDepositMaterial_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Descriptor|Resource" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceDescriptor.h" },
+		{ "ToolTip", "Returns the material this resource deposit use (if any)" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, nullptr, "GetDepositMaterial", sizeof(FGResourceDescriptor_eventGetDepositMaterial_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics
+	{
+		struct FGResourceDescriptor_eventGetDepositMesh_Parms
+		{
+			TSubclassOf<UFGResourceDescriptor>  inClass;
+			UStaticMesh* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetDepositMesh_Parms, ReturnValue), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetDepositMesh_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Descriptor|Resource" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceDescriptor.h" },
+		{ "ToolTip", "The static mesh we want the Resource Deposit to use when it has this class selected" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, nullptr, "GetDepositMesh", sizeof(FGResourceDescriptor_eventGetDepositMesh_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -482,6 +564,14 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDecalMaterial_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mDecalMaterial;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDepositMaterial_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mDepositMaterial;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDepositMesh_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mDepositMesh;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -496,6 +586,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture, "GetCompasTexture" }, // 1683795935
 		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial, "GetDecalMaterial" }, // 2013681619
 		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize, "GetDecalSize" }, // 1154620606
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial, "GetDepositMaterial" }, // 339947110
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh, "GetDepositMesh" }, // 2508367978
 		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle, "GetDestroyedParticle" }, // 3522595927
 		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle, "GetFactoryMiningParticle" }, // 2204010113
 		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName, "GetManualMiningAudioName" }, // 2442930396
@@ -582,6 +674,23 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalMaterial = { "mDecalMaterial", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResourceDescriptor, mDecalMaterial), Z_Construct_UClass_UMaterial_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalMaterial_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMaterial_MetaData[] = {
+		{ "Category", "Item|World" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceDescriptor.h" },
+		{ "ToolTip", "The material this resource deposit use (if any)" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMaterial = { "mDepositMaterial", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResourceDescriptor, mDepositMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMaterial_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMesh_MetaData[] = {
+		{ "Category", "Item|World" },
+		{ "EditCondition", "!mUseMaterialDecal" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceDescriptor.h" },
+		{ "ToolTip", "The static mesh we want the Resource Deposit to use when it has this class selected" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMesh = { "mDepositMesh", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResourceDescriptor, mDepositMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGResourceDescriptor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningAudioName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDestroyedParticle,
@@ -592,6 +701,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mPingColor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalSize,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalMaterial,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMaterial,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMesh,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGResourceDescriptor_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UFGResourceDescriptor>::IsAbstract,
@@ -620,7 +731,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResourceDescriptor, 3489923804);
+	IMPLEMENT_CLASS(UFGResourceDescriptor, 2657895052);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGResourceDescriptor>()
 	{
 		return UFGResourceDescriptor::StaticClass();

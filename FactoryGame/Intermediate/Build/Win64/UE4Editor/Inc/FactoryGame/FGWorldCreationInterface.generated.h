@@ -82,7 +82,7 @@ public: \
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGWorldCreationInterface_h_13_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGWorldCreationInterface_h_26_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGWorldCreationInterface_h_29_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FactoryGame_Source_FactoryGame_Public_FGWorldCreationInterface_h_17_RPC_WRAPPERS \
@@ -91,7 +91,7 @@ public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGWorldCreationInterface_h_26_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGWorldCreationInterface_h_29_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FactoryGame_Source_FactoryGame_Public_FGWorldCreationInterface_h_17_RPC_WRAPPERS_NO_PURE_DECLS \

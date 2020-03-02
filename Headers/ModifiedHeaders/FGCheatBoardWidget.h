@@ -179,5 +179,8 @@ private:
 	/*UPROPERTY( Config )
 	TArray< UClass* > mPopularUClassChoices;*/
 
+
+public:
+	FORCEINLINE ~SFGCheatBoardWidget() = default;
 };
 #endif

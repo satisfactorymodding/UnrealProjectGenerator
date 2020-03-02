@@ -1,6 +1,7 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
+#include "Array.h"
 #include "Engine/StaticMesh.h"
 #include "UObject/Class.h"
 
@@ -110,4 +111,7 @@ private:
 	/**Used to store the initial offset of the support length component, so we can compensate for it during placement*/
 	float mSupportLengthOffset;
 
+
+public:
+	FORCEINLINE ~AFGPipelineSupportHologram() = default;
 };

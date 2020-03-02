@@ -13,6 +13,8 @@ class UParticleSystem;
 class UTexture2D;
 struct FLinearColor;
 class UMaterial;
+class UStaticMesh;
+class UMaterialInstance;
 #ifdef FACTORYGAME_FGResourceDescriptor_generated_h
 #error "FGResourceDescriptor.generated.h already included, missing '#pragma once' in FGResourceDescriptor.h"
 #endif
@@ -98,6 +100,24 @@ class UMaterial;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(UMaterial**)Z_Param__Result=UFGResourceDescriptor::GetDecalMaterial(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetDepositMesh) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UStaticMesh**)Z_Param__Result=UFGResourceDescriptor::GetDepositMesh(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetDepositMaterial) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UMaterialInstance**)Z_Param__Result=UFGResourceDescriptor::GetDepositMaterial(Z_Param_inClass); \
 		P_NATIVE_END; \
 	} \
  \
@@ -194,6 +214,24 @@ class UMaterial;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetDepositMesh) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UStaticMesh**)Z_Param__Result=UFGResourceDescriptor::GetDepositMesh(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetDepositMaterial) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UMaterialInstance**)Z_Param__Result=UFGResourceDescriptor::GetDepositMaterial(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execCanBeHandMined) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
@@ -247,6 +285,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGResourceDescriptor); \
 
 
 #define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceDescriptor_h_17_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__mDepositMesh() { return STRUCT_OFFSET(UFGResourceDescriptor, mDepositMesh); } \
+	FORCEINLINE static uint32 __PPO__mDepositMaterial() { return STRUCT_OFFSET(UFGResourceDescriptor, mDepositMaterial); } \
 	FORCEINLINE static uint32 __PPO__mDecalMaterial() { return STRUCT_OFFSET(UFGResourceDescriptor, mDecalMaterial); } \
 	FORCEINLINE static uint32 __PPO__mDecalSize() { return STRUCT_OFFSET(UFGResourceDescriptor, mDecalSize); } \
 	FORCEINLINE static uint32 __PPO__mPingColor() { return STRUCT_OFFSET(UFGResourceDescriptor, mPingColor); } \

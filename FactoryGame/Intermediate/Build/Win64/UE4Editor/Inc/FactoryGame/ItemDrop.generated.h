@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_ItemDrop_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_ItemDrop_h_35_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_ItemDrop_h_38_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemDropWithChance_Statics; \
 	static class UScriptStruct* StaticStruct();
 

@@ -28,7 +28,7 @@ static inline void FAudioMessageConcludedDelegate_DelegateWrapper(const FScriptD
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_RPC_WRAPPERS \
 	virtual void PlayNextDialogue_Implementation(); \
  \
 	DECLARE_FUNCTION(execAssignOnConcludedDelegate) \
@@ -81,7 +81,7 @@ static inline void FAudioMessageConcludedDelegate_DelegateWrapper(const FScriptD
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void PlayNextDialogue_Implementation(); \
  \
 	DECLARE_FUNCTION(execAssignOnConcludedDelegate) \
@@ -134,9 +134,9 @@ static inline void FAudioMessageConcludedDelegate_DelegateWrapper(const FScriptD
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_EVENT_PARMS
-#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGAudioMessage(); \
 	friend struct Z_Construct_UClass_UFGAudioMessage_Statics; \
@@ -145,7 +145,7 @@ public: \
 	DECLARE_SERIALIZER(UFGAudioMessage)
 
 
-#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGAudioMessage(); \
 	friend struct Z_Construct_UClass_UFGAudioMessage_Statics; \
@@ -154,7 +154,7 @@ public: \
 	DECLARE_SERIALIZER(UFGAudioMessage)
 
 
-#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGAudioMessage(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGAudioMessage) \
@@ -167,7 +167,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGAudioMessage(UFGAudioMessage&&); \
@@ -178,35 +178,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGAudioMessage); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGAudioMessage)
 
 
-#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mAudioMessageConcluded() { return STRUCT_OFFSET(UFGAudioMessage, mAudioMessageConcluded); } \
 	FORCEINLINE static uint32 __PPO__mAudioMessageInputComponent() { return STRUCT_OFFSET(UFGAudioMessage, mAudioMessageInputComponent); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_42_PROLOG \
-	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_45_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

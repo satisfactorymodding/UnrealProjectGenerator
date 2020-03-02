@@ -45,6 +45,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSubsystem() {}
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGColoredInstanceManager_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGProductionIndicatorInstanceManager_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UProxyHierarchicalInstancedStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableConveyorAttachment_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveInterface_NoRegister();
@@ -991,6 +992,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNetConstructionID
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mProductionIndicatorInstanceManager;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBuildableMeshInstances_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMapPropertyParams NewProp_mBuildableMeshInstances;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mBuildableMeshInstances_Key_KeyProp;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mBuildableMeshInstances_ValueProp;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBuildableInstancesActor_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mBuildableInstancesActor;
@@ -1177,6 +1184,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNetConstructionID
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mProductionIndicatorInstanceManager = { "mProductionIndicatorInstanceManager", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mProductionIndicatorInstanceManager), Z_Construct_UClass_UFGProductionIndicatorInstanceManager_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mProductionIndicatorInstanceManager_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mProductionIndicatorInstanceManager_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableMeshInstances_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/FGBuildableSubsystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableMeshInstances = { "mBuildableMeshInstances", nullptr, (EPropertyFlags)0x0040008000000008, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mBuildableMeshInstances), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableMeshInstances_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableMeshInstances_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableMeshInstances_Key_KeyProp = { "mBuildableMeshInstances_Key", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableMeshInstances_ValueProp = { "mBuildableMeshInstances", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UClass_UProxyHierarchicalInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableInstancesActor_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGBuildableSubsystem.h" },
 		{ "ToolTip", "Hierarchical instances for the factory buildings." },
@@ -1246,6 +1262,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNetConstructionID
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColoredInstances_Key_KeyProp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColoredInstances_ValueProp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mProductionIndicatorInstanceManager,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableMeshInstances,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableMeshInstances_Key_KeyProp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableMeshInstances_ValueProp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableInstancesActor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mConveyorAttachments,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mConveyorAttachments_Inner,
@@ -1285,7 +1304,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNetConstructionID
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSubsystem, 820369398);
+	IMPLEMENT_CLASS(AFGBuildableSubsystem, 744239285);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableSubsystem>()
 	{
 		return AFGBuildableSubsystem::StaticClass();

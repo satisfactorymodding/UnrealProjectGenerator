@@ -53,6 +53,9 @@ struct FACTORYGAME_API FSkySphereSettings
 	bool OverrideMoonIntensity;
 
 
+
+public:
+	FORCEINLINE ~FSkySphereSettings() = default;
 };
 
 UCLASS(HideCategories=(Input,Rendering))
@@ -183,4 +186,7 @@ protected:
 	float mViewMinInput;
 	float mViewMaxInput;
 #endif
+
+public:
+	FORCEINLINE ~AFGSkySphere() = default;
 };

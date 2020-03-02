@@ -49,9 +49,9 @@ class AFGEquipmentAttachment;
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FDisabledInputGate>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGUseState_ReviveInvalid_PlayerNotDead(); \
 	friend struct Z_Construct_UClass_UFGUseState_ReviveInvalid_PlayerNotDead_Statics; \
@@ -60,7 +60,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_ReviveInvalid_PlayerNotDead)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGUseState_ReviveInvalid_PlayerNotDead(); \
 	friend struct Z_Construct_UClass_UFGUseState_ReviveInvalid_PlayerNotDead_Statics; \
@@ -69,7 +69,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_ReviveInvalid_PlayerNotDead)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGUseState_ReviveInvalid_PlayerNotDead(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGUseState_ReviveInvalid_PlayerNotDead) \
@@ -82,7 +82,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGUseState_ReviveInvalid_PlayerNotDead(UFGUseState_ReviveInvalid_PlayerNotDead&&); \
@@ -93,35 +93,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGUseState_ReviveInvalid_PlayerNotDead); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGUseState_ReviveInvalid_PlayerNotDead)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_88_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_91_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_94_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_ReviveInvalid_PlayerNotDead>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGUseState_ReviveValid(); \
 	friend struct Z_Construct_UClass_UFGUseState_ReviveValid_Statics; \
@@ -130,7 +130,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_ReviveValid)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGUseState_ReviveValid(); \
 	friend struct Z_Construct_UClass_UFGUseState_ReviveValid_Statics; \
@@ -139,7 +139,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_ReviveValid)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGUseState_ReviveValid(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGUseState_ReviveValid) \
@@ -152,7 +152,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGUseState_ReviveValid(UFGUseState_ReviveValid&&); \
@@ -163,33 +163,33 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGUseState_ReviveValid); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGUseState_ReviveValid)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_99_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_105_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_102_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_108_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_ReviveValid>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_RPC_WRAPPERS \
 	virtual bool Server_PickUpItem_Validate(AFGItemPickup* ); \
 	virtual void Server_PickUpItem_Implementation(AFGItemPickup* itemPickup); \
 	virtual bool Server_OnUseReleased_Validate(); \
@@ -983,7 +983,7 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_ReviveValid>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool Server_PickUpItem_Validate(AFGItemPickup* ); \
 	virtual void Server_PickUpItem_Implementation(AFGItemPickup* itemPickup); \
 	virtual bool Server_OnUseReleased_Validate(); \
@@ -1777,7 +1777,7 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_ReviveValid>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_EVENT_PARMS \
 	struct FGCharacterPlayer_eventGetActiveCrosshairState_Parms \
 	{ \
 		ECrosshairState ReturnValue; \
@@ -1847,8 +1847,8 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_ReviveValid>();
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGCharacterPlayer(); \
 	friend struct Z_Construct_UClass_AFGCharacterPlayer_Statics; \
@@ -1860,7 +1860,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGCharacterPlayer*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGCharacterPlayer(); \
 	friend struct Z_Construct_UClass_AFGCharacterPlayer_Statics; \
@@ -1872,7 +1872,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGCharacterPlayer*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGCharacterPlayer(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGCharacterPlayer) \
@@ -1885,7 +1885,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGCharacterPlayer(AFGCharacterPlayer&&); \
@@ -1896,7 +1896,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCharacterPlayer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGCharacterPlayer)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mMesh3P() { return STRUCT_OFFSET(AFGCharacterPlayer, mMesh3P); } \
 	FORCEINLINE static uint32 __PPO__mFoliagePickupProxyClass() { return STRUCT_OFFSET(AFGCharacterPlayer, mFoliagePickupProxyClass); } \
 	FORCEINLINE static uint32 __PPO__mFoliagePickupProxy() { return STRUCT_OFFSET(AFGCharacterPlayer, mFoliagePickupProxy); } \
@@ -1956,30 +1956,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCharacterPlayer); \
 	FORCEINLINE static uint32 __PPO__mSlideToCrouchSpeed() { return STRUCT_OFFSET(AFGCharacterPlayer, mSlideToCrouchSpeed); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_110_PROLOG \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_119_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_113_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

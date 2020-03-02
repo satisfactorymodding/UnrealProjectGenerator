@@ -70,4 +70,7 @@ public:
 		PxF32& wheelTorque, PxF32& tireLongForceMag, PxF32& tireLatForceMag, PxF32& tireAlignMoment);
 
 	static class UTireConfig* GetDefaultTireConfig();
+
+public:
+	FORCEINLINE ~UFGVehicleWheel() = default;
 };

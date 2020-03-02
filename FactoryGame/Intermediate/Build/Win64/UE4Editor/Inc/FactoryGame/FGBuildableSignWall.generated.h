@@ -21,7 +21,7 @@ struct FSignWallData;
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSignWallData>();
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_SignData) \
 	{ \
@@ -50,7 +50,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSignWallData>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_SignData) \
 	{ \
@@ -79,7 +79,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSignWallData>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildableSignWall(); \
 	friend struct Z_Construct_UClass_AFGBuildableSignWall_Statics; \
@@ -88,7 +88,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildableSignWall)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildableSignWall(); \
 	friend struct Z_Construct_UClass_AFGBuildableSignWall_Statics; \
@@ -97,7 +97,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildableSignWall)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildableSignWall(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildableSignWall) \
@@ -110,7 +110,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGBuildableSignWall(AFGBuildableSignWall&&); \
@@ -121,32 +121,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableSignWall); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildableSignWall)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mSignDisplayRoot() { return STRUCT_OFFSET(AFGBuildableSignWall, mSignDisplayRoot); } \
 	FORCEINLINE static uint32 __PPO__mTextDisplayRoot() { return STRUCT_OFFSET(AFGBuildableSignWall, mTextDisplayRoot); } \
 	FORCEINLINE static uint32 __PPO__mTextRenderComponent() { return STRUCT_OFFSET(AFGBuildableSignWall, mTextRenderComponent); } \
 	FORCEINLINE static uint32 __PPO__mSignData() { return STRUCT_OFFSET(AFGBuildableSignWall, mSignData); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_42_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_45_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableSignWall_h_48_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

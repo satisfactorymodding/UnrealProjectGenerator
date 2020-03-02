@@ -24,6 +24,9 @@
 class FACTORYGAME_API EOS_ProductUserId
 {
     
+
+public:
+	FORCEINLINE ~EOS_ProductUserId() = default;
 };
 
 UENUM(BlueprintType)
@@ -73,6 +76,9 @@ struct FACTORYGAME_API FOnJoinSessionData
 	uint8 JoinInProgress:1;
 private:
 	EJoinSessionState State;
+
+public:
+	FORCEINLINE ~FOnJoinSessionData() = default;
 };
 
 /**
@@ -106,6 +112,9 @@ struct FACTORYGAME_API FFGModPackage
 		Version = TEXT( "" );
 		Description = TEXT( "" );
 	}
+
+public:
+	FORCEINLINE ~FFGModPackage() = default;
 };
 
 USTRUCT( BlueprintType )
@@ -121,6 +130,9 @@ struct FACTORYGAME_API FFGGameNetworkErrorMsg
 
 	UPROPERTY( BlueprintReadWrite )
 	FString errorMsg;
+
+public:
+	FORCEINLINE ~FFGGameNetworkErrorMsg() = default;
 };
 
 
@@ -324,4 +336,7 @@ public:
 	bool mHasSeenAlphaInfo;
 private:
 	void JoinSession_Internal();
+
+public:
+	FORCEINLINE ~UFGGameInstance() = default;
 };

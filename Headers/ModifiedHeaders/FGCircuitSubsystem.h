@@ -144,4 +144,7 @@ private:
 
 	/** Counter for generating new circuit ids. */
 	int32 IDCounter;
+
+public:
+	FORCEINLINE ~AFGCircuitSubsystem() = default;
 };

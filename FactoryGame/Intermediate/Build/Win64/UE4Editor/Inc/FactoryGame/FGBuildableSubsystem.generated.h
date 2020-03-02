@@ -18,28 +18,28 @@ class AFGBuildableSubsystem;
 #endif
 #define FACTORYGAME_FGBuildableSubsystem_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_96_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_108_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBuildableGroupTimeData_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FBuildableGroupTimeData>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_85_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_94_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FConveyorBucket_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FConveyorBucket>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_73_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_79_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBuildableBucket_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FBuildableBucket>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_61_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_64_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -66,7 +66,7 @@ static inline void FOnBuildableConstructedGlobal_DelegateWrapper(const FMulticas
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetNbColorSlotsExposedToPlayers) \
 	{ \
@@ -160,7 +160,7 @@ static inline void FOnBuildableConstructedGlobal_DelegateWrapper(const FMulticas
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetNbColorSlotsExposedToPlayers) \
 	{ \
@@ -254,7 +254,7 @@ static inline void FOnBuildableConstructedGlobal_DelegateWrapper(const FMulticas
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildableSubsystem(); \
 	friend struct Z_Construct_UClass_AFGBuildableSubsystem_Statics; \
@@ -266,7 +266,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGBuildableSubsystem*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildableSubsystem(); \
 	friend struct Z_Construct_UClass_AFGBuildableSubsystem_Statics; \
@@ -278,7 +278,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGBuildableSubsystem*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildableSubsystem(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildableSubsystem) \
@@ -291,7 +291,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGBuildableSubsystem(AFGBuildableSubsystem&&); \
@@ -302,10 +302,11 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableSubsystem); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildableSubsystem)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mBuildables() { return STRUCT_OFFSET(AFGBuildableSubsystem, mBuildables); } \
 	FORCEINLINE static uint32 __PPO__mConveyorAttachments() { return STRUCT_OFFSET(AFGBuildableSubsystem, mConveyorAttachments); } \
 	FORCEINLINE static uint32 __PPO__mBuildableInstancesActor() { return STRUCT_OFFSET(AFGBuildableSubsystem, mBuildableInstancesActor); } \
+	FORCEINLINE static uint32 __PPO__mBuildableMeshInstances() { return STRUCT_OFFSET(AFGBuildableSubsystem, mBuildableMeshInstances); } \
 	FORCEINLINE static uint32 __PPO__mProductionIndicatorInstanceManager() { return STRUCT_OFFSET(AFGBuildableSubsystem, mProductionIndicatorInstanceManager); } \
 	FORCEINLINE static uint32 __PPO__mColoredInstances() { return STRUCT_OFFSET(AFGBuildableSubsystem, mColoredInstances); } \
 	FORCEINLINE static uint32 __PPO__mColorSlotsPrimary() { return STRUCT_OFFSET(AFGBuildableSubsystem, mColorSlotsPrimary); } \
@@ -324,25 +325,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableSubsystem); \
 	FORCEINLINE static uint32 __PPO__mFactoryTickFunction() { return STRUCT_OFFSET(AFGBuildableSubsystem, mFactoryTickFunction); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_115_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_130_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_118_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGBuildableSubsystem_h_133_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

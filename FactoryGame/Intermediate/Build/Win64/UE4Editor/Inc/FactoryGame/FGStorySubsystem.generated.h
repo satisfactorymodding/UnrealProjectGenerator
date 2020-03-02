@@ -18,7 +18,7 @@ class AFGCharacterPlayer;
 #endif
 #define FACTORYGAME_FGStorySubsystem_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_117_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_132_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FResearchTreeMessageData_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__ResearchTree() { return STRUCT_OFFSET(FResearchTreeMessageData, ResearchTree); }
@@ -26,7 +26,7 @@ class AFGCharacterPlayer;
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FResearchTreeMessageData>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_100_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_112_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSchematicMessagePair_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__SchematicUnlocked() { return STRUCT_OFFSET(FSchematicMessagePair, SchematicUnlocked); }
@@ -34,7 +34,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FResearchTreeMessa
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSchematicMessagePair>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_57_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_63_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemFoundData_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__SchematicClass() { return STRUCT_OFFSET(FItemFoundData, SchematicClass); } \
@@ -51,7 +51,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemFoundData>();
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMapAreaVisitedData>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execSetupDelegates) \
 	{ \
@@ -117,7 +117,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMapAreaVisitedDat
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSetupDelegates) \
 	{ \
@@ -183,7 +183,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMapAreaVisitedDat
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGStorySubsystem(); \
 	friend struct Z_Construct_UClass_AFGStorySubsystem_Statics; \
@@ -193,7 +193,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGStorySubsystem*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGStorySubsystem(); \
 	friend struct Z_Construct_UClass_AFGStorySubsystem_Statics; \
@@ -203,7 +203,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGStorySubsystem*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGStorySubsystem(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGStorySubsystem) \
@@ -216,7 +216,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGStorySubsystem() { }; \
 private: \
@@ -229,32 +229,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGStorySubsystem); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGStorySubsystem)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mSchematicMessageData() { return STRUCT_OFFSET(AFGStorySubsystem, mSchematicMessageData); } \
 	FORCEINLINE static uint32 __PPO__mItemFoundData() { return STRUCT_OFFSET(AFGStorySubsystem, mItemFoundData); } \
 	FORCEINLINE static uint32 __PPO__mResearchTreeMessageData() { return STRUCT_OFFSET(AFGStorySubsystem, mResearchTreeMessageData); } \
 	FORCEINLINE static uint32 __PPO__mResearchTimerCompleteMessage() { return STRUCT_OFFSET(AFGStorySubsystem, mResearchTimerCompleteMessage); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_138_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_156_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_141_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGStorySubsystem_h_159_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
