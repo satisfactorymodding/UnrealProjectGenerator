@@ -131,7 +131,7 @@ public:
 	virtual void CalcVelocity( float dt, float friction, bool isFluid, float brakingDeceleration ) override;
 	virtual float GetMaxSpeed() const override;
 	virtual void SetDefaultMovementMode() override;
-	virtual float GetMaxJumpZVelocity() const /* override MODDING EDIT: Probably another CSS custom engine thing */;
+	virtual float GetMaxJumpZVelocity() const override;
 	// End UCharacterMovementComponent
 
 

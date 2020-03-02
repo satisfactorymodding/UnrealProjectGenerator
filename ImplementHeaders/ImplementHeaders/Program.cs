@@ -204,6 +204,11 @@ namespace ImplementHeaders
                 string isOverride = function.Groups[12].Value;
                 string extras = function.Groups[13].Value;
 
+                if (functionName.Contains("CreateInventoryComponentOfClass"))
+                {
+
+                }
+
                 if (extras.Contains("PURE_VIRTUAL")) // ignore pure virtual macro
                     continue;
 
@@ -213,6 +218,7 @@ namespace ImplementHeaders
                 if (!string.IsNullOrWhiteSpace(template)) // All of them end up commented
                     continue;
                 // regex takes too long and it is the only other way to fix UPARAM's closing bracket being matched as parameter closing bracket...
+                // also happens on non primitive default parameters 
                 int bracketCount = parameters.Count(ch => ch == '(') - parameters.Count(ch => ch == ')');
                 if (bracketCount > 0)
                 {
@@ -234,6 +240,7 @@ namespace ImplementHeaders
                         isConst = " override";
                 }
 
+                parameters = Regex.Replace(parameters, @"UPARAM\s*\(.*?\)", "");
 
                 if (extras.Contains('{') || extras.Contains("delete") || extras.Contains("="))
                     continue; // already implemented in header and it matched "... { return ...; }"
@@ -299,7 +306,7 @@ namespace ImplementHeaders
                     if (returnType.Contains("void") || string.IsNullOrWhiteSpace(returnType))
                     {
                         if (NeedsSuper.Contains(functionName.Trim()))
-                            result += $"Super::{functionName}({string.Join(",", Regex.Matches(FixDefaults(parameters), @"(?:.*? )?(.*?) (.*?)(?:, ?|\)|$)").Cast<Match>().Select(match => match.Groups[2].Value))}); ";
+                            result += $"Super::{functionName}({string.Join(",", Regex.Matches(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?:.*? )??(.*?) ([^ ]*?)(?:, ?| \)|$)").Cast<Match>().Select(match => match.Groups[2].Value))}); ";
                         result += $"}}";
                     }
                     else
@@ -379,8 +386,26 @@ namespace ImplementHeaders
 
         private static string FixDefaults(string parameters)
         {
-            string ret = string.Join(",", parameters.Trim().TrimStart('(').TrimEnd(')').Split(',').Select(param => param.Trim().Contains("UPARAM") ? param : param.Split('=')[0]));
-            return ret;
+            string result = "";
+            int paranthesisDepth = 1;
+            bool isInDefault = false;
+            for(int i = 1; i < parameters.Length; i++)
+            {
+                if (parameters[i] == '(')
+                    paranthesisDepth++;
+                if (parameters[i] == ')')
+                    paranthesisDepth--;
+
+                if(parameters[i] == '=')
+                    isInDefault = true;
+
+                if (parameters[i] == ',' && paranthesisDepth == 1)
+                    isInDefault = false;
+
+                if (!isInDefault)
+                    result += parameters[i];
+            }
+            return result.Trim();
         }
 
         private static bool IsAllCaps(string str)

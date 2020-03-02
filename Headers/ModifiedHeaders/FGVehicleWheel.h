@@ -29,9 +29,8 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = Wheel)
 	bool mAutoGenerateCollisionCylinder;
 
-	// MODDING EDIT
-	///** PhysXWheel User defineable data that is passed to the shader */
-	//FPhysxWheelUserData mPhysxWheelUserData;
+	/** PhysXWheel User defineable data that is passed to the shader */
+	FPhysxWheelUserData mPhysxWheelUserData;
 
 	/** PhysX User defineable data that is passed to the shader */
 	FPhysxUserData mPhysxUserData;

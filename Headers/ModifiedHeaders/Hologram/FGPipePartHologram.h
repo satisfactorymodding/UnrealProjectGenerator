@@ -20,6 +20,8 @@ class FACTORYGAME_API AFGPipePartHologram : public AFGFactoryHologram
 	
 public:
 	AFGPipePartHologram();
+    
+	virtual void GetLifetimeReplicatedProps(class TArray<class FLifetimeProperty, class FDefaultAllocator> & OutReplicatedProps) const override; // MODDING EDIT: Needed for the implementer to detect it
 
 	virtual void BeginPlay() override;
 

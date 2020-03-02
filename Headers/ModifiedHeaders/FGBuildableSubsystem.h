@@ -364,9 +364,9 @@ private:
 	/** Hierarchical instances for the factory buildings. */
 	UPROPERTY()
 	AActor* mBuildableInstancesActor;
-	// MODDING EDIT
-	//UPROPERTY()
-	//TMap< class UStaticMesh*, class UProxyHierarchicalInstancedStaticMeshComponent* > mBuildableMeshInstances;
+	
+	UPROPERTY()
+	TMap< class UStaticMesh*, class UProxyHierarchicalInstancedStaticMeshComponent* > mBuildableMeshInstances;
 
 	/**/
 	UPROPERTY()

@@ -22,7 +22,9 @@
 
 // MODDING EDIT: dummy classes from the Epic Online missing headers
 class FACTORYGAME_API EOS_ProductUserId
-{};
+{
+    
+};
 
 UENUM(BlueprintType)
 enum class EJoinSessionState : uint8

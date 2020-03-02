@@ -24,6 +24,7 @@ namespace FixHeaders
             {"UInterface", "UObject/Interface.h" },
             {"UBlueprintFunctionLibrary", "Kismet/BlueprintFunctionLibrary.h" },
             {"USplineMeshComponent", "Components/SplineMeshComponent.h" },
+            {"UFGInstancedSplineMeshComponent", "FGInstancedSplineMeshComponent.h" },
             {"SLATE", "UMG.h" },
             {"AActor", "GameFramework/Actor.h" },
             {"FString", "UnrealString.h" },
@@ -224,7 +225,7 @@ namespace FixHeaders
             }
 
             // fix UInterface missing constructor
-            file = Regex.Replace(file, @"(class (.*?) : public UInterface\s*{\s*)GENERATED_UINTERFACE_BODY\(\)[\w\s_&\(\):{}]*(};)", "$1\r\n    GENERATED_BODY()\r\n    $2(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} \r\n$3");
+            file = Regex.Replace(file, @"(class (.*?) : public UInterface\s*{\s*)GENERATED_UINTERFACE_BODY\(\)[\w\s_&\(\):{}]*(};)", "$1\r\n\tGENERATED_BODY()\r\n\t$2(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} \r\n$3");
 
             // fix CustomEventUsing
             int customEventCount = Regex.Matches(file, @", ?CustomEventUsing ?= ?[^\s,\)]*").Count;
@@ -251,7 +252,30 @@ namespace FixHeaders
             }), RegexOptions.Multiline);
             if (factoryGameApi > 0)
                 hasChanges = true;
-            
+
+            // add FORCEINLINE default destructor
+            int defaultDestructor = 0;
+            file = Regex.Replace(file, @"^((?:UCLASS|UINTERFACE|USTRUCT|UENUM)\s*\(.*\)\r\n)?([ \t]*)(class|struct)\s(FACTORYGAME_API\s)?([\w<>\s]*?)(\s?:\s?.*?)?\s*{((?:.|\n)*?)^\2};", new MatchEvaluator((match) =>
+            {
+                if (match.Groups[7].Value.Contains($"~{match.Groups[5].Value.Trim()}()"))
+                {
+                    // Destructor already exists.
+                    // TODO: Check if it is FORCEINLINE
+                }
+                else if(match.Groups[5].Value.Trim()[0] == 'I')
+                {
+                    // GENERATED_IINTERFACE_BODY already defines the destructor
+                }
+                else
+                {
+                    defaultDestructor++;
+                    return $"{match.Groups[1]}{match.Groups[2]}{match.Groups[3]} {match.Groups[4]}{match.Groups[5]}{match.Groups[6]}\r\n{{{match.Groups[7].Value}\r\npublic:\r\n\tFORCEINLINE ~{match.Groups[5]}() = default;\r\n{match.Groups[2]}}};";
+                }
+                return match.Value;
+            }), RegexOptions.Multiline);
+            if (defaultDestructor > 0)
+                hasChanges = true;
+
             if (hasChanges)
                 FixedFileCount++;
 

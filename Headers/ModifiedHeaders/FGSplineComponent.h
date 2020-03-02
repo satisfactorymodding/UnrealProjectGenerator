@@ -129,14 +129,13 @@ private:
 	UPROPERTY()
 	TArray< class USplineMeshComponent* > mCustomDepthSplineMeshComponents;
 
-	// MODDING EDIT
-	///** The meshes that make up the spline when instanced. */
-	//UPROPERTY()
-	//class UFGInstancedSplineMeshComponent* mSplineMeshInstances;
-	//
-	///** If we have enabled custom depth pass, this will be non-null */
-	//UPROPERTY()
-	//class UFGInstancedSplineMeshComponent* mCustomDepthSplineMeshInstances;
+	/** The meshes that make up the spline when instanced. */
+	UPROPERTY()
+	class UFGInstancedSplineMeshComponent* mSplineMeshInstances;
+	
+	/** If we have enabled custom depth pass, this will be non-null */
+	UPROPERTY()
+	class UFGInstancedSplineMeshComponent* mCustomDepthSplineMeshInstances;
 
 	/** The collisions that make up the spline. */
 	UPROPERTY()

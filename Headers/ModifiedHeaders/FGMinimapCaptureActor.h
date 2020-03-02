@@ -53,7 +53,6 @@ struct FACTORYGAME_API FFGHeightData
 	TArray< int32 > noHitIndexes;
 	TArray< int32 > deepHitIndexes;
 
-	// MODDING EDIT removed FFGHeightData::
 	void AddHitLocation( int32 index, float zValue )
 	{
 		zHitLocations[ index ] = zValue;

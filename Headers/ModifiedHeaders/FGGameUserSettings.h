@@ -161,8 +161,7 @@ public:
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Settings" )
 	bool IsPostProcessUsingCustomSettings();
 
-	// MODDING EDIT: Does not override error
-	//virtual void SetPostProcessingQuality( int32 Value ) override;
+	virtual void SetPostProcessingQuality( int32 Value ) override;
 
 	/** Update the custom post process settings like motion blur etc. */
 	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Settings" )
