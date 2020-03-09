@@ -10,9 +10,9 @@
 #include "STreeView.h"
 
 // MODDING EDIT: doesn't inherit the one from FactoryGame.h
+#ifndef WITH_CHEATS // and now it does? what?
 #define WITH_CHEATS 0
-
-#if WITH_CHEATS
+#endif
 
 
 #include "FGCheatBoardMenuElements.h"
