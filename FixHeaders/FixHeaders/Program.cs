@@ -42,6 +42,16 @@ namespace FixHeaders
             {"FGuid", "Misc/Guid.h" }
         };
 
+        private static List<string> SkipCtorClasses = new List<string>
+        {
+            "UFGConsoleCommandManager",
+            "AFGBuildableGeneratorGeoThermal"
+        };
+
+        private static List<string> SkipDtorClasses = new List<string>
+        {
+        };
+
         static void Main(string[] args)
         {
             string oldPath, modifiedPath, newPath, savePath;
@@ -286,6 +296,9 @@ namespace FixHeaders
                 }
                 if (!needsDtor && !needsCtor)
                     return match.Value;
+
+                needsCtor = needsCtor && !SkipCtorClasses.Contains(match.Groups[5].Value.Trim());
+                needsDtor = needsDtor && !SkipDtorClasses.Contains(match.Groups[5].Value.Trim());
 
                 string toAdd = $"\r\npublic:{(needsDtor ? $"\r\n\tFORCEINLINE ~{match.Groups[5]}() = default;" : "")}{(needsCtor ? $"\r\n\tFORCEINLINE {match.Groups[5]}() = default;" : "")}\r\n";
 
