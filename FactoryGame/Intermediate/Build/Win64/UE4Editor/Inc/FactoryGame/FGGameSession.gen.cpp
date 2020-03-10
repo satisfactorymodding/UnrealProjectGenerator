@@ -122,6 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameSession() {}
 		{ "IncludePath", "FGGameSession.h" },
 		{ "ModuleRelativePath", "Public/FGGameSession.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
+		{ "ToolTip", "@OSS: Responsibility:\nHandle interaction on server and updating the SessionSettings (number of players connected and other things that need to be propagated the the matchmaking services)\nInternally it converts it to presence and posts it to the hosts presence.\n@todo DedicatedServers need to propagate this to a real matchmaking backend, as they have no presence to post that data to" },
 	};
 #endif
 #if WITH_METADATA
@@ -187,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameSession() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGameSession, 479041127);
+	IMPLEMENT_CLASS(AFGGameSession, 1607853239);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGameSession>()
 	{
 		return AFGGameSession::StaticClass();

@@ -971,7 +971,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDoSpawnParticle_MetaData[] = {
 		{ "Category", "Resources" },
 		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
-		{ "ToolTip", "Bool for is we should spawn particle" },
+		{ "ToolTip", "Bool for is we should spawn particle - @todo Do we really need to save this? //[Dylan 3/2/2020]" },
 	};
 #endif
 	void Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDoSpawnParticle_SetBit(void* Obj)
@@ -1048,14 +1048,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsOccupied_MetaData[] = {
 		{ "Category", "Resources" },
 		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
-		{ "ToolTip", "If true, then we are occupied by something" },
+		{ "ToolTip", "If true, then we are occupied by something // [Dylan 3/2/2020] - Removed savegame meta" },
 	};
 #endif
 	void Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsOccupied_SetBit(void* Obj)
 	{
 		((AFGResourceNode*)Obj)->mIsOccupied = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsOccupied = { "mIsOccupied", "OnRep_IsOccupied", (EPropertyFlags)0x0020080101000034, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGResourceNode), &Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsOccupied_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsOccupied_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsOccupied_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsOccupied = { "mIsOccupied", "OnRep_IsOccupied", (EPropertyFlags)0x0020080100000034, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGResourceNode), &Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsOccupied_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsOccupied_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsOccupied_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourcesLeft_MetaData[] = {
 		{ "Category", "Resources" },
@@ -1158,7 +1158,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceNode, 2497643946);
+	IMPLEMENT_CLASS(AFGResourceNode, 2803103544);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGResourceNode>()
 	{
 		return AFGResourceNode::StaticClass();

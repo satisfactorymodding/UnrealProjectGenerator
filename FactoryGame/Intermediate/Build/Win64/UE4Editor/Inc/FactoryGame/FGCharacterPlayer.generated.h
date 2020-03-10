@@ -205,6 +205,10 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_ReviveValid>();
 	virtual bool Client_Revived_Validate(); \
 	virtual void Client_Revived_Implementation(); \
 	virtual void OnDisabledInputGateChanged_Implementation(FDisabledInputGate newValue); \
+	virtual bool Client_HyperTubeEnd_Validate(FVector , FVector , float ); \
+	virtual void Client_HyperTubeEnd_Implementation(FVector point, FVector velocity, float startTime); \
+	virtual bool Client_HyperTubeStart_Validate(AActor* , float , float , float ); \
+	virtual void Client_HyperTubeStart_Implementation(AActor* tubeStart, float startTime, float pipeVelocity, float pipeProgress); \
 	virtual void Multicast_PlayJumpEffects_Implementation(bool boostJump); \
 	virtual FVector GetInventoryDropLocation_Implementation(const UFGInventoryComponent* component, FInventoryStack stack); \
 	virtual bool Server_ToggleSwitchControl_Validate(AFGBuildableRailroadSwitchControl* ); \
@@ -554,6 +558,39 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_ReviveValid>();
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnInventorySlotsUnlocked(Z_Param_newUnlockedSlots); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execClient_HyperTubeEnd) \
+	{ \
+		P_GET_STRUCT(FVector,Z_Param_point); \
+		P_GET_STRUCT(FVector,Z_Param_velocity); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_startTime); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Client_HyperTubeEnd_Validate(Z_Param_point,Z_Param_velocity,Z_Param_startTime)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Client_HyperTubeEnd_Validate")); \
+			return; \
+		} \
+		P_THIS->Client_HyperTubeEnd_Implementation(Z_Param_point,Z_Param_velocity,Z_Param_startTime); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execClient_HyperTubeStart) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_tubeStart); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_startTime); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_pipeVelocity); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_pipeProgress); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Client_HyperTubeStart_Validate(Z_Param_tubeStart,Z_Param_startTime,Z_Param_pipeVelocity,Z_Param_pipeProgress)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Client_HyperTubeStart_Validate")); \
+			return; \
+		} \
+		P_THIS->Client_HyperTubeStart_Implementation(Z_Param_tubeStart,Z_Param_startTime,Z_Param_pipeVelocity,Z_Param_pipeProgress); \
 		P_NATIVE_END; \
 	} \
  \
@@ -999,6 +1036,10 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_ReviveValid>();
 	virtual bool Client_Revived_Validate(); \
 	virtual void Client_Revived_Implementation(); \
 	virtual void OnDisabledInputGateChanged_Implementation(FDisabledInputGate newValue); \
+	virtual bool Client_HyperTubeEnd_Validate(FVector , FVector , float ); \
+	virtual void Client_HyperTubeEnd_Implementation(FVector point, FVector velocity, float startTime); \
+	virtual bool Client_HyperTubeStart_Validate(AActor* , float , float , float ); \
+	virtual void Client_HyperTubeStart_Implementation(AActor* tubeStart, float startTime, float pipeVelocity, float pipeProgress); \
 	virtual void Multicast_PlayJumpEffects_Implementation(bool boostJump); \
 	virtual FVector GetInventoryDropLocation_Implementation(const UFGInventoryComponent* component, FInventoryStack stack); \
 	virtual bool Server_ToggleSwitchControl_Validate(AFGBuildableRailroadSwitchControl* ); \
@@ -1348,6 +1389,39 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_ReviveValid>();
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnInventorySlotsUnlocked(Z_Param_newUnlockedSlots); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execClient_HyperTubeEnd) \
+	{ \
+		P_GET_STRUCT(FVector,Z_Param_point); \
+		P_GET_STRUCT(FVector,Z_Param_velocity); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_startTime); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Client_HyperTubeEnd_Validate(Z_Param_point,Z_Param_velocity,Z_Param_startTime)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Client_HyperTubeEnd_Validate")); \
+			return; \
+		} \
+		P_THIS->Client_HyperTubeEnd_Implementation(Z_Param_point,Z_Param_velocity,Z_Param_startTime); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execClient_HyperTubeStart) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_tubeStart); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_startTime); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_pipeVelocity); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_pipeProgress); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Client_HyperTubeStart_Validate(Z_Param_tubeStart,Z_Param_startTime,Z_Param_pipeVelocity,Z_Param_pipeProgress)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Client_HyperTubeStart_Validate")); \
+			return; \
+		} \
+		P_THIS->Client_HyperTubeStart_Implementation(Z_Param_tubeStart,Z_Param_startTime,Z_Param_pipeVelocity,Z_Param_pipeProgress); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1778,6 +1852,19 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_ReviveValid>();
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGCharacterPlayer_h_122_EVENT_PARMS \
+	struct FGCharacterPlayer_eventClient_HyperTubeEnd_Parms \
+	{ \
+		FVector point; \
+		FVector velocity; \
+		float startTime; \
+	}; \
+	struct FGCharacterPlayer_eventClient_HyperTubeStart_Parms \
+	{ \
+		AActor* tubeStart; \
+		float startTime; \
+		float pipeVelocity; \
+		float pipeProgress; \
+	}; \
 	struct FGCharacterPlayer_eventGetActiveCrosshairState_Parms \
 	{ \
 		ECrosshairState ReturnValue; \

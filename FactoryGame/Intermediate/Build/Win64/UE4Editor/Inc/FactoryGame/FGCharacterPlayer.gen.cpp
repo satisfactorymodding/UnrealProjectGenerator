@@ -27,6 +27,10 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_CrouchPressed();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased();
@@ -49,7 +53,6 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGInventoryComponentBeltSlot_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor();
-	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildGun_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent();
@@ -68,7 +71,6 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetInventory();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGInventoryComponent_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation();
-	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FInventoryStack();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetOutline();
@@ -624,6 +626,25 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		ProcessEvent(FindFunctionChecked(NAME_AFGCharacterPlayer_CameraZoomOut),NULL);
 	}
+	static FName NAME_AFGCharacterPlayer_Client_HyperTubeEnd = FName(TEXT("Client_HyperTubeEnd"));
+	void AFGCharacterPlayer::Client_HyperTubeEnd(FVector point, FVector velocity, float startTime)
+	{
+		FGCharacterPlayer_eventClient_HyperTubeEnd_Parms Parms;
+		Parms.point=point;
+		Parms.velocity=velocity;
+		Parms.startTime=startTime;
+		ProcessEvent(FindFunctionChecked(NAME_AFGCharacterPlayer_Client_HyperTubeEnd),&Parms);
+	}
+	static FName NAME_AFGCharacterPlayer_Client_HyperTubeStart = FName(TEXT("Client_HyperTubeStart"));
+	void AFGCharacterPlayer::Client_HyperTubeStart(AActor* tubeStart, float startTime, float pipeVelocity, float pipeProgress)
+	{
+		FGCharacterPlayer_eventClient_HyperTubeStart_Parms Parms;
+		Parms.tubeStart=tubeStart;
+		Parms.startTime=startTime;
+		Parms.pipeVelocity=pipeVelocity;
+		Parms.pipeProgress=pipeProgress;
+		ProcessEvent(FindFunctionChecked(NAME_AFGCharacterPlayer_Client_HyperTubeStart),&Parms);
+	}
 	static FName NAME_AFGCharacterPlayer_Client_Revived = FName(TEXT("Client_Revived"));
 	void AFGCharacterPlayer::Client_Revived()
 	{
@@ -825,6 +846,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 			{ "AddRadiationImmunity", &AFGCharacterPlayer::execAddRadiationImmunity },
 			{ "CameraZoomIn", &AFGCharacterPlayer::execCameraZoomIn },
 			{ "CameraZoomOut", &AFGCharacterPlayer::execCameraZoomOut },
+			{ "Client_HyperTubeEnd", &AFGCharacterPlayer::execClient_HyperTubeEnd },
+			{ "Client_HyperTubeStart", &AFGCharacterPlayer::execClient_HyperTubeStart },
 			{ "Client_Revived", &AFGCharacterPlayer::execClient_Revived },
 			{ "CrouchPressed", &AFGCharacterPlayer::execCrouchPressed },
 			{ "CrouchReleased", &AFGCharacterPlayer::execCrouchReleased },
@@ -990,6 +1013,79 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd_Statics
+	{
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_startTime;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_velocity;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_point;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd_Statics::NewProp_startTime = { "startTime", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventClient_HyperTubeEnd_Parms, startTime), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd_Statics::NewProp_velocity = { "velocity", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventClient_HyperTubeEnd_Parms, velocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd_Statics::NewProp_point = { "point", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventClient_HyperTubeEnd_Parms, point), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd_Statics::NewProp_startTime,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd_Statics::NewProp_velocity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd_Statics::NewProp_point,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Hyper Tubes" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "Client_HyperTubeEnd", sizeof(FGCharacterPlayer_eventClient_HyperTubeEnd_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80824CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics
+	{
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_pipeProgress;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_pipeVelocity;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_startTime;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_tubeStart;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics::NewProp_pipeProgress = { "pipeProgress", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventClient_HyperTubeStart_Parms, pipeProgress), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics::NewProp_pipeVelocity = { "pipeVelocity", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventClient_HyperTubeStart_Parms, pipeVelocity), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics::NewProp_startTime = { "startTime", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventClient_HyperTubeStart_Parms, startTime), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics::NewProp_tubeStart = { "tubeStart", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventClient_HyperTubeStart_Parms, tubeStart), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics::NewProp_pipeProgress,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics::NewProp_pipeVelocity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics::NewProp_startTime,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics::NewProp_tubeStart,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Hyper Tubes" },
+		{ "ModuleRelativePath", "Public/FGCharacterPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "Client_HyperTubeStart", sizeof(FGCharacterPlayer_eventClient_HyperTubeStart_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80024CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -4281,6 +4377,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity, "AddRadiationImmunity" }, // 2979225087
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn, "CameraZoomIn" }, // 1099745912
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut, "CameraZoomOut" }, // 30076363
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeEnd, "Client_HyperTubeEnd" }, // 213802853
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Client_HyperTubeStart, "Client_HyperTubeStart" }, // 4119486889
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived, "Client_Revived" }, // 1863581026
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_CrouchPressed, "CrouchPressed" }, // 1672970266
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased, "CrouchReleased" }, // 1076937957
@@ -4989,7 +5087,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCharacterPlayer, 2811051636);
+	IMPLEMENT_CLASS(AFGCharacterPlayer, 4174943877);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCharacterPlayer>()
 	{
 		return AFGCharacterPlayer::StaticClass();

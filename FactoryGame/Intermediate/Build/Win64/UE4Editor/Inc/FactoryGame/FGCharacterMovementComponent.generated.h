@@ -25,7 +25,7 @@ class UFGLadderComponent;
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FPlayerPipeHyperData>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_RPC_WRAPPERS \
 	virtual bool ServerSetHookLocation_Validate(FVector const& ); \
 	virtual void ServerSetHookLocation_Implementation(FVector const& hookLocation); \
  \
@@ -134,7 +134,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FPlayerPipeHyperDa
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool ServerSetHookLocation_Validate(FVector const& ); \
 	virtual void ServerSetHookLocation_Implementation(FVector const& hookLocation); \
  \
@@ -243,15 +243,15 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FPlayerPipeHyperDa
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_EVENT_PARMS \
 	struct FGCharacterMovementComponent_eventServerSetHookLocation_Parms \
 	{ \
 		FVector hookLocation; \
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGCharacterMovementComponent(); \
 	friend struct Z_Construct_UClass_UFGCharacterMovementComponent_Statics; \
@@ -260,7 +260,7 @@ public: \
 	DECLARE_SERIALIZER(UFGCharacterMovementComponent)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGCharacterMovementComponent(); \
 	friend struct Z_Construct_UClass_UFGCharacterMovementComponent_Statics; \
@@ -269,7 +269,7 @@ public: \
 	DECLARE_SERIALIZER(UFGCharacterMovementComponent)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGCharacterMovementComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCharacterMovementComponent) \
@@ -282,7 +282,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGCharacterMovementComponent(UFGCharacterMovementComponent&&); \
@@ -293,7 +293,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCharacterMovementComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGCharacterMovementComponent)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mCachedJetPack() { return STRUCT_OFFSET(UFGCharacterMovementComponent, mCachedJetPack); } \
 	FORCEINLINE static uint32 __PPO__mCachedParachute() { return STRUCT_OFFSET(UFGCharacterMovementComponent, mCachedParachute); } \
 	FORCEINLINE static uint32 __PPO__mCachedHookshot() { return STRUCT_OFFSET(UFGCharacterMovementComponent, mCachedHookshot); } \
@@ -309,30 +309,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCharacterMovementComponent); \
 	FORCEINLINE static uint32 __PPO__mBoostJumpTimeWindow() { return STRUCT_OFFSET(UFGCharacterMovementComponent, mBoostJumpTimeWindow); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_120_PROLOG \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_134_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_123_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGCharacterMovementComponent_h_137_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -350,5 +350,13 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGCharacterMovementCompone
 
 enum class ECustomMovementMode : uint8;
 template<> FACTORYGAME_API UEnum* StaticEnum<ECustomMovementMode>();
+
+#define FOREACH_ENUM_EDEFERREDCOLLISIONCHANGE(op) \
+	op(EDeferredCollisionChange::DCC_None) \
+	op(EDeferredCollisionChange::DCC_TURN_ON) \
+	op(EDeferredCollisionChange::DCC_TURN_OFF) 
+
+enum class EDeferredCollisionChange : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EDeferredCollisionChange>();
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

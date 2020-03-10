@@ -922,7 +922,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocalPlayer_GetUsername_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Online" },
 		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
-		{ "ToolTip", "Get in what state our login is" },
+		{ "ToolTip", "Get the username of the current user" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGLocalPlayer_GetUsername_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGLocalPlayer, nullptr, "GetUsername", sizeof(FGLocalPlayer_eventGetUsername_Parms), Z_Construct_UFunction_UFGLocalPlayer_GetUsername_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGLocalPlayer_GetUsername_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGLocalPlayer_GetUsername_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGLocalPlayer_GetUsername_Statics::Function_MetaDataParams)) };
@@ -1123,7 +1123,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		{ &Z_Construct_UFunction_UFGLocalPlayer_GetCurrentCreateSessionState, "GetCurrentCreateSessionState" }, // 1559905831
 		{ &Z_Construct_UFunction_UFGLocalPlayer_GetFriendList, "GetFriendList" }, // 2369849139
 		{ &Z_Construct_UFunction_UFGLocalPlayer_GetLoginState, "GetLoginState" }, // 2308886935
-		{ &Z_Construct_UFunction_UFGLocalPlayer_GetUsername, "GetUsername" }, // 3062294964
+		{ &Z_Construct_UFunction_UFGLocalPlayer_GetUsername, "GetUsername" }, // 1831777823
 		{ &Z_Construct_UFunction_UFGLocalPlayer_OnLoginFailed_OpenMap, "OnLoginFailed_OpenMap" }, // 3154866856
 		{ &Z_Construct_UFunction_UFGLocalPlayer_OnPresenceFailedToUpdate_OpenMap, "OnPresenceFailedToUpdate_OpenMap" }, // 7998150
 		{ &Z_Construct_UFunction_UFGLocalPlayer_OpenMap_WaitForPresence, "OpenMap_WaitForPresence" }, // 3221449271
@@ -1135,6 +1135,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGLocalPlayer.h" },
 		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
+		{ "ToolTip", "@OSS: Responsibility:\n- Login to OSS\nEpicGameLauncher passes a access token, artifact started and a few other parameters required to be able to login. AutoLogin checks if these a valid and\nlogs in to EGS automatically when main menu starts. Note that this isn't blocking. So the user might try to start a game before he has managed\nto properly login.\n- UserInterface\nThis is fetching information from the backend about a online user\n- Presence\nUpdating our presence based on what we are doing. A timer is called regurlarly, where we can update our current \"PresenceString\" (See UFGLocalPlayer::UpdatePresence)\n@todo: We should most likely update this in the chain where we are trying to setup a game\n- Copy host presence to clients\nWhenever a client receives a presence update, it will check if it's the host of the current game, if yes, then it will copy information about that\ngame to it's own presence\n- Friends\n- MapTravel and Sessions:\n(SetupServerAndTravelToMap) Tears down current session and ensures that we are in a good state for map travel. Also ensures that we are properly logged in and that all data is\nproperly propagated to the backend servers.\n@IMPORTANT that loading games should always be done through AFGAdminInterface::LoadGame, as that handles travel on dedicated servers." },
 	};
 #endif
 #if WITH_METADATA
@@ -1210,7 +1211,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGLocalPlayer, 2875531848);
+	IMPLEMENT_CLASS(UFGLocalPlayer, 100816149);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGLocalPlayer>()
 	{
 		return UFGLocalPlayer::StaticClass();

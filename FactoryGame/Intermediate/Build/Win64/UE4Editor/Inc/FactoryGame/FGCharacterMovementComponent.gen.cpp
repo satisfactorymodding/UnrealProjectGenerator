@@ -15,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 // Cross Module References
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ECustomMovementMode();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EDeferredCollisionChange();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FPlayerPipeHyperData();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
@@ -88,6 +89,62 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 				nullptr,
 				"ECustomMovementMode",
 				"ECustomMovementMode",
+				Enumerators,
+				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
+				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
+	static UEnum* EDeferredCollisionChange_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_FactoryGame_EDeferredCollisionChange, Z_Construct_UPackage__Script_FactoryGame(), TEXT("EDeferredCollisionChange"));
+		}
+		return Singleton;
+	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EDeferredCollisionChange>()
+	{
+		return EDeferredCollisionChange_StaticEnum();
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EDeferredCollisionChange(EDeferredCollisionChange_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EDeferredCollisionChange"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EDeferredCollisionChange_Hash() { return 2780170460U; }
+	UEnum* Z_Construct_UEnum_FactoryGame_EDeferredCollisionChange()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EDeferredCollisionChange"), 0, Get_Z_Construct_UEnum_FactoryGame_EDeferredCollisionChange_Hash(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "EDeferredCollisionChange::DCC_None", (int64)EDeferredCollisionChange::DCC_None },
+				{ "EDeferredCollisionChange::DCC_TURN_ON", (int64)EDeferredCollisionChange::DCC_TURN_ON },
+				{ "EDeferredCollisionChange::DCC_TURN_OFF", (int64)EDeferredCollisionChange::DCC_TURN_OFF },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "BlueprintType", "true" },
+				{ "DCC_None.DisplayName", "Do nothing" },
+				{ "DCC_TURN_OFF.DisplayName", "Turn Off Collision" },
+				{ "DCC_TURN_ON.DisplayName", "Turn On Collision" },
+				{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
+				{ "ToolTip", "Used for deferred collision state changes. Needed to make sure overlap updates don't happen mid logic steps and can cause recursive triggering of event calls.\n //[DavalliusA:Thu/27-02-2020] added when working on hyper tube bugs, as leaving one hyper tube and turning on collision in the movement mode change function could cause over movement mode changed functions to trigger." },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
+				nullptr,
+				"EDeferredCollisionChange",
+				"EDeferredCollisionChange",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
 				RF_Public|RF_Transient|RF_MarkAsNative,

@@ -1129,6 +1129,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameInstance_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGGameInstance.h" },
 		{ "ModuleRelativePath", "Public/FGGameInstance.h" },
+		{ "ToolTip", "@OSS: Responsibilities:\n- QueryNATType:\nThis queries the backend systems what kind of NAT they think we have. Doesn't always succeed\n- Joining Sessions\nWe have two ways of joining sessions, invites or through joining someones presence. This is done through the UGameInstance::JoinSession\ncall. This will automatically tear down our current session. Leave the current game and join the new session" },
 	};
 #endif
 #if WITH_METADATA
@@ -1213,7 +1214,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameInstance, 1782511362);
+	IMPLEMENT_CLASS(UFGGameInstance, 2648559903);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGGameInstance>()
 	{
 		return UFGGameInstance::StaticClass();

@@ -32,6 +32,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactorySettings() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildGun_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UMaterialInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGMaterialEffect_Build_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCrate_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UMaterialInstance_NoRegister();
 // End Cross Module References
@@ -400,6 +401,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mConstructionSounds;
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mConstructionSounds_Inner;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPowerShardClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mPowerShardClass;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mInventoryDropCrate_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mInventoryDropCrate;
@@ -647,6 +652,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConstructionSounds = { "mConstructionSounds", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mConstructionSounds), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConstructionSounds_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConstructionSounds_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConstructionSounds_Inner = { "mConstructionSounds", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mPowerShardClass_MetaData[] = {
+		{ "Category", "Buildable" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
+		{ "ToolTip", "The default class we use for over clocking buildings" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mPowerShardClass = { "mPowerShardClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mPowerShardClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mPowerShardClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mPowerShardClass_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mInventoryDropCrate_MetaData[] = {
 		{ "Category", "Buildable" },
 		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
@@ -829,6 +842,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleSounds_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConstructionSounds,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConstructionSounds_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mPowerShardClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mInventoryDropCrate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConveyorBuildGuideMaterial,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMaterial,
@@ -877,7 +891,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFactorySettings, 2582449447);
+	IMPLEMENT_CLASS(UFGFactorySettings, 3057884906);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFactorySettings>()
 	{
 		return UFGFactorySettings::StaticClass();

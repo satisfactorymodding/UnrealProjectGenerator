@@ -423,6 +423,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mExtractCycleTime;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mExtractStartupTimer_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mExtractStartupTimer;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mExtractStartupTime_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mExtractStartupTime;
@@ -599,13 +603,20 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractCycleTime = { "mExtractCycleTime", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableResourceExtractor, mExtractCycleTime), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractCycleTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractCycleTime_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractStartupTimer_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
+		{ "ToolTip", "How much time we have left of the start up time for the extraction process (mExtractStartupTime)." },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractStartupTimer = { "mExtractStartupTimer", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableResourceExtractor, mExtractStartupTimer), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractStartupTimer_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractStartupTimer_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractStartupTime_MetaData[] = {
 		{ "Category", "Extraction" },
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
 		{ "ToolTip", "Power up time for the extraction process, e.g. the time it takes for a drill to start spinning." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractStartupTime = { "mExtractStartupTime", nullptr, (EPropertyFlags)0x0020080000010021, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableResourceExtractor, mExtractStartupTime), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractStartupTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractStartupTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractStartupTime = { "mExtractStartupTime", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableResourceExtractor, mExtractStartupTime), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractStartupTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractStartupTime_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mReplicatedFlowRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mOutputInventory,
@@ -628,6 +639,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mAllowedResourceForms_Inner_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mItemsPerCycle,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractCycleTime,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractStartupTimer,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractStartupTime,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::StaticCppClassTypeInfo = {
@@ -657,7 +669,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableResourceExtractor, 4263910001);
+	IMPLEMENT_CLASS(AFGBuildableResourceExtractor, 3938118679);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableResourceExtractor>()
 	{
 		return AFGBuildableResourceExtractor::StaticClass();

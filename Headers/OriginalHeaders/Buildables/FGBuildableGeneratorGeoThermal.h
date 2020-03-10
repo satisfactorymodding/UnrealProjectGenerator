@@ -13,8 +13,11 @@ class FACTORYGAME_API AFGBuildableGeneratorGeoThermal : public AFGBuildableGener
 {
 	GENERATED_BODY()
 public:
+	// Replication
+	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
 
 	// Begin AActor interface
+	virtual void BeginPlay() override;
 	virtual void Destroyed() override;
 	// End AActor interface 
 
@@ -39,7 +42,6 @@ private:
 	UPROPERTY( SaveGame )
 	class AFGResourceNode* mExtractResourceNode;
 
-	/** Saved interface to the object we are extracting resrouces from */
-	UPROPERTY( SaveGame )
-	TScriptInterface< class IFGExtractableResourceInterface > mExtractableResource;
+	UPROPERTY( SaveGame, Replicated )
+	AActor* mExtractableResource;
 };

@@ -56,4 +56,12 @@ public:
 	/** Dump some stats about the factory to the log such as number of buildings and kilometers of railway built. */
 	UFUNCTION( exec, CheatBoard, category = "Log" )
 	void DumpFactoryStatsToLog();
+
+	/** Copy the player coordinates to cliboard */
+	UFUNCTION( exec )
+	void CopyPlayerCoordinates();
+
+	/** Dumps the player coordinates to log, potentially with a label and copy to clipboard */
+	UFUNCTION( exec )
+	void DumpPlayerCoordinates( const FString& label = TEXT(""), bool copyToClipboard = false );
 };

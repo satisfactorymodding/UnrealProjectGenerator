@@ -1,5 +1,11 @@
 #pragma once
 
+/**
+ * @OSS
+ * Exposes a lot of OSS functionality to blueprint. This drives a lot of the functionality in the join game menu and for invites
+ * @todo: Migrate UFGPresenceLibrary, UFGFriendsLibrary, UFGSessionLibrary and UFGInviteLibrary into their own .h and .cpp files
+ */
+
 #include "FGLocalPlayer.h"
 #include "NAT.h"
 #include "FindSessionsCallbackProxy.h"

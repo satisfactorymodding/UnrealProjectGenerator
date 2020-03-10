@@ -124,14 +124,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_NumConnectedPlayers;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HostPort_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_HostPort;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HostAddress_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_HostAddress;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HostId_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_HostId;
@@ -191,20 +183,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NumConnectedPlayers = { "NumConnectedPlayers", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFGOnlineSessionSettings, NumConnectedPlayers), METADATA_PARAMS(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NumConnectedPlayers_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NumConnectedPlayers_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostPort_MetaData[] = {
-		{ "ModuleRelativePath", "Public/FGOnlineSessionSettings.h" },
-		{ "ToolTip", "IMPORTANT: Don't rename this! This is parsed in engine code" },
-	};
-#endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostPort = { "HostPort", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFGOnlineSessionSettings, HostPort), METADATA_PARAMS(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostPort_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostPort_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostAddress_MetaData[] = {
-		{ "ModuleRelativePath", "Public/FGOnlineSessionSettings.h" },
-		{ "ToolTip", "IMPORTANT: Don't rename this! This is parsed in engine code, @todo: Maybe make this something else than a string?" },
-	};
-#endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostAddress = { "HostAddress", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFGOnlineSessionSettings, HostAddress), METADATA_PARAMS(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostAddress_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostAddress_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostId_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGOnlineSessionSettings.h" },
 		{ "ToolTip", "IMPORTANT: Don't rename this! This is parsed in engine code" },
@@ -218,8 +196,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_BuildVersion,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_PlayDuration,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NumConnectedPlayers,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostPort,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostAddress,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_HostId,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::ReturnStructParams = {
@@ -250,7 +226,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Hash() { return 4236033068U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Hash() { return 73247077U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

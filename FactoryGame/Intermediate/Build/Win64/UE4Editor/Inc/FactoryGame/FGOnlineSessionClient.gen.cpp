@@ -112,6 +112,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGOnlineSessionClient_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGOnlineSessionClient.h" },
 		{ "ModuleRelativePath", "Public/FGOnlineSessionClient.h" },
+		{ "ToolTip", "@OSS: responsibility\n- HandleInvites\nWill detect that we receive a invite and expose functionality to join invites and react to the invite" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGOnlineSessionClient_Statics::StaticCppClassTypeInfo = {
@@ -141,7 +142,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGOnlineSessionClient, 1438450428);
+	IMPLEMENT_CLASS(UFGOnlineSessionClient, 314995863);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGOnlineSessionClient>()
 	{
 		return UFGOnlineSessionClient::StaticClass();

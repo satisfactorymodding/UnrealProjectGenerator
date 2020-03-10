@@ -27,14 +27,6 @@ struct FFGOnlineSessionSettings
 	UPROPERTY()
 	FUniqueNetIdRepl	HostId;
 
-	/** IMPORTANT: Don't rename this! This is parsed in engine code, @todo: Maybe make this something else than a string? */
-	UPROPERTY()
-	FString				HostAddress;
-	
-	/** IMPORTANT: Don't rename this! This is parsed in engine code */
-	UPROPERTY()
-	int32				HostPort;
-
 	/** Number of players currently connected to the game */
 	UPROPERTY(BlueprintReadOnly)
 	int32				NumConnectedPlayers;

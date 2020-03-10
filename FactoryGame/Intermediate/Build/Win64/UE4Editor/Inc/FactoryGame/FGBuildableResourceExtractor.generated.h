@@ -194,6 +194,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableResourceExtractor); \
 
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableResourceExtractor_h_22_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mExtractStartupTime() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mExtractStartupTime); } \
+	FORCEINLINE static uint32 __PPO__mExtractStartupTimer() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mExtractStartupTimer); } \
 	FORCEINLINE static uint32 __PPO__mExtractCycleTime() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mExtractCycleTime); } \
 	FORCEINLINE static uint32 __PPO__mItemsPerCycle() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mItemsPerCycle); } \
 	FORCEINLINE static uint32 __PPO__mAllowedResourceForms() { return STRUCT_OFFSET(AFGBuildableResourceExtractor, mAllowedResourceForms); } \

@@ -92,6 +92,20 @@ struct FACTORYGAME_API FPlayerPipeHyperData
 	float mCamFovMod;
 };
 
+
+/**
+ * Used for deferred collision state changes. Needed to make sure overlap updates don't happen mid logic steps and can cause recursive triggering of event calls.
+ //[DavalliusA:Thu/27-02-2020] added when working on hyper tube bugs, as leaving one hyper tube and turning on collision in the movement mode change function could cause over movement mode changed functions to trigger.
+
+ */
+UENUM( BlueprintType )
+enum class EDeferredCollisionChange : uint8
+{
+	DCC_None = 0		UMETA( DisplayName = "Do nothing" ),
+	DCC_TURN_ON		UMETA( DisplayName = "Turn On Collision" ),
+	DCC_TURN_OFF	UMETA( DisplayName = "Turn Off Collision" ),
+};
+
 /**
  * Custom states we can be in
  */
@@ -100,7 +114,7 @@ enum class ECustomMovementMode : uint8
 {
 	CMM_None = 0		UMETA( DisplayName = "None" ),
 	CMM_Ladder			UMETA( DisplayName = "Ladder" ),
-	CMM_PipeHyper			UMETA( DisplayName = "Hyper Pipe" ),
+	CMM_PipeHyper		UMETA( DisplayName = "Hyper Pipe" ),
 };
 inline bool operator==(const uint8 a, const ECustomMovementMode b)
 {
@@ -128,6 +142,7 @@ public:
 	virtual bool DoJump( bool isReplayingMoves ) override;
 	virtual void CalcVelocity( float dt, float friction, bool isFluid, float brakingDeceleration ) override;
 	virtual float GetMaxSpeed() const override;
+	virtual void StartNewPhysics( float deltaTime, int32 Iterations ) override;
 	virtual void SetDefaultMovementMode() override;
 	virtual float GetMaxJumpZVelocity() const override;
 	// End UCharacterMovementComponent
@@ -267,7 +282,10 @@ protected:
 	virtual void OnMovementUpdated(float deltaSeconds, const FVector & oldLocation, const FVector & oldVelocity) override;
 	virtual void OnMovementModeChanged( EMovementMode PreviousMovementMode, uint8 PreviousCustomMode ) override;
 	virtual void PhysCustom( float deltaTime, int32 Iterations ) override;
-	// End UCharacterMovementComponent
+
+	void ExecuteDeferredCollisionChange();
+
+		// End UCharacterMovementComponent
 
 	void SetOnLadder( class UFGLadderComponent* ladder );
 
@@ -424,6 +442,8 @@ private:
 	UPROPERTY( EditDefaultsOnly, Category = "Movement" )
 	float mBoostJumpTimeWindow;
 
+	EDeferredCollisionChange mDeferredCollisionAction = EDeferredCollisionChange::DCC_None;
+
 	//Cheat
 	public:
 	bool mCheatIsPressingJump: 1;
@@ -462,6 +482,11 @@ public:
 	uint8 mSavedIsSliding : 1;
 
 	FVector mSavedHookLocation;
+
+	float mPipeMoveProgress;
+	float mPipeMoveVel;
+	float mPipeMoveTime;
+	AActor* mPipeMovePipe = nullptr;
 };
 
 class FNetworkPredictionData_Client_FGMovement : public FNetworkPredictionData_Client_Character

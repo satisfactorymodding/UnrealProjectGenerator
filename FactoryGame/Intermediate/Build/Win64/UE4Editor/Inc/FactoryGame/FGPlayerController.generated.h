@@ -378,16 +378,6 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execDumpPlayerCoordinates) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_label); \
-		P_GET_UBOOL(Z_Param_copyToClipboard); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->DumpPlayerCoordinates(Z_Param_label,Z_Param_copyToClipboard); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetScreenshotPath) \
 	{ \
 		P_GET_UBOOL(Z_Param_isHighRes); \
@@ -928,16 +918,6 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnPrimaryFire(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execDumpPlayerCoordinates) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_label); \
-		P_GET_UBOOL(Z_Param_copyToClipboard); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->DumpPlayerCoordinates(Z_Param_label,Z_Param_copyToClipboard); \
 		P_NATIVE_END; \
 	} \
  \

@@ -17,8 +17,8 @@ UENUM( BlueprintType )
 enum class EOptionType : uint8
 {
 	OT_Checkbox					UMETA( DisplayName = "Checkbox" ),
-	OT_IntegerSelection			UMETA( DisplayName = "IntegerSelection" ),
-	OT_FloatSelection			UMETA( DisplayName = "FloatSelection" ),
+	OT_IntegerSelection			UMETA( DisplayName = "IntegerSelection (NO SUPPORT YET)" ),
+	OT_FloatSelection			UMETA( DisplayName = "FloatSelection (NO SUPPORT YET)" ),
 	OT_Slider					UMETA( DisplayName = "Slider" )
 };
 
@@ -44,7 +44,7 @@ public:
 	}
 
 	UPROPERTY( BlueprintReadWrite, EditAnywhere )
-	FString OptionName;
+	FText OptionName;
 
 	UPROPERTY( BlueprintReadWrite, EditAnywhere )
 	EOptionType OptionType;
@@ -76,13 +76,13 @@ public:
 	UPROPERTY( BlueprintReadWrite, EditAnywhere )
 	float DefaultSliderValue;
 
-	UPROPERTY( BlueprintReadWrite, EditAnywhere )
+	UPROPERTY( BlueprintReadWrite )
 	TMap<FString, int32> IntegerSelectionValues;
 
-	UPROPERTY( BlueprintReadWrite, EditAnywhere )
+	UPROPERTY( BlueprintReadWrite )
 	TMap<FString, float> FloatSelectionValues;
 
-	UPROPERTY( BlueprintReadWrite, EditAnywhere )
+	UPROPERTY( BlueprintReadWrite )
 	FString DefaultSelectionValue;
 
 	UPROPERTY( BlueprintReadWrite, EditAnywhere )
@@ -92,7 +92,7 @@ public:
 	bool RequireRestart;
 	
 	UPROPERTY( BlueprintReadWrite, EditAnywhere )
-	FString Tooltip;
+	FText Tooltip;
 };
 
 UCLASS( config = Game, defaultconfig, meta = ( DisplayName = "Satisfactory User Options" ) )

@@ -235,7 +235,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGFactoryConnectionComponent); \
 	FORCEINLINE static uint32 __PPO__mConnectedComponent() { return STRUCT_OFFSET(UFGFactoryConnectionComponent, mConnectedComponent); } \
 	FORCEINLINE static uint32 __PPO__mHasConnectedComponent() { return STRUCT_OFFSET(UFGFactoryConnectionComponent, mHasConnectedComponent); } \
 	FORCEINLINE static uint32 __PPO__mConnectionInventory() { return STRUCT_OFFSET(UFGFactoryConnectionComponent, mConnectionInventory); } \
-	FORCEINLINE static uint32 __PPO__mInventoryAccessIndex() { return STRUCT_OFFSET(UFGFactoryConnectionComponent, mInventoryAccessIndex); }
+	FORCEINLINE static uint32 __PPO__mInventoryAccessIndex() { return STRUCT_OFFSET(UFGFactoryConnectionComponent, mInventoryAccessIndex); } \
+	FORCEINLINE static uint32 __PPO__mOuterBuildable() { return STRUCT_OFFSET(UFGFactoryConnectionComponent, mOuterBuildable); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGFactoryConnectionComponent_h_54_PROLOG

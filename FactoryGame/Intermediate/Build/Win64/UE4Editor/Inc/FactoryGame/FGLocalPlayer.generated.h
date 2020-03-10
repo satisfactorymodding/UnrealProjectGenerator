@@ -316,7 +316,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 template<> FACTORYGAME_API UClass* StaticClass<class UFGEM_FailedToLoginToOnlineService>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetCurrentCreateSessionState) \
 	{ \
@@ -411,7 +411,7 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGEM_FailedToLoginToOnline
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetCurrentCreateSessionState) \
 	{ \
@@ -506,7 +506,7 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGEM_FailedToLoginToOnline
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGLocalPlayer(); \
 	friend struct Z_Construct_UClass_UFGLocalPlayer_Statics; \
@@ -515,7 +515,7 @@ public: \
 	DECLARE_SERIALIZER(UFGLocalPlayer)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGLocalPlayer(); \
 	friend struct Z_Construct_UClass_UFGLocalPlayer_Statics; \
@@ -524,7 +524,7 @@ public: \
 	DECLARE_SERIALIZER(UFGLocalPlayer)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGLocalPlayer(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGLocalPlayer) \
@@ -537,7 +537,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGLocalPlayer(UFGLocalPlayer&&); \
@@ -548,7 +548,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGLocalPlayer); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGLocalPlayer)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mOnLoginStateChanged() { return STRUCT_OFFSET(UFGLocalPlayer, mOnLoginStateChanged); } \
 	FORCEINLINE static uint32 __PPO__mOnFriendsListUpdated() { return STRUCT_OFFSET(UFGLocalPlayer, mOnFriendsListUpdated); } \
 	FORCEINLINE static uint32 __PPO__mOnCreateSessionStateChanged() { return STRUCT_OFFSET(UFGLocalPlayer, mOnCreateSessionStateChanged); } \
@@ -556,25 +556,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGLocalPlayer); \
 	FORCEINLINE static uint32 __PPO__mOnInviteReceived() { return STRUCT_OFFSET(UFGLocalPlayer, mOnInviteReceived); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_215_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_232_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_218_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGLocalPlayer_h_235_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

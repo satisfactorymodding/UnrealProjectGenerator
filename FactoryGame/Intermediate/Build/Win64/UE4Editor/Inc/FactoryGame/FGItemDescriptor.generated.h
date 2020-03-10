@@ -177,6 +177,15 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemView>();
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetAbbreviatedDisplayName) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FText*)Z_Param__Result=UFGItemDescriptor::GetAbbreviatedDisplayName(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetItemDescription) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
@@ -371,6 +380,15 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemView>();
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetAbbreviatedDisplayName) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FText*)Z_Param__Result=UFGItemDescriptor::GetAbbreviatedDisplayName(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetItemDescription) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
@@ -466,6 +484,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGItemDescriptor); \
 
 
 #define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__mAbbreviatedDisplayName() { return STRUCT_OFFSET(UFGItemDescriptor, mAbbreviatedDisplayName); } \
 	FORCEINLINE static uint32 __PPO__mStackSize() { return STRUCT_OFFSET(UFGItemDescriptor, mStackSize); } \
 	FORCEINLINE static uint32 __PPO__mCanBeDiscarded() { return STRUCT_OFFSET(UFGItemDescriptor, mCanBeDiscarded); } \
 	FORCEINLINE static uint32 __PPO__mRememberPickUp() { return STRUCT_OFFSET(UFGItemDescriptor, mRememberPickUp); } \

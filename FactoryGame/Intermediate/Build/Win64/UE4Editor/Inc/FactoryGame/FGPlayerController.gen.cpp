@@ -36,7 +36,6 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Client_WaitForLevelStreaming();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_CreateSequenceList();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_DecrementPhotoModeFOV();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_EnablePhotoMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_EnterChatMessage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_ExecuteShortcut();
@@ -484,7 +483,6 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 			{ "Client_TransferFogOfWarData", &AFGPlayerController::execClient_TransferFogOfWarData },
 			{ "Client_WaitForLevelStreaming", &AFGPlayerController::execClient_WaitForLevelStreaming },
 			{ "DecrementPhotoModeFOV", &AFGPlayerController::execDecrementPhotoModeFOV },
-			{ "DumpPlayerCoordinates", &AFGPlayerController::execDumpPlayerCoordinates },
 			{ "EnablePhotoMode", &AFGPlayerController::execEnablePhotoMode },
 			{ "EnterChatMessage", &AFGPlayerController::execEnterChatMessage },
 			{ "ExecuteShortcut", &AFGPlayerController::execExecuteShortcut },
@@ -696,57 +694,6 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_DecrementPhotoModeFOV_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics
-	{
-		struct FGPlayerController_eventDumpPlayerCoordinates_Parms
-		{
-			FString label;
-			bool copyToClipboard;
-		};
-		static void NewProp_copyToClipboard_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_copyToClipboard;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_label_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_label;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::NewProp_copyToClipboard_SetBit(void* Obj)
-	{
-		((FGPlayerController_eventDumpPlayerCoordinates_Parms*)Obj)->copyToClipboard = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::NewProp_copyToClipboard = { "copyToClipboard", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGPlayerController_eventDumpPlayerCoordinates_Parms), &Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::NewProp_copyToClipboard_SetBit, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::NewProp_label_MetaData[] = {
-		{ "NativeConst", "" },
-	};
-#endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::NewProp_label = { "label", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventDumpPlayerCoordinates_Parms, label), METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::NewProp_label_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::NewProp_label_MetaData)) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::NewProp_copyToClipboard,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::NewProp_label,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::Function_MetaDataParams[] = {
-		{ "CPP_Default_copyToClipboard", "true" },
-		{ "CPP_Default_label", "" },
-		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "DumpPlayerCoordinates", sizeof(FGPlayerController_eventDumpPlayerCoordinates_Parms), Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2589,7 +2536,6 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		{ &Z_Construct_UFunction_AFGPlayerController_Client_WaitForLevelStreaming, "Client_WaitForLevelStreaming" }, // 221466689
 		{ &Z_Construct_UFunction_AFGPlayerController_CreateSequenceList, "CreateSequenceList" }, // 837020434
 		{ &Z_Construct_UFunction_AFGPlayerController_DecrementPhotoModeFOV, "DecrementPhotoModeFOV" }, // 3922106814
-		{ &Z_Construct_UFunction_AFGPlayerController_DumpPlayerCoordinates, "DumpPlayerCoordinates" }, // 2052408749
 		{ &Z_Construct_UFunction_AFGPlayerController_EnablePhotoMode, "EnablePhotoMode" }, // 1301107203
 		{ &Z_Construct_UFunction_AFGPlayerController_EnterChatMessage, "EnterChatMessage" }, // 2244120735
 		{ &Z_Construct_UFunction_AFGPlayerController_ExecuteShortcut, "ExecuteShortcut" }, // 703699298
@@ -2890,7 +2836,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerController, 615410143);
+	IMPLEMENT_CLASS(AFGPlayerController, 2434423289);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlayerController>()
 	{
 		return AFGPlayerController::StaticClass();

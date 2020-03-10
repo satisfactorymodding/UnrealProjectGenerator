@@ -501,6 +501,13 @@ public:
 	/** Called when a slide has started, simulated proxies only */
 	UFUNCTION( BlueprintImplementableEvent, BlueprintCosmetic, Category = "FactoryGame|Movment" )
 	void PlayJumpEffects( bool boostJump );
+
+
+	UFUNCTION( NetMulticast, Reliable, WithValidation, Category = "Hyper Tubes" )
+	void Client_HyperTubeStart( AActor* tubeStart, float startTime, float pipeVelocity, float pipeProgress );
+	UFUNCTION( NetMulticast, Reliable, WithValidation, Category = "Hyper Tubes" )
+	void Client_HyperTubeEnd( FVector point, FVector velocity, float startTime );
+
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent( class UInputComponent* InputComponent ) override;
@@ -669,6 +676,9 @@ protected:
 	FORCEINLINE float GetArmBoneLocation() const { return mArmBoneLocation; }
 
 	void DebugBuildablesInFrustum();
+
+
+
 public:
 	// Callbacks used by the replication graph to build dependency lists
 	/** Event for when equipment that is should always be replicated on the player is spawned */
@@ -748,6 +758,7 @@ private:
 	void Server_OnUseReleased();
 	UFUNCTION( Reliable, Server, WithValidation )
 	void Server_PickUpItem( class AFGItemPickup* itemPickup );
+
 
 	/** Called when slide status changes so we can change capsule size accordingly */
 	void OnSlideStatusUpdated();
