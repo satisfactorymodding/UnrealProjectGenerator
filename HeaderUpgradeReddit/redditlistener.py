@@ -16,7 +16,7 @@ import configparser
 import pathlib
 
 DEBUG = False
-SKIP_EGL = True
+SKIP_EGL = False
 PUSH = False
 
 logging.basicConfig(filename=os.path.join(pathlib.Path(__file__).parent.absolute(), r'logs\listener.log'),
@@ -199,14 +199,9 @@ def run_update(new_version, is_experimental, triggered_by):
             with open(wwisePathToCheck, "r") as f:
                 wwise_ok = True
                 wwise_data = json.load(f)
-                if is_experimental:
-                    if "4.21" in wwise_data["EngineVersion"]:
-                        wwise_ok = False
-                        print("Confirm changing Wwise integration to 4.22")
-                else:
-                    if "4.22" in wwise_data["EngineVersion"]:
-                        wwise_ok = False
-                        print("Confirm changing Wwise integration to 4.21")
+                if "4.21" in wwise_data["EngineVersion"]:
+                    wwise_ok = False
+                    print("Confirm changing Wwise integration to 4.22")
             if not wwise_ok:
                 input()
 

@@ -161,7 +161,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPoleHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPoleHologram, 3691454412);
+	IMPLEMENT_CLASS(AFGPoleHologram, 3866593618);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPoleHologram>()
 	{
 		return AFGPoleHologram::StaticClass();

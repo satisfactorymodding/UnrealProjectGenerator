@@ -892,6 +892,7 @@
     <ClCompile Include="..\..\Source\FactoryGame\Private\Replication\FGReplicationDetailActor_CargoPlatform.cpp"/>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Replication\FGReplicationDetailActor_DockingStation.cpp"/>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Replication\FGReplicationDetailActor_GeneratorFuel.cpp"/>
+    <ClCompile Include="..\..\Source\FactoryGame\Private\Replication\FGReplicationDetailActor_GeneratorNuclear.cpp"/>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Replication\FGReplicationDetailActor_Manufacturing.cpp"/>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Replication\FGReplicationDetailActor_Storage.cpp"/>
     <ClCompile Include="..\..\Source\FactoryGame\Private\Replication\FGReplicationDetailInventoryComponent.cpp"/>
@@ -1412,6 +1413,7 @@
     <ClInclude Include="..\..\Source\FactoryGame\Public\Replication\FGReplicationDetailActor_CargoPlatform.h"/>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Replication\FGReplicationDetailActor_DockingStation.h"/>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Replication\FGReplicationDetailActor_GeneratorFuel.h"/>
+    <ClInclude Include="..\..\Source\FactoryGame\Public\Replication\FGReplicationDetailActor_GeneratorNuclear.h"/>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Replication\FGReplicationDetailActor_Manufacturing.h"/>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Replication\FGReplicationDetailActor_Storage.h"/>
     <ClInclude Include="..\..\Source\FactoryGame\Public\Replication\FGReplicationDetailInventoryComponent.h"/>

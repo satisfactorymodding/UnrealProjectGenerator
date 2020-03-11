@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorNuclear() {}
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableGeneratorNuclear_GetWasteInventory();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGInventoryComponent_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGReplicationDetailInventoryComponent_NoRegister();
 // End Cross Module References
 	void AFGBuildableGeneratorNuclear::StaticRegisterNativesAFGBuildableGeneratorNuclear()
 	{
@@ -86,6 +87,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorNuclear() {}
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mWasteLeftFromCurrentFuel;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mOutputInventoryHandler_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mOutputInventoryHandler;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mOutputInventory_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mOutputInventory;
@@ -115,15 +120,23 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorNuclear() {}
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mWasteLeftFromCurrentFuel = { "mWasteLeftFromCurrentFuel", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableGeneratorNuclear, mWasteLeftFromCurrentFuel), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mWasteLeftFromCurrentFuel_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mWasteLeftFromCurrentFuel_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mOutputInventoryHandler_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorNuclear.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mOutputInventoryHandler = { "mOutputInventoryHandler", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableGeneratorNuclear, mOutputInventoryHandler), Z_Construct_UClass_UFGReplicationDetailInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mOutputInventoryHandler_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mOutputInventoryHandler_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mOutputInventory_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorNuclear.h" },
 		{ "ToolTip", "Spent fuel rods goes here." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mOutputInventory = { "mOutputInventory", nullptr, (EPropertyFlags)0x0040000001080028, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableGeneratorNuclear, mOutputInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mOutputInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mOutputInventory_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mOutputInventory = { "mOutputInventory", nullptr, (EPropertyFlags)0x0040000001080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableGeneratorNuclear, mOutputInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mOutputInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mOutputInventory_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mWasteLeftFromCurrentFuel,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mOutputInventoryHandler,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mOutputInventory,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::StaticCppClassTypeInfo = {
@@ -153,7 +166,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorNuclear() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableGeneratorNuclear, 980876457);
+	IMPLEMENT_CLASS(AFGBuildableGeneratorNuclear, 927507552);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableGeneratorNuclear>()
 	{
 		return AFGBuildableGeneratorNuclear::StaticClass();

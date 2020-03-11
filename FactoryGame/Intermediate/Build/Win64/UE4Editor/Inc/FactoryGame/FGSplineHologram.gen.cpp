@@ -218,7 +218,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSplineHologram, 1736266700);
+	IMPLEMENT_CLASS(AFGSplineHologram, 104976472);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSplineHologram>()
 	{
 		return AFGSplineHologram::StaticClass();

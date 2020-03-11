@@ -112,6 +112,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHologram() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSnappedBuilding_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mSnappedBuilding;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mClearanceBox_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mClearanceBox;
@@ -144,6 +148,13 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHologram() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mSnappedBuilding_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Hologram/FGBuildableHologram.h" },
+		{ "ToolTip", "CustomSerialization// MODDING EDIT: Another CSS custom engine thing" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mSnappedBuilding = { "mSnappedBuilding", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableHologram, mSnappedBuilding), Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mSnappedBuilding_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mSnappedBuilding_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mClearanceBox_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Hologram/FGBuildableHologram.h" },
@@ -171,6 +182,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHologram() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mMaxPlacementFloorAngle = { "mMaxPlacementFloorAngle", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableHologram, mMaxPlacementFloorAngle), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mMaxPlacementFloorAngle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mMaxPlacementFloorAngle_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableHologram_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mSnappedBuilding,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mClearanceBox,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mLegs,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableHologram_Statics::NewProp_mMaxPlacementFloorAngle,
@@ -202,7 +214,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableHologram, 2910067844);
+	IMPLEMENT_CLASS(AFGBuildableHologram, 2531185231);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableHologram>()
 	{
 		return AFGBuildableHologram::StaticClass();
