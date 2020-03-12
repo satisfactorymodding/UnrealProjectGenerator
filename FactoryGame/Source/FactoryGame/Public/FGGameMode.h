@@ -14,8 +14,8 @@
 
 class UFGRemoteCallObject;
 
-UCLASS(minimalapi, config = Game )
-class AFGGameMode : public AGameMode, public IFGSaveInterface
+UCLASS( config = Game ) // MODDING EDIT: removed minimalapi
+class FACTORYGAME_API AFGGameMode : public AGameMode, public IFGSaveInterface
 {
 	GENERATED_BODY()
 public:

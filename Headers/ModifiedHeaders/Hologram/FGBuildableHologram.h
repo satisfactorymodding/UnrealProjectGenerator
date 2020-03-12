@@ -265,7 +265,7 @@ protected:
 	class UBoxComponent* mClearanceBox;
 
 	/** If we have snapped to another buildable, i.e. foundation, floor etc, this is it. */
-	UPROPERTY( CustomSerialization )
+	UPROPERTY( /*CustomSerialization*/ ) // MODDING EDIT: Another CSS custom engine thing
 	class AFGBuildable* mSnappedBuilding;
 
 	bool mIsAimingAtOtherBuilding = false;
