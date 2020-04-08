@@ -159,7 +159,7 @@ private: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGVehicleDestroyableInterface_h_18_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
-	virtual ~IFGVehicleDestroyableInterface() {} \
+	FORCEINLINE virtual ~IFGVehicleDestroyableInterface() {} \
 public: \
 	typedef UFGVehicleDestroyableInterface UClassType; \
 	typedef IFGVehicleDestroyableInterface ThisClass; \
@@ -171,7 +171,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGVehicleDestroyableInterface_h_18_INCLASS_IINTERFACE \
 protected: \
-	virtual ~IFGVehicleDestroyableInterface() {} \
+	FORCEINLINE virtual ~IFGVehicleDestroyableInterface() {} \
 public: \
 	typedef UFGVehicleDestroyableInterface UClassType; \
 	typedef IFGVehicleDestroyableInterface ThisClass; \

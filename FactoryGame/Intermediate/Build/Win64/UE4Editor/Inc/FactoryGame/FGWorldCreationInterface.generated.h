@@ -65,7 +65,7 @@ private: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGWorldCreationInterface_h_17_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
-	virtual ~IFGWorldCreationInterface() {} \
+	FORCEINLINE virtual ~IFGWorldCreationInterface() {} \
 public: \
 	typedef UFGWorldCreationInterface UClassType; \
 	typedef IFGWorldCreationInterface ThisClass; \
@@ -74,7 +74,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGWorldCreationInterface_h_17_INCLASS_IINTERFACE \
 protected: \
-	virtual ~IFGWorldCreationInterface() {} \
+	FORCEINLINE virtual ~IFGWorldCreationInterface() {} \
 public: \
 	typedef UFGWorldCreationInterface UClassType; \
 	typedef IFGWorldCreationInterface ThisClass; \

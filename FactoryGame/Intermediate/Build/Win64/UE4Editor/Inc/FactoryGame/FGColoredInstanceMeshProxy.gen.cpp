@@ -113,7 +113,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceMeshProxy() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGColoredInstanceMeshProxy, 453477422);
+	IMPLEMENT_CLASS(UFGColoredInstanceMeshProxy, 2352953365);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGColoredInstanceMeshProxy>()
 	{
 		return UFGColoredInstanceMeshProxy::StaticClass();

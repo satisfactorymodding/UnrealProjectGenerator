@@ -51,6 +51,7 @@ public:
 	virtual void BeginPlay() override;
 	virtual void EndPlay( const EEndPlayReason::Type EndPlayReason );
 	virtual void Tick( float dt ) override;
+	virtual void Destroyed() override;
 	// End AActor interface
 
 	// Begin IFGSaveInterface

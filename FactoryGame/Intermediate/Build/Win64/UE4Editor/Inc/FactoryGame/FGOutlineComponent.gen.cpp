@@ -778,7 +778,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGOutlineComponent, 1992202120);
+	IMPLEMENT_CLASS(UFGOutlineComponent, 184980401);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGOutlineComponent>()
 	{
 		return UFGOutlineComponent::StaticClass();

@@ -107,7 +107,7 @@ class UFGRemoteCallObject;
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGGameMode_h_20_ARCHIVESERIALIZER \
-	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(AFGGameMode, FACTORYGAME_API)
+	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(AFGGameMode, NO_API)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGGameMode_h_20_INCLASS_NO_PURE_DECLS \
@@ -115,7 +115,7 @@ private: \
 	static void StaticRegisterNativesAFGGameMode(); \
 	friend struct Z_Construct_UClass_AFGGameMode_Statics; \
 public: \
-	DECLARE_CLASS(AFGGameMode, AGameMode, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), FACTORYGAME_API) \
+	DECLARE_CLASS(AFGGameMode, AGameMode, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGGameMode) \
 	FactoryGame_Source_FactoryGame_Public_FGGameMode_h_20_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGGameMode*>(this); }
@@ -126,7 +126,7 @@ private: \
 	static void StaticRegisterNativesAFGGameMode(); \
 	friend struct Z_Construct_UClass_AFGGameMode_Statics; \
 public: \
-	DECLARE_CLASS(AFGGameMode, AGameMode, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), FACTORYGAME_API) \
+	DECLARE_CLASS(AFGGameMode, AGameMode, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGGameMode) \
 	FactoryGame_Source_FactoryGame_Public_FGGameMode_h_20_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGGameMode*>(this); }
@@ -134,24 +134,24 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGGameMode_h_20_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	FACTORYGAME_API AFGGameMode(const FObjectInitializer& ObjectInitializer); \
+	NO_API AFGGameMode(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGGameMode) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(FACTORYGAME_API, AFGGameMode); \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AFGGameMode); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGameMode); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	FACTORYGAME_API AFGGameMode(AFGGameMode&&); \
-	FACTORYGAME_API AFGGameMode(const AFGGameMode&); \
+	NO_API AFGGameMode(AFGGameMode&&); \
+	NO_API AFGGameMode(const AFGGameMode&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGGameMode_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	FACTORYGAME_API AFGGameMode(AFGGameMode&&); \
-	FACTORYGAME_API AFGGameMode(const AFGGameMode&); \
+	NO_API AFGGameMode(AFGGameMode&&); \
+	NO_API AFGGameMode(const AFGGameMode&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(FACTORYGAME_API, AFGGameMode); \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AFGGameMode); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGameMode); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGGameMode)
 

@@ -108,7 +108,7 @@ private: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
-	virtual ~IFGRadiationInterface() {} \
+	FORCEINLINE virtual ~IFGRadiationInterface() {} \
 public: \
 	typedef UFGRadiationInterface UClassType; \
 	typedef IFGRadiationInterface ThisClass; \
@@ -118,7 +118,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGRadiationInterface_h_14_INCLASS_IINTERFACE \
 protected: \
-	virtual ~IFGRadiationInterface() {} \
+	FORCEINLINE virtual ~IFGRadiationInterface() {} \
 public: \
 	typedef UFGRadiationInterface UClassType; \
 	typedef IFGRadiationInterface ThisClass; \

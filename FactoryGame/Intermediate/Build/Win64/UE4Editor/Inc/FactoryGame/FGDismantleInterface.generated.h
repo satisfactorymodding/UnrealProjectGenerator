@@ -271,7 +271,7 @@ private: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGDismantleInterface_h_18_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
-	virtual ~IFGDismantleInterface() {} \
+	FORCEINLINE virtual ~IFGDismantleInterface() {} \
 public: \
 	typedef UFGDismantleInterface UClassType; \
 	typedef IFGDismantleInterface ThisClass; \
@@ -288,7 +288,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGDismantleInterface_h_18_INCLASS_IINTERFACE \
 protected: \
-	virtual ~IFGDismantleInterface() {} \
+	FORCEINLINE virtual ~IFGDismantleInterface() {} \
 public: \
 	typedef UFGDismantleInterface UClassType; \
 	typedef IFGDismantleInterface ThisClass; \

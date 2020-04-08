@@ -546,7 +546,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRailroadVehicleSoundComponent, 331817386);
+	IMPLEMENT_CLASS(UFGRailroadVehicleSoundComponent, 301561899);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGRailroadVehicleSoundComponent>()
 	{
 		return UFGRailroadVehicleSoundComponent::StaticClass();

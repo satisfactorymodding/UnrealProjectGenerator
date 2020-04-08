@@ -65,7 +65,7 @@ private: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGRecipeProducerInterface_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
-	virtual ~IFGRecipeProducerInterface() {} \
+	FORCEINLINE virtual ~IFGRecipeProducerInterface() {} \
 public: \
 	typedef UFGRecipeProducerInterface UClassType; \
 	typedef IFGRecipeProducerInterface ThisClass; \
@@ -74,7 +74,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGRecipeProducerInterface_h_15_INCLASS_IINTERFACE \
 protected: \
-	virtual ~IFGRecipeProducerInterface() {} \
+	FORCEINLINE virtual ~IFGRecipeProducerInterface() {} \
 public: \
 	typedef UFGRecipeProducerInterface UClassType; \
 	typedef IFGRecipeProducerInterface ThisClass; \

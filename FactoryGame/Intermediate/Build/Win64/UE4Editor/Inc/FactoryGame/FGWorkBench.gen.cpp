@@ -1014,7 +1014,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWorkBench, 2269934890);
+	IMPLEMENT_CLASS(UFGWorkBench, 639315821);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGWorkBench>()
 	{
 		return UFGWorkBench::StaticClass();

@@ -82,7 +82,7 @@ private: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
-	virtual ~IFGPopupInstigatorInterface() {} \
+	FORCEINLINE virtual ~IFGPopupInstigatorInterface() {} \
 public: \
 	typedef UFGPopupInstigatorInterface UClassType; \
 	typedef IFGPopupInstigatorInterface ThisClass; \
@@ -93,7 +93,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGPopupInstigatorInterface_h_16_INCLASS_IINTERFACE \
 protected: \
-	virtual ~IFGPopupInstigatorInterface() {} \
+	FORCEINLINE virtual ~IFGPopupInstigatorInterface() {} \
 public: \
 	typedef UFGPopupInstigatorInterface UClassType; \
 	typedef IFGPopupInstigatorInterface ThisClass; \

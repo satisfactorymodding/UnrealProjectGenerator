@@ -476,7 +476,7 @@ private: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_90_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
-	virtual ~IFGUseableInterface() {} \
+	FORCEINLINE virtual ~IFGUseableInterface() {} \
 public: \
 	typedef UFGUseableInterface UClassType; \
 	typedef IFGUseableInterface ThisClass; \
@@ -494,7 +494,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_90_INCLASS_IINTERFACE \
 protected: \
-	virtual ~IFGUseableInterface() {} \
+	FORCEINLINE virtual ~IFGUseableInterface() {} \
 public: \
 	typedef UFGUseableInterface UClassType; \
 	typedef IFGUseableInterface ThisClass; \

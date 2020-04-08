@@ -296,7 +296,7 @@ private: \
 
 #define FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
-	virtual ~IFGAggroTargetInterface() {} \
+	FORCEINLINE virtual ~IFGAggroTargetInterface() {} \
 public: \
 	typedef UFGAggroTargetInterface UClassType; \
 	typedef IFGAggroTargetInterface ThisClass; \
@@ -313,7 +313,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_INCLASS_IINTERFACE \
 protected: \
-	virtual ~IFGAggroTargetInterface() {} \
+	FORCEINLINE virtual ~IFGAggroTargetInterface() {} \
 public: \
 	typedef UFGAggroTargetInterface UClassType; \
 	typedef IFGAggroTargetInterface ThisClass; \

@@ -130,7 +130,7 @@ private: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGChainsawableInterface_h_18_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
-	virtual ~IFGChainsawableInterface() {} \
+	FORCEINLINE virtual ~IFGChainsawableInterface() {} \
 public: \
 	typedef UFGChainsawableInterface UClassType; \
 	typedef IFGChainsawableInterface ThisClass; \
@@ -141,7 +141,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGChainsawableInterface_h_18_INCLASS_IINTERFACE \
 protected: \
-	virtual ~IFGChainsawableInterface() {} \
+	FORCEINLINE virtual ~IFGChainsawableInterface() {} \
 public: \
 	typedef UFGChainsawableInterface UClassType; \
 	typedef IFGChainsawableInterface ThisClass; \

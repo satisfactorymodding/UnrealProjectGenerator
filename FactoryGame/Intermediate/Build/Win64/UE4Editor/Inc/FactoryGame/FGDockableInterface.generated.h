@@ -259,7 +259,7 @@ private: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGDockableInterface_h_29_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
-	virtual ~IFGDockableInterface() {} \
+	FORCEINLINE virtual ~IFGDockableInterface() {} \
 public: \
 	typedef UFGDockableInterface UClassType; \
 	typedef IFGDockableInterface ThisClass; \
@@ -276,7 +276,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGDockableInterface_h_29_INCLASS_IINTERFACE \
 protected: \
-	virtual ~IFGDockableInterface() {} \
+	FORCEINLINE virtual ~IFGDockableInterface() {} \
 public: \
 	typedef UFGDockableInterface UClassType; \
 	typedef IFGDockableInterface ThisClass; \

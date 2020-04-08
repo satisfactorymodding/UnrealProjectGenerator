@@ -262,7 +262,7 @@ private: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGSaveInterface_h_52_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
-	virtual ~IFGSaveInterface() {} \
+	FORCEINLINE virtual ~IFGSaveInterface() {} \
 public: \
 	typedef UFGSaveInterface UClassType; \
 	typedef IFGSaveInterface ThisClass; \
@@ -278,7 +278,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGSaveInterface_h_52_INCLASS_IINTERFACE \
 protected: \
-	virtual ~IFGSaveInterface() {} \
+	FORCEINLINE virtual ~IFGSaveInterface() {} \
 public: \
 	typedef UFGSaveInterface UClassType; \
 	typedef IFGSaveInterface ThisClass; \

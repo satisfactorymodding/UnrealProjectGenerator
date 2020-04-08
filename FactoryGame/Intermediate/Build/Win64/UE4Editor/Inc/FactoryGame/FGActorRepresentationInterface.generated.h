@@ -574,7 +574,7 @@ private: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
-	virtual ~IFGActorRepresentationInterface() {} \
+	FORCEINLINE virtual ~IFGActorRepresentationInterface() {} \
 public: \
 	typedef UFGActorRepresentationInterface UClassType; \
 	typedef IFGActorRepresentationInterface ThisClass; \
@@ -601,7 +601,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGActorRepresentationInterface_h_15_INCLASS_IINTERFACE \
 protected: \
-	virtual ~IFGActorRepresentationInterface() {} \
+	FORCEINLINE virtual ~IFGActorRepresentationInterface() {} \
 public: \
 	typedef UFGActorRepresentationInterface UClassType; \
 	typedef IFGActorRepresentationInterface ThisClass; \

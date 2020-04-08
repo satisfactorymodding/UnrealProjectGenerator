@@ -189,7 +189,7 @@ private: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGSignificanceInterface_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
-	virtual ~IFGSignificanceInterface() {} \
+	FORCEINLINE virtual ~IFGSignificanceInterface() {} \
 public: \
 	typedef UFGSignificanceInterface UClassType; \
 	typedef IFGSignificanceInterface ThisClass; \
@@ -200,7 +200,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGSignificanceInterface_h_13_INCLASS_IINTERFACE \
 protected: \
-	virtual ~IFGSignificanceInterface() {} \
+	FORCEINLINE virtual ~IFGSignificanceInterface() {} \
 public: \
 	typedef UFGSignificanceInterface UClassType; \
 	typedef IFGSignificanceInterface ThisClass; \

@@ -227,7 +227,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPowerConnectionComponent, 1385188158);
+	IMPLEMENT_CLASS(UFGPowerConnectionComponent, 3952366839);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGPowerConnectionComponent>()
 	{
 		return UFGPowerConnectionComponent::StaticClass();

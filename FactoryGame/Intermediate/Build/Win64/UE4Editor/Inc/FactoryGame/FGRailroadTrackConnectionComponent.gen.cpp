@@ -357,7 +357,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadTrackConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRailroadTrackConnectionComponent, 904576404);
+	IMPLEMENT_CLASS(UFGRailroadTrackConnectionComponent, 2336112487);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGRailroadTrackConnectionComponent>()
 	{
 		return UFGRailroadTrackConnectionComponent::StaticClass();

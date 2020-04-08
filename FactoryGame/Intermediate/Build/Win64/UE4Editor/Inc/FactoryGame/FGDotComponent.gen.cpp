@@ -294,7 +294,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDotComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDotComponent, 831013250);
+	IMPLEMENT_CLASS(UFGDotComponent, 218981878);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGDotComponent>()
 	{
 		return UFGDotComponent::StaticClass();

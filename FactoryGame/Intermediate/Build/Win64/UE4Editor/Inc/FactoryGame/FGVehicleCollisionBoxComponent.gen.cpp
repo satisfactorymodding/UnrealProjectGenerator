@@ -244,7 +244,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVehicleCollisionBoxComponent, 572775255);
+	IMPLEMENT_CLASS(UFGVehicleCollisionBoxComponent, 4209327817);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGVehicleCollisionBoxComponent>()
 	{
 		return UFGVehicleCollisionBoxComponent::StaticClass();

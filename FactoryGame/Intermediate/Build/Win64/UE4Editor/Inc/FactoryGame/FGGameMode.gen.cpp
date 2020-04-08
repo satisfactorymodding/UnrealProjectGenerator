@@ -412,7 +412,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_AFGGameMode_Statics::PropPointers),
 		ARRAY_COUNT(InterfaceParams),
-		0x008802ACu,
+		0x009002ACu,
 		METADATA_PARAMS(Z_Construct_UClass_AFGGameMode_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGGameMode_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGGameMode()
@@ -424,7 +424,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGameMode, 66338418);
+	IMPLEMENT_CLASS(AFGGameMode, 1576428568);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGameMode>()
 	{
 		return AFGGameMode::StaticClass();

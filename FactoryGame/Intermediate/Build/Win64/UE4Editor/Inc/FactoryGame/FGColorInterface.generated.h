@@ -259,7 +259,7 @@ private: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGColorInterface_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
-	virtual ~IFGColorInterface() {} \
+	FORCEINLINE virtual ~IFGColorInterface() {} \
 public: \
 	typedef UFGColorInterface UClassType; \
 	typedef IFGColorInterface ThisClass; \
@@ -275,7 +275,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGColorInterface_h_15_INCLASS_IINTERFACE \
 protected: \
-	virtual ~IFGColorInterface() {} \
+	FORCEINLINE virtual ~IFGColorInterface() {} \
 public: \
 	typedef UFGColorInterface UClassType; \
 	typedef IFGColorInterface ThisClass; \

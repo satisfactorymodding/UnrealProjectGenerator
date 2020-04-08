@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRoadConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRoadConnectionComponent, 3811982919);
+	IMPLEMENT_CLASS(UFGRoadConnectionComponent, 2339401103);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGRoadConnectionComponent>()
 	{
 		return UFGRoadConnectionComponent::StaticClass();

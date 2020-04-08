@@ -132,7 +132,7 @@ private: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
-	virtual ~IFGExplosiveDestroyableInterface() {} \
+	FORCEINLINE virtual ~IFGExplosiveDestroyableInterface() {} \
 public: \
 	typedef UFGExplosiveDestroyableInterface UClassType; \
 	typedef IFGExplosiveDestroyableInterface ThisClass; \
@@ -143,7 +143,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_INCLASS_IINTERFACE \
 protected: \
-	virtual ~IFGExplosiveDestroyableInterface() {} \
+	FORCEINLINE virtual ~IFGExplosiveDestroyableInterface() {} \
 public: \
 	typedef UFGExplosiveDestroyableInterface UClassType; \
 	typedef IFGExplosiveDestroyableInterface ThisClass; \
