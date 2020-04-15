@@ -17,6 +17,177 @@ namespace ImplementHeaders
 
         private static readonly Dictionary<string, string> CustomImplementation = new Dictionary<string, string>()
         {
+            { "static UFGItemDescriptor::CanBeDiscarded",
+@"	return inClass.GetDefaultObject()->mCanBeDiscarded;"
+			},
+            { "static UFGItemDescriptor::GetBigIcon",
+@"	return inClass.GetDefaultObject()->mPersistentBigIcon;"
+			},
+            { "static UFGItemDescriptor::GetEnergyValue",
+@"	return inClass.GetDefaultObject()->mEnergyValue;"
+			},
+            { "static UFGItemDescriptor::GetFluidColor",
+@"	return inClass.GetDefaultObject()->mFluidColor;"
+			},
+            { "static UFGItemDescriptor::GetFluidColorLinear",
+@"	return inClass.GetDefaultObject()->mFluidColor.ReinterpretAsLinear();"
+			},
+            { "static UFGItemDescriptor::GetFluidDensity",
+@"	return inClass.GetDefaultObject()->mFluidDensity;"
+			},
+            { "static UFGItemDescriptor::GetFluidFriction",
+@"	return inClass.GetDefaultObject()->mFluidFriction;"
+			},
+            { "static UFGItemDescriptor::GetFluidViscosity",
+@"	return inClass.GetDefaultObject()->mFluidViscosity;"
+			},
+            { "static UFGItemDescriptor::GetForm",
+@"	return inClass.GetDefaultObject()->mForm;"
+			},
+            { "static UFGItemDescriptor::GetItemCategory",
+@"	return inClass.GetDefaultObject()->mItemCategory;"
+			},
+            { "static UFGItemDescriptor::GetItemDescription",
+@"	return inClass.GetDefaultObject()->mDescription;"
+			},
+            { "static UFGItemDescriptor::GetItemIcon",
+@"	return inClass.GetDefaultObject()->mInventoryIcon;"
+			},
+            { "static UFGItemDescriptor::GetItemMesh",
+@"	return inClass.GetDefaultObject()->mConveyorMesh;"
+			},
+            { "static UFGItemDescriptor::GetItemName",
+@"	if (inClass.GetDefaultObject()->mUseDisplayNameAndDescription == true)
+	return inClass.GetDefaultObject()->mDisplayName;
+else
+	return FText::FromString(inClass->GetName());"
+            },
+            { "static UFGItemDescriptor::GetRadioactiveDecay",
+@"	return inClass.GetDefaultObject()->mRadioactiveDecay;"
+			},
+            { "static UFGItemDescriptor::GetSmallIcon",
+@"	return inClass.GetDefaultObject()->mSmallIcon;"
+			},
+            { "static UFGItemDescriptor::GetStackSize",
+@"	return static_cast<int32>(inClass.GetDefaultObject()->mStackSize);"
+			},
+            { "UFGItemDescriptor::GetStackSizeConverted",
+@"	switch (inClass.GetDefaultObject()->mStackSize) {
+    case EStackSize::SS_ONE: return 1;
+    case EStackSize::SS_SMALL: return 20;
+    case EStackSize::SS_MEDIUM: return 50;
+    case EStackSize::SS_BIG: return 200;
+    case EStackSize::SS_HUGE: return 500;
+    case EStackSize::SS_FLUID: return 5000;
+    case EStackSize::SS_LAST_ENUM: return 1;
+    }
+    return 0;"
+            },
+            { "static UFGItemDescriptor::RememberPickUp",
+@"	return inClass.GetDefaultObject()->mRememberPickUp;"
+			},
+            { "static UFGRecipe::GetIngredients",
+@"	return inClass.GetDefaultObject()->mIngredients;"
+			},
+            { "static UFGRecipe::GetManualManufacturingDuration",
+@"	return inClass.GetDefaultObject()->mManualManufacturingMultiplier;"
+			},
+            { "static UFGRecipe::GetManufacturingDuration",
+@"	return inClass.GetDefaultObject()->mManufactoringDuration;"
+			},
+            { "UFGRecipe::GetProducedIn",
+@"	out_producedIn = UFGRecipe::GetProducedIn(this->GetClass());"
+            },
+            { "static UFGRecipe::GetProducts",
+@"	return inClass.GetDefaultObject()->mProduct;"
+			},
+            { "static UFGRecipe::GetRecipeName",
+@"	return inClass.GetDefaultObject()->mDisplayName;"
+			},
+            { "UFGRecipe::SetIngredient",
+@"	recipe.GetDefaultObject()->mIngredients = ingredient;"
+            },
+            { "UFGRecipe::SetManualManufacturingMultiplier",
+@"	recipe.GetDefaultObject()->mManualManufacturingMultiplier = sec;"
+            },
+            { "UFGRecipe::SetManufactoringDuration",
+@"	recipe.GetDefaultObject()->mManufactoringDuration = sec;"
+            },
+            { "UFGRecipe::SetProduct",
+@"	recipe.GetDefaultObject()->mProduct = product;"
+            },
+            { "static UFGResearchTree::GetDisplayName",
+@"	return inClass.GetDefaultObject()->mDisplayName;"
+			},
+            { "static UFGResearchTree::GetNodes",
+@"	return inClass.GetDefaultObject()->mNodes;"
+			},
+            { "static UFGResearchTree::GetPostUnlockDescription",
+@"	return inClass.GetDefaultObject()->mPostUnlockDescription;"
+			},
+            { "static UFGResearchTree::GetPreUnlockDescription",
+@"	return inClass.GetDefaultObject()->mPreUnlockDescription;"
+			},
+            { "static UFGResearchTree::GetPreUnlockDisplayName",
+@"	return inClass.GetDefaultObject()->mPreUnlockDisplayName;"
+			},
+            { "static UFGResearchTree::GetResearchTreeIcon",
+@"	return inClass.GetDefaultObject()->mResearchTreeIcon;"
+			},
+            { "static UFGResearchTree::GetUnlockDependencies",
+@"	return inClass.GetDefaultObject()->mUnlockDependencies;"
+			},
+            { "static UFGResearchTree::SetNodes",
+@"	inClass.GetDefaultObject()->mNodes = nodes;"
+			},
+            { "static UFGSchematic::GetAdditionalSchematicDependencies",
+@"	return inClass.GetDefaultObject()->mAdditionalSchematicDependencies;"
+			},
+            { "static UFGSchematic::GetCost",
+@"	return inClass.GetDefaultObject()->mCost;"
+			},
+            { "static UFGSchematic::GetDependentOnSchematic",
+@"	return inClass.GetDefaultObject()->mDependsOnSchematic;"
+			},
+            { "static UFGSchematic::GetItemIcon",
+@"	return inClass.GetDefaultObject()->mSchematicIcon;"
+			},
+            { "static UFGSchematic::GetSchematicCategory",
+@"	return inClass.GetDefaultObject()->mSchematicCategory;"
+			},
+            { "static UFGSchematic::GetSchematicDisplayName",
+@"	return inClass.GetDefaultObject()->mDisplayName;"
+			},
+            { "static UFGSchematic::GetSubCategories",
+@"	out_subCategories = inClass.GetDefaultObject()->mSubCategories;"
+			},
+            { "static UFGSchematic::GetTechTier",
+@"	return inClass.GetDefaultObject()->mTechTier;"
+			},
+            { "static UFGSchematic::GetTimeToComplete",
+@"	return inClass.GetDefaultObject()->mTimeToComplete;"
+			},
+            { "static UFGSchematic::GetType",
+@"	return inClass.GetDefaultObject()->mType;"
+			},
+            { "static UFGSchematic::GetUnlocks",
+@"	return inClass.GetDefaultObject()->mUnlocks;"
+			},
+            { "static UFGSchematic::SetCost",
+@"	inClass.GetDefaultObject()->mCost = Cost;"
+			},
+            { "static UFGSchematic::SetDisplayName",
+@"	inClass.GetDefaultObject()->mDisplayName = Name;"
+			},
+            { "static UFGSchematic::SetTechTier",
+@"	inClass.GetDefaultObject()->mTechTier = Tier;"
+			},
+            { "static UFGSchematic::SetTimeToComplete",
+@"	inClass.GetDefaultObject()->mTimeToComplete = sec;"
+			},
+            { "static UFGSchematic::SetType",
+@"	inClass.GetDefaultObject()->mType = Type;"
+			},
             { "static UFGRecipe::GetProducedIn",
 @"	TArray<TSubclassOf<UObject>>   out;
 	TArray<TSoftClassPtr<UObject>> In = inClass.GetDefaultObject()->mProducedIn;
@@ -31,150 +202,6 @@ namespace ImplementHeaders
 	}
 	else
 		return TArray<TSubclassOf<UObject>>();"
-            },
-            { "UFGRecipe::GetProducedIn",
-@"	out_producedIn = UFGRecipe::GetProducedIn(this->GetClass());"
-            },
-            { "UFGRecipe::SetProduct",
-@" recipe.GetDefaultObject()->mProduct = product;"
-            },
-            { "UFGRecipe::GetRecipeName",
-@"	return inClass.GetDefaultObject()->mDisplayName;"
-            },
-            { "UFGRecipe::GetIngredients",
-@"	return inClass.GetDefaultObject()->mIngredients;"
-            },
-            { "UFGRecipe::GetProducts",
-@"	return inClass.GetDefaultObject()->mProduct;"
-            },
-            { "UFGRecipe::GetManufacturingDuration",
-@"	return inClass.GetDefaultObject()->mManufactoringDuration;"
-            },
-            { "UFGRecipe::GetManualManufacturingDuration",
-@"	return inClass.GetDefaultObject()->mManualManufacturingMultiplier;"
-            },
-            { "UFGSchematic::GetType",
-@"	return inClass.GetDefaultObject()->mType;"
-            },
-            { "UFGSchematic::GetSchematicDisplayName",
-@"	return inClass.GetDefaultObject()->mDisplayName;"
-            },
-            { "UFGSchematic::GetSchematicCategory",
-@"	return inClass.GetDefaultObject()->mSchematicCategory;"
-            },
-            { "UFGSchematic::GetSubCategories",
-@"	out_subCategories = inClass.GetDefaultObject()->mSubCategories;"
-            },
-            { "UFGSchematic::GetCost",
-@"	return inClass.GetDefaultObject()->mCost;"
-            },
-            { "UFGSchematic::GetUnlocks",
-@"	return inClass.GetDefaultObject()->mUnlocks;"
-            },
-            { "UFGSchematic::GetTechTier",
-@"	return inClass.GetDefaultObject()->mTechTier;"
-            },
-            { "UFGSchematic::GetTimeToComplete",
-@"	return inClass.GetDefaultObject()->mTimeToComplete;"
-            },
-            { "UFGItemDescriptor::GetForm",
-@"	return inClass.GetDefaultObject()->mForm;"
-            },
-            { "UFGItemDescriptor::GetEnergyValue",
-@"	return inClass.GetDefaultObject()->mEnergyValue;"
-            },
-            { "UFGItemDescriptor::GetRadioactiveDecay",
-@"	return inClass.GetDefaultObject()->mRadioactiveDecay;"
-            },
-            { "UFGItemDescriptor::GetItemName",
-@"	if (inClass.GetDefaultObject()->mUseDisplayNameAndDescription == true) return inClass.GetDefaultObject()->mDisplayName; else return FText::FromString(inClass->GetName());"
-            },
-            { "UFGItemDescriptor::GetItemDescription",
-@"	return inClass.GetDefaultObject()->mDescription;"
-            },
-            { "UFGItemDescriptor::GetItemIcon",
-@"	return inClass.GetDefaultObject()->mInventoryIcon;"
-            },
-            { "UFGItemDescriptor::GetSmallIcon",
-@"	return inClass.GetDefaultObject()->mSmallIcon;"
-            },
-            { "UFGItemDescriptor::GetBigIcon",
-@"	return inClass.GetDefaultObject()->mPersistentBigIcon;"
-            },
-            { "UFGItemDescriptor::GetItemMesh",
-@"	return inClass.GetDefaultObject()->mConveyorMesh;"
-            },
-            { "UFGItemDescriptor::GetStackSize",
-@"	return static_cast<int32>(inClass.GetDefaultObject()->mStackSize);"
-            },
-            { "UFGItemDescriptor::GetStackSizeConverted",
-@"	switch (inClass.GetDefaultObject()->mStackSize) {
-    case EStackSize::SS_ONE: return 1;
-    case EStackSize::SS_SMALL: return 20;
-    case EStackSize::SS_MEDIUM: return 50;
-    case EStackSize::SS_BIG: return 200;
-    case EStackSize::SS_HUGE: return 500;
-    case EStackSize::SS_FLUID: return 5000;
-    case EStackSize::SS_LAST_ENUM: return 1;
-    }
-    return 0;"
-            },
-            { "UFGItemDescriptor::CanBeDiscarded",
-@"	return inClass.GetDefaultObject()->mCanBeDiscarded;"
-            },
-            { "UFGItemDescriptor::RememberPickUp",
-@"	return inClass.GetDefaultObject()->mRememberPickUp;"
-            },
-            { "UFGItemDescriptor::GetItemCategory",
-@"	return inClass.GetDefaultObject()->mItemCategory;"
-            },
-            { "UFGItemDescriptor::GetFluidDensity",
-@"	return inClass.GetDefaultObject()->mFluidDensity;"
-            },
-            { "UFGItemDescriptor::GetFluidViscosity",
-@"	return inClass.GetDefaultObject()->mFluidViscosity;"
-            },
-            { "UFGItemDescriptor::GetFluidFriction",
-@"	return inClass.GetDefaultObject()->mFluidFriction;"
-            },
-            { "UFGItemDescriptor::GetFluidColor",
-@"	return inClass.GetDefaultObject()->mFluidColor;"
-            },
-            { "UFGItemDescriptor::GetFluidColorLinear",
-@"	return inClass.GetDefaultObject()->mFluidColor.ReinterpretAsLinear();"
-            },
-            { "UFGResearchTree::GetPreUnlockDisplayName",
-@"	return inClass.GetDefaultObject()->mPreUnlockDisplayName;"
-            },
-            { "UFGResearchTree::GetDisplayName",
-@"	return inClass.GetDefaultObject()->mDisplayName;"
-            },
-            { "UFGResearchTree::GetPreUnlockDescription",
-@"	return inClass.GetDefaultObject()->mPreUnlockDescription;"
-            },
-            { "UFGResearchTree::GetPostUnlockDescription",
-@"	return inClass.GetDefaultObject()->mPostUnlockDescription;"
-            },
-            { "UFGResearchTree::GetResearchTreeIcon",
-@"	return inClass.GetDefaultObject()->mResearchTreeIcon;"
-            },
-            { "UFGResearchTree::SetNodes",
-@"	inClass.GetDefaultObject()->mNodes = nodes;"
-            },
-            { "UFGResearchTree::GetNodes",
-@"	return inClass.GetDefaultObject()->mNodes;"
-            },
-            { "UFGResearchTree::GetUnlockDependencies",
-@"	return inClass.GetDefaultObject()->mUnlockDependencies;"
-            },
-            { "UFGSchematic::GetItemIcon",
-@"	return inClass.GetDefaultObject()->mSchematicIcon;"
-            },
-            { "UFGSchematic::GetDependentOnSchematic",
-@"	return inClass.GetDefaultObject()->mDependsOnSchematic;"
-            },
-            { "UFGSchematic::GetAdditionalSchematicDependencies",
-@"	return inClass.GetDefaultObject()->mAdditionalSchematicDependencies;"
             }
         };
 
@@ -271,7 +298,7 @@ namespace ImplementHeaders
             classContents = Regex.Replace(classContents, @"\s*GENERATED.*?\(\)", ""); // fix for GENERATED... macros being matched
             classContents = Regex.Replace(classContents, @"\s*UPROPERTY ?\( ?(?:.|\s)*?;", ""); // fix for UPROPERTY... macros being matched
             classContents = Regex.Replace(classContents, @"\s*UE_DEPRECATED ?\( ?(?:.|\s)*?\)", ""); // fix for UE_DEPRECATED... macros being matched
-            classContents = Regex.Replace(classContents, @"\s*DEPRECATED ?\( ?(?:.|\s)*?\)", ""); // fix for DEPRECATED... macros being matched
+            classContents = Regex.Replace(classContents, @"^\s*DEPRECATED ?\( ?(?:.|\s)*?\)", "", RegexOptions.Multiline); // fix for DEPRECATED... macros being matched
             // Implement with #if ... and delete it (fixes issues and requires less manual changes in the end)
             foreach (Match ifMacro in Regex.Matches(classContents, @"\s*#if (.*?)\n((?:.|\n)*?)\n\s*#endif(.*)"))
             {
@@ -344,11 +371,6 @@ namespace ImplementHeaders
                 string isConst = function.Groups[11].Value;
                 string isOverride = function.Groups[12].Value;
                 string extras = function.Groups[13].Value;
-
-                if (functionName.Contains("CreateInventoryComponentOfClass"))
-                {
-
-                }
 
                 if (extras.Contains("PURE_VIRTUAL")) // ignore pure virtual macro
                     continue;
@@ -441,7 +463,7 @@ namespace ImplementHeaders
                     result += " : FObjectWriter(Obj, InBytes) ";
                 result += $"{{ ";
                 if (CustomImplementation.ContainsKey($"{(!string.IsNullOrWhiteSpace(isStatic) ? "static " : "")}{className}::{functionName}")) // aghhhh
-                    result += $"\r\n{CustomImplementation[$"{className}::{functionName}"]}\r\n}}";
+                    result += $"\r\n{CustomImplementation[$"{(!string.IsNullOrWhiteSpace(isStatic) ? "static " : "")}{className}::{functionName}"]}\r\n}}";
                 else
                 {
                     if (returnType.Contains("void") || string.IsNullOrWhiteSpace(returnType))
