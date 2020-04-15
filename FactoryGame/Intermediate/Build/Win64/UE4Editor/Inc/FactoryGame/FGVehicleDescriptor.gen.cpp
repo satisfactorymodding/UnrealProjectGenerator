@@ -139,7 +139,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVehicleDescriptor, 455149860);
+	IMPLEMENT_CLASS(UFGVehicleDescriptor, 2850905132);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGVehicleDescriptor>()
 	{
 		return UFGVehicleDescriptor::StaticClass();

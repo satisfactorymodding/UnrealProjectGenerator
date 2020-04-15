@@ -27,6 +27,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_Factory_PeekOutput();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_Factory_ReceiveTick();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_FlagReevaluateMaterialOnColored();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_GetClearanceComponent();
 	ENGINE_API UClass* Z_Construct_UClass_UShapeComponent_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_GetDismantleBlueprintReturns();
@@ -36,6 +37,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_GetMainMeshes();
 	ENGINE_API UClass* Z_Construct_UClass_UMeshComponent_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_OnMaterialInstancesUpdated();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_OnRep_ColorSlot();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_OnRep_DidFirstTimeUse();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_PlayBuildEffects();
@@ -134,6 +136,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		const_cast<AFGBuildable*>(this)->ProcessEvent(FindFunctionChecked(NAME_AFGBuildable_GetDismantleBlueprintReturns),&Parms);
 		out_returns=Parms.out_returns;
 	}
+	static FName NAME_AFGBuildable_OnMaterialInstancesUpdated = FName(TEXT("OnMaterialInstancesUpdated"));
+	void AFGBuildable::OnMaterialInstancesUpdated()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AFGBuildable_OnMaterialInstancesUpdated),NULL);
+	}
 	static FName NAME_AFGBuildable_PlayConstructSound = FName(TEXT("PlayConstructSound"));
 	void AFGBuildable::PlayConstructSound()
 	{
@@ -163,6 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 			{ "CanBeSampled", &AFGBuildable::execCanBeSampled },
 			{ "Factory_GrabOutput", &AFGBuildable::execFactory_GrabOutput },
 			{ "Factory_PeekOutput", &AFGBuildable::execFactory_PeekOutput },
+			{ "FlagReevaluateMaterialOnColored", &AFGBuildable::execFlagReevaluateMaterialOnColored },
 			{ "GetClearanceComponent", &AFGBuildable::execGetClearanceComponent },
 			{ "GetInteractWidgetClass", &AFGBuildable::execGetInteractWidgetClass },
 			{ "GetMainMeshes", &AFGBuildable::execGetMainMeshes },
@@ -359,6 +367,30 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGBuildable_FlagReevaluateMaterialOnColored_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_FlagReevaluateMaterialOnColored_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Buildable" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
+		{ "ToolTip", "Set the buildable to reevaluate material instances with the buildable subsystem when applying color slot" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildable_FlagReevaluateMaterialOnColored_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildable, nullptr, "FlagReevaluateMaterialOnColored", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildable_FlagReevaluateMaterialOnColored_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildable_FlagReevaluateMaterialOnColored_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildable_FlagReevaluateMaterialOnColored()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildable_FlagReevaluateMaterialOnColored_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGBuildable_GetClearanceComponent_Statics
 	{
 		struct FGBuildable_eventGetClearanceComponent_Parms
@@ -544,6 +576,30 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGBuildable_OnMaterialInstancesUpdated_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildable_OnMaterialInstancesUpdated_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Buildable|Build Effect" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
+		{ "ToolTip", "Blueprint event for when materials are updated by the buildable subsystem" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildable_OnMaterialInstancesUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildable, nullptr, "OnMaterialInstancesUpdated", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildable_OnMaterialInstancesUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildable_OnMaterialInstancesUpdated_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildable_OnMaterialInstancesUpdated()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildable_OnMaterialInstancesUpdated_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -946,6 +1002,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mBuildEffectInstignator;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mActiveBuildEffect_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mActiveBuildEffect;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDismantleEffectTemplate_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mDismantleEffectTemplate;
@@ -965,6 +1025,16 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPrimaryColor_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mPrimaryColor;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mExcludeFromMaterialInstancing_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mExcludeFromMaterialInstancing;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mExcludeFromMaterialInstancing_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBlockSharingMaterialInstanceMapping_MetaData[];
+#endif
+		static void NewProp_mBlockSharingMaterialInstanceMapping_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mBlockSharingMaterialInstanceMapping;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMaterialNameToInstanceManager_MetaData[];
 #endif
@@ -1009,11 +1079,13 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		{ &Z_Construct_UFunction_AFGBuildable_Factory_GrabOutput, "Factory_GrabOutput" }, // 479208918
 		{ &Z_Construct_UFunction_AFGBuildable_Factory_PeekOutput, "Factory_PeekOutput" }, // 673979081
 		{ &Z_Construct_UFunction_AFGBuildable_Factory_ReceiveTick, "Factory_ReceiveTick" }, // 2882255094
+		{ &Z_Construct_UFunction_AFGBuildable_FlagReevaluateMaterialOnColored, "FlagReevaluateMaterialOnColored" }, // 1976000030
 		{ &Z_Construct_UFunction_AFGBuildable_GetClearanceComponent, "GetClearanceComponent" }, // 1425940691
 		{ &Z_Construct_UFunction_AFGBuildable_GetDismantleBlueprintReturns, "GetDismantleBlueprintReturns" }, // 3600741589
 		{ &Z_Construct_UFunction_AFGBuildable_GetInteractWidgetClass, "GetInteractWidgetClass" }, // 2305487648
 		{ &Z_Construct_UFunction_AFGBuildable_GetMainMeshes, "GetMainMeshes" }, // 191074800
 		{ &Z_Construct_UFunction_AFGBuildable_GetNumPowerConnections, "GetNumPowerConnections" }, // 3542330243
+		{ &Z_Construct_UFunction_AFGBuildable_OnMaterialInstancesUpdated, "OnMaterialInstancesUpdated" }, // 4116384189
 		{ &Z_Construct_UFunction_AFGBuildable_OnRep_ColorSlot, "OnRep_ColorSlot" }, // 3462040775
 		{ &Z_Construct_UFunction_AFGBuildable_OnRep_DidFirstTimeUse, "OnRep_DidFirstTimeUse" }, // 2615305437
 		{ &Z_Construct_UFunction_AFGBuildable_PlayBuildEffects, "PlayBuildEffects" }, // 248352647
@@ -1229,6 +1301,13 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectInstignator = { "mBuildEffectInstignator", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mBuildEffectInstignator), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectInstignator_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectInstignator_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mActiveBuildEffect_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mActiveBuildEffect = { "mActiveBuildEffect", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mActiveBuildEffect), Z_Construct_UClass_UFGMaterialEffect_Build_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mActiveBuildEffect_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mActiveBuildEffect_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleEffectTemplate_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "What build effect to use when dismantling this building" },
@@ -1267,6 +1346,28 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mPrimaryColor = { "mPrimaryColor", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mPrimaryColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mPrimaryColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mPrimaryColor_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mExcludeFromMaterialInstancing_MetaData[] = {
+		{ "Category", "Buildable" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
+		{ "ToolTip", "Array of mesh elements to selectively block material instancing on. Used in the event that certain buildable components should not attempt to use a shared material instance." },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mExcludeFromMaterialInstancing = { "mExcludeFromMaterialInstancing", nullptr, (EPropertyFlags)0x002008800000000d, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mExcludeFromMaterialInstancing), METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mExcludeFromMaterialInstancing_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mExcludeFromMaterialInstancing_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mExcludeFromMaterialInstancing_Inner = { "mExcludeFromMaterialInstancing", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBlockSharingMaterialInstanceMapping_MetaData[] = {
+		{ "Category", "Buildable" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
+		{ "ToolTip", "Set to true to keep the materials in this buildable from being added to the material instance manager. Uses include buildings that set other material parameters outside of the color params.\nEx. Pipeline Pumps use a Vertex animation that varies between instances at runtime so it doesn't make sense to attempt to use a universal material instance" },
+	};
+#endif
+	void Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBlockSharingMaterialInstanceMapping_SetBit(void* Obj)
+	{
+		((AFGBuildable*)Obj)->mBlockSharingMaterialInstanceMapping = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBlockSharingMaterialInstanceMapping = { "mBlockSharingMaterialInstanceMapping", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildable), &Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBlockSharingMaterialInstanceMapping_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBlockSharingMaterialInstanceMapping_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBlockSharingMaterialInstanceMapping_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mMaterialNameToInstanceManager_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
@@ -1349,11 +1450,15 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectClassName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleEffectClassName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectInstignator,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mActiveBuildEffect,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDismantleEffectTemplate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildEffectTemplate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mColorSlot,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mSecondaryColor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mPrimaryColor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mExcludeFromMaterialInstancing,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mExcludeFromMaterialInstancing_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBlockSharingMaterialInstanceMapping,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mMaterialNameToInstanceManager,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mMaterialNameToInstanceManager_Key_KeyProp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mMaterialNameToInstanceManager_ValueProp,
@@ -1397,7 +1502,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildable, 3680795635);
+	IMPLEMENT_CLASS(AFGBuildable, 217549880);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildable>()
 	{
 		return AFGBuildable::StaticClass();

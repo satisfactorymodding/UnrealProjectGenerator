@@ -18,6 +18,9 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerState() {}
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FPresetHotbar();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FHotbar();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGHotbarShortcut_NoRegister();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FMessageData();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGMessageBase_NoRegister();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FSlotData();
@@ -28,7 +31,6 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerState() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_AddArmSlots();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_AddMessage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_CreateShortcut();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGHotbarShortcut_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetAllMessageData();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetAllMessages();
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EMessageType();
@@ -37,6 +39,8 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerState() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetLastSelectedResourceSinkShopCategory();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSchematicCategory_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetNametagColor();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetNewRecipes();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipe_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetNumArmSlots();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetOnlyShowAffordableRecipes();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetPingColor();
@@ -49,11 +53,11 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerState() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetUserID();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetUserName();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_IsServerAdmin();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_OnRep_CurrentHotbarIndex();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_OnRep_HotbarShortcuts();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_ReadMessage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_RemoveMessage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_RemoveRecipe();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipe_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_Server_RemoveRecipe();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_Server_SetCompassFilter();
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ERepresentationType();
@@ -99,6 +103,205 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerState() {}
 		}
 		return ReturnFunction;
 	}
+class UScriptStruct* FPresetHotbar::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FPresetHotbar_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FPresetHotbar, Z_Construct_UPackage__Script_FactoryGame(), TEXT("PresetHotbar"), sizeof(FPresetHotbar), Get_Z_Construct_UScriptStruct_FPresetHotbar_Hash());
+	}
+	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FPresetHotbar>()
+{
+	return FPresetHotbar::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FPresetHotbar(FPresetHotbar::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("PresetHotbar"), false, nullptr, nullptr);
+static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPresetHotbar
+{
+	FScriptStruct_FactoryGame_StaticRegisterNativesFPresetHotbar()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("PresetHotbar")),new UScriptStruct::TCppStructOps<FPresetHotbar>);
+	}
+} ScriptStruct_FactoryGame_StaticRegisterNativesFPresetHotbar;
+	struct Z_Construct_UScriptStruct_FPresetHotbar_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Hotbar_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Hotbar;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IconIndex_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_IconIndex;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PresetName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_PresetName;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPresetHotbar_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
+		{ "ToolTip", "A preset represents a way for players to create pre made hotbars they can replace there current hotbar with" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FPresetHotbar_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FPresetHotbar>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPresetHotbar_Statics::NewProp_Hotbar_MetaData[] = {
+		{ "Category", "PresetHotbar" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
+		{ "ToolTip", "The hotbar shortcuts for this preset" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FPresetHotbar_Statics::NewProp_Hotbar = { "Hotbar", nullptr, (EPropertyFlags)0x0010000001000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPresetHotbar, Hotbar), Z_Construct_UScriptStruct_FHotbar, METADATA_PARAMS(Z_Construct_UScriptStruct_FPresetHotbar_Statics::NewProp_Hotbar_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPresetHotbar_Statics::NewProp_Hotbar_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPresetHotbar_Statics::NewProp_IconIndex_MetaData[] = {
+		{ "Category", "PresetHotbar" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
+		{ "ToolTip", "The shortcut in the hotbar with this index will decide the icon for the preset" },
+	};
+#endif
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FPresetHotbar_Statics::NewProp_IconIndex = { "IconIndex", nullptr, (EPropertyFlags)0x0010000001000014, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPresetHotbar, IconIndex), nullptr, METADATA_PARAMS(Z_Construct_UScriptStruct_FPresetHotbar_Statics::NewProp_IconIndex_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPresetHotbar_Statics::NewProp_IconIndex_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPresetHotbar_Statics::NewProp_PresetName_MetaData[] = {
+		{ "Category", "PresetHotbar" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FPresetHotbar_Statics::NewProp_PresetName = { "PresetName", nullptr, (EPropertyFlags)0x0010000001000014, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPresetHotbar, PresetName), METADATA_PARAMS(Z_Construct_UScriptStruct_FPresetHotbar_Statics::NewProp_PresetName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPresetHotbar_Statics::NewProp_PresetName_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FPresetHotbar_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPresetHotbar_Statics::NewProp_Hotbar,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPresetHotbar_Statics::NewProp_IconIndex,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPresetHotbar_Statics::NewProp_PresetName,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FPresetHotbar_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+		nullptr,
+		&NewStructOps,
+		"PresetHotbar",
+		sizeof(FPresetHotbar),
+		alignof(FPresetHotbar),
+		Z_Construct_UScriptStruct_FPresetHotbar_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FPresetHotbar_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000201),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FPresetHotbar_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FPresetHotbar_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FPresetHotbar()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FPresetHotbar_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("PresetHotbar"), sizeof(FPresetHotbar), Get_Z_Construct_UScriptStruct_FPresetHotbar_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FPresetHotbar_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FPresetHotbar_Hash() { return 3255257548U; }
+class UScriptStruct* FHotbar::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FHotbar_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FHotbar, Z_Construct_UPackage__Script_FactoryGame(), TEXT("Hotbar"), sizeof(FHotbar), Get_Z_Construct_UScriptStruct_FHotbar_Hash());
+	}
+	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FHotbar>()
+{
+	return FHotbar::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FHotbar(FHotbar::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("Hotbar"), false, nullptr, nullptr);
+static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHotbar
+{
+	FScriptStruct_FactoryGame_StaticRegisterNativesFHotbar()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("Hotbar")),new UScriptStruct::TCppStructOps<FHotbar>);
+	}
+} ScriptStruct_FactoryGame_StaticRegisterNativesFHotbar;
+	struct Z_Construct_UScriptStruct_FHotbar_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HotbarShortcuts_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_HotbarShortcuts;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HotbarShortcuts_Inner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FHotbar_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
+		{ "ToolTip", "A hotbar with a set of shortcuts that can be assigned and executed" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FHotbar_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FHotbar>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FHotbar_Statics::NewProp_HotbarShortcuts_MetaData[] = {
+		{ "Category", "Hotbar" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FHotbar_Statics::NewProp_HotbarShortcuts = { "HotbarShortcuts", nullptr, (EPropertyFlags)0x0010000001000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FHotbar, HotbarShortcuts), METADATA_PARAMS(Z_Construct_UScriptStruct_FHotbar_Statics::NewProp_HotbarShortcuts_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FHotbar_Statics::NewProp_HotbarShortcuts_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FHotbar_Statics::NewProp_HotbarShortcuts_Inner = { "HotbarShortcuts", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGHotbarShortcut_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FHotbar_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FHotbar_Statics::NewProp_HotbarShortcuts,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FHotbar_Statics::NewProp_HotbarShortcuts_Inner,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FHotbar_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+		nullptr,
+		&NewStructOps,
+		"Hotbar",
+		sizeof(FHotbar),
+		alignof(FHotbar),
+		Z_Construct_UScriptStruct_FHotbar_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FHotbar_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000201),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FHotbar_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FHotbar_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FHotbar()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FHotbar_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("Hotbar"), sizeof(FHotbar), Get_Z_Construct_UScriptStruct_FHotbar_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FHotbar_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FHotbar_Hash() { return 203999653U; }
 class UScriptStruct* FMessageData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -352,6 +555,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 			{ "GetCollapsedItemCategories", &AFGPlayerState::execGetCollapsedItemCategories },
 			{ "GetLastSelectedResourceSinkShopCategory", &AFGPlayerState::execGetLastSelectedResourceSinkShopCategory },
 			{ "GetNametagColor", &AFGPlayerState::execGetNametagColor },
+			{ "GetNewRecipes", &AFGPlayerState::execGetNewRecipes },
 			{ "GetNumArmSlots", &AFGPlayerState::execGetNumArmSlots },
 			{ "GetOnlyShowAffordableRecipes", &AFGPlayerState::execGetOnlyShowAffordableRecipes },
 			{ "GetPingColor", &AFGPlayerState::execGetPingColor },
@@ -362,6 +566,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 			{ "GetUserID", &AFGPlayerState::execGetUserID },
 			{ "GetUserName", &AFGPlayerState::execGetUserName },
 			{ "IsServerAdmin", &AFGPlayerState::execIsServerAdmin },
+			{ "OnRep_CurrentHotbarIndex", &AFGPlayerState::execOnRep_CurrentHotbarIndex },
 			{ "OnRep_HotbarShortcuts", &AFGPlayerState::execOnRep_HotbarShortcuts },
 			{ "ReadMessage", &AFGPlayerState::execReadMessage },
 			{ "RemoveMessage", &AFGPlayerState::execRemoveMessage },
@@ -664,6 +869,43 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerState_GetNewRecipes_Statics
+	{
+		struct FGPlayerState_eventGetNewRecipes_Parms
+		{
+			TArray<TSubclassOf<UFGRecipe> > out_newRecipes;
+		};
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_newRecipes;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_out_newRecipes_Inner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGPlayerState_GetNewRecipes_Statics::NewProp_out_newRecipes = { "out_newRecipes", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerState_eventGetNewRecipes_Parms, out_newRecipes), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGPlayerState_GetNewRecipes_Statics::NewProp_out_newRecipes_Inner = { "out_newRecipes", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerState_GetNewRecipes_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerState_GetNewRecipes_Statics::NewProp_out_newRecipes,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerState_GetNewRecipes_Statics::NewProp_out_newRecipes_Inner,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetNewRecipes_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Recipes" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
+		{ "ToolTip", "Get all recipes that are new to the player. This is only for UI feedback" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerState_GetNewRecipes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerState, nullptr, "GetNewRecipes", sizeof(FGPlayerState_eventGetNewRecipes_Parms), Z_Construct_UFunction_AFGPlayerState_GetNewRecipes_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_GetNewRecipes_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x44420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerState_GetNewRecipes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_GetNewRecipes_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerState_GetNewRecipes()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerState_GetNewRecipes_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1013,6 +1255,29 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerState_IsServerAdmin_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerState_OnRep_CurrentHotbarIndex_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_OnRep_CurrentHotbarIndex_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
+		{ "ToolTip", "Client get notified that the hotbar index has changed" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerState_OnRep_CurrentHotbarIndex_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerState, nullptr, "OnRep_CurrentHotbarIndex", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerState_OnRep_CurrentHotbarIndex_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_OnRep_CurrentHotbarIndex_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerState_OnRep_CurrentHotbarIndex()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerState_OnRep_CurrentHotbarIndex_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1504,11 +1769,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		static void NewProp_mIsServerAdmin_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mIsServerAdmin;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mHasSetupDefaultShortcuts_MetaData[];
-#endif
-		static void NewProp_mHasSetupDefaultShortcuts_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mHasSetupDefaultShortcuts;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mHasReceivedInitialItems_MetaData[];
 #endif
 		static void NewProp_mHasReceivedInitialItems_SetBit(void* Obj);
@@ -1536,10 +1796,19 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mDefaultRecipeShortcuts;
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mDefaultRecipeShortcuts_Inner;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mHotbarShortcuts_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCurrentHotbarIndex_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mHotbarShortcuts;
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mHotbarShortcuts_Inner;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mCurrentHotbarIndex;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPresetHotbars_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mPresetHotbars;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mPresetHotbars_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mHotbars_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mHotbars;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mHotbars_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BuildableConstructedDelegate_MetaData[];
 #endif
@@ -1562,6 +1831,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		{ &Z_Construct_UFunction_AFGPlayerState_GetCollapsedItemCategories, "GetCollapsedItemCategories" }, // 891381697
 		{ &Z_Construct_UFunction_AFGPlayerState_GetLastSelectedResourceSinkShopCategory, "GetLastSelectedResourceSinkShopCategory" }, // 3630493618
 		{ &Z_Construct_UFunction_AFGPlayerState_GetNametagColor, "GetNametagColor" }, // 2259183885
+		{ &Z_Construct_UFunction_AFGPlayerState_GetNewRecipes, "GetNewRecipes" }, // 3170125264
 		{ &Z_Construct_UFunction_AFGPlayerState_GetNumArmSlots, "GetNumArmSlots" }, // 4025000975
 		{ &Z_Construct_UFunction_AFGPlayerState_GetOnlyShowAffordableRecipes, "GetOnlyShowAffordableRecipes" }, // 3249873035
 		{ &Z_Construct_UFunction_AFGPlayerState_GetPingColor, "GetPingColor" }, // 3136672301
@@ -1572,6 +1842,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		{ &Z_Construct_UFunction_AFGPlayerState_GetUserID, "GetUserID" }, // 1152285082
 		{ &Z_Construct_UFunction_AFGPlayerState_GetUserName, "GetUserName" }, // 627137807
 		{ &Z_Construct_UFunction_AFGPlayerState_IsServerAdmin, "IsServerAdmin" }, // 3617883060
+		{ &Z_Construct_UFunction_AFGPlayerState_OnRep_CurrentHotbarIndex, "OnRep_CurrentHotbarIndex" }, // 1791645495
 		{ &Z_Construct_UFunction_AFGPlayerState_OnRep_HotbarShortcuts, "OnRep_HotbarShortcuts" }, // 1858748135
 		{ &Z_Construct_UFunction_AFGPlayerState_ReadMessage, "ReadMessage" }, // 2521145621
 		{ &Z_Construct_UFunction_AFGPlayerState_RemoveMessage, "RemoveMessage" }, // 4185757974
@@ -1686,17 +1957,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mIsServerAdmin = { "mIsServerAdmin", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(AFGPlayerState), &Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mIsServerAdmin_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mIsServerAdmin_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mIsServerAdmin_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasSetupDefaultShortcuts_MetaData[] = {
-		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
-		{ "ToolTip", "Set to true after we have setup our initial shortcuts" },
-	};
-#endif
-	void Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasSetupDefaultShortcuts_SetBit(void* Obj)
-	{
-		((AFGPlayerState*)Obj)->mHasSetupDefaultShortcuts = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasSetupDefaultShortcuts = { "mHasSetupDefaultShortcuts", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(AFGPlayerState), &Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasSetupDefaultShortcuts_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasSetupDefaultShortcuts_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasSetupDefaultShortcuts_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasReceivedInitialItems_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Set to true after we have received our initial items" },
@@ -1730,12 +1990,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotNum = { "mSlotNum", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, mSlotNum), METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotNum_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotNum_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNewRecipes_MetaData[] = {
-		{ "Category", "Recipes" },
 		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "Recipes that are new to the player. This is only for UI feedback and doesn't affect the players ability to use the recipe" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNewRecipes = { "mNewRecipes", nullptr, (EPropertyFlags)0x0024080001000034, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, mNewRecipes), METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNewRecipes_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNewRecipes_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNewRecipes = { "mNewRecipes", nullptr, (EPropertyFlags)0x0024080001000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, mNewRecipes), METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNewRecipes_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNewRecipes_MetaData)) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNewRecipes_Inner = { "mNewRecipes", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mDefaultRecipeShortcuts_MetaData[] = {
@@ -1747,13 +2006,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mDefaultRecipeShortcuts = { "mDefaultRecipeShortcuts", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, mDefaultRecipeShortcuts), METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mDefaultRecipeShortcuts_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mDefaultRecipeShortcuts_MetaData)) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mDefaultRecipeShortcuts_Inner = { "mDefaultRecipeShortcuts", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHotbarShortcuts_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mCurrentHotbarIndex_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
+		{ "ToolTip", "The index of the current hotbar" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mCurrentHotbarIndex = { "mCurrentHotbarIndex", "OnRep_CurrentHotbarIndex", (EPropertyFlags)0x0020080101000020, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, mCurrentHotbarIndex), METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mCurrentHotbarIndex_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mCurrentHotbarIndex_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mPresetHotbars_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
+		{ "ToolTip", "All hotbar actions assigned to presets. A preset is a saved set of shortcuts that can be assigned to the hotbar" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mPresetHotbars = { "mPresetHotbars", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, mPresetHotbars), METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mPresetHotbars_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mPresetHotbars_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mPresetHotbars_Inner = { "mPresetHotbars", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FPresetHotbar, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHotbars_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
 		{ "ToolTip", "All hotbar actions assigned" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHotbarShortcuts = { "mHotbarShortcuts", "OnRep_HotbarShortcuts", (EPropertyFlags)0x0020080101000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, mHotbarShortcuts), METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHotbarShortcuts_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHotbarShortcuts_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHotbarShortcuts_Inner = { "mHotbarShortcuts", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGHotbarShortcut_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHotbars = { "mHotbars", "OnRep_HotbarShortcuts", (EPropertyFlags)0x0020080101000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, mHotbars), METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHotbars_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHotbars_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHotbars_Inner = { "mHotbars", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FHotbar, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_BuildableConstructedDelegate_MetaData[] = {
 		{ "Category", "Build" },
@@ -1782,7 +2056,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mTutorialSubsystemClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mTutorialSubsystem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mIsServerAdmin,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasSetupDefaultShortcuts,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasReceivedInitialItems,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mOwnedPawn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotData,
@@ -1791,8 +2064,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNewRecipes_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mDefaultRecipeShortcuts,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mDefaultRecipeShortcuts_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHotbarShortcuts,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHotbarShortcuts_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mCurrentHotbarIndex,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mPresetHotbars,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mPresetHotbars_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHotbars,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHotbars_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_BuildableConstructedDelegate,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AFGPlayerState_Statics::InterfaceParams[] = {
@@ -1825,7 +2101,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerState, 392726082);
+	IMPLEMENT_CLASS(AFGPlayerState, 2950786895);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlayerState>()
 	{
 		return AFGPlayerState::StaticClass();

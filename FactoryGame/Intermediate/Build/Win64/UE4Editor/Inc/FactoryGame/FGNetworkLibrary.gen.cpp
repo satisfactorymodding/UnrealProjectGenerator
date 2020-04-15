@@ -48,6 +48,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNetworkLibrary() {}
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFGOnlineSessionSettings();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSessionLibrary_GetMySession();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSessionLibrary_GetSessionID();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility();
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ESessionVisibility();
@@ -55,6 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNetworkLibrary() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSessionLibrary_JoinSession();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGInviteLibrary_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGInviteLibrary();
@@ -1287,12 +1289,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 			{ "CheckIsCompatibleVersion", &UFGSessionLibrary::execCheckIsCompatibleVersion },
 			{ "GetMaxNumberOfPlayers", &UFGSessionLibrary::execGetMaxNumberOfPlayers },
 			{ "GetMySession", &UFGSessionLibrary::execGetMySession },
+			{ "GetSessionID", &UFGSessionLibrary::execGetSessionID },
 			{ "GetSessionSettings", &UFGSessionLibrary::execGetSessionSettings },
 			{ "GetSessionVisibility", &UFGSessionLibrary::execGetSessionVisibility },
 			{ "InOnlineSession", &UFGSessionLibrary::execInOnlineSession },
 			{ "IsInGameSession", &UFGSessionLibrary::execIsInGameSession },
 			{ "IsSessionValid", &UFGSessionLibrary::execIsSessionValid },
 			{ "JoinSession", &UFGSessionLibrary::execJoinSession },
+			{ "JoinSessionByID", &UFGSessionLibrary::execJoinSessionByID },
 			{ "SetSessionVisibility", &UFGSessionLibrary::execSetSessionVisibility },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
@@ -1428,6 +1432,44 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGSessionLibrary_GetSessionID_Statics
+	{
+		struct FGSessionLibrary_eventGetSessionID_Parms
+		{
+			ULocalPlayer* localPlayer;
+			FString ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_localPlayer;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetSessionID_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventGetSessionID_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetSessionID_Statics::NewProp_localPlayer = { "localPlayer", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventGetSessionID_Parms, localPlayer), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSessionLibrary_GetSessionID_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_GetSessionID_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_GetSessionID_Statics::NewProp_localPlayer,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_GetSessionID_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Online|Session" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
+		{ "ToolTip", "Get the session ID in the form of a string" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_GetSessionID_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, nullptr, "GetSessionID", sizeof(FGSessionLibrary_eventGetSessionID_Parms), Z_Construct_UFunction_UFGSessionLibrary_GetSessionID_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetSessionID_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_GetSessionID_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetSessionID_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGSessionLibrary_GetSessionID()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSessionLibrary_GetSessionID_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1715,6 +1757,53 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID_Statics
+	{
+		struct FGSessionLibrary_eventJoinSessionByID_Parms
+		{
+			UObject* worldContext;
+			FString sessionID;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_sessionID_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_sessionID;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_worldContext;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID_Statics::NewProp_sessionID_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID_Statics::NewProp_sessionID = { "sessionID", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventJoinSessionByID_Parms, sessionID), METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID_Statics::NewProp_sessionID_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID_Statics::NewProp_sessionID_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventJoinSessionByID_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID_Statics::NewProp_sessionID,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID_Statics::NewProp_worldContext,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Online|Session" },
+		{ "DefaultToSelf", "worldContext" },
+		{ "ModuleRelativePath", "Public/FGNetworkLibrary.h" },
+		{ "ToolTip", "Join a session by session ID" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, nullptr, "JoinSessionByID", sizeof(FGSessionLibrary_eventJoinSessionByID_Parms), Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics
 	{
 		struct FGSessionLibrary_eventSetSessionVisibility_Parms
@@ -1777,12 +1866,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ &Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion, "CheckIsCompatibleVersion" }, // 119510443
 		{ &Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers, "GetMaxNumberOfPlayers" }, // 1251527626
 		{ &Z_Construct_UFunction_UFGSessionLibrary_GetMySession, "GetMySession" }, // 1874301360
+		{ &Z_Construct_UFunction_UFGSessionLibrary_GetSessionID, "GetSessionID" }, // 738153890
 		{ &Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings, "GetSessionSettings" }, // 4271042767
 		{ &Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility, "GetSessionVisibility" }, // 2076182611
 		{ &Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession, "InOnlineSession" }, // 3638741438
 		{ &Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession, "IsInGameSession" }, // 2925690995
 		{ &Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid, "IsSessionValid" }, // 595603040
 		{ &Z_Construct_UFunction_UFGSessionLibrary_JoinSession, "JoinSession" }, // 2212180437
+		{ &Z_Construct_UFunction_UFGSessionLibrary_JoinSessionByID, "JoinSessionByID" }, // 2272293322
 		{ &Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility, "SetSessionVisibility" }, // 2373488538
 	};
 #if WITH_METADATA
@@ -1818,7 +1909,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSessionLibrary, 2479882712);
+	IMPLEMENT_CLASS(UFGSessionLibrary, 3421796550);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSessionLibrary>()
 	{
 		return UFGSessionLibrary::StaticClass();

@@ -10,7 +10,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGMapArea;
 class UFGItemDescriptor;
-struct FColor;
+struct FLinearColor;
 class UFGMessageBase;
 class APlayerController;
 class AFGCharacterPlayer;
@@ -23,6 +23,26 @@ class AFGSchematicManager;
 #error "FGGameState.generated.h already included, missing '#pragma once' in FGGameState.h"
 #endif
 #define FACTORYGAME_FGGameState_generated_h
+
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_23_DELEGATE \
+static inline void FOnAutoSaveFinished_DelegateWrapper(const FMulticastScriptDelegate& OnAutoSaveFinished) \
+{ \
+	OnAutoSaveFinished.ProcessMulticastDelegate<UObject>(NULL); \
+}
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_22_DELEGATE \
+struct _Script_FactoryGame_eventOnAutoSaveTimeNotification_Parms \
+{ \
+	float timeLeft; \
+}; \
+static inline void FOnAutoSaveTimeNotification_DelegateWrapper(const FMulticastScriptDelegate& OnAutoSaveTimeNotification, float timeLeft) \
+{ \
+	_Script_FactoryGame_eventOnAutoSaveTimeNotification_Parms Parms; \
+	Parms.timeLeft=timeLeft; \
+	OnAutoSaveTimeNotification.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
 
 #define FactoryGame_Source_FactoryGame_Public_FGGameState_h_21_DELEGATE \
 struct _Script_FactoryGame_eventOnRestartTimeNotification_Parms \
@@ -50,9 +70,9 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_RPC_WRAPPERS \
-	virtual bool SetAndReplicateBuildingColorInSlot_Validate(uint8 , FColor , FColor ); \
-	virtual void SetAndReplicateBuildingColorInSlot_Implementation(uint8 slot, FColor pColor, FColor sColor); \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_RPC_WRAPPERS \
+	virtual bool Server_SetBuildingColorInSlotLinear_Validate(uint8 , FLinearColor , FLinearColor ); \
+	virtual void Server_SetBuildingColorInSlotLinear_Implementation(uint8 slotIdx, FLinearColor colorPrimary_Linear, FLinearColor colorSecondary_Linear); \
  \
 	DECLARE_FUNCTION(execOnRep_PlannedRestartTime) \
 	{ \
@@ -71,27 +91,35 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execOnRep_BuildingColorSlot) \
+	DECLARE_FUNCTION(execOnRep_BuildingColorSlotSecondary_Linear) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_BuildingColorSlot(); \
+		P_THIS->OnRep_BuildingColorSlotSecondary_Linear(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execSetAndReplicateBuildingColorInSlot) \
+	DECLARE_FUNCTION(execOnRep_BuildingColorSlotPrimary_Linear) \
 	{ \
-		P_GET_PROPERTY(UByteProperty,Z_Param_slot); \
-		P_GET_STRUCT(FColor,Z_Param_pColor); \
-		P_GET_STRUCT(FColor,Z_Param_sColor); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		if (!P_THIS->SetAndReplicateBuildingColorInSlot_Validate(Z_Param_slot,Z_Param_pColor,Z_Param_sColor)) \
+		P_THIS->OnRep_BuildingColorSlotPrimary_Linear(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_SetBuildingColorInSlotLinear) \
+	{ \
+		P_GET_PROPERTY(UByteProperty,Z_Param_slotIdx); \
+		P_GET_STRUCT(FLinearColor,Z_Param_colorPrimary_Linear); \
+		P_GET_STRUCT(FLinearColor,Z_Param_colorSecondary_Linear); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_SetBuildingColorInSlotLinear_Validate(Z_Param_slotIdx,Z_Param_colorPrimary_Linear,Z_Param_colorSecondary_Linear)) \
 		{ \
-			RPC_ValidateFailed(TEXT("SetAndReplicateBuildingColorInSlot_Validate")); \
+			RPC_ValidateFailed(TEXT("Server_SetBuildingColorInSlotLinear_Validate")); \
 			return; \
 		} \
-		P_THIS->SetAndReplicateBuildingColorInSlot_Implementation(Z_Param_slot,Z_Param_pColor,Z_Param_sColor); \
+		P_THIS->Server_SetBuildingColorInSlotLinear_Implementation(Z_Param_slotIdx,Z_Param_colorPrimary_Linear,Z_Param_colorSecondary_Linear); \
 		P_NATIVE_END; \
 	} \
  \
@@ -281,9 +309,9 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual bool SetAndReplicateBuildingColorInSlot_Validate(uint8 , FColor , FColor ); \
-	virtual void SetAndReplicateBuildingColorInSlot_Implementation(uint8 slot, FColor pColor, FColor sColor); \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual bool Server_SetBuildingColorInSlotLinear_Validate(uint8 , FLinearColor , FLinearColor ); \
+	virtual void Server_SetBuildingColorInSlotLinear_Implementation(uint8 slotIdx, FLinearColor colorPrimary_Linear, FLinearColor colorSecondary_Linear); \
  \
 	DECLARE_FUNCTION(execOnRep_PlannedRestartTime) \
 	{ \
@@ -302,27 +330,35 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execOnRep_BuildingColorSlot) \
+	DECLARE_FUNCTION(execOnRep_BuildingColorSlotSecondary_Linear) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_BuildingColorSlot(); \
+		P_THIS->OnRep_BuildingColorSlotSecondary_Linear(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execSetAndReplicateBuildingColorInSlot) \
+	DECLARE_FUNCTION(execOnRep_BuildingColorSlotPrimary_Linear) \
 	{ \
-		P_GET_PROPERTY(UByteProperty,Z_Param_slot); \
-		P_GET_STRUCT(FColor,Z_Param_pColor); \
-		P_GET_STRUCT(FColor,Z_Param_sColor); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		if (!P_THIS->SetAndReplicateBuildingColorInSlot_Validate(Z_Param_slot,Z_Param_pColor,Z_Param_sColor)) \
+		P_THIS->OnRep_BuildingColorSlotPrimary_Linear(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_SetBuildingColorInSlotLinear) \
+	{ \
+		P_GET_PROPERTY(UByteProperty,Z_Param_slotIdx); \
+		P_GET_STRUCT(FLinearColor,Z_Param_colorPrimary_Linear); \
+		P_GET_STRUCT(FLinearColor,Z_Param_colorSecondary_Linear); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_SetBuildingColorInSlotLinear_Validate(Z_Param_slotIdx,Z_Param_colorPrimary_Linear,Z_Param_colorSecondary_Linear)) \
 		{ \
-			RPC_ValidateFailed(TEXT("SetAndReplicateBuildingColorInSlot_Validate")); \
+			RPC_ValidateFailed(TEXT("Server_SetBuildingColorInSlotLinear_Validate")); \
 			return; \
 		} \
-		P_THIS->SetAndReplicateBuildingColorInSlot_Implementation(Z_Param_slot,Z_Param_pColor,Z_Param_sColor); \
+		P_THIS->Server_SetBuildingColorInSlotLinear_Implementation(Z_Param_slotIdx,Z_Param_colorPrimary_Linear,Z_Param_colorSecondary_Linear); \
 		P_NATIVE_END; \
 	} \
  \
@@ -512,43 +548,43 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_EVENT_PARMS \
-	struct FGGameState_eventSetAndReplicateBuildingColorInSlot_Parms \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_EVENT_PARMS \
+	struct FGGameState_eventServer_SetBuildingColorInSlotLinear_Parms \
 	{ \
-		uint8 slot; \
-		FColor pColor; \
-		FColor sColor; \
+		uint8 slotIdx; \
+		FLinearColor colorPrimary_Linear; \
+		FLinearColor colorSecondary_Linear; \
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(AFGGameState, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGGameState(); \
 	friend struct Z_Construct_UClass_AFGGameState_Statics; \
 public: \
 	DECLARE_CLASS(AFGGameState, AGameState, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGGameState) \
-	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGGameState*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGGameState(); \
 	friend struct Z_Construct_UClass_AFGGameState_Statics; \
 public: \
 	DECLARE_CLASS(AFGGameState, AGameState, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGGameState) \
-	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGGameState*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGGameState(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGGameState) \
@@ -561,7 +597,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGGameState(AFGGameState&&); \
@@ -572,7 +608,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGameState); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGGameState)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mTimeSubsystem() { return STRUCT_OFFSET(AFGGameState, mTimeSubsystem); } \
 	FORCEINLINE static uint32 __PPO__mStorySubsystem() { return STRUCT_OFFSET(AFGGameState, mStorySubsystem); } \
 	FORCEINLINE static uint32 __PPO__mRailroadSubsystem() { return STRUCT_OFFSET(AFGGameState, mRailroadSubsystem); } \
@@ -590,11 +626,13 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGameState); \
 	FORCEINLINE static uint32 __PPO__mPipeSubsystem() { return STRUCT_OFFSET(AFGGameState, mPipeSubsystem); } \
 	FORCEINLINE static uint32 __PPO__mUnlockSubsystem() { return STRUCT_OFFSET(AFGGameState, mUnlockSubsystem); } \
 	FORCEINLINE static uint32 __PPO__mResourceSinkSubsystem() { return STRUCT_OFFSET(AFGGameState, mResourceSinkSubsystem); } \
+	FORCEINLINE static uint32 __PPO__mItemRegrowSubsystem() { return STRUCT_OFFSET(AFGGameState, mItemRegrowSubsystem); } \
 	FORCEINLINE static uint32 __PPO__mVisitedMapAreas() { return STRUCT_OFFSET(AFGGameState, mVisitedMapAreas); } \
 	FORCEINLINE static uint32 __PPO__mPickedUpItems() { return STRUCT_OFFSET(AFGGameState, mPickedUpItems); } \
 	FORCEINLINE static uint32 __PPO__mPlayDurationWhenLoaded() { return STRUCT_OFFSET(AFGGameState, mPlayDurationWhenLoaded); } \
 	FORCEINLINE static uint32 __PPO__mReplicatedSessionName() { return STRUCT_OFFSET(AFGGameState, mReplicatedSessionName); } \
-	FORCEINLINE static uint32 __PPO__mBuildingColorSlots() { return STRUCT_OFFSET(AFGGameState, mBuildingColorSlots); } \
+	FORCEINLINE static uint32 __PPO__mBuildingColorSlotsPrimary_Linear() { return STRUCT_OFFSET(AFGGameState, mBuildingColorSlotsPrimary_Linear); } \
+	FORCEINLINE static uint32 __PPO__mBuildingColorSlotsSecondary_Linear() { return STRUCT_OFFSET(AFGGameState, mBuildingColorSlotsSecondary_Linear); } \
 	FORCEINLINE static uint32 __PPO__mPlannedRestartTime() { return STRUCT_OFFSET(AFGGameState, mPlannedRestartTime); } \
 	FORCEINLINE static uint32 __PPO__mOnRestartTimeNotification() { return STRUCT_OFFSET(AFGGameState, mOnRestartTimeNotification); } \
 	FORCEINLINE static uint32 __PPO__mHubPartClass() { return STRUCT_OFFSET(AFGGameState, mHubPartClass); } \
@@ -606,30 +644,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGameState); \
 	FORCEINLINE static uint32 __PPO__mIsSpaceElevatorBuilt() { return STRUCT_OFFSET(AFGGameState, mIsSpaceElevatorBuilt); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_26_PROLOG \
-	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_28_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGGameState_h_29_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGGameState_h_31_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

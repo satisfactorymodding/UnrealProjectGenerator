@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAudioVolumeSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAudioVolumeSubsystem, 3552065747);
+	IMPLEMENT_CLASS(AFGAudioVolumeSubsystem, 3653620178);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGAudioVolumeSubsystem>()
 	{
 		return AFGAudioVolumeSubsystem::StaticClass();

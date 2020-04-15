@@ -33,7 +33,7 @@ public:
 
 	/**  @return The actor to spawn on primary fire, can be null */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Descriptor|Item" )
-	static TSubclassOf< class AFGDecorationActor > GetDecorationActorClass( TSubclassOf< UFGItemDescriptor > inClass );
+	static TSubclassOf< AActor > GetDecorationActorClass( TSubclassOf< UFGItemDescriptor > inClass );
 
 	/**  @return Scale of ground mesh actor */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Descriptor|Item" )
@@ -57,5 +57,5 @@ protected:
 
 	/** The actor to spawn on primary fire press if we want one, can be null */
 	UPROPERTY( EditDefaultsOnly, Category = "Item" )
-	TSubclassOf< class AFGDecorationActor > mDecorationActorClass;
+	TSubclassOf< class AActor > mDecorationActorClass;
 };

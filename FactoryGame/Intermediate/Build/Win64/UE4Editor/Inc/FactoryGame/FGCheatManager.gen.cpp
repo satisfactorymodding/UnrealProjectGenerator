@@ -23,12 +23,14 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_CompleteResearch();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DebugCrash();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DestroyPawn();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DrawSphere();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpActiveGPUParticles();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpActorRepresentations();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpAllAvailableRecipes();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpAttachedToSkelMesh();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpDynamicOptionsSettings();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpGamePhases();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpHotbarShortcuts();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpNonDormantActors();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpPlayerStates();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpSchematics();
@@ -54,6 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_GiveItemStacks();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_GivePrototypeSchematics();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_GiveResourceSinkCoupons();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_GiveSchematicsOfTier();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_GiveStartingResearch();
@@ -146,12 +149,14 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 			{ "CompleteResearch", &UFGCheatManager::execCompleteResearch },
 			{ "DebugCrash", &UFGCheatManager::execDebugCrash },
 			{ "DestroyPawn", &UFGCheatManager::execDestroyPawn },
+			{ "DrawSphere", &UFGCheatManager::execDrawSphere },
 			{ "DumpActiveGPUParticles", &UFGCheatManager::execDumpActiveGPUParticles },
 			{ "DumpActorRepresentations", &UFGCheatManager::execDumpActorRepresentations },
 			{ "DumpAllAvailableRecipes", &UFGCheatManager::execDumpAllAvailableRecipes },
 			{ "DumpAttachedToSkelMesh", &UFGCheatManager::execDumpAttachedToSkelMesh },
 			{ "DumpDynamicOptionsSettings", &UFGCheatManager::execDumpDynamicOptionsSettings },
 			{ "DumpGamePhases", &UFGCheatManager::execDumpGamePhases },
+			{ "DumpHotbarShortcuts", &UFGCheatManager::execDumpHotbarShortcuts },
 			{ "DumpNonDormantActors", &UFGCheatManager::execDumpNonDormantActors },
 			{ "DumpPlayerStates", &UFGCheatManager::execDumpPlayerStates },
 			{ "DumpSchematics", &UFGCheatManager::execDumpSchematics },
@@ -175,6 +180,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 			{ "GiveCheatSchematics", &UFGCheatManager::execGiveCheatSchematics },
 			{ "GiveItemsSingle", &UFGCheatManager::execGiveItemsSingle },
 			{ "GiveItemStacks", &UFGCheatManager::execGiveItemStacks },
+			{ "GivePrototypeSchematics", &UFGCheatManager::execGivePrototypeSchematics },
 			{ "GiveResourceSinkCoupons", &UFGCheatManager::execGiveResourceSinkCoupons },
 			{ "GiveSchematicsOfTier", &UFGCheatManager::execGiveSchematicsOfTier },
 			{ "GiveStartingResearch", &UFGCheatManager::execGiveStartingResearch },
@@ -370,6 +376,39 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGCheatManager_DrawSphere_Statics
+	{
+		struct FGCheatManager_eventDrawSphere_Parms
+		{
+			int32 radius;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_radius;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGCheatManager_DrawSphere_Statics::NewProp_radius = { "radius", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCheatManager_eventDrawSphere_Parms, radius), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCheatManager_DrawSphere_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCheatManager_DrawSphere_Statics::NewProp_radius,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_DrawSphere_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Player" },
+		{ "ModuleRelativePath", "Public/FGCheatManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_DrawSphere_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, nullptr, "DrawSphere", sizeof(FGCheatManager_eventDrawSphere_Parms), Z_Construct_UFunction_UFGCheatManager_DrawSphere_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_DrawSphere_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_DrawSphere_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_DrawSphere_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGCheatManager_DrawSphere()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_DrawSphere_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGCheatManager_DumpActiveGPUParticles_Statics
 	{
 #if WITH_METADATA
@@ -521,6 +560,29 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_DumpGamePhases_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGCheatManager_DumpHotbarShortcuts_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_DumpHotbarShortcuts_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Log" },
+		{ "ModuleRelativePath", "Public/FGCheatManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_DumpHotbarShortcuts_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, nullptr, "DumpHotbarShortcuts", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_DumpHotbarShortcuts_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_DumpHotbarShortcuts_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGCheatManager_DumpHotbarShortcuts()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_DumpHotbarShortcuts_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1185,6 +1247,29 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_GiveItemStacks_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGCheatManager_GivePrototypeSchematics_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_GivePrototypeSchematics_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Research" },
+		{ "ModuleRelativePath", "Public/FGCheatManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_GivePrototypeSchematics_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, nullptr, "GivePrototypeSchematics", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020600, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_GivePrototypeSchematics_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_GivePrototypeSchematics_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGCheatManager_GivePrototypeSchematics()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_GivePrototypeSchematics_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2098,23 +2183,23 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 	{
 		struct FGCheatManager_eventPlayerNoClipModeOnFly_Parms
 		{
-			bool gohstMode;
+			bool ghostMode;
 		};
-		static void NewProp_gohstMode_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_gohstMode;
+		static void NewProp_ghostMode_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ghostMode;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	void Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly_Statics::NewProp_gohstMode_SetBit(void* Obj)
+	void Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly_Statics::NewProp_ghostMode_SetBit(void* Obj)
 	{
-		((FGCheatManager_eventPlayerNoClipModeOnFly_Parms*)Obj)->gohstMode = 1;
+		((FGCheatManager_eventPlayerNoClipModeOnFly_Parms*)Obj)->ghostMode = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly_Statics::NewProp_gohstMode = { "gohstMode", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCheatManager_eventPlayerNoClipModeOnFly_Parms), &Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly_Statics::NewProp_gohstMode_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly_Statics::NewProp_ghostMode = { "ghostMode", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCheatManager_eventPlayerNoClipModeOnFly_Parms), &Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly_Statics::NewProp_ghostMode_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly_Statics::NewProp_gohstMode,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly_Statics::NewProp_ghostMode,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly_Statics::Function_MetaDataParams[] = {
@@ -3612,12 +3697,14 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		{ &Z_Construct_UFunction_UFGCheatManager_CompleteResearch, "CompleteResearch" }, // 810379134
 		{ &Z_Construct_UFunction_UFGCheatManager_DebugCrash, "DebugCrash" }, // 2719704279
 		{ &Z_Construct_UFunction_UFGCheatManager_DestroyPawn, "DestroyPawn" }, // 2697741215
+		{ &Z_Construct_UFunction_UFGCheatManager_DrawSphere, "DrawSphere" }, // 1755388654
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpActiveGPUParticles, "DumpActiveGPUParticles" }, // 859307597
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpActorRepresentations, "DumpActorRepresentations" }, // 2886223506
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpAllAvailableRecipes, "DumpAllAvailableRecipes" }, // 2401554217
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpAttachedToSkelMesh, "DumpAttachedToSkelMesh" }, // 1758419862
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpDynamicOptionsSettings, "DumpDynamicOptionsSettings" }, // 834798225
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpGamePhases, "DumpGamePhases" }, // 2574384835
+		{ &Z_Construct_UFunction_UFGCheatManager_DumpHotbarShortcuts, "DumpHotbarShortcuts" }, // 3586642866
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpNonDormantActors, "DumpNonDormantActors" }, // 1318859643
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpPlayerStates, "DumpPlayerStates" }, // 1084478457
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpSchematics, "DumpSchematics" }, // 153533480
@@ -3641,6 +3728,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		{ &Z_Construct_UFunction_UFGCheatManager_GiveCheatSchematics, "GiveCheatSchematics" }, // 801974641
 		{ &Z_Construct_UFunction_UFGCheatManager_GiveItemsSingle, "GiveItemsSingle" }, // 3605939617
 		{ &Z_Construct_UFunction_UFGCheatManager_GiveItemStacks, "GiveItemStacks" }, // 3163046204
+		{ &Z_Construct_UFunction_UFGCheatManager_GivePrototypeSchematics, "GivePrototypeSchematics" }, // 3797528096
 		{ &Z_Construct_UFunction_UFGCheatManager_GiveResourceSinkCoupons, "GiveResourceSinkCoupons" }, // 675413408
 		{ &Z_Construct_UFunction_UFGCheatManager_GiveSchematicsOfTier, "GiveSchematicsOfTier" }, // 3161295442
 		{ &Z_Construct_UFunction_UFGCheatManager_GiveStartingResearch, "GiveStartingResearch" }, // 2823066944
@@ -3670,7 +3758,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		{ &Z_Construct_UFunction_UFGCheatManager_PardonAllPlayers, "PardonAllPlayers" }, // 1680976387
 		{ &Z_Construct_UFunction_UFGCheatManager_PlayerFly, "PlayerFly" }, // 3335216236
 		{ &Z_Construct_UFunction_UFGCheatManager_PlayerFly_Get, "PlayerFly_Get" }, // 3711013199
-		{ &Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly, "PlayerNoClipModeOnFly" }, // 1080878172
+		{ &Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly, "PlayerNoClipModeOnFly" }, // 2969984647
 		{ &Z_Construct_UFunction_UFGCheatManager_PlayerNoClipModeOnFly_Get, "PlayerNoClipModeOnFly_Get" }, // 3111646091
 		{ &Z_Construct_UFunction_UFGCheatManager_PrintStaticMeshesHierarchy, "PrintStaticMeshesHierarchy" }, // 3207147406
 		{ &Z_Construct_UFunction_UFGCheatManager_PumpiMode, "PumpiMode" }, // 1130754275
@@ -3767,7 +3855,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCheatManager, 702360616);
+	IMPLEMENT_CLASS(UFGCheatManager, 2571615347);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCheatManager>()
 	{
 		return UFGCheatManager::StaticClass();

@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeFGAISystem() {}
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGAggroTargetInterface_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_AggroTargetAddedSignature__DelegateSignature();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FSpawnerInfo();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCreatureSpawner_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGAISystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGAISystem();
 	AIMODULE_API UClass* Z_Construct_UClass_UAISystem();
@@ -96,6 +98,131 @@ void EmptyLinkFunctionForGeneratedCodeFGAISystem() {}
 		}
 		return ReturnFunction;
 	}
+class UScriptStruct* FSpawnerInfo::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSpawnerInfo_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSpawnerInfo, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SpawnerInfo"), sizeof(FSpawnerInfo), Get_Z_Construct_UScriptStruct_FSpawnerInfo_Hash());
+	}
+	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FSpawnerInfo>()
+{
+	return FSpawnerInfo::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FSpawnerInfo(FSpawnerInfo::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("SpawnerInfo"), false, nullptr, nullptr);
+static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnerInfo
+{
+	FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnerInfo()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("SpawnerInfo")),new UScriptStruct::TCppStructOps<FSpawnerInfo>);
+	}
+} ScriptStruct_FactoryGame_StaticRegisterNativesFSpawnerInfo;
+	struct Z_Construct_UScriptStruct_FSpawnerInfo_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DistanceSq_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_DistanceSq;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IsNearBase_MetaData[];
+#endif
+		static void NewProp_IsNearBase_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsNearBase;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WithinDistance_MetaData[];
+#endif
+		static void NewProp_WithinDistance_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_WithinDistance;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Spawner_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Spawner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSpawnerInfo_Statics::Struct_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/AI/FGAISystem.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FSpawnerInfo>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_DistanceSq_MetaData[] = {
+		{ "ModuleRelativePath", "Public/AI/FGAISystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_DistanceSq = { "DistanceSq", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSpawnerInfo, DistanceSq), METADATA_PARAMS(Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_DistanceSq_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_DistanceSq_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_IsNearBase_MetaData[] = {
+		{ "ModuleRelativePath", "Public/AI/FGAISystem.h" },
+	};
+#endif
+	void Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_IsNearBase_SetBit(void* Obj)
+	{
+		((FSpawnerInfo*)Obj)->IsNearBase = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_IsNearBase = { "IsNearBase", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FSpawnerInfo), &Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_IsNearBase_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_IsNearBase_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_IsNearBase_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_WithinDistance_MetaData[] = {
+		{ "ModuleRelativePath", "Public/AI/FGAISystem.h" },
+	};
+#endif
+	void Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_WithinDistance_SetBit(void* Obj)
+	{
+		((FSpawnerInfo*)Obj)->WithinDistance = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_WithinDistance = { "WithinDistance", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FSpawnerInfo), &Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_WithinDistance_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_WithinDistance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_WithinDistance_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_Spawner_MetaData[] = {
+		{ "ModuleRelativePath", "Public/AI/FGAISystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_Spawner = { "Spawner", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSpawnerInfo, Spawner), Z_Construct_UClass_AFGCreatureSpawner_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_Spawner_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_Spawner_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSpawnerInfo_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_DistanceSq,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_IsNearBase,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_WithinDistance,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSpawnerInfo_Statics::NewProp_Spawner,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FSpawnerInfo_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+		nullptr,
+		&NewStructOps,
+		"SpawnerInfo",
+		sizeof(FSpawnerInfo),
+		alignof(FSpawnerInfo),
+		Z_Construct_UScriptStruct_FSpawnerInfo_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FSpawnerInfo_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000201),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FSpawnerInfo_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSpawnerInfo_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FSpawnerInfo()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FSpawnerInfo_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SpawnerInfo"), sizeof(FSpawnerInfo), Get_Z_Construct_UScriptStruct_FSpawnerInfo_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FSpawnerInfo_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FSpawnerInfo_Hash() { return 295736001U; }
 	void UFGAISystem::StaticRegisterNativesUFGAISystem()
 	{
 		UClass* Class = UFGAISystem::StaticClass();
@@ -472,6 +599,23 @@ void EmptyLinkFunctionForGeneratedCodeFGAISystem() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mKeepAliveDistanceToPlayer_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mKeepAliveDistanceToPlayer;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMinSpawnDistance_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMinSpawnDistance;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMaxSpawnWeight_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMaxSpawnWeight;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPotentialSpawnersInfo_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mPotentialSpawnersInfo;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mPotentialSpawnersInfo_Inner;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMaxSpawnerIterationsPerTick_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mMaxSpawnerIterationsPerTick;
@@ -543,6 +687,38 @@ void EmptyLinkFunctionForGeneratedCodeFGAISystem() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAISystem_Statics::NewProp_mKeepAliveDistanceToPlayer_MetaData[] = {
+		{ "Category", "AI" },
+		{ "ModuleRelativePath", "Public/AI/FGAISystem.h" },
+		{ "ToolTip", "If a creature is withing this distance to an active player then it should not despawn" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGAISystem_Statics::NewProp_mKeepAliveDistanceToPlayer = { "mKeepAliveDistanceToPlayer", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAISystem, mKeepAliveDistanceToPlayer), METADATA_PARAMS(Z_Construct_UClass_UFGAISystem_Statics::NewProp_mKeepAliveDistanceToPlayer_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAISystem_Statics::NewProp_mKeepAliveDistanceToPlayer_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAISystem_Statics::NewProp_mMinSpawnDistance_MetaData[] = {
+		{ "Category", "AI" },
+		{ "ModuleRelativePath", "Public/AI/FGAISystem.h" },
+		{ "ToolTip", "Minimum distance to a spawner for it to be able to spawn." },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGAISystem_Statics::NewProp_mMinSpawnDistance = { "mMinSpawnDistance", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAISystem, mMinSpawnDistance), METADATA_PARAMS(Z_Construct_UClass_UFGAISystem_Statics::NewProp_mMinSpawnDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAISystem_Statics::NewProp_mMinSpawnDistance_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAISystem_Statics::NewProp_mMaxSpawnWeight_MetaData[] = {
+		{ "Category", "AI" },
+		{ "ModuleRelativePath", "Public/AI/FGAISystem.h" },
+		{ "ToolTip", "Total weight of spawners that can be active, by default one creature will add 1.0f to a spawners weight" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGAISystem_Statics::NewProp_mMaxSpawnWeight = { "mMaxSpawnWeight", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAISystem, mMaxSpawnWeight), METADATA_PARAMS(Z_Construct_UClass_UFGAISystem_Statics::NewProp_mMaxSpawnWeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAISystem_Statics::NewProp_mMaxSpawnWeight_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAISystem_Statics::NewProp_mPotentialSpawnersInfo_MetaData[] = {
+		{ "ModuleRelativePath", "Public/AI/FGAISystem.h" },
+		{ "ToolTip", "Spawners that want to spawn" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGAISystem_Statics::NewProp_mPotentialSpawnersInfo = { "mPotentialSpawnersInfo", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAISystem, mPotentialSpawnersInfo), METADATA_PARAMS(Z_Construct_UClass_UFGAISystem_Statics::NewProp_mPotentialSpawnersInfo_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAISystem_Statics::NewProp_mPotentialSpawnersInfo_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGAISystem_Statics::NewProp_mPotentialSpawnersInfo_Inner = { "mPotentialSpawnersInfo", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSpawnerInfo, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAISystem_Statics::NewProp_mMaxSpawnerIterationsPerTick_MetaData[] = {
 		{ "Category", "AI" },
 		{ "ModuleRelativePath", "Public/AI/FGAISystem.h" },
@@ -574,7 +750,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAISystem() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAISystem_Statics::NewProp_mActivateSpawnerDistance_MetaData[] = {
 		{ "Category", "AI" },
 		{ "ModuleRelativePath", "Public/AI/FGAISystem.h" },
-		{ "ToolTip", "Distance for when we should activate a spawner" },
+		{ "ToolTip", "Distance for when we should activate a spawner, this distance is used if the spawner does not specify a custom distance" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGAISystem_Statics::NewProp_mActivateSpawnerDistance = { "mActivateSpawnerDistance", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAISystem, mActivateSpawnerDistance), METADATA_PARAMS(Z_Construct_UClass_UFGAISystem_Statics::NewProp_mActivateSpawnerDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAISystem_Statics::NewProp_mActivateSpawnerDistance_MetaData)) };
@@ -627,6 +803,11 @@ void EmptyLinkFunctionForGeneratedCodeFGAISystem() {}
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UFGAISystem_Statics::NewProp_mOnAggroTargetAdded = { "mOnAggroTargetAdded", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAISystem, mOnAggroTargetAdded), Z_Construct_UDelegateFunction_FactoryGame_AggroTargetAddedSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGAISystem_Statics::NewProp_mOnAggroTargetAdded_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAISystem_Statics::NewProp_mOnAggroTargetAdded_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGAISystem_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAISystem_Statics::NewProp_mKeepAliveDistanceToPlayer,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAISystem_Statics::NewProp_mMinSpawnDistance,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAISystem_Statics::NewProp_mMaxSpawnWeight,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAISystem_Statics::NewProp_mPotentialSpawnersInfo,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAISystem_Statics::NewProp_mPotentialSpawnersInfo_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAISystem_Statics::NewProp_mMaxSpawnerIterationsPerTick,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAISystem_Statics::NewProp_mMaxCreatureIterationsPerTick,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAISystem_Statics::NewProp_mDisablePawnMovement,
@@ -665,7 +846,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAISystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAISystem, 4037395440);
+	IMPLEMENT_CLASS(UFGAISystem, 1316334736);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGAISystem>()
 	{
 		return UFGAISystem::StaticClass();

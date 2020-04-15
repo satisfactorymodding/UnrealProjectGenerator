@@ -662,7 +662,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveSession_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGSaveSession.h" },
 		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
-		{ "ToolTip", "Handles serialization for save and load functionality" },
+		{ "ToolTip", "Handles serialization for save and load functionality in a single session. It does the meat of the bones functionality\nof gathering the objects that's required to save the state of the world in a session.\n\n@todosave: Separate this into a base class UFGSaveBase. As we most likely want to be able to be able to store some persistent\nplayer progression also (like, amount of foliage gathered over all sessions, if you have unlocked some special skin etc). This\nsave would be nice if it could be done the exact same way. What would differ then is that progression files: \"SaveWorldImplementation\".\n\nMost important function is LoadGame and SaveWorldImplementation. Neither of these\nshould be called directly, but from their respective chains.\n\nLoadGame comes from: AFGGameMode::InitGameState, and is required to come from there as that before BeginPlay has been called,\nbut after all objects has been loaded into memory in a map.\n\nIf you want to call SaveWorldImplementation, call SaveGame instead. It will ensure that SaveWorldImplementation is called at end of frame, so that all actors\nhas been ticked the same amount of times and that we don't half a frame of ticked actors saved." },
 	};
 #endif
 #if WITH_METADATA
@@ -710,7 +710,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSaveSession, 2058780725);
+	IMPLEMENT_CLASS(UFGSaveSession, 765818644);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSaveSession>()
 	{
 		return UFGSaveSession::StaticClass();

@@ -254,14 +254,6 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 #endif
 		static const UE4CodeGen_Private::FStrPropertyParams NewProp_mSaveSessionName;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSessionIDString_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_mSessionIDString;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSessionId_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mSessionId;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mLastAutosaveId_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FBytePropertyParams NewProp_mLastAutosaveId;
@@ -354,20 +346,6 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 #endif
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSaveSessionName = { "mSaveSessionName", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameMode, mSaveSessionName), METADATA_PARAMS(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSaveSessionName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSaveSessionName_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSessionIDString_MetaData[] = {
-		{ "ModuleRelativePath", "Public/FGGameMode.h" },
-		{ "ToolTip", "The name of the session we are playing, migrated over to mSaveSessionName" },
-	};
-#endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSessionIDString = { "mSessionIDString", nullptr, (EPropertyFlags)0x0040000021000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameMode, mSessionIDString_DEPRECATED), METADATA_PARAMS(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSessionIDString_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSessionIDString_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSessionId_MetaData[] = {
-		{ "ModuleRelativePath", "Public/FGGameMode.h" },
-		{ "ToolTip", "The save session (should actually be SaveSessionId" },
-	};
-#endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSessionId = { "mSessionId", nullptr, (EPropertyFlags)0x0040000021000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameMode, mSessionId_DEPRECATED), METADATA_PARAMS(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSessionId_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSessionId_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameMode_Statics::NewProp_mLastAutosaveId_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGGameMode.h" },
 		{ "ToolTip", "Last autosave was this id" },
@@ -389,8 +367,6 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDebugStartingPointTagName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mStartingPointTagName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSaveSessionName,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSessionIDString,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSessionId,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mLastAutosaveId,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSaveSession,
 	};
@@ -424,7 +400,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGameMode, 1576428568);
+	IMPLEMENT_CLASS(AFGGameMode, 1943637889);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGameMode>()
 	{
 		return AFGGameMode::StaticClass();

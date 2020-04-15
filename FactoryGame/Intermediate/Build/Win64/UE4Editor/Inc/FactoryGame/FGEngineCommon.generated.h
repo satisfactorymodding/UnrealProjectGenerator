@@ -18,7 +18,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__Engine() { return STRUCT_OFFSET(FFGEngineCommon, Engine); } \
 	FORCEINLINE static uint32 __PPO__CreatedWorlds() { return STRUCT_OFFSET(FFGEngineCommon, CreatedWorlds); } \
-	FORCEINLINE static uint32 __PPO__HeightFogUpdater() { return STRUCT_OFFSET(FFGEngineCommon, HeightFogUpdater); }
+	FORCEINLINE static uint32 __PPO__AtmosphereUpdater() { return STRUCT_OFFSET(FFGEngineCommon, AtmosphereUpdater); }
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFGEngineCommon>();

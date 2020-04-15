@@ -85,10 +85,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleMesh_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePole.h" },
-		{ "ToolTip", "This poles mesh. @save 2018-10-24, this is here so old poles < alpha 2 path will still have a correct mesh, resaving an old save" },
+		{ "ToolTip", "This poles mesh." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleMesh = { "mPoleMesh", nullptr, (EPropertyFlags)0x0010000001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildablePole, mPoleMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleMesh = { "mPoleMesh", nullptr, (EPropertyFlags)0x0010000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildablePole, mPoleMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mSnapOnly0_MetaData[] = {
 		{ "Category", "Pole" },
@@ -148,7 +148,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildablePole, 4273970872);
+	IMPLEMENT_CLASS(AFGBuildablePole, 1707999707);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildablePole>()
 	{
 		return AFGBuildablePole::StaticClass();

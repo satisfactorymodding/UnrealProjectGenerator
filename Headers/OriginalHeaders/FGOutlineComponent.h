@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Components/SceneComponent.h"
 #include "FGBlueprintFunctionLibrary.h"
-
+#include "FGMaterialEffectComponent.h"
 #include "FGOutlineComponent.generated.h"
 
 USTRUCT()
@@ -125,6 +125,12 @@ protected:
 
 private:
 	bool IsOwnedByLocalPlayer();
+
+	// Dismantle started with build active
+	bool mShowDismantleStartedWithBuildEffect;
+
+	// Weak ref to the build effect active on this buildable ( if their is one active at the time of dismantle hover )
+	TWeakObjectPtr< UFGMaterialEffectComponent > mBuildEffect;
 
 	EOutlineColor mLastOutlineColor;
 };

@@ -193,7 +193,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGItemDescriptorNuclearFuel, 892017080);
+	IMPLEMENT_CLASS(UFGItemDescriptorNuclearFuel, 1996831831);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGItemDescriptorNuclearFuel>()
 	{
 		return UFGItemDescriptorNuclearFuel::StaticClass();

@@ -238,7 +238,9 @@ void EmptyLinkFunctionForGeneratedCodeFGCrate() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrate_Statics::Class_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGCrate.h" },
+		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/FGCrate.h" },
 		{ "ToolTip", "@todo Comment me please!" },
 	};
@@ -294,7 +296,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrate() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCrate, 1569818574);
+	IMPLEMENT_CLASS(AFGCrate, 840598056);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCrate>()
 	{
 		return AFGCrate::StaticClass();

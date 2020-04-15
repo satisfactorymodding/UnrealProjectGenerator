@@ -15,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffectComponent() {}
 // Cross Module References
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FCachedMaterialArray();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	ENGINE_API UClass* Z_Construct_UClass_UMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UMaterialInterface_NoRegister();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
@@ -25,7 +26,6 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffectComponent() {}
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGMaterialEffectComponent_GetDuration();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGMaterialEffectComponent_GetMeshes();
-	ENGINE_API UClass* Z_Construct_UClass_UMeshComponent_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGMaterialEffectComponent_GetMeshesBounds();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGMaterialEffectComponent_OnEnded();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGMaterialEffectComponent_OnStarted();
@@ -65,10 +65,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialArra
 #endif
 		static void* NewStructOps();
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MeshFNames_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MeshComponent_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_MeshFNames;
-		static const UE4CodeGen_Private::FNamePropertyParams NewProp_MeshFNames_Inner;
+		static const UE4CodeGen_Private::FWeakObjectPropertyParams NewProp_MeshComponent;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MeshFName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FNamePropertyParams NewProp_MeshFName;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaterialInterfaces_MetaData[];
 #endif
@@ -87,13 +90,18 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialArra
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FCachedMaterialArray>();
 	}
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshFNames_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshComponent_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FWeakObjectPropertyParams Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshComponent = { "MeshComponent", nullptr, (EPropertyFlags)0x0014000000080008, UE4CodeGen_Private::EPropertyGenFlags::WeakObject, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCachedMaterialArray, MeshComponent), Z_Construct_UClass_UMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshComponent_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshFName_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Component FName for each material interface" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshFNames = { "MeshFNames", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCachedMaterialArray, MeshFNames), METADATA_PARAMS(Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshFNames_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshFNames_MetaData)) };
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshFNames_Inner = { "MeshFNames", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshFName = { "MeshFName", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCachedMaterialArray, MeshFName), METADATA_PARAMS(Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshFName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshFName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MaterialInterfaces_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
@@ -102,8 +110,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialArra
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MaterialInterfaces = { "MaterialInterfaces", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCachedMaterialArray, MaterialInterfaces), METADATA_PARAMS(Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MaterialInterfaces_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MaterialInterfaces_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MaterialInterfaces_Inner = { "MaterialInterfaces", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshFNames,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshFNames_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MeshFName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MaterialInterfaces,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::NewProp_MaterialInterfaces_Inner,
 	};
@@ -117,7 +125,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialArra
 		Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000201),
+		EStructFlags(0x00000205),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FCachedMaterialArray_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FCachedMaterialArray()
@@ -135,7 +143,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialArra
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCachedMaterialArray_Hash() { return 342873891U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCachedMaterialArray_Hash() { return 2745514039U; }
 class UScriptStruct* FCostIngredientEffectActorInfo::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -708,8 +716,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 		{ "ToolTip", "The cached override materials present before initializing (Takes into account custom override materials on meshes)" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGMaterialEffectComponent_Statics::NewProp_mOverrideMaterials = { "mOverrideMaterials", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMaterialEffectComponent, mOverrideMaterials), METADATA_PARAMS(Z_Construct_UClass_UFGMaterialEffectComponent_Statics::NewProp_mOverrideMaterials_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMaterialEffectComponent_Statics::NewProp_mOverrideMaterials_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGMaterialEffectComponent_Statics::NewProp_mOverrideMaterials_Inner = { "mOverrideMaterials", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FCachedMaterialArray, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGMaterialEffectComponent_Statics::NewProp_mOverrideMaterials = { "mOverrideMaterials", nullptr, (EPropertyFlags)0x0020088000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMaterialEffectComponent, mOverrideMaterials), METADATA_PARAMS(Z_Construct_UClass_UFGMaterialEffectComponent_Statics::NewProp_mOverrideMaterials_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMaterialEffectComponent_Statics::NewProp_mOverrideMaterials_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGMaterialEffectComponent_Statics::NewProp_mOverrideMaterials_Inner = { "mOverrideMaterials", nullptr, (EPropertyFlags)0x0000008000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FCachedMaterialArray, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMaterialEffectComponent_Statics::NewProp_mMids_MetaData[] = {
 		{ "Category", "FGMaterialEffectComponent" },
@@ -785,7 +793,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMaterialEffectComponent, 4056493854);
+	IMPLEMENT_CLASS(UFGMaterialEffectComponent, 1067060576);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGMaterialEffectComponent>()
 	{
 		return UFGMaterialEffectComponent::StaticClass();

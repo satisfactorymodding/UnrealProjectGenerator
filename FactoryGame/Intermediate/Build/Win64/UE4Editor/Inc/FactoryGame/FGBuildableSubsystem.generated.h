@@ -10,7 +10,6 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AFGBuildable;
 struct FLinearColor;
-struct FColor;
 class UObject;
 class AFGBuildableSubsystem;
 #ifdef FACTORYGAME_FGBuildableSubsystem_generated_h
@@ -76,59 +75,41 @@ static inline void FOnBuildableConstructedGlobal_DelegateWrapper(const FMulticas
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetColorSlotSecondaryLinear) \
+	DECLARE_FUNCTION(execSetColorSlotSecondary_Linear) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_index); \
+		P_GET_STRUCT(FLinearColor,Z_Param_color); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(FLinearColor*)Z_Param__Result=P_THIS->GetColorSlotSecondaryLinear(Z_Param_index); \
+		P_THIS->SetColorSlotSecondary_Linear(Z_Param_index,Z_Param_color); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetColorSlotPrimaryLinear) \
+	DECLARE_FUNCTION(execSetColorSlotPrimary_Linear) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_index); \
+		P_GET_STRUCT(FLinearColor,Z_Param_color); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(FLinearColor*)Z_Param__Result=P_THIS->GetColorSlotPrimaryLinear(Z_Param_index); \
+		P_THIS->SetColorSlotPrimary_Linear(Z_Param_index,Z_Param_color); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetColorSlotSecondary) \
+	DECLARE_FUNCTION(execGetColorSlotSecondary_Linear) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_index); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(FColor*)Z_Param__Result=P_THIS->GetColorSlotSecondary(Z_Param_index); \
+		*(FLinearColor*)Z_Param__Result=P_THIS->GetColorSlotSecondary_Linear(Z_Param_index); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetColorSlotPrimary) \
+	DECLARE_FUNCTION(execGetColorSlotPrimary_Linear) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_index); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(FColor*)Z_Param__Result=P_THIS->GetColorSlotPrimary(Z_Param_index); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetColorSlotSecondary) \
-	{ \
-		P_GET_PROPERTY(UByteProperty,Z_Param_index); \
-		P_GET_STRUCT(FColor,Z_Param_color); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetColorSlotSecondary(Z_Param_index,Z_Param_color); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetColorSlotPrimary) \
-	{ \
-		P_GET_PROPERTY(UByteProperty,Z_Param_index); \
-		P_GET_STRUCT(FColor,Z_Param_color); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetColorSlotPrimary(Z_Param_index,Z_Param_color); \
+		*(FLinearColor*)Z_Param__Result=P_THIS->GetColorSlotPrimary_Linear(Z_Param_index); \
 		P_NATIVE_END; \
 	} \
  \
@@ -170,59 +151,41 @@ static inline void FOnBuildableConstructedGlobal_DelegateWrapper(const FMulticas
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetColorSlotSecondaryLinear) \
+	DECLARE_FUNCTION(execSetColorSlotSecondary_Linear) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_index); \
+		P_GET_STRUCT(FLinearColor,Z_Param_color); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(FLinearColor*)Z_Param__Result=P_THIS->GetColorSlotSecondaryLinear(Z_Param_index); \
+		P_THIS->SetColorSlotSecondary_Linear(Z_Param_index,Z_Param_color); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetColorSlotPrimaryLinear) \
+	DECLARE_FUNCTION(execSetColorSlotPrimary_Linear) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_index); \
+		P_GET_STRUCT(FLinearColor,Z_Param_color); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(FLinearColor*)Z_Param__Result=P_THIS->GetColorSlotPrimaryLinear(Z_Param_index); \
+		P_THIS->SetColorSlotPrimary_Linear(Z_Param_index,Z_Param_color); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetColorSlotSecondary) \
+	DECLARE_FUNCTION(execGetColorSlotSecondary_Linear) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_index); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(FColor*)Z_Param__Result=P_THIS->GetColorSlotSecondary(Z_Param_index); \
+		*(FLinearColor*)Z_Param__Result=P_THIS->GetColorSlotSecondary_Linear(Z_Param_index); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetColorSlotPrimary) \
+	DECLARE_FUNCTION(execGetColorSlotPrimary_Linear) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_index); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(FColor*)Z_Param__Result=P_THIS->GetColorSlotPrimary(Z_Param_index); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetColorSlotSecondary) \
-	{ \
-		P_GET_PROPERTY(UByteProperty,Z_Param_index); \
-		P_GET_STRUCT(FColor,Z_Param_color); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetColorSlotSecondary(Z_Param_index,Z_Param_color); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetColorSlotPrimary) \
-	{ \
-		P_GET_PROPERTY(UByteProperty,Z_Param_index); \
-		P_GET_STRUCT(FColor,Z_Param_color); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetColorSlotPrimary(Z_Param_index,Z_Param_color); \
+		*(FLinearColor*)Z_Param__Result=P_THIS->GetColorSlotPrimary_Linear(Z_Param_index); \
 		P_NATIVE_END; \
 	} \
  \
@@ -311,6 +274,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableSubsystem); \
 	FORCEINLINE static uint32 __PPO__mColoredInstances() { return STRUCT_OFFSET(AFGBuildableSubsystem, mColoredInstances); } \
 	FORCEINLINE static uint32 __PPO__mColorSlotsPrimary() { return STRUCT_OFFSET(AFGBuildableSubsystem, mColorSlotsPrimary); } \
 	FORCEINLINE static uint32 __PPO__mColorSlotsSecondary() { return STRUCT_OFFSET(AFGBuildableSubsystem, mColorSlotsSecondary); } \
+	FORCEINLINE static uint32 __PPO__mColorSlotsPrimary_Linear() { return STRUCT_OFFSET(AFGBuildableSubsystem, mColorSlotsPrimary_Linear); } \
+	FORCEINLINE static uint32 __PPO__mColorSlotsSecondary_Linear() { return STRUCT_OFFSET(AFGBuildableSubsystem, mColorSlotsSecondary_Linear); } \
 	FORCEINLINE static uint32 __PPO__mNbPlayerExposedSlots() { return STRUCT_OFFSET(AFGBuildableSubsystem, mNbPlayerExposedSlots); } \
 	FORCEINLINE static uint32 __PPO__mFactoryColoredMaterialMap() { return STRUCT_OFFSET(AFGBuildableSubsystem, mFactoryColoredMaterialMap); } \
 	FORCEINLINE static uint32 __PPO__mUseFixedFactoryTick() { return STRUCT_OFFSET(AFGBuildableSubsystem, mUseFixedFactoryTick); } \

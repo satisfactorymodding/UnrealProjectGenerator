@@ -43,7 +43,6 @@ public:
 	UPROPERTY( SaveGame, Replicated )
 	float mHeight;
 
-
 	/** The component we want to use with the pole */
 	UPROPERTY( VisibleAnywhere, Category = "Pole" )
 	class UFGColoredInstanceMeshProxy* mPoleComponentProxy;
@@ -52,8 +51,8 @@ public:
 	UPROPERTY( VisibleAnywhere, Category = "Pole" )
 	class UFGFactoryConnectionComponent* mSnapOnly0;
 
-	/** This poles mesh. @save 2018-10-24, this is here so old poles < alpha 2 path will still have a correct mesh, resaving an old save */
-	UPROPERTY( SaveGame, Replicated )
+	/** This poles mesh. */
+	UPROPERTY( Replicated )
 	class UStaticMesh* mPoleMesh;
 	
 	/** Should the stack height only be calculated using the mStackHeight? */

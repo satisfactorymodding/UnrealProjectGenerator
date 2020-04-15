@@ -8,9 +8,9 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UObject;
 class APlayerController;
 class UUserWidget;
-class UObject;
 struct FLinearColor;
 struct FVector;
 class AFGCharacterPlayer;
@@ -33,6 +33,54 @@ enum class EOutlineColor : uint8;
 #define FACTORYGAME_FGBlueprintFunctionLibrary_generated_h
 
 #define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetMetadataTag) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_object); \
+		P_GET_PROPERTY(UNameProperty,Z_Param_tag); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=UFGBlueprintFunctionLibrary::GetMetadataTag(Z_Param_object,Z_Param_tag); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetMetadataTag) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_object); \
+		P_GET_PROPERTY(UNameProperty,Z_Param_tag); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::SetMetadataTag(Z_Param_object,Z_Param_tag,Z_Param_value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execEvaluateMathExpression) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_expression); \
+		P_GET_PROPERTY_REF(UTextProperty,Z_Param_Out_out_Result); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UFGBlueprintFunctionLibrary::EvaluateMathExpression(Z_Param_expression,Z_Param_Out_out_Result); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCopyTextFromClipboard) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FText*)Z_Param__Result=UFGBlueprintFunctionLibrary::CopyTextFromClipboard(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCopyTextToClipboard) \
+	{ \
+		P_GET_PROPERTY(UTextProperty,Z_Param_textToCopy); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::CopyTextToClipboard(Z_Param_textToCopy); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execClosePopup) \
 	{ \
@@ -582,6 +630,54 @@ enum class EOutlineColor : uint8;
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGBlueprintFunctionLibrary_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetMetadataTag) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_object); \
+		P_GET_PROPERTY(UNameProperty,Z_Param_tag); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=UFGBlueprintFunctionLibrary::GetMetadataTag(Z_Param_object,Z_Param_tag); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetMetadataTag) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_object); \
+		P_GET_PROPERTY(UNameProperty,Z_Param_tag); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::SetMetadataTag(Z_Param_object,Z_Param_tag,Z_Param_value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execEvaluateMathExpression) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_expression); \
+		P_GET_PROPERTY_REF(UTextProperty,Z_Param_Out_out_Result); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UFGBlueprintFunctionLibrary::EvaluateMathExpression(Z_Param_expression,Z_Param_Out_out_Result); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCopyTextFromClipboard) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FText*)Z_Param__Result=UFGBlueprintFunctionLibrary::CopyTextFromClipboard(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCopyTextToClipboard) \
+	{ \
+		P_GET_PROPERTY(UTextProperty,Z_Param_textToCopy); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::CopyTextToClipboard(Z_Param_textToCopy); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execClosePopup) \
 	{ \

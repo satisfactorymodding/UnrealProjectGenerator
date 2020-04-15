@@ -263,16 +263,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGRecipe); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGRecipe)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mDisplayNameOverride() { return STRUCT_OFFSET(UFGRecipe, mDisplayNameOverride); } \
-	FORCEINLINE static uint32 __PPO__mDisplayName() { return STRUCT_OFFSET(UFGRecipe, mDisplayName); } \
-	FORCEINLINE static uint32 __PPO__mIngredients() { return STRUCT_OFFSET(UFGRecipe, mIngredients); } \
-	FORCEINLINE static uint32 __PPO__mProduct() { return STRUCT_OFFSET(UFGRecipe, mProduct); } \
-	FORCEINLINE static uint32 __PPO__mManufactoringDuration() { return STRUCT_OFFSET(UFGRecipe, mManufactoringDuration); } \
-	FORCEINLINE static uint32 __PPO__mManualManufacturingMultiplier() { return STRUCT_OFFSET(UFGRecipe, mManualManufacturingMultiplier); } \
-	FORCEINLINE static uint32 __PPO__mProducedIn() { return STRUCT_OFFSET(UFGRecipe, mProducedIn); }
-
-
+#define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_PRIVATE_PROPERTY_OFFSET
 #define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_16_PROLOG
 #define FactoryGame_Source_FactoryGame_Public_FGRecipe_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

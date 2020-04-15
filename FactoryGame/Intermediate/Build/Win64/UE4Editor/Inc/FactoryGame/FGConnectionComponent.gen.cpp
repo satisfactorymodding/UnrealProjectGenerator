@@ -6,7 +6,6 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "FactoryGame/Public/FGConnectionComponent.h"
-#include "Serialization/ArchiveUObjectFromStructuredArchive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -48,7 +47,6 @@ void EmptyLinkFunctionForGeneratedCodeFGConnectionComponent() {}
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "FGConnectionComponent.h" },
 		{ "ModuleRelativePath", "Public/FGConnectionComponent.h" },
-		{ "SerializeToFArchive", "" },
 		{ "ToolTip", "Base class for connection components, i.e. factory, power, track connections..." },
 	};
 #endif
@@ -82,14 +80,13 @@ void EmptyLinkFunctionForGeneratedCodeFGConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGConnectionComponent, 3507642213);
+	IMPLEMENT_CLASS(UFGConnectionComponent, 2723822743);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGConnectionComponent>()
 	{
 		return UFGConnectionComponent::StaticClass();
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGConnectionComponent(Z_Construct_UClass_UFGConnectionComponent, &UFGConnectionComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGConnectionComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGConnectionComponent);
-	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(UFGConnectionComponent)
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

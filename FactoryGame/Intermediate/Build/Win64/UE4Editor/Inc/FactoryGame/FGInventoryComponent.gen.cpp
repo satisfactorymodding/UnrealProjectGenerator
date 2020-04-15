@@ -1025,7 +1025,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_GetSizeLinear_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
 		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
-		{ "ToolTip", "The total size of the inventory, when accessing inventory linearly using indices." },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInventoryComponent_GetSizeLinear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInventoryComponent, nullptr, "GetSizeLinear", sizeof(FGInventoryComponent_eventGetSizeLinear_Parms), Z_Construct_UFunction_UFGInventoryComponent_GetSizeLinear_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryComponent_GetSizeLinear_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInventoryComponent_GetSizeLinear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryComponent_GetSizeLinear_Statics::Function_MetaDataParams)) };
@@ -2032,7 +2031,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 		{ &Z_Construct_UFunction_UFGInventoryComponent_GetInventoryStacks, "GetInventoryStacks" }, // 647136747
 		{ &Z_Construct_UFunction_UFGInventoryComponent_GetNumItems, "GetNumItems" }, // 3424969705
 		{ &Z_Construct_UFunction_UFGInventoryComponent_GetRelevantStackIndexes, "GetRelevantStackIndexes" }, // 1543390508
-		{ &Z_Construct_UFunction_UFGInventoryComponent_GetSizeLinear, "GetSizeLinear" }, // 3356071759
+		{ &Z_Construct_UFunction_UFGInventoryComponent_GetSizeLinear, "GetSizeLinear" }, // 2933560589
 		{ &Z_Construct_UFunction_UFGInventoryComponent_GetSlotSize, "GetSlotSize" }, // 2296050858
 		{ &Z_Construct_UFunction_UFGInventoryComponent_GetStackFromIndex, "GetStackFromIndex" }, // 3948931644
 		{ &Z_Construct_UFunction_UFGInventoryComponent_HasAuthority, "HasAuthority" }, // 4192351977
@@ -2189,7 +2188,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryComponent, 1797709950);
+	IMPLEMENT_CLASS(UFGInventoryComponent, 2713981887);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGInventoryComponent>()
 	{
 		return UFGInventoryComponent::StaticClass();

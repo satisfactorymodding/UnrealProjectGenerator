@@ -65,6 +65,7 @@ public:
 
 	// Begin AFGBuildable interface
 	virtual void Factory_Tick( float dt ) override;
+	virtual void Native_OnMaterialInstancesUpdated() override;
 	// End AFGBuildable interface
 
 	// Begin Significance
@@ -135,6 +136,9 @@ public:
 	/** Get fluid descriptor for this pipe. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Pipes|Pipeline" )
 	TSubclassOf< UFGItemDescriptor > GetFluidDescriptor() const;
+
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Pipes|Pipeline" )
+	class UFGPipelineFlowIndicatorComponent* GetFlowIndicatorComponent() const;
 
 	/** 
 	* @todoPipes DEPRICATED - Invoke server call on Remote Call Object instead. 

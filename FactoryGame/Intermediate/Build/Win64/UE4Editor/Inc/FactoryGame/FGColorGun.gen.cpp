@@ -28,12 +28,12 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGColorGun_GetSecondaryColorForSlot();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGColorGun_OnSecondaryFirePressed();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGColorGun_OnTargetStateChanged();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGColorGun_Server_SetColorSlot();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGColorGun_Server_SetPrimaryColorForSlot();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGColorGun_Server_SetSecondaryColorForSlot();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGColorGun_SetColorSlot();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGColorGun_SetPrimaryColorForSlot();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGColorGun_SetSecondaryColorForSlot();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGColorGun_ToggleColorPickerUI();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
@@ -98,28 +98,28 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 		Parms.targetType=targetType;
 		ProcessEvent(FindFunctionChecked(NAME_AFGColorGun_OnTargetStateChanged),&Parms);
 	}
-	static FName NAME_AFGColorGun_Sever_SetColorSlot = FName(TEXT("Sever_SetColorSlot"));
-	void AFGColorGun::Sever_SetColorSlot(uint8 slotIndex)
+	static FName NAME_AFGColorGun_Server_SetColorSlot = FName(TEXT("Server_SetColorSlot"));
+	void AFGColorGun::Server_SetColorSlot(uint8 slotIndex)
 	{
-		FGColorGun_eventSever_SetColorSlot_Parms Parms;
+		FGColorGun_eventServer_SetColorSlot_Parms Parms;
 		Parms.slotIndex=slotIndex;
-		ProcessEvent(FindFunctionChecked(NAME_AFGColorGun_Sever_SetColorSlot),&Parms);
+		ProcessEvent(FindFunctionChecked(NAME_AFGColorGun_Server_SetColorSlot),&Parms);
 	}
-	static FName NAME_AFGColorGun_Sever_SetPrimaryColorForSlot = FName(TEXT("Sever_SetPrimaryColorForSlot"));
-	void AFGColorGun::Sever_SetPrimaryColorForSlot(uint8 slotIndex, FLinearColor newColor)
+	static FName NAME_AFGColorGun_Server_SetPrimaryColorForSlot = FName(TEXT("Server_SetPrimaryColorForSlot"));
+	void AFGColorGun::Server_SetPrimaryColorForSlot(uint8 slotIndex, FLinearColor newColor)
 	{
-		FGColorGun_eventSever_SetPrimaryColorForSlot_Parms Parms;
+		FGColorGun_eventServer_SetPrimaryColorForSlot_Parms Parms;
 		Parms.slotIndex=slotIndex;
 		Parms.newColor=newColor;
-		ProcessEvent(FindFunctionChecked(NAME_AFGColorGun_Sever_SetPrimaryColorForSlot),&Parms);
+		ProcessEvent(FindFunctionChecked(NAME_AFGColorGun_Server_SetPrimaryColorForSlot),&Parms);
 	}
-	static FName NAME_AFGColorGun_Sever_SetSecondaryColorForSlot = FName(TEXT("Sever_SetSecondaryColorForSlot"));
-	void AFGColorGun::Sever_SetSecondaryColorForSlot(uint8 slotIndex, FLinearColor newColor)
+	static FName NAME_AFGColorGun_Server_SetSecondaryColorForSlot = FName(TEXT("Server_SetSecondaryColorForSlot"));
+	void AFGColorGun::Server_SetSecondaryColorForSlot(uint8 slotIndex, FLinearColor newColor)
 	{
-		FGColorGun_eventSever_SetSecondaryColorForSlot_Parms Parms;
+		FGColorGun_eventServer_SetSecondaryColorForSlot_Parms Parms;
 		Parms.slotIndex=slotIndex;
 		Parms.newColor=newColor;
-		ProcessEvent(FindFunctionChecked(NAME_AFGColorGun_Sever_SetSecondaryColorForSlot),&Parms);
+		ProcessEvent(FindFunctionChecked(NAME_AFGColorGun_Server_SetSecondaryColorForSlot),&Parms);
 	}
 	static FName NAME_AFGColorGun_ToggleColorPickerUI = FName(TEXT("ToggleColorPickerUI"));
 	void AFGColorGun::ToggleColorPickerUI()
@@ -138,12 +138,12 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 			{ "GetSecondaryColor", &AFGColorGun::execGetSecondaryColor },
 			{ "GetSecondaryColorForSlot", &AFGColorGun::execGetSecondaryColorForSlot },
 			{ "OnSecondaryFirePressed", &AFGColorGun::execOnSecondaryFirePressed },
+			{ "Server_SetColorSlot", &AFGColorGun::execServer_SetColorSlot },
+			{ "Server_SetPrimaryColorForSlot", &AFGColorGun::execServer_SetPrimaryColorForSlot },
+			{ "Server_SetSecondaryColorForSlot", &AFGColorGun::execServer_SetSecondaryColorForSlot },
 			{ "SetColorSlot", &AFGColorGun::execSetColorSlot },
 			{ "SetPrimaryColorForSlot", &AFGColorGun::execSetPrimaryColorForSlot },
 			{ "SetSecondaryColorForSlot", &AFGColorGun::execSetSecondaryColorForSlot },
-			{ "Sever_SetColorSlot", &AFGColorGun::execSever_SetColorSlot },
-			{ "Sever_SetPrimaryColorForSlot", &AFGColorGun::execSever_SetPrimaryColorForSlot },
-			{ "Sever_SetSecondaryColorForSlot", &AFGColorGun::execSever_SetSecondaryColorForSlot },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -448,6 +448,99 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGColorGun_Server_SetColorSlot_Statics
+	{
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_slotIndex;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGColorGun_Server_SetColorSlot_Statics::NewProp_slotIndex = { "slotIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGColorGun_eventServer_SetColorSlot_Parms, slotIndex), nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGColorGun_Server_SetColorSlot_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGColorGun_Server_SetColorSlot_Statics::NewProp_slotIndex,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_Server_SetColorSlot_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
+		{ "ToolTip", "Sets the currently active color slot index for the gun on the server" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGColorGun_Server_SetColorSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGColorGun, nullptr, "Server_SetColorSlot", sizeof(FGColorGun_eventServer_SetColorSlot_Parms), Z_Construct_UFunction_AFGColorGun_Server_SetColorSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGColorGun_Server_SetColorSlot_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGColorGun_Server_SetColorSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGColorGun_Server_SetColorSlot_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGColorGun_Server_SetColorSlot()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGColorGun_Server_SetColorSlot_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGColorGun_Server_SetPrimaryColorForSlot_Statics
+	{
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_newColor;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_slotIndex;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGColorGun_Server_SetPrimaryColorForSlot_Statics::NewProp_newColor = { "newColor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGColorGun_eventServer_SetPrimaryColorForSlot_Parms, newColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGColorGun_Server_SetPrimaryColorForSlot_Statics::NewProp_slotIndex = { "slotIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGColorGun_eventServer_SetPrimaryColorForSlot_Parms, slotIndex), nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGColorGun_Server_SetPrimaryColorForSlot_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGColorGun_Server_SetPrimaryColorForSlot_Statics::NewProp_newColor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGColorGun_Server_SetPrimaryColorForSlot_Statics::NewProp_slotIndex,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_Server_SetPrimaryColorForSlot_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
+		{ "ToolTip", "Set the secondary color for a given slot on the server" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGColorGun_Server_SetPrimaryColorForSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGColorGun, nullptr, "Server_SetPrimaryColorForSlot", sizeof(FGColorGun_eventServer_SetPrimaryColorForSlot_Parms), Z_Construct_UFunction_AFGColorGun_Server_SetPrimaryColorForSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGColorGun_Server_SetPrimaryColorForSlot_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80A20CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGColorGun_Server_SetPrimaryColorForSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGColorGun_Server_SetPrimaryColorForSlot_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGColorGun_Server_SetPrimaryColorForSlot()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGColorGun_Server_SetPrimaryColorForSlot_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGColorGun_Server_SetSecondaryColorForSlot_Statics
+	{
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_newColor;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_slotIndex;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGColorGun_Server_SetSecondaryColorForSlot_Statics::NewProp_newColor = { "newColor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGColorGun_eventServer_SetSecondaryColorForSlot_Parms, newColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGColorGun_Server_SetSecondaryColorForSlot_Statics::NewProp_slotIndex = { "slotIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGColorGun_eventServer_SetSecondaryColorForSlot_Parms, slotIndex), nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGColorGun_Server_SetSecondaryColorForSlot_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGColorGun_Server_SetSecondaryColorForSlot_Statics::NewProp_newColor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGColorGun_Server_SetSecondaryColorForSlot_Statics::NewProp_slotIndex,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_Server_SetSecondaryColorForSlot_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
+		{ "ToolTip", "Sets the primary color for a given slot index on the server" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGColorGun_Server_SetSecondaryColorForSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGColorGun, nullptr, "Server_SetSecondaryColorForSlot", sizeof(FGColorGun_eventServer_SetSecondaryColorForSlot_Parms), Z_Construct_UFunction_AFGColorGun_Server_SetSecondaryColorForSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGColorGun_Server_SetSecondaryColorForSlot_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80A20CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGColorGun_Server_SetSecondaryColorForSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGColorGun_Server_SetSecondaryColorForSlot_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGColorGun_Server_SetSecondaryColorForSlot()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGColorGun_Server_SetSecondaryColorForSlot_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGColorGun_SetColorSlot_Statics
 	{
 		struct FGColorGun_eventSetColorSlot_Parms
@@ -558,99 +651,6 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot_Statics
-	{
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_slotIndex;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot_Statics::NewProp_slotIndex = { "slotIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGColorGun_eventSever_SetColorSlot_Parms, slotIndex), nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot_Statics::NewProp_slotIndex,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/FGColorGun.h" },
-		{ "ToolTip", "Sets the currently active color slot index for the gun on the server" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGColorGun, nullptr, "Sever_SetColorSlot", sizeof(FGColorGun_eventSever_SetColorSlot_Parms), Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot_Statics
-	{
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_newColor;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_slotIndex;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot_Statics::NewProp_newColor = { "newColor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGColorGun_eventSever_SetPrimaryColorForSlot_Parms, newColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot_Statics::NewProp_slotIndex = { "slotIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGColorGun_eventSever_SetPrimaryColorForSlot_Parms, slotIndex), nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot_Statics::NewProp_newColor,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot_Statics::NewProp_slotIndex,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/FGColorGun.h" },
-		{ "ToolTip", "Set the secondary color for a given slot on the server" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGColorGun, nullptr, "Sever_SetPrimaryColorForSlot", sizeof(FGColorGun_eventSever_SetPrimaryColorForSlot_Parms), Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80A20CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot_Statics
-	{
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_newColor;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_slotIndex;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot_Statics::NewProp_newColor = { "newColor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGColorGun_eventSever_SetSecondaryColorForSlot_Parms, newColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot_Statics::NewProp_slotIndex = { "slotIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGColorGun_eventSever_SetSecondaryColorForSlot_Parms, slotIndex), nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot_Statics::NewProp_newColor,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot_Statics::NewProp_slotIndex,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/FGColorGun.h" },
-		{ "ToolTip", "Sets the primary color for a given slot index on the server" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGColorGun, nullptr, "Sever_SetSecondaryColorForSlot", sizeof(FGColorGun_eventSever_SetSecondaryColorForSlot_Parms), Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80A20CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_AFGColorGun_ToggleColorPickerUI_Statics
 	{
 #if WITH_METADATA
@@ -748,12 +748,12 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 		{ &Z_Construct_UFunction_AFGColorGun_GetSecondaryColorForSlot, "GetSecondaryColorForSlot" }, // 1876999437
 		{ &Z_Construct_UFunction_AFGColorGun_OnSecondaryFirePressed, "OnSecondaryFirePressed" }, // 966731662
 		{ &Z_Construct_UFunction_AFGColorGun_OnTargetStateChanged, "OnTargetStateChanged" }, // 4153725459
+		{ &Z_Construct_UFunction_AFGColorGun_Server_SetColorSlot, "Server_SetColorSlot" }, // 1485019610
+		{ &Z_Construct_UFunction_AFGColorGun_Server_SetPrimaryColorForSlot, "Server_SetPrimaryColorForSlot" }, // 2076173350
+		{ &Z_Construct_UFunction_AFGColorGun_Server_SetSecondaryColorForSlot, "Server_SetSecondaryColorForSlot" }, // 2455744016
 		{ &Z_Construct_UFunction_AFGColorGun_SetColorSlot, "SetColorSlot" }, // 3821481293
 		{ &Z_Construct_UFunction_AFGColorGun_SetPrimaryColorForSlot, "SetPrimaryColorForSlot" }, // 2721800017
 		{ &Z_Construct_UFunction_AFGColorGun_SetSecondaryColorForSlot, "SetSecondaryColorForSlot" }, // 1694923235
-		{ &Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot, "Sever_SetColorSlot" }, // 645594338
-		{ &Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot, "Sever_SetPrimaryColorForSlot" }, // 3962650377
-		{ &Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot, "Sever_SetSecondaryColorForSlot" }, // 3950691366
 		{ &Z_Construct_UFunction_AFGColorGun_ToggleColorPickerUI, "ToggleColorPickerUI" }, // 1614738287
 	};
 #if WITH_METADATA
@@ -887,7 +887,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGColorGun, 3348962263);
+	IMPLEMENT_CLASS(AFGColorGun, 1103921653);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGColorGun>()
 	{
 		return AFGColorGun::StaticClass();

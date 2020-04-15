@@ -960,6 +960,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveSystem_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGSaveSystem.h" },
 		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
+		{ "ToolTip", "Handles the \"higher level\" save functionality, like listing saves, save directories, sorting saves and validating filenames.\nA lot of the functionality is static as it doesn't operate on the actual save session, but can be used from anywhere.\n\nThis interface should only be used when you know you really want to use things that's on the local machine. This is mostly\nused from FGAdminInterface so that clients call the functionally of the interface and load/save remotely. So consider\nif the UI should use this interface directly, or if it should go through the admin interface when you are making a\nBlueprintCallable function in this class." },
 	};
 #endif
 #if WITH_METADATA
@@ -1001,7 +1002,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSaveSystem, 2804863224);
+	IMPLEMENT_CLASS(UFGSaveSystem, 3268050573);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSaveSystem>()
 	{
 		return UFGSaveSystem::StaticClass();

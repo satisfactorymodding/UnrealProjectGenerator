@@ -1534,7 +1534,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSchematicManager, 307284451);
+	IMPLEMENT_CLASS(AFGSchematicManager, 545207881);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSchematicManager>()
 	{
 		return AFGSchematicManager::StaticClass();

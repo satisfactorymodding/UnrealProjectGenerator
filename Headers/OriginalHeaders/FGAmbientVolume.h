@@ -10,7 +10,6 @@ class AFGAmbientVolume : public AVolume, public IFGSignificanceInterface
 {
 	GENERATED_BODY()
 public:
-	/** ctor */
 	AFGAmbientVolume();
 
 	virtual void BeginPlay() override;

@@ -102,9 +102,9 @@ protected:
 	/** If this buildable is replicating details, i.e. for the UI. */
 	uint8 mReplicateDetails : 1;
 private:
+	friend class AFGCircuitSubsystem;
+
 	/** All players interacting with a building that's connected to this circuit */
 	UPROPERTY()
 	TArray< class AFGCharacterPlayer* > mInteractingPlayers;
-private:
-	friend class AFGCircuitSubsystem;
 };

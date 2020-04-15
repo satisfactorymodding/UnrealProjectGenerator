@@ -13,8 +13,10 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 // Cross Module References
-	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnShortcutChanged__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnHotbarIndexChanged__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnPresetHotbarChanged__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnShortcutChanged__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnShortcutsLayoutChanged__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnToggleInteractionUI__DelegateSignature();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
@@ -29,27 +31,43 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGPlayerController_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGPlayerController();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGPlayerControllerBase();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_CheckPawnMapArea();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Client_AddMessage();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGMessageBase_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Client_TransferFogOfWarData();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Client_WaitForLevelStreaming();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_CopyPresetHotbarToCurrentHotbar();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_CreateSequenceList();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_CycleToNextHotbar();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_CycleToPreviousHotbar();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_DecrementPhotoModeFOV();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_EnablePhotoMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_EnterChatMessage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_ExecuteShortcut();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGHotbarShortcut_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FPresetHotbar();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetCurrentHotbarIndex();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGHotbarShortcut_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetDisabledInputGate();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetHiResPhotoModeEnabled();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetIsPhotoMode();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetMaxNumPresetHotbars();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetNumHotbars();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetNumPresetHotbars();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetNumSlotsPerHotbar();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetObjectScreenRadius();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetPhotoModeFOV();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetPlayerHasMessage();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetPresetHotbar();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetRecipeShortcutIndex();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipe_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetRemoteCallObjectOfClass();
@@ -58,7 +76,6 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetScreenshotPath();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetShortcutIndexFromKey();
 	SLATECORE_API UScriptStruct* Z_Construct_UScriptStruct_FKeyEvent();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_IncrementPhotoModeFOV();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_IsInTutorialMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_IsRespawning();
@@ -75,6 +92,10 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkComponent_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_OnStartRespawn();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Server_CopyPresetHotbarToCurrentHotbar();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Server_DealImpactDamage();
 	ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
@@ -85,13 +106,12 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Server_Respawn();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Server_SendChatMessage();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FChatMessageStruct();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Server_SetHotbarIndex();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Server_SetRecipeShortcutOnIndex();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Server_SpawnAttentionPingActor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Server_StartRespawn();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Server_Suicide();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_SetDisabledInputGate();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_SetRecipeShortcutOnIndex();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_SetTutorialMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_StartRespawn();
@@ -106,6 +126,70 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGAttentionPingActor_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGConsoleCommandManager_NoRegister();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_FactoryGame_OnHotbarIndexChanged__DelegateSignature_Statics
+	{
+		struct _Script_FactoryGame_eventOnHotbarIndexChanged_Parms
+		{
+			int32 newHotbarIndex;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_newHotbarIndex;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnHotbarIndexChanged__DelegateSignature_Statics::NewProp_newHotbarIndex = { "newHotbarIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventOnHotbarIndexChanged_Parms, newHotbarIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_OnHotbarIndexChanged__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnHotbarIndexChanged__DelegateSignature_Statics::NewProp_newHotbarIndex,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnHotbarIndexChanged__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnHotbarIndexChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnHotbarIndexChanged__DelegateSignature", sizeof(_Script_FactoryGame_eventOnHotbarIndexChanged_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnHotbarIndexChanged__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnHotbarIndexChanged__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnHotbarIndexChanged__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnHotbarIndexChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnHotbarIndexChanged__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_FactoryGame_OnHotbarIndexChanged__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_FactoryGame_OnPresetHotbarChanged__DelegateSignature_Statics
+	{
+		struct _Script_FactoryGame_eventOnPresetHotbarChanged_Parms
+		{
+			int32 presetHotbarIndex;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_presetHotbarIndex;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnPresetHotbarChanged__DelegateSignature_Statics::NewProp_presetHotbarIndex = { "presetHotbarIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventOnPresetHotbarChanged_Parms, presetHotbarIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_OnPresetHotbarChanged__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnPresetHotbarChanged__DelegateSignature_Statics::NewProp_presetHotbarIndex,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnPresetHotbarChanged__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnPresetHotbarChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnPresetHotbarChanged__DelegateSignature", sizeof(_Script_FactoryGame_eventOnPresetHotbarChanged_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnPresetHotbarChanged__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnPresetHotbarChanged__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnPresetHotbarChanged__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnPresetHotbarChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnPresetHotbarChanged__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_FactoryGame_OnPresetHotbarChanged__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UDelegateFunction_FactoryGame_OnShortcutChanged__DelegateSignature_Statics
 	{
 #if WITH_METADATA
@@ -387,6 +471,28 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		Parms.isJoining=isJoining ? true : false;
 		ProcessEvent(FindFunctionChecked(NAME_AFGPlayerController_OnStartRespawn),&Parms);
 	}
+	static FName NAME_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar = FName(TEXT("Server_CopyCurrentHotbarToPresetHotbar"));
+	void AFGPlayerController::Server_CopyCurrentHotbarToPresetHotbar(int32 presetHotbarIndex)
+	{
+		FGPlayerController_eventServer_CopyCurrentHotbarToPresetHotbar_Parms Parms;
+		Parms.presetHotbarIndex=presetHotbarIndex;
+		ProcessEvent(FindFunctionChecked(NAME_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar),&Parms);
+	}
+	static FName NAME_AFGPlayerController_Server_CopyPresetHotbarToCurrentHotbar = FName(TEXT("Server_CopyPresetHotbarToCurrentHotbar"));
+	void AFGPlayerController::Server_CopyPresetHotbarToCurrentHotbar(int32 presetHotbarIndex)
+	{
+		FGPlayerController_eventServer_CopyPresetHotbarToCurrentHotbar_Parms Parms;
+		Parms.presetHotbarIndex=presetHotbarIndex;
+		ProcessEvent(FindFunctionChecked(NAME_AFGPlayerController_Server_CopyPresetHotbarToCurrentHotbar),&Parms);
+	}
+	static FName NAME_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar = FName(TEXT("Server_CreatePresetHotbarFromCurrentHotbar"));
+	void AFGPlayerController::Server_CreatePresetHotbarFromCurrentHotbar(FText const& presetName, int32 iconIndex)
+	{
+		FGPlayerController_eventServer_CreatePresetHotbarFromCurrentHotbar_Parms Parms;
+		Parms.presetName=presetName;
+		Parms.iconIndex=iconIndex;
+		ProcessEvent(FindFunctionChecked(NAME_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar),&Parms);
+	}
 	static FName NAME_AFGPlayerController_Server_DealImpactDamage = FName(TEXT("Server_DealImpactDamage"));
 	void AFGPlayerController::Server_DealImpactDamage(FHitResult const& impact, FVector forwardVector, float damage, TSubclassOf<UDamageType>  damageType, AActor* inInstigator)
 	{
@@ -431,12 +537,12 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		Parms.newMessage=newMessage;
 		ProcessEvent(FindFunctionChecked(NAME_AFGPlayerController_Server_SendChatMessage),&Parms);
 	}
-	static FName NAME_AFGPlayerController_Server_SetDismantleShortcutOnIndex = FName(TEXT("Server_SetDismantleShortcutOnIndex"));
-	void AFGPlayerController::Server_SetDismantleShortcutOnIndex(int32 onIndex)
+	static FName NAME_AFGPlayerController_Server_SetHotbarIndex = FName(TEXT("Server_SetHotbarIndex"));
+	void AFGPlayerController::Server_SetHotbarIndex(int32 index)
 	{
-		FGPlayerController_eventServer_SetDismantleShortcutOnIndex_Parms Parms;
-		Parms.onIndex=onIndex;
-		ProcessEvent(FindFunctionChecked(NAME_AFGPlayerController_Server_SetDismantleShortcutOnIndex),&Parms);
+		FGPlayerController_eventServer_SetHotbarIndex_Parms Parms;
+		Parms.index=index;
+		ProcessEvent(FindFunctionChecked(NAME_AFGPlayerController_Server_SetHotbarIndex),&Parms);
 	}
 	static FName NAME_AFGPlayerController_Server_SetRecipeShortcutOnIndex = FName(TEXT("Server_SetRecipeShortcutOnIndex"));
 	void AFGPlayerController::Server_SetRecipeShortcutOnIndex(TSubclassOf<UFGRecipe>  recipe, int32 onIndex)
@@ -478,29 +584,43 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	{
 		UClass* Class = AFGPlayerController::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "CanCreateNewPresetHotbar", &AFGPlayerController::execCanCreateNewPresetHotbar },
+			{ "ChangeIconIndexOfPresetHotbar", &AFGPlayerController::execChangeIconIndexOfPresetHotbar },
+			{ "ChangeNameOfPresetHotbar", &AFGPlayerController::execChangeNameOfPresetHotbar },
 			{ "CheckPawnMapArea", &AFGPlayerController::execCheckPawnMapArea },
 			{ "Client_AddMessage", &AFGPlayerController::execClient_AddMessage },
 			{ "Client_TransferFogOfWarData", &AFGPlayerController::execClient_TransferFogOfWarData },
 			{ "Client_WaitForLevelStreaming", &AFGPlayerController::execClient_WaitForLevelStreaming },
+			{ "CopyCurrentHotbarToPresetHotbar", &AFGPlayerController::execCopyCurrentHotbarToPresetHotbar },
+			{ "CopyPresetHotbarToCurrentHotbar", &AFGPlayerController::execCopyPresetHotbarToCurrentHotbar },
+			{ "CreatePresetHotbarFromCurrentHotbar", &AFGPlayerController::execCreatePresetHotbarFromCurrentHotbar },
+			{ "CycleToNextHotbar", &AFGPlayerController::execCycleToNextHotbar },
+			{ "CycleToPreviousHotbar", &AFGPlayerController::execCycleToPreviousHotbar },
 			{ "DecrementPhotoModeFOV", &AFGPlayerController::execDecrementPhotoModeFOV },
 			{ "EnablePhotoMode", &AFGPlayerController::execEnablePhotoMode },
 			{ "EnterChatMessage", &AFGPlayerController::execEnterChatMessage },
 			{ "ExecuteShortcut", &AFGPlayerController::execExecuteShortcut },
-			{ "GetAllShortcuts", &AFGPlayerController::execGetAllShortcuts },
+			{ "GetAllPresetHotbars", &AFGPlayerController::execGetAllPresetHotbars },
+			{ "GetCurrentHotbarIndex", &AFGPlayerController::execGetCurrentHotbarIndex },
 			{ "GetCurrentMapArea", &AFGPlayerController::execGetCurrentMapArea },
+			{ "GetCurrentShortcuts", &AFGPlayerController::execGetCurrentShortcuts },
 			{ "GetDisabledInputGate", &AFGPlayerController::execGetDisabledInputGate },
-			{ "GetDismantleShortcutIndex", &AFGPlayerController::execGetDismantleShortcutIndex },
 			{ "GetHiResPhotoModeEnabled", &AFGPlayerController::execGetHiResPhotoModeEnabled },
 			{ "GetIsPhotoMode", &AFGPlayerController::execGetIsPhotoMode },
+			{ "GetMaxNumPresetHotbars", &AFGPlayerController::execGetMaxNumPresetHotbars },
+			{ "GetNumHotbars", &AFGPlayerController::execGetNumHotbars },
+			{ "GetNumPresetHotbars", &AFGPlayerController::execGetNumPresetHotbars },
+			{ "GetNumSlotsPerHotbar", &AFGPlayerController::execGetNumSlotsPerHotbar },
 			{ "GetObjectScreenRadius", &AFGPlayerController::execGetObjectScreenRadius },
 			{ "GetPhotoModeFOV", &AFGPlayerController::execGetPhotoModeFOV },
 			{ "GetPlayerHasMessage", &AFGPlayerController::execGetPlayerHasMessage },
+			{ "GetPresetHotbar", &AFGPlayerController::execGetPresetHotbar },
+			{ "GetPresetShortcuts", &AFGPlayerController::execGetPresetShortcuts },
 			{ "GetRecipeShortcutIndex", &AFGPlayerController::execGetRecipeShortcutIndex },
 			{ "GetRemoteCallObjectOfClass", &AFGPlayerController::execGetRemoteCallObjectOfClass },
 			{ "GetScreenBasedObjectRadius", &AFGPlayerController::execGetScreenBasedObjectRadius },
 			{ "GetScreenshotPath", &AFGPlayerController::execGetScreenshotPath },
 			{ "GetShortcutIndexFromKey", &AFGPlayerController::execGetShortcutIndexFromKey },
-			{ "GetValidShortcuts", &AFGPlayerController::execGetValidShortcuts },
 			{ "IncrementPhotoModeFOV", &AFGPlayerController::execIncrementPhotoModeFOV },
 			{ "IsInTutorialMode", &AFGPlayerController::execIsInTutorialMode },
 			{ "IsRespawning", &AFGPlayerController::execIsRespawning },
@@ -511,19 +631,22 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 			{ "OnPrimaryFire", &AFGPlayerController::execOnPrimaryFire },
 			{ "OnRep_IsRespawning", &AFGPlayerController::execOnRep_IsRespawning },
 			{ "RegisterRemoteCallObjectClass", &AFGPlayerController::execRegisterRemoteCallObjectClass },
+			{ "RemovePresetHotbar", &AFGPlayerController::execRemovePresetHotbar },
+			{ "Server_CopyCurrentHotbarToPresetHotbar", &AFGPlayerController::execServer_CopyCurrentHotbarToPresetHotbar },
+			{ "Server_CopyPresetHotbarToCurrentHotbar", &AFGPlayerController::execServer_CopyPresetHotbarToCurrentHotbar },
+			{ "Server_CreatePresetHotbarFromCurrentHotbar", &AFGPlayerController::execServer_CreatePresetHotbarFromCurrentHotbar },
 			{ "Server_DealImpactDamage", &AFGPlayerController::execServer_DealImpactDamage },
 			{ "Server_DealRadialDamage", &AFGPlayerController::execServer_DealRadialDamage },
 			{ "Server_FinishRespawn", &AFGPlayerController::execServer_FinishRespawn },
 			{ "Server_RequestFogOfWarData", &AFGPlayerController::execServer_RequestFogOfWarData },
 			{ "Server_Respawn", &AFGPlayerController::execServer_Respawn },
 			{ "Server_SendChatMessage", &AFGPlayerController::execServer_SendChatMessage },
-			{ "Server_SetDismantleShortcutOnIndex", &AFGPlayerController::execServer_SetDismantleShortcutOnIndex },
+			{ "Server_SetHotbarIndex", &AFGPlayerController::execServer_SetHotbarIndex },
 			{ "Server_SetRecipeShortcutOnIndex", &AFGPlayerController::execServer_SetRecipeShortcutOnIndex },
 			{ "Server_SpawnAttentionPingActor", &AFGPlayerController::execServer_SpawnAttentionPingActor },
 			{ "Server_StartRespawn", &AFGPlayerController::execServer_StartRespawn },
 			{ "Server_Suicide", &AFGPlayerController::execServer_Suicide },
 			{ "SetDisabledInputGate", &AFGPlayerController::execSetDisabledInputGate },
-			{ "SetDismantleShortcutOnIndex", &AFGPlayerController::execSetDismantleShortcutOnIndex },
 			{ "SetRecipeShortcutOnIndex", &AFGPlayerController::execSetRecipeShortcutOnIndex },
 			{ "SetTutorialMode", &AFGPlayerController::execSetTutorialMode },
 			{ "StartRespawn", &AFGPlayerController::execStartRespawn },
@@ -532,6 +655,129 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 			{ "TogglePhotoMode", &AFGPlayerController::execTogglePhotoMode },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar_Statics
+	{
+		struct FGPlayerController_eventCanCreateNewPresetHotbar_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGPlayerController_eventCanCreateNewPresetHotbar_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGPlayerController_eventCanCreateNewPresetHotbar_Parms), &Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Shortcut" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "Check if we can create a new preset" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "CanCreateNewPresetHotbar", sizeof(FGPlayerController_eventCanCreateNewPresetHotbar_Parms), Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar_Statics
+	{
+		struct FGPlayerController_eventChangeIconIndexOfPresetHotbar_Parms
+		{
+			int32 presetHotbarIndex;
+			int32 iconIndex;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_iconIndex;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_presetHotbarIndex;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar_Statics::NewProp_iconIndex = { "iconIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventChangeIconIndexOfPresetHotbar_Parms, iconIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar_Statics::NewProp_presetHotbarIndex = { "presetHotbarIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventChangeIconIndexOfPresetHotbar_Parms, presetHotbarIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar_Statics::NewProp_iconIndex,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar_Statics::NewProp_presetHotbarIndex,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Shortcut" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "Change the icon index of the preset hotbar at the given index" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "ChangeIconIndexOfPresetHotbar", sizeof(FGPlayerController_eventChangeIconIndexOfPresetHotbar_Parms), Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar_Statics
+	{
+		struct FGPlayerController_eventChangeNameOfPresetHotbar_Parms
+		{
+			int32 presetHotbarIndex;
+			FText newName;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_newName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_newName;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_presetHotbarIndex;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar_Statics::NewProp_newName_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar_Statics::NewProp_newName = { "newName", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventChangeNameOfPresetHotbar_Parms, newName), METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar_Statics::NewProp_newName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar_Statics::NewProp_newName_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar_Statics::NewProp_presetHotbarIndex = { "presetHotbarIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventChangeNameOfPresetHotbar_Parms, presetHotbarIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar_Statics::NewProp_newName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar_Statics::NewProp_presetHotbarIndex,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Shortcut" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "Change the name of the preset hotbar at the given index" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "ChangeNameOfPresetHotbar", sizeof(FGPlayerController_eventChangeNameOfPresetHotbar_Parms), Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AFGPlayerController_CheckPawnMapArea_Statics
 	{
@@ -650,6 +896,138 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar_Statics
+	{
+		struct FGPlayerController_eventCopyCurrentHotbarToPresetHotbar_Parms
+		{
+			int32 presetHotbarIndex;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_presetHotbarIndex;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGPlayerController_eventCopyCurrentHotbarToPresetHotbar_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGPlayerController_eventCopyCurrentHotbarToPresetHotbar_Parms), &Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar_Statics::NewProp_presetHotbarIndex = { "presetHotbarIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventCopyCurrentHotbarToPresetHotbar_Parms, presetHotbarIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar_Statics::NewProp_presetHotbarIndex,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Shortcut" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "Copy the current hotbar shortcuts to the preset hotbar with the given index" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "CopyCurrentHotbarToPresetHotbar", sizeof(FGPlayerController_eventCopyCurrentHotbarToPresetHotbar_Parms), Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_CopyPresetHotbarToCurrentHotbar_Statics
+	{
+		struct FGPlayerController_eventCopyPresetHotbarToCurrentHotbar_Parms
+		{
+			int32 presetHotbarIndex;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_presetHotbarIndex;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_CopyPresetHotbarToCurrentHotbar_Statics::NewProp_presetHotbarIndex = { "presetHotbarIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventCopyPresetHotbarToCurrentHotbar_Parms, presetHotbarIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_CopyPresetHotbarToCurrentHotbar_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_CopyPresetHotbarToCurrentHotbar_Statics::NewProp_presetHotbarIndex,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_CopyPresetHotbarToCurrentHotbar_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Shortcut" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "Copy the shortcuts of the preset hotbar with the given index to the current hotbar" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_CopyPresetHotbarToCurrentHotbar_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "CopyPresetHotbarToCurrentHotbar", sizeof(FGPlayerController_eventCopyPresetHotbarToCurrentHotbar_Parms), Z_Construct_UFunction_AFGPlayerController_CopyPresetHotbarToCurrentHotbar_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_CopyPresetHotbarToCurrentHotbar_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_CopyPresetHotbarToCurrentHotbar_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_CopyPresetHotbarToCurrentHotbar_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_CopyPresetHotbarToCurrentHotbar()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_CopyPresetHotbarToCurrentHotbar_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics
+	{
+		struct FGPlayerController_eventCreatePresetHotbarFromCurrentHotbar_Parms
+		{
+			FText presetName;
+			int32 iconIndex;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_iconIndex;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_presetName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_presetName;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGPlayerController_eventCreatePresetHotbarFromCurrentHotbar_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGPlayerController_eventCreatePresetHotbarFromCurrentHotbar_Parms), &Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_iconIndex = { "iconIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventCreatePresetHotbarFromCurrentHotbar_Parms, iconIndex), METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_presetName_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_presetName = { "presetName", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventCreatePresetHotbarFromCurrentHotbar_Parms, presetName), METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_presetName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_presetName_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_iconIndex,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_presetName,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Shortcut" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "Copy the current hotbar shortcuts to a new preset hotbar\n     @return true if the copy was a success" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "CreatePresetHotbarFromCurrentHotbar", sizeof(FGPlayerController_eventCreatePresetHotbarFromCurrentHotbar_Parms), Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGPlayerController_CreateSequenceList_Statics
 	{
 #if WITH_METADATA
@@ -671,6 +1049,54 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_CreateSequenceList_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_CycleToNextHotbar_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_CycleToNextHotbar_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Hotbar" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "Changes the current hotbar to the next index, wraps around" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_CycleToNextHotbar_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "CycleToNextHotbar", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_CycleToNextHotbar_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_CycleToNextHotbar_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_CycleToNextHotbar()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_CycleToNextHotbar_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_CycleToPreviousHotbar_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_CycleToPreviousHotbar_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Hotbar" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "Changes the current hotbar to the previous index, wraps around" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_CycleToPreviousHotbar_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "CycleToPreviousHotbar", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_CycleToPreviousHotbar_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_CycleToPreviousHotbar_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_CycleToPreviousHotbar()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_CycleToPreviousHotbar_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -811,40 +1237,73 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts_Statics
+	struct Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars_Statics
 	{
-		struct FGPlayerController_eventGetAllShortcuts_Parms
+		struct FGPlayerController_eventGetAllPresetHotbars_Parms
 		{
-			TArray<UFGHotbarShortcut*> out_shortcuts;
+			TArray<FPresetHotbar> out_presetHotbars;
 		};
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_shortcuts;
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_out_shortcuts_Inner;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_presetHotbars;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_out_presetHotbars_Inner;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts_Statics::NewProp_out_shortcuts = { "out_shortcuts", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventGetAllShortcuts_Parms, out_shortcuts), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts_Statics::NewProp_out_shortcuts_Inner = { "out_shortcuts", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGHotbarShortcut_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts_Statics::NewProp_out_shortcuts,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts_Statics::NewProp_out_shortcuts_Inner,
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars_Statics::NewProp_out_presetHotbars = { "out_presetHotbars", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventGetAllPresetHotbars_Parms, out_presetHotbars), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars_Statics::NewProp_out_presetHotbars_Inner = { "out_presetHotbars", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FPresetHotbar, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars_Statics::NewProp_out_presetHotbars,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars_Statics::NewProp_out_presetHotbars_Inner,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Shortcut" },
 		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
-		{ "ToolTip", "Get all hotbar shortcuts" },
+		{ "ToolTip", "Get all preset hotbars" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "GetAllShortcuts", sizeof(FGPlayerController_eventGetAllShortcuts_Parms), Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "GetAllPresetHotbars", sizeof(FGPlayerController_eventGetAllPresetHotbars_Parms), Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_GetCurrentHotbarIndex_Statics
+	{
+		struct FGPlayerController_eventGetCurrentHotbarIndex_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_GetCurrentHotbarIndex_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventGetCurrentHotbarIndex_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_GetCurrentHotbarIndex_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetCurrentHotbarIndex_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetCurrentHotbarIndex_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Shortcut" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetCurrentHotbarIndex_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "GetCurrentHotbarIndex", sizeof(FGPlayerController_eventGetCurrentHotbarIndex_Parms), Z_Construct_UFunction_AFGPlayerController_GetCurrentHotbarIndex_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetCurrentHotbarIndex_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetCurrentHotbarIndex_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetCurrentHotbarIndex_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_GetCurrentHotbarIndex()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_GetCurrentHotbarIndex_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -882,6 +1341,43 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts_Statics
+	{
+		struct FGPlayerController_eventGetCurrentShortcuts_Parms
+		{
+			TArray<UFGHotbarShortcut*> out_shortcuts;
+		};
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_shortcuts;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_out_shortcuts_Inner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts_Statics::NewProp_out_shortcuts = { "out_shortcuts", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventGetCurrentShortcuts_Parms, out_shortcuts), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts_Statics::NewProp_out_shortcuts_Inner = { "out_shortcuts", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGHotbarShortcut_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts_Statics::NewProp_out_shortcuts,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts_Statics::NewProp_out_shortcuts_Inner,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Shortcut" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "Get all shortcuts in the current hotbar" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "GetCurrentShortcuts", sizeof(FGPlayerController_eventGetCurrentShortcuts_Parms), Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGPlayerController_GetDisabledInputGate_Statics
 	{
 		struct FGPlayerController_eventGetDisabledInputGate_Parms
@@ -913,40 +1409,6 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_GetDisabledInputGate_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex_Statics
-	{
-		struct FGPlayerController_eventGetDismantleShortcutIndex_Parms
-		{
-			int32 ReturnValue;
-		};
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventGetDismantleShortcutIndex_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Shortcut" },
-		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
-		{ "ToolTip", "Get the shortcut index dismantle have, -1 if it doesn't have any shortcut index assigned" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "GetDismantleShortcutIndex", sizeof(FGPlayerController_eventGetDismantleShortcutIndex_Parms), Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1023,6 +1485,138 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_GetIsPhotoMode_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_GetMaxNumPresetHotbars_Statics
+	{
+		struct FGPlayerController_eventGetMaxNumPresetHotbars_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_GetMaxNumPresetHotbars_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventGetMaxNumPresetHotbars_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_GetMaxNumPresetHotbars_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetMaxNumPresetHotbars_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetMaxNumPresetHotbars_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Shortcut Preset" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetMaxNumPresetHotbars_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "GetMaxNumPresetHotbars", sizeof(FGPlayerController_eventGetMaxNumPresetHotbars_Parms), Z_Construct_UFunction_AFGPlayerController_GetMaxNumPresetHotbars_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetMaxNumPresetHotbars_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetMaxNumPresetHotbars_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetMaxNumPresetHotbars_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_GetMaxNumPresetHotbars()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_GetMaxNumPresetHotbars_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_GetNumHotbars_Statics
+	{
+		struct FGPlayerController_eventGetNumHotbars_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_GetNumHotbars_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventGetNumHotbars_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_GetNumHotbars_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetNumHotbars_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetNumHotbars_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Shortcut" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetNumHotbars_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "GetNumHotbars", sizeof(FGPlayerController_eventGetNumHotbars_Parms), Z_Construct_UFunction_AFGPlayerController_GetNumHotbars_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetNumHotbars_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetNumHotbars_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetNumHotbars_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_GetNumHotbars()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_GetNumHotbars_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_GetNumPresetHotbars_Statics
+	{
+		struct FGPlayerController_eventGetNumPresetHotbars_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_GetNumPresetHotbars_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventGetNumPresetHotbars_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_GetNumPresetHotbars_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetNumPresetHotbars_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetNumPresetHotbars_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Shortcut Preset" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetNumPresetHotbars_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "GetNumPresetHotbars", sizeof(FGPlayerController_eventGetNumPresetHotbars_Parms), Z_Construct_UFunction_AFGPlayerController_GetNumPresetHotbars_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetNumPresetHotbars_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetNumPresetHotbars_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetNumPresetHotbars_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_GetNumPresetHotbars()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_GetNumPresetHotbars_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_GetNumSlotsPerHotbar_Statics
+	{
+		struct FGPlayerController_eventGetNumSlotsPerHotbar_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_GetNumSlotsPerHotbar_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventGetNumSlotsPerHotbar_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_GetNumSlotsPerHotbar_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetNumSlotsPerHotbar_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetNumSlotsPerHotbar_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Shortcut" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetNumSlotsPerHotbar_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "GetNumSlotsPerHotbar", sizeof(FGPlayerController_eventGetNumSlotsPerHotbar_Parms), Z_Construct_UFunction_AFGPlayerController_GetNumSlotsPerHotbar_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetNumSlotsPerHotbar_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetNumSlotsPerHotbar_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetNumSlotsPerHotbar_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_GetNumSlotsPerHotbar()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_GetNumSlotsPerHotbar_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1141,6 +1735,85 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_GetPlayerHasMessage_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_GetPresetHotbar_Statics
+	{
+		struct FGPlayerController_eventGetPresetHotbar_Parms
+		{
+			int32 presetHotbarIndex;
+			FPresetHotbar out_presetHotbar;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_out_presetHotbar;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_presetHotbarIndex;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGPlayerController_GetPresetHotbar_Statics::NewProp_out_presetHotbar = { "out_presetHotbar", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventGetPresetHotbar_Parms, out_presetHotbar), Z_Construct_UScriptStruct_FPresetHotbar, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_GetPresetHotbar_Statics::NewProp_presetHotbarIndex = { "presetHotbarIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventGetPresetHotbar_Parms, presetHotbarIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_GetPresetHotbar_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetPresetHotbar_Statics::NewProp_out_presetHotbar,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetPresetHotbar_Statics::NewProp_presetHotbarIndex,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetPresetHotbar_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Shortcut" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "Get preset hotbar at the given index" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetPresetHotbar_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "GetPresetHotbar", sizeof(FGPlayerController_eventGetPresetHotbar_Parms), Z_Construct_UFunction_AFGPlayerController_GetPresetHotbar_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetPresetHotbar_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetPresetHotbar_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetPresetHotbar_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_GetPresetHotbar()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_GetPresetHotbar_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts_Statics
+	{
+		struct FGPlayerController_eventGetPresetShortcuts_Parms
+		{
+			int32 presetHotbarIndex;
+			TArray<UFGHotbarShortcut*> out_shortcuts;
+		};
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_shortcuts;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_out_shortcuts_Inner;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_presetHotbarIndex;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts_Statics::NewProp_out_shortcuts = { "out_shortcuts", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventGetPresetShortcuts_Parms, out_shortcuts), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts_Statics::NewProp_out_shortcuts_Inner = { "out_shortcuts", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGHotbarShortcut_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts_Statics::NewProp_presetHotbarIndex = { "presetHotbarIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventGetPresetShortcuts_Parms, presetHotbarIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts_Statics::NewProp_out_shortcuts,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts_Statics::NewProp_out_shortcuts_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts_Statics::NewProp_presetHotbarIndex,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Shortcut" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "Get all preset hotbar shortcuts that belongs to the hotbar with the given index" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "GetPresetShortcuts", sizeof(FGPlayerController_eventGetPresetShortcuts_Parms), Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1348,43 +2021,6 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_GetShortcutIndexFromKey_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts_Statics
-	{
-		struct FGPlayerController_eventGetValidShortcuts_Parms
-		{
-			TArray<UFGHotbarShortcut*> out_shortcuts;
-		};
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_shortcuts;
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_out_shortcuts_Inner;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts_Statics::NewProp_out_shortcuts = { "out_shortcuts", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventGetValidShortcuts_Parms, out_shortcuts), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts_Statics::NewProp_out_shortcuts_Inner = { "out_shortcuts", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGHotbarShortcut_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts_Statics::NewProp_out_shortcuts,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts_Statics::NewProp_out_shortcuts_Inner,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Shortcut" },
-		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
-		{ "ToolTip", "Get all valid shortcuts" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "GetValidShortcuts", sizeof(FGPlayerController_eventGetValidShortcuts_Parms), Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1791,6 +2427,144 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar_Statics
+	{
+		struct FGPlayerController_eventRemovePresetHotbar_Parms
+		{
+			int32 presetHotbarIndex;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_presetHotbarIndex;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGPlayerController_eventRemovePresetHotbar_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGPlayerController_eventRemovePresetHotbar_Parms), &Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar_Statics::NewProp_presetHotbarIndex = { "presetHotbarIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventRemovePresetHotbar_Parms, presetHotbarIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar_Statics::NewProp_presetHotbarIndex,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Shortcut" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "Remove the preset hotbar with the given index" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "RemovePresetHotbar", sizeof(FGPlayerController_eventRemovePresetHotbar_Parms), Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar_Statics
+	{
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_presetHotbarIndex;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar_Statics::NewProp_presetHotbarIndex = { "presetHotbarIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventServer_CopyCurrentHotbarToPresetHotbar_Parms, presetHotbarIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar_Statics::NewProp_presetHotbarIndex,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "Server_CopyCurrentHotbarToPresetHotbar", sizeof(FGPlayerController_eventServer_CopyCurrentHotbarToPresetHotbar_Parms), Z_Construct_UFunction_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_Server_CopyPresetHotbarToCurrentHotbar_Statics
+	{
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_presetHotbarIndex;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_Server_CopyPresetHotbarToCurrentHotbar_Statics::NewProp_presetHotbarIndex = { "presetHotbarIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventServer_CopyPresetHotbarToCurrentHotbar_Parms, presetHotbarIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_Server_CopyPresetHotbarToCurrentHotbar_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_Server_CopyPresetHotbarToCurrentHotbar_Statics::NewProp_presetHotbarIndex,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_CopyPresetHotbarToCurrentHotbar_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_Server_CopyPresetHotbarToCurrentHotbar_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "Server_CopyPresetHotbarToCurrentHotbar", sizeof(FGPlayerController_eventServer_CopyPresetHotbarToCurrentHotbar_Parms), Z_Construct_UFunction_AFGPlayerController_Server_CopyPresetHotbarToCurrentHotbar_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_CopyPresetHotbarToCurrentHotbar_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_Server_CopyPresetHotbarToCurrentHotbar_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_CopyPresetHotbarToCurrentHotbar_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_Server_CopyPresetHotbarToCurrentHotbar()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_Server_CopyPresetHotbarToCurrentHotbar_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar_Statics
+	{
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_iconIndex;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_presetName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_presetName;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_iconIndex = { "iconIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventServer_CreatePresetHotbarFromCurrentHotbar_Parms, iconIndex), METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_presetName_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_presetName = { "presetName", nullptr, (EPropertyFlags)0x0010000008000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventServer_CreatePresetHotbarFromCurrentHotbar_Parms, presetName), METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_presetName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_presetName_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_iconIndex,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar_Statics::NewProp_presetName,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "Server_CreatePresetHotbarFromCurrentHotbar", sizeof(FGPlayerController_eventServer_CreatePresetHotbarFromCurrentHotbar_Parms), Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGPlayerController_Server_DealImpactDamage_Statics
 	{
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_inInstigator;
@@ -1995,31 +2769,31 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics
+	struct Z_Construct_UFunction_AFGPlayerController_Server_SetHotbarIndex_Statics
 	{
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_onIndex;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_index;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics::NewProp_onIndex = { "onIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventServer_SetDismantleShortcutOnIndex_Parms, onIndex), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics::NewProp_onIndex,
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_Server_SetHotbarIndex_Statics::NewProp_index = { "index", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventServer_SetHotbarIndex_Parms, index), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_Server_SetHotbarIndex_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_Server_SetHotbarIndex_Statics::NewProp_index,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_SetHotbarIndex_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "Server_SetDismantleShortcutOnIndex", sizeof(FGPlayerController_eventServer_SetDismantleShortcutOnIndex_Parms), Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_Server_SetHotbarIndex_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "Server_SetHotbarIndex", sizeof(FGPlayerController_eventServer_SetHotbarIndex_Parms), Z_Construct_UFunction_AFGPlayerController_Server_SetHotbarIndex_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_SetHotbarIndex_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_Server_SetHotbarIndex_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_SetHotbarIndex_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_Server_SetHotbarIndex()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_Server_SetHotbarIndex_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2160,40 +2934,6 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_SetDisabledInputGate_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex_Statics
-	{
-		struct FGPlayerController_eventSetDismantleShortcutOnIndex_Parms
-		{
-			int32 onIndex;
-		};
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_onIndex;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex_Statics::NewProp_onIndex = { "onIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerController_eventSetDismantleShortcutOnIndex_Parms, onIndex), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex_Statics::NewProp_onIndex,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Shortcut" },
-		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
-		{ "ToolTip", "Set the specified shortcut on the index if it's valid" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "SetDismantleShortcutOnIndex", sizeof(FGPlayerController_eventSetDismantleShortcutOnIndex_Parms), Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2514,6 +3254,14 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #endif
 		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnToggleInventory;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OnHotbarIndexChanged_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnHotbarIndexChanged;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OnPresetHotbarChanged_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPresetHotbarChanged;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OnShortcutChanged_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnShortcutChanged;
@@ -2530,30 +3278,44 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGPlayerController_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar, "CanCreateNewPresetHotbar" }, // 4184570816
+		{ &Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar, "ChangeIconIndexOfPresetHotbar" }, // 3899306338
+		{ &Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar, "ChangeNameOfPresetHotbar" }, // 2610106255
 		{ &Z_Construct_UFunction_AFGPlayerController_CheckPawnMapArea, "CheckPawnMapArea" }, // 2897715039
 		{ &Z_Construct_UFunction_AFGPlayerController_Client_AddMessage, "Client_AddMessage" }, // 311899978
 		{ &Z_Construct_UFunction_AFGPlayerController_Client_TransferFogOfWarData, "Client_TransferFogOfWarData" }, // 2596822939
 		{ &Z_Construct_UFunction_AFGPlayerController_Client_WaitForLevelStreaming, "Client_WaitForLevelStreaming" }, // 221466689
+		{ &Z_Construct_UFunction_AFGPlayerController_CopyCurrentHotbarToPresetHotbar, "CopyCurrentHotbarToPresetHotbar" }, // 2598137027
+		{ &Z_Construct_UFunction_AFGPlayerController_CopyPresetHotbarToCurrentHotbar, "CopyPresetHotbarToCurrentHotbar" }, // 1008138010
+		{ &Z_Construct_UFunction_AFGPlayerController_CreatePresetHotbarFromCurrentHotbar, "CreatePresetHotbarFromCurrentHotbar" }, // 1072837924
 		{ &Z_Construct_UFunction_AFGPlayerController_CreateSequenceList, "CreateSequenceList" }, // 837020434
+		{ &Z_Construct_UFunction_AFGPlayerController_CycleToNextHotbar, "CycleToNextHotbar" }, // 4064732499
+		{ &Z_Construct_UFunction_AFGPlayerController_CycleToPreviousHotbar, "CycleToPreviousHotbar" }, // 3690533837
 		{ &Z_Construct_UFunction_AFGPlayerController_DecrementPhotoModeFOV, "DecrementPhotoModeFOV" }, // 3922106814
 		{ &Z_Construct_UFunction_AFGPlayerController_EnablePhotoMode, "EnablePhotoMode" }, // 1301107203
 		{ &Z_Construct_UFunction_AFGPlayerController_EnterChatMessage, "EnterChatMessage" }, // 2244120735
 		{ &Z_Construct_UFunction_AFGPlayerController_ExecuteShortcut, "ExecuteShortcut" }, // 703699298
-		{ &Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts, "GetAllShortcuts" }, // 3852800978
+		{ &Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars, "GetAllPresetHotbars" }, // 459646333
+		{ &Z_Construct_UFunction_AFGPlayerController_GetCurrentHotbarIndex, "GetCurrentHotbarIndex" }, // 3468413368
 		{ &Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea, "GetCurrentMapArea" }, // 2009137642
+		{ &Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts, "GetCurrentShortcuts" }, // 2395559306
 		{ &Z_Construct_UFunction_AFGPlayerController_GetDisabledInputGate, "GetDisabledInputGate" }, // 3999875040
-		{ &Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex, "GetDismantleShortcutIndex" }, // 4222455085
 		{ &Z_Construct_UFunction_AFGPlayerController_GetHiResPhotoModeEnabled, "GetHiResPhotoModeEnabled" }, // 1480268099
 		{ &Z_Construct_UFunction_AFGPlayerController_GetIsPhotoMode, "GetIsPhotoMode" }, // 3375299062
+		{ &Z_Construct_UFunction_AFGPlayerController_GetMaxNumPresetHotbars, "GetMaxNumPresetHotbars" }, // 3122626623
+		{ &Z_Construct_UFunction_AFGPlayerController_GetNumHotbars, "GetNumHotbars" }, // 2497759537
+		{ &Z_Construct_UFunction_AFGPlayerController_GetNumPresetHotbars, "GetNumPresetHotbars" }, // 549887067
+		{ &Z_Construct_UFunction_AFGPlayerController_GetNumSlotsPerHotbar, "GetNumSlotsPerHotbar" }, // 3130162186
 		{ &Z_Construct_UFunction_AFGPlayerController_GetObjectScreenRadius, "GetObjectScreenRadius" }, // 951205333
 		{ &Z_Construct_UFunction_AFGPlayerController_GetPhotoModeFOV, "GetPhotoModeFOV" }, // 796332536
 		{ &Z_Construct_UFunction_AFGPlayerController_GetPlayerHasMessage, "GetPlayerHasMessage" }, // 991445161
+		{ &Z_Construct_UFunction_AFGPlayerController_GetPresetHotbar, "GetPresetHotbar" }, // 215756183
+		{ &Z_Construct_UFunction_AFGPlayerController_GetPresetShortcuts, "GetPresetShortcuts" }, // 2679805055
 		{ &Z_Construct_UFunction_AFGPlayerController_GetRecipeShortcutIndex, "GetRecipeShortcutIndex" }, // 2561143115
 		{ &Z_Construct_UFunction_AFGPlayerController_GetRemoteCallObjectOfClass, "GetRemoteCallObjectOfClass" }, // 1510591283
 		{ &Z_Construct_UFunction_AFGPlayerController_GetScreenBasedObjectRadius, "GetScreenBasedObjectRadius" }, // 1756141273
 		{ &Z_Construct_UFunction_AFGPlayerController_GetScreenshotPath, "GetScreenshotPath" }, // 3587424868
 		{ &Z_Construct_UFunction_AFGPlayerController_GetShortcutIndexFromKey, "GetShortcutIndexFromKey" }, // 2014807276
-		{ &Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts, "GetValidShortcuts" }, // 4165500691
 		{ &Z_Construct_UFunction_AFGPlayerController_IncrementPhotoModeFOV, "IncrementPhotoModeFOV" }, // 1318014299
 		{ &Z_Construct_UFunction_AFGPlayerController_IsInTutorialMode, "IsInTutorialMode" }, // 3179027614
 		{ &Z_Construct_UFunction_AFGPlayerController_IsRespawning, "IsRespawning" }, // 2161970272
@@ -2567,19 +3329,22 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		{ &Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind, "OnSetupMovementWind" }, // 631600103
 		{ &Z_Construct_UFunction_AFGPlayerController_OnStartRespawn, "OnStartRespawn" }, // 3353678526
 		{ &Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass, "RegisterRemoteCallObjectClass" }, // 4179562111
+		{ &Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar, "RemovePresetHotbar" }, // 2749452376
+		{ &Z_Construct_UFunction_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar, "Server_CopyCurrentHotbarToPresetHotbar" }, // 733947134
+		{ &Z_Construct_UFunction_AFGPlayerController_Server_CopyPresetHotbarToCurrentHotbar, "Server_CopyPresetHotbarToCurrentHotbar" }, // 3833426845
+		{ &Z_Construct_UFunction_AFGPlayerController_Server_CreatePresetHotbarFromCurrentHotbar, "Server_CreatePresetHotbarFromCurrentHotbar" }, // 3491966364
 		{ &Z_Construct_UFunction_AFGPlayerController_Server_DealImpactDamage, "Server_DealImpactDamage" }, // 1157014180
 		{ &Z_Construct_UFunction_AFGPlayerController_Server_DealRadialDamage, "Server_DealRadialDamage" }, // 2798164274
 		{ &Z_Construct_UFunction_AFGPlayerController_Server_FinishRespawn, "Server_FinishRespawn" }, // 520832719
 		{ &Z_Construct_UFunction_AFGPlayerController_Server_RequestFogOfWarData, "Server_RequestFogOfWarData" }, // 1269843037
 		{ &Z_Construct_UFunction_AFGPlayerController_Server_Respawn, "Server_Respawn" }, // 2126886183
 		{ &Z_Construct_UFunction_AFGPlayerController_Server_SendChatMessage, "Server_SendChatMessage" }, // 2590613606
-		{ &Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex, "Server_SetDismantleShortcutOnIndex" }, // 4246012640
+		{ &Z_Construct_UFunction_AFGPlayerController_Server_SetHotbarIndex, "Server_SetHotbarIndex" }, // 3674939821
 		{ &Z_Construct_UFunction_AFGPlayerController_Server_SetRecipeShortcutOnIndex, "Server_SetRecipeShortcutOnIndex" }, // 1601215818
 		{ &Z_Construct_UFunction_AFGPlayerController_Server_SpawnAttentionPingActor, "Server_SpawnAttentionPingActor" }, // 4068533314
 		{ &Z_Construct_UFunction_AFGPlayerController_Server_StartRespawn, "Server_StartRespawn" }, // 131143684
 		{ &Z_Construct_UFunction_AFGPlayerController_Server_Suicide, "Server_Suicide" }, // 2090845319
 		{ &Z_Construct_UFunction_AFGPlayerController_SetDisabledInputGate, "SetDisabledInputGate" }, // 790771828
-		{ &Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex, "SetDismantleShortcutOnIndex" }, // 1986297497
 		{ &Z_Construct_UFunction_AFGPlayerController_SetRecipeShortcutOnIndex, "SetRecipeShortcutOnIndex" }, // 1751027096
 		{ &Z_Construct_UFunction_AFGPlayerController_SetTutorialMode, "SetTutorialMode" }, // 3601354780
 		{ &Z_Construct_UFunction_AFGPlayerController_StartRespawn, "StartRespawn" }, // 2040552468
@@ -2770,6 +3535,20 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnToggleInventory = { "OnToggleInventory", nullptr, (EPropertyFlags)0x0010100010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerController, OnToggleInventory), Z_Construct_UDelegateFunction_FactoryGame_OnToggleInventory__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnToggleInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnToggleInventory_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnHotbarIndexChanged_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "Called when we change hotbar index has changed" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnHotbarIndexChanged = { "OnHotbarIndexChanged", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerController, OnHotbarIndexChanged), Z_Construct_UDelegateFunction_FactoryGame_OnHotbarIndexChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnHotbarIndexChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnHotbarIndexChanged_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnPresetHotbarChanged_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "Called when a shortcut has changed, e.g. activated or inactivated" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnPresetHotbarChanged = { "OnPresetHotbarChanged", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerController, OnPresetHotbarChanged), Z_Construct_UDelegateFunction_FactoryGame_OnPresetHotbarChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnPresetHotbarChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnPresetHotbarChanged_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnShortcutChanged_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Called when a shortcut has changed, e.g. activated or inactivated" },
@@ -2806,6 +3585,8 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_MapAreaEntered,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnToggleInteractionUI,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnToggleInventory,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnHotbarIndexChanged,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnPresetHotbarChanged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnShortcutChanged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnShortcutsLayoutChanged,
 	};
@@ -2836,7 +3617,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerController, 2434423289);
+	IMPLEMENT_CLASS(AFGPlayerController, 1216219270);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlayerController>()
 	{
 		return AFGPlayerController::StaticClass();

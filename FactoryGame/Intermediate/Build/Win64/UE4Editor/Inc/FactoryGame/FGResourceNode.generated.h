@@ -400,13 +400,13 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGResourceNode); \
 	FORCEINLINE static uint32 __PPO__mAmount() { return STRUCT_OFFSET(AFGResourceNode, mAmount); } \
 	FORCEINLINE static uint32 __PPO__mDecalComponent() { return STRUCT_OFFSET(AFGResourceNode, mDecalComponent); } \
 	FORCEINLINE static uint32 __PPO__mBoxComponent() { return STRUCT_OFFSET(AFGResourceNode, mBoxComponent); } \
-	FORCEINLINE static uint32 __PPO__mResourcesLeft() { return STRUCT_OFFSET(AFGResourceNode, mResourcesLeft); } \
 	FORCEINLINE static uint32 __PPO__mIsOccupied() { return STRUCT_OFFSET(AFGResourceNode, mIsOccupied); } \
 	FORCEINLINE static uint32 __PPO__mRevealedOnMapBy() { return STRUCT_OFFSET(AFGResourceNode, mRevealedOnMapBy); } \
 	FORCEINLINE static uint32 __PPO__mIsLonerNode() { return STRUCT_OFFSET(AFGResourceNode, mIsLonerNode); } \
 	FORCEINLINE static uint32 __PPO__mCanPlaceResourceExtractor() { return STRUCT_OFFSET(AFGResourceNode, mCanPlaceResourceExtractor); } \
 	FORCEINLINE static uint32 __PPO__mExtractMultiplier() { return STRUCT_OFFSET(AFGResourceNode, mExtractMultiplier); } \
-	FORCEINLINE static uint32 __PPO__mPurityTextArray() { return STRUCT_OFFSET(AFGResourceNode, mPurityTextArray); }
+	FORCEINLINE static uint32 __PPO__mPurityTextArray() { return STRUCT_OFFSET(AFGResourceNode, mPurityTextArray); } \
+	FORCEINLINE static uint32 __PPO__mAddToSignificanceManager() { return STRUCT_OFFSET(AFGResourceNode, mAddToSignificanceManager); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_96_PROLOG \

@@ -349,7 +349,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCentralStorageSubsystem, 1969001064);
+	IMPLEMENT_CLASS(AFGCentralStorageSubsystem, 1067652714);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCentralStorageSubsystem>()
 	{
 		return AFGCentralStorageSubsystem::StaticClass();

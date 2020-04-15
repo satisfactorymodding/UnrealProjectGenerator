@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorBiomass() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGItemDescriptorBiomass, 159365919);
+	IMPLEMENT_CLASS(UFGItemDescriptorBiomass, 2394780249);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGItemDescriptorBiomass>()
 	{
 		return UFGItemDescriptorBiomass::StaticClass();

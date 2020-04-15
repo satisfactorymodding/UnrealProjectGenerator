@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNoneDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGNoneDescriptor, 2966384287);
+	IMPLEMENT_CLASS(UFGNoneDescriptor, 965536586);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGNoneDescriptor>()
 	{
 		return UFGNoneDescriptor::StaticClass();

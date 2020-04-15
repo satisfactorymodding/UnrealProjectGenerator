@@ -64,6 +64,22 @@ static inline void FRotationDoneDelegate_DelegateWrapper(const FMulticastScriptD
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetSpawnDistance) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetSpawnDistance(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetSpawnWeight) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetSpawnWeight(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetSpawner) \
 	{ \
 		P_FINISH; \
@@ -243,6 +259,22 @@ static inline void FRotationDoneDelegate_DelegateWrapper(const FMulticastScriptD
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_TargetRotation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetSpawnDistance) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetSpawnDistance(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetSpawnWeight) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetSpawnWeight(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -479,6 +511,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCreature); \
 	FORCEINLINE static uint32 __PPO__mIsPersistent() { return STRUCT_OFFSET(AFGCreature, mIsPersistent); } \
 	FORCEINLINE static uint32 __PPO__mActualAIControllerClass() { return STRUCT_OFFSET(AFGCreature, mActualAIControllerClass); } \
 	FORCEINLINE static uint32 __PPO__mRotationTimerHandle() { return STRUCT_OFFSET(AFGCreature, mRotationTimerHandle); } \
+	FORCEINLINE static uint32 __PPO__mKillOrphanHandle() { return STRUCT_OFFSET(AFGCreature, mKillOrphanHandle); } \
 	FORCEINLINE static uint32 __PPO__mTargetRotation() { return STRUCT_OFFSET(AFGCreature, mTargetRotation); } \
 	FORCEINLINE static uint32 __PPO__mCanSpawnDuringDay() { return STRUCT_OFFSET(AFGCreature, mCanSpawnDuringDay); } \
 	FORCEINLINE static uint32 __PPO__mCanSpawnDuringNight() { return STRUCT_OFFSET(AFGCreature, mCanSpawnDuringNight); } \
@@ -489,7 +522,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCreature); \
 	FORCEINLINE static uint32 __PPO__mArachnophobia_Material() { return STRUCT_OFFSET(AFGCreature, mArachnophobia_Material); } \
 	FORCEINLINE static uint32 __PPO__mArachnophobia_Particle() { return STRUCT_OFFSET(AFGCreature, mArachnophobia_Particle); } \
 	FORCEINLINE static uint32 __PPO__mDayTimePctCountAsNight() { return STRUCT_OFFSET(AFGCreature, mDayTimePctCountAsNight); } \
-	FORCEINLINE static uint32 __PPO__mOwningSpawner() { return STRUCT_OFFSET(AFGCreature, mOwningSpawner); }
+	FORCEINLINE static uint32 __PPO__mOwningSpawner() { return STRUCT_OFFSET(AFGCreature, mOwningSpawner); } \
+	FORCEINLINE static uint32 __PPO__mSpawnWeight() { return STRUCT_OFFSET(AFGCreature, mSpawnWeight); } \
+	FORCEINLINE static uint32 __PPO__mNeedsSpawner() { return STRUCT_OFFSET(AFGCreature, mNeedsSpawner); } \
+	FORCEINLINE static uint32 __PPO__mSpawnDistance() { return STRUCT_OFFSET(AFGCreature, mSpawnDistance); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_Creature_FGCreature_h_51_PROLOG \

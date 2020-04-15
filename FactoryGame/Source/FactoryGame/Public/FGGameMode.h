@@ -14,7 +14,7 @@
 
 class UFGRemoteCallObject;
 
-UCLASS( config = Game ) // MODDING EDIT: removed minimalapi
+UCLASS(config = Game )
 class FACTORYGAME_API AFGGameMode : public AGameMode, public IFGSaveInterface
 {
 	GENERATED_BODY()
@@ -163,14 +163,6 @@ private:
 	/** Last autosave was this id */
 	UPROPERTY(SaveGame)
 	uint8 mLastAutosaveId;
-
-	/** The save session (should actually be SaveSessionId */
-	UPROPERTY(SaveGame)
-	int32 mSessionId_DEPRECATED;
-
-	/** The name of the session we are playing, migrated over to mSaveSessionName */
-	UPROPERTY( SaveGame )
-	FString mSessionIDString_DEPRECATED;
 
 	/** The name of the session we are playing */
 	UPROPERTY( SaveGame )

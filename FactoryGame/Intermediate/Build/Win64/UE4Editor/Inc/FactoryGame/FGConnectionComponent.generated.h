@@ -15,10 +15,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FactoryGame_Source_FactoryGame_Public_FGConnectionComponent_h_18_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_FGConnectionComponent_h_18_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_FGConnectionComponent_h_18_ARCHIVESERIALIZER \
-	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(UFGConnectionComponent, NO_API)
-
-
 #define FactoryGame_Source_FactoryGame_Public_FGConnectionComponent_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGConnectionComponent(); \
@@ -26,7 +22,6 @@ private: \
 public: \
 	DECLARE_CLASS(UFGConnectionComponent, USceneComponent, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGConnectionComponent) \
-	FactoryGame_Source_FactoryGame_Public_FGConnectionComponent_h_18_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<UFGConnectionComponent*>(this); }
 
 
@@ -37,7 +32,6 @@ private: \
 public: \
 	DECLARE_CLASS(UFGConnectionComponent, USceneComponent, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGConnectionComponent) \
-	FactoryGame_Source_FactoryGame_Public_FGConnectionComponent_h_18_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<UFGConnectionComponent*>(this); }
 
 

@@ -62,6 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_SetWindowWantsInventoryAddon();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_ShowDirectionalSubtitle();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_ShowQuickSearch();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_StopSubtitle();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_FactoryGame_OnMouseButtonDown__DelegateSignature_Statics
@@ -245,6 +246,11 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		Parms.Duration=Duration;
 		Parms.bUseDuration=bUseDuration ? true : false;
 		ProcessEvent(FindFunctionChecked(NAME_UFGGameUI_ShowDirectionalSubtitle),&Parms);
+	}
+	static FName NAME_UFGGameUI_ShowQuickSearch = FName(TEXT("ShowQuickSearch"));
+	void UFGGameUI::ShowQuickSearch()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UFGGameUI_ShowQuickSearch),NULL);
 	}
 	static FName NAME_UFGGameUI_StopSubtitle = FName(TEXT("StopSubtitle"));
 	void UFGGameUI::StopSubtitle(AActor* Instigator)
@@ -1400,6 +1406,30 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGGameUI_ShowQuickSearch_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_ShowQuickSearch_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Quick Search" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
+		{ "ToolTip", "Called when we want to show the quick search" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameUI_ShowQuickSearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameUI, nullptr, "ShowQuickSearch", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameUI_ShowQuickSearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUI_ShowQuickSearch_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGGameUI_ShowQuickSearch()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameUI_ShowQuickSearch_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGGameUI_StopSubtitle_Statics
 	{
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Instigator;
@@ -1500,6 +1530,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		{ &Z_Construct_UFunction_UFGGameUI_SetShowInventory, "SetShowInventory" }, // 3917786348
 		{ &Z_Construct_UFunction_UFGGameUI_SetWindowWantsInventoryAddon, "SetWindowWantsInventoryAddon" }, // 1976105991
 		{ &Z_Construct_UFunction_UFGGameUI_ShowDirectionalSubtitle, "ShowDirectionalSubtitle" }, // 3849931811
+		{ &Z_Construct_UFunction_UFGGameUI_ShowQuickSearch, "ShowQuickSearch" }, // 3702053287
 		{ &Z_Construct_UFunction_UFGGameUI_StopSubtitle, "StopSubtitle" }, // 1235824196
 	};
 #if WITH_METADATA
@@ -1576,7 +1607,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameUI, 2427537753);
+	IMPLEMENT_CLASS(UFGGameUI, 333021526);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGGameUI>()
 	{
 		return UFGGameUI::StaticClass();

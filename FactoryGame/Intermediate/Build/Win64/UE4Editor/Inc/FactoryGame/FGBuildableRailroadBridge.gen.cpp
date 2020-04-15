@@ -151,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadBridge() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadBridge, 808672122);
+	IMPLEMENT_CLASS(AFGBuildableRailroadBridge, 810964839);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableRailroadBridge>()
 	{
 		return AFGBuildableRailroadBridge::StaticClass();

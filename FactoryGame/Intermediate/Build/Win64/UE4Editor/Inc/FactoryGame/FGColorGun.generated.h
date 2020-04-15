@@ -16,12 +16,12 @@ enum class EFGColorGunTargetType : uint8;
 #define FACTORYGAME_FGColorGun_generated_h
 
 #define FactoryGame_Source_FactoryGame_Public_FGColorGun_h_25_RPC_WRAPPERS \
-	virtual bool Sever_SetSecondaryColorForSlot_Validate(uint8 , FLinearColor ); \
-	virtual void Sever_SetSecondaryColorForSlot_Implementation(uint8 slotIndex, FLinearColor newColor); \
-	virtual bool Sever_SetPrimaryColorForSlot_Validate(uint8 , FLinearColor ); \
-	virtual void Sever_SetPrimaryColorForSlot_Implementation(uint8 slotIndex, FLinearColor newColor); \
-	virtual bool Sever_SetColorSlot_Validate(uint8 ); \
-	virtual void Sever_SetColorSlot_Implementation(uint8 slotIndex); \
+	virtual bool Server_SetSecondaryColorForSlot_Validate(uint8 , FLinearColor ); \
+	virtual void Server_SetSecondaryColorForSlot_Implementation(uint8 slotIndex, FLinearColor newColor); \
+	virtual bool Server_SetPrimaryColorForSlot_Validate(uint8 , FLinearColor ); \
+	virtual void Server_SetPrimaryColorForSlot_Implementation(uint8 slotIndex, FLinearColor newColor); \
+	virtual bool Server_SetColorSlot_Validate(uint8 ); \
+	virtual void Server_SetColorSlot_Implementation(uint8 slotIndex); \
  \
 	DECLARE_FUNCTION(execOnSecondaryFirePressed) \
 	{ \
@@ -73,18 +73,18 @@ enum class EFGColorGunTargetType : uint8;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execSever_SetSecondaryColorForSlot) \
+	DECLARE_FUNCTION(execServer_SetSecondaryColorForSlot) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_slotIndex); \
 		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		if (!P_THIS->Sever_SetSecondaryColorForSlot_Validate(Z_Param_slotIndex,Z_Param_newColor)) \
+		if (!P_THIS->Server_SetSecondaryColorForSlot_Validate(Z_Param_slotIndex,Z_Param_newColor)) \
 		{ \
-			RPC_ValidateFailed(TEXT("Sever_SetSecondaryColorForSlot_Validate")); \
+			RPC_ValidateFailed(TEXT("Server_SetSecondaryColorForSlot_Validate")); \
 			return; \
 		} \
-		P_THIS->Sever_SetSecondaryColorForSlot_Implementation(Z_Param_slotIndex,Z_Param_newColor); \
+		P_THIS->Server_SetSecondaryColorForSlot_Implementation(Z_Param_slotIndex,Z_Param_newColor); \
 		P_NATIVE_END; \
 	} \
  \
@@ -98,18 +98,18 @@ enum class EFGColorGunTargetType : uint8;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execSever_SetPrimaryColorForSlot) \
+	DECLARE_FUNCTION(execServer_SetPrimaryColorForSlot) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_slotIndex); \
 		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		if (!P_THIS->Sever_SetPrimaryColorForSlot_Validate(Z_Param_slotIndex,Z_Param_newColor)) \
+		if (!P_THIS->Server_SetPrimaryColorForSlot_Validate(Z_Param_slotIndex,Z_Param_newColor)) \
 		{ \
-			RPC_ValidateFailed(TEXT("Sever_SetPrimaryColorForSlot_Validate")); \
+			RPC_ValidateFailed(TEXT("Server_SetPrimaryColorForSlot_Validate")); \
 			return; \
 		} \
-		P_THIS->Sever_SetPrimaryColorForSlot_Implementation(Z_Param_slotIndex,Z_Param_newColor); \
+		P_THIS->Server_SetPrimaryColorForSlot_Implementation(Z_Param_slotIndex,Z_Param_newColor); \
 		P_NATIVE_END; \
 	} \
  \
@@ -139,17 +139,17 @@ enum class EFGColorGunTargetType : uint8;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execSever_SetColorSlot) \
+	DECLARE_FUNCTION(execServer_SetColorSlot) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_slotIndex); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		if (!P_THIS->Sever_SetColorSlot_Validate(Z_Param_slotIndex)) \
+		if (!P_THIS->Server_SetColorSlot_Validate(Z_Param_slotIndex)) \
 		{ \
-			RPC_ValidateFailed(TEXT("Sever_SetColorSlot_Validate")); \
+			RPC_ValidateFailed(TEXT("Server_SetColorSlot_Validate")); \
 			return; \
 		} \
-		P_THIS->Sever_SetColorSlot_Implementation(Z_Param_slotIndex); \
+		P_THIS->Server_SetColorSlot_Implementation(Z_Param_slotIndex); \
 		P_NATIVE_END; \
 	} \
  \
@@ -164,12 +164,12 @@ enum class EFGColorGunTargetType : uint8;
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGColorGun_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual bool Sever_SetSecondaryColorForSlot_Validate(uint8 , FLinearColor ); \
-	virtual void Sever_SetSecondaryColorForSlot_Implementation(uint8 slotIndex, FLinearColor newColor); \
-	virtual bool Sever_SetPrimaryColorForSlot_Validate(uint8 , FLinearColor ); \
-	virtual void Sever_SetPrimaryColorForSlot_Implementation(uint8 slotIndex, FLinearColor newColor); \
-	virtual bool Sever_SetColorSlot_Validate(uint8 ); \
-	virtual void Sever_SetColorSlot_Implementation(uint8 slotIndex); \
+	virtual bool Server_SetSecondaryColorForSlot_Validate(uint8 , FLinearColor ); \
+	virtual void Server_SetSecondaryColorForSlot_Implementation(uint8 slotIndex, FLinearColor newColor); \
+	virtual bool Server_SetPrimaryColorForSlot_Validate(uint8 , FLinearColor ); \
+	virtual void Server_SetPrimaryColorForSlot_Implementation(uint8 slotIndex, FLinearColor newColor); \
+	virtual bool Server_SetColorSlot_Validate(uint8 ); \
+	virtual void Server_SetColorSlot_Implementation(uint8 slotIndex); \
  \
 	DECLARE_FUNCTION(execOnSecondaryFirePressed) \
 	{ \
@@ -221,18 +221,18 @@ enum class EFGColorGunTargetType : uint8;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execSever_SetSecondaryColorForSlot) \
+	DECLARE_FUNCTION(execServer_SetSecondaryColorForSlot) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_slotIndex); \
 		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		if (!P_THIS->Sever_SetSecondaryColorForSlot_Validate(Z_Param_slotIndex,Z_Param_newColor)) \
+		if (!P_THIS->Server_SetSecondaryColorForSlot_Validate(Z_Param_slotIndex,Z_Param_newColor)) \
 		{ \
-			RPC_ValidateFailed(TEXT("Sever_SetSecondaryColorForSlot_Validate")); \
+			RPC_ValidateFailed(TEXT("Server_SetSecondaryColorForSlot_Validate")); \
 			return; \
 		} \
-		P_THIS->Sever_SetSecondaryColorForSlot_Implementation(Z_Param_slotIndex,Z_Param_newColor); \
+		P_THIS->Server_SetSecondaryColorForSlot_Implementation(Z_Param_slotIndex,Z_Param_newColor); \
 		P_NATIVE_END; \
 	} \
  \
@@ -246,18 +246,18 @@ enum class EFGColorGunTargetType : uint8;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execSever_SetPrimaryColorForSlot) \
+	DECLARE_FUNCTION(execServer_SetPrimaryColorForSlot) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_slotIndex); \
 		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		if (!P_THIS->Sever_SetPrimaryColorForSlot_Validate(Z_Param_slotIndex,Z_Param_newColor)) \
+		if (!P_THIS->Server_SetPrimaryColorForSlot_Validate(Z_Param_slotIndex,Z_Param_newColor)) \
 		{ \
-			RPC_ValidateFailed(TEXT("Sever_SetPrimaryColorForSlot_Validate")); \
+			RPC_ValidateFailed(TEXT("Server_SetPrimaryColorForSlot_Validate")); \
 			return; \
 		} \
-		P_THIS->Sever_SetPrimaryColorForSlot_Implementation(Z_Param_slotIndex,Z_Param_newColor); \
+		P_THIS->Server_SetPrimaryColorForSlot_Implementation(Z_Param_slotIndex,Z_Param_newColor); \
 		P_NATIVE_END; \
 	} \
  \
@@ -287,17 +287,17 @@ enum class EFGColorGunTargetType : uint8;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execSever_SetColorSlot) \
+	DECLARE_FUNCTION(execServer_SetColorSlot) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_slotIndex); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		if (!P_THIS->Sever_SetColorSlot_Validate(Z_Param_slotIndex)) \
+		if (!P_THIS->Server_SetColorSlot_Validate(Z_Param_slotIndex)) \
 		{ \
-			RPC_ValidateFailed(TEXT("Sever_SetColorSlot_Validate")); \
+			RPC_ValidateFailed(TEXT("Server_SetColorSlot_Validate")); \
 			return; \
 		} \
-		P_THIS->Sever_SetColorSlot_Implementation(Z_Param_slotIndex); \
+		P_THIS->Server_SetColorSlot_Implementation(Z_Param_slotIndex); \
 		P_NATIVE_END; \
 	} \
  \
@@ -316,16 +316,16 @@ enum class EFGColorGunTargetType : uint8;
 	{ \
 		EFGColorGunTargetType targetType; \
 	}; \
-	struct FGColorGun_eventSever_SetColorSlot_Parms \
+	struct FGColorGun_eventServer_SetColorSlot_Parms \
 	{ \
 		uint8 slotIndex; \
 	}; \
-	struct FGColorGun_eventSever_SetPrimaryColorForSlot_Parms \
+	struct FGColorGun_eventServer_SetPrimaryColorForSlot_Parms \
 	{ \
 		uint8 slotIndex; \
 		FLinearColor newColor; \
 	}; \
-	struct FGColorGun_eventSever_SetSecondaryColorForSlot_Parms \
+	struct FGColorGun_eventServer_SetSecondaryColorForSlot_Parms \
 	{ \
 		uint8 slotIndex; \
 		FLinearColor newColor; \

@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRamp() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRamp, 673265476);
+	IMPLEMENT_CLASS(AFGBuildableRamp, 218682119);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableRamp>()
 	{
 		return AFGBuildableRamp::StaticClass();

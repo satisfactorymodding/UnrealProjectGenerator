@@ -297,4 +297,8 @@ public:
 	/** Bool for is we should spawn particle - @todo Do we really need to save this? //[Dylan 3/2/2020] */
 	UPROPERTY( Replicated, EditDefaultsOnly, SaveGame, Category = "Resources" ) 
 	bool mDoSpawnParticle;
+private:
+	/** Should this be handled by significance manager */
+	UPROPERTY( EditDefaultsOnly, Category = "Resources" )
+	bool mAddToSignificanceManager;
 };

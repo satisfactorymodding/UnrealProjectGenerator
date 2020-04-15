@@ -25,7 +25,6 @@ void EmptyLinkFunctionForGeneratedCodeFGFactorySettings() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipeShortcut_NoRegister();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGDismantleShortcut_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGResourceMiner_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGResourceScanner_NoRegister();
@@ -342,6 +341,18 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mFluidToInventoryStackRate;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mNumSlotsPerHotbar_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mNumSlotsPerHotbar;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mNumPresetHotbars_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mNumPresetHotbars;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mNumHotbars_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mNumHotbars;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mShortcutMap_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mShortcutMap;
@@ -350,10 +361,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRecipeShortcutClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mRecipeShortcutClass;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDismantleShortcutClass_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mDismantleShortcutClass;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMaxFeetLength_MetaData[];
 #endif
@@ -537,6 +544,30 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFluidToInventoryStackRate = { "mFluidToInventoryStackRate", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mFluidToInventoryStackRate), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFluidToInventoryStackRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFluidToInventoryStackRate_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mNumSlotsPerHotbar_MetaData[] = {
+		{ "Category", "Shortcuts" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
+		{ "ToolTip", "The number of starting hot bars" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mNumSlotsPerHotbar = { "mNumSlotsPerHotbar", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mNumSlotsPerHotbar), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mNumSlotsPerHotbar_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mNumSlotsPerHotbar_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mNumPresetHotbars_MetaData[] = {
+		{ "Category", "Shortcuts" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
+		{ "ToolTip", "The max number of preset hotbars" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mNumPresetHotbars = { "mNumPresetHotbars", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mNumPresetHotbars), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mNumPresetHotbars_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mNumPresetHotbars_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mNumHotbars_MetaData[] = {
+		{ "Category", "Shortcuts" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
+		{ "ToolTip", "The number of hotbars" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mNumHotbars = { "mNumHotbars", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mNumHotbars), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mNumHotbars_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mNumHotbars_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap_MetaData[] = {
 		{ "Category", "Shortcuts" },
 		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
@@ -553,14 +584,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mRecipeShortcutClass = { "mRecipeShortcutClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mRecipeShortcutClass), Z_Construct_UClass_UFGRecipeShortcut_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mRecipeShortcutClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mRecipeShortcutClass_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleShortcutClass_MetaData[] = {
-		{ "Category", "Shortcuts" },
-		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
-		{ "ToolTip", "The class we want to spawn for dismantle shortcuts" },
-	};
-#endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleShortcutClass = { "mDismantleShortcutClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDismantleShortcutClass), Z_Construct_UClass_UFGDismantleShortcut_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleShortcutClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleShortcutClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mMaxFeetLength_MetaData[] = {
 		{ "Category", "Legs" },
@@ -825,10 +848,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mAddedPipeProductionPressure,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mInventoryStackToFluidRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFluidToInventoryStackRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mNumSlotsPerHotbar,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mNumPresetHotbars,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mNumHotbars,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mRecipeShortcutClass,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleShortcutClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mMaxFeetLength,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFootMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mLegMesh,
@@ -891,7 +916,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFactorySettings, 3057884906);
+	IMPLEMENT_CLASS(UFGFactorySettings, 1119600634);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFactorySettings>()
 	{
 		return UFGFactorySettings::StaticClass();

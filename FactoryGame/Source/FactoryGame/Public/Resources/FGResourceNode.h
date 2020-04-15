@@ -269,10 +269,12 @@ protected:
 	UPROPERTY( BlueprintReadOnly, VisibleDefaultsOnly, Category = "Resources" )
 	UBoxComponent* mBoxComponent;
 
+public: // MODDING EDIT
 	/** How much resources is left in this node */
-	UPROPERTY( SaveGame, Replicated, EditInstanceOnly, BlueprintReadOnly, Category="Resources")
+	UPROPERTY( SaveGame, Replicated, BlueprintReadWrite, Category="Resources")
 	int32 mResourcesLeft;
 
+protected: // MODDING EDIT
 	/** If true, then we are occupied by something // [Dylan 3/2/2020] - Removed savegame meta */
 	UPROPERTY( ReplicatedUsing = OnRep_IsOccupied, BlueprintReadOnly, Category = "Resources" )
 	bool mIsOccupied;
@@ -314,6 +316,10 @@ public:
 	/** Bool for is we should spawn particle - @todo Do we really need to save this? //[Dylan 3/2/2020] */
 	UPROPERTY( Replicated, EditDefaultsOnly, SaveGame, Category = "Resources" ) 
 	bool mDoSpawnParticle;
+private:
+	/** Should this be handled by significance manager */
+	UPROPERTY( EditDefaultsOnly, Category = "Resources" )
+	bool mAddToSignificanceManager;
 
 public:
 	FORCEINLINE ~AFGResourceNode() = default;

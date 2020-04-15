@@ -479,7 +479,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRadarTower, 1407694205);
+	IMPLEMENT_CLASS(AFGBuildableRadarTower, 1219521254);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableRadarTower>()
 	{
 		return AFGBuildableRadarTower::StaticClass();

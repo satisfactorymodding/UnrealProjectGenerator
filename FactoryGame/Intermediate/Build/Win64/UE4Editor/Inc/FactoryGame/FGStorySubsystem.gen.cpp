@@ -778,8 +778,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGStorySubsystem_Statics::Class_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
 		{ "HideCategories", "Actor Input Rendering Actor Tick Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGStorySubsystem.h" },
+		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/FGStorySubsystem.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
@@ -865,7 +867,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGStorySubsystem, 2212633301);
+	IMPLEMENT_CLASS(AFGStorySubsystem, 896430697);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGStorySubsystem>()
 	{
 		return AFGStorySubsystem::StaticClass();

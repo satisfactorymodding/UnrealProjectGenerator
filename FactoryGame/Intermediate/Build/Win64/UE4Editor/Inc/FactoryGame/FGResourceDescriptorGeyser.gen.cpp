@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptorGeyser() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResourceDescriptorGeyser, 1204319038);
+	IMPLEMENT_CLASS(UFGResourceDescriptorGeyser, 3276379915);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGResourceDescriptorGeyser>()
 	{
 		return UFGResourceDescriptorGeyser::StaticClass();

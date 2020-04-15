@@ -1481,9 +1481,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchTrees_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGResearchManager.h" },
+		{ "ToolTip", "MODDING EDIT" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchTrees = { "mAllResearchTrees", nullptr, (EPropertyFlags)0x0024080000002000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, mAllResearchTrees), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchTrees_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchTrees_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchTrees = { "mAllResearchTrees", nullptr, (EPropertyFlags)0x0014000000002000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, mAllResearchTrees), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchTrees_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchTrees_MetaData)) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchTrees_Inner = { "mAllResearchTrees", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGResearchTree_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCanConductMultipleResearch_MetaData[] = {
@@ -1590,7 +1591,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResearchManager, 2184607815);
+	IMPLEMENT_CLASS(AFGResearchManager, 2090806320);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGResearchManager>()
 	{
 		return AFGResearchManager::StaticClass();

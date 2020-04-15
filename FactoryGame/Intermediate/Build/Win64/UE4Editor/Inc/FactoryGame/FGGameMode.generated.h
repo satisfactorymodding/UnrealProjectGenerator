@@ -159,8 +159,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGameMode); \
 #define FactoryGame_Source_FactoryGame_Public_FGGameMode_h_20_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mSaveSession() { return STRUCT_OFFSET(AFGGameMode, mSaveSession); } \
 	FORCEINLINE static uint32 __PPO__mLastAutosaveId() { return STRUCT_OFFSET(AFGGameMode, mLastAutosaveId); } \
-	FORCEINLINE static uint32 __PPO__mSessionId_DEPRECATED() { return STRUCT_OFFSET(AFGGameMode, mSessionId_DEPRECATED); } \
-	FORCEINLINE static uint32 __PPO__mSessionIDString_DEPRECATED() { return STRUCT_OFFSET(AFGGameMode, mSessionIDString_DEPRECATED); } \
 	FORCEINLINE static uint32 __PPO__mSaveSessionName() { return STRUCT_OFFSET(AFGGameMode, mSaveSessionName); } \
 	FORCEINLINE static uint32 __PPO__mStartingPointTagName() { return STRUCT_OFFSET(AFGGameMode, mStartingPointTagName); } \
 	FORCEINLINE static uint32 __PPO__mDebugStartingPointTagName() { return STRUCT_OFFSET(AFGGameMode, mDebugStartingPointTagName); } \

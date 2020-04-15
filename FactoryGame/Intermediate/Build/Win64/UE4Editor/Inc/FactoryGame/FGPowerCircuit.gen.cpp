@@ -358,7 +358,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerCircuit" },
 		{ "ModuleRelativePath", "Public/FGPowerCircuit.h" },
-		{ "ToolTip", "Get the graph point from the index in our stats,  @return false if the index is invalid" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuit, nullptr, "GetGraphPointAtIndex", sizeof(FGPowerCircuit_eventGetGraphPointAtIndex_Parms), Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::Function_MetaDataParams)) };
@@ -404,7 +403,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerCircuit" },
 		{ "ModuleRelativePath", "Public/FGPowerCircuit.h" },
-		{ "ToolTip", "Get how many graph points there is in our stats" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuit, nullptr, "GetNumGraphPoint", sizeof(FGPowerCircuit_eventGetNumGraphPoint_Parms), Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::Function_MetaDataParams)) };
@@ -438,7 +436,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerCircuit" },
 		{ "ModuleRelativePath", "Public/FGPowerCircuit.h" },
-		{ "ToolTip", "Get the stats for this circuit." },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuit, nullptr, "GetStats", sizeof(FGPowerCircuit_eventGetStats_Parms), Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::Function_MetaDataParams)) };
@@ -477,7 +474,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Circuits|PowerCircuit" },
 		{ "ModuleRelativePath", "Public/FGPowerCircuit.h" },
-		{ "ToolTip", "@return true if the fuse is triggered; false otherwise." },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuit, nullptr, "IsFuseTriggered", sizeof(FGPowerCircuit_eventIsFuseTriggered_Parms), Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::Function_MetaDataParams)) };
@@ -555,10 +551,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGPowerCircuit_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex, "GetGraphPointAtIndex" }, // 3200134261
-		{ &Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint, "GetNumGraphPoint" }, // 2875020992
-		{ &Z_Construct_UFunction_UFGPowerCircuit_GetStats, "GetStats" }, // 3139143500
-		{ &Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered, "IsFuseTriggered" }, // 3879653885
+		{ &Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex, "GetGraphPointAtIndex" }, // 1075166035
+		{ &Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint, "GetNumGraphPoint" }, // 538218623
+		{ &Z_Construct_UFunction_UFGPowerCircuit_GetStats, "GetStats" }, // 2093618086
+		{ &Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered, "IsFuseTriggered" }, // 2381275451
 		{ &Z_Construct_UFunction_UFGPowerCircuit_ResetFuse, "ResetFuse" }, // 3393592155
 	};
 #if WITH_METADATA
@@ -641,7 +637,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPowerCircuit, 1982804888);
+	IMPLEMENT_CLASS(UFGPowerCircuit, 1790741391);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGPowerCircuit>()
 	{
 		return UFGPowerCircuit::StaticClass();

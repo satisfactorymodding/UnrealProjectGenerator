@@ -142,7 +142,8 @@ public:
 	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
 	virtual void PreInitializeComponents() override;
 
-	static AFGResearchManager* Get( class UWorld* world );
+	//MODDING EDIT: forceinline world accessor
+	MODDING_SHIPPING_FORCEINLINE static AFGResearchManager* Get(class UWorld* world) { return Get(static_cast<UObject*>(world)); }
 
 	UFUNCTION( BlueprintPure, Category = "Research", DisplayName = "GetResearchManager", Meta = ( DefaultToSelf = "worldContext" ) )
 	static AFGResearchManager* Get( class UObject* worldContext );
@@ -251,9 +252,10 @@ protected:
 	UPROPERTY( EditDefaultsOnly, Category = "Research" )
 	bool mCanConductMultipleResearch;
 
+public: // MODDING EDIT
 	UPROPERTY( Transient )
 	TArray<TSubclassOf<class UFGResearchTree>> mAllResearchTrees;
-
+protected:
 	UPROPERTY( SaveGame, Replicated )
 	TArray<TSubclassOf<class UFGResearchTree>> mUnlockedResearchTrees;
 

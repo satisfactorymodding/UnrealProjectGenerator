@@ -17,10 +17,18 @@ void EmptyLinkFunctionForGeneratedCodeFGChainsawableInterface() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGChainsawableInterface();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UInterface();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGChainsawableInterface_GetActorChainsawReturn();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FInventoryStack();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGChainsawableInterface_GetMeshComponent();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGChainsawableInterface_IsChainsawable();
 // End Cross Module References
+	FInventoryStack IFGChainsawableInterface::GetActorChainsawReturn()
+	{
+		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_GetActorChainsawReturn instead.");
+		FGChainsawableInterface_eventGetActorChainsawReturn_Parms Parms;
+		return Parms.ReturnValue;
+	}
 	UStaticMeshComponent* IFGChainsawableInterface::GetMeshComponent()
 	{
 		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_GetMeshComponent instead.");
@@ -37,10 +45,41 @@ void EmptyLinkFunctionForGeneratedCodeFGChainsawableInterface() {}
 	{
 		UClass* Class = UFGChainsawableInterface::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "GetActorChainsawReturn", &IFGChainsawableInterface::execGetActorChainsawReturn },
 			{ "GetMeshComponent", &IFGChainsawableInterface::execGetMeshComponent },
 			{ "IsChainsawable", &IFGChainsawableInterface::execIsChainsawable },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UFGChainsawableInterface_GetActorChainsawReturn_Statics
+	{
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGChainsawableInterface_GetActorChainsawReturn_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChainsawableInterface_eventGetActorChainsawReturn_Parms, ReturnValue), Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGChainsawableInterface_GetActorChainsawReturn_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGChainsawableInterface_GetActorChainsawReturn_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGChainsawableInterface_GetActorChainsawReturn_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Chainsaw" },
+		{ "ModuleRelativePath", "Public/FGChainsawableInterface.h" },
+		{ "ToolTip", "@returns the items you get for chainsawing this actor" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGChainsawableInterface_GetActorChainsawReturn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGChainsawableInterface, nullptr, "GetActorChainsawReturn", sizeof(FGChainsawableInterface_eventGetActorChainsawReturn_Parms), Z_Construct_UFunction_UFGChainsawableInterface_GetActorChainsawReturn_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGChainsawableInterface_GetActorChainsawReturn_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGChainsawableInterface_GetActorChainsawReturn_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGChainsawableInterface_GetActorChainsawReturn_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGChainsawableInterface_GetActorChainsawReturn()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGChainsawableInterface_GetActorChainsawReturn_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UFGChainsawableInterface_GetMeshComponent_Statics
 	{
@@ -134,6 +173,7 @@ void EmptyLinkFunctionForGeneratedCodeFGChainsawableInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGChainsawableInterface_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UFGChainsawableInterface_GetActorChainsawReturn, "GetActorChainsawReturn" }, // 978636779
 		{ &Z_Construct_UFunction_UFGChainsawableInterface_GetMeshComponent, "GetMeshComponent" }, // 128245421
 		{ &Z_Construct_UFunction_UFGChainsawableInterface_IsChainsawable, "IsChainsawable" }, // 2518094307
 	};
@@ -172,13 +212,30 @@ void EmptyLinkFunctionForGeneratedCodeFGChainsawableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGChainsawableInterface, 3390016956);
+	IMPLEMENT_CLASS(UFGChainsawableInterface, 1341545574);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGChainsawableInterface>()
 	{
 		return UFGChainsawableInterface::StaticClass();
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGChainsawableInterface(Z_Construct_UClass_UFGChainsawableInterface, &UFGChainsawableInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGChainsawableInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGChainsawableInterface);
+	static FName NAME_UFGChainsawableInterface_GetActorChainsawReturn = FName(TEXT("GetActorChainsawReturn"));
+	FInventoryStack IFGChainsawableInterface::Execute_GetActorChainsawReturn(UObject* O)
+	{
+		check(O != NULL);
+		check(O->GetClass()->ImplementsInterface(UFGChainsawableInterface::StaticClass()));
+		FGChainsawableInterface_eventGetActorChainsawReturn_Parms Parms;
+		UFunction* const Func = O->FindFunction(NAME_UFGChainsawableInterface_GetActorChainsawReturn);
+		if (Func)
+		{
+			O->ProcessEvent(Func, &Parms);
+		}
+		else if (auto I = (IFGChainsawableInterface*)(O->GetNativeInterfaceAddress(UFGChainsawableInterface::StaticClass())))
+		{
+			Parms.ReturnValue = I->GetActorChainsawReturn_Implementation();
+		}
+		return Parms.ReturnValue;
+	}
 	static FName NAME_UFGChainsawableInterface_GetMeshComponent = FName(TEXT("GetMeshComponent"));
 	UStaticMeshComponent* IFGChainsawableInterface::Execute_GetMeshComponent(UObject* O)
 	{

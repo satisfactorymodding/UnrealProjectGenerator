@@ -870,6 +870,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAddToSignificanceManager_MetaData[];
+#endif
+		static void NewProp_mAddToSignificanceManager_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mAddToSignificanceManager;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDoSpawnParticle_MetaData[];
 #endif
 		static void NewProp_mDoSpawnParticle_SetBit(void* Obj);
@@ -968,6 +973,18 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAddToSignificanceManager_MetaData[] = {
+		{ "Category", "Resources" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
+		{ "ToolTip", "Should this be handled by significance manager" },
+	};
+#endif
+	void Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAddToSignificanceManager_SetBit(void* Obj)
+	{
+		((AFGResourceNode*)Obj)->mAddToSignificanceManager = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAddToSignificanceManager = { "mAddToSignificanceManager", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGResourceNode), &Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAddToSignificanceManager_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAddToSignificanceManager_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAddToSignificanceManager_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDoSpawnParticle_MetaData[] = {
 		{ "Category", "Resources" },
 		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
@@ -1063,7 +1080,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		{ "ToolTip", "How much resources is left in this node" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourcesLeft = { "mResourcesLeft", nullptr, (EPropertyFlags)0x0020080001000835, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceNode, mResourcesLeft), METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourcesLeft_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourcesLeft_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourcesLeft = { "mResourcesLeft", nullptr, (EPropertyFlags)0x0010000001000024, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceNode, mResourcesLeft), METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourcesLeft_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourcesLeft_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mBoxComponent_MetaData[] = {
 		{ "Category", "Resources" },
@@ -1107,6 +1124,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourceClass = { "mResourceClass", nullptr, (EPropertyFlags)0x0024080000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceNode, mResourceClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourceClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourceClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGResourceNode_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAddToSignificanceManager,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDoSpawnParticle,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mHighlightParticleSystemComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mHighlightParticleSystemTemplate,
@@ -1158,7 +1176,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceNode, 2803103544);
+	IMPLEMENT_CLASS(AFGResourceNode, 2333836348);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGResourceNode>()
 	{
 		return AFGResourceNode::StaticClass();

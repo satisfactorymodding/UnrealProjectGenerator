@@ -985,7 +985,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableGeneratorFuel, 2666798382);
+	IMPLEMENT_CLASS(AFGBuildableGeneratorFuel, 2527908485);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableGeneratorFuel>()
 	{
 		return AFGBuildableGeneratorFuel::StaticClass();

@@ -113,7 +113,7 @@ else
             { "UFGRecipe::SetManufactoringDuration",
 @"	recipe.GetDefaultObject()->mManufactoringDuration = sec;"
             },
-            { "UFGRecipe::SetProduct",
+            { "static UFGRecipe::SetProduct",
 @"	recipe.GetDefaultObject()->mProduct = product;"
             },
             { "static UFGResearchTree::GetDisplayName",
@@ -469,7 +469,7 @@ else
                     if (returnType.Contains("void") || string.IsNullOrWhiteSpace(returnType))
                     {
                         if (NeedsSuper.Contains(functionName.Trim()))
-                            result += $"Super::{functionName}({string.Join(",", Regex.Matches(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?:.*? )??(.*?) ([^ ]*?)(?:, ?| \)|$)").Cast<Match>().Select(match => match.Groups[2].Value))});";
+                            result += $"Super::{functionName}({string.Join(",", Regex.Matches(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?:.*? )??(.*?) ([^ ]*?)(?:, ?| \)|$)").Cast<Match>().Select(match => match.Groups[2].Value))}); ";
                         result += $"}}";
                     }
                     else

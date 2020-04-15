@@ -22,6 +22,7 @@ class UDamageType;
 class AActor;
 class UFGMessageBase;
 struct FKeyEvent;
+struct FPresetHotbar;
 class UFGHotbarShortcut;
 class UFGRemoteCallObject;
 class UAkComponent;
@@ -30,21 +31,47 @@ class UAkComponent;
 #endif
 #define FACTORYGAME_FGPlayerController_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_20_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_23_DELEGATE \
+struct _Script_FactoryGame_eventOnHotbarIndexChanged_Parms \
+{ \
+	int32 newHotbarIndex; \
+}; \
+static inline void FOnHotbarIndexChanged_DelegateWrapper(const FMulticastScriptDelegate& OnHotbarIndexChanged, int32 newHotbarIndex) \
+{ \
+	_Script_FactoryGame_eventOnHotbarIndexChanged_Parms Parms; \
+	Parms.newHotbarIndex=newHotbarIndex; \
+	OnHotbarIndexChanged.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_22_DELEGATE \
+struct _Script_FactoryGame_eventOnPresetHotbarChanged_Parms \
+{ \
+	int32 presetHotbarIndex; \
+}; \
+static inline void FOnPresetHotbarChanged_DelegateWrapper(const FMulticastScriptDelegate& OnPresetHotbarChanged, int32 presetHotbarIndex) \
+{ \
+	_Script_FactoryGame_eventOnPresetHotbarChanged_Parms Parms; \
+	Parms.presetHotbarIndex=presetHotbarIndex; \
+	OnPresetHotbarChanged.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_21_DELEGATE \
 static inline void FOnShortcutChanged_DelegateWrapper(const FMulticastScriptDelegate& OnShortcutChanged) \
 { \
 	OnShortcutChanged.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_19_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_20_DELEGATE \
 static inline void FOnShortcutsLayoutChanged_DelegateWrapper(const FMulticastScriptDelegate& OnShortcutsLayoutChanged) \
 { \
 	OnShortcutsLayoutChanged.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_18_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_19_DELEGATE \
 struct _Script_FactoryGame_eventOnToggleInteractionUI_Parms \
 { \
 	bool isOpen; \
@@ -59,7 +86,7 @@ static inline void FOnToggleInteractionUI_DelegateWrapper(const FMulticastScript
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_17_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_18_DELEGATE \
 struct _Script_FactoryGame_eventOnToggleInventory_Parms \
 { \
 	bool isOpen; \
@@ -72,7 +99,7 @@ static inline void FOnToggleInventory_DelegateWrapper(const FMulticastScriptDele
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_16_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_17_DELEGATE \
 struct _Script_FactoryGame_eventDisabledInputGateDelegate_Parms \
 { \
 	FDisabledInputGate newDisabledInputGate; \
@@ -85,7 +112,7 @@ static inline void FDisabledInputGateDelegate_DelegateWrapper(const FMulticastSc
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_15_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_16_DELEGATE \
 struct _Script_FactoryGame_eventPlayerEnteredAreaDelegate_Parms \
 { \
 	TSubclassOf<UFGMapArea>  mapArea; \
@@ -98,7 +125,7 @@ static inline void FPlayerEnteredAreaDelegate_DelegateWrapper(const FMulticastSc
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_14_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_15_DELEGATE \
 struct _Script_FactoryGame_eventPawnChangedDelegate_Parms \
 { \
 	APawn* newPawn; \
@@ -111,7 +138,7 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_RPC_WRAPPERS \
 	virtual void Client_WaitForLevelStreaming_Implementation(); \
 	virtual bool Server_FinishRespawn_Validate(); \
 	virtual void Server_FinishRespawn_Implementation(); \
@@ -123,8 +150,14 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 	virtual void Server_SpawnAttentionPingActor_Implementation(FVector pingLocation, FVector pingNormal); \
 	virtual bool Server_SendChatMessage_Validate(FChatMessageStruct const& ); \
 	virtual void Server_SendChatMessage_Implementation(FChatMessageStruct const& newMessage); \
-	virtual bool Server_SetDismantleShortcutOnIndex_Validate(int32 ); \
-	virtual void Server_SetDismantleShortcutOnIndex_Implementation(int32 onIndex); \
+	virtual bool Server_CopyPresetHotbarToCurrentHotbar_Validate(int32 ); \
+	virtual void Server_CopyPresetHotbarToCurrentHotbar_Implementation(int32 presetHotbarIndex); \
+	virtual bool Server_CopyCurrentHotbarToPresetHotbar_Validate(int32 ); \
+	virtual void Server_CopyCurrentHotbarToPresetHotbar_Implementation(int32 presetHotbarIndex); \
+	virtual bool Server_CreatePresetHotbarFromCurrentHotbar_Validate(FText const& , int32 ); \
+	virtual void Server_CreatePresetHotbarFromCurrentHotbar_Implementation(FText const& presetName, int32 iconIndex); \
+	virtual bool Server_SetHotbarIndex_Validate(int32 ); \
+	virtual void Server_SetHotbarIndex_Implementation(int32 index); \
 	virtual bool Server_SetRecipeShortcutOnIndex_Validate(TSubclassOf<UFGRecipe>  , int32 ); \
 	virtual void Server_SetRecipeShortcutOnIndex_Implementation(TSubclassOf<UFGRecipe>  recipe, int32 onIndex); \
 	virtual void OnDisabledInputGateChanged_Implementation(); \
@@ -225,17 +258,60 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execServer_SetDismantleShortcutOnIndex) \
+	DECLARE_FUNCTION(execServer_CopyPresetHotbarToCurrentHotbar) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_onIndex); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		if (!P_THIS->Server_SetDismantleShortcutOnIndex_Validate(Z_Param_onIndex)) \
+		if (!P_THIS->Server_CopyPresetHotbarToCurrentHotbar_Validate(Z_Param_presetHotbarIndex)) \
 		{ \
-			RPC_ValidateFailed(TEXT("Server_SetDismantleShortcutOnIndex_Validate")); \
+			RPC_ValidateFailed(TEXT("Server_CopyPresetHotbarToCurrentHotbar_Validate")); \
 			return; \
 		} \
-		P_THIS->Server_SetDismantleShortcutOnIndex_Implementation(Z_Param_onIndex); \
+		P_THIS->Server_CopyPresetHotbarToCurrentHotbar_Implementation(Z_Param_presetHotbarIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_CopyCurrentHotbarToPresetHotbar) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_CopyCurrentHotbarToPresetHotbar_Validate(Z_Param_presetHotbarIndex)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_CopyCurrentHotbarToPresetHotbar_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_CopyCurrentHotbarToPresetHotbar_Implementation(Z_Param_presetHotbarIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_CreatePresetHotbarFromCurrentHotbar) \
+	{ \
+		P_GET_PROPERTY(UTextProperty,Z_Param_presetName); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_iconIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_CreatePresetHotbarFromCurrentHotbar_Validate(Z_Param_presetName,Z_Param_iconIndex)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_CreatePresetHotbarFromCurrentHotbar_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_CreatePresetHotbarFromCurrentHotbar_Implementation(Z_Param_presetName,Z_Param_iconIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_SetHotbarIndex) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_index); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_SetHotbarIndex_Validate(Z_Param_index)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_SetHotbarIndex_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_SetHotbarIndex_Implementation(Z_Param_index); \
 		P_NATIVE_END; \
 	} \
  \
@@ -375,6 +451,22 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnPrimaryFire(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCycleToPreviousHotbar) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CycleToPreviousHotbar(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCycleToNextHotbar) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CycleToNextHotbar(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -527,29 +619,52 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetDismantleShortcutIndex) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetDismantleShortcutIndex(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetDismantleShortcutOnIndex) \
-	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_onIndex); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetDismantleShortcutOnIndex(Z_Param_onIndex); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetRecipeShortcutIndex) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_recipe); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(int32*)Z_Param__Result=P_THIS->GetRecipeShortcutIndex(Z_Param_recipe); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNumSlotsPerHotbar) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetNumSlotsPerHotbar(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetMaxNumPresetHotbars) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetMaxNumPresetHotbars(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNumPresetHotbars) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetNumPresetHotbars(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNumHotbars) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetNumHotbars(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCurrentHotbarIndex) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetCurrentHotbarIndex(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -563,21 +678,106 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetValidShortcuts) \
+	DECLARE_FUNCTION(execCopyPresetHotbarToCurrentHotbar) \
 	{ \
-		P_GET_TARRAY_REF(UFGHotbarShortcut*,Z_Param_Out_out_shortcuts); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GetValidShortcuts(Z_Param_Out_out_shortcuts); \
+		P_THIS->CopyPresetHotbarToCurrentHotbar(Z_Param_presetHotbarIndex); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetAllShortcuts) \
+	DECLARE_FUNCTION(execRemovePresetHotbar) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->RemovePresetHotbar(Z_Param_presetHotbarIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execChangeIconIndexOfPresetHotbar) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_iconIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ChangeIconIndexOfPresetHotbar(Z_Param_presetHotbarIndex,Z_Param_iconIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execChangeNameOfPresetHotbar) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
+		P_GET_PROPERTY_REF(UTextProperty,Z_Param_Out_newName); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ChangeNameOfPresetHotbar(Z_Param_presetHotbarIndex,Z_Param_Out_newName); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCopyCurrentHotbarToPresetHotbar) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->CopyCurrentHotbarToPresetHotbar(Z_Param_presetHotbarIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCanCreateNewPresetHotbar) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->CanCreateNewPresetHotbar(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCreatePresetHotbarFromCurrentHotbar) \
+	{ \
+		P_GET_PROPERTY_REF(UTextProperty,Z_Param_Out_presetName); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_iconIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->CreatePresetHotbarFromCurrentHotbar(Z_Param_Out_presetName,Z_Param_iconIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetPresetHotbar) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
+		P_GET_STRUCT_REF(FPresetHotbar,Z_Param_Out_out_presetHotbar); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetPresetHotbar(Z_Param_presetHotbarIndex,Z_Param_Out_out_presetHotbar); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAllPresetHotbars) \
+	{ \
+		P_GET_TARRAY_REF(FPresetHotbar,Z_Param_Out_out_presetHotbars); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetAllPresetHotbars(Z_Param_Out_out_presetHotbars); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetPresetShortcuts) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
+		P_GET_TARRAY_REF(UFGHotbarShortcut*,Z_Param_Out_out_shortcuts); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetPresetShortcuts(Z_Param_presetHotbarIndex,Z_Param_Out_out_shortcuts); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCurrentShortcuts) \
 	{ \
 		P_GET_TARRAY_REF(UFGHotbarShortcut*,Z_Param_Out_out_shortcuts); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GetAllShortcuts(Z_Param_Out_out_shortcuts); \
+		P_THIS->GetCurrentShortcuts(Z_Param_Out_out_shortcuts); \
 		P_NATIVE_END; \
 	} \
  \
@@ -654,7 +854,7 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void Client_WaitForLevelStreaming_Implementation(); \
 	virtual bool Server_FinishRespawn_Validate(); \
 	virtual void Server_FinishRespawn_Implementation(); \
@@ -666,8 +866,14 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 	virtual void Server_SpawnAttentionPingActor_Implementation(FVector pingLocation, FVector pingNormal); \
 	virtual bool Server_SendChatMessage_Validate(FChatMessageStruct const& ); \
 	virtual void Server_SendChatMessage_Implementation(FChatMessageStruct const& newMessage); \
-	virtual bool Server_SetDismantleShortcutOnIndex_Validate(int32 ); \
-	virtual void Server_SetDismantleShortcutOnIndex_Implementation(int32 onIndex); \
+	virtual bool Server_CopyPresetHotbarToCurrentHotbar_Validate(int32 ); \
+	virtual void Server_CopyPresetHotbarToCurrentHotbar_Implementation(int32 presetHotbarIndex); \
+	virtual bool Server_CopyCurrentHotbarToPresetHotbar_Validate(int32 ); \
+	virtual void Server_CopyCurrentHotbarToPresetHotbar_Implementation(int32 presetHotbarIndex); \
+	virtual bool Server_CreatePresetHotbarFromCurrentHotbar_Validate(FText const& , int32 ); \
+	virtual void Server_CreatePresetHotbarFromCurrentHotbar_Implementation(FText const& presetName, int32 iconIndex); \
+	virtual bool Server_SetHotbarIndex_Validate(int32 ); \
+	virtual void Server_SetHotbarIndex_Implementation(int32 index); \
 	virtual bool Server_SetRecipeShortcutOnIndex_Validate(TSubclassOf<UFGRecipe>  , int32 ); \
 	virtual void Server_SetRecipeShortcutOnIndex_Implementation(TSubclassOf<UFGRecipe>  recipe, int32 onIndex); \
 	virtual void OnDisabledInputGateChanged_Implementation(); \
@@ -768,17 +974,60 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execServer_SetDismantleShortcutOnIndex) \
+	DECLARE_FUNCTION(execServer_CopyPresetHotbarToCurrentHotbar) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_onIndex); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		if (!P_THIS->Server_SetDismantleShortcutOnIndex_Validate(Z_Param_onIndex)) \
+		if (!P_THIS->Server_CopyPresetHotbarToCurrentHotbar_Validate(Z_Param_presetHotbarIndex)) \
 		{ \
-			RPC_ValidateFailed(TEXT("Server_SetDismantleShortcutOnIndex_Validate")); \
+			RPC_ValidateFailed(TEXT("Server_CopyPresetHotbarToCurrentHotbar_Validate")); \
 			return; \
 		} \
-		P_THIS->Server_SetDismantleShortcutOnIndex_Implementation(Z_Param_onIndex); \
+		P_THIS->Server_CopyPresetHotbarToCurrentHotbar_Implementation(Z_Param_presetHotbarIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_CopyCurrentHotbarToPresetHotbar) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_CopyCurrentHotbarToPresetHotbar_Validate(Z_Param_presetHotbarIndex)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_CopyCurrentHotbarToPresetHotbar_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_CopyCurrentHotbarToPresetHotbar_Implementation(Z_Param_presetHotbarIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_CreatePresetHotbarFromCurrentHotbar) \
+	{ \
+		P_GET_PROPERTY(UTextProperty,Z_Param_presetName); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_iconIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_CreatePresetHotbarFromCurrentHotbar_Validate(Z_Param_presetName,Z_Param_iconIndex)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_CreatePresetHotbarFromCurrentHotbar_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_CreatePresetHotbarFromCurrentHotbar_Implementation(Z_Param_presetName,Z_Param_iconIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_SetHotbarIndex) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_index); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_SetHotbarIndex_Validate(Z_Param_index)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_SetHotbarIndex_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_SetHotbarIndex_Implementation(Z_Param_index); \
 		P_NATIVE_END; \
 	} \
  \
@@ -918,6 +1167,22 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnPrimaryFire(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCycleToPreviousHotbar) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CycleToPreviousHotbar(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCycleToNextHotbar) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CycleToNextHotbar(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1070,29 +1335,52 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetDismantleShortcutIndex) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetDismantleShortcutIndex(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetDismantleShortcutOnIndex) \
-	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_onIndex); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetDismantleShortcutOnIndex(Z_Param_onIndex); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetRecipeShortcutIndex) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_recipe); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(int32*)Z_Param__Result=P_THIS->GetRecipeShortcutIndex(Z_Param_recipe); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNumSlotsPerHotbar) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetNumSlotsPerHotbar(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetMaxNumPresetHotbars) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetMaxNumPresetHotbars(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNumPresetHotbars) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetNumPresetHotbars(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNumHotbars) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetNumHotbars(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCurrentHotbarIndex) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetCurrentHotbarIndex(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1106,21 +1394,106 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetValidShortcuts) \
+	DECLARE_FUNCTION(execCopyPresetHotbarToCurrentHotbar) \
 	{ \
-		P_GET_TARRAY_REF(UFGHotbarShortcut*,Z_Param_Out_out_shortcuts); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GetValidShortcuts(Z_Param_Out_out_shortcuts); \
+		P_THIS->CopyPresetHotbarToCurrentHotbar(Z_Param_presetHotbarIndex); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetAllShortcuts) \
+	DECLARE_FUNCTION(execRemovePresetHotbar) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->RemovePresetHotbar(Z_Param_presetHotbarIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execChangeIconIndexOfPresetHotbar) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_iconIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ChangeIconIndexOfPresetHotbar(Z_Param_presetHotbarIndex,Z_Param_iconIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execChangeNameOfPresetHotbar) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
+		P_GET_PROPERTY_REF(UTextProperty,Z_Param_Out_newName); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ChangeNameOfPresetHotbar(Z_Param_presetHotbarIndex,Z_Param_Out_newName); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCopyCurrentHotbarToPresetHotbar) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->CopyCurrentHotbarToPresetHotbar(Z_Param_presetHotbarIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCanCreateNewPresetHotbar) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->CanCreateNewPresetHotbar(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCreatePresetHotbarFromCurrentHotbar) \
+	{ \
+		P_GET_PROPERTY_REF(UTextProperty,Z_Param_Out_presetName); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_iconIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->CreatePresetHotbarFromCurrentHotbar(Z_Param_Out_presetName,Z_Param_iconIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetPresetHotbar) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
+		P_GET_STRUCT_REF(FPresetHotbar,Z_Param_Out_out_presetHotbar); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetPresetHotbar(Z_Param_presetHotbarIndex,Z_Param_Out_out_presetHotbar); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAllPresetHotbars) \
+	{ \
+		P_GET_TARRAY_REF(FPresetHotbar,Z_Param_Out_out_presetHotbars); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetAllPresetHotbars(Z_Param_Out_out_presetHotbars); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetPresetShortcuts) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_presetHotbarIndex); \
+		P_GET_TARRAY_REF(UFGHotbarShortcut*,Z_Param_Out_out_shortcuts); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetPresetShortcuts(Z_Param_presetHotbarIndex,Z_Param_Out_out_shortcuts); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCurrentShortcuts) \
 	{ \
 		P_GET_TARRAY_REF(UFGHotbarShortcut*,Z_Param_Out_out_shortcuts); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GetAllShortcuts(Z_Param_Out_out_shortcuts); \
+		P_THIS->GetCurrentShortcuts(Z_Param_Out_out_shortcuts); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1197,7 +1570,7 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_EVENT_PARMS \
 	struct FGPlayerController_eventClient_AddMessage_Parms \
 	{ \
 		TSubclassOf<UFGMessageBase>  newMessage; \
@@ -1229,6 +1602,19 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 	{ \
 		bool isJoining; \
 	}; \
+	struct FGPlayerController_eventServer_CopyCurrentHotbarToPresetHotbar_Parms \
+	{ \
+		int32 presetHotbarIndex; \
+	}; \
+	struct FGPlayerController_eventServer_CopyPresetHotbarToCurrentHotbar_Parms \
+	{ \
+		int32 presetHotbarIndex; \
+	}; \
+	struct FGPlayerController_eventServer_CreatePresetHotbarFromCurrentHotbar_Parms \
+	{ \
+		FText presetName; \
+		int32 iconIndex; \
+	}; \
 	struct FGPlayerController_eventServer_DealImpactDamage_Parms \
 	{ \
 		FHitResult impact; \
@@ -1249,9 +1635,9 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 	{ \
 		FChatMessageStruct newMessage; \
 	}; \
-	struct FGPlayerController_eventServer_SetDismantleShortcutOnIndex_Parms \
+	struct FGPlayerController_eventServer_SetHotbarIndex_Parms \
 	{ \
-		int32 onIndex; \
+		int32 index; \
 	}; \
 	struct FGPlayerController_eventServer_SetRecipeShortcutOnIndex_Parms \
 	{ \
@@ -1265,8 +1651,8 @@ static inline void FPawnChangedDelegate_DelegateWrapper(const FMulticastScriptDe
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGPlayerController(); \
 	friend struct Z_Construct_UClass_AFGPlayerController_Statics; \
@@ -1275,7 +1661,7 @@ public: \
 	DECLARE_SERIALIZER(AFGPlayerController)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGPlayerController(); \
 	friend struct Z_Construct_UClass_AFGPlayerController_Statics; \
@@ -1284,7 +1670,7 @@ public: \
 	DECLARE_SERIALIZER(AFGPlayerController)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGPlayerController(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGPlayerController) \
@@ -1297,7 +1683,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGPlayerController(AFGPlayerController&&); \
@@ -1308,7 +1694,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGPlayerController); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGPlayerController)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mConsoleCommandManager() { return STRUCT_OFFSET(AFGPlayerController, mConsoleCommandManager); } \
 	FORCEINLINE static uint32 __PPO__mRemoteCallObjects() { return STRUCT_OFFSET(AFGPlayerController, mRemoteCallObjects); } \
 	FORCEINLINE static uint32 __PPO__mInputComponentChords() { return STRUCT_OFFSET(AFGPlayerController, mInputComponentChords); } \
@@ -1326,30 +1712,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGPlayerController); \
 	FORCEINLINE static uint32 __PPO__mProximitySubsystem() { return STRUCT_OFFSET(AFGPlayerController, mProximitySubsystem); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_22_PROLOG \
-	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_25_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGPlayerController_h_28_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

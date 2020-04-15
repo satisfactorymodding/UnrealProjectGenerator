@@ -263,7 +263,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWire() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableWire, 175243464);
+	IMPLEMENT_CLASS(AFGBuildableWire, 1986905734);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableWire>()
 	{
 		return AFGBuildableWire::StaticClass();

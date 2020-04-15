@@ -9,6 +9,8 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGItemDescriptor;
+struct FRotator;
+struct FTransform;
 struct FLinearColor;
 struct FColor;
 class UFGItemCategory;
@@ -30,6 +32,101 @@ enum class EResourceForm : uint8;
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemView>();
 
 #define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSetIconSkyOrientation) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_GET_STRUCT(FRotator,Z_Param_skyOrientation); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGItemDescriptor::SetIconSkyOrientation(Z_Param_inClass,Z_Param_skyOrientation); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIconSkyOrientation) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FRotator*)Z_Param__Result=UFGItemDescriptor::GetIconSkyOrientation(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetIconCameraDistance) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_cameraDistance); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGItemDescriptor::SetIconCameraDistance(Z_Param_inClass,Z_Param_cameraDistance); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIconCameraDistance) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGItemDescriptor::GetIconCameraDistance(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetIconObjectOrientation) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_GET_STRUCT(FRotator,Z_Param_objectOrientation); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGItemDescriptor::SetIconObjectOrientation(Z_Param_inClass,Z_Param_objectOrientation); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIconObjectOrientation) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FRotator*)Z_Param__Result=UFGItemDescriptor::GetIconObjectOrientation(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetIconFOV) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_iconFOV); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGItemDescriptor::SetIconFOV(Z_Param_inClass,Z_Param_iconFOV); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIconFOV) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGItemDescriptor::GetIconFOV(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetIconCameraTransform) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_GET_STRUCT(FTransform,Z_Param_cameraTransform); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGItemDescriptor::SetIconCameraTransform(Z_Param_inClass,Z_Param_cameraTransform); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIconCameraTransform) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FTransform*)Z_Param__Result=UFGItemDescriptor::GetIconCameraTransform(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetFluidColorLinear) \
 	{ \
@@ -233,6 +330,101 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemView>();
 
 
 #define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSetIconSkyOrientation) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_GET_STRUCT(FRotator,Z_Param_skyOrientation); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGItemDescriptor::SetIconSkyOrientation(Z_Param_inClass,Z_Param_skyOrientation); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIconSkyOrientation) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FRotator*)Z_Param__Result=UFGItemDescriptor::GetIconSkyOrientation(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetIconCameraDistance) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_cameraDistance); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGItemDescriptor::SetIconCameraDistance(Z_Param_inClass,Z_Param_cameraDistance); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIconCameraDistance) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGItemDescriptor::GetIconCameraDistance(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetIconObjectOrientation) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_GET_STRUCT(FRotator,Z_Param_objectOrientation); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGItemDescriptor::SetIconObjectOrientation(Z_Param_inClass,Z_Param_objectOrientation); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIconObjectOrientation) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FRotator*)Z_Param__Result=UFGItemDescriptor::GetIconObjectOrientation(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetIconFOV) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_iconFOV); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGItemDescriptor::SetIconFOV(Z_Param_inClass,Z_Param_iconFOV); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIconFOV) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGItemDescriptor::GetIconFOV(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetIconCameraTransform) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_GET_STRUCT(FTransform,Z_Param_cameraTransform); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGItemDescriptor::SetIconCameraTransform(Z_Param_inClass,Z_Param_cameraTransform); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIconCameraTransform) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FTransform*)Z_Param__Result=UFGItemDescriptor::GetIconCameraTransform(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetFluidColorLinear) \
 	{ \
@@ -483,26 +675,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGItemDescriptor); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGItemDescriptor)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mAbbreviatedDisplayName() { return STRUCT_OFFSET(UFGItemDescriptor, mAbbreviatedDisplayName); } \
-	FORCEINLINE static uint32 __PPO__mStackSize() { return STRUCT_OFFSET(UFGItemDescriptor, mStackSize); } \
-	FORCEINLINE static uint32 __PPO__mCanBeDiscarded() { return STRUCT_OFFSET(UFGItemDescriptor, mCanBeDiscarded); } \
-	FORCEINLINE static uint32 __PPO__mRememberPickUp() { return STRUCT_OFFSET(UFGItemDescriptor, mRememberPickUp); } \
-	FORCEINLINE static uint32 __PPO__mEnergyValue() { return STRUCT_OFFSET(UFGItemDescriptor, mEnergyValue); } \
-	FORCEINLINE static uint32 __PPO__mRadioactiveDecay() { return STRUCT_OFFSET(UFGItemDescriptor, mRadioactiveDecay); } \
-	FORCEINLINE static uint32 __PPO__mForm() { return STRUCT_OFFSET(UFGItemDescriptor, mForm); } \
-	FORCEINLINE static uint32 __PPO__mInventoryIcon() { return STRUCT_OFFSET(UFGItemDescriptor, mInventoryIcon); } \
-	FORCEINLINE static uint32 __PPO__mSmallIcon() { return STRUCT_OFFSET(UFGItemDescriptor, mSmallIcon); } \
-	FORCEINLINE static uint32 __PPO__mPersistentBigIcon() { return STRUCT_OFFSET(UFGItemDescriptor, mPersistentBigIcon); } \
-	FORCEINLINE static uint32 __PPO__mConveyorMesh() { return STRUCT_OFFSET(UFGItemDescriptor, mConveyorMesh); } \
-	FORCEINLINE static uint32 __PPO__mPreviewView() { return STRUCT_OFFSET(UFGItemDescriptor, mPreviewView); } \
-	FORCEINLINE static uint32 __PPO__mItemCategory() { return STRUCT_OFFSET(UFGItemDescriptor, mItemCategory); } \
-	FORCEINLINE static uint32 __PPO__mFluidDensity() { return STRUCT_OFFSET(UFGItemDescriptor, mFluidDensity); } \
-	FORCEINLINE static uint32 __PPO__mFluidViscosity() { return STRUCT_OFFSET(UFGItemDescriptor, mFluidViscosity); } \
-	FORCEINLINE static uint32 __PPO__mFluidFriction() { return STRUCT_OFFSET(UFGItemDescriptor, mFluidFriction); } \
-	FORCEINLINE static uint32 __PPO__mFluidColor() { return STRUCT_OFFSET(UFGItemDescriptor, mFluidColor); }
-
-
+#define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_PRIVATE_PROPERTY_OFFSET
 #define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_76_PROLOG
 #define FactoryGame_Source_FactoryGame_Public_Resources_FGItemDescriptor_h_79_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

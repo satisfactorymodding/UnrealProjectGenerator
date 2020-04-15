@@ -505,7 +505,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGItemPickup_Spawnable, 2245263984);
+	IMPLEMENT_CLASS(AFGItemPickup_Spawnable, 1877637570);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGItemPickup_Spawnable>()
 	{
 		return AFGItemPickup_Spawnable::StaticClass();

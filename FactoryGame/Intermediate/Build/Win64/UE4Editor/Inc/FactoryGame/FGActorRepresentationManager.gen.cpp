@@ -1160,7 +1160,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGActorRepresentationManager, 1913219133);
+	IMPLEMENT_CLASS(AFGActorRepresentationManager, 1558824133);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGActorRepresentationManager>()
 	{
 		return AFGActorRepresentationManager::StaticClass();

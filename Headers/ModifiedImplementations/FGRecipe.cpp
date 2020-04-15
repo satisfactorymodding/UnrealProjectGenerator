@@ -6,16 +6,42 @@
 void UFGRecipe::SetProduct(TSubclassOf< UFGRecipe > recipe, TArray< FItemAmount > product){ }
 #endif 
 UFGRecipe::UFGRecipe(){ }
-FText UFGRecipe::GetRecipeName(TSubclassOf< UFGRecipe > inClass){ return FText(); }
-TArray< FItemAmount > UFGRecipe::GetIngredients(TSubclassOf< UFGRecipe > inClass){ return TArray<FItemAmount>(); }
-TArray< FItemAmount > UFGRecipe::GetProducts(TSubclassOf< UFGRecipe > inClass, bool allowChildRecipes){ return TArray<FItemAmount>(); }
-float UFGRecipe::GetManufacturingDuration(TSubclassOf< UFGRecipe > inClass){ return float(); }
-float UFGRecipe::GetManualManufacturingDuration(TSubclassOf< UFGRecipe > inClass){ return float(); }
-TArray< TSubclassOf< UObject > > UFGRecipe::GetProducedIn(TSubclassOf< UFGRecipe > inClass){ return TArray<TSubclassOf<UObject> >(); }
+FText UFGRecipe::GetRecipeName(TSubclassOf< UFGRecipe > inClass){ 
+	return inClass.GetDefaultObject()->mDisplayName;
+}
+TArray< FItemAmount > UFGRecipe::GetIngredients(TSubclassOf< UFGRecipe > inClass){ 
+	return inClass.GetDefaultObject()->mIngredients;
+}
+TArray< FItemAmount > UFGRecipe::GetProducts(TSubclassOf< UFGRecipe > inClass, bool allowChildRecipes){ 
+	return inClass.GetDefaultObject()->mProduct;
+}
+float UFGRecipe::GetManufacturingDuration(TSubclassOf< UFGRecipe > inClass){ 
+	return inClass.GetDefaultObject()->mManufactoringDuration;
+}
+float UFGRecipe::GetManualManufacturingDuration(TSubclassOf< UFGRecipe > inClass){ 
+	return inClass.GetDefaultObject()->mManualManufacturingMultiplier;
+}
+TArray< TSubclassOf< UObject > > UFGRecipe::GetProducedIn(TSubclassOf< UFGRecipe > inClass){ 
+	TArray<TSubclassOf<UObject>>   out;
+	TArray<TSoftClassPtr<UObject>> In = inClass.GetDefaultObject()->mProducedIn;
+	if (In.Num() > 0)
+	{
+		for (int j = 0; j < In.Num(); j++)
+		{
+			TSubclassOf<UObject> obj = In[j].LoadSynchronous();
+			out.Add(obj);
+		}
+		return out;
+	}
+	else
+		return TArray<TSubclassOf<UObject>>();
+}
 bool UFGRecipe::IsRecipeAffordable( AFGCharacterPlayer* player, TSubclassOf<  UFGRecipe > recipe){ return bool(); }
 void UFGRecipe::SortByName(TArray< TSubclassOf< UFGRecipe > >& recipes){ }
 TSubclassOf< class UFGItemDescriptor > UFGRecipe::GetDescriptorForRecipe(TSubclassOf<  UFGRecipe > recipe){ return TSubclassOf<class UFGItemDescriptor>(); }
 FText UFGRecipe::GetDisplayName() const{ return FText(); }
-void UFGRecipe::GetProducedIn(TArray< TSubclassOf< UObject > >& out_producedIn) const{ }
+void UFGRecipe::GetProducedIn(TArray< TSubclassOf< UObject > >& out_producedIn) const{ 
+	out_producedIn = UFGRecipe::GetProducedIn(this->GetClass());
+}
 EHologramSplinePathMode UFGRecipe::GetLastSplineMode(){ return EHologramSplinePathMode(); }
 void UFGRecipe::SetLastSplineMode(EHologramSplinePathMode mode){ }

@@ -62,6 +62,14 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execFlagReevaluateMaterialOnColored) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->FlagReevaluateMaterialOnColored(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetInteractWidgetClass) \
 	{ \
 		P_FINISH; \
@@ -212,6 +220,14 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->ReapplyColorSlot(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execFlagReevaluateMaterialOnColored) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->FlagReevaluateMaterialOnColored(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -479,11 +495,14 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildable); \
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildable_h_50_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mFactoryTickFunction() { return STRUCT_OFFSET(AFGBuildable, mFactoryTickFunction); } \
 	FORCEINLINE static uint32 __PPO__mMaterialNameToInstanceManager() { return STRUCT_OFFSET(AFGBuildable, mMaterialNameToInstanceManager); } \
+	FORCEINLINE static uint32 __PPO__mBlockSharingMaterialInstanceMapping() { return STRUCT_OFFSET(AFGBuildable, mBlockSharingMaterialInstanceMapping); } \
+	FORCEINLINE static uint32 __PPO__mExcludeFromMaterialInstancing() { return STRUCT_OFFSET(AFGBuildable, mExcludeFromMaterialInstancing); } \
 	FORCEINLINE static uint32 __PPO__mPrimaryColor() { return STRUCT_OFFSET(AFGBuildable, mPrimaryColor); } \
 	FORCEINLINE static uint32 __PPO__mSecondaryColor() { return STRUCT_OFFSET(AFGBuildable, mSecondaryColor); } \
 	FORCEINLINE static uint32 __PPO__mColorSlot() { return STRUCT_OFFSET(AFGBuildable, mColorSlot); } \
 	FORCEINLINE static uint32 __PPO__mBuildEffectTemplate() { return STRUCT_OFFSET(AFGBuildable, mBuildEffectTemplate); } \
 	FORCEINLINE static uint32 __PPO__mDismantleEffectTemplate() { return STRUCT_OFFSET(AFGBuildable, mDismantleEffectTemplate); } \
+	FORCEINLINE static uint32 __PPO__mActiveBuildEffect() { return STRUCT_OFFSET(AFGBuildable, mActiveBuildEffect); } \
 	FORCEINLINE static uint32 __PPO__mBuildEffectInstignator() { return STRUCT_OFFSET(AFGBuildable, mBuildEffectInstignator); } \
 	FORCEINLINE static uint32 __PPO__mDismantleEffectClassName() { return STRUCT_OFFSET(AFGBuildable, mDismantleEffectClassName); } \
 	FORCEINLINE static uint32 __PPO__mBuildEffectClassName() { return STRUCT_OFFSET(AFGBuildable, mBuildEffectClassName); } \

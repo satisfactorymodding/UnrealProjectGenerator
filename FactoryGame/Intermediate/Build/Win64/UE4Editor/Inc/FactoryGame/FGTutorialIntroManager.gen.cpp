@@ -1667,7 +1667,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRecipeAmountPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGTutorialIntroManager, 1498070059);
+	IMPLEMENT_CLASS(AFGTutorialIntroManager, 2910364415);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGTutorialIntroManager>()
 	{
 		return AFGTutorialIntroManager::StaticClass();

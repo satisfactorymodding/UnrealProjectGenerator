@@ -14,8 +14,10 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 // Cross Module References
-	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveFinished__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveTimeNotification__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_VisitedMapAreaDelegate__DelegateSignature();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGMapArea_NoRegister();
@@ -45,20 +47,21 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_IsTradingPostBuilt();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_NotifyPlayerAdded();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCharacterPlayer_NoRegister();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlot();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotPrimary_Linear();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotSecondary_Linear();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_OnRep_MapAreaVisited();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_OnRep_PlannedRestartTime();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_SendMessageToAllPlayers();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGMessageBase_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_SendMessageToPlayer();
 	ENGINE_API UClass* Z_Construct_UClass_APlayerController_NoRegister();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot();
-	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FColor();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FLinearColor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_SetCheatNoCost();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_SetCheatNoPower();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_SetHasInitalTradingPostLandAnimPlayed();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_SetIsSpaceElevatorBuilt();
-	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGItemRegrowSubsystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGResourceSinkSubsystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGUnlockSubsystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGPipeSubsystem_NoRegister();
@@ -71,9 +74,62 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGRailroadSubsystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGStorySubsystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGTimeOfDaySubsystem_NoRegister();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipe_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveInterface_NoRegister();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveFinished__DelegateSignature_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveFinished__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveFinished__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnAutoSaveFinished__DelegateSignature", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveFinished__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveFinished__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveFinished__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveFinished__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveTimeNotification__DelegateSignature_Statics
+	{
+		struct _Script_FactoryGame_eventOnAutoSaveTimeNotification_Parms
+		{
+			float timeLeft;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_timeLeft;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveTimeNotification__DelegateSignature_Statics::NewProp_timeLeft = { "timeLeft", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventOnAutoSaveTimeNotification_Parms, timeLeft), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveTimeNotification__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveTimeNotification__DelegateSignature_Statics::NewProp_timeLeft,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveTimeNotification__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveTimeNotification__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnAutoSaveTimeNotification__DelegateSignature", sizeof(_Script_FactoryGame_eventOnAutoSaveTimeNotification_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveTimeNotification__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveTimeNotification__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveTimeNotification__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveTimeNotification__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveTimeNotification__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveTimeNotification__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UDelegateFunction_FactoryGame_OnRestartTimeNotification__DelegateSignature_Statics
 	{
 		struct _Script_FactoryGame_eventOnRestartTimeNotification_Parms
@@ -138,14 +194,14 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		}
 		return ReturnFunction;
 	}
-	static FName NAME_AFGGameState_SetAndReplicateBuildingColorInSlot = FName(TEXT("SetAndReplicateBuildingColorInSlot"));
-	void AFGGameState::SetAndReplicateBuildingColorInSlot(uint8 slot, FColor pColor, FColor sColor)
+	static FName NAME_AFGGameState_Server_SetBuildingColorInSlotLinear = FName(TEXT("Server_SetBuildingColorInSlotLinear"));
+	void AFGGameState::Server_SetBuildingColorInSlotLinear(uint8 slotIdx, FLinearColor colorPrimary_Linear, FLinearColor colorSecondary_Linear)
 	{
-		FGGameState_eventSetAndReplicateBuildingColorInSlot_Parms Parms;
-		Parms.slot=slot;
-		Parms.pColor=pColor;
-		Parms.sColor=sColor;
-		ProcessEvent(FindFunctionChecked(NAME_AFGGameState_SetAndReplicateBuildingColorInSlot),&Parms);
+		FGGameState_eventServer_SetBuildingColorInSlotLinear_Parms Parms;
+		Parms.slotIdx=slotIdx;
+		Parms.colorPrimary_Linear=colorPrimary_Linear;
+		Parms.colorSecondary_Linear=colorSecondary_Linear;
+		ProcessEvent(FindFunctionChecked(NAME_AFGGameState_Server_SetBuildingColorInSlotLinear),&Parms);
 	}
 	void AFGGameState::StaticRegisterNativesAFGGameState()
 	{
@@ -167,12 +223,13 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 			{ "IsSpaceElevatorBuilt", &AFGGameState::execIsSpaceElevatorBuilt },
 			{ "IsTradingPostBuilt", &AFGGameState::execIsTradingPostBuilt },
 			{ "NotifyPlayerAdded", &AFGGameState::execNotifyPlayerAdded },
-			{ "OnRep_BuildingColorSlot", &AFGGameState::execOnRep_BuildingColorSlot },
+			{ "OnRep_BuildingColorSlotPrimary_Linear", &AFGGameState::execOnRep_BuildingColorSlotPrimary_Linear },
+			{ "OnRep_BuildingColorSlotSecondary_Linear", &AFGGameState::execOnRep_BuildingColorSlotSecondary_Linear },
 			{ "OnRep_MapAreaVisited", &AFGGameState::execOnRep_MapAreaVisited },
 			{ "OnRep_PlannedRestartTime", &AFGGameState::execOnRep_PlannedRestartTime },
 			{ "SendMessageToAllPlayers", &AFGGameState::execSendMessageToAllPlayers },
 			{ "SendMessageToPlayer", &AFGGameState::execSendMessageToPlayer },
-			{ "SetAndReplicateBuildingColorInSlot", &AFGGameState::execSetAndReplicateBuildingColorInSlot },
+			{ "Server_SetBuildingColorInSlotLinear", &AFGGameState::execServer_SetBuildingColorInSlotLinear },
 			{ "SetCheatNoCost", &AFGGameState::execSetCheatNoCost },
 			{ "SetCheatNoPower", &AFGGameState::execSetCheatNoPower },
 			{ "SetHasInitalTradingPostLandAnimPlayed", &AFGGameState::execSetHasInitalTradingPostLandAnimPlayed },
@@ -777,7 +834,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlot_Statics
+	struct Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotPrimary_Linear_Statics
 	{
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -785,17 +842,41 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlot_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotPrimary_Linear_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
+		{ "ToolTip", "Called both on client and server. Apply primary color changes to the buildable subsystem" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGGameState, nullptr, "OnRep_BuildingColorSlot", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlot_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlot()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotPrimary_Linear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGGameState, nullptr, "OnRep_BuildingColorSlotPrimary_Linear", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotPrimary_Linear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotPrimary_Linear_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotPrimary_Linear()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlot_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotPrimary_Linear_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotSecondary_Linear_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotSecondary_Linear_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+		{ "ToolTip", "Called both on client and server. Apply secondary color changes to the buildable subsystem" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotSecondary_Linear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGGameState, nullptr, "OnRep_BuildingColorSlotSecondary_Linear", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotSecondary_Linear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotSecondary_Linear_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotSecondary_Linear()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotSecondary_Linear_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -917,37 +998,38 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot_Statics
+	struct Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear_Statics
 	{
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_sColor;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_pColor;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_slot;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_colorSecondary_Linear;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_colorPrimary_Linear;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_slotIdx;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot_Statics::NewProp_sColor = { "sColor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGGameState_eventSetAndReplicateBuildingColorInSlot_Parms, sColor), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot_Statics::NewProp_pColor = { "pColor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGGameState_eventSetAndReplicateBuildingColorInSlot_Parms, pColor), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot_Statics::NewProp_slot = { "slot", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGGameState_eventSetAndReplicateBuildingColorInSlot_Parms, slot), nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot_Statics::NewProp_sColor,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot_Statics::NewProp_pColor,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot_Statics::NewProp_slot,
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear_Statics::NewProp_colorSecondary_Linear = { "colorSecondary_Linear", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGGameState_eventServer_SetBuildingColorInSlotLinear_Parms, colorSecondary_Linear), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear_Statics::NewProp_colorPrimary_Linear = { "colorPrimary_Linear", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGGameState_eventServer_SetBuildingColorInSlotLinear_Parms, colorPrimary_Linear), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear_Statics::NewProp_slotIdx = { "slotIdx", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGGameState_eventServer_SetBuildingColorInSlotLinear_Parms, slotIdx), nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear_Statics::NewProp_colorSecondary_Linear,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear_Statics::NewProp_colorPrimary_Linear,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear_Statics::NewProp_slotIdx,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
+		{ "ToolTip", "* Server - Called to propogate Building Color Changes" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGGameState, nullptr, "SetAndReplicateBuildingColorInSlot", sizeof(FGGameState_eventSetAndReplicateBuildingColorInSlot_Parms), Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80A20CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGGameState, nullptr, "Server_SetBuildingColorInSlotLinear", sizeof(FGGameState_eventServer_SetBuildingColorInSlotLinear_Parms), Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80A20CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1146,9 +1228,15 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mPlannedRestartTime;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBuildingColorSlots_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBuildingColorSlotsSecondary_Linear_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mBuildingColorSlots;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mBuildingColorSlotsSecondary_Linear;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mBuildingColorSlotsSecondary_Linear_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBuildingColorSlotsPrimary_Linear_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mBuildingColorSlotsPrimary_Linear;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mBuildingColorSlotsPrimary_Linear_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mReplicatedSessionName_MetaData[];
 #endif
@@ -1167,6 +1255,10 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mVisitedMapAreas;
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mVisitedMapAreas_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mItemRegrowSubsystem_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mItemRegrowSubsystem;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mResourceSinkSubsystem_MetaData[];
 #endif
@@ -1236,10 +1328,13 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mTimeSubsystem;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAvailableRecipes_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mOnAutoSaveFinished_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mAvailableRecipes;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mAvailableRecipes_Inner;
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_mOnAutoSaveFinished;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mOnAutoSaveTimeNotification_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_mOnAutoSaveTimeNotification;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPowerCircuitFuseTriggeredMessage_MetaData[];
 #endif
@@ -1278,12 +1373,13 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		{ &Z_Construct_UFunction_AFGGameState_IsSpaceElevatorBuilt, "IsSpaceElevatorBuilt" }, // 562389222
 		{ &Z_Construct_UFunction_AFGGameState_IsTradingPostBuilt, "IsTradingPostBuilt" }, // 625526960
 		{ &Z_Construct_UFunction_AFGGameState_NotifyPlayerAdded, "NotifyPlayerAdded" }, // 1436631101
-		{ &Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlot, "OnRep_BuildingColorSlot" }, // 858052387
+		{ &Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotPrimary_Linear, "OnRep_BuildingColorSlotPrimary_Linear" }, // 2892612836
+		{ &Z_Construct_UFunction_AFGGameState_OnRep_BuildingColorSlotSecondary_Linear, "OnRep_BuildingColorSlotSecondary_Linear" }, // 537814413
 		{ &Z_Construct_UFunction_AFGGameState_OnRep_MapAreaVisited, "OnRep_MapAreaVisited" }, // 1471420699
 		{ &Z_Construct_UFunction_AFGGameState_OnRep_PlannedRestartTime, "OnRep_PlannedRestartTime" }, // 4057503137
 		{ &Z_Construct_UFunction_AFGGameState_SendMessageToAllPlayers, "SendMessageToAllPlayers" }, // 2388771310
 		{ &Z_Construct_UFunction_AFGGameState_SendMessageToPlayer, "SendMessageToPlayer" }, // 2762689636
-		{ &Z_Construct_UFunction_AFGGameState_SetAndReplicateBuildingColorInSlot, "SetAndReplicateBuildingColorInSlot" }, // 2126943025
+		{ &Z_Construct_UFunction_AFGGameState_Server_SetBuildingColorInSlotLinear, "Server_SetBuildingColorInSlotLinear" }, // 1563813116
 		{ &Z_Construct_UFunction_AFGGameState_SetCheatNoCost, "SetCheatNoCost" }, // 1355687342
 		{ &Z_Construct_UFunction_AFGGameState_SetCheatNoPower, "SetCheatNoPower" }, // 4030225188
 		{ &Z_Construct_UFunction_AFGGameState_SetHasInitalTradingPostLandAnimPlayed, "SetHasInitalTradingPostLandAnimPlayed" }, // 3082713072
@@ -1389,13 +1485,23 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlannedRestartTime = { "mPlannedRestartTime", "OnRep_PlannedRestartTime", (EPropertyFlags)0x0040000100020821, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mPlannedRestartTime), METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlannedRestartTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlannedRestartTime_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlots_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsSecondary_Linear_MetaData[] = {
 		{ "Category", "Customization" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
-		{ "ToolTip", "*      System to keep track of color slot changes and comapre to buildable system to update and mark dirty" },
+		{ "ToolTip", "*      Array of secondary building color slots as Linear Colors. Note: This used to be handled with FColor which resulted in unneeded conversions back and forth" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlots = { "mBuildingColorSlots", "OnRep_BuildingColorSlot", (EPropertyFlags)0x0040000100010021, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mBuildingColorSlots, AFGGameState), STRUCT_OFFSET(AFGGameState, mBuildingColorSlots), Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlots_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlots_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsSecondary_Linear = { "mBuildingColorSlotsSecondary_Linear", "OnRep_BuildingColorSlotSecondary_Linear", (EPropertyFlags)0x0040000100010021, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mBuildingColorSlotsSecondary_Linear), METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsSecondary_Linear_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsSecondary_Linear_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsSecondary_Linear_Inner = { "mBuildingColorSlotsSecondary_Linear", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsPrimary_Linear_MetaData[] = {
+		{ "Category", "Customization" },
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+		{ "ToolTip", "*      Array of primary building color slots as Linear Colors. Note: This used to be handled with FColor which resulted in unneeded conversions back and forth" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsPrimary_Linear = { "mBuildingColorSlotsPrimary_Linear", "OnRep_BuildingColorSlotPrimary_Linear", (EPropertyFlags)0x0040000100010021, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mBuildingColorSlotsPrimary_Linear), METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsPrimary_Linear_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsPrimary_Linear_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsPrimary_Linear_Inner = { "mBuildingColorSlotsPrimary_Linear", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedSessionName_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
@@ -1425,6 +1531,12 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas = { "mVisitedMapAreas", "OnRep_MapAreaVisited", (EPropertyFlags)0x0044000101000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mVisitedMapAreas), METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas_MetaData)) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas_Inner = { "mVisitedMapAreas", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mItemRegrowSubsystem_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mItemRegrowSubsystem = { "mItemRegrowSubsystem", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mItemRegrowSubsystem), Z_Construct_UClass_AFGItemRegrowSubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mItemRegrowSubsystem_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mItemRegrowSubsystem_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mResourceSinkSubsystem_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
@@ -1529,13 +1641,21 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mTimeSubsystem = { "mTimeSubsystem", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mTimeSubsystem), Z_Construct_UClass_AFGTimeOfDaySubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mTimeSubsystem_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mTimeSubsystem_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mAvailableRecipes_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mOnAutoSaveFinished_MetaData[] = {
+		{ "Category", "Notification" },
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
-		{ "ToolTip", "@todo @save 2019-02-26 If this is cleaned up alpha saves will lose recipes unlocked by other means than through schematics, i.e. probably alternate recipes." },
+		{ "ToolTip", "Broadcast a notification when we are finished auto saving" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mAvailableRecipes = { "mAvailableRecipes", nullptr, (EPropertyFlags)0x0014000001000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mAvailableRecipes), METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mAvailableRecipes_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mAvailableRecipes_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mAvailableRecipes_Inner = { "mAvailableRecipes", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mOnAutoSaveFinished = { "mOnAutoSaveFinished", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mOnAutoSaveFinished), Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveFinished__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mOnAutoSaveFinished_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mOnAutoSaveFinished_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mOnAutoSaveTimeNotification_MetaData[] = {
+		{ "Category", "Notification" },
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+		{ "ToolTip", "Broadcast a notification when we are about to autosave" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mOnAutoSaveTimeNotification = { "mOnAutoSaveTimeNotification", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mOnAutoSaveTimeNotification), Z_Construct_UDelegateFunction_FactoryGame_OnAutoSaveTimeNotification__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mOnAutoSaveTimeNotification_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mOnAutoSaveTimeNotification_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mPowerCircuitFuseTriggeredMessage_MetaData[] = {
 		{ "Category", "Message" },
@@ -1571,13 +1691,17 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mHubPartClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mOnRestartTimeNotification,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlannedRestartTime,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlots,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsSecondary_Linear,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsSecondary_Linear_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsPrimary_Linear,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsPrimary_Linear_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedSessionName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlayDurationWhenLoaded,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mPickedUpItems,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mPickedUpItems_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mItemRegrowSubsystem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mResourceSinkSubsystem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mUnlockSubsystem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mPipeSubsystem,
@@ -1595,8 +1719,8 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mRailroadSubsystem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mStorySubsystem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mTimeSubsystem,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mAvailableRecipes,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mAvailableRecipes_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mOnAutoSaveFinished,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mOnAutoSaveTimeNotification,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mPowerCircuitFuseTriggeredMessage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mTurboModeMultiplier,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_MapAreaVisistedDelegate,
@@ -1631,7 +1755,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGameState, 2325521638);
+	IMPLEMENT_CLASS(AFGGameState, 3703660677);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGameState>()
 	{
 		return AFGGameState::StaticClass();

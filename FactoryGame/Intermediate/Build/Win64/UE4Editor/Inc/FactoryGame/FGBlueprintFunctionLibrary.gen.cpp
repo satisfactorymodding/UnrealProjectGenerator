@@ -41,8 +41,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_Cheat_GetAllDescriptors();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClosePopup();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CmS2KmH();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextFromClipboard();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextToClipboard();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CreateSessionAndTravelToMap();
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ESessionVisibility();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllBuildCategories();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGBuildCategory_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllDescriptorsSorted();
@@ -59,6 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCharacterPlayer_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetLanguage();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetOuterActor();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory();
@@ -90,6 +94,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGenericTickObjectFromSignificanceManager();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ShowOutline();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_TravelToMainMenu();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_UpdateUseState();
@@ -172,7 +177,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 			{ "Cheat_GetAllDescriptors", &UFGBlueprintFunctionLibrary::execCheat_GetAllDescriptors },
 			{ "ClosePopup", &UFGBlueprintFunctionLibrary::execClosePopup },
 			{ "CmS2KmH", &UFGBlueprintFunctionLibrary::execCmS2KmH },
+			{ "CopyTextFromClipboard", &UFGBlueprintFunctionLibrary::execCopyTextFromClipboard },
+			{ "CopyTextToClipboard", &UFGBlueprintFunctionLibrary::execCopyTextToClipboard },
 			{ "CreateSessionAndTravelToMap", &UFGBlueprintFunctionLibrary::execCreateSessionAndTravelToMap },
+			{ "EvaluateMathExpression", &UFGBlueprintFunctionLibrary::execEvaluateMathExpression },
 			{ "GetAllBuildCategories", &UFGBlueprintFunctionLibrary::execGetAllBuildCategories },
 			{ "GetAllDescriptorsSorted", &UFGBlueprintFunctionLibrary::execGetAllDescriptorsSorted },
 			{ "GetAllItemsInCategory", &UFGBlueprintFunctionLibrary::execGetAllItemsInCategory },
@@ -183,6 +191,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 			{ "GetCategoriesWithAffordableRecipes", &UFGBlueprintFunctionLibrary::execGetCategoriesWithAffordableRecipes },
 			{ "GetComponentFlagSoftLanding", &UFGBlueprintFunctionLibrary::execGetComponentFlagSoftLanding },
 			{ "GetLanguage", &UFGBlueprintFunctionLibrary::execGetLanguage },
+			{ "GetMetadataTag", &UFGBlueprintFunctionLibrary::execGetMetadataTag },
 			{ "GetOuterActor", &UFGBlueprintFunctionLibrary::execGetOuterActor },
 			{ "GetSubCategoriesForSchematicCategory", &UFGBlueprintFunctionLibrary::execGetSubCategoriesForSchematicCategory },
 			{ "GetVersionString", &UFGBlueprintFunctionLibrary::execGetVersionString },
@@ -208,6 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 			{ "RemoveGenericTickObjectFromSignificanceManager", &UFGBlueprintFunctionLibrary::execRemoveGenericTickObjectFromSignificanceManager },
 			{ "RemoveTrainFromSignificanceManager", &UFGBlueprintFunctionLibrary::execRemoveTrainFromSignificanceManager },
 			{ "RoundFloatWithPrecision", &UFGBlueprintFunctionLibrary::execRoundFloatWithPrecision },
+			{ "SetMetadataTag", &UFGBlueprintFunctionLibrary::execSetMetadataTag },
 			{ "ShowOutline", &UFGBlueprintFunctionLibrary::execShowOutline },
 			{ "TravelToMainMenu", &UFGBlueprintFunctionLibrary::execTravelToMainMenu },
 			{ "UpdateUseState", &UFGBlueprintFunctionLibrary::execUpdateUseState },
@@ -860,6 +870,74 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextFromClipboard_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventCopyTextFromClipboard_Parms
+		{
+			FText ReturnValue;
+		};
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextFromClipboard_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventCopyTextFromClipboard_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextFromClipboard_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextFromClipboard_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextFromClipboard_Statics::Function_MetaDataParams[] = {
+		{ "Category", "UI" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
+		{ "ToolTip", "Return the text from the users clipboard" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextFromClipboard_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "CopyTextFromClipboard", sizeof(FGBlueprintFunctionLibrary_eventCopyTextFromClipboard_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextFromClipboard_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextFromClipboard_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextFromClipboard_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextFromClipboard_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextFromClipboard()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextFromClipboard_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextToClipboard_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventCopyTextToClipboard_Parms
+		{
+			FText textToCopy;
+		};
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_textToCopy;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextToClipboard_Statics::NewProp_textToCopy = { "textToCopy", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventCopyTextToClipboard_Parms, textToCopy), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextToClipboard_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextToClipboard_Statics::NewProp_textToCopy,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextToClipboard_Statics::Function_MetaDataParams[] = {
+		{ "Category", "UI" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
+		{ "ToolTip", "Copies the given text to the users clipboard" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextToClipboard_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "CopyTextToClipboard", sizeof(FGBlueprintFunctionLibrary_eventCopyTextToClipboard_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextToClipboard_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextToClipboard_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextToClipboard_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextToClipboard_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextToClipboard()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextToClipboard_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CreateSessionAndTravelToMap_Statics
 	{
 		struct FGBlueprintFunctionLibrary_eventCreateSessionAndTravelToMap_Parms
@@ -931,6 +1009,69 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CreateSessionAndTravelToMap_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventEvaluateMathExpression_Parms
+		{
+			FString expression;
+			FText out_Result;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_out_Result_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_out_Result;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_expression_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_expression;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGBlueprintFunctionLibrary_eventEvaluateMathExpression_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBlueprintFunctionLibrary_eventEvaluateMathExpression_Parms), &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::NewProp_out_Result_MetaData[] = {
+		{ "DisplayName", "Result" },
+	};
+#endif
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::NewProp_out_Result = { "out_Result", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventEvaluateMathExpression_Parms, out_Result), METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::NewProp_out_Result_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::NewProp_out_Result_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::NewProp_expression_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::NewProp_expression = { "expression", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventEvaluateMathExpression_Parms, expression), METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::NewProp_expression_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::NewProp_expression_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::NewProp_out_Result,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::NewProp_expression,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Math" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
+		{ "ToolTip", "Evaluates a math expression. Can handle white spaces between characters.\n@return true if expression could be evaluated." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "EvaluateMathExpression", sizeof(FGBlueprintFunctionLibrary_eventEvaluateMathExpression_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1375,6 +1516,49 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetLanguage_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventGetMetadataTag_Parms
+		{
+			UObject* object;
+			FName tag;
+			FString ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FNamePropertyParams NewProp_tag;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_object;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetMetadataTag_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag_Statics::NewProp_tag = { "tag", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetMetadataTag_Parms, tag), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag_Statics::NewProp_object = { "object", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetMetadataTag_Parms, object), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag_Statics::NewProp_tag,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag_Statics::NewProp_object,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Editor Scripting | Metadata" },
+		{ "DevelopmentOnly", "" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
+		{ "ToolTip", "Does the same thing as UEditorAssetLibrary::GetMetadataTag but exposed to gameplay code since we have tools that are technically running as gameplay. Content of function is wrapped with editor only" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "GetMetadataTag", sizeof(FGBlueprintFunctionLibrary_eventGetMetadataTag_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2475,6 +2659,57 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventSetMetadataTag_Parms
+		{
+			UObject* object;
+			FName tag;
+			FString value;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_value_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_value;
+		static const UE4CodeGen_Private::FNamePropertyParams NewProp_tag;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_object;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::NewProp_value_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventSetMetadataTag_Parms, value), METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::NewProp_value_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::NewProp_value_MetaData)) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::NewProp_tag = { "tag", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventSetMetadataTag_Parms, tag), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::NewProp_object = { "object", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventSetMetadataTag_Parms, object), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::NewProp_value,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::NewProp_tag,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::NewProp_object,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Editor Scripting | Metadata" },
+		{ "DevelopmentOnly", "" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
+		{ "ToolTip", "Does the same thing as UEditorAssetLibrary::SetMetadataTag but exposed to gameplay code since we have tools that are technically running as gameplay. Content of function is wrapped with editor only" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "SetMetadataTag", sizeof(FGBlueprintFunctionLibrary_eventSetMetadataTag_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ShowOutline_Statics
 	{
 		struct FGBlueprintFunctionLibrary_eventShowOutline_Parms
@@ -2630,7 +2865,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_Cheat_GetAllDescriptors, "Cheat_GetAllDescriptors" }, // 1053097055
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClosePopup, "ClosePopup" }, // 1900240891
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CmS2KmH, "CmS2KmH" }, // 1700875787
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextFromClipboard, "CopyTextFromClipboard" }, // 2862797987
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextToClipboard, "CopyTextToClipboard" }, // 1632498110
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CreateSessionAndTravelToMap, "CreateSessionAndTravelToMap" }, // 1200337555
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_EvaluateMathExpression, "EvaluateMathExpression" }, // 1419210630
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllBuildCategories, "GetAllBuildCategories" }, // 1168119367
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllDescriptorsSorted, "GetAllDescriptorsSorted" }, // 3483552823
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory, "GetAllItemsInCategory" }, // 1403863260
@@ -2641,6 +2879,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes, "GetCategoriesWithAffordableRecipes" }, // 3109750103
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding, "GetComponentFlagSoftLanding" }, // 317730531
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetLanguage, "GetLanguage" }, // 3694274269
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetMetadataTag, "GetMetadataTag" }, // 151824218
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetOuterActor, "GetOuterActor" }, // 1964601451
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetSubCategoriesForSchematicCategory, "GetSubCategoriesForSchematicCategory" }, // 3034940218
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetVersionString, "GetVersionString" }, // 183866322
@@ -2666,6 +2905,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGenericTickObjectFromSignificanceManager, "RemoveGenericTickObjectFromSignificanceManager" }, // 3537046192
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager, "RemoveTrainFromSignificanceManager" }, // 1396949231
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision, "RoundFloatWithPrecision" }, // 305901074
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_SetMetadataTag, "SetMetadataTag" }, // 460137214
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ShowOutline, "ShowOutline" }, // 940980626
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_TravelToMainMenu, "TravelToMainMenu" }, // 210701956
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_UpdateUseState, "UpdateUseState" }, // 3002951925
@@ -2703,7 +2943,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 2791633720);
+	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 3616774846);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBlueprintFunctionLibrary>()
 	{
 		return UFGBlueprintFunctionLibrary::StaticClass();

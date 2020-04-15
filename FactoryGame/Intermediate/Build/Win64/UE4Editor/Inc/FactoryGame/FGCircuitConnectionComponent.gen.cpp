@@ -350,7 +350,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 		{ "ToolTip", "Tracks replication changes to mCircuitID" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCircuitConnectionComponent_OnRep_CircuitIDChanged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCircuitConnectionComponent, nullptr, "OnRep_CircuitIDChanged", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCircuitConnectionComponent_OnRep_CircuitIDChanged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCircuitConnectionComponent_OnRep_CircuitIDChanged_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCircuitConnectionComponent_OnRep_CircuitIDChanged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCircuitConnectionComponent, nullptr, "OnRep_CircuitIDChanged", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCircuitConnectionComponent_OnRep_CircuitIDChanged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCircuitConnectionComponent_OnRep_CircuitIDChanged_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCircuitConnectionComponent_OnRep_CircuitIDChanged()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -482,7 +482,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_GetNumHiddenConnections, "GetNumHiddenConnections" }, // 3543260798
 		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_IsConnected, "IsConnected" }, // 846451865
 		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_IsHidden, "IsHidden" }, // 1151436687
-		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_OnRep_CircuitIDChanged, "OnRep_CircuitIDChanged" }, // 2192372978
+		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_OnRep_CircuitIDChanged, "OnRep_CircuitIDChanged" }, // 2897476237
 		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_ReceiveOnCircuitIDChanged, "ReceiveOnCircuitIDChanged" }, // 2924008868
 		{ &Z_Construct_UFunction_UFGCircuitConnectionComponent_RemoveHiddenConnection, "RemoveHiddenConnection" }, // 3608864394
 	};
@@ -503,7 +503,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 		{ "ToolTip", "The circuit this connection is connected to. INDEX_NONE if not connected.\n@note - This ID may change at any time when changes occurs in the circuitry. Do not save copies of it!" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mCircuitID = { "mCircuitID", "OnRep_CircuitIDChanged", (EPropertyFlags)0x0040000101020021, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCircuitConnectionComponent, mCircuitID), METADATA_PARAMS(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mCircuitID_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mCircuitID_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mCircuitID = { "mCircuitID", "OnRep_CircuitIDChanged", (EPropertyFlags)0x0040000100020021, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCircuitConnectionComponent, mCircuitID), METADATA_PARAMS(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mCircuitID_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mCircuitID_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mHiddenConnections_MetaData[] = {
 		{ "Category", "FGCircuitConnectionComponent" },
@@ -588,7 +588,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCircuitConnectionComponent, 2843475341);
+	IMPLEMENT_CLASS(UFGCircuitConnectionComponent, 1745078111);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCircuitConnectionComponent>()
 	{
 		return UFGCircuitConnectionComponent::StaticClass();

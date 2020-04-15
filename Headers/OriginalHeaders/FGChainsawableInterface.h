@@ -28,4 +28,8 @@ class IFGChainsawableInterface
 	/* @returns true if this thing is chainsawable */
 	UFUNCTION( BlueprintNativeEvent, Category = "Chainsaw" )
 	UStaticMeshComponent* GetMeshComponent();
+
+	/* @returns the items you get for chainsawing this actor */
+	UFUNCTION( BlueprintNativeEvent, Category = "Chainsaw" )
+	FInventoryStack GetActorChainsawReturn();
 };

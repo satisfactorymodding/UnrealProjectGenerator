@@ -364,6 +364,14 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execDumpHotbarShortcuts) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DumpHotbarShortcuts(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execDumpPlayerStates) \
 	{ \
 		P_FINISH; \
@@ -783,6 +791,14 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGivePrototypeSchematics) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GivePrototypeSchematics(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGiveCheatSchematics) \
 	{ \
 		P_FINISH; \
@@ -833,10 +849,10 @@ class UFGItemDescriptor;
  \
 	DECLARE_FUNCTION(execPlayerNoClipModeOnFly) \
 	{ \
-		P_GET_UBOOL(Z_Param_gohstMode); \
+		P_GET_UBOOL(Z_Param_ghostMode); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->PlayerNoClipModeOnFly(Z_Param_gohstMode); \
+		P_THIS->PlayerNoClipModeOnFly(Z_Param_ghostMode); \
 		P_NATIVE_END; \
 	} \
  \
@@ -854,6 +870,15 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->PlayerFly(Z_Param_flyModeEnabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDrawSphere) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_radius); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DrawSphere(Z_Param_radius); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1322,6 +1347,14 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execDumpHotbarShortcuts) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DumpHotbarShortcuts(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execDumpPlayerStates) \
 	{ \
 		P_FINISH; \
@@ -1741,6 +1774,14 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGivePrototypeSchematics) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GivePrototypeSchematics(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGiveCheatSchematics) \
 	{ \
 		P_FINISH; \
@@ -1791,10 +1832,10 @@ class UFGItemDescriptor;
  \
 	DECLARE_FUNCTION(execPlayerNoClipModeOnFly) \
 	{ \
-		P_GET_UBOOL(Z_Param_gohstMode); \
+		P_GET_UBOOL(Z_Param_ghostMode); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->PlayerNoClipModeOnFly(Z_Param_gohstMode); \
+		P_THIS->PlayerNoClipModeOnFly(Z_Param_ghostMode); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1812,6 +1853,15 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->PlayerFly(Z_Param_flyModeEnabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDrawSphere) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_radius); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DrawSphere(Z_Param_radius); \
 		P_NATIVE_END; \
 	} \
  \

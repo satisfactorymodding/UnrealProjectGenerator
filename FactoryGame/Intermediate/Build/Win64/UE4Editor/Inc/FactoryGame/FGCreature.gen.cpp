@@ -32,8 +32,10 @@ void EmptyLinkFunctionForGeneratedCodeFGCreature() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCreature_GetDayTimePctAsNight();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCreature_GetIsArachnid();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCreature_GetIsEnabled();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCreature_GetSpawnDistance();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCreature_GetSpawner();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCreatureSpawner_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCreature_GetSpawnWeight();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCreature_GetSplinePath();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGSplinePath_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCreature_GetTargetRotation();
@@ -349,7 +351,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 			{ "GetDayTimePctAsNight", &AFGCreature::execGetDayTimePctAsNight },
 			{ "GetIsArachnid", &AFGCreature::execGetIsArachnid },
 			{ "GetIsEnabled", &AFGCreature::execGetIsEnabled },
+			{ "GetSpawnDistance", &AFGCreature::execGetSpawnDistance },
 			{ "GetSpawner", &AFGCreature::execGetSpawner },
+			{ "GetSpawnWeight", &AFGCreature::execGetSpawnWeight },
 			{ "GetSplinePath", &AFGCreature::execGetSplinePath },
 			{ "GetTargetRotation", &AFGCreature::execGetTargetRotation },
 			{ "IsPersistent", &AFGCreature::execIsPersistent },
@@ -683,6 +687,40 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGCreature_GetSpawnDistance_Statics
+	{
+		struct FGCreature_eventGetSpawnDistance_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCreature_GetSpawnDistance_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCreature_eventGetSpawnDistance_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCreature_GetSpawnDistance_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCreature_GetSpawnDistance_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_GetSpawnDistance_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Creature" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
+		{ "ToolTip", "Returns the spawn distance for this creature" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreature_GetSpawnDistance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreature, nullptr, "GetSpawnDistance", sizeof(FGCreature_eventGetSpawnDistance_Parms), Z_Construct_UFunction_AFGCreature_GetSpawnDistance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCreature_GetSpawnDistance_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreature_GetSpawnDistance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreature_GetSpawnDistance_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCreature_GetSpawnDistance()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCreature_GetSpawnDistance_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGCreature_GetSpawner_Statics
 	{
 		struct FGCreature_eventGetSpawner_Parms
@@ -707,13 +745,47 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		{ "ToolTip", "Returns the spawner that created this creature. Can be null" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreature_GetSpawner_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreature, nullptr, "GetSpawner", sizeof(FGCreature_eventGetSpawner_Parms), Z_Construct_UFunction_AFGCreature_GetSpawner_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCreature_GetSpawner_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreature_GetSpawner_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreature_GetSpawner_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreature_GetSpawner_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreature, nullptr, "GetSpawner", sizeof(FGCreature_eventGetSpawner_Parms), Z_Construct_UFunction_AFGCreature_GetSpawner_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCreature_GetSpawner_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreature_GetSpawner_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreature_GetSpawner_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCreature_GetSpawner()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCreature_GetSpawner_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCreature_GetSpawnWeight_Statics
+	{
+		struct FGCreature_eventGetSpawnWeight_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCreature_GetSpawnWeight_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCreature_eventGetSpawnWeight_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCreature_GetSpawnWeight_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCreature_GetSpawnWeight_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_GetSpawnWeight_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Creature" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
+		{ "ToolTip", "Returns the spawn weight for this creature" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreature_GetSpawnWeight_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreature, nullptr, "GetSpawnWeight", sizeof(FGCreature_eventGetSpawnWeight_Parms), Z_Construct_UFunction_AFGCreature_GetSpawnWeight_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCreature_GetSpawnWeight_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreature_GetSpawnWeight_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreature_GetSpawnWeight_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCreature_GetSpawnWeight()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCreature_GetSpawnWeight_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1115,6 +1187,19 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSpawnDistance_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mSpawnDistance;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mNeedsSpawner_MetaData[];
+#endif
+		static void NewProp_mNeedsSpawner_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mNeedsSpawner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSpawnWeight_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mSpawnWeight;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mOwningSpawner_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mOwningSpawner;
@@ -1161,6 +1246,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mTargetRotation_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mTargetRotation;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mKillOrphanHandle_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mKillOrphanHandle;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRotationTimerHandle_MetaData[];
 #endif
@@ -1235,7 +1324,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		{ &Z_Construct_UFunction_AFGCreature_GetDayTimePctAsNight, "GetDayTimePctAsNight" }, // 67443439
 		{ &Z_Construct_UFunction_AFGCreature_GetIsArachnid, "GetIsArachnid" }, // 257084762
 		{ &Z_Construct_UFunction_AFGCreature_GetIsEnabled, "GetIsEnabled" }, // 1316947106
-		{ &Z_Construct_UFunction_AFGCreature_GetSpawner, "GetSpawner" }, // 2140652966
+		{ &Z_Construct_UFunction_AFGCreature_GetSpawnDistance, "GetSpawnDistance" }, // 1115037594
+		{ &Z_Construct_UFunction_AFGCreature_GetSpawner, "GetSpawner" }, // 3053433028
+		{ &Z_Construct_UFunction_AFGCreature_GetSpawnWeight, "GetSpawnWeight" }, // 2826942563
 		{ &Z_Construct_UFunction_AFGCreature_GetSplinePath, "GetSplinePath" }, // 2573281193
 		{ &Z_Construct_UFunction_AFGCreature_GetTargetRotation, "GetTargetRotation" }, // 3965573362
 		{ &Z_Construct_UFunction_AFGCreature_IsPersistent, "IsPersistent" }, // 3210366756
@@ -1258,12 +1349,40 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mSpawnDistance_MetaData[] = {
+		{ "Category", "Spawning" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
+		{ "ToolTip", "At what distance this creature can spawn from" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCreature_Statics::NewProp_mSpawnDistance = { "mSpawnDistance", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreature, mSpawnDistance), METADATA_PARAMS(Z_Construct_UClass_AFGCreature_Statics::NewProp_mSpawnDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreature_Statics::NewProp_mSpawnDistance_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mNeedsSpawner_MetaData[] = {
+		{ "Category", "Spawning" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
+		{ "ToolTip", "Does this creature need a spawner in order to exist" },
+	};
+#endif
+	void Z_Construct_UClass_AFGCreature_Statics::NewProp_mNeedsSpawner_SetBit(void* Obj)
+	{
+		((AFGCreature*)Obj)->mNeedsSpawner = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCreature_Statics::NewProp_mNeedsSpawner = { "mNeedsSpawner", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGCreature), &Z_Construct_UClass_AFGCreature_Statics::NewProp_mNeedsSpawner_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCreature_Statics::NewProp_mNeedsSpawner_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreature_Statics::NewProp_mNeedsSpawner_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mSpawnWeight_MetaData[] = {
+		{ "Category", "Spawning" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
+		{ "ToolTip", "How much weight this creature adds to spawn calculation" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCreature_Statics::NewProp_mSpawnWeight = { "mSpawnWeight", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreature, mSpawnWeight), METADATA_PARAMS(Z_Construct_UClass_AFGCreature_Statics::NewProp_mSpawnWeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreature_Statics::NewProp_mSpawnWeight_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mOwningSpawner_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Reference to the spawner that handles this creature" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCreature_Statics::NewProp_mOwningSpawner = { "mOwningSpawner", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreature, mOwningSpawner), Z_Construct_UClass_AFGCreatureSpawner_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCreature_Statics::NewProp_mOwningSpawner_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreature_Statics::NewProp_mOwningSpawner_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCreature_Statics::NewProp_mOwningSpawner = { "mOwningSpawner", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreature, mOwningSpawner), Z_Construct_UClass_AFGCreatureSpawner_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCreature_Statics::NewProp_mOwningSpawner_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreature_Statics::NewProp_mOwningSpawner_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mDayTimePctCountAsNight_MetaData[] = {
 		{ "Category", "Spawning" },
@@ -1359,6 +1478,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCreature_Statics::NewProp_mTargetRotation = { "mTargetRotation", "OnRep_TargetRotation", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreature, mTargetRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(Z_Construct_UClass_AFGCreature_Statics::NewProp_mTargetRotation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreature_Statics::NewProp_mTargetRotation_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mKillOrphanHandle_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
+		{ "ToolTip", "Timer handle used for killing orphan creatures ( orphan = missing a reference to a spawner )" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCreature_Statics::NewProp_mKillOrphanHandle = { "mKillOrphanHandle", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreature, mKillOrphanHandle), Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(Z_Construct_UClass_AFGCreature_Statics::NewProp_mKillOrphanHandle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreature_Statics::NewProp_mKillOrphanHandle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mRotationTimerHandle_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
@@ -1478,6 +1604,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCreature_Statics::NewProp_mNavigationGenerationRadius = { "mNavigationGenerationRadius", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreature, mNavigationGenerationRadius), METADATA_PARAMS(Z_Construct_UClass_AFGCreature_Statics::NewProp_mNavigationGenerationRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreature_Statics::NewProp_mNavigationGenerationRadius_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGCreature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreature_Statics::NewProp_mSpawnDistance,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreature_Statics::NewProp_mNeedsSpawner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreature_Statics::NewProp_mSpawnWeight,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreature_Statics::NewProp_mOwningSpawner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreature_Statics::NewProp_mDayTimePctCountAsNight,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreature_Statics::NewProp_mArachnophobia_Particle,
@@ -1489,6 +1618,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreature_Statics::NewProp_mCanSpawnDuringNight,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreature_Statics::NewProp_mCanSpawnDuringDay,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreature_Statics::NewProp_mTargetRotation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreature_Statics::NewProp_mKillOrphanHandle,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreature_Statics::NewProp_mRotationTimerHandle,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreature_Statics::NewProp_mActualAIControllerClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreature_Statics::NewProp_mIsPersistent,
@@ -1532,7 +1662,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreature, 3172208238);
+	IMPLEMENT_CLASS(AFGCreature, 449667216);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCreature>()
 	{
 		return AFGCreature::StaticClass();

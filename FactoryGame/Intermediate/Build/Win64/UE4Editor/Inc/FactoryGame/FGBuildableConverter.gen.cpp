@@ -211,7 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConverter, 2057572639);
+	IMPLEMENT_CLASS(AFGBuildableConverter, 301051205);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableConverter>()
 	{
 		return AFGBuildableConverter::StaticClass();

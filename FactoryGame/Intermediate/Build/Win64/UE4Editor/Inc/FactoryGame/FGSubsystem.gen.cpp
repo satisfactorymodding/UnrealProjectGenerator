@@ -40,8 +40,10 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystem() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSubsystem_Statics::Class_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
 		{ "HideCategories", "Actor Input Rendering Actor Tick Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGSubsystem.h" },
+		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/FGSubsystem.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 		{ "ToolTip", "Base for all subsystems we use in the game." },
@@ -74,7 +76,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSubsystem, 2965743678);
+	IMPLEMENT_CLASS(AFGSubsystem, 4152247599);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSubsystem>()
 	{
 		return AFGSubsystem::StaticClass();

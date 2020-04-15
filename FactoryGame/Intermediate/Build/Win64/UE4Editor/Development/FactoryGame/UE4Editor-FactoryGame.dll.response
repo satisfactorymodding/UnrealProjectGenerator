@@ -42,8 +42,6 @@
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN
 "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h.obj"
-"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\FGBuildableFactory.cpp.obj"
-"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\FGConsoleCommandManager.cpp.obj"
 "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\Module.FactoryGame.cpp.obj"
 "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\Module.FactoryGame.gen.1_of_38.cpp.obj"
 "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\Module.FactoryGame.gen.2_of_38.cpp.obj"
