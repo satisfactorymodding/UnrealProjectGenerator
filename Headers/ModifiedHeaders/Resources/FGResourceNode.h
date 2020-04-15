@@ -269,10 +269,12 @@ protected:
 	UPROPERTY( BlueprintReadOnly, VisibleDefaultsOnly, Category = "Resources" )
 	UBoxComponent* mBoxComponent;
 
+public: // MODDING EDIT
 	/** How much resources is left in this node */
-	UPROPERTY( SaveGame, Replicated, EditInstanceOnly, BlueprintReadOnly, Category="Resources")
+	UPROPERTY( SaveGame, Replicated, BlueprintReadWrite, Category="Resources")
 	int32 mResourcesLeft;
 
+protected: // MODDING EDIT
 	/** If true, then we are occupied by something // [Dylan 3/2/2020] - Removed savegame meta */
 	UPROPERTY( ReplicatedUsing = OnRep_IsOccupied, BlueprintReadOnly, Category = "Resources" )
 	bool mIsOccupied;

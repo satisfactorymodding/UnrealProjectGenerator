@@ -12,9 +12,7 @@ void AFGBuildable::SetBuildableDisplayName(TSubclassOf< AFGBuildable > inClass, 
 #endif 
 void AFGBuildable::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildable::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
-AFGBuildable::AFGBuildable(){ 
-  RootComponent = CreateDefaultSubobject<USceneComponent>("RootComponent");
-}
+AFGBuildable::AFGBuildable(){ }
 void AFGBuildable::Serialize(FArchive& ar){ Super::Serialize(ar); }
 void AFGBuildable::OnConstruction(const FTransform& transform){ }
 void AFGBuildable::BeginPlay(){ }

@@ -17,31 +17,169 @@ namespace ImplementHeaders
 
         private static readonly Dictionary<string, string> CustomImplementation = new Dictionary<string, string>()
         {
-            {
-            "AFGBuildable::AFGBuildable",
-@"  RootComponent = CreateDefaultSubobject<USceneComponent>(""RootComponent"");"
+            { "UFGRecipe::GetProducedIn",
+@"	TArray<TSubclassOf<UObject>>   out;
+	TArray<TSoftClassPtr<UObject>> In = inClass.GetDefaultObject()->mProducedIn;
+	if (In.Num() > 0)
+	{
+		for (int j = 0; j < In.Num(); j++)
+		{
+			TSubclassOf<UObject> obj = In[j].LoadSynchronous();
+			out.Add(obj);
+		}
+		return out;
+	}
+	else
+		return TArray<TSubclassOf<UObject>>();"
             },
-            {
-            "AFGBuildableConveyorBelt::AFGBuildableConveyorBelt",
-@"	mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT(""SplineComponent""));
-
-    mSplineComponent->SetupAttachment(RootComponent);"
+            { "UFGRecipe::SetProduct",
+@" recipe.GetDefaultObject()->mProduct = product;"
             },
-            { 
-            "AFGBuildableConveyorBase::AFGBuildableConveyorBase",
-@"  mConnection0 = CreateDefaultSubobject<UFGFactoryConnectionComponent>(TEXT(""ConveyorAny0""));
-    mConnection0->SetupAttachment(RootComponent);
-
-    mConnection1 = CreateDefaultSubobject<UFGFactoryConnectionComponent>(TEXT(""ConveyorAny1""));
-    mConnection1->SetupAttachment(RootComponent);"
+            { "UFGRecipe::GetRecipeName",
+@"	return inClass.GetDefaultObject()->mDisplayName;"
+            },
+            { "UFGRecipe::GetIngredients",
+@"	return inClass.GetDefaultObject()->mIngredients;"
+            },
+            { "UFGRecipe::GetProducts",
+@"	return inClass.GetDefaultObject()->mProduct;"
+            },
+            { "UFGRecipe::GetManufacturingDuration",
+@"	return inClass.GetDefaultObject()->mManufactoringDuration;"
+            },
+            { "UFGRecipe::GetManualManufacturingDuration",
+@"	return inClass.GetDefaultObject()->mManualManufacturingMultiplier;"
+            },
+            { "UFGSchematic::GetType",
+@"	return inClass.GetDefaultObject()->mType;"
+            },
+            { "UFGSchematic::GetSchematicDisplayName",
+@"	return inClass.GetDefaultObject()->mDisplayName;"
+            },
+            { "UFGSchematic::GetSchematicCategory",
+@"	return inClass.GetDefaultObject()->mSchematicCategory;"
+            },
+            { "UFGSchematic::GetSubCategories",
+@"	out_subCategories = inClass.GetDefaultObject()->mSubCategories;"
+            },
+            { "UFGSchematic::GetCost",
+@"	return inClass.GetDefaultObject()->mCost;"
+            },
+            { "UFGSchematic::GetUnlocks",
+@"	return inClass.GetDefaultObject()->mUnlocks;"
+            },
+            { "UFGSchematic::GetTechTier",
+@"	return inClass.GetDefaultObject()->mTechTier;"
+            },
+            { "UFGSchematic::GetTimeToComplete",
+@"	return inClass.GetDefaultObject()->mTimeToComplete;"
+            },
+            { "UFGItemDescriptor::GetForm",
+@"	return inClass.GetDefaultObject()->mForm;"
+            },
+            { "UFGItemDescriptor::GetEnergyValue",
+@"	return inClass.GetDefaultObject()->mEnergyValue;"
+            },
+            { "UFGItemDescriptor::GetRadioactiveDecay",
+@"	return inClass.GetDefaultObject()->mRadioactiveDecay;"
+            },
+            { "UFGItemDescriptor::GetItemName",
+@"	if (inClass.GetDefaultObject()->mUseDisplayNameAndDescription == true) return inClass.GetDefaultObject()->mDisplayName; else return FText::FromString(inClass->GetName());"
+            },
+            { "UFGItemDescriptor::GetItemDescription",
+@"	return inClass.GetDefaultObject()->mDescription;"
+            },
+            { "UFGItemDescriptor::GetItemIcon",
+@"	return inClass.GetDefaultObject()->mInventoryIcon;"
+            },
+            { "UFGItemDescriptor::GetSmallIcon",
+@"	return inClass.GetDefaultObject()->mSmallIcon;"
+            },
+            { "UFGItemDescriptor::GetBigIcon",
+@"	return inClass.GetDefaultObject()->mPersistentBigIcon;"
+            },
+            { "UFGItemDescriptor::GetItemMesh",
+@"	return inClass.GetDefaultObject()->mConveyorMesh;"
+            },
+            { "UFGItemDescriptor::GetStackSize",
+@"	return static_cast<int32>(inClass.GetDefaultObject()->mStackSize);"
+            },
+            { "UFGItemDescriptor::GetStackSizeConverted",
+@"	switch (inClass.GetDefaultObject()->mStackSize) {
+    case EStackSize::SS_ONE: return 1;
+    case EStackSize::SS_SMALL: return 20;
+    case EStackSize::SS_MEDIUM: return 50;
+    case EStackSize::SS_BIG: return 200;
+    case EStackSize::SS_HUGE: return 500;
+    case EStackSize::SS_FLUID: return 5000;
+    case EStackSize::SS_LAST_ENUM: return 1;
+    }
+    return 0;"
+            },
+            { "UFGItemDescriptor::CanBeDiscarded",
+@"	return inClass.GetDefaultObject()->mCanBeDiscarded;"
+            },
+            { "UFGItemDescriptor::RememberPickUp",
+@"	return inClass.GetDefaultObject()->mRememberPickUp;"
+            },
+            { "UFGItemDescriptor::GetItemCategory",
+@"	return inClass.GetDefaultObject()->mItemCategory;"
+            },
+            { "UFGItemDescriptor::GetFluidDensity",
+@"	return inClass.GetDefaultObject()->mFluidDensity;"
+            },
+            { "UFGItemDescriptor::GetFluidViscosity",
+@"	return inClass.GetDefaultObject()->mFluidViscosity;"
+            },
+            { "UFGItemDescriptor::GetFluidFriction",
+@"	return inClass.GetDefaultObject()->mFluidFriction;"
+            },
+            { "UFGItemDescriptor::GetFluidColor",
+@"	return inClass.GetDefaultObject()->mFluidColor;"
+            },
+            { "UFGItemDescriptor::GetFluidColorLinear",
+@"	return inClass.GetDefaultObject()->mFluidColor.ReinterpretAsLinear();"
+            },
+            { "UFGResearchTree::GetPreUnlockDisplayName",
+@"	return inClass.GetDefaultObject()->mPreUnlockDisplayName;"
+            },
+            { "UFGResearchTree::GetDisplayName",
+@"	return inClass.GetDefaultObject()->mDisplayName;"
+            },
+            { "UFGResearchTree::GetPreUnlockDescription",
+@"	return inClass.GetDefaultObject()->mPreUnlockDescription;"
+            },
+            { "UFGResearchTree::GetPostUnlockDescription",
+@"	return inClass.GetDefaultObject()->mPostUnlockDescription;"
+            },
+            { "UFGResearchTree::GetResearchTreeIcon",
+@"	return inClass.GetDefaultObject()->mResearchTreeIcon;"
+            },
+            { "UFGResearchTree::SetNodes",
+@"	inClass.GetDefaultObject()->mNodes = nodes;"
+            },
+            { "UFGResearchTree::GetNodes",
+@"	return inClass.GetDefaultObject()->mNodes;"
+            },
+            { "UFGResearchTree::GetUnlockDependencies",
+@"	return inClass.GetDefaultObject()->mUnlockDependencies;"
+            },
+            { "UFGSchematic::GetItemIcon",
+@"	return inClass.GetDefaultObject()->mSchematicIcon;"
+            },
+            { "UFGSchematic::GetDependentOnSchematic",
+@"	return inClass.GetDefaultObject()->mDependsOnSchematic;"
+            },
+            { "UFGSchematic::GetAdditionalSchematicDependencies",
+@"	return inClass.GetDefaultObject()->mAdditionalSchematicDependencies;"
             }
         };
 
         private static readonly Dictionary<string, string> NestedStructs = new Dictionary<string, string>()
         {
-            {"ItemHolderHistory", "FConveyorBeltItems::ItemHolderHistory" },
-            {"FGenerateIconContext", "UFGItemDescriptor::FGenerateIconContext" },
-            {"Type", "FSaveCustomVersion::Type" }
+            { "ItemHolderHistory", "FConveyorBeltItems::ItemHolderHistory" },
+            { "FGenerateIconContext", "UFGItemDescriptor::FGenerateIconContext" },
+            { "Type", "FSaveCustomVersion::Type" }
         };
 
         static void Main(string[] args)
@@ -306,7 +444,7 @@ namespace ImplementHeaders
                     if (returnType.Contains("void") || string.IsNullOrWhiteSpace(returnType))
                     {
                         if (NeedsSuper.Contains(functionName.Trim()))
-                            result += $"Super::{functionName}({string.Join(",", Regex.Matches(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?:.*? )??(.*?) ([^ ]*?)(?:, ?| \)|$)").Cast<Match>().Select(match => match.Groups[2].Value))}); ";
+                            result += $"Super::{functionName}({string.Join(",", Regex.Matches(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?:.*? )??(.*?) ([^ ]*?)(?:, ?| \)|$)").Cast<Match>().Select(match => match.Groups[2].Value))});";
                         result += $"}}";
                     }
                     else

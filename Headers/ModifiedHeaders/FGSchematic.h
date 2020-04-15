@@ -141,7 +141,7 @@ public:
 	void MigrateDataToNewSchematicCategory();
 #endif
 
-protected:
+public: // MODDING EDIT: protected -> public
 	/** What type of schematic is this. */
 	UPROPERTY( EditDefaultsOnly, Category = "Schematic" )
 	ESchematicType mType;

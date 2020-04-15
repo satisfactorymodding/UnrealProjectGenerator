@@ -65,7 +65,7 @@ public:
 	UFUNCTION( BlueprintPure, Category = "Research Tree" )
 	static TArray<class UFGAvailabilityDependency *> GetUnlockDependencies( TSubclassOf <UFGResearchTree> inClass );
 
-protected:
+public: // MODDING EDIT: protected -> public
 	/** The name to be displayed to the player before the tree is unlocked */
 	UPROPERTY( EditDefaultsOnly, Category = "Research Tree" )
 	FText mPreUnlockDisplayName;

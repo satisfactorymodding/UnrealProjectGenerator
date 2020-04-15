@@ -2,11 +2,7 @@
 
 #include "FGBuildableConveyorBelt.h"
 
-AFGBuildableConveyorBelt::AFGBuildableConveyorBelt(){ 
-	mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("SplineComponent"));
-
-    mSplineComponent->SetupAttachment(RootComponent);
-}
+AFGBuildableConveyorBelt::AFGBuildableConveyorBelt(){ }
 void AFGBuildableConveyorBelt::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildableConveyorBelt::BeginPlay(){ }
 bool AFGBuildableConveyorBelt::IsComponentRelevantForNavigation(UActorComponent* component) const{ return bool(); }
