@@ -17,7 +17,7 @@ namespace ImplementHeaders
 
         private static readonly Dictionary<string, string> CustomImplementation = new Dictionary<string, string>()
         {
-            { "UFGRecipe::GetProducedIn",
+            { "static UFGRecipe::GetProducedIn",
 @"	TArray<TSubclassOf<UObject>>   out;
 	TArray<TSoftClassPtr<UObject>> In = inClass.GetDefaultObject()->mProducedIn;
 	if (In.Num() > 0)
@@ -31,6 +31,9 @@ namespace ImplementHeaders
 	}
 	else
 		return TArray<TSubclassOf<UObject>>();"
+            },
+            { "UFGRecipe::GetProducedIn",
+@"	out_producedIn = UFGRecipe::GetProducedIn(this->GetClass());"
             },
             { "UFGRecipe::SetProduct",
 @" recipe.GetDefaultObject()->mProduct = product;"
@@ -437,7 +440,7 @@ namespace ImplementHeaders
                 if (functionName.Replace(" ", "").Contains("FObjectWriter"))
                     result += " : FObjectWriter(Obj, InBytes) ";
                 result += $"{{ ";
-                if (CustomImplementation.ContainsKey($"{className}::{functionName}")) // aghhhh
+                if (CustomImplementation.ContainsKey($"{(!string.IsNullOrWhiteSpace(isStatic) ? "static " : "")}{className}::{functionName}")) // aghhhh
                     result += $"\r\n{CustomImplementation[$"{className}::{functionName}"]}\r\n}}";
                 else
                 {

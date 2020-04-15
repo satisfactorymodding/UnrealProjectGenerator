@@ -39,7 +39,8 @@ namespace FixHeaders
             {"UDeveloperSettings", "Engine/DeveloperSettings.h" },
             {"FBufferArchive", "Serialization/BufferArchive.h" },
             {"UAkAudioEvent", "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h" },
-            {"FGuid", "Misc/Guid.h" }
+            {"FGuid", "Misc/Guid.h" },
+            {"IFGChainsawableInterface", "FGInventoryComponent.h" }
         };
 
         private static List<string> SkipCtorClasses = new List<string>
@@ -286,7 +287,8 @@ namespace FixHeaders
 
                 needsDtor = needsDtor && !SkipDtorClasses.Contains(match.Groups[5].Value.Trim());
 
-                string toAdd = $"\r\npublic:{(needsDtor ? $"\r\n\tFORCEINLINE ~{match.Groups[5]}() = default;" : "")}\r\n";
+                string toAdd = "";
+                if(needsDtor) toAdd = $"\r\npublic:{(needsDtor ? $"\r\n\tFORCEINLINE ~{match.Groups[5]}() = default;" : "")}\r\n";
 
                 return $"{match.Groups[1]}{match.Groups[2]}{match.Groups[3]} {match.Groups[4]}{match.Groups[5]}{match.Groups[6]}\r\n{{{match.Groups[7].Value}{toAdd}{match.Groups[2]}}};";
             }), RegexOptions.Multiline);
