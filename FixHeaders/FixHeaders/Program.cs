@@ -267,7 +267,6 @@ namespace FixHeaders
             int defaultCtorDtor = 0;
             file = Regex.Replace(file, @"^((?:UCLASS|UINTERFACE|USTRUCT|UENUM)\s*\(.*\)\r\n)?([ \t]*)(class|struct)\s(FACTORYGAME_API\s)?([\w<>\s]*?)(\s?:\s?.*?)?\s*{((?:.|\n)*?)^\2};", new MatchEvaluator((match) =>
             {
-                bool needsCtor = true;
                 bool needsDtor = true;
                 if (match.Groups[7].Value.Contains($"~{match.Groups[5].Value.Trim()}()"))
                 {
@@ -284,23 +283,10 @@ namespace FixHeaders
                 {
                     defaultCtorDtor++;
                 }
-                if (match.Groups[7].Value.Contains($"{match.Groups[5].Value.Trim()}("))
-                {
-                    // Constructor already exists.
-                    // TODO: Check if it is FORCEINLINE?
-                    needsCtor = false;
-                }
-                else
-                {
-                    defaultCtorDtor++;
-                }
-                if (!needsDtor && !needsCtor)
-                    return match.Value;
 
-                needsCtor = needsCtor && !SkipCtorClasses.Contains(match.Groups[5].Value.Trim());
                 needsDtor = needsDtor && !SkipDtorClasses.Contains(match.Groups[5].Value.Trim());
 
-                string toAdd = $"\r\npublic:{(needsDtor ? $"\r\n\tFORCEINLINE ~{match.Groups[5]}() = default;" : "")}{(needsCtor ? $"\r\n\tFORCEINLINE {match.Groups[5]}() = default;" : "")}\r\n";
+                string toAdd = $"\r\npublic:{(needsDtor ? $"\r\n\tFORCEINLINE ~{match.Groups[5]}() = default;" : "")}\r\n";
 
                 return $"{match.Groups[1]}{match.Groups[2]}{match.Groups[3]} {match.Groups[4]}{match.Groups[5]}{match.Groups[6]}\r\n{{{match.Groups[7].Value}{toAdd}{match.Groups[2]}}};";
             }), RegexOptions.Multiline);
