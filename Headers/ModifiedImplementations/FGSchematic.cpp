@@ -2,6 +2,7 @@
 
 #include "FGSchematic.h"
 
+
 #if WITH_EDITOR
 void UFGSchematic::PreSave(const  ITargetPlatform* targetPlatform){ }
 #endif 
@@ -15,7 +16,9 @@ void UFGSchematic::UpdateAssetBundleData(){ }
 #if WITH_EDITORONLY_DATA
 void UFGSchematic::MigrateDataToNewSchematicCategory(){ }
 #endif 
-UFGSchematic::UFGSchematic(){ }
+UFGSchematic::UFGSchematic() : Super() {
+	this->mTimeToComplete = 600; 
+}
 ESchematicType UFGSchematic::GetType(TSubclassOf< UFGSchematic > inClass){ 
 	return inClass.GetDefaultObject()->mType;
 }
