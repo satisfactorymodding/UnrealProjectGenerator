@@ -57,7 +57,7 @@ namespace DefaultValues
         private static Dictionary<string, string> ParentClass = new Dictionary<string, string>();
         private static Dictionary<string, List<string>> ClassHierarchy = new Dictionary<string, List<string>>();
         private static Dictionary<string, string> ClassCtor = new Dictionary<string, string>();
-        private static Dictionary<string, string> ClassIncludes = new Dictionary<string, string>();
+        private static Dictionary<string, HashSet<string>> ClassIncludes = new Dictionary<string, HashSet<string>>();
 
         private static Dictionary<string, List<string>> ClassProperties = new Dictionary<string, List<string>>()
         {
@@ -483,25 +483,34 @@ namespace DefaultValues
                     // Check if value is object
                     string objectName = (string)value["$ObjectName"];
                     Tuple<string, string> objectClass = GetClass((string)value["$ObjectClass"]);
-                    implementation = $"{fieldPath} = CreateDefaultSubobject<{objectClass.Item1}>(TEXT(\"{objectName}\"));";
-                    includes.Add(objectClass.Item2);
-                    if (value["AttachParent"] != null)
+                    string firstObjectProperty = GetObjectPropertyByName(cls, objectName);
+                    if (firstObjectProperty == fieldPath.Substring(6))
                     {
-                        JToken attachParent = value["AttachParent"];
-                        string attachParentName = (string)attachParent["$ObjectName"];
-                        if (attachParentName == null)
+                        implementation = $"{fieldPath} = CreateDefaultSubobject<{objectClass.Item1}>(TEXT(\"{objectName}\"));";
+                        includes.Add(objectClass.Item2);
+                        if (value["AttachParent"] != null)
                         {
-                            // ?????
-                            Console.WriteLine($"{className}::{objectName} is not attached to anything.");
+                            JToken attachParent = value["AttachParent"];
+                            string attachParentName = (string)attachParent["$ObjectName"];
+                            if (attachParentName == null)
+                            {
+                                // ?????
+                                Console.WriteLine($"{className}::{objectName} is not attached to anything.");
+                            }
+                            else
+                            {
+                                string attachmentPropName = $"this->{GetObjectPropertyByName(cls, attachParentName)}";
+                                if (Getters.ContainsKey(attachmentPropName.Substring(6)))
+                                    attachmentPropName = $"this->{Getters[attachmentPropName.Substring(6)]}()";
+                                implementation += $" {fieldPath}->SetupAttachment({attachmentPropName});";
+                                dependencies.Add(attachmentPropName);
+                            }
                         }
-                        else
-                        {
-                            string attachmentPropName = $"this->{GetObjectPropertyByName(cls, attachParentName)}";
-                            if (Getters.ContainsKey(attachmentPropName.Substring(6)))
-                                attachmentPropName = $"this->{Getters[attachmentPropName.Substring(6)]}()";
-                            implementation += $" {fieldPath}->SetupAttachment({attachmentPropName});";
-                            dependencies.Add(attachmentPropName);
-                        }
+                    }
+                    else
+                    {
+                        implementation = $"{fieldPath} = this->{firstObjectProperty};";
+                        dependencies.Add($"this->{firstObjectProperty}");
                     }
                 }
                 else if (value["AssetPathName"] != null)
@@ -741,7 +750,7 @@ namespace DefaultValues
                     }
                     List<string> sorted = TopologicalSort(topoSortKeys, topoSortEdges);
                     ClassCtor.Add(className, Environment.NewLine + '\t' + string.Join(Environment.NewLine + '\t', sorted) + Environment.NewLine);
-                    ClassIncludes.Add(className, Environment.NewLine + string.Join(Environment.NewLine, includes));
+                    ClassIncludes.Add(className, includes);
                 }
             }
         }
@@ -768,11 +777,19 @@ namespace DefaultValues
             string fileContent = File.ReadAllText(filePath);
             foreach (var cls in ClassCtor)
             {
-                if (fileContent.IndexOf($"{cls.Key}::{cls.Key}(){{ }}") != -1)
+                if (Regex.IsMatch(fileContent, $@"{cls.Key}::{cls.Key}\(\)(?: : Super\(\))\s?{{.*?}}", RegexOptions.Singleline))
                 {
                     string header = Path.GetFileName(filePath).Replace(".cpp", ".h");
-                    fileContent = fileContent.Replace($"#include \"{header}\"", $"#include \"{header}\"{ClassIncludes[cls.Key]}");
-                    fileContent = fileContent.Replace($"{cls.Key}::{cls.Key}(){{ }}", $"{cls.Key}::{cls.Key}() : Super() {{{cls.Value}}}");
+                    string includeHeader = $"#include \"{header}\"";
+
+                    foreach (string incl in ClassIncludes[cls.Key])
+                    {
+                        if (!fileContent.Contains(incl))
+                        {
+                            fileContent = fileContent.Replace(includeHeader, $"{includeHeader}{Environment.NewLine}{incl}");
+                        }
+                    }
+                    fileContent = Regex.Replace(fileContent, $@"{cls.Key}::{cls.Key}\(\)(?: : Super\(\))\s?{{.*?}}", $"{cls.Key}::{cls.Key}() : Super() {{{cls.Value}}}", RegexOptions.Singleline);
                 }
             }
             File.WriteAllText(filePath, fileContent);

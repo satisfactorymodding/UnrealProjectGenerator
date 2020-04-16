@@ -5,9 +5,9 @@
 
 AFGProximitySubsystem::AFGProximitySubsystem() : Super() {
 	this->mRootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
+	this->RootComponent = this->mRootComponent;
 	this->mMaxNumDecals = 20; 
 	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0.300000011920929; 
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGProximitySubsystem::OnEnteredMapArea_Implementation(TSubclassOf<  UFGMapArea > newArea){ }
 void AFGProximitySubsystem::OnPawnChanged_Implementation( APawn* newPawn){ }

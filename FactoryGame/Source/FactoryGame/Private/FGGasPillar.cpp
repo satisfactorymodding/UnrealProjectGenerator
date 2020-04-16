@@ -11,7 +11,7 @@ AFGGasPillar::AFGGasPillar() : Super() {
 	this->mDotComponent = CreateDefaultSubobject<UFGDotComponent>(TEXT("DotComponent")); this->mDotComponent->SetupAttachment(this->mOverlapCollision);
 	this->mSignificanceRange = 15000; 
 	this->bReplicates = true; 
-	this->RootComponent = CreateDefaultSubobject<UHierarchicalInstancedStaticMeshComponent>(TEXT("Mesh"));
+	this->RootComponent = this->mMesh;
 }
 void AFGGasPillar::BeginPlay(){ }
 void AFGGasPillar::EndPlay(const EEndPlayReason::Type endPlayReason){ }

@@ -5,7 +5,7 @@
 
 AFGCrashSiteDebrisActor::AFGCrashSiteDebrisActor() : Super() {
 	this->mMesh = CreateDefaultSubobject<UHierarchicalInstancedStaticMeshComponent>(TEXT("Mesh"));
-	this->RootComponent = CreateDefaultSubobject<UHierarchicalInstancedStaticMeshComponent>(TEXT("Mesh"));
+	this->RootComponent = this->mMesh;
 }
 void AFGCrashSiteDebrisActor::BeginPlay(){ }
 void AFGCrashSiteDebrisActor::EndPlay(const EEndPlayReason::Type endPlayReason){ }

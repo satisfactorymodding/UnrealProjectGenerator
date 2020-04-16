@@ -8,6 +8,7 @@ void AFGCreatureSpawner::PostEditMove(bool bFinished){ }
 #endif 
 AFGCreatureSpawner::AFGCreatureSpawner() : Super() {
 	this->mCapsuleComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CollisionCapsule"));
+	this->RootComponent = this->mCapsuleComponent;
 	this->mNumberOfCreatures.Min = 1; this->mNumberOfCreatures.Max = 1; 
 	this->mSpawnRadius = 200; 
 	this->mSpawnHalfHeight = 300; 
@@ -16,7 +17,6 @@ AFGCreatureSpawner::AFGCreatureSpawner() : Super() {
 	this->mRespawnTimeIndays = 3; 
 	this->bCollideWhenPlacing = true; 
 	this->SpawnCollisionHandlingMethod = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding; 
-	this->RootComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CollisionCapsule"));
 }
 void AFGCreatureSpawner::BeginPlay(){ }
 void AFGCreatureSpawner::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
