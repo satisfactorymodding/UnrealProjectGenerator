@@ -7,7 +7,7 @@
 void AFGRiverSpline::CheckForErrors(){ }
 #endif 
 AFGRiverSpline::AFGRiverSpline() : Super() {
-	this->mEmitterInterval = 600; 
-	this->mShouldHaveAudio = true; 
+	this->mEmitterInterval = 600;
+	this->mShouldHaveAudio = true;
 }
 void AFGRiverSpline::PostLoad(){ Super::PostLoad();}

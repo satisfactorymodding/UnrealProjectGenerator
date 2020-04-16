@@ -4,10 +4,10 @@
 
 
 UFGWildCardDescriptor::UFGWildCardDescriptor() : Super() {
-	this->mUseDisplayNameAndDescription = true; 
-	this->mDisplayName = NSLOCTEXT("WildCardDescriptor", "DisplayName", "*"); 
-	this->mDescription = NSLOCTEXT("WildCardDescriptor", "Description", "Anything"); 
-	this->mStackSize = EStackSize::SS_MEDIUM; 
-	this->mCanBeDiscarded = true; 
-	this->mForm = EResourceForm::RF_SOLID; 
+	this->mUseDisplayNameAndDescription = true;
+	this->mDisplayName = NSLOCTEXT("WildCardDescriptor", "DisplayName", "*");
+	this->mDescription = NSLOCTEXT("WildCardDescriptor", "Description", "Anything");
+	this->mStackSize = EStackSize::SS_MEDIUM;
+	this->mCanBeDiscarded = true;
+	this->mForm = EResourceForm::RF_SOLID;
 }

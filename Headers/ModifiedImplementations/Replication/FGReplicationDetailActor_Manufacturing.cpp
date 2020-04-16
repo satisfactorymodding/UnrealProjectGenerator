@@ -4,8 +4,8 @@
 
 
 AFGReplicationDetailActor_Manufacturing::AFGReplicationDetailActor_Manufacturing() : Super() {
-	this->bHidden = true; 
-	this->bReplicates = true; 
+	this->bHidden = true;
+	this->bReplicates = true;
 }
 void AFGReplicationDetailActor_Manufacturing::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGReplicationDetailActor_Manufacturing::InitReplicationDetailActor( AFGBuildable* owningActor){ }

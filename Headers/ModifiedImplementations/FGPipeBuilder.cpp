@@ -7,11 +7,11 @@
 AFGPipeBuilder::AFGPipeBuilder() : Super() {
 	this->mMovementComponent = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("FloatingMovementComponent"));
 	this->mPipeSupportLocation = CreateDefaultSubobject<USceneComponent>(TEXT("PipeSupportLocation")); this->mPipeSupportLocation->SetupAttachment(this->mMesh);
-	this->mMoveTime = 3; 
-	this->mTrailDistance = 500; 
-	this->mDisabledByWaterLocations.SetNum(1); this->mDisabledByWaterLocations[0].X = 0; this->mDisabledByWaterLocations[0].Y = 0; this->mDisabledByWaterLocations[0].Z = 0; 
-	this->mSignificanceRange = 20000; 
-	this->mShouldAttachDriver = true; 
+	this->mMoveTime = 3;
+	this->mTrailDistance = 500;
+	this->mDisabledByWaterLocations.SetNum(1); this->mDisabledByWaterLocations[0].X = 0; this->mDisabledByWaterLocations[0].Y = 0; this->mDisabledByWaterLocations[0].Z = 0;
+	this->mSignificanceRange = 20000;
+	this->mShouldAttachDriver = true;
 }
 void AFGPipeBuilder::BeginPlay(){ }
 void AFGPipeBuilder::EndPlay(const EEndPlayReason::Type EndPlayReason){ }

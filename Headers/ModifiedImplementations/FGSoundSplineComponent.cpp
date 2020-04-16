@@ -4,7 +4,7 @@
 
 
 UFGSoundSplineComponent::UFGSoundSplineComponent() : Super() {
-	this->mEmitterInterval = 200; 
+	this->mEmitterInterval = 200;
 }
 void UFGSoundSplineComponent::Activate(bool reset){ }
 void UFGSoundSplineComponent::SetAutoActivate(bool newAutoActivate){ }

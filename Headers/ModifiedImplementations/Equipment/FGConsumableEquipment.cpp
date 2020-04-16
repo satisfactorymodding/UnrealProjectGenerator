@@ -4,12 +4,12 @@
 
 
 AFGConsumableEquipment::AFGConsumableEquipment() : Super() {
-	this->mEquipmentSlot = EEquipmentSlot::ES_ARMS; 
-	this->mArmAnimation = EArmEquipment::AE_Consumables; 
-	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = false; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0; 
-	this->bOnlyRelevantToOwner = true; 
-	this->bNetUseOwnerRelevancy = true; 
-	this->bReplicates = true; 
+	this->mEquipmentSlot = EEquipmentSlot::ES_ARMS;
+	this->mArmAnimation = EArmEquipment::AE_Consumables;
+	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = false; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0;
+	this->bOnlyRelevantToOwner = true;
+	this->bNetUseOwnerRelevancy = true;
+	this->bReplicates = true;
 }
 bool AFGConsumableEquipment::ShouldSaveState() const{ return bool(); }
 void AFGConsumableEquipment::OnPrimaryFire(){ }

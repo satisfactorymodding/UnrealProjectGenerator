@@ -4,8 +4,8 @@
 #include "FGCheatManager.h"
 
 AFGPlayerControllerBase::AFGPlayerControllerBase() : Super() {
-	this->mAllowedInputWhenDead.Add(TEXT("PrimaryFire")); this->mAllowedInputWhenDead.Add(TEXT("PauseGame")); this->mAllowedInputWhenDead.Add(TEXT("Chat")); 
-	this->CheatClass = UFGCheatManager::StaticClass(); 
+	this->mAllowedInputWhenDead.Add(TEXT("PrimaryFire")); this->mAllowedInputWhenDead.Add(TEXT("PauseGame")); this->mAllowedInputWhenDead.Add(TEXT("Chat"));
+	this->CheatClass = UFGCheatManager::StaticClass();
 }
 void AFGPlayerControllerBase::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGPlayerControllerBase::BeginPlay(){ }

@@ -7,10 +7,10 @@
 const FItemSettings& UFGResourceSettings::GetResourceSettings(TSubclassOf<  UFGItemDescriptor > resourceClass){ return *(new FItemSettings); }
 #endif 
 UFGResourceSettings::UFGResourceSettings() : Super() {
-	this->mResourceAmount.SetNum(4); this->mResourceAmount[0].Min = 500; this->mResourceAmount[0].Max = 1000; this->mResourceAmount[1].Min = 1500; this->mResourceAmount[1].Max = 3000; this->mResourceAmount[2].Min = 4000; this->mResourceAmount[2].Max = 6000; this->mResourceAmount[3].Min = 2147483647; this->mResourceAmount[3].Max = -2147483647 - 1; 
-	this->mPurityMultiplier.Add(0.300000011920929); this->mPurityMultiplier.Add(0.75); this->mPurityMultiplier.Add(1); 
-	this->mStackSizes.Add(1, EStackSize::SS_ONE); this->mStackSizes.Add(1, EStackSize::SS_ONE); this->mStackSizes.Add(1, EStackSize::SS_ONE); this->mStackSizes.Add(1, EStackSize::SS_ONE); this->mStackSizes.Add(1, EStackSize::SS_ONE); 
-	this->mItemDropClass = AFGItemPickup_Spawnable::StaticClass(); 
+	this->mResourceAmount.SetNum(4); this->mResourceAmount[0].Min = 500; this->mResourceAmount[0].Max = 1000; this->mResourceAmount[1].Min = 1500; this->mResourceAmount[1].Max = 3000; this->mResourceAmount[2].Min = 4000; this->mResourceAmount[2].Max = 6000; this->mResourceAmount[3].Min = 2147483647; this->mResourceAmount[3].Max = -2147483647 - 1;
+	this->mPurityMultiplier.Add(0.300000011920929); this->mPurityMultiplier.Add(0.75); this->mPurityMultiplier.Add(1);
+	this->mStackSizes.Add(1, EStackSize::SS_ONE); this->mStackSizes.Add(1, EStackSize::SS_ONE); this->mStackSizes.Add(1, EStackSize::SS_ONE); this->mStackSizes.Add(1, EStackSize::SS_ONE); this->mStackSizes.Add(1, EStackSize::SS_ONE);
+	this->mItemDropClass = AFGItemPickup_Spawnable::StaticClass();
 }
 UFGResourceSettings* UFGResourceSettings::Get(){ return nullptr; }
 const FResourceDepositPackage& UFGResourceSettings::GetRandomResourceDepositData(int32& out_resourceDepositPackageIdx, AActor* worldContext){ return *(new FResourceDepositPackage); }

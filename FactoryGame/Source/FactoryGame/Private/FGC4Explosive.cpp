@@ -4,11 +4,11 @@
 #include "FGDamageType.h"
 
 AFGC4Explosive::AFGC4Explosive() : Super() {
-	this->mBaseDamage = 100; 
-	this->mDamageRadius = 1000; 
-	this->mDamageType = UFGDamageType::StaticClass(); 
-	this->bReplicateMovement = true; 
-	this->bReplicates = true; 
+	this->mBaseDamage = 100;
+	this->mDamageRadius = 1000;
+	this->mDamageType = UFGDamageType::StaticClass();
+	this->bReplicateMovement = true;
+	this->bReplicates = true;
 }
 void AFGC4Explosive::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGC4Explosive::Detonate(){ }

@@ -7,7 +7,7 @@
 AFGAmbientSoundSpline::AFGAmbientSoundSpline() : Super() {
 	this->mSpline = CreateDefaultSubobject<USplineComponent>(TEXT("Spline"));
 	this->mSoundSpline = CreateDefaultSubobject<UFGSoundSplineComponent>(TEXT("SoundSpline")); this->mSoundSpline->SetupAttachment(this->mSpline);
-	this->mSignificanceRange = 2000; 
+	this->mSignificanceRange = 2000;
 }
 void AFGAmbientSoundSpline::BeginPlay(){ }
 void AFGAmbientSoundSpline::EndPlay(const EEndPlayReason::Type endPlayReason){ }

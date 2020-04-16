@@ -7,9 +7,9 @@
 void UFGBuildDescriptor::PostEditChangeProperty( FPropertyChangedEvent& propertyChangedEvent){ }
 #endif 
 UFGBuildDescriptor::UFGBuildDescriptor() : Super() {
-	this->mUseDisplayNameAndDescription = true; 
-	this->mStackSize = EStackSize::SS_MEDIUM; 
-	this->mCanBeDiscarded = true; 
+	this->mUseDisplayNameAndDescription = true;
+	this->mStackSize = EStackSize::SS_MEDIUM;
+	this->mCanBeDiscarded = true;
 }
 TSubclassOf< class UFGBuildCategory > UFGBuildDescriptor::GetBuildCategory(TSubclassOf< UFGBuildDescriptor > inClass){ return TSubclassOf<class UFGBuildCategory>(); }
 void UFGBuildDescriptor::GetSubCategories(TSubclassOf< UFGBuildDescriptor > inClass,  TArray< TSubclassOf<  UFGBuildSubCategory > >& out_subCategories){ }

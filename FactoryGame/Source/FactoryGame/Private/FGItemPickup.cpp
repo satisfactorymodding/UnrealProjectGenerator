@@ -4,14 +4,14 @@
 
 
 AFGItemPickup::AFGItemPickup() : Super() {
-	this->mDestroyOnPickup = true; 
-	this->mRespawnTimeInDays = -1; 
-	this->mUpdatedOnDayNr = -1; 
-	this->mItemState = EItemState::ES_NORMAL; 
-	this->mGrowTimeInDays = 3; 
-	this->mSavedNumItems = -1; 
-	this->mMaxRespawns = -1; 
-	this->bReplicates = true; 
+	this->mDestroyOnPickup = true;
+	this->mRespawnTimeInDays = -1;
+	this->mUpdatedOnDayNr = -1;
+	this->mItemState = EItemState::ES_NORMAL;
+	this->mGrowTimeInDays = 3;
+	this->mSavedNumItems = -1;
+	this->mMaxRespawns = -1;
+	this->bReplicates = true;
 }
 void AFGItemPickup::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGItemPickup::Serialize(FArchive& ar){ Super::Serialize(ar);}

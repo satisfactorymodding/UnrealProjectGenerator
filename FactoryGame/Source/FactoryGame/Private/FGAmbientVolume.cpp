@@ -9,8 +9,8 @@ void AFGAmbientVolume::CheckForErrors(){ }
 #endif 
 AFGAmbientVolume::AFGAmbientVolume() : Super() {
 	this->mAudioComponent = CreateDefaultSubobject<UAkComponent>(TEXT("AudioComponent")); this->mAudioComponent->SetupAttachment(this->GetBrushComponent());
-	this->mAdditionalAttenuationDistance = 300; 
-	this->mSignificanceRange = 25000; 
+	this->mAdditionalAttenuationDistance = 300;
+	this->mSignificanceRange = 25000;
 }
 void AFGAmbientVolume::BeginPlay(){ }
 void AFGAmbientVolume::EndPlay(const EEndPlayReason::Type endPlayReason){ }

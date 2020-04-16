@@ -4,8 +4,8 @@
 
 
 AFGResearchManager::AFGResearchManager() : Super() {
-	this->bAlwaysRelevant = true; 
-	this->bReplicates = true; 
+	this->bAlwaysRelevant = true;
+	this->bReplicates = true;
 }
 void AFGResearchManager::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGResearchManager::PreInitializeComponents(){ }

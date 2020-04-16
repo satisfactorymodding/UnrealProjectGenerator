@@ -12,7 +12,7 @@ FPowerGraphPoint& FPowerCircuitStats::AdvanceToNextGraphPoint(){ return *(new FP
 void UFGPowerCircuit::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void UFGPowerCircuit::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
 UFGPowerCircuit::UFGPowerCircuit() : Super() {
-	this->mCircuitID = -1; 
+	this->mCircuitID = -1;
 }
 void UFGPowerCircuit::ResetFuse(){ }
 void UFGPowerCircuit::DisplayDebug( UCanvas* canvas, const  FDebugDisplayInfo& debugDisplay, float& YL, float& YPos, float indent){ }

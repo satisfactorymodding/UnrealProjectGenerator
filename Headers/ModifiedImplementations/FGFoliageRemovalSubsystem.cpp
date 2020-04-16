@@ -4,8 +4,8 @@
 
 
 AFGFoliageRemovalSubsystem::AFGFoliageRemovalSubsystem() : Super() {
-	this->bAlwaysRelevant = true; 
-	this->bReplicates = true; 
+	this->bAlwaysRelevant = true;
+	this->bReplicates = true;
 }
 void AFGFoliageRemovalSubsystem::Destroyed(){ }
 void AFGFoliageRemovalSubsystem::Init(){ }

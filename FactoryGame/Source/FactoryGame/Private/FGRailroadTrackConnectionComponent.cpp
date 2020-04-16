@@ -4,7 +4,7 @@
 
 
 UFGRailroadTrackConnectionComponent::UFGRailroadTrackConnectionComponent() : Super() {
-	this->mSwitchPosition = -1; 
+	this->mSwitchPosition = -1;
 }
 void UFGRailroadTrackConnectionComponent::OnComponentDestroyed(bool isDestroyingHierarchy){ }
 void UFGRailroadTrackConnectionComponent::AddConnection(UFGRailroadTrackConnectionComponent* toComponent){ }

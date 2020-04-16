@@ -4,11 +4,11 @@
 #include "Components/HierarchicalInstancedStaticMeshComponent.h"
 
 AFGResourceDeposit::AFGResourceDeposit() : Super() {
-	this->mResourceDepositTableIndex = -1; 
+	this->mResourceDepositTableIndex = -1;
 	this->mDepositMeshComponent = CreateDefaultSubobject<UHierarchicalInstancedStaticMeshComponent>(TEXT("DepositMesh"));
-	this->mExtractMultiplier = 2; 
-	this->mDoSpawnParticle = true; 
-	this->bReplicates = true; 
+	this->mExtractMultiplier = 2;
+	this->mDoSpawnParticle = true;
+	this->bReplicates = true;
 }
 void AFGResourceDeposit::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGResourceDeposit::PostLoad(){ Super::PostLoad();}

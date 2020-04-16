@@ -4,11 +4,11 @@
 #include "Components/SceneComponent.h"
 
 AFGManta::AFGManta() : Super() {
-	this->mSecondsPerLoop = 900; 
-	this->mTickTransform = true; 
-	this->mIsClosedSplineLoop = true; 
-	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0; 
-	this->bReplicates = true; 
+	this->mSecondsPerLoop = 900;
+	this->mTickTransform = true;
+	this->mIsClosedSplineLoop = true;
+	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0;
+	this->bReplicates = true;
 	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGManta::GainedSignificance_Implementation(){ }

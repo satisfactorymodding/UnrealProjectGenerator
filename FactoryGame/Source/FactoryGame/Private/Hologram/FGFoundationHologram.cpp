@@ -7,11 +7,11 @@
 #include "FGBuildableWall.h"
 
 AFGFoundationHologram::AFGFoundationHologram() : Super() {
-	this->mMaxPlacementFloorAngle = 85; 
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableWall::StaticClass()); 
-	this->mUseBuildClearanceOverlapSnapp = true; 
-	this->bHidden = true; 
-	this->bReplicates = true; 
+	this->mMaxPlacementFloorAngle = 85;
+	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableWall::StaticClass());
+	this->mUseBuildClearanceOverlapSnapp = true;
+	this->bHidden = true;
+	this->bReplicates = true;
 }
 void AFGFoundationHologram::BeginPlay(){ }
 bool AFGFoundationHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }

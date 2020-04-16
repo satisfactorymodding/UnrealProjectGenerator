@@ -9,15 +9,15 @@
 void AFGLocomotive::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGLocomotive::PreReplication(IRepChangedPropertyTracker & ChangedPropertyTracker){ }
 AFGLocomotive::AFGLocomotive() : Super() {
-	this->mPowerConsumption.Min = 0; this->mPowerConsumption.Max = 15; 
+	this->mPowerConsumption.Min = 0; this->mPowerConsumption.Max = 15;
 	this->mSlidingShoe = CreateDefaultSubobject<UFGPowerConnectionComponent>(TEXT("SlidingShoe"));
 	this->mPowerInfo = CreateDefaultSubobject<UFGPowerInfoComponent>(TEXT("powerInfo"));
 	this->mVehicleMovement = CreateDefaultSubobject<UFGLocomotiveMovementComponent>(TEXT("MovementComp"));
-	this->mLength = 500; 
-	this->mHologramClass = AFGRailroadVehicleHologram::StaticClass(); 
-	this->mDisabledByWaterLocations.SetNum(1); this->mDisabledByWaterLocations[0].X = 0; this->mDisabledByWaterLocations[0].Y = 0; this->mDisabledByWaterLocations[0].Z = 0; 
-	this->mSignificanceRange = 20000; 
-	this->mShouldAttachDriver = true; 
+	this->mLength = 500;
+	this->mHologramClass = AFGRailroadVehicleHologram::StaticClass();
+	this->mDisabledByWaterLocations.SetNum(1); this->mDisabledByWaterLocations[0].X = 0; this->mDisabledByWaterLocations[0].Y = 0; this->mDisabledByWaterLocations[0].Z = 0;
+	this->mSignificanceRange = 20000;
+	this->mShouldAttachDriver = true;
 }
 void AFGLocomotive::BeginPlay(){ }
 bool AFGLocomotive::DriverEnter( AFGCharacterPlayer* driver){ return bool(); }

@@ -6,12 +6,12 @@
 #include "FGBuildableRoad.h"
 
 AFGPipelineSupportHologram::AFGPipelineSupportHologram() : Super() {
-	this->mCanAdjustVerticalAngle = true; 
-	this->mMaxPlacementFloorAngle = 35; 
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); 
-	this->mUseBuildClearanceOverlapSnapp = true; 
-	this->bHidden = true; 
-	this->bReplicates = true; 
+	this->mCanAdjustVerticalAngle = true;
+	this->mMaxPlacementFloorAngle = 35;
+	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass());
+	this->mUseBuildClearanceOverlapSnapp = true;
+	this->bHidden = true;
+	this->bReplicates = true;
 }
 void AFGPipelineSupportHologram::GetLifetimeReplicatedProps( TArray<class FLifetimeProperty,  FDefaultAllocator> & OutReplicatedProps) const{ }
 void AFGPipelineSupportHologram::BeginPlay(){ }

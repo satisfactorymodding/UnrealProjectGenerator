@@ -4,11 +4,11 @@
 #include "FGRailroadVehicleHologram.h"
 
 AFGRailroadVehicle::AFGRailroadVehicle() : Super() {
-	this->mLength = 500; 
-	this->mHologramClass = AFGRailroadVehicleHologram::StaticClass(); 
-	this->mDisabledByWaterLocations.SetNum(1); this->mDisabledByWaterLocations[0].X = 0; this->mDisabledByWaterLocations[0].Y = 0; this->mDisabledByWaterLocations[0].Z = 0; 
-	this->mSignificanceRange = 20000; 
-	this->mShouldAttachDriver = true; 
+	this->mLength = 500;
+	this->mHologramClass = AFGRailroadVehicleHologram::StaticClass();
+	this->mDisabledByWaterLocations.SetNum(1); this->mDisabledByWaterLocations[0].X = 0; this->mDisabledByWaterLocations[0].Y = 0; this->mDisabledByWaterLocations[0].Z = 0;
+	this->mSignificanceRange = 20000;
+	this->mShouldAttachDriver = true;
 }
 void AFGRailroadVehicle::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 bool AFGRailroadVehicle::IsNetRelevantFor(const AActor* RealViewer, const AActor* ViewTarget, const FVector& SrcLocation) const{ return bool(); }

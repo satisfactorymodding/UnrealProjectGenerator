@@ -5,14 +5,14 @@
 
 AFGNobeliskExplosive::AFGNobeliskExplosive() : Super() {
 	this->mRotatingMovementComp = CreateDefaultSubobject<URotatingMovementComponent>(TEXT("RotatingMovementComponent"));
-	this->mThrowRotation.Pitch = -360; this->mThrowRotation.Yaw = -35; this->mThrowRotation.Roll = -180; 
-	this->mDestroysRelevantActors = true; 
-	this->mDestroysFoliage = true; 
-	this->mMaxParticleSpawnsPerDetonation = 30; 
-	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0; 
-	this->bReplicateMovement = true; 
-	this->bReplicates = true; 
-	this->InitialLifeSpan = 3; 
+	this->mThrowRotation.Pitch = -360; this->mThrowRotation.Yaw = -35; this->mThrowRotation.Roll = -180;
+	this->mDestroysRelevantActors = true;
+	this->mDestroysFoliage = true;
+	this->mMaxParticleSpawnsPerDetonation = 30;
+	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0;
+	this->bReplicateMovement = true;
+	this->bReplicates = true;
+	this->InitialLifeSpan = 3;
 }
 void AFGNobeliskExplosive::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGNobeliskExplosive::OnImpact(const FHitResult& hitResult){ }

@@ -4,11 +4,11 @@
 
 
 UFGDecorationDescriptor::UFGDecorationDescriptor() : Super() {
-	this->mGroundMeshScale.X = 1; this->mGroundMeshScale.Y = 1; this->mGroundMeshScale.Z = 1; 
-	this->mUseDisplayNameAndDescription = true; 
-	this->mStackSize = EStackSize::SS_MEDIUM; 
-	this->mCanBeDiscarded = true; 
-	this->mForm = EResourceForm::RF_SOLID; 
+	this->mGroundMeshScale.X = 1; this->mGroundMeshScale.Y = 1; this->mGroundMeshScale.Z = 1;
+	this->mUseDisplayNameAndDescription = true;
+	this->mStackSize = EStackSize::SS_MEDIUM;
+	this->mCanBeDiscarded = true;
+	this->mForm = EResourceForm::RF_SOLID;
 }
 UStaticMesh* UFGDecorationDescriptor::GetGroundMesh(TSubclassOf< UFGItemDescriptor > inClass){ return nullptr; }
 UStaticMesh* UFGDecorationDescriptor::GetMesh1p(TSubclassOf< UFGItemDescriptor > inClass){ return nullptr; }

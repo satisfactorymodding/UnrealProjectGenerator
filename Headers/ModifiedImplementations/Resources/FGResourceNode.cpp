@@ -10,11 +10,11 @@ void AFGResourceNode::CheckForErrors(){ }
 #endif 
 void AFGResourceNode::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 AFGResourceNode::AFGResourceNode() : Super() {
-	this->mCanPlaceResourceExtractor = true; 
-	this->mExtractMultiplier = 1; 
-	this->mDoSpawnParticle = true; 
-	this->mAddToSignificanceManager = true; 
-	this->bReplicates = true; 
+	this->mCanPlaceResourceExtractor = true;
+	this->mExtractMultiplier = 1;
+	this->mDoSpawnParticle = true;
+	this->mAddToSignificanceManager = true;
+	this->bReplicates = true;
 }
 void AFGResourceNode::PostLoad(){ Super::PostLoad();}
 void AFGResourceNode::BeginPlay(){ }

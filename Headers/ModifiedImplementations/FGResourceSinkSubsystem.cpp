@@ -4,10 +4,10 @@
 
 
 AFGResourceSinkSubsystem::AFGResourceSinkSubsystem() : Super() {
-	this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); 
-	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 1; 
-	this->bAlwaysRelevant = true; 
-	this->bReplicates = true; 
+	this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0); this->mGlobalPointHistory.Add(0);
+	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 1;
+	this->bAlwaysRelevant = true;
+	this->bReplicates = true;
 }
 void AFGResourceSinkSubsystem::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGResourceSinkSubsystem::BeginPlay(){ }

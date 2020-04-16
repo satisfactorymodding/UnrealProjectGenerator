@@ -5,10 +5,10 @@
 #include "FGDriveablePawn.h"
 
 UFGDamageOverTime::UFGDamageOverTime() : Super() {
-	this->mDamageInterval = 1; 
-	this->mDamageAmount = 10; 
-	this->mDamageClass = UFGDamageType::StaticClass(); 
-	this->mActorFilter.Add(AFGDriveablePawn::StaticClass()); 
+	this->mDamageInterval = 1;
+	this->mDamageAmount = 10;
+	this->mDamageClass = UFGDamageType::StaticClass();
+	this->mActorFilter.Add(AFGDriveablePawn::StaticClass());
 }
 float UFGDamageOverTime::GetDamageInterval(TSubclassOf< UFGDamageOverTime > dotClass){ return float(); }
 float UFGDamageOverTime::GetDamageAmount(TSubclassOf< UFGDamageOverTime > dotClass){ return float(); }

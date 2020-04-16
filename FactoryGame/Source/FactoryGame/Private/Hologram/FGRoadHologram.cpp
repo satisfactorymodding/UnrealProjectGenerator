@@ -6,11 +6,11 @@
 #include "FGBuildableRoad.h"
 
 AFGRoadHologram::AFGRoadHologram() : Super() {
-	this->mMaxPlacementFloorAngle = 35; 
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); 
-	this->mUseBuildClearanceOverlapSnapp = true; 
-	this->bHidden = true; 
-	this->bReplicates = true; 
+	this->mMaxPlacementFloorAngle = 35;
+	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass());
+	this->mUseBuildClearanceOverlapSnapp = true;
+	this->bHidden = true;
+	this->bReplicates = true;
 }
 void AFGRoadHologram::BeginPlay(){ }
 USceneComponent* AFGRoadHologram::SetupComponent(USceneComponent* attachParent, UActorComponent* componentTemplate, const FName& componentName){ return nullptr; }

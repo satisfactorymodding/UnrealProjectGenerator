@@ -7,12 +7,12 @@
 void UFGResourceDescriptor::PostEditChangeProperty( FPropertyChangedEvent& propertyChangedEvent){ }
 #endif 
 UFGResourceDescriptor::UFGResourceDescriptor() : Super() {
-	this->mCollectSpeedMultiplier = 1; 
-	this->mManualMiningAudioName = "Metal"; 
-	this->mUseDisplayNameAndDescription = true; 
-	this->mStackSize = EStackSize::SS_MEDIUM; 
-	this->mCanBeDiscarded = true; 
-	this->mForm = EResourceForm::RF_SOLID; 
+	this->mCollectSpeedMultiplier = 1;
+	this->mManualMiningAudioName = "Metal";
+	this->mUseDisplayNameAndDescription = true;
+	this->mStackSize = EStackSize::SS_MEDIUM;
+	this->mCanBeDiscarded = true;
+	this->mForm = EResourceForm::RF_SOLID;
 }
 bool UFGResourceDescriptor::CanBeHandMined(TSubclassOf< UFGResourceDescriptor > inClass){ return bool(); }
 UMaterialInstance* UFGResourceDescriptor::GetDepositMaterial(TSubclassOf< UFGResourceDescriptor > inClass){ return nullptr; }

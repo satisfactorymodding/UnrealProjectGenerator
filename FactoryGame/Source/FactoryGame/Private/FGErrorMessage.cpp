@@ -4,5 +4,5 @@
 
 
 UFGErrorMessage::UFGErrorMessage() : Super() {
-	this->mErrorMessage = INVTEXT("UNSET ERROR"); 
+	this->mErrorMessage = INVTEXT("UNSET ERROR");
 }

@@ -7,7 +7,7 @@
 void UFGDotComponent::CheckForErrors(){ }
 #endif 
 UFGDotComponent::UFGDotComponent() : Super() {
-	this->bAutoActivate = true; 
+	this->bAutoActivate = true;
 }
 void UFGDotComponent::PostLoad(){ Super::PostLoad();}
 void UFGDotComponent::OnRegister(){ Super::OnRegister();}

@@ -8,11 +8,11 @@ AFGSchematicManager* AFGSchematicManager::Get(UObject* worldContext){ return nul
 int32 AFGSchematicManager::GetTechTier(const FAssetData& schematicAsset){ return int32(); }
 EIncludeInBuilds AFGSchematicManager::GetIncludedInBuild(const FAssetData& schematicAsset){ return EIncludeInBuilds(); }
 AFGSchematicManager::AFGSchematicManager() : Super() {
-	this->mShipLandTimeStamp = -1; 
-	this->mMaxAllowedTechTier = 6; 
-	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0.100000001490116; 
-	this->bAlwaysRelevant = true; 
-	this->bReplicates = true; 
+	this->mShipLandTimeStamp = -1;
+	this->mMaxAllowedTechTier = 6;
+	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0.100000001490116;
+	this->bAlwaysRelevant = true;
+	this->bReplicates = true;
 }
 void AFGSchematicManager::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGSchematicManager::PreInitializeComponents(){ }

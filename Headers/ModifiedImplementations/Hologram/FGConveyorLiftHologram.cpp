@@ -7,11 +7,11 @@
 #include "FGBuildable.h"
 
 AFGConveyorLiftHologram::AFGConveyorLiftHologram() : Super() {
-	this->mArrowDirection = EFactoryConnectionDirection::FCD_ANY; 
-	this->mMaxPlacementFloorAngle = 35; 
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); this->mValidHitClasses.Add(AFGBuildable::StaticClass()); 
-	this->bHidden = true; 
-	this->bReplicates = true; 
+	this->mArrowDirection = EFactoryConnectionDirection::FCD_ANY;
+	this->mMaxPlacementFloorAngle = 35;
+	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); this->mValidHitClasses.Add(AFGBuildable::StaticClass());
+	this->bHidden = true;
+	this->bReplicates = true;
 }
 void AFGConveyorLiftHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGConveyorLiftHologram::BeginPlay(){ }

@@ -4,8 +4,8 @@
 
 
 AFGReplicationDetailActor_GeneratorFuel::AFGReplicationDetailActor_GeneratorFuel() : Super() {
-	this->bHidden = true; 
-	this->bReplicates = true; 
+	this->bHidden = true;
+	this->bReplicates = true;
 }
 void AFGReplicationDetailActor_GeneratorFuel::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGReplicationDetailActor_GeneratorFuel::InitReplicationDetailActor( AFGBuildable* owningActor){ }

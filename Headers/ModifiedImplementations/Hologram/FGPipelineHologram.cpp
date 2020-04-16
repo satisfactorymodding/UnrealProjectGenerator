@@ -7,13 +7,13 @@
 #include "FGBuildable.h"
 
 AFGPipelineHologram::AFGPipelineHologram() : Super() {
-	this->mBendRadius = 199; 
-	this->mBendRadius2D = 199; 
-	this->mMaxLength = 100; 
-	this->mMaxPlacementFloorAngle = 35; 
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); this->mValidHitClasses.Add(AFGBuildable::StaticClass()); 
-	this->bHidden = true; 
-	this->bReplicates = true; 
+	this->mBendRadius = 199;
+	this->mBendRadius2D = 199;
+	this->mMaxLength = 100;
+	this->mMaxPlacementFloorAngle = 35;
+	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); this->mValidHitClasses.Add(AFGBuildable::StaticClass());
+	this->bHidden = true;
+	this->bReplicates = true;
 }
 void AFGPipelineHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGPipelineHologram::BeginPlay(){ }

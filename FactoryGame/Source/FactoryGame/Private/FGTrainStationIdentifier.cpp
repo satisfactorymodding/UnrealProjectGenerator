@@ -4,9 +4,9 @@
 
 
 AFGTrainStationIdentifier::AFGTrainStationIdentifier() : Super() {
-	this->mTrackGraphID = -1; 
-	this->bAlwaysRelevant = true; 
-	this->bReplicates = true; 
+	this->mTrackGraphID = -1;
+	this->bAlwaysRelevant = true;
+	this->bReplicates = true;
 }
 void AFGTrainStationIdentifier::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGTrainStationIdentifier::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }

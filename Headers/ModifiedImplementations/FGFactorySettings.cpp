@@ -6,13 +6,13 @@
 #include "FGRecipeShortcut.h"
 
 UFGFactorySettings::UFGFactorySettings() : Super() {
-	this->mBuildGunClass = AFGBuildGun::StaticClass(); 
-	this->mResourceScannerClass = AFGResourceScanner::StaticClass(); 
-	this->mMaxFeetLength = 1000; 
-	this->mRecipeShortcutClass = UFGRecipeShortcut::StaticClass(); 
-	this->mNumHotbars = 2; 
-	this->mNumPresetHotbars = 2; 
-	this->mNumSlotsPerHotbar = 10; 
+	this->mBuildGunClass = AFGBuildGun::StaticClass();
+	this->mResourceScannerClass = AFGResourceScanner::StaticClass();
+	this->mMaxFeetLength = 1000;
+	this->mRecipeShortcutClass = UFGRecipeShortcut::StaticClass();
+	this->mNumHotbars = 2;
+	this->mNumPresetHotbars = 2;
+	this->mNumSlotsPerHotbar = 10;
 }
 UAkAudioEvent* UFGFactorySettings::GetRandomConstructionSound(){ return nullptr; }
 UAkAudioEvent* UFGFactorySettings::GetRandomDismantleSound(){ return nullptr; }

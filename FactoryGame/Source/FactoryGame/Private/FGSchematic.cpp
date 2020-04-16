@@ -17,7 +17,7 @@ void UFGSchematic::UpdateAssetBundleData(){ }
 void UFGSchematic::MigrateDataToNewSchematicCategory(){ }
 #endif 
 UFGSchematic::UFGSchematic() : Super() {
-	this->mTimeToComplete = 600; 
+	this->mTimeToComplete = 600;
 }
 ESchematicType UFGSchematic::GetType(TSubclassOf< UFGSchematic > inClass){ 
 	return inClass.GetDefaultObject()->mType;

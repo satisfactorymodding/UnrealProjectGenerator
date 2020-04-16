@@ -4,7 +4,7 @@
 
 
 UFGSignificanceManager::UFGSignificanceManager() : Super() {
-	this->mIsEnabled = true; 
+	this->mIsEnabled = true;
 }
 void UFGSignificanceManager::RegisterSignificanceObject(UObject* Object, EFGSignificanceType SignificanceType){ }
 void UFGSignificanceManager::RegisterObject(UObject* Object, FName Tag, FManagedObjectSignificanceFunction SignificanceFunction, EPostSignificanceType InPostSignificanceType , FManagedObjectPostSignificanceFunction InPostSignificanceFunction){ }

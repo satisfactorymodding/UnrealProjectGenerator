@@ -4,9 +4,9 @@
 
 
 UFGMaterialEffectComponent::UFGMaterialEffectComponent() : Super() {
-	this->mAutoDestroy = true; 
-	this->PrimaryComponentTick.TickGroup = TG_DuringPhysics; this->PrimaryComponentTick.EndTickGroup = TG_PrePhysics; this->PrimaryComponentTick.bTickEvenWhenPaused = false; this->PrimaryComponentTick.bCanEverTick = true; this->PrimaryComponentTick.bStartWithTickEnabled = false; this->PrimaryComponentTick.bAllowTickOnDedicatedServer = true; this->PrimaryComponentTick.TickInterval = 0; 
-	this->bAutoActivate = true; 
+	this->mAutoDestroy = true;
+	this->PrimaryComponentTick.TickGroup = TG_DuringPhysics; this->PrimaryComponentTick.EndTickGroup = TG_PrePhysics; this->PrimaryComponentTick.bTickEvenWhenPaused = false; this->PrimaryComponentTick.bCanEverTick = true; this->PrimaryComponentTick.bStartWithTickEnabled = false; this->PrimaryComponentTick.bAllowTickOnDedicatedServer = true; this->PrimaryComponentTick.TickInterval = 0;
+	this->bAutoActivate = true;
 }
 void UFGMaterialEffectComponent::OnUnregister(){ Super::OnUnregister();}
 void UFGMaterialEffectComponent::Activate(bool reset){ }

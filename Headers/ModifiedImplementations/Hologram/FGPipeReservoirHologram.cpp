@@ -6,11 +6,11 @@
 #include "FGBuildableRoad.h"
 
 AFGPipeReservoirHologram::AFGPipeReservoirHologram() : Super() {
-	this->mMaxPlacementFloorAngle = 35; 
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); 
-	this->mUseBuildClearanceOverlapSnapp = true; 
-	this->bHidden = true; 
-	this->bReplicates = true; 
+	this->mMaxPlacementFloorAngle = 35;
+	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass());
+	this->mUseBuildClearanceOverlapSnapp = true;
+	this->bHidden = true;
+	this->bReplicates = true;
 }
 void AFGPipeReservoirHologram::BeginPlay(){ }
 bool AFGPipeReservoirHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }

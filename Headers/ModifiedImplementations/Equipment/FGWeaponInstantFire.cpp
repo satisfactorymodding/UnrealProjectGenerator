@@ -4,17 +4,17 @@
 #include "FGDamageType.h"
 
 AFGWeaponInstantFire::AFGWeaponInstantFire() : Super() {
-	this->mInstantHitDamage = 10; 
-	this->mWeaponTraceLength = 10000; 
-	this->mMagSize = 5; 
-	this->mDamageTypeClass = UFGDamageType::StaticClass(); 
-	this->mReloadTime = 1.5; 
-	this->mFireRate = 0.5; 
-	this->mEquipmentSlot = EEquipmentSlot::ES_ARMS; 
-	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = false; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0; 
-	this->bOnlyRelevantToOwner = true; 
-	this->bNetUseOwnerRelevancy = true; 
-	this->bReplicates = true; 
+	this->mInstantHitDamage = 10;
+	this->mWeaponTraceLength = 10000;
+	this->mMagSize = 5;
+	this->mDamageTypeClass = UFGDamageType::StaticClass();
+	this->mReloadTime = 1.5;
+	this->mFireRate = 0.5;
+	this->mEquipmentSlot = EEquipmentSlot::ES_ARMS;
+	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = false; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0;
+	this->bOnlyRelevantToOwner = true;
+	this->bNetUseOwnerRelevancy = true;
+	this->bReplicates = true;
 }
 void AFGWeaponInstantFire::FireAmmunition_Implementation(){ }
 void AFGWeaponInstantFire::InstantFire(){ }

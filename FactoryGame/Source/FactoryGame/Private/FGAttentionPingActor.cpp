@@ -4,10 +4,10 @@
 
 
 AFGAttentionPingActor::AFGAttentionPingActor() : Super() {
-	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0; 
-	this->bAlwaysRelevant = true; 
-	this->bReplicateMovement = true; 
-	this->bReplicates = true; 
+	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0;
+	this->bAlwaysRelevant = true;
+	this->bReplicateMovement = true;
+	this->bReplicates = true;
 }
 void AFGAttentionPingActor::BeginPlay(){ }
 void AFGAttentionPingActor::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }

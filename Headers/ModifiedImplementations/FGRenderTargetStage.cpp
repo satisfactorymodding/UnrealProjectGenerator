@@ -5,8 +5,8 @@
 #include "Components/SceneComponent.h"
 
 AFGRenderTargetStage::AFGRenderTargetStage() : Super() {
-	this->mDynamicRenderTargetSizeX = 512; 
-	this->mDynamicRenderTargetSizeY = 512; 
+	this->mDynamicRenderTargetSizeX = 512;
+	this->mDynamicRenderTargetSizeY = 512;
 	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mSceneCaptureComponent = CreateDefaultSubobject<USceneCaptureComponent2D>(TEXT("SceneCapture")); this->mSceneCaptureComponent->SetupAttachment(this->RootComponent);
 	this->mStage = CreateDefaultSubobject<USceneComponent>(TEXT("Stage")); this->mStage->SetupAttachment(this->RootComponent);

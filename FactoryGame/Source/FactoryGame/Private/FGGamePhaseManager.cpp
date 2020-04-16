@@ -6,8 +6,8 @@
 AFGGamePhaseManager* AFGGamePhaseManager::Get(UWorld* world){ return nullptr; }
 AFGGamePhaseManager* AFGGamePhaseManager::Get(UObject* worldContext){ return nullptr; }
 AFGGamePhaseManager::AFGGamePhaseManager() : Super() {
-	this->bAlwaysRelevant = true; 
-	this->bReplicates = true; 
+	this->bAlwaysRelevant = true;
+	this->bReplicates = true;
 }
 void AFGGamePhaseManager::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGGamePhaseManager::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }

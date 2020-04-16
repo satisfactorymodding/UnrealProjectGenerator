@@ -4,8 +4,8 @@
 #include "Components/SceneComponent.h"
 
 AFGReplicationDetailActor::AFGReplicationDetailActor() : Super() {
-	this->bHidden = true; 
-	this->bReplicates = true; 
+	this->bHidden = true;
+	this->bReplicates = true;
 	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("ReplicationDetailActor"));
 }
 AFGReplicationDetailActor* AFGReplicationDetailActor::CreateReplicationDetailActor(UClass* childClass,  IFGReplicationDetailActorOwnerInterface* owner){ return nullptr; }

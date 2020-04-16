@@ -4,8 +4,8 @@
 
 
 AFGCrate::AFGCrate() : Super() {
-	this->bReplicateMovement = true; 
-	this->bReplicates = true; 
+	this->bReplicateMovement = true;
+	this->bReplicates = true;
 }
 void AFGCrate::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGCrate::PostActorCreated(){ }

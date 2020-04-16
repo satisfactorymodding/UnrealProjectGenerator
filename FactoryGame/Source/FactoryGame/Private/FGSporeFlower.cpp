@@ -4,7 +4,7 @@
 
 
 AFGSporeFlower::AFGSporeFlower() : Super() {
-	this->bReplicates = true; 
+	this->bReplicates = true;
 }
 void AFGSporeFlower::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGSporeFlower::BeginPlay(){ }

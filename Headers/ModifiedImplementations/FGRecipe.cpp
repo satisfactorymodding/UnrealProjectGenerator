@@ -7,8 +7,8 @@
 void UFGRecipe::SetProduct(TSubclassOf< UFGRecipe > recipe, TArray< FItemAmount > product){ }
 #endif 
 UFGRecipe::UFGRecipe() : Super() {
-	this->mManufactoringDuration = 1; 
-	this->mManualManufacturingMultiplier = 1; 
+	this->mManufactoringDuration = 1;
+	this->mManualManufacturingMultiplier = 1;
 }
 FText UFGRecipe::GetRecipeName(TSubclassOf< UFGRecipe > inClass){ 
 	return inClass.GetDefaultObject()->mDisplayName;

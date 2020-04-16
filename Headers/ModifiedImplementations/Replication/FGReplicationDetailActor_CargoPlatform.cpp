@@ -4,8 +4,8 @@
 
 
 AFGReplicationDetailActor_CargoPlatform::AFGReplicationDetailActor_CargoPlatform() : Super() {
-	this->bHidden = true; 
-	this->bReplicates = true; 
+	this->bHidden = true;
+	this->bReplicates = true;
 }
 void AFGReplicationDetailActor_CargoPlatform::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGReplicationDetailActor_CargoPlatform::InitReplicationDetailActor( AFGBuildable* owningActor){ }

@@ -14,8 +14,8 @@ void UFGInventoryComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>
 void UFGInventoryComponent::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
 void UFGInventoryComponent::PreNetReceive(){ }
 UFGInventoryComponent::UFGInventoryComponent() : Super() {
-	this->mDefaultInventorySize = 1; 
-	this->mCanBeRearrange = true; 
+	this->mDefaultInventorySize = 1;
+	this->mCanBeRearrange = true;
 }
 void UFGInventoryComponent::Serialize(FArchive& ar){ Super::Serialize(ar);}
 void UFGInventoryComponent::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }

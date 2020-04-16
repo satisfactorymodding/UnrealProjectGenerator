@@ -4,9 +4,9 @@
 
 
 AFGAdminInterface::AFGAdminInterface() : Super() {
-	this->bOnlyRelevantToOwner = true; 
-	this->bAlwaysRelevant = true; 
-	this->bReplicates = true; 
+	this->bOnlyRelevantToOwner = true;
+	this->bAlwaysRelevant = true;
+	this->bReplicates = true;
 }
 bool AFGAdminInterface::IsNetRelevantFor(const AActor* realViewer, const AActor* viewTarget, const FVector& srcLocation) const{ return bool(); }
 void AFGAdminInterface::KickPlayer_Implementation( APlayerState* playerState){ }

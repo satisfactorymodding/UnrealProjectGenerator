@@ -10,9 +10,9 @@ void AFGWaterVolume::PostEditChangeProperty(FPropertyChangedEvent& propertyChang
 void AFGWaterVolume::CheckForErrors(){ }
 #endif 
 AFGWaterVolume::AFGWaterVolume() : Super() {
-	this->mAreaClass = UFGNavArea_Water::StaticClass(); 
-	this->mCanPlaceExtractor = true; 
-	this->bWaterVolume = true; 
+	this->mAreaClass = UFGNavArea_Water::StaticClass();
+	this->mCanPlaceExtractor = true;
+	this->bWaterVolume = true;
 }
 void AFGWaterVolume::BeginPlay(){ }
 void AFGWaterVolume::EndPlay(const EEndPlayReason::Type endPlayReason){ }

@@ -9,8 +9,8 @@ void UFGResearchRecipe::PreSave(const  ITargetPlatform* targetPlatform){ }
 void UFGResearchRecipe::UpdateAssetBundleData(){ }
 #endif 
 UFGResearchRecipe::UFGResearchRecipe() : Super() {
-	this->mManufactoringDuration = 1; 
-	this->mManualManufacturingMultiplier = 1; 
+	this->mManufactoringDuration = 1;
+	this->mManualManufacturingMultiplier = 1;
 }
 FResearchRecipeReward UFGResearchRecipe::GetResearcResults(TSubclassOf<UFGResearchRecipe> inClass){ return FResearchRecipeReward(); }
 float UFGResearchRecipe::GetResearchTime(TSubclassOf<UFGResearchRecipe> inClass){ return float(); }

@@ -4,7 +4,7 @@
 
 
 UFGFactoryMaterialInstanceManager::UFGFactoryMaterialInstanceManager() : Super() {
-	this->mMaterialInstances.SetNum(18); 
+	this->mMaterialInstances.SetNum(18);
 }
 void UFGFactoryMaterialInstanceManager::Init(UMaterialInterface* materialInterface, FString& lookupName, FString& lookupPrefix, UWorld* worldContext, bool canBeColored){ }
 void UFGFactoryMaterialInstanceManager::RefreshMaterialColors(){ }

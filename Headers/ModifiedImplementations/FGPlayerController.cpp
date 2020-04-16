@@ -4,11 +4,11 @@
 #include "FGCheatManager.h"
 
 AFGPlayerController::AFGPlayerController() : Super() {
-	this->mCanAffectAudioVolumes = true; 
-	this->mMapAreaCheckInterval = 0.25; 
-	this->mMinPhotoModeFOV = 5; 
-	this->mMaxPhotoModeFOV = 175; 
-	this->CheatClass = UFGCheatManager::StaticClass(); 
+	this->mCanAffectAudioVolumes = true;
+	this->mMapAreaCheckInterval = 0.25;
+	this->mMinPhotoModeFOV = 5;
+	this->mMaxPhotoModeFOV = 175;
+	this->CheatClass = UFGCheatManager::StaticClass();
 }
 bool AFGPlayerController::ProcessConsoleExec(const TCHAR* cmd, FOutputDevice& ar, UObject* executor){ return bool(); }
 void AFGPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }

@@ -749,7 +749,7 @@ namespace DefaultValues
                         topoSortKeys.Add(impl.Key);
                     }
                     List<string> sorted = TopologicalSort(topoSortKeys, topoSortEdges);
-                    ClassCtor.Add(className, Environment.NewLine + '\t' + string.Join(Environment.NewLine + '\t', sorted) + Environment.NewLine);
+                    ClassCtor.Add(className, Environment.NewLine + '\t' + string.Join(Environment.NewLine + '\t', sorted.Select((impl) => impl.Trim())) + Environment.NewLine);
                     ClassIncludes.Add(className, includes);
                 }
             }

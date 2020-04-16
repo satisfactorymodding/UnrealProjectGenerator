@@ -6,10 +6,10 @@
 #include "FGBuildableRoad.h"
 
 AFGResourceExtractorHologram::AFGResourceExtractorHologram() : Super() {
-	this->mMaxPlacementFloorAngle = 35; 
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); 
-	this->bHidden = true; 
-	this->bReplicates = true; 
+	this->mMaxPlacementFloorAngle = 35;
+	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass());
+	this->bHidden = true;
+	this->bReplicates = true;
 }
 void AFGResourceExtractorHologram::BeginPlay(){ }
 bool AFGResourceExtractorHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }

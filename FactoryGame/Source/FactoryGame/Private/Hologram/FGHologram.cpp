@@ -8,9 +8,9 @@
 #include "Components/SceneComponent.h"
 
 AFGHologram::AFGHologram() : Super() {
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); 
-	this->bHidden = true; 
-	this->bReplicates = true; 
+	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass());
+	this->bHidden = true;
+	this->bReplicates = true;
 	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound")); this->mLoopSound->SetupAttachment(this->RootComponent);
 }

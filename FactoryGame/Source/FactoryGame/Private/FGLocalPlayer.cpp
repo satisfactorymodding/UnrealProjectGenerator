@@ -7,13 +7,13 @@
 
 
 UFGEM_LoggedOutFromOnlineService::UFGEM_LoggedOutFromOnlineService() : Super() {
-	this->mErrorMessage = NSLOCTEXT("ErrorMessages", "LoggedOutFromOnlineService", "You got sent to main menu as you got logged out from the online service. Your game was autosaved. You need to relaunch the game from the launcher to login again (sorry for the temporary solution)"); 
+	this->mErrorMessage = NSLOCTEXT("ErrorMessages", "LoggedOutFromOnlineService", "You got sent to main menu as you got logged out from the online service. Your game was autosaved. You need to relaunch the game from the launcher to login again (sorry for the temporary solution)");
 }
 UFGEM_LostConnectionWithOnlineService::UFGEM_LostConnectionWithOnlineService() : Super() {
-	this->mErrorMessage = NSLOCTEXT("ErrorMessages", "LostConnectionWithOnlineService", "You got sent to main menu as you lost connection with the online service. Your game was autosaved. You need to relaunch the game from the launcher to login again (sorry for the temporary solution)"); 
+	this->mErrorMessage = NSLOCTEXT("ErrorMessages", "LostConnectionWithOnlineService", "You got sent to main menu as you lost connection with the online service. Your game was autosaved. You need to relaunch the game from the launcher to login again (sorry for the temporary solution)");
 }
 UFGEM_FailedToLoginToOnlineService::UFGEM_FailedToLoginToOnlineService() : Super() {
-	this->mErrorMessage = NSLOCTEXT("ErrorMessages", "FailedToLoginToOnlineService", "Failed to login to the online service. You need to relaunch the game from the launcher to login again (sorry for the temporary solution)"); 
+	this->mErrorMessage = NSLOCTEXT("ErrorMessages", "FailedToLoginToOnlineService", "Failed to login to the online service. You need to relaunch the game from the launcher to login again (sorry for the temporary solution)");
 }
 FFGOnlineFriend::FFGOnlineFriend(){ }
 FFGOnlineFriend::FFGOnlineFriend(TSharedRef<FOnlineFriend> onlineFriend){ }

@@ -30,10 +30,10 @@ bool UFGItemDescriptor::FGenerateIconContext::IsValid() const{ return bool(); }
 UFGItemDescriptor::FGenerateIconContext UFGItemDescriptor::GenerateIconContext = UFGItemDescriptor::FGenerateIconContext();
 #endif 
 UFGItemDescriptor::UFGItemDescriptor() : Super() {
-	this->mUseDisplayNameAndDescription = true; 
-	this->mStackSize = EStackSize::SS_MEDIUM; 
-	this->mCanBeDiscarded = true; 
-	this->mForm = EResourceForm::RF_SOLID; 
+	this->mUseDisplayNameAndDescription = true;
+	this->mStackSize = EStackSize::SS_MEDIUM;
+	this->mCanBeDiscarded = true;
+	this->mForm = EResourceForm::RF_SOLID;
 }
 void UFGItemDescriptor::Serialize(FArchive& ar){ Super::Serialize(ar);}
 void UFGItemDescriptor::PostLoad(){ Super::PostLoad();}

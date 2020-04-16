@@ -4,8 +4,8 @@
 
 
 UFGCircuitConnectionComponent::UFGCircuitConnectionComponent() : Super() {
-	this->mMaxNumConnectionLinks = 1; 
-	this->mCircuitID = -1; 
+	this->mMaxNumConnectionLinks = 1;
+	this->mCircuitID = -1;
 }
 void UFGCircuitConnectionComponent::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void UFGCircuitConnectionComponent::OnComponentDestroyed(bool isDestroyingHierarchy){ }

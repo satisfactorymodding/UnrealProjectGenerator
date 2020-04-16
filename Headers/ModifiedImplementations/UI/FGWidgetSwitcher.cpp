@@ -4,7 +4,7 @@
 
 
 UFGWidgetSwitcher::UFGWidgetSwitcher() : Super() {
-	this->mFadeOutTime = 0.25; 
+	this->mFadeOutTime = 0.25;
 }
 void UFGWidgetSwitcher::ReleaseSlateResources(bool bReleaseChildren){ }
 void UFGWidgetSwitcher::RemoveFromParent(){ }

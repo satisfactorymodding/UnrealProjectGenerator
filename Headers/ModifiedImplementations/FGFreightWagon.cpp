@@ -6,14 +6,14 @@
 
 AFGFreightWagon::AFGFreightWagon() : Super() {
 	this->mVehicleMovement = CreateDefaultSubobject<UFGRailroadVehicleMovementComponent>(TEXT("MovementComp"));
-	this->mInventorySize = 24; 
-	this->mLaunchCharacterScalar = 3000; 
+	this->mInventorySize = 24;
+	this->mLaunchCharacterScalar = 3000;
 	this->mCargoOverlapCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("cargoCollision")); this->mCargoOverlapCollision->SetupAttachment(this->mMesh);
-	this->mLength = 500; 
-	this->mHologramClass = AFGRailroadVehicleHologram::StaticClass(); 
-	this->mDisabledByWaterLocations.SetNum(1); this->mDisabledByWaterLocations[0].X = 0; this->mDisabledByWaterLocations[0].Y = 0; this->mDisabledByWaterLocations[0].Z = 0; 
-	this->mSignificanceRange = 20000; 
-	this->mShouldAttachDriver = true; 
+	this->mLength = 500;
+	this->mHologramClass = AFGRailroadVehicleHologram::StaticClass();
+	this->mDisabledByWaterLocations.SetNum(1); this->mDisabledByWaterLocations[0].X = 0; this->mDisabledByWaterLocations[0].Y = 0; this->mDisabledByWaterLocations[0].Z = 0;
+	this->mSignificanceRange = 20000;
+	this->mShouldAttachDriver = true;
 }
 void AFGFreightWagon::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGFreightWagon::BeginPlay(){ }

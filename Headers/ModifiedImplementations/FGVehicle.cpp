@@ -10,14 +10,14 @@ bool AFGVehicle::IsRelevancyOwnerFor(const AActor* Actor, const AActor* Owner, c
 AFGVehicle::AFGVehicle() : Super() {
 	this->mMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VehicleMesh"));
 	this->mHealthComponent = CreateDefaultSubobject<UFGHealthComponent>(TEXT("HealthComponent"));
-	this->mDisabledByWaterLocations.SetNum(1); this->mDisabledByWaterLocations[0].X = 0; this->mDisabledByWaterLocations[0].Y = 0; this->mDisabledByWaterLocations[0].Z = 0; 
-	this->mPrimaryColor.R = -1; this->mPrimaryColor.G = -1; this->mPrimaryColor.B = -1; this->mPrimaryColor.A = 1; 
-	this->mSecondaryColor.R = -1; this->mSecondaryColor.G = -1; this->mSecondaryColor.B = -1; this->mSecondaryColor.A = 1; 
-	this->mSubmergedAngularDamping = 6; 
-	this->mSubmergedLinearDamping = 15; 
-	this->mSubmergedBouyantForce = 1000; 
-	this->mSignificanceRange = 20000; 
-	this->mShouldAttachDriver = true; 
+	this->mDisabledByWaterLocations.SetNum(1); this->mDisabledByWaterLocations[0].X = 0; this->mDisabledByWaterLocations[0].Y = 0; this->mDisabledByWaterLocations[0].Z = 0;
+	this->mPrimaryColor.R = -1; this->mPrimaryColor.G = -1; this->mPrimaryColor.B = -1; this->mPrimaryColor.A = 1;
+	this->mSecondaryColor.R = -1; this->mSecondaryColor.G = -1; this->mSecondaryColor.B = -1; this->mSecondaryColor.A = 1;
+	this->mSubmergedAngularDamping = 6;
+	this->mSubmergedLinearDamping = 15;
+	this->mSubmergedBouyantForce = 1000;
+	this->mSignificanceRange = 20000;
+	this->mShouldAttachDriver = true;
 }
 void AFGVehicle::BeginPlay(){ }
 void AFGVehicle::EndPlay(const EEndPlayReason::Type EndPlayReason){ }

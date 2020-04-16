@@ -9,8 +9,8 @@ AFGGasPillar::AFGGasPillar() : Super() {
 	this->mMesh = CreateDefaultSubobject<UHierarchicalInstancedStaticMeshComponent>(TEXT("Mesh"));
 	this->mOverlapCollision = CreateDefaultSubobject<USphereComponent>(TEXT("OverlapBox")); this->mOverlapCollision->SetupAttachment(this->mMesh);
 	this->mDotComponent = CreateDefaultSubobject<UFGDotComponent>(TEXT("DotComponent")); this->mDotComponent->SetupAttachment(this->mOverlapCollision);
-	this->mSignificanceRange = 15000; 
-	this->bReplicates = true; 
+	this->mSignificanceRange = 15000;
+	this->bReplicates = true;
 	this->RootComponent = this->mMesh;
 }
 void AFGGasPillar::BeginPlay(){ }

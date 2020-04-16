@@ -4,9 +4,9 @@
 
 
 UFGFactoryConnectionComponent::UFGFactoryConnectionComponent() : Super() {
-	this->mConnectorClearance = 100; 
-	this->mInventoryAccessIndex = -1; 
-	this->bReplicates = true; 
+	this->mConnectorClearance = 100;
+	this->mInventoryAccessIndex = -1;
+	this->bReplicates = true;
 }
 void UFGFactoryConnectionComponent::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void UFGFactoryConnectionComponent::OnComponentDestroyed(bool isDestroyingHierarchy){ }

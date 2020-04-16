@@ -4,7 +4,7 @@
 
 
 UFGAnimNotify_FootDown::UFGAnimNotify_FootDown() : Super() {
-	this->mPlaySound = true; 
+	this->mPlaySound = true;
 }
 FString UFGAnimNotify_FootDown::GetNotifyName_Implementation() const{ return FString(); }
 void UFGAnimNotify_FootDown::Notify(USkeletalMeshComponent* meshComp, UAnimSequenceBase* animation){ }

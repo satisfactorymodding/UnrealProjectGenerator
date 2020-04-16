@@ -5,7 +5,7 @@
 #include "FGAdminInterface.h"
 
 UFGSubsystemClasses::UFGSubsystemClasses() : Super() {
-	this->mFoliageRemovalSubsystemClass = AFGFoliageRemovalSubsystem::StaticClass(); 
-	this->mAdminInterfaceClass = AFGAdminInterface::StaticClass(); 
+	this->mFoliageRemovalSubsystemClass = AFGFoliageRemovalSubsystem::StaticClass();
+	this->mAdminInterfaceClass = AFGAdminInterface::StaticClass();
 }
 UFGSubsystemClasses* UFGSubsystemClasses::Get(){ return nullptr; }

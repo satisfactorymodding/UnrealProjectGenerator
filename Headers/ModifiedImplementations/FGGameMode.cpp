@@ -7,15 +7,15 @@
 #include "FGCharacterPlayer.h"
 
 AFGGameMode::AFGGameMode() : Super() {
-	this->mLastAutosaveId = 255; 
-	this->mDefaultRemoteCallObjectsClassNames.SetNum(1); this->mDefaultRemoteCallObjectsClassNames[0] = FSoftClassPath("/Game/FactoryGame/Character/Player/BP_RemoteCallObject.BP_RemoteCallObject_C"); 
-	this->mServerRestartTimeHours = 24; 
-	this->mSkipTutorialInPIE = true; 
-	this->GameStateClass = AFGGameState::StaticClass(); 
-	this->PlayerStateClass = AFGPlayerState::StaticClass(); 
-	this->HUDClass = AFGHUD::StaticClass(); 
-	this->DefaultPawnClass = AFGCharacterPlayer::StaticClass(); 
-	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = false; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0; 
+	this->mLastAutosaveId = 255;
+	this->mDefaultRemoteCallObjectsClassNames.SetNum(1); this->mDefaultRemoteCallObjectsClassNames[0] = FSoftClassPath("/Game/FactoryGame/Character/Player/BP_RemoteCallObject.BP_RemoteCallObject_C");
+	this->mServerRestartTimeHours = 24;
+	this->mSkipTutorialInPIE = true;
+	this->GameStateClass = AFGGameState::StaticClass();
+	this->PlayerStateClass = AFGPlayerState::StaticClass();
+	this->HUDClass = AFGHUD::StaticClass();
+	this->DefaultPawnClass = AFGCharacterPlayer::StaticClass();
+	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = false; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0;
 }
 void AFGGameMode::Serialize(FArchive& ar){ Super::Serialize(ar);}
 void AFGGameMode::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }

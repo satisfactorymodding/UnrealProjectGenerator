@@ -4,10 +4,10 @@
 
 
 AFGUnlockSubsystem::AFGUnlockSubsystem() : Super() {
-	this->mNumTotalInventorySlots = 16; 
-	this->mNumTotalArmEquipmentSlots = 1; 
-	this->bAlwaysRelevant = true; 
-	this->bReplicates = true; 
+	this->mNumTotalInventorySlots = 16;
+	this->mNumTotalArmEquipmentSlots = 1;
+	this->bAlwaysRelevant = true;
+	this->bReplicates = true;
 }
 void AFGUnlockSubsystem::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGUnlockSubsystem::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
