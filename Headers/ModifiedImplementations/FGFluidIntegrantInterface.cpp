@@ -2,7 +2,17 @@
 
 #include "FGFluidIntegrantInterface.h"
 
-bool FFluidBox::Serialize(FArchive& ar){ return bool(); }
-bool FFluidBox::operator==(const FFluidBox& other) const{ return bool(); }
-bool FFluidBox::operator!=(const FFluidBox& other) const{ return bool(); }
+bool FFluidBox::Serialize(FArchive& ar){ 
+	if (ar.ArIsSaveGame) {
+
+        ar << Content;
+    }
+	return true;
+}
+bool FFluidBox::operator==(const FFluidBox& other) const{ 
+	return !this->operator!=(other);
+}
+bool FFluidBox::operator!=(const FFluidBox& other) const{ 
+	return FPlatformMemory::Memcmp(this, &other, sizeof(FFluidBox));
+}
 void IFGFluidIntegrantInterface::OnFluidDescriptorSet(){ }

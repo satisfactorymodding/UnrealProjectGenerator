@@ -139,7 +139,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEquipmentDescriptor, 3651868990);
+	IMPLEMENT_CLASS(UFGEquipmentDescriptor, 1865122510);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGEquipmentDescriptor>()
 	{
 		return UFGEquipmentDescriptor::StaticClass();

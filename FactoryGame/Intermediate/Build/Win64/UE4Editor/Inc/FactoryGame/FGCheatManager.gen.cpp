@@ -36,6 +36,8 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpSchematics();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpSignificanceManagedObjects();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DumpTicking();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DupeComponentInCircuit();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_DupeComponentToAnotherCircuit();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_EmptyAllPipes();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_EnableAudioDebug();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_EnableBuildableTick();
@@ -162,6 +164,8 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 			{ "DumpSchematics", &UFGCheatManager::execDumpSchematics },
 			{ "DumpSignificanceManagedObjects", &UFGCheatManager::execDumpSignificanceManagedObjects },
 			{ "DumpTicking", &UFGCheatManager::execDumpTicking },
+			{ "DupeComponentInCircuit", &UFGCheatManager::execDupeComponentInCircuit },
+			{ "DupeComponentToAnotherCircuit", &UFGCheatManager::execDupeComponentToAnotherCircuit },
 			{ "EmptyAllPipes", &UFGCheatManager::execEmptyAllPipes },
 			{ "EnableAudioDebug", &UFGCheatManager::execEnableAudioDebug },
 			{ "EnableBuildableTick", &UFGCheatManager::execEnableBuildableTick },
@@ -714,6 +718,76 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_DumpTicking_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGCheatManager_DupeComponentInCircuit_Statics
+	{
+		struct FGCheatManager_eventDupeComponentInCircuit_Parms
+		{
+			int32 target;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_target;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGCheatManager_DupeComponentInCircuit_Statics::NewProp_target = { "target", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCheatManager_eventDupeComponentInCircuit_Parms, target), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCheatManager_DupeComponentInCircuit_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCheatManager_DupeComponentInCircuit_Statics::NewProp_target,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_DupeComponentInCircuit_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGCheatManager.h" },
+		{ "ToolTip", "Duplicate a component within a circuit so it contains multiple entries for the same component." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_DupeComponentInCircuit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, nullptr, "DupeComponentInCircuit", sizeof(FGCheatManager_eventDupeComponentInCircuit_Parms), Z_Construct_UFunction_UFGCheatManager_DupeComponentInCircuit_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_DupeComponentInCircuit_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_DupeComponentInCircuit_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_DupeComponentInCircuit_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGCheatManager_DupeComponentInCircuit()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_DupeComponentInCircuit_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGCheatManager_DupeComponentToAnotherCircuit_Statics
+	{
+		struct FGCheatManager_eventDupeComponentToAnotherCircuit_Parms
+		{
+			int32 source;
+			int32 target;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_target;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_source;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGCheatManager_DupeComponentToAnotherCircuit_Statics::NewProp_target = { "target", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCheatManager_eventDupeComponentToAnotherCircuit_Parms, target), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGCheatManager_DupeComponentToAnotherCircuit_Statics::NewProp_source = { "source", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCheatManager_eventDupeComponentToAnotherCircuit_Parms, source), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCheatManager_DupeComponentToAnotherCircuit_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCheatManager_DupeComponentToAnotherCircuit_Statics::NewProp_target,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCheatManager_DupeComponentToAnotherCircuit_Statics::NewProp_source,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_DupeComponentToAnotherCircuit_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGCheatManager.h" },
+		{ "ToolTip", "Duplicate a component from one circuit to another circuit so they contain the same component." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_DupeComponentToAnotherCircuit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, nullptr, "DupeComponentToAnotherCircuit", sizeof(FGCheatManager_eventDupeComponentToAnotherCircuit_Parms), Z_Construct_UFunction_UFGCheatManager_DupeComponentToAnotherCircuit_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_DupeComponentToAnotherCircuit_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_DupeComponentToAnotherCircuit_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_DupeComponentToAnotherCircuit_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGCheatManager_DupeComponentToAnotherCircuit()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_DupeComponentToAnotherCircuit_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -3710,6 +3784,8 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpSchematics, "DumpSchematics" }, // 153533480
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpSignificanceManagedObjects, "DumpSignificanceManagedObjects" }, // 32639872
 		{ &Z_Construct_UFunction_UFGCheatManager_DumpTicking, "DumpTicking" }, // 519487670
+		{ &Z_Construct_UFunction_UFGCheatManager_DupeComponentInCircuit, "DupeComponentInCircuit" }, // 1013311630
+		{ &Z_Construct_UFunction_UFGCheatManager_DupeComponentToAnotherCircuit, "DupeComponentToAnotherCircuit" }, // 3979431356
 		{ &Z_Construct_UFunction_UFGCheatManager_EmptyAllPipes, "EmptyAllPipes" }, // 799469859
 		{ &Z_Construct_UFunction_UFGCheatManager_EnableAudioDebug, "EnableAudioDebug" }, // 424752970
 		{ &Z_Construct_UFunction_UFGCheatManager_EnableBuildableTick, "EnableBuildableTick" }, // 3373987435
@@ -3855,7 +3931,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCheatManager, 2571615347);
+	IMPLEMENT_CLASS(UFGCheatManager, 1410919028);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCheatManager>()
 	{
 		return UFGCheatManager::StaticClass();

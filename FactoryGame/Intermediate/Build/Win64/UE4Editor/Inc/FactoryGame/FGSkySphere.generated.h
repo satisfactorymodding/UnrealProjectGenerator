@@ -24,7 +24,7 @@ struct FSkySphereSettings;
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSkySphereSettings>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_RPC_WRAPPERS \
 	virtual void UpdatePreview_Implementation(); \
  \
 	DECLARE_FUNCTION(execGetFloatCurveValue) \
@@ -56,7 +56,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSkySphereSettings
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void UpdatePreview_Implementation(); \
  \
 	DECLARE_FUNCTION(execGetFloatCurveValue) \
@@ -88,15 +88,15 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSkySphereSettings
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_EVENT_PARMS \
 	struct FGSkySphere_eventApplySkySphereSettings_Parms \
 	{ \
 		FSkySphereSettings settings; \
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGSkySphere(); \
 	friend struct Z_Construct_UClass_AFGSkySphere_Statics; \
@@ -106,7 +106,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGSkySphere*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGSkySphere(); \
 	friend struct Z_Construct_UClass_AFGSkySphere_Statics; \
@@ -116,7 +116,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGSkySphere*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGSkySphere(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGSkySphere) \
@@ -129,7 +129,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGSkySphere(AFGSkySphere&&); \
@@ -140,50 +140,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGSkySphere); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGSkySphere)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mSunLightColorCurve() { return STRUCT_OFFSET(AFGSkySphere, mSunLightColorCurve); } \
-	FORCEINLINE static uint32 __PPO__mSunIntensity() { return STRUCT_OFFSET(AFGSkySphere, mSunIntensity); } \
-	FORCEINLINE static uint32 __PPO__mSunRotationPitch() { return STRUCT_OFFSET(AFGSkySphere, mSunRotationPitch); } \
-	FORCEINLINE static uint32 __PPO__mSunLightShaftOcclusionCurve() { return STRUCT_OFFSET(AFGSkySphere, mSunLightShaftOcclusionCurve); } \
-	FORCEINLINE static uint32 __PPO__mMoonLightColorCurve() { return STRUCT_OFFSET(AFGSkySphere, mMoonLightColorCurve); } \
-	FORCEINLINE static uint32 __PPO__mMoonIntensity() { return STRUCT_OFFSET(AFGSkySphere, mMoonIntensity); } \
-	FORCEINLINE static uint32 __PPO__mMoonRotationPitch() { return STRUCT_OFFSET(AFGSkySphere, mMoonRotationPitch); } \
-	FORCEINLINE static uint32 __PPO__mMoonLightShaftOcclusionCurve() { return STRUCT_OFFSET(AFGSkySphere, mMoonLightShaftOcclusionCurve); } \
-	FORCEINLINE static uint32 __PPO__mSkyLightIntensity() { return STRUCT_OFFSET(AFGSkySphere, mSkyLightIntensity); } \
-	FORCEINLINE static uint32 __PPO__mOcclusionTintColor() { return STRUCT_OFFSET(AFGSkySphere, mOcclusionTintColor); } \
-	FORCEINLINE static uint32 __PPO__mHorizonColorCurve() { return STRUCT_OFFSET(AFGSkySphere, mHorizonColorCurve); } \
-	FORCEINLINE static uint32 __PPO__mZenithColorCurve() { return STRUCT_OFFSET(AFGSkySphere, mZenithColorCurve); } \
-	FORCEINLINE static uint32 __PPO__mCloudColorCurve() { return STRUCT_OFFSET(AFGSkySphere, mCloudColorCurve); } \
-	FORCEINLINE static uint32 __PPO__mCloudOpacity() { return STRUCT_OFFSET(AFGSkySphere, mCloudOpacity); } \
-	FORCEINLINE static uint32 __PPO__mStarBrightness() { return STRUCT_OFFSET(AFGSkySphere, mStarBrightness); } \
-	FORCEINLINE static uint32 __PPO__mSkyLightColor() { return STRUCT_OFFSET(AFGSkySphere, mSkyLightColor); } \
-	FORCEINLINE static uint32 __PPO__mSunFogMultiplier() { return STRUCT_OFFSET(AFGSkySphere, mSunFogMultiplier); }
+#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_59_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_61_PROLOG \
-	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_EVENT_PARMS
-
-
-#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_64_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGSkySphere_h_62_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

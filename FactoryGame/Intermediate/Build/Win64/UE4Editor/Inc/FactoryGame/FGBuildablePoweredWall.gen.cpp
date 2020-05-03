@@ -93,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePoweredWall() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePoweredWall_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildablePoweredWall.h" },
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePoweredWall.h" },
-		{ "ToolTip", "A wall with a power socket, provides the whole building with power." },
+		{ "ToolTip", "A wall with a power socket, provides the whole building with power.\n@todoG2 clean this out along with the foundation subsystem." },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGBuildablePoweredWall_Statics::StaticCppClassTypeInfo = {
@@ -123,7 +123,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePoweredWall() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildablePoweredWall, 2456692312);
+	IMPLEMENT_CLASS(AFGBuildablePoweredWall, 1419987561);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildablePoweredWall>()
 	{
 		return AFGBuildablePoweredWall::StaticClass();

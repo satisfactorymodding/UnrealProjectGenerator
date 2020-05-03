@@ -194,11 +194,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine
-/Yc"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.cpp"
-/Fo"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h.obj"
+/I E:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine
+/Yc"E:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"E:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"E:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.cpp"
+/Fo"E:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h.obj"
 /TP
 /GR-
 /W4

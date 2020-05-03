@@ -304,7 +304,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadTrackConnectionComponent() {}
 		{ "ToolTip", "If this is a switch, this is the switch position." },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics::NewProp_mSwitchPosition = { "mSwitchPosition", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRailroadTrackConnectionComponent, mSwitchPosition), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics::NewProp_mSwitchPosition_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics::NewProp_mSwitchPosition_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics::NewProp_mSwitchPosition = { "mSwitchPosition", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRailroadTrackConnectionComponent, mSwitchPosition), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics::NewProp_mSwitchPosition_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics::NewProp_mSwitchPosition_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics::NewProp_mConnectedComponents_MetaData[] = {
 		{ "EditInline", "true" },
@@ -312,7 +312,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadTrackConnectionComponent() {}
 		{ "ToolTip", "The components we're connected to. If >1 this is a switch." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics::NewProp_mConnectedComponents = { "mConnectedComponents", nullptr, (EPropertyFlags)0x0040008001000008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRailroadTrackConnectionComponent, mConnectedComponents), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics::NewProp_mConnectedComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics::NewProp_mConnectedComponents_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics::NewProp_mConnectedComponents = { "mConnectedComponents", nullptr, (EPropertyFlags)0x0040008001000028, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRailroadTrackConnectionComponent, mConnectedComponents), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics::NewProp_mConnectedComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics::NewProp_mConnectedComponents_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics::NewProp_mConnectedComponents_Inner = { "mConnectedComponents", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGRailroadTrackConnectionComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics::NewProp_mRailRoadSwitchDelegate_MetaData[] = {
@@ -357,7 +357,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadTrackConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRailroadTrackConnectionComponent, 4060140932);
+	IMPLEMENT_CLASS(UFGRailroadTrackConnectionComponent, 3281702303);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGRailroadTrackConnectionComponent>()
 	{
 		return UFGRailroadTrackConnectionComponent::StaticClass();

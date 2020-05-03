@@ -338,7 +338,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildDescriptor, 1654381259);
+	IMPLEMENT_CLASS(UFGBuildDescriptor, 152124399);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBuildDescriptor>()
 	{
 		return UFGBuildDescriptor::StaticClass();

@@ -1586,6 +1586,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mResourceSinkPoints_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mResourceSinkPoints;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mFluidColor_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mFluidColor;
@@ -1756,6 +1760,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Base for all descriptors in the game like resource, equipment etc." },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mResourceSinkPoints_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
+		{ "ToolTip", "This is just a placeholder for the resource sink points so we can add them to the\nJSON wiki file even though there is in a separate datatable." },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mResourceSinkPoints = { "mResourceSinkPoints", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mResourceSinkPoints), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mResourceSinkPoints_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mResourceSinkPoints_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidColor_MetaData[] = {
 		{ "Category", "Item|Fluid" },
@@ -2008,6 +2019,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription = { "mUseDisplayNameAndDescription", nullptr, (EPropertyFlags)0x0010000000012001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGItemDescriptor), &Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGItemDescriptor_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mResourceSinkPoints,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidColor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidFriction,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mFluidViscosity,
@@ -2067,7 +2079,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGItemDescriptor, 1328733556);
+	IMPLEMENT_CLASS(UFGItemDescriptor, 545477773);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGItemDescriptor>()
 	{
 		return UFGItemDescriptor::StaticClass();

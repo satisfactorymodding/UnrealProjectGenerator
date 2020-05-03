@@ -777,7 +777,7 @@ namespace DefaultValues
             string fileContent = File.ReadAllText(filePath);
             foreach (var cls in ClassCtor)
             {
-                if (Regex.IsMatch(fileContent, $@"{cls.Key}::{cls.Key}\(\)(?: : Super\(\))\s?{{.*?}}", RegexOptions.Singleline))
+                if (Regex.IsMatch(fileContent, $@"{cls.Key}::{cls.Key}\(\)(?: : Super\(\))?\s?{{.*?}}", RegexOptions.Singleline))
                 {
                     string header = Path.GetFileName(filePath).Replace(".cpp", ".h");
                     string includeHeader = $"#include \"{header}\"";
@@ -789,7 +789,7 @@ namespace DefaultValues
                             fileContent = fileContent.Replace(includeHeader, $"{includeHeader}{Environment.NewLine}{incl}");
                         }
                     }
-                    fileContent = Regex.Replace(fileContent, $@"{cls.Key}::{cls.Key}\(\)(?: : Super\(\))\s?{{.*?}}", $"{cls.Key}::{cls.Key}() : Super() {{{cls.Value}}}", RegexOptions.Singleline);
+                    fileContent = Regex.Replace(fileContent, $@"{cls.Key}::{cls.Key}\(\)(?: : Super\(\))?\s?{{.*?}}", $"{cls.Key}::{cls.Key}() : Super() {{{cls.Value}}}", RegexOptions.Singleline);
                 }
             }
             File.WriteAllText(filePath, fileContent);

@@ -114,6 +114,7 @@ public:
 
 	/** Debug */
 	void DisplayDebug( class UCanvas* canvas, const class FDebugDisplayInfo& debugDisplay, float& YL, float& YPos );
+	FString GetDebugName() const;
 
 protected:
 	/** Called when the circuit ID changes, this can happen at any time when the circuitry is changed, e.g. when circuits are split or merged. */

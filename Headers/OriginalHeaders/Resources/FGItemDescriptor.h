@@ -405,6 +405,12 @@ protected:
 	UPROPERTY( EditDefaultsOnly, Category = "Item|Fluid" )
 	FColor mFluidColor;
 
+	/** This is just a placeholder for the resource sink points so we can add them to the 
+	* JSON wiki file even though there is in a separate datatable.  
+	*/
+	UPROPERTY()
+	float mResourceSinkPoints;
+
 private:
 	friend class FItemDescriptorDetails;
 	friend class FFGItemDescriptorPropertyHandle;

@@ -173,11 +173,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_Sender_MetaData[] = {
+		{ "Category", "ChatMessageStruct" },
 		{ "ModuleRelativePath", "Public/FGChatManager.h" },
-		{ "ToolTip", "The player who sent the message" },
+		{ "ToolTip", "The player who sent the message // MODDING EDIT: BPRW" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_Sender = { "Sender", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FChatMessageStruct, Sender), Z_Construct_UClass_AFGPlayerState_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_Sender_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_Sender_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_Sender = { "Sender", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FChatMessageStruct, Sender), Z_Construct_UClass_AFGPlayerState_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_Sender_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_Sender_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_ServerTimeStamp_MetaData[] = {
 		{ "Category", "ChatMessageStruct" },
@@ -229,7 +230,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FChatMessageStruct_Hash() { return 3056064275U; }
+	uint32 Get_Z_Construct_UScriptStruct_FChatMessageStruct_Hash() { return 2732803819U; }
 	static FName NAME_AFGChatManager_Multicast_BroadcastChatMessage = FName(TEXT("Multicast_BroadcastChatMessage"));
 	void AFGChatManager::Multicast_BroadcastChatMessage(FChatMessageStruct const& newMessage)
 	{

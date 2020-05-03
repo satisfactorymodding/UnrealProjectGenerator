@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWildCardDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWildCardDescriptor, 461801170);
+	IMPLEMENT_CLASS(UFGWildCardDescriptor, 3549013493);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGWildCardDescriptor>()
 	{
 		return UFGWildCardDescriptor::StaticClass();

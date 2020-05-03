@@ -384,7 +384,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRadarTower_Statics::Class_MetaDataParams[] = {
-		{ "AutoJson", "FALSE" },
 		{ "IncludePath", "Buildables/FGBuildableRadarTower.h" },
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 		{ "ToolTip", "Radar Tower reveals nearby fog of war on the Map. Expanding over time until it reaches its max limit." },
@@ -479,7 +478,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRadarTower, 1219521254);
+	IMPLEMENT_CLASS(AFGBuildableRadarTower, 1063171015);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableRadarTower>()
 	{
 		return AFGBuildableRadarTower::StaticClass();

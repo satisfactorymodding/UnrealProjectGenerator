@@ -18,6 +18,8 @@ class FACTORYGAME_API UFGRailroadTrackConnectionComponent : public UFGConnection
 public:
 	UFGRailroadTrackConnectionComponent();
 
+	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
+
 	// Begin ActorComponent interface
 	virtual void OnComponentDestroyed( bool isDestroyingHierarchy ) override;
 	// End ActorComponent interface
@@ -136,6 +138,7 @@ private:
 	/** Internal helper functions to add/remove connection. */
 	void AddConnectionInternal( UFGRailroadTrackConnectionComponent* toComponent );
 	void RemoveConnectionInternal( UFGRailroadTrackConnectionComponent* toComponent );
+
 public:
 	/** Delegate to fire when changing switch on a track */
 	UPROPERTY()
@@ -145,11 +148,11 @@ private:
 	FRailroadTrackPosition mTrackPosition;
 
 	/** The components we're connected to. If >1 this is a switch. */
-	UPROPERTY( SaveGame )
+	UPROPERTY( SaveGame, Replicated )
 	TArray< UFGRailroadTrackConnectionComponent* > mConnectedComponents;
 
 	/** If this is a switch, this is the switch position. */
-	UPROPERTY( SaveGame )
+	UPROPERTY( SaveGame, Replicated )
 	int32 mSwitchPosition;
 
 	/** The switch control associated with this connection, if any. */

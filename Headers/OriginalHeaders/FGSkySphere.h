@@ -49,8 +49,6 @@ struct FSkySphereSettings
 	bool OverrideSunIntensity;
 	bool OverrideMoonLightColor;
 	bool OverrideMoonIntensity;
-
-
 };
 
 UCLASS(HideCategories=(Input,Rendering))
@@ -81,7 +79,7 @@ public:
 	UFUNCTION( BlueprintImplementableEvent, Category="SkySphere", meta = (CallInEditor = "true") )
 	void ApplySkySphereSettings( UPARAM(ref) const FSkySphereSettings& settings );
 
-	/** Update the preview of the skyesphere in the editor */	
+	/** Update the preview of the skysphere in the editor */	
 	UFUNCTION( BlueprintNativeEvent, BlueprintCallable, meta=( CallInEditor = "true" ) )
 	void UpdatePreview();
 

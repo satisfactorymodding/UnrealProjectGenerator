@@ -7,6 +7,7 @@
 
 /**
  * A wall with a power socket, provides the whole building with power.
+ * @todoG2 clean this out along with the foundation subsystem.
  */
 UCLASS( Abstract )
 class FACTORYGAME_API AFGBuildablePoweredWall : public AFGBuildableWall

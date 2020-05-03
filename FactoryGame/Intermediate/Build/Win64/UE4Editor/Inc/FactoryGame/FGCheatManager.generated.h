@@ -16,6 +16,25 @@ class UFGItemDescriptor;
 
 #define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execDupeComponentToAnotherCircuit) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_source); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_target); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DupeComponentToAnotherCircuit(Z_Param_source,Z_Param_target); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDupeComponentInCircuit) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_target); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DupeComponentInCircuit(Z_Param_target); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execToggleDebuggingOnPipe) \
 	{ \
 		P_FINISH; \
@@ -998,6 +1017,25 @@ class UFGItemDescriptor;
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execDupeComponentToAnotherCircuit) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_source); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_target); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DupeComponentToAnotherCircuit(Z_Param_source,Z_Param_target); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDupeComponentInCircuit) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_target); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DupeComponentInCircuit(Z_Param_target); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execToggleDebuggingOnPipe) \
 	{ \
