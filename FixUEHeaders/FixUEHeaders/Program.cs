@@ -17,7 +17,7 @@ namespace FixUEHeaders
         const string FORCEINLINE_STRING = "MODDING_SHIPPING_FORCEINLINE";
         const string CLASS_REGEX = @"^(([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( final)?( ?: ?.*?)?\s*{((?:.|\n)*?))(^\2};)";
         const string CLASS_REGEX_WITH_S = @"^(([\s\t]*)(class|struct)\s([^\s]*?\s)??([^\s]*?)( final)?(\s?:\s?.*?)?\s*{((?:.|\n)*?))(^\2};)";
-        static string[] SML_DEPENDENCIES = new string[]{ "AnimGraphRuntime", "UtilityShaders", "InputCore", "TimeManagement", "ApplicationCore", "AIModule", "SlateCore", "BlueprintGraph", "Engine", "AnimationCore", "MovieScene", "APEX", "MeshDescription", "ClothingSystemRuntimeInterface", "PhysX", "NavigationSystem", "PakFile", "UnrealEd", "PhysXVehicles", "SignificanceManager", "AssetRegistry", "Messaging", "EngineMessages", "OnlineSubsystem", "RenderCore", "Json", "Sockets", "Slate", "GameplayTags", "DirectXMath", "EngineSettings", "GameplayTasks", "UMG", "PropertyPath", "PacketHandler", "CoreUObject", "AkAudio", "Core", "AudioPlatformConfiguration", "Kismet", "OnlineSubsystemUtils", "ImageWrapper", "ApexDestruction", "OnlineSubsystemNULL", "MessagingCommon", "MovieSceneTracks", "RSA", "RHI", "HTML5JS", "HTTP", "SynthBenchmark", "ReplicationGraph" };
+        static string[] SML_DEPENDENCIES = new string[]{ "AnimGraphRuntime", "UtilityShaders", "InputCore", "TimeManagement", "ApplicationCore", "AIModule", /*"SlateCore", */"BlueprintGraph", "Engine", "AnimationCore", "MovieScene", "APEX", "MeshDescription", "ClothingSystemRuntimeInterface", "PhysX", "NavigationSystem", "PakFile", "UnrealEd", "PhysXVehicles", "SignificanceManager", "AssetRegistry", "Messaging", "EngineMessages", "OnlineSubsystem", "RenderCore", "Json", "Sockets", /*"Slate", */"GameplayTags", "DirectXMath", "EngineSettings", "GameplayTasks", "UMG", "PropertyPath", "PacketHandler", "CoreUObject", "AkAudio", "Core", "AudioPlatformConfiguration", "Kismet", "OnlineSubsystemUtils", "ImageWrapper", "ApexDestruction", "OnlineSubsystemNULL", "MessagingCommon", "MovieSceneTracks", "RSA", "RHI", "HTML5JS", "HTTP", "SynthBenchmark", "ReplicationGraph" };
         static string[] SML_DEPENDENCIES_IGNORE = new string[] { }; // Just in case
         static int FixedFileCount = 0;
         static void Main(string[] args)
@@ -86,6 +86,11 @@ namespace FixUEHeaders
 
         private static Tuple<Dictionary<string, string>, Dictionary<string, string>> FixClass(string className, string classContents, Match matchedAs)
         {
+            if(className.StartsWith("S"))
+            {
+                // Slate, it's macros break regex
+                return Tuple.Create(new Dictionary<string, string>(), new Dictionary<string, string>());
+            }
             Dictionary<string, string> changes = new Dictionary<string, string>();
             Dictionary<string, string> priorityChanges = new Dictionary<string, string>();
             classContents = Regex.Replace(classContents, @"\/+\*(?:.|\s)*?\*\/", ""); // fix for comments containing brackets being matched as functions
@@ -94,8 +99,7 @@ namespace FixUEHeaders
             classContents = Regex.Replace(classContents, @"\s*UPROPERTY ?\( ?(?:.|\s)*?;", ""); // fix for UPROPERTY... macros being matched
             classContents = Regex.Replace(classContents, @"\s*UE_DEPRECATED ?\( ?(?:.|\s)*?\)", ""); // fix for UE_DEPRECATED... macros being matched
             classContents = Regex.Replace(classContents, @"\s*DEPRECATED ?\( ?(?:.|\s)*?\)", ""); // fix for DEPRECATED... macros being matched
-            bool foundConstructor = false;
-            bool foundDestructor = false;
+            bool foundDestructor = true;
             // remove #ifs
             foreach (Match ifMacro in Regex.Matches(classContents, @"\s*#if (.*?)\n((?:.|\n)*?)\n\s*#endif(.*)"))
             {
@@ -117,23 +121,23 @@ namespace FixUEHeaders
                         priorityChanges.Add(change.Key, change.Value);
                 classContents = classContents.Replace(match.Value, "");
             }
-            foreach (var change in FixFunctions(classContents, className, ref foundConstructor, ref foundDestructor))
+            foreach (var change in FixFunctions(classContents, className, ref foundDestructor))
                 if (!changes.ContainsKey(change.Key)) // Would get the same value anyway
                     changes.Add(change.Key, change.Value);
-            if(!foundConstructor || !foundDestructor)
-                priorityChanges.Add(matchedAs.Value, $"{matchedAs.Groups[1].Value}\r\npublic:{(foundConstructor ? "" : $"\r\n\t{FORCEINLINE_STRING} {className.Substring(className.LastIndexOf(":") + 1)}() = default;")}{(foundDestructor ? "" : $"\r\n\t{FORCEINLINE_STRING} ~{className.Substring(className.LastIndexOf(":") + 1)}() = default;")}\r\n{matchedAs.Groups[9].Value}");
+            if(!foundDestructor)
+                priorityChanges.Add(matchedAs.Value, $"{matchedAs.Groups[1].Value}\r\npublic:{(foundDestructor ? "" : $"\r\n\t{FORCEINLINE_STRING} ~{className.Substring(className.LastIndexOf(":") + 1)}() = default;")}\r\n{matchedAs.Groups[9].Value}");
             return Tuple.Create(changes, priorityChanges);
         }
 
-        private static Dictionary<string, string> FixFunctions(string content, string className, ref bool foundConstructor, ref bool foundDestructor)
+        private static Dictionary<string, string> FixFunctions(string content, string className, ref bool foundDestructor)
         {
             className = className.Substring(className.LastIndexOf(":") + 1);
             content = Regex.Replace(content, @"\r\n\s*public:", "\r\n");
             content = Regex.Replace(content, @"\r\n\s*private:", "\r\n");
             content = Regex.Replace(content, @"\r\n\s*protected:", "\r\n");
             Dictionary<string, string> changes = new Dictionary<string, string>();
-            // Match function definition (including UFUNCTIONs), nothing to see here ... just walk away ... probably the reason for many missing implementations...
-            foreach (Match function in Regex.Matches(content, @"^([ \t]*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?)((virtual[ \t]?)?(static[ \t]?)?(const[ \t]?)?(class[ \t]?)?(explicit[ \t]?)?([^=()\n{}]*?[ \t])?((?:[^=<>()\n{}]|operator.+)*?)(\((?:(?:[^{}\n]*?\n)*?|[^{}\n]*?)\))([ \t]*const)?([ \t]*override)?(.*?)[ \t]*=[ \t]*default;)", RegexOptions.Multiline))
+            // Match function definition (including UFUNCTIONs)
+            foreach (Match function in Regex.Matches(content, @"^([ \t]*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?)((virtual[ \t]?)?(static[ \t]?)?(const[ \t]?)?(class[ \t]?)?(explicit[ \t]?)?([^=()\n{}]*?[ \t])?((?:[^=<>()\n{}]|operator.+)*?)(\((?:(?:[^{}\n]*?\n)*?|[^{}\n]*?)\))([ \t]*const)?([ \t]*override)?([^{}]*?)[ \t]*=[ \t]*default;)", RegexOptions.Multiline))
             {
                 string prefix = function.Groups[1].Value;
                 string ufunction = function.Groups[2].Value;
@@ -184,8 +188,6 @@ namespace FixUEHeaders
                 parameters = Regex.Replace(parameters, @"\/\*.*?\*\/", ""); // fix for commented defaults
                 template = Regex.Replace(template, @"\/\*.*?\*\/", ""); // fix for commented defaults ?
 
-                if (functionName.Trim() == className)
-                    foundConstructor = true;
                 if (functionName.Trim() == "~" + className)
                     foundDestructor = true;
 
@@ -194,7 +196,7 @@ namespace FixUEHeaders
             }
 
             // Check for non-inline constructors
-            foreach (Match function in Regex.Matches(content, @"^([ \t]*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?)((virtual[ \t]?)?(static[ \t]?)?(const[ \t]?)?(class[ \t]?)?(explicit[ \t]?)?([^=()\n{}]*?[ \t])?((?:[^=<>()\n{}]|operator.+)*?)(\((?:[^{}\n]*?(?:\n[^{}\n]*?)*|[^{}\n]*?)\))([ \t]*const)?([ \t]*override)?(.*?);)", RegexOptions.Multiline))
+            foreach (Match function in Regex.Matches(content, @"^([ \t]*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?)((virtual[ \t]?)?(static[ \t]?)?(const[ \t]?)?(class[ \t]?)?(explicit[ \t]?)?([^=()\n{}]*?[ \t])?((?:[^=<>()\n{}]|operator.+)*?)(\((?:[^{}\n]*?(?:\n[^{}\n]*?)*|[^{}\n]*?)\))([ \t]*const)?([ \t]*override)?([^{}()]*?);)", RegexOptions.Multiline))
             {
                 string prefix = function.Groups[1].Value;
                 string ufunction = function.Groups[2].Value;
@@ -212,18 +214,16 @@ namespace FixUEHeaders
                 string isOverride = function.Groups[14].Value;
                 string extras = function.Groups[15].Value;
 
-                if (!IsValidFunctionName(functionName) && !(functionName.Trim().Replace("~", "") == className && string.IsNullOrWhiteSpace(returnType)))
+                if (!IsValidFunctionName(functionName))
                     continue;
 
-                if (functionName.Trim() == className)
-                    foundConstructor = true;
                 if (functionName.Trim() == "~" + className)
                     foundDestructor = true;
                 content = content.Replace(function.Value, "");
             }
 
             // Match function definition (including UFUNCTIONs), nothing to see here ... just walk away ... probably the reason for many missing implementations...
-            foreach (Match function in Regex.Matches(content, @"^([ \t]*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?)((virtual[ \t]?)?(static[ \t]?)?(const[ \t]?)?(class[ \t]?)?(explicit[ \t]?)?([^=()\n{}]*?[ \t])?((?:[^=<>()\n{}]|operator.+)*?)(\((?:[^{}\n]*?(?:\n[^{}\n]*?)*|[^{}\n]*?)\))([ \t]*const)?([ \t]*override)?((?:.|\n)*?)\s*{(?:.|\s)*?})", RegexOptions.Multiline))
+            foreach (Match function in Regex.Matches(content, @"^([ \t]*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?)((virtual[ \t]?)?(static[ \t]?)?(const[ \t]?)?(class[ \t]?)?(explicit[ \t]?)?([^=()\n{}]*?[ \t])?((?:[^=<>()\n{}]|operator.+)*?)(\((?:[^{};\n]*?(?:\n[^{};\n]*?)*|[^{};\n]*?)\))([ \t]*const)?([ \t]*override)?((?:[^;]|\n)*?)\s*{(?:.|\s)*?})", RegexOptions.Multiline))
             {
                 string prefix = function.Groups[1].Value;
                 string ufunction = function.Groups[2].Value;
@@ -256,6 +256,8 @@ namespace FixUEHeaders
                     isOverride = "";
                     while (bracketCount > 0)
                     {
+                        if(extras.Length == 0) break;
+
                         parameters += extras[0];
                         if (extras[0] == '(')
                             bracketCount++;
@@ -268,18 +270,18 @@ namespace FixUEHeaders
                     if (extras.Contains("override"))
                         isConst = " override";
                 }
+                if (bracketCount > 0) continue;
 
                 parameters = Regex.Replace(parameters, @"UPARAM\s*\(.*?\)", "");
 
                 parameters = Regex.Replace(parameters, @"\/\*.*?\*\/", ""); // fix for commented defaults
                 template = Regex.Replace(template, @"\/\*.*?\*\/", ""); // fix for commented defaults ?
 
-                if (functionName.Trim() == className)
-                    foundConstructor = true;
                 if (functionName.Trim() == "~" + className)
                     foundDestructor = true;
-
-                if (!returnType.Contains("FORCEINLINE") && string.IsNullOrWhiteSpace(isVirtual))
+                if (!string.IsNullOrWhiteSpace(ufunction))
+                    changes.Add(function.Groups[0].Value, $"\t{FORCEINLINE_STRING + Environment.NewLine}{prefix}{suffix}");
+                else if (!returnType.Contains("FORCEINLINE") && string.IsNullOrWhiteSpace(isVirtual))
                     changes.Add(function.Groups[0].Value, $"{prefix}{FORCEINLINE_STRING} {suffix}");
             }
             return changes;
@@ -292,12 +294,12 @@ namespace FixUEHeaders
 
         private static bool IsValidFunctionName(string functionName)
         {
-            return Regex.Match(functionName.Trim(), @"^([\w\d_~]+|operator.+)$").Success && !(new string[] { "return", "if", "else", "while", "const", "struct", "for", "check", "checkSlow", "checkf", "PhysicsParallelFor" /* fill with more as they show up */ }).Contains(functionName.Trim()) && !IsAllCaps(functionName.Trim()); // Don't match macros
+            return Regex.Match(functionName.Trim(), @"^([\w\d_~]+|operator.+)$").Success && !(new string[] { "return", "if", "else", "while", "const", "struct", "for", "check", "checkSlow", "checkf", "PhysicsParallelFor", "case" /* fill with more as they show up */ }).Contains(functionName.Trim()) && !IsAllCaps(functionName.Trim()); // Don't match macros
         }
 
         private static bool IsValidReturnType(string returnType)
         {
-            return !(new string[] { ">::Type" /* fill with more as they show up */ }).Contains(returnType.Trim());
+            return !(new string[] { ">::Type", "case" /* fill with more as they show up */ }).Contains(returnType.Trim());
         }
 
         private static bool IsAllCaps(string str)
