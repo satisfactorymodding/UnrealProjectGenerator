@@ -187,7 +187,7 @@ public:
 
 	/** Updates the GameUserSettings for analytics and updates the analytics to respond to this change. */
 	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Settings" )
-	void SetAnalyticsDisabled( bool isDisabled, UAnalyticsService* analyticsService );
+	void SetAnalyticsDisabled( bool isDisabled, class UAnalyticsService* analyticsService );
 
 	/** Get if we require restart for the setting to apply */
 	UFUNCTION( BlueprintPure, Category="FactoryGame|Settings")

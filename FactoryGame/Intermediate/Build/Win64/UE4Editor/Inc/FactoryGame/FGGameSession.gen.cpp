@@ -188,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameSession() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGameSession, 1607853239);
+	IMPLEMENT_CLASS(AFGGameSession, 517139309);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGameSession>()
 	{
 		return AFGGameSession::StaticClass();

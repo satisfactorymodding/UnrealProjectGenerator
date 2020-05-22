@@ -537,7 +537,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTargetPoint() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGTargetPoint, 219098261);
+	IMPLEMENT_CLASS(AFGTargetPoint, 2402601751);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGTargetPoint>()
 	{
 		return AFGTargetPoint::StaticClass();

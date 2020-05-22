@@ -867,7 +867,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGStorySubsystem, 896430697);
+	IMPLEMENT_CLASS(AFGStorySubsystem, 893237474);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGStorySubsystem>()
 	{
 		return AFGStorySubsystem::StaticClass();

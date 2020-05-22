@@ -30,6 +30,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_GetCheatNoPower();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_GetGamePhaseManager();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGGamePhaseManager_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_GetOnlineSessionName();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_GetResearchManager();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGResearchManager_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_GetSchematicManager();
@@ -61,6 +62,8 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_SetCheatNoPower();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_SetHasInitalTradingPostLandAnimPlayed();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_SetIsSpaceElevatorBuilt();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGGameState_SetOnlineSessionName();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGVehicleSubsystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGItemRegrowSubsystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGResourceSinkSubsystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGUnlockSubsystem_NoRegister();
@@ -211,6 +214,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 			{ "GetCheatNoCost", &AFGGameState::execGetCheatNoCost },
 			{ "GetCheatNoPower", &AFGGameState::execGetCheatNoPower },
 			{ "GetGamePhaseManager", &AFGGameState::execGetGamePhaseManager },
+			{ "GetOnlineSessionName", &AFGGameState::execGetOnlineSessionName },
 			{ "GetResearchManager", &AFGGameState::execGetResearchManager },
 			{ "GetSchematicManager", &AFGGameState::execGetSchematicManager },
 			{ "GetSessionName", &AFGGameState::execGetSessionName },
@@ -234,6 +238,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 			{ "SetCheatNoPower", &AFGGameState::execSetCheatNoPower },
 			{ "SetHasInitalTradingPostLandAnimPlayed", &AFGGameState::execSetHasInitalTradingPostLandAnimPlayed },
 			{ "SetIsSpaceElevatorBuilt", &AFGGameState::execSetIsSpaceElevatorBuilt },
+			{ "SetOnlineSessionName", &AFGGameState::execSetOnlineSessionName },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -384,6 +389,39 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGGameState_GetGamePhaseManager_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGGameState_GetOnlineSessionName_Statics
+	{
+		struct FGGameState_eventGetOnlineSessionName_Parms
+		{
+			FString ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AFGGameState_GetOnlineSessionName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGGameState_eventGetOnlineSessionName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGGameState_GetOnlineSessionName_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGGameState_GetOnlineSessionName_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_GetOnlineSessionName_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Session" },
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGGameState_GetOnlineSessionName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGGameState, nullptr, "GetOnlineSessionName", sizeof(FGGameState_eventGetOnlineSessionName_Parms), Z_Construct_UFunction_AFGGameState_GetOnlineSessionName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGGameState_GetOnlineSessionName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGGameState_GetOnlineSessionName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGGameState_GetOnlineSessionName_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGGameState_GetOnlineSessionName()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGGameState_GetOnlineSessionName_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1174,6 +1212,47 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGGameState_SetOnlineSessionName_Statics
+	{
+		struct FGGameState_eventSetOnlineSessionName_Parms
+		{
+			FString inName;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_inName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_inName;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_SetOnlineSessionName_Statics::NewProp_inName_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AFGGameState_SetOnlineSessionName_Statics::NewProp_inName = { "inName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGGameState_eventSetOnlineSessionName_Parms, inName), METADATA_PARAMS(Z_Construct_UFunction_AFGGameState_SetOnlineSessionName_Statics::NewProp_inName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGGameState_SetOnlineSessionName_Statics::NewProp_inName_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGGameState_SetOnlineSessionName_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGGameState_SetOnlineSessionName_Statics::NewProp_inName,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameState_SetOnlineSessionName_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Session" },
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGGameState_SetOnlineSessionName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGGameState, nullptr, "SetOnlineSessionName", sizeof(FGGameState_eventSetOnlineSessionName_Parms), Z_Construct_UFunction_AFGGameState_SetOnlineSessionName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGGameState_SetOnlineSessionName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGGameState_SetOnlineSessionName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGGameState_SetOnlineSessionName_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGGameState_SetOnlineSessionName()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGGameState_SetOnlineSessionName_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AFGGameState_NoRegister()
 	{
 		return AFGGameState::StaticClass();
@@ -1238,6 +1317,10 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mBuildingColorSlotsPrimary_Linear;
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mBuildingColorSlotsPrimary_Linear_Inner;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mReplicatedOnlineSessionName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_mReplicatedOnlineSessionName;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mReplicatedSessionName_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStrPropertyParams NewProp_mReplicatedSessionName;
@@ -1255,6 +1338,10 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mVisitedMapAreas;
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mVisitedMapAreas_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mVehicleSubsystem_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mVehicleSubsystem;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mItemRegrowSubsystem_MetaData[];
 #endif
@@ -1361,6 +1448,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		{ &Z_Construct_UFunction_AFGGameState_GetCheatNoCost, "GetCheatNoCost" }, // 1503578727
 		{ &Z_Construct_UFunction_AFGGameState_GetCheatNoPower, "GetCheatNoPower" }, // 3103391122
 		{ &Z_Construct_UFunction_AFGGameState_GetGamePhaseManager, "GetGamePhaseManager" }, // 3450059651
+		{ &Z_Construct_UFunction_AFGGameState_GetOnlineSessionName, "GetOnlineSessionName" }, // 3169668539
 		{ &Z_Construct_UFunction_AFGGameState_GetResearchManager, "GetResearchManager" }, // 180698605
 		{ &Z_Construct_UFunction_AFGGameState_GetSchematicManager, "GetSchematicManager" }, // 402790479
 		{ &Z_Construct_UFunction_AFGGameState_GetSessionName, "GetSessionName" }, // 2498391708
@@ -1384,6 +1472,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		{ &Z_Construct_UFunction_AFGGameState_SetCheatNoPower, "SetCheatNoPower" }, // 4030225188
 		{ &Z_Construct_UFunction_AFGGameState_SetHasInitalTradingPostLandAnimPlayed, "SetHasInitalTradingPostLandAnimPlayed" }, // 3082713072
 		{ &Z_Construct_UFunction_AFGGameState_SetIsSpaceElevatorBuilt, "SetIsSpaceElevatorBuilt" }, // 619344943
+		{ &Z_Construct_UFunction_AFGGameState_SetOnlineSessionName, "SetOnlineSessionName" }, // 2396657753
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::Class_MetaDataParams[] = {
@@ -1503,6 +1592,12 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsPrimary_Linear = { "mBuildingColorSlotsPrimary_Linear", "OnRep_BuildingColorSlotPrimary_Linear", (EPropertyFlags)0x0040000100010021, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mBuildingColorSlotsPrimary_Linear), METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsPrimary_Linear_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsPrimary_Linear_MetaData)) };
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsPrimary_Linear_Inner = { "mBuildingColorSlotsPrimary_Linear", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedOnlineSessionName_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedOnlineSessionName = { "mReplicatedOnlineSessionName", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mReplicatedOnlineSessionName), METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedOnlineSessionName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedOnlineSessionName_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedSessionName_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
 	};
@@ -1531,6 +1626,12 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas = { "mVisitedMapAreas", "OnRep_MapAreaVisited", (EPropertyFlags)0x0044000101000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mVisitedMapAreas), METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas_MetaData)) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas_Inner = { "mVisitedMapAreas", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mVehicleSubsystem_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGGameState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGGameState_Statics::NewProp_mVehicleSubsystem = { "mVehicleSubsystem", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameState, mVehicleSubsystem), Z_Construct_UClass_AFGVehicleSubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGGameState_Statics::NewProp_mVehicleSubsystem_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameState_Statics::NewProp_mVehicleSubsystem_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameState_Statics::NewProp_mItemRegrowSubsystem_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGGameState.h" },
@@ -1695,12 +1796,14 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsSecondary_Linear_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsPrimary_Linear,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mBuildingColorSlotsPrimary_Linear_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedOnlineSessionName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mReplicatedSessionName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mPlayDurationWhenLoaded,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mPickedUpItems,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mPickedUpItems_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mVisitedMapAreas_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mVehicleSubsystem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mItemRegrowSubsystem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mResourceSinkSubsystem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameState_Statics::NewProp_mUnlockSubsystem,
@@ -1755,7 +1858,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGameState, 3703660677);
+	IMPLEMENT_CLASS(AFGGameState, 3464478268);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGameState>()
 	{
 		return AFGGameState::StaticClass();

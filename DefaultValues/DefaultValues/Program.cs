@@ -114,6 +114,16 @@ namespace DefaultValues
                     { "8", "TG_MAX" }
                 }
             },
+            { "NetDormancy",
+                new Dictionary<string, string>() {
+                    { "0", "DORM_Never" },
+                    { "1", "DORM_Awake" },
+                    { "2", "DORM_DormantAll" },
+                    { "3", "DORM_DormantPartial" },
+                    { "4", "DORM_Initial" },
+                    { "5", "DORM_MAX" }
+                }
+            },
             { "SweepType",
                 new Dictionary<string, string>() {
                     { "0", "SimpleAndComplex" },

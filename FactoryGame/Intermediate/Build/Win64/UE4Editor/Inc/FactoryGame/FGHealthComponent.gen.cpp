@@ -1282,7 +1282,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGHealthComponent, 3981218612);
+	IMPLEMENT_CLASS(UFGHealthComponent, 491348086);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGHealthComponent>()
 	{
 		return UFGHealthComponent::StaticClass();

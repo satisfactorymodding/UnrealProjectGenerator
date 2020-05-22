@@ -200,7 +200,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponInstantFire() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWeaponInstantFire, 1680291455);
+	IMPLEMENT_CLASS(AFGWeaponInstantFire, 2855987291);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWeaponInstantFire>()
 	{
 		return AFGWeaponInstantFire::StaticClass();

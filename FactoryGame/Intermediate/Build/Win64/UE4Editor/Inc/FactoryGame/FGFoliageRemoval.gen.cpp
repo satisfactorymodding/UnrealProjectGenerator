@@ -437,7 +437,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoliageRemoval, 3292794730);
+	IMPLEMENT_CLASS(AFGFoliageRemoval, 4057019652);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGFoliageRemoval>()
 	{
 		return AFGFoliageRemoval::StaticClass();

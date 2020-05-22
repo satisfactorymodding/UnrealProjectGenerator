@@ -197,7 +197,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGuide() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildGuide, 1144163879);
+	IMPLEMENT_CLASS(AFGBuildGuide, 3625901924);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildGuide>()
 	{
 		return AFGBuildGuide::StaticClass();

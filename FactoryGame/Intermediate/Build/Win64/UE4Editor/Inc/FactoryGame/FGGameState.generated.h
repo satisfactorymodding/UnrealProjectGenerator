@@ -123,6 +123,23 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execSetOnlineSessionName) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_inName); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetOnlineSessionName(Z_Param_inName); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetOnlineSessionName) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=P_THIS->GetOnlineSessionName(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetSessionName) \
 	{ \
 		P_FINISH; \
@@ -359,6 +376,23 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 			return; \
 		} \
 		P_THIS->Server_SetBuildingColorInSlotLinear_Implementation(Z_Param_slotIdx,Z_Param_colorPrimary_Linear,Z_Param_colorSecondary_Linear); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetOnlineSessionName) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_inName); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetOnlineSessionName(Z_Param_inName); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetOnlineSessionName) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=P_THIS->GetOnlineSessionName(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -627,10 +661,12 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGameState); \
 	FORCEINLINE static uint32 __PPO__mUnlockSubsystem() { return STRUCT_OFFSET(AFGGameState, mUnlockSubsystem); } \
 	FORCEINLINE static uint32 __PPO__mResourceSinkSubsystem() { return STRUCT_OFFSET(AFGGameState, mResourceSinkSubsystem); } \
 	FORCEINLINE static uint32 __PPO__mItemRegrowSubsystem() { return STRUCT_OFFSET(AFGGameState, mItemRegrowSubsystem); } \
+	FORCEINLINE static uint32 __PPO__mVehicleSubsystem() { return STRUCT_OFFSET(AFGGameState, mVehicleSubsystem); } \
 	FORCEINLINE static uint32 __PPO__mVisitedMapAreas() { return STRUCT_OFFSET(AFGGameState, mVisitedMapAreas); } \
 	FORCEINLINE static uint32 __PPO__mPickedUpItems() { return STRUCT_OFFSET(AFGGameState, mPickedUpItems); } \
 	FORCEINLINE static uint32 __PPO__mPlayDurationWhenLoaded() { return STRUCT_OFFSET(AFGGameState, mPlayDurationWhenLoaded); } \
 	FORCEINLINE static uint32 __PPO__mReplicatedSessionName() { return STRUCT_OFFSET(AFGGameState, mReplicatedSessionName); } \
+	FORCEINLINE static uint32 __PPO__mReplicatedOnlineSessionName() { return STRUCT_OFFSET(AFGGameState, mReplicatedOnlineSessionName); } \
 	FORCEINLINE static uint32 __PPO__mBuildingColorSlotsPrimary_Linear() { return STRUCT_OFFSET(AFGGameState, mBuildingColorSlotsPrimary_Linear); } \
 	FORCEINLINE static uint32 __PPO__mBuildingColorSlotsSecondary_Linear() { return STRUCT_OFFSET(AFGGameState, mBuildingColorSlotsSecondary_Linear); } \
 	FORCEINLINE static uint32 __PPO__mPlannedRestartTime() { return STRUCT_OFFSET(AFGGameState, mPlannedRestartTime); } \

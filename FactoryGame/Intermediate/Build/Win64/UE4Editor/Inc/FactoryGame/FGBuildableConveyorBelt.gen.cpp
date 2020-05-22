@@ -517,7 +517,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConveyorBelt, 3260026516);
+	IMPLEMENT_CLASS(AFGBuildableConveyorBelt, 970504051);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableConveyorBelt>()
 	{
 		return AFGBuildableConveyorBelt::StaticClass();

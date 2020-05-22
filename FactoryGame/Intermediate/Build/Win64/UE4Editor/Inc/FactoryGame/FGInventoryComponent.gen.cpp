@@ -2188,7 +2188,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryComponent, 2713981887);
+	IMPLEMENT_CLASS(UFGInventoryComponent, 2655783161);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGInventoryComponent>()
 	{
 		return UFGInventoryComponent::StaticClass();

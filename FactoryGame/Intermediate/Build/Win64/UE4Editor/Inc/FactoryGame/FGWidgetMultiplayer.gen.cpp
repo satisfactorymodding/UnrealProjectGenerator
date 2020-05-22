@@ -13,11 +13,69 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFGWidgetMultiplayer() {}
 // Cross Module References
+	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EMultiplayerButtonType();
+	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGWidgetMultiplayer_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGWidgetMultiplayer();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget();
-	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 // End Cross Module References
+	static UEnum* EMultiplayerButtonType_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_FactoryGame_EMultiplayerButtonType, Z_Construct_UPackage__Script_FactoryGame(), TEXT("EMultiplayerButtonType"));
+		}
+		return Singleton;
+	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EMultiplayerButtonType>()
+	{
+		return EMultiplayerButtonType_StaticEnum();
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EMultiplayerButtonType(EMultiplayerButtonType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EMultiplayerButtonType"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EMultiplayerButtonType_Hash() { return 1093396675U; }
+	UEnum* Z_Construct_UEnum_FactoryGame_EMultiplayerButtonType()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EMultiplayerButtonType"), 0, Get_Z_Construct_UEnum_FactoryGame_EMultiplayerButtonType_Hash(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "EMultiplayerButtonType::MBT_Join", (int64)EMultiplayerButtonType::MBT_Join },
+				{ "EMultiplayerButtonType::MBT_SendInvite", (int64)EMultiplayerButtonType::MBT_SendInvite },
+				{ "EMultiplayerButtonType::MBT_JoinInvite", (int64)EMultiplayerButtonType::MBT_JoinInvite },
+				{ "EMultiplayerButtonType::MBT_ManagePlayers", (int64)EMultiplayerButtonType::MBT_ManagePlayers },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "BlueprintType", "true" },
+				{ "MBT_Join.DisplayName", "Join" },
+				{ "MBT_JoinInvite.DisplayName", "JoinInvite" },
+				{ "MBT_ManagePlayers.DisplayName", "ManagePlayers" },
+				{ "MBT_SendInvite.DisplayName", "SendInvite" },
+				{ "ModuleRelativePath", "Public/UI/FGWidgetMultiplayer.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
+				nullptr,
+				"EMultiplayerButtonType",
+				"EMultiplayerButtonType",
+				Enumerators,
+				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
+				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
 	void UFGWidgetMultiplayer::StaticRegisterNativesUFGWidgetMultiplayer()
 	{
 	}
@@ -31,6 +89,11 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetMultiplayer() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMultiplayerButtonType_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_mMultiplayerButtonType;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_mMultiplayerButtonType_Underlying;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mTitle_MetaData[];
 #endif
@@ -59,6 +122,14 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetMultiplayer() {}
 		{ "ModuleRelativePath", "Public/UI/FGWidgetMultiplayer.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mMultiplayerButtonType_MetaData[] = {
+		{ "Category", "FGWidgetMultiplayer" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetMultiplayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mMultiplayerButtonType = { "mMultiplayerButtonType", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWidgetMultiplayer, mMultiplayerButtonType), Z_Construct_UEnum_FactoryGame_EMultiplayerButtonType, METADATA_PARAMS(Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mMultiplayerButtonType_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mMultiplayerButtonType_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mMultiplayerButtonType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mTitle_MetaData[] = {
 		{ "Category", "FGWidgetMultiplayer" },
@@ -89,6 +160,8 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetMultiplayer() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mIsOnline = { "mIsOnline", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGWidgetMultiplayer), &Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mIsOnline_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mIsOnline_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mIsOnline_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGWidgetMultiplayer_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mMultiplayerButtonType,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mMultiplayerButtonType_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mTitle,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mIsPlayingSatisfactory,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mIsOnline,
@@ -120,7 +193,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetMultiplayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWidgetMultiplayer, 4193975274);
+	IMPLEMENT_CLASS(UFGWidgetMultiplayer, 3578504028);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGWidgetMultiplayer>()
 	{
 		return UFGWidgetMultiplayer::StaticClass();

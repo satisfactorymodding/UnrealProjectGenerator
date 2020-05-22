@@ -877,7 +877,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGamePhaseManager, 1137229730);
+	IMPLEMENT_CLASS(AFGGamePhaseManager, 3935276481);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGamePhaseManager>()
 	{
 		return AFGGamePhaseManager::StaticClass();

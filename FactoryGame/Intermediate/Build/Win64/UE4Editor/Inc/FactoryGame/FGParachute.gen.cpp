@@ -25,6 +25,8 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGParachute_OnDeployed();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGParachute_OnDeployStop();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGParachute_Server_Deploy();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCharacterMovementComponent_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGParachuteAttachment_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGParachuteAttachment();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGEquipmentAttachment();
@@ -111,12 +113,18 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 	{
 		ProcessEvent(FindFunctionChecked(NAME_AFGParachute_OnDeployStop),NULL);
 	}
+	static FName NAME_AFGParachute_Server_Deploy = FName(TEXT("Server_Deploy"));
+	void AFGParachute::Server_Deploy()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AFGParachute_Server_Deploy),NULL);
+	}
 	void AFGParachute::StaticRegisterNativesAFGParachute()
 	{
 		UClass* Class = AFGParachute::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "IsDeployed", &AFGParachute::execIsDeployed },
 			{ "ModifyVelocity", &AFGParachute::execModifyVelocity },
+			{ "Server_Deploy", &AFGParachute::execServer_Deploy },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -247,6 +255,29 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGParachute_Server_Deploy_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGParachute_Server_Deploy_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Equipment/FGParachute.h" },
+		{ "ToolTip", "Only the server handles the building." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGParachute_Server_Deploy_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGParachute, nullptr, "Server_Deploy", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGParachute_Server_Deploy_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGParachute_Server_Deploy_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGParachute_Server_Deploy()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGParachute_Server_Deploy_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AFGParachute_NoRegister()
 	{
 		return AFGParachute::StaticClass();
@@ -258,6 +289,15 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCachedMovementComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mCachedMovementComponent;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mIsDeployed_MetaData[];
+#endif
+		static void NewProp_mIsDeployed_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mIsDeployed;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mTerminalVelocityZ_MetaData[];
 #endif
@@ -275,6 +315,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		{ &Z_Construct_UFunction_AFGParachute_ModifyVelocity, "ModifyVelocity" }, // 2986812394
 		{ &Z_Construct_UFunction_AFGParachute_OnDeployed, "OnDeployed" }, // 1789322329
 		{ &Z_Construct_UFunction_AFGParachute_OnDeployStop, "OnDeployStop" }, // 571857329
+		{ &Z_Construct_UFunction_AFGParachute_Server_Deploy, "Server_Deploy" }, // 1224761499
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGParachute_Statics::Class_MetaDataParams[] = {
@@ -282,6 +323,25 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		{ "ModuleRelativePath", "Public/Equipment/FGParachute.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGParachute_Statics::NewProp_mCachedMovementComponent_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Equipment/FGParachute.h" },
+		{ "ToolTip", "A cached instance of the instigators movement" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGParachute_Statics::NewProp_mCachedMovementComponent = { "mCachedMovementComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGParachute, mCachedMovementComponent), Z_Construct_UClass_UFGCharacterMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGParachute_Statics::NewProp_mCachedMovementComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGParachute_Statics::NewProp_mCachedMovementComponent_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGParachute_Statics::NewProp_mIsDeployed_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Equipment/FGParachute.h" },
+		{ "ToolTip", "If we are actually deployed or not" },
+	};
+#endif
+	void Z_Construct_UClass_AFGParachute_Statics::NewProp_mIsDeployed_SetBit(void* Obj)
+	{
+		((AFGParachute*)Obj)->mIsDeployed = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGParachute_Statics::NewProp_mIsDeployed = { "mIsDeployed", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGParachute), &Z_Construct_UClass_AFGParachute_Statics::NewProp_mIsDeployed_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGParachute_Statics::NewProp_mIsDeployed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGParachute_Statics::NewProp_mIsDeployed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGParachute_Statics::NewProp_mTerminalVelocityZ_MetaData[] = {
 		{ "Category", "Parachute" },
@@ -291,6 +351,8 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGParachute_Statics::NewProp_mTerminalVelocityZ = { "mTerminalVelocityZ", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGParachute, mTerminalVelocityZ), METADATA_PARAMS(Z_Construct_UClass_AFGParachute_Statics::NewProp_mTerminalVelocityZ_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGParachute_Statics::NewProp_mTerminalVelocityZ_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGParachute_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGParachute_Statics::NewProp_mCachedMovementComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGParachute_Statics::NewProp_mIsDeployed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGParachute_Statics::NewProp_mTerminalVelocityZ,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGParachute_Statics::StaticCppClassTypeInfo = {
@@ -320,7 +382,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGParachute, 3972923123);
+	IMPLEMENT_CLASS(AFGParachute, 124534387);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGParachute>()
 	{
 		return AFGParachute::StaticClass();
@@ -489,7 +551,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGParachuteAttachment, 1270554080);
+	IMPLEMENT_CLASS(AFGParachuteAttachment, 1260136433);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGParachuteAttachment>()
 	{
 		return AFGParachuteAttachment::StaticClass();

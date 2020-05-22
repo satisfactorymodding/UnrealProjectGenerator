@@ -118,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGInteractActor, 2768074109);
+	IMPLEMENT_CLASS(AFGInteractActor, 113670091);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGInteractActor>()
 	{
 		return AFGInteractActor::StaticClass();

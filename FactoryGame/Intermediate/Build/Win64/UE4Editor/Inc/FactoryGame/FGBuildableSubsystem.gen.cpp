@@ -1262,7 +1262,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNetConstructionID
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSubsystem, 3549168945);
+	IMPLEMENT_CLASS(AFGBuildableSubsystem, 2079013427);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableSubsystem>()
 	{
 		return AFGBuildableSubsystem::StaticClass();

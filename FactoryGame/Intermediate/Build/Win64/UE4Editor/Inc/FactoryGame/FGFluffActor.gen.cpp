@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFluffActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFluffActor, 530164420);
+	IMPLEMENT_CLASS(AFGFluffActor, 2015942192);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGFluffActor>()
 	{
 		return AFGFluffActor::StaticClass();

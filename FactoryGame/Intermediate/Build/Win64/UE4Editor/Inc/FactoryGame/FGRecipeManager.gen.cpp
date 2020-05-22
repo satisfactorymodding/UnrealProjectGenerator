@@ -418,7 +418,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRecipeManager, 571230475);
+	IMPLEMENT_CLASS(AFGRecipeManager, 3039742033);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRecipeManager>()
 	{
 		return AFGRecipeManager::StaticClass();

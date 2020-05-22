@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadBridgeHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadBridgeHologram, 1989443589);
+	IMPLEMENT_CLASS(AFGRailroadBridgeHologram, 4179439107);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRailroadBridgeHologram>()
 	{
 		return AFGRailroadBridgeHologram::StaticClass();

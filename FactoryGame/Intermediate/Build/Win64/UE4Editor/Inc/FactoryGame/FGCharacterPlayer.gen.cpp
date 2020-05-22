@@ -5087,7 +5087,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCharacterPlayer, 4174943877);
+	IMPLEMENT_CLASS(AFGCharacterPlayer, 1917115228);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCharacterPlayer>()
 	{
 		return AFGCharacterPlayer::StaticClass();

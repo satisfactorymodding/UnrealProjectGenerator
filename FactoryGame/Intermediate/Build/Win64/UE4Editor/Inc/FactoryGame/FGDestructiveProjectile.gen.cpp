@@ -247,7 +247,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDestroyedFoliageEf
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDestructiveProjectile, 1614185019);
+	IMPLEMENT_CLASS(AFGDestructiveProjectile, 1453064376);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGDestructiveProjectile>()
 	{
 		return AFGDestructiveProjectile::StaticClass();

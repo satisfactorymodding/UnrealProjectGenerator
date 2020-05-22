@@ -193,7 +193,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSuitBase, 2052334234);
+	IMPLEMENT_CLASS(AFGSuitBase, 1048676107);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSuitBase>()
 	{
 		return AFGSuitBase::StaticClass();
@@ -271,7 +271,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSuitBaseAttachment, 1162756347);
+	IMPLEMENT_CLASS(AFGSuitBaseAttachment, 946328082);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSuitBaseAttachment>()
 	{
 		return AFGSuitBaseAttachment::StaticClass();

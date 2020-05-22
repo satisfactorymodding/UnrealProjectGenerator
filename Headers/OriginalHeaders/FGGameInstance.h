@@ -2,13 +2,15 @@
 
 #include "Engine/GameInstance.h"
 #include "NAT.h"
-#include "eos_common.h"
-#include "EpicPeerManager.h"
 #include "AnalyticsService.h"
 #include "FGAnalyticsMacros.h"
 #include "OnlineSessionSettings.h"
 #include "Interfaces/OnlineSessionInterface.h"
+#include "EOSSDKForwards.h"
+#include "AnalyticsService.h"
 #include "FGGameInstance.generated.h"
+
+
 
 UENUM(BlueprintType)
 enum class EJoinSessionState : uint8
@@ -129,6 +131,7 @@ class UFGGameInstance : public UGameInstance
 	GENERATED_BODY()
 public:
 	UFGGameInstance();
+	~UFGGameInstance();
 
 	// Begin UGameInstance interface
 	virtual void Init() override;
@@ -145,7 +148,7 @@ public:
 	virtual TSubclassOf<UOnlineSession> GetOnlineSessionClass() override;
 
 	/** Service provider for analytics */
-	FORCEINLINE class UAnalyticsService* GetAnalyticsService() const { return mAnalyticsService; }
+	FORCEINLINE UAnalyticsService* GetAnalyticsService() const { return mAnalyticsService; }
 
 	/** Returns the relative analytics services from the world context holder */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|GameAnalytics", DisplayName = "GetGameAnalyticsService", Meta = ( DefaultToSelf = "WorldContext" ) )
@@ -203,7 +206,8 @@ public:
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Onboarding" )
 	FORCEINLINE bool GetSkipOnboarding() { return mSkipOnboarding; }
 
-	/** Query our current NAT-type */
+	//[Gafgar:Tue/07-04-2020] moved to be done automatically now
+	///** Query our current NAT-type */
 	void QueryNATType();
 
 	/** Get cached NAT-type */
@@ -225,7 +229,7 @@ protected:
 	virtual void LoadComplete( const float loadTime, const FString& mapName ) override;
 
 	/** Called after we have destroyed a old session for joining a new session */
-	virtual void OnDestroySessionComplete_JoinSession( FName gameSessionName, bool wasSuccessful );
+	virtual void OnDestroyOldSessionComplete_JoinSession( FName gameSessionName, bool wasSuccessful );
 
 	/** Called after we have queried a friends product id */
 	virtual void OnQueryFriendProductIdCompleted_JoinSession( bool wasSuccessful, FString EpicId, EOS_ProductUserId ProductId );
@@ -234,8 +238,11 @@ protected:
 	UFUNCTION()
 	virtual void PollHostProductUserId_JoinSession();
 
-	/** Called when we receive a callback about our current NAT-type */
-	void OnNATQueryCompleted( const struct FOnlineError& requestStatus, TOptional<ENATType> foundNATType );
+	/** Forward function when nat query is completed */
+	static void _OnNATUpdatedCallback( void* userData, ECachedNATType Data);
+
+	/** Called when we receive a callback about our current NAT-type  */
+	void OnNATUpdated( ECachedNATType Data);
 
 	/** Called after we have joined a session, makes sure we copy the session settings from the host */
 	void OnJoinSessionComplete( FName sessionName, EOnJoinSessionCompleteResult::Type joinResult );
@@ -268,7 +275,7 @@ protected:
 
 	/** The global Analytics Service */
 	UPROPERTY()
-	class UAnalyticsService* mAnalyticsService;
+	UAnalyticsService* mAnalyticsService;
 
 	/** List of errors that we should pop */
 	UPROPERTY()
@@ -293,14 +300,14 @@ protected:
 	FOnNatTypeUpdated mOnNatTypeUpdated;
 
 	/** Used to query NAT type, nothing more */
-	TUniquePtr<class FEpicPeerManager> mEpicPeerManager;
+	EOS_HP2P mP2PHandle;
 
 	/** Our last seen NAT-type */
 	ECachedNATType mCachedNATType;
 
-	/** The handle for the Epic Online Services manager. Is initialized in Init(). */
-	UPROPERTY()
-	class UEOSManager* mCachedEOSManager;
+	///** The handle for the Epic Online Services manager. Is initialized in Init(). */
+	//UPROPERTY()
+	//class UEOSManager* mCachedEOSManager;
 public:
 	// Mod packages found - valid or invalid
 	UPROPERTY( BlueprintReadOnly, Category = "Modding" )

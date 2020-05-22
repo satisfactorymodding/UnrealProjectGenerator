@@ -316,7 +316,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJumpingStilts() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGJumpingStilts, 546978615);
+	IMPLEMENT_CLASS(AFGJumpingStilts, 1138608931);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGJumpingStilts>()
 	{
 		return AFGJumpingStilts::StaticClass();
@@ -376,7 +376,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJumpingStilts() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGJumpingStiltsAttachment, 1039740692);
+	IMPLEMENT_CLASS(AFGJumpingStiltsAttachment, 921682431);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGJumpingStiltsAttachment>()
 	{
 		return AFGJumpingStiltsAttachment::StaticClass();

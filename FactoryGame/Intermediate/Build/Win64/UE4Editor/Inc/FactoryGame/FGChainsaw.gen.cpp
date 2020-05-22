@@ -678,7 +678,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGChainsaw, 3607231937);
+	IMPLEMENT_CLASS(AFGChainsaw, 1638025111);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGChainsaw>()
 	{
 		return AFGChainsaw::StaticClass();

@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerStartTradingPost() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerStartTradingPost, 1880948720);
+	IMPLEMENT_CLASS(AFGPlayerStartTradingPost, 3722844952);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlayerStartTradingPost>()
 	{
 		return AFGPlayerStartTradingPost::StaticClass();

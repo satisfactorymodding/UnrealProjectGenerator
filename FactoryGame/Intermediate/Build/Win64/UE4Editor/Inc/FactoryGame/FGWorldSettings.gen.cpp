@@ -374,7 +374,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWorldSettings, 1822516297);
+	IMPLEMENT_CLASS(AFGWorldSettings, 919613152);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWorldSettings>()
 	{
 		return AFGWorldSettings::StaticClass();

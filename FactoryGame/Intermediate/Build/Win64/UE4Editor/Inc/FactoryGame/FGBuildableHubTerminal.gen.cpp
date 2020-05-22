@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHubTerminal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableHubTerminal, 1414870847);
+	IMPLEMENT_CLASS(AFGBuildableHubTerminal, 3976236438);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableHubTerminal>()
 	{
 		return AFGBuildableHubTerminal::StaticClass();

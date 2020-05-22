@@ -44,7 +44,7 @@ public: \
 
 #define FactoryGame_Source_FactoryGame_Public_FGBeacon_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AFGBeacon(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API AFGBeacon(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBeacon) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AFGBeacon); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBeacon); \
@@ -56,8 +56,6 @@ public:
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGBeacon_h_13_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AFGBeacon(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGBeacon(AFGBeacon&&); \
@@ -65,7 +63,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AFGBeacon); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBeacon); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBeacon)
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBeacon)
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGBeacon_h_13_PRIVATE_PROPERTY_OFFSET

@@ -1227,7 +1227,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPlayerPipeHyperDat
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCharacterMovementComponent, 1532634008);
+	IMPLEMENT_CLASS(UFGCharacterMovementComponent, 214852236);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCharacterMovementComponent>()
 	{
 		return UFGCharacterMovementComponent::StaticClass();

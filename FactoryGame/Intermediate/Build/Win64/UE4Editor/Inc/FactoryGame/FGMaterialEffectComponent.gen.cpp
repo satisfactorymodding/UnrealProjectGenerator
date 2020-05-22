@@ -793,7 +793,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMaterialEffectComponent, 1067060576);
+	IMPLEMENT_CLASS(UFGMaterialEffectComponent, 3290190886);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGMaterialEffectComponent>()
 	{
 		return UFGMaterialEffectComponent::StaticClass();

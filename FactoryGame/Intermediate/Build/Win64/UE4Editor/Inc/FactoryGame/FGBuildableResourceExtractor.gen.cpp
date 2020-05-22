@@ -669,7 +669,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableResourceExtractor, 1264976287);
+	IMPLEMENT_CLASS(AFGBuildableResourceExtractor, 2155396695);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableResourceExtractor>()
 	{
 		return AFGBuildableResourceExtractor::StaticClass();

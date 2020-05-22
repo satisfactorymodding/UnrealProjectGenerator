@@ -39,6 +39,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTutorialIntroManager() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_IntroDone();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildable_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_OnCodexOpened();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory();
@@ -92,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTutorialIntroManager() {}
 		return EIntroTutorialSteps_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EIntroTutorialSteps(EIntroTutorialSteps_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EIntroTutorialSteps"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EIntroTutorialSteps_Hash() { return 1703452471U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EIntroTutorialSteps_Hash() { return 2832202909U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EIntroTutorialSteps()
 	{
 #if WITH_HOT_RELOAD
@@ -107,6 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTutorialIntroManager() {}
 				{ "EIntroTutorialSteps::ITS_NONE", (int64)EIntroTutorialSteps::ITS_NONE },
 				{ "EIntroTutorialSteps::ITS_INTRO", (int64)EIntroTutorialSteps::ITS_INTRO },
 				{ "EIntroTutorialSteps::ITS_DISMANTLE_POD", (int64)EIntroTutorialSteps::ITS_DISMANTLE_POD },
+				{ "EIntroTutorialSteps::ITS_OPEN_CODEX", (int64)EIntroTutorialSteps::ITS_OPEN_CODEX },
 				{ "EIntroTutorialSteps::ITS_STUN_SPEAR", (int64)EIntroTutorialSteps::ITS_STUN_SPEAR },
 				{ "EIntroTutorialSteps::ITS_IRON_ORE", (int64)EIntroTutorialSteps::ITS_IRON_ORE },
 				{ "EIntroTutorialSteps::ITS_HUB", (int64)EIntroTutorialSteps::ITS_HUB },
@@ -133,6 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTutorialIntroManager() {}
 				{ "ITS_INTRO.DisplayName", "Intro state with message" },
 				{ "ITS_IRON_ORE.DisplayName", "Pick up iron ore" },
 				{ "ITS_NONE.DisplayName", "No tutorial" },
+				{ "ITS_OPEN_CODEX.DisplayName", "Open the codex" },
 				{ "ITS_STUN_SPEAR.DisplayName", "Equip stun spear" },
 				{ "ModuleRelativePath", "Public/FGTutorialIntroManager.h" },
 				{ "ToolTip", "Steps in the intro tutorial" },
@@ -395,6 +398,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRecipeAmountPair
 			{ "HasTradingpostBeenBuilt", &AFGTutorialIntroManager::execHasTradingpostBeenBuilt },
 			{ "IntroDone", &AFGTutorialIntroManager::execIntroDone },
 			{ "OnBuildingBuiltGlobal", &AFGTutorialIntroManager::execOnBuildingBuiltGlobal },
+			{ "OnCodexOpened", &AFGTutorialIntroManager::execOnCodexOpened },
 			{ "OnPlayerAddedItemToArmSlot", &AFGTutorialIntroManager::execOnPlayerAddedItemToArmSlot },
 			{ "OnPlayerAddedItemToInventory", &AFGTutorialIntroManager::execOnPlayerAddedItemToInventory },
 			{ "OnRep_TradingPostLevel", &AFGTutorialIntroManager::execOnRep_TradingPostLevel },
@@ -830,6 +834,29 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRecipeAmountPair
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGTutorialIntroManager_OnCodexOpened_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGTutorialIntroManager_OnCodexOpened_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Tutorial" },
+		{ "ModuleRelativePath", "Public/FGTutorialIntroManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_OnCodexOpened_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "OnCodexOpened", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_OnCodexOpened_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnCodexOpened_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_OnCodexOpened()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGTutorialIntroManager_OnCodexOpened_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics
 	{
 		struct FGTutorialIntroManager_eventOnPlayerAddedItemToArmSlot_Parms
@@ -1103,6 +1130,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRecipeAmountPair
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDidOpenCodex_MetaData[];
+#endif
+		static void NewProp_mDidOpenCodex_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mDidOpenCodex;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRecipesToGivePlayersSkippingTutorial_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mRecipesToGivePlayersSkippingTutorial;
@@ -1276,6 +1308,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRecipeAmountPair
 		{ &Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt, "HasTradingpostBeenBuilt" }, // 2238940037
 		{ &Z_Construct_UFunction_AFGTutorialIntroManager_IntroDone, "IntroDone" }, // 3224816199
 		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal, "OnBuildingBuiltGlobal" }, // 1455644655
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnCodexOpened, "OnCodexOpened" }, // 1185594251
 		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot, "OnPlayerAddedItemToArmSlot" }, // 2261904240
 		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory, "OnPlayerAddedItemToInventory" }, // 900535685
 		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnRep_TradingPostLevel, "OnRep_TradingPostLevel" }, // 3285328884
@@ -1293,6 +1326,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRecipeAmountPair
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidOpenCodex_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGTutorialIntroManager.h" },
+		{ "ToolTip", "Bool for when codex has been opened" },
+	};
+#endif
+	void Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidOpenCodex_SetBit(void* Obj)
+	{
+		((AFGTutorialIntroManager*)Obj)->mDidOpenCodex = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidOpenCodex = { "mDidOpenCodex", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidOpenCodex_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidOpenCodex_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidOpenCodex_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mRecipesToGivePlayersSkippingTutorial_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1599,6 +1643,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRecipeAmountPair
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mOnIntroSequenceStateUpdated = { "mOnIntroSequenceStateUpdated", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mOnIntroSequenceStateUpdated), Z_Construct_UDelegateFunction_FactoryGame_IntroSequenceStateUpdate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mOnIntroSequenceStateUpdated_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mOnIntroSequenceStateUpdated_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGTutorialIntroManager_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidOpenCodex,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mRecipesToGivePlayersSkippingTutorial,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mRecipesToGivePlayersSkippingTutorial_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHoldToSkipTimerHandle,
@@ -1667,7 +1712,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRecipeAmountPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGTutorialIntroManager, 2910364415);
+	IMPLEMENT_CLASS(AFGTutorialIntroManager, 3579413261);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGTutorialIntroManager>()
 	{
 		return AFGTutorialIntroManager::StaticClass();

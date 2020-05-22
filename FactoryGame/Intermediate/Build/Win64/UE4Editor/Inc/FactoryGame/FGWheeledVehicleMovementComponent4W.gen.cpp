@@ -259,7 +259,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent4W, 2801166584);
+	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent4W, 3551975189);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGWheeledVehicleMovementComponent4W>()
 	{
 		return UFGWheeledVehicleMovementComponent4W::StaticClass();

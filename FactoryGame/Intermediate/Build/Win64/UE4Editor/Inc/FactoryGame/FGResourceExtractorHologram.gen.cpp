@@ -150,7 +150,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceExtractorHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceExtractorHologram, 2928680431);
+	IMPLEMENT_CLASS(AFGResourceExtractorHologram, 43353808);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGResourceExtractorHologram>()
 	{
 		return AFGResourceExtractorHologram::StaticClass();

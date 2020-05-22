@@ -242,7 +242,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoliagePickup, 4073044390);
+	IMPLEMENT_CLASS(AFGFoliagePickup, 1208326124);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGFoliagePickup>()
 	{
 		return AFGFoliagePickup::StaticClass();

@@ -522,7 +522,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildable); \
 	FORCEINLINE static uint32 __PPO__mNetConstructionID() { return STRUCT_OFFSET(AFGBuildable, mNetConstructionID); } \
 	FORCEINLINE static uint32 __PPO__mBuiltWithRecipe() { return STRUCT_OFFSET(AFGBuildable, mBuiltWithRecipe); } \
 	FORCEINLINE static uint32 __PPO__mBuildTimeStamp() { return STRUCT_OFFSET(AFGBuildable, mBuildTimeStamp); } \
-	FORCEINLINE static uint32 __PPO__mCachedShapeComponent() { return STRUCT_OFFSET(AFGBuildable, mCachedShapeComponent); }
+	FORCEINLINE static uint32 __PPO__mCachedShapeComponent() { return STRUCT_OFFSET(AFGBuildable, mCachedShapeComponent); } \
+	FORCEINLINE static uint32 __PPO__mHideOnBuildEffectStart() { return STRUCT_OFFSET(AFGBuildable, mHideOnBuildEffectStart); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildable_h_47_PROLOG \

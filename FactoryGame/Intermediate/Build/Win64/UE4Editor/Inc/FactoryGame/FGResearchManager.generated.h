@@ -11,6 +11,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGResearchTree;
 class UFGSchematic;
 enum class EResearchState : uint8;
+class AFGBuildable;
 class UFGInventoryComponent;
 class AFGCharacterPlayer;
 class UObject;
@@ -111,6 +112,15 @@ static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScri
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execOnBuildingBuiltGlobal) \
+	{ \
+		P_GET_OBJECT(AFGBuildable,Z_Param_buildable); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnBuildingBuiltGlobal(Z_Param_buildable); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execClient_NewResearchStarted) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_research); \
@@ -125,6 +135,23 @@ static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScri
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_OngoingResearch(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetActivated) \
+	{ \
+		P_GET_UBOOL(Z_Param_inActivate); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetActivated(Z_Param_inActivate); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsActivated) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsActivated(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -304,6 +331,15 @@ static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScri
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execOnBuildingBuiltGlobal) \
+	{ \
+		P_GET_OBJECT(AFGBuildable,Z_Param_buildable); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnBuildingBuiltGlobal(Z_Param_buildable); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execClient_NewResearchStarted) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_research); \
@@ -318,6 +354,23 @@ static inline void FResearchStartedDelegate_DelegateWrapper(const FMulticastScri
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_OngoingResearch(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetActivated) \
+	{ \
+		P_GET_UBOOL(Z_Param_inActivate); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetActivated(Z_Param_inActivate); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsActivated) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsActivated(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -542,7 +595,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGResearchManager); \
 	FORCEINLINE static uint32 __PPO__mUnlockedResearchTrees() { return STRUCT_OFFSET(AFGResearchManager, mUnlockedResearchTrees); } \
 	FORCEINLINE static uint32 __PPO__mCompletedResearch() { return STRUCT_OFFSET(AFGResearchManager, mCompletedResearch); } \
 	FORCEINLINE static uint32 __PPO__mOngoingResearch() { return STRUCT_OFFSET(AFGResearchManager, mOngoingResearch); } \
-	FORCEINLINE static uint32 __PPO__mSavedOngoingResearch() { return STRUCT_OFFSET(AFGResearchManager, mSavedOngoingResearch); }
+	FORCEINLINE static uint32 __PPO__mSavedOngoingResearch() { return STRUCT_OFFSET(AFGResearchManager, mSavedOngoingResearch); } \
+	FORCEINLINE static uint32 __PPO__mIsActivated() { return STRUCT_OFFSET(AFGResearchManager, mIsActivated); } \
+	FORCEINLINE static uint32 __PPO__mMAMClass() { return STRUCT_OFFSET(AFGResearchManager, mMAMClass); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_113_PROLOG \

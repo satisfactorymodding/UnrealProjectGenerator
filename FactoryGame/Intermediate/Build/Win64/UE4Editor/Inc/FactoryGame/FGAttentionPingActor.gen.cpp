@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttentionPingActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAttentionPingActor, 1094350882);
+	IMPLEMENT_CLASS(AFGAttentionPingActor, 2189708619);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGAttentionPingActor>()
 	{
 		return AFGAttentionPingActor::StaticClass();

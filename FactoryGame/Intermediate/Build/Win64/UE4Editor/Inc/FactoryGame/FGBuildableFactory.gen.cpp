@@ -2283,6 +2283,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFactory() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMinimumProducingTime;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mOnHasStandbyChanged_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_mOnHasStandbyChanged;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mOnHasProductionChanged_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_mOnHasProductionChanged;
@@ -2580,6 +2584,13 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFactory() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableFactory_Statics::NewProp_mMinimumProducingTime = { "mMinimumProducingTime", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableFactory, mMinimumProducingTime), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableFactory_Statics::NewProp_mMinimumProducingTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableFactory_Statics::NewProp_mMinimumProducingTime_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableFactory_Statics::NewProp_mOnHasStandbyChanged_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFactory.h" },
+		{ "ToolTip", "So that you can listen for when standby is toggled. True == Standby is active False == Standby was disabled" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGBuildableFactory_Statics::NewProp_mOnHasStandbyChanged = { "mOnHasStandbyChanged", nullptr, (EPropertyFlags)0x0020080010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableFactory, mOnHasStandbyChanged), Z_Construct_UDelegateFunction_FactoryGame_BuildingStateChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableFactory_Statics::NewProp_mOnHasStandbyChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableFactory_Statics::NewProp_mOnHasStandbyChanged_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableFactory_Statics::NewProp_mOnHasProductionChanged_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFactory.h" },
 		{ "ToolTip", "So that you can listen for when production has changed" },
@@ -2653,6 +2664,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFactory() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableFactory_Statics::NewProp_mTimeSinceStartStopProducing,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableFactory_Statics::NewProp_mMinimumStoppedTime,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableFactory_Statics::NewProp_mMinimumProducingTime,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableFactory_Statics::NewProp_mOnHasStandbyChanged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableFactory_Statics::NewProp_mOnHasProductionChanged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableFactory_Statics::NewProp_mOnHasPowerChanged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableFactory_Statics::NewProp_mPowerInfo,
@@ -2691,7 +2703,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFactory() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableFactory, 3681913449);
+	IMPLEMENT_CLASS(AFGBuildableFactory, 1030404982);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableFactory>()
 	{
 		return AFGBuildableFactory::StaticClass();

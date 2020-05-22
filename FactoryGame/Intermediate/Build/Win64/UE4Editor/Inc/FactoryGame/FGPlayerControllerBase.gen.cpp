@@ -1033,7 +1033,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerControllerBase, 3322603476);
+	IMPLEMENT_CLASS(AFGPlayerControllerBase, 3984910217);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlayerControllerBase>()
 	{
 		return AFGPlayerControllerBase::StaticClass();

@@ -247,7 +247,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConsumableEquipment, 2415078448);
+	IMPLEMENT_CLASS(AFGConsumableEquipment, 3173843010);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGConsumableEquipment>()
 	{
 		return AFGConsumableEquipment::StaticClass();

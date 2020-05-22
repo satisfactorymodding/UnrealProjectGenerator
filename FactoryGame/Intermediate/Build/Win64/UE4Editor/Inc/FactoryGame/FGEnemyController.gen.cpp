@@ -1467,7 +1467,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEnemyController, 1686044846);
+	IMPLEMENT_CLASS(AFGEnemyController, 1372688535);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGEnemyController>()
 	{
 		return AFGEnemyController::StaticClass();

@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWall() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableWall, 586681423);
+	IMPLEMENT_CLASS(AFGBuildableWall, 1299343627);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableWall>()
 	{
 		return AFGBuildableWall::StaticClass();

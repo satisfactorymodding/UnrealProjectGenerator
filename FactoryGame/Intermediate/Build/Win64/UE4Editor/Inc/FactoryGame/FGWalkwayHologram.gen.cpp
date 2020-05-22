@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWalkwayHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWalkwayHologram, 2878149475);
+	IMPLEMENT_CLASS(AFGWalkwayHologram, 1748656957);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWalkwayHologram>()
 	{
 		return AFGWalkwayHologram::StaticClass();

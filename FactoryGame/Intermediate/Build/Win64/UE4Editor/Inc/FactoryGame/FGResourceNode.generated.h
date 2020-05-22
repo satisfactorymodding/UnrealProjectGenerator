@@ -395,11 +395,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGResourceNode); \
 
 
 #define FactoryGame_Source_FactoryGame_Public_Resources_FGResourceNode_h_99_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mResourceClass() { return STRUCT_OFFSET(AFGResourceNode, mResourceClass); } \
-	FORCEINLINE static uint32 __PPO__mPurity() { return STRUCT_OFFSET(AFGResourceNode, mPurity); } \
-	FORCEINLINE static uint32 __PPO__mAmount() { return STRUCT_OFFSET(AFGResourceNode, mAmount); } \
-	FORCEINLINE static uint32 __PPO__mDecalComponent() { return STRUCT_OFFSET(AFGResourceNode, mDecalComponent); } \
-	FORCEINLINE static uint32 __PPO__mBoxComponent() { return STRUCT_OFFSET(AFGResourceNode, mBoxComponent); } \
 	FORCEINLINE static uint32 __PPO__mIsOccupied() { return STRUCT_OFFSET(AFGResourceNode, mIsOccupied); } \
 	FORCEINLINE static uint32 __PPO__mRevealedOnMapBy() { return STRUCT_OFFSET(AFGResourceNode, mRevealedOnMapBy); } \
 	FORCEINLINE static uint32 __PPO__mIsLonerNode() { return STRUCT_OFFSET(AFGResourceNode, mIsLonerNode); } \

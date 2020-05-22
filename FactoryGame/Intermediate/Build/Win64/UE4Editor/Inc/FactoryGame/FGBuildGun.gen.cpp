@@ -13,10 +13,11 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 // Cross Module References
-	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnRecipeSampled__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipe_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature();
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EBuildGunState();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGBuildGunState_NoRegister();
@@ -79,6 +80,38 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildGunAttachment();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGEquipmentAttachment();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_FactoryGame_OnRecipeSampled__DelegateSignature_Statics
+	{
+		struct _Script_FactoryGame_eventOnRecipeSampled_Parms
+		{
+			TSubclassOf<UFGRecipe>  newRecipe;
+		};
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_newRecipe;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnRecipeSampled__DelegateSignature_Statics::NewProp_newRecipe = { "newRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventOnRecipeSampled_Parms, newRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_OnRecipeSampled__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnRecipeSampled__DelegateSignature_Statics::NewProp_newRecipe,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnRecipeSampled__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnRecipeSampled__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnRecipeSampled__DelegateSignature", sizeof(_Script_FactoryGame_eventOnRecipeSampled_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnRecipeSampled__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnRecipeSampled__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnRecipeSampled__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnRecipeSampled__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnRecipeSampled__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_FactoryGame_OnRecipeSampled__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics
 	{
 		struct _Script_FactoryGame_eventOnBuildGunRecipeChanged_Parms
@@ -1866,6 +1899,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mBuildDistanceMax;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mOnRecipeSampled_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_mOnRecipeSampled;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mOnRecipeChanged_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_mOnRecipeChanged;
@@ -1972,6 +2009,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildDistanceMax = { "mBuildDistanceMax", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildGun, mBuildDistanceMax), METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildDistanceMax_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildDistanceMax_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnRecipeSampled_MetaData[] = {
+		{ "Category", "BuildGun|Recipe" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
+		{ "ToolTip", "Called when the build gun have sampled a new recipe." },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnRecipeSampled = { "mOnRecipeSampled", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildGun, mOnRecipeSampled), Z_Construct_UDelegateFunction_FactoryGame_OnRecipeSampled__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnRecipeSampled_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnRecipeSampled_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnRecipeChanged_MetaData[] = {
 		{ "Category", "BuildGun|Recipe" },
 		{ "ModuleRelativePath", "Public/Equipment/FGBuildGun.h" },
@@ -1997,6 +2042,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildStateClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mMenuStateClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildDistanceMax,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnRecipeSampled,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnRecipeChanged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnStateChanged,
 	};
@@ -2030,7 +2076,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildGun, 1128713899);
+	IMPLEMENT_CLASS(AFGBuildGun, 3113602233);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildGun>()
 	{
 		return AFGBuildGun::StaticClass();
@@ -2091,7 +2137,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildGunAttachment, 3356480341);
+	IMPLEMENT_CLASS(AFGBuildGunAttachment, 3982414458);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildGunAttachment>()
 	{
 		return AFGBuildGunAttachment::StaticClass();

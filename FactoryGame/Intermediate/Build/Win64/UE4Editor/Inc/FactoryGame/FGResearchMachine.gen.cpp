@@ -526,7 +526,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResearchMachine, 4077461493);
+	IMPLEMENT_CLASS(UFGResearchMachine, 533262559);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGResearchMachine>()
 	{
 		return UFGResearchMachine::StaticClass();

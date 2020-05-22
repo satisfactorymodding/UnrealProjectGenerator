@@ -227,7 +227,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreatureController, 3220889030);
+	IMPLEMENT_CLASS(AFGCreatureController, 41272210);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCreatureController>()
 	{
 		return AFGCreatureController::StaticClass();

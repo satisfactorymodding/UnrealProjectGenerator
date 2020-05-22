@@ -1089,7 +1089,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		{ "ToolTip", "If we have no static mesh but a decal, then we use this for collision" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mBoxComponent = { "mBoxComponent", nullptr, (EPropertyFlags)0x00200800000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceNode, mBoxComponent), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mBoxComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mBoxComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mBoxComponent = { "mBoxComponent", nullptr, (EPropertyFlags)0x00100000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceNode, mBoxComponent), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mBoxComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mBoxComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDecalComponent_MetaData[] = {
 		{ "Category", "Resources" },
@@ -1098,31 +1098,31 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		{ "ToolTip", "the decal that used for displaying the resource" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDecalComponent = { "mDecalComponent", nullptr, (EPropertyFlags)0x00200800000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceNode, mDecalComponent), Z_Construct_UClass_UDecalComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDecalComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDecalComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDecalComponent = { "mDecalComponent", nullptr, (EPropertyFlags)0x00100000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceNode, mDecalComponent), Z_Construct_UClass_UDecalComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDecalComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDecalComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAmount_MetaData[] = {
 		{ "Category", "Resources" },
 		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
-		{ "ToolTip", "How pure the resource is" },
+		{ "ToolTip", "How pure the resource is // MODDING EDIT: BPRW" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAmount = { "mAmount", nullptr, (EPropertyFlags)0x0020080000000801, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceNode, mAmount), Z_Construct_UEnum_FactoryGame_EResourceAmount, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAmount_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAmount_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAmount = { "mAmount", nullptr, (EPropertyFlags)0x0010000000000805, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceNode, mAmount), Z_Construct_UEnum_FactoryGame_EResourceAmount, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAmount_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAmount_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mPurity_MetaData[] = {
 		{ "Category", "Resources" },
 		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
-		{ "ToolTip", "How pure the resource is" },
+		{ "ToolTip", "How pure the resource is // MODDING EDIT: BPRW" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mPurity = { "mPurity", nullptr, (EPropertyFlags)0x0020080000000801, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceNode, mPurity), Z_Construct_UEnum_FactoryGame_EResourcePurity, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mPurity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mPurity_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mPurity = { "mPurity", nullptr, (EPropertyFlags)0x0010000000000805, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceNode, mPurity), Z_Construct_UEnum_FactoryGame_EResourcePurity, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mPurity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mPurity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourceClass_MetaData[] = {
 		{ "Category", "Resources" },
 		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
-		{ "ToolTip", "Type of resource" },
+		{ "ToolTip", "MODDING EDIT: BPReadOnly" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourceClass = { "mResourceClass", nullptr, (EPropertyFlags)0x0024080000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceNode, mResourceClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourceClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourceClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourceClass = { "mResourceClass", nullptr, (EPropertyFlags)0x0014000000000015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceNode, mResourceClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourceClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourceClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGResourceNode_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAddToSignificanceManager,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDoSpawnParticle,
@@ -1176,7 +1176,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceNode, 2333836348);
+	IMPLEMENT_CLASS(AFGResourceNode, 1269884479);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGResourceNode>()
 	{
 		return AFGResourceNode::StaticClass();

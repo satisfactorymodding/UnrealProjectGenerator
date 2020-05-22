@@ -75,7 +75,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSpawnerDebugComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCreatureSpawnerDebugComponent, 2456345589);
+	IMPLEMENT_CLASS(UFGCreatureSpawnerDebugComponent, 500278953);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCreatureSpawnerDebugComponent>()
 	{
 		return UFGCreatureSpawnerDebugComponent::StaticClass();

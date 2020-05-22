@@ -78,6 +78,8 @@ protected:
 	
 	/** Debug */
 	virtual void DisplayDebug( class UCanvas* canvas, const class FDebugDisplayInfo& debugDisplay, float& YL, float& YPos, float indent );
+	void Debug_LogState() const;
+
 private:
 	/** Set if we should replicate details. */
 	void SetReplicateDetails( bool replicateDetails );

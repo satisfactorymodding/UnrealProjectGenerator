@@ -1498,7 +1498,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGHUD, 4189480339);
+	IMPLEMENT_CLASS(AFGHUD, 728783773);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGHUD>()
 	{
 		return AFGHUD::StaticClass();

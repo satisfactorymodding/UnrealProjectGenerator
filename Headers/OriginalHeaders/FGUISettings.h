@@ -17,4 +17,8 @@ public:
 	/** Widget used to show the user when joining a session */
 	UPROPERTY( EditAnywhere, config, Category = UI )
 	TAssetSubclassOf<UUserWidget> mJoinSessionWidget;
+
+	/** Widget used to show the user when linking accounts */
+	UPROPERTY( EditAnywhere, config, Category = UI )
+	TAssetSubclassOf<UUserWidget> mConnectAccountsWidget;
 };

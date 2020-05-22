@@ -340,7 +340,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWaterVolume, 1531888257);
+	IMPLEMENT_CLASS(AFGWaterVolume, 1083526098);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWaterVolume>()
 	{
 		return AFGWaterVolume::StaticClass();

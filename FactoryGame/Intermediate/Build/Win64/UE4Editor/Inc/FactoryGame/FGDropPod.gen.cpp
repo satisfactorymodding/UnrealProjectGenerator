@@ -632,7 +632,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDropPod, 4115385532);
+	IMPLEMENT_CLASS(AFGDropPod, 2083893954);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGDropPod>()
 	{
 		return AFGDropPod::StaticClass();

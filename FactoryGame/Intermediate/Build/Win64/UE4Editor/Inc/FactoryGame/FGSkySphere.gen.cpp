@@ -702,7 +702,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSkySphere, 3115118244);
+	IMPLEMENT_CLASS(AFGSkySphere, 134426706);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSkySphere>()
 	{
 		return AFGSkySphere::StaticClass();

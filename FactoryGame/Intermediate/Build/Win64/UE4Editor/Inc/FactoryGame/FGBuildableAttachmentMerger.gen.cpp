@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAttachmentMerger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableAttachmentMerger, 118354238);
+	IMPLEMENT_CLASS(AFGBuildableAttachmentMerger, 359664478);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableAttachmentMerger>()
 	{
 		return AFGBuildableAttachmentMerger::StaticClass();

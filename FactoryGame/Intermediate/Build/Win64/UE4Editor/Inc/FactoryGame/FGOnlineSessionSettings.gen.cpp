@@ -108,9 +108,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_NATType;
 		static const UE4CodeGen_Private::FBytePropertyParams NewProp_NATType_Underlying;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SessionName_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CSS_SessionId_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_SessionName;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_CSS_SessionId;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SaveSessionName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_SaveSessionName;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BuildVersion_MetaData[];
 #endif
@@ -151,13 +155,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NATType = { "NATType", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFGOnlineSessionSettings, NATType), Z_Construct_UEnum_FactoryGame_ECachedNATType, METADATA_PARAMS(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NATType_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NATType_MetaData)) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NATType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_SessionName_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_CSS_SessionId_MetaData[] = {
+		{ "Category", "FGOnlineSessionSettings" },
+		{ "ModuleRelativePath", "Public/FGOnlineSessionSettings.h" },
+		{ "ToolTip", "A unique identifier of a game session" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_CSS_SessionId = { "CSS_SessionId", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFGOnlineSessionSettings, CSS_SessionId), METADATA_PARAMS(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_CSS_SessionId_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_CSS_SessionId_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_SaveSessionName_MetaData[] = {
 		{ "Category", "FGOnlineSessionSettings" },
 		{ "ModuleRelativePath", "Public/FGOnlineSessionSettings.h" },
 		{ "ToolTip", "Name of the session, same as the name exposed in the Save/Load menus" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_SessionName = { "SessionName", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFGOnlineSessionSettings, SessionName), METADATA_PARAMS(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_SessionName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_SessionName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_SaveSessionName = { "SaveSessionName", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFGOnlineSessionSettings, SaveSessionName), METADATA_PARAMS(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_SaveSessionName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_SaveSessionName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_BuildVersion_MetaData[] = {
 		{ "Category", "FGOnlineSessionSettings" },
@@ -192,7 +204,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NATType,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NATType_Underlying,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_SessionName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_CSS_SessionId,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_SaveSessionName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_BuildVersion,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_PlayDuration,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NumConnectedPlayers,
@@ -226,7 +239,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Hash() { return 73247077U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Hash() { return 1690175920U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

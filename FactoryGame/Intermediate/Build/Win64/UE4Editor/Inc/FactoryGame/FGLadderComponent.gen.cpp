@@ -278,7 +278,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLadderComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGLadderComponent, 414990233);
+	IMPLEMENT_CLASS(UFGLadderComponent, 2610563039);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGLadderComponent>()
 	{
 		return UFGLadderComponent::StaticClass();

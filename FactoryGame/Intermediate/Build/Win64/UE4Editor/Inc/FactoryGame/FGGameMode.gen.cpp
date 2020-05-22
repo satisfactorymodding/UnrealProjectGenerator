@@ -400,7 +400,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGameMode, 1943637889);
+	IMPLEMENT_CLASS(AFGGameMode, 3202534973);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGameMode>()
 	{
 		return AFGGameMode::StaticClass();

@@ -232,7 +232,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCircuitConnectionComponent); \
 	FORCEINLINE static uint32 __PPO__mMaxNumConnectionLinks() { return STRUCT_OFFSET(UFGCircuitConnectionComponent, mMaxNumConnectionLinks); } \
 	FORCEINLINE static uint32 __PPO__mIsHiddenConnection() { return STRUCT_OFFSET(UFGCircuitConnectionComponent, mIsHiddenConnection); } \
 	FORCEINLINE static uint32 __PPO__mWires() { return STRUCT_OFFSET(UFGCircuitConnectionComponent, mWires); } \
-	FORCEINLINE static uint32 __PPO__mNbWiresConnected() { return STRUCT_OFFSET(UFGCircuitConnectionComponent, mNbWiresConnected); } \
+	FORCEINLINE static uint32 __PPO__mNumWiresConnected() { return STRUCT_OFFSET(UFGCircuitConnectionComponent, mNumWiresConnected); } \
 	FORCEINLINE static uint32 __PPO__mHiddenConnections() { return STRUCT_OFFSET(UFGCircuitConnectionComponent, mHiddenConnections); } \
 	FORCEINLINE static uint32 __PPO__mCircuitID() { return STRUCT_OFFSET(UFGCircuitConnectionComponent, mCircuitID); }
 

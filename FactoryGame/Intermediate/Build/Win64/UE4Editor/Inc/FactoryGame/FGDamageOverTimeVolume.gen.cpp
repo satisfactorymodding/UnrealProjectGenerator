@@ -111,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTimeVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDamageOverTimeVolume, 3098646283);
+	IMPLEMENT_CLASS(AFGDamageOverTimeVolume, 1722887852);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGDamageOverTimeVolume>()
 	{
 		return AFGDamageOverTimeVolume::StaticClass();

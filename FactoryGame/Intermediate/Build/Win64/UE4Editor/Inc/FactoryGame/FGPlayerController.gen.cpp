@@ -3191,6 +3191,11 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		static void NewProp_mRespawnFromDeath_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mRespawnFromDeath;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mInTutorialMode_MetaData[];
+#endif
+		static void NewProp_mInTutorialMode_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mInTutorialMode;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCachedMapAreaTexture_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mCachedMapAreaTexture;
@@ -3412,6 +3417,17 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRespawnFromDeath = { "mRespawnFromDeath", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGPlayerController), &Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRespawnFromDeath_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRespawnFromDeath_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRespawnFromDeath_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mInTutorialMode_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
+		{ "ToolTip", "If the tutorial is currently active and affecting the player controller" },
+	};
+#endif
+	void Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mInTutorialMode_SetBit(void* Obj)
+	{
+		((AFGPlayerController*)Obj)->mInTutorialMode = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mInTutorialMode = { "mInTutorialMode", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGPlayerController), &Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mInTutorialMode_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mInTutorialMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mInTutorialMode_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCachedMapAreaTexture_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Cached info about the map areas" },
@@ -3569,6 +3585,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mMinPhotoModeFOV,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRespawnFromJoin,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRespawnFromDeath,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mInTutorialMode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCachedMapAreaTexture,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mIsRespawning,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mMovementWindComp,
@@ -3617,7 +3634,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerController, 1216219270);
+	IMPLEMENT_CLASS(AFGPlayerController, 3125255060);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlayerController>()
 	{
 		return AFGPlayerController::StaticClass();

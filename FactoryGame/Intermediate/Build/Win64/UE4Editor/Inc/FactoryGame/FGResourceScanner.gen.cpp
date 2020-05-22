@@ -613,7 +613,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceScanner, 2307263555);
+	IMPLEMENT_CLASS(AFGResourceScanner, 2123486064);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGResourceScanner>()
 	{
 		return AFGResourceScanner::StaticClass();

@@ -2288,7 +2288,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCharacterBase, 1386060209);
+	IMPLEMENT_CLASS(AFGCharacterBase, 2335866253);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCharacterBase>()
 	{
 		return AFGCharacterBase::StaticClass();

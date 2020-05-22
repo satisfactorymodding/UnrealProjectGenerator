@@ -166,7 +166,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorNuclear() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableGeneratorNuclear, 2662278656);
+	IMPLEMENT_CLASS(AFGBuildableGeneratorNuclear, 3777545581);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableGeneratorNuclear>()
 	{
 		return AFGBuildableGeneratorNuclear::StaticClass();

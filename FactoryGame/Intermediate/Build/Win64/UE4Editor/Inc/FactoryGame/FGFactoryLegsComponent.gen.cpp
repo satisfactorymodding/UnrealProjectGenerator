@@ -402,7 +402,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFactoryLegsComponent, 427041682);
+	IMPLEMENT_CLASS(UFGFactoryLegsComponent, 2171234982);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFactoryLegsComponent>()
 	{
 		return UFGFactoryLegsComponent::StaticClass();

@@ -20,14 +20,14 @@ class AFGTutorialIntroManager;
 #endif
 #define FACTORYGAME_FGTutorialIntroManager_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_57_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_58_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTutorialHintData_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FTutorialHintData>();
 
-#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_40_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_41_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FRecipeAmountPair_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -41,7 +41,7 @@ static inline void FIntroSequenceStateUpdate_DelegateWrapper(const FMulticastScr
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_TradingPostLevel) \
 	{ \
@@ -103,6 +103,14 @@ static inline void FIntroSequenceStateUpdate_DelegateWrapper(const FMulticastScr
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnBuildingBuiltGlobal(Z_Param_buildable); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnCodexOpened) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnCodexOpened(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -222,7 +230,7 @@ static inline void FIntroSequenceStateUpdate_DelegateWrapper(const FMulticastScr
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_TradingPostLevel) \
 	{ \
@@ -284,6 +292,14 @@ static inline void FIntroSequenceStateUpdate_DelegateWrapper(const FMulticastScr
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnBuildingBuiltGlobal(Z_Param_buildable); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnCodexOpened) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnCodexOpened(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -403,7 +419,7 @@ static inline void FIntroSequenceStateUpdate_DelegateWrapper(const FMulticastScr
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGTutorialIntroManager(); \
 	friend struct Z_Construct_UClass_AFGTutorialIntroManager_Statics; \
@@ -413,7 +429,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGTutorialIntroManager*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGTutorialIntroManager(); \
 	friend struct Z_Construct_UClass_AFGTutorialIntroManager_Statics; \
@@ -423,7 +439,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGTutorialIntroManager*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGTutorialIntroManager(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGTutorialIntroManager) \
@@ -436,7 +452,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGTutorialIntroManager(AFGTutorialIntroManager&&); \
@@ -447,7 +463,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGTutorialIntroManager); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGTutorialIntroManager)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mTradingPostBuilt() { return STRUCT_OFFSET(AFGTutorialIntroManager, mTradingPostBuilt); } \
 	FORCEINLINE static uint32 __PPO__mPendingTutorial() { return STRUCT_OFFSET(AFGTutorialIntroManager, mPendingTutorial); } \
 	FORCEINLINE static uint32 __PPO__mHasCompletedIntroTutorial() { return STRUCT_OFFSET(AFGTutorialIntroManager, mHasCompletedIntroTutorial); } \
@@ -480,28 +496,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGTutorialIntroManager); \
 	FORCEINLINE static uint32 __PPO__mWaitTimeAfterCompletingHubStep() { return STRUCT_OFFSET(AFGTutorialIntroManager, mWaitTimeAfterCompletingHubStep); } \
 	FORCEINLINE static uint32 __PPO__mHoldTimeToSkipIntro() { return STRUCT_OFFSET(AFGTutorialIntroManager, mHoldTimeToSkipIntro); } \
 	FORCEINLINE static uint32 __PPO__mHoldToSkipTimerHandle() { return STRUCT_OFFSET(AFGTutorialIntroManager, mHoldToSkipTimerHandle); } \
-	FORCEINLINE static uint32 __PPO__mRecipesToGivePlayersSkippingTutorial() { return STRUCT_OFFSET(AFGTutorialIntroManager, mRecipesToGivePlayersSkippingTutorial); }
+	FORCEINLINE static uint32 __PPO__mRecipesToGivePlayersSkippingTutorial() { return STRUCT_OFFSET(AFGTutorialIntroManager, mRecipesToGivePlayersSkippingTutorial); } \
+	FORCEINLINE static uint32 __PPO__mDidOpenCodex() { return STRUCT_OFFSET(AFGTutorialIntroManager, mDidOpenCodex); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_90_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_91_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_93_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGTutorialIntroManager_h_94_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -516,6 +533,7 @@ template<> FACTORYGAME_API UClass* StaticClass<class AFGTutorialIntroManager>();
 	op(EIntroTutorialSteps::ITS_NONE) \
 	op(EIntroTutorialSteps::ITS_INTRO) \
 	op(EIntroTutorialSteps::ITS_DISMANTLE_POD) \
+	op(EIntroTutorialSteps::ITS_OPEN_CODEX) \
 	op(EIntroTutorialSteps::ITS_STUN_SPEAR) \
 	op(EIntroTutorialSteps::ITS_IRON_ORE) \
 	op(EIntroTutorialSteps::ITS_HUB) \

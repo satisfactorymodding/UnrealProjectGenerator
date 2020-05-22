@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FOverlapResult;
 class AFGCreature;
 class AActor;
 class AFGSplinePath;
@@ -24,8 +25,15 @@ class AFGSplinePath;
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSpawnData>();
 
 #define FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_RPC_WRAPPERS \
-	virtual void DestroyCreatures_Implementation(); \
-	virtual void SpawnCreatures_Implementation(); \
+ \
+	DECLARE_FUNCTION(execReceiveOnTraceCompleted) \
+	{ \
+		P_GET_TARRAY_REF(FOverlapResult,Z_Param_Out_Results); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ReceiveOnTraceCompleted(Z_Param_Out_Results); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execTryDestroyCreatures) \
 	{ \
@@ -66,22 +74,6 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSpawnData>();
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->CreatureDied(Z_Param_thisActor); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execDestroyCreatures) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->DestroyCreatures_Implementation(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSpawnCreatures) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SpawnCreatures_Implementation(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -103,8 +95,15 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSpawnData>();
 
 
 #define FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual void DestroyCreatures_Implementation(); \
-	virtual void SpawnCreatures_Implementation(); \
+ \
+	DECLARE_FUNCTION(execReceiveOnTraceCompleted) \
+	{ \
+		P_GET_TARRAY_REF(FOverlapResult,Z_Param_Out_Results); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ReceiveOnTraceCompleted(Z_Param_Out_Results); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execTryDestroyCreatures) \
 	{ \
@@ -148,22 +147,6 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSpawnData>();
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execDestroyCreatures) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->DestroyCreatures_Implementation(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSpawnCreatures) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SpawnCreatures_Implementation(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execIsSpawnerActive) \
 	{ \
 		P_FINISH; \
@@ -181,8 +164,6 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSpawnData>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_EVENT_PARMS
-#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_CALLBACK_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGCreatureSpawner(); \
@@ -241,20 +222,18 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCreatureSpawner); \
 	FORCEINLINE static uint32 __PPO__mCachedIsNearBase() { return STRUCT_OFFSET(AFGCreatureSpawner, mCachedIsNearBase); } \
 	FORCEINLINE static uint32 __PPO__mSpawnerDistance() { return STRUCT_OFFSET(AFGCreatureSpawner, mSpawnerDistance); } \
 	FORCEINLINE static uint32 __PPO__mIsPendingDestroy() { return STRUCT_OFFSET(AFGCreatureSpawner, mIsPendingDestroy); } \
+	FORCEINLINE static uint32 __PPO__mIsPendingSpawn() { return STRUCT_OFFSET(AFGCreatureSpawner, mIsPendingSpawn); } \
+	FORCEINLINE static uint32 __PPO__mCurrentCreatureToSpawnIndex() { return STRUCT_OFFSET(AFGCreatureSpawner, mCurrentCreatureToSpawnIndex); } \
 	FORCEINLINE static uint32 __PPO__mPendingDestroyTimer() { return STRUCT_OFFSET(AFGCreatureSpawner, mPendingDestroyTimer); } \
 	FORCEINLINE static uint32 __PPO__mRandomSeed() { return STRUCT_OFFSET(AFGCreatureSpawner, mRandomSeed); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_56_PROLOG \
-	FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_EVENT_PARMS
-
-
+#define FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_56_PROLOG
 #define FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_PRIVATE_PROPERTY_OFFSET \
 	FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_CALLBACK_WRAPPERS \
 	FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_INCLASS \
 	FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_STANDARD_CONSTRUCTORS \
 public: \
@@ -266,7 +245,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_PRIVATE_PROPERTY_OFFSET \
 	FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_CALLBACK_WRAPPERS \
 	FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_INCLASS_NO_PURE_DECLS \
 	FactoryGame_Source_FactoryGame_Public_Creature_FGCreatureSpawner_h_59_ENHANCED_CONSTRUCTORS \
 private: \

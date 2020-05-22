@@ -31,6 +31,22 @@ static inline void FAudioMessageConcludedDelegate_DelegateWrapper(const FScriptD
 #define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_RPC_WRAPPERS \
 	virtual void PlayNextDialogue_Implementation(); \
  \
+	DECLARE_FUNCTION(execShowOnlyOverrideText) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->ShowOnlyOverrideText(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetOverrideText) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FText*)Z_Param__Result=P_THIS->GetOverrideText(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execAssignOnConcludedDelegate) \
 	{ \
 		P_GET_PROPERTY(UDelegateProperty,Z_Param_concludedDelegate); \
@@ -84,6 +100,22 @@ static inline void FAudioMessageConcludedDelegate_DelegateWrapper(const FScriptD
 #define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void PlayNextDialogue_Implementation(); \
  \
+	DECLARE_FUNCTION(execShowOnlyOverrideText) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->ShowOnlyOverrideText(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetOverrideText) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FText*)Z_Param__Result=P_THIS->GetOverrideText(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execAssignOnConcludedDelegate) \
 	{ \
 		P_GET_PROPERTY(UDelegateProperty,Z_Param_concludedDelegate); \
@@ -134,7 +166,13 @@ static inline void FAudioMessageConcludedDelegate_DelegateWrapper(const FScriptD
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_EVENT_PARMS \
+	struct FGAudioMessage_eventGetMessageText_Parms \
+	{ \
+		FText ReturnValue; \
+	};
+
+
 #define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_CALLBACK_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_UI_Message_FGAudioMessage_h_48_INCLASS_NO_PURE_DECLS \
 private: \

@@ -26,7 +26,10 @@ void EmptyLinkFunctionForGeneratedCodeFGAudioMessage() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGAudioMessage_CancelPlayback();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGAudioMessage_ContinuePlayback();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGAudioMessage_GetCurrentDialogue();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGAudioMessage_GetMessageText();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGAudioMessage_GetOverrideText();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGAudioMessage_PlayNextDialogue();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGAudioMessage_ShowOnlyOverrideText();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGAudioMessage_StartPlayback();
 	ENGINE_API UClass* Z_Construct_UClass_UInputComponent_NoRegister();
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkComponent_NoRegister();
@@ -164,6 +167,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 		return ReturnStruct;
 	}
 	uint32 Get_Z_Construct_UScriptStruct_FAudioSubtitlePair_Hash() { return 2383769545U; }
+	static FName NAME_UFGAudioMessage_GetMessageText = FName(TEXT("GetMessageText"));
+	FText UFGAudioMessage::GetMessageText()
+	{
+		FGAudioMessage_eventGetMessageText_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UFGAudioMessage_GetMessageText),&Parms);
+		return Parms.ReturnValue;
+	}
 	static FName NAME_UFGAudioMessage_PlayNextDialogue = FName(TEXT("PlayNextDialogue"));
 	void UFGAudioMessage::PlayNextDialogue()
 	{
@@ -177,7 +187,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 			{ "CancelPlayback", &UFGAudioMessage::execCancelPlayback },
 			{ "ContinuePlayback", &UFGAudioMessage::execContinuePlayback },
 			{ "GetCurrentDialogue", &UFGAudioMessage::execGetCurrentDialogue },
+			{ "GetOverrideText", &UFGAudioMessage::execGetOverrideText },
 			{ "PlayNextDialogue", &UFGAudioMessage::execPlayNextDialogue },
+			{ "ShowOnlyOverrideText", &UFGAudioMessage::execShowOnlyOverrideText },
 			{ "StartPlayback", &UFGAudioMessage::execStartPlayback },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
@@ -296,6 +308,70 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGAudioMessage_GetMessageText_Statics
+	{
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGAudioMessage_GetMessageText_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAudioMessage_eventGetMessageText_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAudioMessage_GetMessageText_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAudioMessage_GetMessageText_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAudioMessage_GetMessageText_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Audio Message" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
+		{ "ToolTip", "Gets the message text" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAudioMessage_GetMessageText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAudioMessage, nullptr, "GetMessageText", sizeof(FGAudioMessage_eventGetMessageText_Parms), Z_Construct_UFunction_UFGAudioMessage_GetMessageText_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAudioMessage_GetMessageText_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x1C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAudioMessage_GetMessageText_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAudioMessage_GetMessageText_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGAudioMessage_GetMessageText()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGAudioMessage_GetMessageText_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGAudioMessage_GetOverrideText_Statics
+	{
+		struct FGAudioMessage_eventGetOverrideText_Parms
+		{
+			FText ReturnValue;
+		};
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGAudioMessage_GetOverrideText_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAudioMessage_eventGetOverrideText_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAudioMessage_GetOverrideText_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAudioMessage_GetOverrideText_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAudioMessage_GetOverrideText_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Audio Message" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
+		{ "ToolTip", "Gets the message text" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAudioMessage_GetOverrideText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAudioMessage, nullptr, "GetOverrideText", sizeof(FGAudioMessage_eventGetOverrideText_Parms), Z_Construct_UFunction_UFGAudioMessage_GetOverrideText_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAudioMessage_GetOverrideText_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAudioMessage_GetOverrideText_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAudioMessage_GetOverrideText_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGAudioMessage_GetOverrideText()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGAudioMessage_GetOverrideText_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGAudioMessage_PlayNextDialogue_Statics
 	{
 #if WITH_METADATA
@@ -317,6 +393,45 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGAudioMessage_PlayNextDialogue_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGAudioMessage_ShowOnlyOverrideText_Statics
+	{
+		struct FGAudioMessage_eventShowOnlyOverrideText_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UFGAudioMessage_ShowOnlyOverrideText_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGAudioMessage_eventShowOnlyOverrideText_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGAudioMessage_ShowOnlyOverrideText_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGAudioMessage_eventShowOnlyOverrideText_Parms), &Z_Construct_UFunction_UFGAudioMessage_ShowOnlyOverrideText_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAudioMessage_ShowOnlyOverrideText_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAudioMessage_ShowOnlyOverrideText_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAudioMessage_ShowOnlyOverrideText_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Audio Message" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
+		{ "ToolTip", "Do we want to show only the override text or the subtitle also?" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAudioMessage_ShowOnlyOverrideText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAudioMessage, nullptr, "ShowOnlyOverrideText", sizeof(FGAudioMessage_eventShowOnlyOverrideText_Parms), Z_Construct_UFunction_UFGAudioMessage_ShowOnlyOverrideText_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAudioMessage_ShowOnlyOverrideText_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAudioMessage_ShowOnlyOverrideText_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAudioMessage_ShowOnlyOverrideText_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGAudioMessage_ShowOnlyOverrideText()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGAudioMessage_ShowOnlyOverrideText_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -364,6 +479,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 #endif
 		static const UE4CodeGen_Private::FDelegatePropertyParams NewProp_mAudioMessageConcluded;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mShowOnlyOverrideText_MetaData[];
+#endif
+		static void NewProp_mShowOnlyOverrideText_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mShowOnlyOverrideText;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mOverrideText_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_mOverrideText;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSubtitleTimeMultiplier_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mSubtitleTimeMultiplier;
@@ -393,7 +517,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 		{ &Z_Construct_UFunction_UFGAudioMessage_CancelPlayback, "CancelPlayback" }, // 3660946907
 		{ &Z_Construct_UFunction_UFGAudioMessage_ContinuePlayback, "ContinuePlayback" }, // 3163633784
 		{ &Z_Construct_UFunction_UFGAudioMessage_GetCurrentDialogue, "GetCurrentDialogue" }, // 3197636824
+		{ &Z_Construct_UFunction_UFGAudioMessage_GetMessageText, "GetMessageText" }, // 3194847114
+		{ &Z_Construct_UFunction_UFGAudioMessage_GetOverrideText, "GetOverrideText" }, // 3719258886
 		{ &Z_Construct_UFunction_UFGAudioMessage_PlayNextDialogue, "PlayNextDialogue" }, // 267788365
+		{ &Z_Construct_UFunction_UFGAudioMessage_ShowOnlyOverrideText, "ShowOnlyOverrideText" }, // 3538439329
 		{ &Z_Construct_UFunction_UFGAudioMessage_StartPlayback, "StartPlayback" }, // 4286661627
 	};
 #if WITH_METADATA
@@ -418,6 +545,27 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 	};
 #endif
 	const UE4CodeGen_Private::FDelegatePropertyParams Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mAudioMessageConcluded = { "mAudioMessageConcluded", nullptr, (EPropertyFlags)0x0040000000080000, UE4CodeGen_Private::EPropertyGenFlags::Delegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAudioMessage, mAudioMessageConcluded), Z_Construct_UDelegateFunction_FactoryGame_AudioMessageConcludedDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mAudioMessageConcluded_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mAudioMessageConcluded_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mShowOnlyOverrideText_MetaData[] = {
+		{ "Category", "Audio Message" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
+		{ "ToolTip", "Multiplier for time per character to display" },
+	};
+#endif
+	void Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mShowOnlyOverrideText_SetBit(void* Obj)
+	{
+		((UFGAudioMessage*)Obj)->mShowOnlyOverrideText = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mShowOnlyOverrideText = { "mShowOnlyOverrideText", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGAudioMessage), &Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mShowOnlyOverrideText_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mShowOnlyOverrideText_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mShowOnlyOverrideText_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mOverrideText_MetaData[] = {
+		{ "Category", "Audio Message" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
+		{ "MultiLine", "TRUE" },
+		{ "ToolTip", "Text that can be displayed instead for (or added to) subtitle text when displaying the message" },
+	};
+#endif
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mOverrideText = { "mOverrideText", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAudioMessage, mOverrideText), METADATA_PARAMS(Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mOverrideText_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mOverrideText_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mSubtitleTimeMultiplier_MetaData[] = {
 		{ "Category", "Audio Message" },
@@ -453,6 +601,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGAudioMessage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mAudioMessageInputComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mAudioMessageConcluded,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mShowOnlyOverrideText,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mOverrideText,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mSubtitleTimeMultiplier,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mCurrentDialogue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mAudioEvents,
@@ -486,7 +636,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAudioMessage, 1621531084);
+	IMPLEMENT_CLASS(UFGAudioMessage, 2421288536);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGAudioMessage>()
 	{
 		return UFGAudioMessage::StaticClass();

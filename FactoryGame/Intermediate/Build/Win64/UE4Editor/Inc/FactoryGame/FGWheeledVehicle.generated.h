@@ -92,14 +92,6 @@ static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptD
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execOnRep_IsSimulated) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_IsSimulated(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execUseReplicatedState) \
 	{ \
 		P_FINISH; \
@@ -284,14 +276,6 @@ static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptD
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(UFloatingPawnMovement**)Z_Param__Result=P_THIS->GetSimulationComponent(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execIsSimulated) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->IsSimulated(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -403,14 +387,6 @@ static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptD
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execOnRep_IsSimulated) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_IsSimulated(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execUseReplicatedState) \
 	{ \
 		P_FINISH; \
@@ -595,14 +571,6 @@ static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptD
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(UFloatingPawnMovement**)Z_Param__Result=P_THIS->GetSimulationComponent(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execIsSimulated) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->IsSimulated(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -812,8 +780,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGWheeledVehicle); \
 	FORCEINLINE static uint32 __PPO__mNaturalAirAngularVelocityStrengthPitch() { return STRUCT_OFFSET(AFGWheeledVehicle, mNaturalAirAngularVelocityStrengthPitch); } \
 	FORCEINLINE static uint32 __PPO__mAddedAngularVelocityInputSmoothingSpeed() { return STRUCT_OFFSET(AFGWheeledVehicle, mAddedAngularVelocityInputSmoothingSpeed); } \
 	FORCEINLINE static uint32 __PPO__mFoliageCollideBox() { return STRUCT_OFFSET(AFGWheeledVehicle, mFoliageCollideBox); } \
-	FORCEINLINE static uint32 __PPO__mIsSimulated() { return STRUCT_OFFSET(AFGWheeledVehicle, mIsSimulated); } \
-	FORCEINLINE static uint32 __PPO__mSimulationDistance() { return STRUCT_OFFSET(AFGWheeledVehicle, mSimulationDistance); } \
 	FORCEINLINE static uint32 __PPO__mSimulationMovementComponent() { return STRUCT_OFFSET(AFGWheeledVehicle, mSimulationMovementComponent); } \
 	FORCEINLINE static uint32 __PPO__mFuelInventory() { return STRUCT_OFFSET(AFGWheeledVehicle, mFuelInventory); } \
 	FORCEINLINE static uint32 __PPO__mStorageInventory() { return STRUCT_OFFSET(AFGWheeledVehicle, mStorageInventory); } \

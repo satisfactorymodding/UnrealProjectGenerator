@@ -93,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrashSiteDebrisActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCrashSiteDebrisActor, 3942539649);
+	IMPLEMENT_CLASS(AFGCrashSiteDebrisActor, 1612503917);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCrashSiteDebrisActor>()
 	{
 		return AFGCrashSiteDebrisActor::StaticClass();

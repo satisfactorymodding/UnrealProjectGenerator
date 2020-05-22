@@ -787,7 +787,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGObjectScanner, 1969687904);
+	IMPLEMENT_CLASS(AFGObjectScanner, 3573707924);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGObjectScanner>()
 	{
 		return AFGObjectScanner::StaticClass();
@@ -1038,7 +1038,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGObjectScannerAttachment, 1933728848);
+	IMPLEMENT_CLASS(AFGObjectScannerAttachment, 2697935418);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGObjectScannerAttachment>()
 	{
 		return AFGObjectScannerAttachment::StaticClass();

@@ -230,7 +230,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWeaponAttachment, 3743969832);
+	IMPLEMENT_CLASS(AFGWeaponAttachment, 4082260181);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWeaponAttachment>()
 	{
 		return AFGWeaponAttachment::StaticClass();

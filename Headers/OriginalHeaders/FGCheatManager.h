@@ -318,9 +318,6 @@ public:
 	void SendInviteToFriend( FString friendName );
 
 	UFUNCTION( exec )
-	void DebugCrash();
-
-	UFUNCTION( exec )
 	void ResetHubTutorial();
 
 	UFUNCTION( exec )
@@ -386,6 +383,9 @@ public:
 	/** Duplicate a component from one circuit to another circuit so they contain the same component. */
 	UFUNCTION( exec )
 	void DupeComponentToAnotherCircuit( int32 source, int32 target );
+
+	UFUNCTION( exec )
+	void DumpConnectionString();
 
 public:
 	/** This is used to make picking the same classes in the cheat board easier */

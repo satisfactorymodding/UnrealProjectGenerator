@@ -173,7 +173,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSoundSpline() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAmbientSoundSpline, 3387617773);
+	IMPLEMENT_CLASS(AFGAmbientSoundSpline, 388679620);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGAmbientSoundSpline>()
 	{
 		return AFGAmbientSoundSpline::StaticClass();

@@ -138,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRiverSpline, 1996261069);
+	IMPLEMENT_CLASS(AFGRiverSpline, 1423142767);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRiverSpline>()
 	{
 		return AFGRiverSpline::StaticClass();

@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceNodeGeyser() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceNodeGeyser, 2953427203);
+	IMPLEMENT_CLASS(AFGResourceNodeGeyser, 2661259950);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGResourceNodeGeyser>()
 	{
 		return AFGResourceNodeGeyser::StaticClass();

@@ -864,6 +864,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableFactory); \
 	FORCEINLINE static uint32 __PPO__mPowerInfo() { return STRUCT_OFFSET(AFGBuildableFactory, mPowerInfo); } \
 	FORCEINLINE static uint32 __PPO__mOnHasPowerChanged() { return STRUCT_OFFSET(AFGBuildableFactory, mOnHasPowerChanged); } \
 	FORCEINLINE static uint32 __PPO__mOnHasProductionChanged() { return STRUCT_OFFSET(AFGBuildableFactory, mOnHasProductionChanged); } \
+	FORCEINLINE static uint32 __PPO__mOnHasStandbyChanged() { return STRUCT_OFFSET(AFGBuildableFactory, mOnHasStandbyChanged); } \
 	FORCEINLINE static uint32 __PPO__mMinimumProducingTime() { return STRUCT_OFFSET(AFGBuildableFactory, mMinimumProducingTime); } \
 	FORCEINLINE static uint32 __PPO__mMinimumStoppedTime() { return STRUCT_OFFSET(AFGBuildableFactory, mMinimumStoppedTime); } \
 	FORCEINLINE static uint32 __PPO__mTimeSinceStartStopProducing() { return STRUCT_OFFSET(AFGBuildableFactory, mTimeSinceStartStopProducing); } \

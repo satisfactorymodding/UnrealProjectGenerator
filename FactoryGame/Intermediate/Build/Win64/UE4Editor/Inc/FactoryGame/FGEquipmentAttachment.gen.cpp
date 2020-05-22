@@ -610,7 +610,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEquipmentAttachment, 696848328);
+	IMPLEMENT_CLASS(AFGEquipmentAttachment, 997346502);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGEquipmentAttachment>()
 	{
 		return AFGEquipmentAttachment::StaticClass();

@@ -277,6 +277,22 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_VehicleOccupied
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execOnRep_IsSimulated) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRep_IsSimulated(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsSimulated) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsSimulated(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execKickAllPlayers) \
 	{ \
 		P_FINISH; \
@@ -340,6 +356,14 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_VehicleOccupied
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->GetIsSignificant(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetSimulationDistance) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetSimulationDistance(); \
 		P_NATIVE_END; \
 	}
 
@@ -377,6 +401,22 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_VehicleOccupied
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execOnRep_IsSimulated) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRep_IsSimulated(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsSimulated) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsSimulated(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execKickAllPlayers) \
 	{ \
 		P_FINISH; \
@@ -440,6 +480,14 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_VehicleOccupied
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->GetIsSignificant(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetSimulationDistance) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetSimulationDistance(); \
 		P_NATIVE_END; \
 	}
 
@@ -531,7 +579,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGVehicle); \
 	FORCEINLINE static uint32 __PPO__mSubmergedBouyantForce() { return STRUCT_OFFSET(AFGVehicle, mSubmergedBouyantForce); } \
 	FORCEINLINE static uint32 __PPO__mGasDamageType() { return STRUCT_OFFSET(AFGVehicle, mGasDamageType); } \
 	FORCEINLINE static uint32 __PPO__mSignificanceBias() { return STRUCT_OFFSET(AFGVehicle, mSignificanceBias); } \
-	FORCEINLINE static uint32 __PPO__mSignificanceRange() { return STRUCT_OFFSET(AFGVehicle, mSignificanceRange); }
+	FORCEINLINE static uint32 __PPO__mIsSimulated() { return STRUCT_OFFSET(AFGVehicle, mIsSimulated); } \
+	FORCEINLINE static uint32 __PPO__mSignificanceRange() { return STRUCT_OFFSET(AFGVehicle, mSignificanceRange); } \
+	FORCEINLINE static uint32 __PPO__mSimulationDistance() { return STRUCT_OFFSET(AFGVehicle, mSimulationDistance); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGVehicle_h_130_PROLOG \

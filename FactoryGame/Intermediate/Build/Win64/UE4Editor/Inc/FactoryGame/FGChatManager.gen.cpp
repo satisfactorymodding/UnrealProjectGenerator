@@ -643,7 +643,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGChatManager, 3744643154);
+	IMPLEMENT_CLASS(AFGChatManager, 3378361495);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGChatManager>()
 	{
 		return AFGChatManager::StaticClass();

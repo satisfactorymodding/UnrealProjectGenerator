@@ -208,7 +208,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMinerDispenser() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPortableMinerDispenser, 474244297);
+	IMPLEMENT_CLASS(AFGPortableMinerDispenser, 326520474);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPortableMinerDispenser>()
 	{
 		return AFGPortableMinerDispenser::StaticClass();

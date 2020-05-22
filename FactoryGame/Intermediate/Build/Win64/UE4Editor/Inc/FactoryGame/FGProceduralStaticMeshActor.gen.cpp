@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProceduralStaticMeshActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGProceduralStaticMeshActor, 780178093);
+	IMPLEMENT_CLASS(AFGProceduralStaticMeshActor, 3364541786);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGProceduralStaticMeshActor>()
 	{
 		return AFGProceduralStaticMeshActor::StaticClass();

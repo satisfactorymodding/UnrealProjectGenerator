@@ -156,8 +156,7 @@ namespace ImplementHeaders
 @"	if (inClass)
 		return inClass.GetDefaultObject()->mIngredients;
 	else
-		return TArray<FItemAmount>();
-"
+		return TArray<FItemAmount>();"
             },
             { "static UFGRecipe::GetManualManufacturingDuration",
 @"	if (inClass)
@@ -390,11 +389,11 @@ namespace ImplementHeaders
 		return FRotator();"
             },
             { "UFGSchematicPurchasedDependency::Init",
-@"  this->mSchematics = schematics;
+@"	this->mSchematics = schematics;
     this->mRequireAllSchematicsToBePurchased = requireAllSchematicsToBePurchased;"
             },
             { "UFGSchematicPurchasedDependency::GetSchematics",
-@"  out_schematics = mSchematics;"
+@"  out_schematics = mSchematics;"  
             },
             { "FFluidBox::Serialize",
 @"	if (ar.ArIsSaveGame) {

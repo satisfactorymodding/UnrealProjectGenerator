@@ -16,6 +16,14 @@ class UFGItemDescriptor;
 
 #define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execDumpConnectionString) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DumpConnectionString(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execDupeComponentToAnotherCircuit) \
 	{ \
 		P_GET_PROPERTY(UIntProperty,Z_Param_source); \
@@ -194,14 +202,6 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->ResetHubTutorial(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execDebugCrash) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->DebugCrash(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1018,6 +1018,14 @@ class UFGItemDescriptor;
 
 #define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execDumpConnectionString) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DumpConnectionString(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execDupeComponentToAnotherCircuit) \
 	{ \
 		P_GET_PROPERTY(UIntProperty,Z_Param_source); \
@@ -1196,14 +1204,6 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->ResetHubTutorial(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execDebugCrash) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->DebugCrash(); \
 		P_NATIVE_END; \
 	} \
  \

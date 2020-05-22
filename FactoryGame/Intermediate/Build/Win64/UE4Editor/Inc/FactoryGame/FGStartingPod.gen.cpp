@@ -229,7 +229,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGStartingPod, 2454708625);
+	IMPLEMENT_CLASS(AFGStartingPod, 2769424583);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGStartingPod>()
 	{
 		return AFGStartingPod::StaticClass();

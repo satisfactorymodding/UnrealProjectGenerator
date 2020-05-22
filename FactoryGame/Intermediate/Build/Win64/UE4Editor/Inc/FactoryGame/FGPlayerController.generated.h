@@ -1704,6 +1704,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGPlayerController); \
 	FORCEINLINE static uint32 __PPO__mMovementWindComp() { return STRUCT_OFFSET(AFGPlayerController, mMovementWindComp); } \
 	FORCEINLINE static uint32 __PPO__mIsRespawning() { return STRUCT_OFFSET(AFGPlayerController, mIsRespawning); } \
 	FORCEINLINE static uint32 __PPO__mCachedMapAreaTexture() { return STRUCT_OFFSET(AFGPlayerController, mCachedMapAreaTexture); } \
+	FORCEINLINE static uint32 __PPO__mInTutorialMode() { return STRUCT_OFFSET(AFGPlayerController, mInTutorialMode); } \
 	FORCEINLINE static uint32 __PPO__mRespawnFromDeath() { return STRUCT_OFFSET(AFGPlayerController, mRespawnFromDeath); } \
 	FORCEINLINE static uint32 __PPO__mRespawnFromJoin() { return STRUCT_OFFSET(AFGPlayerController, mRespawnFromJoin); } \
 	FORCEINLINE static uint32 __PPO__mMinPhotoModeFOV() { return STRUCT_OFFSET(AFGPlayerController, mMinPhotoModeFOV); } \

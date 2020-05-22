@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttachmentSplitterHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAttachmentSplitterHologram, 4133965981);
+	IMPLEMENT_CLASS(AFGAttachmentSplitterHologram, 696712027);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGAttachmentSplitterHologram>()
 	{
 		return AFGAttachmentSplitterHologram::StaticClass();

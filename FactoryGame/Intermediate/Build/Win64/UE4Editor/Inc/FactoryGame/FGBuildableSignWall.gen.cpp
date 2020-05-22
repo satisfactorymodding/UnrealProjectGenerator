@@ -366,7 +366,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSignWall, 3815278364);
+	IMPLEMENT_CLASS(AFGBuildableSignWall, 2571182213);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableSignWall>()
 	{
 		return AFGBuildableSignWall::StaticClass();

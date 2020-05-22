@@ -90,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRadioactiveActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRadioactiveActor, 1360522574);
+	IMPLEMENT_CLASS(AFGRadioactiveActor, 729795964);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRadioactiveActor>()
 	{
 		return AFGRadioactiveActor::StaticClass();

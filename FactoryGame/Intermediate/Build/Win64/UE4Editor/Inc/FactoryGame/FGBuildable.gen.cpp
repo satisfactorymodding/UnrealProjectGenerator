@@ -911,6 +911,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mHideOnBuildEffectStart_MetaData[];
+#endif
+		static void NewProp_mHideOnBuildEffectStart_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mHideOnBuildEffectStart;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCachedShapeComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mCachedShapeComponent;
@@ -1109,6 +1114,18 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		{ "ToolTip", "Base for everything buildable, buildable things can have factory connections, power connections etc.\n\nThere are two tick functions on buildables, PrimaryActorTick and FactoryTick.\nPrimaryActorTick is disabled when the buildable is to far away to to not waste cycles on animations and other effects.\nFactoryTick is always enabled (as long as bCanEverTick is true) so that the factory part of buildings always can simulate." },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHideOnBuildEffectStart_MetaData[] = {
+		{ "Category", "Buildable" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
+		{ "ToolTip", "Should the building start as hidden when playing the build effect" },
+	};
+#endif
+	void Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHideOnBuildEffectStart_SetBit(void* Obj)
+	{
+		((AFGBuildable*)Obj)->mHideOnBuildEffectStart = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHideOnBuildEffectStart = { "mHideOnBuildEffectStart", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildable), &Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHideOnBuildEffectStart_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHideOnBuildEffectStart_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHideOnBuildEffectStart_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCachedShapeComponent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -1428,6 +1445,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHologramClass = { "mHologramClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildable, mHologramClass), Z_Construct_UClass_AFGHologram_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHologramClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHologramClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildable_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHideOnBuildEffectStart,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCachedShapeComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildTimeStamp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuiltWithRecipe,
@@ -1502,7 +1520,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildable, 217549880);
+	IMPLEMENT_CLASS(AFGBuildable, 1913843117);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildable>()
 	{
 		return AFGBuildable::StaticClass();

@@ -7,14 +7,11 @@
 #include "Hologram/FGFactoryBuildingHologram.h"
 #include "FGTrainStationHologram.generated.h"
 
-/**
- * 
- */
+
 UCLASS()
 class FACTORYGAME_API AFGTrainStationHologram : public AFGTrainPlatformHologram
 {
 	GENERATED_BODY()
-	
 public:
 	virtual void GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps ) const override;
 	
@@ -29,5 +26,4 @@ protected:
 	virtual USceneComponent* SetupComponent( USceneComponent* attachParent, UActorComponent* componentTemplate, const FName& componentName ) override;
 	virtual void SetHologramLocationAndRotation( const FHitResult& hitResult ) override;
 	// End AFGHologram interface
-
 };

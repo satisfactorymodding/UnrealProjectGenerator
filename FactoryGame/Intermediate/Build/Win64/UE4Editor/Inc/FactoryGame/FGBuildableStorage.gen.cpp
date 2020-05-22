@@ -198,7 +198,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableStorage, 3115688521);
+	IMPLEMENT_CLASS(AFGBuildableStorage, 86548965);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableStorage>()
 	{
 		return AFGBuildableStorage::StaticClass();

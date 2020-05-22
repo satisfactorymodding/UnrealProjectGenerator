@@ -56,7 +56,6 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicle() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWheeledVehicle_GetVehicleMovementComponent();
 	PHYSXVEHICLES_API UClass* Z_Construct_UClass_UWheeledVehicleMovementComponent_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWheeledVehicle_HasFuel();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWheeledVehicle_IsSimulated();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWheeledVehicle_IsValidFuel();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWheeledVehicle_Multicast_PlayFoliageDestroyedEffect();
@@ -66,7 +65,6 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicle() {}
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWheeledVehicle_OnOverlapEnd();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWheeledVehicle_OnRep_IsSimulated();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWheeledVehicle_OnRep_TransferStatusChanged();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWheeledVehicle_OpenVehicleTrunk();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWheeledVehicle_RemoveTargetPoint();
@@ -817,13 +815,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 			{ "GetTireData", &AFGWheeledVehicle::execGetTireData },
 			{ "GetVehicleMovementComponent", &AFGWheeledVehicle::execGetVehicleMovementComponent },
 			{ "HasFuel", &AFGWheeledVehicle::execHasFuel },
-			{ "IsSimulated", &AFGWheeledVehicle::execIsSimulated },
 			{ "IsValidFuel", &AFGWheeledVehicle::execIsValidFuel },
 			{ "Multicast_PlayFoliageDestroyedEffect", &AFGWheeledVehicle::execMulticast_PlayFoliageDestroyedEffect },
 			{ "NumWheelsOnGround", &AFGWheeledVehicle::execNumWheelsOnGround },
 			{ "OnOverlapBegin", &AFGWheeledVehicle::execOnOverlapBegin },
 			{ "OnOverlapEnd", &AFGWheeledVehicle::execOnOverlapEnd },
-			{ "OnRep_IsSimulated", &AFGWheeledVehicle::execOnRep_IsSimulated },
 			{ "OnRep_TransferStatusChanged", &AFGWheeledVehicle::execOnRep_TransferStatusChanged },
 			{ "RemoveTargetPoint", &AFGWheeledVehicle::execRemoveTargetPoint },
 			{ "ResetAddedAngularVelocityValues", &AFGWheeledVehicle::execResetAddedAngularVelocityValues },
@@ -1507,45 +1503,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGWheeledVehicle_IsSimulated_Statics
-	{
-		struct FGWheeledVehicle_eventIsSimulated_Parms
-		{
-			bool ReturnValue;
-		};
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_AFGWheeledVehicle_IsSimulated_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((FGWheeledVehicle_eventIsSimulated_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGWheeledVehicle_IsSimulated_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGWheeledVehicle_eventIsSimulated_Parms), &Z_Construct_UFunction_AFGWheeledVehicle_IsSimulated_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGWheeledVehicle_IsSimulated_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGWheeledVehicle_IsSimulated_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWheeledVehicle_IsSimulated_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Simulation" },
-		{ "ModuleRelativePath", "Public/FGWheeledVehicle.h" },
-		{ "ToolTip", "Is the movement being simulated?" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWheeledVehicle_IsSimulated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWheeledVehicle, nullptr, "IsSimulated", sizeof(FGWheeledVehicle_eventIsSimulated_Parms), Z_Construct_UFunction_AFGWheeledVehicle_IsSimulated_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGWheeledVehicle_IsSimulated_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWheeledVehicle_IsSimulated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWheeledVehicle_IsSimulated_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGWheeledVehicle_IsSimulated()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGWheeledVehicle_IsSimulated_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_AFGWheeledVehicle_IsValidFuel_Statics
 	{
 		struct FGWheeledVehicle_eventIsValidFuel_Parms
@@ -1796,29 +1753,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGWheeledVehicle_OnOverlapEnd_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AFGWheeledVehicle_OnRep_IsSimulated_Statics
-	{
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWheeledVehicle_OnRep_IsSimulated_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/FGWheeledVehicle.h" },
-		{ "ToolTip", "Rep notifies" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWheeledVehicle_OnRep_IsSimulated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWheeledVehicle, nullptr, "OnRep_IsSimulated", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWheeledVehicle_OnRep_IsSimulated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWheeledVehicle_OnRep_IsSimulated_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGWheeledVehicle_OnRep_IsSimulated()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGWheeledVehicle_OnRep_IsSimulated_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2415,15 +2349,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mSimulationMovementComponent;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSimulationDistance_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mSimulationDistance;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mIsSimulated_MetaData[];
-#endif
-		static void NewProp_mIsSimulated_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mIsSimulated;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mFoliageCollideBox_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mFoliageCollideBox;
@@ -2532,16 +2457,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 #endif
 		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_TranferStatusChangedDelegate;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mForceRealMode_MetaData[];
-#endif
-		static void NewProp_mForceRealMode_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mForceRealMode;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mForceSimulationMode_MetaData[];
-#endif
-		static void NewProp_mForceSimulationMode_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mForceSimulationMode;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mUpdateMovementHandle_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mUpdateMovementHandle;
@@ -2576,13 +2491,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_GetTireData, "GetTireData" }, // 4090189742
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_GetVehicleMovementComponent, "GetVehicleMovementComponent" }, // 361227107
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_HasFuel, "HasFuel" }, // 2851506444
-		{ &Z_Construct_UFunction_AFGWheeledVehicle_IsSimulated, "IsSimulated" }, // 288614581
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_IsValidFuel, "IsValidFuel" }, // 135693605
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_Multicast_PlayFoliageDestroyedEffect, "Multicast_PlayFoliageDestroyedEffect" }, // 2224692638
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_NumWheelsOnGround, "NumWheelsOnGround" }, // 3357307287
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_OnOverlapBegin, "OnOverlapBegin" }, // 2885713903
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_OnOverlapEnd, "OnOverlapEnd" }, // 4010279906
-		{ &Z_Construct_UFunction_AFGWheeledVehicle_OnRep_IsSimulated, "OnRep_IsSimulated" }, // 1158381278
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_OnRep_TransferStatusChanged, "OnRep_TransferStatusChanged" }, // 1120506736
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_OpenVehicleTrunk, "OpenVehicleTrunk" }, // 1968614019
 		{ &Z_Construct_UFunction_AFGWheeledVehicle_RemoveTargetPoint, "RemoveTargetPoint" }, // 3969865571
@@ -2900,25 +2813,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mSimulationMovementComponent = { "mSimulationMovementComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWheeledVehicle, mSimulationMovementComponent), Z_Construct_UClass_UFloatingPawnMovement_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mSimulationMovementComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mSimulationMovementComponent_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mSimulationDistance_MetaData[] = {
-		{ "Category", "Simulation" },
-		{ "ModuleRelativePath", "Public/FGWheeledVehicle.h" },
-		{ "ToolTip", "Distance from player at which simulation begins" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mSimulationDistance = { "mSimulationDistance", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWheeledVehicle, mSimulationDistance), METADATA_PARAMS(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mSimulationDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mSimulationDistance_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mIsSimulated_MetaData[] = {
-		{ "ModuleRelativePath", "Public/FGWheeledVehicle.h" },
-		{ "ToolTip", "Is the movement being simulated?" },
-	};
-#endif
-	void Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mIsSimulated_SetBit(void* Obj)
-	{
-		((AFGWheeledVehicle*)Obj)->mIsSimulated = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mIsSimulated = { "mIsSimulated", "OnRep_IsSimulated", (EPropertyFlags)0x0040000101000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGWheeledVehicle), &Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mIsSimulated_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mIsSimulated_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mIsSimulated_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mFoliageCollideBox_MetaData[] = {
 		{ "Category", "Vehicle" },
 		{ "EditInline", "true" },
@@ -3142,30 +3036,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_TranferStatusChangedDelegate = { "TranferStatusChangedDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWheeledVehicle, TranferStatusChangedDelegate), Z_Construct_UDelegateFunction_FactoryGame_TranferStatusChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_TranferStatusChangedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_TranferStatusChangedDelegate_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mForceRealMode_MetaData[] = {
-		{ "Category", "Debug" },
-		{ "ModuleRelativePath", "Public/FGWheeledVehicle.h" },
-		{ "ToolTip", "Forces vehicle to be in real mode" },
-	};
-#endif
-	void Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mForceRealMode_SetBit(void* Obj)
-	{
-		((AFGWheeledVehicle*)Obj)->mForceRealMode = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mForceRealMode = { "mForceRealMode", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGWheeledVehicle), &Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mForceRealMode_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mForceRealMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mForceRealMode_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mForceSimulationMode_MetaData[] = {
-		{ "Category", "Debug" },
-		{ "ModuleRelativePath", "Public/FGWheeledVehicle.h" },
-		{ "ToolTip", "Forces vehicle to be in simulation mode" },
-	};
-#endif
-	void Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mForceSimulationMode_SetBit(void* Obj)
-	{
-		((AFGWheeledVehicle*)Obj)->mForceSimulationMode = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mForceSimulationMode = { "mForceSimulationMode", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGWheeledVehicle), &Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mForceSimulationMode_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mForceSimulationMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mForceSimulationMode_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mUpdateMovementHandle_MetaData[] = {
 		{ "Category", "Vehicle" },
 		{ "ModuleRelativePath", "Public/FGWheeledVehicle.h" },
@@ -3222,8 +3092,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mStorageInventory,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mFuelInventory,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mSimulationMovementComponent,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mSimulationDistance,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mIsSimulated,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mFoliageCollideBox,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mAddedAngularVelocityInputSmoothingSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mNaturalAirAngularVelocityStrengthPitch,
@@ -3251,8 +3119,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mFuelConsumption,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mReplicatedState,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_TranferStatusChangedDelegate,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mForceRealMode,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mForceSimulationMode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mUpdateMovementHandle,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWheeledVehicle_Statics::NewProp_mWorkBench,
 	};
@@ -3283,7 +3149,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWheeledVehicle, 1488518855);
+	IMPLEMENT_CLASS(AFGWheeledVehicle, 103907736);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWheeledVehicle>()
 	{
 		return AFGWheeledVehicle::StaticClass();

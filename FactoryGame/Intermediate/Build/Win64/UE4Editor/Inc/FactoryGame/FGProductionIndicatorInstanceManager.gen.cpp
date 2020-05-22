@@ -90,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorInstanceManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGProductionIndicatorInstanceManager, 3323995090);
+	IMPLEMENT_CLASS(UFGProductionIndicatorInstanceManager, 666288328);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGProductionIndicatorInstanceManager>()
 	{
 		return UFGProductionIndicatorInstanceManager::StaticClass();

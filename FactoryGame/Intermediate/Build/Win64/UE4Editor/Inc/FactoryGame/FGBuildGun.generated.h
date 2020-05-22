@@ -19,6 +19,19 @@ struct FItemAmount;
 #endif
 #define FACTORYGAME_FGBuildGun_generated_h
 
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_31_DELEGATE \
+struct _Script_FactoryGame_eventOnRecipeSampled_Parms \
+{ \
+	TSubclassOf<UFGRecipe>  newRecipe; \
+}; \
+static inline void FOnRecipeSampled_DelegateWrapper(const FMulticastScriptDelegate& OnRecipeSampled, TSubclassOf<UFGRecipe>  newRecipe) \
+{ \
+	_Script_FactoryGame_eventOnRecipeSampled_Parms Parms; \
+	Parms.newRecipe=newRecipe; \
+	OnRecipeSampled.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
 #define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_30_DELEGATE \
 struct _Script_FactoryGame_eventOnBuildGunRecipeChanged_Parms \
 { \
@@ -45,7 +58,7 @@ static inline void FOnBuildGunStateChanged_DelegateWrapper(const FMulticastScrip
 }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_RPC_WRAPPERS \
 	virtual void ChangeGuideLinesSnapMode_Implementation(bool enabled); \
 	virtual void ChangeNoSnapMode_Implementation(); \
 	virtual void ChangeScrollMode_Implementation(); \
@@ -267,7 +280,7 @@ static inline void FOnBuildGunStateChanged_DelegateWrapper(const FMulticastScrip
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void ChangeGuideLinesSnapMode_Implementation(bool enabled); \
 	virtual void ChangeNoSnapMode_Implementation(); \
 	virtual void ChangeScrollMode_Implementation(); \
@@ -489,7 +502,7 @@ static inline void FOnBuildGunStateChanged_DelegateWrapper(const FMulticastScrip
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_EVENT_PARMS \
 	struct FGBuildGunState_eventChangeGuideLinesSnapMode_Parms \
 	{ \
 		bool enabled; \
@@ -504,8 +517,8 @@ static inline void FOnBuildGunStateChanged_DelegateWrapper(const FMulticastScrip
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGBuildGunState(); \
 	friend struct Z_Construct_UClass_UFGBuildGunState_Statics; \
@@ -514,7 +527,7 @@ public: \
 	DECLARE_SERIALIZER(UFGBuildGunState)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGBuildGunState(); \
 	friend struct Z_Construct_UClass_UFGBuildGunState_Statics; \
@@ -523,7 +536,7 @@ public: \
 	DECLARE_SERIALIZER(UFGBuildGunState)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGBuildGunState(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGBuildGunState) \
@@ -536,7 +549,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGBuildGunState(UFGBuildGunState&&); \
@@ -547,42 +560,42 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGBuildGunState); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGBuildGunState)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mActionDelay() { return STRUCT_OFFSET(UFGBuildGunState, mActionDelay); } \
 	FORCEINLINE static uint32 __PPO__mActionMessage() { return STRUCT_OFFSET(UFGBuildGunState, mActionMessage); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_35_PROLOG \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_37_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_38_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_40_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> FACTORYGAME_API UClass* StaticClass<class UFGBuildGunState>();
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_RPC_WRAPPERS \
 	virtual bool Server_GotoState_Validate(EBuildGunState ); \
 	virtual void Server_GotoState_Implementation(EBuildGunState state); \
 	virtual bool Server_GotoBuildState_Validate(TSubclassOf<UFGRecipe>  ); \
@@ -801,7 +814,7 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGBuildGunState>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool Server_GotoState_Validate(EBuildGunState ); \
 	virtual void Server_GotoState_Implementation(EBuildGunState state); \
 	virtual bool Server_GotoBuildState_Validate(TSubclassOf<UFGRecipe>  ); \
@@ -1020,7 +1033,7 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGBuildGunState>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_EVENT_PARMS \
 	struct FGBuildGun_eventServer_GotoBuildState_Parms \
 	{ \
 		TSubclassOf<UFGRecipe>  recipe; \
@@ -1031,8 +1044,8 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGBuildGunState>();
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildGun(); \
 	friend struct Z_Construct_UClass_AFGBuildGun_Statics; \
@@ -1042,7 +1055,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGBuildGun*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildGun(); \
 	friend struct Z_Construct_UClass_AFGBuildGun_Statics; \
@@ -1052,7 +1065,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGBuildGun*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildGun(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildGun) \
@@ -1065,7 +1078,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGBuildGun(AFGBuildGun&&); \
@@ -1076,7 +1089,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildGun); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildGun)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mBuildDistanceMax() { return STRUCT_OFFSET(AFGBuildGun, mBuildDistanceMax); } \
 	FORCEINLINE static uint32 __PPO__mMenuStateClass() { return STRUCT_OFFSET(AFGBuildGun, mMenuStateClass); } \
 	FORCEINLINE static uint32 __PPO__mBuildStateClass() { return STRUCT_OFFSET(AFGBuildGun, mBuildStateClass); } \
@@ -1087,39 +1100,39 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildGun); \
 	FORCEINLINE static uint32 __PPO__mCurrentState() { return STRUCT_OFFSET(AFGBuildGun, mCurrentState); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_201_PROLOG \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_203_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_204_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_206_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> FACTORYGAME_API UClass* StaticClass<class AFGBuildGun>();
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildGunAttachment(); \
 	friend struct Z_Construct_UClass_AFGBuildGunAttachment_Statics; \
@@ -1128,7 +1141,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildGunAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildGunAttachment(); \
 	friend struct Z_Construct_UClass_AFGBuildGunAttachment_Statics; \
@@ -1137,7 +1150,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildGunAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildGunAttachment(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildGunAttachment) \
@@ -1150,7 +1163,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildGunAttachment() { }; \
 private: \
@@ -1163,26 +1176,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildGunAttachment); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildGunAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_429_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_435_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_432_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGun_h_438_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

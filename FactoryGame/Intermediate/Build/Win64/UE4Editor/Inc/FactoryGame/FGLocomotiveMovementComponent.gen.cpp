@@ -985,7 +985,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGLocomotiveMovementComponent, 2591436640);
+	IMPLEMENT_CLASS(UFGLocomotiveMovementComponent, 570962923);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGLocomotiveMovementComponent>()
 	{
 		return UFGLocomotiveMovementComponent::StaticClass();

@@ -223,7 +223,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVolumeMapArea() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGVolumeMapArea, 4035535070);
+	IMPLEMENT_CLASS(AFGVolumeMapArea, 3412565321);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGVolumeMapArea>()
 	{
 		return AFGVolumeMapArea::StaticClass();

@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGColoredInstanceManager, 38210713);
+	IMPLEMENT_CLASS(UFGColoredInstanceManager, 758905590);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGColoredInstanceManager>()
 	{
 		return UFGColoredInstanceManager::StaticClass();

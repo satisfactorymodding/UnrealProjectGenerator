@@ -432,7 +432,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCrabHatcher, 880846220);
+	IMPLEMENT_CLASS(AFGCrabHatcher, 1635226152);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCrabHatcher>()
 	{
 		return AFGCrabHatcher::StaticClass();

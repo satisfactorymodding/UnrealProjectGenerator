@@ -590,7 +590,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFreightWagon, 2554288657);
+	IMPLEMENT_CLASS(AFGFreightWagon, 3882351080);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGFreightWagon>()
 	{
 		return AFGFreightWagon::StaticClass();

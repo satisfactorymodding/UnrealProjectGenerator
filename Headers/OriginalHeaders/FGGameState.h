@@ -103,6 +103,7 @@ public:
 	// Native subsystem getters.
 	FORCEINLINE class AFGTimeOfDaySubsystem* GetTimeSubsystem() const { return mTimeSubsystem; }
 	FORCEINLINE class AFGRailroadSubsystem* GetRailroadSubsystem() const { return mRailroadSubsystem; }
+	FORCEINLINE class AFGVehicleSubsystem* GetVehicleSubsystem() const { return mVehicleSubsystem; }
 	FORCEINLINE class AFGCircuitSubsystem* GetCircuitSubsystem() const { return mCircuitSubsystem; }
 	FORCEINLINE class AFGStorySubsystem* GetStorySubsystem() const { return mStorySubsystem; }
 	FORCEINLINE class AFGRadioactivitySubsystem* GetRadioactivitySubsystem() const { return mRadioactivitySubsystem; }
@@ -183,7 +184,15 @@ public:
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Session" )
 	FORCEINLINE FString GetSessionName() const { return mReplicatedSessionName; }
 
-	FORCEINLINE void SetSessionName( const FString& inName ) { mReplicatedSessionName = inName; }
+	void SetSessionName( const FString& inName );
+	
+	FString GenerateOnlineSessionName();
+
+	UFUNCTION(BlueprintPure, Category = "FactoryGame|Session")
+	FString GetOnlineSessionName() const;
+
+	UFUNCTION(BlueprintCallable, Category = "FactoryGame|Session")
+	void SetOnlineSessionName( const FString& inName ) { mReplicatedOnlineSessionName = inName; }
 
 	/*
 	 * Called from buildable subsystem on load to apply saved color slot data
@@ -310,6 +319,8 @@ private:
 	class AFGResourceSinkSubsystem* mResourceSinkSubsystem;
 	UPROPERTY()
 	class AFGItemRegrowSubsystem* mItemRegrowSubsystem;
+	UPROPERTY()
+	class AFGVehicleSubsystem* mVehicleSubsystem;
 
 	/** This array keeps track of what map areas have been visited this game */
 	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_MapAreaVisited )
@@ -325,6 +336,9 @@ private:
 
 	UPROPERTY( SaveGame, Replicated )
 	FString mReplicatedSessionName;
+	
+	UPROPERTY( SaveGame, Replicated )
+	FString mReplicatedOnlineSessionName = "Auto"; //A value of auto should be evaluated to a generated name on first use/at session creation
 
 	/*
 	 *	Array of primary building color slots as Linear Colors. Note: This used to be handled with FColor which resulted in unneeded conversions back and forth

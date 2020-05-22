@@ -86,6 +86,8 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGParachuteCameraShake>();
 
 #define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_30_RPC_WRAPPERS \
 	virtual FVector ModifyVelocity_Implementation(float deltaTime, FVector const& oldVelocity); \
+	virtual bool Server_Deploy_Validate(); \
+	virtual void Server_Deploy_Implementation(); \
  \
 	DECLARE_FUNCTION(execIsDeployed) \
 	{ \
@@ -102,12 +104,27 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGParachuteCameraShake>();
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(FVector*)Z_Param__Result=P_THIS->ModifyVelocity_Implementation(Z_Param_deltaTime,Z_Param_Out_oldVelocity); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_Deploy) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_Deploy_Validate()) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_Deploy_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_Deploy_Implementation(); \
 		P_NATIVE_END; \
 	}
 
 
 #define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual FVector ModifyVelocity_Implementation(float deltaTime, FVector const& oldVelocity); \
+	virtual bool Server_Deploy_Validate(); \
+	virtual void Server_Deploy_Implementation(); \
  \
 	DECLARE_FUNCTION(execIsDeployed) \
 	{ \
@@ -124,6 +141,19 @@ template<> FACTORYGAME_API UClass* StaticClass<class UFGParachuteCameraShake>();
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(FVector*)Z_Param__Result=P_THIS->ModifyVelocity_Implementation(Z_Param_deltaTime,Z_Param_Out_oldVelocity); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_Deploy) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_Deploy_Validate()) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_Deploy_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_Deploy_Implementation(); \
 		P_NATIVE_END; \
 	}
 
@@ -187,7 +217,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGParachute); \
 
 
 #define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_30_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mTerminalVelocityZ() { return STRUCT_OFFSET(AFGParachute, mTerminalVelocityZ); }
+	FORCEINLINE static uint32 __PPO__mTerminalVelocityZ() { return STRUCT_OFFSET(AFGParachute, mTerminalVelocityZ); } \
+	FORCEINLINE static uint32 __PPO__mIsDeployed() { return STRUCT_OFFSET(AFGParachute, mIsDeployed); } \
+	FORCEINLINE static uint32 __PPO__mCachedMovementComponent() { return STRUCT_OFFSET(AFGParachute, mCachedMovementComponent); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_27_PROLOG \
@@ -220,7 +252,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 template<> FACTORYGAME_API UClass* StaticClass<class AFGParachute>();
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_IsDeployed) \
 	{ \
@@ -231,7 +263,7 @@ template<> FACTORYGAME_API UClass* StaticClass<class AFGParachute>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_IsDeployed) \
 	{ \
@@ -242,9 +274,9 @@ template<> FACTORYGAME_API UClass* StaticClass<class AFGParachute>();
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_EVENT_PARMS
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGParachuteAttachment(); \
 	friend struct Z_Construct_UClass_AFGParachuteAttachment_Statics; \
@@ -253,7 +285,7 @@ public: \
 	DECLARE_SERIALIZER(AFGParachuteAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGParachuteAttachment(); \
 	friend struct Z_Construct_UClass_AFGParachuteAttachment_Statics; \
@@ -262,7 +294,7 @@ public: \
 	DECLARE_SERIALIZER(AFGParachuteAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGParachuteAttachment(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGParachuteAttachment) \
@@ -275,7 +307,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGParachuteAttachment() { }; \
 private: \
@@ -288,34 +320,34 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGParachuteAttachment); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGParachuteAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mIsDeployed() { return STRUCT_OFFSET(AFGParachuteAttachment, mIsDeployed); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_78_PROLOG \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_84_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_81_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGParachute_h_87_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

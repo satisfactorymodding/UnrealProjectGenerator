@@ -321,7 +321,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWeaponProjectileFire, 2062171277);
+	IMPLEMENT_CLASS(AFGWeaponProjectileFire, 3834730093);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWeaponProjectileFire>()
 	{
 		return AFGWeaponProjectileFire::StaticClass();

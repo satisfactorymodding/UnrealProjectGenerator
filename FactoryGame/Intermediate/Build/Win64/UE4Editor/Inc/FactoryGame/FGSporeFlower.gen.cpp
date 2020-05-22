@@ -170,7 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSporeFlower() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSporeFlower, 917708730);
+	IMPLEMENT_CLASS(AFGSporeFlower, 189474786);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSporeFlower>()
 	{
 		return AFGSporeFlower::StaticClass();

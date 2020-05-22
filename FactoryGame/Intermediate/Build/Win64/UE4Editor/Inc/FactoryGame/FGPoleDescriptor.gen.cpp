@@ -246,7 +246,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPoleDescriptor, 3705499761);
+	IMPLEMENT_CLASS(UFGPoleDescriptor, 3349142492);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGPoleDescriptor>()
 	{
 		return UFGPoleDescriptor::StaticClass();

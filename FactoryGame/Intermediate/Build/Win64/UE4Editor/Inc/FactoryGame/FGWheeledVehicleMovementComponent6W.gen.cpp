@@ -1071,7 +1071,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent6W, 3858746935);
+	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent6W, 2465856420);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGWheeledVehicleMovementComponent6W>()
 	{
 		return UFGWheeledVehicleMovementComponent6W::StaticClass();

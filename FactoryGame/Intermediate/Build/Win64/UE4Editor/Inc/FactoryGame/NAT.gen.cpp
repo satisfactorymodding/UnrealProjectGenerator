@@ -30,7 +30,7 @@ void EmptyLinkFunctionForGeneratedCodeNAT() {}
 		return ECachedNATType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ECachedNATType(ECachedNATType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ECachedNATType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ECachedNATType_Hash() { return 2860115828U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ECachedNATType_Hash() { return 809347198U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ECachedNATType()
 	{
 #if WITH_HOT_RELOAD
@@ -59,6 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeNAT() {}
 				{ "CNT_TBD.DisplayName", "TBD" },
 				{ "CNT_TBD.ToolTip", "NAT type has is not yet determined" },
 				{ "ModuleRelativePath", "Public/NAT.h" },
+				{ "ToolTip", "MODDING EDIT: This has moved to EOS, but is kept for modding" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {

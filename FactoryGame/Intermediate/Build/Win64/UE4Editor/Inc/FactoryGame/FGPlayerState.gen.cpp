@@ -2101,7 +2101,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerState, 2950786895);
+	IMPLEMENT_CLASS(AFGPlayerState, 2616361594);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlayerState>()
 	{
 		return AFGPlayerState::StaticClass();

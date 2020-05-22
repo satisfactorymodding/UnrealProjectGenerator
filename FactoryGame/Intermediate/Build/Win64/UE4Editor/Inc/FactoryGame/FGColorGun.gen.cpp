@@ -887,7 +887,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGColorGun, 1103921653);
+	IMPLEMENT_CLASS(AFGColorGun, 1159597036);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGColorGun>()
 	{
 		return AFGColorGun::StaticClass();

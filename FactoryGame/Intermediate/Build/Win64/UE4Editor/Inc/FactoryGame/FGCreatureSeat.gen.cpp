@@ -134,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSeat() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreatureSeat, 3565103809);
+	IMPLEMENT_CLASS(AFGCreatureSeat, 3661777444);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCreatureSeat>()
 	{
 		return AFGCreatureSeat::StaticClass();

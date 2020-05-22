@@ -180,7 +180,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSoundSplineComponent, 858850061);
+	IMPLEMENT_CLASS(UFGSoundSplineComponent, 4229998917);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSoundSplineComponent>()
 	{
 		return UFGSoundSplineComponent::StaticClass();
