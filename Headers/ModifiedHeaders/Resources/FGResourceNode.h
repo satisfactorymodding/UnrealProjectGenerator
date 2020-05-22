@@ -248,17 +248,20 @@ protected:
 	/** Called when a resource is extracted. Never called on infinite resource nodes. */
 	virtual void UpdateRadioactivity();
 
-protected:
+public: // MODDING EDIT: protected -> public
 	/** Type of resource */
-	UPROPERTY( EditAnywhere, Category = "Resources" )
+    // MODDING EDIT: BPReadOnly
+	UPROPERTY( EditAnywhere, BlueprintReadOnly, Category = "Resources" )
 	TSubclassOf<UFGResourceDescriptor> mResourceClass;
 
 	/** How pure the resource is */
-	UPROPERTY(EditInstanceOnly, Category= "Resources" )
+    // MODDING EDIT: BPRW
+	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, Category= "Resources" )
 	TEnumAsByte<EResourcePurity> mPurity;
 
 	/** How pure the resource is */
-	UPROPERTY( EditInstanceOnly, Category = "Resources" )
+    // MODDING EDIT: BPRW
+	UPROPERTY( EditInstanceOnly, BlueprintReadWrite, Category = "Resources" )
 	TEnumAsByte<EResourceAmount> mAmount;
 
 	/** the decal that used for displaying the resource */
@@ -269,7 +272,6 @@ protected:
 	UPROPERTY( BlueprintReadOnly, VisibleDefaultsOnly, Category = "Resources" )
 	UBoxComponent* mBoxComponent;
 
-public: // MODDING EDIT
 	/** How much resources is left in this node */
 	UPROPERTY( SaveGame, Replicated, BlueprintReadWrite, Category="Resources")
 	int32 mResourcesLeft;

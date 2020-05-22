@@ -31,59 +31,109 @@ namespace ImplementHeaders
         private static readonly Dictionary<string, string> CustomImplementation = new Dictionary<string, string>()
         {
             { "static UFGItemDescriptor::CanBeDiscarded",
-@"	return inClass.GetDefaultObject()->mCanBeDiscarded;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mCanBeDiscarded;
+	else
+		return bool();"
+            },
             { "static UFGItemDescriptor::GetBigIcon",
-@"	return inClass.GetDefaultObject()->mPersistentBigIcon;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mPersistentBigIcon;
+	else
+		return nullptr;"
+            },
             { "static UFGItemDescriptor::GetEnergyValue",
-@"	return inClass.GetDefaultObject()->mEnergyValue;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mEnergyValue;
+	else
+		return float();"
+            },
             { "static UFGItemDescriptor::GetFluidColor",
-@"	return inClass.GetDefaultObject()->mFluidColor;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mFluidColor;
+	else
+		return FColor();"
+            },
             { "static UFGItemDescriptor::GetFluidColorLinear",
-@"	return inClass.GetDefaultObject()->mFluidColor.ReinterpretAsLinear();"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mFluidColor.ReinterpretAsLinear();
+	else
+		return FLinearColor();"
+            },
             { "static UFGItemDescriptor::GetFluidDensity",
-@"	return inClass.GetDefaultObject()->mFluidDensity;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mFluidDensity;
+	else
+		return float();"
+            },
             { "static UFGItemDescriptor::GetFluidFriction",
-@"	return inClass.GetDefaultObject()->mFluidFriction;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mFluidFriction;
+	else
+		return float();"
+            },
             { "static UFGItemDescriptor::GetFluidViscosity",
-@"	return inClass.GetDefaultObject()->mFluidViscosity;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mFluidViscosity;
+	else
+		return float();"
+            },
             { "static UFGItemDescriptor::GetForm",
-@"	return inClass.GetDefaultObject()->mForm;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mForm;
+	else
+		return EResourceForm();"
+            },
             { "static UFGItemDescriptor::GetItemCategory",
-@"	return inClass.GetDefaultObject()->mItemCategory;"
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mItemCategory;
+	else
+		return TSubclassOf< UFGItemCategory >();"
 			},
             { "static UFGItemDescriptor::GetItemDescription",
-@"	return inClass.GetDefaultObject()->mDescription;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mDescription;
+	else
+		return FText();"
+            },
             { "static UFGItemDescriptor::GetItemIcon",
-@"	return inClass.GetDefaultObject()->mInventoryIcon;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mInventoryIcon;
+	else
+		return FSlateBrush();"
+            },
             { "static UFGItemDescriptor::GetItemMesh",
-@"	return inClass.GetDefaultObject()->mConveyorMesh;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mConveyorMesh;
+	else
+		return nullptr;"
+            },
             { "static UFGItemDescriptor::GetItemName",
-@"	if (inClass.GetDefaultObject()->mUseDisplayNameAndDescription == true)
-	return inClass.GetDefaultObject()->mDisplayName;
-else
-	return FText::FromString(inClass->GetName());"
+@"	if (!inClass)
+		return FText();
+	if (inClass.GetDefaultObject()->mUseDisplayNameAndDescription)
+		return inClass.GetDefaultObject()->mDisplayName;
+	else
+		return FText::FromString(inClass->GetName());"
             },
             { "static UFGItemDescriptor::GetRadioactiveDecay",
-@"	return inClass.GetDefaultObject()->mRadioactiveDecay;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mRadioactiveDecay;
+	else
+		return float();"
+            },
             { "static UFGItemDescriptor::GetSmallIcon",
-@"	return inClass.GetDefaultObject()->mSmallIcon;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mSmallIcon;
+	else
+		return nullptr;"
+            },
             { "static UFGItemDescriptor::GetStackSize",
-@"	return static_cast<int32>(inClass.GetDefaultObject()->mStackSize);"
-			},
+@"	if (inClass)
+		return static_cast<int32>(inClass.GetDefaultObject()->mStackSize);
+	else
+		return int32();"
+            },
             { "UFGItemDescriptor::GetStackSizeConverted",
 @"	switch (inClass.GetDefaultObject()->mStackSize) {
     case EStackSize::SS_ONE: return 1;
@@ -97,26 +147,45 @@ else
     return 0;"
             },
             { "static UFGItemDescriptor::RememberPickUp",
-@"	return inClass.GetDefaultObject()->mRememberPickUp;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mRememberPickUp;
+	else
+		return bool();"
+            },
             { "static UFGRecipe::GetIngredients",
-@"	return inClass.GetDefaultObject()->mIngredients;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mIngredients;
+	else
+		return TArray<FItemAmount>();
+"
+            },
             { "static UFGRecipe::GetManualManufacturingDuration",
-@"	return inClass.GetDefaultObject()->mManualManufacturingMultiplier;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mManualManufacturingMultiplier;
+	else
+		return float();"
+            },
             { "static UFGRecipe::GetManufacturingDuration",
-@"	return inClass.GetDefaultObject()->mManufactoringDuration;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mManufactoringDuration;
+	else
+		return float();"
+            },
             { "UFGRecipe::GetProducedIn",
 @"	out_producedIn = UFGRecipe::GetProducedIn(this->GetClass());"
             },
             { "static UFGRecipe::GetProducts",
-@"	return inClass.GetDefaultObject()->mProduct;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mProduct;
+	else
+		return TArray< FItemAmount >();"
+            },
             { "static UFGRecipe::GetRecipeName",
-@"	return inClass.GetDefaultObject()->mDisplayName;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mDisplayName;
+	else
+		return FText();"
+            },
             { "UFGRecipe::SetIngredient",
 @"	recipe.GetDefaultObject()->mIngredients = ingredient;"
             },
@@ -127,7 +196,8 @@ else
 @"	recipe.GetDefaultObject()->mManufactoringDuration = sec;"
             },
             { "static UFGRecipe::SetProduct",
-@"	recipe.GetDefaultObject()->mProduct = product;"
+@"	if(recipe)
+		recipe.GetDefaultObject()->mProduct = product;"
             },
             { "static UFGResearchTree::GetDisplayName",
 @"	return inClass.GetDefaultObject()->mDisplayName;"
@@ -157,35 +227,60 @@ else
 @"	return inClass.GetDefaultObject()->mAdditionalSchematicDependencies;"
 			},
             { "static UFGSchematic::GetCost",
-@"	return inClass.GetDefaultObject()->mCost;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mCost;
+	else
+		return TArray< FItemAmount >();"
+            },
             { "static UFGSchematic::GetDependentOnSchematic",
 @"	return inClass.GetDefaultObject()->mDependsOnSchematic;"
 			},
             { "static UFGSchematic::GetItemIcon",
-@"	return inClass.GetDefaultObject()->mSchematicIcon;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mSchematicIcon;
+	else
+		return FSlateBrush();"
+            },
             { "static UFGSchematic::GetSchematicCategory",
-@"	return inClass.GetDefaultObject()->mSchematicCategory;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mSchematicCategory;
+	else
+		return TSubclassOf< class UFGSchematicCategory >();"
+            },
             { "static UFGSchematic::GetSchematicDisplayName",
-@"	return inClass.GetDefaultObject()->mDisplayName;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mDisplayName;
+	else
+		return FText();"
+            },
             { "static UFGSchematic::GetSubCategories",
-@"	out_subCategories = inClass.GetDefaultObject()->mSubCategories;"
-			},
+@"	if(inClass)
+		out_subCategories = inClass.GetDefaultObject()->mSubCategories;"
+            },
             { "static UFGSchematic::GetTechTier",
-@"	return inClass.GetDefaultObject()->mTechTier;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mTechTier;
+	else
+		return int32();"
+            },
             { "static UFGSchematic::GetTimeToComplete",
-@"	return inClass.GetDefaultObject()->mTimeToComplete;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mTimeToComplete;
+	else
+		return float();"
+            },
             { "static UFGSchematic::GetType",
-@"	return inClass.GetDefaultObject()->mType;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mType;
+	else
+		return ESchematicType();"
+            },
             { "static UFGSchematic::GetUnlocks",
-@"	return inClass.GetDefaultObject()->mUnlocks;"
-			},
+@"	if (inClass)
+		return inClass.GetDefaultObject()->mUnlocks;
+	else
+		return TArray<UFGUnlock*>();"
+            },
             { "static UFGSchematic::SetCost",
 @"	inClass.GetDefaultObject()->mCost = Cost;"
 			},
@@ -203,18 +298,103 @@ else
 			},
             { "static UFGRecipe::GetProducedIn",
 @"	TArray<TSubclassOf<UObject>>   out;
+	if (!inClass)
+		return TArray< TSubclassOf< UObject > >();
+
 	TArray<TSoftClassPtr<UObject>> In = inClass.GetDefaultObject()->mProducedIn;
 	if (In.Num() > 0)
 	{
 		for (int j = 0; j < In.Num(); j++)
 		{
 			TSubclassOf<UObject> obj = In[j].LoadSynchronous();
-			out.Add(obj);
+			if(obj)
+				out.Add(obj);
 		}
 		return out;
 	}
 	else
 		return TArray<TSubclassOf<UObject>>();"
+            },
+            { "static UFGItemDescriptor::GetIconCameraTransform",
+@"	if (inClass)
+#if WITH_EDITOR
+		return inClass.GetDefaultObject()->mIconCameraTransform;
+#else
+		return FTransform();
+#endif
+	else
+		return FTransform();"
+            },
+            { "static UFGItemDescriptor::SetIconCameraTransform",
+@"#if WITH_EDITOR
+	if (inClass)
+		inClass.GetDefaultObject()->mIconCameraTransform = cameraTransform;
+#endif"
+            },
+            { "static UFGItemDescriptor::GetIconFOV",
+@"	if (inClass)
+#if WITH_EDITOR
+		return inClass.GetDefaultObject()->mIconFOV;
+#else
+		return float();
+#endif
+	else
+		return float();"
+            },
+            { "static UFGItemDescriptor::SetIconFOV",
+@"#if WITH_EDITOR
+	if (inClass)
+		inClass.GetDefaultObject()->mIconFOV = iconFOV;
+#endif"
+            },
+            { "static UFGItemDescriptor::GetIconObjectOrientation",
+@"	if (inClass)
+#if WITH_EDITOR
+		return inClass.GetDefaultObject()->mIconObjectOrientation;
+#else
+		return FRotator();
+#endif
+	else
+		return FRotator();"
+            },
+            { "static UFGItemDescriptor::SetIconObjectOrientation",
+@"#if WITH_EDITOR
+	if (inClass)
+		inClass.GetDefaultObject()->mIconObjectOrientation = objectOrientation;
+#endif"
+            },
+            { "static UFGItemDescriptor::GetIconCameraDistance",
+@"	if (inClass)
+#if WITH_EDITOR
+		return inClass.GetDefaultObject()->mIconCameraDistance;
+#else
+		return float();
+#endif
+	else
+		return  float();"
+            },
+            { "static UFGItemDescriptor::SetIconCameraDistance",
+@"#if WITH_EDITOR
+	if (inClass)
+		inClass.GetDefaultObject()->mIconCameraDistance = cameraDistance;
+#endif"
+            },
+            { "static UFGItemDescriptor::GetIconSkyOrientation",
+@"	if (inClass)
+#if WITH_EDITOR
+		return inClass.GetDefaultObject()->mIconSkyOrientation;
+#else
+		return FRotator();
+#endif
+	else
+		return FRotator();"
+            },
+            { "UFGSchematicPurchasedDependency::Init",
+@"  this->mSchematics = schematics;
+    this->mRequireAllSchematicsToBePurchased = requireAllSchematicsToBePurchased;"
+            },
+            { "UFGSchematicPurchasedDependency::GetSchematics",
+@"  out_schematics = mSchematics;"
             },
             { "FFluidBox::Serialize",
 @"	if (ar.ArIsSaveGame) {
@@ -227,7 +407,7 @@ else
 @"	return !this->operator!=(other);"
             },
             { "FFluidBox::operator!=",
-@"	return FPlatformMemory::Memcmp(this, &other, sizeof(FFluidBox));"
+@"	return (bool)FPlatformMemory::Memcmp(this, &other, sizeof(FFluidBox));"
             },
             { "FInventoryItem::Serialize",
 @"	ar.UsingCustomVersion(FFactoryGameCustomVersion::GUID);

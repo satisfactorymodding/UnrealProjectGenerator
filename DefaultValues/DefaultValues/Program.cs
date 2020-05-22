@@ -63,6 +63,11 @@ namespace DefaultValues
         {
         };
 
+        private static List<string> SkipComponentTypes = new List<string>()
+        {
+            "UFGInstancedSplineMeshComponent"
+        };
+
         private static List<string> IgnoreProperties = new List<string>()
         {
             "mFogOfWarRawData",
@@ -484,33 +489,40 @@ namespace DefaultValues
                     string objectName = (string)value["$ObjectName"];
                     Tuple<string, string> objectClass = GetClass((string)value["$ObjectClass"]);
                     string firstObjectProperty = GetObjectPropertyByName(cls, objectName);
-                    if (firstObjectProperty == fieldPath.Substring(6))
+                    if (SkipComponentTypes.Contains(objectClass.Item1))
                     {
-                        implementation = $"{fieldPath} = CreateDefaultSubobject<{objectClass.Item1}>(TEXT(\"{objectName}\"));";
-                        includes.Add(objectClass.Item2);
-                        if (value["AttachParent"] != null)
-                        {
-                            JToken attachParent = value["AttachParent"];
-                            string attachParentName = (string)attachParent["$ObjectName"];
-                            if (attachParentName == null)
-                            {
-                                // ?????
-                                Console.WriteLine($"{className}::{objectName} is not attached to anything.");
-                            }
-                            else
-                            {
-                                string attachmentPropName = $"this->{GetObjectPropertyByName(cls, attachParentName)}";
-                                if (Getters.ContainsKey(attachmentPropName.Substring(6)))
-                                    attachmentPropName = $"this->{Getters[attachmentPropName.Substring(6)]}()";
-                                implementation += $" {fieldPath}->SetupAttachment({attachmentPropName});";
-                                dependencies.Add(attachmentPropName);
-                            }
-                        }
+                        implementation = $"/* Skipping {objectClass.Item1} {fieldPath} */";
                     }
                     else
                     {
-                        implementation = $"{fieldPath} = this->{firstObjectProperty};";
-                        dependencies.Add($"this->{firstObjectProperty}");
+                        if (firstObjectProperty == fieldPath.Substring(6))
+                        {
+                            implementation = $"{fieldPath} = CreateDefaultSubobject<{objectClass.Item1}>(TEXT(\"{objectName}\"));";
+                            includes.Add(objectClass.Item2);
+                            if (value["AttachParent"] != null)
+                            {
+                                JToken attachParent = value["AttachParent"];
+                                string attachParentName = (string)attachParent["$ObjectName"];
+                                if (attachParentName == null)
+                                {
+                                    // ?????
+                                    Console.WriteLine($"{className}::{objectName} is not attached to anything.");
+                                }
+                                else
+                                {
+                                    string attachmentPropName = $"this->{GetObjectPropertyByName(cls, attachParentName)}";
+                                    if (Getters.ContainsKey(attachmentPropName.Substring(6)))
+                                        attachmentPropName = $"this->{Getters[attachmentPropName.Substring(6)]}()";
+                                    implementation += $" {fieldPath}->SetupAttachment({attachmentPropName});";
+                                    dependencies.Add(attachmentPropName);
+                                }
+                            }
+                        }
+                        else
+                        {
+                            implementation = $"{fieldPath} = this->{firstObjectProperty};";
+                            dependencies.Add($"this->{firstObjectProperty}");
+                        }
                     }
                 }
                 else if (value["AssetPathName"] != null)
