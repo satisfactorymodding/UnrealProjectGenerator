@@ -8,16 +8,12 @@
 #include "Engine/GameInstance.h"
 #include "NAT.h"
 // MODDING EDIT: Online stuff doesn't work
-//#include "eos_common.h"
-//#include "EpicPeerManager.h"
 //#include "AnalyticsService.h"
-//#include "EpicPeerManager.h"
 //#include "AnalyticsService.h"
 #include "FGAnalyticsMacros.h"
 #include "OnlineSessionSettings.h"
 #include "Online.h"
 #include "Interfaces/OnlineSessionInterface.h"
-#include "Engine/EngineTypes.h"
 #include "FGGameInstance.generated.h"
 
 // MODDING EDIT: dummy classes from the Epic Online missing headers
