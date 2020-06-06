@@ -12,7 +12,7 @@ public class FactoryGame : ModuleRules
             "Core", "CoreUObject",
             "Engine",
             "InputCore",
-            "OnlineSubsystem", "OnlineSubsystemUtils", "OnlineSubsystemNULL",
+            "OnlineSubsystem", "OnlineSubsystemUtils", "OnlineSubsystemNULL", "OnlineSubsystemEOS",
             "SignificanceManager",
             "PhysX", "APEX", "PhysXVehicles", "ApexDestruction",
             "AkAudio",
@@ -26,6 +26,11 @@ public class FactoryGame : ModuleRules
             "Slate", "SlateCore",
             "InstancedSplines"
 			});
+
+        if (Target.Type == TargetRules.TargetType.Editor)
+        {
+            PublicDependencyModuleNames.AddRange(new string[] { "OnlineBlueprintSupport", "AnimGraph" });
+        }
 
 
         PrivateDependencyModuleNames.AddRange(new string[] { });
