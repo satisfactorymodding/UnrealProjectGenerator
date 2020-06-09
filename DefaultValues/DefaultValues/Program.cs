@@ -52,7 +52,8 @@ namespace DefaultValues
             new Tuple<string, string>("UWidgetComponent", "Components/WidgetComponent.h"),
             new Tuple<string, string>("UFGInstancedSplineMeshComponent", "FGInstancedSplineMeshComponent.h"),
             new Tuple<string, string>("UEnvQueryContext_Querier", "EnvironmentQuery/Contexts/EnvQueryContext_Querier.h"),
-            new Tuple<string, string>("UFloatingPawnMovement", "GameFramework/FloatingPawnMovement.h")
+            new Tuple<string, string>("UFloatingPawnMovement", "GameFramework/FloatingPawnMovement.h"),
+            new Tuple<string, string>("UNavArea_Obstacle", "NavAreas/NavArea_Obstacle.h")
         };
         private static Dictionary<string, string> ParentClass = new Dictionary<string, string>();
         private static Dictionary<string, List<string>> ClassHierarchy = new Dictionary<string, List<string>>();

@@ -246,6 +246,11 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 #endif
 		static const UE4CodeGen_Private::FNamePropertyParams NewProp_mDebugStartingPointTagName;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAllowPossessAny_MetaData[];
+#endif
+		static void NewProp_mAllowPossessAny_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mAllowPossessAny;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mStartingPointTagName_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FNamePropertyParams NewProp_mStartingPointTagName;
@@ -332,6 +337,17 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 #endif
 	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDebugStartingPointTagName = { "mDebugStartingPointTagName", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGGameMode, mDebugStartingPointTagName), METADATA_PARAMS(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDebugStartingPointTagName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDebugStartingPointTagName_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameMode_Statics::NewProp_mAllowPossessAny_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGGameMode.h" },
+		{ "ToolTip", "Command line param -PossesAny will allow players using authorization to posses other players on startup regardless of if their UniqueIds match" },
+	};
+#endif
+	void Z_Construct_UClass_AFGGameMode_Statics::NewProp_mAllowPossessAny_SetBit(void* Obj)
+	{
+		((AFGGameMode*)Obj)->mAllowPossessAny = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGGameMode_Statics::NewProp_mAllowPossessAny = { "mAllowPossessAny", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGGameMode), &Z_Construct_UClass_AFGGameMode_Statics::NewProp_mAllowPossessAny_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mAllowPossessAny_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGGameMode_Statics::NewProp_mAllowPossessAny_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameMode_Statics::NewProp_mStartingPointTagName_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGGameMode.h" },
 		{ "ToolTip", "Selected starting point" },
@@ -365,6 +381,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDefaultRemoteCallObjectsClassNames,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDefaultRemoteCallObjectsClassNames_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mDebugStartingPointTagName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mAllowPossessAny,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mStartingPointTagName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mSaveSessionName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGGameMode_Statics::NewProp_mLastAutosaveId,
@@ -400,7 +417,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGameMode, 3202534973);
+	IMPLEMENT_CLASS(AFGGameMode, 464463832);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGameMode>()
 	{
 		return AFGGameMode::StaticClass();

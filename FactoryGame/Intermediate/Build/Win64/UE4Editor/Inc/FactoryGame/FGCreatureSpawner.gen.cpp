@@ -32,6 +32,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSpawner() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCreatureSpawner_ReceiveOnTraceCompleted();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FOverlapResult();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCreatureSpawner_TryDestroyCreatures();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCreatureSpawner_VisualizeSpawnDistance();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FTimerHandle();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FInt32Interval();
 	ENGINE_API UClass* Z_Construct_UClass_UCapsuleComponent_NoRegister();
@@ -200,6 +201,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 			{ "IsSpawnerActive", &AFGCreatureSpawner::execIsSpawnerActive },
 			{ "ReceiveOnTraceCompleted", &AFGCreatureSpawner::execReceiveOnTraceCompleted },
 			{ "TryDestroyCreatures", &AFGCreatureSpawner::execTryDestroyCreatures },
+			{ "VisualizeSpawnDistance", &AFGCreatureSpawner::execVisualizeSpawnDistance },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -491,6 +493,44 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGCreatureSpawner_VisualizeSpawnDistance_Statics
+	{
+		struct FGCreatureSpawner_eventVisualizeSpawnDistance_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGCreatureSpawner_VisualizeSpawnDistance_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGCreatureSpawner_eventVisualizeSpawnDistance_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCreatureSpawner_VisualizeSpawnDistance_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCreatureSpawner_eventVisualizeSpawnDistance_Parms), &Z_Construct_UFunction_AFGCreatureSpawner_VisualizeSpawnDistance_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCreatureSpawner_VisualizeSpawnDistance_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCreatureSpawner_VisualizeSpawnDistance_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreatureSpawner_VisualizeSpawnDistance_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
+		{ "ToolTip", "Returns the cached value for isNearBase" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreatureSpawner_VisualizeSpawnDistance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreatureSpawner, nullptr, "VisualizeSpawnDistance", sizeof(FGCreatureSpawner_eventVisualizeSpawnDistance_Parms), Z_Construct_UFunction_AFGCreatureSpawner_VisualizeSpawnDistance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureSpawner_VisualizeSpawnDistance_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x40020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreatureSpawner_VisualizeSpawnDistance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureSpawner_VisualizeSpawnDistance_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCreatureSpawner_VisualizeSpawnDistance()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCreatureSpawner_VisualizeSpawnDistance_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AFGCreatureSpawner_NoRegister()
 	{
 		return AFGCreatureSpawner::StaticClass();
@@ -507,9 +547,31 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mRespawnTimeIndays;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mVisualizeSpawnDistance_MetaData[];
+#endif
+		static void NewProp_mVisualizeSpawnDistance_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mVisualizeSpawnDistance;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRandomSeed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mRandomSeed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSpawnDistanceOverride_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mSpawnDistanceOverride;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMonsterClosetTimerHandle_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mMonsterClosetTimerHandle;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMonsterClosetSpawnDelay_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMonsterClosetSpawnDelay;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mIsMonsterCloset_MetaData[];
+#endif
+		static void NewProp_mIsMonsterCloset_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mIsMonsterCloset;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPendingDestroyTimer_MetaData[];
 #endif
@@ -598,6 +660,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 		{ &Z_Construct_UFunction_AFGCreatureSpawner_IsSpawnerActive, "IsSpawnerActive" }, // 3808896626
 		{ &Z_Construct_UFunction_AFGCreatureSpawner_ReceiveOnTraceCompleted, "ReceiveOnTraceCompleted" }, // 3501598498
 		{ &Z_Construct_UFunction_AFGCreatureSpawner_TryDestroyCreatures, "TryDestroyCreatures" }, // 1001552355
+		{ &Z_Construct_UFunction_AFGCreatureSpawner_VisualizeSpawnDistance, "VisualizeSpawnDistance" }, // 2843909908
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::Class_MetaDataParams[] = {
@@ -614,11 +677,58 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRespawnTimeIndays = { "mRespawnTimeIndays", nullptr, (EPropertyFlags)0x0010000000000801, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreatureSpawner, mRespawnTimeIndays), METADATA_PARAMS(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRespawnTimeIndays_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRespawnTimeIndays_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mVisualizeSpawnDistance_MetaData[] = {
+		{ "Category", "Spawning" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
+		{ "ToolTip", "Should this spawner draw a sphere showing its spawn distance in editor" },
+	};
+#endif
+	void Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mVisualizeSpawnDistance_SetBit(void* Obj)
+	{
+		((AFGCreatureSpawner*)Obj)->mVisualizeSpawnDistance = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mVisualizeSpawnDistance = { "mVisualizeSpawnDistance", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGCreatureSpawner), &Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mVisualizeSpawnDistance_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mVisualizeSpawnDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mVisualizeSpawnDistance_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRandomSeed_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRandomSeed = { "mRandomSeed", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreatureSpawner, mRandomSeed), METADATA_PARAMS(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRandomSeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRandomSeed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mSpawnDistanceOverride_MetaData[] = {
+		{ "Category", "Spawning" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
+		{ "ToolTip", "This spawn distance will override both the one set in creature and the one in aisystem" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mSpawnDistanceOverride = { "mSpawnDistanceOverride", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreatureSpawner, mSpawnDistanceOverride), METADATA_PARAMS(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mSpawnDistanceOverride_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mSpawnDistanceOverride_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mMonsterClosetTimerHandle_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
+		{ "ToolTip", "Timer handle for monster closet spawning" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mMonsterClosetTimerHandle = { "mMonsterClosetTimerHandle", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreatureSpawner, mMonsterClosetTimerHandle), Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mMonsterClosetTimerHandle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mMonsterClosetTimerHandle_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mMonsterClosetSpawnDelay_MetaData[] = {
+		{ "Category", "Spawning" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
+		{ "ToolTip", "Delay in seconds when next creature spawns after current creature died" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mMonsterClosetSpawnDelay = { "mMonsterClosetSpawnDelay", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreatureSpawner, mMonsterClosetSpawnDelay), METADATA_PARAMS(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mMonsterClosetSpawnDelay_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mMonsterClosetSpawnDelay_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mIsMonsterCloset_MetaData[] = {
+		{ "Category", "Spawning" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
+		{ "ToolTip", "Is this spawner a monster closet? (spawning one creature at a time )" },
+	};
+#endif
+	void Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mIsMonsterCloset_SetBit(void* Obj)
+	{
+		((AFGCreatureSpawner*)Obj)->mIsMonsterCloset = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mIsMonsterCloset = { "mIsMonsterCloset", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGCreatureSpawner), &Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mIsMonsterCloset_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mIsMonsterCloset_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mIsMonsterCloset_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mPendingDestroyTimer_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Creature/FGCreatureSpawner.h" },
@@ -756,7 +866,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mDebugComponent = { "mDebugComponent", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreatureSpawner, mDebugComponent), Z_Construct_UClass_UFGCreatureSpawnerDebugComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mDebugComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mDebugComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGCreatureSpawner_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRespawnTimeIndays,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mVisualizeSpawnDistance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mRandomSeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mSpawnDistanceOverride,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mMonsterClosetTimerHandle,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mMonsterClosetSpawnDelay,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mIsMonsterCloset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mPendingDestroyTimer,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mCurrentCreatureToSpawnIndex,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreatureSpawner_Statics::NewProp_mIsPendingSpawn,
@@ -806,7 +921,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreatureSpawner, 2570561308);
+	IMPLEMENT_CLASS(AFGCreatureSpawner, 1464824358);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCreatureSpawner>()
 	{
 		return AFGCreatureSpawner::StaticClass();

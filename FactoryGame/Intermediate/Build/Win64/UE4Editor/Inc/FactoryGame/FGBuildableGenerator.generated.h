@@ -237,9 +237,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableGenerator); \
 
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableGenerator_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mPowerProduction() { return STRUCT_OFFSET(AFGBuildableGenerator, mPowerProduction); } \
-	FORCEINLINE static uint32 __PPO__mPowerProductionExponent() { return STRUCT_OFFSET(AFGBuildableGenerator, mPowerProductionExponent); } \
-	FORCEINLINE static uint32 __PPO__mLoadPercentage() { return STRUCT_OFFSET(AFGBuildableGenerator, mLoadPercentage); } \
-	FORCEINLINE static uint32 __PPO__mIsFuseTriggered() { return STRUCT_OFFSET(AFGBuildableGenerator, mIsFuseTriggered); }
+	FORCEINLINE static uint32 __PPO__mPowerProductionExponent() { return STRUCT_OFFSET(AFGBuildableGenerator, mPowerProductionExponent); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableGenerator_h_14_PROLOG \

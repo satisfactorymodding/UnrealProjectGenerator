@@ -132,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAutomatedWorkBench() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableAutomatedWorkBench, 1689035002);
+	IMPLEMENT_CLASS(AFGBuildableAutomatedWorkBench, 1412659972);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableAutomatedWorkBench>()
 	{
 		return AFGBuildableAutomatedWorkBench::StaticClass();

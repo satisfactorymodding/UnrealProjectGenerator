@@ -67,6 +67,9 @@ public:
 
 	/** Admin password option that's parsed from commandline */
 	static const TCHAR* AdminPasswordOption;
+
+	int32 GetNumPrivateConnections() const;
+	int32 GetNumPublicConnections() const;
 protected:
 	/** Make sure we have a tutorial intro managere */
 	UFUNCTION()
@@ -85,8 +88,6 @@ protected:
 	/** Set a random admin password */
 	void SetRandomAdminPassword();
 
-	int32 GetNumPrivateConnections() const;
-	int32 GetNumPublicConnections() const;
 
 	virtual void OnUpdateSessionComplete( FName sessionName, bool wasSuccessful );
 private:

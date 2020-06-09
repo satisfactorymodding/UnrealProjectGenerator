@@ -401,6 +401,14 @@ static inline void FOnReplicationDetailActorCreated_DelegateWrapper(const FMulti
 		P_NATIVE_BEGIN; \
 		*(TArray<UFGFactoryConnectionComponent*>*)Z_Param__Result=P_THIS->GetConnectionComponents(); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasValidReplicationDetailActor) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->HasValidReplicationDetailActor(); \
+		P_NATIVE_END; \
 	}
 
 
@@ -758,6 +766,14 @@ static inline void FOnReplicationDetailActorCreated_DelegateWrapper(const FMulti
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(TArray<UFGFactoryConnectionComponent*>*)Z_Param__Result=P_THIS->GetConnectionComponents(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasValidReplicationDetailActor) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->HasValidReplicationDetailActor(); \
 		P_NATIVE_END; \
 	}
 

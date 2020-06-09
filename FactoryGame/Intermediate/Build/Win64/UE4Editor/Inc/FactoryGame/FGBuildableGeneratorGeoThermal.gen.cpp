@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorGeoThermal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableGeneratorGeoThermal, 3357606271);
+	IMPLEMENT_CLASS(AFGBuildableGeneratorGeoThermal, 475599727);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableGeneratorGeoThermal>()
 	{
 		return AFGBuildableGeneratorGeoThermal::StaticClass();

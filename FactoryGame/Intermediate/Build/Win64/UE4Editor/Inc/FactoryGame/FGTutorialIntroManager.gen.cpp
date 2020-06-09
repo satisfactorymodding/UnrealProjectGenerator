@@ -767,7 +767,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRecipeAmountPair
 		{ "ToolTip", "Checks if a tradingpost has ever been built" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "HasTradingpostBeenBuilt", sizeof(FGTutorialIntroManager_eventHasTradingpostBeenBuilt_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "HasTradingpostBeenBuilt", sizeof(FGTutorialIntroManager_eventHasTradingpostBeenBuilt_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1305,7 +1305,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRecipeAmountPair
 		{ &Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted, "GetIsTutorialCompleted" }, // 3012252818
 		{ &Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip, "GetNormalizedProgressToSkip" }, // 615581741
 		{ &Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel, "GetTradingPostLevel" }, // 3592029968
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt, "HasTradingpostBeenBuilt" }, // 2238940037
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt, "HasTradingpostBeenBuilt" }, // 1210813754
 		{ &Z_Construct_UFunction_AFGTutorialIntroManager_IntroDone, "IntroDone" }, // 3224816199
 		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal, "OnBuildingBuiltGlobal" }, // 1455644655
 		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnCodexOpened, "OnCodexOpened" }, // 1185594251
@@ -1712,7 +1712,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRecipeAmountPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGTutorialIntroManager, 3579413261);
+	IMPLEMENT_CLASS(AFGTutorialIntroManager, 2121741916);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGTutorialIntroManager>()
 	{
 		return AFGTutorialIntroManager::StaticClass();

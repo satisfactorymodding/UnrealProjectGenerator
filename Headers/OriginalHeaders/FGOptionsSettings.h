@@ -22,6 +22,15 @@ enum class EOptionType : uint8
 	OT_Slider					UMETA( DisplayName = "Slider" )
 };
 
+UENUM( BlueprintType )
+enum class ENetmodeAvailability : uint8
+{
+	NA_ServerAndClient			UMETA( DisplayName = "Server and Client" ),
+	NA_OnlyServer				UMETA( DisplayName = "Only Server" ),
+	NA_OnlyClient				UMETA( DisplayName = "Only Client" )
+};
+
+
 USTRUCT( BlueprintType )
 struct FOptionRowData
 {
@@ -93,6 +102,9 @@ public:
 	
 	UPROPERTY( BlueprintReadWrite, EditAnywhere )
 	FText Tooltip;
+
+	UPROPERTY( BlueprintReadWrite, EditAnywhere )
+	ENetmodeAvailability NetmodeAvailability;
 };
 
 USTRUCT( BlueprintType, meta = ( ShowOnlyInnerProperties ) )

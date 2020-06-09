@@ -11,6 +11,7 @@
 #include "CoreOnline.h"
 #include "FindSessionsCallbackProxy.h"
 #include "EOSSDKForwards.h"
+#include "PlayerPresenceState.h"
 #include "FGLocalPlayer.generated.h"
 
 
@@ -289,6 +290,9 @@ public:
 	/** Connect two logged in accounts */
 	void ConnectAccount( const FName currentPlatform );
 
+	//Log out epic, then wait till the logout compelts and use the contiue token to create a new connection.
+	void LogOutEpicAndCreateNewAccountConnection(const FName currentPlatform);
+
 	/** Create a new account connection without connection to an existing account */
 	void CreateNewAccountConnection( const FName currentPlatform );
 
@@ -302,6 +306,9 @@ public:
 
 	/** Logout current account and login to a epic account and connect */
 	void LoginAndConnectOtherEpicAccount();
+
+	/** Logout current account and login to a epic account and connect */
+	void ContinueWithAndHookUpSteamToEOSAfterEpicLogout();
 
 	/** Logout current account and continue */
 	void LogoutEpicAccountAndContinue();
@@ -370,6 +377,8 @@ protected:
 	/** Get the presence string we should show to other users */
 	virtual FString GetPresenceString() const;
 
+	void GetPresenceState(FPlayerPresenceState& outState) const;
+
 	/** Convert a login status to a login state */
 	ELoginState FromLoginStatus( ELoginStatus::Type from ) const;
 
@@ -409,6 +418,8 @@ public:
 	/** Called when the when we have a result from connection accounts */
 	FOnAccountConnectionComplete mOnAccountConnectionComplete;
 
+	UFUNCTION()
+	void OnComandlineInviteSearchComplete(FBlueprintSessionResult result);
 protected:
 	friend class UFGCheatManager;
 
@@ -498,4 +509,7 @@ protected:
 	bool mIsWaitingForEpicLogout = false;
 	bool mIsWaitingForEpicAccountSwap = false;
 	bool mHasTriedConnectingSteam = false;
+	bool mStartedAccountConnectionProcess = false;
+	bool mHastTriedLoggingIn = false;
+	bool mAutoSignedOutEpicDueToIncompatibility = false;
 };

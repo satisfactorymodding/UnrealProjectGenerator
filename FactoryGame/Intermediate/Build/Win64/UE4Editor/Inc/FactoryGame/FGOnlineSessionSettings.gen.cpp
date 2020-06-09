@@ -16,7 +16,7 @@ void EmptyLinkFunctionForGeneratedCodeFGOnlineSessionSettings() {}
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ESessionVisibility();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFGOnlineSessionSettings();
-	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ECachedNATType();
+	ONLINESUBSYSTEMEOS_API UEnum* Z_Construct_UEnum_OnlineSubsystemEOS_ECachedNATType();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FUniqueNetIdRepl();
 // End Cross Module References
 	static UEnum* ESessionVisibility_StaticEnum()
@@ -152,7 +152,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 		{ "ToolTip", "Hosts nat type" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NATType = { "NATType", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFGOnlineSessionSettings, NATType), Z_Construct_UEnum_FactoryGame_ECachedNATType, METADATA_PARAMS(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NATType_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NATType_MetaData)) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NATType = { "NATType", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFGOnlineSessionSettings, NATType), Z_Construct_UEnum_OnlineSubsystemEOS_ECachedNATType, METADATA_PARAMS(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NATType_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NATType_MetaData)) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_NATType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_CSS_SessionId_MetaData[] = {
@@ -239,7 +239,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Hash() { return 1690175920U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Hash() { return 526257028U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

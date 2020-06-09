@@ -612,7 +612,7 @@ private:
 	bool mHasInitializedMaterialManagers;
 
 	/** Should the building start as hidden when playing the build effect */
-	UPROPERTY( EditDefaultsOnly, Category = "Buildable" )
+	UPROPERTY( EditDefaultsOnly, Category = "Build Effect" )
     bool mHideOnBuildEffectStart;
 };
 

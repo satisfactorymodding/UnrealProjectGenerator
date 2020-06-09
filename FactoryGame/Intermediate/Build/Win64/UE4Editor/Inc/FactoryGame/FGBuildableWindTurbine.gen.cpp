@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWindTurbine() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableWindTurbine, 2094459541);
+	IMPLEMENT_CLASS(AFGBuildableWindTurbine, 1861575452);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableWindTurbine>()
 	{
 		return AFGBuildableWindTurbine::StaticClass();

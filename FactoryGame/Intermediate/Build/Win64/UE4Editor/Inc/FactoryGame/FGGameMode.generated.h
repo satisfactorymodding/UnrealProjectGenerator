@@ -161,6 +161,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGameMode); \
 	FORCEINLINE static uint32 __PPO__mLastAutosaveId() { return STRUCT_OFFSET(AFGGameMode, mLastAutosaveId); } \
 	FORCEINLINE static uint32 __PPO__mSaveSessionName() { return STRUCT_OFFSET(AFGGameMode, mSaveSessionName); } \
 	FORCEINLINE static uint32 __PPO__mStartingPointTagName() { return STRUCT_OFFSET(AFGGameMode, mStartingPointTagName); } \
+	FORCEINLINE static uint32 __PPO__mAllowPossessAny() { return STRUCT_OFFSET(AFGGameMode, mAllowPossessAny); } \
 	FORCEINLINE static uint32 __PPO__mDebugStartingPointTagName() { return STRUCT_OFFSET(AFGGameMode, mDebugStartingPointTagName); } \
 	FORCEINLINE static uint32 __PPO__mDefaultRemoteCallObjectsClassNames() { return STRUCT_OFFSET(AFGGameMode, mDefaultRemoteCallObjectsClassNames); } \
 	FORCEINLINE static uint32 __PPO__mServerRestartTimeHours() { return STRUCT_OFFSET(AFGGameMode, mServerRestartTimeHours); } \

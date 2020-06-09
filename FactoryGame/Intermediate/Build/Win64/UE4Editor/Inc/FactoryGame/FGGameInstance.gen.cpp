@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameInstance() {}
 // Cross Module References
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnNatTypeUpdated__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
-	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ECachedNATType();
+	ONLINESUBSYSTEMEOS_API UEnum* Z_Construct_UEnum_OnlineSubsystemEOS_ECachedNATType();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature();
 	ENGINE_API UEnum* Z_Construct_UEnum_Engine_ENetworkFailure();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnNewError__DelegateSignature();
@@ -61,7 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameInstance() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnNatTypeUpdated__DelegateSignature_Statics::NewProp_natType = { "natType", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventOnNatTypeUpdated_Parms, natType), Z_Construct_UEnum_FactoryGame_ECachedNATType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnNatTypeUpdated__DelegateSignature_Statics::NewProp_natType = { "natType", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventOnNatTypeUpdated_Parms, natType), Z_Construct_UEnum_OnlineSubsystemEOS_ECachedNATType, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnNatTypeUpdated__DelegateSignature_Statics::NewProp_natType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_OnNatTypeUpdated__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnNatTypeUpdated__DelegateSignature_Statics::NewProp_natType,

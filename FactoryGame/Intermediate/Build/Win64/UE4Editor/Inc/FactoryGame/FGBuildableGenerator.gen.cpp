@@ -419,14 +419,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 	{
 		((AFGBuildableGenerator*)Obj)->mIsFuseTriggered = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mIsFuseTriggered = { "mIsFuseTriggered", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildableGenerator), &Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mIsFuseTriggered_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mIsFuseTriggered_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mIsFuseTriggered_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mIsFuseTriggered = { "mIsFuseTriggered", nullptr, (EPropertyFlags)0x0010000000000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildableGenerator), &Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mIsFuseTriggered_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mIsFuseTriggered_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mIsFuseTriggered_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mLoadPercentage_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGenerator.h" },
 		{ "ToolTip", "Current load of this generator in the range [0,1]." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mLoadPercentage = { "mLoadPercentage", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableGenerator, mLoadPercentage), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mLoadPercentage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mLoadPercentage_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mLoadPercentage = { "mLoadPercentage", nullptr, (EPropertyFlags)0x0010000000000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableGenerator, mLoadPercentage), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mLoadPercentage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mLoadPercentage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mPowerProductionExponent_MetaData[] = {
 		{ "Category", "Power" },
@@ -478,7 +478,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableGenerator, 537402488);
+	IMPLEMENT_CLASS(AFGBuildableGenerator, 1161751327);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableGenerator>()
 	{
 		return AFGBuildableGenerator::StaticClass();

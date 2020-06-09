@@ -70,6 +70,9 @@ public:
 
 	/** Discard a invite from our pending invites */
 	void DiscardInvite( const FPendingInvite& invite );
+
+	void OnSessionInviteAccepted(bool bWasSuccess, int32 controllerId, TSharedPtr<const FUniqueNetId> userId, const FOnlineSessionSearchResult& inviteResult);
+
 protected:
 	/** Make sure we broadcast information about a recevied invite when we get enough info about it */
 	void BroadcastInviteReceived( int32 localUserNum, const FPendingInvite& invite );
@@ -84,7 +87,10 @@ protected:
 protected:
 	/** ~Begin session delegates handles */
 	FDelegateHandle mOnSessionInviteReceivedHandle;
+	FDelegateHandle mOnSessionInviteReceivedHandleSecondary;
+	FDelegateHandle mOnSessionUserInviteAcceptedHandleSecondary;
 	FDelegateHandle mOnQueryUserInfoCompleteHandle;
+	FDelegateHandle mOnQueryUserInfoCompleteHandleSecondary;
 	/** ~End session delegates handles */
 
 	/** Clear out all the presence data from our current players presence */

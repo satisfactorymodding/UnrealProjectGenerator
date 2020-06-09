@@ -43,6 +43,14 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSpawnData>();
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execVisualizeSpawnDistance) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->VisualizeSpawnDistance(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execIsNearBase) \
 	{ \
 		P_FINISH; \
@@ -110,6 +118,14 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSpawnData>();
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->TryDestroyCreatures(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVisualizeSpawnDistance) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->VisualizeSpawnDistance(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -225,6 +241,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCreatureSpawner); \
 	FORCEINLINE static uint32 __PPO__mIsPendingSpawn() { return STRUCT_OFFSET(AFGCreatureSpawner, mIsPendingSpawn); } \
 	FORCEINLINE static uint32 __PPO__mCurrentCreatureToSpawnIndex() { return STRUCT_OFFSET(AFGCreatureSpawner, mCurrentCreatureToSpawnIndex); } \
 	FORCEINLINE static uint32 __PPO__mPendingDestroyTimer() { return STRUCT_OFFSET(AFGCreatureSpawner, mPendingDestroyTimer); } \
+	FORCEINLINE static uint32 __PPO__mIsMonsterCloset() { return STRUCT_OFFSET(AFGCreatureSpawner, mIsMonsterCloset); } \
+	FORCEINLINE static uint32 __PPO__mMonsterClosetSpawnDelay() { return STRUCT_OFFSET(AFGCreatureSpawner, mMonsterClosetSpawnDelay); } \
+	FORCEINLINE static uint32 __PPO__mMonsterClosetTimerHandle() { return STRUCT_OFFSET(AFGCreatureSpawner, mMonsterClosetTimerHandle); } \
+	FORCEINLINE static uint32 __PPO__mSpawnDistanceOverride() { return STRUCT_OFFSET(AFGCreatureSpawner, mSpawnDistanceOverride); } \
 	FORCEINLINE static uint32 __PPO__mRandomSeed() { return STRUCT_OFFSET(AFGCreatureSpawner, mRandomSeed); }
 
 

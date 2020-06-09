@@ -266,7 +266,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableFactoryBuilding, 3635767788);
+	IMPLEMENT_CLASS(AFGBuildableFactoryBuilding, 3381579680);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableFactoryBuilding>()
 	{
 		return AFGBuildableFactoryBuilding::StaticClass();

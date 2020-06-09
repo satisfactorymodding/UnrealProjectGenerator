@@ -224,6 +224,10 @@ public:
 
 	UFUNCTION(BlueprintPure, Category="FactoryGame|Online")
 	EJoinSessionState GetCurrentJoinSessionState() const;
+
+	/* Set if we should enable navigation with tab and arrow keys. Stops UE4 to hog tab and arrow key input bindings in widgets. Doesn't do anything in PIE */
+	void EnableTabAndNavKeys( bool enable );
+
 protected:
 	// Called when a map has loaded properly in Standalone
 	virtual void LoadComplete( const float loadTime, const FString& mapName ) override;

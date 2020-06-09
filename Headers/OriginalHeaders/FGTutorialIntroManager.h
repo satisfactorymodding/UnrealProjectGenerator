@@ -171,6 +171,11 @@ public:
 	/** Gives resoures to player that they need to build things they should have built playing the tutorial */
 	void GiveTutorialResources( class AFGCharacterPlayer* inPlayer );
 
+	/** Checks if a tradingpost has ever been built */
+	UFUNCTION(BlueprintPure, Category = "Tutorial")
+		FORCEINLINE bool HasTradingpostBeenBuilt() const { return mTradingPostBuilt; }
+
+
 	UFUNCTION( BlueprintCallable, Category = "Tutorial" )
 	void OnCodexOpened();
 protected:
@@ -206,9 +211,6 @@ protected:
 	/** Sets the status of mTradingPostBuilt */
 	void SetTradingpostBuilt( bool hasbuilt );
 
-	/** Checks if a tradingpost has ever been built */
-	UFUNCTION( BlueprintPure, Category = "Tutorial" )
-	FORCEINLINE bool HasTradingpostBeenBuilt() const{ return mTradingPostBuilt; }
 
 	/** Called from IntroDone and only once per session */
 	void OnIntroDone();

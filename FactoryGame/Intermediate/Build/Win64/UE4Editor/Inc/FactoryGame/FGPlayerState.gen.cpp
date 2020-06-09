@@ -42,6 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerState() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetNewRecipes();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipe_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetNumArmSlots();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetNumObservedInventorySlots();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetOnlyShowAffordableRecipes();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetPingColor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetSlotNum();
@@ -64,9 +65,11 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerState() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_Server_SetItemCategoryCollapsed();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_Server_SetMapFilter();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_Server_SetOnlyShowAffordableRecipes();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_Server_UpdateNumObservedInventorySlots();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_SetItemCategoryCollapsed();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_SetLastSelectedResourceSinkShopCategory();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_SetOnlyShowAffordableRecipes();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_UpdateNumObservedInventorySlots();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGEquipment_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveInterface_NoRegister();
@@ -543,6 +546,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		Parms.enabled=enabled ? true : false;
 		ProcessEvent(FindFunctionChecked(NAME_AFGPlayerState_Server_SetOnlyShowAffordableRecipes),&Parms);
 	}
+	static FName NAME_AFGPlayerState_Server_UpdateNumObservedInventorySlots = FName(TEXT("Server_UpdateNumObservedInventorySlots"));
+	void AFGPlayerState::Server_UpdateNumObservedInventorySlots()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AFGPlayerState_Server_UpdateNumObservedInventorySlots),NULL);
+	}
 	void AFGPlayerState::StaticRegisterNativesAFGPlayerState()
 	{
 		UClass* Class = AFGPlayerState::StaticClass();
@@ -557,6 +565,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 			{ "GetNametagColor", &AFGPlayerState::execGetNametagColor },
 			{ "GetNewRecipes", &AFGPlayerState::execGetNewRecipes },
 			{ "GetNumArmSlots", &AFGPlayerState::execGetNumArmSlots },
+			{ "GetNumObservedInventorySlots", &AFGPlayerState::execGetNumObservedInventorySlots },
 			{ "GetOnlyShowAffordableRecipes", &AFGPlayerState::execGetOnlyShowAffordableRecipes },
 			{ "GetPingColor", &AFGPlayerState::execGetPingColor },
 			{ "GetSlotNum", &AFGPlayerState::execGetSlotNum },
@@ -576,9 +585,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 			{ "Server_SetItemCategoryCollapsed", &AFGPlayerState::execServer_SetItemCategoryCollapsed },
 			{ "Server_SetMapFilter", &AFGPlayerState::execServer_SetMapFilter },
 			{ "Server_SetOnlyShowAffordableRecipes", &AFGPlayerState::execServer_SetOnlyShowAffordableRecipes },
+			{ "Server_UpdateNumObservedInventorySlots", &AFGPlayerState::execServer_UpdateNumObservedInventorySlots },
 			{ "SetItemCategoryCollapsed", &AFGPlayerState::execSetItemCategoryCollapsed },
 			{ "SetLastSelectedResourceSinkShopCategory", &AFGPlayerState::execSetLastSelectedResourceSinkShopCategory },
 			{ "SetOnlyShowAffordableRecipes", &AFGPlayerState::execSetOnlyShowAffordableRecipes },
+			{ "UpdateNumObservedInventorySlots", &AFGPlayerState::execUpdateNumObservedInventorySlots },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -940,6 +951,40 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerState_GetNumArmSlots_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerState_GetNumObservedInventorySlots_Statics
+	{
+		struct FGPlayerState_eventGetNumObservedInventorySlots_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGPlayerState_GetNumObservedInventorySlots_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPlayerState_eventGetNumObservedInventorySlots_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerState_GetNumObservedInventorySlots_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerState_GetNumObservedInventorySlots_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetNumObservedInventorySlots_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Inventory" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
+		{ "ToolTip", "Returns how many inventory slots the player has observed that they have" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerState_GetNumObservedInventorySlots_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerState, nullptr, "GetNumObservedInventorySlots", sizeof(FGPlayerState_eventGetNumObservedInventorySlots_Parms), Z_Construct_UFunction_AFGPlayerState_GetNumObservedInventorySlots_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_GetNumObservedInventorySlots_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerState_GetNumObservedInventorySlots_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_GetNumObservedInventorySlots_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerState_GetNumObservedInventorySlots()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerState_GetNumObservedInventorySlots_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1589,6 +1634,29 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGPlayerState_Server_UpdateNumObservedInventorySlots_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_Server_UpdateNumObservedInventorySlots_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
+		{ "ToolTip", "Server function for updating number observed inventory slots" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerState_Server_UpdateNumObservedInventorySlots_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerState, nullptr, "Server_UpdateNumObservedInventorySlots", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerState_Server_UpdateNumObservedInventorySlots_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_Server_UpdateNumObservedInventorySlots_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerState_Server_UpdateNumObservedInventorySlots()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerState_Server_UpdateNumObservedInventorySlots_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGPlayerState_SetItemCategoryCollapsed_Statics
 	{
 		struct FGPlayerState_eventSetItemCategoryCollapsed_Parms
@@ -1704,6 +1772,30 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGPlayerState_UpdateNumObservedInventorySlots_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_UpdateNumObservedInventorySlots_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Inventory" },
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
+		{ "ToolTip", "Update the number of observed slots to how many we have unlocked" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerState_UpdateNumObservedInventorySlots_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerState, nullptr, "UpdateNumObservedInventorySlots", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerState_UpdateNumObservedInventorySlots_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_UpdateNumObservedInventorySlots_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerState_UpdateNumObservedInventorySlots()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerState_UpdateNumObservedInventorySlots_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AFGPlayerState_NoRegister()
 	{
 		return AFGPlayerState::StaticClass();
@@ -1715,6 +1807,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mNumObservedInventorySlots_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mNumObservedInventorySlots;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mLastSelectedResourceSinkShopCategory_MetaData[];
 #endif
@@ -1833,6 +1929,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		{ &Z_Construct_UFunction_AFGPlayerState_GetNametagColor, "GetNametagColor" }, // 2259183885
 		{ &Z_Construct_UFunction_AFGPlayerState_GetNewRecipes, "GetNewRecipes" }, // 3170125264
 		{ &Z_Construct_UFunction_AFGPlayerState_GetNumArmSlots, "GetNumArmSlots" }, // 4025000975
+		{ &Z_Construct_UFunction_AFGPlayerState_GetNumObservedInventorySlots, "GetNumObservedInventorySlots" }, // 640100607
 		{ &Z_Construct_UFunction_AFGPlayerState_GetOnlyShowAffordableRecipes, "GetOnlyShowAffordableRecipes" }, // 3249873035
 		{ &Z_Construct_UFunction_AFGPlayerState_GetPingColor, "GetPingColor" }, // 3136672301
 		{ &Z_Construct_UFunction_AFGPlayerState_GetSlotNum, "GetSlotNum" }, // 1495185719
@@ -1852,9 +1949,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		{ &Z_Construct_UFunction_AFGPlayerState_Server_SetItemCategoryCollapsed, "Server_SetItemCategoryCollapsed" }, // 759044807
 		{ &Z_Construct_UFunction_AFGPlayerState_Server_SetMapFilter, "Server_SetMapFilter" }, // 230223779
 		{ &Z_Construct_UFunction_AFGPlayerState_Server_SetOnlyShowAffordableRecipes, "Server_SetOnlyShowAffordableRecipes" }, // 3398843629
+		{ &Z_Construct_UFunction_AFGPlayerState_Server_UpdateNumObservedInventorySlots, "Server_UpdateNumObservedInventorySlots" }, // 4115731456
 		{ &Z_Construct_UFunction_AFGPlayerState_SetItemCategoryCollapsed, "SetItemCategoryCollapsed" }, // 3571149141
 		{ &Z_Construct_UFunction_AFGPlayerState_SetLastSelectedResourceSinkShopCategory, "SetLastSelectedResourceSinkShopCategory" }, // 667625539
 		{ &Z_Construct_UFunction_AFGPlayerState_SetOnlyShowAffordableRecipes, "SetOnlyShowAffordableRecipes" }, // 281679396
+		{ &Z_Construct_UFunction_AFGPlayerState_UpdateNumObservedInventorySlots, "UpdateNumObservedInventorySlots" }, // 1768913687
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::Class_MetaDataParams[] = {
@@ -1865,6 +1964,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNumObservedInventorySlots_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
+		{ "ToolTip", "How many inventory slots the player has observed that they have. Used to show when we have new available slots in the UI" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNumObservedInventorySlots = { "mNumObservedInventorySlots", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, mNumObservedInventorySlots), METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNumObservedInventorySlots_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNumObservedInventorySlots_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mLastSelectedResourceSinkShopCategory_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGPlayerState.h" },
@@ -2038,6 +2144,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_BuildableConstructedDelegate = { "BuildableConstructedDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlayerState, BuildableConstructedDelegate), Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedNew__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_BuildableConstructedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_BuildableConstructedDelegate_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGPlayerState_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNumObservedInventorySlots,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mLastSelectedResourceSinkShopCategory,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mFilteredOutCompassTypes,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mFilteredOutCompassTypes_Inner,
@@ -2101,7 +2208,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerState, 2616361594);
+	IMPLEMENT_CLASS(AFGPlayerState, 3110555384);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlayerState>()
 	{
 		return AFGPlayerState::StaticClass();

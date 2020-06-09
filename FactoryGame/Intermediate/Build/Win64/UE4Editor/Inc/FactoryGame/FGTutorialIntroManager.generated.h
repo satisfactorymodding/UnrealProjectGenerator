@@ -51,14 +51,6 @@ static inline void FIntroSequenceStateUpdate_DelegateWrapper(const FMulticastScr
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execHasTradingpostBeenBuilt) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->HasTradingpostBeenBuilt(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execOnPlayerAddedItemToArmSlot) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_itemClass); \
@@ -111,6 +103,14 @@ static inline void FIntroSequenceStateUpdate_DelegateWrapper(const FMulticastScr
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnCodexOpened(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasTradingpostBeenBuilt) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->HasTradingpostBeenBuilt(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -240,14 +240,6 @@ static inline void FIntroSequenceStateUpdate_DelegateWrapper(const FMulticastScr
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execHasTradingpostBeenBuilt) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->HasTradingpostBeenBuilt(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execOnPlayerAddedItemToArmSlot) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_itemClass); \
@@ -300,6 +292,14 @@ static inline void FIntroSequenceStateUpdate_DelegateWrapper(const FMulticastScr
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnCodexOpened(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasTradingpostBeenBuilt) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->HasTradingpostBeenBuilt(); \
 		P_NATIVE_END; \
 	} \
  \

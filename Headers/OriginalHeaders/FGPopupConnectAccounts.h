@@ -43,6 +43,12 @@ protected:
 	UFUNCTION( BlueprintCallable )
 	void LogoutEpicAccountAndContinue();
 
+	UFUNCTION( BlueprintCallable )
+	void ContinueWithAndHookUpSteamToEOSAfterEpicLogout();
+
+	UFUNCTION( BlueprintCallable )
+	void LogOutEpicAndCreateNewAccountConnection();
+
 	UPROPERTY( BlueprintReadOnly )
 	FName mCurrentPlatform;
 

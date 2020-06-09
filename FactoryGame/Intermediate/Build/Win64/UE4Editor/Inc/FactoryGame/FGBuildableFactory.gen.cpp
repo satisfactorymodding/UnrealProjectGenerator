@@ -56,6 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFactory() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableFactory_GetProductivity();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableFactory_GetScaledFluidStackSize();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableFactory_HasPower();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableFactory_HasValidReplicationDetailActor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableFactory_IsConfigured();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableFactory_IsProducing();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableFactory_IsProductionPaused();
@@ -334,6 +335,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFactory() {}
 			{ "GetProductivity", &AFGBuildableFactory::execGetProductivity },
 			{ "GetScaledFluidStackSize", &AFGBuildableFactory::execGetScaledFluidStackSize },
 			{ "HasPower", &AFGBuildableFactory::execHasPower },
+			{ "HasValidReplicationDetailActor", &AFGBuildableFactory::execHasValidReplicationDetailActor },
 			{ "IsConfigured", &AFGBuildableFactory::execIsConfigured },
 			{ "IsProducing", &AFGBuildableFactory::execIsProducing },
 			{ "IsProductionPaused", &AFGBuildableFactory::execIsProductionPaused },
@@ -1390,6 +1392,45 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFactory() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGBuildableFactory_HasValidReplicationDetailActor_Statics
+	{
+		struct FGBuildableFactory_eventHasValidReplicationDetailActor_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGBuildableFactory_HasValidReplicationDetailActor_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGBuildableFactory_eventHasValidReplicationDetailActor_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableFactory_HasValidReplicationDetailActor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildableFactory_eventHasValidReplicationDetailActor_Parms), &Z_Construct_UFunction_AFGBuildableFactory_HasValidReplicationDetailActor_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableFactory_HasValidReplicationDetailActor_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableFactory_HasValidReplicationDetailActor_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableFactory_HasValidReplicationDetailActor_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Factory|Replication" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFactory.h" },
+		{ "ToolTip", "Returns true if caller is server ( no replication detail actor is required ) or if the detail actor has been replicated to the client" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableFactory_HasValidReplicationDetailActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableFactory, nullptr, "HasValidReplicationDetailActor", sizeof(FGBuildableFactory_eventHasValidReplicationDetailActor_Parms), Z_Construct_UFunction_AFGBuildableFactory_HasValidReplicationDetailActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableFactory_HasValidReplicationDetailActor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableFactory_HasValidReplicationDetailActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableFactory_HasValidReplicationDetailActor_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildableFactory_HasValidReplicationDetailActor()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableFactory_HasValidReplicationDetailActor_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGBuildableFactory_IsConfigured_Statics
 	{
 		struct FGBuildableFactory_eventIsConfigured_Parms
@@ -2350,6 +2391,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFactory() {}
 		{ &Z_Construct_UFunction_AFGBuildableFactory_GetProductivity, "GetProductivity" }, // 3547121411
 		{ &Z_Construct_UFunction_AFGBuildableFactory_GetScaledFluidStackSize, "GetScaledFluidStackSize" }, // 2167166494
 		{ &Z_Construct_UFunction_AFGBuildableFactory_HasPower, "HasPower" }, // 1857806259
+		{ &Z_Construct_UFunction_AFGBuildableFactory_HasValidReplicationDetailActor, "HasValidReplicationDetailActor" }, // 2301059130
 		{ &Z_Construct_UFunction_AFGBuildableFactory_IsConfigured, "IsConfigured" }, // 1336666606
 		{ &Z_Construct_UFunction_AFGBuildableFactory_IsProducing, "IsProducing" }, // 2106856865
 		{ &Z_Construct_UFunction_AFGBuildableFactory_IsProductionPaused, "IsProductionPaused" }, // 2748081921
@@ -2703,7 +2745,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFactory() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableFactory, 1030404982);
+	IMPLEMENT_CLASS(AFGBuildableFactory, 1714369033);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableFactory>()
 	{
 		return AFGBuildableFactory::StaticClass();

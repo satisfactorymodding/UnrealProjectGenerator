@@ -1116,7 +1116,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHideOnBuildEffectStart_MetaData[] = {
-		{ "Category", "Buildable" },
+		{ "Category", "Build Effect" },
 		{ "ModuleRelativePath", "Public/Buildables/FGBuildable.h" },
 		{ "ToolTip", "Should the building start as hidden when playing the build effect" },
 	};
@@ -1520,7 +1520,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildable, 1913843117);
+	IMPLEMENT_CLASS(AFGBuildable, 3151839994);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildable>()
 	{
 		return AFGBuildable::StaticClass();

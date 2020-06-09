@@ -590,7 +590,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSplitterSmart, 3177647126);
+	IMPLEMENT_CLASS(AFGBuildableSplitterSmart, 2982055902);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableSplitterSmart>()
 	{
 		return AFGBuildableSplitterSmart::StaticClass();

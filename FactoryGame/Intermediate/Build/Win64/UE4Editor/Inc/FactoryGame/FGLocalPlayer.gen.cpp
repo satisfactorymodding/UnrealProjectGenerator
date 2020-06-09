@@ -25,7 +25,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocalPlayer() {}
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FUpdatedFriends();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnFriendsListQueried__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnAccountConnectionComplete__DelegateSignature();
-	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EEosAccountConnectionResult();
+	ONLINESUBSYSTEMEOS_API UEnum* Z_Construct_UEnum_OnlineSubsystemEOS_EEosAccountConnectionResult();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnCreateSessionStateChanged__DelegateSignature();
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ECreateSessionState();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFGOnlineFriend();
@@ -51,6 +51,8 @@ void EmptyLinkFunctionForGeneratedCodeFGLocalPlayer() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGLocalPlayer_GetUsernameSteam();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGLocalPlayer_LoginEpicAccountPortal();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGLocalPlayer_LogoutEpicAccountPortal();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGLocalPlayer_OnComandlineInviteSearchComplete();
+	ONLINESUBSYSTEMUTILS_API UScriptStruct* Z_Construct_UScriptStruct_FBlueprintSessionResult();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGLocalPlayer_OnLoginFailed_OpenMap();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGLocalPlayer_OnPresenceFailedToUpdate_OpenMap();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGLocalPlayer_OpenMap_WaitForPresence();
@@ -249,7 +251,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocalPlayer() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnAccountConnectionComplete__DelegateSignature_Statics::NewProp_result = { "result", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventOnAccountConnectionComplete_Parms, result), Z_Construct_UEnum_FactoryGame_EEosAccountConnectionResult, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnAccountConnectionComplete__DelegateSignature_Statics::NewProp_result = { "result", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventOnAccountConnectionComplete_Parms, result), Z_Construct_UEnum_OnlineSubsystemEOS_EEosAccountConnectionResult, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnAccountConnectionComplete__DelegateSignature_Statics::NewProp_result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnAccountConnectionComplete__DelegateSignature_Statics::NewProp_currentPlatform_MetaData[] = {
@@ -418,56 +420,6 @@ void EmptyLinkFunctionForGeneratedCodeFGLocalPlayer() {}
 				RF_Public|RF_Transient|RF_MarkAsNative,
 				UE4CodeGen_Private::EDynamicType::NotDynamic,
 				(uint8)UEnum::ECppForm::Regular,
-				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
-			};
-			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
-		}
-		return ReturnEnum;
-	}
-	static UEnum* EEosAccountConnectionResult_StaticEnum()
-	{
-		static UEnum* Singleton = nullptr;
-		if (!Singleton)
-		{
-			Singleton = GetStaticEnum(Z_Construct_UEnum_FactoryGame_EEosAccountConnectionResult, Z_Construct_UPackage__Script_FactoryGame(), TEXT("EEosAccountConnectionResult"));
-		}
-		return Singleton;
-	}
-	template<> FACTORYGAME_API UEnum* StaticEnum<EEosAccountConnectionResult>()
-	{
-		return EEosAccountConnectionResult_StaticEnum();
-	}
-	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EEosAccountConnectionResult(EEosAccountConnectionResult_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EEosAccountConnectionResult"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EEosAccountConnectionResult_Hash() { return 2355025897U; }
-	UEnum* Z_Construct_UEnum_FactoryGame_EEosAccountConnectionResult()
-	{
-#if WITH_HOT_RELOAD
-		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EEosAccountConnectionResult"), 0, Get_Z_Construct_UEnum_FactoryGame_EEosAccountConnectionResult_Hash(), false);
-#else
-		static UEnum* ReturnEnum = nullptr;
-#endif // WITH_HOT_RELOAD
-		if (!ReturnEnum)
-		{
-			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
-				{ "EEosAccountConnectionResult::SOMETHING", (int64)EEosAccountConnectionResult::SOMETHING },
-			};
-#if WITH_METADATA
-			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
-				{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
-				{ "ToolTip", "MODDING EDIT: dummy classes from the Epic Online missing headers" },
-			};
-#endif
-			static const UE4CodeGen_Private::FEnumParams EnumParams = {
-				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				nullptr,
-				"EEosAccountConnectionResult",
-				"EEosAccountConnectionResult",
-				Enumerators,
-				ARRAY_COUNT(Enumerators),
-				RF_Public|RF_Transient|RF_MarkAsNative,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -655,7 +607,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEM_LoggedOutFromOnlineService_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGLocalPlayer.h" },
 		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
-		{ "ToolTip", "why..." },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGEM_LoggedOutFromOnlineService_Statics::StaticCppClassTypeInfo = {
@@ -685,7 +636,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEM_LoggedOutFromOnlineService, 1508834311);
+	IMPLEMENT_CLASS(UFGEM_LoggedOutFromOnlineService, 1714605755);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGEM_LoggedOutFromOnlineService>()
 	{
 		return UFGEM_LoggedOutFromOnlineService::StaticClass();
@@ -828,6 +779,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 			{ "GetUsernameSteam", &UFGLocalPlayer::execGetUsernameSteam },
 			{ "LoginEpicAccountPortal", &UFGLocalPlayer::execLoginEpicAccountPortal },
 			{ "LogoutEpicAccountPortal", &UFGLocalPlayer::execLogoutEpicAccountPortal },
+			{ "OnComandlineInviteSearchComplete", &UFGLocalPlayer::execOnComandlineInviteSearchComplete },
 			{ "OnLoginFailed_OpenMap", &UFGLocalPlayer::execOnLoginFailed_OpenMap },
 			{ "OnPresenceFailedToUpdate_OpenMap", &UFGLocalPlayer::execOnPresenceFailedToUpdate_OpenMap },
 			{ "OpenMap_WaitForPresence", &UFGLocalPlayer::execOpenMap_WaitForPresence },
@@ -1229,6 +1181,38 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGLocalPlayer_OnComandlineInviteSearchComplete_Statics
+	{
+		struct FGLocalPlayer_eventOnComandlineInviteSearchComplete_Parms
+		{
+			FBlueprintSessionResult result;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_result;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGLocalPlayer_OnComandlineInviteSearchComplete_Statics::NewProp_result = { "result", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGLocalPlayer_eventOnComandlineInviteSearchComplete_Parms, result), Z_Construct_UScriptStruct_FBlueprintSessionResult, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGLocalPlayer_OnComandlineInviteSearchComplete_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGLocalPlayer_OnComandlineInviteSearchComplete_Statics::NewProp_result,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocalPlayer_OnComandlineInviteSearchComplete_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FGLocalPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGLocalPlayer_OnComandlineInviteSearchComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGLocalPlayer, nullptr, "OnComandlineInviteSearchComplete", sizeof(FGLocalPlayer_eventOnComandlineInviteSearchComplete_Parms), Z_Construct_UFunction_UFGLocalPlayer_OnComandlineInviteSearchComplete_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGLocalPlayer_OnComandlineInviteSearchComplete_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGLocalPlayer_OnComandlineInviteSearchComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGLocalPlayer_OnComandlineInviteSearchComplete_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGLocalPlayer_OnComandlineInviteSearchComplete()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGLocalPlayer_OnComandlineInviteSearchComplete_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGLocalPlayer_OnLoginFailed_OpenMap_Statics
 	{
 		struct FGLocalPlayer_eventOnLoginFailed_OpenMap_Parms
@@ -1457,6 +1441,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		{ &Z_Construct_UFunction_UFGLocalPlayer_GetUsernameSteam, "GetUsernameSteam" }, // 1606879277
 		{ &Z_Construct_UFunction_UFGLocalPlayer_LoginEpicAccountPortal, "LoginEpicAccountPortal" }, // 3505397761
 		{ &Z_Construct_UFunction_UFGLocalPlayer_LogoutEpicAccountPortal, "LogoutEpicAccountPortal" }, // 3492992341
+		{ &Z_Construct_UFunction_UFGLocalPlayer_OnComandlineInviteSearchComplete, "OnComandlineInviteSearchComplete" }, // 2194926709
 		{ &Z_Construct_UFunction_UFGLocalPlayer_OnLoginFailed_OpenMap, "OnLoginFailed_OpenMap" }, // 3154866856
 		{ &Z_Construct_UFunction_UFGLocalPlayer_OnPresenceFailedToUpdate_OpenMap, "OnPresenceFailedToUpdate_OpenMap" }, // 7998150
 		{ &Z_Construct_UFunction_UFGLocalPlayer_OpenMap_WaitForPresence, "OpenMap_WaitForPresence" }, // 3221449271
@@ -1545,7 +1530,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGLocalPlayer, 3231885574);
+	IMPLEMENT_CLASS(UFGLocalPlayer, 223616174);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGLocalPlayer>()
 	{
 		return UFGLocalPlayer::StaticClass();

@@ -112,6 +112,14 @@ static inline void FInventoryResized_DelegateWrapper(const FMulticastScriptDeleg
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execIsLocked) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsLocked(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execSetCanBeRearranged) \
 	{ \
 		P_GET_UBOOL(Z_Param_canBeRearranged); \
@@ -445,6 +453,14 @@ static inline void FInventoryResized_DelegateWrapper(const FMulticastScriptDeleg
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_InventoryStacks(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsLocked) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsLocked(); \
 		P_NATIVE_END; \
 	} \
  \

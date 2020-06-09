@@ -173,6 +173,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGPowerCircuit); \
 	FORCEINLINE static uint32 __PPO__mPowerProductionCapacity() { return STRUCT_OFFSET(UFGPowerCircuit, mPowerProductionCapacity); } \
 	FORCEINLINE static uint32 __PPO__mPowerProduced() { return STRUCT_OFFSET(UFGPowerCircuit, mPowerProduced); } \
 	FORCEINLINE static uint32 __PPO__mPowerConsumed() { return STRUCT_OFFSET(UFGPowerCircuit, mPowerConsumed); } \
+	FORCEINLINE static uint32 __PPO__mMaximumPowerDemand() { return STRUCT_OFFSET(UFGPowerCircuit, mMaximumPowerDemand); } \
 	FORCEINLINE static uint32 __PPO__mIsFuseTriggered() { return STRUCT_OFFSET(UFGPowerCircuit, mIsFuseTriggered); } \
 	FORCEINLINE static uint32 __PPO__mPowerStats() { return STRUCT_OFFSET(UFGPowerCircuit, mPowerStats); }
 

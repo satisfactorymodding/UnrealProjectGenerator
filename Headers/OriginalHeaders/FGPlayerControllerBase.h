@@ -2,7 +2,11 @@
 
 #include "Online.h"
 #include "FGInputLibrary.h"
+#include "PlayerPresenceState.h"
 #include "FGPlayerControllerBase.generated.h"
+
+
+
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE( FOnInputChanged );
 
@@ -100,6 +104,11 @@ public:
 
 	UFUNCTION( BlueprintNativeEvent, Category="FactoryGame|Online|Presence") 
 	FString GetPresenceString() const;
+
+	virtual bool GetPresenceState(FPlayerPresenceState& outState) const 
+	{
+		return false;
+	};
 
 	/** Set CurrentNetSpeed to the lower of its current value and Cap, can update during the game to the new value if server updates it's bandwith due to options */
 	UFUNCTION(Reliable, Client)

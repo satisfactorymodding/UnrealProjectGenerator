@@ -17,9 +17,9 @@ public:
 	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
 	virtual void InitReplicationDetailActor( class AFGBuildable* owningActor ) override;
 	virtual void FlushReplicationActorStateToOwner() override;
-
+	virtual bool HasCompletedInitialReplication() const override;
+	
 	FORCEINLINE UFGInventoryComponent* GetStorageInventory() const { return mStorageInventory; }
-
 protected:
 	UPROPERTY( Replicated )
 	class UFGInventoryComponent* mStorageInventory;

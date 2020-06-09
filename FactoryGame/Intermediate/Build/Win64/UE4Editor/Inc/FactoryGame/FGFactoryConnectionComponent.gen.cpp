@@ -203,7 +203,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Connection" },
+		{ "Category", "FactoryGame|Factory|FactoryConnection" },
 		{ "CPP_Default_type", "None" },
 		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Grab the output on a connection (Grabs 1 resource).\n@param type - Type to grab if output has multiple types, nullptr for any.\n@param offset - if we are grabbing from a belt the item might have an offset beyond the belt's length\n@return valid resource descriptor on success; nullptr if no output of given type exists." },
@@ -251,7 +251,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Connection" },
+		{ "Category", "FactoryGame|Factory|FactoryConnection" },
 		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Internal function, for when overloading how to handle a grab, grabs our output from a inventory" },
 	};
@@ -301,7 +301,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Connection" },
+		{ "Category", "FactoryGame|Factory|FactoryConnection" },
 		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Internal function, for when overloading how to handle a peek, peeks our output from a inventory" },
 	};
@@ -351,7 +351,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Connection" },
+		{ "Category", "FactoryGame|Factory|FactoryConnection" },
 		{ "CPP_Default_type", "None" },
 		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Check this connection has a output\n@param type - Optionally check the type of the output, nullptr for any.\n@return true if it has output; false if no output or" },
@@ -389,7 +389,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Connection" },
+		{ "Category", "FactoryGame|Factory|FactoryConnection" },
 		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Return the connector used for this connection." },
 	};
@@ -423,7 +423,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Connection" },
+		{ "Category", "FactoryGame|Factory|FactoryConnection" },
 		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Return the clearance needed when routing a conveyor belt from this connection." },
 	};
@@ -460,7 +460,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Connection" },
+		{ "Category", "FactoryGame|Factory|FactoryConnection" },
 		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Return the direction for this connection." },
 	};
@@ -502,7 +502,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Connection" },
+		{ "Category", "FactoryGame|Factory|FactoryConnection" },
 		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Return the inventory associated with this connection." },
 	};
@@ -541,7 +541,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Connection" },
+		{ "Category", "FactoryGame|Factory|FactoryConnection" },
 		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
 		{ "ToolTip", "Is this connection connected to anything.\n@return - true if connected; otherwise false. Always false if attached to hologram, snap only or bad index configuration." },
 	};
@@ -616,15 +616,15 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput, "Factory_GrabOutput" }, // 3531708920
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory, "Factory_Internal_GrabOutputInventory" }, // 3385693308
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory, "Factory_Internal_PeekOutputInventory" }, // 1683836884
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput, "Factory_PeekOutput" }, // 151769315
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector, "GetConnector" }, // 1167721320
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance, "GetConnectorClearance" }, // 726917012
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection, "GetDirection" }, // 4259024102
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory, "GetInventory" }, // 3594924891
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected, "IsConnected" }, // 1352320899
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput, "Factory_GrabOutput" }, // 1985949082
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory, "Factory_Internal_GrabOutputInventory" }, // 3339618774
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory, "Factory_Internal_PeekOutputInventory" }, // 1835087070
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput, "Factory_PeekOutput" }, // 2738430573
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector, "GetConnector" }, // 2587491221
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance, "GetConnectorClearance" }, // 4229841950
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection, "GetDirection" }, // 3722906510
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory, "GetInventory" }, // 822135526
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected, "IsConnected" }, // 771909840
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::Class_MetaDataParams[] = {
@@ -647,7 +647,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	{
 		((UFGFactoryConnectionComponent*)Obj)->mForwardPeekAndGrabToBuildable = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable = { "mForwardPeekAndGrabToBuildable", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UFGFactoryConnectionComponent), &Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable = { "mForwardPeekAndGrabToBuildable", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGFactoryConnectionComponent), &Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mOuterBuildable_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
@@ -755,7 +755,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFactoryConnectionComponent, 504719642);
+	IMPLEMENT_CLASS(UFGFactoryConnectionComponent, 2267656344);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFactoryConnectionComponent>()
 	{
 		return UFGFactoryConnectionComponent::StaticClass();

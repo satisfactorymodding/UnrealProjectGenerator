@@ -67,6 +67,8 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGPlayerState_h_133_RPC_WRAPPERS \
+	virtual bool Server_UpdateNumObservedInventorySlots_Validate(); \
+	virtual void Server_UpdateNumObservedInventorySlots_Implementation(); \
 	virtual bool Server_SetCompassFilter_Validate(ERepresentationType , bool ); \
 	virtual void Server_SetCompassFilter_Implementation(ERepresentationType representationType, bool visible); \
 	virtual bool Server_SetMapFilter_Validate(ERepresentationType , bool ); \
@@ -77,6 +79,19 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 	virtual void Server_SetOnlyShowAffordableRecipes_Implementation(bool enabled); \
 	virtual bool Server_RemoveRecipe_Validate(TSubclassOf<UFGRecipe>  ); \
 	virtual void Server_RemoveRecipe_Implementation(TSubclassOf<UFGRecipe>  recipe); \
+ \
+	DECLARE_FUNCTION(execServer_UpdateNumObservedInventorySlots) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_UpdateNumObservedInventorySlots_Validate()) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_UpdateNumObservedInventorySlots_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_UpdateNumObservedInventorySlots_Implementation(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execOnRep_CurrentHotbarIndex) \
 	{ \
@@ -91,6 +106,22 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_HotbarShortcuts(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execUpdateNumObservedInventorySlots) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->UpdateNumObservedInventorySlots(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNumObservedInventorySlots) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetNumObservedInventorySlots(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -381,6 +412,8 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGPlayerState_h_133_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual bool Server_UpdateNumObservedInventorySlots_Validate(); \
+	virtual void Server_UpdateNumObservedInventorySlots_Implementation(); \
 	virtual bool Server_SetCompassFilter_Validate(ERepresentationType , bool ); \
 	virtual void Server_SetCompassFilter_Implementation(ERepresentationType representationType, bool visible); \
 	virtual bool Server_SetMapFilter_Validate(ERepresentationType , bool ); \
@@ -391,6 +424,19 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 	virtual void Server_SetOnlyShowAffordableRecipes_Implementation(bool enabled); \
 	virtual bool Server_RemoveRecipe_Validate(TSubclassOf<UFGRecipe>  ); \
 	virtual void Server_RemoveRecipe_Implementation(TSubclassOf<UFGRecipe>  recipe); \
+ \
+	DECLARE_FUNCTION(execServer_UpdateNumObservedInventorySlots) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_UpdateNumObservedInventorySlots_Validate()) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_UpdateNumObservedInventorySlots_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_UpdateNumObservedInventorySlots_Implementation(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execOnRep_CurrentHotbarIndex) \
 	{ \
@@ -405,6 +451,22 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_HotbarShortcuts(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execUpdateNumObservedInventorySlots) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->UpdateNumObservedInventorySlots(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNumObservedInventorySlots) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetNumObservedInventorySlots(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -789,7 +851,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGPlayerState); \
 	FORCEINLINE static uint32 __PPO__mCollapsedItemCategories() { return STRUCT_OFFSET(AFGPlayerState, mCollapsedItemCategories); } \
 	FORCEINLINE static uint32 __PPO__mFilteredOutMapTypes() { return STRUCT_OFFSET(AFGPlayerState, mFilteredOutMapTypes); } \
 	FORCEINLINE static uint32 __PPO__mFilteredOutCompassTypes() { return STRUCT_OFFSET(AFGPlayerState, mFilteredOutCompassTypes); } \
-	FORCEINLINE static uint32 __PPO__mLastSelectedResourceSinkShopCategory() { return STRUCT_OFFSET(AFGPlayerState, mLastSelectedResourceSinkShopCategory); }
+	FORCEINLINE static uint32 __PPO__mLastSelectedResourceSinkShopCategory() { return STRUCT_OFFSET(AFGPlayerState, mLastSelectedResourceSinkShopCategory); } \
+	FORCEINLINE static uint32 __PPO__mNumObservedInventorySlots() { return STRUCT_OFFSET(AFGPlayerState, mNumObservedInventorySlots); }
 
 
 #define FactoryGame_Source_FactoryGame_Public_FGPlayerState_h_130_PROLOG \

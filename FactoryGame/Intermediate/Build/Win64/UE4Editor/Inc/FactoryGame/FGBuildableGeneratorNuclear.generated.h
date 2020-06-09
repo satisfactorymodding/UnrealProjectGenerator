@@ -79,8 +79,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableGeneratorNuclear); \
 
 
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableGeneratorNuclear_h_19_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mOutputInventory() { return STRUCT_OFFSET(AFGBuildableGeneratorNuclear, mOutputInventory); } \
-	FORCEINLINE static uint32 __PPO__mOutputInventoryHandler() { return STRUCT_OFFSET(AFGBuildableGeneratorNuclear, mOutputInventoryHandler); } \
 	FORCEINLINE static uint32 __PPO__mWasteLeftFromCurrentFuel() { return STRUCT_OFFSET(AFGBuildableGeneratorNuclear, mWasteLeftFromCurrentFuel); }
 
 

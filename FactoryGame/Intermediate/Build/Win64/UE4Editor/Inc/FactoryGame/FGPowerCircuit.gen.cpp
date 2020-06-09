@@ -531,6 +531,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 		static void NewProp_mIsFuseTriggered_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mIsFuseTriggered;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMaximumPowerDemand_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMaximumPowerDemand;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPowerConsumed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mPowerConsumed;
@@ -583,6 +587,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mIsFuseTriggered = { "mIsFuseTriggered", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGPowerCircuit), &Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mIsFuseTriggered_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mIsFuseTriggered_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mIsFuseTriggered_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mMaximumPowerDemand_MetaData[] = {
+		{ "ModuleRelativePath", "Public/FGPowerCircuit.h" },
+		{ "ToolTip", "The maximum power that can be demanded by all connected infos." },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mMaximumPowerDemand = { "mMaximumPowerDemand", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPowerCircuit, mMaximumPowerDemand), METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mMaximumPowerDemand_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mMaximumPowerDemand_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerConsumed_MetaData[] = {
 		{ "ModuleRelativePath", "Public/FGPowerCircuit.h" },
 		{ "ToolTip", "Total amount of energy consumed in the circuit." },
@@ -606,6 +617,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGPowerCircuit_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerStats,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mIsFuseTriggered,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mMaximumPowerDemand,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerConsumed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerProduced,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerProductionCapacity,
@@ -637,7 +649,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPowerCircuit, 1790741391);
+	IMPLEMENT_CLASS(UFGPowerCircuit, 3565940117);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGPowerCircuit>()
 	{
 		return UFGPowerCircuit::StaticClass();
