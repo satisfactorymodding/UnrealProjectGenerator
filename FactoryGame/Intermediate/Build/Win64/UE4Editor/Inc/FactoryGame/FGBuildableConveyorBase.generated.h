@@ -303,13 +303,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableConveyorBase); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildableConveyorBase)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableConveyorBase_h_618_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mSpeed() { return STRUCT_OFFSET(AFGBuildableConveyorBase, mSpeed); } \
-	FORCEINLINE static uint32 __PPO__mItems() { return STRUCT_OFFSET(AFGBuildableConveyorBase, mItems); } \
-	FORCEINLINE static uint32 __PPO__mConnection0() { return STRUCT_OFFSET(AFGBuildableConveyorBase, mConnection0); } \
-	FORCEINLINE static uint32 __PPO__mConnection1() { return STRUCT_OFFSET(AFGBuildableConveyorBase, mConnection1); }
-
-
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableConveyorBase_h_618_PRIVATE_PROPERTY_OFFSET
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableConveyorBase_h_615_PROLOG
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableConveyorBase_h_618_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

@@ -8,8 +8,8 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class UFGPopupWidget;
 class UUserWidget;
+class UFGPopupWidget;
 struct FPopupData;
 #ifdef FACTORYGAME_FGBaseUI_generated_h
 #error "FGBaseUI.generated.h already included, missing '#pragma once' in FGBaseUI.h"
@@ -17,6 +17,15 @@ struct FPopupData;
 #define FACTORYGAME_FGBaseUI_generated_h
 
 #define FactoryGame_Source_FactoryGame_Public_UI_FGBaseUI_h_20_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execClearPopupQueueOfClass) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_widgetClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ClearPopupQueueOfClass(Z_Param_widgetClass); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execSetPopup) \
 	{ \
@@ -58,6 +67,15 @@ struct FPopupData;
 
 
 #define FactoryGame_Source_FactoryGame_Public_UI_FGBaseUI_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execClearPopupQueueOfClass) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_widgetClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ClearPopupQueueOfClass(Z_Param_widgetClass); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execSetPopup) \
 	{ \

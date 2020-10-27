@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWheeledVehicleHologram, 3570582859);
+	IMPLEMENT_CLASS(AFGWheeledVehicleHologram, 3018671518);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWheeledVehicleHologram>()
 	{
 		return AFGWheeledVehicleHologram::StaticClass();

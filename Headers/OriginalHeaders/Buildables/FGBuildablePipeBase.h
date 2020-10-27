@@ -84,6 +84,9 @@ protected:
 	/** Length of the pipe in centimeters. */
 	float mLength;
 
+	/** Should we use per segment or should we try to scale the mesh to fit. **/
+	bool mUsePerSegmentSplining;
+
 	/**
 	 * First connection on the pipe (can be an input and an output, because, again, pipes)
 	 * MUST BE SET FROM CONSTRUCTION SCRIPT OR IT WILL BE NULL!

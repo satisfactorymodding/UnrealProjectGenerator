@@ -1607,7 +1607,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameUI, 333021526);
+	IMPLEMENT_CLASS(UFGGameUI, 1770790112);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGGameUI>()
 	{
 		return UFGGameUI::StaticClass();

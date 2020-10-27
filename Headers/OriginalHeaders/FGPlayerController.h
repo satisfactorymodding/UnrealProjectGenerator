@@ -287,6 +287,12 @@ public:
 
 	virtual bool GetPresenceState(FPlayerPresenceState& outState) const override;
 
+	/** Templated getter for RCO */
+	template<typename T>
+	FORCEINLINE T* GetRemoteCallObjectOfClass() 
+	{ 
+		return Cast<T>(GetRemoteCallObjectOfClass(T::StaticClass()));
+	}
 
 protected:
 	/** Pontentially spawns deathcreate when disconnecting if we are dead */

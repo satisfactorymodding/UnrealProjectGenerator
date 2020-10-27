@@ -5,7 +5,7 @@
 #include "FGPowerInfoComponent.h"
 
 #if WITH_EDITOR
-void AFGBuildableRadarTower::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent){ }
+void AFGBuildableRadarTower::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent){ Super::PostEditChangeProperty(PropertyChangedEvent); }
 #endif 
 AFGBuildableRadarTower::AFGBuildableRadarTower() : Super() {
 	this->mMinRevealRadius = 60000;

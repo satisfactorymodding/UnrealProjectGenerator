@@ -36,9 +36,9 @@ protected:
 	UPROPERTY( EditDefaultsOnly, Category = "Pipeline Attachment" )
 	float mRadius;
 
-	/** Fluid Box volume scale. WIll multiply the determined volume by this scalar ( useful if the object is physically smaller than its desired volume ) */
+	/** Volume of the fluid box inside this attachment. [m3] */
 	UPROPERTY( EditDefaultsOnly, Category = "Pipeline Attachment" )
-	float mFluidBoxVolumeScale;
+	float mFluidBoxVolume;
 
 	/** Fluid box belonging to this integrant */
 	UPROPERTY( SaveGame )
@@ -54,5 +54,4 @@ protected:
 	*/
 	UPROPERTY()
 	TSubclassOf< class UFGItemDescriptor > mCachedFluidDescriptor;
-
 };

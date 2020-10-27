@@ -366,16 +366,64 @@ public:
 	void ToggleTrainSelfDriving();
 
 	UFUNCTION( exec )
-	void FillFirstPipeInEachNetwork();
+	void PipeFillFirstInEachNetwork();
 
 	UFUNCTION( exec )
-	void EmptyAllPipes();
+	void PipeEmptyAll();
 
 	UFUNCTION( exec )
-	void ResetAllPipes();
+	void PipeResetAll();
+	
+	UFUNCTION( exec )
+	void PipePrintMinSizes();
 
 	UFUNCTION( exec )
-	void ToggleDebuggingOnPipe();
+    void PipeSetVerboseLoggingOnAimedFluidBox( bool enabled );
+
+	UFUNCTION( exec )
+	void PipeEnableProbingOnAimedIntegrant();
+	
+	UFUNCTION( exec )
+    void PipeDisableProbingOnAimedIntegrant();
+
+	UFUNCTION( exec )
+    void PipeClearProbingOnAllPipe();
+
+	UFUNCTION( exec )
+    void PipeAddSelectedNetworkToDisplayDebugList();
+
+	UFUNCTION( exec )
+    void PipeClearDisplayDebugList();
+
+	UFUNCTION( exec )
+	void PipePrintTweakables();
+	
+	UFUNCTION( exec )
+	void PipeTweakMaximumFlow( float rate );
+
+	UFUNCTION( exec )
+    void PipeTweakMinimumMaxContent( float minimumMaxContent, bool keepRelativeContent );
+	
+	UFUNCTION( exec )
+	void PipeTweakPressureLoss( float pressureLoss );
+
+	UFUNCTION( exec )
+	void PipeTweakOverfill( float maxOverfillPct, float maxOverfillForPressure );
+
+	UFUNCTION( exec )
+    void PipeTweakGravity( float gravity );
+	
+	UFUNCTION( exec )
+	void PipeTweakFluidFriction( float fluidFriction );
+
+	UFUNCTION( exec )
+    void PipeTweakFluidDensity( float fluidDensity );
+
+	UFUNCTION( exec )
+    void PipeTweakFluidViscosity( float fluidViscosity );
+
+	UFUNCTION( exec )
+    void PipeTweakSubStepping( float targetDeltaSeconds, int32 maxSubSteps );
 
 	/** Duplicate a component within a circuit so it contains multiple entries for the same component. */
 	UFUNCTION( exec )
@@ -387,6 +435,12 @@ public:
 	UFUNCTION( exec )
 	void DumpConnectionString();
 
+private:
+	class UActorComponent* GetOuterPlayersUseComponent() const;
+	class AActor* GetOuterPlayersUseActor() const;
+	class AActor* GetOuterPlayersAimedAtActor( FVector& out_aimLocation ) const;
+	class IFGFluidIntegrantInterface* GetOuterPlayerAimedAtFluidInterface() const;
+	
 public:
 	/** This is used to make picking the same classes in the cheat board easier */
 	UPROPERTY( Config )

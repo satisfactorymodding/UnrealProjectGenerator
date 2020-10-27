@@ -33,7 +33,6 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGHologram_OnPendingConstructionHologramCreated();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGHologram_OnRep_InitialScrollModeValue();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGHologram_OnRep_PlacementMaterial();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGHologram_SetSplineMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGHologram_SpawnChildHologramFromRecipe();
 	ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
@@ -126,13 +125,6 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		Parms.fromHologram=fromHologram;
 		ProcessEvent(FindFunctionChecked(NAME_AFGHologram_OnPendingConstructionHologramCreated),&Parms);
 	}
-	static FName NAME_AFGHologram_Server_SetSnapToGuideLines = FName(TEXT("Server_SetSnapToGuideLines"));
-	void AFGHologram::Server_SetSnapToGuideLines(bool isEnabled)
-	{
-		FGHologram_eventServer_SetSnapToGuideLines_Parms Parms;
-		Parms.isEnabled=isEnabled ? true : false;
-		ProcessEvent(FindFunctionChecked(NAME_AFGHologram_Server_SetSnapToGuideLines),&Parms);
-	}
 	void AFGHologram::StaticRegisterNativesAFGHologram()
 	{
 		UClass* Class = AFGHologram::StaticClass();
@@ -148,7 +140,6 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 			{ "OnPendingConstructionHologramCreated", &AFGHologram::execOnPendingConstructionHologramCreated },
 			{ "OnRep_InitialScrollModeValue", &AFGHologram::execOnRep_InitialScrollModeValue },
 			{ "OnRep_PlacementMaterial", &AFGHologram::execOnRep_PlacementMaterial },
-			{ "Server_SetSnapToGuideLines", &AFGHologram::execServer_SetSnapToGuideLines },
 			{ "SetSplineMode", &AFGHologram::execSetSplineMode },
 			{ "SpawnChildHologramFromRecipe", &AFGHologram::execSpawnChildHologramFromRecipe },
 			{ "SpawnHologramFromRecipe", &AFGHologram::execSpawnHologramFromRecipe },
@@ -513,40 +504,6 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics
-	{
-		static void NewProp_isEnabled_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_isEnabled;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::NewProp_isEnabled_SetBit(void* Obj)
-	{
-		((FGHologram_eventServer_SetSnapToGuideLines_Parms*)Obj)->isEnabled = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::NewProp_isEnabled = { "isEnabled", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGHologram_eventServer_SetSnapToGuideLines_Parms), &Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::NewProp_isEnabled_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::NewProp_isEnabled,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/Hologram/FGHologram.h" },
-		{ "ToolTip", "Set hologram to snap to guide lines on server" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, nullptr, "Server_SetSnapToGuideLines", sizeof(FGHologram_eventServer_SetSnapToGuideLines_Parms), Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_AFGHologram_SetSplineMode_Statics
 	{
 		struct FGHologram_eventSetSplineMode_Parms
@@ -791,7 +748,6 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		{ &Z_Construct_UFunction_AFGHologram_OnPendingConstructionHologramCreated, "OnPendingConstructionHologramCreated" }, // 3003256174
 		{ &Z_Construct_UFunction_AFGHologram_OnRep_InitialScrollModeValue, "OnRep_InitialScrollModeValue" }, // 1802640521
 		{ &Z_Construct_UFunction_AFGHologram_OnRep_PlacementMaterial, "OnRep_PlacementMaterial" }, // 3054200716
-		{ &Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines, "Server_SetSnapToGuideLines" }, // 3970620022
 		{ &Z_Construct_UFunction_AFGHologram_SetSplineMode, "SetSplineMode" }, // 2975724247
 		{ &Z_Construct_UFunction_AFGHologram_SpawnChildHologramFromRecipe, "SpawnChildHologramFromRecipe" }, // 1944763016
 		{ &Z_Construct_UFunction_AFGHologram_SpawnHologramFromRecipe, "SpawnHologramFromRecipe" }, // 274469260
@@ -987,7 +943,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGHologram, 1355680448);
+	IMPLEMENT_CLASS(AFGHologram, 3189518158);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGHologram>()
 	{
 		return AFGHologram::StaticClass();

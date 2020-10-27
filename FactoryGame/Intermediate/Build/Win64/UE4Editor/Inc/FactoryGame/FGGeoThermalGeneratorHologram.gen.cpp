@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGeoThermalGeneratorHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGeoThermalGeneratorHologram, 2167248376);
+	IMPLEMENT_CLASS(AFGGeoThermalGeneratorHologram, 3216431379);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGeoThermalGeneratorHologram>()
 	{
 		return AFGGeoThermalGeneratorHologram::StaticClass();

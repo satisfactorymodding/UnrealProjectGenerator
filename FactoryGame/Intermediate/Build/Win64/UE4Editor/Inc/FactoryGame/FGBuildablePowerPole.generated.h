@@ -17,19 +17,12 @@ class UFGPowerCircuit;
 
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execGetCachedNumConnections) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetCachedNumConnections(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetPowerConnection) \
 	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_index); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(UFGPowerConnectionComponent**)Z_Param__Result=P_THIS->GetPowerConnection(); \
+		*(UFGPowerConnectionComponent**)Z_Param__Result=P_THIS->GetPowerConnection(Z_Param_index); \
 		P_NATIVE_END; \
 	} \
  \
@@ -44,19 +37,12 @@ class UFGPowerCircuit;
 
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execGetCachedNumConnections) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetCachedNumConnections(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetPowerConnection) \
 	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_index); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(UFGPowerConnectionComponent**)Z_Param__Result=P_THIS->GetPowerConnection(); \
+		*(UFGPowerConnectionComponent**)Z_Param__Result=P_THIS->GetPowerConnection(Z_Param_index); \
 		P_NATIVE_END; \
 	} \
  \
@@ -69,8 +55,6 @@ class UFGPowerCircuit;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_EVENT_PARMS
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_CALLBACK_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildablePowerPole(); \
@@ -116,21 +100,16 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildablePowerPole); \
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mConnectionsWidgetComponent() { return STRUCT_OFFSET(AFGBuildablePowerPole, mConnectionsWidgetComponent); } \
 	FORCEINLINE static uint32 __PPO__mConnectionWidgetClass() { return STRUCT_OFFSET(AFGBuildablePowerPole, mConnectionWidgetClass); } \
-	FORCEINLINE static uint32 __PPO__mPowerConnection() { return STRUCT_OFFSET(AFGBuildablePowerPole, mPowerConnection); } \
-	FORCEINLINE static uint32 __PPO__mMeshComponentProxy() { return STRUCT_OFFSET(AFGBuildablePowerPole, mMeshComponentProxy); } \
-	FORCEINLINE static uint32 __PPO__mCachedNumConnectionsToPole() { return STRUCT_OFFSET(AFGBuildablePowerPole, mCachedNumConnectionsToPole); }
+	FORCEINLINE static uint32 __PPO__mPowerConnections() { return STRUCT_OFFSET(AFGBuildablePowerPole, mPowerConnections); } \
+	FORCEINLINE static uint32 __PPO__mMeshComponentProxy() { return STRUCT_OFFSET(AFGBuildablePowerPole, mMeshComponentProxy); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_14_PROLOG \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_EVENT_PARMS
-
-
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_14_PROLOG
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_PRIVATE_PROPERTY_OFFSET \
 	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_CALLBACK_WRAPPERS \
 	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_INCLASS \
 	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_STANDARD_CONSTRUCTORS \
 public: \
@@ -142,7 +121,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_PRIVATE_PROPERTY_OFFSET \
 	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_CALLBACK_WRAPPERS \
 	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_INCLASS_NO_PURE_DECLS \
 	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildablePowerPole_h_17_ENHANCED_CONSTRUCTORS \
 private: \

@@ -17,12 +17,14 @@ void EmptyLinkFunctionForGeneratedCodeFGWireHologram() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGWireHologram();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableHologram();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWireHologram_GetActiveAutomaticPoleHologram();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGPowerPoleHologram_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGWireHologram_OnAutomaticPoleDisableToggle();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipe_NoRegister();
-	FACTORYGAME_API UClass* Z_Construct_UClass_AFGPowerPoleHologram_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGPowerPoleWallHologram_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGCircuitConnectionComponent_NoRegister();
 // End Cross Module References
 	static FName NAME_AFGWireHologram_OnAutomaticPoleDisableToggle = FName(TEXT("OnAutomaticPoleDisableToggle"));
@@ -34,6 +36,45 @@ void EmptyLinkFunctionForGeneratedCodeFGWireHologram() {}
 	}
 	void AFGWireHologram::StaticRegisterNativesAFGWireHologram()
 	{
+		UClass* Class = AFGWireHologram::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "GetActiveAutomaticPoleHologram", &AFGWireHologram::execGetActiveAutomaticPoleHologram },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AFGWireHologram_GetActiveAutomaticPoleHologram_Statics
+	{
+		struct FGWireHologram_eventGetActiveAutomaticPoleHologram_Parms
+		{
+			AFGPowerPoleHologram* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGWireHologram_GetActiveAutomaticPoleHologram_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWireHologram_eventGetActiveAutomaticPoleHologram_Parms, ReturnValue), Z_Construct_UClass_AFGPowerPoleHologram_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGWireHologram_GetActiveAutomaticPoleHologram_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGWireHologram_GetActiveAutomaticPoleHologram_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWireHologram_GetActiveAutomaticPoleHologram_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Power Pole" },
+		{ "ModuleRelativePath", "Public/Hologram/FGWireHologram.h" },
+		{ "ToolTip", "End AFGBuildableHologram Interface" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWireHologram_GetActiveAutomaticPoleHologram_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWireHologram, nullptr, "GetActiveAutomaticPoleHologram", sizeof(FGWireHologram_eventGetActiveAutomaticPoleHologram_Parms), Z_Construct_UFunction_AFGWireHologram_GetActiveAutomaticPoleHologram_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGWireHologram_GetActiveAutomaticPoleHologram_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWireHologram_GetActiveAutomaticPoleHologram_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWireHologram_GetActiveAutomaticPoleHologram_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGWireHologram_GetActiveAutomaticPoleHologram()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGWireHologram_GetActiveAutomaticPoleHologram_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AFGWireHologram_OnAutomaticPoleDisableToggle_Statics
 	{
@@ -93,9 +134,17 @@ void EmptyLinkFunctionForGeneratedCodeFGWireHologram() {}
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mStartLocation;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDefaultPowerPoleWallRecipe_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mDefaultPowerPoleWallRecipe;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDefaultPowerPoleRecipe_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mDefaultPowerPoleRecipe;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPowerPoleWall_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mPowerPoleWall;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPowerPole_MetaData[];
 #endif
@@ -113,6 +162,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWireHologram() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGWireHologram_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFGWireHologram_GetActiveAutomaticPoleHologram, "GetActiveAutomaticPoleHologram" }, // 2767696887
 		{ &Z_Construct_UFunction_AFGWireHologram_OnAutomaticPoleDisableToggle, "OnAutomaticPoleDisableToggle" }, // 3352330307
 	};
 #if WITH_METADATA
@@ -146,12 +196,25 @@ void EmptyLinkFunctionForGeneratedCodeFGWireHologram() {}
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mStartLocation = { "mStartLocation", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWireHologram, mStartLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mStartLocation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mStartLocation_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mDefaultPowerPoleWallRecipe_MetaData[] = {
+		{ "Category", "Power pole" },
+		{ "ModuleRelativePath", "Public/Hologram/FGWireHologram.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mDefaultPowerPoleWallRecipe = { "mDefaultPowerPoleWallRecipe", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWireHologram, mDefaultPowerPoleWallRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mDefaultPowerPoleWallRecipe_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mDefaultPowerPoleWallRecipe_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mDefaultPowerPoleRecipe_MetaData[] = {
 		{ "Category", "Power pole" },
 		{ "ModuleRelativePath", "Public/Hologram/FGWireHologram.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mDefaultPowerPoleRecipe = { "mDefaultPowerPoleRecipe", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWireHologram, mDefaultPowerPoleRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mDefaultPowerPoleRecipe_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mDefaultPowerPoleRecipe_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mPowerPoleWall_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Hologram/FGWireHologram.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mPowerPoleWall = { "mPowerPoleWall", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWireHologram, mPowerPoleWall), Z_Construct_UClass_AFGPowerPoleWallHologram_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mPowerPoleWall_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mPowerPoleWall_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mPowerPole_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Hologram/FGWireHologram.h" },
@@ -170,7 +233,9 @@ void EmptyLinkFunctionForGeneratedCodeFGWireHologram() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mWireMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mCurrentConnection,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mStartLocation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mDefaultPowerPoleWallRecipe,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mDefaultPowerPoleRecipe,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mPowerPoleWall,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mPowerPole,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mConnections,
 	};
@@ -201,7 +266,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWireHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWireHologram, 3050508013);
+	IMPLEMENT_CLASS(AFGWireHologram, 1295943387);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGWireHologram>()
 	{
 		return AFGWireHologram::StaticClass();

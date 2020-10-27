@@ -592,6 +592,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGResearchManager); \
 
 #define FactoryGame_Source_FactoryGame_Public_FGResearchManager_h_116_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mCanConductMultipleResearch() { return STRUCT_OFFSET(AFGResearchManager, mCanConductMultipleResearch); } \
+	FORCEINLINE static uint32 __PPO__mAllResearchTrees() { return STRUCT_OFFSET(AFGResearchManager, mAllResearchTrees); } \
 	FORCEINLINE static uint32 __PPO__mUnlockedResearchTrees() { return STRUCT_OFFSET(AFGResearchManager, mUnlockedResearchTrees); } \
 	FORCEINLINE static uint32 __PPO__mCompletedResearch() { return STRUCT_OFFSET(AFGResearchManager, mCompletedResearch); } \
 	FORCEINLINE static uint32 __PPO__mOngoingResearch() { return STRUCT_OFFSET(AFGResearchManager, mOngoingResearch); } \

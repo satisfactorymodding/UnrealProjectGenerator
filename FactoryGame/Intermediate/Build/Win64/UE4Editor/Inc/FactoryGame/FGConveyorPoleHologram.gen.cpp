@@ -90,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorPoleHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorPoleHologram, 4147935493);
+	IMPLEMENT_CLASS(AFGConveyorPoleHologram, 2262311648);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGConveyorPoleHologram>()
 	{
 		return AFGConveyorPoleHologram::StaticClass();

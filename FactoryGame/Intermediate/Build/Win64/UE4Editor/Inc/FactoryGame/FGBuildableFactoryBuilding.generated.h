@@ -13,16 +13,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGBuildableFactoryBuilding_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_13_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_56_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFoundationSideSelectionFlags>();
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildableFactoryBuilding(); \
 	friend struct Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics; \
@@ -31,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildableFactoryBuilding)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildableFactoryBuilding(); \
 	friend struct Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics; \
@@ -40,7 +40,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildableFactoryBuilding)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildableFactoryBuilding(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildableFactoryBuilding) \
@@ -53,7 +53,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGBuildableFactoryBuilding(AFGBuildableFactoryBuilding&&); \
@@ -64,29 +64,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableFactoryBuilding); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildableFactoryBuilding)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mMeshComponentProxy() { return STRUCT_OFFSET(AFGBuildableFactoryBuilding, mMeshComponentProxy); }
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_45_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_90_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_48_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h_93_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -96,5 +96,17 @@ template<> FACTORYGAME_API UClass* StaticClass<class AFGBuildableFactoryBuilding
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableFactoryBuilding_h
 
+
+#define FOREACH_ENUM_EFOUNDATIONSIDE(op) \
+	op(EFoundationSide::FoundationFront) \
+	op(EFoundationSide::FoundationRight) \
+	op(EFoundationSide::FoundationBack) \
+	op(EFoundationSide::FoundationLeft) \
+	op(EFoundationSide::FoundationTop) \
+	op(EFoundationSide::FoundationBottom) \
+	op(EFoundationSide::FoundationNumSides) 
+
+enum class EFoundationSide : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EFoundationSide>();
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

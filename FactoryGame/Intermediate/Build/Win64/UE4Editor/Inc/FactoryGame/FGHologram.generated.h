@@ -23,8 +23,6 @@ class APawn;
 #define FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_46_RPC_WRAPPERS \
 	virtual void Client_PlaySnapSound_Implementation(); \
 	virtual void OnPendingConstructionHologramCreated_Implementation(AFGHologram* fromHologram); \
-	virtual bool Server_SetSnapToGuideLines_Validate(bool ); \
-	virtual void Server_SetSnapToGuideLines_Implementation(bool isEnabled); \
 	virtual void GetSupportedSplineModes_Implementation(TArray<EHologramSplinePathMode>& out_splineModes) const; \
  \
 	DECLARE_FUNCTION(execOnRep_InitialScrollModeValue) \
@@ -99,20 +97,6 @@ class APawn;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->GetNoSnapMode(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execServer_SetSnapToGuideLines) \
-	{ \
-		P_GET_UBOOL(Z_Param_isEnabled); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		if (!P_THIS->Server_SetSnapToGuideLines_Validate(Z_Param_isEnabled)) \
-		{ \
-			RPC_ValidateFailed(TEXT("Server_SetSnapToGuideLines_Validate")); \
-			return; \
-		} \
-		P_THIS->Server_SetSnapToGuideLines_Implementation(Z_Param_isEnabled); \
 		P_NATIVE_END; \
 	} \
  \
@@ -171,8 +155,6 @@ class APawn;
 #define FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void Client_PlaySnapSound_Implementation(); \
 	virtual void OnPendingConstructionHologramCreated_Implementation(AFGHologram* fromHologram); \
-	virtual bool Server_SetSnapToGuideLines_Validate(bool ); \
-	virtual void Server_SetSnapToGuideLines_Implementation(bool isEnabled); \
 	virtual void GetSupportedSplineModes_Implementation(TArray<EHologramSplinePathMode>& out_splineModes) const; \
  \
 	DECLARE_FUNCTION(execOnRep_InitialScrollModeValue) \
@@ -247,20 +229,6 @@ class APawn;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->GetNoSnapMode(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execServer_SetSnapToGuideLines) \
-	{ \
-		P_GET_UBOOL(Z_Param_isEnabled); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		if (!P_THIS->Server_SetSnapToGuideLines_Validate(Z_Param_isEnabled)) \
-		{ \
-			RPC_ValidateFailed(TEXT("Server_SetSnapToGuideLines_Validate")); \
-			return; \
-		} \
-		P_THIS->Server_SetSnapToGuideLines_Implementation(Z_Param_isEnabled); \
 		P_NATIVE_END; \
 	} \
  \
@@ -324,10 +292,6 @@ class APawn;
 	struct FGHologram_eventOnPendingConstructionHologramCreated_Parms \
 	{ \
 		AFGHologram* fromHologram; \
-	}; \
-	struct FGHologram_eventServer_SetSnapToGuideLines_Parms \
-	{ \
-		bool isEnabled; \
 	};
 
 

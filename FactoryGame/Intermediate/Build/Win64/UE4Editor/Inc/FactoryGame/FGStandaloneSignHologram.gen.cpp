@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStandaloneSignHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGStandaloneSignHologram, 3435376654);
+	IMPLEMENT_CLASS(AFGStandaloneSignHologram, 1429722776);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGStandaloneSignHologram>()
 	{
 		return AFGStandaloneSignHologram::StaticClass();

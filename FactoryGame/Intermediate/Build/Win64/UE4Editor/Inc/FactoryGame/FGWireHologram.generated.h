@@ -8,13 +8,34 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AFGPowerPoleHologram;
 #ifdef FACTORYGAME_FGWireHologram_generated_h
 #error "FGWireHologram.generated.h already included, missing '#pragma once' in FGWireHologram.h"
 #endif
 #define FACTORYGAME_FGWireHologram_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_Hologram_FGWireHologram_h_23_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Public_Hologram_FGWireHologram_h_23_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGWireHologram_h_23_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetActiveAutomaticPoleHologram) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(AFGPowerPoleHologram**)Z_Param__Result=P_THIS->GetActiveAutomaticPoleHologram(); \
+		P_NATIVE_END; \
+	}
+
+
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGWireHologram_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetActiveAutomaticPoleHologram) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(AFGPowerPoleHologram**)Z_Param__Result=P_THIS->GetActiveAutomaticPoleHologram(); \
+		P_NATIVE_END; \
+	}
+
+
 #define FactoryGame_Source_FactoryGame_Public_Hologram_FGWireHologram_h_23_EVENT_PARMS \
 	struct FGWireHologram_eventOnAutomaticPoleDisableToggle_Parms \
 	{ \
@@ -68,7 +89,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGWireHologram); \
 #define FactoryGame_Source_FactoryGame_Public_Hologram_FGWireHologram_h_23_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mConnections() { return STRUCT_OFFSET(AFGWireHologram, mConnections); } \
 	FORCEINLINE static uint32 __PPO__mPowerPole() { return STRUCT_OFFSET(AFGWireHologram, mPowerPole); } \
+	FORCEINLINE static uint32 __PPO__mPowerPoleWall() { return STRUCT_OFFSET(AFGWireHologram, mPowerPoleWall); } \
 	FORCEINLINE static uint32 __PPO__mDefaultPowerPoleRecipe() { return STRUCT_OFFSET(AFGWireHologram, mDefaultPowerPoleRecipe); } \
+	FORCEINLINE static uint32 __PPO__mDefaultPowerPoleWallRecipe() { return STRUCT_OFFSET(AFGWireHologram, mDefaultPowerPoleWallRecipe); } \
 	FORCEINLINE static uint32 __PPO__mStartLocation() { return STRUCT_OFFSET(AFGWireHologram, mStartLocation); } \
 	FORCEINLINE static uint32 __PPO__mCurrentConnection() { return STRUCT_OFFSET(AFGWireHologram, mCurrentConnection); } \
 	FORCEINLINE static uint32 __PPO__mWireMesh() { return STRUCT_OFFSET(AFGWireHologram, mWireMesh); }

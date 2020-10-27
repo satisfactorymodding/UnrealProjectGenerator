@@ -53,6 +53,8 @@ static inline void FSplineModeChangedDelegate_DelegateWrapper(const FMulticastSc
 	virtual void Client_OnBuildableFailedConstruction_Implementation(FNetConstructionID netConstructionID); \
 	virtual void Client_OnBuildableConstructed_Implementation(TSubclassOf<UFGItemDescriptor>  desc); \
 	virtual void Client_OnResetHologram_Implementation(); \
+	virtual bool Server_ChangeGuideLinesSnapMode_Validate(bool ); \
+	virtual void Server_ChangeGuideLinesSnapMode_Implementation(bool enabled); \
 	virtual bool Server_ConstructHologram_Validate(FNetConstructionID , FConstructHologramMessage ); \
 	virtual void Server_ConstructHologram_Implementation(FNetConstructionID clientNetConstructID, FConstructHologramMessage data); \
  \
@@ -146,6 +148,20 @@ static inline void FSplineModeChangedDelegate_DelegateWrapper(const FMulticastSc
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(TArray<EHologramSplinePathMode>*)Z_Param__Result=P_THIS->GetSupportedSplineModes(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_ChangeGuideLinesSnapMode) \
+	{ \
+		P_GET_UBOOL(Z_Param_enabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_ChangeGuideLinesSnapMode_Validate(Z_Param_enabled)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_ChangeGuideLinesSnapMode_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_ChangeGuideLinesSnapMode_Implementation(Z_Param_enabled); \
 		P_NATIVE_END; \
 	} \
  \
@@ -193,6 +209,8 @@ static inline void FSplineModeChangedDelegate_DelegateWrapper(const FMulticastSc
 	virtual void Client_OnBuildableFailedConstruction_Implementation(FNetConstructionID netConstructionID); \
 	virtual void Client_OnBuildableConstructed_Implementation(TSubclassOf<UFGItemDescriptor>  desc); \
 	virtual void Client_OnResetHologram_Implementation(); \
+	virtual bool Server_ChangeGuideLinesSnapMode_Validate(bool ); \
+	virtual void Server_ChangeGuideLinesSnapMode_Implementation(bool enabled); \
 	virtual bool Server_ConstructHologram_Validate(FNetConstructionID , FConstructHologramMessage ); \
 	virtual void Server_ConstructHologram_Implementation(FNetConstructionID clientNetConstructID, FConstructHologramMessage data); \
  \
@@ -286,6 +304,20 @@ static inline void FSplineModeChangedDelegate_DelegateWrapper(const FMulticastSc
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(TArray<EHologramSplinePathMode>*)Z_Param__Result=P_THIS->GetSupportedSplineModes(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_ChangeGuideLinesSnapMode) \
+	{ \
+		P_GET_UBOOL(Z_Param_enabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_ChangeGuideLinesSnapMode_Validate(Z_Param_enabled)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_ChangeGuideLinesSnapMode_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_ChangeGuideLinesSnapMode_Implementation(Z_Param_enabled); \
 		P_NATIVE_END; \
 	} \
  \
@@ -341,6 +373,10 @@ static inline void FSplineModeChangedDelegate_DelegateWrapper(const FMulticastSc
 	struct FGBuildGunStateBuild_eventOnMultiStepPlacement_Parms \
 	{ \
 		bool isFinalStep; \
+	}; \
+	struct FGBuildGunStateBuild_eventServer_ChangeGuideLinesSnapMode_Parms \
+	{ \
+		bool enabled; \
 	}; \
 	struct FGBuildGunStateBuild_eventServer_ConstructHologram_Parms \
 	{ \

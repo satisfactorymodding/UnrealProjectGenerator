@@ -792,7 +792,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		{ "ToolTip", "Function that checks which map area our pawn is in" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_CheckPawnMapArea_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "CheckPawnMapArea", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_CheckPawnMapArea_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_CheckPawnMapArea_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_CheckPawnMapArea_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "CheckPawnMapArea", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_CheckPawnMapArea_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_CheckPawnMapArea_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGPlayerController_CheckPawnMapArea()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1331,7 +1331,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		{ "ToolTip", "Returns the map area that the pawn is currently in" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "GetCurrentMapArea", sizeof(FGPlayerController_eventGetCurrentMapArea_Parms), Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "GetCurrentMapArea", sizeof(FGPlayerController_eventGetCurrentMapArea_Parms), Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2207,7 +2207,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		{ "ToolTip", "Temp Nativized event to reduce refernces in RCO." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_OnDismantleGolfCart_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "OnDismantleGolfCart", sizeof(FGPlayerController_eventOnDismantleGolfCart_Parms), Z_Construct_UFunction_AFGPlayerController_OnDismantleGolfCart_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnDismantleGolfCart_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C080C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_OnDismantleGolfCart_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnDismantleGolfCart_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_OnDismantleGolfCart_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "OnDismantleGolfCart", sizeof(FGPlayerController_eventOnDismantleGolfCart_Parms), Z_Construct_UFunction_AFGPlayerController_OnDismantleGolfCart_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnDismantleGolfCart_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_OnDismantleGolfCart_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnDismantleGolfCart_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGPlayerController_OnDismantleGolfCart()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2237,7 +2237,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		{ "ToolTip", "Temp Nativized event to reduce refernces in RCO." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_OnDismantlePortableMiner_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "OnDismantlePortableMiner", sizeof(FGPlayerController_eventOnDismantlePortableMiner_Parms), Z_Construct_UFunction_AFGPlayerController_OnDismantlePortableMiner_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnDismantlePortableMiner_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C080C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_OnDismantlePortableMiner_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnDismantlePortableMiner_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_OnDismantlePortableMiner_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "OnDismantlePortableMiner", sizeof(FGPlayerController_eventOnDismantlePortableMiner_Parms), Z_Construct_UFunction_AFGPlayerController_OnDismantlePortableMiner_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnDismantlePortableMiner_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_OnDismantlePortableMiner_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnDismantlePortableMiner_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGPlayerController_OnDismantlePortableMiner()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2261,7 +2261,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		{ "ToolTip", "Called on owning client when respawning starts" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_OnFinishRespawn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "OnFinishRespawn", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_OnFinishRespawn_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnFinishRespawn_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_OnFinishRespawn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "OnFinishRespawn", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_OnFinishRespawn_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnFinishRespawn_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGPlayerController_OnFinishRespawn()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2284,7 +2284,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		{ "ToolTip", "User pressed primary fire button" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_OnPrimaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "OnPrimaryFire", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_OnPrimaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnPrimaryFire_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_OnPrimaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "OnPrimaryFire", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_OnPrimaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnPrimaryFire_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGPlayerController_OnPrimaryFire()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2344,7 +2344,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		{ "ToolTip", "Called on start of a local client player. Reutrn the component that should handle the wind for the player" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "OnSetupMovementWind", sizeof(FGPlayerController_eventOnSetupMovementWind_Parms), Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "OnSetupMovementWind", sizeof(FGPlayerController_eventOnSetupMovementWind_Parms), Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2379,7 +2379,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		{ "ToolTip", "Called on owning client when respawning starts" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_OnStartRespawn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "OnStartRespawn", sizeof(FGPlayerController_eventOnStartRespawn_Parms), Z_Construct_UFunction_AFGPlayerController_OnStartRespawn_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnStartRespawn_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_OnStartRespawn_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnStartRespawn_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_OnStartRespawn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, nullptr, "OnStartRespawn", sizeof(FGPlayerController_eventOnStartRespawn_Parms), Z_Construct_UFunction_AFGPlayerController_OnStartRespawn_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnStartRespawn_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_OnStartRespawn_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnStartRespawn_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGPlayerController_OnStartRespawn()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3286,7 +3286,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		{ &Z_Construct_UFunction_AFGPlayerController_CanCreateNewPresetHotbar, "CanCreateNewPresetHotbar" }, // 4184570816
 		{ &Z_Construct_UFunction_AFGPlayerController_ChangeIconIndexOfPresetHotbar, "ChangeIconIndexOfPresetHotbar" }, // 3899306338
 		{ &Z_Construct_UFunction_AFGPlayerController_ChangeNameOfPresetHotbar, "ChangeNameOfPresetHotbar" }, // 2610106255
-		{ &Z_Construct_UFunction_AFGPlayerController_CheckPawnMapArea, "CheckPawnMapArea" }, // 2897715039
+		{ &Z_Construct_UFunction_AFGPlayerController_CheckPawnMapArea, "CheckPawnMapArea" }, // 3657207426
 		{ &Z_Construct_UFunction_AFGPlayerController_Client_AddMessage, "Client_AddMessage" }, // 311899978
 		{ &Z_Construct_UFunction_AFGPlayerController_Client_TransferFogOfWarData, "Client_TransferFogOfWarData" }, // 2596822939
 		{ &Z_Construct_UFunction_AFGPlayerController_Client_WaitForLevelStreaming, "Client_WaitForLevelStreaming" }, // 221466689
@@ -3302,7 +3302,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		{ &Z_Construct_UFunction_AFGPlayerController_ExecuteShortcut, "ExecuteShortcut" }, // 703699298
 		{ &Z_Construct_UFunction_AFGPlayerController_GetAllPresetHotbars, "GetAllPresetHotbars" }, // 459646333
 		{ &Z_Construct_UFunction_AFGPlayerController_GetCurrentHotbarIndex, "GetCurrentHotbarIndex" }, // 3468413368
-		{ &Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea, "GetCurrentMapArea" }, // 2009137642
+		{ &Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea, "GetCurrentMapArea" }, // 278948281
 		{ &Z_Construct_UFunction_AFGPlayerController_GetCurrentShortcuts, "GetCurrentShortcuts" }, // 2395559306
 		{ &Z_Construct_UFunction_AFGPlayerController_GetDisabledInputGate, "GetDisabledInputGate" }, // 3999875040
 		{ &Z_Construct_UFunction_AFGPlayerController_GetHiResPhotoModeEnabled, "GetHiResPhotoModeEnabled" }, // 1480268099
@@ -3326,13 +3326,13 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		{ &Z_Construct_UFunction_AFGPlayerController_IsRespawning, "IsRespawning" }, // 2161970272
 		{ &Z_Construct_UFunction_AFGPlayerController_NeedRespawn, "NeedRespawn" }, // 1118282371
 		{ &Z_Construct_UFunction_AFGPlayerController_OnDisabledInputGateChanged, "OnDisabledInputGateChanged" }, // 1467507323
-		{ &Z_Construct_UFunction_AFGPlayerController_OnDismantleGolfCart, "OnDismantleGolfCart" }, // 1059151304
-		{ &Z_Construct_UFunction_AFGPlayerController_OnDismantlePortableMiner, "OnDismantlePortableMiner" }, // 980886990
-		{ &Z_Construct_UFunction_AFGPlayerController_OnFinishRespawn, "OnFinishRespawn" }, // 2433442839
-		{ &Z_Construct_UFunction_AFGPlayerController_OnPrimaryFire, "OnPrimaryFire" }, // 946398369
+		{ &Z_Construct_UFunction_AFGPlayerController_OnDismantleGolfCart, "OnDismantleGolfCart" }, // 3473857922
+		{ &Z_Construct_UFunction_AFGPlayerController_OnDismantlePortableMiner, "OnDismantlePortableMiner" }, // 2487787827
+		{ &Z_Construct_UFunction_AFGPlayerController_OnFinishRespawn, "OnFinishRespawn" }, // 3917154690
+		{ &Z_Construct_UFunction_AFGPlayerController_OnPrimaryFire, "OnPrimaryFire" }, // 1866246915
 		{ &Z_Construct_UFunction_AFGPlayerController_OnRep_IsRespawning, "OnRep_IsRespawning" }, // 3748639211
-		{ &Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind, "OnSetupMovementWind" }, // 631600103
-		{ &Z_Construct_UFunction_AFGPlayerController_OnStartRespawn, "OnStartRespawn" }, // 3353678526
+		{ &Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind, "OnSetupMovementWind" }, // 2905974043
+		{ &Z_Construct_UFunction_AFGPlayerController_OnStartRespawn, "OnStartRespawn" }, // 3533234210
 		{ &Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass, "RegisterRemoteCallObjectClass" }, // 4179562111
 		{ &Z_Construct_UFunction_AFGPlayerController_RemovePresetHotbar, "RemovePresetHotbar" }, // 2749452376
 		{ &Z_Construct_UFunction_AFGPlayerController_Server_CopyCurrentHotbarToPresetHotbar, "Server_CopyCurrentHotbarToPresetHotbar" }, // 733947134
@@ -3634,7 +3634,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerController, 3125255060);
+	IMPLEMENT_CLASS(AFGPlayerController, 3638882975);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlayerController>()
 	{
 		return AFGPlayerController::StaticClass();

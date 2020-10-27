@@ -13,13 +13,76 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFGBuildableFactoryBuilding() {}
 // Cross Module References
-	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFoundationSideSelectionFlags();
+	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EFoundationSide();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFoundationSideSelectionFlags();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableFactoryBuilding_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableFactoryBuilding();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildable();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGColoredInstanceMeshProxy_NoRegister();
 // End Cross Module References
+	static UEnum* EFoundationSide_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_FactoryGame_EFoundationSide, Z_Construct_UPackage__Script_FactoryGame(), TEXT("EFoundationSide"));
+		}
+		return Singleton;
+	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EFoundationSide>()
+	{
+		return EFoundationSide_StaticEnum();
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFoundationSide(EFoundationSide_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EFoundationSide"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EFoundationSide_Hash() { return 2560407273U; }
+	UEnum* Z_Construct_UEnum_FactoryGame_EFoundationSide()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EFoundationSide"), 0, Get_Z_Construct_UEnum_FactoryGame_EFoundationSide_Hash(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "EFoundationSide::FoundationFront", (int64)EFoundationSide::FoundationFront },
+				{ "EFoundationSide::FoundationRight", (int64)EFoundationSide::FoundationRight },
+				{ "EFoundationSide::FoundationBack", (int64)EFoundationSide::FoundationBack },
+				{ "EFoundationSide::FoundationLeft", (int64)EFoundationSide::FoundationLeft },
+				{ "EFoundationSide::FoundationTop", (int64)EFoundationSide::FoundationTop },
+				{ "EFoundationSide::FoundationBottom", (int64)EFoundationSide::FoundationBottom },
+				{ "EFoundationSide::FoundationNumSides", (int64)EFoundationSide::FoundationNumSides },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "FoundationBack.DisplayName", "Back" },
+				{ "FoundationBottom.DisplayName", "Bottom" },
+				{ "FoundationFront.DisplayName", "Front" },
+				{ "FoundationLeft.DisplayName", "Left" },
+				{ "FoundationNumSides.DisplayName", "Num Sides" },
+				{ "FoundationRight.DisplayName", "Right" },
+				{ "FoundationTop.DisplayName", "Top" },
+				{ "ModuleRelativePath", "Public/Buildables/FGBuildableFactoryBuilding.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
+				nullptr,
+				"EFoundationSide",
+				"EFoundationSide",
+				Enumerators,
+				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
+				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
 class UScriptStruct* FFoundationSideSelectionFlags::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;

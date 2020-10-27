@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStackableStorageHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGStackableStorageHologram, 541406251);
+	IMPLEMENT_CLASS(AFGStackableStorageHologram, 2415865495);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGStackableStorageHologram>()
 	{
 		return AFGStackableStorageHologram::StaticClass();

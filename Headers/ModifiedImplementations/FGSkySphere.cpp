@@ -21,7 +21,7 @@ AFGSkySphere::AFGSkySphere() : Super() {
 	this->mStarBrightness.EditorCurveData.PreInfinityExtrap = RCCE_Constant; this->mStarBrightness.EditorCurveData.PostInfinityExtrap = RCCE_Constant; this->mStarBrightness.EditorCurveData.DefaultValue = 0.200000002980232;
 	this->mSkyLightColor.ColorCurves[0].PreInfinityExtrap = RCCE_Constant; this->mSkyLightColor.ColorCurves[0].PostInfinityExtrap = RCCE_Constant; this->mSkyLightColor.ColorCurves[0].DefaultValue = 1;
 }
-void AFGSkySphere::PostActorCreated(){ }
+void AFGSkySphere::PostActorCreated(){ Super::PostActorCreated(); }
 void AFGSkySphere::PostLoad(){ Super::PostLoad(); }
 void AFGSkySphere::BeginDestroy(){ Super::BeginDestroy(); }
 void AFGSkySphere::UpdatePreview_Implementation(){ }

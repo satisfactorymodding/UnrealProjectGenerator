@@ -289,7 +289,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGConsumableDescriptor, 3000672485);
+	IMPLEMENT_CLASS(UFGConsumableDescriptor, 1451439855);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGConsumableDescriptor>()
 	{
 		return UFGConsumableDescriptor::StaticClass();

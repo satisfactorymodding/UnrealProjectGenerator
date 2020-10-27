@@ -3,7 +3,7 @@
 #include "FGResourceDescriptor.h"
 
 #if WITH_EDITOR
-void UFGResourceDescriptor::PostEditChangeProperty( FPropertyChangedEvent& propertyChangedEvent){ }
+void UFGResourceDescriptor::PostEditChangeProperty( FPropertyChangedEvent& propertyChangedEvent){ Super::PostEditChangeProperty(propertyChangedEvent); }
 #endif 
 UFGResourceDescriptor::UFGResourceDescriptor() : Super() {
 	this->mCollectSpeedMultiplier = 1;

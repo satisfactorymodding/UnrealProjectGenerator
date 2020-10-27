@@ -302,12 +302,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "BlueprintType", "true" },
 		{ "Category", "Schematic" },
 		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "adds a schematic to available schematics" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "AddAvailableSchematic", sizeof(FGSchematicManager_eventAddAvailableSchematic_Parms), Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "AddAvailableSchematic", sizeof(FGSchematicManager_eventAddAvailableSchematic_Parms), Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1336,7 +1338,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGSchematicManager_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic, "AddAvailableSchematic" }, // 1181209781
+		{ &Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic, "AddAvailableSchematic" }, // 2044365644
 		{ &Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic, "CanSetAsActiveSchematic" }, // 231979503
 		{ &Z_Construct_UFunction_AFGSchematicManager_Get, "Get" }, // 3226795529
 		{ &Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic, "GetActiveSchematic" }, // 4283713077
@@ -1534,7 +1536,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSchematicManager, 2416251116);
+	IMPLEMENT_CLASS(AFGSchematicManager, 2125871000);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSchematicManager>()
 	{
 		return AFGSchematicManager::StaticClass();

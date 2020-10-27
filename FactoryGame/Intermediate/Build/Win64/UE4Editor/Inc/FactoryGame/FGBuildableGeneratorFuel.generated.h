@@ -329,26 +329,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableGeneratorFuel); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildableGeneratorFuel)
 
 
-#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableGeneratorFuel_h_22_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mFuelInventoryHandler() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mFuelInventoryHandler); } \
-	FORCEINLINE static uint32 __PPO__mFuelClasses_DEPRECATED() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mFuelClasses_DEPRECATED); } \
-	FORCEINLINE static uint32 __PPO__mDefaultFuelClasses() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mDefaultFuelClasses); } \
-	FORCEINLINE static uint32 __PPO__mAvailableFuelClasses() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mAvailableFuelClasses); } \
-	FORCEINLINE static uint32 __PPO__mFuelResourceForm() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mFuelResourceForm); } \
-	FORCEINLINE static uint32 __PPO__mRequiresSupplementalResource() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mRequiresSupplementalResource); } \
-	FORCEINLINE static uint32 __PPO__mSupplementalResourceClass() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mSupplementalResourceClass); } \
-	FORCEINLINE static uint32 __PPO__mSupplementalLoadAmount() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mSupplementalLoadAmount); } \
-	FORCEINLINE static uint32 __PPO__mSupplementalToPowerRatio() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mSupplementalToPowerRatio); } \
-	FORCEINLINE static uint32 __PPO__mFuelInventory() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mFuelInventory); } \
-	FORCEINLINE static uint32 __PPO__mCachedInputConnections() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mCachedInputConnections); } \
-	FORCEINLINE static uint32 __PPO__mCachedPipeInputConnections() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mCachedPipeInputConnections); } \
-	FORCEINLINE static uint32 __PPO__mCurrentFuelAmount() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mCurrentFuelAmount); } \
-	FORCEINLINE static uint32 __PPO__mCurrentSupplementalAmount() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mCurrentSupplementalAmount); } \
-	FORCEINLINE static uint32 __PPO__mHasFuelCached() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mHasFuelCached); } \
-	FORCEINLINE static uint32 __PPO__mHasSupplementalCached() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mHasSupplementalCached); } \
-	FORCEINLINE static uint32 __PPO__mCurrentFuelClass() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mCurrentFuelClass); }
-
-
+#define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableGeneratorFuel_h_22_PRIVATE_PROPERTY_OFFSET
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableGeneratorFuel_h_19_PROLOG
 #define FactoryGame_Source_FactoryGame_Public_Buildables_FGBuildableGeneratorFuel_h_22_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

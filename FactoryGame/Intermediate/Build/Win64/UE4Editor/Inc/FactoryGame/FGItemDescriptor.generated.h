@@ -146,33 +146,6 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemView>();
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetFluidFriction) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=UFGItemDescriptor::GetFluidFriction(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetFluidViscosity) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=UFGItemDescriptor::GetFluidViscosity(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetFluidDensity) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=UFGItemDescriptor::GetFluidDensity(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetItemCategory) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
@@ -441,33 +414,6 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemView>();
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(FColor*)Z_Param__Result=UFGItemDescriptor::GetFluidColor(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetFluidFriction) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=UFGItemDescriptor::GetFluidFriction(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetFluidViscosity) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=UFGItemDescriptor::GetFluidViscosity(Z_Param_inClass); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetFluidDensity) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_inClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=UFGItemDescriptor::GetFluidDensity(Z_Param_inClass); \
 		P_NATIVE_END; \
 	} \
  \

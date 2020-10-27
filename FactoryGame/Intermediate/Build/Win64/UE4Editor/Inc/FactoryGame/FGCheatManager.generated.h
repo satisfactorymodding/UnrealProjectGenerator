@@ -14,7 +14,7 @@ class UFGItemDescriptor;
 #endif
 #define FACTORYGAME_FGCheatManager_generated_h
 
-#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execDumpConnectionString) \
 	{ \
@@ -43,35 +43,176 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execToggleDebuggingOnPipe) \
+	DECLARE_FUNCTION(execPipeTweakSubStepping) \
 	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_targetDeltaSeconds); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_maxSubSteps); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->ToggleDebuggingOnPipe(); \
+		P_THIS->PipeTweakSubStepping(Z_Param_targetDeltaSeconds,Z_Param_maxSubSteps); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execResetAllPipes) \
+	DECLARE_FUNCTION(execPipeTweakFluidViscosity) \
 	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_fluidViscosity); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->ResetAllPipes(); \
+		P_THIS->PipeTweakFluidViscosity(Z_Param_fluidViscosity); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execEmptyAllPipes) \
+	DECLARE_FUNCTION(execPipeTweakFluidDensity) \
 	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_fluidDensity); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->EmptyAllPipes(); \
+		P_THIS->PipeTweakFluidDensity(Z_Param_fluidDensity); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execFillFirstPipeInEachNetwork) \
+	DECLARE_FUNCTION(execPipeTweakFluidFriction) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_fluidFriction); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeTweakFluidFriction(Z_Param_fluidFriction); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeTweakGravity) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_gravity); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeTweakGravity(Z_Param_gravity); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeTweakOverfill) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_maxOverfillPct); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_maxOverfillForPressure); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeTweakOverfill(Z_Param_maxOverfillPct,Z_Param_maxOverfillForPressure); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeTweakPressureLoss) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_pressureLoss); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeTweakPressureLoss(Z_Param_pressureLoss); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeTweakMinimumMaxContent) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_minimumMaxContent); \
+		P_GET_UBOOL(Z_Param_keepRelativeContent); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeTweakMinimumMaxContent(Z_Param_minimumMaxContent,Z_Param_keepRelativeContent); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeTweakMaximumFlow) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_rate); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeTweakMaximumFlow(Z_Param_rate); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipePrintTweakables) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->FillFirstPipeInEachNetwork(); \
+		P_THIS->PipePrintTweakables(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeClearDisplayDebugList) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeClearDisplayDebugList(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeAddSelectedNetworkToDisplayDebugList) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeAddSelectedNetworkToDisplayDebugList(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeClearProbingOnAllPipe) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeClearProbingOnAllPipe(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeDisableProbingOnAimedIntegrant) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeDisableProbingOnAimedIntegrant(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeEnableProbingOnAimedIntegrant) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeEnableProbingOnAimedIntegrant(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeSetVerboseLoggingOnAimedFluidBox) \
+	{ \
+		P_GET_UBOOL(Z_Param_enabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeSetVerboseLoggingOnAimedFluidBox(Z_Param_enabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipePrintMinSizes) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipePrintMinSizes(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeResetAll) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeResetAll(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeEmptyAll) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeEmptyAll(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeFillFirstInEachNetwork) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeFillFirstInEachNetwork(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1016,7 +1157,7 @@ class UFGItemDescriptor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execDumpConnectionString) \
 	{ \
@@ -1045,35 +1186,176 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execToggleDebuggingOnPipe) \
+	DECLARE_FUNCTION(execPipeTweakSubStepping) \
 	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_targetDeltaSeconds); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_maxSubSteps); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->ToggleDebuggingOnPipe(); \
+		P_THIS->PipeTweakSubStepping(Z_Param_targetDeltaSeconds,Z_Param_maxSubSteps); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execResetAllPipes) \
+	DECLARE_FUNCTION(execPipeTweakFluidViscosity) \
 	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_fluidViscosity); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->ResetAllPipes(); \
+		P_THIS->PipeTweakFluidViscosity(Z_Param_fluidViscosity); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execEmptyAllPipes) \
+	DECLARE_FUNCTION(execPipeTweakFluidDensity) \
 	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_fluidDensity); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->EmptyAllPipes(); \
+		P_THIS->PipeTweakFluidDensity(Z_Param_fluidDensity); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execFillFirstPipeInEachNetwork) \
+	DECLARE_FUNCTION(execPipeTweakFluidFriction) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_fluidFriction); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeTweakFluidFriction(Z_Param_fluidFriction); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeTweakGravity) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_gravity); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeTweakGravity(Z_Param_gravity); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeTweakOverfill) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_maxOverfillPct); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_maxOverfillForPressure); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeTweakOverfill(Z_Param_maxOverfillPct,Z_Param_maxOverfillForPressure); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeTweakPressureLoss) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_pressureLoss); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeTweakPressureLoss(Z_Param_pressureLoss); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeTweakMinimumMaxContent) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_minimumMaxContent); \
+		P_GET_UBOOL(Z_Param_keepRelativeContent); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeTweakMinimumMaxContent(Z_Param_minimumMaxContent,Z_Param_keepRelativeContent); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeTweakMaximumFlow) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_rate); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeTweakMaximumFlow(Z_Param_rate); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipePrintTweakables) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->FillFirstPipeInEachNetwork(); \
+		P_THIS->PipePrintTweakables(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeClearDisplayDebugList) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeClearDisplayDebugList(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeAddSelectedNetworkToDisplayDebugList) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeAddSelectedNetworkToDisplayDebugList(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeClearProbingOnAllPipe) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeClearProbingOnAllPipe(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeDisableProbingOnAimedIntegrant) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeDisableProbingOnAimedIntegrant(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeEnableProbingOnAimedIntegrant) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeEnableProbingOnAimedIntegrant(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeSetVerboseLoggingOnAimedFluidBox) \
+	{ \
+		P_GET_UBOOL(Z_Param_enabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeSetVerboseLoggingOnAimedFluidBox(Z_Param_enabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipePrintMinSizes) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipePrintMinSizes(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeResetAll) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeResetAll(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeEmptyAll) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeEmptyAll(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPipeFillFirstInEachNetwork) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PipeFillFirstInEachNetwork(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -2018,7 +2300,7 @@ class UFGItemDescriptor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGCheatManager(); \
 	friend struct Z_Construct_UClass_UFGCheatManager_Statics; \
@@ -2029,7 +2311,7 @@ public: \
 
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGCheatManager(); \
 	friend struct Z_Construct_UClass_UFGCheatManager_Statics; \
@@ -2040,7 +2322,7 @@ public: \
 
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGCheatManager(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCheatManager) \
@@ -2053,7 +2335,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGCheatManager(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -2066,26 +2348,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCheatManager); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCheatManager)
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_15_PROLOG
-#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_16_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_INCLASS \
-	FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_18_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGCheatManager_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

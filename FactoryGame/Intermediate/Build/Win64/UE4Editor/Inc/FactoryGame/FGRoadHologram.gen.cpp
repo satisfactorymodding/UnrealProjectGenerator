@@ -103,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRoadHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRoadHologram, 3527329820);
+	IMPLEMENT_CLASS(AFGRoadHologram, 4031187193);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRoadHologram>()
 	{
 		return AFGRoadHologram::StaticClass();

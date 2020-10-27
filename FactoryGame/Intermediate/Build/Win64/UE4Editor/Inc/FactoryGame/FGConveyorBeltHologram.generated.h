@@ -84,7 +84,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGConveyorBeltHologram); \
 	FORCEINLINE static uint32 __PPO__mUpgradedConveyorBelt() { return STRUCT_OFFSET(AFGConveyorBeltHologram, mUpgradedConveyorBelt); } \
 	FORCEINLINE static uint32 __PPO__mDefaultConveyorPoleRecipe() { return STRUCT_OFFSET(AFGConveyorBeltHologram, mDefaultConveyorPoleRecipe); } \
 	FORCEINLINE static uint32 __PPO__mBendRadius() { return STRUCT_OFFSET(AFGConveyorBeltHologram, mBendRadius); } \
-	FORCEINLINE static uint32 __PPO__mMaxLength() { return STRUCT_OFFSET(AFGConveyorBeltHologram, mMaxLength); } \
+	FORCEINLINE static uint32 __PPO__mMaxSplineLength() { return STRUCT_OFFSET(AFGConveyorBeltHologram, mMaxSplineLength); } \
 	FORCEINLINE static uint32 __PPO__mMaxIncline() { return STRUCT_OFFSET(AFGConveyorBeltHologram, mMaxIncline); } \
 	FORCEINLINE static uint32 __PPO__mConnectionArrowComponentDirection() { return STRUCT_OFFSET(AFGConveyorBeltHologram, mConnectionArrowComponentDirection); } \
 	FORCEINLINE static uint32 __PPO__mConnectionArrowComponent() { return STRUCT_OFFSET(AFGConveyorBeltHologram, mConnectionArrowComponent); } \

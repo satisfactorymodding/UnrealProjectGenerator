@@ -8,7 +8,7 @@
 
 AFGConveyorBeltHologram::AFGConveyorBeltHologram() : Super() {
 	this->mBendRadius = 199;
-	this->mMaxLength = 24;
+	this->mMaxSplineLength = 5600.10009765625;
 	this->mMaxIncline = 35;
 	this->mConnectionArrowComponentDirection = EFactoryConnectionDirection::FCD_ANY;
 	this->mMaxPlacementFloorAngle = 35;

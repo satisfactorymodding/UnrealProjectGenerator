@@ -9,7 +9,7 @@
 AFGPipelineHologram::AFGPipelineHologram() : Super() {
 	this->mBendRadius = 199;
 	this->mBendRadius2D = 199;
-	this->mMaxLength = 100;
+	this->mMaxSplineLength = 5600.10009765625;
 	this->mMaxPlacementFloorAngle = 35;
 	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); this->mValidHitClasses.Add(AFGBuildable::StaticClass());
 	this->bHidden = true;
@@ -17,10 +17,12 @@ AFGPipelineHologram::AFGPipelineHologram() : Super() {
 }
 void AFGPipelineHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGPipelineHologram::BeginPlay(){ }
+bool AFGPipelineHologram::TryUpgrade(const FHitResult& hitResult){ return bool(); }
 void AFGPipelineHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }
 void AFGPipelineHologram::RouteSelectedSplineMode(FVector startLocation, FVector startNormal, FVector endLocation, FVector endNormal){ }
 bool AFGPipelineHologram::DoMultiStepPlacement(bool isInputFromARelease){ return bool(); }
 int32 AFGPipelineHologram::GetBaseCostMultiplier() const{ return int32(); }
+AActor* AFGPipelineHologram::GetUpgradedActor() const{ return nullptr; }
 void AFGPipelineHologram::SpawnChildren(AActor* hologramOwner, FVector spawnLocation, APawn* hologramInstigator){ }
 void AFGPipelineHologram::GetSupportedScrollModes(TArray< EHologramScrollMode >* out_modes) const{ }
 void AFGPipelineHologram::GetSupportedSplineModes_Implementation(TArray< EHologramSplinePathMode >& out_splineModes) const{ }
@@ -46,6 +48,7 @@ void AFGPipelineHologram::CheckValidPlacement(){ }
 void AFGPipelineHologram::SetupPipeClearanceDetector(){ }
 int32 AFGPipelineHologram::GetNumSections() const{ return int32(); }
 void AFGPipelineHologram::UpdateSplineComponent(){ }
+float AFGPipelineHologram::GetSplineLength(){ return float(); }
 void AFGPipelineHologram::UpdateConnectionComponentsFromSplineData(){ }
 void AFGPipelineHologram::UpdateSplineCompFromSplineData(){ }
 void AFGPipelineHologram::AutoRouteSpline(const FVector& startConnectionPos,

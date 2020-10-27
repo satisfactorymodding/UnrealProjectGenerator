@@ -82,6 +82,16 @@ enum class EOutlineColor : uint8;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execClearPopupQueueOfClass) \
+	{ \
+		P_GET_OBJECT(APlayerController,Z_Param_controller); \
+		P_GET_OBJECT(UClass,Z_Param_widgetClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::ClearPopupQueueOfClass(Z_Param_controller,Z_Param_widgetClass); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execClosePopup) \
 	{ \
 		P_GET_OBJECT(APlayerController,Z_Param_controller); \
@@ -676,6 +686,16 @@ enum class EOutlineColor : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		UFGBlueprintFunctionLibrary::CopyTextToClipboard(Z_Param_textToCopy); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execClearPopupQueueOfClass) \
+	{ \
+		P_GET_OBJECT(APlayerController,Z_Param_controller); \
+		P_GET_OBJECT(UClass,Z_Param_widgetClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::ClearPopupQueueOfClass(Z_Param_controller,Z_Param_widgetClass); \
 		P_NATIVE_END; \
 	} \
  \

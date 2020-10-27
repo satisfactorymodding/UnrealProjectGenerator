@@ -39,6 +39,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ChangeLanguage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_Cheat_GetAllDescriptors();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClearPopupQueueOfClass();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClosePopup();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CmS2KmH();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextFromClipboard();
@@ -175,6 +176,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 			{ "CanBeOnConveyor", &UFGBlueprintFunctionLibrary::execCanBeOnConveyor },
 			{ "ChangeLanguage", &UFGBlueprintFunctionLibrary::execChangeLanguage },
 			{ "Cheat_GetAllDescriptors", &UFGBlueprintFunctionLibrary::execCheat_GetAllDescriptors },
+			{ "ClearPopupQueueOfClass", &UFGBlueprintFunctionLibrary::execClearPopupQueueOfClass },
 			{ "ClosePopup", &UFGBlueprintFunctionLibrary::execClosePopup },
 			{ "CmS2KmH", &UFGBlueprintFunctionLibrary::execCmS2KmH },
 			{ "CopyTextFromClipboard", &UFGBlueprintFunctionLibrary::execCopyTextFromClipboard },
@@ -793,6 +795,44 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_Cheat_GetAllDescriptors_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClearPopupQueueOfClass_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventClearPopupQueueOfClass_Parms
+		{
+			APlayerController* controller;
+			TSubclassOf<UUserWidget>  widgetClass;
+		};
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_widgetClass;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_controller;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClearPopupQueueOfClass_Statics::NewProp_widgetClass = { "widgetClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventClearPopupQueueOfClass_Parms, widgetClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClearPopupQueueOfClass_Statics::NewProp_controller = { "controller", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventClearPopupQueueOfClass_Parms, controller), Z_Construct_UClass_APlayerController_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClearPopupQueueOfClass_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClearPopupQueueOfClass_Statics::NewProp_widgetClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClearPopupQueueOfClass_Statics::NewProp_controller,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClearPopupQueueOfClass_Statics::Function_MetaDataParams[] = {
+		{ "Category", "UI" },
+		{ "ModuleRelativePath", "Public/FGBlueprintFunctionLibrary.h" },
+		{ "ToolTip", "Clear the popup queue of all popups of the given class" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClearPopupQueueOfClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, nullptr, "ClearPopupQueueOfClass", sizeof(FGBlueprintFunctionLibrary_eventClearPopupQueueOfClass_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClearPopupQueueOfClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClearPopupQueueOfClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClearPopupQueueOfClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClearPopupQueueOfClass_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClearPopupQueueOfClass()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClearPopupQueueOfClass_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2863,6 +2903,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CanBeOnConveyor, "CanBeOnConveyor" }, // 1540077428
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ChangeLanguage, "ChangeLanguage" }, // 3610996405
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_Cheat_GetAllDescriptors, "Cheat_GetAllDescriptors" }, // 1053097055
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClearPopupQueueOfClass, "ClearPopupQueueOfClass" }, // 2036139115
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ClosePopup, "ClosePopup" }, // 1900240891
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CmS2KmH, "CmS2KmH" }, // 1700875787
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CopyTextFromClipboard, "CopyTextFromClipboard" }, // 2862797987
@@ -2943,7 +2984,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 3616774846);
+	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 2328587087);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBlueprintFunctionLibrary>()
 	{
 		return UFGBlueprintFunctionLibrary::StaticClass();

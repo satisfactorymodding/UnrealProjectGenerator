@@ -48,6 +48,15 @@ class UObject;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execHasAnyProducers) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UFGRecipe::HasAnyProducers(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetProducedIn) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
@@ -131,6 +140,15 @@ class UObject;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=UFGRecipe::IsRecipeAffordable(Z_Param_player,Z_Param_recipe); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasAnyProducers) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UFGRecipe::HasAnyProducers(Z_Param_inClass); \
 		P_NATIVE_END; \
 	} \
  \

@@ -6,7 +6,7 @@
 
 AFGBuildablePipelineAttachment::AFGBuildablePipelineAttachment() : Super() {
 	this->mRadius = 75;
-	this->mFluidBoxVolumeScale = 1;
+	this->mFluidBoxVolume = 5;
 	this->mPowerConsumptionExponent = 1.60000002384186;
 	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
 	this->mMinimumProducingTime = 2;

@@ -109,9 +109,9 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMaxIncline;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMaxLength_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMaxSplineLength_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mMaxLength;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMaxSplineLength;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBendRadius_MetaData[];
 #endif
@@ -219,13 +219,13 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMaxIncline = { "mMaxIncline", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorBeltHologram, mMaxIncline), METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMaxIncline_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMaxIncline_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMaxLength_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMaxSplineLength_MetaData[] = {
 		{ "Category", "Conveyor Belt" },
 		{ "ModuleRelativePath", "Public/Hologram/FGConveyorBeltHologram.h" },
 		{ "ToolTip", "What is the maximum length of one segment." },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMaxLength = { "mMaxLength", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorBeltHologram, mMaxLength), METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMaxLength_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMaxLength_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMaxSplineLength = { "mMaxSplineLength", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorBeltHologram, mMaxSplineLength), METADATA_PARAMS(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMaxSplineLength_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMaxSplineLength_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mBendRadius_MetaData[] = {
 		{ "Category", "Conveyor Belt" },
@@ -284,7 +284,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionArrowComponentDirection,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mConnectionArrowComponentDirection_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMaxIncline,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMaxLength,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mMaxSplineLength,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mBendRadius,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mDefaultConveyorPoleRecipe,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorBeltHologram_Statics::NewProp_mUpgradedConveyorBelt,
@@ -319,7 +319,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorBeltHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorBeltHologram, 2557846823);
+	IMPLEMENT_CLASS(AFGConveyorBeltHologram, 699637489);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGConveyorBeltHologram>()
 	{
 		return AFGConveyorBeltHologram::StaticClass();

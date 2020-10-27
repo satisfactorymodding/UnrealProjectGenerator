@@ -109,7 +109,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		return EFactoryConnectionConnector_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFactoryConnectionConnector(EFactoryConnectionConnector_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EFactoryConnectionConnector"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector_Hash() { return 4210998943U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector_Hash() { return 444262046U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector()
 	{
 #if WITH_HOT_RELOAD
@@ -132,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 				{ "FCC_MAX.Hidden", "" },
 				{ "FCC_PIPE.DisplayName", "Pipe" },
 				{ "ModuleRelativePath", "Public/FGFactoryConnectionComponent.h" },
-				{ "ToolTip", "Type of connections in the game.\n@todoPipes - This is old, we're shifting to a different connection component type for pipes as they don't need most of the special logic in the factory connection" },
+				{ "ToolTip", "Type of connections in the game.\n@todo-Pipes - This is old, we're shifting to a different connection component type for pipes as they don't need most of the special logic in the factory connection" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {

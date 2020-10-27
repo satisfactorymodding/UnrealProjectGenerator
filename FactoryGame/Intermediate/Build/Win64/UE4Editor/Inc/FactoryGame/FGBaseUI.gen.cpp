@@ -22,6 +22,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EPopupId();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_PopupConfirmClicked__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBaseUI_ClearPopupQueueOfClass();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBaseUI_ClosePopup();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGPopupWidget_NoRegister();
@@ -48,6 +49,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		UClass* Class = UFGBaseUI::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "AddPopup", &UFGBaseUI::execAddPopup },
+			{ "ClearPopupQueueOfClass", &UFGBaseUI::execClearPopupQueueOfClass },
 			{ "GetPopup", &UFGBaseUI::execGetPopup },
 			{ "PopPopupQueue", &UFGBaseUI::execPopPopupQueue },
 			{ "SetPopup", &UFGBaseUI::execSetPopup },
@@ -104,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use AddPopupWithCloseDelegate instead" },
 		{ "ModuleRelativePath", "Public/UI/FGBaseUI.h" },
-		{ "ToolTip", "Adds a popup to the qu\xef\xbf\xbd" },
+		{ "ToolTip", "Adds a popup to the queue" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBaseUI, nullptr, "AddPopup", sizeof(FGBaseUI_eventAddPopup_Parms), Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::Function_MetaDataParams)) };
@@ -114,6 +116,40 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGBaseUI_ClearPopupQueueOfClass_Statics
+	{
+		struct FGBaseUI_eventClearPopupQueueOfClass_Parms
+		{
+			TSubclassOf<UUserWidget>  widgetClass;
+		};
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_widgetClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBaseUI_ClearPopupQueueOfClass_Statics::NewProp_widgetClass = { "widgetClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBaseUI_eventClearPopupQueueOfClass_Parms, widgetClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBaseUI_ClearPopupQueueOfClass_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBaseUI_ClearPopupQueueOfClass_Statics::NewProp_widgetClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBaseUI_ClearPopupQueueOfClass_Statics::Function_MetaDataParams[] = {
+		{ "Category", "UI" },
+		{ "ModuleRelativePath", "Public/UI/FGBaseUI.h" },
+		{ "ToolTip", "Clear the popup queue of all popups of the given class" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBaseUI_ClearPopupQueueOfClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBaseUI, nullptr, "ClearPopupQueueOfClass", sizeof(FGBaseUI_eventClearPopupQueueOfClass_Parms), Z_Construct_UFunction_UFGBaseUI_ClearPopupQueueOfClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_ClearPopupQueueOfClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_ClearPopupQueueOfClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_ClearPopupQueueOfClass_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBaseUI_ClearPopupQueueOfClass()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBaseUI_ClearPopupQueueOfClass_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -314,7 +350,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGBaseUI_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGBaseUI_AddPopup, "AddPopup" }, // 1452298386
+		{ &Z_Construct_UFunction_UFGBaseUI_AddPopup, "AddPopup" }, // 3008989995
+		{ &Z_Construct_UFunction_UFGBaseUI_ClearPopupQueueOfClass, "ClearPopupQueueOfClass" }, // 3347667329
 		{ &Z_Construct_UFunction_UFGBaseUI_ClosePopup, "ClosePopup" }, // 3368340089
 		{ &Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget, "CreatePopupWidget" }, // 1264202842
 		{ &Z_Construct_UFunction_UFGBaseUI_GetPopup, "GetPopup" }, // 3586108865
@@ -366,7 +403,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBaseUI, 50389427);
+	IMPLEMENT_CLASS(UFGBaseUI, 64629784);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBaseUI>()
 	{
 		return UFGBaseUI::StaticClass();

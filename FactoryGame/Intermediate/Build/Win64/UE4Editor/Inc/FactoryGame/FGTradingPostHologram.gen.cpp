@@ -181,7 +181,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTradingPostHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGTradingPostHologram, 3383665773);
+	IMPLEMENT_CLASS(AFGTradingPostHologram, 2717237656);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGTradingPostHologram>()
 	{
 		return AFGTradingPostHologram::StaticClass();

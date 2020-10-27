@@ -48,6 +48,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGunBuild() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunStateBuild_OnResetHologram();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunStateBuild_OnUserSettingsUpdated();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunStateBuild_ResetHologram();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ConstructHologram();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FConstructHologramMessage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBuildGunStateBuild_SetActiveSplineMode();
@@ -334,6 +335,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 	{
 		ProcessEvent(FindFunctionChecked(NAME_UFGBuildGunStateBuild_OnResetHologram),NULL);
 	}
+	static FName NAME_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode = FName(TEXT("Server_ChangeGuideLinesSnapMode"));
+	void UFGBuildGunStateBuild::Server_ChangeGuideLinesSnapMode(bool enabled)
+	{
+		FGBuildGunStateBuild_eventServer_ChangeGuideLinesSnapMode_Parms Parms;
+		Parms.enabled=enabled ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode),&Parms);
+	}
 	static FName NAME_UFGBuildGunStateBuild_Server_ConstructHologram = FName(TEXT("Server_ConstructHologram"));
 	void UFGBuildGunStateBuild::Server_ConstructHologram(FNetConstructionID clientNetConstructID, FConstructHologramMessage data)
 	{
@@ -363,6 +371,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 			{ "OnRep_Hologram", &UFGBuildGunStateBuild::execOnRep_Hologram },
 			{ "OnUserSettingsUpdated", &UFGBuildGunStateBuild::execOnUserSettingsUpdated },
 			{ "ResetHologram", &UFGBuildGunStateBuild::execResetHologram },
+			{ "Server_ChangeGuideLinesSnapMode", &UFGBuildGunStateBuild::execServer_ChangeGuideLinesSnapMode },
 			{ "Server_ConstructHologram", &UFGBuildGunStateBuild::execServer_ConstructHologram },
 			{ "SetActiveSplineMode", &UFGBuildGunStateBuild::execSetActiveSplineMode },
 		};
@@ -910,6 +919,39 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode_Statics
+	{
+		static void NewProp_enabled_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_enabled;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode_Statics::NewProp_enabled_SetBit(void* Obj)
+	{
+		((FGBuildGunStateBuild_eventServer_ChangeGuideLinesSnapMode_Parms*)Obj)->enabled = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode_Statics::NewProp_enabled = { "enabled", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildGunStateBuild_eventServer_ChangeGuideLinesSnapMode_Parms), &Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode_Statics::NewProp_enabled_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode_Statics::NewProp_enabled,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunStateBuild, nullptr, "Server_ChangeGuideLinesSnapMode", sizeof(FGBuildGunStateBuild_eventServer_ChangeGuideLinesSnapMode_Parms), Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ConstructHologram_Statics
 	{
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_data;
@@ -1082,6 +1124,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_OnResetHologram, "OnResetHologram" }, // 401771452
 		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_OnUserSettingsUpdated, "OnUserSettingsUpdated" }, // 84939011
 		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_ResetHologram, "ResetHologram" }, // 2959223535
+		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ChangeGuideLinesSnapMode, "Server_ChangeGuideLinesSnapMode" }, // 39942700
 		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_Server_ConstructHologram, "Server_ConstructHologram" }, // 3238020768
 		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_SetActiveSplineMode, "SetActiveSplineMode" }, // 2641691879
 		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_ShowSplineModeSelectUI, "ShowSplineModeSelectUI" }, // 461288008
@@ -1215,7 +1258,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildGunStateBuild, 81228890);
+	IMPLEMENT_CLASS(UFGBuildGunStateBuild, 866013768);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBuildGunStateBuild>()
 	{
 		return UFGBuildGunStateBuild::StaticClass();

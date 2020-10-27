@@ -33,6 +33,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFoundation() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDisableAttachmentSnapOn_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mDisableAttachmentSnapOn;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDisableSnapOn_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mDisableSnapOn;
@@ -63,6 +67,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFoundation() {}
 		{ "ToolTip", "A foundation to build your factory walls and floors on." },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mDisableAttachmentSnapOn_MetaData[] = {
+		{ "Category", "Foundation" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFoundation.h" },
+		{ "ToolTip", "Disable attachment snapping on specific sides." },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mDisableAttachmentSnapOn = { "mDisableAttachmentSnapOn", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableFoundation, mDisableAttachmentSnapOn), Z_Construct_UScriptStruct_FFoundationSideSelectionFlags, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mDisableAttachmentSnapOn_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mDisableAttachmentSnapOn_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mDisableSnapOn_MetaData[] = {
 		{ "Category", "Foundation" },
@@ -96,6 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFoundation() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mSize = { "mSize", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableFoundation, mSize), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mSize_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mSize_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableFoundation_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mDisableAttachmentSnapOn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mDisableSnapOn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mElevation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mHeight,
@@ -128,7 +141,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFoundation() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableFoundation, 3718553473);
+	IMPLEMENT_CLASS(AFGBuildableFoundation, 3237882440);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableFoundation>()
 	{
 		return AFGBuildableFoundation::StaticClass();
