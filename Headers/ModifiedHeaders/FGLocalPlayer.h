@@ -16,9 +16,9 @@
 #include "FGErrorMessage.h"
 #include "CoreOnline.h"
 #include "FindSessionsCallbackProxy.h"
-#include "EOSSDKForwards.h"
-#include "PlayerPresenceState.h"
 // MODDING EDIT: Online stuff...
+//#include "EOSSDKForwards.h"
+#include "PlayerPresenceState.h"
 #include "NAT.h"
 #include "FGLocalPlayer.generated.h"
 

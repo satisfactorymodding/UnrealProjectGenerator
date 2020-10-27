@@ -38,10 +38,10 @@ struct FACTORYGAME_API FDisabledInputGate
 	GENERATED_USTRUCT_BODY()
 
 public:
-	FDisabledInputGate() : FDisabledInputGate( false )
+	MODDING_SHIPPING_FORCEINLINE FDisabledInputGate() : FDisabledInputGate( false )
 	{}
 
-	FDisabledInputGate( bool disabled ) :
+	MODDING_SHIPPING_FORCEINLINE FDisabledInputGate( bool disabled ) :
 		mBuildGun( disabled ),
 		mDismantle( disabled ),
 		mFlashLight( disabled ),
@@ -93,7 +93,7 @@ class FACTORYGAME_API UFGUseState_ReviveInvalid_PlayerNotDead : public UFGUseSta
 {
 	GENERATED_BODY()
 public:
-	UFGUseState_ReviveInvalid_PlayerNotDead() : Super() { mIsUsableState = false; }
+	MODDING_SHIPPING_FORCEINLINE UFGUseState_ReviveInvalid_PlayerNotDead() : Super() { mIsUsableState = false; }
 
 public:
 	FORCEINLINE ~UFGUseState_ReviveInvalid_PlayerNotDead() = default;
@@ -107,7 +107,7 @@ class FACTORYGAME_API UFGUseState_ReviveValid : public UFGUseState
 {
 	GENERATED_BODY()
 public:
-	UFGUseState_ReviveValid() : Super() { mIsUsableState = true; }
+	MODDING_SHIPPING_FORCEINLINE UFGUseState_ReviveValid() : Super() { mIsUsableState = true; }
 
 public:
 	FORCEINLINE ~UFGUseState_ReviveValid() = default;
