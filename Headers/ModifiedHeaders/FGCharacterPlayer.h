@@ -14,6 +14,7 @@
 #include "Equipment/FGEquipment.h"
 #include "FGHUD.h"
 #include "FGOutlineComponent.h"
+#include "FGCharacterMovementComponent.h" // MODDING EDIT
 
 #include "FGCharacterPlayer.generated.h"
 
