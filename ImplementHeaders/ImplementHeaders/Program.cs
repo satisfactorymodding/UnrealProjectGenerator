@@ -12,8 +12,13 @@ namespace ImplementHeaders
         private static bool CountOnly = false;
         private static int FunctionCount;
 
-        // TODO: Finish the c++ parser so that these workarounds can be replaced with something that doesn't require maintenance
-        private static readonly string[] NeedsSuper = new string[] { "Serialize", "OnRegister", "OnUnregister", "PostLoad", "BeginDestroy", "PostInitProperties", "PostInitializeComponents", "CreateRenderState_Concurrent" };
+        private static readonly string[] NeedsSuper = new string[] { "Serialize", "OnRegister", "OnUnregister", "PostLoad", "BeginDestroy", "PostInitProperties", "PostInitializeComponents", "CreateRenderState_Concurrent", "PostEditChangeProperty", "PostActorCreated", "PreInitializeComponents", "NotifyBeginPlay" };
+        // Only adds super if the class name starts with that character
+        private static readonly Dictionary<string, string> ConditionalSuper = new Dictionary<string, string>()
+        {
+            { "CheckForErrors", "A" }
+        };
+        
         private static readonly Dictionary<string, List<string>> ExtraIncludes = new Dictionary<string, List<string>>()
         {
             { "FGInventoryComponent", new List<string>()
@@ -438,6 +443,11 @@ namespace ImplementHeaders
 FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustomVersion::GUID, 18, TEXT(""Dev-Framework"") }" } // I don't like this
         };
 
+        private static readonly Dictionary<string, string> CustomSuper = new Dictionary<string, string>()
+        {
+            { "AFGCharacterPlayer", "Super(ObjectInitializer.SetDefaultSubobjectClass<UFGCharacterMovementComponent>(ACharacter::CharacterMovementComponentName))" }
+        };
+
         private static readonly Dictionary<string, string> NestedStructs = new Dictionary<string, string>()
         {
             { "ItemHolderHistory", "FConveyorBeltItems::ItemHolderHistory" },
@@ -696,18 +706,25 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                 if (!string.IsNullOrWhiteSpace(template))
                     template = FixDefaults(template.Trim().TrimEnd('>')) + '>' + Environment.NewLine;
                 string result = $"{template}{isReturnConst}{FixReturnType(returnType)}{className}::{functionName}({Regex.Replace(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?<!<)\b(class|struct)\b", "")}){isConst}";
-                if (parameters.Contains("objectInitializer") && withoutDestructorThingy == className) // if it is constructor of derived class
-                    result += " : Super(objectInitializer) ";
-                else if (parameters.Contains("ObjectInitializer") && withoutDestructorThingy == className) // if it is constructor of derived class
-                    result += " : Super(ObjectInitializer) ";
-                if (parameters.Replace(" ", "").Contains("FArchive&inInnerArchive")) 
-                     result += " : FArchiveProxy(inInnerArchive) ";
-                if (parameters.Replace(" ", "").Contains("UCharacterMovementComponent"))
-                    result += " : FNetworkPredictionData_Client_Character(clientMovement) ";
-                if (functionName.Replace(" ", "").Contains("FObjectReader"))
-                    result += " : FObjectReader(Obj, InBytes) ";
-                if (functionName.Replace(" ", "").Contains("FObjectWriter"))
-                    result += " : FObjectWriter(Obj, InBytes) ";
+                if (CustomSuper.ContainsKey(functionName.Trim()))
+                {
+                    result += $" : {CustomSuper[functionName.Trim()]} ";
+                }
+                else
+                {
+                    if (parameters.Contains("objectInitializer") && withoutDestructorThingy == className) // if it is constructor of derived class
+                        result += " : Super(objectInitializer) ";
+                    else if (parameters.Contains("ObjectInitializer") && withoutDestructorThingy == className) // if it is constructor of derived class
+                        result += " : Super(ObjectInitializer) ";
+                    if (parameters.Replace(" ", "").Contains("FArchive&inInnerArchive"))
+                        result += " : FArchiveProxy(inInnerArchive) ";
+                    if (parameters.Replace(" ", "").Contains("UCharacterMovementComponent"))
+                        result += " : FNetworkPredictionData_Client_Character(clientMovement) ";
+                    if (functionName.Replace(" ", "").Contains("FObjectReader"))
+                        result += " : FObjectReader(Obj, InBytes) ";
+                    if (functionName.Replace(" ", "").Contains("FObjectWriter"))
+                        result += " : FObjectWriter(Obj, InBytes) ";
+                }
                 result += $"{{ ";
                 if (CustomImplementation.ContainsKey($"{(!string.IsNullOrWhiteSpace(isStatic) ? "static " : "")}{className}::{functionName}")) // aghhhh
                     result += $"\r\n{CustomImplementation[$"{(!string.IsNullOrWhiteSpace(isStatic) ? "static " : "")}{className}::{functionName}"]}\r\n}}";
@@ -715,7 +732,7 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                 {
                     if (returnType.Contains("void") || string.IsNullOrWhiteSpace(returnType))
                     {
-                        if (NeedsSuper.Contains(functionName.Trim()))
+                        if (NeedsSuper.Contains(functionName.Trim()) || (ConditionalSuper.ContainsKey(functionName.Trim()) && className.Trim().StartsWith(ConditionalSuper[functionName.Trim()])))
                             result += $"Super::{functionName}({string.Join(",", Regex.Matches(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?:.*? )??(.*?) ([^ ]*?)(?:, ?| \)|$)").Cast<Match>().Select(match => match.Groups[2].Value))}); ";
                         result += $"}}";
                     }
