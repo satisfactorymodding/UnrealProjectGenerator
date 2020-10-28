@@ -387,7 +387,7 @@ namespace DefaultValues
                 classContents = Regex.Replace(classContents, @" ^ ([\s\t] *)(class|struct)\s([^\s]*?\s)??([^\s]*?)(\s?:\s?.*?)?\s*{((?:.|\n)*?)^\1};", "", RegexOptions.Multiline);
                 classContents = Regex.Replace(classContents, @"U(?:PROPERTY|FUNCTION)\s*\(.*?\)\s*($|\/)", "", RegexOptions.Multiline | RegexOptions.Singleline);
                 classContents = Regex.Replace(classContents, @"(public|private|protected):", ";$1:", RegexOptions.Multiline | RegexOptions.Singleline);
-                classContents = Regex.Replace(classContents, @"^[\t ]*[^;:]*?\([^;:]*?\)[^;:]*?;(?:\r?\n)?", "", RegexOptions.Multiline | RegexOptions.Singleline);
+                classContents = Regex.Replace(classContents, @"^[\t ]*[^;:/]*?\([^;:]*?\)[^;:]*?;(?:\r?\n)?", "", RegexOptions.Multiline | RegexOptions.Singleline);
                 foreach (Match section in Regex.Matches(classContents + "\npublic:", @"(?<=^|;)(protected|private|public):(?:\r?\n)(?!protected|private|public)(.*?;)\s*(?=protected|private|public)", RegexOptions.Multiline | RegexOptions.Singleline))
                 {
                     string sectionType = section.Groups[1].Value;
