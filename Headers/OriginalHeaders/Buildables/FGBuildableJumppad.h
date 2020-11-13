@@ -17,6 +17,8 @@ struct FTrajectoryData
 	TArray<FVector> TrajectoryPoints;
 };
 
+DECLARE_LOG_CATEGORY_EXTERN( LogJumpPad, Log, All );
+
 /**
  * 
  */
@@ -30,8 +32,9 @@ public:
 	/** Replication */
 	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
 
+	/** Called when a launch is triggered. Highest Launch Speed is set to whichever object was launched fastest out of those in the trigger box. */
 	UFUNCTION( BlueprintImplementableEvent, Category = "JumpPad" )
-	void OnLaunch();
+	void OnLaunch( float HighestLaunchSpeed );
 
 	UFUNCTION( BlueprintPure, Category = "JumpPad" )
 	float GetPowerBankCapacity() const { return mPowerBankCapacity; }
@@ -169,6 +172,10 @@ protected:
 	/** Characters which are inside the launcher trigger box, ready to be launched. */
 	UPROPERTY()
 	TArray<class AFGCharacterBase*> CharactersToLaunch;
+
+	/** Vehicles which are inside the launcher trigger box, ready to be launched. */
+	UPROPERTY()
+	TArray<class AFGVehicle*> VehiclesToLaunch;
 
 	/** Objects entering this box will be launched. */
 	UPROPERTY( VisibleAnywhere, Category = "JumpPad" )
