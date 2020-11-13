@@ -266,10 +266,7 @@ protected:
 	UPROPERTY( EditDefaultsOnly, Category = "Research" )
 	bool mCanConductMultipleResearch;
 
-protected:
-	// MODDING EDIT: expose access to internal state to content registry
-	friend class AModContentRegistry;
-
+public: // MODDING EDIT
 	UPROPERTY( Transient )
 	TArray<TSubclassOf<class UFGResearchTree>> mAllResearchTrees;
 	
@@ -288,6 +285,8 @@ protected:
 	UPROPERTY( SaveGame )
 	TArray<FResearchTime> mSavedOngoingResearch;
 
+public: // MODDING EDIT Accessor
+	FORCEINLINE void OnResearchTimerCompleteAccessor(TSubclassOf<class UFGSchematic> schematic) { OnResearchTimerComplete(schematic); };
 private:
 	UFUNCTION()
 	void OnResearchTimerComplete( TSubclassOf<class UFGSchematic> schematic );
