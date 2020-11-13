@@ -388,10 +388,10 @@ namespace DefaultValues
                 classContents = Regex.Replace(classContents, @"U(?:PROPERTY|FUNCTION)\s*\(.*?\)\s*($|\/)", "", RegexOptions.Multiline | RegexOptions.Singleline);
                 classContents = Regex.Replace(classContents, @"(public|private|protected):", ";$1:", RegexOptions.Multiline | RegexOptions.Singleline);
                 classContents = Regex.Replace(classContents, @"^[\t ]*[^;:/]*?\([^;:]*?\)[^;:]*?;(?:\r?\n)?", "", RegexOptions.Multiline | RegexOptions.Singleline);
-                foreach (Match section in Regex.Matches(classContents + "\npublic:", @"(?<=^|;)(protected|private|public):[/\w\s]*?(?:\r?\n)(?!protected|private|public)(.*?;)\s*(?=protected|private|public)", RegexOptions.Multiline | RegexOptions.Singleline))
+                foreach (Match section in Regex.Matches(classContents + "\npublic:", @"(?<=^|;)(protected|private|public):[/\w\s->]*?(?:\r?\n)(?!protected|private|public)(.*?;)\s*(?=protected|private|public)", RegexOptions.Multiline | RegexOptions.Singleline))
                 {
                     string sectionType = section.Groups[1].Value;
-                    bool isPrivateSection = sectionType.Contains("private");
+                    bool isPrivateSection = sectionType.Split(':')[0].Contains("private");
                     foreach (Match variable in Regex.Matches(section.Groups[2].Value, @"\s*([\w\d_*]*?)\s+([\w\d_]*?)(\s*=\s*nullptr)?;", RegexOptions.Multiline))
                     {
                         string varName = variable.Groups[2].Value;
