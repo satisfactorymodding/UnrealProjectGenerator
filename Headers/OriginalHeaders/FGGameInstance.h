@@ -228,6 +228,9 @@ public:
 	/* Set if we should enable navigation with tab and arrow keys. Stops UE4 to hog tab and arrow key input bindings in widgets. Doesn't do anything in PIE */
 	void EnableTabAndNavKeys( bool enable );
 
+	/** Get the instance of the debug overlay widget. Will create one if it doesn't exists. Might return null if we don't have a specificed debug overlay widget class */
+	class UFGDebugOverlayWidget* GetDebugOverlayWidget();
+
 protected:
 	// Called when a map has loaded properly in Standalone
 	virtual void LoadComplete( const float loadTime, const FString& mapName ) override;
@@ -262,6 +265,9 @@ private:
 
 	/** Initializes the Game Analytics Service. Requires that the Epic Online Services handle has been created beforehand. */
 	void InitGameAnalytics();
+
+	void JoinSession_Internal();
+	
 protected:
 	/** The global save system */
 	UPROPERTY()
@@ -312,6 +318,7 @@ protected:
 	///** The handle for the Epic Online Services manager. Is initialized in Init(). */
 	//UPROPERTY()
 	//class UEOSManager* mCachedEOSManager;
+	
 public:
 	// Mod packages found - valid or invalid
 	UPROPERTY( BlueprintReadOnly, Category = "Modding" )
@@ -323,6 +330,9 @@ public:
 
 	/** Has the player seen the alpha info screen, used to only show it once per session */
 	bool mHasSeenAlphaInfo;
+	
 private:
-	void JoinSession_Internal();
+	UPROPERTY()
+	class UFGDebugOverlayWidget* mDebugOverlayWidget;
+	
 };

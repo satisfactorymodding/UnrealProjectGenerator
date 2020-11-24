@@ -21,4 +21,8 @@ public:
 	/** Widget used to show the user when linking accounts */
 	UPROPERTY( EditAnywhere, config, Category = UI )
 	TSubclassOf<UUserWidget> mConnectAccountsWidget;
+
+	/** Widget used to show the user when enabling the debug overlay */
+	UPROPERTY( EditAnywhere, config, Category = UI )
+	TSubclassOf< class UFGDebugOverlayWidget > mDebugOverlayWidgetClass;
 };

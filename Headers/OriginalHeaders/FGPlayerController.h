@@ -294,6 +294,10 @@ public:
 		return Cast<T>(GetRemoteCallObjectOfClass(T::StaticClass()));
 	}
 
+	/** Returns the map area that the pawn is currently in */
+	UFUNCTION( BlueprintPure, Category = "Map" )
+    TSubclassOf< UFGMapArea > GetCurrentMapArea() const;
+
 protected:
 	/** Pontentially spawns deathcreate when disconnecting if we are dead */
 	void PonderRemoveDeadPawn();
@@ -348,10 +352,6 @@ protected:
 
 	/** Caches a lot off stuff needed for the map area checks */
 	bool InitMapAreaCheckFunction();
-
-	/** Returns the map area that the pawn is currently in */
-	UFUNCTION( BlueprintPure, Category = "Map" )
-	TSubclassOf< UFGMapArea > GetCurrentMapArea() const;
 
 	UFUNCTION( BlueprintCallable, Category = "Chat" )
 	void EnterChatMessage( const FString& inMessage );
