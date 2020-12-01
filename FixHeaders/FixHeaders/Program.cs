@@ -53,6 +53,13 @@ namespace FixHeaders
         {
         };
 
+        static void ConfirmModdingEdits()
+        {
+            do
+            {
+                Console.WriteLine("Please confim code around modding edits is valid");
+            } while (Console.ReadLine() != "CONFIRM");
+        }
         static void Main(string[] args)
         {
             string oldPath, modifiedPath, newPath, savePath;
@@ -106,6 +113,7 @@ namespace FixHeaders
             Run("git.exe", "commit -m \"New Headers\"", headerUpgradeFolder);
             Run("git.exe", "merge ModdingEdit", headerUpgradeFolder);
             GenerateHeaderCache(headerUpgradeFolder);
+            ConfirmModdingEdits();
             FixFiles(headerUpgradeFolder);
             Run("git.exe", "add .", headerUpgradeFolder);
             Run("git.exe", "commit -m \"New Modding Edit Headers\"", headerUpgradeFolder);

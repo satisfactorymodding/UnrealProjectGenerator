@@ -181,7 +181,10 @@ def run_update(new_version, is_experimental, triggered_by):
                                                   stdin=subprocess.PIPE,
                                                   stdout=log_file,
                                                   stderr=err_file)
-        header_updater_process.communicate('\n'.join([str(new_version), full_header_path, "", ""]).encode())
+        header_updater_process.stdin.write('\n'.join([str(new_version), full_header_path, "", ""]).encode())
+        print("Please confirm the code around modding edits is correct, then press enter")
+        input()
+        header_updater_process.communicate(b'CONFIRM\n\n')
         log_file.close()
         err_file.close()
 
