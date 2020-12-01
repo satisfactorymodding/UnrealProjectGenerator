@@ -7,6 +7,7 @@
 #include "AssetBundleData.h"
 #include "IncludeInBuild.h"
 #include "Styling/SlateBrush.h"
+#include "FGEventSubsystem.h"
 #include "FGSchematic.generated.h"
 
 //@todo [MODSUPPORT] This should maybe be implemented the same way as UFGBuildCategories?
@@ -105,6 +106,10 @@ public:
 	UFUNCTION( BlueprintPure, Category = "Schematic" )
 	static bool IsRepeatPurchasesAllowed( TSubclassOf< UFGSchematic > inClass );
 
+	/** Returns the relevant events this schematic is present in. */
+	UFUNCTION( BlueprintPure, Category = "Schematic" )
+    static TArray< EEvents > GetRelevantEvents( TSubclassOf< UFGSchematic > inClass );
+
 	// Return true if we should include this schematic in the current build
 	UFUNCTION( BlueprintPure, Category = "Schematic" )
 	static bool IsIncludedInBuild( TSubclassOf< UFGSchematic > inClass );
@@ -175,6 +180,10 @@ protected:
 	/** Is this schematic dependant on anything to be available for purchase? */
 	UPROPERTY( EditDefaultsOnly, Instanced, Category = "Dependencies" )
 	TArray< class UFGAvailabilityDependency* > mSchematicDependencies;
+
+	/** The events this schematic are present in */
+	UPROPERTY( EditDefaultsOnly, Category = "Events" )
+	TArray< EEvents > mRelevantEvents;
 
 	// Begin Deprecated
 	/** Is this schematic dependant on any other for being unlocked? */

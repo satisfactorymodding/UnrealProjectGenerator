@@ -30,6 +30,14 @@ enum class ENetmodeAvailability : uint8
 	NA_OnlyClient				UMETA( DisplayName = "Only Client" )
 };
 
+UENUM( BlueprintType )
+enum class EGamemodeAvailability : uint8
+{
+	GA_Always					UMETA( DisplayName = "Always" ),
+    GA_OnlyInMainMenu			UMETA( DisplayName = "Only In Main Menu" ),
+    GA_OnlyInGame				UMETA( DisplayName = "Only In Game" )
+};
+
 
 USTRUCT( BlueprintType )
 struct FOptionRowData
@@ -48,7 +56,9 @@ public:
 		ShowZeroAsOff(false),
 		DefaultSliderValue(0),
 		UpdateInstantly(false),
-		RequireRestart(false)
+		RequireRestart(false),
+		NetmodeAvailability( ENetmodeAvailability::NA_ServerAndClient ),
+		GamemodeAvailability( EGamemodeAvailability::GA_Always )
 	{
 	}
 
@@ -105,6 +115,9 @@ public:
 
 	UPROPERTY( BlueprintReadWrite, EditAnywhere )
 	ENetmodeAvailability NetmodeAvailability;
+
+	UPROPERTY( BlueprintReadWrite, EditAnywhere )
+	EGamemodeAvailability GamemodeAvailability;
 };
 
 USTRUCT( BlueprintType, meta = ( ShowOnlyInnerProperties ) )

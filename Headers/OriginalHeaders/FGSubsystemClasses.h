@@ -78,5 +78,7 @@ public:
 	/** Handles all vehicles */
 	UPROPERTY( config, EditDefaultsOnly, Category = "Subsystem" )
 	TSubclassOf< class AFGVehicleSubsystem > mVehicleSubsystemClass;
+	UPROPERTY( config, EditDefaultsOnly, Category = "Subsystem" )
+	TSubclassOf< class AFGEventSubsystem> mEventSubsystemClass;
 
 };

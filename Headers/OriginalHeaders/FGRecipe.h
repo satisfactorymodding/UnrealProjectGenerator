@@ -4,6 +4,7 @@
 
 #include "ItemAmount.h"
 #include "HologramSplinePathMode.h"
+#include "FGEventSubsystem.h"
 #include "FGRecipe.generated.h"
 
 
@@ -59,6 +60,10 @@ public:
 	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Recipe" )
 	static TSubclassOf< class UFGItemDescriptor > GetDescriptorForRecipe( TSubclassOf< class UFGRecipe > recipe );
 
+	/** Returns the relevant events this recipe is present in. */
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Recipe" )
+    static TArray< EEvents > GetRelevantEvents( TSubclassOf< UFGRecipe > inClass );
+
 	/** Native accessors. */
 	virtual FText GetDisplayName() const;
 	void GetProducedIn( TArray< TSubclassOf< UObject > >& out_producedIn ) const;
@@ -107,4 +112,8 @@ protected:
 	/** Defines where this recipe can be produced */
 	UPROPERTY( EditDefaultsOnly, Meta = ( MustImplement = "FGRecipeProducerInterface", Category = "Recipe" ) )
 	TArray< TSoftClassPtr< UObject > > mProducedIn;
+
+	/** The events this recipe are present in */
+	UPROPERTY( EditDefaultsOnly, Category = "Events" )
+	TArray< EEvents > mRelevantEvents;
 };
