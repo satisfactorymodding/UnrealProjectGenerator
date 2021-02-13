@@ -5,6 +5,7 @@
 #include "GameFramework/Actor.h"
 #include "FGSaveInterface.h"
 #include "Engine/NetSerialization.h"
+#include "FGStaticReplicatedActor.h"
 #include "FGFoliageRemoval.generated.h"
 
 /** Data about removed instances */
@@ -76,7 +77,7 @@ struct TStructOpsTypeTraits< FRemovedInstanceArray > : public TStructOpsTypeTrai
 
 
 UCLASS(notplaceable)
-class FACTORYGAME_API AFGFoliageRemoval : public AActor, public IFGSaveInterface
+class FACTORYGAME_API AFGFoliageRemoval : public AFGStaticReplicatedActor, public IFGSaveInterface
 {
 	GENERATED_BODY()
 public:	

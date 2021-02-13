@@ -46,10 +46,6 @@ public:
 	UFUNCTION( BlueprintCallable, Category = "Trading Post" )
 	void UpdateStorageVisibility();
 
-	/** Returns the inventory component used in the storage box */
-	UFUNCTION( BlueprintPure, Category = "Trading Post" )
-	FORCEINLINE UFGInventoryComponent* GetStorageInventory() { return mStorageInventory; }
-
 	/** Returns level of trading post upgrade */
 	UFUNCTION( BlueprintPure, Category = "Trading Post" )
 	int32 GetTradingPostLevel() const;
@@ -149,10 +145,6 @@ protected:
 	/** A cached schematic manager */
 	UPROPERTY()
 	class AFGSchematicManager* mSchematicManager;
-
-	/** The inventory to store everything in. */
-	UPROPERTY( SaveGame, Replicated )
-	class UFGInventoryComponent* mStorageInventory;
 
 	/** The starting resources in the tradingpost storage */
 	UPROPERTY( EditDefaultsOnly, Category = "Inventory" )

@@ -249,11 +249,13 @@ private:
 
 protected:
 	/** The inventory of this connection. This can be null in many cases. */
+	// @todoPipes - I don't think this is used anymore. This should be fully deprecated and removed. This is a carry over from conveyor belts. 
+	// The final implementation of pipes works by them being pushed to from buildings (rather than pulling like belts), so they don't need an inventory to access
 	UPROPERTY( SaveGame )
 	class UFGInventoryComponent* mConnectionInventory;
 
 	/**
-	 * The inventory index utilized by this connection ( -1 for none specified ). Only relevant if an inventory is set
+	 * The inventory index utilized by this connection ( -1 for none specified )
 	 * Unlike the Factory Connections this access index is also used to determine if a connection should be pushed to from manufacturing
 	 * buildables. This is because fluids should belong to a single stack in an inventory and if none is specified then a pipe should
 	 * not be eligible to receive liquid. There may be a better way to handle this but that is how its operating.

@@ -22,8 +22,6 @@ class FACTORYGAME_API AFGPipelineSupportHologram : public AFGFactoryHologram
 public:
 	AFGPipelineSupportHologram();
     
-	virtual void GetLifetimeReplicatedProps(class TArray<class FLifetimeProperty, class FDefaultAllocator> & OutReplicatedProps) const override; // MODDING EDIT: needed for the implementer to implement it
-
 	virtual void BeginPlay() override;
 
 	// Begin AFGHologram interface

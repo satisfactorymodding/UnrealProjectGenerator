@@ -143,6 +143,7 @@ public:
 
 	// Begin UActorComponent interface
 	virtual void OnRegister() override;
+	virtual void BeginPlay() override;
 	// End UActorComponent interface
 
 	/**
@@ -177,26 +178,8 @@ public:
 
 	//@todoinventory REFACTOR we need to consider state here somehow.
 	/** @return true if the item is allowed in this inventory */
-	UFUNCTION( BlueprintPure, CustomThunk, Category = "Inventory" )
+	UFUNCTION( BlueprintPure, Category = "Inventory" )
 	bool IsItemAllowed( TSubclassOf< UFGItemDescriptor > item, const int32 idx = -1 ) const; //INDEX_NONE
-
-	//[FreiholtzK:Mon/16-12-2019] Temporary debug code that should be removed after we have managed to find what passes in a null item descriptor here
-	DECLARE_FUNCTION( execIsItemAllowed )
-	{
-		P_GET_OBJECT( UClass, Z_Param_item );
-		P_GET_PROPERTY( UIntProperty, Z_Param_idx );
-		P_FINISH;
-		static bool hasCaughtNullpeter = false;
-		if( Z_Param_item == nullptr && !hasCaughtNullpeter )
-		{
-			hasCaughtNullpeter = true;
-			const FString Trace = Stack.GetStackTrace();
-			UE_LOG( LogBlueprintUserMessages, Log, TEXT( "\nUFGInventoryComponent::IsItemAllowed is called with nullpeter from BP:\n%s" ), *Trace );
-		}
-		P_NATIVE_BEGIN;
-		*( bool* )Z_Param__Result = P_THIS->IsItemAllowed( Z_Param_item, Z_Param_idx );
-		P_NATIVE_END;
-	}
 
 	/**
 	 * @return true if the index is a valid index.
@@ -484,6 +467,12 @@ protected:
 
 	/** Locks the inventory. Indicating that no items are allowed and you should not be able to drag stuff from it either */
 	bool mIsLocked;
+
+	/** Tracks whether or not its necessary to replicate allowed item descriptors to clients*/
+	bool mDoRepAllowedItemDescriptors;
+
+	/** Tracks whether or not its necessary to replicate arbitrary slot sizes to clients */
+	bool mDoRepArbitrarySlotSizes;
 
 private:
 	/** All items in the inventory */

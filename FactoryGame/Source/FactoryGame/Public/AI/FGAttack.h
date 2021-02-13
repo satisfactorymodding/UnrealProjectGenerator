@@ -2,6 +2,7 @@
 #include "SubclassOf.h"
 #include "UObject/Class.h"
 
+#include "FGAggroTargetInterface.h"
 #include "FGAttack.generated.h"
 
 

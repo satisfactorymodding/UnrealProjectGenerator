@@ -39,10 +39,10 @@ struct FACTORYGAME_API FDisabledInputGate
 	GENERATED_USTRUCT_BODY()
 
 public:
-	MODDING_SHIPPING_FORCEINLINE FDisabledInputGate() : FDisabledInputGate( false )
+	FORCEINLINE FDisabledInputGate() : FDisabledInputGate( false )
 	{}
 
-	MODDING_SHIPPING_FORCEINLINE FDisabledInputGate( bool disabled ) :
+	FORCEINLINE FDisabledInputGate( bool disabled ) :
 		mBuildGun( disabled ),
 		mDismantle( disabled ),
 		mFlashLight( disabled ),
@@ -94,10 +94,7 @@ class FACTORYGAME_API UFGUseState_ReviveInvalid_PlayerNotDead : public UFGUseSta
 {
 	GENERATED_BODY()
 public:
-	MODDING_SHIPPING_FORCEINLINE UFGUseState_ReviveInvalid_PlayerNotDead() : Super() { mIsUsableState = false; }
-
-public:
-	FORCEINLINE ~UFGUseState_ReviveInvalid_PlayerNotDead() = default;
+	UFGUseState_ReviveInvalid_PlayerNotDead() : Super() { mIsUsableState = false; }
 };
 
 /**
@@ -108,10 +105,7 @@ class FACTORYGAME_API UFGUseState_ReviveValid : public UFGUseState
 {
 	GENERATED_BODY()
 public:
-	MODDING_SHIPPING_FORCEINLINE UFGUseState_ReviveValid() : Super() { mIsUsableState = true; }
-
-public:
-	FORCEINLINE ~UFGUseState_ReviveValid() = default;
+	UFGUseState_ReviveValid() : Super() { mIsUsableState = true; }
 };
 
 /**
@@ -194,6 +188,9 @@ public:
 	virtual bool ShouldSave_Implementation() const override;
 	virtual void PostLoadGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
 	//~End IFGSaveInterface
+
+	// Setup run when this player ahve been possessed.
+	void OnPossessedSetup();
 
 	/** Blueprint function that ticks visual things not needed on dedicated server */
 	UFUNCTION( BlueprintImplementableEvent, BlueprintCosmetic, Category = "Character" )

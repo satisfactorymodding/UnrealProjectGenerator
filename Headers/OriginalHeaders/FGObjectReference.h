@@ -104,13 +104,13 @@ struct FObjectReferenceDisc
 	/** For comparisons of references */
 	FORCEINLINE bool operator ==( const FObjectReferenceDisc& other ) const { return LevelName == other.LevelName && PathName == other.PathName; }
 
-private:
-	friend UObject* InternalResolve( const FObjectReferenceDisc& reference, UWorld* world, UObject* searchOuter, UObject* outer );
-
 	/**
 	 * Add a redirector from a object name to a new object name
 	 */
 	static void AddRedirector( const FString& source, const FString& destination );
+
+private:
+	friend UObject* InternalResolve( const FObjectReferenceDisc& reference, UWorld* world, UObject* searchOuter, UObject* outer );
 
 	/**
 	 * Redirects done during this latest session

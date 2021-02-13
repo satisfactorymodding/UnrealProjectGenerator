@@ -43,19 +43,19 @@ public:
 
 	/** This is just the base, that is supposed to show propts for the user to input data.
 	 * this is overloaded per property type */
-	void ShowInputWindowFor( UProperty* prop );
+	void ShowInputWindowFor( FProperty* prop );
 
 	/** Propmts the user with true and false inputs */
-	void ShowInputWindowFor( UBoolProperty* prop );
+	void ShowInputWindowFor( FBoolProperty* prop );
 
 	/** Propmts the user with true and false inputs */
-	void ShowInputWindowFor( UNumericProperty* prop );
+	void ShowInputWindowFor( FNumericProperty* prop );
 	
 	/** Propmts the user to input a resource class */
 	void ShowInputWindowFor( UClass* inClass );
 
 	/** Propmts the user to input a text, FString or UText. (No FName yet) */
-	void ShowInputWindowFor( UStrProperty* prop );
+	void ShowInputWindowFor( FStrProperty* prop );
 
 	/** Propmts the user to input a color */
 	void ShowInputWindowFor( FLinearColor color );	
@@ -105,7 +105,7 @@ public:
 	void OnSetColorFromColorPicker( FLinearColor newColor );
 
 	/** Get the next property for mFunctionWaitingForParms, where the current is mPropertyWaitingForInput*/
-	UProperty* GetNextProperty();
+	FProperty* GetNextProperty();
 
 public:
 
@@ -141,7 +141,7 @@ private:
 	CheatMenuObject* mCurrentCheat = nullptr;
 
 	/** This is the property we asked for input about */
-	UProperty* mPropertyWaitingForInput;
+	FProperty* mPropertyWaitingForInput;
 
 	/** The textstyle used in this widget */
 	FTextBlockStyle* mButtonTextStyle;

@@ -3,7 +3,7 @@
 #include "FGLocomotiveMovementComponent.h"
 
 void UFGLocomotiveMovementComponent::TickComponent(float dt, enum ELevelTick tickType, FActorComponentTickFunction *thisTickFunction){ }
-void UFGLocomotiveMovementComponent::GetLifetimeReplicatedProps( TArray<class FLifetimeProperty,  FDefaultAllocator> & OutReplicatedProps) const{ }
+void UFGLocomotiveMovementComponent::GetLifetimeReplicatedProps(TArray<class FLifetimeProperty,  TSizedDefaultAllocator<32>> & OutReplicatedProps) const{ }
 void UFGLocomotiveMovementComponent::ComputeConstants(){ }
 void UFGLocomotiveMovementComponent::TickSlaveInput(float dt, const UFGLocomotiveMovementComponent* master){ }
 void UFGLocomotiveMovementComponent::TickTractionAndFriction(float dt){ }

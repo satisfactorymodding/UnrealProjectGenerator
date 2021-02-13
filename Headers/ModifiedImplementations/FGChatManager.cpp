@@ -5,12 +5,7 @@
 FChatMessageStruct::FChatMessageStruct(){ }
 FChatMessageStruct::FChatMessageStruct(FString messageString,  AFGPlayerState* sender, float serverTimeStamp){ }
 AFGChatManager* AFGChatManager::Get(UObject* worldContext){ return nullptr; }
-AFGChatManager::AFGChatManager() : Super() {
-	this->mMaxNumMessagesInHistory = 50;
-	this->mMessageVisibleDuration = 10;
-	this->bAlwaysRelevant = true;
-	this->bReplicates = true;
-}
+AFGChatManager::AFGChatManager(){ }
 FString AFGChatManager::GetChatMessageName(const FChatMessageStruct& inMessage){ return FString(); }
 FLinearColor AFGChatManager::GetChatMessageColor(const FChatMessageStruct& inMessage){ return FLinearColor(); }
 void AFGChatManager::Multicast_BroadcastChatMessage_Implementation(const FChatMessageStruct& newMessage){ }

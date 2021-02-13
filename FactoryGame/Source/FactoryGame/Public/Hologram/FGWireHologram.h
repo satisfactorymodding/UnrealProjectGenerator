@@ -39,6 +39,8 @@ public:
 	virtual void OnInvalidHitResult() override;
 	virtual void SpawnChildren( AActor* hologramOwner, FVector spawnLocation, APawn* hologramInstigator ) override;
 	virtual void ScrollRotate( int32 delta, int32 step ) override;
+	virtual AActor* GetUpgradedActor() const override;
+	virtual bool TryUpgrade( const FHitResult& hitResult ) override;
 	// End AFGHologram Interface
 
 	// Begin AFGBuildableHologram Interface
@@ -79,6 +81,8 @@ private:
 
 	float GetLength() const;
 
+	void SetUpgradeTarget( AFGBuildableWire* target );
+
 private:
 	float mMaxLength;
 	float mLengthPerCost;
@@ -116,6 +120,7 @@ private:
 	UPROPERTY()
 	UStaticMeshComponent* mWireMesh;
 
+	TWeakObjectPtr< class AFGBuildableWire > mUpgradeTarget;
 public:
 	FORCEINLINE ~AFGWireHologram() = default;
 };

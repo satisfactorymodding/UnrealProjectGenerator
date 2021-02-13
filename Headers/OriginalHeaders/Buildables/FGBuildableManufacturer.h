@@ -39,6 +39,7 @@ public:
 
 	// Begin IFGReplicationDetailActorOwnerInterface
 	virtual UClass* GetReplicationDetailActorClass() const override { return AFGReplicationDetailActor_Manufacturing::StaticClass(); };
+	virtual void OnReplicationDetailActorRemoved() override;
 	// End IFGReplicationDetailActorOwnerInterface
 
 	/**

@@ -9,6 +9,10 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FDeathDelegate, AActor*, DeadActor 
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_FiveParams( FTakeAnyDamageDelegate, AActor*, damagedActor, float, damageAmount, const class UDamageType*, damageType, class AController*, instigatedBy, AActor*, damageCauser );
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_NineParams( FTakePointDamageDelegate, AActor*, DamagedActor, float, Damage, class AController*, InstigatedBy, FVector, HitLocation, class UPrimitiveComponent*, FHitComponent, FName, BoneName, FVector, ShotFromDirection, const class UDamageType*, DamageType, AActor*, DamageCauser );
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_SevenParams( FTakeRadialDamageDelegate, AActor*, DamagedActor, float, Damage, const class UDamageType*, DamageType, FVector, Origin, FHitResult, HitInfo, class AController*, InstigatedBy, AActor*, DamageCauser );
+
 DECLARE_DYNAMIC_DELEGATE_RetVal_FiveParams( float, FAdjustDamageDelegate, AActor*, damagedActor, float, damageAmount, const class UDamageType*, damageType, class AController*, instigatedBy, AActor*, damageCauser );
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FHealDelegate, float, amount );
@@ -85,10 +89,10 @@ public:
 	FTakeAnyDamageDelegate OnTakeAnyDamageDelegate;
 
 	UPROPERTY( BlueprintAssignable, Category = "Events|Health" )
-	FTakePointDamageSignature OnTakePointDamageDelegate;
+	FTakePointDamageDelegate OnTakePointDamageDelegate;
 
 	UPROPERTY( BlueprintAssignable, Category = "Events|Health" )
-	FTakeRadialDamageSignature OnTakeRadialDamageDelegate;
+	FTakeRadialDamageDelegate OnTakeRadialDamageDelegate;
 
 	/** SERVER ONLY: Called when we die */
 	UPROPERTY( BlueprintAssignable, Category = "Events|Health", DisplayName = "OnDeath" )

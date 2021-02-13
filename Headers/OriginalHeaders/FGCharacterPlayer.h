@@ -179,6 +179,9 @@ public:
 	virtual void PostLoadGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
 	//~End IFGSaveInterface
 
+	// Setup run when this player ahve been possessed.
+	void OnPossessedSetup();
+
 	/** Blueprint function that ticks visual things not needed on dedicated server */
 	UFUNCTION( BlueprintImplementableEvent, BlueprintCosmetic, Category = "Character" )
 	void TickVisuals( float dt );

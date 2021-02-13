@@ -17,6 +17,7 @@ public:
 
 	virtual void InitReplicationDetailActor( class AFGBuildable* owningActor ) override;
 	virtual void UpdateInternalReplicatedValues() override;
+	virtual void RemoveDetailActorFromOwner() override;
 	virtual void FlushReplicationActorStateToOwner() override;
 	virtual bool HasCompletedInitialReplication() const override;
 

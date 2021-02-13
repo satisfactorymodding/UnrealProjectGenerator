@@ -15,6 +15,7 @@ class FACTORYGAME_API AFGBuildableGenerator : public AFGBuildableFactory
 public:
 	/** Decide on what properties to replicate */
 	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
+	virtual void PreReplication( IRepChangedPropertyTracker& ChangedPropertyTracker ) override;
 
 	/** Constructor */
 	AFGBuildableGenerator();

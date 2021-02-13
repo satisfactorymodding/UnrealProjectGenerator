@@ -41,6 +41,7 @@ bool AFGCharacterPlayer::IsAlive_Implementation() const{ return bool(); }
 FVector AFGCharacterPlayer::GetAttackLocation_Implementation() const{ return FVector(); }
 bool AFGCharacterPlayer::ShouldSave_Implementation() const{ return bool(); }
 void AFGCharacterPlayer::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
+void AFGCharacterPlayer::OnPossessedSetup(){ }
 void AFGCharacterPlayer::EquipEquipment(AFGEquipment* equipment){ }
 void AFGCharacterPlayer::UnequipEquipment(AFGEquipment* equipment){ }
 void AFGCharacterPlayer::SetOverrideEquipment(AFGEquipment* equipment){ }

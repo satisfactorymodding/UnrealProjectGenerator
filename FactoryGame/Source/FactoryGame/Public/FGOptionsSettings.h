@@ -133,9 +133,9 @@ struct FACTORYGAME_API FActionMappingDisplayName
 {
 	GENERATED_BODY()
 	
-	MODDING_SHIPPING_FORCEINLINE FActionMappingDisplayName(){}
+	FActionMappingDisplayName(){}
 
-	MODDING_SHIPPING_FORCEINLINE FActionMappingDisplayName( FName keyBidningName ) :
+	FActionMappingDisplayName( FName keyBidningName ) :
 		ActionMappingName( keyBidningName )
 	{}
 
@@ -147,7 +147,7 @@ struct FACTORYGAME_API FActionMappingDisplayName
 
 public:
 	FORCEINLINE ~FActionMappingDisplayName() = default;
-	MODDING_SHIPPING_FORCEINLINE FActionMappingDisplayName(const FActionMappingDisplayName&) = default;
+	FORCEINLINE FActionMappingDisplayName(const FActionMappingDisplayName&) = default;
 };
 
 USTRUCT( BlueprintType, meta = ( ShowOnlyInnerProperties ) )
@@ -155,9 +155,9 @@ struct FACTORYGAME_API FAxisMappingDisplayName
 {
 	GENERATED_BODY()
 
-	MODDING_SHIPPING_FORCEINLINE FAxisMappingDisplayName(){}
+	FAxisMappingDisplayName(){}
 
-	MODDING_SHIPPING_FORCEINLINE FAxisMappingDisplayName( FName axisMappingName ) :
+	FAxisMappingDisplayName( FName axisMappingName ) :
 		AxisMappingName( axisMappingName )
 	{}
 
@@ -172,7 +172,7 @@ struct FACTORYGAME_API FAxisMappingDisplayName
 
 public:
 	FORCEINLINE ~FAxisMappingDisplayName() = default;
-	MODDING_SHIPPING_FORCEINLINE FAxisMappingDisplayName(const FAxisMappingDisplayName&) = default;
+	FORCEINLINE FAxisMappingDisplayName(const FAxisMappingDisplayName&) = default;
 };
 
 UCLASS( config = Game, defaultconfig, meta = ( DisplayName = "Satisfactory User Options" ) )

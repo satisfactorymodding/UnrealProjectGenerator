@@ -1,5 +1,6 @@
 #pragma once
 
+#include "FGAggroTargetInterface.h"
 #include "FGAttack.generated.h"
 
 

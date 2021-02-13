@@ -44,7 +44,7 @@ public:
 	void SetInstanced( bool setToInstanced );
 
 protected:
-	virtual void CreateRenderState_Concurrent() override;
+	virtual void CreateRenderState_Concurrent( FRegisterComponentContext* Context ) override;
 
 	virtual void OnHiddenInGameChanged() override;
 

@@ -135,9 +135,9 @@ public:
 	void UnRegister( class AFGFoliageRemoval* actor );
 
 	/**
-	 * @return true if the static mesh is removable
+	 * @return true if the foliage type is removable
 	 */
-	virtual bool IsRemovable( class UStaticMesh* staticMesh ) const;
+	bool IsRemovable( class UFoliageType* foliageType ) const;
 
 	// Begin FactoryStatHelpers functions
 	int32 Stat_NumRemovedInstances() const;

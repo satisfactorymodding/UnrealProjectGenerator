@@ -6,6 +6,7 @@
 #include "UObject/Interface.h"
 #include "UObject/Class.h"
 
+#include "FGInventoryComponent.h"
 #include "FGChainsawableInterface.generated.h"
 
 /**

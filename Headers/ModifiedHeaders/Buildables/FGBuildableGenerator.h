@@ -1,6 +1,7 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
+#include "UObject/CoreNet.h"
 #include "Array.h"
 #include "GameFramework/Actor.h"
 #include "UObject/Class.h"
@@ -18,6 +19,7 @@ class FACTORYGAME_API AFGBuildableGenerator : public AFGBuildableFactory
 public:
 	/** Decide on what properties to replicate */
 	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
+	virtual void PreReplication( IRepChangedPropertyTracker& ChangedPropertyTracker ) override;
 
 	/** Constructor */
 	AFGBuildableGenerator();

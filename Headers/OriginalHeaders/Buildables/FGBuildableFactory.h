@@ -72,14 +72,31 @@ public:
 	virtual void Factory_Tick( float dt ) override;
 	// End Factory_ interface
 
+	// Begin IFGUseableInterface
+	virtual void OnUse_Implementation( class AFGCharacterPlayer* byCharacter, const FUseState& state ) override;
+	virtual void OnUseStop_Implementation( class AFGCharacterPlayer* byCharacter, const FUseState& state ) override;
+	virtual bool IsUseable_Implementation() const override;
+	// End IFGUseableInterface
+
 	// Begin IFGDismantleInterface
 	virtual void GetDismantleRefund_Implementation( TArray< FInventoryStack >& out_refund ) const override;
 	// End IFGDismantleInterface
 
 	// Begin IFGReplicationDetailActorOwnerInterface
-	virtual AFGReplicationDetailActor* GetReplicationDetailActor() override { return GetOrCreateReplicationDetailActor(); };
+	virtual AFGReplicationDetailActor* GetReplicationDetailActor( bool tryCreate = false ) override 
+	{
+		if( tryCreate )
+		{
+			return GetOrCreateReplicationDetailActor(); 
+		}
+		else
+		{
+			return mReplicationDetailActor;
+		}
+	};
 	virtual void OnBuildableReplicationDetailStateChange( bool newStateIsActive ) override;
 	virtual void OnReplicationDetailActorCreated() override;
+	virtual void OnReplicationDetailActorRemoved() override;
 	virtual UClass* GetReplicationDetailActorClass() const override { return AFGReplicationDetailActor_BuildableFactory::StaticClass(); };
 	// End IFGReplicationDetailActorOwnerInterface
 
@@ -283,6 +300,7 @@ public:
 	  */
 	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Factory|Effects" )
 	void TryStopProductionLoopEffects( bool didStopProducing );
+
 protected:
 	/** Called whenever HasPower has changed, exposed here for cleaner/more optimized ways of changing state when the factory has power */
 	UFUNCTION( BlueprintImplementableEvent, CustomEventUsing = mHasOnHasPowerChanged, Category="FactoryGame|Factory|Power")

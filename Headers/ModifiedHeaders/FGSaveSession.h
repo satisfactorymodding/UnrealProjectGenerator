@@ -262,6 +262,9 @@ public: // MODDING EDIT protected -> public
 
 	/** Name of the save that will be saved at end of frame */
 	FString mPendingSaveName;
+
+	/** Is pending save an autosave? */
+	bool mPendingSaveIsAuto;
 	
 	/** Callback to end of frame to be removed after save */
 	FDelegateHandle mPendingSaveWorldHandle;

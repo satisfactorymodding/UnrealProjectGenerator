@@ -27,9 +27,6 @@ protected:
 	/** If true, we will allocate a instance of the state, so we can store information in the state */
 	UPROPERTY( EditDefaultsOnly, Category="Use" )
 	bool mIsUsableState;
-
-public:
-	FORCEINLINE ~UFGUseState() = default;
 };
 
 /**
@@ -41,9 +38,6 @@ class FACTORYGAME_API UFGUseState_Valid : public UFGUseState
 	GENERATED_BODY()
 
 	UFGUseState_Valid() : Super() { mIsUsableState = true; }
-
-public:
-	FORCEINLINE ~UFGUseState_Valid() = default;
 };
 
 /**
@@ -74,9 +68,6 @@ protected:
 	/** Contains the usable state of the object, might be a error code */
 	UPROPERTY( BlueprintReadOnly )
 	TSubclassOf< UFGUseState > State;
-
-public:
-	FORCEINLINE ~FUseState() = default;
 };
 
 /**
@@ -89,9 +80,6 @@ class FACTORYGAME_API UFGUseableInterface : public UInterface
 	
  GENERATED_BODY()
 	UFGUseableInterface(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} 
-
-public:
-	FORCEINLINE ~UFGUseableInterface() = default;
 };
 
 /**

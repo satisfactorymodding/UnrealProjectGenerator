@@ -152,7 +152,7 @@ private:
 	* This is just a failsafe when loading a save file on a new platform. Otherwise this logic is handled by AGameMode::FindInactivePlayer
 	* Returns true for some special cases. Check implementation for more details
 	*/
-	bool CompareUniqueNetIdBetweenOSS( FUniqueNetIdRepl& newID, FUniqueNetIdRepl& savedID );
+	bool CompareUniqueNetIdBetweenOSS( const FUniqueNetIdRepl& newID, const FUniqueNetIdRepl& savedID );
 
 protected:
 	UPROPERTY()

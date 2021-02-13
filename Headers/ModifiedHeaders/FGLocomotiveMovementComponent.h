@@ -105,8 +105,6 @@ public:
 	virtual void TickComponent( float dt, enum ELevelTick tickType, FActorComponentTickFunction *thisTickFunction ) override;
 	// End UActorComponent Interface
 	
-	virtual void GetLifetimeReplicatedProps(class TArray<class FLifetimeProperty, class FDefaultAllocator> & OutReplicatedProps) const override; // MODDING EDIT
-
 	//~ Begin UFGRailroadVehicleMovementComponent interface
 	virtual void ComputeConstants() override;
 	virtual void TickSlaveInput( float dt, const UFGLocomotiveMovementComponent* master ) override;

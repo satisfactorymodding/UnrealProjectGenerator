@@ -25,6 +25,7 @@ public:
 
 	// Begin IFGReplicationDetailActorOwnerInterface
 	virtual UClass* GetReplicationDetailActorClass() const override { return AFGReplicationDetailActor_DockingStation::StaticClass(); };
+	virtual void OnReplicationDetailActorRemoved() override;
 	// End IFGReplicationDetailActorOwnerInterface
 
 	/** @return a valid pointer to the fuel inventory */
@@ -193,6 +194,6 @@ private:
 	class UFGInventoryComponent* mInventory;
 
 	/** Inventory for refueling the trucks. */
-	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_FuelInventory )
+	UPROPERTY( SaveGame )
 	class UFGInventoryComponent* mFuelInventory;
 };

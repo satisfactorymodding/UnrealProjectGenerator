@@ -240,9 +240,9 @@ public:
 	/** Set the planned restart in time seconds */
 	void SetPlannedServerRestartWorldTime( float worldTimeSeconds );
 
-	/** Gets the UTC date and time on the server */
+	/** Gets the Local date and time on the server */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|DateTime" )
-    FDateTime GetServerUTCNow() const;
+    FDateTime GetServerLocalDateTime() const;
 	
 	/** Called both on client and server for syncing session names for connected players*/
 	UFUNCTION()
@@ -425,9 +425,9 @@ private:
 	UPROPERTY( SaveGame, Replicated )
 	bool mIsSpaceElevatorBuilt;
 
-	/** The UTC date and time represented in ticks at the time of the init of this game state. */
+	/** The local date and time on the server represented in ticks at the time of the init of this game state. */
 	UPROPERTY( Replicated )
-	int64 mUTCDateTimeTicksAtInit;
+	int64 mServerLocalDateTimeTicksAtInit;
 
 
 public:

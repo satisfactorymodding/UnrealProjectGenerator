@@ -3,10 +3,11 @@
 
 #include "GameFramework/Actor.h"
 #include "FGUseableInterface.h"
+#include "Replication/FGStaticReplicatedActor.h"
 #include "FGInteractActor.generated.h"
 
 UCLASS( abstract )
-class FACTORYGAME_API AFGInteractActor : public AActor, public IFGUseableInterface
+class FACTORYGAME_API AFGInteractActor : public AFGStaticReplicatedActor, public IFGUseableInterface
 {
 	GENERATED_BODY()
 public:

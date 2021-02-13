@@ -32,6 +32,7 @@ public:
 
 	// Begin IFGReplicationDetailActorOwnerInterface
 	virtual UClass* GetReplicationDetailActorClass() const override { return AFGRepDetailActor_Extractor::StaticClass(); };
+	virtual void OnReplicationDetailActorRemoved() override;
 	// End IFGReplicationDetailActorOwnerInterface
 
 	// Begin AActor interface
@@ -185,7 +186,7 @@ protected:
 	/** DEPRICATED - Only used for old save support. Use mExtractableResource instead.
 	*   The resource node we want to extract from.
 	*/
-	UPROPERTY( SaveGame, Replicated )
+	UPROPERTY( SaveGame )
 	class AFGResourceNode* mExtractResourceNode;
 
 	UPROPERTY( SaveGame, Replicated )

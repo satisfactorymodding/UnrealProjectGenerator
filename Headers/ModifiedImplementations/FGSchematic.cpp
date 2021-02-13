@@ -12,9 +12,7 @@ void UFGSchematic::MigrateDataToNewDependencySystem(){ }
 #if WITH_EDITOR
 void UFGSchematic::UpdateAssetBundleData(){ }
 #endif 
-UFGSchematic::UFGSchematic() : Super() {
-	this->mTimeToComplete = 600;
-}
+UFGSchematic::UFGSchematic(){ }
 ESchematicType UFGSchematic::GetType(TSubclassOf< UFGSchematic > inClass){ 
 	if (inClass)
 		return inClass.GetDefaultObject()->mType;

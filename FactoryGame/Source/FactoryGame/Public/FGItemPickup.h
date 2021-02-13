@@ -9,6 +9,7 @@
 #include "FGSaveInterface.h"
 #include "FGInventoryComponent.h"
 #include "FGSignificanceInterface.h"
+#include "Replication/FGStaticReplicatedActor.h"
 #include "FGItemPickup.generated.h"
 
 /**
@@ -52,7 +53,7 @@ enum class EItemState :uint8
  * @todo: This looks like it should be a subclass of FGInteractActor
  */
 UCLASS(abstract)
-class FACTORYGAME_API AFGItemPickup : public AActor, public IFGUseableInterface, public IFGSaveInterface, public IFGSignificanceInterface
+class FACTORYGAME_API AFGItemPickup : public AFGStaticReplicatedActor, public IFGUseableInterface, public IFGSaveInterface, public IFGSignificanceInterface
 {
 	GENERATED_BODY()
 public:

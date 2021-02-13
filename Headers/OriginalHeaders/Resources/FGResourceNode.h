@@ -9,6 +9,7 @@
 #include "FGExtractableResourceInterface.h"
 #include "FGActorRepresentationInterface.h"
 #include "FGSignificanceInterface.h"
+#include "FGStaticReplicatedActor.h"
 #include "FGResourceNode.generated.h"
 
 class UFGResourceDescriptor;
@@ -77,7 +78,7 @@ class UFGUseState_NonConveyorResource : public UFGUseState
 };
 
 UCLASS(Blueprintable,abstract)
-class FACTORYGAME_API AFGResourceNode : public AActor, public IFGExtractableResourceInterface, public IFGSaveInterface, public IFGUseableInterface, public IFGSignificanceInterface
+class FACTORYGAME_API AFGResourceNode : public AFGStaticReplicatedActor, public IFGExtractableResourceInterface, public IFGSaveInterface, public IFGUseableInterface, public IFGSignificanceInterface
 {
 	GENERATED_BODY()
 	

@@ -65,6 +65,10 @@ public:
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Recipe" )
 	bool IsRecipeAvailable( TSubclassOf< UFGRecipe > recipeClass );
 
+	/** Is the given buildable available to build? */
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Recipe" )
+    bool IsBuidlingAvailable( TSubclassOf< class AFGBuildable > buildableClass ) const;
+
 	/** Find all recipes using the given item as an ingredient. */
 	UFUNCTION( BlueprintCallable, BlueprintPure = false, Category = "FactoryGame|Recipe" )
 	TArray< TSubclassOf< UFGRecipe > > FindRecipesByIngredient( TSubclassOf< UFGItemDescriptor > ingredient ) const;
@@ -88,15 +92,25 @@ private:
 
 	/** Checks if a recipe is valid for addition depending on it relevant events  */
 	bool ShouldAddRecipeByEvent( TSubclassOf< UFGRecipe > recipe ) const;
+
+	/** Steps through mAvailableRecipes and looks for buildings that we can build to add to mAvailableBuildings */
+	void PopulateAvailableBuildings();
+
+	/** Called when mAvailableRecipes have been replicated. used to generate mAvailableBuildings on client */
+	UFUNCTION()
+    void OnRep_AvailableRecipes();
 	
 private:
 	//MODDING EDIT: Expose to AModContentRegistry
 	friend class AModContentRegistry;
 
 	/** All recipes that are available to the producers, i.e. build gun, workbench, manufacturers etc. */
-	UPROPERTY( SaveGame, Replicated )
+	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_AvailableRecipes )
 	TArray< TSubclassOf< UFGRecipe > > mAvailableRecipes;
 
+	/** All buildings that are available to produce in build gun. Generated from mAvailableRecipes. */
+	UPROPERTY( Transient )
+	TArray< TSubclassOf< class AFGBuildable > > mAvailableBuildings;
 public:
 	FORCEINLINE ~AFGRecipeManager() = default;
 };

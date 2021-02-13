@@ -24,8 +24,14 @@ public:
 	/** Called when the InventoryComponent is being switched on server. Called on client when the initial InventoryComponent has been replicated. */
 	void SetReplicationInventoryComponent( class UFGInventoryComponent* inventoryComponent );
 
+	/** When the a detail actor is destroyed, this is called to null out the replication inventory component (so that it can be reinitialized when a new one is created) */
+	void ClearReplicationInventoryComponent();
+
 	/** Returns the active inventory component */
 	FORCEINLINE class UFGInventoryComponent* GetActiveInventoryComponent() const { return mActiveInventoryComponent; }
+
+	/** Returns whether or not a MainInventoryComponent has been set */
+	FORCEINLINE bool HasMainInventoryComponent() const { return IsValid( mMainInventoryComponent ); }
 
 protected:
 	// The active InventoryComponent returned

@@ -37,9 +37,6 @@ public:
 	/** Dumps the top playing components to log, grouped either by class or actor playing. */
 	UFUNCTION( exec )
 	void TrackAkComponents( bool byClass = true );
-	/** Dumps the stats for wwise memory pools to the log. */
-	UFUNCTION( exec )
-	void TrackAkMemoryPools();
 	/** Dumps all ak components with no position (0,0,0) or owner to the log. */
 	UFUNCTION( exec )
 	void TrackAkComponentsWithNoPositionOrOwner();

@@ -2,10 +2,11 @@
 
 #include "GameFramework/Actor.h"
 #include "FGUseableInterface.h"
+#include "FGStaticReplicatedActor.h"
 #include "FGInteractActor.generated.h"
 
 UCLASS( abstract )
-class AFGInteractActor : public AActor, public IFGUseableInterface
+class AFGInteractActor : public AFGStaticReplicatedActor, public IFGUseableInterface
 {
 	GENERATED_BODY()
 public:

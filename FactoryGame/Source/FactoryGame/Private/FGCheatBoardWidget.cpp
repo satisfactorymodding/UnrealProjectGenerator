@@ -7,11 +7,11 @@ FReply SFGCheatBoardWidget::OnKeyDown(const FGeometry& myGeometry, const FKeyEve
 bool SFGCheatBoardWidget::SupportsKeyboardFocus() const{ return bool(); }
 void SFGCheatBoardWidget::CloseCheatBoard(){ }
 FReply SFGCheatBoardWidget::OnFocusReceived(const FGeometry& MyGeometry, const FFocusEvent& InFocusEvent){ return FReply::Unhandled(); }
-void SFGCheatBoardWidget::ShowInputWindowFor(UProperty* prop){ }
-void SFGCheatBoardWidget::ShowInputWindowFor(UBoolProperty* prop){ }
-void SFGCheatBoardWidget::ShowInputWindowFor(UNumericProperty* prop){ }
+void SFGCheatBoardWidget::ShowInputWindowFor(FProperty* prop){ }
+void SFGCheatBoardWidget::ShowInputWindowFor(FBoolProperty* prop){ }
+void SFGCheatBoardWidget::ShowInputWindowFor(FNumericProperty* prop){ }
 void SFGCheatBoardWidget::ShowInputWindowFor(UClass* inClass){ }
-void SFGCheatBoardWidget::ShowInputWindowFor(UStrProperty* prop){ }
+void SFGCheatBoardWidget::ShowInputWindowFor(FStrProperty* prop){ }
 void SFGCheatBoardWidget::ShowInputWindowFor(FLinearColor color){ }
 void SFGCheatBoardWidget::ShowInputWindowFor(UEnum* enumProp){ }
 void SFGCheatBoardWidget::SetFilterTextboxFocus() const{ }
@@ -29,5 +29,5 @@ FReply SFGCheatBoardWidget::OnClassParm(UClass* inClass){ return FReply::Unhandl
 FReply SFGCheatBoardWidget::OnNumInputClicked(int32 value){ return FReply::Unhandled(); }
 void SFGCheatBoardWidget::OnClassParmAction(UClass* inClass){ }
 void SFGCheatBoardWidget::OnSetColorFromColorPicker(FLinearColor newColor){ }
-UProperty* SFGCheatBoardWidget::GetNextProperty(){ return nullptr; }
+FProperty* SFGCheatBoardWidget::GetNextProperty(){ return nullptr; }
 #endif

@@ -290,7 +290,7 @@ private:
 
 	//@TODO:[DavalliusA:Wed/20-11-2019] should these not be marked as transient?
 	/** The actor to replace (dismantle) when upgrading. */
-	UPROPERTY( Replicated )
+	UPROPERTY()
 	class AActor* mUpgradedActor;
 
 	/** Moves the clearance box collision to where we are aiming */

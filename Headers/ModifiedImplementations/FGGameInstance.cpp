@@ -3,9 +3,7 @@
 #include "FGGameInstance.h"
 
 void FOnJoinSessionData::SetState(EJoinSessionState newState, FOnJoinSessionStateChanged& onStateChangedDelegate){ }
-UFGGameInstance::UFGGameInstance() : Super() {
-	
-}
+UFGGameInstance::UFGGameInstance(){ }
 UFGGameInstance::~UFGGameInstance(){ }
 void UFGGameInstance::Init(){ }
 bool UFGGameInstance::JoinSession(ULocalPlayer* localPlayer, const FOnlineSessionSearchResult& searchResult){ return bool(); }

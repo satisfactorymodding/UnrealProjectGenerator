@@ -31,11 +31,15 @@ public:
 
 	// Begin IFGReplicationDetailActorOwnerInterface
 	virtual UClass* GetReplicationDetailActorClass() const override { return AFGReplicationDetailActor_Storage::StaticClass(); };
+	virtual void OnReplicationDetailActorRemoved() override;
 	// End IFGReplicationDetailActorOwnerInterface
 
 	/** Get the storage inventory from this storage box. */
 	UFUNCTION( BlueprintPure, Category = "Inventory" )
 	FORCEINLINE class UFGInventoryComponent* GetStorageInventory() { return mStorageInventoryHandler->GetActiveInventoryComponent(); }
+
+	/** Get the initial (non-repdetail) inventory. This is only available on Server */
+	FORCEINLINE class UFGInventoryComponent* GetInitialStorageInventory() { return mStorageInventory; }
 
 protected:
 	friend class AFGReplicationDetailActor_Storage;

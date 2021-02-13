@@ -8,13 +8,7 @@ void AFGResourceNode::PostEditChangeProperty( FPropertyChangedEvent& propertyCha
 void AFGResourceNode::CheckForErrors(){ Super::CheckForErrors(); }
 #endif 
 void AFGResourceNode::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
-AFGResourceNode::AFGResourceNode() : Super() {
-	this->mCanPlaceResourceExtractor = true;
-	this->mExtractMultiplier = 1;
-	this->mDoSpawnParticle = true;
-	this->mAddToSignificanceManager = true;
-	this->bReplicates = true;
-}
+AFGResourceNode::AFGResourceNode(){ }
 void AFGResourceNode::PostLoad(){ Super::PostLoad(); }
 void AFGResourceNode::BeginPlay(){ }
 void AFGResourceNode::EndPlay(const EEndPlayReason::Type endPlayReason){ }

@@ -8,10 +8,11 @@
 #include "FGSignificanceInterface.h"
 #include "FGExplosiveDestroyableInterface.h"
 #include "Interfaces/Interface_PostProcessVolume.h"
+#include "FGStaticReplicatedActor.h"
 #include "FGGasPillar.generated.h"
 
 UCLASS()
-class FACTORYGAME_API AFGGasPillar : public AActor, public IFGSignificanceInterface, public IInterface_PostProcessVolume//, public IFGExplosiveDestroyableInterface, public IFGSaveInterface
+class FACTORYGAME_API AFGGasPillar : public AFGStaticReplicatedActor, public IFGSignificanceInterface, public IInterface_PostProcessVolume//, public IFGExplosiveDestroyableInterface, public IFGSaveInterface
 {
 	GENERATED_BODY()
 public:	

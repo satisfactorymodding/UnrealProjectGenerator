@@ -10,5 +10,7 @@ public class FactoryGameEditorTarget : TargetRules
 		Type = TargetType.Editor;
 
 		ExtraModuleNames.AddRange( new string[] { "FactoryGame" } );
+		
+		AdditionalCompilerArguments = "/std:c++17";
 	}
 }

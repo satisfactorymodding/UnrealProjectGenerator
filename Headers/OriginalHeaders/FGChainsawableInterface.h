@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FGInventoryComponent.h"
 #include "FGChainsawableInterface.generated.h"
 
 /**

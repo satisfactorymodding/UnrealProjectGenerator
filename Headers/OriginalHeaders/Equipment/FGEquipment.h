@@ -81,7 +81,7 @@ public:
 	 * @return - true if equiped; otherwise false.
 	 */
 	UFUNCTION( BlueprintPure, Category = "Equipment" )
-	FORCEINLINE bool IsEquipped() const { return Instigator != nullptr; }
+	FORCEINLINE bool IsEquipped() const { return GetInstigator() != nullptr; }
 
 	/**
 	 * Convenience blueprint function to return Instigator as a FGCharacterPlayer

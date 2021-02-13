@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "FGStaticReplicatedActor.h"
 #include "FGBeacon.generated.h"
 
 UCLASS()
-class FACTORYGAME_API AFGBeacon : public AActor
+class FACTORYGAME_API AFGBeacon : public AFGStaticReplicatedActor
 {
 	GENERATED_BODY()
 public:

@@ -34,6 +34,7 @@ public:
 
 	// Begin IFGReplicationDetailActorOwnerInterface
 	virtual UClass* GetReplicationDetailActorClass() const override { return AFGReplicationDetailActor_GeneratorFuel::StaticClass(); };
+	virtual void OnReplicationDetailActorRemoved() override;
 	// End IFGReplicationDetailActorOwnerInterface
 
 	// Begin IFGDismantleInterface
@@ -213,7 +214,7 @@ protected:
 	float mSupplementalToPowerRatio;
 
 	/** @todo: Cleanup, this shouldn't need to be replicated, clients should be able to fetch this anyway. Static index of fuel slot? */
-	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_FuelInventory )
+	UPROPERTY( SaveGame )
 	class UFGInventoryComponent* mFuelInventory;
 
 	/** Cached input connections */
