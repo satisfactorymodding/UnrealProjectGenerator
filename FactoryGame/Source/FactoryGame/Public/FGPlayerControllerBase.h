@@ -1,13 +1,8 @@
 #pragma once
-#include "Array.h"
-#include "UnrealString.h"
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
 
 #include "Online.h"
 #include "FGInputLibrary.h"
 #include "PlayerPresenceState.h"
-#include "GameFramework/PlayerController.h"
 #include "FGPlayerControllerBase.generated.h"
 
 
@@ -16,7 +11,7 @@
 DECLARE_DYNAMIC_MULTICAST_DELEGATE( FOnInputChanged );
 
 UCLASS()
-class FACTORYGAME_API AFGPlayerControllerBase : public APlayerController
+class AFGPlayerControllerBase : public APlayerController
 {
 	GENERATED_BODY()
 public:
@@ -191,7 +186,4 @@ private:
 
 	/** Are we using gamepad? */
 	bool mIsUsingGamepad;
-
-public:
-	FORCEINLINE ~AFGPlayerControllerBase() = default;
 };

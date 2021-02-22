@@ -1,21 +1,15 @@
 #pragma once
-#include "UObject/Interface.h"
 
 #include "FGReplicationDetailActor.h"
 #include "FGReplicationDetailActorOwnerInterface.generated.h"
 
 UINTERFACE( Blueprintable )
-class FACTORYGAME_API UFGReplicationDetailActorOwnerInterface : public UInterface
+class UFGReplicationDetailActorOwnerInterface : public UInterface
 {
-	
- GENERATED_BODY()
-	UFGReplicationDetailActorOwnerInterface(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} 
-
-public:
-	FORCEINLINE ~UFGReplicationDetailActorOwnerInterface() = default;
+	GENERATED_UINTERFACE_BODY()
 };
 
-class FACTORYGAME_API IFGReplicationDetailActorOwnerInterface
+class IFGReplicationDetailActorOwnerInterface
 {
 	GENERATED_IINTERFACE_BODY()
 
@@ -41,7 +35,4 @@ public:
 
 	/** Returns the relevant class type for the replication detail actor. Must inherit from AFGReplicationDetailActor. */
 	virtual UClass* GetReplicationDetailActorClass() const = 0;
-
-public:
-	FORCEINLINE IFGReplicationDetailActorOwnerInterface() = default;
 };

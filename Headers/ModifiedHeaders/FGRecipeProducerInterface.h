@@ -1,6 +1,4 @@
 #pragma once
-#include "UObject/Interface.h"
-#include "UObject/Class.h"
 
 #include "FGRecipeProducerInterface.generated.h"
 
@@ -9,23 +7,15 @@
 * have a UCLASS to be able to access
 */
 UINTERFACE( Blueprintable )
-class FACTORYGAME_API UFGRecipeProducerInterface : public UInterface
+class UFGRecipeProducerInterface : public UInterface
 {
-	
- GENERATED_BODY()
-	UFGRecipeProducerInterface(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} 
-
-public:
-	FORCEINLINE ~UFGRecipeProducerInterface() = default;
+	GENERATED_UINTERFACE_BODY()
 };
 
 /**
 *
 */ 
-class FACTORYGAME_API IFGRecipeProducerInterface
+class IFGRecipeProducerInterface
 {
 	GENERATED_IINTERFACE_BODY()
-
-public:
-	FORCEINLINE IFGRecipeProducerInterface() = default;
 };

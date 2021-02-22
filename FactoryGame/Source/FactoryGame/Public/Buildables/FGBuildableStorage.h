@@ -1,13 +1,10 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
 
 #include "FGBuildableFactory.h"
-#include "../Replication/FGReplicationDetailInventoryComponent.h"
-#include "../Replication/FGReplicationDetailActor_Storage.h"
+#include "FGReplicationDetailInventoryComponent.h"
+#include "FGReplicationDetailActor_Storage.h"
 #include "FGBuildableStorage.generated.h"
 
 /**
@@ -86,7 +83,4 @@ private:
 
 private:
 	class AFGReplicationDetailActor_Storage* GetCastRepDetailsActor() const { return Cast<AFGReplicationDetailActor_Storage>( mReplicationDetailActor ); };
-
-public:
-	FORCEINLINE ~AFGBuildableStorage() = default;
 };

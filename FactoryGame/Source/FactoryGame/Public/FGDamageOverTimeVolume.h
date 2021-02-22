@@ -1,14 +1,11 @@
 #pragma once
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "Interfaces/Interface_PostProcessVolume.h"
 #include "GameFramework/Volume.h"
 #include "FGDamageOverTimeVolume.generated.h"
 
 UCLASS( hidecategories=(Mobile,Physics,Cooking,Collision) )
-class FACTORYGAME_API AFGDamageOverTimeVolume : public AVolume, public IInterface_PostProcessVolume
+class AFGDamageOverTimeVolume : public AVolume, public IInterface_PostProcessVolume
 {
 	GENERATED_BODY()
 public:
@@ -38,7 +35,4 @@ protected:
 	/** The component that will do the damage to actors */
 	UPROPERTY( VisibleInstanceOnly, Category="Damage")
 	class UFGDotComponent* mDotComponent;
-
-public:
-	FORCEINLINE ~AFGDamageOverTimeVolume() = default;
 };

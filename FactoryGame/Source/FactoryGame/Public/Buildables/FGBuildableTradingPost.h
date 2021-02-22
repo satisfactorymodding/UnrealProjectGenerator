@@ -1,10 +1,6 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "FGBuildableFactory.h"
 #include "FGBuildableGenerator.h"
@@ -177,7 +173,4 @@ protected:
 	/** Bool to sync playing of build and upgrade effects */
 	UPROPERTY( ReplicatedUsing = OnRep_NeedPlayingBuildEffect )
 	bool mNeedPlayingBuildEffectNotification;
-
-public:
-	FORCEINLINE ~AFGBuildableTradingPost() = default;
 };

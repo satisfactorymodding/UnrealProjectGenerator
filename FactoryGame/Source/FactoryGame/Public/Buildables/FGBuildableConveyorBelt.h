@@ -1,27 +1,17 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h"
-#include "Engine/StaticMesh.h"
-#include "Array.h"
-#include "UnrealString.h"
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
 
-#include "../FGUseableInterface.h"
+#include "FGUseableInterface.h"
 #include "FGBuildableConveyorBase.h"
 #include "Components/SplineComponent.h"
-#include "../FGSignificanceInterface.h"
-#include "Components/SplineComponent.h"
-#include "FGInstancedSplineMeshComponent.h"
-#include "../FGRemoteCallObject.h"
 #include "FGBuildableConveyorBelt.generated.h"
 
 /**
  * Valid state for picking up conveyor belt items.
  */
 UCLASS()
-class FACTORYGAME_API UFGUseState_ConveyorBeltValid : public UFGUseState
+class UFGUseState_ConveyorBeltValid : public UFGUseState
 {
 	GENERATED_BODY()
 public:
@@ -32,13 +22,10 @@ public:
 	int32 mItemIndex;
 
 	int8 mRepVersion;
-
-public:
-	FORCEINLINE ~UFGUseState_ConveyorBeltValid() = default;
 };
 
 UCLASS()
-class FACTORYGAME_API UFGUseState_ConveyorBeltFullInventory : public UFGUseState
+class UFGUseState_ConveyorBeltFullInventory : public UFGUseState
 {
 	GENERATED_BODY()
 public:
@@ -47,23 +34,17 @@ public:
 public:
 	/** index for the looked at item in mItems */
 	int32 mItemIndex;
-
-public:
-	FORCEINLINE ~UFGUseState_ConveyorBeltFullInventory() = default;
 };
 
 /**
  * State for when the belt is empty.
  */
 UCLASS()
-class FACTORYGAME_API UFGUseState_ConveyorBeltEmpty : public UFGUseState
+class UFGUseState_ConveyorBeltEmpty : public UFGUseState
 {
 	GENERATED_BODY()
 public:
 	UFGUseState_ConveyorBeltEmpty() { mIsUsableState = false; mWantAdditonalData = false; }
-
-public:
-	FORCEINLINE ~UFGUseState_ConveyorBeltEmpty() = default;
 };
 
 /**
@@ -137,7 +118,7 @@ public:
 	 * Respline a conveyor with the given spline.
 	 */
 	static AFGBuildableConveyorBelt* Respline( AFGBuildableConveyorBelt* conveyor, const TArray< FSplinePointData >& newSplineData );
-	
+
 	/** Get the mesh used for this conveyor. */
 	UFUNCTION( BlueprintPure, Category = "Conveyor" )
 	FORCEINLINE UStaticMesh* GetSplineMesh() const { return mMesh; }
@@ -205,7 +186,4 @@ private:
 	/** The ak event to post for the sound spline */
 	UPROPERTY( EditDefaultsOnly, Category = "Audio" )
 	class UAkAudioEvent* mSplineAudioEvent;
-
-public:
-	FORCEINLINE ~AFGBuildableConveyorBelt() = default;
 };

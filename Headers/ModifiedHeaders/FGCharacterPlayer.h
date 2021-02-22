@@ -1,20 +1,13 @@
 // Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
 #pragma once
-#include "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h"
-#include "Engine/World.h"
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 #include "FGCharacterBase.h"
-#include "AI/FGAggroTargetInterface.h"
+#include "FGAggroTargetInterface.h"
 #include "FGInventoryComponent.h"
 #include "FGUseableInterface.h"
 #include "FGRadiationInterface.h"
 #include "Equipment/FGEquipment.h"
 #include "FGHUD.h"
 #include "FGOutlineComponent.h"
-#include "FGCharacterMovementComponent.h" // MODDING EDIT
 
 #include "FGCharacterPlayer.generated.h"
 
@@ -34,15 +27,15 @@ enum class ECameraMode : uint8
 
 /** structure that holds variables per input whether it's allowed or not. NOTE: True if input is disabled. */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FDisabledInputGate
+struct FDisabledInputGate
 {
 	GENERATED_USTRUCT_BODY()
 
 public:
-	FORCEINLINE FDisabledInputGate() : FDisabledInputGate( false )
+	FDisabledInputGate() : FDisabledInputGate( false )
 	{}
 
-	FORCEINLINE FDisabledInputGate( bool disabled ) :
+	FDisabledInputGate( bool disabled ) :
 		mBuildGun( disabled ),
 		mDismantle( disabled ),
 		mFlashLight( disabled ),
@@ -81,16 +74,13 @@ public:
 	uint8 mUse : 1;
 	UPROPERTY( EditAnywhere, BlueprintReadWrite, category = "Input" )
 	uint8 mVehicleRecording : 1;
-
-public:
-	FORCEINLINE ~FDisabledInputGate() = default;
 };
 
 /**
 * not dead, cant revive
 */
 UCLASS()
-class FACTORYGAME_API UFGUseState_ReviveInvalid_PlayerNotDead : public UFGUseState
+class UFGUseState_ReviveInvalid_PlayerNotDead : public UFGUseState
 {
 	GENERATED_BODY()
 public:
@@ -101,7 +91,7 @@ public:
 * Revive valid
 */
 UCLASS()
-class FACTORYGAME_API UFGUseState_ReviveValid : public UFGUseState
+class UFGUseState_ReviveValid : public UFGUseState
 {
 	GENERATED_BODY()
 public:
@@ -112,7 +102,7 @@ public:
  * Base class for all player characters in the game.
  */
 UCLASS( config = Game )
-class FACTORYGAME_API AFGCharacterPlayer : public AFGCharacterBase, public IFGAggroTargetInterface, public IFGUseableInterface, public IFGRadiationInterface
+class AFGCharacterPlayer : public AFGCharacterBase, public IFGAggroTargetInterface, public IFGUseableInterface, public IFGRadiationInterface
 {
 	GENERATED_BODY()
 public:
@@ -1138,7 +1128,4 @@ private:
 public:
 	UPROPERTY( BlueprintReadWrite, Category = "FactoryGame|Movement|Crouch" )
 	bool mNoUpdate;
-
-public:
-	FORCEINLINE ~AFGCharacterPlayer() = default;
 };

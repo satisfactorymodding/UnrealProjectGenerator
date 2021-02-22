@@ -1,8 +1,4 @@
 #pragma once
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "Object.h"
 #include "FGDamageOverTime.generated.h"
@@ -11,7 +7,7 @@
  * Shareable info about damage over time 
  */
 UCLASS( abstract, Blueprintable )
-class FACTORYGAME_API UFGDamageOverTime : public UObject
+class UFGDamageOverTime : public UObject
 {
 	GENERATED_BODY()
 public:
@@ -74,7 +70,4 @@ protected:
 	/** Only deal damage to subclasses of these actor classes */
 	UPROPERTY( EditDefaultsOnly, Category = "Damage" )
 	TArray< TSubclassOf< class AActor > > mActorFilter;
-
-public:
-	FORCEINLINE ~UFGDamageOverTime() = default;
 };

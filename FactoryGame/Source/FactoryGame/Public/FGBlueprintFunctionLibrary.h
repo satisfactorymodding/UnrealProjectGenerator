@@ -1,17 +1,10 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Engine/World.h"
-#include "Array.h"
-#include "UnrealString.h"
-#include "GameFramework/Actor.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "FGUseableInterface.h"
 #include "FGInventoryComponent.h"
-#include "UI/FGPopupWidget.h"
+#include "FGPopupWidget.h"
 #include "FGOnlineSessionSettings.h"
 #include "FGRecipe.h"
 #include "FGBlueprintFunctionLibrary.generated.h"
@@ -26,7 +19,7 @@ enum class EOutlineColor : uint8
 };
 
 UCLASS()
-class FACTORYGAME_API UFGBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
+class UFGBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:
@@ -330,7 +323,4 @@ public:
 	UFUNCTION( BlueprintCallable, Category = "Editor Scripting | Metadata", meta = ( DevelopmentOnly ) )
 	static FString GetMetadataTag( UObject* object, FName tag );
 
-
-public:
-	FORCEINLINE ~UFGBlueprintFunctionLibrary() = default;
 };

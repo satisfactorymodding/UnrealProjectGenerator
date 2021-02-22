@@ -1,8 +1,6 @@
 // Copyright 2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "UObject/Class.h"
 
 #include "FGReplicationDetailActor_BuildableFactory.h"
 #include "FGReplicationDetailActor_Manufacturing.generated.h"
@@ -36,7 +34,4 @@ protected:
 
 	UPROPERTY( Replicated )
 	float mCurrentManufacturingProgress;
-
-public:
-	FORCEINLINE ~AFGReplicationDetailActor_Manufacturing() = default;
 };

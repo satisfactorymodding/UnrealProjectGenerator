@@ -1,16 +1,12 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Engine/World.h"
-#include "Array.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "GameFramework/Actor.h"
-#include "FGEquipment.h"
-#include "../FGRecipeProducerInterface.h"
-#include "FGEquipmentAttachment.h"
-#include "../Inventory.h"
+#include "Equipment/FGEquipment.h"
+#include "FGRecipeProducerInterface.h"
+#include "Equipment/FGEquipmentAttachment.h"
+#include "Inventory.h"
 #include "FGBuildGun.generated.h"
 
  /**
@@ -192,9 +188,6 @@ private:
 
 	/** Is this state active? */
 	bool mIsActive;
-
-public:
-	FORCEINLINE ~UFGBuildGunState() = default;
 };
 
 /**
@@ -424,19 +417,13 @@ private:
 	bool mWaitingForPrimaryFireRelease;
 
 	bool mHasHookedUpBuildStateUserSettings = false; //[DavalliusA:Thu/23-01-2020] not happy with this, but didn't find a function that is only called once and where we know we have a local instagator or not 
-
-public:
-	FORCEINLINE ~AFGBuildGun() = default;
 };
 
 /**
  * Attachment for the build gun.
  */
 UCLASS()
-class FACTORYGAME_API AFGBuildGunAttachment : public AFGEquipmentAttachment
+class AFGBuildGunAttachment : public AFGEquipmentAttachment
 {
 	GENERATED_BODY()
-
-public:
-	FORCEINLINE ~AFGBuildGunAttachment() = default;
 };

@@ -11,6 +11,6 @@ public class FactoryGameEditorTarget : TargetRules
 
 		ExtraModuleNames.AddRange( new string[] { "FactoryGame" } );
 		
-		AdditionalCompilerArguments = "/std:c++17";
+		CppStandard = CppStandardVersion.Cpp17;
 	}
 }

@@ -1,10 +1,8 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "UnrealString.h"
 
 #include "Resources/FGItemDescriptor.h"
-#include "SubclassOf.h"
 #include "ItemAmount.generated.h"
 
 /**
@@ -12,17 +10,17 @@
  * E.g. a cost, a recipe product or ingredient.
  */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FItemAmount
+struct FItemAmount
 {
 	GENERATED_BODY()
 
-	FORCEINLINE FItemAmount() :
+	FItemAmount() :
 		ItemClass( nullptr ),
 		Amount( 0 )
 	{
 	}
 
-	FORCEINLINE FItemAmount( TSubclassOf< class UFGItemDescriptor > inClass, int32 inAmount ) :
+	FItemAmount( TSubclassOf< class UFGItemDescriptor > inClass, int32 inAmount ) :
 		ItemClass( inClass ),
 		Amount( inAmount )
 	{
@@ -35,10 +33,6 @@ struct FACTORYGAME_API FItemAmount
 	/** The amount of this item. */
 	UPROPERTY( SaveGame, BlueprintReadWrite, EditAnywhere, Category = "Item", meta = ( ClampMin = 0 ) )
 	int32 Amount;
-
-public:
-	FORCEINLINE ~FItemAmount() = default;
 };
-
 FORCEINLINE bool IsValidForLoad( const FItemAmount& element ){ return element.ItemClass != nullptr; }
 FORCEINLINE FString VarToFString( const FItemAmount& var ){ return FString::Printf( TEXT( "Num: %i [%s]" ), var.Amount, *VarToFString(var.ItemClass) ); }

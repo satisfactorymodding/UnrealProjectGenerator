@@ -5,7 +5,7 @@
 
 FInventoryItem::FInventoryItem(){ }
 FInventoryItem::FInventoryItem(TSubclassOf<  UFGItemDescriptor > itemClass){ }
-bool FInventoryItem::Serialize(FArchive& ar){ 
+bool FInventoryItem::Serialize(FArchive& ar) {
 	ar.UsingCustomVersion(FFactoryGameCustomVersion::GUID);
 	if (ar.CustomVer(FFactoryGameCustomVersion::GUID) >= 2) {
 		ar << ItemClass;

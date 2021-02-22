@@ -1,10 +1,6 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "UObject/CoreNet.h"
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
 
 #include "FGBuildableFactory.h"
 #include "FGBuildableGenerator.generated.h"
@@ -104,7 +100,4 @@ public: //MODDING EDIT private -> public
 	/** Is the fuse triggered. */
 	UPROPERTY( Replicated, Meta = (NoAutoJson = true) )
 	bool mIsFuseTriggered;
-
-public:
-	FORCEINLINE ~AFGBuildableGenerator() = default;
 };

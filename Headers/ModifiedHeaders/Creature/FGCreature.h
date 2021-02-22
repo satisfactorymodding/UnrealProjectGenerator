@@ -1,13 +1,9 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
-#include "../FGCharacterBase.h"
-#include "../FGUseableInterface.h"
+#include "FGCharacterBase.h"
+#include "FGUseableInterface.h"
 #include "FGCreature.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FRotationDoneDelegate, APawn*, PawnRotated );
@@ -31,7 +27,7 @@ enum class EMoveSpeed :uint8
 };
 
 USTRUCT( BlueprintType ) 
-struct FACTORYGAME_API FMoveSpeedPair
+struct FMoveSpeedPair
 {
 	GENERATED_BODY()
 
@@ -40,9 +36,6 @@ struct FACTORYGAME_API FMoveSpeedPair
 
 	UPROPERTY( EditDefaultsOnly, Category = "Movement" )
 	float Speed;
-
-public:
-	FORCEINLINE ~FMoveSpeedPair() = default;
 };
 
 /**
@@ -314,7 +307,4 @@ private:
 	/** At what distance this creature can spawn from */
 	UPROPERTY( EditDefaultsOnly, Category = "Spawning" )
 	float mSpawnDistance;
-
-public:
-	FORCEINLINE ~AFGCreature() = default;
 };

@@ -1,13 +1,12 @@
 #pragma once
-#include "UObject/Class.h"
 
 #include "GameFramework/Actor.h"
 #include "FGUseableInterface.h"
-#include "Replication/FGStaticReplicatedActor.h"
+#include "FGStaticReplicatedActor.h"
 #include "FGInteractActor.generated.h"
 
 UCLASS( abstract )
-class FACTORYGAME_API AFGInteractActor : public AFGStaticReplicatedActor, public IFGUseableInterface
+class AFGInteractActor : public AFGStaticReplicatedActor, public IFGUseableInterface
 {
 	GENERATED_BODY()
 public:
@@ -29,7 +28,4 @@ public:
 	virtual void RegisterInteractingPlayer_Implementation( class AFGCharacterPlayer* player ) override {};
 	virtual void UnregisterInteractingPlayer_Implementation( class AFGCharacterPlayer* player ) override {};
 	//~ End IFGUseableInterface
-
-public:
-	FORCEINLINE ~AFGInteractActor() = default;
 };

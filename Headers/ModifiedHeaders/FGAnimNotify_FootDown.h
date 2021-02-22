@@ -1,12 +1,10 @@
 #pragma once
-#include "UnrealString.h"
-#include "UObject/Class.h"
 
 #include "Animation/AnimNotifies/AnimNotify.h"
 #include "FGAnimNotify_FootDown.generated.h"
 
 UCLASS()
-class FACTORYGAME_API UFGAnimNotify_FootDown : public UAnimNotify
+class UFGAnimNotify_FootDown : public UAnimNotify
 {
 	GENERATED_BODY()
 public:
@@ -25,7 +23,4 @@ protected:
 	/** Should play a sound.  */
 	UPROPERTY( EditAnywhere, Category = "Foot" )
 	bool mPlaySound;
-
-public:
-	FORCEINLINE ~UFGAnimNotify_FootDown() = default;
 };

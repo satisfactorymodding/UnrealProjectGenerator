@@ -16,7 +16,6 @@ void AFGTimeOfDaySubsystem::PostLoadGame_Implementation(int32 saveVersion, int32
 void AFGTimeOfDaySubsystem::GatherDependencies_Implementation(TArray< UObject* >& out_dependentObjects){ }
 bool AFGTimeOfDaySubsystem::NeedTransform_Implementation(){ return bool(); }
 bool AFGTimeOfDaySubsystem::ShouldSave_Implementation() const{ return bool(); }
-void AFGTimeOfDaySubsystem::GetLifetimeReplicatedProps(TArray<class FLifetimeProperty,  TSizedDefaultAllocator<32>> & OutReplicatedProps) const{ }
 void AFGTimeOfDaySubsystem::SetDaySeconds(float daySeconds){ }
 AFGTimeOfDaySubsystem* AFGTimeOfDaySubsystem::Get(UObject* worldContext){ return nullptr; }
 AFGTimeOfDaySubsystem* AFGTimeOfDaySubsystem::Get(UWorld* world){ return nullptr; }
@@ -42,3 +41,4 @@ void AFGTimeOfDaySubsystem::OnRep_ReplicatedDaySeconds(){ }
 void AFGTimeOfDaySubsystem::UpdateServerDaySeconds(){ }
 float AFGTimeOfDaySubsystem::GetAdjustedDaySeconds() const{ return float(); }
 float AFGTimeOfDaySubsystem::GetGameDeltaTime(float dt) const{ return float(); }
+void AFGTimeOfDaySubsystem::GetLifetimeReplicatedProps(TArray<FLifetimeProperty> & OutLifetimeProps) const { Super::GetLifetimeReplicatedProps(OutLifetimeProps); }

@@ -1,17 +1,12 @@
 #pragma once
-#include "Engine/StaticMesh.h"
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "FGEquipment.h"
-#include "../FGInventoryComponent.h"
+#include "FGInventoryComponent.h"
 #include "FGChainsaw.generated.h"
 
 
 USTRUCT()
-struct FACTORYGAME_API FPickedUpInstance
+struct FPickedUpInstance
 {
 	GENERATED_BODY()
 
@@ -32,13 +27,10 @@ struct FACTORYGAME_API FPickedUpInstance
 
 	UPROPERTY()
 	FVector Location;
-
-public:
-	FORCEINLINE ~FPickedUpInstance() = default;
 };
 
 UCLASS()
-class FACTORYGAME_API AFGChainsaw : public AFGEquipment
+class AFGChainsaw : public AFGEquipment
 {
 	GENERATED_BODY()
 public:
@@ -207,7 +199,4 @@ protected:
 
 	/** if true, then we are spinning the chainsaw up */
 	uint8 mIsSpinningUp:1;
-
-public:
-	FORCEINLINE ~AFGChainsaw() = default;
 };

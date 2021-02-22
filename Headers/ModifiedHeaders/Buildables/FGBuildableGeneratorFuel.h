@@ -1,16 +1,11 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "UObject/CoreNet.h"
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
-#include "FGBuildableGenerator.h"
-#include "../Replication/FGReplicationDetailInventoryComponent.h"
-#include "../Replication/FGReplicationDetailActorOwnerInterface.h"
-#include "../Replication/FGReplicationDetailActor_GeneratorFuel.h"
+#include "Buildables/FGBuildableGenerator.h"
+#include "FGReplicationDetailInventoryComponent.h"
+#include "FGReplicationDetailActorOwnerInterface.h"
+#include "FGReplicationDetailActor_GeneratorFuel.h"
 #include "FGBuildableGeneratorFuel.generated.h"
 
 /**
@@ -255,7 +250,4 @@ public: // MODDING EDIT protected -> public
 	/** Type of the currently burned piece of fuel. */
 	UPROPERTY( SaveGame, Replicated, Meta = (NoAutoJson = true) )
 	TSubclassOf< class UFGItemDescriptor > mCurrentFuelClass;
-
-public:
-	FORCEINLINE ~AFGBuildableGeneratorFuel() = default;
 };

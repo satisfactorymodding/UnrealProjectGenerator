@@ -1,8 +1,4 @@
 #pragma once
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "Components/SceneComponent.h"
 #include "FGDotComponent.generated.h"
@@ -12,7 +8,7 @@
  * shape, then we apply the specified dot to the actors specified in the UFGDamageOverTime class
  */
 UCLASS( hidecategories = ( Cooking, Collision, Rendering, Sockets ), ClassGroup = ( Custom ), meta = ( BlueprintSpawnableComponent, DisplayName = "DotComponent" ) )
-class FACTORYGAME_API UFGDotComponent : public USceneComponent
+class UFGDotComponent : public USceneComponent
 {
 	GENERATED_BODY()
 public:
@@ -59,7 +55,4 @@ protected:
 
 	/** handle to keep track of when we want to damage actors */
 	FTimerHandle mDamageTimerHandle;
-
-public:
-	FORCEINLINE ~UFGDotComponent() = default;
 };

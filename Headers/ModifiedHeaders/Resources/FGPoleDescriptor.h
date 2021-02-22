@@ -1,20 +1,15 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Engine/StaticMesh.h"
-#include "Array.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
-#include "CoreMinimal.h"
-#include "FGBuildingDescriptor.h"
+#include "Resources/FGBuildingDescriptor.h"
 #include "FGPoleDescriptor.generated.h"
 
 /**
  * Defines a pole height.
  */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FPoleHeightMesh
+struct FPoleHeightMesh
 {
 	GENERATED_BODY()
 public:
@@ -27,9 +22,6 @@ public:
 	/** Pole height for the current mesh. */
 	UPROPERTY( EditDefaultsOnly )
 	float Height;
-
-public:
-	FORCEINLINE ~FPoleHeightMesh() = default;
 };
 
 /**
@@ -69,7 +61,4 @@ private:
 
 	/** Helper to find the pole top mesh component. */
 	static FName mPoleTopMeshComponentTag;
-
-public:
-	FORCEINLINE ~UFGPoleDescriptor() = default;
 };

@@ -1,16 +1,13 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "FGSaveInterface.h"
 #include "FGSignificanceInterface.h"
 #include "FGExplosiveDestroyableInterface.h"
-#include "Replication/FGStaticReplicatedActor.h"
+#include "FGStaticReplicatedActor.h"
 #include "FGSporeFlower.generated.h"
 
 /** todo: (a bigish one) this is just a start of what should be a much more complete nativization of the spore flower */
@@ -57,7 +54,4 @@ protected:
 	UPROPERTY( )
 	TArray<AActor*> mTriggerActors;
 
-
-public:
-	FORCEINLINE ~AFGSporeFlower() = default;
 };

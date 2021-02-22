@@ -1,8 +1,4 @@
 #pragma once
-#include "Engine/World.h"
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
 
 #include "FGSubsystem.h"
 #include "FGSaveInterface.h"
@@ -209,7 +205,4 @@ public:
 	/** Server and Client | Called when a new day starts */
 	UPROPERTY( BlueprintAssignable, Category = "Events|Time", DisplayName = "OnNewDay" )
 	FNewDayDelegate mOnNewDayDelegate;
-
-public:
-	FORCEINLINE ~AFGTimeOfDaySubsystem() = default;
 };

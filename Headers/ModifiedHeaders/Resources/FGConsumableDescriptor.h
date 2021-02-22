@@ -1,8 +1,4 @@
 #pragma once
-#include "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h"
-#include "Engine/StaticMesh.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "FGEquipmentDescriptor.h"
 #include "FGConsumableDescriptor.generated.h"
@@ -11,7 +7,7 @@
  * Item descriptor for consumable items.
  */
 UCLASS()
-class FACTORYGAME_API UFGConsumableDescriptor : public UFGEquipmentDescriptor
+class UFGConsumableDescriptor : public UFGEquipmentDescriptor
 {
 	GENERATED_BODY()
 public:
@@ -60,7 +56,4 @@ protected:
 	/** The static mesh we want for representing the resource when it is in third person. */
 	UPROPERTY( EditDefaultsOnly, Category = "Consumeable" )
 	class UStaticMesh* mTPOverrideMesh;
-
-public:
-	FORCEINLINE ~UFGConsumableDescriptor() = default;
 };

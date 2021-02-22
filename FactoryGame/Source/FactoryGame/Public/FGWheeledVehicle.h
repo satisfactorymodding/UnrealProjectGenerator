@@ -1,18 +1,10 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h"
-#include "Array.h"
-#include "UnrealString.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "FGVehicle.h"
 #include "ItemAmount.h"
-#include "PhysicsPublic.h"
 #include "PhysXPublic.h"
-#include "WheeledVehicle.h"
 #include "FGWheeledVehicle.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE( FTranferStatusChanged );
@@ -20,7 +12,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE( FTranferStatusChanged );
 class FDebugDisplayInfo;
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FTireData
+struct FTireData
 {
 	GENERATED_BODY()
 
@@ -43,13 +35,10 @@ struct FACTORYGAME_API FTireData
 	UPROPERTY( BlueprintReadOnly, Category = "Vehicle" )
 	bool IsInAir;
 	//float TireFriction;
-
-public:
-	FORCEINLINE ~FTireData() = default;
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FTireTrackDecalDetails
+struct FTireTrackDecalDetails
 {
 	GENERATED_BODY()
 
@@ -61,13 +50,10 @@ struct FACTORYGAME_API FTireTrackDecalDetails
 	UPROPERTY( EditDefaultsOnly, Category = "Vehicle" )
 	class UMaterial* DecalMaterialOverride;
 
-
-public:
-	FORCEINLINE ~FTireTrackDecalDetails() = default;
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FSurfaceParticlePair
+struct FSurfaceParticlePair
 {
 	GENERATED_BODY()
 
@@ -76,13 +62,10 @@ struct FACTORYGAME_API FSurfaceParticlePair
 
 	UPROPERTY( EditDefaultsOnly, Category = "SurfaceParticlePair" )
 	TEnumAsByte< EPhysicalSurface > Surface;
-
-public:
-	FORCEINLINE ~FSurfaceParticlePair() = default;
 };
 
 USTRUCT()
-struct FACTORYGAME_API FParticleTemplatePair
+struct FParticleTemplatePair
 {
 	GENERATED_BODY()
 
@@ -94,44 +77,32 @@ struct FACTORYGAME_API FParticleTemplatePair
 	UPROPERTY()
 	UParticleSystemComponent* Particle;
 
-
-public:
-	FORCEINLINE ~FParticleTemplatePair() = default;
 };
 
 USTRUCT()
-struct FACTORYGAME_API FTireParticleCollection
+struct FTireParticleCollection
 {
 	GENERATED_BODY()
 
 	UPROPERTY()
 	TArray< FParticleTemplatePair > Collection;
-
-public:
-	FORCEINLINE ~FTireParticleCollection() = default;
 };
 
 /* DSOL (Don't shift on (wheel) load) dynamic gearbox data */
-struct FACTORYGAME_API DSOLDynGearboxData
+struct DSOLDynGearboxData
 {
 	bool mWasShiftingUp;
 	bool mWasShiftingDown;
 	int32 mTargetGear = 1;
 	float mGearSwitchTime;
 	float mSlopeShiftRatio; //Multiplier to affect shifting gears up and down on a slope
-
-public:
-	FORCEINLINE ~DSOLDynGearboxData() = default;
 };
 
 /* DSOL (Don't shift on (wheel) load) dynamic gearbox data */
-struct FACTORYGAME_API DSOLSetupData
+struct DSOLSetupData
 {
 	int mNumberOfGears;
 	float mDownShiftLatency;
-
-public:
-	FORCEINLINE ~DSOLSetupData() = default;
 };
 
 /**
@@ -141,7 +112,7 @@ public:
 * between the 4W & 6W movement components
 */
 USTRUCT()
-struct FACTORYGAME_API FReplicatedAddedVelocitiesState
+struct FReplicatedAddedVelocitiesState
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -156,9 +127,6 @@ struct FACTORYGAME_API FReplicatedAddedVelocitiesState
 	// input replication: angular velocity yaw
 	UPROPERTY()
 	float AddedAngularVelocityInputYaw;
-
-public:
-	FORCEINLINE ~FReplicatedAddedVelocitiesState() = default;
 };
 
 /**
@@ -725,7 +693,4 @@ private:
 	/** Do we need fuel to drive */
 	UPROPERTY( EditDefaultsOnly, Category = "Vehicle" )
 	bool mNeedsFuelToDrive;
-
-public:
-	FORCEINLINE ~AFGWheeledVehicle() = default;
 };

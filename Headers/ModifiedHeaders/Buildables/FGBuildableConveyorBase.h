@@ -1,18 +1,10 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "UObject/CoreNet.h"
-#include "Array.h"
-#include "UnrealString.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "FGBuildable.h"
-#include "../FGRemoteCallObject.h"
-#include "../FGSignificanceInterface.h"
-#include "../FGRemoteCallObject.h"
-#include "../FGFactoryConnectionComponent.h"
+#include "FGRemoteCallObject.h"
+#include "FGSignificanceInterface.h"
 #include "FGBuildableConveyorBase.generated.h"
 
 
@@ -26,7 +18,7 @@ enum { FG_CONVEYOR_REP_KEY_NONE = 0 };
 *A class used for clients to be able to call the server through the local player character.
 */
 UCLASS()
-class FACTORYGAME_API UFGConveyorRemoteCallObject : public UFGRemoteCallObject
+class UFGConveyorRemoteCallObject : public UFGRemoteCallObject
 {
 	GENERATED_BODY()
 	public:
@@ -44,9 +36,6 @@ class FACTORYGAME_API UFGConveyorRemoteCallObject : public UFGRemoteCallObject
 
 	//UFUNCTION( Reliable, Server, WithValidation, Category = "Sync" )
 	//void Server_RequestCleanSync( class AFGBuildableConveyorBelt* target );
-
-public:
-	FORCEINLINE ~UFGConveyorRemoteCallObject() = default;
 };
 
 
@@ -54,7 +43,7 @@ public:
 * Holds data for an item traveling on the conveyor.
 */
 USTRUCT()
-struct FACTORYGAME_API FConveyorBeltItem
+struct FConveyorBeltItem
 {
 	GENERATED_BODY()
 public:
@@ -158,7 +147,7 @@ private:
 
 
 /** Custom INetDeltaBaseState used by our custom NetDeltaSerialize. Representing a snapshot of the state, enough to calculate a delta between this state and another.*/
-class FACTORYGAME_API FConveyorBeltItemsBaseState : public INetDeltaBaseState
+class FConveyorBeltItemsBaseState : public INetDeltaBaseState
 {
 public:
 
@@ -200,7 +189,7 @@ public:
 		lastSentSpacing = other.lastSentSpacing;
 		NewestItemID = other.NewestItemID;
 		ConveyorVersion = other.ConveyorVersion;
-		return *this; // MODDING EDIT: why did it ever work without this?
+		
 	}
 
 	const FConveyorBeltItemsBaseState& operator=( FConveyorBeltItemsBaseState&& other )
@@ -212,7 +201,6 @@ public:
 
 		NewestItemID = other.NewestItemID;
 		ConveyorVersion = other.ConveyorVersion;
-		return *this; // MODDING EDIT: why did it ever work without this?
 	}
 
 	//must be implemented
@@ -300,7 +288,7 @@ public:
 *   - Mapping of object references (objects that are replicated that is). Look at fast TArray replication on how to implement this if needed.
 */
 USTRUCT()
-struct FACTORYGAME_API FConveyorBeltItems
+struct FConveyorBeltItems
 {
 
 	enum class EConveyorSpawnStyle : int8
@@ -482,23 +470,17 @@ private:
 
 	friend FConveyorBeltItemsBaseState;
 	friend class AFGBuildableConveyorBelt;
-
-public:
-	FORCEINLINE ~FConveyorBeltItems() = default;
 };
 
 
 /** Enable custom net delta serialization for the above struct. */
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits< FConveyorBeltItems > : public TStructOpsTypeTraitsBase2< FConveyorBeltItems >
+struct TStructOpsTypeTraits< FConveyorBeltItems > : public TStructOpsTypeTraitsBase2< FConveyorBeltItems >
 {
 	enum
 	{
 		WithNetDeltaSerializer = true
 	};
-
-public:
-	FORCEINLINE ~TStructOpsTypeTraits< FConveyorBeltItems >() = default;
 };
 
 
@@ -635,7 +617,7 @@ public:
 	/** Spacing between each conveyor item, from origo to origo. */
 	static constexpr float ITEM_SPACING = 120.0f;
 
-public: // MODDING EDIT
+public: // MODDING EDIT protected -> public
 
 	/** Speed of this conveyor. */
 	UPROPERTY( EditDefaultsOnly, Category = "Conveyor" )
@@ -668,7 +650,4 @@ private:
 	/** The id for the conveyor bucket this conveyor belongs to */
 	int32 mConveyorBucketID;
 
-
-public:
-	FORCEINLINE ~AFGBuildableConveyorBase() = default;
 };

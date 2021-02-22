@@ -1,11 +1,4 @@
 #pragma once
-#include "Engine/StaticMesh.h"
-#include "Engine/Level.h"
-#include "Engine/World.h"
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "FGSubsystem.h"
 #include "FGSaveInterface.h"
@@ -14,7 +7,7 @@
 #define DEBUG_FOLIAGE_REMOVAL_SUBSYSTEM ( ( UE_BUILD_SHIPPING == 0 ) && 1 )
 
 UCLASS()
-class FACTORYGAME_API AFGFoliageRemovalSubsystem : public AFGSubsystem
+class AFGFoliageRemovalSubsystem : public AFGSubsystem
 {
 	GENERATED_BODY()
 public:
@@ -271,7 +264,4 @@ protected:
 
 	/** All foliage mesh components that have potential for contain instances to remove */
 	TArray<class UHierarchicalInstancedStaticMeshComponent*> mFoilageMeshComponents; // @todogc: Verify that this is safe have without UPROPERTY
-
-public:
-	FORCEINLINE ~AFGFoliageRemovalSubsystem() = default;
 };

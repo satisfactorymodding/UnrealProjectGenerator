@@ -1,11 +1,6 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Engine/World.h"
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "FGSubsystem.h"
@@ -103,7 +98,6 @@ private:
 private:
 	//MODDING EDIT: Expose to AModContentRegistry
 	friend class AModContentRegistry;
-
 	/** All recipes that are available to the producers, i.e. build gun, workbench, manufacturers etc. */
 	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_AvailableRecipes )
 	TArray< TSubclassOf< UFGRecipe > > mAvailableRecipes;
@@ -111,6 +105,4 @@ private:
 	/** All buildings that are available to produce in build gun. Generated from mAvailableRecipes. */
 	UPROPERTY( Transient )
 	TArray< TSubclassOf< class AFGBuildable > > mAvailableBuildings;
-public:
-	FORCEINLINE ~AFGRecipeManager() = default;
 };

@@ -1,11 +1,9 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
-#include "FGReplicationDetailActor_BuildableFactory.h"
+#include "Replication/FGReplicationDetailActor_BuildableFactory.h"
 #include "FGReplicationDetailActor_CargoPlatform.generated.h"
 
 /**
@@ -30,7 +28,4 @@ protected:
 	UPROPERTY( Replicated )
 	class UFGInventoryComponent* mCargoInventory;
 	
-
-public:
-	FORCEINLINE ~AFGReplicationDetailActor_CargoPlatform() = default;
 };

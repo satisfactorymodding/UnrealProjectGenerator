@@ -1,58 +1,42 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-#include "Engine/World.h"
-#include "Array.h"
-#include "UnrealString.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "FGOnlineSessionSettings.h"
 #include "FGOnlineSessionClient.h"
 #include "Engine/LocalPlayer.h"
 #include "OnlineSubsystemTypes.h"
-#include "Online.h"
 #include "FGErrorMessage.h"
 #include "CoreOnline.h"
 #include "FindSessionsCallbackProxy.h"
 // MODDING EDIT: Online stuff...
 //#include "EOSSDKForwards.h"
 #include "PlayerPresenceState.h"
-#include "NAT.h"
 #include "FGLocalPlayer.generated.h"
 
 UCLASS()
-class FACTORYGAME_API UFGEM_LoggedOutFromOnlineService : public UFGErrorMessage
+class UFGEM_LoggedOutFromOnlineService : public UFGErrorMessage
 {
 	GENERATED_BODY()
 public:
 	UFGEM_LoggedOutFromOnlineService();
-
-public:
-	FORCEINLINE ~UFGEM_LoggedOutFromOnlineService() = default;
 };
 
 UCLASS()
-class FACTORYGAME_API UFGEM_LostConnectionWithOnlineService : public UFGErrorMessage
+class UFGEM_LostConnectionWithOnlineService : public UFGErrorMessage
 {
 	GENERATED_BODY()
 public:
 	UFGEM_LostConnectionWithOnlineService();
-
-public:
-	FORCEINLINE ~UFGEM_LostConnectionWithOnlineService() = default;
 };
 
 UCLASS()
-class FACTORYGAME_API UFGEM_FailedToLoginToOnlineService : public UFGErrorMessage
+class UFGEM_FailedToLoginToOnlineService : public UFGErrorMessage
 {
 	GENERATED_BODY()
 public:
 	UFGEM_FailedToLoginToOnlineService();
-
-public:
-	FORCEINLINE ~UFGEM_FailedToLoginToOnlineService() = default;
 };
 
 enum EFrindsListState
@@ -84,7 +68,7 @@ enum class ECreateSessionState : uint8
 };
 
 USTRUCT(BlueprintType)
-struct FACTORYGAME_API FFGOnlineFriend
+struct FFGOnlineFriend
 {
 	GENERATED_BODY()
 
@@ -112,12 +96,9 @@ struct FACTORYGAME_API FFGOnlineFriend
 
 	/** Internal friend data */
 	TSharedPtr<FOnlineFriend> Friend;
-
-public:
-	FORCEINLINE ~FFGOnlineFriend() = default;
 };
 
-FORCEINLINE FString VarToFString( const FFGOnlineFriend& f ){ return FString::Printf( TEXT(/*"%s"), *VarToFString(f.Friend->GetUserId()) MODDING EDIT*/ "")); }
+FORCEINLINE FString VarToFString( const FFGOnlineFriend& f ){ return FString::Printf( TEXT("%s"), *VarToFString(f.Friend->GetUserId()) ); }
 
 FORCEINLINE uint32 GetTypeHash( const FFGOnlineFriend& onlineFriend )
 {
@@ -134,7 +115,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnCreateSessionStateChanged, ECrea
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams( FOnAccountConnectionComplete, const FName, currentPlatform, EEosAccountConnectionResult, result );
 
 
-struct FACTORYGAME_API FSessionInformation
+struct FSessionInformation
 {
 	FSessionInformation() :
 		MapName(TEXT("")),
@@ -182,22 +163,16 @@ struct FACTORYGAME_API FSessionInformation
 	bool IsOfflineGame;
 private:
 	ECreateSessionState State;
-
-public:
-	FORCEINLINE ~FSessionInformation() = default;
 };
 
 // Workaround as it seems like you can't have a TArray<FFGOnlineFriends> exposed to a Dynamic multicast delegate
 USTRUCT(BlueprintType)
-struct FACTORYGAME_API FUpdatedFriends
+struct FUpdatedFriends
 {
 	GENERATED_BODY()
 
 	UPROPERTY(BlueprintReadWrite)
 	TArray<FFGOnlineFriend> Friends;
-
-public:
-	FORCEINLINE ~FUpdatedFriends() = default;
 };
 
 
@@ -553,7 +528,4 @@ protected:
 	bool mStartedAccountConnectionProcess = false;
 	bool mHastTriedLoggingIn = false;
 	bool mAutoSignedOutEpicDueToIncompatibility = false;
-
-public:
-	FORCEINLINE ~UFGLocalPlayer() = default;
 };

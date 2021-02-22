@@ -1,6 +1,4 @@
 #pragma once
-#include "Array.h"
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "FGSaveInterface.h"
@@ -8,7 +6,7 @@
 #include "FGHotbarShortcut.generated.h"
 
 UCLASS(abstract,Blueprintable)
-class FACTORYGAME_API UFGHotbarShortcut : public UObject, public IFGSaveInterface
+class UFGHotbarShortcut : public UObject, public IFGSaveInterface
 {
 	GENERATED_BODY()
 public:
@@ -42,7 +40,4 @@ protected:
 
 	/** Get a valid player that can use the shortcut, will be null if it's not allowed for some reason */
 	class AFGCharacterPlayer* GetValidPlayerCharacter( class AFGPlayerController* playerController ) const;
-
-public:
-	FORCEINLINE ~UFGHotbarShortcut() = default;
 };

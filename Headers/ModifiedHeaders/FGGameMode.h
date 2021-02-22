@@ -1,12 +1,6 @@
 // Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
 #pragma once
-#include "Engine/World.h"
-#include "Array.h"
-#include "UnrealString.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
-#include "Engine/World.h"
+
 #include "FGSaveSystem.h"
 #include "GameFramework/GameMode.h"
 #include "FGSaveInterface.h"
@@ -14,8 +8,8 @@
 
 class UFGRemoteCallObject;
 
-UCLASS(config = Game )
-class FACTORYGAME_API AFGGameMode : public AGameMode, public IFGSaveInterface
+UCLASS(minimalapi, config = Game )
+class AFGGameMode : public AGameMode, public IFGSaveInterface
 {
 	GENERATED_BODY()
 public:
@@ -216,7 +210,4 @@ private:
 
 	UPROPERTY( EditDefaultsOnly, Category = "Default" )
 	bool mIsMainMenu;
-
-public:
-	FORCEINLINE ~AFGGameMode() = default;
 };

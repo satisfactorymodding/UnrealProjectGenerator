@@ -1,9 +1,4 @@
 #pragma once
-#include "Engine/StaticMesh.h"
-#include "Array.h"
-#include "UnrealString.h"
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
 
 #include "Components/SceneComponent.h"
 #include "FGSaveInterface.h"
@@ -11,7 +6,7 @@
 #include "FGFactoryLegsComponent.generated.h"
 
 USTRUCT()
-struct FACTORYGAME_API FFeetOffset
+struct FFeetOffset
 {
 	GENERATED_BODY()
 public:
@@ -33,13 +28,10 @@ public:
 	/** Does this foot have a valid offset, only used during hologram placement. */
 	UPROPERTY( NotReplicated )
 	bool IsValidOffset;
-
-public:
-	FORCEINLINE ~FFeetOffset() = default;
 };
 
 UCLASS( ClassGroup = ( Custom ), meta = ( BlueprintSpawnableComponent ) )
-class FACTORYGAME_API UFGFactoryLegsComponent : public USceneComponent, public IFGSaveInterface
+class UFGFactoryLegsComponent : public USceneComponent, public IFGSaveInterface
 {
 	GENERATED_BODY()
 public:
@@ -137,7 +129,4 @@ private:
 	/** Stored so that we know the offset of the feet */
 	UPROPERTY( SaveGame, Replicated )
 	TArray< FFeetOffset > mCachedFeetOffset;
-
-public:
-	FORCEINLINE ~UFGFactoryLegsComponent() = default;
 };

@@ -4,7 +4,6 @@
 
 AFGPipePartHologram::AFGPipePartHologram(){ }
 void AFGPipePartHologram::BeginPlay(){ }
-void AFGPipePartHologram::GetLifetimeReplicatedProps(TArray<class FLifetimeProperty,  TSizedDefaultAllocator<32>> & OutReplicatedProps) const{ }
 bool AFGPipePartHologram::DoMultiStepPlacement(bool isInputFromARelease){ return bool(); }
 bool AFGPipePartHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }
 bool AFGPipePartHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
@@ -18,3 +17,4 @@ void AFGPipePartHologram::CheckClearance(){ }
 void AFGPipePartHologram::CheckValidPlacement(){ }
 void AFGPipePartHologram::OnRep_SupportMesh(){ }
 void AFGPipePartHologram::UpdateSupportLengthRelativeLoc(){ }
+void AFGPipePartHologram::GetLifetimeReplicatedProps(TArray<FLifetimeProperty> & OutLifetimeProps) const { Super::GetLifetimeReplicatedProps(OutLifetimeProps); }

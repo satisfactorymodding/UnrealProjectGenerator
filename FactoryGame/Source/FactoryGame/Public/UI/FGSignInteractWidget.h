@@ -1,11 +1,10 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
-#include "../FGSignInterface.h"
-#include "FGInteractWidget.h"
+#include "FGSignInterface.h"
+#include "UI/FGInteractWidget.h"
 #include "FGSignInteractWidget.generated.h"
 
 
@@ -109,7 +108,4 @@ private:
 
 	// Scale from World Size of sign to our Canvas UI Element
 	float mCanvasToComponentScale;
-
-public:
-	FORCEINLINE ~UFGSignInteractWidget() = default;
 };

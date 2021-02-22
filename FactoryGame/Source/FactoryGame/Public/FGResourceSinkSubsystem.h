@@ -1,11 +1,6 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Engine/World.h"
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "FGSubsystem.h"
@@ -193,7 +188,4 @@ private: // MODDING EDIT
 	/** Have we sunken a item of the coupon class, Used to give a schematic */
 	UPROPERTY( SaveGame )
 	bool mIsCouponEverSunk;
-
-public:
-	FORCEINLINE ~AFGResourceSinkSubsystem() = default;
 };

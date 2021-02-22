@@ -1,11 +1,7 @@
 #pragma once
-#include "GameFramework/Actor.h"
-#include "Array.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
-#include "../FGSchematic.h"
-#include "../FGTutorialIntroManager.h"
+#include "FGSchematic.h"
+#include "FGTutorialIntroManager.h"
 #include "FGBaseUI.h"
 #include "FGGameUI.generated.h"
 
@@ -20,7 +16,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams( FOnMouseButtonDown, const FGeometr
 * interesting information buildings
 */
 UCLASS()
-class FACTORYGAME_API UFGGameUI : public UFGBaseUI
+class UFGGameUI : public UFGBaseUI
 {
 	GENERATED_BODY()
 public:
@@ -205,7 +201,4 @@ private:
 
 	/** Timer value used so that we don't push audio message direct after another */
 	float mAudioMessageCooldown;
-
-public:
-	FORCEINLINE ~UFGGameUI() = default;
 };

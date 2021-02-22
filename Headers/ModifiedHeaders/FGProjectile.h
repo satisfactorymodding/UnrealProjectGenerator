@@ -1,13 +1,11 @@
 // Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
 #pragma once
-#include "Array.h"
-#include "UObject/Class.h"
 #include "GameFramework/Actor.h"
-#include "Equipment/FGWeaponProjectileFire.h"
+#include "FGWeaponProjectileFire.h"
 #include "FGProjectile.generated.h"
 
 UCLASS(config=Game)
-class FACTORYGAME_API AFGProjectile : public AActor, public IFGSaveInterface
+class AFGProjectile : public AActor, public IFGSaveInterface
 {
 	GENERATED_BODY()
 public:
@@ -136,7 +134,4 @@ private:
 
 	/** Was projectile fired by a weapon */
 	bool mWasFiredByWeapon;
-
-public:
-	FORCEINLINE ~AFGProjectile() = default;
 };

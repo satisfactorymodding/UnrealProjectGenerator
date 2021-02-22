@@ -1,8 +1,6 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
 
 #include "UObject/NoExportTypes.h"
 #include "FGConstructionMessageInterface.h"
@@ -38,7 +36,4 @@ protected:
 
 	/** Returns the cast outer as a FGPlayerControlelr */
 	class AFGPlayerController* GetOuterFGPlayerController();
-
-public:
-	FORCEINLINE ~UFGRemoteCallObject() = default;
 };

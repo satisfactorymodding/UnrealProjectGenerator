@@ -37,6 +37,7 @@ void UFGGameUserSettings::UpdatePostProcessSettings(){ }
 void UFGGameUserSettings::AddCustomActionMapping(FFGKeyMapping newMapping){ }
 void UFGGameUserSettings::RemoveAllCustomActionMappings(){ }
 void UFGGameUserSettings::SetHeadBobScale(float newHeadBobScale){ }
+void UFGGameUserSettings::SetAnalyticsDisabled(bool isDisabled,  UAnalyticsService* analyticsService){ }
 void UFGGameUserSettings::SetAutosaveInterval(int32 newInterval){ }
 void UFGGameUserSettings::ApplyAutosaveInterval(){ }
 void UFGGameUserSettings::SetShowBreakNotification(bool enabled){ }

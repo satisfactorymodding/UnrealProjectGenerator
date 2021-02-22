@@ -1,9 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-#include "UObject/CoreNet.h"
-#include "Array.h"
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
@@ -15,7 +12,7 @@
  * Default implementation for a powered building.
  */
 UCLASS( ClassGroup = ( Custom ), meta = ( BlueprintSpawnableComponent ) )
-class FACTORYGAME_API UFGPowerInfoComponent : public UActorComponent, public IFGSaveInterface
+class UFGPowerInfoComponent : public UActorComponent, public IFGSaveInterface
 {
 	GENERATED_BODY()
 public:
@@ -179,7 +176,4 @@ private:
 	/** true if the circuit is overloaded and the fuse has been triggered. */
 	UPROPERTY( Replicated )
 	uint8 mIsFuseTriggered:1;
-
-public:
-	FORCEINLINE ~UFGPowerInfoComponent() = default;
 };

@@ -1,14 +1,10 @@
 #pragma once
-#include "GameFramework/Actor.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "FGCombatFunctionLibrary.generated.h"
 
 
 UCLASS()
-class FACTORYGAME_API UFGCombatFunctionLibrary : public UBlueprintFunctionLibrary
+class UFGCombatFunctionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:
@@ -48,7 +44,4 @@ public:
 	*/
 	UFUNCTION( BlueprintCallable, Category = "Damage" )
 	static void DoRadialDamageWithinCollision( AController* controller, UShapeComponent* collisionShape, FVector centerLocation, TSubclassOf< class UFGDamageType > damageType, float damage, float radius );
-
-public:
-	FORCEINLINE ~UFGCombatFunctionLibrary() = default;
 };

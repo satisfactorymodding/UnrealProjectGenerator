@@ -1,8 +1,6 @@
 // Copyright 2016-2020 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "Replication/FGReplicationDetailActor_BuildableFactory.h"
@@ -31,7 +29,4 @@ protected:
 	UPROPERTY( Replicated )
 	class UFGInventoryComponent* mOutputInventory;
 	
-
-public:
-	FORCEINLINE ~AFGRepDetailActor_Extractor() = default;
 };

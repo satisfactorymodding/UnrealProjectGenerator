@@ -1,6 +1,4 @@
 #pragma once
-#include "UObject/Interface.h"
-#include "UObject/Class.h"
 
 #include "FGDockableInterface.generated.h"
 
@@ -23,20 +21,15 @@ enum class EDockStationType : uint8
  * have a UCLASS to be able to access
  */
 UINTERFACE( Blueprintable )
-class FACTORYGAME_API UFGDockableInterface : public UInterface
+class UFGDockableInterface : public UInterface
 {
-	
- GENERATED_BODY()
-	UFGDockableInterface(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} 
-
-public:
-	FORCEINLINE ~UFGDockableInterface() = default;
+	GENERATED_UINTERFACE_BODY()
 };
 
 /**
  * @brief Interface for all dockable classes out there, i.e. trucks and trains.
  */
-class FACTORYGAME_API IFGDockableInterface
+class IFGDockableInterface
 {
 	GENERATED_IINTERFACE_BODY()
 
@@ -71,7 +64,4 @@ class FACTORYGAME_API IFGDockableInterface
 	/** Notify for when loading/unloading are completed */
 	UFUNCTION( BlueprintCallable, BlueprintNativeEvent, Category = "Docking" )
 	void OnTransferComplete();
-
-public:
-	FORCEINLINE IFGDockableInterface() = default;
 };

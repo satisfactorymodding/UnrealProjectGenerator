@@ -1,14 +1,11 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "Engine/StaticMesh.h"
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "FGFactoryHologram.h"
-#include "../FGPipeConnectionComponent.h"
-#include "../Resources/FGPoleDescriptor.h"
+#include "FGPipeConnectionComponent.h"
+#include "FGPoleDescriptor.h"
 #include "FGPipelineSupportHologram.generated.h"
 
 /**
@@ -21,7 +18,7 @@ class FACTORYGAME_API AFGPipelineSupportHologram : public AFGFactoryHologram
 	
 public:
 	AFGPipelineSupportHologram();
-    
+
 	virtual void BeginPlay() override;
 
 	// Begin AFGHologram interface
@@ -84,7 +81,7 @@ private:
 	UFGPipeConnectionComponentBase* mSnapConnection;
 
 	//Used to rotate the connection and top part vetically
-	UPROPERTY( /*CustomSerialization*/ ) // MODDING EDIT: Another CSS custom engine thing
+	UPROPERTY( CustomSerialization )
 	float mVerticalAngle = 0.0f;
 
 	/** True if we've placed it on the ground and is working with the height */
@@ -113,7 +110,4 @@ private:
 	/**Used to store the initial offset of the support length component, so we can compensate for it during placement*/
 	float mSupportLengthOffset;
 
-
-public:
-	FORCEINLINE ~AFGPipelineSupportHologram() = default;
 };

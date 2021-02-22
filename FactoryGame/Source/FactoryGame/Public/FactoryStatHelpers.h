@@ -1,15 +1,12 @@
 // Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Engine/World.h"
-#include "Array.h"
-#include "SubclassOf.h"
 
-#include "Buildables/FGBuildable.h"
+#include "FGBuildable.h"
 #include "FGVehicle.h"
 #include "ItemAmount.h"
 
-struct FACTORYGAME_API FFactoryStats
+struct FFactoryStats
 {
 public:
 	/**
@@ -38,19 +35,13 @@ public:
 	//int32 NumCircuits;
 	//int32 NumTrains;
 	//int32 NumSelfDrivingTrucks;
-
-public:
-	FORCEINLINE ~FFactoryStats() = default;
 };
 
 /**
  * Functions for gathering stats about the factory.
  * This does not collect any stats, it just summarizes stats from other systems.
  */
-struct FACTORYGAME_API FFactoryStatHelpers
+struct FFactoryStatHelpers
 {
 	static void GetFactoryStats( class UWorld* world, FFactoryStats& out_stats );
-
-public:
-	FORCEINLINE ~FFactoryStatHelpers() = default;
 };

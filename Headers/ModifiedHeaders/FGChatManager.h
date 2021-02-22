@@ -1,10 +1,6 @@
 // Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Engine/World.h"
-#include "Array.h"
-#include "UnrealString.h"
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "FGSubsystem.h"
@@ -25,7 +21,7 @@ enum class EFGChatMessageType : uint8
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FChatMessageStruct
+struct FChatMessageStruct
 {
 	GENERATED_BODY()
 public:
@@ -55,9 +51,6 @@ public:
 
 	UPROPERTY()
 	EFGChatMessageType MessageType = EFGChatMessageType::CMT_PlayerMessage;
-
-public:
-	FORCEINLINE ~FChatMessageStruct() = default;
 };
 
 /**
@@ -119,7 +112,4 @@ private:
 	UPROPERTY()
 	TArray< FChatMessageStruct > mReceivedMessages;
 
-
-public:
-	FORCEINLINE ~AFGChatManager() = default;
 };

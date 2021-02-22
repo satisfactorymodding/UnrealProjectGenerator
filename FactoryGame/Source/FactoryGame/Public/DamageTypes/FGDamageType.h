@@ -1,6 +1,4 @@
 #pragma once
-#include "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h"
-#include "UObject/Class.h"
 
 #include "GameFramework/DamageType.h"
 #include "FGDamageType.generated.h"
@@ -21,7 +19,7 @@ enum EPlayOnDamageEvent
 };
 
 UCLASS()
-class FACTORYGAME_API UFGDamageType : public UDamageType
+class UFGDamageType : public UDamageType
 {
 	GENERATED_BODY()
 public:
@@ -61,7 +59,4 @@ public:
 	/** Should this damage type shock and scare the enemy, like the stun spear? */
 	UPROPERTY( EditAnywhere, BlueprintReadOnly, Category = "DamageType" )
 	bool mShouldShockEnemy;
-
-public:
-	FORCEINLINE ~UFGDamageType() = default;
 };

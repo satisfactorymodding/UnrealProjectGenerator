@@ -1,8 +1,6 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "UObject/Class.h"
 
 #include "GameFramework/Pawn.h"
 #include "FGSaveInterface.h"
@@ -157,7 +155,4 @@ private:
 	/** Is this vehicle being driven. */
 	UPROPERTY( ReplicatedUsing = OnRep_IsDriving )
 	bool mIsDriving;
-
-public:
-	FORCEINLINE ~AFGDriveablePawn() = default;
 };

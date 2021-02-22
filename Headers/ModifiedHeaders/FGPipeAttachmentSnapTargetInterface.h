@@ -1,7 +1,6 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "SubclassOf.h"
 
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"
@@ -9,12 +8,9 @@
 
 
 UINTERFACE( BlueprintType, Blueprintable )
-class FACTORYGAME_API UFGPipeAttachmentSnapTargetInterface : public UInterface
+class UFGPipeAttachmentSnapTargetInterface : public UInterface
 {
 	GENERATED_BODY()
-
-public:
-	FORCEINLINE ~UFGPipeAttachmentSnapTargetInterface() = default;
 };
 
 /**
@@ -32,7 +28,4 @@ public:
 
 
 
-
-public:
-	FORCEINLINE IFGPipeAttachmentSnapTargetInterface() = default;
 };

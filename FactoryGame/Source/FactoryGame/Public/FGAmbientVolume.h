@@ -1,7 +1,4 @@
 #pragma once
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "UndefinedBool.h"
 #include "GameFramework/Volume.h"
@@ -9,7 +6,7 @@
 #include "FGAmbientVolume.generated.h"
  
 UCLASS(HideCategories=(Cooking,Mobile))
-class FACTORYGAME_API AFGAmbientVolume : public AVolume, public IFGSignificanceInterface
+class AFGAmbientVolume : public AVolume, public IFGSignificanceInterface
 {
 	GENERATED_BODY()
 public:
@@ -87,7 +84,4 @@ private:
 	/** Range that this volume should be significant within */
 	UPROPERTY( EditInstanceOnly, Category = "Significance" )
 	float mSignificanceRange;
-
-public:
-	FORCEINLINE ~AFGAmbientVolume() = default;
 };

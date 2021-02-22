@@ -1,7 +1,4 @@
 #pragma once
-#include "Array.h"
-#include "UnrealString.h"
-#include "UObject/Class.h"
 
 #include "GameFramework/GameUserSettings.h"
 #include "GameFramework/PlayerInput.h"
@@ -15,7 +12,7 @@ DECLARE_DYNAMIC_DELEGATE( FOptionUpdated );
  * Name and value combination for the options with audio
  */
 USTRUCT()
-struct FACTORYGAME_API FAudioVolumeMap
+struct FAudioVolumeMap
 {
 	GENERATED_BODY()
 	
@@ -26,29 +23,23 @@ struct FACTORYGAME_API FAudioVolumeMap
 	/** The stored value of the RTPC */
 	UPROPERTY()
 	float Value;
-
-public:
-	FORCEINLINE ~FAudioVolumeMap() = default;
 };
 
 /**
 * Holds delegates to be called when a specific option is changed 
 */
 USTRUCT()
-struct FACTORYGAME_API FOptionUpdateDelegateData
+struct FOptionUpdateDelegateData
 {
 	GENERATED_BODY();
 public:
 
 	UPROPERTY()
 	TArray<FOptionUpdated> OptionUpdatedDelegates;
-
-public:
-	FORCEINLINE ~FOptionUpdateDelegateData() = default;
 };
 
 UCLASS(BlueprintType)
-class FACTORYGAME_API UFGGameUserSettings : public UGameUserSettings
+class UFGGameUserSettings : public UGameUserSettings
 {
 	GENERATED_BODY()
 public:
@@ -206,10 +197,9 @@ public:
 	UFUNCTION(BlueprintPure, Category = "FactoryGame|Settings")
 	FORCEINLINE bool GetAnalyticsDisabled() { return mAnalyticsDisabled; }
 
-	// MODDING EDIT
-	///** Updates the GameUserSettings for analytics and updates the analytics to respond to this change. */
-	//UFUNCTION( BlueprintCallable, Category = "Settings" )
-	//void SetAnalyticsDisabled( bool isDisabled, UAnalyticsService* analyticsService );
+	/** Updates the GameUserSettings for analytics and updates the analytics to respond to this change. */
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Settings" )
+	void SetAnalyticsDisabled( bool isDisabled, class UAnalyticsService* analyticsService );
 
 	/** Get if we require restart for the setting to apply */
 	UFUNCTION( BlueprintPure, Category="FactoryGame|Settings")
@@ -435,7 +425,4 @@ private:
 	static const FString MOTION_BLUR_QUALITY;
 	static const FString HZBO_SETTING;
 	static const TMap<FString, int32> NETWORK_QUALITY_CONFIG_MAPPINGS;
-
-public:
-	FORCEINLINE ~UFGGameUserSettings() = default;
 };

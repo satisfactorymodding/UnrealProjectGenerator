@@ -1,11 +1,10 @@
 #pragma once
-#include "UObject/Class.h"
 
 #include "GameFramework/Actor.h"
 #include "FGPlanet.generated.h"
 
 UCLASS()
-class FACTORYGAME_API AFGPlanet : public AActor
+class AFGPlanet : public AActor
 {
 	GENERATED_BODY()
 public:
@@ -33,7 +32,4 @@ private:
 	// In editor, receive updates for whenever the time of day is updated
 	FDelegateHandle mTimeOfDayUpdated;
 #endif
-
-public:
-	FORCEINLINE ~AFGPlanet() = default;
 };

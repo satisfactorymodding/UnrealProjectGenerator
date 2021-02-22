@@ -1,11 +1,6 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "UnrealString.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "FGSaveInterface.h"
 #include "GameFramework/GameState.h"
@@ -429,7 +424,4 @@ private:
 	UPROPERTY( Replicated )
 	int64 mServerLocalDateTimeTicksAtInit;
 
-
-public:
-	FORCEINLINE ~AFGGameState() = default;
 };

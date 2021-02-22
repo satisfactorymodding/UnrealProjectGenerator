@@ -1,9 +1,6 @@
 // Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h"
-#include "UObject/Interface.h"
-#include "UObject/Class.h"
 
 #include "FGVehicleDestroyableInterface.generated.h"
 
@@ -12,20 +9,15 @@
 * have a UCLASS to be able to access
 */
 UINTERFACE( Blueprintable )
-class FACTORYGAME_API UFGVehicleDestroyableInterface : public UInterface
+class UFGVehicleDestroyableInterface : public UInterface
 {
-	
- GENERATED_BODY()
-	UFGVehicleDestroyableInterface(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} 
-
-public:
-	FORCEINLINE ~UFGVehicleDestroyableInterface() = default;
+	GENERATED_UINTERFACE_BODY()
 };
 
 /**
  * Actors attached that implement this interface can be destroyed by a vehicle running over it.
  */
-class FACTORYGAME_API IFGVehicleDestroyableInterface
+class IFGVehicleDestroyableInterface
 {
 	GENERATED_IINTERFACE_BODY()
 
@@ -41,7 +33,4 @@ public:
 	/** Particle System to be played when destroyed */
 	UFUNCTION( BlueprintNativeEvent, Category = "Vehicle Destroy Interface" )
 	class UParticleSystem* GetDestroyEffect();
-
-public:
-	FORCEINLINE IFGVehicleDestroyableInterface() = default;
 };

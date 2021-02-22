@@ -26,6 +26,16 @@ namespace ImplementHeaders
                     "FactoryGameCustomVersion.h"
                 }
             },
+            { "FGCharacterPlayer", new List<string>()
+                {
+                    "FGCharacterMovementComponent.h"
+                }
+            },
+            { "FGReplicationDetailInventoryComponent", new List<string>()
+                {
+                    "FGInventoryComponent.h"
+                }
+            },
             { "FactoryGameCustomVersion", new List<string>()
                 {
                     "CustomVersion.h"
@@ -436,6 +446,12 @@ namespace ImplementHeaders
 
 	return true;"
             },
+            { "FSaveCollectorArchive::FSaveCollectorArchive",
+@":mObjectsToSave(toFill) {}"
+            },
+            { "FHolgramAStarHelper::GetNeighbour",
+@"  return FHologramAStarNode(0);"
+            },
             { "FFactoryGameCustomVersion::GUID",
 @"FGuid(0x0F4E61DC1, 0x7C029ACE, 0x85D7D561, 0x0E42F6A3D); //See symbol ?GUID@FFactoryGameCustomVersion@@2UFGuid@@B in IDA for value <0F4E61DC1h, 7C029ACEh, 85D7D561h, 0E42F6A3Dh>
 
@@ -452,7 +468,9 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
         {
             { "ItemHolderHistory", "FConveyorBeltItems::ItemHolderHistory" },
             { "FGenerateIconContext", "UFGItemDescriptor::FGenerateIconContext" },
-            { "Type", "FSaveCustomVersion::Type" }
+            { "Type", "FSaveCustomVersion::Type" },
+            { "FFrequencyGrid2D_Cell", "UFGReplicationGraphNode_ConveyorSpatialFrequency::FFrequencyGrid2D_Cell" },
+            { "FSettings", "UFGReplicationGraphNode_ConveyorSpatialFrequency::FSettings" }
         };
 
         static void Main(string[] args)
@@ -543,12 +561,15 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
         private static List<string> ImplementClass(string className, string classContents)
         {
             List<string> implementations = new List<string>();
-            classContents = Regex.Replace(classContents, @"\/+\*(?:.|\s)*?\*\/", ""); // fix for comments containing brackets being matched as functions
+            bool needsFObjectInitializer = Regex.IsMatch(classContents, @"GENERATED_U(CLASS|INTERFACE)_BODY");
+            bool needsGetLifetimeReplicatedProps = Regex.IsMatch(classContents, @"UPROPERTY\(.*(?<!Not)Replicated.*\)");
+            classContents = Regex.Replace(classContents, @"\/+ *\*(?:.|\s)*?\*\/", ""); // fix for comments containing brackets being matched as functions
             classContents = Regex.Replace(classContents, @"\/{2,}.*", ""); // fix for comments causing some error
             classContents = Regex.Replace(classContents, @"\s*GENERATED.*?\(\)", ""); // fix for GENERATED... macros being matched
             classContents = Regex.Replace(classContents, @"\s*UPROPERTY ?\( ?(?:.|\s)*?;", ""); // fix for UPROPERTY... macros being matched
             classContents = Regex.Replace(classContents, @"\s*UE_DEPRECATED ?\( ?(?:.|\s)*?\)", ""); // fix for UE_DEPRECATED... macros being matched
             classContents = Regex.Replace(classContents, @"^\s*DEPRECATED ?\( ?(?:.|\s)*?\)", "", RegexOptions.Multiline); // fix for DEPRECATED... macros being matched
+
             // Implement with #if ... and delete it (fixes issues and requires less manual changes in the end)
             foreach (Match ifMacro in Regex.Matches(classContents, @"\s*#if (.*?)\n((?:.|\n)*?)\n\s*#endif(.*)"))
             {
@@ -579,6 +600,13 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
             }
             implementations.AddRange(ImplementFunctions(classContents, className));
             implementations.AddRange(ImplementStaticVars(classContents, className));
+
+            if (needsFObjectInitializer && !implementations.Any((impl) => impl.Replace(" ", "").Contains($"{className}::{className}(const FObjectInitializer")))
+                implementations.Add($"{className}::{className}(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {{}}");
+
+            if (needsGetLifetimeReplicatedProps && !implementations.Any((impl) => impl.Contains($"void {className}::GetLifetimeReplicatedProps")))
+                implementations.Add($"void {className}::GetLifetimeReplicatedProps(TArray<FLifetimeProperty> & OutLifetimeProps) const {{ Super::GetLifetimeReplicatedProps(OutLifetimeProps); }}");
+
             return implementations;
         }
 
@@ -725,11 +753,18 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                     if (functionName.Replace(" ", "").Contains("FObjectWriter"))
                         result += " : FObjectWriter(Obj, InBytes) ";
                 }
-                result += $"{{ ";
+
                 if (CustomImplementation.ContainsKey($"{(!string.IsNullOrWhiteSpace(isStatic) ? "static " : "")}{className}::{functionName}")) // aghhhh
-                    result += $"\r\n{CustomImplementation[$"{(!string.IsNullOrWhiteSpace(isStatic) ? "static " : "")}{className}::{functionName}"]}\r\n}}";
+                {
+                    string customImplementation = CustomImplementation[$"{(!string.IsNullOrWhiteSpace(isStatic) ? "static " : "")}{className}::{functionName}"];
+                    if(customImplementation[0] == ':')
+                        result += customImplementation;
+                    else
+                        result += $" {{\r\n{customImplementation}\r\n}}";
+                }
                 else
                 {
+                    result += $"{{ "; // TODO: Add space for nice formatting
                     if (returnType.Contains("void") || string.IsNullOrWhiteSpace(returnType))
                     {
                         if (NeedsSuper.Contains(functionName.Trim()) || (ConditionalSuper.ContainsKey(functionName.Trim()) && className.Trim().StartsWith(ConditionalSuper[functionName.Trim()])))

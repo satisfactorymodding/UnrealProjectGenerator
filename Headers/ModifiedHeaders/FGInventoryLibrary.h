@@ -1,13 +1,8 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "FGInventoryComponent.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
 #include "FGInventoryLibrary.generated.h"
 
 
@@ -15,7 +10,7 @@
  * Function library to provide the glue between c++ and the inventory in blueprint so we can handle inventory items with a state easy in blueprint.
  */
 UCLASS()
-class FACTORYGAME_API UFGInventoryLibrary : public UBlueprintFunctionLibrary
+class UFGInventoryLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:
@@ -187,7 +182,4 @@ public:
 	UFUNCTION( BlueprintCallable, Category = "Inventory" )
 	static void RemoveAllItemsNotOfResourceForm( UPARAM( ref ) TArray< FInventoryStack >& items, EResourceForm validForm = EResourceForm::RF_SOLID );
 
-
-public:
-	FORCEINLINE ~UFGInventoryLibrary() = default;
 };

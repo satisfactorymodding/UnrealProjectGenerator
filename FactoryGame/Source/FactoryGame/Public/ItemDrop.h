@@ -1,11 +1,10 @@
 #pragma once
-#include "SubclassOf.h"
 
 #include "ItemDrop.generated.h"
 
 /** */
 USTRUCT(BlueprintType)
-struct FACTORYGAME_API FItemDrop
+struct FItemDrop
 {
 	GENERATED_BODY()
 
@@ -27,13 +26,10 @@ struct FACTORYGAME_API FItemDrop
 
 	/** Get a random amount of items in range */
 	int32 GetRandomItemAmount() const;
-
-public:
-	FORCEINLINE ~FItemDrop() = default;
 };
 
 USTRUCT(BlueprintType)
-struct FACTORYGAME_API FItemDropWithChance
+struct FItemDropWithChance
 {
 	GENERATED_BODY()
 
@@ -52,7 +48,4 @@ struct FACTORYGAME_API FItemDropWithChance
 	/** The drop to be given if we gain the item */
 	UPROPERTY( EditAnywhere, BlueprintReadOnly, meta = (ShowOnlyInnerProperties) )
 	FItemDrop Drop;
-
-public:
-	FORCEINLINE ~FItemDropWithChance() = default;
 };

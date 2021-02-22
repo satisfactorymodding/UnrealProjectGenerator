@@ -1,8 +1,4 @@
 #pragma once
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "UObject/Interface.h"
-#include "UObject/Class.h"
 
 #include "FGInventoryComponent.h"
 #include "FGDismantleInterface.generated.h"
@@ -12,20 +8,15 @@
 * have a UCLASS to be able to access
 */
 UINTERFACE( Blueprintable )
-class FACTORYGAME_API UFGDismantleInterface : public UInterface
+class UFGDismantleInterface : public UInterface
 {
-	
- GENERATED_BODY()
-	UFGDismantleInterface(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} 
-
-public:
-	FORCEINLINE ~UFGDismantleInterface() = default;
+	GENERATED_UINTERFACE_BODY()
 };
 
 /**
 * @brief Interface for all "dismantle-able" classes out there
 */
-class FACTORYGAME_API IFGDismantleInterface
+class IFGDismantleInterface
 {
 	GENERATED_IINTERFACE_BODY()
 
@@ -82,15 +73,12 @@ class FACTORYGAME_API IFGDismantleInterface
 	 */
 	UFUNCTION( BlueprintNativeEvent, Category = "Dismantle" )
 	void StopIsLookedAtForDismantle( AFGCharacterPlayer* byCharacter );
-
-public:
-	FORCEINLINE IFGDismantleInterface() = default;
 };
 
 /**
  * Shared magic between holograms
  */
-struct FACTORYGAME_API FDismantleHelpers
+struct FDismantleHelpers
 {
 	/**
 	 * @param dismantledActor	Actor to be dismantled.
@@ -98,7 +86,4 @@ struct FACTORYGAME_API FDismantleHelpers
 	 * @param refund			The refund to drop.
 	 */
 	static void DropRefundOnGround( class AActor* dismantledActor, const FVector& aimHitLocation, const TArray< FInventoryStack >& refund );
-
-public:
-	FORCEINLINE ~FDismantleHelpers() = default;
 };

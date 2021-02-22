@@ -1,7 +1,6 @@
 // Copyright 2016-2020 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
@@ -20,7 +19,4 @@ class FACTORYGAME_API AFGStaticReplicatedActor : public AActor
 public:	
 	AFGStaticReplicatedActor();
 
-
-public:
-	FORCEINLINE ~AFGStaticReplicatedActor() = default;
 };

@@ -1,8 +1,5 @@
 #pragma once
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
 
-#include "UObject/Interface.h"
 #include "FGAggroTargetInterface.generated.h"
 
 /**
@@ -10,20 +7,15 @@
 * have a UCLASS to be able to access
 */
 UINTERFACE( Blueprintable )
-class FACTORYGAME_API UFGAggroTargetInterface : public UInterface
+class UFGAggroTargetInterface : public UInterface
 {
-	
- GENERATED_BODY()
-	UFGAggroTargetInterface(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} 
-
-public:
-	FORCEINLINE ~UFGAggroTargetInterface() = default;
+	GENERATED_UINTERFACE_BODY()
 };
 
 /**
 * @brief Interface for everything that can be in the inventory
 */
-class FACTORYGAME_API IFGAggroTargetInterface
+class IFGAggroTargetInterface
 {
 	GENERATED_IINTERFACE_BODY()
 
@@ -64,7 +56,4 @@ class FACTORYGAME_API IFGAggroTargetInterface
 	virtual void UnregisterIncomingAttacker( class AFGEnemyController* forController ) = 0;
 
 	virtual bool IsDynamic() = 0;*/
-
-public:
-	FORCEINLINE IFGAggroTargetInterface() = default;
 };

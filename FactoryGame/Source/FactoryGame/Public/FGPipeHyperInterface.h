@@ -1,9 +1,6 @@
 // Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "GameFramework/Actor.h"
-#include "UObject/Interface.h"
-#include "UObject/Class.h"
 
 #include "FGPipeHyperInterface.generated.h"
 
@@ -16,20 +13,15 @@ class UFGCharacterMovementComponent;
 * have a UCLASS to be able to access
 */
 UINTERFACE( Blueprintable )
-class FACTORYGAME_API UFGPipeHyperInterface : public UInterface
+class UFGPipeHyperInterface : public UInterface
 {
-	
-    GENERATED_BODY()
-    UFGPipeHyperInterface(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} 
-
-public:
-	FORCEINLINE ~UFGPipeHyperInterface() = default;
+	GENERATED_UINTERFACE_BODY()
 };
 
 /**
  * Actors attached that implement this interface will be considered by the chainsaw to be HyperTube.
  */
-class FACTORYGAME_API IFGPipeHyperInterface
+class IFGPipeHyperInterface
 {
 	GENERATED_IINTERFACE_BODY()
 
@@ -64,7 +56,4 @@ public:
 	*/
 	UFUNCTION(  BlueprintNativeEvent, Category = "Hyper Tube" )
 	bool OnPipeEnter( UFGCharacterMovementComponent* charMove, const UFGPipeConnectionComponentBase* connectionEnteredThrough = nullptr, const AActor* fromPipe = nullptr );
-
-public:
-	FORCEINLINE IFGPipeHyperInterface() = default;
 };

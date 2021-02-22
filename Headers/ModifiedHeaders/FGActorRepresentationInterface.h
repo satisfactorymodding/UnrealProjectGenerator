@@ -1,7 +1,5 @@
 #pragma once
-#include "UObject/Interface.h"
-#include "Text.h"
-#include "TextProperty.h"
+
 #include "FGActorRepresentationInterface.generated.h"
 
 /**
@@ -9,20 +7,15 @@
 * in the minimap and similar things.
 */
 UINTERFACE( Blueprintable )
-class FACTORYGAME_API UFGActorRepresentationInterface : public UInterface
+class UFGActorRepresentationInterface : public UInterface
 {
-	
- GENERATED_BODY()
-	UFGActorRepresentationInterface(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} 
-
-public:
-	FORCEINLINE ~UFGActorRepresentationInterface() = default;
+	GENERATED_UINTERFACE_BODY()
 };
 
 /**
 *
 */
-class FACTORYGAME_API IFGActorRepresentationInterface
+class IFGActorRepresentationInterface
 {
 	GENERATED_IINTERFACE_BODY()
 
@@ -93,7 +86,4 @@ class FACTORYGAME_API IFGActorRepresentationInterface
 
 	UFUNCTION( BlueprintCallable, BlueprintNativeEvent, Category = "Representation" )
 	ECompassViewDistance SetActorCompassViewDistance( ECompassViewDistance compassViewDistance );
-
-public:
-	FORCEINLINE IFGActorRepresentationInterface() = default;
 };

@@ -1,9 +1,4 @@
 #pragma once
-#include "UObject/CoreNet.h"
-#include "Array.h"
-#include "UnrealString.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "SharedInventoryStatePtr.h"
 #include "FGSaveInterface.h"
@@ -19,7 +14,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams( FInventoryResized, int32, oldSize,
  * E.g. a weapon is of type 'Desc_NailGun' and has the state '9 nail loaded'.
  */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FInventoryItem
+struct FInventoryItem
 {
 	GENERATED_BODY()
 public:
@@ -29,7 +24,6 @@ public:
 public:
 	FInventoryItem();
 	explicit FInventoryItem( TSubclassOf< class UFGItemDescriptor > itemClass );
-	FORCEINLINE FInventoryItem(const FInventoryItem& other) = default; // MODDING EDIT
 
 	/** Function called when serializing this struct to a FArchive. */
 	bool Serialize( FArchive& ar );
@@ -49,24 +43,18 @@ public:
 	/** Optionally store an actor, e.g. an equipment, so we can remember it's state. */
 	UPROPERTY()
 	FSharedInventoryStatePtr ItemState;
-
-public:
-	FORCEINLINE ~FInventoryItem() = default;
 };
 FORCEINLINE FString VarToFString( FInventoryItem var ){ return FString::Printf( TEXT( "%s: {%s}" ), *VarToFString(var.ItemClass), *VarToFString(var.ItemState) ); }
 
 /** Enable custom serialization of FInventoryItem */
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits< FInventoryItem > : public TStructOpsTypeTraitsBase2< FInventoryItem >
+struct TStructOpsTypeTraits< FInventoryItem > : public TStructOpsTypeTraitsBase2< FInventoryItem >
 {
 	enum
 	{
 		WithSerializer = true,
 		WithCopy = true
 	};
-
-public:
-	FORCEINLINE ~TStructOpsTypeTraits< FInventoryItem >() = default;
 };
 
 
@@ -77,12 +65,11 @@ public:
  * Note that single items in the inventory is described as a stack with 1 item.
  */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FInventoryStack
+struct FInventoryStack
 {
 	GENERATED_BODY()
 public:
 	FInventoryStack();
-	FORCEINLINE FInventoryStack(const FInventoryStack& other) = default; // MODDING EDIT
 	explicit FInventoryStack( const FInventoryItem& item );
 	FInventoryStack( int32 numItems, TSubclassOf< class UFGItemDescriptor > itemClass );
 
@@ -100,22 +87,16 @@ public:
 	/** Number of items in this stack. */
 	UPROPERTY( EditAnywhere, SaveGame )
 	int32 NumItems;
-
-public:
-	FORCEINLINE ~FInventoryStack() = default;
 };
 FORCEINLINE bool IsValidForLoad( const FInventoryStack& element ){ return element.Item.ItemClass != nullptr; }
 
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits<FInventoryStack> : public TStructOpsTypeTraitsBase2<FInventoryStack>
+struct TStructOpsTypeTraits<FInventoryStack> : public TStructOpsTypeTraitsBase2<FInventoryStack>
 {
 	enum
 	{
 		WithCopy = true
 	};
-
-public:
-	FORCEINLINE ~TStructOpsTypeTraits<FInventoryStack>() = default;
 };
 
 /** Others can hook up to this to allow/disallow items */
@@ -136,7 +117,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams( FOnItemRemoved, TSubclassOf< UFGIt
  * The outer object of this object needs to implement GetWorld
  */
 UCLASS( BlueprintType, ClassGroup = ( Custom ), meta = ( BlueprintSpawnableComponent ) )
-class FACTORYGAME_API UFGInventoryComponent : public UActorComponent, public IFGSaveInterface
+class UFGInventoryComponent : public UActorComponent, public IFGSaveInterface
 {
 	GENERATED_BODY()
 public:
@@ -355,7 +336,6 @@ public:
 	void SetStateOnIndex( int32 index, const FSharedInventoryStatePtr& itemState );
 
 	/** The total size of the inventory, when accessing inventory linearly using indices. */
-	FORCEINLINE // MODDING EDIT
 	UFUNCTION( BlueprintPure, Category = "Inventory" )
 	int32 GetSizeLinear(){ return mInventoryStacks.Num(); }
 
@@ -516,7 +496,4 @@ public: //MODDING EDIT private -> public
 	// MODDING EDIT BlueprintReadOnly
 	UPROPERTY( SaveGame, Replicated , BlueprintReadOnly)
 	bool mCanBeRearrange;
-
-public:
-	FORCEINLINE ~UFGInventoryComponent() = default;
 };

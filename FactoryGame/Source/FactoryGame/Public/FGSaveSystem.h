@@ -1,9 +1,4 @@
 #pragma once
-#include "Misc/Guid.h"
-#include "Engine/World.h"
-#include "Array.h"
-#include "UnrealString.h"
-#include "UObject/Class.h"
 
 #include "Object.h"
 #include "FGOnlineSessionSettings.h"
@@ -44,7 +39,7 @@ typedef FString SessionNameType;
 
 /** The header with information about a save game */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FSaveHeader
+struct FSaveHeader
 {
 	GENERATED_BODY()
 
@@ -136,22 +131,16 @@ struct FACTORYGAME_API FSaveHeader
 
 	// The GUID for this custom version number
 	const static FGuid GUID;
-
-public:
-	FORCEINLINE ~FSaveHeader() = default;
 };
 
 /** Enable custom net delta serialization for the above struct. */
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits< FSaveHeader > : public TStructOpsTypeTraitsBase2< FSaveHeader >
+struct TStructOpsTypeTraits< FSaveHeader > : public TStructOpsTypeTraitsBase2< FSaveHeader >
 {
 	enum
 	{
 		WithNetSerializer = true
 	};
-
-public:
-	FORCEINLINE ~TStructOpsTypeTraits< FSaveHeader >() = default;
 };
 
 
@@ -173,7 +162,7 @@ enum class ESaveSortDirection : uint8
  * For when a artist/LD has changed the name of a map
  */
 USTRUCT()
-struct FACTORYGAME_API FMapRedirector
+struct FMapRedirector
 {
 	GENERATED_BODY()
 
@@ -184,16 +173,13 @@ struct FACTORYGAME_API FMapRedirector
 	/** New map name */
 	UPROPERTY()
 	FString NewMapName;
-
-public:
-	FORCEINLINE ~FMapRedirector() = default;
 };
 
 DECLARE_DELEGATE_ThreeParams( FOnEnumerateSaveGamesComplete, bool, const TArray<FSaveHeader>&, void* );
 DECLARE_DELEGATE_TwoParams( FOnDeleteSaveGameComplete, bool, void* );
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FSessionSaveStruct
+struct FSessionSaveStruct
 {
 	GENERATED_BODY()
 
@@ -213,9 +199,6 @@ struct FACTORYGAME_API FSessionSaveStruct
 	/** The saves that are in this session */
 	UPROPERTY( BlueprintReadOnly )
 	TArray< FSaveHeader > SaveHeaders;		
-
-public:
-	FORCEINLINE ~FSessionSaveStruct() = default;
 };
 
 /**
@@ -228,7 +211,7 @@ public:
  * BlueprintCallable function in this class.
  */
 UCLASS(Config=Engine)
-class FACTORYGAME_API UFGSaveSystem : public UObject
+class UFGSaveSystem : public UObject
 {
 	GENERATED_BODY()
 public:
@@ -433,7 +416,4 @@ protected:
 
 	/** We are currently using internal saves */
 	static bool mIsUsingBundledSaves;
-
-public:
-	FORCEINLINE ~UFGSaveSystem() = default;
 };

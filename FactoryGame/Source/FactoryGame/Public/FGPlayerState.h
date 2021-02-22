@@ -1,18 +1,12 @@
 //Copyright 2016 Coffee Stain Studios.All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "UnrealString.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include <type_traits>
 #include "GameFramework/PlayerState.h"
 #include "FGCharacterPlayer.h"
-#include "UI/Message/FGMessageBase.h"
+#include "FGMessageBase.h"
 #include "FGActorRepresentation.h"
-#include "UI/Message/FGMessageBase.h"
 #include "FGPlayerState.generated.h"
 
 typedef TSharedPtr<class IHttpRequest> FHttpRequestPtr;
@@ -26,7 +20,7 @@ DECLARE_DELEGATE( FOnHotbarReplicated );
  * Collected data for a slot that is specified
  */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FSlotData
+struct FSlotData
 {
 	GENERATED_BODY();
 
@@ -42,16 +36,13 @@ struct FACTORYGAME_API FSlotData
 		return other.PingColor == PingColor && other.NametagColor == NametagColor;
 	}
 
-
-public:
-	FORCEINLINE ~FSlotData() = default;
 };
 
 /**
 * Data associated with a message
 */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FMessageData
+struct FMessageData
 {
 	GENERATED_BODY();
 
@@ -68,16 +59,13 @@ struct FACTORYGAME_API FMessageData
 	/** What class is the message */
 	UPROPERTY( SaveGame, EditDefaultsOnly, BlueprintReadOnly, Category = "Message" )
 	TSubclassOf< class UFGMessageBase > MessageClass;
-
-public:
-	FORCEINLINE ~FMessageData() = default;
 };
 
 /**
 * A hotbar with a set of shortcuts that can be assigned and executed
 */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FHotbar
+struct FHotbar
 {
 	GENERATED_BODY();
 
@@ -89,16 +77,13 @@ struct FACTORYGAME_API FHotbar
 
 	UPROPERTY( SaveGame, BlueprintReadOnly )
 	TArray< class UFGHotbarShortcut* > HotbarShortcuts;
-
-public:
-	FORCEINLINE ~FHotbar() = default;
 };
 
 /**
 * A preset represents a way for players to create pre made hotbars they can replace there current hotbar with
 */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FPresetHotbar
+struct FPresetHotbar
 {
 	GENERATED_BODY();
 
@@ -122,9 +107,6 @@ struct FACTORYGAME_API FPresetHotbar
 	/** The hotbar shortcuts for this preset */
 	UPROPERTY( SaveGame, BlueprintReadOnly )
 	FHotbar Hotbar;
-
-public:
-	FORCEINLINE ~FPresetHotbar() = default;
 };
 
 UCLASS()
@@ -496,7 +478,4 @@ private:
 	/** How many inventory slots the player has observed that they have. Used to show when we have new available slots in the UI  */
 	UPROPERTY( SaveGame, Replicated )
 	int32 mNumObservedInventorySlots;
-
-public:
-	FORCEINLINE ~AFGPlayerState() = default;
 };

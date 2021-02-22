@@ -1,13 +1,10 @@
 #pragma once
-#include "Array.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "FGHotbarShortcut.h"
 #include "FGRecipeShortcut.generated.h"
 
 UCLASS()
-class FACTORYGAME_API UFGRecipeShortcut : public UFGHotbarShortcut
+class UFGRecipeShortcut : public UFGHotbarShortcut
 {
 	GENERATED_BODY()
 public:
@@ -36,7 +33,4 @@ protected:
 protected:
 	UPROPERTY( ReplicatedUsing=OnRep_Recipe, SaveGame )
 	TSubclassOf< class UFGRecipe > mRecipeToActivate;
-
-public:
-	FORCEINLINE ~UFGRecipeShortcut() = default;
 };

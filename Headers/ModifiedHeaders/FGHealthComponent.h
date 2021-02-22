@@ -1,7 +1,4 @@
 #pragma once
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
 
 #include "Components/ActorComponent.h"
 #include "FGSaveInterface.h"
@@ -34,7 +31,7 @@ public:
 	virtual void PostEditChangeProperty( FPropertyChangedEvent& PropertyChangedEvent ) override;
 #endif
 	//~ End UObject Interface
-	
+
 	// Begin IFGSaveInterface
 	virtual void PreSaveGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
 	virtual void PostSaveGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
@@ -166,17 +163,17 @@ public: //MODDING EDIT protected->public
 
 	/** Our maximum health */
 	// MODDING EDIT BlueprintReadOnly
-	UPROPERTY( SaveGame, Replicated, EditDefaultsOnly, Category = "Health" , BlueprintReadOnly)
+	UPROPERTY( SaveGame, Replicated, EditDefaultsOnly, Category = "Health" , BlueprintReadOnly )
 	float mMaxHealth;
 
 	/** Our current health */
 	// MODDING EDIT BlueprintReadOnly
-	UPROPERTY( SaveGame, Replicated , BlueprintReadOnly)
+	UPROPERTY( SaveGame, Replicated, BlueprintReadOnly )
 	float mCurrentHealth;
 
 	/** Scale of max health to use when respawning */
 	// MODDING EDIT BlueprintReadOnly
-	UPROPERTY( SaveGame, Replicated, EditDefaultsOnly, Category = "Health", BlueprintReadOnly)
+	UPROPERTY( SaveGame, Replicated, EditDefaultsOnly, Category = "Health" , BlueprintReadOnly )
 	float mRespawnHealthFactor;
 
 	/** If true, then we are dead. This is replicated to clients and they get the death event based on this. */
@@ -190,7 +187,4 @@ public: //MODDING EDIT protected->public
 	/** If true, then the client will trigger the following event: DeathDelegate */
 	UPROPERTY()
 	uint8 mReplicateDeathEvents:1;
-
-public:
-	FORCEINLINE ~UFGHealthComponent() = default;
 };

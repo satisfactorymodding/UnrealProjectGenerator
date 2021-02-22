@@ -1,8 +1,6 @@
 // Copyright 2020 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "UObject/Class.h"
 
 #include "FGReplicationDetailActor_GeneratorFuel.h"
 #include "FGReplicationDetailActor_GeneratorNuclear.generated.h"
@@ -26,7 +24,4 @@ public:
 protected:
 	UPROPERTY( Replicated )
 	class UFGInventoryComponent* mWasteInventory;
-
-public:
-	FORCEINLINE ~AFGReplicationDetailActor_GeneratorNuclear() = default;
 };

@@ -1,10 +1,6 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Engine/World.h"
-#include "Array.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "ItemDrop.h"
 #include "FGSettings.h"
@@ -12,7 +8,7 @@
 
 /** Describes a package of items you can get in a drop. */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FDropPackage
+struct FDropPackage
 {
 	GENERATED_BODY()
 public:
@@ -39,9 +35,6 @@ public:
 	/** We can not find this package if we haven't purchased this schematic. */
 	UPROPERTY( EditAnywhere, Category = "DropPackage" )
 	TSubclassOf< class UFGSchematic > RequiredSchematic;
-
-public:
-	FORCEINLINE ~FDropPackage() = default;
 };
 
 /**
@@ -60,7 +53,4 @@ protected:
 	/** List of all available drop packages */
 	UPROPERTY( EditAnywhere, Category = "DropPackage" )
 	TArray< FDropPackage > mDropTable;
-
-public:
-	FORCEINLINE ~UFGDropPodSettings() = default;
 };

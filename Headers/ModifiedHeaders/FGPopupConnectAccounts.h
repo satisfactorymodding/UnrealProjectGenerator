@@ -1,7 +1,6 @@
 // Copyright 2016-2020 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "FGPopupWidgetContent.h"
@@ -59,7 +58,4 @@ protected:
 private: 
 	UFGLocalPlayer* mLocalPlayer;
 
-
-public:
-	FORCEINLINE ~UFGPopupConnectAccounts() = default;
 };

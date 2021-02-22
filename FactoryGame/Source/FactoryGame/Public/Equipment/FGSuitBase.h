@@ -1,16 +1,14 @@
 // Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "UObject/Class.h"
 
-#include "FGEquipment.h"
+#include "Equipment/FGEquipment.h"
 #include "FGEquipmentAttachment.h"
 #include "FGSuitBase.generated.h"
 
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FMaterialAndSlotName
+struct FMaterialAndSlotName
 {
 	GENERATED_BODY()
 public:
@@ -22,9 +20,6 @@ public:
 	/** The material to put on that slot name */
 	UPROPERTY( BlueprintReadWrite, EditAnywhere )
 	UMaterialInterface* Material;
-
-public:
-	FORCEINLINE ~FMaterialAndSlotName() = default;
 };
 
 /**
@@ -53,13 +48,10 @@ protected:
 	UPROPERTY( EditDefaultsOnly, Category = "Materials" )
 	TArray< FMaterialAndSlotName > mSuit1PMeshMaterials;
 	
-
-public:
-	FORCEINLINE ~AFGSuitBase() = default;
 };
 
 UCLASS()
-class FACTORYGAME_API AFGSuitBaseAttachment : public AFGEquipmentAttachment
+class AFGSuitBaseAttachment : public AFGEquipmentAttachment
 {
 	GENERATED_BODY()
 
@@ -76,7 +68,4 @@ class FACTORYGAME_API AFGSuitBaseAttachment : public AFGEquipmentAttachment
 protected:
 	UPROPERTY( EditDefaultsOnly, Category = "Materials" )
 	TArray< FMaterialAndSlotName > mSuit3PMeshMaterials;
-
-public:
-	FORCEINLINE ~AFGSuitBaseAttachment() = default;
 };

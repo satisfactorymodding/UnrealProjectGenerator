@@ -1,7 +1,4 @@
 #pragma once
-#include "Array.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "FGDropPodSettings.h"
 #include "FGSaveInterface.h"
@@ -13,7 +10,7 @@
 
 
 UCLASS()
-class FACTORYGAME_API AFGDropPod : public AActor, public IFGUseableInterface, public IFGSaveInterface, public IFGSignificanceInterface
+class AFGDropPod : public AActor, public IFGUseableInterface, public IFGSaveInterface, public IFGSignificanceInterface
 {
 	GENERATED_BODY()
 public:
@@ -126,7 +123,4 @@ private:
 	/** Contains the loot if any */
 	UPROPERTY( SaveGame, Replicated )
 	class UFGInventoryComponent* mInventory;
-
-public:
-	FORCEINLINE ~AFGDropPod() = default;
 };

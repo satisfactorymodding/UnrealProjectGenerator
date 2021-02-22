@@ -1,14 +1,9 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "UObject/CoreNet.h"
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "FGBuildableFactory.h"
-#include "../Replication/FGReplicationDetailActor_DockingStation.h"
+#include "FGReplicationDetailActor_DockingStation.h"
 #include "FGBuildableDockingStation.generated.h"
 
 /**
@@ -201,7 +196,4 @@ private:
 	/** Inventory for refueling the trucks. */
 	UPROPERTY( SaveGame )
 	class UFGInventoryComponent* mFuelInventory;
-
-public:
-	FORCEINLINE ~AFGBuildableDockingStation() = default;
 };

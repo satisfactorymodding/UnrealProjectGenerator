@@ -1,6 +1,4 @@
 #pragma once
-#include "UObject/Interface.h"
-#include "UObject/Class.h"
 
 #include "FGColorInterface.generated.h"
 
@@ -9,20 +7,15 @@
 * have a UCLASS to be able to access
 */
 UINTERFACE( Blueprintable )
-class FACTORYGAME_API UFGColorInterface : public UInterface
+class UFGColorInterface : public UInterface
 {
-	
- GENERATED_BODY()
-	UFGColorInterface(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} 
-
-public:
-	FORCEINLINE ~UFGColorInterface() = default;
+	GENERATED_UINTERFACE_BODY()	
 };
 
 /**
 *
 */
-class FACTORYGAME_API IFGColorInterface
+class IFGColorInterface
 {
 	GENERATED_IINTERFACE_BODY()
 
@@ -57,7 +50,4 @@ class FACTORYGAME_API IFGColorInterface
 	*/
 	UFUNCTION( BlueprintNativeEvent, Category = "Use" )
 	void StopIsAimedAtForColor( AFGCharacterPlayer* byCharacter );
-
-public:
-	FORCEINLINE IFGColorInterface() = default;
 };

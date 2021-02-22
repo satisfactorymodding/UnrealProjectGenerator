@@ -1,15 +1,10 @@
 // Copyright 2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Engine/World.h"
-#include "Array.h"
-#include "UnrealString.h"
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "ReplicationGraph.h"
-#include "../FGProductionIndicatorComponent.h"
+#include "FGProductionIndicatorComponent.h"
 #include "FGReplicationGraph.generated.h"
 
 DECLARE_LOG_CATEGORY_EXTERN( LogFactoryReplicationGraph, Display, All );
@@ -30,7 +25,7 @@ enum class EClassRepPolicy : uint8
 };
 
 USTRUCT()
-struct FACTORYGAME_API FConnectionAlwaysRelevant_NodePair
+struct FConnectionAlwaysRelevant_NodePair
 {
 	GENERATED_BODY()
 
@@ -43,9 +38,6 @@ struct FACTORYGAME_API FConnectionAlwaysRelevant_NodePair
 
 	UPROPERTY()
 	UReplicationGraphNode_AlwaysRelevant_ForConnection* Node = nullptr;
-
-public:
-	FORCEINLINE ~FConnectionAlwaysRelevant_NodePair() = default;
 };
 
 class UReplicationGraphNode_GridSpatialization2D;
@@ -173,13 +165,10 @@ private:
 	void LogCurrentActorDependencyList( FGlobalActorReplicationInfo& actorInfo, FString& logMarker );
 
 	UReplicationGraphNode_AlwaysRelevant_ForConnection* GetAlwaysRelevantNodeForConnection( UNetConnection* Connection );
-
-public:
-	FORCEINLINE ~UFGReplicationGraph() = default;
 };
 
 UCLASS()
-class FACTORYGAME_API UFGReplicationGraphNode_ConditionallyAlwaysRelevant : public UReplicationGraphNode_ActorList
+class UFGReplicationGraphNode_ConditionallyAlwaysRelevant : public UReplicationGraphNode_ActorList
 {
 public:
 	GENERATED_BODY()
@@ -194,15 +183,12 @@ public:
 
 private:
 	FActorRepListRefView mAllReplicationActors;
-
-public:
-	FORCEINLINE ~UFGReplicationGraphNode_ConditionallyAlwaysRelevant() = default;
 };
 
 
 // Grid Node for prioritizing Actors Close to the player and inside their view frustum. Based on the DynamicSpatialFrequency Node. Intended for Actors that don't move and have a heavy Networking footprint (Tex. Conveyors)
 UCLASS()
-class FACTORYGAME_API UFGReplicationGraphNode_ConveyorSpatialFrequency : public UReplicationGraphNode_GridCell
+class UFGReplicationGraphNode_ConveyorSpatialFrequency : public UReplicationGraphNode_GridCell
 {
 	GENERATED_BODY()
 
@@ -793,14 +779,11 @@ protected:
 
 	// For tracking the last frame we checked the GridCells for forceupdate (so that we only do this once per frame)
 	uint32 mLastForceUpdateCheckFrameNum;
-
-public:
-	FORCEINLINE ~UFGReplicationGraphNode_ConveyorSpatialFrequency() = default;
 };
 
 /** This is a specialized node for handling PlayerState replication in a frequency limited fashion. It tracks all player states but only returns a subset of them to the replication driver each frame. */
 UCLASS()
-class FACTORYGAME_API UFGReplicationGraphNode_PlayerStateFrequencyLimiter : public UReplicationGraphNode
+class UFGReplicationGraphNode_PlayerStateFrequencyLimiter : public UReplicationGraphNode
 {
 	GENERATED_BODY()
 
@@ -822,13 +805,10 @@ private:
 
 	TArray<FActorRepListRefView> ReplicationActorLists;
 	FActorRepListRefView ForceNetUpdateReplicationActorList;
-
-public:
-	FORCEINLINE ~UFGReplicationGraphNode_PlayerStateFrequencyLimiter() = default;
 };
 
 UCLASS()
-class FACTORYGAME_API UFGReplicationGraphNode_AlwaysRelevant_ForConnection : public UReplicationGraphNode_AlwaysRelevant_ForConnection
+class UFGReplicationGraphNode_AlwaysRelevant_ForConnection : public UReplicationGraphNode_AlwaysRelevant_ForConnection
 {
 public:
 	GENERATED_BODY()
@@ -847,7 +827,4 @@ protected:
 	TArray<FName, TInlineAllocator<64>> mAlwaysRelevantStremingLevels;
 
 	bool mInitializedPlayerState = false;
-
-public:
-	FORCEINLINE ~UFGReplicationGraphNode_AlwaysRelevant_ForConnection() = default;
 };

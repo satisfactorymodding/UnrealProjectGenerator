@@ -1,16 +1,15 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "Animation/AnimInstance.h"
 #include "Animation/AnimInstanceProxy.h"
-#include "../FGBuildableTrainPlatform.h"
+#include "FGBuildableTrainPlatform.h"
 #include "FGAnimInstanceTrainDocking.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FAnimInstanceProxyTrainDocking: public FAnimInstanceProxy
+struct FAnimInstanceProxyTrainDocking: public FAnimInstanceProxy
 {
 	GENERATED_BODY()
 
@@ -56,9 +55,6 @@ public:
 	uint8 ShouldEnterOfflineState : 1;
 
 
-
-public:
-	FORCEINLINE ~FAnimInstanceProxyTrainDocking() = default;
 };
 
 /**
@@ -84,7 +80,4 @@ protected:
 
 	friend struct FAnimInstanceProxyTrainDocking;
 	
-
-public:
-	FORCEINLINE ~UFGAnimInstanceTrainDocking() = default;
 };

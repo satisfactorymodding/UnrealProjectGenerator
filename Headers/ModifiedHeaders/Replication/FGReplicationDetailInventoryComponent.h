@@ -1,10 +1,8 @@
 // Copyright 2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "UObject/Class.h"
 
 #include "Components/ActorComponent.h"
-#include "FGInventoryComponent.h"
 #include "FGReplicationDetailInventoryComponent.generated.h"
 
 /**
@@ -43,7 +41,4 @@ protected:
 	class UFGInventoryComponent* mReplicationInventoryComponent; // The dynamically replicated InventoryComponent that is created on demand
 
 	class AFGReplicationDetailActor* mReplicationDetailActor; // Replication Detail Actor owning the replication InventoryComponent
-
-public:
-	FORCEINLINE ~UFGReplicationDetailInventoryComponent() = default;
 };

@@ -1,14 +1,10 @@
 #pragma once
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "UObject/Interface.h"
-#include "SubclassOf.h"
 
 #include "FGBuildableSubsystem.h"
 #include "FGConstructionMessageInterface.generated.h"
 
 USTRUCT()
-struct FACTORYGAME_API FConstructHologramMessage
+struct FConstructHologramMessage
 {
 	GENERATED_BODY()
 
@@ -38,27 +34,21 @@ struct FACTORYGAME_API FConstructHologramMessage
 	{
 		return UpgradeActor != nullptr;
 	}
-
-public:
-	FORCEINLINE ~FConstructHologramMessage() = default;
 };
 
 /**
 *
 */
 UINTERFACE(Blueprintable)
-class FACTORYGAME_API UFGConstructionMessageInterface : public UInterface
+class UFGConstructionMessageInterface : public UInterface
 {
 	GENERATED_BODY()
-
-public:
-	FORCEINLINE ~UFGConstructionMessageInterface() = default;
 };
 
 /**
 *
 */
-class FACTORYGAME_API IFGConstructionMessageInterface
+class IFGConstructionMessageInterface
 {
 	GENERATED_BODY()
 
@@ -73,7 +63,4 @@ public:
 	/** This is called on server when a hologram has been created from a construct message */
 	UFUNCTION( BlueprintNativeEvent )
 	void OnConstructMessagedDeserialized();
-
-public:
-	FORCEINLINE IFGConstructionMessageInterface() = default;
 };

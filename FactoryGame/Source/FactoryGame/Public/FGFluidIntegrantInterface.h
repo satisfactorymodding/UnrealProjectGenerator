@@ -1,7 +1,6 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
 
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"
@@ -14,7 +13,7 @@
  * @note ALL distance units in the fluid box is in meters.
  */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FFluidBox
+struct FFluidBox
 {
 	GENERATED_BODY()
 public:
@@ -145,22 +144,16 @@ public:
 		Debug_PressureGroup = INDEX_NONE;
 		Debug_DP = 0.f;
 	}
-
-public:
-	FORCEINLINE ~FFluidBox() = default;
 };
 
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits< FFluidBox > : public TStructOpsTypeTraitsBase2< FFluidBox >
+struct TStructOpsTypeTraits< FFluidBox > : public TStructOpsTypeTraitsBase2< FFluidBox >
 {
 	enum
 	{
 		WithSerializer = true,
 		WithIdenticalViaEquality = true,
 	};
-
-public:
-	FORCEINLINE ~TStructOpsTypeTraits< FFluidBox >() = default;
 };
 
 // This class does not need to be modified.
@@ -168,9 +161,6 @@ UINTERFACE(MinimalAPI)
 class UFGFluidIntegrantInterface : public UInterface
 {
 	GENERATED_BODY()
-
-public:
-	FORCEINLINE ~UFGFluidIntegrantInterface() = default;
 };
 
 /**
@@ -188,7 +178,4 @@ public:
 
 	/** Notify that the network this fluid integrant belongs to has set its fluid descriptor */
 	virtual void OnFluidDescriptorSet();
-
-public:
-	FORCEINLINE IFGFluidIntegrantInterface() = default;
 };

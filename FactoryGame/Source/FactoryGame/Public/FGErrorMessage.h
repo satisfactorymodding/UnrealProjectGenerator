@@ -1,5 +1,4 @@
 #pragma once
-#include "UObject/Class.h"
 
 #include "FGErrorMessage.generated.h"
 
@@ -18,7 +17,7 @@ enum EErrorResponse
 //			then we could implement messages about autosave and other in the same system)
 // @todo: Move UFGErrorMesssage to another file
 UCLASS(Blueprintable, abstract)
-class FACTORYGAME_API UFGErrorMessage : public UObject
+class UFGErrorMessage : public UObject
 {
 	GENERATED_BODY()
 public:
@@ -46,7 +45,4 @@ protected:
 	// @todo:	Do we want to add string payload that can be used to attach more information about the error
 	//			or are we content with creating a new error message for each error (potentially a "GenericError subclass that we can use that overloads "GetErrorMessage")?
 	// @todo: Add priority for the order in which the user should be shown the errors or potentially remove errors of lower priority from the queue
-
-public:
-	FORCEINLINE ~UFGErrorMessage() = default;
 };

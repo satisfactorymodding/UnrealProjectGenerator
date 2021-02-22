@@ -1,17 +1,11 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "SubclassOf.h"
-#include "UObject/CoreNet.h"
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
 
 #include "FGBuildableFactory.h"
 #include "Resources/FGExtractableResourceInterface.h"
 #include "Resources/FGResourceDescriptor.h"
 #include "Replication/FGRepDetailActor_Extractor.h"
-#include "../Resources/FGItemDescriptor.h"
 #include "FGBuildableResourceExtractor.generated.h"
 
 /**
@@ -224,7 +218,4 @@ protected:
 
 	/******** End Pipe Flow Output Params ********/
 
-
-public:
-	FORCEINLINE ~AFGBuildableResourceExtractor() = default;
 };

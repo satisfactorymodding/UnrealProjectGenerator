@@ -1,22 +1,15 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Engine/StaticMesh.h"
-#include "Array.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "GameFramework/Actor.h"
-#include "../FGSaveInterface.h"
+#include "FGSaveInterface.h"
 #include "FGResourceDescriptor.h"
-#include "../FGUseableInterface.h"
+#include "FGUseableInterface.h"
 #include "FGExtractableResourceInterface.h"
-#include "../FGActorRepresentationInterface.h"
-#include "../FGSignificanceInterface.h"
-#include "../Replication/FGStaticReplicatedActor.h"
-#include "../FGUseableInterface.h"
-#include "../FGSignificanceInterface.h"
-#include "Components/BoxComponent.h"
+#include "FGActorRepresentationInterface.h"
+#include "FGSignificanceInterface.h"
+#include "FGStaticReplicatedActor.h"
 #include "FGResourceNode.generated.h"
 
 class UFGResourceDescriptor;
@@ -43,7 +36,7 @@ enum EResourcePurity
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FPurityTextPair
+struct FPurityTextPair
 {
 	GENERATED_BODY()
 
@@ -60,37 +53,28 @@ struct FACTORYGAME_API FPurityTextPair
 	/** Enum to localize */
 	UPROPERTY( EditDefaultsOnly, Category = "Resources" )
 	TEnumAsByte< EResourcePurity > Purity;
-
-public:
-	FORCEINLINE ~FPurityTextPair() = default;
 };
 
 /**
 * Use state when inventory of player looking at the node has a full inventory
 */
 UCLASS()
-class FACTORYGAME_API UFGUseState_NodeFullInventory : public UFGUseState
+class UFGUseState_NodeFullInventory : public UFGUseState
 {
 	GENERATED_BODY()
 
 	UFGUseState_NodeFullInventory() : Super() { mIsUsableState = false; }
-
-public:
-	FORCEINLINE ~UFGUseState_NodeFullInventory() = default;
 };
 
 /**
 * The resource we are trying to pick can't be on a conveyor belt.
 */
 UCLASS()
-class FACTORYGAME_API UFGUseState_NonConveyorResource : public UFGUseState
+class UFGUseState_NonConveyorResource : public UFGUseState
 {
 	GENERATED_BODY()
 
 	UFGUseState_NonConveyorResource() : Super() { mIsUsableState = false; }
-
-public:
-	FORCEINLINE ~UFGUseState_NonConveyorResource() = default;
 };
 
 UCLASS(Blueprintable,abstract)
@@ -250,18 +234,15 @@ protected:
 
 public: // MODDING EDIT: protected -> public
 	/** Type of resource */
-    // MODDING EDIT: BPReadOnly
-	UPROPERTY( EditAnywhere, BlueprintReadOnly, Category = "Resources" )
+	UPROPERTY( EditAnywhere, BlueprintReadOnly, Category = "Resources" ) // MODDING EDIT: BPReadOnly
 	TSubclassOf<UFGResourceDescriptor> mResourceClass;
 
 	/** How pure the resource is */
-    // MODDING EDIT: BPRW
-	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, Category= "Resources" )
+	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, Category = "Resources" ) // MODDING EDIT: BPRW
 	TEnumAsByte<EResourcePurity> mPurity;
 
 	/** How pure the resource is */
-    // MODDING EDIT: BPRW
-	UPROPERTY( EditInstanceOnly, BlueprintReadWrite, Category = "Resources" )
+	UPROPERTY( EditInstanceOnly, BlueprintReadWrite, Category = "Resources" ) // MODDING EDIT: BPRW
 	TEnumAsByte<EResourceAmount> mAmount;
 
 	/** the decal that used for displaying the resource */
@@ -273,7 +254,7 @@ public: // MODDING EDIT: protected -> public
 	UBoxComponent* mBoxComponent;
 
 	/** How much resources is left in this node */
-	UPROPERTY( SaveGame, Replicated, BlueprintReadWrite, Category="Resources")
+	UPROPERTY( SaveGame, Replicated, EditInstanceOnly, BlueprintReadOnly, Category="Resources")
 	int32 mResourcesLeft;
 
 protected: // MODDING EDIT
@@ -322,7 +303,4 @@ private:
 	/** Should this be handled by significance manager */
 	UPROPERTY( EditDefaultsOnly, Category = "Resources" )
 	bool mAddToSignificanceManager;
-
-public:
-	FORCEINLINE ~AFGResourceNode() = default;
 };

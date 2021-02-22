@@ -1,9 +1,6 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
 
 #include "UObject/NoExportTypes.h"
 #include "FGActorRepresentation.generated.h"
@@ -101,21 +98,15 @@ struct FACTORYGAME_API FRepresentationVector2D
 	float X;
 	UPROPERTY()
 	float Y;
-
-public:
-	FORCEINLINE ~FRepresentationVector2D() = default;
 };
 
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits<FRepresentationVector2D> : public TStructOpsTypeTraitsBase2<FRepresentationVector2D>
+struct TStructOpsTypeTraits<FRepresentationVector2D> : public TStructOpsTypeTraitsBase2<FRepresentationVector2D>
 {
 	enum
 	{
 		WithNetSerializer = true,
 	};
-
-public:
-	FORCEINLINE ~TStructOpsTypeTraits<FRepresentationVector2D>() = default;
 };
 
 /**
@@ -300,7 +291,4 @@ private:
 	/** How far away this representation should be shown in the compass */
 	UPROPERTY( ReplicatedUsing = OnRep_ActorRepresentationUpdated )
 	ECompassViewDistance mCompassViewDistance;
-
-public:
-	FORCEINLINE ~UFGActorRepresentation() = default;
 };

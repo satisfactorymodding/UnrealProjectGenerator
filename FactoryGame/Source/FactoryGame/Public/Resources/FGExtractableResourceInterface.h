@@ -1,6 +1,4 @@
 #pragma once
-#include "UObject/Interface.h"
-#include "SubclassOf.h"
 
 #include "FGExtractableResourceInterface.generated.h"
 
@@ -8,20 +6,15 @@
 *
 */
 UINTERFACE( Blueprintable )
-class FACTORYGAME_API UFGExtractableResourceInterface : public UInterface
+class UFGExtractableResourceInterface : public UInterface
 {
-	
-    GENERATED_BODY()
-    UFGExtractableResourceInterface(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} 
-
-public:
-	FORCEINLINE ~UFGExtractableResourceInterface() = default;
+	GENERATED_UINTERFACE_BODY()
 };
 
 /**
 * Interface for all mineable resource objects ( Resource Nodes, Water Volumes )
 */
-class FACTORYGAME_API IFGExtractableResourceInterface
+class IFGExtractableResourceInterface
 {
 	GENERATED_IINTERFACE_BODY()
 
@@ -67,7 +60,4 @@ public:
 	bool CanPlaceResourceExtractor() const;
 
 	
-
-public:
-	FORCEINLINE IFGExtractableResourceInterface() = default;
 };

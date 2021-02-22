@@ -1,13 +1,17 @@
 #pragma once
-#include "Engine/World.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "GameFramework/Actor.h"
 #include "FGMusicManager.generated.h"
 
+UCLASS()
+class UAkObject : public UObject
+{
+	GENERATED_BODY()
+};
+
+
 UCLASS(Blueprintable,Config=Engine)
-class FACTORYGAME_API UFGMusicManager : public UObject
+class UFGMusicManager : public UObject
 {
 	GENERATED_BODY()
 public:
@@ -67,10 +71,9 @@ protected:
 	UPROPERTY( EditDefaultsOnly, Category = "Audio" )
 	float mFactoryCloseDistance;
 
-	// MODDING EDIT
-	///** Object we post event on, set RTPC on etc. */
-	//UPROPERTY( BlueprintReadOnly, Transient )
-	//class UAkObject* mAkObject;
+	/** Object we post event on, set RTPC on etc. */
+	UPROPERTY( BlueprintReadOnly, Transient )
+	class UAkObject* mAkObject;
 
 private:
 	/** Music manager class name */
@@ -82,7 +85,4 @@ private:
 
 	/** If the player is in his factory. */
 	uint8 mIsPlayerNearBase : 1;
-
-public:
-	FORCEINLINE ~UFGMusicManager() = default;
 };

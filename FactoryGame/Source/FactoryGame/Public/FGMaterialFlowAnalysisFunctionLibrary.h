@@ -1,10 +1,6 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "UnrealString.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "SharedPointer.h"
@@ -16,7 +12,7 @@ class UFGRecipe;
  * The resulting DAG from a flow analysis.
  */
 USTRUCT( BlueprintType, Category = "FactoryGame|MaterialFlow" )
-struct FACTORYGAME_API FMaterialFlowGraph
+struct FMaterialFlowGraph
 {
 	GENERATED_BODY()
 public:
@@ -39,16 +35,13 @@ private:
 
 private:
 	TArray< TSharedRef< struct FMaterialFlowNode > > Nodes;
-
-public:
-	FORCEINLINE ~FMaterialFlowGraph() = default;
 };
 
 /**
  * Input/output in the flow analysis.
  */
 USTRUCT( BlueprintType, Category = "FactoryGame|MaterialFlow" )
-struct FACTORYGAME_API FMaterialFlowConnection
+struct FMaterialFlowConnection
 {
 	GENERATED_BODY();
 public:
@@ -71,16 +64,13 @@ public:
 	/** Total flow. [items/second] */
 	UPROPERTY( BlueprintReadOnly )
 	float TotalFlow;
-
-public:
-	FORCEINLINE ~FMaterialFlowConnection() = default;
 };
 
 /**
  * Material flow node.
  */
 USTRUCT( BlueprintType, Category = "FactoryGame|MaterialFlow" )
-struct FACTORYGAME_API FMaterialFlowNode
+struct FMaterialFlowNode
 {
 	GENERATED_BODY();
 public:
@@ -105,16 +95,13 @@ public:
 	/** Child flow nodes, 0 for leaf nodes. */
 	UPROPERTY( BlueprintReadOnly )
 	TArray< FMaterialFlowConnection > Inputs;
-
-public:
-	FORCEINLINE ~FMaterialFlowNode() = default;
 };
 
 /**
  * Function library for material flow analysis in the factory.
  */
 UCLASS()
-class FACTORYGAME_API UFGMaterialFlowAnalysisFunctionLibrary : public UBlueprintFunctionLibrary
+class UFGMaterialFlowAnalysisFunctionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:
@@ -138,7 +125,4 @@ public:
 	/** Helpers to implement the exec functions. */
 	static void MaterialFlowAnalysisToLog( const TArray< FString >& recipeNames, class AFGRecipeManager* recipeManager );
 	static void MaterialLookupToLog( const FString& itemName, class AFGRecipeManager* recipeManager );
-
-public:
-	FORCEINLINE ~UFGMaterialFlowAnalysisFunctionLibrary() = default;
 };

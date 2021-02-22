@@ -1,7 +1,6 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "Animation/AnimInstance.h"
@@ -9,7 +8,7 @@
 #include "FGAnimInstanceTruckStation.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FAnimInstanceProxyTruckStation : public FAnimInstanceProxy
+struct FAnimInstanceProxyTruckStation : public FAnimInstanceProxy
 {
 	GENERATED_BODY()
 
@@ -75,9 +74,6 @@ public:
 
 	UPROPERTY( Transient, BlueprintReadWrite, EditAnywhere, Category = "Anim" )
 	uint8 UnloadToOfflineTransition : 1;
-
-public:
-	FORCEINLINE ~FAnimInstanceProxyTruckStation() = default;
 };
 
 /**
@@ -114,7 +110,4 @@ public:
 	/**Name of the state machine that does stuff*/
 	UPROPERTY( EditDefaultsOnly, Category = "Anim" )
 	FName mStateMachineName;
-
-public:
-	FORCEINLINE ~UFGAnimInstanceTruckStation() = default;
 };

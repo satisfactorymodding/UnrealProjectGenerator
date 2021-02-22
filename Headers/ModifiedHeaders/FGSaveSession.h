@@ -1,18 +1,10 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Serialization/BufferArchive.h"
-#include "Engine/World.h"
-#include "Array.h"
-#include "UnrealString.h"
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
 
 #include "Object.h"
-#include "UObject/Interface.h"
 #include "FGSaveSystem.h"
 #include "FGObjectReference.h"
-#include "Engine/EngineTypes.h"
 #include "FGSaveSession.generated.h"
 
 // @todosave: Change the FText to a Enum, so server and client can have different localizations

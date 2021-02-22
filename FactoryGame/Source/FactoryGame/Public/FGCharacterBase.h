@@ -1,10 +1,5 @@
 // Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
 #pragma once
-#include "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h"
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "GameFramework/Character.h"
 #include "FGSaveInterface.h"
@@ -12,7 +7,7 @@
 #include "FGCharacterBase.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FFootstepEffect
+struct FFootstepEffect
 {
 	GENERATED_BODY()
 
@@ -26,13 +21,10 @@ struct FACTORYGAME_API FFootstepEffect
 	/** The decal to place on the ground when walking around */
 	UPROPERTY( EditDefaultsOnly, Category = "Footstep" )
 	TArray< class UMaterialInterface* > GroundDecals;
-
-public:
-	FORCEINLINE ~FFootstepEffect() = default;
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FFootstepEffectSurface
+struct FFootstepEffectSurface
 {
 	GENERATED_BODY()
 
@@ -43,13 +35,10 @@ struct FACTORYGAME_API FFootstepEffectSurface
 	/** The effect we want to play when hitting the surface */
 	UPROPERTY( EditDefaultsOnly, Category = "Footstep", meta = ( ShowOnlyInnerProperties ) )
 	FFootstepEffect Effect;
-
-public:
-	FORCEINLINE ~FFootstepEffectSurface() = default;
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FFootstepEffectWater
+struct FFootstepEffectWater
 {
 	GENERATED_BODY()
 
@@ -60,14 +49,11 @@ struct FACTORYGAME_API FFootstepEffectWater
 	/** The effect we want to play when hitting the surface */
 	UPROPERTY( EditDefaultsOnly, Category = "Footstep", meta = ( ShowOnlyInnerProperties ) )
 	FFootstepEffect Effect;
-
-public:
-	FORCEINLINE ~FFootstepEffectWater() = default;
 };
 
 
 UCLASS()
-class FACTORYGAME_API AFGCharacterBase : public ACharacter, public IFGSaveInterface
+class AFGCharacterBase : public ACharacter, public IFGSaveInterface
 {
 	GENERATED_BODY()
 public:
@@ -186,7 +172,7 @@ public:
 	 *
 	 * @param footDown - the index specified in UFGAnimNotify_FootDown
 	 **/
-	UFUNCTION( BlueprintNativeEvent, Category = "Footstep" )
+	UFUNCTION( BlueprintNativeEvent, CustomEventUsing = mHave_PlayFootstepEffect, Category = "Footstep" )
 	void PlayFootstepEffect( int32 footDown, bool playSound );
 
 	/**
@@ -499,7 +485,4 @@ private:
 	/** Used to let client know when a pawn gets possessed/unpossessed */
 	UPROPERTY( ReplicatedUsing = OnRep_IsPossessed )
 	bool mIsPossessed;
-
-public:
-	FORCEINLINE ~AFGCharacterBase() = default;
 };

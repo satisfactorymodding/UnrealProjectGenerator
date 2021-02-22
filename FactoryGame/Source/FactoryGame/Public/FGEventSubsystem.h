@@ -1,10 +1,6 @@
 // Copyright 2016-2020 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Engine/World.h"
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "FGSubsystem.h"
@@ -26,7 +22,7 @@ enum class EEvents : uint8
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FSimpleDate
+struct FSimpleDate
 {
 	GENERATED_BODY()	
 	/* Does it begin in current year, but end in next? this should be on 1.*/
@@ -50,13 +46,10 @@ struct FACTORYGAME_API FSimpleDate
 		mMonth = 1;
 		mDay = 1;
 	}
-
-public:
-	FORCEINLINE ~FSimpleDate() = default;
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FFGEventData
+struct FFGEventData
 {
 	GENERATED_BODY()
 	
@@ -71,13 +64,10 @@ struct FACTORYGAME_API FFGEventData
 		mStartDate = FSimpleDate();
 		mEndDate = FSimpleDate();
 	}
-
-public:
-	FORCEINLINE ~FFGEventData() = default;
 };
 
 USTRUCT()
-struct FACTORYGAME_API FCalendarData
+struct FCalendarData
 {
 	GENERATED_BODY()
 public:
@@ -92,9 +82,6 @@ public:
 	TMap< int32, int32 > InventoryIndexToRandomRewardIndexMapping;
 
 	FCalendarData(){}
-
-public:
-	FORCEINLINE ~FCalendarData() = default;
 };
 
 /**
@@ -144,9 +131,6 @@ private:
 
 	UPROPERTY( SaveGame )
 	TMap< EEvents, FCalendarData > mStoredCalendarData;
-
-public:
-	FORCEINLINE ~AFGEventSubsystem() = default;
 };
 
 
@@ -178,7 +162,4 @@ public:
 		}
 		return result;
 	}
-
-public:
-	FORCEINLINE ~UFGEventDeveloperSettings() = default;
 };

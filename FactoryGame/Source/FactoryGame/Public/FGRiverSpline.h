@@ -1,12 +1,10 @@
 #pragma once
-#include "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h"
-#include "UObject/Class.h"
 
 #include "GameFramework/Actor.h"
 #include "FGRiverSpline.generated.h"
 
 UCLASS()
-class FACTORYGAME_API AFGRiverSpline : public AActor
+class AFGRiverSpline : public AActor
 {
 	GENERATED_BODY()
 public:
@@ -36,7 +34,4 @@ protected:
 	/** If true, then we should have no audio */
 	UPROPERTY( BlueprintReadOnly, EditInstanceOnly, Category = "Audio" )
 	bool mShouldHaveAudio;
-
-public:
-	FORCEINLINE ~AFGRiverSpline() = default;
 };

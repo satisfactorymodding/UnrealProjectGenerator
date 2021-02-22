@@ -1,12 +1,9 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "UObject/Class.h"
 
 #include "FactoryGame.h"
 #include "GraphAStar.h"
-#include "Buildables/FGBuildableRailroadTrack.h"
 #include "RailroadNavigation.generated.h"
 
 class UFGRailroadTrackConnectionComponent;
@@ -22,7 +19,7 @@ enum class ERailroadPathFindingResult : uint8
 	RNQR_Success = 2		UMETA( DisplayName = "Success" )
 };
 
-struct FACTORYGAME_API FRailroadPathPoint
+struct FRailroadPathPoint
 {
 public:
 	FRailroadPathPoint();
@@ -33,21 +30,15 @@ public:
 
 	/** The distance this object is from the end. 0 for the last point. */
 	float Distance;
-
-public:
-	FORCEINLINE ~FRailroadPathPoint() = default;
 };
 
 /**
  * A navigation path used by the trains to get to a destination.
  */
-struct FACTORYGAME_API FRailroadPath
+struct FRailroadPath
 {
 	/** Path points to follow to the destination. */
 	TArray< FRailroadPathPoint > PathPoints;
-
-public:
-	FORCEINLINE ~FRailroadPath() = default;
 };
 
 typedef TSharedPtr< struct FRailroadPath > FRailroadPathSharedPtr;
@@ -56,7 +47,7 @@ typedef TWeakPtr< struct FRailroadPath > FRailroadPathWeakPtr;
 /**
  * A navigation result.
  */
-struct FACTORYGAME_API FRailroadPathFindingResult
+struct FRailroadPathFindingResult
 {
 public:
 	FRailroadPathFindingResult();
@@ -70,15 +61,12 @@ public:
 
 	/** Is the path valid, partial or invalid. */
 	ERailroadPathFindingResult Result;
-
-public:
-	FORCEINLINE ~FRailroadPathFindingResult() = default;
 };
 
 /**
  * A path point along a trains route.
  */
-struct FACTORYGAME_API FRailroadGraphAStarPathPoint
+struct FRailroadGraphAStarPathPoint
 {
 	/** Default constructor, epic passes INDEX_NONE when creating a "null" point. */
 	FRailroadGraphAStarPathPoint( int32 unused = INDEX_NONE );
@@ -110,15 +98,12 @@ public:
 
 	/** This will ensure that this start does not match the end. */
 	bool IgnoredStart;
-
-public:
-	FORCEINLINE ~FRailroadGraphAStarPathPoint() = default;
 };
 
 /**
  * @see FGraphAStar
  */
-struct FACTORYGAME_API FRailroadGraphAStarHelper
+struct FRailroadGraphAStarHelper
 {
 	typedef FRailroadGraphAStarPathPoint FNodeRef;
 
@@ -130,15 +115,12 @@ struct FACTORYGAME_API FRailroadGraphAStarHelper
 	
 	/** @return neighbour ref. */
 	FRailroadGraphAStarPathPoint GetNeighbour( const FRailroadGraphAStarPathPoint& nodeRef, const int32 neighbourIndex ) const;
-
-public:
-	FORCEINLINE ~FRailroadGraphAStarHelper() = default;
 };
 
 /**
  * Evaluation filter for the pathfinding algorithm.
  */
-struct FACTORYGAME_API FRailroadGraphAStarFilter
+struct FRailroadGraphAStarFilter
 {
 	FRailroadGraphAStarFilter();
 
@@ -160,13 +142,10 @@ struct FACTORYGAME_API FRailroadGraphAStarFilter
 public:
 	/** true if a partial solution is valid; false if we only want a path if the goal is reachable. */
 	bool AcceptsPartialSolution;
-
-public:
-	FORCEINLINE ~FRailroadGraphAStarFilter() = default;
 };
 
 /** Collection of navigation functions */
-struct FACTORYGAME_API FRailroadNavigation
+struct FRailroadNavigation
 {
 public:
 	/**
@@ -197,7 +176,4 @@ private:
 		UFGRailroadTrackConnectionComponent* end,
 		bool hasStartPassedEnd,
 		TArray< FRailroadGraphAStarPathPoint >& out_pathPoints );
-
-public:
-	FORCEINLINE ~FRailroadNavigation() = default;
 };

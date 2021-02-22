@@ -1,13 +1,11 @@
 #pragma once
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "FGEquipment.h"
 #include "FGConsumableEquipment.generated.h"
 
 /** Used to hold consumeables, so we can eat berries, and consume medpacks a.s.o */
 UCLASS()
-class FACTORYGAME_API AFGConsumableEquipment : public AFGEquipment
+class AFGConsumableEquipment : public AFGEquipment
 {
 	GENERATED_BODY()
 public:
@@ -41,7 +39,4 @@ protected:
 	/** Add custom bindings for this equipment */
 	virtual void AddEquipmentActionBindings() override;
 protected:
-
-public:
-	FORCEINLINE ~AFGConsumableEquipment() = default;
 };

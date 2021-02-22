@@ -217,6 +217,8 @@ namespace FixHeaders
                 }
             }
 
+            // Doesn't seem to be needed now, and I don't remember what required it in the first place. Keeping the headers clean
+            /*
             // fix include paths
             foreach (Match m in Regex.Matches(file, @"#include ""(.*?)""", RegexOptions.Multiline))
             {
@@ -242,24 +244,11 @@ namespace FixHeaders
                     hasChanges = true;
                 }
             }
+            */
+            
 
-            // fix UInterface missing constructor
-            file = Regex.Replace(file, @"(class (.*?) : public UInterface\s*{\s*)GENERATED_UINTERFACE_BODY\(\)[\w\s_&\(\):{}]*(};)", "$1\r\n\tGENERATED_BODY()\r\n\t$2(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} \r\n$3");
-
-            // fix CustomEventUsing
-            int customEventCount = Regex.Matches(file, @", ?CustomEventUsing ?= ?[^\s,\)]*").Count;
-            if (customEventCount > 0)
-                hasChanges = true;
-            FixedCount += customEventCount;
-            file = Regex.Replace(file, @", ?CustomEventUsing ?= ?[^\s,\)]*", "");
-
-            // fix CheatBoard
-            int cheatBoardCount = Regex.Matches(file, @",\s*CheatBoard").Count;
-            if (cheatBoardCount > 0)
-                hasChanges = true;
-            FixedCount += cheatBoardCount;
-            file = Regex.Replace(file, @",\s*CheatBoard", "");
-
+            // Keeping the headers clean for now, might be added by CSS for modular build
+            /*
             // add FACTORYGAME_API
             int factoryGameApi = 0;
             file = Regex.Replace(file, @"^((?:UCLASS|UINTERFACE|USTRUCT|UENUM)\s*\(.*\)\r\n)?([ \t]*)(class|struct)\s(FACTORYGAME_API\s)?([\w<>\s]*?)(\s?:\s?.*?)?\s*{((?:.|\n)*?)^\2};", new MatchEvaluator((match) =>
@@ -271,37 +260,7 @@ namespace FixHeaders
             }), RegexOptions.Multiline);
             if (factoryGameApi > 0)
                 hasChanges = true;
-
-            // add FORCEINLINE default constrctor and destructor
-            int defaultCtorDtor = 0;
-            file = Regex.Replace(file, @"^((?:UCLASS|UINTERFACE|USTRUCT|UENUM)\s*\(.*\)\r\n)?([ \t]*)(class|struct)\s(FACTORYGAME_API\s)?([\w<>\s]*?)(\s?:\s?.*?)?\s*{((?:.|\n)*?)^\2};", new MatchEvaluator((match) =>
-            {
-                bool needsDtor = true;
-                if (match.Groups[7].Value.Contains($"~{match.Groups[5].Value.Trim()}()"))
-                {
-                    // Destructor already exists.
-                    // TODO: Check if it is FORCEINLINE
-                    needsDtor = false;
-                }
-                else if (match.Groups[5].Value.Trim()[0] == 'I')
-                {
-                    // GENERATED_IINTERFACE_BODY already defines the destructor
-                    needsDtor = false;
-                }
-                else
-                {
-                    defaultCtorDtor++;
-                }
-
-                needsDtor = needsDtor && !SkipDtorClasses.Contains(match.Groups[5].Value.Trim());
-
-                string toAdd = "";
-                if(needsDtor) toAdd = $"\r\npublic:{(needsDtor ? $"\r\n\tFORCEINLINE ~{match.Groups[5]}() = default;" : "")}\r\n";
-
-                return $"{match.Groups[1]}{match.Groups[2]}{match.Groups[3]} {match.Groups[4]}{match.Groups[5]}{match.Groups[6]}\r\n{{{match.Groups[7].Value}{toAdd}{match.Groups[2]}}};";
-            }), RegexOptions.Multiline);
-            if (defaultCtorDtor > 0)
-                hasChanges = true;
+            */
 
             if (hasChanges)
                 FixedFileCount++;

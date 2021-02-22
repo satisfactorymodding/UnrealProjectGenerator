@@ -7,12 +7,9 @@
 #include "FGExplosiveDestroyableInterface.generated.h"
 
 UINTERFACE( Blueprintable )
-class FACTORYGAME_API UFGExplosiveDestroyableInterface : public UInterface
+class UFGExplosiveDestroyableInterface : public UInterface
 {
 	GENERATED_BODY()
-
-public:
-	FORCEINLINE ~UFGExplosiveDestroyableInterface() = default;
 };
 
 /**
@@ -31,7 +28,4 @@ public:
 	UFUNCTION( BlueprintNativeEvent, Category = "Explosive Destroy Interface" )
 	bool NotifyExploded();
 
-
-public:
-	FORCEINLINE IFGExplosiveDestroyableInterface() = default;
 };

@@ -8,12 +8,9 @@
 
 // This class does not need to be modified.
 UINTERFACE( Blueprintable )
-class FACTORYGAME_API UFGSignificanceInterface : public UInterface
+class UFGSignificanceInterface : public UInterface
 {
 	GENERATED_BODY()
-
-public:
-	FORCEINLINE ~UFGSignificanceInterface() = default;
 };
 
 /**
@@ -51,7 +48,4 @@ public:
 public:
 	
 	
-
-public:
-	FORCEINLINE IFGSignificanceInterface() = default;
 };

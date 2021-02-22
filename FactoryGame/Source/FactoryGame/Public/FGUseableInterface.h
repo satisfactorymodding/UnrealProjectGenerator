@@ -1,13 +1,9 @@
 #pragma once
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
-#include "Templates/SubclassOf.h"
-#include "UObject/Interface.h"
 #include "FGUseableInterface.generated.h"
 
 UCLASS(Blueprintable,abstract)
-class FACTORYGAME_API UFGUseState : public UObject
+class UFGUseState : public UObject
 {
 	GENERATED_BODY()
 public:
@@ -33,7 +29,7 @@ protected:
  * Default valid state for things to use whenever things just works as they should
  */
 UCLASS()
-class FACTORYGAME_API UFGUseState_Valid : public UFGUseState
+class UFGUseState_Valid : public UFGUseState
 {
 	GENERATED_BODY()
 
@@ -44,7 +40,7 @@ class FACTORYGAME_API UFGUseState_Valid : public UFGUseState
  * Describes a state of a useable object for the player that tries to use it
  */
 USTRUCT(BlueprintType)
-struct FACTORYGAME_API FUseState
+struct FUseState
 {
 	GENERATED_BODY()
 
@@ -75,17 +71,15 @@ protected:
  * have a UCLASS to be able to access
  */
 UINTERFACE( Blueprintable )
-class FACTORYGAME_API UFGUseableInterface : public UInterface
+class UFGUseableInterface : public UInterface
 {
-	
- GENERATED_BODY()
-	UFGUseableInterface(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} 
+	GENERATED_UINTERFACE_BODY()
 };
 
 /**
  * @brief Interface for all useable classes out there
  */
-class FACTORYGAME_API IFGUseableInterface
+class IFGUseableInterface
 {
 	GENERATED_IINTERFACE_BODY()
 
@@ -156,7 +150,4 @@ class FACTORYGAME_API IFGUseableInterface
 	/** Called from widgets that are opened by the use functionality */
 	UFUNCTION( BlueprintNativeEvent, BlueprintCallable, Category = "Use" )
 	void UnregisterInteractingPlayer( class AFGCharacterPlayer* player );
-
-public:
-	FORCEINLINE IFGUseableInterface() = default;
 };

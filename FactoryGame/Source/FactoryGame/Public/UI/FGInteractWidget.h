@@ -1,7 +1,4 @@
 #pragma once
-#include "Array.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "UMG.h"
 #include "UserWidget.h"
@@ -12,7 +9,7 @@
  * Base class for all stackable widgets in the game.
  */
 UCLASS( config = Engine )
-class FACTORYGAME_API UFGInteractWidget : public UUserWidget
+class UFGInteractWidget : public UUserWidget
 {
 	GENERATED_BODY()
 public:
@@ -167,7 +164,4 @@ protected:
 	UPROPERTY( EditDefaultsOnly, Category = "Input" )
 	bool mSupportsStacking;
 
-
-public:
-	FORCEINLINE ~UFGInteractWidget() = default;
 };

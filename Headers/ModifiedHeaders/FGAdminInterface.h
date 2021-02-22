@@ -1,8 +1,4 @@
 #pragma once
-#include "Array.h"
-#include "UnrealString.h"
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
 
 #include "FGOnlineSessionSettings.h"
 #include "FGSaveSystem.h"
@@ -15,7 +11,7 @@ DECLARE_DYNAMIC_DELEGATE_TwoParams( FOnAdminSaveGameComplete, bool, success, con
 typedef int16 RequestIdType;
 
 UCLASS(notplaceable)
-class FACTORYGAME_API AFGAdminInterface : public AInfo
+class AFGAdminInterface : public AInfo
 {
 	GENERATED_BODY()
 public:
@@ -117,7 +113,4 @@ protected:
 
 	/** @SERVER: Return true if our owner is logged in */
 	bool IsOwnerAdmin() const;
-
-public:
-	FORCEINLINE ~AFGAdminInterface() = default;
 };

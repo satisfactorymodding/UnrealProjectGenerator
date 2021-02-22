@@ -1,23 +1,14 @@
 #pragma once
-#include "UObject/Interface.h"
 
 #include "FGReplicationDependencyActorInterface.generated.h"
 
 UINTERFACE( )
-class FACTORYGAME_API UFGReplicationDependencyActorInterface : public UInterface
+class UFGReplicationDependencyActorInterface : public UInterface
 {
-	
- GENERATED_BODY()
-	UFGReplicationDependencyActorInterface(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} 
-
-public:
-	FORCEINLINE ~UFGReplicationDependencyActorInterface() = default;
+	GENERATED_UINTERFACE_BODY()
 };
 
-class FACTORYGAME_API IFGReplicationDependencyActorInterface
+class IFGReplicationDependencyActorInterface
 {
 	GENERATED_IINTERFACE_BODY()
-
-public:
-	FORCEINLINE IFGReplicationDependencyActorInterface() = default;
 };

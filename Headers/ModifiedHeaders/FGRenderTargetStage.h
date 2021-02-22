@@ -1,12 +1,11 @@
 #pragma once
-#include "UObject/Class.h"
 
 #include "GameFramework/Actor.h"
-#include "Resources/FGItemDescriptor.h"
+#include "FGItemDescriptor.h"
 #include "FGRenderTargetStage.generated.h"
 
 UCLASS(HideCategories=(Input,Actor))
-class FACTORYGAME_API AFGRenderTargetStage : public AActor
+class AFGRenderTargetStage : public AActor
 {
 	GENERATED_BODY()
 public:
@@ -90,7 +89,4 @@ protected:
 	/** If true, then we create our own render target every time we want to play */
 	UPROPERTY(EditDefaultsOnly,Category="Stage|RenderTarget")
 	uint8 mDynamicRenderTarget:1;
-
-public:
-	FORCEINLINE ~AFGRenderTargetStage() = default;
 };

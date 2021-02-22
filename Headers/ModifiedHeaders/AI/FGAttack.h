@@ -1,13 +1,11 @@
 #pragma once
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "FGAggroTargetInterface.h"
 #include "FGAttack.generated.h"
 
 
 UCLASS( abstract, BlueprintType )
-class FACTORYGAME_API UFGAttack : public UObject
+class UFGAttack : public UObject
 {
 	GENERATED_BODY()
 public:
@@ -74,7 +72,4 @@ protected:
 	/** Angle that target must be within in order to hit with attack ( 180 = full circle hit area ) */
 	UPROPERTY( EditDefaultsOnly )
 	float mAttackAngle;
-
-public:
-	FORCEINLINE ~UFGAttack() = default;
 };

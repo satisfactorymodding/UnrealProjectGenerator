@@ -1,14 +1,8 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "FGCreatureController.h"
-#include "FGAggroTargetInterface.h"
-#include "Curves/CurveFloat.h"
 #include "FGEnemyController.generated.h"
 
 class FGAggroTargetInterface;
@@ -28,7 +22,7 @@ enum class EIgnore : uint8
 * target is for our Pawn
 */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FAggroEntry
+struct FAggroEntry
 {
 	GENERATED_BODY();
 
@@ -71,12 +65,9 @@ struct FACTORYGAME_API FAggroEntry
 	UPROPERTY( BlueprintReadWrite, Category = "Aggro" )
 	EIgnore						Ignore;
 	float						LastIgnoreTime;
-
-public:
-	FORCEINLINE ~FAggroEntry() = default;
 };
 
-struct FACTORYGAME_API FFindByAggroTarget
+struct FFindByAggroTarget
 {
 	TScriptInterface< IFGAggroTargetInterface >	AggroTarget;
 
@@ -87,9 +78,6 @@ struct FACTORYGAME_API FFindByAggroTarget
 		return ( AggroTarget == Element.AggroTarget );
 	}
 
-
-public:
-	FORCEINLINE ~FFindByAggroTarget() = default;
 };
 
 /**
@@ -468,7 +456,4 @@ private:
 	/** Time we should ignore targets when panicking */
 	UPROPERTY( EditDefaultsOnly, Category = "AI" )
 	float mPanicIgnoreTime;
-
-public:
-	FORCEINLINE ~AFGEnemyController() = default;
 };

@@ -1,14 +1,11 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "UMG.h"
 #include "Blueprint/UserWidget.h"
-#include "FGPopupWidget.h"
+#include "UI/FGPopupWidget.h"
 #include "FGBaseUI.generated.h"
 
 /**
@@ -71,7 +68,4 @@ protected:
 
 	/** Queue with popups to show */
 	TArray< FPopupData > mPopupDataQueue;
-
-public:
-	FORCEINLINE ~UFGBaseUI() = default;
 };

@@ -1,9 +1,6 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h"
-#include "Array.h"
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "Animation/AnimInstance.h"
@@ -11,7 +8,7 @@
 #include "FGRailRoadVehicleAnim.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FAnimInstanceProxyRailRoadVehicle : public FAnimInstanceProxy
+struct FAnimInstanceProxyRailRoadVehicle : public FAnimInstanceProxy
 {
 	GENERATED_BODY()
 
@@ -188,9 +185,6 @@ public:
 	/** Bigge values, I dunno */
 	UPROPERTY( Transient, BlueprintReadWrite, EditAnywhere, Category = "Anim" )
 	uint8 mAGHandBrakeStop : 1;
-
-public:
-	FORCEINLINE ~FAnimInstanceProxyRailRoadVehicle() = default;
 };
 
 /**
@@ -286,7 +280,4 @@ private:
 	/** Template for brake effect */
 	UPROPERTY()
 	UParticleSystemComponent* mHandBrakeVfxComponent;
-
-public:
-	FORCEINLINE ~UFGRailRoadVehicleAnim() = default;
 };

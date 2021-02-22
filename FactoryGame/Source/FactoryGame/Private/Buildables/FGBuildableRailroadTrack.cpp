@@ -3,9 +3,10 @@
 #include "FGBuildableRailroadTrack.h"
 
 FRailroadTrackPosition::FRailroadTrackPosition(){ }
+FRailroadTrackPosition::FRailroadTrackPosition( AFGBuildableRailroadTrack* track, float offset, float forward){ }
 FRailroadTrackPosition::FRailroadTrackPosition(const FRailroadTrackPosition& position){ }
 FRailroadTrackPosition::~FRailroadTrackPosition(){ }
-bool FRailroadTrackPosition::Serialize(FArchive& ar){ 
+bool FRailroadTrackPosition::Serialize(FArchive& ar) {
 	if (ar.ArIsSaveGame) {
 		ar << Offset;
 		ar << Forward;
@@ -28,13 +29,4 @@ bool AFGBuildableRailroadTrack::CanDismantle_Implementation() const{ return bool
 int32 AFGBuildableRailroadTrack::GetDismantleRefundReturnsMultiplier() const{ return int32(); }
 FRailroadTrackPosition AFGBuildableRailroadTrack::FindTrackPositionClosestToWorldLocation(const FVector& worldLocation){ return FRailroadTrackPosition(); }
 void AFGBuildableRailroadTrack::GetWorldLocationAndDirectionAtPosition(const  FRailroadTrackPosition& position, FVector& out_location, FVector& out_direction) const{ }
-void AFGBuildableRailroadTrack::BuildSplineMeshes( USplineComponent* spline,
-        UStaticMesh* mesh,
-		float meshLength,
-		UFGInstancedSplineMeshComponent* splineInstances){ }
-void AFGBuildableRailroadTrack::BuildSplineCollisions( USplineComponent* spline,
-		const FVector& collisionExtent,
-		float collisionSpacing,
-		const FVector& collisionOffset,
-		FName collisionProfile){ }
 void AFGBuildableRailroadTrack::SetTrackGraphID(int32 trackGraphID){ }

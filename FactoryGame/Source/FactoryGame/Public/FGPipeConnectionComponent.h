@@ -1,9 +1,6 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "Array.h"
-#include "SubclassOf.h"
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "FGConnectionComponent.h"
@@ -151,9 +148,6 @@ protected:
 	/** Connection to another component. If this is set we're connected. */
 	UPROPERTY( SaveGame, Replicated )
 	class UFGPipeConnectionComponentBase* mConnectedComponent;
-
-public:
-	FORCEINLINE ~UFGPipeConnectionComponentBase() = default;
 };
 
 
@@ -257,7 +251,7 @@ public: // MODDING EDIT: protected -> public
 	/** The inventory of this connection. This can be null in many cases. */
 	// @todoPipes - I don't think this is used anymore. This should be fully deprecated and removed. This is a carry over from conveyor belts. 
 	// The final implementation of pipes works by them being pushed to from buildings (rather than pulling like belts), so they don't need an inventory to access
-	UPROPERTY( BlueprintReadWrite, SaveGame ) // MODDING EDIT VERY Experimental most buildings handle this on their own. Writing to it maybe crashes.
+	UPROPERTY( BlueprintReadWrite, SaveGame ) // MODDING EDIT: BPRW - VERY Experimental most buildings handle this on their own. Writing to it maybe crashes.
 	class UFGInventoryComponent* mConnectionInventory;
 
 	/**
@@ -266,16 +260,14 @@ public: // MODDING EDIT: protected -> public
 	 * buildables. This is because fluids should belong to a single stack in an inventory and if none is specified then a pipe should
 	 * not be eligible to receive liquid. There may be a better way to handle this but that is how its operating.
 	 */
-    //MODDING EDIT Experimental !!! Writing to it maybe crashes
-	UPROPERTY( BlueprintReadWrite, SaveGame )
+	UPROPERTY( BlueprintReadWrite, SaveGame ) //MODDING EDIT: BPRW - Experimental!!! Writing to it maybe crashes
 	int32 mInventoryAccessIndex;
 
 	/**
 	 * The network this connection is connected to. INDEX_NONE if not connected.
 	 * @note - This ID may change at any time when changes occurs in the network. Do not save copies of it!
 	 */
-    // MODDING EDIT: BPReadOnly
-	UPROPERTY( SaveGame, BlueprintReadOnly, VisibleAnywhere, Replicated, Category = "Connection" )
+	UPROPERTY( BlueprintReadOnly, SaveGame, VisibleAnywhere, Replicated, Category = "Connection" ) // MODDING EDIT: BPReadOnly
 	int32 mPipeNetworkID;
 
 	/**
@@ -286,8 +278,7 @@ public: // MODDING EDIT: protected -> public
 	//           We cannot do that on the client cause it does not have a graph built.
 	//           And the pipe network id gets wonky on the client as well... and
 	//           we need this to work for the play test so for now lets go with ugly.
-	// MODDING EDIT: BPReadOnly, VisibleAnywhere
-    UPROPERTY( BlueprintReadOnly, VisibleAnywhere, ReplicatedUsing = OnRep_FluidDescriptor )
+	UPROPERTY( BlueprintReadOnly, VisibleAnywhere, ReplicatedUsing = OnRep_FluidDescriptor ) // MODDING EDIT: BPReadOnly, VisibleAnywhere
 	TSubclassOf< class UFGItemDescriptor > mFluidDescriptor;
 
 protected: // MODDING EDIT
@@ -311,7 +302,4 @@ private:
 
 	/** Cached Owner. Valid if owner is a pipeline. Null otherwise (Not a UPROPERTY because this component must have an owner and null is okay )*/
 	class AFGBuildablePipeline* mCachedPipelineOwner;
-
-public:
-	FORCEINLINE ~UFGPipeConnectionComponent() = default;
 };

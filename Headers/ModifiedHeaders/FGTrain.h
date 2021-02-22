@@ -1,14 +1,8 @@
 // Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "SubclassOf.h"
 
 #include "GameFramework/Actor.h"
-#include "Array.h"
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
-#include "TextProperty.h"
-#include "GameFramework/Info.h"
 #include "FGSaveInterface.h"
 #include "FGSignificanceInterface.h"
 #include "RailroadNavigation.h"
@@ -57,7 +51,7 @@ enum class ETrainDockingState : uint8
 };
 
 /** Global constants for trains. */
-struct FACTORYGAME_API TrainConstants
+struct TrainConstants
 {
 	// At which distance can a station start catching the train. [cm]
 	static float CATCH_DISTANCE;
@@ -69,9 +63,6 @@ struct FACTORYGAME_API TrainConstants
 	static float DOCK_SPEED;
 	// This is the speed on a restricted section, e.g. before docking. [cm/s]
 	static float RESTRICTED_SPEED;
-
-public:
-	FORCEINLINE ~TrainConstants() = default;
 };
 
 /**
@@ -79,7 +70,7 @@ public:
  * I.e. the locomotives, railcars, length and tare weight.
  */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FTrainConsist
+struct FTrainConsist
 {
 GENERATED_BODY()
 public:
@@ -107,13 +98,10 @@ public:
 	float HighSpeedDynamicBrakingEffort = 0.f;
 	float LimitedSpeedDynamicBrakingEffort = 0.f;
 	float MaxTractiveEffort = 0.f;
-
-public:
-	FORCEINLINE ~FTrainConsist() = default;
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FTrainAtcPoint
+struct FTrainAtcPoint
 {
 	GENERATED_BODY()
 public:
@@ -135,9 +123,6 @@ public:
 
 	/** Signal output at this point. If any. */
 	ERailroadSignalAspect SignalAspect = ERailroadSignalAspect::RSA_None;
-
-public:
-	FORCEINLINE ~FTrainAtcPoint() = default;
 };
 
 /**
@@ -146,7 +131,7 @@ public:
  * As a safety/guidance system for when the player is driving.
  */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FTrainAtcData
+struct FTrainAtcData
 {
 	GENERATED_BODY()
 public:
@@ -196,9 +181,6 @@ public:
 
 	/** If >= 0 we want to be catched at that distance. */
 	float CatchAtSignalDistance = -1.f;
-
-public:
-	FORCEINLINE ~FTrainAtcData() = default;
 };
 
 
@@ -219,7 +201,7 @@ enum class ESelfDrivingLocomotiveState : uint8
  * Realtime data for the ai.
  */
 USTRUCT()
-struct FACTORYGAME_API FTrainSelfDrivingData
+struct FTrainSelfDrivingData
 {
 	GENERATED_BODY()
 public:
@@ -237,9 +219,6 @@ public:
 
 	/** If the last speed was up or down or none. */
 	int8 LastSpeedControl = 0;
-
-public:
-	FORCEINLINE ~FTrainSelfDrivingData() = default;
 };
 
 
@@ -247,7 +226,7 @@ public:
  * The physics simulation data for the trains.
  */
 USTRUCT()
-struct FACTORYGAME_API FTrainSimulationData
+struct FTrainSimulationData
 {
 	GENERATED_BODY()
 public:
@@ -279,9 +258,6 @@ public:
 	// Velocity of this train [directional] [cm/s]
 	UPROPERTY( SaveGame )
 	float Velocity = 0.f;
-
-public:
-	FORCEINLINE ~FTrainSimulationData() = default;
 };
 
 // Delegates for blueprint
@@ -341,7 +317,7 @@ public:
 
 	/** Get the name of this train. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Train" )
-	FORCEINLINE FText GetTrainName() const { return mTrainName; }
+	FText GetTrainName() const { return mTrainName; }
 
 	/** Get the name of this train, must be called on server. */
 	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|Train" )
@@ -349,7 +325,7 @@ public:
 
 	/** Get the track for this train. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Train" )
-	FORCEINLINE int32 GetTrackGraphID() const { return mTrackGraphID; }
+	int32 GetTrackGraphID() const { return mTrackGraphID; }
 
 	/** Is this train driven by a player. */
 	bool IsPlayerDriven() const;
@@ -364,7 +340,7 @@ public:
 
 	/** Get the self driving error for this locomotive. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|SelfDriving" )
-	FORCEINLINE ESelfDrivingLocomotiveError GetSelfDrivingError() const { return mSelfDrivingError; }
+	ESelfDrivingLocomotiveError GetSelfDrivingError() const { return mSelfDrivingError; }
 
 	/** @return The master locomotive in the train; nullptr if MU is disabled. */
 	class AFGLocomotive* GetMultipleUnitMaster() const;
@@ -411,11 +387,11 @@ public:
 
 	/** Get the current status on the docking. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Train" )
-	FORCEINLINE ETrainDockingState GetDockingState() const { return mDockingState; }
+	ETrainDockingState GetDockingState() const { return mDockingState; }
 
 	/** If this train has docked at a station. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Train" )
-	FORCEINLINE bool IsDocked() const { return mDockingState == ETrainDockingState::TDS_Docked; }
+	bool IsDocked() const { return mDockingState == ETrainDockingState::TDS_Docked; }
 
 	/** Callbacks from the station with regards to docking. */
 	void OnDocked( AFGBuildableRailroadStation* station );
@@ -528,7 +504,4 @@ private:
 	FVector mSignificanceLocation;
 	float mSignificanceRadius;
 	float mSignificanceRange;
-
-public:
-	FORCEINLINE ~AFGTrain() = default;
 };

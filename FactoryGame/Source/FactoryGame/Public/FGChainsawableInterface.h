@@ -1,10 +1,6 @@
 // Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "FGInventoryComponent.h"
-#include "Engine/StaticMesh.h"
-#include "UObject/Interface.h"
-#include "UObject/Class.h"
 
 #include "FGInventoryComponent.h"
 #include "FGChainsawableInterface.generated.h"
@@ -14,20 +10,15 @@
 * have a UCLASS to be able to access
 */
 UINTERFACE( Blueprintable )
-class FACTORYGAME_API UFGChainsawableInterface : public UInterface
+class UFGChainsawableInterface : public UInterface
 {
-	
- GENERATED_BODY()
-	UFGChainsawableInterface(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} 
-
-public:
-	FORCEINLINE ~UFGChainsawableInterface() = default;
+	GENERATED_UINTERFACE_BODY()
 };
 
 /**
  * Actors attached that implement this interface will be considered by the chainsaw to be chainsawable.
  */
-class FACTORYGAME_API IFGChainsawableInterface
+class IFGChainsawableInterface
 {
 	GENERATED_IINTERFACE_BODY()
 

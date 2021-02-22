@@ -1,11 +1,9 @@
 // Copyright 2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "GameFramework/Actor.h"
-#include "UObject/Class.h"
 
 #include "FGReplicationDependencyActorInterface.h"
-#include "../FGInventoryComponent.h"
+#include "FGInventoryComponent.h"
 #include "FGReplicationDetailActor.generated.h"
 
 /**
@@ -56,7 +54,4 @@ protected:
 
 	/** Checks whether this actor is relevant to a connection. */
 	virtual bool IsNetRelevantFor( const AActor* realViewer, const AActor* viewTarget, const FVector& srcLocation ) const override;
-
-public:
-	FORCEINLINE ~AFGReplicationDetailActor() = default;
 };

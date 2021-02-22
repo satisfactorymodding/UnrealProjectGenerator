@@ -1,9 +1,6 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
-#include "UObject/CoreNet.h"
-#include "Array.h"
-#include "UObject/Class.h"
 
 #include "CoreMinimal.h"
 #include "FGCircuit.h"
@@ -14,7 +11,7 @@
  * A point on the power curve.
  */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FPowerGraphPoint
+struct FPowerGraphPoint
 {
 	GENERATED_BODY()
 public:
@@ -30,21 +27,15 @@ public:
 
 	UPROPERTY( BlueprintReadOnly )
 	float ProductionCapacity;
-
-public:
-	FORCEINLINE ~FPowerGraphPoint() = default;
 };
 
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits< FPowerGraphPoint > : public TStructOpsTypeTraitsBase2< FPowerGraphPoint >
+struct TStructOpsTypeTraits< FPowerGraphPoint > : public TStructOpsTypeTraitsBase2< FPowerGraphPoint >
 {
 	enum
 	{
 		WithNetSerializer = true
 	};
-
-public:
-	FORCEINLINE ~TStructOpsTypeTraits< FPowerGraphPoint >() = default;
 };
 
 
@@ -52,7 +43,7 @@ public:
  * Stats for a power circuit, refreshed once every second. Implemented as a ring buffer, so that we don't have to re-replicate all the time
  */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FPowerCircuitStats
+struct FPowerCircuitStats
 {
 	GENERATED_BODY()
 public:
@@ -118,21 +109,15 @@ private:
 
 	/** Maximum number of points in the graph. */
 	int32 NumGraphPointsMax;
-
-public:
-	FORCEINLINE ~FPowerCircuitStats() = default;
 };
 
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits< FPowerCircuitStats > : public TStructOpsTypeTraitsBase2< FPowerCircuitStats >
+struct TStructOpsTypeTraits< FPowerCircuitStats > : public TStructOpsTypeTraitsBase2< FPowerCircuitStats >
 {
 	enum
 	{
 		WithNetSerializer = true
 	};
-
-public:
-	FORCEINLINE ~TStructOpsTypeTraits< FPowerCircuitStats >() = default;
 };
 
 
@@ -154,22 +139,18 @@ public:
 	void ResetFuse();
 
 	/** @return true if the fuse is triggered; false otherwise. */
-	FORCEINLINE
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerCircuit" )
 	bool IsFuseTriggered() { return mIsFuseTriggered; }
 
 	/** Get the stats for this circuit. */
-	FORCEINLINE
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerCircuit" )
 	void GetStats( FPowerCircuitStats& out_stats ) const { out_stats = mPowerStats; }
 
 	/** Get the graph point from the index in our stats,  @return false if the index is invalid */
-	FORCEINLINE
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerCircuit" )
 	static bool GetGraphPointAtIndex( const FPowerCircuitStats& stats, int32 idx, FPowerGraphPoint& out_item ){ return stats.GetGraphPointAtIndex( idx, out_item ); }
 
 	/** Get how many graph points there is in our stats */
-	FORCEINLINE
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerCircuit" )
 	static int32 GetNumGraphPoint( const FPowerCircuitStats& stats ){ return stats.GetNumGraphPoints(); }
 
@@ -223,9 +204,6 @@ private:
 	/** The power consumption/production over time. Used for feedback. */
 	UPROPERTY( Replicated )
 	FPowerCircuitStats mPowerStats;
-
-public:
-	FORCEINLINE ~UFGPowerCircuit() = default;
 };
 
 void FPowerCircuitStats::MakeGraphPoint( FPowerGraphPoint& out_newGraphPoint ) const

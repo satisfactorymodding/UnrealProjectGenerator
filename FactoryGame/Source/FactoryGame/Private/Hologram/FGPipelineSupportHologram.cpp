@@ -4,7 +4,6 @@
 
 AFGPipelineSupportHologram::AFGPipelineSupportHologram(){ }
 void AFGPipelineSupportHologram::BeginPlay(){ }
-void AFGPipelineSupportHologram::GetLifetimeReplicatedProps(TArray<class FLifetimeProperty,  TSizedDefaultAllocator<32>> & OutReplicatedProps) const{ }
 bool AFGPipelineSupportHologram::DoMultiStepPlacement(bool isInputFromARelease){ return bool(); }
 bool AFGPipelineSupportHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }
 bool AFGPipelineSupportHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
@@ -20,3 +19,4 @@ void AFGPipelineSupportHologram::UpdateSupportLengthRelativeLoc(){ }
 void AFGPipelineSupportHologram::Scroll(int32 delta){ }
 void AFGPipelineSupportHologram::ConfigureActor( AFGBuildable* inBuildable) const{ }
 void AFGPipelineSupportHologram::OnRep_SupportMesh(){ }
+void AFGPipelineSupportHologram::GetLifetimeReplicatedProps(TArray<FLifetimeProperty> & OutLifetimeProps) const { Super::GetLifetimeReplicatedProps(OutLifetimeProps); }
