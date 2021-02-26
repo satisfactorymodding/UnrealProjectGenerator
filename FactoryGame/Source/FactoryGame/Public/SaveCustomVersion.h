@@ -6,7 +6,7 @@
  * Custom serialization version for save games.
  * If a custom version is no longer supported and has been cleaned up, add the prefix DROPPED_.
  */
-struct FSaveCustomVersion
+struct FACTORYGAME_API FSaveCustomVersion
 {
 	enum Type
 	{

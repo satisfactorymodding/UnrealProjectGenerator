@@ -12,11 +12,10 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE( FTranferStatusChanged );
 class FDebugDisplayInfo;
 
 USTRUCT( BlueprintType )
-struct FTireData
+struct FACTORYGAME_API FTireData
 {
 	GENERATED_BODY()
-
-	//bool IsInAir;
+	
 	UPROPERTY( BlueprintReadOnly, Category = "Vehicle" )
 	UPhysicalMaterial* SurfaceMaterial;
 
@@ -34,11 +33,10 @@ struct FTireData
 
 	UPROPERTY( BlueprintReadOnly, Category = "Vehicle" )
 	bool IsInAir;
-	//float TireFriction;
 };
 
 USTRUCT( BlueprintType )
-struct FTireTrackDecalDetails
+struct FACTORYGAME_API FTireTrackDecalDetails
 {
 	GENERATED_BODY()
 
@@ -49,7 +47,6 @@ struct FTireTrackDecalDetails
 	/** Material to use as an override */
 	UPROPERTY( EditDefaultsOnly, Category = "Vehicle" )
 	class UMaterial* DecalMaterialOverride;
-
 };
 
 USTRUCT( BlueprintType )
@@ -76,7 +73,6 @@ struct FParticleTemplatePair
 
 	UPROPERTY()
 	UParticleSystemComponent* Particle;
-
 };
 
 USTRUCT()
@@ -86,23 +82,6 @@ struct FTireParticleCollection
 
 	UPROPERTY()
 	TArray< FParticleTemplatePair > Collection;
-};
-
-/* DSOL (Don't shift on (wheel) load) dynamic gearbox data */
-struct DSOLDynGearboxData
-{
-	bool mWasShiftingUp;
-	bool mWasShiftingDown;
-	int32 mTargetGear = 1;
-	float mGearSwitchTime;
-	float mSlopeShiftRatio; //Multiplier to affect shifting gears up and down on a slope
-};
-
-/* DSOL (Don't shift on (wheel) load) dynamic gearbox data */
-struct DSOLSetupData
-{
-	int mNumberOfGears;
-	float mDownShiftLatency;
 };
 
 /**
@@ -233,25 +212,6 @@ public:
 	 */
 	UFUNCTION()
 	bool FilterFuelClasses( TSubclassOf< UObject > object, int32 idx ) const;
-
-	///////////////////////DSOL Gearbox Stuff////////////////////////////////
-	// "Don't Shift On Load" gearbox. Doesn't shift up if there is load on 
-	// the tires. Useful for climbing uphill.
-	// I'm putting this functionality here because it is a common object 
-	// for movement components to access without modifying the engine.
-	// The flag to enable/disable this, however, will be in the 
-	// movement components. This mean we must manually also 
-	// call this from movement components.
-	/////////////////////////////////////////////////////////////////////////
-
-	/** Simulates an automatic gearbox that does not shift up when there is load on the tires (useful when driving uphill) */
-	static void SimulateDSOLGearBox( float DeltaTime,
-									 float RawThrottleInput,
-									 DSOLSetupData& setupData,
-									 DSOLDynGearboxData& gearboxData, 
-									 PxVehicleWheelsSimData& wheelsSimData, 
-									 PxVehicleDriveDynData& driveDynData, 
-									 PxVehicleDriveSimData& driveSimData );
 
 	/**Returns the simulation component */
 	UFUNCTION( BlueprintPure, Category = "Simulation" )
@@ -407,11 +367,6 @@ public:
 	FTranferStatusChanged TranferStatusChangedDelegate;
 
 protected:
-
-	// replicated state of vehicle 
-	UPROPERTY( Transient, Replicated )
-	FReplicatedAddedVelocitiesState mReplicatedState;
-
 	/** This vehicles fuel consumption in MW/s */
 	UPROPERTY( EditDefaultsOnly, Category = "Fuel" )
 	float mFuelConsumption;
@@ -522,7 +477,12 @@ protected:
 	/** Collision box for detecting overlaps with foliage only. Shape modified in BP */
 	UPROPERTY( EditDefaultsOnly, Category = "Vehicle" )
 	UBoxComponent* mFoliageCollideBox;
+	
 private:
+	/** replicated state of vehicle. */
+	UPROPERTY( Transient, Replicated )
+	FReplicatedAddedVelocitiesState mReplicatedState;
+	
 	/** Our component used for simulated movement */
 	UPROPERTY()
 	class UFloatingPawnMovement* mSimulationMovementComponent;

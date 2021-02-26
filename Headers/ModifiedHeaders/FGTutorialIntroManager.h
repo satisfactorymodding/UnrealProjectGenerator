@@ -31,7 +31,7 @@ enum class EIntroTutorialSteps :uint8
 };
 
 USTRUCT( BlueprintType )
-struct FRecipeAmountPair
+struct FACTORYGAME_API FRecipeAmountPair
 {
 	GENERATED_BODY()
 
@@ -45,7 +45,7 @@ struct FRecipeAmountPair
 };
 
 USTRUCT( BlueprintType )
-struct FTutorialHintData
+struct FACTORYGAME_API FTutorialHintData
 {
 	GENERATED_BODY()
 
@@ -60,18 +60,6 @@ struct FTutorialHintData
 
 	UPROPERTY( EditDefaultsOnly, BlueprintReadOnly, Category = "Tutorial" )
 	TSubclassOf< class UFGMessageBase > Message;
-};
-
-struct FFindByIntroID
-{
-	EIntroTutorialSteps TutorialStep;
-
-	FFindByIntroID( EIntroTutorialSteps InTutorialStep ) : TutorialStep( InTutorialStep ) { }
-
-	bool operator() ( const FTutorialHintData Element ) const
-	{
-		return ( TutorialStep == Element.ID );
-	}
 };
 
 UCLASS( abstract )

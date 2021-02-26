@@ -5,7 +5,7 @@
 /**
  * A collection of unit conversions to make code more readable.
  */
-struct FUnits
+struct FACTORYGAME_API FUnits
 {
 	/** Distance */
 	static FORCEINLINE float CmToM( float cm ) { return cm / 100.0f; }

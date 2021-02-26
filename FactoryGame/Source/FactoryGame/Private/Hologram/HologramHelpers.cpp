@@ -107,7 +107,6 @@ FVector FHologramPathingGrid::GetWorldSpaceOfGridIndex(const FVector& gridIndex)
 FHologramPathingPoint& FHologramPathingGrid::GetPathPointForWorldLocation(const FVector& worldLocation){ return *(new FHologramPathingPoint); }
 bool FHologramPathingGrid::IsValidGridIndex(const FVector& index){ return bool(); }
 bool FHologramPathingGrid::CanConstructGridFrom(const FVector& locationOne, const FVector& locationTwo, const FVector& forwardOne, const FVector& forwardTwo){ return bool(); }
-FHologramAStarNode::FHologramAStarNode(){ }
 FHologramAStarNode::FHologramAStarNode(int32 unused){ }
 FHologramAStarNode::FHologramAStarNode(FHologramPathingPoint* pathingPoint){ }
 FHologramAStarNode::FHologramAStarNode(const FHologramAStarNode& pathingNode){ }

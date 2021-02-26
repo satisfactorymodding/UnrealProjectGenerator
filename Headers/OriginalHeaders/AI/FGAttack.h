@@ -5,16 +5,15 @@
 
 
 UCLASS( abstract, BlueprintType )
-class UFGAttack : public UObject
+class FACTORYGAME_API UFGAttack : public UObject
 {
 	GENERATED_BODY()
 public:
-	/** ctor */
 	UFGAttack();
 
 	/**
-	/ Handles the attack logic, differs depending on type of attack ( ex melee, ranged etc )                                                                   
-	*/
+	 * Handles the attack logic, differs depending on type of attack ( ex melee, ranged etc )                                                                   
+	 */
 	virtual void PerformAttack( TScriptInterface< class IFGAggroTargetInterface >	aggroTarget, class AFGEnemy* sourceActor ) PURE_VIRTUAL( UFGAttack::PerformAttack, );
 
 	/** Get attack range */

@@ -7,7 +7,7 @@
 * have a UCLASS to be able to access
 */
 UINTERFACE( Blueprintable )
-class UFGWorldCreationInterface : public UInterface
+class FACTORYGAME_API UFGWorldCreationInterface : public UInterface
 {
 	GENERATED_UINTERFACE_BODY()
 };
@@ -15,7 +15,7 @@ class UFGWorldCreationInterface : public UInterface
 /**
 * @brief Interface for all useable classes out there
 */
-class IFGWorldCreationInterface
+class FACTORYGAME_API IFGWorldCreationInterface
 {
 	GENERATED_IINTERFACE_BODY()
 public:

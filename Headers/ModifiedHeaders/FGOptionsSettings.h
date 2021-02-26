@@ -40,7 +40,7 @@ enum class EGamemodeAvailability : uint8
 
 
 USTRUCT( BlueprintType )
-struct FOptionRowData
+struct FACTORYGAME_API FOptionRowData
 {
 	GENERATED_BODY()
 
@@ -121,7 +121,7 @@ public:
 };
 
 USTRUCT( BlueprintType, meta = ( ShowOnlyInnerProperties ) )
-struct FActionMappingDisplayName
+struct FACTORYGAME_API FActionMappingDisplayName
 {
 	GENERATED_BODY()
 	
@@ -139,7 +139,7 @@ struct FActionMappingDisplayName
 };
 
 USTRUCT( BlueprintType, meta = ( ShowOnlyInnerProperties ) )
-struct FAxisMappingDisplayName
+struct FACTORYGAME_API FAxisMappingDisplayName
 {
 	GENERATED_BODY()
 

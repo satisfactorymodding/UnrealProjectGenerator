@@ -2,14 +2,16 @@
 
 #include "ItemDrop.generated.h"
 
-/** */
+
+/**
+ * Specify items dropped by picking up foliage.
+ */
 USTRUCT(BlueprintType)
-struct FItemDrop
+struct FACTORYGAME_API FItemDrop
 {
 	GENERATED_BODY()
 
-		/** ctor */
-		FItemDrop() :
+	FItemDrop() :
 		ItemClass( nullptr )
 	{
 		NumItems.Min = 1;
@@ -28,8 +30,11 @@ struct FItemDrop
 	int32 GetRandomItemAmount() const;
 };
 
+/**
+ * Specify items dropped by picking up foliage, with a random chance.
+ */
 USTRUCT(BlueprintType)
-struct FItemDropWithChance
+struct FACTORYGAME_API FItemDropWithChance
 {
 	GENERATED_BODY()
 

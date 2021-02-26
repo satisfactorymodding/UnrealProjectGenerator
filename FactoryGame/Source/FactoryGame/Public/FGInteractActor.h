@@ -6,11 +6,10 @@
 #include "FGInteractActor.generated.h"
 
 UCLASS( abstract )
-class AFGInteractActor : public AFGStaticReplicatedActor, public IFGUseableInterface
+class FACTORYGAME_API AFGInteractActor : public AFGStaticReplicatedActor, public IFGUseableInterface
 {
 	GENERATED_BODY()
 public:
-	/** ctor */
 	AFGInteractActor();
 
 	/** Called when player interacts with this actor	*/

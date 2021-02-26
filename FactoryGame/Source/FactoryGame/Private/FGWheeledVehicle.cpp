@@ -29,13 +29,6 @@ bool AFGWheeledVehicle::IsValidFuel(TSubclassOf<  UFGItemDescriptor > resource) 
 void AFGWheeledVehicle::HandleDestroyStaticMesh(AActor* actor, float forceOfCollision){ }
 void AFGWheeledVehicle::HandleDestroyFoliage(){ }
 bool AFGWheeledVehicle::FilterFuelClasses(TSubclassOf< UObject > object, int32 idx) const{ return bool(); }
-void AFGWheeledVehicle::SimulateDSOLGearBox(float DeltaTime,
-									 float RawThrottleInput,
-									 DSOLSetupData& setupData,
-									 DSOLDynGearboxData& gearboxData, 
-									 PxVehicleWheelsSimData& wheelsSimData, 
-									 PxVehicleDriveDynData& driveDynData, 
-									 PxVehicleDriveSimData& driveSimData){ }
 bool AFGWheeledVehicle::WantsToMove(){ return bool(); }
 float AFGWheeledVehicle::GetFuelBurnRatio(){ return float(); }
 UFGTargetPointLinkedList* AFGWheeledVehicle::GetTargetNodeLinkedList(){ return nullptr; }

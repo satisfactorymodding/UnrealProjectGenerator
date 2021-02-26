@@ -11,7 +11,7 @@
 #include "FGResearchRecipe.generated.h"
 
 USTRUCT(Blueprintable)
-struct FResearchRecipeReward
+struct FACTORYGAME_API FResearchRecipeReward
 {
 	GENERATED_BODY()
 

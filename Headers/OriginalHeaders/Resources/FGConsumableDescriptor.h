@@ -7,7 +7,7 @@
  * Item descriptor for consumable items.
  */
 UCLASS()
-class UFGConsumableDescriptor : public UFGEquipmentDescriptor
+class FACTORYGAME_API UFGConsumableDescriptor : public UFGEquipmentDescriptor
 {
 	GENERATED_BODY()
 public:

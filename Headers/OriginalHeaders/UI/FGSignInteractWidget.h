@@ -52,7 +52,9 @@ public:
 	/** End Add Element Bindings */
 
 protected:
+	// Begin UFGInteractWidget interface
 	virtual bool NativeCanCallInit() override;
+	// End UFGInteractWidget interface
 
 	// Initialize the viewport DPI matrix for furture vector transforms
 	void CalculateDPIMatrix();

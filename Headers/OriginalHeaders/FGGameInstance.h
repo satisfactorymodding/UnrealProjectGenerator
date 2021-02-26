@@ -126,7 +126,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnNatTypeUpdated, ECachedNATType, 
  * call. This will automatically tear down our current session. Leave the current game and join the new session
  */
 UCLASS()
-class UFGGameInstance : public UGameInstance
+class FACTORYGAME_API UFGGameInstance : public UGameInstance
 {
 	GENERATED_BODY()
 public:

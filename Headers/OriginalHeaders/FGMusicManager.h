@@ -3,22 +3,28 @@
 #include "GameFramework/Actor.h"
 #include "FGMusicManager.generated.h"
 
+/**
+ * Handles playing the music in game, this is created really early and is available across loading screens.
+ */
 UCLASS(Blueprintable,Config=Engine)
-class UFGMusicManager : public UObject
+class FACTORYGAME_API UFGMusicManager : public UObject
 {
 	GENERATED_BODY()
 public:
 	/** Create a music manager from the specified class in a config */
 	static class UFGMusicManager* CreateMusicManager( class UFGGameInstance* gameInstance );
 
+	/** Get the music manager, can return null if world context is invalid or no music manager is spawned. */
 	static UFGMusicManager* Get( UWorld* world );
-
-	/** To easy access the music manager from anywhere, can return null if world context is invalid or no music manager is spawned. */
+	/** Get the music manager, can return null if world context is invalid or no music manager is spawned. */
 	UFUNCTION( BlueprintPure, Category = "Music", DisplayName = "GetMusicManager", Meta = ( DefaultToSelf = "worldContext" ) )
 	static UFGMusicManager* Get( UObject* worldContext );
 
+	// Begin UObject interface
 	virtual UWorld* GetWorld() const override;
+	// End UObject interface
 
+	/** Let us know when a player controller enters play. */
 	void OnPlayerControllerBeginPlay( class AFGPlayerControllerBase* pc );
 
 	/** Start/Continue music playback. */

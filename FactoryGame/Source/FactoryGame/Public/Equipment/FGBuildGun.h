@@ -423,7 +423,7 @@ private:
  * Attachment for the build gun.
  */
 UCLASS()
-class AFGBuildGunAttachment : public AFGEquipmentAttachment
+class FACTORYGAME_API AFGBuildGunAttachment : public AFGEquipmentAttachment
 {
 	GENERATED_BODY()
 };

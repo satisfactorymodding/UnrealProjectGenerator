@@ -8,7 +8,7 @@
 //Considering moving it to an engine level plugin. So that's why it's not using the FG prefix.
 //As we currently need to do the steam specific stuff in local player, instead of the steam OSS. As the OSS has no knowledge about this struct.
 USTRUCT()
-struct FPlayerPresenceState
+struct FACTORYGAME_API FPlayerPresenceState
 {
 	GENERATED_BODY()
 

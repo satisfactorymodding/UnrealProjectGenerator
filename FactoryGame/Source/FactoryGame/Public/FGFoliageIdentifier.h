@@ -7,7 +7,7 @@
  * Class to identify different types of foliage 
  */
 UCLASS(abstract, Blueprintable)
-class UFGFoliageIdentifier : public UObject
+class FACTORYGAME_API UFGFoliageIdentifier : public UObject
 {
 	GENERATED_BODY()
 };
@@ -16,7 +16,7 @@ class UFGFoliageIdentifier : public UObject
  * Foliage that can be removed by buildings
  */
 UCLASS()
-class UFGFoliageIdentifier_RemovableByBuildings : public UFGFoliageIdentifier
+class FACTORYGAME_API UFGFoliageIdentifier_RemovableByBuildings : public UFGFoliageIdentifier
 {
 	GENERATED_BODY()
 };
@@ -25,7 +25,7 @@ class UFGFoliageIdentifier_RemovableByBuildings : public UFGFoliageIdentifier
  * Foliage that can be picked up by hand
  */
 UCLASS()
-class UFGFoliageIdentifier_Pickupable : public UFGFoliageIdentifier_RemovableByBuildings
+class FACTORYGAME_API UFGFoliageIdentifier_Pickupable : public UFGFoliageIdentifier_RemovableByBuildings
 {
 	GENERATED_BODY()
 };
@@ -34,7 +34,7 @@ class UFGFoliageIdentifier_Pickupable : public UFGFoliageIdentifier_RemovableByB
  * Foliage that you need a chainsaw to be able to remove
  */
 UCLASS()
-class UFGFoliageIdentifier_Chainsawable : public UFGFoliageIdentifier
+class FACTORYGAME_API UFGFoliageIdentifier_Chainsawable : public UFGFoliageIdentifier
 {
 	GENERATED_BODY()
 };
@@ -43,7 +43,7 @@ class UFGFoliageIdentifier_Chainsawable : public UFGFoliageIdentifier
 * xmas tree :3
 */
 UCLASS()
-class UFGFoliageIdentifier_ChainsawableXmasTree : public UFGFoliageIdentifier_Chainsawable
+class FACTORYGAME_API UFGFoliageIdentifier_ChainsawableXmasTree : public UFGFoliageIdentifier_Chainsawable
 {
 	GENERATED_BODY()
 };
@@ -52,7 +52,7 @@ class UFGFoliageIdentifier_ChainsawableXmasTree : public UFGFoliageIdentifier_Ch
 * Will be destroyed by a vehicle that runs over it
 */
 UCLASS()
-class UFGFoliageIdentifier_VehicleDestroyable : public UFGFoliageIdentifier
+class FACTORYGAME_API UFGFoliageIdentifier_VehicleDestroyable : public UFGFoliageIdentifier
 {
 	GENERATED_BODY()
 };
@@ -61,7 +61,7 @@ class UFGFoliageIdentifier_VehicleDestroyable : public UFGFoliageIdentifier
 * Will be destroyed by explosives
 */
 UCLASS()
-class UFGFoliageIdentifier_ExplosiveDestroyable : public UFGFoliageIdentifier
+class FACTORYGAME_API UFGFoliageIdentifier_ExplosiveDestroyable : public UFGFoliageIdentifier
 {
 	GENERATED_BODY()
 };

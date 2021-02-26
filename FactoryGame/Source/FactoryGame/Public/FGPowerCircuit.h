@@ -11,7 +11,7 @@
  * A point on the power curve.
  */
 USTRUCT( BlueprintType )
-struct FPowerGraphPoint
+struct FACTORYGAME_API FPowerGraphPoint
 {
 	GENERATED_BODY()
 public:
@@ -30,7 +30,7 @@ public:
 };
 
 template<>
-struct TStructOpsTypeTraits< FPowerGraphPoint > : public TStructOpsTypeTraitsBase2< FPowerGraphPoint >
+struct FACTORYGAME_API TStructOpsTypeTraits< FPowerGraphPoint > : public TStructOpsTypeTraitsBase2< FPowerGraphPoint >
 {
 	enum
 	{
@@ -43,7 +43,7 @@ struct TStructOpsTypeTraits< FPowerGraphPoint > : public TStructOpsTypeTraitsBas
  * Stats for a power circuit, refreshed once every second. Implemented as a ring buffer, so that we don't have to re-replicate all the time
  */
 USTRUCT( BlueprintType )
-struct FPowerCircuitStats
+struct FACTORYGAME_API FPowerCircuitStats
 {
 	GENERATED_BODY()
 public:
@@ -112,7 +112,7 @@ private:
 };
 
 template<>
-struct TStructOpsTypeTraits< FPowerCircuitStats > : public TStructOpsTypeTraitsBase2< FPowerCircuitStats >
+struct FACTORYGAME_API TStructOpsTypeTraits< FPowerCircuitStats > : public TStructOpsTypeTraitsBase2< FPowerCircuitStats >
 {
 	enum
 	{

@@ -320,7 +320,7 @@ struct TStructOpsTypeTraits< FSignData > : public TStructOpsTypeTraitsBase2< FSi
 
 
 // Sign Interface
-UINTERFACE( MinimalAPI, Blueprintable )
+UINTERFACE( Blueprintable )
 class UFGSignInterface : public UInterface
 {
 	GENERATED_BODY()

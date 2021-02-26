@@ -9,11 +9,10 @@
 static const int MAX_DISMANTLE_LIMIT = 50;
 
 USTRUCT()
-struct FDismantleRefunds
+struct FACTORYGAME_API FDismantleRefunds
 {
 	GENERATED_BODY()
-
-	/** Ctor */
+	
 	FDismantleRefunds()
 	{
 		NumPendingActors = 0;
@@ -38,7 +37,6 @@ UCLASS()
 class FACTORYGAME_API UFGBuildGunStateDismantle : public UFGBuildGunState
 {
 	GENERATED_BODY()
-
 public:
 	UFGBuildGunStateDismantle();
 

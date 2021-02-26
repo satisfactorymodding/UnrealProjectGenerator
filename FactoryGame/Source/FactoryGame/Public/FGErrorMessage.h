@@ -17,7 +17,7 @@ enum EErrorResponse
 //			then we could implement messages about autosave and other in the same system)
 // @todo: Move UFGErrorMesssage to another file
 UCLASS(Blueprintable, abstract)
-class UFGErrorMessage : public UObject
+class FACTORYGAME_API UFGErrorMessage : public UObject
 {
 	GENERATED_BODY()
 public:

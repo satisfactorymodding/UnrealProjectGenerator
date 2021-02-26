@@ -9,7 +9,7 @@
 
 
 USTRUCT( BlueprintType )
-struct FCostIngredientEffectActorInfo
+struct FACTORYGAME_API FCostIngredientEffectActorInfo
 {
 	GENERATED_BODY()
 
@@ -27,7 +27,7 @@ struct FCostIngredientEffectActorInfo
 };
 
 USTRUCT()
-struct FCachedMaterialArray
+struct FACTORYGAME_API FCachedMaterialArray
 {
 	GENERATED_BODY()
 

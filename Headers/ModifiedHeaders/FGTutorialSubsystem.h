@@ -9,7 +9,7 @@
 
 
 USTRUCT( BlueprintType )
-struct FTutorialData
+struct FACTORYGAME_API FTutorialData
 {
 	GENERATED_BODY()
 
@@ -20,21 +20,6 @@ struct FTutorialData
 	TSubclassOf< class UFGMessageBase > MessageID;
 };
 
-struct FFindByClassBuilt
-{
-	TSubclassOf< UObject > ClassBuilt;
-
-	FFindByClassBuilt( TSubclassOf< UObject > InClassBuilt ) : ClassBuilt( InClassBuilt ) { }
-
-	bool operator() ( const FTutorialData Element ) const
-	{
-		return ( ClassBuilt == Element.ClassBuilt );
-	}
-};
-
-/**
- * 
- */
 UCLASS( Blueprintable )
 class FACTORYGAME_API UFGTutorialSubsystem : public UObject, public IFGSaveInterface
 {

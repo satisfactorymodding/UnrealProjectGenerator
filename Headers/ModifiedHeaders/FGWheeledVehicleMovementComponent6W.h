@@ -9,12 +9,13 @@
 #include "PhysicsPublic.h"
 #include "PhysXPublic.h"
 #include "FGWheeledVehicle.h"
+#include "DSOLGearbox.h"
 #include "FGWheeledVehicleMovementComponent6W.generated.h"
 
 
 /** Described which axles are powered by the engine. True == Powered. */
 USTRUCT()
-struct FDifferentialSetup6W
+struct FACTORYGAME_API FDifferentialSetup6W
 {
 	GENERATED_USTRUCT_BODY()
 	
@@ -40,7 +41,7 @@ enum EWheelOrder6W
 };
 
 USTRUCT()
-struct FVehicleDifferential6WData
+struct FACTORYGAME_API FVehicleDifferential6WData
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -50,7 +51,7 @@ struct FVehicleDifferential6WData
 };
 
 USTRUCT()
-struct FVehicleEngineData6W
+struct FACTORYGAME_API FVehicleEngineData6W
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -84,7 +85,7 @@ struct FVehicleEngineData6W
 
 
 USTRUCT()
-struct FVehicleGearData6W
+struct FACTORYGAME_API FVehicleGearData6W
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -102,7 +103,7 @@ struct FVehicleGearData6W
 };
 
 USTRUCT()
-struct FVehicleTransmissionData6W
+struct FACTORYGAME_API FVehicleTransmissionData6W
 {
 	GENERATED_USTRUCT_BODY()
 	/** Whether to use automatic transmission */
@@ -139,7 +140,7 @@ struct FVehicleTransmissionData6W
 };
 
 UCLASS(meta = (BlueprintSpawnableComponent))
-class UFGWheeledVehicleMovementComponent6W : public UWheeledVehicleMovementComponent
+class FACTORYGAME_API UFGWheeledVehicleMovementComponent6W : public UWheeledVehicleMovementComponent
 {
 	GENERATED_UCLASS_BODY()
 

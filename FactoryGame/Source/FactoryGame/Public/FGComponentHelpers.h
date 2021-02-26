@@ -3,7 +3,7 @@
 
 DECLARE_DELEGATE_RetVal_ThreeParams( class USceneComponent*, FComponentDuplicator, class USceneComponent*, class UActorComponent*, const FName& );
 
-class FGComponentHelpers
+class FACTORYGAME_API FGComponentHelpers
 {
 public:
 	/**
@@ -16,9 +16,4 @@ public:
 	 * @param duplicator - the delegate to call for each component that can filter and create new components
 	 */
 	static void DuplicateComponents( TSubclassOf<class AActor> actorClass, class USceneComponent* defaultRoot, FComponentDuplicator duplicator );
-private:
-	/**
-	 * Helper function to DuplicateComponents, will parse out blueprint components and call duplicator on them
-	 */
-	static void Internal_SetupBlueprintComponent( class USCS_Node* node, class USCS_Node* parent, class UBlueprintGeneratedClass* actualBlueprintClass, FComponentDuplicator duplicator, TMap< FName, class USceneComponent* >& out_attachParentMap );
 };

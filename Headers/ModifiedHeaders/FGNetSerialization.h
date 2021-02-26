@@ -5,7 +5,7 @@
 
 /** Base struct for items using Custom Fast TArray Replication */
 USTRUCT()
-struct FCustomFastArraySerializerItem
+struct FACTORYGAME_API FCustomFastArraySerializerItem
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -76,7 +76,7 @@ struct FCustomFastArraySerializerItem
 
 /** Base struct for wrapping the array used in Custom Fast TArray Replication */
 USTRUCT()
-struct FCustomFastArraySerializer
+struct FACTORYGAME_API FCustomFastArraySerializer
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -148,7 +148,7 @@ private:
 	int32				CachedNumItemsToConsiderForWriting;
 };
 
-struct FStableRemover
+struct FACTORYGAME_API FStableRemover
 {
 	template< typename T >
 	static void RemoveItem( TArray<T>& a, int32 idx )
@@ -157,7 +157,7 @@ struct FStableRemover
 	}
 };
 
-struct FFastRemover
+struct FACTORYGAME_API FFastRemover
 {
 	template< typename T >
 	static void RemoveItem( TArray<T>& a, int32 idx )

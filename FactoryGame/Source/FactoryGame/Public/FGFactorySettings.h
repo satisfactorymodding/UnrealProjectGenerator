@@ -8,7 +8,7 @@
 #include "FGFactorySettings.generated.h"
 
 USTRUCT(BlueprintType)
-struct FCategory
+struct FACTORYGAME_API FCategory
 {
 	GENERATED_BODY()
 
@@ -31,7 +31,7 @@ struct FCategory
 };
 
 USTRUCT( BlueprintType )
-struct FViscosityToPuddlePair
+struct FACTORYGAME_API FViscosityToPuddlePair
 {
 	GENERATED_BODY()
 	

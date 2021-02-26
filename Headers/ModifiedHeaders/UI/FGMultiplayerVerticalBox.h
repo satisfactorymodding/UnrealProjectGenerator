@@ -4,7 +4,7 @@
 #include "FGMultiplayerVerticalBox.generated.h"
 
 UCLASS()
-class UFGMultiplayerVerticalBox : public UVerticalBox
+class FACTORYGAME_API UFGMultiplayerVerticalBox : public UVerticalBox
 {
 	GENERATED_BODY()
 

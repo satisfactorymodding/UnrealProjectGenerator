@@ -2,7 +2,7 @@
 
 #include "Serialization/Archive.h"
 
-class FSaveCollectorArchive : public FArchive
+class FACTORYGAME_API FSaveCollectorArchive : public FArchive
 {
 	/** Handles serialization of UObject references */
 	FArchive& operator<<( class UObject*& Obj );

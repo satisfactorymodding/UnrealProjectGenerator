@@ -3,19 +3,15 @@
 #include "FGAggroTargetInterface.generated.h"
 
 /**
-* For blueprint support of the interface, we will never add anything to it, just use it to
-* have a UCLASS to be able to access
-*/
+ * Interface for actors that can be aggroed by enemies.
+ */
 UINTERFACE( Blueprintable )
-class UFGAggroTargetInterface : public UInterface
+class FACTORYGAME_API UFGAggroTargetInterface : public UInterface
 {
 	GENERATED_UINTERFACE_BODY()
 };
 
-/**
-* @brief Interface for everything that can be in the inventory
-*/
-class IFGAggroTargetInterface
+class FACTORYGAME_API IFGAggroTargetInterface
 {
 	GENERATED_IINTERFACE_BODY()
 

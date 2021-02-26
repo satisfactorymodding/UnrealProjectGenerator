@@ -7,8 +7,8 @@ bool AFGResourceNode::IsGeyserDescButNotGeyserNode(){ return bool(); }
 void AFGResourceNode::PostEditChangeProperty( FPropertyChangedEvent& propertyChangedEvent){ Super::PostEditChangeProperty(propertyChangedEvent); }
 void AFGResourceNode::CheckForErrors(){ Super::CheckForErrors(); }
 #endif 
-void AFGResourceNode::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 AFGResourceNode::AFGResourceNode(){ }
+void AFGResourceNode::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGResourceNode::PostLoad(){ Super::PostLoad(); }
 void AFGResourceNode::BeginPlay(){ }
 void AFGResourceNode::EndPlay(const EEndPlayReason::Type endPlayReason){ }

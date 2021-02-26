@@ -7,7 +7,7 @@
 #include "FGCharacterBase.generated.h"
 
 USTRUCT( BlueprintType )
-struct FFootstepEffect
+struct FACTORYGAME_API FFootstepEffect
 {
 	GENERATED_BODY()
 
@@ -24,7 +24,7 @@ struct FFootstepEffect
 };
 
 USTRUCT( BlueprintType )
-struct FFootstepEffectSurface
+struct FACTORYGAME_API FFootstepEffectSurface
 {
 	GENERATED_BODY()
 
@@ -38,7 +38,7 @@ struct FFootstepEffectSurface
 };
 
 USTRUCT( BlueprintType )
-struct FFootstepEffectWater
+struct FACTORYGAME_API FFootstepEffectWater
 {
 	GENERATED_BODY()
 
@@ -53,7 +53,7 @@ struct FFootstepEffectWater
 
 
 UCLASS()
-class AFGCharacterBase : public ACharacter, public IFGSaveInterface
+class FACTORYGAME_API AFGCharacterBase : public ACharacter, public IFGSaveInterface
 {
 	GENERATED_BODY()
 public:

@@ -39,7 +39,7 @@ typedef FString SessionNameType;
 
 /** The header with information about a save game */
 USTRUCT( BlueprintType )
-struct FSaveHeader
+struct FACTORYGAME_API FSaveHeader
 {
 	GENERATED_BODY()
 
@@ -135,7 +135,7 @@ struct FSaveHeader
 
 /** Enable custom net delta serialization for the above struct. */
 template<>
-struct TStructOpsTypeTraits< FSaveHeader > : public TStructOpsTypeTraitsBase2< FSaveHeader >
+struct FACTORYGAME_API TStructOpsTypeTraits< FSaveHeader > : public TStructOpsTypeTraitsBase2< FSaveHeader >
 {
 	enum
 	{
@@ -162,7 +162,7 @@ enum class ESaveSortDirection : uint8
  * For when a artist/LD has changed the name of a map
  */
 USTRUCT()
-struct FMapRedirector
+struct FACTORYGAME_API FMapRedirector
 {
 	GENERATED_BODY()
 
@@ -179,7 +179,7 @@ DECLARE_DELEGATE_ThreeParams( FOnEnumerateSaveGamesComplete, bool, const TArray<
 DECLARE_DELEGATE_TwoParams( FOnDeleteSaveGameComplete, bool, void* );
 
 USTRUCT( BlueprintType )
-struct FSessionSaveStruct
+struct FACTORYGAME_API FSessionSaveStruct
 {
 	GENERATED_BODY()
 
@@ -211,7 +211,7 @@ struct FSessionSaveStruct
  * BlueprintCallable function in this class.
  */
 UCLASS(Config=Engine)
-class UFGSaveSystem : public UObject
+class FACTORYGAME_API UFGSaveSystem : public UObject
 {
 	GENERATED_BODY()
 public:

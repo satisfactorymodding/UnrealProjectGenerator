@@ -5,8 +5,11 @@
 #include "Styling/SlateBrush.h"
 #include "FGHotbarShortcut.generated.h"
 
+/**
+ * Base class for items that can be put in the players hotbar, e.g. recipe shortcuts.
+ */
 UCLASS(abstract,Blueprintable)
-class UFGHotbarShortcut : public UObject, public IFGSaveInterface
+class FACTORYGAME_API UFGHotbarShortcut : public UObject, public IFGSaveInterface
 {
 	GENERATED_BODY()
 public:

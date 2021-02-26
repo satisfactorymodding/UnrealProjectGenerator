@@ -13,7 +13,7 @@
  * @note ALL distance units in the fluid box is in meters.
  */
 USTRUCT( BlueprintType )
-struct FFluidBox
+struct FACTORYGAME_API FFluidBox
 {
 	GENERATED_BODY()
 public:
@@ -156,16 +156,15 @@ struct TStructOpsTypeTraits< FFluidBox > : public TStructOpsTypeTraitsBase2< FFl
 	};
 };
 
-// This class does not need to be modified.
-UINTERFACE(MinimalAPI)
-class UFGFluidIntegrantInterface : public UInterface
+/**
+ * Interface for providing consistent access to all properties and components that will be needed to modify and update different aspects of fluid simulation across different buildables.
+ */
+UINTERFACE()
+class FACTORYGAME_API UFGFluidIntegrantInterface : public UInterface
 {
 	GENERATED_BODY()
 };
 
-/**
- * Interface for providing consistent access to all properties and components that will be needed to modify and update different aspects of fluid simulation across different buildables
- */
 class FACTORYGAME_API IFGFluidIntegrantInterface
 {
 	GENERATED_BODY()

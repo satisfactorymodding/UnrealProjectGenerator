@@ -12,7 +12,7 @@
 #include "FGStorySubsystem.generated.h"
 
 USTRUCT( BlueprintType )
-struct FMapAreaVisitedData
+struct FACTORYGAME_API FMapAreaVisitedData
 {
 	GENERATED_BODY()
 
@@ -35,20 +35,8 @@ private:
 	TSoftClassPtr< class UFGSchematic > SchematicClass;
 };
 
-struct FFindByMapAreFound
-{
-	TSubclassOf< UObject > MapAreaFound;
-
-	FFindByMapAreFound( TSubclassOf< UObject > InMapAreaFound ) : MapAreaFound( InMapAreaFound ) { }
-
-	bool operator() ( const FMapAreaVisitedData Element ) const
-	{
-		return ( MapAreaFound == Element.MapAreaClass );
-	}
-};
-
 USTRUCT( BlueprintType )
-struct FItemFoundData
+struct FACTORYGAME_API FItemFoundData
 {
 	GENERATED_BODY()
 
@@ -78,20 +66,8 @@ private:
 	TSoftClassPtr< class UFGItemDescriptor > ItemClass;
 };
 
-struct FFindByItemFound
-{
-	TSubclassOf< UObject > ItemFound;
-
-	FFindByItemFound( TSubclassOf< UObject > InItemFound ) : ItemFound( InItemFound ) { }
-
-	bool operator() ( const FItemFoundData Element ) const
-	{
-		return ( ItemFound == Element.GetItemDescriptor() && !Element.WasFound );
-	}
-};
-
 USTRUCT( BlueprintType )
-struct FSchematicMessagePair
+struct FACTORYGAME_API FSchematicMessagePair
 {
 	GENERATED_BODY()
 
@@ -108,7 +84,7 @@ private:
 };
 
 USTRUCT(BlueprintType)
-struct FResearchTreeMessageData
+struct FACTORYGAME_API FResearchTreeMessageData
 {
 	GENERATED_BODY()
 

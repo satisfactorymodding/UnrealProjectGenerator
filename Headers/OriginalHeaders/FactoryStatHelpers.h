@@ -6,7 +6,7 @@
 #include "FGVehicle.h"
 #include "ItemAmount.h"
 
-struct FFactoryStats
+struct FACTORYGAME_API FFactoryStats
 {
 public:
 	/**
@@ -41,7 +41,7 @@ public:
  * Functions for gathering stats about the factory.
  * This does not collect any stats, it just summarizes stats from other systems.
  */
-struct FFactoryStatHelpers
+struct FACTORYGAME_API FFactoryStatHelpers
 {
 	static void GetFactoryStats( class UWorld* world, FFactoryStats& out_stats );
 };

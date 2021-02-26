@@ -2,7 +2,7 @@
 
 #include "Templates/TypeHash.h"
 
-struct FObjectRedirect
+struct FACTORYGAME_API FObjectRedirect
 {
 	/**
 	 * Creates a redirector
@@ -17,7 +17,7 @@ struct FObjectRedirect
 };
 
 /** Level agnostic object reference */
-struct FObjectReferenceDisc
+struct FACTORYGAME_API FObjectReferenceDisc
 {
 	// Name of the level we reside in, if empty, PathName is a absolute path
 	FString LevelName;

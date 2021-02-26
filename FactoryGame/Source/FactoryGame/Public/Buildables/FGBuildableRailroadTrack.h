@@ -14,7 +14,7 @@
  * This is a way to represent a position on the railroad.
  */
 USTRUCT( BlueprintType )
-struct FRailroadTrackPosition
+struct FACTORYGAME_API FRailroadTrackPosition
 {
 	GENERATED_BODY()
 public:
@@ -67,7 +67,7 @@ public:
 
 /** Enable custom serialization of FRailroadTrackPosition */
 template<>
-struct TStructOpsTypeTraits< FRailroadTrackPosition > : public TStructOpsTypeTraitsBase2< FRailroadTrackPosition >
+struct FACTORYGAME_API TStructOpsTypeTraits< FRailroadTrackPosition > : public TStructOpsTypeTraitsBase2< FRailroadTrackPosition >
 {
 	enum
 	{

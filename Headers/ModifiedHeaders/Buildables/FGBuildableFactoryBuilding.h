@@ -50,7 +50,7 @@ static FVector GetLocalSpaceNormalFromFoundationSide(EFoundationSide Side)
 
 /** Disable snapping on specific sides. */
 USTRUCT( BlueprintType )
-struct FFoundationSideSelectionFlags
+struct FACTORYGAME_API FFoundationSideSelectionFlags
 {
 	GENERATED_BODY()
 public:

@@ -11,7 +11,6 @@ class UFGMapFunctionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:
-
 	/** Get the bounds of the world */
 	UFUNCTION( BlueprintPure, Category = "Map" )
 	static void GetWorldBounds( class UObject* worldContext, FVector2D& min, FVector2D& max );
@@ -28,5 +27,4 @@ public:
 
 	UFUNCTION( BlueprintPure, Category = "Map" )
 	static float GetMapDistance ( const AFGMinimapCaptureActor* minimapCaptureActor, float worldDistance, float mapResolution );
-
 };

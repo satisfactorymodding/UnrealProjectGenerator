@@ -7,15 +7,12 @@
 * in the minimap and similar things.
 */
 UINTERFACE( Blueprintable )
-class UFGActorRepresentationInterface : public UInterface
+class FACTORYGAME_API UFGActorRepresentationInterface : public UInterface
 {
 	GENERATED_UINTERFACE_BODY()
 };
 
-/**
-*
-*/
-class IFGActorRepresentationInterface
+class FACTORYGAME_API IFGActorRepresentationInterface
 {
 	GENERATED_IINTERFACE_BODY()
 

@@ -5,7 +5,7 @@
 #include "FGSkySphere.generated.h"
 
 USTRUCT( BlueprintType )
-struct FSkySphereSettings
+struct FACTORYGAME_API FSkySphereSettings
 {
 	GENERATED_BODY()
 	
@@ -52,11 +52,10 @@ struct FSkySphereSettings
 };
 
 UCLASS(HideCategories=(Input,Rendering))
-class AFGSkySphere : public AActor, public ICurvePanningInterface
+class FACTORYGAME_API AFGSkySphere : public AActor, public ICurvePanningInterface
 {
 	GENERATED_BODY()
 public:
-	/** ctor */
 	AFGSkySphere();
 
 	// Begin AActor interface

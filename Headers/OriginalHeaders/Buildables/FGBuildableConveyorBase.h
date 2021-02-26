@@ -18,7 +18,7 @@ enum { FG_CONVEYOR_REP_KEY_NONE = 0 };
 *A class used for clients to be able to call the server through the local player character.
 */
 UCLASS()
-class UFGConveyorRemoteCallObject : public UFGRemoteCallObject
+class FACTORYGAME_API UFGConveyorRemoteCallObject : public UFGRemoteCallObject
 {
 	GENERATED_BODY()
 	public:
@@ -43,7 +43,7 @@ class UFGConveyorRemoteCallObject : public UFGRemoteCallObject
 * Holds data for an item traveling on the conveyor.
 */
 USTRUCT()
-struct FConveyorBeltItem
+struct FACTORYGAME_API FConveyorBeltItem
 {
 	GENERATED_BODY()
 public:
@@ -467,8 +467,7 @@ private:
 
 
 	class AFGBuildableConveyorBase* Owner = nullptr;
-
-	friend FConveyorBeltItemsBaseState;
+	
 	friend class AFGBuildableConveyorBelt;
 };
 
@@ -497,6 +496,7 @@ public:
 
 	// Begin AActor interface
 	virtual void GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps ) const override;
+	virtual void PreReplication( IRepChangedPropertyTracker& ChangedPropertyTracker ) override;
 	virtual void BeginPlay() override;
 	virtual void EndPlay( const EEndPlayReason::Type endPlayReason ) override;
 	virtual void Serialize( FArchive& ar ) override;
@@ -535,8 +535,6 @@ public:
 	virtual float FindOffsetClosestToLocation( const FVector& location ) const PURE_VIRTUAL( , return 0.0f; );
 	/** Get the location and direction of the conveyor at the given offset. */
 	virtual void GetLocationAndDirectionAtOffset( float offset, FVector& out_location, FVector& out_direction ) const PURE_VIRTUAL( , );
-
-	virtual void PreReplication( IRepChangedPropertyTracker& ChangedPropertyTracker ) override;
 
 	void SetConveyorBucketID( int32 ID );
 

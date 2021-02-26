@@ -98,7 +98,7 @@ struct FExponentialFogSettings
 
 
 UCLASS(HideCategories=(Collision,Tags,Cooking,Actor,Mobile))
-class AFGAtmosphereVolume : public AVolume, public ICurvePanningInterface, public IInterface_PostProcessVolume
+class FACTORYGAME_API AFGAtmosphereVolume : public AVolume, public ICurvePanningInterface, public IInterface_PostProcessVolume
 {
 	GENERATED_BODY()
 public:

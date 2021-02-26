@@ -2,8 +2,8 @@
 
 #include "FGUseableInterface.generated.h"
 
-UCLASS(Blueprintable,abstract)
-class UFGUseState : public UObject
+UCLASS( abstract, Blueprintable )
+class FACTORYGAME_API UFGUseState : public UObject
 {
 	GENERATED_BODY()
 public:
@@ -29,7 +29,7 @@ protected:
  * Default valid state for things to use whenever things just works as they should
  */
 UCLASS()
-class UFGUseState_Valid : public UFGUseState
+class FACTORYGAME_API UFGUseState_Valid : public UFGUseState
 {
 	GENERATED_BODY()
 
@@ -40,7 +40,7 @@ class UFGUseState_Valid : public UFGUseState
  * Describes a state of a useable object for the player that tries to use it
  */
 USTRUCT(BlueprintType)
-struct FUseState
+struct FACTORYGAME_API FUseState
 {
 	GENERATED_BODY()
 
@@ -67,19 +67,15 @@ protected:
 };
 
 /**
- * For blueprint support of the interface, we will never add anything to it, just use it to
- * have a UCLASS to be able to access
+ * Interface for all actors that the player can use with the use button.
  */
 UINTERFACE( Blueprintable )
-class UFGUseableInterface : public UInterface
+class FACTORYGAME_API UFGUseableInterface : public UInterface
 {
 	GENERATED_UINTERFACE_BODY()
 };
 
-/**
- * @brief Interface for all useable classes out there
- */
-class IFGUseableInterface
+class FACTORYGAME_API IFGUseableInterface
 {
 	GENERATED_IINTERFACE_BODY()
 

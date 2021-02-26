@@ -8,7 +8,7 @@
 #include "FGWeaponProjectileFire.generated.h"
 
 USTRUCT()
-struct FProjectileData
+struct FACTORYGAME_API FProjectileData
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -80,12 +80,12 @@ UCLASS()
 class FACTORYGAME_API AFGWeaponProjectileFire : public AFGWeapon
 {
 	GENERATED_BODY()
-	
 public:
-
 	AFGWeaponProjectileFire();
 
+	// Begin AFGWeapon
 	virtual void FireAmmunition_Implementation() override;
+	// End AFGWeapon
 
 	/** apply config on projectile */
 	void GetProjectileData( FProjectileData& out_data );

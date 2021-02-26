@@ -16,7 +16,7 @@
 #include "FGLocalPlayer.generated.h"
 
 UCLASS()
-class UFGEM_LoggedOutFromOnlineService : public UFGErrorMessage
+class FACTORYGAME_API UFGEM_LoggedOutFromOnlineService : public UFGErrorMessage
 {
 	GENERATED_BODY()
 public:
@@ -24,7 +24,7 @@ public:
 };
 
 UCLASS()
-class UFGEM_LostConnectionWithOnlineService : public UFGErrorMessage
+class FACTORYGAME_API UFGEM_LostConnectionWithOnlineService : public UFGErrorMessage
 {
 	GENERATED_BODY()
 public:
@@ -32,7 +32,7 @@ public:
 };
 
 UCLASS()
-class UFGEM_FailedToLoginToOnlineService : public UFGErrorMessage
+class FACTORYGAME_API UFGEM_FailedToLoginToOnlineService : public UFGErrorMessage
 {
 	GENERATED_BODY()
 public:
@@ -68,7 +68,7 @@ enum class ECreateSessionState : uint8
 };
 
 USTRUCT(BlueprintType)
-struct FFGOnlineFriend
+struct FACTORYGAME_API FFGOnlineFriend
 {
 	GENERATED_BODY()
 
@@ -112,10 +112,11 @@ FORCEINLINE uint32 GetTypeHash( const FFGOnlineFriend& onlineFriend )
 }
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnCreateSessionStateChanged, ECreateSessionState, newState );
+DECLARE_DYNAMIC_MULTICAST_DELEGATE( FOnMultiplayerStatusUpdated );
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams( FOnAccountConnectionComplete, const FName, currentPlatform, EEosAccountConnectionResult, result );
 
 
-struct FSessionInformation
+struct FACTORYGAME_API FSessionInformation
 {
 	FSessionInformation() :
 		MapName(TEXT("")),
@@ -167,7 +168,7 @@ private:
 
 // Workaround as it seems like you can't have a TArray<FFGOnlineFriends> exposed to a Dynamic multicast delegate
 USTRUCT(BlueprintType)
-struct FUpdatedFriends
+struct FACTORYGAME_API FUpdatedFriends
 {
 	GENERATED_BODY()
 
@@ -253,6 +254,14 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Online")
 	FString GetUsernameSteam() const;
 
+	/** Are we waiting for an response from EOS connect login */
+	UFUNCTION(BlueprintPure, Category = "Online")
+    bool IsWaitingForEOSConnectLoginResponse() const { return mIsWaitingForEOSConnectLogin; }
+
+	/** Did we press continue without multiplayer in the connection popup? */
+	UFUNCTION(BlueprintPure, Category = "Online")
+    bool GetContinueWithoutMultiplayer() const { return mContinueWithoutMultiplayer; }
+
 	/**
 	 * Get the list of friends of the current user
 	 * @param out_friends - the list of the friends if this returns true
@@ -335,6 +344,8 @@ public:
 	UFUNCTION( BlueprintCallable )
 	void LogoutEpicAccountPortal();
 
+	void ContinueWithoutMultiplayer();
+
 protected:
 	//~Begin Online Delegates
 	//~Begin OnlineIdentity delegates
@@ -369,6 +380,12 @@ protected:
 	void OnPresenceReceivedSteam(const class FUniqueNetId& userId, const TSharedRef<FOnlineUserPresence>& presence);
 	//~End OnlinePresence deleages
 
+	//* Ends the current session. If successfully ended session it will call DestroyCurrentSession_SetupServer, otherwise throw an error */
+	void EndCurrentSession_SetupServer( FName sessionName );
+
+	//* Destroys the current session. If successfully destroyed session it will call OnPreviousSessionCleanedup_SetupServer, otherwise throw an error */
+	void DestroyCurrentSession_SetupServer( FName sessionName );
+	
 	void OnPreviousSessionCleanedup_SetupServer( FName sessionName, bool wasSuccessful );
 	void OnSessionCreated_SetupServer( FName sessionName, bool wasSuccessful );
 	void OnPresenceUpdated_SetupServer( const class FUniqueNetId& userId, const TSharedRef<FOnlineUserPresence>& presence );
@@ -428,9 +445,19 @@ private:
 	/** Push error and autosave the game */
 	void PushErrorAndAutosave( TSubclassOf<class UFGErrorMessage> errorMessage );
 
+	/** Set waiting variable and broadcast changes with delegate */
+	void SetIsWaitingForEOSConnectLogin( bool waiting );
+
+	/** Exits current setup of server and throws an error message popup */
+	void FailedToSetupServer();
+
 public:
 	/** Called when the when we have a result from connection accounts */
 	FOnAccountConnectionComplete mOnAccountConnectionComplete;
+
+	/** Called when the state of waiting for EOS connect login response changed or we continued playing without multiplayer*/
+	UPROPERTY(BlueprintAssignable,Category="FactoryGame|Online")
+	FOnMultiplayerStatusUpdated mOnMultiplayerStatusUpdated;
 
 	UFUNCTION()
 	void OnComandlineInviteSearchComplete(FBlueprintSessionResult result);
@@ -521,7 +548,9 @@ protected:
 		STRS_TriggerRetry
 	};
 	ESteamTaskRetryState mSteamRetryState;
+	bool mContinueWithoutMultiplayer = false;
 	bool mIsWaitingToConnectSteamAccount = false;
+	bool mIsWaitingForEOSConnectLogin = false;
 	bool mIsWaitingForEpicLogout = false;
 	bool mIsWaitingForEpicAccountSwap = false;
 	bool mHasTriedConnectingSteam = false;

@@ -9,10 +9,10 @@
 #include "FGNetConstructionFunctionLibrary.generated.h"
 
 /**
-* Function library for everything related to net construction
-*/
+ * Function library for everything related to net construction
+ */
 UCLASS()
-class UFGNetConstructionFunctionLibrary : public UBlueprintFunctionLibrary
+class FACTORYGAME_API UFGNetConstructionFunctionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:

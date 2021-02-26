@@ -4,7 +4,7 @@
 #include "FGAnimNotify_FootDown.generated.h"
 
 UCLASS()
-class UFGAnimNotify_FootDown : public UAnimNotify
+class FACTORYGAME_API UFGAnimNotify_FootDown : public UAnimNotify
 {
 	GENERATED_BODY()
 public:

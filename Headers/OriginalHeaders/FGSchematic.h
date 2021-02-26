@@ -36,6 +36,7 @@ enum class ESchematicType :uint8
 	EST_Prototype			UMETA( DisplayName = "Prototype" )
 };
 
+//@todo-cleanup Is this used? I cannot find any references to it
 /** Holds info about a schematic cost. */
 USTRUCT( BlueprintType )
 struct FMultipleItemStruct

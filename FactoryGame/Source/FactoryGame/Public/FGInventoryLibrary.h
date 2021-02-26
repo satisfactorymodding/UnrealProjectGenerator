@@ -10,7 +10,7 @@
  * Function library to provide the glue between c++ and the inventory in blueprint so we can handle inventory items with a state easy in blueprint.
  */
 UCLASS()
-class UFGInventoryLibrary : public UBlueprintFunctionLibrary
+class FACTORYGAME_API UFGInventoryLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:

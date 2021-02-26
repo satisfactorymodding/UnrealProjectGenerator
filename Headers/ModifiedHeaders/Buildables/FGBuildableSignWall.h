@@ -8,7 +8,7 @@
 
 
 USTRUCT( BlueprintType )
-struct FSignWallData
+struct FACTORYGAME_API FSignWallData
 {
 	GENERATED_BODY()
 

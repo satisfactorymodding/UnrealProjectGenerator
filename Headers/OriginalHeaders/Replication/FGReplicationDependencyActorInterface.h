@@ -2,13 +2,16 @@
 
 #include "FGReplicationDependencyActorInterface.generated.h"
 
+/**
+ * @todo Please comment me
+ */
 UINTERFACE( )
-class UFGReplicationDependencyActorInterface : public UInterface
+class FACTORYGAME_API UFGReplicationDependencyActorInterface : public UInterface
 {
 	GENERATED_UINTERFACE_BODY()
 };
 
-class IFGReplicationDependencyActorInterface
+class FACTORYGAME_API IFGReplicationDependencyActorInterface
 {
 	GENERATED_IINTERFACE_BODY()
 };

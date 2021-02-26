@@ -28,7 +28,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FResearchTreeUnlocked, TSubclassOf<
 * Contains data about the research conducted
 */
 USTRUCT()
-struct FResearchData
+struct FACTORYGAME_API FResearchData
 {
 	GENERATED_BODY()
 
@@ -65,7 +65,7 @@ FORCEINLINE bool IsValidForLoad( const FResearchData& element );
 * Keeps track of ongoing research and when it's supposed to be completed.
 */
 USTRUCT()
-struct FResearchTime
+struct FACTORYGAME_API FResearchTime
 {
 	GENERATED_BODY()
 

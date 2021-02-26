@@ -5,7 +5,7 @@
 #include "FGProjectile.generated.h"
 
 UCLASS(config=Game)
-class AFGProjectile : public AActor, public IFGSaveInterface
+class FACTORYGAME_API AFGProjectile : public AActor, public IFGSaveInterface
 {
 	GENERATED_BODY()
 public:

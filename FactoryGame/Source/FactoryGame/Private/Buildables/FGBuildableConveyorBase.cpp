@@ -20,6 +20,7 @@ float FConveyorBeltItems::ConsumeAndUpdateConveyorOffsetDebt(float dt){ return f
 void FConveyorBeltItems::MarkItemDirty(FConveyorBeltItem& item){ }
 AFGBuildableConveyorBase::AFGBuildableConveyorBase(){ }
 void AFGBuildableConveyorBase::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
+void AFGBuildableConveyorBase::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
 void AFGBuildableConveyorBase::BeginPlay(){ }
 void AFGBuildableConveyorBase::EndPlay(const EEndPlayReason::Type endPlayReason){ }
 void AFGBuildableConveyorBase::Serialize(FArchive& ar){ Super::Serialize(ar); }
@@ -33,7 +34,6 @@ void AFGBuildableConveyorBase::LostSignificance_Implementation(){ }
 void AFGBuildableConveyorBase::GainedSignificance_Native(){ }
 void AFGBuildableConveyorBase::LostSignificance_Native(){ }
 void AFGBuildableConveyorBase::SetupForSignificance(){ }
-void AFGBuildableConveyorBase::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
 void AFGBuildableConveyorBase::SetConveyorBucketID(int32 ID){ }
 float AFGBuildableConveyorBase::GetAvailableSpace() const{ return float(); }
 float AFGBuildableConveyorBase::GetCachedAvailableSpace_Threadsafe() const{ return float(); }

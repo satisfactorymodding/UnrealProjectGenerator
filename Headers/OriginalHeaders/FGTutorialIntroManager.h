@@ -62,18 +62,6 @@ struct FTutorialHintData
 	TSubclassOf< class UFGMessageBase > Message;
 };
 
-struct FFindByIntroID
-{
-	EIntroTutorialSteps TutorialStep;
-
-	FFindByIntroID( EIntroTutorialSteps InTutorialStep ) : TutorialStep( InTutorialStep ) { }
-
-	bool operator() ( const FTutorialHintData Element ) const
-	{
-		return ( TutorialStep == Element.ID );
-	}
-};
-
 UCLASS( abstract )
 class FACTORYGAME_API AFGTutorialIntroManager : public AFGSubsystem, public IFGSaveInterface
 {

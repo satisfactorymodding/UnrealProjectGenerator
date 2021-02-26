@@ -2,17 +2,17 @@
 
 #include "Modules/ModuleManager.h"
 
-class FFactoryGameModule : public FDefaultGameModuleImpl
+class FACTORYGAME_API FFactoryGameModule : public FDefaultGameModuleImpl
 {
 public:
 	/**
-	* Called when the module is loaded into memory
-	**/
+	 * Called when the module is loaded into memory
+	 */
 	virtual void StartupModule() override;
 
 	/**
-	* Called when the module is unloaded from memory
-	**/
+	 * Called when the module is unloaded from memory
+	 */
 	virtual void ShutdownModule() override;
 
 	/** We want this module to be hot reloaded */

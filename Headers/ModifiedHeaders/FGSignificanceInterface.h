@@ -6,16 +6,15 @@
 #include "UObject/Interface.h"
 #include "FGSignificanceInterface.generated.h"
 
-// This class does not need to be modified.
+/**
+ * Interface for actors that are handled by UFGSignificanceManager.
+ */
 UINTERFACE( Blueprintable )
-class UFGSignificanceInterface : public UInterface
+class FACTORYGAME_API UFGSignificanceInterface : public UInterface
 {
 	GENERATED_BODY()
 };
 
-/**
- * 
- */
 class FACTORYGAME_API IFGSignificanceInterface
 {
 	GENERATED_BODY()

@@ -7,7 +7,7 @@
 #include "FGFoundationSubsystem.generated.h"
 
 USTRUCT()
-struct FBuilding
+struct FACTORYGAME_API FBuilding
 {
 	GENERATED_BODY();
 public:

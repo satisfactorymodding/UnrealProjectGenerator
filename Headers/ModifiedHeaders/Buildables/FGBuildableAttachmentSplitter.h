@@ -7,7 +7,7 @@
 #include "FGBuildableAttachmentSplitter.generated.h"
 
 USTRUCT()
-struct FConveyorSpaceData
+struct FACTORYGAME_API FConveyorSpaceData
 {
 	GENERATED_BODY()
 public:

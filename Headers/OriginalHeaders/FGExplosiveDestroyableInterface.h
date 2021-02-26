@@ -6,15 +6,15 @@
 #include "UObject/Interface.h"
 #include "FGExplosiveDestroyableInterface.generated.h"
 
+/**
+ * Interface for retrieving destruction effects from Actors destroyed by explosives
+ */
 UINTERFACE( Blueprintable )
-class UFGExplosiveDestroyableInterface : public UInterface
+class FACTORYGAME_API UFGExplosiveDestroyableInterface : public UInterface
 {
 	GENERATED_BODY()
 };
 
-/**
- * Interface for retrieving destruction effects from Actors destroyed by explosives
- */
 class FACTORYGAME_API IFGExplosiveDestroyableInterface
 {
 	GENERATED_BODY()

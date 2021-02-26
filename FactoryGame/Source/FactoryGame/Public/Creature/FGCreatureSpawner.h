@@ -9,7 +9,7 @@
 
 /** Data we need to know/save about spawns in this spawner */
 USTRUCT()
-struct FSpawnData
+struct FACTORYGAME_API FSpawnData
 {
 	GENERATED_BODY();
 
@@ -51,16 +51,13 @@ UCLASS()
 class FACTORYGAME_API AFGCreatureSpawner : public AActor, public IFGSaveInterface
 {
 	GENERATED_BODY()
-	
 public:	
-	// Sets default values for this actor's properties
 	AFGCreatureSpawner();
 
 	// BEGIN AActor interface
 	virtual void BeginPlay() override;
-
-	/** Moved in the editor, on done, calculate spawn locations */
 	#if WITH_EDITOR
+	/** Moved in the editor, on done, calculate spawn locations */
 	virtual void PostEditMove( bool bFinished ) override;
 	#endif
 	// END AActor interface

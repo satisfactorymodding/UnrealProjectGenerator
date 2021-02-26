@@ -7,7 +7,7 @@
 #include "FGMapAreaTexture.generated.h"
 
 USTRUCT()
-struct FColorMapAreaPair
+struct FACTORYGAME_API FColorMapAreaPair
 {
 	GENERATED_BODY();
 

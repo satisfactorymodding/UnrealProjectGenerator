@@ -3,21 +3,17 @@
 #include "FGExtractableResourceInterface.generated.h"
 
 /**
-*
-*/
+ * Interface for all mineable resource objects ( Resource Nodes, Water Volumes )
+ */
 UINTERFACE( Blueprintable )
-class UFGExtractableResourceInterface : public UInterface
+class FACTORYGAME_API UFGExtractableResourceInterface : public UInterface
 {
 	GENERATED_UINTERFACE_BODY()
 };
 
-/**
-* Interface for all mineable resource objects ( Resource Nodes, Water Volumes )
-*/
-class IFGExtractableResourceInterface
+class FACTORYGAME_API IFGExtractableResourceInterface
 {
 	GENERATED_IINTERFACE_BODY()
-
 public:
 
 	/** Notify that a miner / pump has claimed this resource object */
@@ -41,9 +37,9 @@ public:
 	TSubclassOf< class UFGResourceDescriptor > GetResourceClass() const;
 
 	/** Actually extract the resource 
-	*	@param amount - quantity to attempt to mine
-	*	@return - Actual amount that was able to be mined
-	*/
+	 *	@param amount - quantity to attempt to mine
+	 *	@return - Actual amount that was able to be mined
+	 */
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Resource" )
 	int32 ExtractResource( int32 amount );
 
@@ -58,6 +54,4 @@ public:
 	/** Can an extractor be placed on this resource object? */
 	UFUNCTION( BlueprintNativeEvent, BlueprintCallable, Category = "Resource" )
 	bool CanPlaceResourceExtractor() const;
-
-	
 };

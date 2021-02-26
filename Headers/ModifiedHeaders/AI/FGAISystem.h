@@ -10,7 +10,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FAggroTargetAddedSignature, TScript
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FAggroTargetRemovedSignature, TScriptInterface<class IFGAggroTargetInterface>, aggroTarget );
 
 USTRUCT()
-struct FSpawnerInfo
+struct FACTORYGAME_API FSpawnerInfo
 {
 	GENERATED_BODY()
 

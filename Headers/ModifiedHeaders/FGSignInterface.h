@@ -28,7 +28,7 @@ enum class ESignElementType : uint8
 
 
 USTRUCT( BlueprintType )
-struct FSignElementConstraints
+struct FACTORYGAME_API FSignElementConstraints
 {
 	GENERATED_BODY()
 
@@ -260,7 +260,7 @@ public:
 
 
 USTRUCT( BlueprintType )
-struct FSignData
+struct FACTORYGAME_API FSignData
 {
 	GENERATED_BODY()
 
@@ -310,7 +310,7 @@ struct FSignData
 
 /** Enable custom serialization of FRailroadTrackPosition */
 template<>
-struct TStructOpsTypeTraits< FSignData > : public TStructOpsTypeTraitsBase2< FSignData >
+struct FACTORYGAME_API TStructOpsTypeTraits< FSignData > : public TStructOpsTypeTraitsBase2< FSignData >
 {
 	enum
 	{
@@ -320,8 +320,8 @@ struct TStructOpsTypeTraits< FSignData > : public TStructOpsTypeTraitsBase2< FSi
 
 
 // Sign Interface
-UINTERFACE( MinimalAPI, Blueprintable )
-class UFGSignInterface : public UInterface
+UINTERFACE( Blueprintable )
+class FACTORYGAME_API UFGSignInterface : public UInterface
 {
 	GENERATED_BODY()
 };

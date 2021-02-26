@@ -10,7 +10,7 @@
 #include "SharedInventoryStatePtr.generated.h"
 
 USTRUCT()
-struct FSharedInventoryStatePtr
+struct FACTORYGAME_API FSharedInventoryStatePtr
 {
 	GENERATED_USTRUCT_BODY()
 public:
@@ -246,7 +246,7 @@ FORCEINLINE FString VarToFString( FSharedInventoryStatePtr var ){ return FString
 template<> struct TIsZeroConstructType<FSharedInventoryStatePtr> { enum { Value = true }; };
 
 template<>
-struct TStructOpsTypeTraits<FSharedInventoryStatePtr> : public TStructOpsTypeTraitsBase2<FSharedInventoryStatePtr>
+struct FACTORYGAME_API TStructOpsTypeTraits<FSharedInventoryStatePtr> : public TStructOpsTypeTraitsBase2<FSharedInventoryStatePtr>
 {
 	enum
 	{

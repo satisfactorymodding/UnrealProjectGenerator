@@ -5,11 +5,10 @@
 #include "FGDamageOverTimeVolume.generated.h"
 
 UCLASS( hidecategories=(Mobile,Physics,Cooking,Collision) )
-class AFGDamageOverTimeVolume : public AVolume, public IInterface_PostProcessVolume
+class FACTORYGAME_API AFGDamageOverTimeVolume : public AVolume, public IInterface_PostProcessVolume
 {
 	GENERATED_BODY()
 public:
-	/** ctor */
 	AFGDamageOverTimeVolume();
 
 	//~ Begin IInterface_PostProcessVolume Interface

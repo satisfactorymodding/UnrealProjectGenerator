@@ -5,7 +5,7 @@
 
 /** Holds information about resource node clusters. This could be saved in actors on the level for optimization. */
 USTRUCT( BlueprintType )
-struct FNodeClusterData
+struct FACTORYGAME_API FNodeClusterData
 {
 	GENERATED_BODY()
 

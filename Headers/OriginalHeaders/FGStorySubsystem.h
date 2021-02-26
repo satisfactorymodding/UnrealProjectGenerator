@@ -35,18 +35,6 @@ private:
 	TSoftClassPtr< class UFGSchematic > SchematicClass;
 };
 
-struct FFindByMapAreFound
-{
-	TSubclassOf< UObject > MapAreaFound;
-
-	FFindByMapAreFound( TSubclassOf< UObject > InMapAreaFound ) : MapAreaFound( InMapAreaFound ) { }
-
-	bool operator() ( const FMapAreaVisitedData Element ) const
-	{
-		return ( MapAreaFound == Element.MapAreaClass );
-	}
-};
-
 USTRUCT( BlueprintType )
 struct FItemFoundData
 {
@@ -76,18 +64,6 @@ private:
 	/** Item descriptor we are looking for */
 	UPROPERTY( EditDefaultsOnly, Category = "Story" )
 	TSoftClassPtr< class UFGItemDescriptor > ItemClass;
-};
-
-struct FFindByItemFound
-{
-	TSubclassOf< UObject > ItemFound;
-
-	FFindByItemFound( TSubclassOf< UObject > InItemFound ) : ItemFound( InItemFound ) { }
-
-	bool operator() ( const FItemFoundData Element ) const
-	{
-		return ( ItemFound == Element.GetItemDescriptor() && !Element.WasFound );
-	}
 };
 
 USTRUCT( BlueprintType )

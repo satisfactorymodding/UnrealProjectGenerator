@@ -7,7 +7,7 @@
 #define DEBUG_FOLIAGE_REMOVAL_SUBSYSTEM ( ( UE_BUILD_SHIPPING == 0 ) && 1 )
 
 UCLASS()
-class AFGFoliageRemovalSubsystem : public AFGSubsystem
+class FACTORYGAME_API AFGFoliageRemovalSubsystem : public AFGSubsystem
 {
 	GENERATED_BODY()
 public:

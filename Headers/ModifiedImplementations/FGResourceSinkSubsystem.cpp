@@ -11,7 +11,7 @@ AFGResourceSinkSubsystem* AFGResourceSinkSubsystem::Get(UWorld* world){ return n
 AFGResourceSinkSubsystem* AFGResourceSinkSubsystem::Get(UObject* worldContext){ return nullptr; }
 void AFGResourceSinkSubsystem::DisplayDebug( UCanvas* canvas, const  FDebugDisplayInfo& debugDisplay, float& YL, float& YPos){ }
 bool AFGResourceSinkSubsystem::AddPoints_ThreadSafe(TSubclassOf<class UFGItemDescriptor> item){ return bool(); }
-int32 AFGResourceSinkSubsystem::GetNumPointsToNextCoupon() const{ return int32(); }
+int64 AFGResourceSinkSubsystem::GetNumPointsToNextCoupon() const{ return int64(); }
 float AFGResourceSinkSubsystem::GetProgressionTowardsNextCoupon() const{ return float(); }
 int32 AFGResourceSinkSubsystem::GetCostOfSchematics(TArray< TSubclassOf<  UFGSchematic > > schematics) const{ return int32(); }
 bool AFGResourceSinkSubsystem::CanAffordResourceSinkSchematics(UFGInventoryComponent* playerInventory, TArray< TSubclassOf<  UFGSchematic > > schematics) const{ return bool(); }

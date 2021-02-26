@@ -19,7 +19,7 @@ enum EPopupId
 };
 
 USTRUCT( BlueprintType )
-struct FPopupData
+struct FACTORYGAME_API FPopupData
 {
 	GENERATED_BODY();
 public:

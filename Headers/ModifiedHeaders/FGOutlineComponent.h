@@ -9,7 +9,7 @@
 #include "FGOutlineComponent.generated.h"
 
 USTRUCT()
-struct FCachedMaterialInterfaceArray
+struct FACTORYGAME_API FCachedMaterialInterfaceArray
 {
 	GENERATED_BODY()
 
@@ -19,7 +19,7 @@ public:
 };
 
 USTRUCT()
-struct FCachedMeshToMaterialObject
+struct FACTORYGAME_API FCachedMeshToMaterialObject
 {
 	GENERATED_BODY()
 
@@ -29,7 +29,7 @@ public:
 };
 
 USTRUCT()
-struct FCachedSplineMeshToMaterialObject
+struct FACTORYGAME_API FCachedSplineMeshToMaterialObject
 {
 	GENERATED_BODY()
 

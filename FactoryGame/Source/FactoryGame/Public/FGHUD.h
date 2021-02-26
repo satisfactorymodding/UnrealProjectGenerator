@@ -20,7 +20,7 @@ enum class ECrosshairState : uint8
 };
 
 UCLASS()
-class AFGHUD : public AFGHUDBase
+class FACTORYGAME_API AFGHUD : public AFGHUDBase
 {
 	GENERATED_BODY()
 public:

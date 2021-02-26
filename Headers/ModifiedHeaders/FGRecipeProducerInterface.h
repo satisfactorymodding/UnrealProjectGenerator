@@ -3,19 +3,16 @@
 #include "FGRecipeProducerInterface.generated.h"
 
 /**
-* For blueprint support of the interface, we will never add anything to it, just use it to
-* have a UCLASS to be able to access
-*/
+ * Interface to identify classes that can produce recipies, e.g. buildgun, manufacturer, workbench.
+ * This makes them selectable as produced in, in the recipe and UI.
+ */
 UINTERFACE( Blueprintable )
-class UFGRecipeProducerInterface : public UInterface
+class FACTORYGAME_API UFGRecipeProducerInterface : public UInterface
 {
 	GENERATED_UINTERFACE_BODY()
 };
 
-/**
-*
-*/ 
-class IFGRecipeProducerInterface
+class FACTORYGAME_API IFGRecipeProducerInterface
 {
 	GENERATED_IINTERFACE_BODY()
 };

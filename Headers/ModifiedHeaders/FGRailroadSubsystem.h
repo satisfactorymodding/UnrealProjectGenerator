@@ -13,7 +13,7 @@
  * Struct representing a set of interconnected tracks.
  */
 USTRUCT()
-struct FTrackGraph
+struct FACTORYGAME_API FTrackGraph
 {
 	GENERATED_BODY()
 public:

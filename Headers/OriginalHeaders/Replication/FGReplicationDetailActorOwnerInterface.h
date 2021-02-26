@@ -3,13 +3,16 @@
 #include "FGReplicationDetailActor.h"
 #include "FGReplicationDetailActorOwnerInterface.generated.h"
 
+/**
+ * @todo Please comment me
+ */
 UINTERFACE( Blueprintable )
-class UFGReplicationDetailActorOwnerInterface : public UInterface
+class FACTORYGAME_API UFGReplicationDetailActorOwnerInterface : public UInterface
 {
 	GENERATED_UINTERFACE_BODY()
 };
 
-class IFGReplicationDetailActorOwnerInterface
+class FACTORYGAME_API IFGReplicationDetailActorOwnerInterface
 {
 	GENERATED_IINTERFACE_BODY()
 

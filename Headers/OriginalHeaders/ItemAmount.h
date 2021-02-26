@@ -10,7 +10,7 @@
  * E.g. a cost, a recipe product or ingredient.
  */
 USTRUCT( BlueprintType )
-struct FItemAmount
+struct FACTORYGAME_API FItemAmount
 {
 	GENERATED_BODY()
 

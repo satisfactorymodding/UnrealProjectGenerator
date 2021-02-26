@@ -45,6 +45,7 @@ void UFGLocalPlayer::ContinueWithAndHookUpSteamToEOSAfterEpicLogout(){ }
 void UFGLocalPlayer::LogoutEpicAccountAndContinue(){ }
 void UFGLocalPlayer::LoginEpicAccountPortal(){ }
 void UFGLocalPlayer::LogoutEpicAccountPortal(){ }
+void UFGLocalPlayer::ContinueWithoutMultiplayer(){ }
 void UFGLocalPlayer::OnLoginStatusChanged(int32 localUserNum, ELoginStatus::Type previous, ELoginStatus::Type current, const FUniqueNetId& userId){ }
 void UFGLocalPlayer::OnLoginStatusChangedSteam(int32 localUserNum, ELoginStatus::Type previous, ELoginStatus::Type current, const FUniqueNetId& userId){ }
 void UFGLocalPlayer::SteamTaskRetryWaiter(){ }
@@ -62,6 +63,8 @@ void UFGLocalPlayer::OnFriendsChangeSteam(){ }
 void UFGLocalPlayer::OnQueryUserInfoForFriendListComplete(int32 localUSerNum, bool wasSuccessful, const TArray< TSharedRef<const FUniqueNetId> >& userIds, const FString& errorString){ }
 void UFGLocalPlayer::OnPresenceReceived(const  FUniqueNetId& userId, const TSharedRef<FOnlineUserPresence>& presence){ }
 void UFGLocalPlayer::OnPresenceReceivedSteam(const  FUniqueNetId& userId, const TSharedRef<FOnlineUserPresence>& presence){ }
+void UFGLocalPlayer::EndCurrentSession_SetupServer(FName sessionName){ }
+void UFGLocalPlayer::DestroyCurrentSession_SetupServer(FName sessionName){ }
 void UFGLocalPlayer::OnPreviousSessionCleanedup_SetupServer(FName sessionName, bool wasSuccessful){ }
 void UFGLocalPlayer::OnSessionCreated_SetupServer(FName sessionName, bool wasSuccessful){ }
 void UFGLocalPlayer::OnPresenceUpdated_SetupServer(const  FUniqueNetId& userId, const TSharedRef<FOnlineUserPresence>& presence){ }
@@ -84,4 +87,6 @@ void UFGLocalPlayer::SetLoginStateSteam(ELoginState newLoginState){ }
 void UFGLocalPlayer::GetFriendsWithNoData(TArray<TSharedRef<const FUniqueNetId>>& out_usersWithNoData){ }
 bool UFGLocalPlayer::PresenceHasSessionId() const{ return bool(); }
 void UFGLocalPlayer::PushErrorAndAutosave(TSubclassOf<class UFGErrorMessage> errorMessage){ }
+void UFGLocalPlayer::SetIsWaitingForEOSConnectLogin(bool waiting){ }
+void UFGLocalPlayer::FailedToSetupServer(){ }
 void UFGLocalPlayer::OnComandlineInviteSearchComplete(FBlueprintSessionResult result){ }

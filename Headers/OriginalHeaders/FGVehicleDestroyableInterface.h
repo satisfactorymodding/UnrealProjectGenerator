@@ -5,19 +5,15 @@
 #include "FGVehicleDestroyableInterface.generated.h"
 
 /**
-* For blueprint support of the interface, we will never add anything to it, just use it to
-* have a UCLASS to be able to access
-*/
+ * Actors that implement this interface can be destroyed by a vehicle running over it.
+ */
 UINTERFACE( Blueprintable )
-class UFGVehicleDestroyableInterface : public UInterface
+class FACTORYGAME_API UFGVehicleDestroyableInterface : public UInterface
 {
 	GENERATED_UINTERFACE_BODY()
 };
 
-/**
- * Actors attached that implement this interface can be destroyed by a vehicle running over it.
- */
-class IFGVehicleDestroyableInterface
+class FACTORYGAME_API IFGVehicleDestroyableInterface
 {
 	GENERATED_IINTERFACE_BODY()
 

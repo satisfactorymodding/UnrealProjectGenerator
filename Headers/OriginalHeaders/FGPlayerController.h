@@ -19,7 +19,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnPresetHotbarChanged, int32, pres
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnHotbarIndexChanged, int32, newHotbarIndex );
 
 UCLASS( Config=Game)
-class AFGPlayerController : public AFGPlayerControllerBase
+class FACTORYGAME_API AFGPlayerController : public AFGPlayerControllerBase
 {
 	GENERATED_BODY()
 public:

@@ -8,11 +8,10 @@
 
 
 USTRUCT( BlueprintType )
-struct FMaterialAndSlotName
+struct FACTORYGAME_API FMaterialAndSlotName
 {
 	GENERATED_BODY()
 public:
-	
 	/** This is the slot name on the character */
 	UPROPERTY( BlueprintReadWrite, EditAnywhere )
 	FName SlotName;
@@ -23,7 +22,7 @@ public:
 };
 
 /**
- * Base class for "suit"-like equipment. Updates visuals on equip/unequip etc.
+ * Base class for "suit"-like equipment. Updates player visuals on equip/unequip etc.
  */
 UCLASS()
 class FACTORYGAME_API AFGSuitBase : public AFGEquipment
@@ -31,41 +30,31 @@ class FACTORYGAME_API AFGSuitBase : public AFGEquipment
 	GENERATED_BODY()
 
 public:
-	/** Ctor */
 	AFGSuitBase();
 
-	/**
-	* equipment equipped.
-	*/
+	// Begin AFGEquipment
 	virtual void WasEquipped_Implementation() override;
-
-	/**
-	* equipment put away.
-	*/
 	virtual void WasUnEquipped_Implementation() override;
+	// End AFGEquipment
 
 protected:
+	/** Materials to replace on the first person players mesh. */
 	UPROPERTY( EditDefaultsOnly, Category = "Materials" )
 	TArray< FMaterialAndSlotName > mSuit1PMeshMaterials;
-	
 };
 
 UCLASS()
-class AFGSuitBaseAttachment : public AFGEquipmentAttachment
+class FACTORYGAME_API AFGSuitBaseAttachment : public AFGEquipmentAttachment
 {
 	GENERATED_BODY()
-
-	/**
-	* equipment attached.
-	*/
+public:
+	// Begin AFGEquipmentAttachment
 	virtual void OnAttach_Implementation() override;
-
-	/**
-	* equipment detached.
-	*/
 	virtual void OnDetach_Implementation() override;
-
+	// End AFGEquipmentAttachment
+	
 protected:
+	/** Materials to replace on the third person players mesh. */
 	UPROPERTY( EditDefaultsOnly, Category = "Materials" )
 	TArray< FMaterialAndSlotName > mSuit3PMeshMaterials;
 };

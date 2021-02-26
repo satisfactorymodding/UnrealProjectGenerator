@@ -3,19 +3,15 @@
 #include "FGColorInterface.generated.h"
 
 /**
-* For blueprint support of the interface, we will never add anything to it, just use it to
-* have a UCLASS to be able to access
-*/
+ * Interface for actors that should be colorable with the colorgun.
+ */
 UINTERFACE( Blueprintable )
-class UFGColorInterface : public UInterface
+class FACTORYGAME_API UFGColorInterface : public UInterface
 {
 	GENERATED_UINTERFACE_BODY()	
 };
 
-/**
-*
-*/
-class IFGColorInterface
+class FACTORYGAME_API IFGColorInterface
 {
 	GENERATED_IINTERFACE_BODY()
 
