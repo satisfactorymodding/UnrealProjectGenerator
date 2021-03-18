@@ -1,16 +1,20 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+using System;
 using UnrealBuildTool;
-using System.Collections.Generic;
 
 public class FactoryGameTarget : TargetRules
 {
 	public FactoryGameTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-
-		ExtraModuleNames.AddRange( new string[] { "FactoryGame" } );
+		LinkType = TargetLinkType.Modular;
 		
 		CppStandard = CppStandardVersion.Cpp17;
+		ExtraModuleNames.AddRange(new[] {"FactoryGame"});
+		DefaultBuildSettings = BuildSettingsVersion.V2;
+
+		bUseChecksInShipping = true;
+		bUseLoggingInShipping = true;
 	}
 }

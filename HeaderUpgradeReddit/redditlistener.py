@@ -53,6 +53,7 @@ satisfactoryModdingHeaders = os.path.join(moddingFolder, "Headers")
 headersPath = "ModifiedHeaders"
 cppPath = "ModifiedImplementations"
 headersUpdater = os.path.join(moddingFolder, "updateHeaders.py")
+headersUpdater = os.path.join(moddingFolder, "rebaseIncludePublicPaths.py")
 
 git_stage = [r"FactoryGame\Source", r"FactoryGame\Binaries", r"FactoryGame\Intermediate", r"Headers"]
 git_get_branch = "GitGetBranch.bat"
@@ -169,14 +170,15 @@ def run_update(new_version, is_experimental, triggered_by):
     logging.info("Extracting headers")
     with ZipFile(headers_zip, 'r') as zipObj:
         zipObj.extractall(full_header_path)
-    log_file_name = "logs\\HeaderUpdater\\{0}_{1}".format(new_version,
-                                                          datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S"))
-    os.makedirs(log_file_name[:log_file_name.rfind("\\")], exist_ok=True)
-    log_file = open("{0}.log".format(log_file_name), "w+")
-    err_file = open("{0}.err".format(log_file_name), "w+")
     version_branch = "Experimental" if is_experimental else "EarlyAccess"
     with GitAction(version_branch) as git:
         logging.info("Launching headers updater")
+        
+        log_file_name = "logs\\HeaderUpdater\\{0}_{1}".format(new_version,
+                                                              datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S"))
+        os.makedirs(log_file_name[:log_file_name.rfind("\\")], exist_ok=True)
+        log_file = open("{0}.log".format(log_file_name), "w+")
+        err_file = open("{0}.err".format(log_file_name), "w+")
         header_updater_process = subprocess.Popen(["python", headersUpdater], shell=True,
                                                   stdin=subprocess.PIPE,
                                                   stdout=log_file,
@@ -221,6 +223,20 @@ def run_update(new_version, is_experimental, triggered_by):
                                          stderr=err_file)
 
         build_process.wait()
+        log_file.close()
+        err_file.close()
+        
+        logging.info("RebaseIncludePublicPaths")
+        log_file_name = "logs\\RebaseIncludePublicPaths\\{0}_{1}".format(new_version,
+                                                      datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S"))
+        os.makedirs(log_file_name[:log_file_name.rfind("\\")], exist_ok=True)
+        log_file = open("{0}.log".format(log_file_name), "w+")
+        err_file = open("{0}.err".format(log_file_name), "w+")
+        rebaseIncludePublicPaths_process = subprocess.Popen(["python", rebaseIncludePublicPaths], shell=True,
+                                         stdout=log_file,
+                                         stderr=err_file)
+
+        rebaseIncludePublicPaths_process.communicate('\n'.join([enginePath, moddingProject]).encode())
         log_file.close()
         err_file.close()
 

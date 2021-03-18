@@ -4,45 +4,34 @@ using UnrealBuildTool;
 
 public class FactoryGame : ModuleRules
 {
-    public FactoryGame(ReadOnlyTargetRules Target) : base(Target)
-    {
-        PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+	public FactoryGame(ReadOnlyTargetRules Target) : base(Target)
+	{
+		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+		bLegacyPublicIncludePaths = false;
+		ShadowVariableWarningLevel = WarningLevel.Warning;
 
-       PublicDependencyModuleNames.AddRange(new string[] {
-            "Core", "CoreUObject",
-            "Engine",
-            "InputCore",
-            "OnlineSubsystem", "OnlineSubsystemUtils", "OnlineSubsystemNULL", "OnlineSubsystemEOS",
-            "SignificanceManager",
-            "PhysX", "APEX", "PhysXVehicles", "ApexDestruction",
-            "AkAudio",
-            "ReplicationGraph",
-            "UMG",
-            "AIModule",
-            "NavigationSystem",
-            "AssetRegistry",
-            "GameplayTasks",
+		//FactoryGame transitive dependencies
+		PublicDependencyModuleNames.AddRange(new[] {
+			"Core", "CoreUObject",
+			"Engine",
+			"InputCore",
+			"OnlineSubsystem", "OnlineSubsystemNull", "OnlineSubsystemEOS", "OnlineSubsystemUtils",
+			"SignificanceManager",
+			"APEX", "ApexDestruction",
 			"AnimGraphRuntime",
-            "Slate", "SlateCore",
-            "InstancedSplines"
-			});
-
-        if (Target.Type == TargetRules.TargetType.Editor)
-        {
-            PublicDependencyModuleNames.AddRange(new string[] { "OnlineBlueprintSupport", "AnimGraph" });
-        }
-
-
-        PrivateDependencyModuleNames.AddRange(new string[] { });
-
-        // Uncomment if you are using Slate UI
-        PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-
-        // Uncomment if you are using online features
-        PrivateDependencyModuleNames.Add("OnlineSubsystem");
-
-        PrivatePCHHeaderFile = "Public/FactoryGame.h";
+			"AkAudio", 
+			"PhysXVehicles",
+			"AssetRegistry",
+			"NavigationSystem",
+			"ReplicationGraph",
+			"AIModule",
+			"GameplayTasks",
+			"SlateCore", "Slate", "UMG",
+			"InstancedSplines"
+		});
         
-        // To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true
-    }
+		PrivatePCHHeaderFile = "Public/FactoryGame.h";
+        
+		PublicDefinitions.Add( "IS_PUBLIC_BUILD=1" ); 
+	}
 }
