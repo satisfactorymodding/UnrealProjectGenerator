@@ -7,7 +7,7 @@
 
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FFGKeyMapping
+struct FFGKeyMapping
 {
 	GENERATED_BODY()
 

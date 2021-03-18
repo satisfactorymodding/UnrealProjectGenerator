@@ -12,8 +12,9 @@
 //#include "AnalyticsService.h"
 #include "FGGameInstance.generated.h"
 
+// MODDING EDIT
 UCLASS()
-class FACTORYGAME_API UAnalyticsService : public UObject
+class UAnalyticsService : public UObject
 {
 	GENERATED_BODY()
 };
@@ -33,7 +34,7 @@ enum class EJoinSessionState : uint8
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnJoinSessionStateChanged, EJoinSessionState, newState );
 
 USTRUCT()
-struct FACTORYGAME_API FOnJoinSessionData
+struct FOnJoinSessionData
 {
 	GENERATED_BODY()
 
@@ -72,7 +73,7 @@ private:
 *
 */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FFGModPackage
+struct FFGModPackage
 {
 	GENERATED_BODY()
 
@@ -102,7 +103,7 @@ struct FACTORYGAME_API FFGModPackage
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FFGGameNetworkErrorMsg
+struct FFGGameNetworkErrorMsg
 {
 	GENERATED_BODY()
 	FFGGameNetworkErrorMsg( ENetworkFailure::Type _errorType, const FString& _errorMsg ) : errorType( _errorType ), errorMsg( _errorMsg )

@@ -2,7 +2,7 @@
 
 #include "Modules/ModuleManager.h"
 
-class FACTORYGAME_API FFactoryGameModule : public FDefaultGameModuleImpl
+class FFactoryGameModule : public FDefaultGameModuleImpl
 {
 public:
 	/**

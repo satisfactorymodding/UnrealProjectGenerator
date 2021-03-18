@@ -12,7 +12,7 @@ DECLARE_STATS_GROUP( TEXT( "MapManager" ), STATGROUP_MapManager, STATCAT_Advance
 DECLARE_LOG_CATEGORY_EXTERN( LogMapManager, Log, All );
 
 USTRUCT()
-struct FACTORYGAME_API FFogOfWarQueuePair
+struct FFogOfWarQueuePair
 {
 	GENERATED_BODY()
 

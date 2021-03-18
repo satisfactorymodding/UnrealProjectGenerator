@@ -8,7 +8,7 @@
 #include "FGProximitySubsystem.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FMapAreaParticleCollection
+struct FMapAreaParticleCollection
 {
 	GENERATED_BODY()
 

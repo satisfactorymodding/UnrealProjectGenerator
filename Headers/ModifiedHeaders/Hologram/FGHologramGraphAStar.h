@@ -2,7 +2,7 @@
 
 #pragma once
 
-struct FACTORYGAME_API FHologramGraphAStarDefaultPolicy
+struct FHologramGraphAStarDefaultPolicy
 {
 	static const int32 NodePoolSize = 64;
 	static const int32 OpenSetSize = 64;
@@ -23,7 +23,7 @@ enum EHologramGraphAStarResult
  *	Extend this class and pass as a parameter to FHologramGraphAStar for additional functionality
  */
 template<typename THologramGraph>
-struct FACTORYGAME_API FHologramGraphAStarDefaultNode
+struct FHologramGraphAStarDefaultNode
 {
 	typedef typename THologramGraph::FNodeRef FGraphNodeRef;
 
@@ -78,7 +78,7 @@ struct FACTORYGAME_API FHologramGraphAStarDefaultNode
 
 
 template<typename THologramGraph, typename Policy = FHologramGraphAStarDefaultPolicy, typename TSearchNode = FHologramGraphAStarDefaultNode<THologramGraph> >
-struct FACTORYGAME_API FHologramGraphAStar
+struct FHologramGraphAStar
 {
 	typedef typename THologramGraph::FNodeRef FGraphNodeRef;
 	typedef TSearchNode FSearchNode;

@@ -7,7 +7,7 @@
 #include "FGPipelinePumpHologram.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FPumpHeadLiftLocationPath
+struct FPumpHeadLiftLocationPath
 {
 	GENERATED_BODY()
 public:

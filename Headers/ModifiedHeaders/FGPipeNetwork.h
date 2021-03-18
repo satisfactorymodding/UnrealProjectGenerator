@@ -24,7 +24,7 @@ enum class EDebugPipeVisualization
 /**
  * Contains all info needed to update a fluid box.
  */
-struct FACTORYGAME_API PipeJunction
+struct PipeJunction
 {
 	PipeJunction( class UFGPipeConnectionComponent* previous, class UFGPipeConnectionComponent* current );
 

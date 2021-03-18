@@ -25,7 +25,7 @@ enum class EClassRepPolicy : uint8
 };
 
 USTRUCT()
-struct FACTORYGAME_API FConnectionAlwaysRelevant_NodePair
+struct FConnectionAlwaysRelevant_NodePair
 {
 	GENERATED_BODY()
 
@@ -168,7 +168,7 @@ private:
 };
 
 UCLASS()
-class FACTORYGAME_API UFGReplicationGraphNode_ConditionallyAlwaysRelevant : public UReplicationGraphNode_ActorList
+class UFGReplicationGraphNode_ConditionallyAlwaysRelevant : public UReplicationGraphNode_ActorList
 {
 public:
 	GENERATED_BODY()
@@ -188,7 +188,7 @@ private:
 
 // Grid Node for prioritizing Actors Close to the player and inside their view frustum. Based on the DynamicSpatialFrequency Node. Intended for Actors that don't move and have a heavy Networking footprint (Tex. Conveyors)
 UCLASS()
-class FACTORYGAME_API UFGReplicationGraphNode_ConveyorSpatialFrequency : public UReplicationGraphNode_GridCell
+class UFGReplicationGraphNode_ConveyorSpatialFrequency : public UReplicationGraphNode_GridCell
 {
 	GENERATED_BODY()
 
@@ -783,7 +783,7 @@ protected:
 
 /** This is a specialized node for handling PlayerState replication in a frequency limited fashion. It tracks all player states but only returns a subset of them to the replication driver each frame. */
 UCLASS()
-class FACTORYGAME_API UFGReplicationGraphNode_PlayerStateFrequencyLimiter : public UReplicationGraphNode
+class UFGReplicationGraphNode_PlayerStateFrequencyLimiter : public UReplicationGraphNode
 {
 	GENERATED_BODY()
 
@@ -808,7 +808,7 @@ private:
 };
 
 UCLASS()
-class FACTORYGAME_API UFGReplicationGraphNode_AlwaysRelevant_ForConnection : public UReplicationGraphNode_AlwaysRelevant_ForConnection
+class UFGReplicationGraphNode_AlwaysRelevant_ForConnection : public UReplicationGraphNode_AlwaysRelevant_ForConnection
 {
 public:
 	GENERATED_BODY()

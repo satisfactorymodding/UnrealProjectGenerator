@@ -9,7 +9,7 @@
 #include "FGRadiationSettings.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FRadiationVisualization
+struct FRadiationVisualization
 {
 	GENERATED_BODY()
 public:

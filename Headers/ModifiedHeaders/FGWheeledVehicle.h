@@ -50,7 +50,7 @@ struct FACTORYGAME_API FTireTrackDecalDetails
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FSurfaceParticlePair
+struct FSurfaceParticlePair
 {
 	GENERATED_BODY()
 
@@ -62,7 +62,7 @@ struct FACTORYGAME_API FSurfaceParticlePair
 };
 
 USTRUCT()
-struct FACTORYGAME_API FParticleTemplatePair
+struct FParticleTemplatePair
 {
 	GENERATED_BODY()
 
@@ -76,7 +76,7 @@ struct FACTORYGAME_API FParticleTemplatePair
 };
 
 USTRUCT()
-struct FACTORYGAME_API FTireParticleCollection
+struct FTireParticleCollection
 {
 	GENERATED_BODY()
 
@@ -91,7 +91,7 @@ struct FACTORYGAME_API FTireParticleCollection
 * between the 4W & 6W movement components
 */
 USTRUCT()
-struct FACTORYGAME_API FReplicatedAddedVelocitiesState
+struct FReplicatedAddedVelocitiesState
 {
 	GENERATED_USTRUCT_BODY()
 

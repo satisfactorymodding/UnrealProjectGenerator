@@ -9,7 +9,7 @@ void InsertPPVolume( IInterface_PostProcessVolume* volume, TArray< IInterface_Po
 * Presets for post process settings for water volumes
 */
 UCLASS( Abstract, Blueprintable )
-class FACTORYGAME_API UFGSharedPostProcessSettings : public UObject
+class UFGSharedPostProcessSettings : public UObject
 {
 	GENERATED_BODY()
 public:

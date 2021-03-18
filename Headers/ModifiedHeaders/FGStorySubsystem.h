@@ -12,7 +12,7 @@
 #include "FGStorySubsystem.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FMapAreaVisitedData
+struct FMapAreaVisitedData
 {
 	GENERATED_BODY()
 
@@ -36,7 +36,7 @@ private:
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FItemFoundData
+struct FItemFoundData
 {
 	GENERATED_BODY()
 
@@ -67,7 +67,7 @@ private:
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FSchematicMessagePair
+struct FSchematicMessagePair
 {
 	GENERATED_BODY()
 
@@ -84,7 +84,7 @@ private:
 };
 
 USTRUCT(BlueprintType)
-struct FACTORYGAME_API FResearchTreeMessageData
+struct FResearchTreeMessageData
 {
 	GENERATED_BODY()
 

@@ -14,7 +14,7 @@
 
 /** The Slot for the UFGListView, contains the widget that is laid out in the list. */
 UCLASS()
-class FACTORYGAME_API UFGListViewSlot : public UPanelSlot
+class UFGListViewSlot : public UPanelSlot
 {
 	GENERATED_UCLASS_BODY()
 public:

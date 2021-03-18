@@ -101,7 +101,7 @@ struct FACTORYGAME_API FRepresentationVector2D
 };
 
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits<FRepresentationVector2D> : public TStructOpsTypeTraitsBase2<FRepresentationVector2D>
+struct TStructOpsTypeTraits<FRepresentationVector2D> : public TStructOpsTypeTraitsBase2<FRepresentationVector2D>
 {
 	enum
 	{

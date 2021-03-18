@@ -6,7 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "FGBuildGuide.generated.h"
 
-struct FACTORYGAME_API FGuideLineBuildingSweepData
+struct FGuideLineBuildingSweepData
 {
 	FGuideLineBuildingSweepData( class AActor* building, float angle )
 	{
@@ -25,7 +25,7 @@ enum class EGuideLineType : uint8
 	GLT_ConveyorBelt	UMETA( DisplayName = "Conveyor Belt" ),
 };
 
-struct FACTORYGAME_API FBuildingGuideLineData
+struct FBuildingGuideLineData
 {
 public:
 	FBuildingGuideLineData( class UObject* referenceObject, FVector startPoint, FVector endPoint, EGuideLineType lineType = EGuideLineType::GLT_Default ) :

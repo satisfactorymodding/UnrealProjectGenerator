@@ -20,7 +20,7 @@ DECLARE_DYNAMIC_DELEGATE_OneParam(FSearchQueryCompleteDelegate, FBlueprintSessio
 DECLARE_DYNAMIC_DELEGATE_TwoParams( FChangeSessionIDDelegate, bool, result, FString, newID );
 
 USTRUCT(BlueprintType)
-struct FACTORYGAME_API FOnlinePresence
+struct FOnlinePresence
 {
 	GENERATED_BODY()
 
@@ -59,7 +59,7 @@ enum ECantJoinReason
 
 //This is just the data from the feedback widget.
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FUserFeedbackFrontEndData
+struct FUserFeedbackFrontEndData
 {
 	GENERATED_BODY()
 
@@ -78,7 +78,7 @@ struct FACTORYGAME_API FUserFeedbackFrontEndData
 // @todosession: We assume we always have cached presence for people. So we need to find where a we don't and it matters (friends-friends, discord invites)
 
 UCLASS()
-class FACTORYGAME_API UFGPresenceLibrary : public UBlueprintFunctionLibrary
+class UFGPresenceLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:
@@ -116,7 +116,7 @@ public:
 };
 
 UCLASS()
-class FACTORYGAME_API UFGFriendsLibrary : public UBlueprintFunctionLibrary
+class UFGFriendsLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:
@@ -151,7 +151,7 @@ public:
 };
 
 UCLASS()
-class FACTORYGAME_API UFGSessionLibrary : public UBlueprintFunctionLibrary
+class UFGSessionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:
@@ -218,7 +218,7 @@ private:
 };
 
 UCLASS()
-class FACTORYGAME_API UFGInviteLibrary : public UBlueprintFunctionLibrary
+class UFGInviteLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:
@@ -254,7 +254,7 @@ public:
 
 
 UCLASS()
-class FACTORYGAME_API UFGNetworkLibrary : public UBlueprintFunctionLibrary
+class UFGNetworkLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:

@@ -9,7 +9,7 @@
  * Information about one leg on a factory.
  */
 USTRUCT()
-struct FACTORYGAME_API FFeetOffset
+struct FFeetOffset
 {
 	GENERATED_BODY()
 public:

@@ -31,7 +31,7 @@ enum class EIntroTutorialSteps :uint8
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FRecipeAmountPair
+struct FRecipeAmountPair
 {
 	GENERATED_BODY()
 
@@ -45,7 +45,7 @@ struct FACTORYGAME_API FRecipeAmountPair
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FTutorialHintData
+struct FTutorialHintData
 {
 	GENERATED_BODY()
 

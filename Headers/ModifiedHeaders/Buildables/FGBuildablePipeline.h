@@ -11,7 +11,7 @@
  * Struct containing quantized fluid content for a more optimized replication.
  */
 USTRUCT()
-struct FACTORYGAME_API FQuantizedPipelineIndicatorData
+struct FQuantizedPipelineIndicatorData
 {
 	GENERATED_BODY()
 public:
@@ -30,7 +30,7 @@ private:
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FStringPair
+struct FStringPair
 {
 	GENERATED_BODY()
 public:

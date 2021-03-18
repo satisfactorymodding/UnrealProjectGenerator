@@ -11,7 +11,7 @@ DECLARE_STATS_GROUP( TEXT( "Hologram Helpers" ), STATGROUP_HologramHelpers, STAT
 /**
  * Shared magic between holograms
  */
-struct FACTORYGAME_API FHologramHelpers
+struct FHologramHelpers
 {
 	/**
 	 * Creates a clearance component
@@ -35,7 +35,7 @@ struct FACTORYGAME_API FHologramHelpers
 	static float CalcPoleHeightAndHorisontalOffset(float& out_horisontalOffset, const struct FHitResult& aimResult, const struct FVector& poleLocation );
 };
 
-struct FACTORYGAME_API FSplineUtils
+struct FSplineUtils
 {
 
 
@@ -321,7 +321,7 @@ private:
 /**
  * Small util for building splines.
  */
-struct FACTORYGAME_API FSplineBuilder
+struct FSplineBuilder
 {
 	FSplineBuilder( TArray< FSplinePointData >& out_points ) : SplineData( out_points ) {}
 
@@ -364,7 +364,7 @@ public:
 * Struct for holding Grid Cell data. Each points location and all of its connections
 * Each AStar node will have one of these to define it
 */
-struct FACTORYGAME_API FHologramPathingPoint
+struct FHologramPathingPoint
 {
 	FHologramPathingPoint();
 	FHologramPathingPoint( FVector worldLocation, FVector gridIndex, struct FHologramPathingGrid* grid );
@@ -395,7 +395,7 @@ struct FACTORYGAME_API FHologramPathingPoint
 
 
 // @todo - There are unused / unnecessary variables in here that come from changing the way the pathing system works so it could use a clean up pass
-struct FACTORYGAME_API FHologramPathingGrid
+struct FHologramPathingGrid
 {
 	/** Default Constructor */
 	FHologramPathingGrid();
@@ -505,7 +505,7 @@ public:
 /**
 * Nodes comprising the 3D grid used for the A* pathfinding
 */
-struct FACTORYGAME_API FHologramAStarNode
+struct FHologramAStarNode
 {
 	// FHologramAStarNode( ); // MODDING EDIT: Temporary, should find fix for overload
 
@@ -569,7 +569,7 @@ public:
 * Implemented as specified in Epic's GraphAStar.h
 * Hence the spelling of "Neighbour". What did an English guy write all your code epic?
 */
-struct FACTORYGAME_API FHolgramAStarHelper
+struct FHolgramAStarHelper
 {
 	typedef FHologramAStarNode FNodeRef;
 
@@ -599,7 +599,7 @@ struct FACTORYGAME_API FHolgramAStarHelper
 * @todo - Heuristic and core graph code need another implementation and fairly large clean up pass. But now that I know its MOSTLY working 
 *		It should definitely be done since this seems to be a good way to go for some situations.
 */
-struct FACTORYGAME_API FHologramAStarFilter
+struct FHologramAStarFilter
 {
 	FHologramAStarFilter();
 

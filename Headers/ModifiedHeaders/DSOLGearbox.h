@@ -10,7 +10,7 @@ namespace physx
 }
 
 /* DSOL (Don't shift on (wheel) load) dynamic gearbox data */
-struct FACTORYGAME_API DSOLDynGearboxData
+struct DSOLDynGearboxData
 {
 	bool mWasShiftingUp;
 	bool mWasShiftingDown;
@@ -20,13 +20,13 @@ struct FACTORYGAME_API DSOLDynGearboxData
 };
 
 /* DSOL (Don't shift on (wheel) load) dynamic gearbox data */
-struct FACTORYGAME_API DSOLSetupData
+struct DSOLSetupData
 {
 	int mNumberOfGears;
 	float mDownShiftLatency;
 };
 
-struct FACTORYGAME_API DSOLGearbox
+struct DSOLGearbox
 {
 	///////////////////////DSOL Gearbox Stuff////////////////////////////////
 	// "Don't Shift On Load" gearbox. Doesn't shift up if there is load on 

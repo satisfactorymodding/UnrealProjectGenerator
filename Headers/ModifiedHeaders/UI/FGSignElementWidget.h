@@ -6,7 +6,7 @@
 #include "Blueprint/UserWidget.h"
 #include "FGSignElementWidget.generated.h"
 
-struct FACTORYGAME_API FSignElementWidgetData
+struct FSignElementWidgetData
 {
 	class UFGSignCanvasWidget* CanvasParent;
 	class UFGSignElementData* ElementData;

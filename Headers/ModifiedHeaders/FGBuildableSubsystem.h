@@ -15,7 +15,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnBuildableConstructedGlobal, AFGB
 
 /** Used to track constructed (spawned) buildables matched with their holograms between client and server */
 USTRUCT()
-struct FACTORYGAME_API FNetConstructionID
+struct FNetConstructionID
 {
 	GENERATED_BODY()
 
@@ -48,7 +48,7 @@ struct FACTORYGAME_API FNetConstructionID
 
 /** Distances where we switch tick rate */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FDistanceBasedTickRate
+struct FDistanceBasedTickRate
 {
 	GENERATED_BODY()
 
@@ -60,7 +60,7 @@ struct FACTORYGAME_API FDistanceBasedTickRate
 };
 
 USTRUCT()
-struct FACTORYGAME_API FBuildableBucket
+struct FBuildableBucket
 {
 	GENERATED_BODY()
 
@@ -72,7 +72,7 @@ struct FACTORYGAME_API FBuildableBucket
 };
 
 USTRUCT()
-struct FACTORYGAME_API FConveyorBucket
+struct FConveyorBucket
 {
 	GENERATED_BODY()
 
@@ -83,7 +83,7 @@ struct FACTORYGAME_API FConveyorBucket
 };
 
 USTRUCT()
-struct FACTORYGAME_API FBuildableGroupTimeData
+struct FBuildableGroupTimeData
 {
 	GENERATED_BODY()
 	

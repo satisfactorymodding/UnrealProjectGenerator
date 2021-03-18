@@ -5,7 +5,7 @@
 #include "FGSkySphere.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FSkySphereSettings
+struct FSkySphereSettings
 {
 	GENERATED_BODY()
 	

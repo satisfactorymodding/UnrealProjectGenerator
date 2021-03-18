@@ -7,7 +7,7 @@
  * @todo Please comment me
  */
 USTRUCT()
-struct FACTORYGAME_API FConstructHologramMessage
+struct FConstructHologramMessage
 {
 	GENERATED_BODY()
 

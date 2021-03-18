@@ -67,8 +67,7 @@ public:
 
 public:
 	/** Get the chat manager, this should always return something unless you call it really early. */
-	//MODDING EDIT: doesn't exist in executable, so forceinline to use version below
-	FORCEINLINE static AFGChatManager* Get(UWorld* world) { return Get(static_cast<UObject*>(world)); }
+	static AFGChatManager* Get( UWorld* world );
 
 	/** Get the chat manager from a world context, this should always return something unless you call it really early. */
 	UFUNCTION( BlueprintPure, Category = "Schematic", DisplayName = "GetChatManager", Meta = ( DefaultToSelf = "worldContext" ) )

@@ -246,7 +246,7 @@ FORCEINLINE FString VarToFString( FSharedInventoryStatePtr var ){ return FString
 template<> struct TIsZeroConstructType<FSharedInventoryStatePtr> { enum { Value = true }; };
 
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits<FSharedInventoryStatePtr> : public TStructOpsTypeTraitsBase2<FSharedInventoryStatePtr>
+struct TStructOpsTypeTraits<FSharedInventoryStatePtr> : public TStructOpsTypeTraitsBase2<FSharedInventoryStatePtr>
 {
 	enum
 	{

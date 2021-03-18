@@ -27,7 +27,7 @@ struct FACTORYGAME_API FFactoryTickFunction : public FTickFunction
 };
 
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits<FFactoryTickFunction> : public TStructOpsTypeTraitsBase2<FFactoryTickFunction>
+struct TStructOpsTypeTraits<FFactoryTickFunction> : public TStructOpsTypeTraitsBase2<FFactoryTickFunction>
 {
 	enum
 	{

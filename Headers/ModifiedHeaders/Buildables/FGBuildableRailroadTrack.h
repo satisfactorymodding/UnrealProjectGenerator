@@ -67,7 +67,7 @@ public:
 
 /** Enable custom serialization of FRailroadTrackPosition */
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits< FRailroadTrackPosition > : public TStructOpsTypeTraitsBase2< FRailroadTrackPosition >
+struct TStructOpsTypeTraits< FRailroadTrackPosition > : public TStructOpsTypeTraitsBase2< FRailroadTrackPosition >
 {
 	enum
 	{

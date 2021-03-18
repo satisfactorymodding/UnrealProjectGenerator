@@ -29,7 +29,7 @@ class FACTORYGAME_API UFGHeightHideUserData : public UAssetUserData
 };
 
 USTRUCT()
-struct FACTORYGAME_API FFGHeightData
+struct FFGHeightData
 {
 	GENERATED_BODY()
 

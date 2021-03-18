@@ -8,7 +8,7 @@
 #include "FGPipeBuilder.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FSplineSupportPair
+struct FSplineSupportPair
 {
 	GENERATED_BODY()
 

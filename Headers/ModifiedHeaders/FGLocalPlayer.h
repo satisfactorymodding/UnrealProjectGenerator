@@ -15,8 +15,9 @@
 #include "PlayerPresenceState.h"
 #include "FGLocalPlayer.generated.h"
 
+
 UCLASS()
-class FACTORYGAME_API UFGEM_LoggedOutFromOnlineService : public UFGErrorMessage
+class UFGEM_LoggedOutFromOnlineService : public UFGErrorMessage
 {
 	GENERATED_BODY()
 public:
@@ -24,7 +25,7 @@ public:
 };
 
 UCLASS()
-class FACTORYGAME_API UFGEM_LostConnectionWithOnlineService : public UFGErrorMessage
+class UFGEM_LostConnectionWithOnlineService : public UFGErrorMessage
 {
 	GENERATED_BODY()
 public:
@@ -32,7 +33,7 @@ public:
 };
 
 UCLASS()
-class FACTORYGAME_API UFGEM_FailedToLoginToOnlineService : public UFGErrorMessage
+class UFGEM_FailedToLoginToOnlineService : public UFGErrorMessage
 {
 	GENERATED_BODY()
 public:
@@ -68,7 +69,7 @@ enum class ECreateSessionState : uint8
 };
 
 USTRUCT(BlueprintType)
-struct FACTORYGAME_API FFGOnlineFriend
+struct FFGOnlineFriend
 {
 	GENERATED_BODY()
 
@@ -116,7 +117,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE( FOnMultiplayerStatusUpdated );
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams( FOnAccountConnectionComplete, const FName, currentPlatform, EEosAccountConnectionResult, result );
 
 
-struct FACTORYGAME_API FSessionInformation
+struct FSessionInformation
 {
 	FSessionInformation() :
 		MapName(TEXT("")),
@@ -168,7 +169,7 @@ private:
 
 // Workaround as it seems like you can't have a TArray<FFGOnlineFriends> exposed to a Dynamic multicast delegate
 USTRUCT(BlueprintType)
-struct FACTORYGAME_API FUpdatedFriends
+struct FUpdatedFriends
 {
 	GENERATED_BODY()
 

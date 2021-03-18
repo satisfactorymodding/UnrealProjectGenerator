@@ -7,7 +7,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams( FOnActiveWidgetSet, UWidget*, oldW
 DECLARE_DYNAMIC_MULTICAST_DELEGATE( FOnMenuAnimDone );
 
 UCLASS()
-class FACTORYGAME_API UFGWidgetSwitcher : public UWidgetSwitcher
+class UFGWidgetSwitcher : public UWidgetSwitcher
 {
 	GENERATED_BODY()
 public:

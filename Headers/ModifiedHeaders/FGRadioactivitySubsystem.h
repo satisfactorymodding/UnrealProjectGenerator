@@ -8,7 +8,7 @@
 
 
 /** Description of a radioactive emitter. */
-struct FACTORYGAME_API FRadioactiveEmitter
+struct FRadioactiveEmitter
 {
 public:
 	FRadioactiveEmitter() :
@@ -35,7 +35,7 @@ public:
 
 /** Description of a radioactive source. */
 USTRUCT()
-struct FACTORYGAME_API FRadioactiveSource
+struct FRadioactiveSource
 {
 	GENERATED_BODY()
 public:
@@ -48,7 +48,7 @@ public:
 };
 
 USTRUCT()
-struct FACTORYGAME_API FRemoveEmitterID
+struct FRemoveEmitterID
 {
 	GENERATED_BODY()
 public:
@@ -70,7 +70,7 @@ public:
 };
 
 USTRUCT()
-struct FACTORYGAME_API FSetEmitterID
+struct FSetEmitterID
 {
 	GENERATED_BODY()
 public:

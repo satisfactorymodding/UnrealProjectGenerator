@@ -147,7 +147,7 @@ private:
 
 
 /** Custom INetDeltaBaseState used by our custom NetDeltaSerialize. Representing a snapshot of the state, enough to calculate a delta between this state and another.*/
-class FACTORYGAME_API FConveyorBeltItemsBaseState : public INetDeltaBaseState
+class FConveyorBeltItemsBaseState : public INetDeltaBaseState
 {
 public:
 
@@ -291,7 +291,7 @@ public:
 *   - Mapping of object references (objects that are replicated that is). Look at fast TArray replication on how to implement this if needed.
 */
 USTRUCT()
-struct FACTORYGAME_API FConveyorBeltItems
+struct FConveyorBeltItems
 {
 
 	enum class EConveyorSpawnStyle : int8
@@ -477,7 +477,7 @@ private:
 
 /** Enable custom net delta serialization for the above struct. */
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits< FConveyorBeltItems > : public TStructOpsTypeTraitsBase2< FConveyorBeltItems >
+struct TStructOpsTypeTraits< FConveyorBeltItems > : public TStructOpsTypeTraitsBase2< FConveyorBeltItems >
 {
 	enum
 	{

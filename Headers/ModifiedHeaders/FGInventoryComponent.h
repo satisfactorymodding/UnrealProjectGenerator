@@ -48,7 +48,7 @@ FORCEINLINE FString VarToFString( FInventoryItem var ){ return FString::Printf( 
 
 /** Enable custom serialization of FInventoryItem */
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits< FInventoryItem > : public TStructOpsTypeTraitsBase2< FInventoryItem >
+struct TStructOpsTypeTraits< FInventoryItem > : public TStructOpsTypeTraitsBase2< FInventoryItem >
 {
 	enum
 	{
@@ -91,7 +91,7 @@ public:
 FORCEINLINE bool IsValidForLoad( const FInventoryStack& element ){ return element.Item.ItemClass != nullptr; }
 
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits<FInventoryStack> : public TStructOpsTypeTraitsBase2<FInventoryStack>
+struct TStructOpsTypeTraits<FInventoryStack> : public TStructOpsTypeTraitsBase2<FInventoryStack>
 {
 	enum
 	{

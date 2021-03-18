@@ -8,7 +8,7 @@
 #include "FGFAnimInstanceFactory.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FAnimInstanceProxyFactory : public FAnimInstanceProxy
+struct FAnimInstanceProxyFactory : public FAnimInstanceProxy
 {
 	GENERATED_BODY()
 

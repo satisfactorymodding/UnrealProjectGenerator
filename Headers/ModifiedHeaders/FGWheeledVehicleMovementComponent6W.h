@@ -15,7 +15,7 @@
 
 /** Described which axles are powered by the engine. True == Powered. */
 USTRUCT()
-struct FACTORYGAME_API FDifferentialSetup6W
+struct FDifferentialSetup6W
 {
 	GENERATED_USTRUCT_BODY()
 	
@@ -41,7 +41,7 @@ enum EWheelOrder6W
 };
 
 USTRUCT()
-struct FACTORYGAME_API FVehicleDifferential6WData
+struct FVehicleDifferential6WData
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -51,7 +51,7 @@ struct FACTORYGAME_API FVehicleDifferential6WData
 };
 
 USTRUCT()
-struct FACTORYGAME_API FVehicleEngineData6W
+struct FVehicleEngineData6W
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -85,7 +85,7 @@ struct FACTORYGAME_API FVehicleEngineData6W
 
 
 USTRUCT()
-struct FACTORYGAME_API FVehicleGearData6W
+struct FVehicleGearData6W
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -103,7 +103,7 @@ struct FACTORYGAME_API FVehicleGearData6W
 };
 
 USTRUCT()
-struct FACTORYGAME_API FVehicleTransmissionData6W
+struct FVehicleTransmissionData6W
 {
 	GENERATED_USTRUCT_BODY()
 	/** Whether to use automatic transmission */

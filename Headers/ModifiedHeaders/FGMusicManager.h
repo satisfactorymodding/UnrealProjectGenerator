@@ -3,9 +3,9 @@
 #include "GameFramework/Actor.h"
 #include "FGMusicManager.generated.h"
 
-
+// MODDING EDIT
 UCLASS()
-class FACTORYGAME_API UAkObject : public UObject
+class UAkObject : public UObject
 {
 	GENERATED_BODY()
 };

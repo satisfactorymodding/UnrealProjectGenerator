@@ -453,7 +453,7 @@ private:
 	//end Cheat
 };
 
-class FACTORYGAME_API FSavedMove_FGMovement : public FSavedMove_Character
+class FSavedMove_FGMovement : public FSavedMove_Character
 {
 	typedef FSavedMove_Character Super;
 public:
@@ -488,7 +488,7 @@ public:
 	AActor* mPipeMovePipe = nullptr;
 };
 
-class FACTORYGAME_API FNetworkPredictionData_Client_FGMovement : public FNetworkPredictionData_Client_Character
+class FNetworkPredictionData_Client_FGMovement : public FNetworkPredictionData_Client_Character
 {
 public:
 	FNetworkPredictionData_Client_FGMovement(const UCharacterMovementComponent& clientMovement);

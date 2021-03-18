@@ -23,7 +23,7 @@ enum class EMultipleUnitControl : uint8
  * Some replicated state for this movement component.
  */
 USTRUCT()
-struct FACTORYGAME_API FReplicatedRailroadVehicleState
+struct FReplicatedRailroadVehicleState
 {
 	GENERATED_USTRUCT_BODY()
 

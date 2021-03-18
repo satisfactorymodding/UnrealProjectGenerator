@@ -4,7 +4,7 @@
 #include "FGAmbientSettings.generated.h"
 
 UCLASS( Abstract, BlueprintType, Blueprintable )
-class FACTORYGAME_API UFGAmbientSettings : public UObject
+class UFGAmbientSettings : public UObject
 {
 	GENERATED_BODY()
 public:

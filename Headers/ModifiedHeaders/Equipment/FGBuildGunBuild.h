@@ -15,7 +15,7 @@
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FSplineModeChangedDelegate, EHologramSplinePathMode, newMode );
 
 USTRUCT()
-struct FACTORYGAME_API FConnectionRepresentation
+struct FConnectionRepresentation
 {
 	GENERATED_BODY()
 
@@ -39,7 +39,7 @@ struct FACTORYGAME_API FConnectionRepresentation
 };
 
 USTRUCT()
-struct FACTORYGAME_API FFactoryClearanceData
+struct FFactoryClearanceData
 {
 	GENERATED_BODY()
 

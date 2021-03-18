@@ -9,7 +9,7 @@
 
 
 USTRUCT( Blueprintable )
-struct FACTORYGAME_API FSignColorData
+struct FSignColorData
 {
 	GENERATED_BODY()
 

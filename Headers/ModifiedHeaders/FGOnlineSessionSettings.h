@@ -19,7 +19,7 @@ enum ESessionVisibility
  * the variable name, then the variables is converted to strings and back.
  */
 USTRUCT(BlueprintType)
-struct FACTORYGAME_API FFGOnlineSessionSettings
+struct FFGOnlineSessionSettings
 {
 	GENERATED_BODY()
 

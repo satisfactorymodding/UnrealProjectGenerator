@@ -39,7 +39,7 @@ enum class ESchematicType :uint8
 //@todo-cleanup Is this used? I cannot find any references to it
 /** Holds info about a schematic cost. */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FMultipleItemStruct
+struct FMultipleItemStruct
 {
 	GENERATED_BODY()
 

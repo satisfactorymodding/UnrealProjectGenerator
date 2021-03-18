@@ -6,7 +6,7 @@
 
 //@todo-cleanup Part of an old system not used for years, should be cleaned out probably.
 UCLASS(HideCategories=(Input,Actor))
-class FACTORYGAME_API AFGRenderTargetStage : public AActor
+class AFGRenderTargetStage : public AActor
 {
 	GENERATED_BODY()
 public:

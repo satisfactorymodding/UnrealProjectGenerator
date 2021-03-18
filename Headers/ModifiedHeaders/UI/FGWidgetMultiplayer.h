@@ -13,7 +13,7 @@ enum class EMultiplayerButtonType : uint8
 };
 
 UCLASS()
-class FACTORYGAME_API UFGWidgetMultiplayer : public UUserWidget
+class UFGWidgetMultiplayer : public UUserWidget
 {
 	GENERATED_BODY()
 public:

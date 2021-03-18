@@ -18,7 +18,7 @@ class FDebugDisplayInfo;
 
 /** Physics data we want to be able to restore, we store the bone name to be able to change the bone structure in updates */
 USTRUCT()
-struct FACTORYGAME_API FVehiclePhysicsData
+struct FVehiclePhysicsData
 {
 	GENERATED_BODY()
 	

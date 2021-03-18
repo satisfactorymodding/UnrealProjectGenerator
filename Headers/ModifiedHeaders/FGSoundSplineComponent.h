@@ -5,7 +5,7 @@
 
 //@todo-cleanup Is this still in use? Move to Ak maybe?
 UCLASS(meta=(BlueprintSpawnableComponent))
-class FACTORYGAME_API UFGSoundSplineComponent : public UAkComponent
+class UFGSoundSplineComponent : public UAkComponent
 {
 	GENERATED_BODY()
 public:

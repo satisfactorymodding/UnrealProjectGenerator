@@ -19,7 +19,7 @@ DECLARE_STATS_GROUP( TEXT( "FactoryTick" ), STATGROUP_FactoryTick, STATCAT_Advan
 
 // Useful for removing stuff that shouldn't be in public versions
 #ifndef IS_PUBLIC_BUILD
-#define IS_PUBLIC_BUILD 1
+#define IS_PUBLIC_BUILD 0
 #endif
 
 /** Debug flags */

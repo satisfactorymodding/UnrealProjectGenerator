@@ -30,7 +30,7 @@ public:
 };
 
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits< FPowerGraphPoint > : public TStructOpsTypeTraitsBase2< FPowerGraphPoint >
+struct TStructOpsTypeTraits< FPowerGraphPoint > : public TStructOpsTypeTraitsBase2< FPowerGraphPoint >
 {
 	enum
 	{
@@ -112,7 +112,7 @@ private:
 };
 
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits< FPowerCircuitStats > : public TStructOpsTypeTraitsBase2< FPowerCircuitStats >
+struct TStructOpsTypeTraits< FPowerCircuitStats > : public TStructOpsTypeTraitsBase2< FPowerCircuitStats >
 {
 	enum
 	{

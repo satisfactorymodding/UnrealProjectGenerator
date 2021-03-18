@@ -21,7 +21,7 @@ class UFGListViewSlot;
  * * Selection Functionality
  */
 UCLASS()
-class FACTORYGAME_API UFGListView : public UPanelWidget
+class UFGListView : public UPanelWidget
 {
 	GENERATED_UCLASS_BODY()
 

@@ -7,7 +7,7 @@
 #include "FGResourceSettings.generated.h"
 
 USTRUCT()
-struct FACTORYGAME_API FItemSettings
+struct FItemSettings
 {
 	GENERATED_BODY()
 

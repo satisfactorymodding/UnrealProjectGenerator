@@ -8,7 +8,7 @@
 #include "FGResourceSinkSettings.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FResourceSinkRewardLevelsData : public FTableRowBase
+struct FResourceSinkRewardLevelsData : public FTableRowBase
 {
 	GENERATED_BODY()
 
@@ -26,7 +26,7 @@ struct FACTORYGAME_API FResourceSinkRewardLevelsData : public FTableRowBase
 };
 
 USTRUCT(BlueprintType)
-struct FACTORYGAME_API FResourceSinkPointsData : public FTableRowBase
+struct FResourceSinkPointsData : public FTableRowBase
 {
 	GENERATED_BODY()
 

@@ -7,7 +7,7 @@
 #include "FGAtmosphereVolume.generated.h"
 
 USTRUCT()
-struct FACTORYGAME_API FExponentialFogSettings
+struct FExponentialFogSettings
 {
 	GENERATED_BODY()
 

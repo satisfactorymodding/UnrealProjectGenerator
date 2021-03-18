@@ -147,7 +147,7 @@ public:
 };
 
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits< FFluidBox > : public TStructOpsTypeTraitsBase2< FFluidBox >
+struct TStructOpsTypeTraits< FFluidBox > : public TStructOpsTypeTraitsBase2< FFluidBox >
 {
 	enum
 	{
