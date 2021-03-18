@@ -1,11 +1,11 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "FGResearchTreeNode.h"
-#include "FGAvailabilityDependency.h"
+#include "AvailabilityDependencies/FGAvailabilityDependency.h"
 #include "IncludeInBuild.h"
 #include "Styling/SlateBrush.h"
 #include "FGEventSubsystem.h"

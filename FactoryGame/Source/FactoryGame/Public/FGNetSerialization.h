@@ -1,3 +1,5 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 #include "Engine/NetSerialization.h"
@@ -5,7 +7,7 @@
 
 /** Base struct for items using Custom Fast TArray Replication */
 USTRUCT()
-struct FACTORYGAME_API FCustomFastArraySerializerItem
+struct FCustomFastArraySerializerItem
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -76,7 +78,7 @@ struct FACTORYGAME_API FCustomFastArraySerializerItem
 
 /** Base struct for wrapping the array used in Custom Fast TArray Replication */
 USTRUCT()
-struct FACTORYGAME_API FCustomFastArraySerializer
+struct FCustomFastArraySerializer
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -148,7 +150,7 @@ private:
 	int32				CachedNumItemsToConsiderForWriting;
 };
 
-struct FACTORYGAME_API FStableRemover
+struct FStableRemover
 {
 	template< typename T >
 	static void RemoveItem( TArray<T>& a, int32 idx )
@@ -157,7 +159,7 @@ struct FACTORYGAME_API FStableRemover
 	}
 };
 
-struct FACTORYGAME_API FFastRemover
+struct FFastRemover
 {
 	template< typename T >
 	static void RemoveItem( TArray<T>& a, int32 idx )

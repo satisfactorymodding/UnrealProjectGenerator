@@ -1,6 +1,8 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
-#include "NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "FGBuildingColorSlotStruct.generated.h"
 
 USTRUCT()

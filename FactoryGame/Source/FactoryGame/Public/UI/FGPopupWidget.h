@@ -1,4 +1,4 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -19,7 +19,7 @@ enum EPopupId
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FPopupData
+struct FPopupData
 {
 	GENERATED_BODY();
 public:

@@ -1,9 +1,9 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "GameFramework/Actor.h"
-#include "FGCreature.h"
+#include "Creature/FGCreature.h"
 #include "FGSaveInterface.h"
 #include "FGCreatureSpawner.generated.h"
 

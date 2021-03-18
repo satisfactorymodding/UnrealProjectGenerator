@@ -1,8 +1,8 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
-#include "FGBuildableFactory.h"
+#include "Buildables/FGBuildableFactory.h"
 #include "Components/SceneComponent.h"
 #include "FGProductionIndicatorInstanceManager.h"
 #include "FGProductionIndicatorInstanceComponent.generated.h"
@@ -26,6 +26,7 @@ public:
 	void SetInstanced( bool isInstanced );
 
 	/** Called when the buildings indicator status changes. */
+	UFUNCTION()
 	void OnProductionStatusChanged( EProductionStatus newStatus );
 
 	/** This sets the cached status to IS_NONE so that an update is forced next frame */

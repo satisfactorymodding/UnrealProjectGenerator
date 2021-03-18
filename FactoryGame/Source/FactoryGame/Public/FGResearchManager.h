@@ -1,4 +1,4 @@
-// Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -132,8 +132,7 @@ public:
 	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
 	virtual void PreInitializeComponents() override;
 
-	//MODDING EDIT: forceinline world accessor
-	FORCEINLINE static AFGResearchManager* Get(class UWorld* world) { return Get(static_cast<UObject*>(world)); }
+	static AFGResearchManager* Get( class UWorld* world );
 
 	UFUNCTION( BlueprintPure, Category = "Research", DisplayName = "GetResearchManager", Meta = ( DefaultToSelf = "worldContext" ) )
 	static AFGResearchManager* Get( class UObject* worldContext );

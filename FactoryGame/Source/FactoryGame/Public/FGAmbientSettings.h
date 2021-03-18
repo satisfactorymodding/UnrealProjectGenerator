@@ -1,10 +1,12 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
-#include "Object.h"
+#include "UObject/Object.h"
 #include "FGAmbientSettings.generated.h"
 
 UCLASS( Abstract, BlueprintType, Blueprintable )
-class FACTORYGAME_API UFGAmbientSettings : public UObject
+class UFGAmbientSettings : public UObject
 {
 	GENERATED_BODY()
 public:

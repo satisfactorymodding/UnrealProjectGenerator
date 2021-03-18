@@ -1,3 +1,5 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 #include "Engine/EngineBaseTypes.h"
@@ -27,7 +29,7 @@ struct FACTORYGAME_API FFactoryTickFunction : public FTickFunction
 };
 
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits<FFactoryTickFunction> : public TStructOpsTypeTraitsBase2<FFactoryTickFunction>
+struct TStructOpsTypeTraits<FFactoryTickFunction> : public TStructOpsTypeTraitsBase2<FFactoryTickFunction>
 {
 	enum
 	{

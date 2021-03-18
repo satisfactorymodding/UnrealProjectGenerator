@@ -1,9 +1,9 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "FGUseableInterface.h"
-#include "FGCreature.h"
+#include "Creature/FGCreature.h"
 #include "FGEnemy.generated.h"
 
 /**

@@ -1,10 +1,10 @@
-// Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "FGStaticReplicatedActor.h"
+#include "Replication/FGStaticReplicatedActor.h"
 #include "FGBeacon.generated.h"
 
 UCLASS()

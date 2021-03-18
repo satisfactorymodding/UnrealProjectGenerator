@@ -1,8 +1,10 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 #include "Templates/TypeHash.h"
 
-struct FACTORYGAME_API FObjectRedirect
+struct FObjectRedirect
 {
 	/**
 	 * Creates a redirector
@@ -17,7 +19,7 @@ struct FACTORYGAME_API FObjectRedirect
 };
 
 /** Level agnostic object reference */
-struct FACTORYGAME_API FObjectReferenceDisc
+struct FObjectReferenceDisc
 {
 	// Name of the level we reside in, if empty, PathName is a absolute path
 	FString LevelName;

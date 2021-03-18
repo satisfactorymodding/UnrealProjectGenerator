@@ -1,3 +1,5 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 #include "FGBuildableSubsystem.h"
@@ -7,7 +9,7 @@
  * @todo Please comment me
  */
 USTRUCT()
-struct FACTORYGAME_API FConstructHologramMessage
+struct FConstructHologramMessage
 {
 	GENERATED_BODY()
 

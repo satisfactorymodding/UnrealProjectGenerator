@@ -1,9 +1,11 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 #include "FGWaterAudio.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FPawnImpactAudio
+struct FPawnImpactAudio
 {
 	GENERATED_BODY()
 
@@ -17,7 +19,7 @@ struct FACTORYGAME_API FPawnImpactAudio
 };
 
 UCLASS(Abstract,Blueprintable)
-class FACTORYGAME_API UFGWaterAudio : public UObject
+class UFGWaterAudio : public UObject
 {
 	GENERATED_BODY()
 public:

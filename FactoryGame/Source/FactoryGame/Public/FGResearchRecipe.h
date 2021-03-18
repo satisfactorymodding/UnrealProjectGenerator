@@ -1,10 +1,10 @@
-// Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "FGRecipe.h"
-#include "FGItemDescriptor.h"
+#include "Resources/FGItemDescriptor.h"
 #include "UObject/NoExportTypes.h"
 #include "AssetBundleData.h"
 #include "IncludeInBuild.h"

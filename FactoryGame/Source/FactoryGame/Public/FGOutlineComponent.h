@@ -1,4 +1,4 @@
-// Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -9,7 +9,7 @@
 #include "FGOutlineComponent.generated.h"
 
 USTRUCT()
-struct FACTORYGAME_API FCachedMaterialInterfaceArray
+struct FCachedMaterialInterfaceArray
 {
 	GENERATED_BODY()
 
@@ -19,7 +19,7 @@ public:
 };
 
 USTRUCT()
-struct FACTORYGAME_API FCachedMeshToMaterialObject
+struct FCachedMeshToMaterialObject
 {
 	GENERATED_BODY()
 
@@ -29,7 +29,7 @@ public:
 };
 
 USTRUCT()
-struct FACTORYGAME_API FCachedSplineMeshToMaterialObject
+struct FCachedSplineMeshToMaterialObject
 {
 	GENERATED_BODY()
 

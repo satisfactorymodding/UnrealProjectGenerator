@@ -18,7 +18,7 @@ namespace ImplementHeaders
         {
             { "CheckForErrors", "A" }
         };
-        
+
         private static readonly Dictionary<string, List<string>> ExtraIncludes = new Dictionary<string, List<string>>()
         {
             { "FGInventoryComponent", new List<string>()
@@ -40,6 +40,14 @@ namespace ImplementHeaders
                 {
                     "CustomVersion.h"
                 }
+            }
+        };
+
+        private static readonly Dictionary<string, string> ExtraCPPContent = new Dictionary<string, string>()
+        {
+            { "FGBackgroundThread",
+@"
+DEFINE_LOG_CATEGORY(LogPoolSystem);"
             }
         };
 
@@ -452,6 +460,12 @@ namespace ImplementHeaders
             { "FHolgramAStarHelper::GetNeighbour",
 @"  return FHologramAStarNode(0);"
             },
+            { "UFGComboBoxSearch::HandleGenerateWidget",
+@"  return SNew(SSpacer);"
+            },
+            { "FGSSearchableComboBox::GenerateMenuItemRow",
+@"  return SNew(STableRow<TSharedPtr<FString>>, OwnerTable);"
+            },
             { "FFactoryGameCustomVersion::GUID",
 @"FGuid(0x0F4E61DC1, 0x7C029ACE, 0x85D7D561, 0x0E42F6A3D); //See symbol ?GUID@FFactoryGameCustomVersion@@2UFGuid@@B in IDA for value <0F4E61DC1h, 7C029ACEh, 85D7D561h, 0E42F6A3Dh>
 
@@ -549,6 +563,10 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                     }
                 }
                 writer.WriteLine($"");
+                if(ExtraCPPContent.ContainsKey(Path.GetFileNameWithoutExtension(filePath)))
+                {
+                    writer.WriteLine(ExtraCPPContent[Path.GetFileNameWithoutExtension(filePath)]);
+                }
                 if (filePath.Contains("FGCheatBoardWidget.h"))
                     writer.WriteLine("#if WITH_CHEATS");
                 foreach (string func in implementations)
@@ -571,10 +589,10 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
             classContents = Regex.Replace(classContents, @"^\s*DEPRECATED ?\( ?(?:.|\s)*?\)", "", RegexOptions.Multiline); // fix for DEPRECATED... macros being matched
 
             // Implement with #if ... and delete it (fixes issues and requires less manual changes in the end)
-            foreach (Match ifMacro in Regex.Matches(classContents, @"\s*#if (.*?)\n((?:.|\n)*?)\n\s*#endif(.*)"))
+            foreach (Match ifMacro in Regex.Matches(classContents, @"\s*#if(def)? (.*?)\n((?:.|\n)*?)\n\s*#endif(.*)"))
             {
-                string ifContents = ifMacro.Groups[2].Value;
-                implementations.Add($"#if {ifMacro.Groups[1].Value.Trim()}");
+                string ifContents = ifMacro.Groups[3].Value;
+                implementations.Add($"#if{ifMacro.Groups[1].Value} {ifMacro.Groups[2].Value.Trim()}");
                 foreach (Match match in Regex.Matches(ifContents, @"^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?.*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match inner class/struct definition
                 {
                     string innerClassName = match.Groups[4].Value;
@@ -586,9 +604,9 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                 }
                 implementations.AddRange(ImplementFunctions(ifContents, className));
                 implementations.AddRange(ImplementStaticVars(ifContents, className));
-                implementations.Add($"#endif {ifMacro.Groups[3].Value.Trim()}");
+                implementations.Add($"#endif {ifMacro.Groups[4].Value.Trim()}");
             }
-            classContents = Regex.Replace(classContents, @"\s*#if\s(.*?)\n((?:.|\n)*?)\n\s*#endif(.*)", "");
+            classContents = Regex.Replace(classContents, @"\s*#if(def)?\s(.*?)\n((?:.|\n)*?)\n\s*#endif(.*)", "");
             foreach (Match match in Regex.Matches(classContents, @"^([\s\t]*)(class|struct)\s([^\s]*?\s)??([^\s]*?)(\s?:\s?.*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match inner class/struct definition
             {
                 string innerClassName = match.Groups[4].Value;

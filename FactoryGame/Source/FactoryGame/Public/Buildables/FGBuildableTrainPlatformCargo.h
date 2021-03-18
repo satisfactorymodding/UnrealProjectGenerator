@@ -1,11 +1,11 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
-#include "FGBuildableTrainPlatform.h"
-#include "FGReplicationDetailInventoryComponent.h"
-#include "FGReplicationDetailActor_CargoPlatform.h"
+#include "Buildables/FGBuildableTrainPlatform.h"
+#include "Replication/FGReplicationDetailInventoryComponent.h"
+#include "Replication/FGReplicationDetailActor_CargoPlatform.h"
 #include "FGFreightWagon.h"
 #include "FGBuildableTrainPlatformCargo.generated.h"
 

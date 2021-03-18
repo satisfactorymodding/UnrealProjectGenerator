@@ -1,3 +1,5 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 #include "GameFramework/Actor.h"
@@ -5,7 +7,7 @@
 #include "FGSkySphere.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FSkySphereSettings
+struct FSkySphereSettings
 {
 	GENERATED_BODY()
 	

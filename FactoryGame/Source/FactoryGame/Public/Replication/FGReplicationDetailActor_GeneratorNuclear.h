@@ -1,8 +1,8 @@
-// Copyright 2020 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
-#include "FGReplicationDetailActor_GeneratorFuel.h"
+#include "Replication/FGReplicationDetailActor_GeneratorFuel.h"
 #include "FGReplicationDetailActor_GeneratorNuclear.generated.h"
 
 UCLASS()

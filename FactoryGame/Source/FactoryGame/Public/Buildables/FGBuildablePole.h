@@ -1,9 +1,9 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
-#include "FGBuildable.h"
-#include "FGBuildablePoleBase.h"
+#include "Buildables/FGBuildable.h"
+#include "Buildables/FGBuildablePoleBase.h"
 #include "FGBuildablePole.generated.h"
 
 

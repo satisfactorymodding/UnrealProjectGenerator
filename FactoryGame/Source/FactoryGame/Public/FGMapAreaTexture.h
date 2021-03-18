@@ -1,4 +1,4 @@
-// Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -7,7 +7,7 @@
 #include "FGMapAreaTexture.generated.h"
 
 USTRUCT()
-struct FACTORYGAME_API FColorMapAreaPair
+struct FColorMapAreaPair
 {
 	GENERATED_BODY();
 

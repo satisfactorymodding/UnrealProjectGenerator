@@ -1,4 +1,4 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -147,7 +147,7 @@ public:
 };
 
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits< FFluidBox > : public TStructOpsTypeTraitsBase2< FFluidBox >
+struct TStructOpsTypeTraits< FFluidBox > : public TStructOpsTypeTraitsBase2< FFluidBox >
 {
 	enum
 	{

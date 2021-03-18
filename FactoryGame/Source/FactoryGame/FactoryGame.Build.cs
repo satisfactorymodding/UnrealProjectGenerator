@@ -27,7 +27,8 @@ public class FactoryGame : ModuleRules
 			"AIModule",
 			"GameplayTasks",
 			"SlateCore", "Slate", "UMG",
-			"InstancedSplines"
+			"InstancedSplines",
+			"RenderCore"
 		});
         
 		PrivatePCHHeaderFile = "Public/FactoryGame.h";

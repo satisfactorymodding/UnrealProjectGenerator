@@ -1,10 +1,10 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
-#include "FGEquipment.h"
-#include "FGEquipmentAttachment.h"
+#include "Equipment/FGEquipment.h"
+#include "Equipment/FGEquipmentAttachment.h"
 #include "FGJumpingStilts.generated.h"
 
 /**

@@ -1,8 +1,8 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
-#include "FGWeapon.h"
+#include "Equipment/FGWeapon.h"
 #include "FGWeaponInstantFire.generated.h"
 
 UCLASS()

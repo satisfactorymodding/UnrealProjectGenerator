@@ -1,3 +1,5 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 #include "Serialization/ArchiveProxy.h"
@@ -9,7 +11,7 @@
  * During load, it spawns the object from this data.
  * As it's a FArchiveProxy, this object doesn't have any own data to work with, but will work with the passed in data in it's constructor
  */
-class FACTORYGAME_API FArchiveObjectTOCProxy : public FArchiveProxy
+class FArchiveObjectTOCProxy : public FArchiveProxy
 {
 public:
 	FArchiveObjectTOCProxy( FArchive& inInnerArchive, class UWorld* world );

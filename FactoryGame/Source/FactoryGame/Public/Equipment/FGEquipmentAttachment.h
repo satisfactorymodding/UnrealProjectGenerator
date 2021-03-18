@@ -1,9 +1,9 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "GameFramework/Actor.h"
-#include "FGEquipment.h"
+#include "Equipment/FGEquipment.h"
 #include "FGEquipmentAttachment.generated.h"
 
 UCLASS()

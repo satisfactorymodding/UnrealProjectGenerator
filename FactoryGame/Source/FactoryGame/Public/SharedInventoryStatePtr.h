@@ -1,10 +1,10 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "FGSaveSession.h"
 #include "GameFramework/Actor.h"
-#include "SharedPointer.h"
+#include "Templates/SharedPointer.h"
 #include "Engine/PackageMapClient.h"
 #include "Engine/NetConnection.h"
 #include "SharedInventoryStatePtr.generated.h"
@@ -246,7 +246,7 @@ FORCEINLINE FString VarToFString( FSharedInventoryStatePtr var ){ return FString
 template<> struct TIsZeroConstructType<FSharedInventoryStatePtr> { enum { Value = true }; };
 
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits<FSharedInventoryStatePtr> : public TStructOpsTypeTraitsBase2<FSharedInventoryStatePtr>
+struct TStructOpsTypeTraits<FSharedInventoryStatePtr> : public TStructOpsTypeTraitsBase2<FSharedInventoryStatePtr>
 {
 	enum
 	{

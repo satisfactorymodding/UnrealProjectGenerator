@@ -1,4 +1,4 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -11,7 +11,7 @@
  *	Custom widget that contains a canvas panel widget for holding sign design elements
  */
 UCLASS()
-class FACTORYGAME_API UFGSignCanvasWidget : public UUserWidget
+class UFGSignCanvasWidget : public UUserWidget
 {
 	GENERATED_BODY()
 	

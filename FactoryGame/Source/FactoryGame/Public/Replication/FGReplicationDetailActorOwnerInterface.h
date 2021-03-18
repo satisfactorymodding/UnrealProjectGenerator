@@ -1,6 +1,8 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
-#include "FGReplicationDetailActor.h"
+#include "Replication/FGReplicationDetailActor.h"
 #include "FGReplicationDetailActorOwnerInterface.generated.h"
 
 /**

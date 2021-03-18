@@ -1,3 +1,5 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 #include "Engine/AssetManager.h"
@@ -6,7 +8,7 @@
 
 /** Help us discard packages that shouldn't be cooked and add assets that's should always be cooked */
 UCLASS()
-class FACTORYGAME_API UFGAssetManager : public UAssetManager
+class UFGAssetManager : public UAssetManager
 {
 	GENERATED_BODY()
 public:

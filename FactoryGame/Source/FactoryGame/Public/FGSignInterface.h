@@ -1,11 +1,11 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "FGSaveInterface.h"
 #include "UObject/Interface.h"
-#include "FGBuildable.h"
+#include "Buildables/FGBuildable.h"
 #include "FGSignInterface.generated.h"
 
 
@@ -28,7 +28,7 @@ enum class ESignElementType : uint8
 
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FSignElementConstraints
+struct FSignElementConstraints
 {
 	GENERATED_BODY()
 
@@ -260,7 +260,7 @@ public:
 
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FSignData
+struct FSignData
 {
 	GENERATED_BODY()
 
@@ -310,7 +310,7 @@ struct FACTORYGAME_API FSignData
 
 /** Enable custom serialization of FRailroadTrackPosition */
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits< FSignData > : public TStructOpsTypeTraitsBase2< FSignData >
+struct TStructOpsTypeTraits< FSignData > : public TStructOpsTypeTraitsBase2< FSignData >
 {
 	enum
 	{
@@ -321,7 +321,7 @@ struct FACTORYGAME_API TStructOpsTypeTraits< FSignData > : public TStructOpsType
 
 // Sign Interface
 UINTERFACE( Blueprintable )
-class FACTORYGAME_API UFGSignInterface : public UInterface
+class UFGSignInterface : public UInterface
 {
 	GENERATED_BODY()
 };

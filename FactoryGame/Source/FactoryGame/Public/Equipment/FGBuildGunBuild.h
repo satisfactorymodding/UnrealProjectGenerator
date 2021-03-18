@@ -1,4 +1,4 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -6,8 +6,8 @@
 #include "ItemAmount.h"
 #include "FGBuildableSubsystem.h"
 #include "FGConstructionMessageInterface.h"
-#include "HologramSplinePathMode.h"
-#include "DelegateCombinations.h"
+#include "Hologram/HologramSplinePathMode.h"
+#include "Delegates/DelegateCombinations.h"
 #include "FGBuildGunBuild.generated.h"
 
 
@@ -15,7 +15,7 @@
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FSplineModeChangedDelegate, EHologramSplinePathMode, newMode );
 
 USTRUCT()
-struct FACTORYGAME_API FConnectionRepresentation
+struct FConnectionRepresentation
 {
 	GENERATED_BODY()
 
@@ -39,7 +39,7 @@ struct FACTORYGAME_API FConnectionRepresentation
 };
 
 USTRUCT()
-struct FACTORYGAME_API FFactoryClearanceData
+struct FFactoryClearanceData
 {
 	GENERATED_BODY()
 

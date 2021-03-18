@@ -9,7 +9,7 @@
 
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FTutorialData
+struct FTutorialData
 {
 	GENERATED_BODY()
 

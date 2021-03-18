@@ -1,6 +1,8 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
-#include "FGEquipment.h"
+#include "Equipment/FGEquipment.h"
 #include "FGInventoryComponent.h"
 #include "FGChainsaw.generated.h"
 
@@ -64,6 +66,9 @@ public:
 
 	/** returns true if the specified player has a chainsaw equipped */
 	static bool DoesPlayerHaveChainsawEquipped( class AFGCharacterPlayer* player );
+
+	UFUNCTION( BlueprintImplementableEvent, Category = "Chainsaw" )
+	void CreatePhysicsFromFoliage( UStaticMesh* inMesh, FTransform inTransform );
 protected:
 	/**
 	 * Consumes fuel, returns false if we are out of fuel

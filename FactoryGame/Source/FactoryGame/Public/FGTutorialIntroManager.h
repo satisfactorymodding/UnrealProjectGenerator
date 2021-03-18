@@ -1,18 +1,19 @@
-// Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "FGSubsystem.h"
 #include "FGTutorialSubsystem.h"
-#include "FGResourceDescriptor.h"
+#include "Resources/FGResourceDescriptor.h"
 #include "FGTutorialIntroManager.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE( FIntroSequenceStateUpdate );
+DECLARE_DYNAMIC_MULTICAST_DELEGATE( FCurrentIntroStepUpdate );
 
 //Steps in the intro tutorial
 UENUM( BlueprintType )
-enum class EIntroTutorialSteps :uint8
+enum class EIntroTutorialSteps : uint8
 {
 	ITS_NONE			UMETA( DisplayName = "No tutorial" ),
 	ITS_INTRO			UMETA( DisplayName = "Intro state with message" ),
@@ -31,7 +32,7 @@ enum class EIntroTutorialSteps :uint8
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FRecipeAmountPair
+struct FRecipeAmountPair
 {
 	GENERATED_BODY()
 
@@ -45,7 +46,7 @@ struct FACTORYGAME_API FRecipeAmountPair
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FTutorialHintData
+struct FTutorialHintData
 {
 	GENERATED_BODY()
 
@@ -210,6 +211,10 @@ public:
 	/** Called when mHasCompletedIntroSequence updates */
 	UPROPERTY(BlueprintAssignable,Category="Tutorial")
 	FIntroSequenceStateUpdate mOnIntroSequenceStateUpdated;
+
+	/** Called when mCurrentLocalTutorial updates */
+	UPROPERTY(BlueprintAssignable,Category="Tutorial")
+	FCurrentIntroStepUpdate mOnCurrentIntroStepUpdated;
 
 protected:
 	/** Has a trading post been built */

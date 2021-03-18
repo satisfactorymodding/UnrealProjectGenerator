@@ -1,11 +1,11 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "Animation/AnimInstance.h"
 #include "Animation/AnimInstanceProxy.h"
-#include "FGBuildableTrainPlatform.h"
+#include "Buildables/FGBuildableTrainPlatform.h"
 #include "FGAnimInstanceTrainDocking.generated.h"
 
 USTRUCT( BlueprintType )

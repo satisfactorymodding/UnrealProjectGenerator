@@ -1,8 +1,11 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
-#include "Object.h"
+#include "UObject/Object.h"
 #include "FGAtmosphereVolume.h"
 #include "FGAtmosphereUpdater.generated.h"
+
 
 /**
  * Exists both in EditorEngine and GameEngine, encapsulates the interpolation ExponentialHeightFog
@@ -14,10 +17,9 @@ class FACTORYGAME_API UFGAtmosphereUpdater : public UObject
 public:
 	/** Update the value of the height fog in each world */
 	void Tick( float dt );
-public: //MODDING EDIT protected -> public
+protected:
 	/** Apply the fog settings to the current world */
 	void ApplyFogSettings( const FExponentialFogSettings& fogSettings, class UWorld* world );
-protected: // MODDING EDIT
 
 	/** Interpolate in src settings into destination, when alpha is 1, then take entire src */
 	void InterpolateFogSettings( FExponentialFogSettings& dest, const FExponentialFogSettings& src, float alpha ) const;
@@ -30,6 +32,7 @@ protected: // MODDING EDIT
 
 	/** returns true if we should update the given world */
 	bool ShouldUpdateWorld( UWorld* world ) const;
+
 protected:
 	/** The worlds we want to affect */
 	UPROPERTY()

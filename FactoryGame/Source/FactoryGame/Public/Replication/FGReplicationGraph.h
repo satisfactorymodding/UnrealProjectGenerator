@@ -1,4 +1,4 @@
-// Copyright 2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -25,7 +25,7 @@ enum class EClassRepPolicy : uint8
 };
 
 USTRUCT()
-struct FACTORYGAME_API FConnectionAlwaysRelevant_NodePair
+struct FConnectionAlwaysRelevant_NodePair
 {
 	GENERATED_BODY()
 
@@ -129,9 +129,6 @@ protected:
 	/** Callback to when a building registers (or unregisters) a player. Handles dormancy state changes for buildables in these cases. */
 	void OnBuildableRegistedPlayerChanged( class AFGBuildable* buildable, class AFGCharacterPlayer* player, bool isInUse );
 
-	/** Callback on when buildables production status changes. Handles any replication needed behavior for buildables when this happens. */
-	void OnFactoryProductionStatusChanged( class AFGBuildable* buildable, EProductionStatus oldStatus, EProductionStatus newStatus );
-
 	/** Whether the given mapping is spatialized in any way */
 	FORCEINLINE bool IsSpatialized( EClassRepPolicy mapping ) { return mapping >= EClassRepPolicy::CRP_Spatialize_Static; }
 
@@ -141,13 +138,13 @@ protected:
 	TClassMap<EClassRepPolicy> mClassRepPolicies;
 
 	// The size in uunits of each grid cell
-	float mGridCellSize = 100000.f; // [Dylan] Was 100000.f
+	float mGridCellSize = 50000.f; // [Dylan] Was 100000.f
 	
 	// Essentially "Min X" for replication. This is just an initial value. The system will reset itself if actors appears outside of this.
-	float mSpatialBiasX = -15000.f;
+	float mSpatialBiasX = -400000.f;
 	
 	// Essentially "Min Y" for replication. This is just an initial value. The system will reset itself if actors appears outside of this.
-	float mSpatialBiasY = -15000.f;
+	float mSpatialBiasY = -400000.f;
 
 	// How many buckets to spread dynamic, spatialized actors across. High number = more buckets = smaller effective replication frequency. This happens before individual actors do their own NetUpdateFrequency check.
 	float mDynamicActorFrequencyBuckets = 4;
@@ -168,7 +165,7 @@ private:
 };
 
 UCLASS()
-class FACTORYGAME_API UFGReplicationGraphNode_ConditionallyAlwaysRelevant : public UReplicationGraphNode_ActorList
+class UFGReplicationGraphNode_ConditionallyAlwaysRelevant : public UReplicationGraphNode_ActorList
 {
 public:
 	GENERATED_BODY()
@@ -188,7 +185,7 @@ private:
 
 // Grid Node for prioritizing Actors Close to the player and inside their view frustum. Based on the DynamicSpatialFrequency Node. Intended for Actors that don't move and have a heavy Networking footprint (Tex. Conveyors)
 UCLASS()
-class FACTORYGAME_API UFGReplicationGraphNode_ConveyorSpatialFrequency : public UReplicationGraphNode_GridCell
+class UFGReplicationGraphNode_ConveyorSpatialFrequency : public UReplicationGraphNode_GridCell
 {
 	GENERATED_BODY()
 
@@ -390,7 +387,6 @@ protected:
 		int32 BucketReplicationPeriod = 0;
 		int32 FramesTillReplicate = 0;
 		int32 LastReplicationFrame = 0;
-		int32 BucketDelayExponent = 0;
 
 		// ZBucket globals
 		inline static int32 NumActorsToSubdivide = 20; // A single bucket with more actors than this should attempt to split and redistribute to the new buckets
@@ -493,8 +489,8 @@ protected:
 					return i;
 				}
 			}
-
-			UE_LOG( LogConveyorFrequencyNodes, Warning, TEXT("Failed to find appropriate ZBucket for world location: %f"), zLoc);
+			
+			UE_LOG( LogConveyorFrequencyNodes, Verbose, TEXT("Failed to find appropriate ZBucket for world location: %f"), zLoc);
 			return 0;
 		}
 
@@ -783,7 +779,7 @@ protected:
 
 /** This is a specialized node for handling PlayerState replication in a frequency limited fashion. It tracks all player states but only returns a subset of them to the replication driver each frame. */
 UCLASS()
-class FACTORYGAME_API UFGReplicationGraphNode_PlayerStateFrequencyLimiter : public UReplicationGraphNode
+class UFGReplicationGraphNode_PlayerStateFrequencyLimiter : public UReplicationGraphNode
 {
 	GENERATED_BODY()
 
@@ -808,7 +804,7 @@ private:
 };
 
 UCLASS()
-class FACTORYGAME_API UFGReplicationGraphNode_AlwaysRelevant_ForConnection : public UReplicationGraphNode_AlwaysRelevant_ForConnection
+class UFGReplicationGraphNode_AlwaysRelevant_ForConnection : public UReplicationGraphNode_AlwaysRelevant_ForConnection
 {
 public:
 	GENERATED_BODY()

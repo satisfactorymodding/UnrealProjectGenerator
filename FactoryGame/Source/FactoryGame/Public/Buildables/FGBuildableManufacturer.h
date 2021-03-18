@@ -1,10 +1,10 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
-#include "FGBuildableFactory.h"
-#include "FGReplicationDetailInventoryComponent.h"
-#include "FGReplicationDetailActor_Manufacturing.h"
+#include "Buildables/FGBuildableFactory.h"
+#include "Replication/FGReplicationDetailInventoryComponent.h"
+#include "Replication/FGReplicationDetailActor_Manufacturing.h"
 #include "FGBuildableManufacturer.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnNewRecipeDelegate, TSubclassOf< class UFGRecipe >, newRecipe );
@@ -112,7 +112,7 @@ protected:
 
 	/** Called when NewRecipe is replicated */
 	UFUNCTION()
-	void OnRep_CurrentRecipe();
+	virtual void OnRep_CurrentRecipe();
 
 	virtual void OnRep_ReplicationDetailActor() override;
 

@@ -1,8 +1,8 @@
-// Copyright 2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
-#include "FGReplicationDetailActor_BuildableFactory.h"
+#include "Replication/FGReplicationDetailActor_BuildableFactory.h"
 #include "FGReplicationDetailActor_Manufacturing.generated.h"
 
 UCLASS()

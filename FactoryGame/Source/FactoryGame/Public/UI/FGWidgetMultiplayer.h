@@ -1,3 +1,5 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 #include "Blueprint/UserWidget.h"
@@ -13,7 +15,7 @@ enum class EMultiplayerButtonType : uint8
 };
 
 UCLASS()
-class FACTORYGAME_API UFGWidgetMultiplayer : public UUserWidget
+class UFGWidgetMultiplayer : public UUserWidget
 {
 	GENERATED_BODY()
 public:

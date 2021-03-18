@@ -1,9 +1,11 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 
 #pragma once
 
-#include "FGBuildable.h"
+#include "Buildables/FGBuildable.h"
 #include "FGBuildablePoleBase.generated.h"
 
 

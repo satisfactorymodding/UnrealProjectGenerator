@@ -1,4 +1,4 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -12,7 +12,7 @@
  * Struct containing quantized fluid content for a more optimized replication.
  */
 USTRUCT()
-struct FACTORYGAME_API FQuantizedReservoirIndicatorData
+struct FQuantizedReservoirIndicatorData
 {
 	GENERATED_BODY()
 public:

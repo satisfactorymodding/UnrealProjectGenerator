@@ -1,4 +1,4 @@
-// Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -9,7 +9,7 @@
 DECLARE_DYNAMIC_DELEGATE( FAudioMessageConcludedDelegate );
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FAudioSubtitlePair
+struct FAudioSubtitlePair
 {
 	GENERATED_BODY()
 

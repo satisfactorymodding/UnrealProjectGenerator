@@ -1,10 +1,10 @@
-// Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
-#include "CanvasPanel.h"
+#include "Components/CanvasPanel.h"
 #include "FGCompassWidget.generated.h"
 
 /**

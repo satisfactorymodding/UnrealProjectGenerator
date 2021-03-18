@@ -1,10 +1,9 @@
-#pragma once
-
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
-#include "FGBuildablePipeBase.h"
+
+#include "Buildables/FGBuildablePipeBase.h"
 #include "FGPipeHyperInterface.h"
 #include "FGBuildablePipeHyper.generated.h"
 

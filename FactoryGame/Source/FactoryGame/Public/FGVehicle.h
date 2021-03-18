@@ -1,11 +1,11 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "FGUseableInterface.h"
 #include "FGSignificanceInterface.h"
 #include "FGSaveInterface.h"
-#include "FGAggroTargetInterface.h"
+#include "AI/FGAggroTargetInterface.h"
 #include "FGDriveablePawn.h"
 #include "FGDismantleInterface.h"
 #include "FGBlueprintFunctionLibrary.h"
@@ -18,7 +18,7 @@ class FDebugDisplayInfo;
 
 /** Physics data we want to be able to restore, we store the bone name to be able to change the bone structure in updates */
 USTRUCT()
-struct FACTORYGAME_API FVehiclePhysicsData
+struct FVehiclePhysicsData
 {
 	GENERATED_BODY()
 	
@@ -141,7 +141,6 @@ public:
 	//Begin IFGSignificanceInterface
 	virtual void GainedSignificance_Implementation() override;
 	virtual	void LostSignificance_Implementation() override;
-	virtual	float GetSignificanceBias() override;
 	virtual float GetSignificanceRange() override;
 	//End IFGSignificanceInterface
 
@@ -333,6 +332,10 @@ protected:
 	void ShowOutline( EOutlineColor color ) const;
 	/** Hide the outline for the vehicle. */
 	void HideOutline();
+
+	/** Called to update the camera when this vehicle is possessed by a player. */
+	UFUNCTION( BlueprintImplementableEvent )
+	void UpdateCamera( float DeltaTime );
 private:
 	/** Helpers */
 	void SetSelfDriving( bool newSelfDriving );
@@ -447,10 +450,6 @@ private:
 
 	/** Indicates if the vehicle is within significance distance */
 	uint8 mIsSignificant : 1;
-
-	/** A bias to the significance value */
-	UPROPERTY( EditDefaultsOnly, Category = "Significance" )
-	float mSignificanceBias;
 
 	/* Forces vehicle to be in simulation mode */
 	bool mForceSimulationMode;

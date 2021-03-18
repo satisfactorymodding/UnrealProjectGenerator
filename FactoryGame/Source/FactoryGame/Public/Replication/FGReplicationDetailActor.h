@@ -1,8 +1,8 @@
-// Copyright 2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
-#include "FGReplicationDependencyActorInterface.h"
+#include "Replication/FGReplicationDependencyActorInterface.h"
 #include "FGInventoryComponent.h"
 #include "FGReplicationDetailActor.generated.h"
 

@@ -1,6 +1,8 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
-#include "FGEquipmentAttachment.h"
+#include "Equipment/FGEquipmentAttachment.h"
 #include "FGWeaponAttachment.generated.h"
 
 UCLASS()

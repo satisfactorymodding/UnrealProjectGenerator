@@ -1,10 +1,10 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "Buildables/FGBuildableFactory.h"
-#include "FGBuildableRailroadTrack.h"
+#include "Buildables/FGBuildableRailroadTrack.h"
 #include "FGBuildableTrainPlatform.generated.h"
 
 

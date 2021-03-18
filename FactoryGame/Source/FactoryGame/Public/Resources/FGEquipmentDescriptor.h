@@ -1,9 +1,9 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "Resources/FGItemDescriptor.h"
-#include "FGEquipment.h" // I really want to get rid of this include, but removing it adds compile errors
+#include "Equipment/FGEquipment.h" // I really want to get rid of this include, but removing it adds compile errors
 #include "FGEquipmentDescriptor.generated.h"
 
 /**

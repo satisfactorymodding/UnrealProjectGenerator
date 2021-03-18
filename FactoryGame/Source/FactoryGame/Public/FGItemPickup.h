@@ -1,3 +1,5 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 #include "GameFramework/Actor.h"
@@ -5,7 +7,7 @@
 #include "FGSaveInterface.h"
 #include "FGInventoryComponent.h"
 #include "FGSignificanceInterface.h"
-#include "FGStaticReplicatedActor.h"
+#include "Replication/FGStaticReplicatedActor.h"
 #include "FGItemPickup.generated.h"
 
 /**

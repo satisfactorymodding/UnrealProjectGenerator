@@ -1,15 +1,15 @@
-// Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include "FGItemDescriptor.h"
+#include "Resources/FGItemDescriptor.h"
 #include "FGMaterialEffectComponent.generated.h"
 
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FCostIngredientEffectActorInfo
+struct FCostIngredientEffectActorInfo
 {
 	GENERATED_BODY()
 
@@ -27,7 +27,7 @@ struct FACTORYGAME_API FCostIngredientEffectActorInfo
 };
 
 USTRUCT()
-struct FACTORYGAME_API FCachedMaterialArray
+struct FCachedMaterialArray
 {
 	GENERATED_BODY()
 

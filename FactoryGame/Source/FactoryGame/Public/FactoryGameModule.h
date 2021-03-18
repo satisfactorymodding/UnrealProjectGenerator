@@ -1,8 +1,10 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 #include "Modules/ModuleManager.h"
 
-class FACTORYGAME_API FFactoryGameModule : public FDefaultGameModuleImpl
+class FFactoryGameModule : public FDefaultGameModuleImpl
 {
 public:
 	/**

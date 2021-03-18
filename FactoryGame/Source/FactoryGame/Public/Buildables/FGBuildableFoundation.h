@@ -1,8 +1,8 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
-#include "FGBuildableFactoryBuilding.h"
+#include "Buildables/FGBuildableFactoryBuilding.h"
 #include "FGBuildableFoundation.generated.h"
 
 /**

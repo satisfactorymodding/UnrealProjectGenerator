@@ -1,8 +1,8 @@
-// Copyright 2017 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
-#include "FGBuildableManufacturer.h"
+#include "Buildables/FGBuildableManufacturer.h"
 #include "FGBuildableConverter.generated.h"
 
 UCLASS( Blueprintable, Meta = (AutoJson=false) )

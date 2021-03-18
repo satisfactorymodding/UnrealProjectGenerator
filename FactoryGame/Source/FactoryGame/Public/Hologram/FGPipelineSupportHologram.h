@@ -1,11 +1,11 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
-#include "FGFactoryHologram.h"
+#include "Hologram/FGFactoryHologram.h"
 #include "FGPipeConnectionComponent.h"
-#include "FGPoleDescriptor.h"
+#include "Resources/FGPoleDescriptor.h"
 #include "FGPipelineSupportHologram.generated.h"
 
 /**

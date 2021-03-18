@@ -1,4 +1,4 @@
-// Copyright 2016-2020 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -7,7 +7,7 @@
 #include "FGPipelinePumpHologram.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FPumpHeadLiftLocationPath
+struct FPumpHeadLiftLocationPath
 {
 	GENERATED_BODY()
 public:

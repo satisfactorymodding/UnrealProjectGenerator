@@ -1,11 +1,11 @@
-// Copyright 2017 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "Buildables/FGBuildableFactory.h"
-#include "FGReplicationDetailInventoryComponent.h"
-#include "FGReplicationDetailActor_Storage.h"
+#include "Replication/FGReplicationDetailInventoryComponent.h"
+#include "Replication/FGReplicationDetailActor_Storage.h"
 #include "FGBuildableConveyorAttachment.generated.h"
 
 /**

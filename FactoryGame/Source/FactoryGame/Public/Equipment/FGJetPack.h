@@ -1,9 +1,9 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
-#include "FGEquipment.h"
-#include "FGEquipmentAttachment.h"
+#include "Equipment/FGEquipment.h"
+#include "Equipment/FGEquipmentAttachment.h"
 #include "FGJetPack.generated.h"
 
 UCLASS()

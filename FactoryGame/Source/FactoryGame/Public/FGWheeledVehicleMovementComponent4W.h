@@ -1,3 +1,5 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 #include "WheeledVehicleMovementComponent4W.h"
@@ -6,7 +8,7 @@
 #include "FGWheeledVehicleMovementComponent4W.generated.h"
 
 UCLASS(meta = (BlueprintSpawnableComponent))
-class FACTORYGAME_API UFGWheeledVehicleMovementComponent4W : public UWheeledVehicleMovementComponent4W
+class UFGWheeledVehicleMovementComponent4W : public UWheeledVehicleMovementComponent4W
 {
 	GENERATED_BODY()
 public:

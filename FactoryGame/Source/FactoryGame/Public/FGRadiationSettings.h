@@ -1,15 +1,15 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "Engine/DeveloperSettings.h"
 #include "FGRadioactivitySubsystem.h"
-#include "FGResourceNode.h"
+#include "Resources/FGResourceNode.h"
 #include "FGRadiationSettings.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FRadiationVisualization
+struct FRadiationVisualization
 {
 	GENERATED_BODY()
 public:

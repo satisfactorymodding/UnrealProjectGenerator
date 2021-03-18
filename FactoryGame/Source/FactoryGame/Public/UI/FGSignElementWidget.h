@@ -1,4 +1,4 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -6,7 +6,7 @@
 #include "Blueprint/UserWidget.h"
 #include "FGSignElementWidget.generated.h"
 
-struct FACTORYGAME_API FSignElementWidgetData
+struct FSignElementWidgetData
 {
 	class UFGSignCanvasWidget* CanvasParent;
 	class UFGSignElementData* ElementData;

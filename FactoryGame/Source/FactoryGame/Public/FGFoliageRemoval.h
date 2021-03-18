@@ -1,17 +1,17 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "GameFramework/Actor.h"
 #include "FGSaveInterface.h"
 #include "Engine/NetSerialization.h"
-#include "FGStaticReplicatedActor.h"
+#include "Replication/FGStaticReplicatedActor.h"
 #include "FGFoliageRemoval.generated.h"
 
 /** Data about removed instances */
 /** We can't send the id of the instance to clients, as that requires us to maintain a commandbuffer with all done commands to be able to get the same id's a server/client */
 USTRUCT()
-struct FACTORYGAME_API FRemovedInstance : public FFastArraySerializerItem
+struct FRemovedInstance : public FFastArraySerializerItem
 {
 	GENERATED_BODY()
 	
@@ -37,7 +37,7 @@ struct FACTORYGAME_API FRemovedInstance : public FFastArraySerializerItem
 
 /** Wrapper around the Items struct to enable custom delta serialization (we send a part of the data to the client every frame instead of sending it all in one frame) */
 USTRUCT()
-struct FACTORYGAME_API FRemovedInstanceArray : public FFastArraySerializer
+struct FRemovedInstanceArray : public FFastArraySerializer
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -67,7 +67,7 @@ struct FACTORYGAME_API FRemovedInstanceArray : public FFastArraySerializer
 
 /** Enables NetDeltaSerialize in FRemovedInstanceArray with template magic */
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits< FRemovedInstanceArray > : public TStructOpsTypeTraitsBase2< FRemovedInstanceArray >
+struct TStructOpsTypeTraits< FRemovedInstanceArray > : public TStructOpsTypeTraitsBase2< FRemovedInstanceArray >
 {
 	enum
 	{

@@ -1,4 +1,4 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -8,7 +8,7 @@
 #include "FGProximitySubsystem.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FMapAreaParticleCollection
+struct FMapAreaParticleCollection
 {
 	GENERATED_BODY()
 
@@ -32,7 +32,7 @@ public:
 
 	/** Player entered a new map area */
 	UFUNCTION( BlueprintNativeEvent, Category = "FactoryGame|Proximity" )
-	void OnEnteredMapArea( TSubclassOf< class UFGMapArea > newArea );
+	void OnEnteredMapArea( class AFGPlayerControllerBase* playerController, TSubclassOf< class UFGMapArea > newArea );
 
 	/** Owning controller got a new pawn */
 	UFUNCTION( BlueprintNativeEvent, Category = "FactoryGame|Proximity" )

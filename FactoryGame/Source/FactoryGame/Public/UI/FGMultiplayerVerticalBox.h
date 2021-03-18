@@ -1,10 +1,12 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 #include "Components/VerticalBox.h"
 #include "FGMultiplayerVerticalBox.generated.h"
 
 UCLASS()
-class FACTORYGAME_API UFGMultiplayerVerticalBox : public UVerticalBox
+class UFGMultiplayerVerticalBox : public UVerticalBox
 {
 	GENERATED_BODY()
 

@@ -1,4 +1,4 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -8,7 +8,7 @@
 #include "FGFactorySettings.generated.h"
 
 USTRUCT(BlueprintType)
-struct FACTORYGAME_API FCategory
+struct FCategory
 {
 	GENERATED_BODY()
 
@@ -31,7 +31,7 @@ struct FACTORYGAME_API FCategory
 };
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FViscosityToPuddlePair
+struct FViscosityToPuddlePair
 {
 	GENERATED_BODY()
 	

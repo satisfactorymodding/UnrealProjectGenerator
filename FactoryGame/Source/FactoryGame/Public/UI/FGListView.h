@@ -1,4 +1,4 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -7,7 +7,7 @@
 #include "Widgets/SWidget.h"
 #include "Widgets/SBoxPanel.h"
 #include "Components/PanelWidget.h"
-#include "Views/ITypedTableView.h"
+#include "Framework/Views/ITypedTableView.h"
 #include "FGListView.generated.h"
 
 class UFGListViewSlot;
@@ -21,7 +21,7 @@ class UFGListViewSlot;
  * * Selection Functionality
  */
 UCLASS()
-class FACTORYGAME_API UFGListView : public UPanelWidget
+class UFGListView : public UPanelWidget
 {
 	GENERATED_UCLASS_BODY()
 

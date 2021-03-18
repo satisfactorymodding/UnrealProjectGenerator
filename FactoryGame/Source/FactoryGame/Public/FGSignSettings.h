@@ -1,4 +1,4 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -9,7 +9,7 @@
 
 
 USTRUCT( Blueprintable )
-struct FACTORYGAME_API FSignColorData
+struct FSignColorData
 {
 	GENERATED_BODY()
 

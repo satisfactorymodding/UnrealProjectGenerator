@@ -1,12 +1,15 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 #include "FGWorldCreationInterface.h"
 #include "FGEngineCommon.generated.h"
 
+
 /**
  * Filtered and gathered stats we get during each frame
  */
-struct FACTORYGAME_API FCollectedStats
+struct FCollectedStats
 {
 	// How long was the frame
 	float FrameTime;
@@ -24,7 +27,7 @@ struct FACTORYGAME_API FCollectedStats
 /** 
  * Interface for stats collectors for our nightly stats gathering from maps
  */
-struct FACTORYGAME_API IStatCollector
+struct IStatCollector
 {
 	virtual ~IStatCollector(){}
 

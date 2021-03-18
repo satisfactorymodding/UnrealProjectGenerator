@@ -1,9 +1,9 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "FGBuildableRailroadTrack.h"
+#include "Buildables/FGBuildableRailroadTrack.h"
 #include "RailroadNavigation.h"
 #include "FGRailroadFunctionLibrary.generated.h"
 

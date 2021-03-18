@@ -1,8 +1,8 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
-#include "FGEquipment.h"
+#include "Equipment/FGEquipment.h"
 #include "FGHookshot.generated.h"
 
 UCLASS()

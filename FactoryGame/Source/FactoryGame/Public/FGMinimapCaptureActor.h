@@ -1,4 +1,4 @@
-// Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -29,7 +29,7 @@ class FACTORYGAME_API UFGHeightHideUserData : public UAssetUserData
 };
 
 USTRUCT()
-struct FACTORYGAME_API FFGHeightData
+struct FFGHeightData
 {
 	GENERATED_BODY()
 

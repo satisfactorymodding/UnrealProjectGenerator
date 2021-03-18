@@ -1,10 +1,12 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 #include "OnlineSessionClient.h"
 #include "FGOnlineSessionClient.generated.h"
 
 USTRUCT(BlueprintType)
-struct FACTORYGAME_API FPendingInvite
+struct FPendingInvite
 {
 	GENERATED_BODY();
 public:
@@ -49,7 +51,7 @@ FORCEINLINE uint32 GetTypeHash( const FPendingInvite& invite )
  * Will detect that we receive a invite and expose functionality to join invites and react to the invite
  */
 UCLASS()
-class FACTORYGAME_API UFGOnlineSessionClient : public UOnlineSessionClient
+class UFGOnlineSessionClient : public UOnlineSessionClient
 {
 	GENERATED_BODY()
 public:

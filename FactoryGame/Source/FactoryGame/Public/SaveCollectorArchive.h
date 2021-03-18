@@ -1,8 +1,10 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
 #include "Serialization/Archive.h"
 
-class FACTORYGAME_API FSaveCollectorArchive : public FArchive
+class FSaveCollectorArchive : public FArchive
 {
 	/** Handles serialization of UObject references */
 	FArchive& operator<<( class UObject*& Obj );

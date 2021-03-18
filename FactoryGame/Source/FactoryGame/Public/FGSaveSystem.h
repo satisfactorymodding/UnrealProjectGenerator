@@ -1,6 +1,8 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
-#include "Object.h"
+#include "UObject/Object.h"
 #include "FGOnlineSessionSettings.h"
 #include "FGSaveSystem.generated.h"
 
@@ -39,7 +41,7 @@ typedef FString SessionNameType;
 
 /** The header with information about a save game */
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FSaveHeader
+struct FSaveHeader
 {
 	GENERATED_BODY()
 
@@ -135,7 +137,7 @@ struct FACTORYGAME_API FSaveHeader
 
 /** Enable custom net delta serialization for the above struct. */
 template<>
-struct FACTORYGAME_API TStructOpsTypeTraits< FSaveHeader > : public TStructOpsTypeTraitsBase2< FSaveHeader >
+struct TStructOpsTypeTraits< FSaveHeader > : public TStructOpsTypeTraitsBase2< FSaveHeader >
 {
 	enum
 	{
@@ -162,7 +164,7 @@ enum class ESaveSortDirection : uint8
  * For when a artist/LD has changed the name of a map
  */
 USTRUCT()
-struct FACTORYGAME_API FMapRedirector
+struct FMapRedirector
 {
 	GENERATED_BODY()
 
@@ -179,7 +181,7 @@ DECLARE_DELEGATE_ThreeParams( FOnEnumerateSaveGamesComplete, bool, const TArray<
 DECLARE_DELEGATE_TwoParams( FOnDeleteSaveGameComplete, bool, void* );
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FSessionSaveStruct
+struct FSessionSaveStruct
 {
 	GENERATED_BODY()
 
@@ -211,7 +213,7 @@ struct FACTORYGAME_API FSessionSaveStruct
  * BlueprintCallable function in this class.
  */
 UCLASS(Config=Engine)
-class FACTORYGAME_API UFGSaveSystem : public UObject
+class UFGSaveSystem : public UObject
 {
 	GENERATED_BODY()
 public:

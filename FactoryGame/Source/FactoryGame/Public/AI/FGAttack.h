@@ -1,6 +1,8 @@
+// Copyright Coffee Stain Studios. All Rights Reserved.
+
 #pragma once
 
-#include "FGAggroTargetInterface.h"
+#include "AI/FGAggroTargetInterface.h"
 #include "FGAttack.generated.h"
 
 

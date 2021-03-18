@@ -1,9 +1,9 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
-#include "FGUnlock.h"
+#include "Unlocks/FGUnlock.h"
 #include "FGUnlockMap.generated.h"
 
 /**

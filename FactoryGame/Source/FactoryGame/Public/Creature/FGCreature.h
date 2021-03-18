@@ -1,4 +1,4 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -27,7 +27,7 @@ enum class EMoveSpeed :uint8
 };
 
 USTRUCT( BlueprintType ) 
-struct FACTORYGAME_API FMoveSpeedPair
+struct FMoveSpeedPair
 {
 	GENERATED_BODY()
 

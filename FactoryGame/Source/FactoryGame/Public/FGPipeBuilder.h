@@ -1,4 +1,4 @@
-// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
@@ -8,7 +8,7 @@
 #include "FGPipeBuilder.generated.h"
 
 USTRUCT( BlueprintType )
-struct FACTORYGAME_API FSplineSupportPair
+struct FSplineSupportPair
 {
 	GENERATED_BODY()
 
