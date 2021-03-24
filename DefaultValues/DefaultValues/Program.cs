@@ -140,7 +140,7 @@ namespace DefaultValues
         private static Dictionary<string, string> USetters = new Dictionary<string, string>()
         {
             { "bHidden", "SetHidden" },
-            { "bReplicates", "SetIsReplicated" },
+            { "bReplicates", "SetIsReplicatedByDefault" },
             { "bReplicateMovement", "SetReplicatingMovement" }
         };
         private static Dictionary<string, string> ContainsInclude = new Dictionary<string, string>()
