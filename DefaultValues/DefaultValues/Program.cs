@@ -53,7 +53,19 @@ namespace DefaultValues
             new Tuple<string, string>("UFGInstancedSplineMeshComponent", "FGInstancedSplineMeshComponent.h"),
             new Tuple<string, string>("UEnvQueryContext_Querier", "EnvironmentQuery/Contexts/EnvQueryContext_Querier.h"),
             new Tuple<string, string>("UFloatingPawnMovement", "GameFramework/FloatingPawnMovement.h"),
-            new Tuple<string, string>("UNavArea_Obstacle", "NavAreas/NavArea_Obstacle.h")
+            new Tuple<string, string>("UNavArea_Obstacle", "NavAreas/NavArea_Obstacle.h"),
+            new Tuple<string, string>("USpotLightComponent", "Components/SpotLightComponent.h"),
+            new Tuple<string, string>("UMaterial", "Materials/Material.h"),
+            new Tuple<string, string>("AAIController", "AIController.h"),
+            new Tuple<string, string>("ADebugCameraController", "Engine/DebugCameraController.h"),
+            new Tuple<string, string>("UEnvQueryItemType_Point", "EnvironmentQuery/Items/EnvQueryItemType_Point.h"),
+            new Tuple<string, string>("AParticleEventManager", "Particles/ParticleEventManager.h"),
+            new Tuple<string, string>("UEngineMessage", "GameFramework/EngineMessage.h"),
+            new Tuple<string, string>("ASpectatorPawn", "GameFramework/SpectatorPawn.h"),
+            new Tuple<string, string>("AServerStatReplicator", "Engine/ServerStatReplicator.h"),
+            new Tuple<string, string>("UTexture2D", "Engine/Texture2D.h"),
+            new Tuple<string, string>("UNetReplicationGraphConnection", "ReplicationGraph.h"),
+            new Tuple<string, string>("UStaticMesh", "Engine/StaticMesh.h")
         };
         private static Dictionary<string, string> ParentClass = new Dictionary<string, string>();
         private static Dictionary<string, List<string>> ClassHierarchy = new Dictionary<string, List<string>>();
@@ -84,222 +96,32 @@ namespace DefaultValues
             "mDirectionalInscatteringColor",
             "OnComponentBeginOverlap",
             "mBuildableSubsystemClass",
-            "mFailedItemSinkMessages"
+            "mFailedItemSinkMessages",
+            "ActiveGameNameRedirects",
+            "NetDriverDefinitions",
+            "mCullDistances",
+            "mOutlineProxy",
+            "DefaultPhysicsVolumeClass",
+            "GameNetworkManagerClass",
+            "DefaultBookmarkClass",
+            "LastBookmarkClass",
         };
 
         private static Dictionary<string, Dictionary<string, string>> CustomImplementations = new Dictionary<string, Dictionary<string, string>>()
         {
-            { "TickGroup",
+            { "mAllowedInputWhenDead",
                 new Dictionary<string, string>() {
-                    { "0", "TG_PrePhysics" },
-                    { "1", "TG_StartPhysics" },
-                    { "2", "TG_DuringPhysics" },
-                    { "3", "TG_EndPhysics" },
-                    { "4", "TG_PostPhysics" },
-                    { "5", "TG_PostUpdateWork" },
-                    { "6", "TG_LastDemotable" },
-                    { "7", "TG_NewlySpawned" },
-                    { "8", "TG_MAX" }
-                }
-            },
-            { "EndTickGroup",
-                new Dictionary<string, string>() {
-                    { "0", "TG_PrePhysics" },
-                    { "1", "TG_StartPhysics" },
-                    { "2", "TG_DuringPhysics" },
-                    { "3", "TG_EndPhysics" },
-                    { "4", "TG_PostPhysics" },
-                    { "5", "TG_PostUpdateWork" },
-                    { "6", "TG_LastDemotable" },
-                    { "7", "TG_NewlySpawned" },
-                    { "8", "TG_MAX" }
-                }
-            },
-            { "NetDormancy",
-                new Dictionary<string, string>() {
-                    { "0", "DORM_Never" },
-                    { "1", "DORM_Awake" },
-                    { "2", "DORM_DormantAll" },
-                    { "3", "DORM_DormantPartial" },
-                    { "4", "DORM_Initial" },
-                    { "5", "DORM_MAX" }
+                    { "PrimaryFire", "TEXT(\"PrimaryFire\")" },
+                    { "SecondaryFire", "TEXT(\"SecondaryFire\")" },
+                    { "PauseGame", "TEXT(\"PauseGame\")" },
+                    { "Chat", "TEXT(\"Chat\")" }
                 }
             },
             { "SweepType",
                 new Dictionary<string, string>() {
-                    { "0", "SimpleAndComplex" },
-                    { "1", "Simple" },
-                    { "2", "Complex" }
-                }
-            },
-            { "InitialOffset",
-                new Dictionary<string, string>() {
-                    { "0", "EOO_OffsetRandom" },
-                    { "1", "EOO_OffsetZero" },
-                    { "2", "EOO_MAX" }
-                }
-            },
-            { "PreInfinityExtrap",
-                new Dictionary<string, string>() {
-                    { "0", "RCCE_Cycle" },
-                    { "1", "RCCE_CycleWithOffset" },
-                    { "2", "RCCE_Oscillate" },
-                    { "3", "RCCE_Linear" },
-                    { "4", "RCCE_Constant" },
-                    { "5", "RCCE_None" }
-                }
-            },
-            { "PostInfinityExtrap",
-                new Dictionary<string, string>() {
-                    { "0", "RCCE_Cycle" },
-                    { "1", "RCCE_CycleWithOffset" },
-                    { "2", "RCCE_Oscillate" },
-                    { "3", "RCCE_Linear" },
-                    { "4", "RCCE_Constant" },
-                    { "5", "RCCE_None" }
-                }
-            },
-            { "mPreLandCollisionChannels",
-                new Dictionary<string, string>() {
-                    { "0", "ECC_WorldStatic" },
-                    { "1", "ECC_WorldDynamic" },
-                    { "2", "ECC_Pawn" },
-                    { "3", "ECC_Visibility" },
-                    { "4", "ECC_Camera" },
-                    { "5", "ECC_PhysicsBody" },
-                    { "6", "ECC_Vehicle" },
-                    { "7", "ECC_Destructible" },
-                    { "8", "ECC_EngineTraceChannel1" },
-                    { "9", "ECC_EngineTraceChannel2" },
-                    { "10", "ECC_EngineTraceChannel3" },
-                    { "11", "ECC_EngineTraceChannel4" },
-                    { "12", "ECC_EngineTraceChannel5" },
-                    { "13", "ECC_EngineTraceChannel6" },
-                    { "14", "ECC_GameTraceChannel1" },
-                    { "15", "ECC_GameTraceChannel2" },
-                    { "16", "ECC_GameTraceChannel3" },
-                    { "17", "ECC_GameTraceChannel4" },
-                    { "18", "ECC_GameTraceChannel5" },
-                    { "19", "ECC_GameTraceChannel6" },
-                    { "20", "ECC_GameTraceChannel7" },
-                    { "21", "ECC_GameTraceChannel8" },
-                    { "22", "ECC_GameTraceChannel9" },
-                    { "23", "ECC_GameTraceChannel10" },
-                    { "24", "ECC_GameTraceChannel11" },
-                    { "25", "ECC_GameTraceChannel12" },
-                    { "26", "ECC_GameTraceChannel13" },
-                    { "27", "ECC_GameTraceChannel14" },
-                    { "28", "ECC_GameTraceChannel15" },
-                    { "29", "ECC_GameTraceChannel16" },
-                    { "30", "ECC_GameTraceChannel17" },
-                    { "31", "ECC_GameTraceChannel18" },
-                    { "32", "ECC_OverlapAll_Deprecated" },
-                    { "33", "ECC_MAX" }
-                }
-            },
-            { "mPurity",
-                new Dictionary<string, string>() {
-                    { "0", "RP_Inpure" },
-                    { "1", "RP_Normal" },
-                    { "2", "RP_Pure" },
-                    { "3", "RP_MAX" }
-                }
-            },
-            { "mAmount",
-                new Dictionary<string, string>() {
-                    { "0", "RA_Poor" },
-                    { "1", "RA_Normal" },
-                    { "2", "RA_Rich" },
-                    { "3", "RA_Infinite" },
-                    { "4", "RA_MAX" }
-                }
-            },
-            { "mRotationAxis",
-                new Dictionary<string, string>() {
-                    { "0", "EAxis::Type::None" },
-                    { "1", "EAxis::Type::X" },
-                    { "2", "EAxis::Type::Y" },
-                    { "3", "EAxis::Type::Z" }
-                }
-            },
-            { "mDynamicPixelFormat",
-                new Dictionary<string, string>() {
-                    { "0", "PF_Unknown" },
-                    { "1", "PF_A32B32G32R32F" },
-                    { "2", "PF_B8G8R8A8" },
-                    { "3", "PF_G8" },
-                    { "4", "PF_G16" },
-                    { "5", "PF_DXT1" },
-                    { "6", "PF_DXT3" },
-                    { "7", "PF_DXT5" },
-                    { "8", "PF_UYVY" },
-                    { "9", "PF_FloatRGB" },
-                    { "10", "PF_FloatRGBA" },
-                    { "11", "PF_DepthStencil" },
-                    { "12", "PF_ShadowDepth" },
-                    { "13", "PF_R32_FLOAT" },
-                    { "14", "PF_G16R16" },
-                    { "15", "PF_G16R16F" },
-                    { "16", "PF_G16R16F_FILTER" },
-                    { "17", "PF_G32R32F" },
-                    { "18", "PF_A2B10G10R10" },
-                    { "19", "PF_A16B16G16R16" },
-                    { "20", "PF_D24" },
-                    { "21", "PF_R16F" },
-                    { "22", "PF_R16F_FILTER" },
-                    { "23", "PF_BC5" },
-                    { "24", "PF_V8U8" },
-                    { "25", "PF_A1" },
-                    { "26", "PF_FloatR11G11B10" },
-                    { "27", "PF_A8" },
-                    { "28", "PF_R32_UINT" },
-                    { "29", "PF_R32_SINT" },
-                    { "30", "PF_PVRTC2" },
-                    { "31", "PF_PVRTC4" },
-                    { "32", "PF_R16_UINT" },
-                    { "33", "PF_R16_SINT" },
-                    { "34", "PF_R16G16B16A16_UINT" },
-                    { "35", "PF_R16G16B16A16_SINT" },
-                    { "36", "PF_R5G6B5_UNORM" },
-                    { "37", "PF_R8G8B8A8" },
-                    { "38", "PF_A8R8G8B8" },
-                    { "39", "PF_BC4" },
-                    { "40", "PF_R8G8" },
-                    { "41", "PF_ATC_RGB" },
-                    { "42", "PF_ATC_RGBA_E" },
-                    { "43", "PF_ATC_RGBA_I" },
-                    { "44", "PF_X24_G8" },
-                    { "45", "PF_ETC1" },
-                    { "46", "PF_ETC2_RGB" },
-                    { "47", "PF_ETC2_RGBA" },
-                    { "48", "PF_R32G32B32A32_UINT" },
-                    { "49", "PF_R16G16_UINT" },
-                    { "50", "PF_ASTC_4x4" },
-                    { "51", "PF_ASTC_6x6" },
-                    { "52", "PF_ASTC_8x8" },
-                    { "53", "PF_ASTC_10x10" },
-                    { "54", "PF_ASTC_12x12" },
-                    { "55", "PF_BC6H" },
-                    { "56", "PF_BC7" },
-                    { "57", "PF_R8_UINT" },
-                    { "58", "PF_L8" },
-                    { "59", "PF_XGXR8" },
-                    { "60", "PF_R8G8B8A8_UINT" },
-                    { "61", "PF_R8G8B8A8_SNORM" },
-                    { "62", "PF_R16G16B16A16_UNORM" },
-                    { "63", "PF_R16G16B16A16_SNORM" },
-                    { "64", "PF_PLATFORM_HDR_0" },
-                    { "65", "PF_PLATFORM_HDR_1" },
-                    { "66", "PF_PLATFORM_HDR_2" },
-                    { "67", "PF_NV12" },
-                    { "68", "PF_MAX" }
-                }
-            },
-            { "mAllowedInputWhenDead",
-                new Dictionary<string, string>() {
-                    { "PrimaryFire", "TEXT(\"PrimaryFire\")" },
-                    { "PauseGame", "TEXT(\"PauseGame\")" },
-                    { "Chat", "TEXT(\"Chat\")" }
+                    { "SimpleAndComplex", "SimpleAndComplex" },
+                    { "Simple", "Simple" },
+                    { "Complex", "Complex" }
                 }
             }
         };
@@ -308,6 +130,18 @@ namespace DefaultValues
         {
             { "BrushComponent", "GetBrushComponent" },
             { "mCollisionComp", "GetCollisionSphere" }
+        };
+        private static Dictionary<string, string> ASetters = new Dictionary<string, string>()
+        {
+            { "bHidden", "SetHidden" },
+            { "bReplicates", "SetReplicates" },
+            { "bReplicateMovement", "SetReplicatingMovement" }
+        };
+        private static Dictionary<string, string> USetters = new Dictionary<string, string>()
+        {
+            { "bHidden", "SetHidden" },
+            { "bReplicates", "SetIsReplicated" },
+            { "bReplicateMovement", "SetReplicatingMovement" }
         };
         private static Dictionary<string, string> ContainsInclude = new Dictionary<string, string>()
         {
@@ -337,30 +171,30 @@ namespace DefaultValues
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 
-            FindAllClasses(args[0]);
+            FindAllClasses(args[0], args[0]);
             ConstructClassHierarchy();
 
             ReadDump(args[2]);
 
-            AddDefaultValues(args[1]);
+            AddDefaultValues(args[1], args[1]);
             stopwatch.Stop();
             Console.WriteLine($"Done. Added defaults for {ClassCtor.Count} classes in {stopwatch.ElapsedMilliseconds} ms.");
         }
 
-        private static void FindAllClasses(string path)
+        private static void FindAllClasses(string root, string path)
         {
             if (File.Exists(path))
             {
                 if (path.EndsWith(".h"))
-                    FindAllClassesInFile(path);
+                    FindAllClassesInFile(root, path);
             }
             else if (Directory.Exists(path))
             {
                 foreach (string dir in Directory.EnumerateDirectories(path))
-                    FindAllClasses(dir);
+                    FindAllClasses(root, dir);
                 foreach (string file in Directory.EnumerateFiles(path))
                     if (file.EndsWith(".h"))
-                        FindAllClassesInFile(file);
+                        FindAllClassesInFile(root, file);
             }
         }
 
@@ -373,7 +207,7 @@ namespace DefaultValues
             ClassProperties[propertyName].Add(isPrivate ? className : "#" + className);
         }
 
-        private static void FindAllClassesInFile(string filePath)
+        private static void FindAllClassesInFile(string root, string filePath)
         {
             string fileContent = File.ReadAllText(filePath);
             foreach(Match match in Regex.Matches(fileContent, @"^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?.*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline))
@@ -383,7 +217,7 @@ namespace DefaultValues
                 string classParents = match.Groups[5].Value;
                 string parentClass = Regex.Match(classParents, @"(:|,)\s+(public|protected|private)\s+(.+?)(?=,|\s|$)").Groups[3].Value;
                 ParentClass.Add(className, parentClass);
-                AllClasses.Add(new Tuple<string, string>(className, Path.GetFileName(filePath)));
+                AllClasses.Add(new Tuple<string, string>(className, filePath.Substring(root.Length).TrimStart(new char[]{ '\\', '/' }).Replace('\\', '/')));
                 classContents = Regex.Replace(classContents, @" ^ ([\s\t] *)(class|struct)\s([^\s]*?\s)??([^\s]*?)(\s?:\s?.*?)?\s*{((?:.|\n)*?)^\1};", "", RegexOptions.Multiline);
                 classContents = Regex.Replace(classContents, @"U(?:PROPERTY|FUNCTION)\s*\(.*?\)\s*($|\/)", "", RegexOptions.Multiline | RegexOptions.Singleline);
                 classContents = Regex.Replace(classContents, @"(public|private|protected):", ";$1:", RegexOptions.Multiline | RegexOptions.Singleline);
@@ -441,6 +275,16 @@ namespace DefaultValues
         private static bool IsClass(string classPath)
         {
             return classPath.StartsWith("/Script/") && !string.IsNullOrWhiteSpace(GetClass(classPath).Item1);
+        }
+
+        private static bool IsBPClass(string classPath)
+        {
+            return classPath.StartsWith("/Game/");
+        }
+
+        private static bool IsEnum(string value)
+        {
+            return Regex.IsMatch(value, @"[A-Z]+_\w+");
         }
 
         private static string GetObjectPropertyByName(JToken cls, string objectName)
@@ -548,8 +392,6 @@ namespace DefaultValues
                         string propName = ((JProperty)prop).Name;
                         JToken propValue = ((JProperty)prop).Value;
                         if (propName[0] == '$' || IgnoreProperties.Contains(propName)) continue;
-                        if (propName == "ColorCurves")
-                            propName = "ColorCurves[0]"; // SML asset dumper doesn't dump arrays (not TArrays). This is `FRichCurve ColorCurves[4];`
                         if (CustomImplementations.ContainsKey(propName) && CustomImplementations[propName].ContainsKey((string)propValue))
                         {
                             implementation += $"{fieldPath}.{propName} = {CustomImplementations[propName][(string)propValue]}; ";
@@ -650,6 +492,14 @@ namespace DefaultValues
                     implementation = $"{fieldPath} = {objectClass.Item1}::StaticClass(); ";
                     includes.Add(objectClass.Item2);
                 }
+                else if (IsBPClass((string)value))
+                {
+                    implementation = $"{fieldPath} = FSoftClassPath(\"{(string)value}\").TryLoadClass<UObject>(); ";
+                }
+                else if (IsEnum((string)value))
+                {
+                    implementation = $"{fieldPath} = {(string)value}; ";
+                }
                 else if (((string)value).StartsWith("E") || ((string)value).StartsWith("NSLOCTEXT") || ((string)value).StartsWith("INVTEXT"))
                     implementation = $"{fieldPath} = {(string)value}; ";
                 else
@@ -675,10 +525,6 @@ namespace DefaultValues
                         JToken value = field["Value"];
                         if (className.Contains("AFGItemPickup") && name == "mRespawnTimeIndays")
                             name = "mRespawnTimeInDays"; // UHHH... HOW???
-                        if (name == "mColorSlotsPrimary")
-                            name = "mColorSlotsPrimary[0]"; // SML asset dumper doesn't dump arrays (not TArrays). This is `FColor mColorSlotsPrimary[ BUILDABLE_COLORS_MAX_SLOTS ];`
-                        if (name == "mColorSlotsSecondary")
-                            name = "mColorSlotsSecondary[0]"; // SML asset dumper doesn't dump arrays (not TArrays). This is `FColor mColorSlotsSecondary[ BUILDABLE_COLORS_MAX_SLOTS ];`
 
                         if (value == null || IgnoreProperties.Contains(name)) continue;
                         if (ClassProperties.ContainsKey(name))
@@ -730,12 +576,34 @@ namespace DefaultValues
                                 implementations.Add(implementation, new Tuple<HashSet<string>, HashSet<string>>(new HashSet<string>(), new HashSet<string>()));
                             }
                         }
+                        else if ((bool)field["NativeArray"])
+                        {
+                            string implementation = "";
+                            JArray asArray = (JArray)value;
+                            for (int i = 0; i < asArray.Count; i++)
+                            {
+                                var impl = CreateImplementationFor(asArray[i], cls, $"this->{name}[{i}]", className);
+                                implementation += impl.Key;
+                            }
+                            implementations.Add(implementation, new Tuple<HashSet<string>, HashSet<string>>(new HashSet<string>(), new HashSet<string>()));
+                        }
                         else
                         {
                             var impl = CreateImplementationFor(value, cls, $"this->{name}", className);
                             if (impl.Key != "")
                             {
-                                implementations.Add(impl.Key, impl.Value);
+                                if (className.StartsWith("A") && ASetters.ContainsKey(name))
+                                {
+                                    implementations.Add(Regex.Replace(impl.Key, $@"this->{name} = (.*?);", $"this->{ASetters[name]}($1);"), impl.Value);
+                                }
+                                else if(className.StartsWith("U") && USetters.ContainsKey(name))
+                                {
+                                    implementations.Add(Regex.Replace(impl.Key, $@"this->{name} = (.*?);", $"this->{USetters[name]}($1);"), impl.Value);
+                                }
+                                else
+                                {
+                                    implementations.Add(impl.Key, impl.Value);
+                                }
                             }
                             else
                             {
@@ -779,31 +647,31 @@ namespace DefaultValues
             }
         }
 
-        private static void AddDefaultValues(string path)
+        private static void AddDefaultValues(string root, string path)
         {
             if (File.Exists(path))
             {
                 if (path.EndsWith(".cpp"))
-                    DefaultValuesFile(path);
+                    DefaultValuesFile(root, path);
             }
             else if (Directory.Exists(path))
             {
                 foreach (string dir in Directory.EnumerateDirectories(path))
-                    AddDefaultValues(dir);
+                    AddDefaultValues(root, dir);
                 foreach (string file in Directory.EnumerateFiles(path))
                     if (file.EndsWith(".cpp"))
-                        DefaultValuesFile(file);
+                        DefaultValuesFile(root, file);
             }
         }
 
-        private static void DefaultValuesFile(string filePath)
+        private static void DefaultValuesFile(string root, string filePath)
         {
             string fileContent = File.ReadAllText(filePath);
             foreach (var cls in ClassCtor)
             {
                 if (Regex.IsMatch(fileContent, $@"{cls.Key}::{cls.Key}\(\)(?: : Super\(\))?\s?{{.*?}}", RegexOptions.Singleline))
                 {
-                    string header = Path.GetFileName(filePath).Replace(".cpp", ".h");
+                    string header = filePath.Substring(root.Length).TrimStart(new char[] { '\\', '/' }).Replace(".cpp", ".h").Replace('\\', '/');
                     string includeHeader = $"#include \"{header}\"";
 
                     foreach (string incl in ClassIncludes[cls.Key])
