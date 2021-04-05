@@ -13,6 +13,7 @@ namespace FixHeaders
     {
         private static int FixedCount;
         private static int FixedFileCount;
+        private static bool HasConflict = false;
 
         private static List<string> HeaderCache = new List<string>();
 
@@ -55,10 +56,13 @@ namespace FixHeaders
 
         static void ConfirmModdingEdits()
         {
-            do
+            if (HasConflict)
             {
-                Console.WriteLine("Please confim code around modding edits is valid");
-            } while (Console.ReadLine() != "CONFIRM");
+                do
+                {
+                    Console.WriteLine("Please confim code around modding edits is valid");
+                } while (Console.ReadLine() != "CONFIRM");
+            }
         }
         static void Main(string[] args)
         {
@@ -113,8 +117,8 @@ namespace FixHeaders
             Run("git.exe", "commit -m \"New Headers\"", headerUpgradeFolder);
             Run("git.exe", "merge ModdingEdit", headerUpgradeFolder);
             GenerateHeaderCache(headerUpgradeFolder);
-            ConfirmModdingEdits();
             FixFiles(headerUpgradeFolder);
+            ConfirmModdingEdits();
             Run("git.exe", "add .", headerUpgradeFolder);
             Run("git.exe", "commit -m \"New Modding Edit Headers\"", headerUpgradeFolder);
             DirectoryCopy(headerUpgradeFolder, savePath);
@@ -201,19 +205,10 @@ namespace FixHeaders
                     FixedCount++;
                     hasChanges = true;
                 }
-                else if (m.Groups[2].Value.Contains("MODDING EDIT"))
-                {
-                    // Keep edit
-                    file = file.Replace(m.Value, m.Groups[2].Value);
-                    FixedCount++;
-                    hasChanges = true;
-                }
                 else
                 {
-                    // Keep CSS changed stuff
-                    file = file.Replace(m.Value, m.Groups[1].Value);
-                    FixedCount++;
-                    hasChanges = true;
+                    // Keep edit
+                    HasConflict = true;
                 }
             }
 

@@ -40,6 +40,16 @@ namespace ImplementHeaders
                 {
                     "CustomVersion.h"
                 }
+            },
+            { "FGBuildableGeneratorGeoThermal", new List<string>()
+                {
+                    "FGExtractableResourceInterface.h"
+                }
+            },
+            { "FGComboBoxSearch", new List<string>()
+                {
+                    "SSpacer.h"
+                }
             }
         };
 
@@ -475,7 +485,7 @@ DEFINE_LOG_CATEGORY(LogPoolSystem);"
 //Stuff to register custom version for UE4 tracking
 FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustomVersion::GUID, 18, TEXT(""Dev-Framework"") }" }, // I don't like this multiline
             { "UFGGameUserSettings::mCVarSink",
-@"FConsoleCommandDelegate::CreateStatic(&UFGGameUserSettings::CVarSinkHandler" }
+@"FConsoleCommandDelegate::CreateStatic(&UFGGameUserSettings::CVarSinkHandler)" }
         };
 
         private static readonly Dictionary<string, string> CustomSuper = new Dictionary<string, string>()
@@ -539,6 +549,8 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
             }
         }
 
+        private static HashSet<string> InlineImplementedFunctions = new HashSet<string>();
+
         private static void ImplementFile(string filePath, string saveDir)
         {
             if (filePath.EndsWith("FactoryGame.h"))
@@ -547,13 +559,19 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
             using (StreamReader reader = new StreamReader(filePath))
                 fileContents = reader.ReadToEnd();
             List<string> implementations = new List<string>();
+            // TODO: Maybe clear InlineImplementedFunctions, but it's not like they conflict
+            foreach (Match match in Regex.Matches(fileContents, @"^(FORCEINLINE|inline)\s+(.+\(.*\))\s*{?$", RegexOptions.Multiline))
+            {
+                InlineImplementedFunctions.Add(match.Groups[2].Value);
+            }
             foreach(Match match in Regex.Matches(fileContents, @"^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?.*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match class/struct definition
             {
+                string FGAPI = match.Groups[3].Value;
                 string className = match.Groups[4].Value;
                 string classContents = match.Groups[6].Value;
                 if (!IsValidClassName(className))
                     continue;
-                implementations.AddRange(ImplementClass(className, classContents));
+                implementations.AddRange(ImplementClass(className, classContents, !string.IsNullOrWhiteSpace(FGAPI)));
             }
             using (StreamWriter writer = new StreamWriter($"{saveDir}{Path.DirectorySeparatorChar}{Path.GetFileName(filePath).Replace(".h", ".cpp")}"))
             {
@@ -581,7 +599,7 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
             }
         }
 
-        private static List<string> ImplementClass(string className, string classContents)
+        private static List<string> ImplementClass(string className, string classContents, bool FGAPI)
         {
             List<string> implementations = new List<string>();
             bool needsFObjectInitializer = Regex.IsMatch(classContents, @"GENERATED_U(CLASS|INTERFACE)_BODY");
@@ -604,7 +622,7 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                     string innerClassContents = match.Groups[6].Value;
                     if (!IsValidClassName(innerClassName))
                         continue;
-                    implementations.AddRange(ImplementClass(className + "::" + innerClassName, innerClassContents));
+                    implementations.AddRange(ImplementClass(className + "::" + innerClassName, innerClassContents, FGAPI));
                     ifContents = ifContents.Replace(match.Value, "");
                 }
                 implementations.AddRange(ImplementFunctions(ifContents, className));
@@ -618,13 +636,13 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                 string innerClassContents = match.Groups[6].Value;
                 if (!IsValidClassName(innerClassName))
                     continue;
-                implementations.AddRange(ImplementClass(className + "::" + innerClassName, innerClassContents));
+                implementations.AddRange(ImplementClass(className + "::" + innerClassName, innerClassContents, FGAPI));
                 classContents = classContents.Replace(match.Value, "");
             }
             implementations.AddRange(ImplementFunctions(classContents, className));
             implementations.AddRange(ImplementStaticVars(classContents, className));
 
-            if (needsFObjectInitializer && !implementations.Any((impl) => impl.Replace(" ", "").Contains($"{className}::{className}(const FObjectInitializer")))
+            if (needsFObjectInitializer && !implementations.Any((impl) => impl.Replace(" ", "").Contains($"{className}::{className}(constFObjectInitializer")) && !InlineImplementedFunctions.Any((impl) => impl.Replace(" ", "").Contains($"{className}::{className}(classFObjectInitializer")))
                 implementations.Add($"{className}::{className}(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {{}}");
 
             if (needsGetLifetimeReplicatedProps && !implementations.Any((impl) => impl.Contains($"void {className}::GetLifetimeReplicatedProps")))
@@ -658,9 +676,13 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
 
         private static List<string> ImplementFunctions(string content, string className)
         {
-            content = Regex.Replace(content, @"\r\n\s*public:", "\r\n");
-            content = Regex.Replace(content, @"\r\n\s*private:", "\r\n");
-            content = Regex.Replace(content, @"\r\n\s*protected:", "\r\n");
+            // Remove access modifiers
+            content = Regex.Replace(content, @"\r?\n\s*public:", "\r\n");
+            content = Regex.Replace(content, @"\r?\n\s*private:", "\r\n");
+            content = Regex.Replace(content, @"\r?\n\s*protected:", "\r\n");
+
+            // Remove event/delegate declarations, which are matched as functions
+            content = Regex.Replace(content, @"^\s*DECLARE_.*\(.*\)\r?\n", "\r\n", RegexOptions.Multiline);
             List<string> implementations = new List<string>();
             // Match function definition (including UFUNCTIONs), nothing to see here ... just walk away ... probably the reason for many missing implementations...
             foreach (Match function in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual\s?)?(static\s?)?(const\s?)?(class\s?)?(explicit\s?)?([^=()\n{}]*?\s)?\n*((?:[^=<>()\n{}]|operator.+)*?)(\([^{}]*?\))(\s*const)?(\s*override)?(.*);", RegexOptions.Multiline))
@@ -711,6 +733,7 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                         isConst = " override";
                 }
 
+                parameters = Regex.Replace(parameters, @"meta\s*=\s*\(.*?\)", ""); // also meta=() brackets
                 parameters = Regex.Replace(parameters, @"UPARAM\s*\(.*?\)", "");
 
                 if (extras.Contains('{') || extras.Contains("delete") || extras.Contains("="))
@@ -737,7 +760,7 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                         }
                         ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName.Trim() + "_Implementation", parameters, isConst, template, isStatic);
                     }
-                    else if (Regex.IsMatch(ufunction, @"\WBlueprintPure\W") || Regex.IsMatch(ufunction, @"\WBlueprintCallable\W") || Regex.IsMatch(ufunction.ToLower(), @"\Wexec\W") || Regex.Replace(TrimUselessSpaces(ufunction), @"( ?(?:Category ?= ?"".*?""|meta ?= ?"".*""|meta ?= ?\(.*?\))(?:,| )?)", "") == "UFUNCTION()")
+                    else if (Regex.IsMatch(ufunction, @"\WBlueprintPure\W") || Regex.IsMatch(ufunction, @"\WBlueprintCallable\W") || Regex.IsMatch(ufunction, @"\WExec\W", RegexOptions.IgnoreCase) || Regex.IsMatch(ufunction, @"\WCallInEditor\W", RegexOptions.IgnoreCase) || Regex.Replace(TrimUselessSpaces(ufunction), @"( ?(?:Category ?= ?"".*?""|meta ?= ?"".*""|meta ?= ?\(.*?\))(?:,| )?)", "") == "UFUNCTION()")
                         ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName, parameters, isConst, template, isStatic);
                     if (Regex.IsMatch(ufunction, @"\WWithValidation\W"))
                         ImplementFunction(implementations, className, isClass, isReturnConst, "bool ", functionName.Trim() + "_Validate", parameters, isConst, template, isStatic);
