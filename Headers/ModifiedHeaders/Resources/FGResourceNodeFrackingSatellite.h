@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "Resources/FGResourceNodeFrackingCore.h" // MODDING EDIT
 #include "FGResourceNode.h"
 #include "UObject/WeakObjectPtrTemplates.h"
 #include "FGResourceNodeFrackingSatellite.generated.h"

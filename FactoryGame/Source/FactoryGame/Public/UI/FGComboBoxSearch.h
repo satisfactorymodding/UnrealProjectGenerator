@@ -12,9 +12,8 @@
 #include "Styling/SlateTypes.h"
 #include "Widgets/SWidget.h"
 #include "Components/Widget.h"
-#include "Widgets/Text/STextBlock.h"
-#include "Widgets/Layout/SBox.h"
-#include "Widgets/Layout/SSpacer.h"
+#include "Widgets/Text/STextBlock.h" // MODDING EDIT
+#include "Widgets/Layout/SBox.h" // MODDING EDIT
 
 #include "FGComboBoxSearch.generated.h"
 
