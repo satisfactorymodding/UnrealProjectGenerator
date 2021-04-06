@@ -152,7 +152,7 @@ public:
 	virtual bool HasBuildingTag_Implementation() const override { return true; }
 	virtual void SetHasBuildingTag_Implementation( bool hasBuildingTag ) override { }
 	virtual FString GetBuildingTag_Implementation() const override { return mBuildingTag; }
-	virtual void SetBuildingTag_Implementation( const FString& buildingTag ) override { mBuildingTag = buildingTag; }
+	virtual void SetBuildingTag_Implementation( const FString& buildingTag ) override;
 	//~ End FGBuildingTagInterface
 
 	/** @returns the status of the drone attached to this station */
@@ -164,7 +164,7 @@ public:
 
 	/** @returns all the stations connected to this one. */
 	UFUNCTION( BlueprintPure, Category = "Drone Station|Info" )
-    TArray<AFGDroneStationInfo*> GetConnectedStations() const { return mConnectedStations; }
+    TArray< AFGDroneStationInfo* > GetConnectedStations() const { return mConnectedStations; }
 
 	UFUNCTION( BlueprintCallable, Category = "Drone Station|Info" )
     void PairStation( AFGDroneStationInfo* otherStation );
@@ -341,6 +341,7 @@ private:
 	friend class AFGDroneSubsystem;
 
 	/** The station this info represents. */
+	UPROPERTY( SaveGame )
 	class AFGBuildableDroneStation* mStation;
 
 	UPROPERTY( Replicated )

@@ -11,6 +11,8 @@ void AFGRiver::Destroyed(){ }
 void AFGRiver::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent){ Super::PostEditChangeProperty(PropertyChangedEvent); }
 #endif 
 #if WITH_EDITOR
+void AFGRiver::UpdateFlowIntensity(){ }
+void AFGRiver::PopulateMaterialSettings(){ }
 void AFGRiver::BuildRiverFromData(const UObject* WorldContext, TSubclassOf<AFGRiver> BaseClass, TArray<FVector> WorldLocations, TArray<FVector> PointScales, TArray<FRotator> PointRotations, TArray<FVector> ArriaveTangets, TArray<FVector> LeaveTangents){ }
 #endif 
 AFGRiver::AFGRiver(){ }

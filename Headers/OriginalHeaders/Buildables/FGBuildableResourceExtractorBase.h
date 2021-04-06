@@ -64,6 +64,9 @@ protected:
 	virtual AActor* TryFindMissingResource() { return nullptr; }
 	virtual void OnExtractableResourceSet();
 
+	UFUNCTION()
+	virtual void OnRep_ExtractableResource() { }
+
 protected:
 	friend class AFGResourceExtractorHologram;
 
@@ -99,7 +102,7 @@ private:
 	UPROPERTY( SaveGame, Replicated )
 	class AFGResourceNode* mExtractResourceNode;
 
-	UPROPERTY( SaveGame, Replicated )
+	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_ExtractableResource )
 	AActor* mExtractableResource;
 
 };

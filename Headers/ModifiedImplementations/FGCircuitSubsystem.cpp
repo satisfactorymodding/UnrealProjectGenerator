@@ -29,6 +29,7 @@ void AFGCircuitSubsystem::SetCircuitBridgesModified(){ }
 void AFGCircuitSubsystem::AddCircuitBridge(TWeakObjectPtr< AFGBuildableCircuitBridge > circuitBridge){ }
 void AFGCircuitSubsystem::RemoveCircuitBridge(TWeakObjectPtr< AFGBuildableCircuitBridge > circuitBridge){ }
 void AFGCircuitSubsystem::Debug_DumpCircuitsToLog(){ }
+void AFGCircuitSubsystem::OnRep_ReplicatedCircuits(){ }
 int32 AFGCircuitSubsystem::GenerateUniqueCircuitID(){ return int32(); }
 void AFGCircuitSubsystem::MergeCircuits(int32 first, int32 second){ }
 int32 AFGCircuitSubsystem::CreateCircuit(TSubclassOf<  UFGCircuit > circuitClass){ return int32(); }

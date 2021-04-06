@@ -20,7 +20,15 @@ public:
 
 	FORCEINLINE class UFGInventoryComponent* GetInventoryPotential() const { return mInventoryPotential; };
 
+	/** Delegate that will fire (on clients) when mInventoryPotential has replicated */
+	DECLARE_DELEGATE( FOnInventoryPotentialChanged )
+	FOnInventoryPotentialChanged OnInventoryPotentialReplicatedDelegate;
+
+private:
+	UFUNCTION()
+	void OnRep_InventoryPotential();
+
 protected:
-	UPROPERTY( Replicated )
+	UPROPERTY( ReplicatedUsing = OnRep_InventoryPotential )
 	class UFGInventoryComponent* mInventoryPotential;
 };

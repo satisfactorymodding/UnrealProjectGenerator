@@ -6,6 +6,7 @@
 #include "Components/SceneComponent.h" //MODDING EDIT
 #include "FGProductionIndicatorInstanceManager.generated.h"
 
+
 /**
  * Instanced production indicator, used on factories to display their status.
  */

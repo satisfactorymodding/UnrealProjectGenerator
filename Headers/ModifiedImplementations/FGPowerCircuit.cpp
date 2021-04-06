@@ -14,6 +14,7 @@ UFGPowerCircuit::UFGPowerCircuit(){ }
 void UFGPowerCircuit::ResetFuse(){ }
 void UFGPowerCircuit::DisplayDebug( UCanvas* canvas, const  FDebugDisplayInfo& debugDisplay, float& YL, float& YPos, float indent){ }
 bool UFGPowerCircuit::IsNoPowerCheatOn() const{ return bool(); }
+void UFGPowerCircuit::OnCircuitChanged(){ }
 bool UFGPowerCircuit::IsTrivial() const{ return bool(); }
 void UFGPowerCircuit::OnRemoved(){ }
 void UFGPowerCircuit::UpdateStatsGeneral(){ }

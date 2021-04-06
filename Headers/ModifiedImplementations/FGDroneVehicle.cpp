@@ -2,14 +2,23 @@
 
 #include "FGDroneVehicle.h"
 
+#ifdef DEBUG_DRONES
+void UFGDroneAction::DisplayDebugInformation(){ }
+#endif 
 UFGDroneAction::UFGDroneAction(){ }
 void UFGDroneAction::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 bool UFGDroneAction::NeedTransform_Implementation(){ return bool(); }
 bool UFGDroneAction::ShouldSave_Implementation() const{ return bool(); }
 void UFGDroneAction::PushAction(UFGDroneAction* pAction){ }
+#ifdef DEBUG_DRONES
+void UFGDroneAction_Timed::DisplayDebugInformation(){ }
+#endif 
 UFGDroneAction_Timed::UFGDroneAction_Timed(){ }
 void UFGDroneAction_Timed::Tick(float dt){ }
 bool UFGDroneAction_Timed::IsDone() const{ return bool(); }
+#ifdef DEBUG_DRONES
+void UFGDroneAction_TraversePath::DisplayDebugInformation(){ }
+#endif 
 UFGDroneAction_TraversePath::UFGDroneAction_TraversePath(){ }
 void UFGDroneAction_TraversePath::SetPath(const TArray<FVector>& Path, EDroneFlyingMode FlyingMode, bool StopAtDestination){ }
 void UFGDroneAction_TraversePath::Begin(){ }
@@ -17,6 +26,9 @@ void UFGDroneAction_TraversePath::Tick(float dt){ }
 void UFGDroneAction_TraversePath::ReceiveActionEvent(EDroneActionEvent ActionEvent, void* EventData){ }
 bool UFGDroneAction_TraversePath::IsDone() const{ return bool(); }
 void UFGDroneAction_TraversePath::GotoNextDestination(){ }
+#ifdef DEBUG_DRONES
+void UFGDroneAction_RequestDocking::DisplayDebugInformation(){ }
+#endif 
 UFGDroneAction_RequestDocking::UFGDroneAction_RequestDocking(){ }
 void UFGDroneAction_RequestDocking::SetStation( AFGBuildableDroneStation* Station, bool ShouldTransferItems){ }
 void UFGDroneAction_RequestDocking::Begin(){ }
@@ -66,7 +78,7 @@ float AFGDroneVehicle::GetStoppingDistanceForFlyingMode(EDroneFlyingMode Mode) c
 float AFGDroneVehicle::GetTimeSinceDockingStateChanged() const{ return float(); }
 void AFGDroneVehicle::SetHomeStation( AFGBuildableDroneStation* station){ }
 bool AFGDroneVehicle::GrabRequiredBatteriesForTrip( AFGBuildableDroneStation* FromStation,  AFGBuildableDroneStation* ToStation, bool AllowTravelWithoutCost){ return bool(); }
-void AFGDroneVehicle::TravelToStation( AFGBuildableDroneStation* station, bool ShouldTransferItems){ }
+bool AFGDroneVehicle::TravelToStation( AFGBuildableDroneStation* station, bool ShouldTransferItems){ return bool(); }
 void AFGDroneVehicle::BeginNewTrip( AFGBuildableDroneStation* Station){ }
 void AFGDroneVehicle::EndCurrentTrip(bool Completed){ }
 void AFGDroneVehicle::SetFacingDirection(const FVector& Direction){ }

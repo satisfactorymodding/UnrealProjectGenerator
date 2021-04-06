@@ -2,11 +2,7 @@
 
 #include "FGResearchMachine.h"
 
-UFGResearchMachine::UFGResearchMachine() : Super() {
-	this->PrimaryComponentTick.TickGroup = TG_DuringPhysics; this->PrimaryComponentTick.EndTickGroup = TG_PrePhysics; this->PrimaryComponentTick.bTickEvenWhenPaused = false; this->PrimaryComponentTick.bCanEverTick = true; this->PrimaryComponentTick.bStartWithTickEnabled = true; this->PrimaryComponentTick.bAllowTickOnDedicatedServer = true; this->PrimaryComponentTick.TickInterval = 0;
-	this->SetIsReplicatedByDefault(true);
-	this->bAutoActivate = true;
-}
+UFGResearchMachine::UFGResearchMachine(){ }
 void UFGResearchMachine::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void UFGResearchMachine::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction){ }
 void UFGResearchMachine::SetResearchRecipe(TSubclassOf<class UFGResearchRecipe> researchRecipe){ }
@@ -17,4 +13,5 @@ void UFGResearchMachine::OnResearchStarted(TSubclassOf<class UFGSchematic> schem
 void UFGResearchMachine::OnResearchConcluded(TSubclassOf<class UFGSchematic> schematic){ }
 void UFGResearchMachine::SetMachineUser( AFGCharacterPlayer* player){ }
 void UFGResearchMachine::BeginPlay(){ }
+void UFGResearchMachine::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void UFGResearchMachine::OnRep_ResearchMesh(){ }

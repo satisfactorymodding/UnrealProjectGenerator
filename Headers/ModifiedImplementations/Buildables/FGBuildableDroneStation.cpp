@@ -4,7 +4,6 @@
 
 AFGBuildableDroneStation::AFGBuildableDroneStation(){ }
 void AFGBuildableDroneStation::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
-void AFGBuildableDroneStation::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
 void AFGBuildableDroneStation::BeginPlay(){ }
 void AFGBuildableDroneStation::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void AFGBuildableDroneStation::Factory_Tick(float dt){ }

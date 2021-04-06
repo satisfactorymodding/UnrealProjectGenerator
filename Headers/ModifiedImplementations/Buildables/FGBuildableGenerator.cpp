@@ -7,7 +7,7 @@ void AFGBuildableGenerator::PreReplication(IRepChangedPropertyTracker& ChangedPr
 AFGBuildableGenerator::AFGBuildableGenerator(){ }
 void AFGBuildableGenerator::BeginPlay(){ }
 bool AFGBuildableGenerator::CanProduce_Implementation() const{ return bool(); }
-bool AFGBuildableGenerator::HasPower() const{ return bool(); }
+bool AFGBuildableGenerator::Factory_HasPower() const{ return bool(); }
 EProductionStatus AFGBuildableGenerator::GetProductionIndicatorStatus() const{ return EProductionStatus(); }
 float AFGBuildableGenerator::GetPowerProductionCapacity() const{ return float(); }
 float AFGBuildableGenerator::GetDefaultPowerProductionCapacity() const{ return float(); }

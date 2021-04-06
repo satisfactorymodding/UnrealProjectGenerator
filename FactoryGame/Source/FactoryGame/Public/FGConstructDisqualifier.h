@@ -139,7 +139,7 @@ class FACTORYGAME_API UFGCDMustSnapToCeiling : public UFGConstructDisqualifier
 
 	UFGCDMustSnapToCeiling()
 	{
-		mDisqfualifyingText = LOCTEXT( "UFGCDMustSnapToCeiling", "This must be built in the ceiling!" );
+		mDisqfualifyingText = LOCTEXT( "UFGCDMustSnapToCeiling", "This must be built on a ceiling!" );
 	}
 };
 
@@ -172,7 +172,7 @@ class FACTORYGAME_API UFGCDMustSnapStation : public UFGConstructDisqualifier
 
 	UFGCDMustSnapStation()
 	{
-		mDisqfualifyingText = LOCTEXT( "UFGCDMustSnapStation", "Must snap to a station!" );
+		mDisqfualifyingText = LOCTEXT( "UFGCDMustSnapStation", "Must snap to a Drone Port!" );
 	}
 };
 
@@ -183,7 +183,7 @@ class FACTORYGAME_API UFGCDOccupiedStation : public UFGConstructDisqualifier
 
 	UFGCDOccupiedStation()
 	{
-		mDisqfualifyingText = LOCTEXT( "UFGCDOccupiedStation", "Station is currently occupied!" );
+		mDisqfualifyingText = LOCTEXT( "UFGCDOccupiedStation", "Drone Port is currently occupied!" );
 	}
 };
 

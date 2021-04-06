@@ -26,15 +26,12 @@ void AFGBuildableFactory::OnReplicationDetailActorCreated(){ }
 void AFGBuildableFactory::OnReplicationDetailActorRemoved(){ }
 bool AFGBuildableFactory::ShouldSkipBuildEffect(){ return bool(); }
 TArray< UFGFactoryConnectionComponent* > AFGBuildableFactory::GetConnectionComponents() const{ return TArray<UFGFactoryConnectionComponent*>(); }
-bool AFGBuildableFactory::HasPower() const{ return bool(); }
-bool AFGBuildableFactory::RunsOnPower() const{ return bool(); }
 float AFGBuildableFactory::GetIdlePowerConsumption() const{ return float(); }
 float AFGBuildableFactory::GetProducingPowerConsumption() const{ return float(); }
 float AFGBuildableFactory::GetDefaultProducingPowerConsumption() const{ return float(); }
 float AFGBuildableFactory::CalcPowerConsumption(float power, float overclock, float exponent){ return float(); }
 float AFGBuildableFactory::CalcProducingPowerConsumptionForPotential(float potential) const{ return float(); }
 bool AFGBuildableFactory::IsConfigured() const{ return bool(); }
-bool AFGBuildableFactory::IsProducing() const{ return bool(); }
 bool AFGBuildableFactory::CanProduce_Implementation() const{ return bool(); }
 void AFGBuildableFactory::SetIsProductionPaused(bool isPaused){ }
 EProductionStatus AFGBuildableFactory::GetProductionIndicatorStatus() const{ return EProductionStatus(); }
@@ -70,3 +67,6 @@ AFGReplicationDetailActor* AFGBuildableFactory::GetOrCreateReplicationDetailActo
 void AFGBuildableFactory::OnRep_CurrentPotential(){ }
 void AFGBuildableFactory::OnRep_IsProducing(){ }
 void AFGBuildableFactory::OnPotentialInventoryItemRemoved(TSubclassOf<  UFGItemDescriptor > itemClass, int32 numRemoved){ }
+void AFGBuildableFactory::SetIsProducing(uint8 isProducing){ }
+void AFGBuildableFactory::SetHasPower(uint8 hasPower){ }
+void AFGBuildableFactory::SetCurrentProductivity(uint8 productivity){ }

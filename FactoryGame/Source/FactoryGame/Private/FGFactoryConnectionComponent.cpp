@@ -2,12 +2,7 @@
 
 #include "FGFactoryConnectionComponent.h"
 
-UFGFactoryConnectionComponent::UFGFactoryConnectionComponent() : Super() {
-	this->mConnectorClearance = 100;
-	this->mInventoryAccessIndex = -1;
-	this->bNetAddressable = true;
-	this->SetIsReplicatedByDefault(true);
-}
+UFGFactoryConnectionComponent::UFGFactoryConnectionComponent(){ }
 void UFGFactoryConnectionComponent::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void UFGFactoryConnectionComponent::OnComponentDestroyed(bool isDestroyingHierarchy){ }
 void UFGFactoryConnectionComponent::OnRegister(){ Super::OnRegister(); }
@@ -17,7 +12,6 @@ void UFGFactoryConnectionComponent::SetInventory( UFGInventoryComponent* invento
 void UFGFactoryConnectionComponent::SetInventoryAccessIndex(int32 index){ }
 void UFGFactoryConnectionComponent::SetConnection( UFGFactoryConnectionComponent* toComponent){ }
 void UFGFactoryConnectionComponent::ClearConnection(){ }
-bool UFGFactoryConnectionComponent::IsConnected() const{ return bool(); }
 EFactoryConnectionDirection UFGFactoryConnectionComponent::GetCompatibleSnapDirection() const{ return EFactoryConnectionDirection(); }
 bool UFGFactoryConnectionComponent::CanSnapTo(UFGFactoryConnectionComponent* otherConnection) const{ return bool(); }
 bool UFGFactoryConnectionComponent::CanConnectTo(UFGFactoryConnectionComponent* otherConnection) const{ return bool(); }

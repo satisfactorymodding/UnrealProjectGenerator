@@ -2,6 +2,8 @@
 
 #include "FGBackgroundThread.h"
 
+
+DEFINE_LOG_CATEGORY(LogPoolSystem);
 bool FPoolInstanceBase::ResolveHitResults(const TArray<FHitResult>& inHits, const TArray<UClass*>& classesToCheckAgainst, FVector& outHitLocation, float& inNearestDistance){ return bool(); }
 #if 0
 #endif 
@@ -45,7 +47,7 @@ void FFGBackgroundThread::DumpDebug(){ }
 void FFGBackgroundThread::UpdateScalabilityValues(){ }
 void APoolRoot::UpdateBuildingState( AFGBuildable* Building, int32 FlagsToSet){ }
 void APoolRoot::DisplayDebug(UCanvas* Canvas, const FDebugDisplayInfo& DebugDisplay, float& YL, float& YPos){ }
-void APoolRoot::SetFlag(AFGBuildable* Buildable,  ) int32 Flags){ }
+void APoolRoot::SetFlag(AFGBuildable* Buildable,  int32 Flags){ }
 void APoolRoot::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 #if WITH_EDITORONLY_DATA
 #endif 

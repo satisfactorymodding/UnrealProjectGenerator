@@ -2,4 +2,3 @@
 
 #include "FGBuildingTagInterface.h"
 
-UFGBuildingTagInterface::UFGBuildingTagInterface(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}

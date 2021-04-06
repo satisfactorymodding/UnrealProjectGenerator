@@ -2,10 +2,7 @@
 
 #include "Replication/FGReplicationDetailActor_CargoPlatform.h"
 
-AFGReplicationDetailActor_CargoPlatform::AFGReplicationDetailActor_CargoPlatform() : Super() {
-	this->SetHidden(true);
-	this->SetReplicates(true);
-}
+AFGReplicationDetailActor_CargoPlatform::AFGReplicationDetailActor_CargoPlatform(){ }
 void AFGReplicationDetailActor_CargoPlatform::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGReplicationDetailActor_CargoPlatform::InitReplicationDetailActor( AFGBuildable* owningActor){ }
 void AFGReplicationDetailActor_CargoPlatform::RemoveDetailActorFromOwner(){ }

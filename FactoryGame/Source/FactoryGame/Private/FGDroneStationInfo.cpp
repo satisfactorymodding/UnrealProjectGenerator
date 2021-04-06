@@ -3,10 +3,7 @@
 #include "FGDroneStationInfo.h"
 
 void FFGDroneTripStatistics::Clear(){ }
-AFGDroneStationInfo::AFGDroneStationInfo() : Super() {
-	this->bAlwaysRelevant = true;
-	this->SetReplicates(true);
-}
+AFGDroneStationInfo::AFGDroneStationInfo(){ }
 void AFGDroneStationInfo::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGDroneStationInfo::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void AFGDroneStationInfo::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
@@ -16,6 +13,7 @@ void AFGDroneStationInfo::PostLoadGame_Implementation(int32 saveVersion, int32 g
 void AFGDroneStationInfo::GatherDependencies_Implementation(TArray< UObject* >& out_dependentObjects){ }
 bool AFGDroneStationInfo::NeedTransform_Implementation(){ return bool(); }
 bool AFGDroneStationInfo::ShouldSave_Implementation() const{ return bool(); }
+void AFGDroneStationInfo::SetBuildingTag_Implementation(const FString& buildingTag){ }
 void AFGDroneStationInfo::PairStation(AFGDroneStationInfo* otherStation){ }
 void AFGDroneStationInfo::ClearLatestDroneTrips(){ }
 float AFGDroneStationInfo::GetEstimatedBatteryRequirementRate() const{ return float(); }

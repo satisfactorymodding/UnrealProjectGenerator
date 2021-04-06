@@ -20,3 +20,4 @@ void AFGBuildableLightSource::OnRep_HasPower(){ }
 void AFGBuildableLightSource::OnRep_IsDay(){ }
 void AFGBuildableLightSource::UpdateMeshDataAndHandles(){ }
 void AFGBuildableLightSource::UpdateCurrentLightColor(){ }
+void AFGBuildableLightSource::UpdatePowerConsumption(){ }

@@ -297,9 +297,6 @@ struct FACTORYGAME_API FPoolItem
 	 * ( relevant ) 0 - 1 ( irrelevant ) */
 	float Relevance;
 
-	/* Set when assigned to an actor.*/
-	float MaxRelevance;
-
 	/* Radius of the relevance. */
 	float mRadius;
 
@@ -696,7 +693,7 @@ public:
 	}
 
 	/* static settings per implementation. */
-	UFUNCTION( BlueprintNativeEvent )
+	UFUNCTION( BlueprintNativeEvent, BlueprintCallable, Category = "Pool|Lights" )
 	FPoolLightSettings GetLightSettings() const;
 	virtual FPoolLightSettings GetLightSettings_Implementation() const
 	{

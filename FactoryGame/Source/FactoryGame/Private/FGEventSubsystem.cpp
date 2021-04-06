@@ -2,10 +2,7 @@
 
 #include "FGEventSubsystem.h"
 
-AFGEventSubsystem::AFGEventSubsystem() : Super() {
-	this->bAlwaysRelevant = true;
-	this->SetReplicates(true);
-}
+AFGEventSubsystem::AFGEventSubsystem(){ }
 void AFGEventSubsystem::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 AFGEventSubsystem* AFGEventSubsystem::Get(UWorld* world){ return nullptr; }
 AFGEventSubsystem* AFGEventSubsystem::GetEventSubsystem(UObject* worldContext){ return nullptr; }

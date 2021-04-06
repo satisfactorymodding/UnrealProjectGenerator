@@ -23,7 +23,9 @@ void UFGComboBoxSearch::PostInitProperties(){ Super::PostInitProperties(); }
 void UFGComboBoxSearch::Serialize(FArchive& Ar){ Super::Serialize(Ar); }
 void UFGComboBoxSearch::PostLoad(){ Super::PostLoad(); }
 void UFGComboBoxSearch::UpdateOrGenerateWidget(TSharedPtr<FString> Item){ }
-TSharedRef<SWidget> UFGComboBoxSearch::HandleGenerateWidget(TSharedPtr<FString> Item) const{ return Super::RebuildWidget(); }
+TSharedRef<SWidget> UFGComboBoxSearch::HandleGenerateWidget(TSharedPtr<FString> Item) const {
+  return SNew(SSpacer);
+}
 void UFGComboBoxSearch::HandleSelectionChanged(TSharedPtr<FString> Item, ESelectInfo::Type SelectionType){ }
 void UFGComboBoxSearch::HandleOpening(){ }
 TSharedRef<SWidget> UFGComboBoxSearch::RebuildWidget(){ return Super::RebuildWidget(); }
