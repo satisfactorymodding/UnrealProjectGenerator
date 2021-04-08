@@ -7,4 +7,4 @@ void AFGReplicationDetailActor_BuildableFactory::GetLifetimeReplicatedProps(TArr
 void AFGReplicationDetailActor_BuildableFactory::InitReplicationDetailActor( AFGBuildable* owningActor){ }
 void AFGReplicationDetailActor_BuildableFactory::FlushReplicationActorStateToOwner(){ }
 bool AFGReplicationDetailActor_BuildableFactory::HasCompletedInitialReplication() const{ return bool(); }
-void AFGReplicationDetailActor_BuildableFactory::OnRep_InventoryPotential(){ }
+void AFGReplicationDetailActor_BuildableFactory::OnRep_Inventory(){ }

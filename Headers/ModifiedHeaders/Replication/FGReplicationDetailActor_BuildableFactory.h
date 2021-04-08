@@ -22,13 +22,13 @@ public:
 
 	/** Delegate that will fire (on clients) when mInventoryPotential has replicated */
 	DECLARE_DELEGATE( FOnInventoryPotentialChanged )
-	FOnInventoryPotentialChanged OnInventoryPotentialReplicatedDelegate;
-
-private:
-	UFUNCTION()
-	void OnRep_InventoryPotential();
+	FOnInventoryPotentialChanged OnHasCompletedInitialReplicationDelegate;
 
 protected:
-	UPROPERTY( ReplicatedUsing = OnRep_InventoryPotential )
+	UFUNCTION()
+	void OnRep_Inventory();
+
+protected:
+	UPROPERTY( ReplicatedUsing = OnRep_Inventory )
 	class UFGInventoryComponent* mInventoryPotential;
 };
