@@ -15,7 +15,13 @@ void AFGRiver::UpdateFlowIntensity(){ }
 void AFGRiver::PopulateMaterialSettings(){ }
 void AFGRiver::BuildRiverFromData(const UObject* WorldContext, TSubclassOf<AFGRiver> BaseClass, TArray<FVector> WorldLocations, TArray<FVector> PointScales, TArray<FRotator> PointRotations, TArray<FVector> ArriaveTangets, TArray<FVector> LeaveTangents){ }
 #endif 
-AFGRiver::AFGRiver(){ }
+AFGRiver::AFGRiver() : Super() {
+	this->mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("RiverSpline"));
+	this->RootComponent = this->mSplineComponent;
+	this->mSegmentLengthMultiplier = 1;
+	this->mVolumePrecision = 1000;
+	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0;
+}
 void AFGRiver::BeginPlay(){ }
 void AFGRiver::OnConstruction(const FTransform & Transform){ }
 void AFGRiver::ConstructMesh(){ }

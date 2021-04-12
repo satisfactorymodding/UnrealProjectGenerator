@@ -2,7 +2,12 @@
 
 #include "FGAttachmentSplitterHologram.h"
 
-AFGAttachmentSplitterHologram::AFGAttachmentSplitterHologram(){ }
+AFGAttachmentSplitterHologram::AFGAttachmentSplitterHologram() : Super() {
+	this->mMaxPlacementFloorAngle = 35;
+	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); this->mValidHitClasses.Add(AFGBuildableConveyorBelt::StaticClass()); this->mValidHitClasses.Add(AFGBuildableConveyorAttachment::StaticClass()); this->mValidHitClasses.Add(AFGBuildableAttachmentSplitter::StaticClass());
+	this->SetHidden(true);
+	this->SetReplicates(true);
+}
 bool AFGAttachmentSplitterHologram::TryUpgrade(const FHitResult& hitResult){ return bool(); }
 bool AFGAttachmentSplitterHologram::DoMultiStepPlacement(bool isInputFromARelease){ return bool(); }
 AActor* AFGAttachmentSplitterHologram::GetUpgradedActor() const{ return nullptr; }

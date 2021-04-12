@@ -2,7 +2,12 @@
 
 #include "FGResourceExtractorHologram.h"
 
-AFGResourceExtractorHologram::AFGResourceExtractorHologram(){ }
+AFGResourceExtractorHologram::AFGResourceExtractorHologram() : Super() {
+	this->mMaxPlacementFloorAngle = 35;
+	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass());
+	this->SetHidden(true);
+	this->SetReplicates(true);
+}
 void AFGResourceExtractorHologram::BeginPlay(){ }
 bool AFGResourceExtractorHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 bool AFGResourceExtractorHologram::TryUpgrade(const FHitResult& hitResult){ return bool(); }
@@ -15,3 +20,4 @@ void AFGResourceExtractorHologram::ConfigureActor( AFGBuildable* inBuildable) co
 void AFGResourceExtractorHologram::CheckResourcesAvailable(){ }
 void AFGResourceExtractorHologram::TrySnapToExtractableResource(const FHitResult& hitResult, FVector& newHitLocation){ }
 bool AFGResourceExtractorHologram::CanOccupyResource(const TScriptInterface<  IFGExtractableResourceInterface >& resource) const{ return bool(); }
+bool AFGResourceExtractorHologram::IsAllowedOnResource(const TScriptInterface<  IFGExtractableResourceInterface >& resource) const{ return bool(); }

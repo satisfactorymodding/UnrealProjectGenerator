@@ -2,5 +2,12 @@
 
 #include "FGDecorDescriptor.h"
 
-UFGDecorDescriptor::UFGDecorDescriptor(){ }
+UFGDecorDescriptor::UFGDecorDescriptor() : Super() {
+	this->mBuildableClass = AFGBuildableDecor::StaticClass();
+	this->mDisplayName = INVTEXT("");
+	this->mDescription = INVTEXT("");
+	this->mStackSize = EStackSize::SS_MEDIUM;
+	this->mCanBeDiscarded = true;
+	this->mPreviewView.Distance = 1200; this->mPreviewView.FocalOffset.X = 0; this->mPreviewView.FocalOffset.Y = 0; this->mPreviewView.FocalOffset.Z = 0; this->mPreviewView.CameraPitch = -35;
+}
 UStaticMesh* UFGDecorDescriptor::GetDecorMesh(TSubclassOf< UFGDecorDescriptor > inClass){ return nullptr; }

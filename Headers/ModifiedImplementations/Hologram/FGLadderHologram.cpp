@@ -2,7 +2,17 @@
 
 #include "FGLadderHologram.h"
 
-AFGLadderHologram::AFGLadderHologram(){ }
+AFGLadderHologram::AFGLadderHologram() : Super() {
+	this->mLadderBottomSnapThreshold = 0.400000005960464;
+	this->mCanDragDown = true;
+	this->mCanDragUp = true;
+	this->mInstancedMeshComponent = CreateDefaultSubobject<UHierarchicalInstancedStaticMeshComponent>(TEXT("Instanced Mesh Component")); this->mInstancedMeshComponent->SetupAttachment(this->RootComponent);
+	this->mMaxPlacementFloorAngle = 35;
+	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); this->mValidHitClasses.Add(AFGBuildableWall::StaticClass()); this->mValidHitClasses.Add(AFGBuildableLadder::StaticClass());
+	this->mUseBuildClearanceOverlapSnapp = true;
+	this->SetHidden(true);
+	this->SetReplicates(true);
+}
 void AFGLadderHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGLadderHologram::BeginPlay(){ }
 bool AFGLadderHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }

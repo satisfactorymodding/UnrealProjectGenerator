@@ -2,7 +2,14 @@
 
 #include "FGFloodlightHologram.h"
 
-AFGFloodlightHologram::AFGFloodlightHologram(){ }
+AFGFloodlightHologram::AFGFloodlightHologram() : Super() {
+	this->mMaxPlacementFloorAngle = 35;
+	this->mUseGradualFoundationRotations = true;
+	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass());
+	this->mUseBuildClearanceOverlapSnapp = true;
+	this->SetHidden(true);
+	this->SetReplicates(true);
+}
 void AFGFloodlightHologram::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGFloodlightHologram::BeginPlay(){ }
 bool AFGFloodlightHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }

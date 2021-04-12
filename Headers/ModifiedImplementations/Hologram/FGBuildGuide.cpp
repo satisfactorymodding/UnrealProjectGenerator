@@ -11,6 +11,8 @@ void AFGBuildGuide::UpdateGuideLinesPool( AActor* poolOwner, TArray<FBuildingGui
 bool AFGBuildGuide::IsClearPathToHologram( UWorld* world, FVector start, FVector end, TSet<class AActor*> excludedActors, ECollisionChannel collisionChannel){ return bool(); }
 TArray<FGuideLineBuildingSweepData> AFGBuildGuide::SweepForAlignedBuildings( AActor* actor, FVector guidelinesBase, bool includeBuideGuideTrace){ return TArray<FGuideLineBuildingSweepData>(); }
 bool AFGBuildGuide::IsWithinRange(float value, float min, float max, bool inclusive){ return bool(); }
-AFGBuildGuide::AFGBuildGuide(){ }
+AFGBuildGuide::AFGBuildGuide() : Super() {
+	this->RootComponent = CreateDefaultSubobject<UHierarchicalInstancedStaticMeshComponent>(TEXT("Build Guide Mesh"));
+}
 void AFGBuildGuide::SetBuildGuideStartEnd(FVector startPoint, FVector endPoint, float meshSize){ }
 void AFGBuildGuide::BeginPlay(){ }

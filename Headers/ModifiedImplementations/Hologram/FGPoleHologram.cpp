@@ -2,7 +2,14 @@
 
 #include "FGPoleHologram.h"
 
-AFGPoleHologram::AFGPoleHologram(){ }
+AFGPoleHologram::AFGPoleHologram() : Super() {
+	this->mMaxPlacementFloorAngle = 35;
+	this->mUseGradualFoundationRotations = true;
+	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass());
+	this->mUseBuildClearanceOverlapSnapp = true;
+	this->SetHidden(true);
+	this->SetReplicates(true);
+}
 void AFGPoleHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGPoleHologram::BeginPlay(){ }
 bool AFGPoleHologram::DoMultiStepPlacement(bool isInputFromARelease){ return bool(); }

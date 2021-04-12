@@ -2,7 +2,18 @@
 
 #include "FGEquipmentStunSpear.h"
 
-AFGEquipmentStunSpear::AFGEquipmentStunSpear(){ }
+AFGEquipmentStunSpear::AFGEquipmentStunSpear() : Super() {
+	this->mDamageTypeClass = UFGDamageType::StaticClass();
+	this->mSecondSwingMaxTime = 0.699999988079071;
+	this->mSecondSwingCooldDownTime = 1;
+	this->mDamage = 10;
+	this->mAttackDistance = 100;
+	this->mArmAnimation = EArmEquipment::AE_StunSpear;
+	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = false; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0;
+	this->bOnlyRelevantToOwner = true;
+	this->bNetUseOwnerRelevancy = true;
+	this->SetReplicates(true);
+}
 void AFGEquipmentStunSpear::AddEquipmentActionBindings(){ }
 void AFGEquipmentStunSpear::DoAttack(){ }
 void AFGEquipmentStunSpear::OnHitTarget_Implementation(){ }

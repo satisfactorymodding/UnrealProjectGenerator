@@ -344,6 +344,10 @@ private:
 	UPROPERTY( SaveGame )
 	class AFGBuildableDroneStation* mStation;
 
+	/** Info objects cannot have a location, so in order to keep track of the station location on both client and server we'll just cache it and replicate it. */
+	UPROPERTY( Replicated )
+	FVector mStationLocation;
+
 	UPROPERTY( Replicated )
 	TSubclassOf< AFGBuildableDroneStation > mStationClass;
 

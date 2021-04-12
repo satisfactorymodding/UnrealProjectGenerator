@@ -56,7 +56,7 @@ struct FObjectReferenceDisc
 	* and our objects will always be loaded. However modders have the issue of it being difficult to find the timing of when their objects are loaded
 	* By switching depending on if the SML is loaded we can only run the Load logic if the mod loader is mounted
 	*/
-	static UObject* StaticFindOrLoad( UClass* ObjectClass, UObject* InObjectPackage, const TCHAR* OrigInName );
+	static UObject* StaticFindOrLoad( UClass* ObjectClass, UObject* InObjectPackage, const TCHAR* OrigInName, bool isProbablyClass = false );
 
 	template<typename T>
 	T* Resolve( UWorld* world ) const
