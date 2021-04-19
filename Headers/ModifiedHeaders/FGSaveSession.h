@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h" // MODDING EDIT: no PCH
 #include "Object.h"
 #include "FGSaveSystem.h"
 #include "FGObjectReference.h"
