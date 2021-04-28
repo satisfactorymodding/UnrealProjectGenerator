@@ -2,13 +2,7 @@
 
 #include "FGPipePartHologram.h"
 
-AFGPipePartHologram::AFGPipePartHologram() : Super() {
-	this->mMaxPlacementFloorAngle = 35;
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass());
-	this->mUseBuildClearanceOverlapSnapp = true;
-	this->SetHidden(true);
-	this->SetReplicates(true);
-}
+AFGPipePartHologram::AFGPipePartHologram(){ }
 void AFGPipePartHologram::BeginPlay(){ }
 bool AFGPipePartHologram::DoMultiStepPlacement(bool isInputFromARelease){ return bool(); }
 bool AFGPipePartHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }

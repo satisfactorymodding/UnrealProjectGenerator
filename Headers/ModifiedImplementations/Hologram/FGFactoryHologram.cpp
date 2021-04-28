@@ -2,13 +2,7 @@
 
 #include "FGFactoryHologram.h"
 
-AFGFactoryHologram::AFGFactoryHologram() : Super() {
-	this->mMaxPlacementFloorAngle = 35;
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass());
-	this->mUseBuildClearanceOverlapSnapp = true;
-	this->SetHidden(true);
-	this->SetReplicates(true);
-}
+AFGFactoryHologram::AFGFactoryHologram(){ }
 void AFGFactoryHologram::BeginPlay(){ }
 void AFGFactoryHologram::Tick(float dt){ }
 void AFGFactoryHologram::SetupClearance( UBoxComponent* boxComponent){ }

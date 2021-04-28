@@ -2,13 +2,7 @@
 
 #include "FGTrainPlatformHologram.h"
 
-AFGTrainPlatformHologram::AFGTrainPlatformHologram() : Super() {
-	this->mMaxPlacementFloorAngle = 35;
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); this->mValidHitClasses.Add(AFGBuildableTrainPlatform::StaticClass());
-	this->mUseBuildClearanceOverlapSnapp = true;
-	this->SetHidden(true);
-	this->SetReplicates(true);
-}
+AFGTrainPlatformHologram::AFGTrainPlatformHologram(){ }
 void AFGTrainPlatformHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGTrainPlatformHologram::BeginPlay(){ }
 void AFGTrainPlatformHologram::ScrollRotate(int32 delta, int32 step){ }

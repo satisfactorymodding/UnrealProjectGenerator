@@ -2,14 +2,7 @@
 
 #include "FGWaterPumpHologram.h"
 
-AFGWaterPumpHologram::AFGWaterPumpHologram() : Super() {
-	this->mMaxPlacementFloorAngle = 35;
-	this->mBlockRepositionZOnClearanceOverlapSnapp = true;
-	this->mBlockResizeOnClearanceOverlapSnapp = true;
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass());
-	this->SetHidden(true);
-	this->SetReplicates(true);
-}
+AFGWaterPumpHologram::AFGWaterPumpHologram(){ }
 void AFGWaterPumpHologram::BeginPlay(){ }
 bool AFGWaterPumpHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }
 void AFGWaterPumpHologram::CheckValidPlacement(){ }

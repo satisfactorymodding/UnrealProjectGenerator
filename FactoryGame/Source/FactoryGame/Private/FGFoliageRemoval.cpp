@@ -5,14 +5,7 @@
 bool FRemovedInstanceArray::NetDeltaSerialize(FNetDeltaSerializeInfo & DeltaParms){ return bool(); }
 void AFGFoliageRemoval::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 bool AFGFoliageRemoval::IsNetRelevantFor(const AActor* RealViewer, const AActor* ViewTarget, const FVector& SrcLocation) const{ return bool(); }
-AFGFoliageRemoval::AFGFoliageRemoval() : Super() {
-	this->SetReplicates(true);
-	this->NetDormancy = DORM_Awake;
-	this->NetCullDistanceSquared = 400000000;
-	this->NetUpdateFrequency = 9.99999974737875E-05;
-	this->MinNetUpdateFrequency = 1;
-	this->NetPriority = 0.5;
-}
+AFGFoliageRemoval::AFGFoliageRemoval(){ }
 void AFGFoliageRemoval::PostActorCreated(){ Super::PostActorCreated(); }
 void AFGFoliageRemoval::BeginPlay(){ }
 void AFGFoliageRemoval::Destroyed(){ }

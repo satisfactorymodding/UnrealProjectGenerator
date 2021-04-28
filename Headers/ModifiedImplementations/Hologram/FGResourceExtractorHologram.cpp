@@ -2,12 +2,7 @@
 
 #include "FGResourceExtractorHologram.h"
 
-AFGResourceExtractorHologram::AFGResourceExtractorHologram() : Super() {
-	this->mMaxPlacementFloorAngle = 35;
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass());
-	this->SetHidden(true);
-	this->SetReplicates(true);
-}
+AFGResourceExtractorHologram::AFGResourceExtractorHologram(){ }
 void AFGResourceExtractorHologram::BeginPlay(){ }
 bool AFGResourceExtractorHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 bool AFGResourceExtractorHologram::TryUpgrade(const FHitResult& hitResult){ return bool(); }

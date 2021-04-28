@@ -2,7 +2,4 @@
 
 #include "FGStaticReplicatedActor.h"
 
-AFGStaticReplicatedActor::AFGStaticReplicatedActor() : Super() {
-	this->SetReplicates(true);
-	this->NetDormancy = DORM_Initial;
-}
+AFGStaticReplicatedActor::AFGStaticReplicatedActor(){ }

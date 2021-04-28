@@ -2,13 +2,7 @@
 
 #include "FGWallHologram.h"
 
-AFGWallHologram::AFGWallHologram() : Super() {
-	this->mMaxPlacementFloorAngle = 35;
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); this->mValidHitClasses.Add(AFGBuildableWall::StaticClass()); this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass());
-	this->mUseBuildClearanceOverlapSnapp = true;
-	this->SetHidden(true);
-	this->SetReplicates(true);
-}
+AFGWallHologram::AFGWallHologram(){ }
 void AFGWallHologram::BeginPlay(){ }
 bool AFGWallHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 AActor* AFGWallHologram::GetUpgradedActor() const{ return nullptr; }

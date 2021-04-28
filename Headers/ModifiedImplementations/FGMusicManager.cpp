@@ -9,10 +9,6 @@ UWorld* UFGMusicManager::GetWorld() const{ return nullptr; }
 void UFGMusicManager::OnPlayerControllerBeginPlay( AFGPlayerControllerBase* pc){ }
 void UFGMusicManager::UpdateIncomingAttackers(int32 numAttackers){ }
 void UFGMusicManager::OnPlayerEnteredArea_Implementation(AFGPlayerControllerBase* playerController, TSubclassOf<  UFGMapArea > mapArea){ }
-UFGMusicManager::UFGMusicManager() : Super() {
-	this->mUpdateInterval = 5;
-	this->mFactoryCloseDistance = 10000;
-	this->mMusicManagerClassName = FSoftClassPath("/Game/FactoryGame/-Shared/Audio/Blueprints/BP_MusicManager.BP_MusicManager_C");
-}
+UFGMusicManager::UFGMusicManager(){ }
 void UFGMusicManager::Update(){ }
 void UFGMusicManager::Init(UWorld* inWorld){ }

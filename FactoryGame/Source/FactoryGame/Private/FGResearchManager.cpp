@@ -2,10 +2,7 @@
 
 #include "FGResearchManager.h"
 
-AFGResearchManager::AFGResearchManager() : Super() {
-	this->bAlwaysRelevant = true;
-	this->SetReplicates(true);
-}
+AFGResearchManager::AFGResearchManager(){ }
 void AFGResearchManager::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGResearchManager::PreInitializeComponents(){ Super::PreInitializeComponents(); }
 AFGResearchManager* AFGResearchManager::Get( UWorld* world){ return nullptr; }

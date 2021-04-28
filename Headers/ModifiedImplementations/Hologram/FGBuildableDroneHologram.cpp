@@ -2,11 +2,7 @@
 
 #include "FGBuildableDroneHologram.h"
 
-AFGBuildableDroneHologram::AFGBuildableDroneHologram() : Super() {
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass());
-	this->SetHidden(true);
-	this->SetReplicates(true);
-}
+AFGBuildableDroneHologram::AFGBuildableDroneHologram(){ }
 void AFGBuildableDroneHologram::BeginPlay(){ }
 void AFGBuildableDroneHologram::Destroyed(){ }
 void AFGBuildableDroneHologram::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }

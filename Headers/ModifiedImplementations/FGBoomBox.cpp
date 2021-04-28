@@ -2,9 +2,7 @@
 
 #include "FGBoomBox.h"
 
-AFGBoomBox::AFGBoomBox() : Super() {
-	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0;
-}
+AFGBoomBox::AFGBoomBox(){ }
 void AFGBoomBox::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGBoomBox::PostSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGBoomBox::PreLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }

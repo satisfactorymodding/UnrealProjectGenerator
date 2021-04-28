@@ -2,10 +2,7 @@
 
 #include "FGInteractActor.h"
 
-AFGInteractActor::AFGInteractActor() : Super() {
-	this->SetReplicates(true);
-	this->NetDormancy = DORM_Initial;
-}
+AFGInteractActor::AFGInteractActor(){ }
 void AFGInteractActor::UpdateUseState_Implementation( AFGCharacterPlayer* byCharacter, const FVector& atLocation,  UPrimitiveComponent* componentHit, FUseState& out_useState) const{ }
 void AFGInteractActor::OnUse_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state){ }
 void AFGInteractActor::OnUseStop_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state){ }

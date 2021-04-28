@@ -2,11 +2,7 @@
 
 #include "FGReplicationDetailActor.h"
 
-AFGReplicationDetailActor::AFGReplicationDetailActor() : Super() {
-	this->SetHidden(true);
-	this->SetReplicates(true);
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("ReplicationDetailActor"));
-}
+AFGReplicationDetailActor::AFGReplicationDetailActor(){ }
 AFGReplicationDetailActor* AFGReplicationDetailActor::CreateReplicationDetailActor(UClass* childClass,  IFGReplicationDetailActorOwnerInterface* owner){ return nullptr; }
 void AFGReplicationDetailActor::InitReplicationDetailActor( AFGBuildable* owningActor){ }
 void AFGReplicationDetailActor::UpdateInternalReplicatedValues(){ }

@@ -2,17 +2,7 @@
 
 #include "FGResourceDeposit.h"
 
-AFGResourceDeposit::AFGResourceDeposit() : Super() {
-	this->mResourceDepositTableIndex = -1;
-	this->mDepositMeshComponent = CreateDefaultSubobject<UHierarchicalInstancedStaticMeshComponent>(TEXT("DepositMesh"));
-	this->mPurity = RP_Normal;
-	this->mAmount = RA_Infinite;
-	this->mExtractMultiplier = 2;
-	this->mAllowDecal = true;
-	this->mDoSpawnParticle = true;
-	this->SetReplicates(true);
-	this->NetDormancy = DORM_Initial;
-}
+AFGResourceDeposit::AFGResourceDeposit(){ }
 void AFGResourceDeposit::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGResourceDeposit::PostLoad(){ Super::PostLoad(); }
 void AFGResourceDeposit::BeginPlay(){ }

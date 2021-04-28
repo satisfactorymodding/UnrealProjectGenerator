@@ -2,12 +2,6 @@
 
 #include "FGWalkwayHologram.h"
 
-AFGWalkwayHologram::AFGWalkwayHologram() : Super() {
-	this->mMaxPlacementFloorAngle = 35;
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableWalkway::StaticClass());
-	this->mUseBuildClearanceOverlapSnapp = true;
-	this->SetHidden(true);
-	this->SetReplicates(true);
-}
+AFGWalkwayHologram::AFGWalkwayHologram(){ }
 bool AFGWalkwayHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 void AFGWalkwayHologram::BeginPlay(){ }

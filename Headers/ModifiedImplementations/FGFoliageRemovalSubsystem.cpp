@@ -2,10 +2,7 @@
 
 #include "FGFoliageRemovalSubsystem.h"
 
-AFGFoliageRemovalSubsystem::AFGFoliageRemovalSubsystem() : Super() {
-	this->bAlwaysRelevant = true;
-	this->SetReplicates(true);
-}
+AFGFoliageRemovalSubsystem::AFGFoliageRemovalSubsystem(){ }
 void AFGFoliageRemovalSubsystem::Destroyed(){ }
 void AFGFoliageRemovalSubsystem::Init(){ }
 AFGFoliageRemovalSubsystem* AFGFoliageRemovalSubsystem::Get(UWorld* world){ return nullptr; }

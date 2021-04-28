@@ -3,10 +3,7 @@
 #include "FGDroneStationInfo.h"
 
 void FFGDroneTripStatistics::Clear(){ }
-AFGDroneStationInfo::AFGDroneStationInfo() : Super() {
-	this->bAlwaysRelevant = true;
-	this->SetReplicates(true);
-}
+AFGDroneStationInfo::AFGDroneStationInfo(){ }
 void AFGDroneStationInfo::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGDroneStationInfo::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void AFGDroneStationInfo::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }

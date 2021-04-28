@@ -2,13 +2,7 @@
 
 #include "FGPowerPoleWallHologram.h"
 
-AFGPowerPoleWallHologram::AFGPowerPoleWallHologram() : Super() {
-	this->mMaxPlacementFloorAngle = 35;
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); this->mValidHitClasses.Add(AFGBuildableWall::StaticClass()); this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass());
-	this->mUseBuildClearanceOverlapSnapp = true;
-	this->SetHidden(true);
-	this->SetReplicates(true);
-}
+AFGPowerPoleWallHologram::AFGPowerPoleWallHologram(){ }
 bool AFGPowerPoleWallHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 void AFGPowerPoleWallHologram::CheckValidFloor(){ }
 void AFGPowerPoleWallHologram::CheckClearance(){ }

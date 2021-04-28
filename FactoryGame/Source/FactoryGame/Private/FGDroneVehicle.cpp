@@ -29,9 +29,7 @@ void UFGDroneAction_TraversePath::GotoNextDestination(){ }
 #ifdef DEBUG_DRONES
 void UFGDroneAction_RequestDocking::DisplayDebugInformation(){ }
 #endif 
-UFGDroneAction_RequestDocking::UFGDroneAction_RequestDocking() : Super() {
-	this->mQueuePosition = -1;
-}
+UFGDroneAction_RequestDocking::UFGDroneAction_RequestDocking(){ }
 void UFGDroneAction_RequestDocking::SetStation( AFGBuildableDroneStation* Station, bool ShouldTransferItems){ }
 void UFGDroneAction_RequestDocking::Begin(){ }
 void UFGDroneAction_RequestDocking::End(){ }
@@ -54,14 +52,7 @@ void UFGDroneAction_TravelStartSequence::SetDestination(const FVector& Destinati
 void UFGDroneAction_TravelStartSequence::Begin(){ }
 void UFGDroneAction_TravelStartSequence::End(){ }
 float UFGDroneAction_TravelStartSequence::GetActionDuration() const{ return float(); }
-AFGDroneVehicle::AFGDroneVehicle() : Super() {
-	this->mInventorySize = 20;
-	this->mBatteryStorageSize = 1;
-	this->mDisabledByWaterLocations.SetNum(1); this->mDisabledByWaterLocations[0].X = 0; this->mDisabledByWaterLocations[0].Y = 0; this->mDisabledByWaterLocations[0].Z = 0;
-	this->mSignificanceRange = 20000;
-	this->mSimulationDistance = 20000;
-	this->mShouldAttachDriver = true;
-}
+AFGDroneVehicle::AFGDroneVehicle(){ }
 void AFGDroneVehicle::BeginPlay(){ }
 void AFGDroneVehicle::Tick(float DeltaTime){ }
 void AFGDroneVehicle::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }

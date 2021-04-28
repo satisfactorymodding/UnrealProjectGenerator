@@ -2,9 +2,7 @@
 
 #include "FGDriveablePawn.h"
 
-AFGDriveablePawn::AFGDriveablePawn() : Super() {
-	this->mShouldAttachDriver = true;
-}
+AFGDriveablePawn::AFGDriveablePawn(){ }
 void AFGDriveablePawn::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGDriveablePawn::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGDriveablePawn::PostSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }

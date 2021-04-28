@@ -2,11 +2,7 @@
 
 #include "FGGameState.h"
 
-AFGGameState::AFGGameState() : Super() {
-	this->mReplicatedOnlineSessionName = "Auto";
-	this->mPlannedRestartTime = 24;
-	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = true; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 5;
-}
+AFGGameState::AFGGameState(){ }
 void AFGGameState::Serialize(FArchive& ar){ Super::Serialize(ar); }
 void AFGGameState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGGameState::Tick(float delta){ }

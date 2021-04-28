@@ -2,10 +2,7 @@
 
 #include "FGReplicationDetailActor_Storage.h"
 
-AFGReplicationDetailActor_Storage::AFGReplicationDetailActor_Storage() : Super() {
-	this->SetHidden(true);
-	this->SetReplicates(true);
-}
+AFGReplicationDetailActor_Storage::AFGReplicationDetailActor_Storage(){ }
 void AFGReplicationDetailActor_Storage::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGReplicationDetailActor_Storage::InitReplicationDetailActor( AFGBuildable* owningActor){ }
 void AFGReplicationDetailActor_Storage::RemoveDetailActorFromOwner(){ }

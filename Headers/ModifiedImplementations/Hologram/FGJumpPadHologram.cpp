@@ -2,16 +2,7 @@
 
 #include "FGJumpPadHologram.h"
 
-AFGJumpPadHologram::AFGJumpPadHologram() : Super() {
-	this->mTrajectorySearchRadius = 10000;
-	this->mTrajectorySearchFrequency = 0.100000001490116;
-	this->mMaxPlacementFloorAngle = 35;
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass());
-	this->mUseBuildClearanceOverlapSnapp = true;
-	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0;
-	this->SetHidden(true);
-	this->SetReplicates(true);
-}
+AFGJumpPadHologram::AFGJumpPadHologram(){ }
 void AFGJumpPadHologram::EndPlay(const EEndPlayReason::Type endPlayReason){ }
 void AFGJumpPadHologram::Tick(float dt){ }
 void AFGJumpPadHologram::DisplayNearbyJumpPadTrajectories(){ }

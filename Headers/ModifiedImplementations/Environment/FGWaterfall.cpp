@@ -2,8 +2,6 @@
 
 #include "FGWaterfall.h"
 
-AFGWaterfall::AFGWaterfall() : Super() {
-	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0;
-}
+AFGWaterfall::AFGWaterfall(){ }
 void AFGWaterfall::BeginPlay(){ }
 void AFGWaterfall::Tick(float DeltaTime){ }

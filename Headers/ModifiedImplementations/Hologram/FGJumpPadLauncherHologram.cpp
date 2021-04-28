@@ -2,22 +2,7 @@
 
 #include "FGJumpPadLauncherHologram.h"
 
-AFGJumpPadLauncherHologram::AFGJumpPadLauncherHologram() : Super() {
-	this->mLaunchAngle = 45;
-	this->mLauncherMeshComponent = CreateDefaultSubobject<UHierarchicalInstancedStaticMeshComponent>(TEXT("LauncherMeshComponent")); this->mLauncherMeshComponent->SetupAttachment(this->RootComponent);
-	this->mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("SplineComponent")); this->mSplineComponent->SetupAttachment(this->RootComponent);
-	/* Skipping UFGInstancedSplineMeshComponent this->mInstancedSplineMeshComponent */
-	this->mDestinationMeshComponent = CreateDefaultSubobject<UHierarchicalInstancedStaticMeshComponent>(TEXT("DestinationMeshComponent")); this->mDestinationMeshComponent->SetupAttachment(this->RootComponent);
-	this->mDestinationMeshHeightOffset = 400;
-	this->mTrajectoryMeshSeparationDistance = 200;
-	this->mNumArrows = 5;
-	this->mMaxPlacementFloorAngle = 35;
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); this->mValidHitClasses.Add(AFGBuildableWall::StaticClass()); this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass());
-	this->mUseBuildClearanceOverlapSnapp = true;
-	this->PrimaryActorTick.TickGroup = TG_PrePhysics; this->PrimaryActorTick.EndTickGroup = TG_PrePhysics; this->PrimaryActorTick.bTickEvenWhenPaused = false; this->PrimaryActorTick.bCanEverTick = true; this->PrimaryActorTick.bStartWithTickEnabled = true; this->PrimaryActorTick.bAllowTickOnDedicatedServer = true; this->PrimaryActorTick.TickInterval = 0;
-	this->SetHidden(true);
-	this->SetReplicates(true);
-}
+AFGJumpPadLauncherHologram::AFGJumpPadLauncherHologram(){ }
 void AFGJumpPadLauncherHologram::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGJumpPadLauncherHologram::BeginPlay(){ }
 bool AFGJumpPadLauncherHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }

@@ -2,13 +2,7 @@
 
 #include "FGWallAttachmentHologram.h"
 
-AFGWallAttachmentHologram::AFGWallAttachmentHologram() : Super() {
-	this->mMaxPlacementFloorAngle = 35;
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass()); this->mValidHitClasses.Add(AFGBuildableWall::StaticClass()); this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass());
-	this->mUseBuildClearanceOverlapSnapp = true;
-	this->SetHidden(true);
-	this->SetReplicates(true);
-}
+AFGWallAttachmentHologram::AFGWallAttachmentHologram(){ }
 bool AFGWallAttachmentHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 void AFGWallAttachmentHologram::CheckValidFloor(){ }
 void AFGWallAttachmentHologram::CheckClearance(){ }

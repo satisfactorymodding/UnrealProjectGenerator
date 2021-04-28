@@ -7,14 +7,7 @@ bool AFGResourceNodeBase::IsGeyserDescButNotGeyserNode(){ return bool(); }
 void AFGResourceNodeBase::PostEditChangeProperty( FPropertyChangedEvent& propertyChangedEvent){ Super::PostEditChangeProperty(propertyChangedEvent); }
 void AFGResourceNodeBase::CheckForErrors(){ Super::CheckForErrors(); }
 #endif 
-AFGResourceNodeBase::AFGResourceNodeBase() : Super() {
-	this->mAllowDecal = true;
-	this->mDoSpawnParticle = true;
-	this->mAddToSignificanceManager = true;
-	this->mSignificanceRange = 18000;
-	this->SetReplicates(true);
-	this->NetDormancy = DORM_Initial;
-}
+AFGResourceNodeBase::AFGResourceNodeBase(){ }
 void AFGResourceNodeBase::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGResourceNodeBase::PostLoad(){ Super::PostLoad(); }
 void AFGResourceNodeBase::BeginPlay(){ }

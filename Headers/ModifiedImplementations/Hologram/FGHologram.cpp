@@ -2,13 +2,7 @@
 
 #include "FGHologram.h"
 
-AFGHologram::AFGHologram() : Super() {
-	this->mValidHitClasses.Add(AFGBuildableFoundation::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRailroadTrack::StaticClass()); this->mValidHitClasses.Add(AFGBuildableRoad::StaticClass());
-	this->SetHidden(true);
-	this->SetReplicates(true);
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound")); this->mLoopSound->SetupAttachment(this->RootComponent);
-}
+AFGHologram::AFGHologram(){ }
 void AFGHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 bool AFGHologram::IsNetRelevantFor(const AActor* RealViewer, const AActor* ViewTarget, const FVector& SrcLocation) const{ return bool(); }
 AFGHologram* AFGHologram::SpawnHologramFromRecipe(TSubclassOf<  UFGRecipe > inRecipe, AActor* hologramOwner, FVector spawnLocation, APawn* hologramInstigator){ return nullptr; }
@@ -72,6 +66,7 @@ void AFGHologram::CheckCanAfford( UFGInventoryComponent* inventory){ }
 void AFGHologram::OnSnap(){ }
 void AFGHologram::OnRep_PlacementMaterial(){ }
 void AFGHologram::SetMaterial( UMaterialInterface* material){ }
+void AFGHologram::SetMaterialState(bool IsValidPlacement){ }
 TSubclassOf< AActor > AFGHologram::GetActorClass() const{ return TSubclassOf<AActor>(); }
 USceneComponent* AFGHologram::SetupComponent(USceneComponent* attachParent, UActorComponent* componentTemplate, const FName& componentName){ return nullptr; }
 void AFGHologram::SetIsChanged(){ }
