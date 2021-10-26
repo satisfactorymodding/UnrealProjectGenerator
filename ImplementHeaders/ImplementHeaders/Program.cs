@@ -479,11 +479,23 @@ DEFINE_LOG_CATEGORY(LogPoolSystem);"
             { "FGSSearchableComboBox::GenerateMenuItemRow",
 @"  return SNew(STableRow<TSharedPtr<FString>>, OwnerTable);"
             },
+            { "UFGColoredInstanceMeshProxy::ShouldCreateRenderState",
+@"#if WITH_EDITOR // Ensure visibility in blueprint & editor.
+    if( GetWorld()->WorldType == EWorldType::Editor || GetWorld()->WorldType == EWorldType::EditorPreview)
+    {
+        return true;
+    }
+#endif    
+    // only create when its blocking instancing.
+    return mBlockInstancing;"
+            },
             { "FFactoryGameCustomVersion::GUID",
 @"FGuid(0x0F4E61DC1, 0x7C029ACE, 0x85D7D561, 0x0E42F6A3D); //See symbol ?GUID@FFactoryGameCustomVersion@@2UFGuid@@B in IDA for value <0F4E61DC1h, 7C029ACEh, 85D7D561h, 0E42F6A3Dh>
 
 //Stuff to register custom version for UE4 tracking
-FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustomVersion::GUID, 18, TEXT(""Dev-Framework"") }" }, // I don't like this multiline
+FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustomVersion::GUID, FFactoryGameCustomVersion::Type::LatestVersion, TEXT(""Dev-Framework"") }" }, // I don't like this multiline
+            { "FSaveCustomVersion::GUID",
+@" FGuid(0x21043E2F, 0x13E61FD6, 0x513B9D51, 0x3636A230); //See symbol ?GUID@FSaveCustomVersion@@2UFGuid@@B in IDA for value <21043E2Fh, 13E61FD6h, 513B9D51h, 3636A230h>" },
             { "UFGGameUserSettings::mCVarSink",
 @"FConsoleCommandDelegate::CreateStatic(&UFGGameUserSettings::CVarSinkHandler)" }
         };
