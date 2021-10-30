@@ -10,6 +10,7 @@ void AFGAdminInterface::SetSessionVisibility_Implementation(ESessionVisibility v
 bool AFGAdminInterface::SetSessionVisibility_Validate(ESessionVisibility visibility){ return bool(); }
 void AFGAdminInterface::SaveGame(bool locally, const FString& saveName, FOnAdminSaveGameComplete completeDelegate){ }
 void AFGAdminInterface::LoadGame(bool locally, const FSaveHeader& save){ }
+void AFGAdminInterface::LoadGameByName(const FString& saveGameName){ }
 void AFGAdminInterface::EnumerateSaveGames(bool localSaves, FOnAdminEnumerateSaveGamesComplete completeDelegate){ }
 void AFGAdminInterface::DeleteSaveSession(bool localSaves, const FSessionSaveStruct& session, FOnAdminDeleteSaveGameComplete completeDelegate){ }
 void AFGAdminInterface::DeleteSaveFiles(bool localSaves, const TArray<FString>& saveNames, FOnAdminDeleteSaveGameComplete completeDelegate){ }

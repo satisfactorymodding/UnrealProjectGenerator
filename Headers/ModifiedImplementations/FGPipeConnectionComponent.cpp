@@ -5,8 +5,7 @@
 UFGPipeConnectionComponentBase::UFGPipeConnectionComponentBase(){ }
 void UFGPipeConnectionComponentBase::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void UFGPipeConnectionComponentBase::OnComponentDestroyed(bool isDestroyingHierarchy){ }
-void UFGPipeConnectionComponentBase::OnRegister(){ Super::OnRegister(); }
-void UFGPipeConnectionComponentBase::OnUnregister(){ Super::OnUnregister(); }
+void UFGPipeConnectionComponentBase::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void UFGPipeConnectionComponentBase::SetConnection( UFGPipeConnectionComponentBase* toComponent){ }
 void UFGPipeConnectionComponentBase::ClearConnection(){ }
 bool UFGPipeConnectionComponentBase::IsConnected() const{ return bool(); }

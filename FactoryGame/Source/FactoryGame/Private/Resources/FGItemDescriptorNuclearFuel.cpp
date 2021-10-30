@@ -2,6 +2,9 @@
 
 #include "Resources/FGItemDescriptorNuclearFuel.h"
 
-UFGItemDescriptorNuclearFuel::UFGItemDescriptorNuclearFuel(){ }
+UFGItemDescriptorNuclearFuel::UFGItemDescriptorNuclearFuel(){ 
+	this->mSpentFuelClass = nullptr;
+	this->mAmountOfWaste = 1;
+}
 TSubclassOf< UFGItemDescriptor > UFGItemDescriptorNuclearFuel::GetSpentFuelClass(TSubclassOf< UFGItemDescriptorNuclearFuel > inClass){ return TSubclassOf<UFGItemDescriptor>(); }
 int32 UFGItemDescriptorNuclearFuel::GetAmountWasteCreated(TSubclassOf< UFGItemDescriptorNuclearFuel > inClass){ return int32(); }

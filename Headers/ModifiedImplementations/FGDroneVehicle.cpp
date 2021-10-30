@@ -58,10 +58,11 @@ void AFGDroneVehicle::Tick(float DeltaTime){ }
 void AFGDroneVehicle::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 bool AFGDroneVehicle::IsUseable_Implementation() const{ return bool(); }
 void AFGDroneVehicle::Dismantle_Implementation(){ }
-void AFGDroneVehicle::OnSimulationChanged(){ }
+void AFGDroneVehicle::OnIsSimulatedChanged(){ }
 void AFGDroneVehicle::GainedSignificance_Implementation(){ }
 void AFGDroneVehicle::LostSignificance_Implementation(){ }
 void AFGDroneVehicle::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
+FText AFGDroneVehicle::GetActorRepresentationText(){ return FText(); }
 void AFGDroneVehicle::NotifyPairedStationUpdated( AFGBuildableDroneStation* NewPairedStation){ }
 void AFGDroneVehicle::OnUndocked(){ }
 void AFGDroneVehicle::OnDockedStationDestroyed(){ }

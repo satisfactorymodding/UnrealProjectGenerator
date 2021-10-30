@@ -24,5 +24,8 @@ void AFGWorldSettings::PostLoadGame_Implementation(int32 saveVersion, int32 game
 void AFGWorldSettings::GatherDependencies_Implementation(TArray< UObject* >& out_dependentObjects){ }
 bool AFGWorldSettings::NeedTransform_Implementation(){ return bool(); }
 bool AFGWorldSettings::ShouldSave_Implementation() const{ return bool(); }
+AExponentialHeightFog* AFGWorldSettings::GetExponentialHeightFog() const{ return nullptr; }
+ASkyAtmosphere* AFGWorldSettings::GetSkyAtmosphere() const{ return nullptr; }
+AFGSkySphere* AFGWorldSettings::GetSkySphere() const{ return nullptr; }
 void AFGWorldSettings::UpdateWorldBounds(){ }
 void AFGWorldSettings::OnActorSpawned(AActor* actor){ }

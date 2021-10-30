@@ -19,7 +19,8 @@ bool AFGWireHologram::TryUpgrade(const FHitResult& hitResult){ return bool(); }
 void AFGWireHologram::ConfigureActor( AFGBuildable* inBuildable) const{ }
 void AFGWireHologram::Destroyed(){ }
 void AFGWireHologram::CheckValidPlacement(){ }
-void AFGWireHologram::CheckClearance(){ }
+void AFGWireHologram::CheckClearance(const FVector& locationOffset){ }
+uint8 AFGWireHologram::GetStencilForHologramMaterialState(EHologramMaterialState state) const{ return uint8(); }
 void AFGWireHologram::CheckValidSnap(){ }
 void AFGWireHologram::CheckLength(){ }
 void AFGWireHologram::SetActiveAutomaticPoleHologram( AFGPowerPoleHologram* poleHologram){ }

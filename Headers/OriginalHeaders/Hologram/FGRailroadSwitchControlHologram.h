@@ -25,10 +25,13 @@ public:
 	 */
 	void SetHologramLocationAndRotationFromConnection( class UFGRailroadTrackConnectionComponent* controlledConnection );
 
+	/** The the controlled connection, might be null if SetHologramLocationAndRotationFromConnection has not been called. */
+	class UFGRailroadTrackConnectionComponent* GetControlledConnection() const { return mControlledConnection; }
+	
 protected:
 	// Begin AFGHologram
 	virtual void ConfigureActor( class AFGBuildable* inBuildable ) const override;
-	virtual void CheckClearance() override;
+	virtual void CheckClearance( const FVector& locationOffset ) override;
 	virtual void CheckValidFloor() override;
 	// End AFGHologram
 

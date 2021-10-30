@@ -46,6 +46,9 @@ public:
 	/** Validation function to check whether initial replication has occurred. Only works on client and overriden implementations. */
 	virtual bool HasCompletedInitialReplication() const;
 
+	/** Returns the buildable that owns this actor */
+	class AFGBuildable* GetOwningBuildable() const { return mOwningBuildable; }
+
 protected:
 
 	/** Owning AFGBuildable to this replication detail actor object. Should never be null. */

@@ -14,5 +14,5 @@ void AFGBuildablePipeBase::LostSignificance_Native(){ }
 void AFGBuildablePipeBase::SetupForSignificance(){ }
 float AFGBuildablePipeBase::FindOffsetClosestToLocation(const FVector& location) const{ return float(); }
 void AFGBuildablePipeBase::GetLocationAndDirectionAtOffset(float offset, FVector& out_location, FVector& out_direction) const{ }
-TSubclassOf< UFGPipeConnectionComponentBase > AFGBuildablePipeBase::GetConnectionType_Implementation(){ return TSubclassOf<UFGPipeConnectionComponentBase>(); }
+TSubclassOf< class UFGPipeConnectionComponentBase > AFGBuildablePipeBase::GetConnectionType_Implementation(){ return TSubclassOf<class UFGPipeConnectionComponentBase>(); }
 const float AFGBuildablePipeBase::PIPE_COST_LENGTH_MULTIPLIER = float();

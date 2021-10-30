@@ -2,5 +2,11 @@
 
 #include "AI/FGAttackMeleeJump.h"
 
-UFGAttackMeleeJump::UFGAttackMeleeJump(){ }
+UFGAttackMeleeJump::UFGAttackMeleeJump(){ 
+	this->mJumpRange = 2000.0;
+	this->mJumpVelocity.X = 0.0;
+	this->mJumpVelocity.Y = 0.0;
+	this->mJumpVelocity.Z = 0.0;
+	this->mPreJumpMontage = nullptr;
+}
 void UFGAttackMeleeJump::PerformAttack(TScriptInterface< IFGAggroTargetInterface >	aggroTarget,  AFGEnemy* sourceActor){ }

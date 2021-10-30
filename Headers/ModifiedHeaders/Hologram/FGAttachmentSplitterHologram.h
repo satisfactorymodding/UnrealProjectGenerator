@@ -16,6 +16,10 @@ class FACTORYGAME_API AFGAttachmentSplitterHologram : public AFGConveyorAttachme
 public:
 	AFGAttachmentSplitterHologram();
 
+	// Begin AActor Interface
+	virtual void BeginPlay() override;
+	// End AActor Interface
+
 	// Begin AFGHologram Interface
 	virtual bool TryUpgrade( const FHitResult& hitResult ) override;
 	virtual bool DoMultiStepPlacement(bool isInputFromARelease) override;

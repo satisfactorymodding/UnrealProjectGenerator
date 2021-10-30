@@ -3,16 +3,21 @@
 #include "FGProjectile.h"
 
 AFGProjectile::AFGProjectile(){ }
-void AFGProjectile::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
+void AFGProjectile::Tick(float DeltaSeconds){ }
+void AFGProjectile::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGProjectile::PostInitializeComponents(){ Super::PostInitializeComponents(); }
 bool AFGProjectile::ShouldSave_Implementation() const{ return bool(); }
 bool AFGProjectile::NeedTransform_Implementation(){ return bool(); }
-float AFGProjectile::TakeDamage(float DamageAmount,  FDamageEvent const& DamageEvent,  AController* EventInstigator, AActor* DamageCauser){ return float(); }
+float AFGProjectile::TakeDamage(float DamageAmount, const  FDamageEvent& DamageEvent,  AController* EventInstigator,
+							AActor* DamageCauser){ return float(); }
 void AFGProjectile::LifeSpanExpired(){ }
 void AFGProjectile::OnImpact(const FHitResult& hitResult){ }
 void AFGProjectile::OnBounce(const FHitResult& hitResult, const FVector& hitVelocity){ }
 void AFGProjectile::SetProjectileData(FProjectileData projectileData){ }
 void AFGProjectile::SetInitialVelocity(FVector inVelocity){ }
+void AFGProjectile::TriggerSecondary(){ }
+void AFGProjectile::TriggerSecondaryWithDelay(float delayTime){ }
+void AFGProjectile::SetAndEnableRotation(float scale){ }
 void AFGProjectile::DealExplosionDamage(const FHitResult& impact){ }
 void AFGProjectile::DealImpactDamage(const FHitResult& impact){ }
 void AFGProjectile::DisableAndSetLifeSpan(){ }

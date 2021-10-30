@@ -20,6 +20,7 @@ FFluidBox* AFGBuildablePipeline::GetFluidBox(){ return nullptr; }
 TArray< class UFGPipeConnectionComponent* > AFGBuildablePipeline::GetPipeConnections(){ return TArray<class UFGPipeConnectionComponent*>(); }
 void AFGBuildablePipeline::OnFluidDescriptorSet(){ }
 void AFGBuildablePipeline::Upgrade_Implementation(AActor* newActor){ }
+void AFGBuildablePipeline::Dismantle_Implementation(){ }
 TArray< AFGBuildablePipeline* > AFGBuildablePipeline::Split(AFGBuildablePipeline* pipeline, float offset, bool connectNewPipelines, AActor* instigator){ return TArray<AFGBuildablePipeline*>(); }
 AFGBuildablePipeline* AFGBuildablePipeline::Merge(TArray< AFGBuildablePipeline* > pipelines, AActor* instigator){ return nullptr; }
 float AFGBuildablePipeline::GetIndicatorContentPct() const{ return float(); }
@@ -31,5 +32,5 @@ UFGPipelineFlowIndicatorComponent* AFGBuildablePipeline::GetFlowIndicatorCompone
 void AFGBuildablePipeline::FlushPipeNetwork(){ }
 void AFGBuildablePipeline::UpdateSounds(){ }
 bool AFGBuildablePipeline::FindBestInidicatorPlacement(FTransform& out_transform){ return bool(); }
-FName AFGBuildablePipeline::mConnectionName0 = FName();
-FName AFGBuildablePipeline::mConnectionName1 = FName();
+const FName AFGBuildablePipeline::mConnectionName0 = FName();
+const FName AFGBuildablePipeline::mConnectionName1 = FName();

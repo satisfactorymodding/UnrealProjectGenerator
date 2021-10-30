@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Hologram/FGJumpPadHologram.h"
-#include "FGBuildableJumpPad.h"
+#include "FGBuildableJumppad.h"
 
 #include "FGJumpPadLauncherHologram.generated.h"
 
@@ -36,7 +36,6 @@ public:
 	// Begin AFGHologram Interface
 	virtual bool TrySnapToActor( const FHitResult& hitResult ) override;
 	virtual void SetHologramLocationAndRotation( const FHitResult& hitResult ) override;
-	virtual void SetMaterial( class UMaterialInterface* material ) override;
 	// End AFGHologram Interface
 
 	// Begin AFGHologram Interface

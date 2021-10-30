@@ -8,10 +8,13 @@ void AFGBuildableRailroadStation::BeginPlay(){ }
 void AFGBuildableRailroadStation::Destroyed(){ }
 void AFGBuildableRailroadStation::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 bool AFGBuildableRailroadStation::CanDismantle_Implementation() const{ return bool(); }
+void AFGBuildableRailroadStation::Factory_Tick(float dt){ }
+bool AFGBuildableRailroadStation::CanProduce_Implementation() const{ return bool(); }
 UFGTrainPlatformConnection* AFGBuildableRailroadStation::GetStationOutputConnection(){ return nullptr; }
 bool AFGBuildableRailroadStation::CanDock( AFGLocomotive* locomotive){ return bool(); }
 bool AFGBuildableRailroadStation::StartDocking( AFGLocomotive* locomotive, float offset){ return bool(); }
 void AFGBuildableRailroadStation::NotifyPlatformDockingComplete( AFGBuildableTrainPlatform* completedPlatform){ }
+void AFGBuildableRailroadStation::CancelDockingSequence(){ }
 void AFGBuildableRailroadStation::SetupRailroadTrack(){ }
 bool AFGBuildableRailroadStation::DockVehiclesToPlatforms( AFGLocomotive* locomotive){ return bool(); }
 void AFGBuildableRailroadStation::FinishDockingSequence(){ }

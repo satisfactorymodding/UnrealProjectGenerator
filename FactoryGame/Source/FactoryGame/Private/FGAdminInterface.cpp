@@ -2,7 +2,11 @@
 
 #include "FGAdminInterface.h"
 
-AFGAdminInterface::AFGAdminInterface(){ }
+AFGAdminInterface::AFGAdminInterface(){ 
+	this->bOnlyRelevantToOwner = true;
+	this->bAlwaysRelevant = true;
+	this->bReplicates = true;
+}
 bool AFGAdminInterface::IsNetRelevantFor(const AActor* realViewer, const AActor* viewTarget, const FVector& srcLocation) const{ return bool(); }
 void AFGAdminInterface::KickPlayer_Implementation( APlayerState* playerState){ }
 bool AFGAdminInterface::KickPlayer_Validate( APlayerState* playerState){ return bool(); }
@@ -10,6 +14,7 @@ void AFGAdminInterface::SetSessionVisibility_Implementation(ESessionVisibility v
 bool AFGAdminInterface::SetSessionVisibility_Validate(ESessionVisibility visibility){ return bool(); }
 void AFGAdminInterface::SaveGame(bool locally, const FString& saveName, FOnAdminSaveGameComplete completeDelegate){ }
 void AFGAdminInterface::LoadGame(bool locally, const FSaveHeader& save){ }
+void AFGAdminInterface::LoadGameByName(const FString& saveGameName){ }
 void AFGAdminInterface::EnumerateSaveGames(bool localSaves, FOnAdminEnumerateSaveGamesComplete completeDelegate){ }
 void AFGAdminInterface::DeleteSaveSession(bool localSaves, const FSessionSaveStruct& session, FOnAdminDeleteSaveGameComplete completeDelegate){ }
 void AFGAdminInterface::DeleteSaveFiles(bool localSaves, const TArray<FString>& saveNames, FOnAdminDeleteSaveGameComplete completeDelegate){ }

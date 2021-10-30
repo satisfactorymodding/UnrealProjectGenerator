@@ -79,6 +79,9 @@ public:
 	UFUNCTION( BlueprintNativeEvent, Category = "Equipment" )
 	bool CanDoDefaultPrimaryFire();
 
+	UFUNCTION( BlueprintCallable, Category= "Equipment" )
+	virtual void DisableEquipment();
+	
 	/**
 	 * Is this equipment equipped.
 	 * @return - true if equiped; otherwise false.
@@ -247,6 +250,9 @@ protected:
 	/** Does the actual charging of cost on both server and client */
 	void ChargeForUse_Internal();
 
+	UFUNCTION()
+	void OnChildEquipmentReplicated();
+
 public:
 	/** This is the attachment for this class */
 	UPROPERTY( EditDefaultsOnly, Category = "Equipment" )
@@ -262,7 +268,7 @@ public:
 
 	/** Camera shake to play when sprinting */
 	UPROPERTY( EditDefaultsOnly, Category = "Equipment" )
-	TSubclassOf< class UCameraShake > mSprintHeadBobShake;
+	TSubclassOf< class UMatineeCameraShake > mSprintHeadBobShake;
 
 	//@todo Are these used by Joel or legacy?
 	/** Sound played when equipping */
@@ -278,7 +284,7 @@ public:
 	TSubclassOf< UUserWidget > mEquipmentWidget;
 
 	/** Holds a reference to the child equipment that may be spawned with this */
-	UPROPERTY( Replicated )
+	UPROPERTY( Replicated, ReplicatedUsing=OnChildEquipmentReplicated )
 	class AFGEquipmentChild* mChildEquipment;
 
 protected:

@@ -16,10 +16,14 @@ class FACTORYGAME_API AFGCeilingLightHologram : public AFGBuildableHologram
 public:
 	AFGCeilingLightHologram();
 
+	// Begin AActor interface
+	virtual void BeginPlay() override;
+	// End AActor interface
+
 	// Begin AFGHologram interface
 	virtual bool TrySnapToActor( const FHitResult& hitResult ) override;
 	virtual void SetHologramLocationAndRotation( const FHitResult& hitResult ) override;
 	virtual void CheckValidFloor() override;
-	virtual void CheckClearance() override;
+	virtual void CheckClearance( const FVector& locationOffset ) override;
 	// End AFGHologram interface
 };

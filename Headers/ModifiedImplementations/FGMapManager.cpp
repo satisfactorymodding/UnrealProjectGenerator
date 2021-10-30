@@ -18,6 +18,8 @@ bool AFGMapManager::ShouldSave_Implementation() const{ return bool(); }
 void AFGMapManager::RequestFogOfWarData( AFGPlayerController* playerController){ }
 void AFGMapManager::TransferFogOfWarData(){ }
 void AFGMapManager::SyncFogOfWarChanges(const TArray<uint8>& fogOfWarRawData, int32 finalIndex){ }
+void AFGMapManager::RevealMap(){ }
+void AFGMapManager::HideMap(){ }
 void AFGMapManager::SetupFogOfWarTexture(){ }
 void AFGMapManager::InitialFogOfWarRequest(){ }
 void AFGMapManager::SetupRepresentationManager(){ }

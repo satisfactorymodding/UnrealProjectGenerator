@@ -79,6 +79,10 @@ public:
 	/** Receive fog of war data via player controller  */
 	void SyncFogOfWarChanges( const TArray<uint8>& fogOfWarRawData, int32 finalIndex );
 
+	// Cheats
+	void RevealMap();
+	void HideMap();
+
 private:
 	
 	/** Setups the fog of war texture TODO: Move the texture parts to separate class */

@@ -3,7 +3,8 @@
 #include "FGCeilingLightHologram.h"
 
 AFGCeilingLightHologram::AFGCeilingLightHologram(){ }
+void AFGCeilingLightHologram::BeginPlay(){ }
 bool AFGCeilingLightHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 void AFGCeilingLightHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }
 void AFGCeilingLightHologram::CheckValidFloor(){ }
-void AFGCeilingLightHologram::CheckClearance(){ }
+void AFGCeilingLightHologram::CheckClearance(const FVector& locationOffset){ }

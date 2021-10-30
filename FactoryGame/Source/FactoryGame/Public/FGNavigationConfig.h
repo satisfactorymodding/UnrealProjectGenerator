@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Framework/Application/NavigationConfig.h" // MODDING EDIT
 
 /**
  * This class is created to override how widget navigation with keys is handled. 

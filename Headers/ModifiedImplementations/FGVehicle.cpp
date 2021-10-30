@@ -19,9 +19,10 @@ void AFGVehicle::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersio
 void AFGVehicle::GainedSignificance_Implementation(){ }
 void AFGVehicle::LostSignificance_Implementation(){ }
 float AFGVehicle::GetSignificanceRange(){ return float(); }
-FLinearColor AFGVehicle::GetPrimaryColor_Implementation(){ return FLinearColor(); }
-FLinearColor AFGVehicle::GetSecondaryColor_Implementation(){ return FLinearColor(); }
-void AFGVehicle::StartIsAimedAtForColor_Implementation( AFGCharacterPlayer* byCharacter){ }
+void AFGVehicle::SetCustomizationData_Native(const FFactoryCustomizationData& customizationData){ }
+void AFGVehicle::SetCustomizationData_Implementation(const FFactoryCustomizationData& colorData){ }
+void AFGVehicle::ApplyCustomizationData_Native(const FFactoryCustomizationData& customizationData){ }
+void AFGVehicle::StartIsAimedAtForColor_Implementation( AFGCharacterPlayer* byCharacter, bool isValid){ }
 void AFGVehicle::StopIsAimedAtForColor_Implementation( AFGCharacterPlayer* byCharacter){ }
 bool AFGVehicle::CanDock_Implementation(EDockStationType atStation) const{ return bool(); }
 UFGInventoryComponent* AFGVehicle::GetDockInventory_Implementation() const{ return nullptr; }
@@ -38,6 +39,8 @@ bool AFGVehicle::IsUseable_Implementation() const{ return bool(); }
 void AFGVehicle::StartIsLookedAt_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state){ }
 void AFGVehicle::StopIsLookedAt_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state){ }
 FText AFGVehicle::GetLookAtDecription_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state) const{ return FText(); }
+void AFGVehicle::RegisterInteractingPlayer_Implementation( AFGCharacterPlayer* player){ }
+void AFGVehicle::UnregisterInteractingPlayer_Implementation( AFGCharacterPlayer* player){ }
 bool AFGVehicle::CanDismantle_Implementation() const{ return bool(); }
 void AFGVehicle::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund) const{ }
 FVector AFGVehicle::GetRefundSpawnLocationAndArea_Implementation(const FVector& aimHitLocation, float& out_radius) const{ return FVector(); }
@@ -46,6 +49,7 @@ void AFGVehicle::Upgrade_Implementation(AActor* newActor){ }
 void AFGVehicle::Dismantle_Implementation(){ }
 void AFGVehicle::StartIsLookedAtForDismantle_Implementation(AFGCharacterPlayer* byCharacter){ }
 void AFGVehicle::StopIsLookedAtForDismantle_Implementation(AFGCharacterPlayer* byCharacter){ }
+void AFGVehicle::GetChildDismantleActors_Implementation(TArray< AActor* >& out_ChildDismantleActors) const{ }
 void AFGVehicle::RegisterIncomingAttacker_Implementation( AFGEnemyController* forController){ }
 void AFGVehicle::UnregisterAttacker_Implementation( AFGEnemyController* forController){ }
 AActor* AFGVehicle::GetActor_Implementation(){ return nullptr; }
@@ -54,8 +58,26 @@ bool AFGVehicle::ShouldAutoregisterAsTargetable_Implementation() const{ return b
 UPrimitiveComponent* AFGVehicle::GetTargetComponent_Implementation(){ return nullptr; }
 bool AFGVehicle::IsAlive_Implementation() const{ return bool(); }
 FVector AFGVehicle::GetAttackLocation_Implementation() const{ return FVector(); }
+bool AFGVehicle::AddAsRepresentation(){ return bool(); }
+bool AFGVehicle::UpdateRepresentation(){ return bool(); }
+bool AFGVehicle::RemoveAsRepresentation(){ return bool(); }
+bool AFGVehicle::IsActorStatic(){ return bool(); }
+FVector AFGVehicle::GetRealActorLocation(){ return FVector(); }
+FRotator AFGVehicle::GetRealActorRotation(){ return FRotator(); }
+UTexture2D* AFGVehicle::GetActorRepresentationTexture(){ return nullptr; }
+FText AFGVehicle::GetActorRepresentationText(){ return FText(); }
+void AFGVehicle::SetActorRepresentationText(const FText& newText){ }
+FLinearColor AFGVehicle::GetActorRepresentationColor(){ return FLinearColor(); }
+void AFGVehicle::SetActorRepresentationColor(FLinearColor newColor){ }
+ERepresentationType AFGVehicle::GetActorRepresentationType(){ return ERepresentationType(); }
+bool AFGVehicle::GetActorShouldShowInCompass(){ return bool(); }
+bool AFGVehicle::GetActorShouldShowOnMap(){ return bool(); }
+EFogOfWarRevealType AFGVehicle::GetActorFogOfWarRevealType(){ return EFogOfWarRevealType(); }
+float AFGVehicle::GetActorFogOfWarRevealRadius(){ return float(); }
+ECompassViewDistance AFGVehicle::GetActorCompassViewDistance(){ return ECompassViewDistance(); }
+void AFGVehicle::SetActorCompassViewDistance(ECompassViewDistance compassViewDistance){ }
+bool AFGVehicle::CanBeSampled(){ return bool(); }
 USkeletalMeshComponent* AFGVehicle::GetMesh() const{ return nullptr; }
-UFGHealthComponent* AFGVehicle::GetHealthComponent(){ return nullptr; }
 bool AFGVehicle::DriverEnter( AFGCharacterPlayer* driver){ return bool(); }
 bool AFGVehicle::DriverLeave(bool keepDriving){ return bool(); }
 bool AFGVehicle::CanSelfDriverEnter( AAIController* ai) const{ return bool(); }
@@ -63,7 +85,11 @@ bool AFGVehicle::SelfDriverEnter( AAIController* ai){ return bool(); }
 void AFGVehicle::KickAllPlayers(){ }
 void AFGVehicle::Stat_Cost(TArray< FItemAmount >& out_amount) const{ }
 void AFGVehicle::Stat_StockInventory(TArray< FItemAmount >& out_amount) const{ }
-void AFGVehicle::SetSimulation(bool newIsSimulating){ }
+void AFGVehicle::SetForceRealMode(bool forceRealMode){ }
+void AFGVehicle::SetForceSimulationMode(bool forceSimulationMode){ }
+void AFGVehicle::SetSimulated(bool newIsSimulated){ }
+void AFGVehicle::ApplyMeshPrimitiveData(const FFactoryCustomizationData& customizationData){ }
+void AFGVehicle::OnCustomizationDataApplied(const FFactoryCustomizationData& customizationData){ }
 void AFGVehicle::OnRep_IsSimulated(){ }
 void AFGVehicle::OnTakeDamage(AActor* damagedActor, float damageAmount, const  UDamageType* damageType,  AController* instigatedBy, AActor* damageCauser){ }
 void AFGVehicle::Died(AActor* thisActor){ }
@@ -78,4 +104,5 @@ void AFGVehicle::ShowOutline(EOutlineColor color) const{ }
 void AFGVehicle::HideOutline(){ }
 void AFGVehicle::SetSelfDriving(bool newSelfDriving){ }
 void AFGVehicle::UpdatePhysicsVolume(APhysicsVolume* physicsVolume){ }
+void AFGVehicle::OnRep_CustomColorData(){ }
 FName AFGVehicle::VehicleMeshComponentName = FName();

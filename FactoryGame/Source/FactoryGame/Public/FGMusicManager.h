@@ -5,13 +5,6 @@
 #include "GameFramework/Actor.h"
 #include "FGMusicManager.generated.h"
 
-// MODDING EDIT
-UCLASS()
-class UAkObject : public UObject
-{
-	GENERATED_BODY()
-};
-
 /**
  * Handles playing the music in game, this is created really early and is available across loading screens.
  */

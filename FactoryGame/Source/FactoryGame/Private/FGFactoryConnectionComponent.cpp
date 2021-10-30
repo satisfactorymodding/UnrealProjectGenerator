@@ -2,7 +2,19 @@
 
 #include "FGFactoryConnectionComponent.h"
 
-UFGFactoryConnectionComponent::UFGFactoryConnectionComponent(){ }
+UFGFactoryConnectionComponent::UFGFactoryConnectionComponent(){ 
+	this->mConnector = EFactoryConnectionConnector::FCC_CONVEYOR;
+	this->mDirection = EFactoryConnectionDirection::FCD_INPUT;
+	this->mConnectorClearance = 100.0;
+	this->mConnectedComponent = nullptr;
+	this->mHasConnectedComponent = false;
+	this->mConnectionInventory = nullptr;
+	this->mInventoryAccessIndex = -1;
+	this->mOuterBuildable = nullptr;
+	this->mForwardPeekAndGrabToBuildable = false;
+	this->bNetAddressable = true;
+	this->SetIsReplicated(true);
+}
 void UFGFactoryConnectionComponent::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void UFGFactoryConnectionComponent::OnComponentDestroyed(bool isDestroyingHierarchy){ }
 void UFGFactoryConnectionComponent::OnRegister(){ Super::OnRegister(); }

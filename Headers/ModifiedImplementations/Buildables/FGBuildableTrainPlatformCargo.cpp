@@ -18,6 +18,7 @@ float AFGBuildableTrainPlatformCargo::GetDockedVehicleOffset() const{ return flo
 void AFGBuildableTrainPlatformCargo::OnReplicationDetailActorRemoved(){ }
 void AFGBuildableTrainPlatformCargo::NotifyTrainDocked( AFGRailroadVehicle* railroadVehicle,  AFGBuildableRailroadStation* initiatedByStation){ }
 void AFGBuildableTrainPlatformCargo::UpdateDockingSequence(){ }
+void AFGBuildableTrainPlatformCargo::CancelDockingSequence(){ }
 void AFGBuildableTrainPlatformCargo::UpdatePowerConnectionFromTrack(){ }
 void AFGBuildableTrainPlatformCargo::Factory_Tick(float dt){ }
 void AFGBuildableTrainPlatformCargo::Factory_CollectInput_Implementation(){ }
@@ -28,14 +29,21 @@ void AFGBuildableTrainPlatformCargo::OnRep_ReplicationDetailActor(){ }
 void AFGBuildableTrainPlatformCargo::OnRep_UpdateDockingStatus(){ }
 bool AFGBuildableTrainPlatformCargo::FilterResourceForms(TSubclassOf< UFGItemDescriptor > itemDesc, int32 idx) const{ return bool(); }
 int32 AFGBuildableTrainPlatformCargo::GetFirstIndexWithItem(UFGInventoryComponent* inventory) const{ return int32(); }
-void AFGBuildableTrainPlatformCargo::TransferInventoryToTrain(){ }
-void AFGBuildableTrainPlatformCargo::TransferInventoryToPlatform(){ }
+void AFGBuildableTrainPlatformCargo::TransferInventory(UFGInventoryComponent* from, UFGInventoryComponent* to){ }
 void AFGBuildableTrainPlatformCargo::LoadUnloadVehicleComplete(){ }
+void AFGBuildableTrainPlatformCargo::EvaluateFreightInventoryStatus(){ }
 void AFGBuildableTrainPlatformCargo::UpdateUnloadSettings(){ }
 void AFGBuildableTrainPlatformCargo::UpdateLoadSettings(){ }
 void AFGBuildableTrainPlatformCargo::SwapCargoContainerVisibility(){ }
 void AFGBuildableTrainPlatformCargo::HidePlatformCargoContainer(){ }
 void AFGBuildableTrainPlatformCargo::ShowPlatformCargoContainer(){ }
 void AFGBuildableTrainPlatformCargo::OnCargoPowerStateChanged(bool hasPower){ }
+void AFGBuildableTrainPlatformCargo::EvaluateRuleSet(){ }
+bool AFGBuildableTrainPlatformCargo::CanCompleteDocking(){ return bool(); }
+bool AFGBuildableTrainPlatformCargo::IsLoadUnloadBlockedByNoneFilter(){ return bool(); }
+void AFGBuildableTrainPlatformCargo::UpdateItemTransferRate(int32 numItemsTransfered){ }
+float AFGBuildableTrainPlatformCargo::GetCurrentItemTransferRate(){ return float(); }
+void AFGBuildableTrainPlatformCargo::OnRep_SmoothedLoadRate(){ }
+void AFGBuildableTrainPlatformCargo::OnRep_SmoothedUnloadRate(){ }
 FName AFGBuildableTrainPlatformCargo::mMagicBoxComponentName = FName();
 FName AFGBuildableTrainPlatformCargo::mCargoMeshComponentName = FName();

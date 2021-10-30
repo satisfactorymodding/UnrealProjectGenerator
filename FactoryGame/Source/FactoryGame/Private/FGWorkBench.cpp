@@ -2,7 +2,32 @@
 
 #include "FGWorkBench.h"
 
-UFGWorkBench::UFGWorkBench(){ }
+UFGWorkBench::UFGWorkBench(){ 
+	this->mCurrentRecipe = nullptr;
+	this->mCurrentManufacturingProgress = 0.0;
+	this->mManufacturingSpeed = 0.8;
+	this->mPlayerWorkingAtBench = nullptr;
+	this->mRecipeRate = 0.0;
+	this->mIsProducing = false;
+	this->mInventory = nullptr;
+	this->mFatigueMultiplier = 0.2;
+	this->mFatigueDecreaseSpeedMultiplier = 3.0;
+	this->mHoldProduceTime = 0.2;
+	this->mManufacturingButton = nullptr;
+	this->mFatigueUpdaterInterval = 10;
+	this->mRecipeDuration = 0.0;
+	this->mCooldownDelay = 1.5;
+	this->mIsFatigueEnabled = true;
+	this->PrimaryComponentTick.TickGroup = ETickingGroup::TG_DuringPhysics;
+	this->PrimaryComponentTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
+	this->PrimaryComponentTick.bTickEvenWhenPaused = false;
+	this->PrimaryComponentTick.bCanEverTick = true;
+	this->PrimaryComponentTick.bStartWithTickEnabled = true;
+	this->PrimaryComponentTick.bAllowTickOnDedicatedServer = true;
+	this->PrimaryComponentTick.TickInterval = 0.0;
+	this->SetIsReplicated(true);
+	this->bAutoActivate = true;
+}
 void UFGWorkBench::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void UFGWorkBench::TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction){ }
 void UFGWorkBench::TickProducing(float dt){ }

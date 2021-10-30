@@ -5,6 +5,7 @@
 AFGJetPack::AFGJetPack(){ }
 void AFGJetPack::Tick(float DeltaSeconds){ }
 bool AFGJetPack::ShouldSaveState() const{ return bool(); }
+void AFGJetPack::DisableEquipment(){ }
 void AFGJetPack::SetIsThrusting(bool newIsThrusting){ }
 void AFGJetPack::Equip( AFGCharacterPlayer* character){ }
 void AFGJetPack::UnEquip(){ }

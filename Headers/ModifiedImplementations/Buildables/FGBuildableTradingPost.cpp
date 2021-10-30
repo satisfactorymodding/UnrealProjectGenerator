@@ -10,6 +10,25 @@ void AFGBuildableTradingPost::Dismantle_Implementation(){ }
 void AFGBuildableTradingPost::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund) const{ }
 void AFGBuildableTradingPost::StartIsLookedAtForDismantle_Implementation( AFGCharacterPlayer* byCharacter){ }
 void AFGBuildableTradingPost::StopIsLookedAtForDismantle_Implementation( AFGCharacterPlayer* byCharacter){ }
+void AFGBuildableTradingPost::GetChildDismantleActors_Implementation(TArray< AActor* >& out_ChildDismantleActors) const{ }
+bool AFGBuildableTradingPost::AddAsRepresentation(){ return bool(); }
+bool AFGBuildableTradingPost::UpdateRepresentation(){ return bool(); }
+bool AFGBuildableTradingPost::RemoveAsRepresentation(){ return bool(); }
+bool AFGBuildableTradingPost::IsActorStatic(){ return bool(); }
+FVector AFGBuildableTradingPost::GetRealActorLocation(){ return FVector(); }
+FRotator AFGBuildableTradingPost::GetRealActorRotation(){ return FRotator(); }
+UTexture2D* AFGBuildableTradingPost::GetActorRepresentationTexture(){ return nullptr; }
+FText AFGBuildableTradingPost::GetActorRepresentationText(){ return FText(); }
+void AFGBuildableTradingPost::SetActorRepresentationText(const FText& newText){ }
+FLinearColor AFGBuildableTradingPost::GetActorRepresentationColor(){ return FLinearColor(); }
+void AFGBuildableTradingPost::SetActorRepresentationColor(FLinearColor newColor){ }
+ERepresentationType AFGBuildableTradingPost::GetActorRepresentationType(){ return ERepresentationType(); }
+bool AFGBuildableTradingPost::GetActorShouldShowInCompass(){ return bool(); }
+bool AFGBuildableTradingPost::GetActorShouldShowOnMap(){ return bool(); }
+EFogOfWarRevealType AFGBuildableTradingPost::GetActorFogOfWarRevealType(){ return EFogOfWarRevealType(); }
+float AFGBuildableTradingPost::GetActorFogOfWarRevealRadius(){ return float(); }
+ECompassViewDistance AFGBuildableTradingPost::GetActorCompassViewDistance(){ return ECompassViewDistance(); }
+void AFGBuildableTradingPost::SetActorCompassViewDistance(ECompassViewDistance compassViewDistance){ }
 void AFGBuildableTradingPost::OnTradingPostUpgraded_Implementation(int32 level, bool suppressBuildEffects){ }
 void AFGBuildableTradingPost::UpdateGeneratorVisibility(){ }
 void AFGBuildableTradingPost::UpdateStorageVisibility(){ }
@@ -19,7 +38,7 @@ void AFGBuildableTradingPost::ExecutePlayBuildEffects(){ }
 void AFGBuildableTradingPost::PlayBuildEffectsOnAllClients(AActor* instigator){ }
 bool AFGBuildableTradingPost::AreChildBuildingsLoaded(){ return bool(); }
 void AFGBuildableTradingPost::ValidateSubBuildings(){ }
-TArray<AActor*> AFGBuildableTradingPost::GetAllActiveSubBuildings(){ return TArray<AActor*>(); }
+TArray<AActor*> AFGBuildableTradingPost::GetAllActiveSubBuildings() const{ return TArray<AActor*>(); }
 void AFGBuildableTradingPost::OnBuildEffectFinished(){ }
 void AFGBuildableTradingPost::TogglePendingDismantleMaterial(bool enabled){ }
 void AFGBuildableTradingPost::OnRep_HAXX_SubbuildingReplicated(){ }

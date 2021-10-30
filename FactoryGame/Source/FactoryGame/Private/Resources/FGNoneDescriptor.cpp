@@ -2,4 +2,7 @@
 
 #include "Resources/FGNoneDescriptor.h"
 
-UFGNoneDescriptor::UFGNoneDescriptor(){ }
+UFGNoneDescriptor::UFGNoneDescriptor(){ 
+	this->mDisplayName = NSLOCTEXT("NoneDescriptor", "DisplayName", "None");
+	this->mDescription = NSLOCTEXT("NoneDescriptor", "Description", "Nothing");
+}

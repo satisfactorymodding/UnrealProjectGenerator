@@ -40,9 +40,6 @@ public:
 	/** Dumps all ak components with no position (0,0,0) or owner to the log. */
 	UFUNCTION( exec )
 	void TrackAkComponentsWithNoPositionOrOwner();
-	/** Dumps all FGFactoryMaterialInstanceManager stats for debugging */
-	UFUNCTION( exec )
-	void DumpFactoryMaterialInstanceManagerStats();
 
 	/** Useful for testing the crash reporter. */
 	UFUNCTION( exec )

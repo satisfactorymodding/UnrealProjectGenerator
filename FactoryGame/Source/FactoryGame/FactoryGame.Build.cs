@@ -7,7 +7,7 @@ public class FactoryGame : ModuleRules
 	public FactoryGame(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-		bLegacyPublicIncludePaths = false;
+		bLegacyPublicIncludePaths = true;
 		ShadowVariableWarningLevel = WarningLevel.Warning;
 
 		//FactoryGame transitive dependencies
@@ -28,10 +28,14 @@ public class FactoryGame : ModuleRules
 			"GameplayTasks",
 			"SlateCore", "Slate", "UMG",
 			"InstancedSplines",
-			"RenderCore"
+			"RenderCore",
+			"DeveloperSettings",
+			"CinematicCamera",
+			"PhysicsCore",
+			"DummyHeaders"
 		});
         
-		// PrivatePCHHeaderFile = "Public/FactoryGame.h";
+		PrivatePCHHeaderFile = "Public/FactoryGame.h";
         
 		PublicDefinitions.Add( "IS_PUBLIC_BUILD=1" ); 
 	}

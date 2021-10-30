@@ -2,6 +2,8 @@
 
 #include "FGAnimNotify_Landed.h"
 
-UFGAnimNotify_Landed::UFGAnimNotify_Landed(){ }
+UFGAnimNotify_Landed::UFGAnimNotify_Landed(){ 
+
+}
 FString UFGAnimNotify_Landed::GetNotifyName_Implementation() const{ return FString(); }
 void UFGAnimNotify_Landed::Notify(USkeletalMeshComponent* meshComp, UAnimSequenceBase* animation){ }

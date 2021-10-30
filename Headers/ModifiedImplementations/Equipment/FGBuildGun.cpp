@@ -19,8 +19,10 @@ void UFGBuildGunState::ModeSelectPressed_Implementation(){ }
 void UFGBuildGunState::ModeSelectRelease_Implementation(){ }
 void UFGBuildGunState::BuildSamplePressed_Implementation(){ }
 bool UFGBuildGunState::IsValidBuildingSample( AFGBuildable* buildable) const{ return bool(); }
+bool UFGBuildGunState::IsValidVehicleSample( AFGVehicle* vehicle) const{ return bool(); }
 void UFGBuildGunState::OnRecipeSampled_Implementation(TSubclassOf<class UFGRecipe> recipe){ }
 void UFGBuildGunState::BuildSampleRelease_Implementation(){ }
+void UFGBuildGunState::OnCustomizationsSampled_Implementation(TArray< TSubclassOf<  UFGFactoryCustomizationDescriptor > >& newCustomizations){ }
 void UFGBuildGunState::ScrollDown_Implementation(){ }
 void UFGBuildGunState::ScrollUp_Implementation(){ }
 void UFGBuildGunState::ChangeScrollMode_Implementation(){ }
@@ -40,7 +42,7 @@ void AFGBuildGun::Tick(float dt){ }
 bool AFGBuildGun::ShouldSaveState() const{ return bool(); }
 void AFGBuildGun::Equip( AFGCharacterPlayer* character){ }
 void AFGBuildGun::UnEquip(){ }
-void AFGBuildGun::GetAvailableRecipes(TArray< TSubclassOf<  UFGRecipe > >& out_recipes) const{ }
+void AFGBuildGun::GetAvailableRecipes(TArray< TSubclassOf<  UFGRecipe > >& out_recipes, TArray < TSubclassOf< UFGCustomizationRecipe > >& out_customizationRecipes) const{ }
 TArray< FItemAmount > AFGBuildGun::GetCostForRecipe(TSubclassOf<  UFGRecipe > recipe) const{ return TArray<FItemAmount>(); }
 UFGInventoryComponent* AFGBuildGun::GetInventory() const{ return nullptr; }
 float AFGBuildGun::GetCurrentBuildGunDelayPercentage() const{ return float(); }
@@ -61,12 +63,18 @@ void AFGBuildGun::OnSnapToGuideLinesPressed(){ }
 void AFGBuildGun::OnSnapToGuideLinesReleased(){ }
 void AFGBuildGun::OnDismantleToggleMultiSelectStatePressed(){ }
 void AFGBuildGun::OnDismantleToggleMultiSelectStateReleased(){ }
+void AFGBuildGun::OnDismantleToggleSpecifedSelectStatePressed(){ }
+void AFGBuildGun::OnDismantleToggleSpecifedSelectStateReleased(){ }
 void AFGBuildGun::OnBuildSamplePressed(){ }
 void AFGBuildGun::OnBuildSampleReleased(){ }
 void AFGBuildGun::GotoMenuState(){ }
 void AFGBuildGun::GotoBuildState(TSubclassOf<  UFGRecipe > recipe){ }
+void AFGBuildGun::GotoPaintState(TSubclassOf<  UFGCustomizationRecipe > customizationRecipe, bool clearCache){ }
 void AFGBuildGun::GotoDismantleState(){ }
+void AFGBuildGun::SetCustomizationDataForSlot(uint8 slotIndex, FFactoryCustomizationColorSlot slotData){ }
+void AFGBuildGun::Server_SetCustomizationDataForSlot_Implementation(uint8 slotIndex, FFactoryCustomizationColorSlot slotData){ }
 void AFGBuildGun::SetAllowRayCleranceHit(bool allow){ }
+void AFGBuildGun::SetPendingEntryState(EBuildGunState state){ }
 void AFGBuildGun::AddEquipmentActionBindings(){ }
 void AFGBuildGun::Server_PrimaryFire_Implementation(){ }
 bool AFGBuildGun::Server_PrimaryFire_Validate(){ return bool(); }
@@ -82,6 +90,8 @@ void AFGBuildGun::Server_NoSnapMode_Implementation(){ }
 bool AFGBuildGun::Server_NoSnapMode_Validate(){ return bool(); }
 void AFGBuildGun::Server_GotoBuildState_Implementation(TSubclassOf<  UFGRecipe > recipe){ }
 bool AFGBuildGun::Server_GotoBuildState_Validate(TSubclassOf<  UFGRecipe > recipe){ return bool(); }
+void AFGBuildGun::Server_GotoPaintState_Implementation(TSubclassOf<  UFGCustomizationRecipe > customizationRecipe){ }
+bool AFGBuildGun::Server_GotoPaintState_Validate(TSubclassOf<  UFGCustomizationRecipe > customizationRecipe){ return bool(); }
 void AFGBuildGun::GotoState(EBuildGunState state){ }
 void AFGBuildGun::Server_GotoState_Implementation(EBuildGunState state){ }
 bool AFGBuildGun::Server_GotoState_Validate(EBuildGunState state){ return bool(); }

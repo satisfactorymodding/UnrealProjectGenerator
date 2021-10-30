@@ -2,7 +2,9 @@
 
 #include "Resources/FGResourceNodeFrackingCore.h"
 
-AFGResourceNodeFrackingCore::AFGResourceNodeFrackingCore(){ }
+AFGResourceNodeFrackingCore::AFGResourceNodeFrackingCore(){ 
+
+}
 void AFGResourceNodeFrackingCore::BeginPlay(){ }
 void AFGResourceNodeFrackingCore::EndPlay(const EEndPlayReason::Type endPlayReason){ }
 void AFGResourceNodeFrackingCore::RegisterSatellite(TWeakObjectPtr<  AFGResourceNodeFrackingSatellite > satellite){ }

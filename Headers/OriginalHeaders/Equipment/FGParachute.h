@@ -9,7 +9,7 @@
 
 
 UCLASS()
-class FACTORYGAME_API UFGParachuteCameraShake : public UCameraShake
+class FACTORYGAME_API UFGParachuteCameraShake : public UMatineeCameraShake
 {
 	GENERATED_BODY()
 	public:
@@ -20,7 +20,7 @@ class FACTORYGAME_API UFGParachuteCameraShake : public UCameraShake
  * 
  */
 UCLASS()
-class FACTORYGAME_API AFGParachute : public AFGEquipment
+class FACTORYGAME_API AFGParachute : public AFGEquipment 
 {
 	GENERATED_BODY()
 public:

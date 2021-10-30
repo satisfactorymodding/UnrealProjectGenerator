@@ -29,6 +29,9 @@ public:
 
 	UFUNCTION( Exec )
 	void ToggleOptionsDebugOverlay();
+
+	UFUNCTION( Exec )
+	void ToggleStatisticsDebugOverlay();
 	
 	UFUNCTION( Exec )
 	void QuickSwitchLanguage();

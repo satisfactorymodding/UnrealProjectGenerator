@@ -102,7 +102,7 @@ private:
 	/** DEPRECATED - Only used for old save support. Use mExtractableResource instead.
 	*   The resource node we want to extract from.
 	*/
-	UPROPERTY( SaveGame, Replicated )
+	UPROPERTY( SaveGame )
 	class AFGResourceNode* mExtractResourceNode;
 
 	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_ExtractableResource )

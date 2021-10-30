@@ -2,7 +2,18 @@
 
 #include "FGUnlockSubsystem.h"
 
-AFGUnlockSubsystem::AFGUnlockSubsystem(){ }
+AFGUnlockSubsystem::AFGUnlockSubsystem(){ 
+	this->mMapUnlockedMessage = nullptr;
+	this->mInventorySlotUnlockedMessage = nullptr;
+	this->mBuildingEfficiencyUnlockedMessage = nullptr;
+	this->mBuildingOverclockUnlockedMessage = nullptr;
+	this->mArmEquipmentSlotUnlockedMessage = nullptr;
+	this->mIsMapUnlocked = false;
+	this->mIsBuildingEfficiencyUnlocked = false;
+	this->mIsBuildingOverclockUnlocked = false;
+	this->mNumTotalInventorySlots = 18;
+	this->mNumTotalArmEquipmentSlots = 1;
+}
 void AFGUnlockSubsystem::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGUnlockSubsystem::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 AFGUnlockSubsystem* AFGUnlockSubsystem::Get(UWorld* world){ return nullptr; }

@@ -7,7 +7,6 @@ void AFGJumpPadLauncherHologram::GetLifetimeReplicatedProps(TArray<FLifetimeProp
 void AFGJumpPadLauncherHologram::BeginPlay(){ }
 bool AFGJumpPadLauncherHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 void AFGJumpPadLauncherHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }
-void AFGJumpPadLauncherHologram::SetMaterial( UMaterialInterface* material){ }
 void AFGJumpPadLauncherHologram::ScrollRotate(int32 delta, int32 step){ }
 bool AFGJumpPadLauncherHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }
 bool AFGJumpPadLauncherHologram::DoMultiStepPlacement(bool isInputFromARelease){ return bool(); }

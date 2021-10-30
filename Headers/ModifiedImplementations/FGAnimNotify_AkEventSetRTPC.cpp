@@ -4,5 +4,3 @@
 
 UFGAnimNotify_AkEventSetRTPC::UFGAnimNotify_AkEventSetRTPC(){ }
 FString UFGAnimNotify_AkEventSetRTPC::GetNotifyName_Implementation() const{ return FString(); }
-void UFGAnimNotify_AkEventSetRTPC::Notify(USkeletalMeshComponent* meshComp, UAnimSequenceBase* animation){ }
-void UFGAnimNotify_AkEventSetRTPC::SetRTPCValueOnAkComponent(USkeletalMeshComponent* meshComp,  UAkComponent* component){ }

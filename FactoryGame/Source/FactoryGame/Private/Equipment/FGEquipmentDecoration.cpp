@@ -2,7 +2,10 @@
 
 #include "Equipment/FGEquipmentDecoration.h"
 
-AFGEquipmentDecoration::AFGEquipmentDecoration(){ }
+AFGEquipmentDecoration::AFGEquipmentDecoration(){ 
+	this->mPlaceDistanceMax = 1000.0;
+	this->mArmAnimation = EArmEquipment::AE_Generic1Hand;
+}
 void AFGEquipmentDecoration::Tick(float DeltaSeconds){ }
 void AFGEquipmentDecoration::OnPrimaryFirePressed(){ }
 void AFGEquipmentDecoration::Server_PrimaryFire_Implementation(){ }

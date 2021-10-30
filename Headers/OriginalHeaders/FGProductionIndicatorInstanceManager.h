@@ -3,6 +3,7 @@
 
 #include "Components/HierarchicalInstancedStaticMeshComponent.h"
 #include "FGBuildableFactory.h"
+#include <type_traits>
 #include "FGProductionIndicatorInstanceManager.generated.h"
 
 
@@ -45,10 +46,10 @@ private:
 	 * Since these need to be attached to an actor to be rendered, our outer is used for this purpose.
 	 */
 	UPROPERTY()
-	UHierarchicalInstancedStaticMeshComponent* mInstanceComponents[ EProductionStatus::IS_MAX ];
+	UHierarchicalInstancedStaticMeshComponent* mInstanceComponents[ static_cast<std::underlying_type_t<EProductionStatus>>(EProductionStatus::IS_MAX) ];
 
 	/** Handles from all the managed indicators. */
-	TArray< InstanceHandle* > mHandles[ EProductionStatus::IS_MAX ];
+	TArray< InstanceHandle* > mHandles[ static_cast<std::underlying_type_t<EProductionStatus>>(EProductionStatus::IS_MAX) ];
 };
 
 //</CSS>

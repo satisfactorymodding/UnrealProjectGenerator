@@ -2,7 +2,12 @@
 
 #include "Equipment/FGGolfCartDispenser.h"
 
-AFGGolfCartDispenser::AFGGolfCartDispenser(){ }
+AFGGolfCartDispenser::AFGGolfCartDispenser(){ 
+	this->mPlaceDistanceMax = 1000.0;
+	this->mValidPlacementMaterial = nullptr;
+	this->mInvalidPlacementMaterial = nullptr;
+	this->mArmAnimation = EArmEquipment::AE_PortableMiner;
+}
 void AFGGolfCartDispenser::Tick(float DeltaSeconds){ }
 void AFGGolfCartDispenser::BeginPlay(){ }
 void AFGGolfCartDispenser::SetMaterial( UMaterialInterface* material){ }

@@ -6,7 +6,11 @@ void UFGCircuit::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLife
 bool UFGCircuit::IsSupportedForNetworking() const{ return bool(); }
 bool UFGCircuit::IsNameStableForNetworking() const{ return bool(); }
 void UFGCircuit::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
-UFGCircuit::UFGCircuit(){ }
+UFGCircuit::UFGCircuit(){ 
+	this->mCircuitID = -1;
+	this->mNeedFullRebuild = true;
+	this->mHasChanged = false;
+}
 void UFGCircuit::BeginDestroy(){ Super::BeginDestroy(); }
 void UFGCircuit::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void UFGCircuit::PostSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }

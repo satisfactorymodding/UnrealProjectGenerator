@@ -8,6 +8,13 @@
 #include "FGPoleDescriptor.h"
 #include "FGPipelineSupportHologram.generated.h"
 
+UENUM()
+enum class EPipelineSuppoortHologramBuildStep : uint8
+{
+	PSHBS_PlacementAndRotation,
+	PSHBS_AdjustHeight
+};
+
 /**
  * Hologram for constructing supports that pipelines can snap to.
  */
@@ -26,15 +33,15 @@ public:
 	virtual bool IsValidHitResult( const FHitResult& hitResult ) const override;
 	virtual bool TrySnapToActor( const FHitResult& hitResult ) override;
 	virtual void SetHologramLocationAndRotation( const FHitResult& hitResult ) override;
-	virtual void CheckClearance() override;
+
+	virtual AActor* Construct( TArray<AActor*>& out_children, FNetConstructionID constructionID ) override;
+	virtual void GetSupportedBuildModes_Implementation( TArray< TSubclassOf< UFGHologramBuildModeDescriptor > >& out_buildmodes ) const override;
+	virtual void OnBuildModeChanged() override;
 	// End AFGHologram interface
 
 	// Begin FGConstructionMessageInterface
 	virtual void SerializeConstructMessage( FArchive& ar, FNetConstructionID id ) override;
 	// End FGConstructionMessageInterface
-
-	/** Helper */
-	bool CheckClearanceForBuildingMesh( UStaticMeshComponent* mesh, const FComponentQueryParams& params = FComponentQueryParams::DefaultComponentQueryParams );
 
 	/** Set the height of the support */
 	void SetSupportLength( float height );
@@ -63,6 +70,10 @@ protected:
 	virtual void ConfigureActor( class AFGBuildable* inBuildable ) const override;
 	// End AFGBuildableHologram interface
 
+	// Begin AFGHologram Interface
+	virtual void CheckValidPlacement() override;
+	// End AFGHologram Interface
+
 private:
 	UFUNCTION()
 	void OnRep_SupportMesh();
@@ -84,9 +95,12 @@ private:
 	UPROPERTY( CustomSerialization )
 	float mVerticalAngle = 0.0f;
 
-	/** True if we've placed it on the ground and is working with the height */
-	bool mIsAdjustingLength;
+	UPROPERTY( CustomSerialization )
+	float mSupportLength = 0.0f;
+
 	bool mCanAdjustLength;
+
+	EPipelineSuppoortHologramBuildStep mBuildStep;
 
 	/** Can this pole be stacked. */
 	bool mCanStack = false;
@@ -110,4 +124,16 @@ private:
 	/**Used to store the initial offset of the support length component, so we can compensate for it during placement*/
 	float mSupportLengthOffset;
 
+	/** Instanced Mesh Component. */
+	UPROPERTY()
+	class UInstancedStaticMeshComponent* mInstancedMeshComponent;
+
+	UPROPERTY( EditDefaultsOnly, Category = "Pole" )
+	int32 mMaxZoopAmount;
+
+	UPROPERTY( EditDefaultsOnly, Category = "Hologram|BuildMode" )
+	TSubclassOf< class UFGHologramBuildModeDescriptor > mBuildModeZoop;
+
+	UPROPERTY( EditDefaultsOnly, Category = "Hologram" )
+	FVector mClearanceExtent;
 };

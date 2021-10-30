@@ -4,7 +4,8 @@
 
 FFGWorldGridCellData::FFGWorldGridCellData(){ }
 FFGWorldGridCell::FFGWorldGridCell(){ }
-FFGWorldGridCell::FFGWorldGridCell(const FFGWorldGridCellData& Data, const FVector& WorldLocation, int32 CellIndex){ }
+FFGWorldGridCell::FFGWorldGridCell(const FFGWorldGridCellData& Data, const FVector& WorldLocation, int32 CellIndex, float DefaultElevation){ }
+float FFGWorldGridCell::GetElevation() const{ return float(); }
 void FFGWorldGridCell::OnTraceCompleted(const FTraceHandle& Handle, FTraceDatum& Data){ }
 void UFGWorldGridDataAsset::AssignWorldCells(TArray<FFGWorldGridCellData>&& Cells, const FVector2D& GridMin, const FVector2D& GridMax, int32 Divisions){ }
 void UFGWorldGridDataAsset::DebugDraw(){ }
@@ -14,9 +15,12 @@ AFGWorldGridSubsystem* AFGWorldGridSubsystem::Get(UObject* worldContext){ return
 void AFGWorldGridSubsystem::UpdateCellContainingBuildable( AFGBuildable* pBuildable){ }
 FFGWorldGridCell* AFGWorldGridSubsystem::GetCellContainingWorldLocation(const FVector& WorldLocation){ return nullptr; }
 FFGWorldGridCell* AFGWorldGridSubsystem::GetClosestCellToWorldLocation(const FVector& WorldLocation){ return nullptr; }
+float AFGWorldGridSubsystem::GetCellElevationFromWorldLocation(const FVector& WorldLocation) const{ return float(); }
+float AFGWorldGridSubsystem::GetCellElevationFromGridCoordinates(const FIntPoint& Coords) const{ return float(); }
 TArray<const FFGWorldGridCell*> AFGWorldGridSubsystem::GetCellNeighbours(const FFGWorldGridCell* Cell) const{ return TArray<const FFGWorldGridCell*>(); }
 TArray<const FFGWorldGridCell*> AFGWorldGridSubsystem::GetCellNeighboursFromIndex(int32 Index) const{ return TArray<const FFGWorldGridCell*>(); }
 TArray<int32> AFGWorldGridSubsystem::GetCellNeighbourIndicesFromIndex(int32 Index) const{ return TArray<int32>(); }
+FVector2D AFGWorldGridSubsystem::GetCellSize() const{ return FVector2D(); }
 void AFGWorldGridSubsystem::BeginPlay(){ }
 void AFGWorldGridSubsystem::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void AFGWorldGridSubsystem::Tick(float DeltaSeconds){ }

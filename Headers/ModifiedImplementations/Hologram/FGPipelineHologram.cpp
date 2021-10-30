@@ -12,15 +12,15 @@ int32 AFGPipelineHologram::GetBaseCostMultiplier() const{ return int32(); }
 AActor* AFGPipelineHologram::GetUpgradedActor() const{ return nullptr; }
 void AFGPipelineHologram::SpawnChildren(AActor* hologramOwner, FVector spawnLocation, APawn* hologramInstigator){ }
 void AFGPipelineHologram::GetSupportedScrollModes(TArray< EHologramScrollMode >* out_modes) const{ }
-void AFGPipelineHologram::GetSupportedSplineModes_Implementation(TArray< EHologramSplinePathMode >& out_splineModes) const{ }
+void AFGPipelineHologram::GetSupportedBuildModes_Implementation(TArray<TSubclassOf<UFGHologramBuildModeDescriptor>>& out_buildmodes) const{ }
 bool AFGPipelineHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }
-void AFGPipelineHologram::AdjustForGround(const FHitResult& hitResult, FVector& out_adjustedLocation, FRotator& out_adjustedRotation){ }
+void AFGPipelineHologram::AdjustForGround(FVector& out_adjustedLocation, FRotator& out_adjustedRotation){ }
 bool AFGPipelineHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 void AFGPipelineHologram::OnInvalidHitResult(){ }
 void AFGPipelineHologram::Scroll(int32 delta){ }
-bool AFGPipelineHologram::CanTakeNextBuildStep() const{ return bool(); }
 void AFGPipelineHologram::OnPendingConstructionHologramCreated_Implementation(AFGHologram* fromHologram){ }
 void AFGPipelineHologram::SetSnapToGuideLines(bool isEnabled){ }
+float AFGPipelineHologram::GetHologramHoverHeight() const{ return float(); }
 void AFGPipelineHologram::SerializeConstructMessage(FArchive& ar, FNetConstructionID id){ }
 void AFGPipelineHologram::ClientPreConstructMessageSerialization(){ }
 void AFGPipelineHologram::ServerPostConstructMessageDeserialization(){ }
@@ -30,8 +30,8 @@ void AFGPipelineHologram::GetLastSplineData(FSplinePointData &data){ }
 void AFGPipelineHologram::ConfigureActor( AFGBuildable* inBuildable) const{ }
 void AFGPipelineHologram::ConfigureComponents( AFGBuildable* inBuildable) const{ }
 void AFGPipelineHologram::CheckValidFloor(){ }
-void AFGPipelineHologram::CheckClearance(){ }
 void AFGPipelineHologram::CheckValidPlacement(){ }
+void AFGPipelineHologram::CheckClearance(const FVector& locationOffset){ }
 void AFGPipelineHologram::SetupPipeClearanceDetector(){ }
 void AFGPipelineHologram::RouteSelectedSplineMode(FVector startLocation, FVector startNormal, FVector endLocation, FVector endNormal){ }
 void AFGPipelineHologram::UpdateSplineComponent(){ }

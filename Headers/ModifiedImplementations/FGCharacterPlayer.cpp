@@ -43,6 +43,24 @@ bool AFGCharacterPlayer::IsAlive_Implementation() const{ return bool(); }
 FVector AFGCharacterPlayer::GetAttackLocation_Implementation() const{ return FVector(); }
 bool AFGCharacterPlayer::ShouldSave_Implementation() const{ return bool(); }
 void AFGCharacterPlayer::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
+bool AFGCharacterPlayer::AddAsRepresentation(){ return bool(); }
+bool AFGCharacterPlayer::UpdateRepresentation(){ return bool(); }
+bool AFGCharacterPlayer::RemoveAsRepresentation(){ return bool(); }
+bool AFGCharacterPlayer::IsActorStatic(){ return bool(); }
+FVector AFGCharacterPlayer::GetRealActorLocation(){ return FVector(); }
+FRotator AFGCharacterPlayer::GetRealActorRotation(){ return FRotator(); }
+UTexture2D* AFGCharacterPlayer::GetActorRepresentationTexture(){ return nullptr; }
+FText AFGCharacterPlayer::GetActorRepresentationText(){ return FText(); }
+void AFGCharacterPlayer::SetActorRepresentationText(const FText& newText){ }
+FLinearColor AFGCharacterPlayer::GetActorRepresentationColor(){ return FLinearColor(); }
+void AFGCharacterPlayer::SetActorRepresentationColor(FLinearColor newColor){ }
+ERepresentationType AFGCharacterPlayer::GetActorRepresentationType(){ return ERepresentationType(); }
+bool AFGCharacterPlayer::GetActorShouldShowInCompass(){ return bool(); }
+bool AFGCharacterPlayer::GetActorShouldShowOnMap(){ return bool(); }
+EFogOfWarRevealType AFGCharacterPlayer::GetActorFogOfWarRevealType(){ return EFogOfWarRevealType(); }
+float AFGCharacterPlayer::GetActorFogOfWarRevealRadius(){ return float(); }
+ECompassViewDistance AFGCharacterPlayer::GetActorCompassViewDistance(){ return ECompassViewDistance(); }
+void AFGCharacterPlayer::SetActorCompassViewDistance(ECompassViewDistance compassViewDistance){ }
 void AFGCharacterPlayer::OnPossessedSetup(){ }
 void AFGCharacterPlayer::EquipEquipment(AFGEquipment* equipment){ }
 void AFGCharacterPlayer::UnequipEquipment(AFGEquipment* equipment){ }
@@ -56,13 +74,18 @@ AFGEquipment* AFGCharacterPlayer::GetEquipmentInSlot(EEquipmentSlot slot) const{
 FInventoryItem AFGCharacterPlayer::GetActiveEquipmentItem(EEquipmentSlot slot) const{ return FInventoryItem(); }
 bool AFGCharacterPlayer::CanEquipBuildGun() const{ return bool(); }
 bool AFGCharacterPlayer::CanEquipBuildGunForDismantle() const{ return bool(); }
+bool AFGCharacterPlayer::CanEquipBuildGunForPaint() const{ return bool(); }
 bool AFGCharacterPlayer::IsBuildGunEquipped() const{ return bool(); }
 void AFGCharacterPlayer::ToggleBuildGun(){ }
+void AFGCharacterPlayer::ToggleBuildGunPaint(){ }
 void AFGCharacterPlayer::HotKeyRecipe(TSubclassOf<  UFGRecipe > recipe){ }
 void AFGCharacterPlayer::HotKeyDismantle(){ }
+void AFGCharacterPlayer::HotKeyPaint(TSubclassOf<  UFGCustomizationRecipe > customization){ }
 USkeletalMeshComponent* AFGCharacterPlayer::GetMesh3P() const{ return nullptr; }
 USkeletalMeshComponent* AFGCharacterPlayer::GetMainMesh() const{ return nullptr; }
 void AFGCharacterPlayer::ToggleCameraMode(){ }
+void AFGCharacterPlayer::Photo_SetAdvancedPhotoMode(bool enabled){ }
+void AFGCharacterPlayer::Photo_ToggleAdvancedPhotoMode(){ }
 void AFGCharacterPlayer::StartFocusAim_Implementation(){ }
 void AFGCharacterPlayer::StopFocusAim_Implementation(){ }
 void AFGCharacterPlayer::StartPressingJump_Implementation(){ }
@@ -99,13 +122,14 @@ bool AFGCharacterPlayer::Server_ToggleSwitchControl_Validate( AFGBuildableRailro
 void AFGCharacterPlayer::TickDrownDamage(float delta){ }
 void AFGCharacterPlayer::TickHealthGeneration(float delta){ }
 UFGLadderComponent* AFGCharacterPlayer::GetCurrentLadderComponent(){ return nullptr; }
-TSubclassOf< class UCameraShake > AFGCharacterPlayer::GetDesiredSprintHeadBobShake(){ return TSubclassOf<class UCameraShake>(); }
-TSubclassOf< class UCameraShake > AFGCharacterPlayer::GetDesiredWalkHeadBobShake(){ return TSubclassOf<class UCameraShake>(); }
+TSubclassOf< class UMatineeCameraShake > AFGCharacterPlayer::GetDesiredSprintHeadBobShake(){ return TSubclassOf<class UMatineeCameraShake>(); }
+TSubclassOf< class UMatineeCameraShake > AFGCharacterPlayer::GetDesiredWalkHeadBobShake(){ return TSubclassOf<class UMatineeCameraShake>(); }
 UFGCharacterMovementComponent* AFGCharacterPlayer::GetFGMovementComponent(){ return nullptr; }
 void AFGCharacterPlayer::SetWantSprintBobbing(bool wantBobbing){ }
 FVector AFGCharacterPlayer::GetInventoryDropLocation_Implementation(const  UFGInventoryComponent* component, FInventoryStack stack){ return FVector(); }
 void AFGCharacterPlayer::AddRadiationImmunity(float toAdd){ }
 void AFGCharacterPlayer::SetRadiationImmunity(float newImmunity){ }
+void AFGCharacterPlayer::ClientCheatWalk_Implementation(){ }
 void AFGCharacterPlayer::ClientCheatFly_Implementation(){ }
 void AFGCharacterPlayer::CheatToggleGhostFly(){ }
 void AFGCharacterPlayer::CheatToggleGhostFly(bool ghostModeActive){ }
@@ -157,14 +181,17 @@ float AFGCharacterPlayer::GetUseDistance(){ return float(); }
 void AFGCharacterPlayer::OnReviveTimerComplete(){ }
 float AFGCharacterPlayer::GetReviveProgress(){ return float(); }
 void AFGCharacterPlayer::Client_Revived_Implementation(){ }
-bool AFGCharacterPlayer::Client_Revived_Validate(){ return bool(); }
+void AFGCharacterPlayer::Client_ReviveStarted_Implementation(){ }
+void AFGCharacterPlayer::Client_ReviveEnded_Implementation(){ }
 float AFGCharacterPlayer::GetPickupProgress(){ return float(); }
 void AFGCharacterPlayer::StartReceivingRadiation(){ }
 void AFGCharacterPlayer::StopReceivingRadiation(){ }
 void AFGCharacterPlayer::TornOff(){ }
 void AFGCharacterPlayer::DebugBuildablesInFrustum(){ }
+void AFGCharacterPlayer::TriggerBestUsableActorDelegate(){ }
 void AFGCharacterPlayer::UpdateHUDCrosshair(){ }
 bool AFGCharacterPlayer::IsSliding() const{ return bool(); }
+bool AFGCharacterPlayer::IsInPumpiMode(){ return bool(); }
 AFGEquipment* AFGCharacterPlayer::SpawnEquipment(TSubclassOf< AFGEquipment > equipmentClass, AActor* owner){ return nullptr; }
 AFGEquipmentAttachment* AFGCharacterPlayer::SpawnAttachmentForEquipment(AFGEquipment* equipment){ return nullptr; }
 AFGEquipmentAttachment* AFGCharacterPlayer::SpawnSecondaryAttachmentForEquipment(AFGEquipment* equipment){ return nullptr; }
@@ -179,7 +206,6 @@ bool AFGCharacterPlayer::Server_EquipEquipment_Validate(AFGEquipment* newEquipme
 void AFGCharacterPlayer::Server_UnequipEquipment_Implementation(AFGEquipment* newEquipment){ }
 bool AFGCharacterPlayer::Server_UnequipEquipment_Validate(AFGEquipment* newEquipment){ return bool(); }
 void AFGCharacterPlayer::Server_RevivePlayer_Implementation(AFGCharacterPlayer* playerToRevive){ }
-bool AFGCharacterPlayer::Server_RevivePlayer_Validate(AFGCharacterPlayer* playerToRevive){ return bool(); }
 void AFGCharacterPlayer::Server_OnUse_Implementation(){ }
 bool AFGCharacterPlayer::Server_OnUse_Validate(){ return bool(); }
 void AFGCharacterPlayer::Server_OnUseReleased_Implementation(){ }

@@ -31,26 +31,28 @@ void AFGBuildableSubsystem::RemoveAndSplitConveyorBucket(AFGBuildableConveyorBas
 bool AFGBuildableSubsystem::IsServerSubSystem() const{ return bool(); }
 void AFGBuildableSubsystem::GetTypedBuildable(TSubclassOf<  AFGBuildable > inClass, TArray<  AFGBuildable* >& out_buildables) const{ }
 void AFGBuildableSubsystem::ReplayBuildingEffects(){ }
-bool AFGBuildableSubsystem::HasMaterialInstanceManagerForMaterialInterface(UMaterialInterface* materialInterface, FString& lookupName){ return bool(); }
-UFGFactoryMaterialInstanceManager* AFGBuildableSubsystem::GetOrCreateMaterialManagerForMaterialInterface(UMaterialInterface* materialInterface, FString& lookupName, FString& lookupPrefix, bool canBeColored ,  UMeshComponent* onMeshComp  ,  AFGBuildable* forBuildable){ return nullptr; }
-void AFGBuildableSubsystem::UpdateBuildableMaterialInstances(AFGBuildable* buildable){ }
-void AFGBuildableSubsystem::RemoveFactoryMaterialInstanceFromMap(const FString& lookupName){ }
-FLinearColor AFGBuildableSubsystem::GetColorSlotPrimary_Linear(uint8 index){ return FLinearColor(); }
-FLinearColor AFGBuildableSubsystem::GetColorSlotSecondary_Linear(uint8 index){ return FLinearColor(); }
-void AFGBuildableSubsystem::SetColorSlotPrimary_Linear(uint8 index, FLinearColor color){ }
-void AFGBuildableSubsystem::SetColorSlotSecondary_Linear(uint8 index, FLinearColor color){ }
+const FFactoryCustomizationColorSlot& AFGBuildableSubsystem::GetColorSlot_Data(uint8 index) const{ return *(new FFactoryCustomizationColorSlot); }
+void AFGBuildableSubsystem::SetColorSlot_Data(uint8 index, FFactoryCustomizationColorSlot color){ }
+TSubclassOf< class UFGFactoryCustomizationCollection > AFGBuildableSubsystem::GetCollectionForCustomizationClass(TSubclassOf<  UFGFactoryCustomizationDescriptor > collectionClassType) const{ return TSubclassOf<class UFGFactoryCustomizationCollection>(); }
 FLinearColor AFGBuildableSubsystem::GetBuildableLightColorSlot(int32 index) const{ return FLinearColor(); }
 TArray<FLinearColor> AFGBuildableSubsystem::GetBuildableLightColorSlots() const{ return TArray<FLinearColor>(); }
 void AFGBuildableSubsystem::BuildableLightColorSlotsUpdated(const TArray< FLinearColor >& colors){ }
 void AFGBuildableSubsystem::UpdateBuildableCullDistances(float newFactor){ }
+UMaterialInstanceDynamic* AFGBuildableSubsystem::GetConveyorBelTrackMaterialFromSpeed(float speed, UMaterialInterface* currentMaterial){ return nullptr; }
 void AFGBuildableSubsystem::DisplayDebug( UCanvas* canvas, const  FDebugDisplayInfo& debugDisplay, float& YL, float& YPos){ }
 void AFGBuildableSubsystem::DebugEnableInstancing(bool enabled){ }
 void AFGBuildableSubsystem::DebugGetFactoryActors(TArray< AActor* >& out_actors){ }
+FName AFGBuildableSubsystem::GetMeshMapName(UStaticMesh* mesh, UMeshComponent* sourceComponent){ return FName(); }
 FNetConstructionID AFGBuildableSubsystem::GetNewNetConstructionID(){ return FNetConstructionID(); }
 void AFGBuildableSubsystem::GetNewNetConstructionID(FNetConstructionID& clientConstructionID){ }
 void AFGBuildableSubsystem::SpawnPendingConstructionHologram(FNetConstructionID netConstructionID,  AFGHologram* templateHologram,  AFGBuildGun* instigatingBuildGun){ }
 void AFGBuildableSubsystem::AddPendingConstructionHologram(FNetConstructionID netConstructionID,  AFGHologram* hologram){ }
 void AFGBuildableSubsystem::RemovePendingConstructionHologram(FNetConstructionID netConstructionID){ }
+void AFGBuildableSubsystem::ApplyCustomizationPreview( IFGColorInterface* colorInterface, const FFactoryCustomizationData& previewData){ }
+void AFGBuildableSubsystem::ClearCustomizationPreview( IFGColorInterface* colorInterface){ }
+void AFGBuildableSubsystem::ClearAllCustomizationPreviews(){ }
+void AFGBuildableSubsystem::TryRemovePendingDetailActor( AFGReplicationDetailActor* detailActor){ }
+void AFGBuildableSubsystem::AddPendingRemovalDetailActor( AFGReplicationDetailActor* detailActor){ }
 AFGPlayerController* AFGBuildableSubsystem::GetLocalPlayerController() const{ return nullptr; }
 float AFGBuildableSubsystem::GetDistanceSqToBoundingBox(const FVector& point,  AFGBuildable* buildable) const{ return float(); }
 void AFGBuildableSubsystem::RegisterFactoryTickFunction(bool shouldRegister){ }
@@ -60,8 +62,12 @@ void AFGBuildableSubsystem::AddBuildableMeshInstances( AFGBuildable* buildable){
 void AFGBuildableSubsystem::AddToTickGroup(AFGBuildable* buildable){ }
 void AFGBuildableSubsystem::RemoveFromTickGroup(AFGBuildable* buildable){ }
 void AFGBuildableSubsystem::SetupColoredMeshInstances(AFGBuildable* buildable){ }
-void AFGBuildableSubsystem::SetupProductionIndicatorInstancing( AFGBuildableFactory* factory){ }
+void AFGBuildableSubsystem::SetupProductionIndicatorInstancing( AFGBuildable* buildable){ }
 void AFGBuildableSubsystem::TickFactoryActors(float dt){ }
 void AFGBuildableSubsystem::UpdateConveyorRenderType(FString cvar){ }
 UFGColoredInstanceManager* AFGBuildableSubsystem::GetColoredInstanceManager( UFGColoredInstanceMeshProxy* proxy){ return nullptr; }
+UFGFactoryLegInstanceManager* AFGBuildableSubsystem::GetFactoryLegInstanceManager( UFGFactoryLegInstanceMeshProxy* proxy){ return nullptr; }
+TSubclassOf< class UFGFactoryCustomizationDescriptor_Swatch > AFGBuildableSubsystem::GetMigrationSwatchForSlot(int32 slotID){ return TSubclassOf<class UFGFactoryCustomizationDescriptor_Swatch>(); }
 bool AFGBuildableSubsystem::IsBasedOn(const UMaterialInterface* instance, const UMaterial* base){ return bool(); }
+uint8 AFGBuildableSubsystem::mCurrentSubStep = uint8();
+uint8 AFGBuildableSubsystem::mCurrentSubStepMax = uint8();

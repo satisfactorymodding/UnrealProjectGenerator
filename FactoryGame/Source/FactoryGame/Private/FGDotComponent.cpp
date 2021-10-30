@@ -5,7 +5,10 @@
 #if WITH_EDITOR
 void UFGDotComponent::CheckForErrors(){ }
 #endif 
-UFGDotComponent::UFGDotComponent(){ }
+UFGDotComponent::UFGDotComponent(){ 
+	this->mDotClass = nullptr;
+	this->bAutoActivate = true;
+}
 void UFGDotComponent::PostLoad(){ Super::PostLoad(); }
 void UFGDotComponent::OnRegister(){ Super::OnRegister(); }
 void UFGDotComponent::OnUnregister(){ Super::OnUnregister(); }

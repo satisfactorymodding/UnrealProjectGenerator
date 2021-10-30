@@ -12,6 +12,7 @@ void AFGBuildableLightSource::SetLightControlData(FLightSourceControlData data){
 bool AFGBuildableLightSource::IsLightEnabled() const{ return bool(); }
 FLightSourceControlData AFGBuildableLightSource::GetLightControlData() const{ return FLightSourceControlData(); }
 void AFGBuildableLightSource::OnLightColorSlotsUpdated(const TArray< FLinearColor >& colors){ }
+float AFGBuildableLightSource::GetEmissivePower(){ return float(); }
 void AFGBuildableLightSource::OnTimeOfDayChanged(bool isDay){ }
 void AFGBuildableLightSource::OnHasPowerChanged( UFGPowerInfoComponent* info){ }
 void AFGBuildableLightSource::OnRep_IsEnabled(){ }

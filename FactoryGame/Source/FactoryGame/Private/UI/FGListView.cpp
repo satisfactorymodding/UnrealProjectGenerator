@@ -11,4 +11,7 @@ void UFGListView::OnSlotAdded(UPanelSlot* slot){ }
 void UFGListView::OnSlotRemoved(UPanelSlot* slot){ }
 void UFGListView::ReleaseSlateResources(bool releaseChildren){ }
 TSharedRef< SWidget > UFGListView::RebuildWidget(){ return Super::RebuildWidget(); }
-UFGListView::UFGListView(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
+UFGListView::UFGListView(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+	this->mSelectionMode = ESelectionMode::None;
+	this->bIsVariable = false;
+}

@@ -63,11 +63,22 @@ void UFGGameUserSettings::UnsubscribeToDynamicOptionUpdate(FString cvar, const F
 void UFGGameUserSettings::UnsubscribeToAllDynamicOptionUpdate(UObject* boundObject){ }
 TMap<FString, FText> UFGGameUserSettings::GetLanguageData(){ return TMap<FString,FText>(); }
 void UFGGameUserSettings::SetLanguageData(TMap<FString, FText> languageData){ }
+void UFGGameUserSettings::SetPrimaryLanguage(FString language){ }
+void UFGGameUserSettings::SetSecondaryLanguage(FString language){ }
 void UFGGameUserSettings::QuickSwitchLanguage(){ }
 void UFGGameUserSettings::ResetLanguageToPrimary(){ }
+EGraphicsAPI UFGGameUserSettings::GetCurrentActiveGraphicsAPI() const{ return EGraphicsAPI(); }
+EGraphicsAPI UFGGameUserSettings::GetCurrentConfigGraphicsAPI() const{ return EGraphicsAPI(); }
+void UFGGameUserSettings::SetCurrentConfigGraphicsAPI(EGraphicsAPI newGraphicsAPI){ }
 void UFGGameUserSettings::HandleFGGameUserSettingsVersionChanged(){ }
 void UFGGameUserSettings::DumpDynamicOptionsSettings(){ }
 void UFGGameUserSettings::GetOptionsDebugData(TArray<FString>& out_debugData){ }
+void UFGGameUserSettings::SetHologramColour(FVector inColour){ }
+void UFGGameUserSettings::SetDismantleHologramColour(FVector inColour){ }
+void UFGGameUserSettings::SetInvalidPlacementHologramColour(FVector inColour){ }
+void UFGGameUserSettings::SetSoftClearanceHologramColour(FVector inColour){ }
+void UFGGameUserSettings::ApplyHologramColoursToCollectionParameterInstance(UObject* World){ }
+UMaterialParameterCollection* UFGGameUserSettings::GetHologramMaterialCollectionAsset() const{ return nullptr; }
 bool UFGGameUserSettings::ValidateCVar(FString &cvar){ return bool(); }
 void UFGGameUserSettings::BroadcastDynamicOptionUpdate(FString cvar){ }
 FAutoConsoleVariableSink UFGGameUserSettings::mCVarSink = FConsoleCommandDelegate::CreateStatic(&UFGGameUserSettings::CVarSinkHandler);

@@ -2,6 +2,7 @@
 
 #include "FGVehicleHologram.h"
 
+AFGVehicleHologram::AFGVehicleHologram(){ }
 void AFGVehicleHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGVehicleHologram::BeginPlay(){ }
 AActor* AFGVehicleHologram::Construct(TArray< AActor* >& out_children, FNetConstructionID netConstructionID){ return nullptr; }

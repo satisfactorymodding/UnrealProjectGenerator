@@ -2,7 +2,15 @@
 
 #include "Equipment/FGEquipmentZipline.h"
 
-AFGEquipmentZipline::AFGEquipmentZipline(){ }
+AFGEquipmentZipline::AFGEquipmentZipline(){ 
+	this->mZiplineJumpLaunchVelocity = 600.0;
+	this->mMaxZiplineAngle = 0.95;
+	this->mTraceDistance = 500.0;
+	this->mTraceStartOffset = 300.0;
+	this->mTraceRadius = 70.0;
+	this->mVisualizeTraceDistance = false;
+	this->mZiplineReattachCooldown = 1.0;
+}
 void AFGEquipmentZipline::AddEquipmentActionBindings(){ }
 void AFGEquipmentZipline::DoDefaultPrimaryFire_Native(){ }
 void AFGEquipmentZipline::UnEquip(){ }

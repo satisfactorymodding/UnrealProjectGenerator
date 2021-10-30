@@ -41,6 +41,12 @@ class FACTORYGAME_API IFGDismantleInterface
 	FVector GetRefundSpawnLocationAndArea( const FVector& aimHitLocation, float& out_radius ) const;
 
 	/**
+	 * If we want to dismantle something else along with this, then add it through this
+	 */
+	UFUNCTION( BlueprintNativeEvent, Category = "Dismantle" )
+	void GetChildDismantleActors( TArray< AActor* >& out_ChildDismantleActors ) const;
+
+	/**
 	 * Called prior to dismantle and prior to an upgrade from this actor to another actor.
 	 * Use it to clear connections and other stuff that might interfere with upgrades.
 	 */

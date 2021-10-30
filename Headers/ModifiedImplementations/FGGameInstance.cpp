@@ -26,6 +26,7 @@ bool UFGGameInstance::GetLatestNetworkError(FFGGameNetworkErrorMsg& msg){ return
 bool UFGGameInstance::PopLatestNetworkError(){ return bool(); }
 EJoinSessionState UFGGameInstance::GetCurrentJoinSessionState() const{ return EJoinSessionState(); }
 UFGDebugOverlayWidget* UFGGameInstance::GetDebugOverlayWidget(){ return nullptr; }
+UFGOnlineSessionClient* UFGGameInstance::GetOnlineSession(){ return nullptr; }
 void UFGGameInstance::LoadComplete(const float loadTime, const FString& mapName){ }
 void UFGGameInstance::OnDestroyOldSessionComplete_JoinSession(FName gameSessionName, bool wasSuccessful){ }
 void UFGGameInstance::OnQueryFriendProductIdCompleted_JoinSession(bool wasSuccessful, FString EpicId, EOS_ProductUserId ProductId){ }
@@ -35,7 +36,6 @@ void UFGGameInstance::OnNATUpdated(ECachedNATType Data){ }
 void UFGGameInstance::OnJoinSessionComplete(FName sessionName, EOnJoinSessionCompleteResult::Type joinResult){ }
 void UFGGameInstance::SendRecievedNetworkErrorOnDelegate(UWorld* world, UNetDriver* driver, ENetworkFailure::Type errorType, const FString& errorMsg){ }
 void UFGGameInstance::OnPreLoadMap(const FString& levelName){ }
-void UFGGameInstance::OnPostLoadMap(UWorld* loadedWorld){ }
 void UFGGameInstance::OnWorldDestroy(UWorld* world){ }
 void UFGGameInstance::InitGameAnalytics(){ }
 void UFGGameInstance::JoinSession_Internal(){ }

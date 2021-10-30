@@ -13,6 +13,8 @@ class FACTORYGAME_API AFGVehicleHologram : public AFGHologram
 {
 	GENERATED_BODY()
 public:
+	AFGVehicleHologram();
+
 	// Begin AActor interface
 	virtual void GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps ) const override;
 	virtual void BeginPlay() override;

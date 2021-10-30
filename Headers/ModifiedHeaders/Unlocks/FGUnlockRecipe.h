@@ -2,7 +2,6 @@
 
 #pragma once
 
-#include "FGRecipe.h" // MODDING EDIT
 #include "CoreMinimal.h"
 #include "FGUnlock.h"
 #include "FGUnlockRecipe.generated.h"

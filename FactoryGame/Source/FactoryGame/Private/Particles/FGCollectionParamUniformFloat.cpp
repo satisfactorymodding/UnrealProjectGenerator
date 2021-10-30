@@ -2,6 +2,13 @@
 
 #include "Particles/FGCollectionParamUniformFloat.h"
 
-UFGCollectionParamUniformFloat::UFGCollectionParamUniformFloat(){ }
+UFGCollectionParamUniformFloat::UFGCollectionParamUniformFloat(){ 
+	this->Collection = nullptr;
+	this->WindDirectionParamName = TEXT("WindDirection");
+	this->WindIntensityParamName = TEXT("WindSpeed");
+	this->IntensityMin = 1000.0;
+	this->IntensityMax = 1500.0;
+	this->bCanBeBaked = false;
+}
 bool UFGCollectionParamUniformFloat::IsPostLoadThreadSafe() const{ return bool(); }
 FVector UFGCollectionParamUniformFloat::GetValue(float F , UObject* Data , int32 LastExtreme ,  FRandomStream* InRandomStream) const{ return FVector(); }

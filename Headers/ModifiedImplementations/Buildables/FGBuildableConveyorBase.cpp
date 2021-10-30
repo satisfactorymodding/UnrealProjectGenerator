@@ -34,16 +34,11 @@ void AFGBuildableConveyorBase::LostSignificance_Implementation(){ }
 void AFGBuildableConveyorBase::GainedSignificance_Native(){ }
 void AFGBuildableConveyorBase::LostSignificance_Native(){ }
 void AFGBuildableConveyorBase::SetupForSignificance(){ }
-void AFGBuildableConveyorBase::SetConveyorBucketID(int32 ID){ }
-float AFGBuildableConveyorBase::GetCachedAvailableSpace_Threadsafe() const{ return float(); }
 void AFGBuildableConveyorBase::ReportInvalidStateAndRequestConveyorRepReset(){ }
 bool AFGBuildableConveyorBase::Factory_PeekOutput_Implementation(const  UFGFactoryConnectionComponent* connection, TArray< FInventoryItem >& out_items, TSubclassOf< UFGItemDescriptor > type) const{ return bool(); }
 bool AFGBuildableConveyorBase::Factory_GrabOutput_Implementation( UFGFactoryConnectionComponent* connection, FInventoryItem& out_item, float& out_OffsetBeyond, TSubclassOf< UFGItemDescriptor > type){ return bool(); }
 void AFGBuildableConveyorBase::GetDismantleInventoryReturns(TArray< FInventoryStack >& out_returns) const{ }
 int32 AFGBuildableConveyorBase::FindItemClosestToLocation(const FVector& location) const{ return int32(); }
-bool AFGBuildableConveyorBase::Factory_HasItemAt(int32 index) const{ return bool(); }
-const FConveyorBeltItem& AFGBuildableConveyorBase::Factory_PeekItemAt(int32 index) const{ return *(new FConveyorBeltItem); }
 void AFGBuildableConveyorBase::Factory_RemoveItemAt(int32 index){ }
 void AFGBuildableConveyorBase::Factory_DequeueItem(){ }
 void AFGBuildableConveyorBase::Factory_EnqueueItem(const FInventoryItem& item, float initialOffset){ }
-bool AFGBuildableConveyorBase::HasRoomOnBelt_ThreadSafe(float& out_availableSpace) const{ return bool(); }

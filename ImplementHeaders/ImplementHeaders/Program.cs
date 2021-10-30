@@ -511,7 +511,10 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
             { "FGenerateIconContext", "UFGItemDescriptor::FGenerateIconContext" },
             { "Type", "FSaveCustomVersion::Type" },
             { "FFrequencyGrid2D_Cell", "UFGReplicationGraphNode_ConveyorSpatialFrequency::FFrequencyGrid2D_Cell" },
-            { "FSettings", "UFGReplicationGraphNode_ConveyorSpatialFrequency::FSettings" }
+            { "FSettings", "UFGReplicationGraphNode_ConveyorSpatialFrequency::FSettings" },
+            { "FRailroadHitResult", "AFGRailroadSubsystem::FRailroadHitResult" },
+            { "Plan", "AFGWheeledVehicleAIController::Plan" },
+            { "FSignHandle", "UFGSignPixelInstanceManager::FSignHandle" },
         };
 
         static void Main(string[] args)
@@ -565,8 +568,6 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
 
         private static void ImplementFile(string filePath, string saveDir)
         {
-            if (filePath.EndsWith("FactoryGame.h"))
-                return;
             string fileContents;
             using (StreamReader reader = new StreamReader(filePath))
                 fileContents = reader.ReadToEnd();
@@ -608,6 +609,10 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                     writer.WriteLine(func);
                 if (filePath.Contains("FGCheatBoardWidget.h"))
                     writer.WriteLine("#endif");
+                if (filePath.Contains("FactoryGame.h"))
+                    writer.WriteLine("DEFINE_LOG_CATEGORY(LogGame);"); // TODO: Generate this for all logs
+                if (filePath.Contains("FactoryGameModule.h"))
+                    writer.WriteLine("IMPLEMENT_PRIMARY_GAME_MODULE(FDefaultGameModuleImpl, FactoryGame, \"FactoryGame\");");
             }
         }
 
@@ -764,7 +769,7 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                     }
                     if (Regex.IsMatch(ufunction, @"\WBlueprintNativeEvent\W") || Regex.IsMatch(ufunction, @"\WServer\W") || Regex.IsMatch(ufunction, @"\WClient\W") || Regex.IsMatch(ufunction, @"\WNetMulticast\W"))
                     {
-                        if (Regex.IsMatch(ufunction, @"\WBlueprintNativeEvent\W") && className.Contains("Interface"))
+                        if (Regex.IsMatch(ufunction, @"\WBlueprintNativeEvent\W") && className[0] == 'I')
                         {
                             if (!CountOnly)
                                 Console.WriteLine($"Skipped {className}::{functionName} (BlueprintNativeEvent in Interface)"); // https://answers.unrealengine.com/questions/832889/blueprintnativeevent-function-already-has-a-body.html

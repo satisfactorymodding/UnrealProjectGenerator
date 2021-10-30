@@ -21,6 +21,7 @@ void AFGEquipment::Server_DefaultPrimaryFire_Implementation(){ }
 bool AFGEquipment::Server_DefaultPrimaryFire_Validate(){ return bool(); }
 void AFGEquipment::DoDefaultPrimaryFire_Native(){ }
 bool AFGEquipment::CanDoDefaultPrimaryFire_Implementation(){ return bool(); }
+void AFGEquipment::DisableEquipment(){ }
 AFGCharacterPlayer* AFGEquipment::GetInstigatorCharacter() const{ return nullptr; }
 bool AFGEquipment::IsLocalInstigator() const{ return bool(); }
 bool AFGEquipment::ShouldSaveState() const{ return bool(); }
@@ -44,3 +45,4 @@ void AFGEquipment::ChargeForUse(){ }
 void AFGEquipment::Server_ChargeForUse_Implementation(){ }
 bool AFGEquipment::Server_ChargeForUse_Validate(){ return bool(); }
 void AFGEquipment::ChargeForUse_Internal(){ }
+void AFGEquipment::OnChildEquipmentReplicated(){ }

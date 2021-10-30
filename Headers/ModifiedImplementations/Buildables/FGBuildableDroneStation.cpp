@@ -3,14 +3,32 @@
 #include "FGBuildableDroneStation.h"
 
 AFGBuildableDroneStation::AFGBuildableDroneStation(){ }
+bool AFGBuildableDroneStation::AddAsRepresentation(){ return bool(); }
+bool AFGBuildableDroneStation::UpdateRepresentation(){ return bool(); }
+bool AFGBuildableDroneStation::RemoveAsRepresentation(){ return bool(); }
+bool AFGBuildableDroneStation::IsActorStatic(){ return bool(); }
+FVector AFGBuildableDroneStation::GetRealActorLocation(){ return FVector(); }
+FRotator AFGBuildableDroneStation::GetRealActorRotation(){ return FRotator(); }
+UTexture2D* AFGBuildableDroneStation::GetActorRepresentationTexture(){ return nullptr; }
+FText AFGBuildableDroneStation::GetActorRepresentationText(){ return FText(); }
+void AFGBuildableDroneStation::SetActorRepresentationText(const FText& newText){ }
+FLinearColor AFGBuildableDroneStation::GetActorRepresentationColor(){ return FLinearColor(); }
+void AFGBuildableDroneStation::SetActorRepresentationColor(FLinearColor newColor){ }
+ERepresentationType AFGBuildableDroneStation::GetActorRepresentationType(){ return ERepresentationType(); }
+bool AFGBuildableDroneStation::GetActorShouldShowInCompass(){ return bool(); }
+bool AFGBuildableDroneStation::GetActorShouldShowOnMap(){ return bool(); }
+EFogOfWarRevealType AFGBuildableDroneStation::GetActorFogOfWarRevealType(){ return EFogOfWarRevealType(); }
+float AFGBuildableDroneStation::GetActorFogOfWarRevealRadius(){ return float(); }
+ECompassViewDistance AFGBuildableDroneStation::GetActorCompassViewDistance(){ return ECompassViewDistance(); }
+void AFGBuildableDroneStation::SetActorCompassViewDistance(ECompassViewDistance compassViewDistance){ }
 void AFGBuildableDroneStation::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildableDroneStation::BeginPlay(){ }
 void AFGBuildableDroneStation::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void AFGBuildableDroneStation::Factory_Tick(float dt){ }
 void AFGBuildableDroneStation::Factory_TickProducing(float dt){ }
 void AFGBuildableDroneStation::Factory_CollectInput_Implementation(){ }
-void AFGBuildableDroneStation::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund) const{ }
 void AFGBuildableDroneStation::Dismantle_Implementation(){ }
+void AFGBuildableDroneStation::GetChildDismantleActors_Implementation(TArray< AActor* >& out_ChildDismantleActors) const{ }
 void AFGBuildableDroneStation::OnReplicationDetailActorRemoved(){ }
 void AFGBuildableDroneStation::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGBuildableDroneStation::StartIsLookedAtForSnapping( AFGCharacterPlayer* byCharacter, bool IsValidSnap){ }
@@ -31,6 +49,7 @@ bool AFGBuildableDroneStation::FilterBatteryClasses(TSubclassOf< UObject > objec
 bool AFGBuildableDroneStation::IsValidFuel(TSubclassOf<  UFGItemDescriptor > resource) const{ return bool(); }
 void AFGBuildableDroneStation::OnRep_ItemTransferringStage(){ }
 void AFGBuildableDroneStation::OnRep_StationHasDronesInQueue(){ }
+void AFGBuildableDroneStation::OnRep_DroneStationInfo(){ }
 void AFGBuildableDroneStation::SetItemTransferringStage(EItemTransferringStage NewStage){ }
 void AFGBuildableDroneStation::BeginItemTransfer(){ }
 void AFGBuildableDroneStation::EndItemTransfer(){ }

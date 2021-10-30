@@ -5,7 +5,22 @@
 void FAnimInstanceProxyFactory::PreUpdate(UAnimInstance* InAnimInstance, float DeltaSeconds){ }
 void FAnimInstanceProxyFactory::Update(float DeltaSeconds){ }
 void FAnimInstanceProxyFactory::Initialize(UAnimInstance* InAnimInstance){ }
-UFGFAnimInstanceFactory::UFGFAnimInstanceFactory(){ }
+UFGFAnimInstanceFactory::UFGFAnimInstanceFactory(){ 
+	this->mUseRampUp = false;
+	this->mRampUpTime = 2.0;
+	this->mRampDownTime = 2.0;
+	this->mDefaultCycleTime = 12.0;
+	this->mSoundSpeedRTPC = TEXT("None");
+	this->mSoundSpeedRTPCInterval = 0.5;
+	this->mSoundSpeedAccumulator = 0.0;
+	this->mIsGenerator = false;
+	this->mSoundSpeedRTPCMinValue = 25.0;
+	this->mSoundSpeedRTPCMaxValue = 400.0;
+	this->mRTPCValue = 0.0;
+}
 void UFGFAnimInstanceFactory::NativeUpdateAnimation(float DeltaSeconds){ }
 void UFGFAnimInstanceFactory::NativeInitializeAnimation(){ }
 void UFGFAnimInstanceFactory::UpdateSoundRTPC(float DeltaSeconds, bool forceUpdate){ }
+void UFGFAnimInstanceFactory::EnableAnimationState(USkeletalMeshComponent* meshComponent, bool newState){ }
+void UFGFAnimInstanceFactory::AudioEventCallback(EAkCallbackType cbType, UAkCallbackInfo *cbInfo){ }
+void UFGFAnimInstanceFactory::RegisterPlayingAudioEvent( UFGAnimNotify_AutoAkEvent* EventSource, const FPlayingAudioEventInfo& TrackingInfo){ }

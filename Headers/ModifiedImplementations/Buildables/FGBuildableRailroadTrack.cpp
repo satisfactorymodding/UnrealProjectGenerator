@@ -19,6 +19,8 @@ float FRailroadTrackPosition::GetForwardOffset() const{ return float(); }
 float FRailroadTrackPosition::GetReverseOffset() const{ return float(); }
 UFGRailroadTrackConnectionComponent* FRailroadTrackPosition::GetForwardConnection() const{ return nullptr; }
 UFGRailroadTrackConnectionComponent* FRailroadTrackPosition::GetReverseConnection() const{ return nullptr; }
+AFGBuildableRailroadTrack* FRailroadTrackPosition::GetForwardTrack() const{ return nullptr; }
+AFGBuildableRailroadTrack* FRailroadTrackPosition::GetReverseTrack() const{ return nullptr; }
 const FRailroadTrackPosition FRailroadTrackPosition::InvalidTrackPosition = FRailroadTrackPosition();
 AFGBuildableRailroadTrack::AFGBuildableRailroadTrack(){ }
 void AFGBuildableRailroadTrack::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
@@ -30,4 +32,11 @@ int32 AFGBuildableRailroadTrack::GetDismantleRefundReturnsMultiplier() const{ re
 FRailroadTrackPosition AFGBuildableRailroadTrack::FindTrackPositionClosestToWorldLocation(const FVector& worldLocation){ return FRailroadTrackPosition(); }
 void AFGBuildableRailroadTrack::GetWorldLocationAndDirectionAtPosition(const  FRailroadTrackPosition& position, FVector& out_location, FVector& out_direction) const{ }
 UFGPowerConnectionComponent* AFGBuildableRailroadTrack::GetThirdRail() const{ return nullptr; }
+void AFGBuildableRailroadTrack::OnVehicleEntered( AFGRailroadVehicle* vehicle){ }
+void AFGBuildableRailroadTrack::OnVehicleExited( AFGRailroadVehicle* vehicle){ }
+bool AFGBuildableRailroadTrack::IsConnectionOccupied(const  UFGRailroadTrackConnectionComponent* connection, float distance) const{ return bool(); }
+bool AFGBuildableRailroadTrack::UpdateOverlappingTracks(){ return bool(); }
+TArray< AFGBuildableRailroadTrack* > AFGBuildableRailroadTrack::GetOverlappingTracks(){ return TArray<AFGBuildableRailroadTrack*>(); }
+void AFGBuildableRailroadTrack::AddOverlappingTrack(AFGBuildableRailroadTrack* track){ }
 void AFGBuildableRailroadTrack::SetTrackGraphID(int32 trackGraphID){ }
+void AFGBuildableRailroadTrack::SetSignalBlock(TWeakPtr< FFGRailroadSignalBlock > block){ }

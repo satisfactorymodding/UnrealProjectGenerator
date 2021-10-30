@@ -2,6 +2,7 @@
 
 #include "FGSkySphere.h"
 
+FSkySphereSettings::FSkySphereSettings(){ }
 #if WITH_EDITOR
 void AFGSkySphere::PostEditChangeChainProperty( FPropertyChangedChainEvent& propertyChangedEvent){ }
 #endif 

@@ -3,7 +3,10 @@
 #include "FGBuildablePipeHyper.h"
 
 AFGBuildablePipeHyper::AFGBuildablePipeHyper(){ }
+void AFGBuildablePipeHyper::BeginPlay(){ }
 float AFGBuildablePipeHyper::GetPipeProgressOfConnection_Implementation(const UFGPipeConnectionComponentBase* connectionEnteredThrough){ return float(); }
 void AFGBuildablePipeHyper::OnPipeMove_Implementation(UFGCharacterMovementComponent* charMove, float deltaTime){ }
 UFGPipeConnectionComponentBase* AFGBuildablePipeHyper::GetEndOfPipeInDirectionAndMaxDist(const UFGPipeConnectionComponentBase* enterFromConnection, float maxDist, float& distSoFar) const{ return nullptr; }
 bool AFGBuildablePipeHyper::OnPipeEnter_Implementation(UFGCharacterMovementComponent* charMove, const UFGPipeConnectionComponentBase* connectionEnteredThrough , const AActor* fromPipe){ return bool(); }
+const FName AFGBuildablePipeHyper::mConnectionName0 = FName();
+const FName AFGBuildablePipeHyper::mConnectionName1 = FName();

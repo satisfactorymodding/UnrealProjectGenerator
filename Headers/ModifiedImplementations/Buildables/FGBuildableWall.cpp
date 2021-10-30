@@ -3,3 +3,4 @@
 #include "FGBuildableWall.h"
 
 AFGBuildableWall::AFGBuildableWall(){ }
+void AFGBuildableWall::CalculateLocalSnapOffset(FVector& out_upVector, float& out_length) const{ }

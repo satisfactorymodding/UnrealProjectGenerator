@@ -4,4 +4,4 @@
 
 AFGEquipmentBoomBox::AFGEquipmentBoomBox(){ }
 void AFGEquipmentBoomBox::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
-void AFGEquipmentBoomBox::UpdateTapeIndex(int32 indexToAdd){ }
+TArray< TSubclassOf< class UFGTapeDescriptor > > AFGEquipmentBoomBox::GetAvailableTapes(){ return TArray<TSubclassOf<class UFGTapeDescriptor> >(); }

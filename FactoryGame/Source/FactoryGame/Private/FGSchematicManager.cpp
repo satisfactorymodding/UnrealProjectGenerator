@@ -6,7 +6,21 @@ AFGSchematicManager* AFGSchematicManager::Get(UWorld* world){ return nullptr; }
 AFGSchematicManager* AFGSchematicManager::Get(UObject* worldContext){ return nullptr; }
 int32 AFGSchematicManager::GetTechTier(const FAssetData& schematicAsset){ return int32(); }
 EIncludeInBuilds AFGSchematicManager::GetIncludedInBuild(const FAssetData& schematicAsset){ return EIncludeInBuilds(); }
-AFGSchematicManager::AFGSchematicManager(){ }
+AFGSchematicManager::AFGSchematicManager(){ 
+	this->mActiveSchematic = nullptr;
+	this->mShipLandTimeStamp = -1.0;
+	this->mShipLandTimeStampSave = 0.0;
+	this->mHasTechTierLimit = false;
+	this->mMaxAllowedTechTier = 6;
+	this->mShipReturnedMessage = nullptr;
+	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
+	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
+	this->PrimaryActorTick.bTickEvenWhenPaused = false;
+	this->PrimaryActorTick.bCanEverTick = true;
+	this->PrimaryActorTick.bStartWithTickEnabled = true;
+	this->PrimaryActorTick.bAllowTickOnDedicatedServer = true;
+	this->PrimaryActorTick.TickInterval = 0.1;
+}
 void AFGSchematicManager::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGSchematicManager::PreInitializeComponents(){ Super::PreInitializeComponents(); }
 void AFGSchematicManager::BeginPlay(){ }

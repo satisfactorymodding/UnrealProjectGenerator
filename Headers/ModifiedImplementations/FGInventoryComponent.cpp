@@ -47,9 +47,6 @@ bool UFGInventoryComponent::GetStackFromIndex(int32 idx, FInventoryStack& out_st
 void UFGInventoryComponent::Remove(TSubclassOf< UFGItemDescriptor > itemClass, int32 num){ }
 void UFGInventoryComponent::RemoveFromIndex(int32 idx, int32 num){ }
 void UFGInventoryComponent::RemoveAllFromIndex(int32 idx){ }
-bool UFGInventoryComponent::IsEmpty() const{ return bool(); }
-bool UFGInventoryComponent::IsIndexEmpty(int32 idx) const{ return bool(); }
-bool UFGInventoryComponent::IsSomethingOnIndex(int32 idx) const{ return bool(); }
 void UFGInventoryComponent::Empty(){ }
 bool UFGInventoryComponent::HasItems(TSubclassOf< UFGItemDescriptor > itemClass, int32 num) const{ return bool(); }
 int32 UFGInventoryComponent::GetNumItems(TSubclassOf< UFGItemDescriptor > itemClass) const{ return int32(); }

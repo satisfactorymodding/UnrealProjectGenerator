@@ -109,12 +109,17 @@ bool UFGItemDescriptor::RememberPickUp(TSubclassOf< UFGItemDescriptor > inClass)
 	else
 		return bool();
 }
-TSubclassOf< UFGItemCategory > UFGItemDescriptor::GetItemCategory(TSubclassOf< UFGItemDescriptor > inClass) {
+TSubclassOf< class UFGItemCategory > UFGItemDescriptor::GetItemCategory(TSubclassOf< UFGItemDescriptor > inClass) {
 	if (inClass)
 		return inClass.GetDefaultObject()->mItemCategory;
 	else
 		return TSubclassOf< UFGItemCategory >();
 }
+TSubclassOf< class UFGCategory > UFGItemDescriptor::GetCategory(TSubclassOf< UFGItemDescriptor > inClass){ return TSubclassOf<class UFGCategory>(); }
+void UFGItemDescriptor::GetSubCategories(TSubclassOf< UFGItemDescriptor > inClass, TArray< TSubclassOf<  UFGCategory > >& out_subCategories){ }
+TArray< TSubclassOf< class UFGCategory > > UFGItemDescriptor::GetSubCategoriesOfClass(TSubclassOf< UFGItemDescriptor > inClass, TSubclassOf<  UFGCategory > outputCategoryClass){ return TArray<TSubclassOf<class UFGCategory> >(); }
+TSubclassOf< class UFGQuickSwitchGroup > UFGItemDescriptor::GetQuickSwitchGroup(TSubclassOf< UFGItemDescriptor > inClass){ return TSubclassOf<class UFGQuickSwitchGroup>(); }
+float UFGItemDescriptor::GetMenuPriority(TSubclassOf< UFGItemDescriptor > inClass){ return float(); }
 FColor UFGItemDescriptor::GetFluidColor(TSubclassOf< UFGItemDescriptor > inClass) {
 	if (inClass)
 		return inClass.GetDefaultObject()->mFluidColor;

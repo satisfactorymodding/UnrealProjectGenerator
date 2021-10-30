@@ -29,4 +29,8 @@ public:
 	/** Image of the sender */
 	UPROPERTY( BlueprintReadOnly, EditDefaultsOnly, Category = "Sender" )
 	class UTexture2D* mTexture;
+
+	/** Color of the sender */
+	UPROPERTY( BlueprintReadOnly, EditDefaultsOnly, Category = "Sender" )
+	FLinearColor mSenderColor = FLinearColor::White;
 };

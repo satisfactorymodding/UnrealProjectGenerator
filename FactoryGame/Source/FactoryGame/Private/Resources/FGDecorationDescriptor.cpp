@@ -2,7 +2,14 @@
 
 #include "Resources/FGDecorationDescriptor.h"
 
-UFGDecorationDescriptor::UFGDecorationDescriptor(){ }
+UFGDecorationDescriptor::UFGDecorationDescriptor(){ 
+	this->mGroundMesh = nullptr;
+	this->mGroundMeshScale.X = 1.0;
+	this->mGroundMeshScale.Y = 1.0;
+	this->mGroundMeshScale.Z = 1.0;
+	this->mMesh1p = nullptr;
+	this->mDecorationActorClass = nullptr;
+}
 UStaticMesh* UFGDecorationDescriptor::GetGroundMesh(TSubclassOf< UFGItemDescriptor > inClass){ return nullptr; }
 UStaticMesh* UFGDecorationDescriptor::GetMesh1p(TSubclassOf< UFGItemDescriptor > inClass){ return nullptr; }
 UStaticMesh* UFGDecorationDescriptor::GetMesh3p(TSubclassOf< UFGItemDescriptor > inClass){ return nullptr; }

@@ -37,6 +37,14 @@ enum class ESaveState : uint8
 	SS_Newer		UMETA( DisplayName="Newer" )
 };
 
+UENUM( BlueprintType )
+enum class ESaveLocationInfo : uint8
+{
+	SLI_Default		UMETA( DisplayName = "Default/User Dir" ),
+	SLI_Common		UMETA( DisplayName = "Common Dir" ),
+	SLI_Server		UMETA( DisplayName = "Server Dir" )
+};
+
 typedef FString SessionNameType;
 
 /** The header with information about a save game */
@@ -75,6 +83,9 @@ struct FACTORYGAME_API FSaveHeader
 		// @2021-03-24 Added Modding properties and support
 		AddedModdingParams,
 
+		// @2021-04-15 UE4.26 Engine Upgrade. FEditorObjectVersion Changes occurred
+		UE426EngineUpdate,
+
 		// -----<new versions can be added above this line>-----
 		VersionPlusOne,
 		LatestVersion = VersionPlusOne - 1 // Last version to use
@@ -105,6 +116,9 @@ struct FACTORYGAME_API FSaveHeader
 
 	/** Name of the save game, not store to disc */
 	FString SaveName;
+
+	/** Descriptor for the save game location on the disc at the time of read (not saved to disc) */
+	ESaveLocationInfo SaveLocationInfo;
 
 	/** The map this save is valid on  */
 	FString MapName;
@@ -259,6 +273,11 @@ public:
 	 * @param out_saveGames a list with the available save games
 	 */
 	void EnumerateSaveGames( FOnEnumerateSaveGamesComplete onCompleteDelegate, void* userData );
+
+	/**
+	 * Synchronous value-returning version of the above
+	 **/ 
+	TArray<FSaveHeader> EnumerateSaveGames();
 
 	/**
 	 * Groups a save list by their corresponding session

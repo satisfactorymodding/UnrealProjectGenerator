@@ -2,5 +2,7 @@
 
 #include "Equipment/FGDowsingStick.h"
 
-AFGDowsingStick::AFGDowsingStick(){ }
+AFGDowsingStick::AFGDowsingStick(){ 
+	this->mNumVolumesPerTick = 20;
+}
 void AFGDowsingStick::Tick(float DeltaSeconds){ }

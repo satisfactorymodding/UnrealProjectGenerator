@@ -2,4 +2,7 @@
 
 #include "FGSubsystem.h"
 
-AFGSubsystem::AFGSubsystem(){ }
+AFGSubsystem::AFGSubsystem(){ 
+	this->bAlwaysRelevant = true;
+	this->bReplicates = true;
+}

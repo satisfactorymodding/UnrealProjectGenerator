@@ -27,6 +27,7 @@ public:
 	virtual bool TrySnapToActor( const FHitResult& hitResult ) override;
 	virtual void SetHologramLocationAndRotation( const FHitResult& hitResult ) override;
 	virtual void CheckValidFloor( ) override;
+	virtual void GetIgnoredClearanceActors( TArray< AActor* >& ignoredActors ) const override;
 	// End AFGHologram interface
 
 
@@ -41,10 +42,10 @@ public:
 	void SnapToConnection( UFGPipeConnectionComponentBase* connection, FVector preSnapLocation );
 
 protected:
+	
 	// Begin AFGBuildableHologram interface
 	virtual void ConfigureActor( class AFGBuildable* inBuildable ) const override;
 	virtual void ConfigureComponents( class AFGBuildable* inBuildable ) const override;
-	virtual void CheckClearance() override;
 	virtual void CheckValidPlacement() override;
 	// End AFGBuildableHologram interface
 

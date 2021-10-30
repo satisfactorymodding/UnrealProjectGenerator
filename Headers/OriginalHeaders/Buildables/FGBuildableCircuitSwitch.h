@@ -86,6 +86,8 @@ private:
 
 	virtual void OnRep_IsBridgeConnected() override;
 
+	void BroadcastProductionStatus();
+
 private:
 	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_IsSwitchOn )
 	bool mIsSwitchOn;

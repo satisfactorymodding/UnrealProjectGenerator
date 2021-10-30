@@ -4,6 +4,7 @@
 
 #include "GameFramework/Info.h"
 #include "FGSaveInterface.h"
+#include "FGTrainDockingRules.h"
 #include "FGRailroadTimeTable.generated.h"
 
 /**
@@ -18,9 +19,9 @@ public:
 	UPROPERTY( SaveGame, BlueprintReadWrite )
 	class AFGTrainStationIdentifier* Station = nullptr;
 
-	/** Time to stay. */
+	/** Station Rules */
 	UPROPERTY( SaveGame, BlueprintReadWrite )
-	float Duration = 0.0f;
+	FTrainDockingRuleSet DockingRuleSet;
 };
 
 /**
@@ -96,6 +97,14 @@ public:
 	/** Increment the current stop to the next one in order. */
 	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|TimeTable" )
 	void IncrementCurrentStop();
+
+	/** Purge the list of any invalid stops. */
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|TimeTable" )
+	void PurgeInvalidStops();
+	
+	/** Get the docking rules for a given stop */
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|RailRoad|TimeTable" )
+	void GetDockingRuleSetForStop( int32 index, FTrainDockingRuleSet& out_ruleSet ) const;
 
 private:
 	const int32 MAX_STOPS = 100;

@@ -20,6 +20,10 @@ class FACTORYGAME_API AFGBuildablePipeHyper : public AFGBuildablePipeBase, publi
 	
 public:
 
+	// Begin AActor interface
+	virtual void BeginPlay() override;
+	// End AActor interface
+	
 	// Begin FGHyperTube Interface
 	virtual float GetPipeProgressOfConnection_Implementation( const UFGPipeConnectionComponentBase* connectionEnteredThrough ) override;
 
@@ -30,6 +34,7 @@ public:
 	// End FGHyperTube Interface
 private:
 
-
+	static const FName mConnectionName0;
+	static const FName mConnectionName1;
 };
 

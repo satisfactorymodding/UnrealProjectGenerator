@@ -18,6 +18,8 @@ bool UFGBuildGunStateDismantle::CanBeginBuildGunDelay() const{ return bool(); }
 void UFGBuildGunStateDismantle::BeginBuildGunDelay(){ }
 void UFGBuildGunStateDismantle::ResetBuildGunDelay(){ }
 void UFGBuildGunStateDismantle::Internal_OnMultiDismantleStateChanged(bool newValue){ }
+void UFGBuildGunStateDismantle::Internal_OnSingleTypeMultiDismantleChanged(bool newValue){ }
+void UFGBuildGunStateDismantle::UpdateHighlightedActors(){ }
 void UFGBuildGunStateDismantle::Server_DismantleActors_Implementation(const TArray<class AActor*>& selectedActors){ }
 bool UFGBuildGunStateDismantle::Server_DismantleActors_Validate(const TArray<class AActor*>& selectedActors){ return bool(); }
 void UFGBuildGunStateDismantle::Server_PeekAtDismantleRefund_Implementation(const TArray<class AActor*>& selectedActors){ }
@@ -33,4 +35,4 @@ void UFGBuildGunStateDismantle::ClearStaleDismantleActors(){ }
 void UFGBuildGunStateDismantle::CreateStencilProxy(AActor* selected){ }
 void UFGBuildGunStateDismantle::DestroySingleStencilProxy(AActor* actor){ }
 void UFGBuildGunStateDismantle::DestroyStencilProxies(bool destroyComponents){ }
-void UFGBuildGunStateDismantle::ResetStencilValues(TArray<AActor*> selectedActors){ }
+void UFGBuildGunStateDismantle::ResetStencilValues(AActor* actor){ }

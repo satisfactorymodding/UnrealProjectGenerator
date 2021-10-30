@@ -2,7 +2,18 @@
 
 #include "FGMaterialEffectComponent.h"
 
-UFGMaterialEffectComponent::UFGMaterialEffectComponent(){ }
+UFGMaterialEffectComponent::UFGMaterialEffectComponent(){ 
+	this->mMaterial = nullptr;
+	this->mAutoDestroy = true;
+	this->PrimaryComponentTick.TickGroup = ETickingGroup::TG_DuringPhysics;
+	this->PrimaryComponentTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
+	this->PrimaryComponentTick.bTickEvenWhenPaused = false;
+	this->PrimaryComponentTick.bCanEverTick = true;
+	this->PrimaryComponentTick.bStartWithTickEnabled = false;
+	this->PrimaryComponentTick.bAllowTickOnDedicatedServer = true;
+	this->PrimaryComponentTick.TickInterval = 0.0;
+	this->bAutoActivate = true;
+}
 void UFGMaterialEffectComponent::OnUnregister(){ Super::OnUnregister(); }
 void UFGMaterialEffectComponent::Activate(bool reset){ }
 void UFGMaterialEffectComponent::Deactivate(){ }

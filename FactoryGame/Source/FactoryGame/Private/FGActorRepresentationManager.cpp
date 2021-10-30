@@ -4,7 +4,16 @@
 
 AFGActorRepresentationManager* AFGActorRepresentationManager::Get(UWorld* world){ return nullptr; }
 AFGActorRepresentationManager* AFGActorRepresentationManager::Get(UObject* worldContext){ return nullptr; }
-AFGActorRepresentationManager::AFGActorRepresentationManager(){ }
+AFGActorRepresentationManager::AFGActorRepresentationManager(){ 
+	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
+	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
+	this->PrimaryActorTick.bTickEvenWhenPaused = false;
+	this->PrimaryActorTick.bCanEverTick = true;
+	this->PrimaryActorTick.bStartWithTickEnabled = true;
+	this->PrimaryActorTick.bAllowTickOnDedicatedServer = true;
+	this->PrimaryActorTick.TickInterval = 0.0;
+	this->NetUpdateFrequency = 2.0;
+}
 void AFGActorRepresentationManager::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGActorRepresentationManager::PreReplication(IRepChangedPropertyTracker& changedPropertyTracker){ }
 bool AFGActorRepresentationManager::ReplicateSubobjects( UActorChannel* channel,  FOutBunch* bunch, FReplicationFlags* repFlags){ return bool(); }

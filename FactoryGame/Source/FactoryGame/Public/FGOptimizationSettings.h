@@ -38,6 +38,11 @@ public:
 	UPROPERTY( BlueprintReadWrite, EditAnywhere )
 	int32 mInstanceDestroyDistance;
 
+#if WITH_EDITORONLY_DATA
+	UPROPERTY( EditAnywhere )
+	FString Comment;
+#endif
+	
 	FCullSettings()
 	{
 		mMinDistance = -1;

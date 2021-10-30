@@ -4,9 +4,28 @@
 
 AFGFactoryBuildingHologram::AFGFactoryBuildingHologram(){ }
 void AFGFactoryBuildingHologram::BeginPlay(){ }
+void AFGFactoryBuildingHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
+bool AFGFactoryBuildingHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }
+AActor* AFGFactoryBuildingHologram::Construct(TArray<AActor*>& out_children, FNetConstructionID constructionID){ return nullptr; }
+int32 AFGFactoryBuildingHologram::GetBaseCostMultiplier() const{ return int32(); }
+void AFGFactoryBuildingHologram::GetSupportedBuildModes_Implementation(TArray<TSubclassOf<UFGHologramBuildModeDescriptor>>& out_buildmodes) const{ }
+bool AFGFactoryBuildingHologram::DoMultiStepPlacement(bool isInputFromARelease){ return bool(); }
+void AFGFactoryBuildingHologram::OnBuildModeChanged(){ }
+USceneComponent* AFGFactoryBuildingHologram::SetupComponent(USceneComponent* attachParent, UActorComponent* componentTemplate, const FName& componentName){ return nullptr; }
+bool AFGFactoryBuildingHologram::CanBeZooped() const{ return bool(); }
+void AFGFactoryBuildingHologram::SerializeConstructMessage(FArchive& ar, FNetConstructionID id){ }
+void AFGFactoryBuildingHologram::OnPendingConstructionHologramCreated_Implementation(AFGHologram* fromHologram){ }
 void AFGFactoryBuildingHologram::CheckValidFloor(){ }
-void AFGFactoryBuildingHologram::CheckClearance(){ }
-bool AFGFactoryBuildingHologram::CheckClearanceForBuildingMesh(UStaticMeshComponent* mesh, const FComponentQueryParams& params){ return bool(); }
 FVector AFGFactoryBuildingHologram::GetFloorEdgeDirection(const FVector& floorLoc, const FRotator& floorRot, const FVector& testLoc, FFoundationSideSelectionFlags excludeEdges) const{ return FVector(); }
 FVector AFGFactoryBuildingHologram::GetFloorEdgeOffset(const FVector& floorLoc, const FRotator& floorRot, float floorSize, const FVector& testLoc, float testSize, FFoundationSideSelectionFlags excludeEdges) const{ return FVector(); }
-FVector AFGFactoryBuildingHologram::GetWallEdgeDirection(const FVector& wallLoc, const FRotator& wallRot, const FVector& testLoc) const{ return FVector(); }
+FVector AFGFactoryBuildingHologram::GetWallEdgeDirection(const  AFGBuildableWall* wall, const FVector& testLoc) const{ return FVector(); }
+void AFGFactoryBuildingHologram::UpdateZoop(){ }
+void AFGFactoryBuildingHologram::ConstructZoop(TArray<AActor*>& out_children){ }
+FVector AFGFactoryBuildingHologram::ConvertZoopToWorldLocation(const FIntVector& zoop) const{ return FVector(); }
+void AFGFactoryBuildingHologram::ClearZoopInstances(){ }
+void AFGFactoryBuildingHologram::GenerateZoopInstance(const FTransform& instanceTransform){ }
+AActor* AFGFactoryBuildingHologram::ConstructInstance(TArray<AActor*>& out_children, FNetConstructionID constructionID){ return nullptr; }
+void AFGFactoryBuildingHologram::SetZoopAmount(const FIntVector& Zoop){ }
+void AFGFactoryBuildingHologram::ApplyMaxZoopClamp(FIntVector& Zoop){ }
+void AFGFactoryBuildingHologram::BlockZoopDirectionsBasedOnSnapDirection(const FVector& worldSpaceSnapDirection){ }
+void AFGFactoryBuildingHologram::OnRep_DesiredZoop(){ }

@@ -7,6 +7,8 @@
 #include "Buildables/FGBuildableLightSource.h"
 #include "FGBuildableLightsControlPanel.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FLightControlPanelStateChanged, bool, isEnabled );
+
 /**
  * Native implementation for the lights control panel.
  */
@@ -34,6 +36,12 @@ public:
 	/** Get the control data of this light, valid on client. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Buildable|Light" )
     FLightSourceControlData GetLightControlData() const;
+
+	UFUNCTION()
+	virtual void OnRep_IsEnabled();
+
+	UPROPERTY( BlueprintAssignable )
+	FLightControlPanelStateChanged OnLightControlPanelStateChanged;
 	
 private:
 	/** The parameters for the light output. */
@@ -41,6 +49,6 @@ private:
 	FLightSourceControlData mLightControlData;
 
 	/** Are the lights on or off. */
-	UPROPERTY( SaveGame, Replicated )
+	UPROPERTY( SaveGame, ReplicatedUsing=OnRep_IsEnabled )
 	bool mIsEnabled;
 };

@@ -3,17 +3,16 @@
 #include "FGAtmosphereVolume.h"
 
 FExponentialFogSettings::FExponentialFogSettings(){ }
+FSkyAtmosphereSettings::FSkyAtmosphereSettings(){ }
 #if WITH_EDITOR
 void AFGAtmosphereVolume::PostEditChangeProperty(FPropertyChangedEvent& propertyChangedEvent){ Super::PostEditChangeProperty(propertyChangedEvent); }
 #endif 
 #if WITH_EDITOR
-float AFGAtmosphereVolume::GetViewMinInput() const{ return float(); }
-float AFGAtmosphereVolume::GetViewMaxInput() const{ return float(); }
-void AFGAtmosphereVolume::SetViewRange(float min, float max){ }
-#endif 
-#if WITH_EDITORONLY_DATA
+void AFGAtmosphereVolume::MoveCurvesToBaseBiome(){ }
+void AFGAtmosphereVolume::CopyLegacyPropertiesToAsset(){ }
 #endif 
 AFGAtmosphereVolume::AFGAtmosphereVolume(){ }
+void AFGAtmosphereVolume::BeginPlay(){ }
 void AFGAtmosphereVolume::PostLoad(){ Super::PostLoad(); }
 void AFGAtmosphereVolume::PostRegisterAllComponents(){ }
 void AFGAtmosphereVolume::PostUnregisterAllComponents(void){ }
@@ -22,5 +21,7 @@ FPostProcessVolumeProperties AFGAtmosphereVolume::GetProperties() const{ return 
 void AFGAtmosphereVolume::GetSettings(FExponentialFogSettings& out_settings) const{ }
 void AFGAtmosphereVolume::GetSettings(float atTime, FExponentialFogSettings& out_settings) const{ }
 void AFGAtmosphereVolume::GetSkySphereSettings(float atTime, FSkySphereSettings& out_settings) const{ }
+void AFGAtmosphereVolume::GetAtmosphereSettings(float atTime, FSkyAtmosphereSettings& out_settings) const{ }
+void AFGAtmosphereVolume::OnConstruction(const FTransform& Transform){ }
 void AFGAtmosphereVolume::AddVolume(){ }
 void AFGAtmosphereVolume::RemoveVolume(){ }

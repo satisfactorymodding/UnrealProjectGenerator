@@ -16,7 +16,7 @@ void AFGRailroadTrackHologram::SetLocationAndRotationFromPlatformConnections( UF
 TArray< class UFGRailroadTrackConnectionComponent* > AFGRailroadTrackHologram::GetSnappedConnectionComponents(){ return TArray<class UFGRailroadTrackConnectionComponent*>(); }
 void AFGRailroadTrackHologram::CheckValidPlacement(){ }
 void AFGRailroadTrackHologram::CheckValidFloor(){ }
-void AFGRailroadTrackHologram::CheckClearance(){ }
+void AFGRailroadTrackHologram::CheckClearance(const FVector& locationOffset){ }
 void AFGRailroadTrackHologram::UpdateSplineComponent(){ }
 void AFGRailroadTrackHologram::TryFindAndSnapToOverlappingConnection(int32 forConnectionIndex, FVector& inout_newLocation, FVector& inout_newTangent){ }
 void AFGRailroadTrackHologram::TryPlaceSwitchControl(int32 forConnectionIndex){ }

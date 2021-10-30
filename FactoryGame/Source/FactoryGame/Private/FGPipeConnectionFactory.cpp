@@ -2,7 +2,10 @@
 
 #include "FGPipeConnectionFactory.h"
 
-UFGPipeConnectionFactory::UFGPipeConnectionFactory(){ }
+UFGPipeConnectionFactory::UFGPipeConnectionFactory(){ 
+	this->mFluidBoxVolume = 5.0;
+	this->mApplyAdditionalPressure = true;
+}
 void UFGPipeConnectionFactory::BeginPlay(){ }
 void UFGPipeConnectionFactory::EndPlay(const EEndPlayReason::Type reason){ }
 FFluidBox* UFGPipeConnectionFactory::GetFluidBox(){ return nullptr; }

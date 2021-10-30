@@ -3,6 +3,7 @@
 #include "FGBuildableTrainPlatform.h"
 
 AFGBuildableTrainPlatform::AFGBuildableTrainPlatform(){ }
+void AFGBuildableTrainPlatform::BeginPlay(){ }
 void AFGBuildableTrainPlatform::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildableTrainPlatform::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGBuildableTrainPlatform::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
@@ -15,6 +16,7 @@ int32 AFGBuildableTrainPlatform::GetTrackGraphID() const{ return int32(); }
 AFGBuildableTrainPlatform* AFGBuildableTrainPlatform::GetConnectedPlatformInDirectionOf(uint8 direction){ return nullptr; }
 void AFGBuildableTrainPlatform::NotifyTrainDocked( AFGRailroadVehicle* railroadVehicle,  AFGBuildableRailroadStation* initiatedByStation){ }
 void AFGBuildableTrainPlatform::UpdateDockingSequence(){ }
+void AFGBuildableTrainPlatform::CancelDockingSequence(){ }
 void AFGBuildableTrainPlatform::SetupRailroadTrack(){ }
 void AFGBuildableTrainPlatform::FinishDockingSequence(){ }
 void AFGBuildableTrainPlatform::OnRep_UpdateDockingStatus(){ }

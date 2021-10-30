@@ -10,6 +10,7 @@
 #include "Interfaces/OnlineSessionInterface.h"
 #include "EOSSDKForwards.h"
 #include "AnalyticsService.h"
+
 #include "FGGameInstance.generated.h"
 
 
@@ -230,6 +231,9 @@ public:
 	/** Get the instance of the debug overlay widget. Will create one if it doesn't exists. Might return null if we don't have a specificed debug overlay widget class */
 	class UFGDebugOverlayWidget* GetDebugOverlayWidget();
 
+	UFUNCTION( BlueprintCallable )
+	class UFGOnlineSessionClient* GetOnlineSession();
+
 protected:
 	// Called when a map has loaded properly in Standalone
 	virtual void LoadComplete( const float loadTime, const FString& mapName ) override;
@@ -257,7 +261,6 @@ protected:
 
 private:
 	void OnPreLoadMap( const FString& levelName );
-	void OnPostLoadMap( UWorld* loadedWorld );
 
 	// Usually called when loading save/exiting to menu
 	void OnWorldDestroy( UWorld* world );
@@ -321,7 +324,7 @@ protected:
 	///** The handle for the Epic Online Services manager. Is initialized in Init(). */
 	//UPROPERTY()
 	//class UEOSManager* mCachedEOSManager;
-	
+
 public:
 	// Mod packages found - valid or invalid
 	UPROPERTY( BlueprintReadOnly, Category = "Modding" )

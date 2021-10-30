@@ -31,19 +31,16 @@ public:
 	UFUNCTION()
 	virtual void SetupForSignificance();
 
-	/** Defaults to 10000.0ff */
+	/** Defaults to 10000.f */
 	UFUNCTION()
 	virtual float GetSignificanceRange();
 
 	UFUNCTION()
 	virtual void UpdateMeshLodLevels(int32 newLodLevel);
-	
+
+	//@todo 2021-10-04 G2: These should be removed according to Ben.
 	UFUNCTION()
 	virtual void GainedSignificance_Native();
-
 	UFUNCTION()
 	virtual void LostSignificance_Native();
-public:
-	
-	
 };

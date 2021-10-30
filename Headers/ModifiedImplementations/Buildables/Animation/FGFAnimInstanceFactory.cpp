@@ -9,3 +9,6 @@ UFGFAnimInstanceFactory::UFGFAnimInstanceFactory(){ }
 void UFGFAnimInstanceFactory::NativeUpdateAnimation(float DeltaSeconds){ }
 void UFGFAnimInstanceFactory::NativeInitializeAnimation(){ }
 void UFGFAnimInstanceFactory::UpdateSoundRTPC(float DeltaSeconds, bool forceUpdate){ }
+void UFGFAnimInstanceFactory::EnableAnimationState(USkeletalMeshComponent* meshComponent, bool newState){ }
+void UFGFAnimInstanceFactory::AudioEventCallback(EAkCallbackType cbType, UAkCallbackInfo *cbInfo){ }
+void UFGFAnimInstanceFactory::RegisterPlayingAudioEvent( UFGAnimNotify_AutoAkEvent* EventSource, const FPlayingAudioEventInfo& TrackingInfo){ }

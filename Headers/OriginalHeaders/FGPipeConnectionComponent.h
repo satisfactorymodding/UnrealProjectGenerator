@@ -43,8 +43,7 @@ public:
 	// Begin ActorComponent interface
 	virtual void GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps ) const override;
 	virtual void OnComponentDestroyed( bool isDestroyingHierarchy ) override;
-	virtual void OnRegister() override;
-	virtual void OnUnregister() override;
+	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
 	// End ActorComponent interface
 
 	/** Set the conveyor clearance for this connection. */
@@ -91,13 +90,19 @@ public:
 	 */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Pipes|Connection" )
 	bool IsConnected() const;
-
+	
 	/** Check if the given connection can snap to this. */
 	bool CanSnapTo( UFGPipeConnectionComponentBase* otherConnection ) const;
+	
 	/** Check if the given connection can connect to this. */
 	bool CanConnectTo( UFGPipeConnectionComponentBase* otherConnection ) const;
 
-	
+	/** Block snapping to this connection. Used for special cases where we don't want to allow direct snapping Tex. When a connection is snapped to a buildable passthrough */
+	void SetDisallowSnappingTo( bool shouldBlock ) { mDisallowSnappingTo = shouldBlock; }
+
+	/** Is this component ineligible for snapping to? */
+	bool IsSnappingToDisallowed() { return mDisallowSnappingTo; }
+
 	/** CheckCompatibility
 	 * Checks the connection types and general compatibility of the connections. If the hologram is given it can report more specific issues as well, but otherwise the return value will tell weather the connections are compatible.
 	 * This is not necessarily for connecting two connections, but rather to make sure that they can belong to the same system.
@@ -142,12 +147,12 @@ protected:
 	float mConnectorClearance;
 
 protected:
-	UPROPERTY( EditDefaultsOnly )
-	FName mPipeType = "Base"; //used to find matching types for snapping and so on
-
 	/** Connection to another component. If this is set we're connected. */
 	UPROPERTY( SaveGame, Replicated )
 	class UFGPipeConnectionComponentBase* mConnectedComponent;
+
+	UPROPERTY()
+	bool mDisallowSnappingTo;
 };
 
 
@@ -226,7 +231,9 @@ public:
 	*	Acts on an Inventory component and fluid integrant. This is independent of the Pipe Network fluid updates
 	*	Calls the internal implementation after determining if it is the component on the destination buildable
 	*/
+	UFUNCTION(BlueprintCallable, Category="Pipe Connection Component")
 	int32 Factory_PushPipeOutput( float dt, const FInventoryStack& stack );
+	UFUNCTION(BlueprintCallable, Category="Pipe Connection Component")
 	bool Factory_PullPipeInput( float dt, FInventoryStack& out_stack, TSubclassOf< UFGItemDescriptor > type, int32 maxQuantity = -1 );
 
 	/** Actual implementation of PushPipeOutput */
@@ -234,7 +241,6 @@ public:
 
 	/** Actual implementation of PullPipeInput */
 	bool Factory_Internal_PullPipeInput( float dt, FInventoryStack& out_stack, TSubclassOf< UFGItemDescriptor > type, int32 maxQuantity = -1 );
-
 
 private:
 	/** Used by the pipe subsystem to update the network this is connected to. */

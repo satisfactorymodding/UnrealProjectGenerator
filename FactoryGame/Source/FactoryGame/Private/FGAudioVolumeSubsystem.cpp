@@ -2,7 +2,15 @@
 
 #include "FGAudioVolumeSubsystem.h"
 
-AFGAudioVolumeSubsystem::AFGAudioVolumeSubsystem(){ }
+AFGAudioVolumeSubsystem::AFGAudioVolumeSubsystem(){ 
+	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
+	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
+	this->PrimaryActorTick.bTickEvenWhenPaused = false;
+	this->PrimaryActorTick.bCanEverTick = true;
+	this->PrimaryActorTick.bStartWithTickEnabled = true;
+	this->PrimaryActorTick.bAllowTickOnDedicatedServer = true;
+	this->PrimaryActorTick.TickInterval = 0.0;
+}
 void AFGAudioVolumeSubsystem::Tick(float dt){ }
 bool AFGAudioVolumeSubsystem::ShouldUpdateWorld(UWorld* world) const{ return bool(); }
 void AFGAudioVolumeSubsystem::UpdateWorld(UWorld* world){ }

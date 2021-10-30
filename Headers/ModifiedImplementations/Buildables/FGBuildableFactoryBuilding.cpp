@@ -9,5 +9,5 @@ FFoundationSideSelectionFlags FFoundationSideSelectionFlags::RotateEdges(int32 s
 const FFoundationSideSelectionFlags FFoundationSideSelectionFlags::NoEdges = FFoundationSideSelectionFlags();
 const FFoundationSideSelectionFlags FFoundationSideSelectionFlags::AllEdges = FFoundationSideSelectionFlags();
 FVector FFoundationHelpers::GetLocalSpaceNormalFromFoundationSide(EFoundationSide side){ return FVector(); }
-FFoundationSideNormal FFoundationHelpers::FindBestMatchingFoundationSideFromLocalNormal( AFGBuildableFoundation* foundation, FVector normal){ return FFoundationSideNormal(); }
+FFoundationSideNormal FFoundationHelpers::FindBestMatchingFoundationSideFromLocalNormal(const FVector& normal, FFoundationSideSelectionFlags exludeEdges){ return FFoundationSideNormal(); }
 AFGBuildableFactoryBuilding::AFGBuildableFactoryBuilding(){ }

@@ -60,6 +60,10 @@ public:
 	/* Helpers for finding locations on the pathing spline */
 	virtual float FindOffsetClosestToLocation( const FVector& location ) const;
 	virtual void GetLocationAndDirectionAtOffset( float offset, FVector& out_location, FVector& out_direction ) const;
+	
+	/** Get the spline data for this pipe. */
+	UFUNCTION( BlueprintCallable, BlueprintPure = false, Category = "Pipe" )
+    FORCEINLINE TArray< FSplinePointData > GetSplineData() const { return mSplineData; };
 
 protected:
 	/**
@@ -67,7 +71,7 @@ protected:
 	 * [DavalliusA:Tue/22-10-2019] this is med with a function, so we don't have to store a variable in all the instances of this class
 	 */
 	UFUNCTION( BlueprintNativeEvent, Category = "FactoryGame|Pipes|PipeBase" )
-	TSubclassOf< UFGPipeConnectionComponentBase > GetConnectionType();
+	TSubclassOf< class UFGPipeConnectionComponentBase > GetConnectionType();
 
 public:
 	/** Default height above ground level for pipes */
@@ -91,14 +95,12 @@ protected:
 
 	/**
 	 * First connection on the pipe (can be an input and an output, because, again, pipes)
-	 * MUST BE SET FROM CONSTRUCTION SCRIPT OR IT WILL BE NULL!
 	 */
 	UPROPERTY( EditAnywhere, BlueprintReadWrite, Category = "Pipes" )
 	UFGPipeConnectionComponentBase* mConnection0;
 
 	/**
 	 * Second connection on the pipe (can be an input and an output, because, again, pipes)
-	 * MUST BE SET FROM CONSTRUCTION SCRIPT OR IT WILL BE NULL!
 	 */
 	UPROPERTY( VisibleAnywhere, BlueprintReadWrite, Category = "Pipes" )
 	UFGPipeConnectionComponentBase* mConnection1;

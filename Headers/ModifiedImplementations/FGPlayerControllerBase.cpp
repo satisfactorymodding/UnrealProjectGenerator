@@ -29,14 +29,12 @@ FString AFGPlayerControllerBase::GetPresenceString_Implementation() const{ retur
 void AFGPlayerControllerBase::Client_UpdateCappedBandwidth_Implementation(int32 cap){ }
 void AFGPlayerControllerBase::Server_UpdateCappedBandwidth_Implementation(int32 cap){ }
 bool AFGPlayerControllerBase::Server_UpdateCappedBandwidth_Validate(int32 cap){ return bool(); }
-void AFGPlayerControllerBase::AdminLogin(FString password){ }
-void AFGPlayerControllerBase::Server_AdminLogin_Implementation(const FString& hashedPassword){ }
-bool AFGPlayerControllerBase::Server_AdminLogin_Validate(const FString& hashedPassword){ return bool(); }
 void AFGPlayerControllerBase::OnAdminRightsGranted(){ }
 void AFGPlayerControllerBase::OnAdminRightsRevoked(){ }
 void AFGPlayerControllerBase::Admin(const FString& command){ }
 void AFGPlayerControllerBase::ServerAdmin_Implementation(const FString& command){ }
 bool AFGPlayerControllerBase::ServerAdmin_Validate(const FString& command){ return bool(); }
+bool AFGPlayerControllerBase::ProcessConsoleExec(const TCHAR* Cmd, FOutputDevice& Ar, UObject* Executor){ return bool(); }
 void AFGPlayerControllerBase::DiscardInput(){ }
 void AFGPlayerControllerBase::EnablePlayerInput(bool enable){ }
 void AFGPlayerControllerBase::InitDeathInput(){ }

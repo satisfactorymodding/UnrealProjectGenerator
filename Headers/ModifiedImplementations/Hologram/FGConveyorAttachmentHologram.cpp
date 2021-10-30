@@ -3,14 +3,16 @@
 #include "FGConveyorAttachmentHologram.h"
 
 AFGConveyorAttachmentHologram::AFGConveyorAttachmentHologram(){ }
+void AFGConveyorAttachmentHologram::BeginPlay(){ }
 void AFGConveyorAttachmentHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }
 bool AFGConveyorAttachmentHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
-void AFGConveyorAttachmentHologram::BeginPlay(){ }
 bool AFGConveyorAttachmentHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }
+float AFGConveyorAttachmentHologram::GetHologramHoverHeight() const{ return float(); }
+void AFGConveyorAttachmentHologram::GetIgnoredClearanceActors(TArray< AActor* >& ignoredActors) const{ }
+bool AFGConveyorAttachmentHologram::ShouldBuildableBeConsideredForGuidelines( AFGBuildable* buildable) const{ return bool(); }
 int32 AFGConveyorAttachmentHologram::GetRotationStep() const{ return int32(); }
 void AFGConveyorAttachmentHologram::ConfigureComponents( AFGBuildable* inBuildable) const{ }
 void AFGConveyorAttachmentHologram::CheckValidPlacement(){ }
-FVector AFGConveyorAttachmentHologram::GetGuideLinesBaseLocation(){ return FVector(); }
 void AFGConveyorAttachmentHologram::SnapToConnection( UFGFactoryConnectionComponent* connectiontoSnapTo,  UFGFactoryConnectionComponent* myConnectionToSnapWith, FVector locationToDetermineSideIfAplicable){ }
 FName AFGConveyorAttachmentHologram::mInputConnection1 = FName();
 FName AFGConveyorAttachmentHologram::mOutputConnection1 = FName();

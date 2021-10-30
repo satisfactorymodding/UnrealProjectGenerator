@@ -47,7 +47,7 @@ TArray< FItemAmount > UFGSchematic::GetCost(TSubclassOf< UFGSchematic > inClass)
 	else
 		return TArray< FItemAmount >();
 }
-TArray< UFGUnlock* > UFGSchematic::GetUnlocks(TSubclassOf< UFGSchematic > inClass) {
+TArray< class UFGUnlock* > UFGSchematic::GetUnlocks(TSubclassOf< UFGSchematic > inClass) {
 	if (inClass)
 		return inClass.GetDefaultObject()->mUnlocks;
 	else
@@ -76,6 +76,7 @@ FSlateBrush UFGSchematic::GetItemIcon(TSubclassOf< UFGSchematic > inClass) {
 UTexture2D* UFGSchematic::GetSmallIcon(TSubclassOf< UFGSchematic > inClass){ return nullptr; }
 bool UFGSchematic::AreSchematicDependenciesMet(TSubclassOf< UFGSchematic > inClass, UObject* worldContext){ return bool(); }
 void UFGSchematic::GetSchematicDependencies(TSubclassOf< UFGSchematic > inClass, TArray<  UFGAvailabilityDependency* >& out_schematicDependencies){ }
+bool UFGSchematic::CanGiveAccessToSchematic(TSubclassOf< UFGSchematic > inClass, UObject* worldContext){ return bool(); }
 bool UFGSchematic::IsRepeatPurchasesAllowed(TSubclassOf< UFGSchematic > inClass){ return bool(); }
 void UFGSchematic::SortByMenuPriority(TArray< TSubclassOf< UFGSchematic > >& schematics){ }
 TArray< EEvents > UFGSchematic::GetRelevantEvents(TSubclassOf< UFGSchematic > inClass){ return TArray<EEvents>(); }

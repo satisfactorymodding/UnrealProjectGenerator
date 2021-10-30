@@ -27,6 +27,8 @@ struct FACTORYGAME_API FLightSourceControlData
 	bool IsTimeOfDayAware = false;
 };
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FBuildableLightSourceStateChanged, bool, isEnabled );
+
 /**
  * Base class for buildable light sources in the game.
  */
@@ -77,6 +79,8 @@ public:
 	/** Called when light color slots have been updated */
 	void OnLightColorSlotsUpdated( const TArray< FLinearColor >& colors );
 
+	virtual float GetEmissivePower() override;
+
 protected:
 	/** Called when the time of day changes. */
 	UFUNCTION( BlueprintImplementableEvent,Category = "FactoryGame|Buildable|Light" )
@@ -114,6 +118,10 @@ private:
 
 	// Update the power consumption of the light.
 	void UpdatePowerConsumption();
+
+public:
+	UPROPERTY( BlueprintAssignable )
+	FBuildableLightSourceStateChanged OnBuildableLightSourceStateChanged;
 	
 private:
 	/** Is the light on or off. */

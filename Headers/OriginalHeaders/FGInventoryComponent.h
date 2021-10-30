@@ -32,7 +32,8 @@ public:
 	friend FArchive& operator<<( FArchive& ar, FInventoryItem& item );
 
 	/** @return true if this is a valid item; otherwise false. */
-	FORCEINLINE bool IsValid() const { return ::IsValid( ItemClass ); }
+	FORCEINLINE bool IsValid() const { return ItemClass != nullptr; }
+	//FORCEINLINE bool IsValid() const { return ::IsValid( ItemClass ); }
 
 	/** @return true if this item has a state; otherwise false. */
 	FORCEINLINE bool HasState() const { return ItemState.IsValid(); }
@@ -287,15 +288,39 @@ public:
 
 	/** Check if the entire inventory is empty. */
 	UFUNCTION( BlueprintPure, Category = "Inventory" )
-	bool IsEmpty() const;
+	FORCEINLINE bool IsEmpty() const
+	{
+		for( const FInventoryStack& stack : mInventoryStacks )
+		{
+			if( stack.HasItems() )
+			{
+				return false;
+			}
+		}
+		return true;
+	}
 
 	/** Check if the given index is empty. */
 	UFUNCTION( BlueprintPure, Category = "Inventory" )
-	bool IsIndexEmpty( int32 idx ) const;
-
+	FORCEINLINE bool IsIndexEmpty( int32 idx ) const
+	{
+		fgcheckf( mInventoryStacks.Num() > 0 , TEXT( "Inventory need to be initialized before use %s" ), SHOWVAR( mInventoryStacks.Num() ) );
+		
+		if( !IsValidIndex( idx ) )
+		{
+			UE_LOG( LogGame, Warning, TEXT( "RemoveFromIndex failed cause invalid index (%i) in component '%s'" ), idx, *GetName() );
+			return false;
+		}
+		
+		return !mInventoryStacks[ idx ].HasItems();
+	}
+	
 	/** Opposite of IsIndexEmpty */
 	UFUNCTION( BlueprintPure, Category = "Inventory" )
-	bool IsSomethingOnIndex( int32 idx ) const;
+	FORCEINLINE bool IsSomethingOnIndex( int32 idx ) const
+	{
+		return !IsIndexEmpty( idx );
+	}
 
 	/** Clears the inventory, ALL items will be forever gone! */
 	UFUNCTION( BlueprintCallable, Category = "Inventory" )

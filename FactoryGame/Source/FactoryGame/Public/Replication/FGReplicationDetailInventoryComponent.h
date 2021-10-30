@@ -2,7 +2,6 @@
 
 #pragma once
 
-#include "FGInventoryComponent.h" // MODDING EDIT
 #include "Components/ActorComponent.h"
 #include "FGReplicationDetailInventoryComponent.generated.h"
 

@@ -20,9 +20,11 @@ void AFGHologram::Destroyed(){ }
 void AFGHologram::SetActorHiddenInGame(bool newHidden){ }
 bool AFGHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }
 bool AFGHologram::TryUpgrade(const FHitResult& hitResult){ return bool(); }
-void AFGHologram::AdjustForGround(const FHitResult& hitResult, FVector& out_adjustedLocation, FRotator& out_adjustedRotation){ }
+void AFGHologram::AdjustForGround(FVector& out_adjustedLocation, FRotator& out_adjustedRotation){ }
 bool AFGHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 void AFGHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }
+void AFGHologram::PreHologramPlacement(){ }
+void AFGHologram::PostHologramPlacement(){ }
 void AFGHologram::OnInvalidHitResult(){ }
 void AFGHologram::ValidatePlacementAndCost( UFGInventoryComponent* inventory){ }
 bool AFGHologram::DoMultiStepPlacement(bool isInputFromARelease){ return bool(); }
@@ -34,11 +36,15 @@ void AFGHologram::SetScrollMode(EHologramScrollMode mode){ }
 EHologramScrollMode AFGHologram::GetScrollMode() const{ return EHologramScrollMode(); }
 bool AFGHologram::IsScrollModeSupported(EHologramScrollMode mode) const{ return bool(); }
 void AFGHologram::GetSupportedScrollModes(TArray< EHologramScrollMode >* out_modes) const{ }
-void AFGHologram::GetSupportedSplineModes_Implementation(TArray< EHologramSplinePathMode >& out_splineModes) const{ }
-EHologramSplinePathMode AFGHologram::GetSplineMode(){ return EHologramSplinePathMode(); }
-void AFGHologram::SetSplineMode(EHologramSplinePathMode  mode){ }
+void AFGHologram::GetSupportedBuildModes_Implementation(TArray< TSubclassOf<UFGHologramBuildModeDescriptor> >& out_buildmodes) const{ }
+TSubclassOf<UFGHologramBuildModeDescriptor> AFGHologram::GetCurrentBuildMode(){ return TSubclassOf<UFGHologramBuildModeDescriptor>(); }
+void AFGHologram::SetBuildMode(TSubclassOf<UFGHologramBuildModeDescriptor> mode){ }
+void AFGHologram::CycleBuildMode(int32 deltaIndex){ }
+bool AFGHologram::IsCurrentBuildMode(TSubclassOf<UFGHologramBuildModeDescriptor> buildMode) const{ return bool(); }
+void AFGHologram::OnBuildModeChanged(){ }
 void AFGHologram::SetSnapToGuideLines(bool isEnabled){ }
-void AFGHologram::SetPlacementMaterial(bool material){ }
+void AFGHologram::SetPlacementMaterialState(EHologramMaterialState materialState){ }
+EHologramMaterialState AFGHologram::GetHologramMaterialState() const{ return EHologramMaterialState(); }
 bool AFGHologram::IsChanged() const{ return bool(); }
 AActor* AFGHologram::GetUpgradedActor() const{ return nullptr; }
 bool AFGHologram::CanConstruct() const{ return bool(); }
@@ -49,6 +55,7 @@ void AFGHologram::OnHologramTimeout(){ }
 TArray< FItemAmount > AFGHologram::GetBaseCost() const{ return TArray<FItemAmount>(); }
 int32 AFGHologram::GetBaseCostMultiplier() const{ return int32(); }
 TArray< FItemAmount > AFGHologram::GetCost(bool includeChildren) const{ return TArray<FItemAmount>(); }
+void AFGHologram::GetIgnoredClearanceActors(TArray< AActor* >& ignoredActors) const{ }
 void AFGHologram::SetDisabled(bool disabled){ }
 bool AFGHologram::IsDisabled() const{ return bool(); }
 void AFGHologram::SpawnChildren(AActor* hologramOwner, FVector spawnLocation, APawn* hologramInstigator){ }
@@ -58,18 +65,22 @@ void AFGHologram::GetConstructDisqualifiers(TArray< TSubclassOf<  UFGConstructDi
 void AFGHologram::ResetConstructDisqualifiers(){ }
 void AFGHologram::UpdateRotationValuesFromTransform(){ }
 void AFGHologram::SetBuildClass(TSubclassOf<  AActor > buildClass){ }
+TSubclassOf< AActor > AFGHologram::GetActorClass() const{ return TSubclassOf<AActor>(); }
 void AFGHologram::OnHologramTransformUpdated(){ }
-void AFGHologram::SetupClearance( UBoxComponent* boxComponent){ }
-void AFGHologram::SetupClearanceDetector( UBoxComponent* boxComponent){ }
+void AFGHologram::SetupClearance( UFGClearanceComponent* clearanceComponent){ }
+void AFGHologram::SetupClearanceDetector( UFGClearanceComponent* clearanceComponent){ }
+void AFGHologram::CheckClearance(const FVector& locationOffset){ }
+void AFGHologram::HandleClearanceOverlap(const FOverlapResult& overlap, const FVector& locationOffset, bool HologramHasSoftClearance){ }
+UPrimitiveComponent* AFGHologram::GetClearanceOverlapCheckComponent() const{ return nullptr; }
 void AFGHologram::CheckValidPlacement(){ }
 void AFGHologram::CheckCanAfford( UFGInventoryComponent* inventory){ }
 void AFGHologram::OnSnap(){ }
-void AFGHologram::OnRep_PlacementMaterial(){ }
+void AFGHologram::OnRep_PlacementMaterialState(){ }
 void AFGHologram::SetMaterial( UMaterialInterface* material){ }
-void AFGHologram::SetMaterialState(bool IsValidPlacement){ }
-TSubclassOf< AActor > AFGHologram::GetActorClass() const{ return TSubclassOf<AActor>(); }
+void AFGHologram::SetMaterialState(EHologramMaterialState state){ }
+uint8 AFGHologram::GetStencilForHologramMaterialState(EHologramMaterialState state) const{ return uint8(); }
 USceneComponent* AFGHologram::SetupComponent(USceneComponent* attachParent, UActorComponent* componentTemplate, const FName& componentName){ return nullptr; }
-void AFGHologram::SetIsChanged(){ }
+void AFGHologram::SetIsChanged(bool isChanged){ }
 bool AFGHologram::IsLocalHologram() const{ return bool(); }
 bool AFGHologram::IsValidHitActor(AActor* hitActor) const{ return bool(); }
 int32 AFGHologram::GetRotationStep() const{ return int32(); }
@@ -78,4 +89,3 @@ void AFGHologram::SetupComponents(){ }
 void AFGHologram::Client_PlaySnapSound_Implementation(){ }
 void AFGHologram::OnRep_InitialScrollModeValue(){ }
 const FName AFGHologram::HOLOGRAM_MESH_TAG = FName();
-const FName AFGHologram::HOLOGRAM_DEPTH_MESH_TAG = FName();

@@ -2,6 +2,8 @@
 
 #pragma once
 
+#include "GraphAStar.h"
+
 struct FHologramGraphAStarDefaultPolicy
 {
 	static const int32 NodePoolSize = 64;
@@ -382,7 +384,7 @@ struct FHologramGraphAStar
 	{
 		if( !( Graph.IsValidRef( StartNodeRef ) ) )
 		{
-			return SearchFail;
+			return static_cast<EHologramGraphAStarResult>(SearchFail);
 		}
 
 		NodePool.Reset();

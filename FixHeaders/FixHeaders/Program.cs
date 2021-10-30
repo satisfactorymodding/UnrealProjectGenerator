@@ -100,19 +100,21 @@ namespace FixHeaders
 
             // Intended to implement merging here, but not going to rewrite git merge
             string headerUpgradeFolder = Path.Combine(Environment.CurrentDirectory, "HeaderUpgrade");
+            string headerUpgradeHeadersFolder = Path.Combine(headerUpgradeFolder, "Headers");
             ForceDeleteDirectory(headerUpgradeFolder);
             Directory.CreateDirectory(headerUpgradeFolder);
+            Directory.CreateDirectory(headerUpgradeHeadersFolder);
             Run("git.exe", "init", headerUpgradeFolder);
-            DirectoryCopy(oldPath, headerUpgradeFolder);
+            DirectoryCopy(oldPath, headerUpgradeHeadersFolder);
             Run("git.exe", "add .", headerUpgradeFolder);
             Run("git.exe", "commit -m \"Old Headers\"", headerUpgradeFolder);
             Run("git.exe", "branch ModdingEdit", headerUpgradeFolder);
             Run("git.exe", "checkout ModdingEdit", headerUpgradeFolder);
-            DirectoryCopy(modifiedPath, headerUpgradeFolder);
+            DirectoryCopy(modifiedPath, headerUpgradeHeadersFolder);
             Run("git.exe", "add .", headerUpgradeFolder);
             Run("git.exe", "commit -m \"Modding Edit Headers\"", headerUpgradeFolder);
             Run("git.exe", "checkout master", headerUpgradeFolder);
-            DirectoryCopy(newPath, headerUpgradeFolder);
+            DirectoryCopy(newPath, headerUpgradeHeadersFolder);
             Run("git.exe", "add .", headerUpgradeFolder);
             Run("git.exe", "commit -m \"New Headers\"", headerUpgradeFolder);
             Run("git.exe", "merge ModdingEdit", headerUpgradeFolder);
@@ -121,12 +123,17 @@ namespace FixHeaders
             ConfirmModdingEdits();
             Run("git.exe", "add .", headerUpgradeFolder);
             Run("git.exe", "commit -m \"New Modding Edit Headers\"", headerUpgradeFolder);
-            DirectoryCopy(headerUpgradeFolder, savePath);
+            DirectoryCopy(headerUpgradeHeadersFolder, savePath);
             stopwatch.Stop();
             Console.WriteLine($"Fixed {FixedCount} changes in {FixedFileCount} headers. Took {stopwatch.ElapsedMilliseconds} ms.");
             Console.Write($"Cleaning up... ");
             ForceDeleteDirectory(headerUpgradeFolder);
             Console.WriteLine($"Done.");
+        }
+        public static void Empty(DirectoryInfo directory)
+        {
+            foreach (DirectoryInfo subDirectory in directory.GetDirectories()) subDirectory.Delete(true);
+            foreach (FileInfo file in directory.GetFiles()) file.Delete();
         }
 
         private static void GenerateHeaderCache(string path)
@@ -190,8 +197,6 @@ namespace FixHeaders
 
         private static void ApplyFileFix(string upgradeRepoPath, string filePath)
         {
-            if (filePath.EndsWith("FactoryGame.h"))
-                return;
             string file = File.ReadAllText(Path.Combine(upgradeRepoPath, filePath));
             bool hasChanges = false;
 
@@ -212,51 +217,6 @@ namespace FixHeaders
                 }
             }
 
-            // Doesn't seem to be needed now, and I don't remember what required it in the first place. Keeping the headers clean
-            /*
-            // fix include paths
-            foreach (Match m in Regex.Matches(file, @"#include ""(.*?)""", RegexOptions.Multiline))
-            {
-                try
-                {
-                    file = file.Replace(m.Value, $"#include \"{GetFileRelative(upgradeRepoPath, m.Groups[1].Value, filePath)}\"");
-                    FixedCount++;
-                    hasChanges = true;
-                }
-                catch (ArgumentNullException)
-                {
-                    // File was not found because it is UE file or .generated.h
-                }
-            }
-
-            // fix missing includes
-            foreach (KeyValuePair<string, string> doesInclude in NeededIncludes)
-            {
-                if (file.Contains(doesInclude.Key) && !file.Contains($"#include \"{doesInclude.Value}\""))
-                {
-                    file = file.Insert(file.Substring(file.IndexOf("#pragma once")).IndexOf("\r\n") + file.IndexOf("#pragma once") + "\r\n".Length, $"#include \"{doesInclude.Value}\"\r\n");
-                    FixedCount++;
-                    hasChanges = true;
-                }
-            }
-            */
-            
-
-            // Keeping the headers clean for now, might be added by CSS for modular build
-            /*
-            // add FACTORYGAME_API
-            int factoryGameApi = 0;
-            file = Regex.Replace(file, @"^((?:UCLASS|UINTERFACE|USTRUCT|UENUM)\s*\(.*\)\r\n)?([ \t]*)(class|struct)\s(FACTORYGAME_API\s)?([\w<>\s]*?)(\s?:\s?.*?)?\s*{((?:.|\n)*?)^\2};", new MatchEvaluator((match) =>
-            {
-                if (match.Groups[1].Value.ToLower().Contains("minimalapi"))
-                    return match.Value;
-                factoryGameApi++;
-                return $"{match.Groups[1]}{match.Groups[2]}{match.Groups[3]} FACTORYGAME_API {match.Groups[5]}{match.Groups[6]}\r\n{{{match.Groups[7]}{match.Groups[2]}}};";
-            }), RegexOptions.Multiline);
-            if (factoryGameApi > 0)
-                hasChanges = true;
-            */
-
             if (hasChanges)
                 FixedFileCount++;
 
@@ -276,6 +236,9 @@ namespace FixHeaders
         private static void DirectoryCopy(string sourceDirName, string destDirName,
                                       bool copySubDirs = true)
         {
+            if(new DirectoryInfo(destDirName).Exists)
+                Empty(new DirectoryInfo(destDirName));
+
             // Get the subdirectories for the specified directory.
             DirectoryInfo dir = new DirectoryInfo(sourceDirName);
 

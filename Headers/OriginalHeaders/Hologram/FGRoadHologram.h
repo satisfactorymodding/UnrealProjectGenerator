@@ -35,8 +35,11 @@ public:
 protected:
 	// Begin AFGBuildableHologram interface
 	virtual void CheckValidFloor() override;
-	virtual void CheckClearance() override;
 	// End AFGBuildableHologram interface
+
+	// Begin AFGHologram interface
+	virtual void CheckClearance( const FVector& locationOffset ) override;
+	// End AFGHologram interface
 
 private:
 	/** Check for nearby snapping connections. */

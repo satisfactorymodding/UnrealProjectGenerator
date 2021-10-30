@@ -26,3 +26,4 @@ void AFGResourceSinkSubsystem::CalculateLevel(){ }
 int64 AFGResourceSinkSubsystem::GetRequiredPointsForLevel(int32 level) const{ return int64(); }
 void AFGResourceSinkSubsystem::CalculateAccumulatedPointsPastInterval(){ }
 void AFGResourceSinkSubsystem::TriggerCyberCoupon(){ }
+void AFGResourceSinkSubsystem::TriggerCustomReward(TSubclassOf<  UFGItemDescriptor> item){ }

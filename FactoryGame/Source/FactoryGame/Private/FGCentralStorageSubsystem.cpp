@@ -4,7 +4,9 @@
 
 AFGCentralStorageSubsystem* AFGCentralStorageSubsystem::Get(UWorld* world){ return nullptr; }
 AFGCentralStorageSubsystem* AFGCentralStorageSubsystem::Get(UObject* worldContext){ return nullptr; }
-AFGCentralStorageSubsystem::AFGCentralStorageSubsystem(){ }
+AFGCentralStorageSubsystem::AFGCentralStorageSubsystem(){ 
+
+}
 int32 AFGCentralStorageSubsystem::GetNumItemsFromCentralStorage(TSubclassOf<  UFGItemDescriptor > itemClass){ return int32(); }
 void AFGCentralStorageSubsystem::RemoveItemsFromCentralStorage(TSubclassOf<  UFGItemDescriptor > itemClass, int32 num){ }
 void AFGCentralStorageSubsystem::AddCentralStorage( AFGCentralStorageContainer* centralStorage){ }

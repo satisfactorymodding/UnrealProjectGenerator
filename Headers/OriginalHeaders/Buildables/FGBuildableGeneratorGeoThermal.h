@@ -3,6 +3,7 @@
 #pragma once
 
 #include "Buildables/FGBuildableGenerator.h"
+#include "FGExtractableResourceInterface.h"
 #include "FGBuildableGeneratorGeoThermal.generated.h"
 
 /**
@@ -52,7 +53,7 @@ protected:
 	virtual void Factory_StopPowerProduction_Implementation() override;
 	// End AFGBuildableGenerator interface
 
-	TScriptInterface< IFGExtractableResourceInterface > GetExtractableResource() const { return mExtractableResource; }
+	TScriptInterface< class IFGExtractableResourceInterface > GetExtractableResource() const { return mExtractableResource; }
 
 private:
 	void OnExtractableResourceSet();

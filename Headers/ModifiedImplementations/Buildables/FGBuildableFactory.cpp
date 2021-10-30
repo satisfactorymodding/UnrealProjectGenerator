@@ -19,13 +19,13 @@ void AFGBuildableFactory::SetupForSignificance(){ }
 void AFGBuildableFactory::Factory_Tick(float dt){ }
 void AFGBuildableFactory::OnUse_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state){ }
 void AFGBuildableFactory::OnUseStop_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state){ }
-bool AFGBuildableFactory::IsUseable_Implementation() const{ return bool(); }
 void AFGBuildableFactory::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund) const{ }
 void AFGBuildableFactory::OnBuildableReplicationDetailStateChange(bool newStateIsActive){ }
 void AFGBuildableFactory::OnReplicationDetailActorCreated(){ }
 void AFGBuildableFactory::OnReplicationDetailActorRemoved(){ }
 bool AFGBuildableFactory::ShouldSkipBuildEffect(){ return bool(); }
 TArray< UFGFactoryConnectionComponent* > AFGBuildableFactory::GetConnectionComponents() const{ return TArray<UFGFactoryConnectionComponent*>(); }
+float AFGBuildableFactory::GetEmissivePower(){ return float(); }
 float AFGBuildableFactory::GetIdlePowerConsumption() const{ return float(); }
 float AFGBuildableFactory::GetProducingPowerConsumption() const{ return float(); }
 float AFGBuildableFactory::GetDefaultProducingPowerConsumption() const{ return float(); }
@@ -65,6 +65,7 @@ void AFGBuildableFactory::NativeUpdateEffects(float DeltaSeconds){ }
 void AFGBuildableFactory::OnRep_ReplicationDetailActor(){ }
 AFGReplicationDetailActor* AFGBuildableFactory::GetOrCreateReplicationDetailActor(){ return nullptr; }
 void AFGBuildableFactory::OnRep_CurrentPotential(){ }
+void AFGBuildableFactory::OnRep_IsProductionPaused(){ }
 void AFGBuildableFactory::OnRep_IsProducing(){ }
 void AFGBuildableFactory::OnPotentialInventoryItemRemoved(TSubclassOf<  UFGItemDescriptor > itemClass, int32 numRemoved){ }
 void AFGBuildableFactory::SetIsProducing(uint8 isProducing){ }

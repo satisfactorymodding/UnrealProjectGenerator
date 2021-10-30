@@ -37,6 +37,9 @@ public:
 
 	UPROPERTY( EditDefaultsOnly, BlueprintReadOnly, Category = "Popup" )
 	UObject* Instigator;
+
+	UPROPERTY( EditDefaultsOnly, BlueprintReadOnly, Category = "Popup" )
+	class UFGPopupWidgetContent* PopupContent = nullptr;
 		
 	UPROPERTY()
 	FPopupConfirmClicked PopupConfirmClickedDelegate_DEPRECATED;

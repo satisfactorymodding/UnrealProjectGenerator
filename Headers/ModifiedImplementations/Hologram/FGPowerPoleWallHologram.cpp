@@ -3,6 +3,7 @@
 #include "FGPowerPoleWallHologram.h"
 
 AFGPowerPoleWallHologram::AFGPowerPoleWallHologram(){ }
+void AFGPowerPoleWallHologram::BeginPlay(){ }
 bool AFGPowerPoleWallHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 void AFGPowerPoleWallHologram::CheckValidFloor(){ }
-void AFGPowerPoleWallHologram::CheckClearance(){ }
+void AFGPowerPoleWallHologram::CheckClearance(const FVector& locationOffset){ }

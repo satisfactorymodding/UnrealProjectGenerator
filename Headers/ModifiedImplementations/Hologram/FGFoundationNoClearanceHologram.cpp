@@ -2,4 +2,4 @@
 
 #include "FGFoundationNoClearanceHologram.h"
 
-void AFGFoundationNoClearanceHologram::CheckClearance(){ }
+void AFGFoundationNoClearanceHologram::CheckClearance(const FVector& locationOffset){ }

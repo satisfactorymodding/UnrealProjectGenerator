@@ -7,4 +7,5 @@ void AFGBuildableDroneHologram::BeginPlay(){ }
 void AFGBuildableDroneHologram::Destroyed(){ }
 void AFGBuildableDroneHologram::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 bool AFGBuildableDroneHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
+void AFGBuildableDroneHologram::GetIgnoredClearanceActors(TArray< AActor* >& ignoredActors) const{ }
 AFGVehicle* AFGBuildableDroneHologram::ConstructVehicle(FNetConstructionID netConstructionID) const{ return nullptr; }

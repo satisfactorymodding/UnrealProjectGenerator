@@ -2,7 +2,9 @@
 
 #include "FGFoliageRemovalSubsystem.h"
 
-AFGFoliageRemovalSubsystem::AFGFoliageRemovalSubsystem(){ }
+AFGFoliageRemovalSubsystem::AFGFoliageRemovalSubsystem(){ 
+
+}
 void AFGFoliageRemovalSubsystem::Destroyed(){ }
 void AFGFoliageRemovalSubsystem::Init(){ }
 AFGFoliageRemovalSubsystem* AFGFoliageRemovalSubsystem::Get(UWorld* world){ return nullptr; }
@@ -16,6 +18,7 @@ bool AFGFoliageRemovalSubsystem::GetClosestFoliageForComponent(const FVector& lo
 void AFGFoliageRemovalSubsystem::GetClosestFoliageArrayForComponent(const TArray<FVector>& locations, float maxDistance, const  UHierarchicalInstancedStaticMeshComponent* component, bool isLocalSpace, TArray<int32>& out_instanceArray){ }
 bool AFGFoliageRemovalSubsystem::IsFoliageComponentInACave(UHierarchicalInstancedStaticMeshComponent* TestComponent){ return bool(); }
 bool AFGFoliageRemovalSubsystem::GetFoliageWithinRadius(const FVector& location, float radius, bool isLocalSpace, TArray<int32>& out_instanceArray, TArray<FVector>& out_locationArray, TArray<class UHierarchicalInstancedStaticMeshComponent*>& out_componentArray){ return bool(); }
+int32 AFGFoliageRemovalSubsystem::GetFoliageCountWithinRadius(const FVector& location, float radius, bool isLocalSpace){ return int32(); }
 bool AFGFoliageRemovalSubsystem::HasIdentifier(const  UHierarchicalInstancedStaticMeshComponent* component, TSubclassOf<class UFGFoliageIdentifier> foliageIdentifier){ return bool(); }
 void AFGFoliageRemovalSubsystem::Register( AFGFoliageRemoval* actor){ }
 void AFGFoliageRemovalSubsystem::UnRegister( AFGFoliageRemoval* actor){ }

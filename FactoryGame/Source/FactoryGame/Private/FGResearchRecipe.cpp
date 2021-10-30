@@ -7,7 +7,12 @@ FString FResearchRecipeReward::ToString() const{ return FString(); }
 void UFGResearchRecipe::PreSave(const  ITargetPlatform* targetPlatform){ }
 void UFGResearchRecipe::UpdateAssetBundleData(){ }
 #endif 
-UFGResearchRecipe::UFGResearchRecipe(){ }
+UFGResearchRecipe::UFGResearchRecipe(){ 
+	this->mIsRepeatable = false;
+	this->mRewardUsesDropPackage = false;
+	this->mDecorPoints = 0;
+	this->mStructurePoints = 0;
+}
 FResearchRecipeReward UFGResearchRecipe::GetResearcResults(TSubclassOf<UFGResearchRecipe> inClass){ return FResearchRecipeReward(); }
 float UFGResearchRecipe::GetResearchTime(TSubclassOf<UFGResearchRecipe> inClass){ return float(); }
 TArray<TSubclassOf<class UFGItemDescriptor>> UFGResearchRecipe::GetResearchTriggerItems(TSubclassOf<UFGResearchRecipe> inClass){ return TArray<TSubclassOf<class UFGItemDescriptor>>(); }

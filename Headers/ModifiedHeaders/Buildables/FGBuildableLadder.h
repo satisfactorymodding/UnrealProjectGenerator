@@ -84,7 +84,7 @@ protected:
 
 	/** Clearance Box */
 	UPROPERTY( VisibleAnywhere )
-	class UBoxComponent* mClearanceBox;
+	class UFGClearanceComponent* mClearanceBox;
 
 	/** Ladder component on the front. */
 	UPROPERTY( VisibleAnywhere )

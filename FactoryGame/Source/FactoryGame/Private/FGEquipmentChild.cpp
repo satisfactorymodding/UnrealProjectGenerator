@@ -2,7 +2,20 @@
 
 #include "FGEquipmentChild.h"
 
-AFGEquipmentChild::AFGEquipmentChild(){ }
+AFGEquipmentChild::AFGEquipmentChild(){ 
+	this->mParentEquipment = nullptr;
+	this->mAttachSocket = TEXT("None");
+	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
+	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
+	this->PrimaryActorTick.bTickEvenWhenPaused = false;
+	this->PrimaryActorTick.bCanEverTick = false;
+	this->PrimaryActorTick.bStartWithTickEnabled = false;
+	this->PrimaryActorTick.bAllowTickOnDedicatedServer = true;
+	this->PrimaryActorTick.TickInterval = 0.0;
+	this->bOnlyRelevantToOwner = true;
+	this->bNetUseOwnerRelevancy = true;
+	this->bReplicates = true;
+}
 void AFGEquipmentChild::BeginPlay(){ }
 void AFGEquipmentChild::Equip( AFGCharacterPlayer* character,  AFGEquipment* parentEquipment){ }
 void AFGEquipmentChild::UnEquip(){ }

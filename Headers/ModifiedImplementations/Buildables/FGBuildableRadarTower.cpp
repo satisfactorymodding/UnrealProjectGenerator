@@ -7,6 +7,24 @@ void AFGBuildableRadarTower::PostEditChangeProperty(FPropertyChangedEvent& Prope
 #endif 
 AFGBuildableRadarTower::AFGBuildableRadarTower(){ }
 void AFGBuildableRadarTower::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
+bool AFGBuildableRadarTower::AddAsRepresentation(){ return bool(); }
+bool AFGBuildableRadarTower::UpdateRepresentation(){ return bool(); }
+bool AFGBuildableRadarTower::RemoveAsRepresentation(){ return bool(); }
+bool AFGBuildableRadarTower::IsActorStatic(){ return bool(); }
+FVector AFGBuildableRadarTower::GetRealActorLocation(){ return FVector(); }
+FRotator AFGBuildableRadarTower::GetRealActorRotation(){ return FRotator(); }
+UTexture2D* AFGBuildableRadarTower::GetActorRepresentationTexture(){ return nullptr; }
+FText AFGBuildableRadarTower::GetActorRepresentationText(){ return FText(); }
+void AFGBuildableRadarTower::SetActorRepresentationText(const FText& newText){ }
+FLinearColor AFGBuildableRadarTower::GetActorRepresentationColor(){ return FLinearColor(); }
+void AFGBuildableRadarTower::SetActorRepresentationColor(FLinearColor newColor){ }
+ERepresentationType AFGBuildableRadarTower::GetActorRepresentationType(){ return ERepresentationType(); }
+bool AFGBuildableRadarTower::GetActorShouldShowInCompass(){ return bool(); }
+bool AFGBuildableRadarTower::GetActorShouldShowOnMap(){ return bool(); }
+EFogOfWarRevealType AFGBuildableRadarTower::GetActorFogOfWarRevealType(){ return EFogOfWarRevealType(); }
+float AFGBuildableRadarTower::GetActorFogOfWarRevealRadius(){ return float(); }
+ECompassViewDistance AFGBuildableRadarTower::GetActorCompassViewDistance(){ return ECompassViewDistance(); }
+void AFGBuildableRadarTower::SetActorCompassViewDistance(ECompassViewDistance compassViewDistance){ }
 void AFGBuildableRadarTower::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGBuildableRadarTower::Factory_StartProducing(){ }
 void AFGBuildableRadarTower::Factory_StopProducing(){ }

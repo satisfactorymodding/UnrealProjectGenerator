@@ -189,7 +189,7 @@ public:
 		lastSentSpacing = other.lastSentSpacing;
 		NewestItemID = other.NewestItemID;
 		ConveyorVersion = other.ConveyorVersion;
-		
+		return *this;
 	}
 
 	const FConveyorBeltItemsBaseState& operator=( FConveyorBeltItemsBaseState&& other )
@@ -201,6 +201,7 @@ public:
 
 		NewestItemID = other.NewestItemID;
 		ConveyorVersion = other.ConveyorVersion;
+		return *this;
 	}
 
 	//must be implemented
@@ -536,8 +537,10 @@ public:
 	/** Get the location and direction of the conveyor at the given offset. */
 	virtual void GetLocationAndDirectionAtOffset( float offset, FVector& out_location, FVector& out_direction ) const PURE_VIRTUAL( , );
 
-	void SetConveyorBucketID( int32 ID );
-
+	FORCEINLINE void SetConveyorBucketID(int32 ID)
+	{
+		mConveyorBucketID = ID;
+	}
 	FORCEINLINE int32 GetConveyorBucketID() const { return mConveyorBucketID; }
 
 	/** Returns how much room there currently is on the belt. If the belt is empty it will return the length of the belt */
@@ -554,12 +557,21 @@ public:
 		return GetLength();
 	}
 
-	/** Returns how much room there was on the belt after the last factory tick. If the belt is empty it will return the length of the belt */
-	float GetCachedAvailableSpace_Threadsafe() const;
 
 	void ReportInvalidStateAndRequestConveyorRepReset();
 
-	FORCEINLINE void MarkItemTransformsDirty() { mPendingUpdateItemTransforms = true; }
+	FORCEINLINE void MarkItemTransformsDirty()
+	{
+		mPendingUpdateItemTransforms = true;
+		mFramesStalled = 0;
+	}
+
+	/** Returns how much room there was on the belt after the last factory tick. If the belt is empty it will return the length of the belt */
+	FORCEINLINE float GetCachedAvailableSpace_Threadsafe() const
+	{
+		return mCachedAvailableBeltSpace;
+	}
+	
 protected:
 	// Begin Factory_ interface
 	virtual bool Factory_PeekOutput_Implementation( const class UFGFactoryConnectionComponent* connection, TArray< FInventoryItem >& out_items, TSubclassOf< UFGItemDescriptor > type ) const override;
@@ -571,19 +583,28 @@ protected:
 	// End AFGBuildable interface
 
 	/** Called when the visuals, radiation etc need to be updated. */
-	virtual void TickItemTransforms( float dt, bool bOnlyTickRadioActive = true ) PURE_VIRTUAL(,);
+	virtual void TickItemTransforms( float dt ) PURE_VIRTUAL(,);
 
 	/* When using the exp - conveyor renderer tick the radio activity of the items. */
 	virtual void TickRadioactivity() PURE_VIRTUAL(,);
+	virtual void Factory_UpdateRadioactivity( class AFGRadioactivitySubsystem* subsystem ) PURE_VIRTUAL(,);
 	
 	//@todonow These can possibly be moved to private once Belt::OnUse has been moved to base.
 	/** Find the item closest to the given location. */
 	int32 FindItemClosestToLocation( const FVector& location ) const;
 
 	/** Checks if there is an item at index. */
-	bool Factory_HasItemAt( int32 index ) const;
+	FORCEINLINE bool Factory_HasItemAt( int32 index ) const
+	{
+		return mItems.IsValidIndex(index);
+	}
+	
 	/** Lets you know what type of item is on a specific index. */
-	const FConveyorBeltItem& Factory_PeekItemAt( int32 index ) const;
+	FORCEINLINE const FConveyorBeltItem& Factory_PeekItemAt( int32 index ) const
+	{
+		fgcheck(mItems.IsValidIndex(index));
+		return mItems[index];
+	}
 	/** Remove an item from the belt at index. */
 	void Factory_RemoveItemAt( int32 index );
 
@@ -611,7 +632,13 @@ private:
 	*
 	*	@return true if there is enough room for an item of size itemSize
 	*/
-	bool HasRoomOnBelt_ThreadSafe( float& out_availableSpace ) const;
+	bool HasRoomOnBelt_ThreadSafe( float& out_availableSpace ) const
+	{
+		out_availableSpace = mCachedAvailableBeltSpace;
+
+		return out_availableSpace > ITEM_SPACING;
+	}
+	
 
 	friend class AFGConveyorItemSubsystem;
 
@@ -621,6 +648,14 @@ public:
 
 	/** Spacing between each conveyor item, from origo to origo. */
 	static constexpr float ITEM_SPACING = 120.0f;
+
+	// TODO maybe add a getter & Setter instead of moving this to public.
+	bool mPendingUpdateItemTransforms;
+
+	TMap< FName, TArray< FTransform > > mCachedTransforms;
+
+	/* Number of frames the conveyor belt has stalled used in the experimental conveyor renderer to see if we should cache or not. */
+	uint8 mFramesStalled;
 
 protected:
 
@@ -647,7 +682,6 @@ protected:
 
 private:
 	int16 mLastItemsDirtyKey = -2;
-	bool mPendingUpdateItemTransforms;
 
 	/** Indicates if the factory is within significance distance */
 	bool mIsSignificant;

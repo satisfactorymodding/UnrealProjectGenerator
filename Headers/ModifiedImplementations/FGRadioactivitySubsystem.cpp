@@ -16,23 +16,11 @@ void AFGRadioactivitySubsystem::SetEmitter(UObject* owner,
 					 TSubclassOf< UFGItemDescriptor > itemClass,
 					 int32 itemAmount,
 					 int32 UID){ }
-void AFGRadioactivitySubsystem::SetEmitter_Threadsafe(UObject* owner,
-								USceneComponent* attachRoot,
-								const FVector& attachLocation,
-								TSubclassOf< UFGItemDescriptor > itemClass,
-								int32 itemAmount,
-								int32 UID){ }
 void AFGRadioactivitySubsystem::SetEmitter(UObject* owner,
 					 USceneComponent* attachRoot,
 					 const FVector& attachLocation,
 					 float decay,
 					 int32 UID){ }
-void AFGRadioactivitySubsystem::RemoveEmitter_Threadsafe(UObject* owner, int32 UID){ }
-void AFGRadioactivitySubsystem::RemoveEmitter(UObject* owner, int32 UID){ }
-void AFGRadioactivitySubsystem::ResetEmitters(UObject* owner){ }
-void AFGRadioactivitySubsystem::RemoveEmitters(UObject* owner){ }
 float AFGRadioactivitySubsystem::calculateIntensity(int32 itemAmount, float itemDecay, float distance, float radiationFalloffByDistance){ return float(); }
-FRadioactiveSource& AFGRadioactivitySubsystem::FindOrAddSource(UObject* owner){ return *(new FRadioactiveSource); }
-FRadioactiveSource* AFGRadioactivitySubsystem::FindSource(UObject* owner){ return nullptr; }
 FRadioactiveEmitter& AFGRadioactivitySubsystem::FindOrAddEmitter(TArray< FRadioactiveEmitter >& emitters, int32 UID){ return *(new FRadioactiveEmitter); }
 int32 AFGRadioactivitySubsystem::FindEmitter(TArray< FRadioactiveEmitter >& emitters, int32 UID){ return int32(); }

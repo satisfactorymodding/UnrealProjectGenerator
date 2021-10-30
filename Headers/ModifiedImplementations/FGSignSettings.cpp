@@ -2,9 +2,7 @@
 
 #include "FGSignSettings.h"
 
+UFGSignSettings::UFGSignSettings(){ }
 UFGSignSettings* UFGSignSettings::Get(){ return nullptr; }
-const TArray<FSignColorData>& UFGSignSettings::GetSignColorData(){ return *(new TArray<FSignColorData>); }
-UMaterialInterface* UFGSignSettings::GetTextMaterialInstanceFromIndex(int32 index){ return nullptr; }
-UMaterialInterface* UFGSignSettings::GetIconMaterialInstanceFromIndex(int32 index){ return nullptr; }
-UMaterialInterface* UFGSignSettings::GetBackgroundMaterialInstanceFromIndex(int32 index){ return nullptr; }
-int32 UFGSignSettings::GetBackgroundMeshMaterialIndex(){ return int32(); }
+FString UFGSignSettings::GetStringKeyFromAttributeTag(SignTags::AttributeTag tag) const{ return FString(); }
+FString UFGSignSettings::GetStringKeyFromElementClass(TSubclassOf<UWidget> widgetClass) const{ return FString(); }

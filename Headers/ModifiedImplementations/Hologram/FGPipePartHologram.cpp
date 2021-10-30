@@ -9,11 +9,11 @@ bool AFGPipePartHologram::IsValidHitResult(const FHitResult& hitResult) const{ r
 bool AFGPipePartHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 void AFGPipePartHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }
 void AFGPipePartHologram::CheckValidFloor(){ }
+void AFGPipePartHologram::GetIgnoredClearanceActors(TArray< AActor* >& ignoredActors) const{ }
 void AFGPipePartHologram::SetSupportLength(float height){ }
 void AFGPipePartHologram::SnapToConnection(UFGPipeConnectionComponentBase* connection, FVector preSnapLocation){ }
 void AFGPipePartHologram::ConfigureActor( AFGBuildable* inBuildable) const{ }
 void AFGPipePartHologram::ConfigureComponents( AFGBuildable* inBuildable) const{ }
-void AFGPipePartHologram::CheckClearance(){ }
 void AFGPipePartHologram::CheckValidPlacement(){ }
 void AFGPipePartHologram::OnRep_SupportMesh(){ }
 void AFGPipePartHologram::UpdateSupportLengthRelativeLoc(){ }

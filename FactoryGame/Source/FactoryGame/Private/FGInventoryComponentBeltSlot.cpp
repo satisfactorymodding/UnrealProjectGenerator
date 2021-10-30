@@ -2,7 +2,9 @@
 
 #include "FGInventoryComponentBeltSlot.h"
 
-UFGInventoryComponentBeltSlot::UFGInventoryComponentBeltSlot(){ }
+UFGInventoryComponentBeltSlot::UFGInventoryComponentBeltSlot(){ 
+	this->SetIsReplicated(true);
+}
 bool UFGInventoryComponentBeltSlot::ContainsStackItemTypeAndHasEnoughRoom(FInventoryStack itemStack){ return bool(); }
 void UFGInventoryComponentBeltSlot::OnItemsAdded(int32 idx, int32 num){ }
 void UFGInventoryComponentBeltSlot::OnItemsRemoved(int32 index, int32 num, FInventoryItem item){ }

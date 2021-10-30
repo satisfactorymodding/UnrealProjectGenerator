@@ -2,7 +2,9 @@
 
 #include "FGDroneSubsystem.h"
 
-AFGDroneSubsystem::AFGDroneSubsystem(){ }
+AFGDroneSubsystem::AFGDroneSubsystem(){ 
+	this->mDroneStationDefaultNamePrefix = TEXT("Drone Port");
+}
 AFGDroneSubsystem* AFGDroneSubsystem::Get(UWorld* world){ return nullptr; }
 AFGDroneSubsystem* AFGDroneSubsystem::Get(UObject* worldContext){ return nullptr; }
 void AFGDroneSubsystem::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }

@@ -20,7 +20,11 @@ FInventoryStack::FInventoryStack(int32 numItems, TSubclassOf<  UFGItemDescriptor
 void UFGInventoryComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void UFGInventoryComponent::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
 void UFGInventoryComponent::PreNetReceive(){ }
-UFGInventoryComponent::UFGInventoryComponent(){ }
+UFGInventoryComponent::UFGInventoryComponent(){ 
+	this->mDefaultInventorySize = 1;
+	this->mAdjustedSizeDiff = 0;
+	this->mCanBeRearrange = true;
+}
 void UFGInventoryComponent::Serialize(FArchive& ar){ Super::Serialize(ar); }
 void UFGInventoryComponent::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void UFGInventoryComponent::PostSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
@@ -47,9 +51,6 @@ bool UFGInventoryComponent::GetStackFromIndex(int32 idx, FInventoryStack& out_st
 void UFGInventoryComponent::Remove(TSubclassOf< UFGItemDescriptor > itemClass, int32 num){ }
 void UFGInventoryComponent::RemoveFromIndex(int32 idx, int32 num){ }
 void UFGInventoryComponent::RemoveAllFromIndex(int32 idx){ }
-bool UFGInventoryComponent::IsEmpty() const{ return bool(); }
-bool UFGInventoryComponent::IsIndexEmpty(int32 idx) const{ return bool(); }
-bool UFGInventoryComponent::IsSomethingOnIndex(int32 idx) const{ return bool(); }
 void UFGInventoryComponent::Empty(){ }
 bool UFGInventoryComponent::HasItems(TSubclassOf< UFGItemDescriptor > itemClass, int32 num) const{ return bool(); }
 int32 UFGInventoryComponent::GetNumItems(TSubclassOf< UFGItemDescriptor > itemClass) const{ return int32(); }

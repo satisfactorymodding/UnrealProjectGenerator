@@ -42,7 +42,8 @@ void AFGPlayerState::ChangeNameOfPresetHotbar(int32 presetHotbarIndex, const FTe
 void AFGPlayerState::ChangeIconIndexOfPresetHotbar(int32 presetHotbarIndex, int32 iconIndex){ }
 bool AFGPlayerState::RemovePresetHotbar(int32 presetHotbarIndex){ return bool(); }
 bool AFGPlayerState::CopyPresetHotbarToCurrentHotbar(int32 presetHotbarIndex){ return bool(); }
-void AFGPlayerState::SetRecipeShortcutOnIndex(TSubclassOf<  UFGRecipe > recipe, int32 onIndex){ }
+void AFGPlayerState::SetRecipeShortcutOnIndex(TSubclassOf<  UFGRecipe > recipe, int32 onIndex, int32 onHotbarIndex){ }
+void AFGPlayerState::SetCustomizationShortcutOnIndex(TSubclassOf<  UFGCustomizationRecipe > customizationRecipe, int32 onIndex){ }
 bool AFGPlayerState::GetAndSetFirstTimeEquipped( AFGEquipment* equipment){ return bool(); }
 AFGPlayerController* AFGPlayerState::GetOwningController() const{ return nullptr; }
 void AFGPlayerState::AddNewRecipe(TSubclassOf< UFGRecipe > recipe){ }
@@ -71,6 +72,15 @@ TArray<TSubclassOf<class UFGSchematic>> AFGPlayerState::GetShopFavorites() const
 void AFGPlayerState::SaveAsShopFavorite(TSubclassOf<class UFGSchematic> schematic){ }
 void AFGPlayerState::RemoveAsShopFavorite(TSubclassOf<class UFGSchematic> schematic){ }
 void AFGPlayerState::RemoveAllShopFavorites(){ }
+void AFGPlayerState::SetPlayerCustomizationSlotData(FFactoryCustomizationColorSlot customColorData){ }
+void AFGPlayerState::Server_SetPlayerCustomizationSlotData_Implementation(FFactoryCustomizationColorSlot customColorData){ }
+TSubclassOf< class UFGFactoryCustomizationDescriptor_Material > AFGPlayerState::GetSavedMatDescForBuildableCategory(TSubclassOf<  UFGCategory > category, TSubclassOf<  UFGCategory > subCategory){ return TSubclassOf<class UFGFactoryCustomizationDescriptor_Material>(); }
+void AFGPlayerState::SetSavedMatDescForBuildableCategory(TSubclassOf<  UFGCategory > category, TSubclassOf< UFGFactoryCustomizationDescriptor_Material > materialDesc, bool skipRep){ }
+void AFGPlayerState::Server_SetSavedMatDescForBuildableCategory_Implementation(TSubclassOf<  UFGCategory > category, TSubclassOf< UFGFactoryCustomizationDescriptor_Material > materialDesc){ }
+TSubclassOf< class UFGFactoryCustomizationDescriptor_Material > AFGPlayerState::GetSavedMatDescForMaterialCategory(TSubclassOf<  UFGCategory > category){ return TSubclassOf<class UFGFactoryCustomizationDescriptor_Material>(); }
+void AFGPlayerState::SetSavedMatDescForMaterialCategory(TSubclassOf<  UFGCategory > category, TSubclassOf< UFGFactoryCustomizationDescriptor_Material > materialDesc, bool updateHotbarShortcuts){ }
+void AFGPlayerState::Server_SetSavedMatDescForMaterialCategory_Implementation(TSubclassOf<  UFGCategory > category, TSubclassOf< UFGFactoryCustomizationDescriptor_Material > materialDesc){ }
+void AFGPlayerState::UpdateHotbarShortcutsForMaterialDesc(TSubclassOf<  UFGFactoryCustomizationDescriptor_Material > newDefaultMaterialDesc){ }
 void AFGPlayerState::OnRep_HotbarShortcuts(){ }
 void AFGPlayerState::OnRep_CurrentHotbarIndex(){ }
 void AFGPlayerState::Server_UpdateNumObservedInventorySlots_Implementation(){ }

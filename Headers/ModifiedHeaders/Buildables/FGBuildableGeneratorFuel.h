@@ -126,6 +126,9 @@ public:
 	UFUNCTION( BlueprintPure, Category = "Power" )
 	FORCEINLINE TSubclassOf< class UFGItemDescriptor > GetSupplementalResourceClass() const { return mSupplementalResourceClass; }
 
+	/** Returns all fuel classes this generator can run on. Exposed for AutoJSonExportCommandlet */
+	FORCEINLINE TArray< TSoftClassPtr< class UFGItemDescriptor > > GetDefaultFuelClasses() const { return mDefaultFuelClasses; }
+
 protected:
 	/** Try to collect fuel from an input. */
 	void Factory_CollectFuel( float dt );
@@ -170,7 +173,7 @@ private:
 
 	class AFGReplicationDetailActor_GeneratorFuel* GetCastRepDetailsActor() const;
 
-public: // MODDING EDIT protected -> public
+protected:
 	friend class AFGReplicationDetailActor_GeneratorFuel;
 
 	/** Maintainer of the active storage component for this actor. Use this to get the active inventory component. */

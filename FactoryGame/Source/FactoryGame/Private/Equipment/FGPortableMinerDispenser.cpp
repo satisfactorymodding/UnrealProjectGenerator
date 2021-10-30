@@ -2,7 +2,12 @@
 
 #include "Equipment/FGPortableMinerDispenser.h"
 
-AFGPortableMinerDispenser::AFGPortableMinerDispenser(){ }
+AFGPortableMinerDispenser::AFGPortableMinerDispenser(){ 
+	this->mPlaceDistanceMax = 1000.0;
+	this->mValidPlacementMaterial = nullptr;
+	this->mInvalidPlacementMaterial = nullptr;
+	this->mArmAnimation = EArmEquipment::AE_PortableMiner;
+}
 void AFGPortableMinerDispenser::Tick(float DeltaSeconds){ }
 void AFGPortableMinerDispenser::BeginPlay(){ }
 void AFGPortableMinerDispenser::SetMaterial( UMaterialInterface* material){ }

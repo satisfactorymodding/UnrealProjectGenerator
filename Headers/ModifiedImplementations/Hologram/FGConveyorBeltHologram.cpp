@@ -13,21 +13,23 @@ AActor* AFGConveyorBeltHologram::GetUpgradedActor() const{ return nullptr; }
 void AFGConveyorBeltHologram::OnInvalidHitResult(){ }
 void AFGConveyorBeltHologram::SpawnChildren(AActor* hologramOwner, FVector spawnLocation, APawn* hologramInstigator){ }
 bool AFGConveyorBeltHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }
-void AFGConveyorBeltHologram::AdjustForGround(const FHitResult& hitResult, FVector& out_adjustedLocation, FRotator& out_adjustedRotation){ }
+void AFGConveyorBeltHologram::AdjustForGround(FVector& out_adjustedLocation, FRotator& out_adjustedRotation){ }
+void AFGConveyorBeltHologram::PreHologramPlacement(){ }
+void AFGConveyorBeltHologram::PostHologramPlacement(){ }
 bool AFGConveyorBeltHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 void AFGConveyorBeltHologram::Scroll(int32 delta){ }
 void AFGConveyorBeltHologram::GetSupportedScrollModes(TArray<EHologramScrollMode>* out_modes) const{ }
-bool AFGConveyorBeltHologram::CanTakeNextBuildStep() const{ return bool(); }
+float AFGConveyorBeltHologram::GetHologramHoverHeight() const{ return float(); }
 void AFGConveyorBeltHologram::SerializeConstructMessage(FArchive& ar, FNetConstructionID id){ }
 void AFGConveyorBeltHologram::ClientPreConstructMessageSerialization(){ }
 void AFGConveyorBeltHologram::ServerPostConstructMessageDeserialization(){ }
 EFactoryConnectionDirection AFGConveyorBeltHologram::GetActiveConnectionDirection() const{ return EFactoryConnectionDirection(); }
 TArray<AFGBuildable*> AFGConveyorBeltHologram::GetAnyConnectedBuildables(){ return TArray<AFGBuildable*>(); }
 void AFGConveyorBeltHologram::CheckValidFloor(){ }
-void AFGConveyorBeltHologram::CheckClearance(){ }
 void AFGConveyorBeltHologram::CheckValidPlacement(){ }
 void AFGConveyorBeltHologram::ConfigureActor( AFGBuildable* inBuildable) const{ }
 void AFGConveyorBeltHologram::ConfigureComponents( AFGBuildable* inBuildable) const{ }
+void AFGConveyorBeltHologram::CheckClearance(const FVector& locationOffset){ }
 void AFGConveyorBeltHologram::SetupConveyorClearanceDetector(){ }
 void AFGConveyorBeltHologram::UpdateSplineComponent(){ }
 void AFGConveyorBeltHologram::OnRep_ConnectionArrowComponentDirection(){ }

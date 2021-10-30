@@ -58,6 +58,8 @@ public:
 	/** Should the stack height only be calculated using the mStackHeight? */
 	UPROPERTY( EditDefaultsOnly, Category = "Pole" )
 	bool mUseStaticHeight;
+
+
 protected:
 	//virtual void TogglePendingDismantleMaterial( bool enabled ) override;
 	//virtual void OnBuildEffectFinished() override;

@@ -5,7 +5,22 @@
 #if WITH_EDITOR
 void UFGResourceDescriptor::PostEditChangeProperty( FPropertyChangedEvent& propertyChangedEvent){ Super::PostEditChangeProperty(propertyChangedEvent); }
 #endif 
-UFGResourceDescriptor::UFGResourceDescriptor(){ }
+UFGResourceDescriptor::UFGResourceDescriptor(){ 
+	this->mDepositMesh = nullptr;
+	this->mDepositMaterial = nullptr;
+	this->mDecalMaterial = nullptr;
+	this->mDecalSize = 200.0;
+	this->mPingColor.R = 0.0;
+	this->mPingColor.G = 0.0;
+	this->mPingColor.B = 0.0;
+	this->mPingColor.A = 0.0;
+	this->mCollectSpeedMultiplier = 1.0;
+	this->mCompassTexture = nullptr;
+	this->mManualMiningParticle = nullptr;
+	this->mFactoryMiningParticle = nullptr;
+	this->mDestroyedParticle = nullptr;
+	this->mManualMiningAudioName = TEXT("Metal");
+}
 bool UFGResourceDescriptor::CanBeHandMined(TSubclassOf< UFGResourceDescriptor > inClass){ return bool(); }
 UMaterialInstance* UFGResourceDescriptor::GetDepositMaterial(TSubclassOf< UFGResourceDescriptor > inClass){ return nullptr; }
 UStaticMesh* UFGResourceDescriptor::GetDepositMesh(TSubclassOf< UFGResourceDescriptor > inClass){ return nullptr; }

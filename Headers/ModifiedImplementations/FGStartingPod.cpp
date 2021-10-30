@@ -12,4 +12,23 @@ void AFGStartingPod::Upgrade_Implementation(AActor* newActor){ }
 void AFGStartingPod::Dismantle_Implementation(){ }
 void AFGStartingPod::StartIsLookedAtForDismantle_Implementation( AFGCharacterPlayer* byCharacter){ }
 void AFGStartingPod::StopIsLookedAtForDismantle_Implementation( AFGCharacterPlayer* byCharacter){ }
+void AFGStartingPod::GetChildDismantleActors_Implementation(TArray< AActor* >& out_ChildDismantleActors) const{ }
+bool AFGStartingPod::AddAsRepresentation(){ return bool(); }
+bool AFGStartingPod::UpdateRepresentation(){ return bool(); }
+bool AFGStartingPod::RemoveAsRepresentation(){ return bool(); }
+bool AFGStartingPod::IsActorStatic(){ return bool(); }
+FVector AFGStartingPod::GetRealActorLocation(){ return FVector(); }
+FRotator AFGStartingPod::GetRealActorRotation(){ return FRotator(); }
+UTexture2D* AFGStartingPod::GetActorRepresentationTexture(){ return nullptr; }
+FText AFGStartingPod::GetActorRepresentationText(){ return FText(); }
+void AFGStartingPod::SetActorRepresentationText(const FText& newText){ }
+FLinearColor AFGStartingPod::GetActorRepresentationColor(){ return FLinearColor(); }
+void AFGStartingPod::SetActorRepresentationColor(FLinearColor newColor){ }
+ERepresentationType AFGStartingPod::GetActorRepresentationType(){ return ERepresentationType(); }
+bool AFGStartingPod::GetActorShouldShowInCompass(){ return bool(); }
+bool AFGStartingPod::GetActorShouldShowOnMap(){ return bool(); }
+EFogOfWarRevealType AFGStartingPod::GetActorFogOfWarRevealType(){ return EFogOfWarRevealType(); }
+float AFGStartingPod::GetActorFogOfWarRevealRadius(){ return float(); }
+ECompassViewDistance AFGStartingPod::GetActorCompassViewDistance(){ return ECompassViewDistance(); }
+void AFGStartingPod::SetActorCompassViewDistance(ECompassViewDistance compassViewDistance){ }
 void AFGStartingPod::BeginPlay(){ }

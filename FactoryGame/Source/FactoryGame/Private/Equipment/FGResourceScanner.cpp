@@ -2,7 +2,17 @@
 
 #include "Equipment/FGResourceScanner.h"
 
-AFGResourceScanner::AFGResourceScanner(){ }
+AFGResourceScanner::AFGResourceScanner(){ 
+	this->mResourceDescriptorToScanFor = nullptr;
+	this->mNrOfClosestClustersToMark = 3;
+	this->mLastPressedTimeStamp = 0.0;
+	this->mHoldDownDurationForUI = 0.5;
+	this->mIsPressingScan = false;
+	this->mIsWaitingForSelectionUI = false;
+	this->mDistBetweenNodesInCluster = 1000.0;
+	this->mUnclusterRange = 30000.0;
+	this->mArmAnimation = EArmEquipment::AE_ResourceScanner;
+}
 void AFGResourceScanner::BeginPlay(){ }
 void AFGResourceScanner::Tick(float dt){ }
 bool AFGResourceScanner::ShouldSaveState() const{ return bool(); }
@@ -17,4 +27,6 @@ void AFGResourceScanner::OnScanPressed(){ }
 void AFGResourceScanner::OnScanReleased(){ }
 void AFGResourceScanner::GenerateNodeClusters(){ }
 void AFGResourceScanner::GetNodesWithinDistance( AFGResourceNodeBase* node, float dist, TArray<  AFGResourceNodeBase* >& clusterNodes, TArray<  AFGResourceNodeBase* >& remainingNodes){ }
+void AFGResourceScanner::GetClosetClusters(TArray<FNodeClusterData>& closestClusters){ }
+void AFGResourceScanner::SplitNearbyClusters(TArray< FNodeClusterData >& clusters){ }
 void AFGResourceScanner::OnCheatBoardOpened(){ }

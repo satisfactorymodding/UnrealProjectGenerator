@@ -12,3 +12,4 @@ void AFGBuildableCircuitSwitch::OnRep_IsSwitchOn(){ }
 void AFGBuildableCircuitSwitch::OnRep_HasBuildingTag(){ }
 void AFGBuildableCircuitSwitch::OnRep_BuildingTag(){ }
 void AFGBuildableCircuitSwitch::OnRep_IsBridgeConnected(){ }
+void AFGBuildableCircuitSwitch::BroadcastProductionStatus(){ }

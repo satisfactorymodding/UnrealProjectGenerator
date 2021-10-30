@@ -18,9 +18,12 @@ void AFGGameMode::InitGameState(){ }
 bool AFGGameMode::AllowCheats(APlayerController* p){ return bool(); }
 AActor* AFGGameMode::ChoosePlayerStart_Implementation(AController* player){ return nullptr; }
 void AFGGameMode::RestartPlayer(AController* newPlayer){ }
+APlayerController* AFGGameMode::Login(UPlayer* NewPlayer, ENetRole InRemoteRole, const FString& Portal, const FString& Options, const FUniqueNetIdRepl& UniqueId, FString& ErrorMessage){ return nullptr; }
+bool AFGGameMode::IsPaused() const{ return bool(); }
 void AFGGameMode::PostLogin(APlayerController* newPlayer){ }
 void AFGGameMode::Logout(AController* exiting){ }
 bool AFGGameMode::FindInactivePlayer(APlayerController* PC){ return bool(); }
+void AFGGameMode::GenericPlayerInitialization(AController* C){ }
 void AFGGameMode::PostActorsInitialized(const UWorld::FActorsInitializedParams& inParams){ }
 uint8 AFGGameMode::GenerateNextAutosaveId(){ return uint8(); }
 void AFGGameMode::SetSaveSessionName(SessionNameType name){ }

@@ -2,4 +2,7 @@
 
 #include "Resources/FGAnyUndefinedDescriptor.h"
 
-UFGAnyUndefinedDescriptor::UFGAnyUndefinedDescriptor(){ }
+UFGAnyUndefinedDescriptor::UFGAnyUndefinedDescriptor(){ 
+	this->mDisplayName = NSLOCTEXT("AnyUndefinedDescriptor", "DisplayName", "Any Undefined");
+	this->mDescription = NSLOCTEXT("AnyUndefinedDescriptor", "Description", "Any item not specified elsewhere");
+}
