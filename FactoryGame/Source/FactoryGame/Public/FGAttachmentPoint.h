@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "FGAttachmentPoint.generated.h"
 
 /** Type class for attachment points, used to allow / disallow snapping. */

@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "Engine/GameInstance.h"
 #include "NAT.h"
 #include "AnalyticsService.h"

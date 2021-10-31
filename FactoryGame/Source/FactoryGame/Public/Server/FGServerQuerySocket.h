@@ -1,5 +1,6 @@
 #pragma once
 
+#include "FactoryGame.h"
 #include "CoreMinimal.h"
 #include "Server/FGDedicatedServerTypes.h"
 #include "HAL/Runnable.h"

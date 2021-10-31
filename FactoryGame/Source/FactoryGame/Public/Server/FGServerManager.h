@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "CoreMinimal.h"
 #include "FGSaveSystem.h"
 #include "Subsystems/LocalPlayerSubsystem.h"

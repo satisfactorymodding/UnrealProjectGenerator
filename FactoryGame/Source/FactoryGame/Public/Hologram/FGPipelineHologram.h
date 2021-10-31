@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "CoreMinimal.h"
 #include "Hologram/HologramHelpers.h"
 #include "Hologram/FGSplineHologram.h"

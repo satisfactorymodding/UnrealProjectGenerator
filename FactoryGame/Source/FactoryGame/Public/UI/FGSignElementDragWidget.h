@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "CoreMinimal.h"
 #include "Styling/SlateBrush.h"
 #include "Blueprint/UserWidget.h"

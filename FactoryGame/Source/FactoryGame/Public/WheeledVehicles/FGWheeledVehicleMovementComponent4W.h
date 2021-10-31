@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "WheeledVehicleMovementComponent4W.h"
 #include "WheeledVehicles/FGWheeledVehicle.h"
 #include "DSOLGearbox.h"

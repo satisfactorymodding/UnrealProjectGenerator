@@ -8,6 +8,7 @@
  * @todo: Migrate UFGPresenceLibrary, UFGFriendsLibrary, UFGSessionLibrary and UFGInviteLibrary into their own .h and .cpp files
  */
 
+#include "FactoryGame.h"
 #include "FGLocalPlayer.h"
 #include "NAT.h"
 #include "FindSessionsCallbackProxy.h"

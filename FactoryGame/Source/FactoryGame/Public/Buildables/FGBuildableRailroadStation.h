@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "Buildables/FGBuildableTrainPlatform.h"
 #include "FGActorRepresentationInterface.h"
 #include "FGTrainDockingRules.h"

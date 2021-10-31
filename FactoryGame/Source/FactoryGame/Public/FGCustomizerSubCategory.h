@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "CoreMinimal.h"
 #include "FGCustomizerCategory.h"
 #include "FGCustomizerSubCategory.generated.h"

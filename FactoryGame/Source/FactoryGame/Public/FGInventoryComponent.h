@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "SharedInventoryStatePtr.h"
 #include "FGSaveInterface.h"
 #include "Resources/FGItemDescriptor.h"

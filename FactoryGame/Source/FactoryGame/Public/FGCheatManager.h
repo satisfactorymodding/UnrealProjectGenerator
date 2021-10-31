@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "GameFramework/CheatManager.h"
 #include "FGGamePhaseManager.h"
 #include "Interfaces/OnlineSharedCloudInterface.h"

@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "UMG.h"
 #include "Blueprint/UserWidget.h"
 #include "FGInteractWidget.generated.h"

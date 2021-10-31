@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "IncludeInBuild.h"
 #include "OptionValueContainer.h"
 #include "FGOptionsSettings.generated.h"

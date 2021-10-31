@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "CoreMinimal.h"
 #include "Buildables/FGBuildablePoleBase.h"
 #include "FGBuildableSignSupport.generated.h"

@@ -3,6 +3,7 @@
 #pragma once
 
 #include <type_traits>
+#include "FactoryGame.h"
 #include "GameFramework/PlayerState.h"
 #include "FGCharacterPlayer.h"
 #include "FGFactoryColoringTypes.h"

@@ -1,5 +1,6 @@
 //Copyright 2016 Coffee Stain Studios.All Rights Reserved.
 #pragma once 
+#include "FactoryGame.h"
 #include "GameFramework/HUD.h"
 #include "Resources/FGItemDescriptor.h"
 #include "FGHUDBase.h"

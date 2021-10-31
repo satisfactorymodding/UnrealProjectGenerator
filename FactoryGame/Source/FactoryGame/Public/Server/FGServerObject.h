@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "CoreMinimal.h"
 #include "UObject/Object.h"
 #include "Server/FGDedicatedServerTypes.h"

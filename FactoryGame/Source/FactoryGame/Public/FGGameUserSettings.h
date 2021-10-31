@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "GameFramework/GameUserSettings.h"
 #include "GameFramework/PlayerInput.h"
 #include "FGInputLibrary.h"

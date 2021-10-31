@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "FGSaveInterface.h"
 #include "GameFramework/GameState.h"
 #include "FGPlayerState.h"

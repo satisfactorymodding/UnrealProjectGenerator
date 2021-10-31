@@ -3,6 +3,7 @@
 #pragma once
 
 #if WITH_EDITOR
+#include "FactoryGame.h"
 #include "UnrealEdMisc.h"
 #endif
 

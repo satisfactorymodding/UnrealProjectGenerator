@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "Engine/AssetUserData.h"
 #include "ItemDrop.h"
 #include "FGFoliageResourceUserData.generated.h"

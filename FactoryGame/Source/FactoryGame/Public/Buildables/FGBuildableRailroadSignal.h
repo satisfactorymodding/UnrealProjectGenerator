@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "FGRailroadTrackConnectionComponent.h"
 #include "Buildables/FGBuildable.h"
 #include "FGRailroadSignalBlock.h"

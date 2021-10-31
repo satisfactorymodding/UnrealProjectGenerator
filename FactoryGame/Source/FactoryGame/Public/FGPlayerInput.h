@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerInput.h"
 #include "FGPlayerInput.generated.h"

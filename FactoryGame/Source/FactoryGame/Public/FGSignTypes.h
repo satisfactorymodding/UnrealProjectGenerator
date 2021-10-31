@@ -3,6 +3,7 @@
 #pragma once
 
 
+#include "FactoryGame.h"
 #include "UMG.h"
 #include "UI/FGSignTextWidget.h"
 #include "UI/FGSignElementWidget.h"

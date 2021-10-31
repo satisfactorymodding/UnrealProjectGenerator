@@ -2,9 +2,10 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "CoreMinimal.h"
 #include "FGSignTypes.h"
-#include "Text/TextLayout.h"
+#include "Framework/Text/TextLayout.h"
 #include "Blueprint/UserWidget.h"
 #include "FGSignElementSettingsWidget.generated.h"
 

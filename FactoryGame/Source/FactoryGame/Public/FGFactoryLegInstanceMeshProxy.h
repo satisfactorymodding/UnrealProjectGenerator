@@ -3,6 +3,7 @@
 #pragma once
 
 #include "FactoryGame.h"
+#include "FactoryGame.h"
 #include "FGOptimizationSettings.h"
 #include "FGFactoryLegInstanceManager.h"
 #include "Components/StaticMeshComponent.h"

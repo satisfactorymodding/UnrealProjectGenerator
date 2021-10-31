@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "CoreMinimal.h"
 #include "UI/Message/FGMessageBase.h"
 #include "FGAudioMessage.generated.h"

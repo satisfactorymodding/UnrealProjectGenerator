@@ -12,7 +12,7 @@ public class DummyHeaders : ModuleRules
     public DummyHeaders(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-        bLegacyPublicIncludePaths = true;
+        bLegacyPublicIncludePaths = false;
 
 
         PublicDependencyModuleNames.AddRange(new[]

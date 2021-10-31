@@ -4,6 +4,7 @@
 * Base VehicleSim for the 6W PhysX vehicle class
 */
 #pragma once
+#include "FactoryGame.h"
 #include "WheeledVehicleMovementComponent.h"
 #include "Curves/CurveFloat.h"
 #include "PhysicsPublic.h"

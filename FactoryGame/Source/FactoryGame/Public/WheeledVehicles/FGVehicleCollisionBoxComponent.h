@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "Components/BoxComponent.h"
 #include "WheeledVehicles/FGWheeledVehicle.h"
 #include "FGVehicleCollisionBoxComponent.generated.h"

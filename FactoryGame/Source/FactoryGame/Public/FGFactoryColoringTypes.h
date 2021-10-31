@@ -3,6 +3,7 @@
 #pragma once
 
 #include "FactoryGame.h"
+#include "FactoryGame.h"
 #include "ItemAmount.h"
 #include "Resources/FGItemDescriptor.h"
 #include "FGFactoryColoringTypes.generated.h"

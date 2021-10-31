@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "FGRailroadVehicle.h"
 #include "FGLocomotiveMovementComponent.h"
 #include "RailroadNavigation.h"

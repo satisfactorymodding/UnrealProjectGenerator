@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "Animation/SkeletalMeshActor.h"
 #include "FGFactoryColoringTypes.h"
 #include "FGUseableInterface.h"

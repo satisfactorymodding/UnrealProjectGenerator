@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "CoreMinimal.h"
 #include "NAT.h"
 #include "FGOnlineSessionSettings.generated.h"

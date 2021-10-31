@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "CoreMinimal.h"
 #include "Hologram/FGJumpPadHologram.h"
 #include "Buildables/FGBuildableJumppad.h"

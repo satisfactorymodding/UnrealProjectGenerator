@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "FGPopupInstigatorInterface.h"
 #include "UI/FGInteractWidget.h"
 #include "FGPopupWidget.generated.h"

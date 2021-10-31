@@ -1,5 +1,6 @@
 // Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
 #pragma once
+#include "FactoryGame.h"
 #include "FGCharacterBase.h"
 #include "AI/FGAggroTargetInterface.h"
 #include "FGInventoryComponent.h"

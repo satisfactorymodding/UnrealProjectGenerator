@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "FGSaveSession.h"
 #include "GameFramework/Actor.h"
 #include "Templates/SharedPointer.h"

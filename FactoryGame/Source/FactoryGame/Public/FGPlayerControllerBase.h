@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "Online.h"
 #include "FGInputLibrary.h"
 #include "PlayerPresenceState.h"

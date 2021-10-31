@@ -9,11 +9,35 @@ extraIncludes = [
         ]
     ],
     [
+        'UI/FGSignElementWidget.h',
+        [
+            ['Text/TextLayout.h', 'Framework/Text/TextLayout.h']
+        ]
+    ],
+    [
+        'UI/FGSignInteractWidget.h',
+        [
+            ['Text/TextLayout.h', 'Framework/Text/TextLayout.h']
+        ]
+    ],
+    [
+        'UI/FGSignElementSettingsWidget.h',
+        [
+            ['Text/TextLayout.h', 'Framework/Text/TextLayout.h']
+        ]
+    ],
+    [
+        'UI/FGPrefabSignInteract.h',
+        [
+            ['Text/TextLayout.h', 'Framework/Text/TextLayout.h']
+        ]
+    ],
+    [
         'FactoryGame.h',
         [
             ['Notifications/SNotificationList.h', 'Widgets/Notifications/SNotificationList.h']
         ]
-    ]
+    ],
 ]
 
 UEPath = input()

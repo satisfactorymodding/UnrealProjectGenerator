@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "FGWorldCreationInterface.h"
 #include "FGEngineCommon.generated.h"
 

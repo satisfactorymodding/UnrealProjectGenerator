@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FactoryGame.h"
 #include "FGVehicle.h"
 #include "ItemAmount.h"
 #include "PhysXPublic.h"
