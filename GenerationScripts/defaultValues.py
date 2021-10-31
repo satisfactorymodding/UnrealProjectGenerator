@@ -741,7 +741,7 @@ def create_implementations(package_classes: dict[str, dict[str, UEClass]], dump_
 
 def main():
     parser = argparse.ArgumentParser(description='Generate implementations for constructors that set default values as extracted from the game.')
-    parser.add_argument('--dump', '-d', dest='dump_root',
+    parser.add_argument('--dump', '-d', dest='dump_root', required = True,
                         help='The path at which the native class and struct dump is located')
     args = parser.parse_args()
 
