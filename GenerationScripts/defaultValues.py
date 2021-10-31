@@ -1,11 +1,15 @@
 import json
 import os
 import re
+import sys
+import argparse
 
-dump_root = input()
-dump_package = input()
-header_root = input()
-cpp_root = input()
+generation_scripts_path = os.path.dirname(os.path.abspath(__file__))
+root = os.path.dirname(generation_scripts_path)
+
+projectPath = os.path.join(root, 'FactoryGame')
+header_root = os.path.join(projectPath, 'Source', 'FactoryGame', 'Public')
+cpp_root = os.path.join(projectPath, 'Source', 'FactoryGame', 'Private')
 
 def round_float_scientific(f: float, decimals: int = 5) -> float:
     return float(f'{f:.{decimals}e}')
@@ -73,11 +77,12 @@ class_headers = {
     'EEquipmentSlot': 'Equipment/FGEquipment.h'
 }
 
-for root, dirs, files in os.walk(header_root, topdown=False):
-    for name in files:
-        header_contents = open(os.path.join(root, name), 'r').read()
-        for cls in re.findall(r'^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?.*?)?\s*{((?:.|\n)*?)^\1};', header_contents, re.RegexFlag.MULTILINE):
-            class_headers[cls[3]] = os.path.relpath(os.path.join(root, name), header_root)
+def read_class_includes():
+    for root, dirs, files in os.walk(header_root, topdown=False):
+        for name in files:
+            header_contents = open(os.path.join(root, name), 'r').read()
+            for cls in re.findall(r'^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?.*?)?\s*{((?:.|\n)*?)^\1};', header_contents, re.RegexFlag.MULTILINE):
+                class_headers[cls[3]] = os.path.relpath(os.path.join(root, name), header_root)
 
 class UEStruct:
     def __init__(self, package: str, class_name: str, json_object: dict):
@@ -557,176 +562,192 @@ class UEClass(UEStruct):
 
         return implementations
 
-package_classes: dict[str, dict[str, UEClass]]= {}
-package_structs: dict[str, dict[str, UEStruct]]= {}
+def read_dump(dump_root: str):
+    package_classes: dict[str, dict[str, UEClass]] = {}
+    package_structs: dict[str, dict[str, UEStruct]] = {}
 
-for pkg in os.listdir(os.path.join(dump_root, 'Classes')):
-    package_classes[pkg] = {}
-    for cls in os.listdir(os.path.join(dump_root, 'Classes', pkg)):
-        class_name = cls[:-5] # trim .json
-        package_classes[pkg][class_name] = UEClass(pkg, class_name, json.load(open(os.path.join(dump_root, 'Classes', pkg, cls), 'r')))
+    for pkg in os.listdir(os.path.join(dump_root, 'Classes')):
+        package_classes[pkg] = {}
+        for cls in os.listdir(os.path.join(dump_root, 'Classes', pkg)):
+            class_name = cls[:-5] # trim .json
+            package_classes[pkg][class_name] = UEClass(pkg, class_name, json.load(open(os.path.join(dump_root, 'Classes', pkg, cls), 'r')))
 
-for pkg in os.listdir(os.path.join(dump_root, 'Structs')):
-    package_structs[pkg] = {}
-    for struct in os.listdir(os.path.join(dump_root, 'Structs', pkg)):
-        struct_name = struct[:-5] # trim .json
-        package_structs[pkg][struct_name] = UEStruct(pkg, struct_name, json.load(open(os.path.join(dump_root, 'Structs', pkg, struct), 'r')))
+    for pkg in os.listdir(os.path.join(dump_root, 'Structs')):
+        package_structs[pkg] = {}
+        for struct in os.listdir(os.path.join(dump_root, 'Structs', pkg)):
+            struct_name = struct[:-5] # trim .json
+            package_structs[pkg][struct_name] = UEStruct(pkg, struct_name, json.load(open(os.path.join(dump_root, 'Structs', pkg, struct), 'r')))
 
-for pkg, classes in package_classes.items():
-    for class_name, cls in classes.items():
-        if cls.parent_package and cls.parent_class:
-            cls.parent_ue_class = package_classes[cls.parent_package][cls.parent_class]
-            cls.parent_ue_struct = package_classes[cls.parent_package][cls.parent_class]
+    for pkg, classes in package_classes.items():
+        for class_name, cls in classes.items():
+            if cls.parent_package and cls.parent_class:
+                cls.parent_ue_class = package_classes[cls.parent_package][cls.parent_class]
+                cls.parent_ue_struct = package_classes[cls.parent_package][cls.parent_class]
+                
+            for hier_cls_idx in cls.hierarchy_classes:
+                hier_cls_hierarchy = cls.json_object['ObjectHierarchy'][hier_cls_idx]
+                
+                if hier_cls_hierarchy['Type'] == 'Export':
+                    hier_cls_package = cls.package
+                else:
+                    hier_cls_package_hierarchy_idx = hier_cls_hierarchy['Outer']
+                    hier_cls_package_hierarchy = cls.json_object['ObjectHierarchy'][hier_cls_package_hierarchy_idx]
+                    hier_cls_package: str = hier_cls_package_hierarchy['ObjectName'][8:]
+                
+                hier_cls_class: str = hier_cls_hierarchy['ObjectName']
+
+                cls.hierarchy_classes[hier_cls_idx] = package_classes[hier_cls_package][hier_cls_class]
             
-        for hier_cls_idx in cls.hierarchy_classes:
-            hier_cls_hierarchy = cls.json_object['ObjectHierarchy'][hier_cls_idx]
-            
-            if hier_cls_hierarchy['Type'] == 'Export':
-                hier_cls_package = cls.package
-            else:
-                hier_cls_package_hierarchy_idx = hier_cls_hierarchy['Outer']
-                hier_cls_package_hierarchy = cls.json_object['ObjectHierarchy'][hier_cls_package_hierarchy_idx]
-                hier_cls_package: str = hier_cls_package_hierarchy['ObjectName'][8:]
-            
-            hier_cls_class: str = hier_cls_hierarchy['ObjectName']
+            for hier_cls_idx in cls.hierarchy_structs:
+                hier_cls_hierarchy = cls.json_object['ObjectHierarchy'][hier_cls_idx]
+                
+                if hier_cls_hierarchy['Type'] == 'Export':
+                    hier_cls_package = cls.package
+                else:
+                    hier_cls_package_hierarchy_idx = hier_cls_hierarchy['Outer']
+                    hier_cls_package_hierarchy = cls.json_object['ObjectHierarchy'][hier_cls_package_hierarchy_idx]
+                    hier_cls_package: str = hier_cls_package_hierarchy['ObjectName'][8:]
+                
+                hier_cls_class: str = hier_cls_hierarchy['ObjectName']
 
-            cls.hierarchy_classes[hier_cls_idx] = package_classes[hier_cls_package][hier_cls_class]
-        
-        for hier_cls_idx in cls.hierarchy_structs:
-            hier_cls_hierarchy = cls.json_object['ObjectHierarchy'][hier_cls_idx]
+                cls.hierarchy_structs[hier_cls_idx] = package_structs[hier_cls_package][hier_cls_class]
             
-            if hier_cls_hierarchy['Type'] == 'Export':
-                hier_cls_package = cls.package
-            else:
-                hier_cls_package_hierarchy_idx = hier_cls_hierarchy['Outer']
-                hier_cls_package_hierarchy = cls.json_object['ObjectHierarchy'][hier_cls_package_hierarchy_idx]
-                hier_cls_package: str = hier_cls_package_hierarchy['ObjectName'][8:]
+            # Because properties don't know what their object's objectHierarchy is... TODO
+            for prop in cls.properties:
+                if 'Struct' in prop:
+                    prop['Struct'] = cls.hierarchy_structs[prop['Struct']]
+                if 'Inner' in prop and 'Struct' in prop['Inner']:
+                    prop['Inner']['Struct'] = cls.hierarchy_structs[prop['Inner']['Struct']]
+                if 'KeyProp' in prop and 'Struct' in prop['KeyProp']:
+                    prop['KeyProp']['Struct'] = cls.hierarchy_structs[prop['KeyProp']['Struct']]
+                if 'ValueProp' in prop and 'Struct' in prop['ValueProp']:
+                    prop['ValueProp']['Struct'] = cls.hierarchy_structs[prop['ValueProp']['Struct']]
+                if 'Enum' in prop:
+                    prop['Enum'] = cls.json_object['ObjectHierarchy'][prop['Enum']] if prop['Enum'] != -1 else None
+                if 'Inner' in prop and 'Enum' in prop['Inner']:
+                    prop['Inner']['Enum'] = cls.json_object['ObjectHierarchy'][prop['Inner']['Enum']] if prop['Inner']['Enum'] != -1 else None
+                if 'KeyProp' in prop and 'Enum' in prop['KeyProp']:
+                    prop['KeyProp']['Enum'] = cls.json_object['ObjectHierarchy'][prop['KeyProp']['Enum']] if prop['KeyProp']['Enum'] != -1 else None
+                if 'ValueProp' in prop and 'Enum' in prop['ValueProp']:
+                    prop['ValueProp']['Enum'] = cls.json_object['ObjectHierarchy'][prop['ValueProp']['Enum']] if prop['ValueProp']['Enum'] != -1 else None
+
+    for pkg, structs in package_structs.items():
+        for struct_name, struct in structs.items():
+            if struct.parent_package and struct.parent_class:
+                struct.parent_ue_struct = package_structs[struct.parent_package][struct.parent_class]
+                
+            for hier_cls_idx in struct.hierarchy_classes:
+                hier_cls_hierarchy = struct.json_object['ObjectHierarchy'][hier_cls_idx]
+                
+                if hier_cls_hierarchy['Type'] == 'Export':
+                    hier_cls_package = struct.package
+                else:
+                    hier_cls_package_hierarchy_idx = hier_cls_hierarchy['Outer']
+                    hier_cls_package_hierarchy = struct.json_object['ObjectHierarchy'][hier_cls_package_hierarchy_idx]
+                    hier_cls_package: str = hier_cls_package_hierarchy['ObjectName'][8:]
+                
+                hier_cls_class: str = hier_cls_hierarchy['ObjectName']
+
+                struct.hierarchy_classes[hier_cls_idx] = package_classes[hier_cls_package][hier_cls_class]
             
-            hier_cls_class: str = hier_cls_hierarchy['ObjectName']
+            for hier_cls_idx in struct.hierarchy_structs:
+                hier_cls_hierarchy = struct.json_object['ObjectHierarchy'][hier_cls_idx]
+                
+                if hier_cls_hierarchy['Type'] == 'Export':
+                    hier_cls_package = struct.package
+                else:
+                    hier_cls_package_hierarchy_idx = hier_cls_hierarchy['Outer']
+                    hier_cls_package_hierarchy = struct.json_object['ObjectHierarchy'][hier_cls_package_hierarchy_idx]
+                    hier_cls_package: str = hier_cls_package_hierarchy['ObjectName'][8:]
+                
+                hier_cls_class: str = hier_cls_hierarchy['ObjectName']
 
-            cls.hierarchy_structs[hier_cls_idx] = package_structs[hier_cls_package][hier_cls_class]
-        
-        # Because properties don't know what their object's objectHierarchy is... TODO
-        for prop in cls.properties:
-            if 'Struct' in prop:
-                prop['Struct'] = cls.hierarchy_structs[prop['Struct']]
-            if 'Inner' in prop and 'Struct' in prop['Inner']:
-                prop['Inner']['Struct'] = cls.hierarchy_structs[prop['Inner']['Struct']]
-            if 'KeyProp' in prop and 'Struct' in prop['KeyProp']:
-                prop['KeyProp']['Struct'] = cls.hierarchy_structs[prop['KeyProp']['Struct']]
-            if 'ValueProp' in prop and 'Struct' in prop['ValueProp']:
-                prop['ValueProp']['Struct'] = cls.hierarchy_structs[prop['ValueProp']['Struct']]
-            if 'Enum' in prop:
-                prop['Enum'] = cls.json_object['ObjectHierarchy'][prop['Enum']] if prop['Enum'] != -1 else None
-            if 'Inner' in prop and 'Enum' in prop['Inner']:
-                prop['Inner']['Enum'] = cls.json_object['ObjectHierarchy'][prop['Inner']['Enum']] if prop['Inner']['Enum'] != -1 else None
-            if 'KeyProp' in prop and 'Enum' in prop['KeyProp']:
-                prop['KeyProp']['Enum'] = cls.json_object['ObjectHierarchy'][prop['KeyProp']['Enum']] if prop['KeyProp']['Enum'] != -1 else None
-            if 'ValueProp' in prop and 'Enum' in prop['ValueProp']:
-                prop['ValueProp']['Enum'] = cls.json_object['ObjectHierarchy'][prop['ValueProp']['Enum']] if prop['ValueProp']['Enum'] != -1 else None
-
-for pkg, structs in package_structs.items():
-    for struct_name, struct in structs.items():
-        if struct.parent_package and struct.parent_class:
-            struct.parent_ue_struct = package_structs[struct.parent_package][struct.parent_class]
+                struct.hierarchy_structs[hier_cls_idx] = package_structs[hier_cls_package][hier_cls_class]
             
-        for hier_cls_idx in struct.hierarchy_classes:
-            hier_cls_hierarchy = struct.json_object['ObjectHierarchy'][hier_cls_idx]
+            # Because properties don't know what their object's objectHierarchy is... TODO
+            for prop in struct.properties:
+                if 'Struct' in prop:
+                    prop['Struct'] = struct.hierarchy_structs[prop['Struct']]
+                if 'Inner' in prop and 'Struct' in prop['Inner']:
+                    prop['Inner']['Struct'] = struct.hierarchy_structs[prop['Inner']['Struct']]
+                if 'KeyProp' in prop and 'Struct' in prop['KeyProp']:
+                    prop['KeyProp']['Struct'] = struct.hierarchy_structs[prop['KeyProp']['Struct']]
+                if 'ValueProp' in prop and 'Struct' in prop['ValueProp']:
+                    prop['ValueProp']['Struct'] = struct.hierarchy_structs[prop['ValueProp']['Struct']]
+                if 'Enum' in prop:
+                    prop['Enum'] = struct.json_object['ObjectHierarchy'][prop['Enum']] if prop['Enum'] != -1 else None
+                if 'Inner' in prop and 'Enum' in prop['Inner']:
+                    prop['Inner']['Enum'] = struct.json_object['ObjectHierarchy'][prop['Inner']['Enum']] if prop['Inner']['Enum'] != -1 else None
+                if 'KeyProp' in prop and 'Enum' in prop['KeyProp']:
+                    prop['KeyProp']['Enum'] = struct.json_object['ObjectHierarchy'][prop['KeyProp']['Enum']] if prop['KeyProp']['Enum'] != -1 else None
+                if 'ValueProp' in prop and 'Enum' in prop['ValueProp']:
+                    prop['ValueProp']['Enum'] = struct.json_object['ObjectHierarchy'][prop['ValueProp']['Enum']] if prop['ValueProp']['Enum'] != -1 else None
+    return (package_classes, package_structs)
+
+def create_implementations(package_classes: dict[str, dict[str, UEClass]], dump_package: str):
+    class_implementations = {}
+
+    for class_name, cls in package_classes[dump_package].items():
+        # poor man's topological sort
+        already_implemented = [None]
+        queued = {}
+        lines = []
+        class_includes = []
+        for prop, impls in cls.cdo_implmenentation.items():
+            if not impls:
+                continue
             
-            if hier_cls_hierarchy['Type'] == 'Export':
-                hier_cls_package = struct.package
-            else:
-                hier_cls_package_hierarchy_idx = hier_cls_hierarchy['Outer']
-                hier_cls_package_hierarchy = struct.json_object['ObjectHierarchy'][hier_cls_package_hierarchy_idx]
-                hier_cls_package: str = hier_cls_package_hierarchy['ObjectName'][8:]
+            [impl, extras, includes] = impls
+            if impl:
+                lines.append(impl)
+            already_implemented.append(prop)
+            for dep, extra_items in extras.items():
+                if dep in already_implemented:
+                    for extra_item in extra_items:
+                        lines.append(extra_item)
+                else:
+                    if dep not in queued:
+                        queued[dep] = []
+                    for extra_item in extra_items:
+                        queued[dep].append(extra_item)
             
-            hier_cls_class: str = hier_cls_hierarchy['ObjectName']
-
-            struct.hierarchy_classes[hier_cls_idx] = package_classes[hier_cls_package][hier_cls_class]
-        
-        for hier_cls_idx in struct.hierarchy_structs:
-            hier_cls_hierarchy = struct.json_object['ObjectHierarchy'][hier_cls_idx]
+            if prop in queued:
+                for queued_item in queued[prop]:
+                    lines.append(queued_item)
+                del queued[prop]
             
-            if hier_cls_hierarchy['Type'] == 'Export':
-                hier_cls_package = struct.package
-            else:
-                hier_cls_package_hierarchy_idx = hier_cls_hierarchy['Outer']
-                hier_cls_package_hierarchy = struct.json_object['ObjectHierarchy'][hier_cls_package_hierarchy_idx]
-                hier_cls_package: str = hier_cls_package_hierarchy['ObjectName'][8:]
-            
-            hier_cls_class: str = hier_cls_hierarchy['ObjectName']
+            for include in includes:
+                if isinstance(include, list):
+                    raise Exception('nested', prop)
+                class_includes.append(include)
 
-            struct.hierarchy_structs[hier_cls_idx] = package_structs[hier_cls_package][hier_cls_class]
-        
-        # Because properties don't know what their object's objectHierarchy is... TODO
-        for prop in struct.properties:
-            if 'Struct' in prop:
-                prop['Struct'] = struct.hierarchy_structs[prop['Struct']]
-            if 'Inner' in prop and 'Struct' in prop['Inner']:
-                prop['Inner']['Struct'] = struct.hierarchy_structs[prop['Inner']['Struct']]
-            if 'KeyProp' in prop and 'Struct' in prop['KeyProp']:
-                prop['KeyProp']['Struct'] = struct.hierarchy_structs[prop['KeyProp']['Struct']]
-            if 'ValueProp' in prop and 'Struct' in prop['ValueProp']:
-                prop['ValueProp']['Struct'] = struct.hierarchy_structs[prop['ValueProp']['Struct']]
-            if 'Enum' in prop:
-                prop['Enum'] = struct.json_object['ObjectHierarchy'][prop['Enum']] if prop['Enum'] != -1 else None
-            if 'Inner' in prop and 'Enum' in prop['Inner']:
-                prop['Inner']['Enum'] = struct.json_object['ObjectHierarchy'][prop['Inner']['Enum']] if prop['Inner']['Enum'] != -1 else None
-            if 'KeyProp' in prop and 'Enum' in prop['KeyProp']:
-                prop['KeyProp']['Enum'] = struct.json_object['ObjectHierarchy'][prop['KeyProp']['Enum']] if prop['KeyProp']['Enum'] != -1 else None
-            if 'ValueProp' in prop and 'Enum' in prop['ValueProp']:
-                prop['ValueProp']['Enum'] = struct.json_object['ObjectHierarchy'][prop['ValueProp']['Enum']] if prop['ValueProp']['Enum'] != -1 else None
+        class_implementations[cls.full_name] = ['\n'.join(['\t' + line for line in lines]), class_includes]
 
-class_implementations = {}
+    for root, dirs, files in os.walk(cpp_root, topdown=False):
+        for name in files:
+            cpp_content = open(os.path.join(root, name), 'r').read()
+            includes = set()
+            for cls in re.findall(r'(\b(.+)::\2\((.*?)\)(?:\s*:\s*Super\((.*?)\))?\s?{\s*).*?}', cpp_content):
+                if cls[0][0] != 'F' and cls[1] in class_implementations:
+                    cpp_content = cpp_content.replace(cls[0], cls[0] + '\n' + class_implementations[cls[1]][0] + '\n')
+                    for include in class_implementations[cls[1]][1]:
+                        if include:
+                            includes.add(include.replace('\\', '/'))
+            if len(includes) > 0:
+                header_rel_path = os.path.relpath(os.path.join(root, name), cpp_root).replace('.cpp', '.h').replace('\\', '/')
+                cpp_content = cpp_content.replace(f'#include "{header_rel_path}"', f'#include "{header_rel_path}"\n' + '\n'.join([f'#include "{inc}"' for inc in includes]))
+            open(os.path.join(root, name), 'w+').write(cpp_content)
+            print(os.path.join(root, name))
 
-for class_name, cls in package_classes[dump_package].items():
-    # poor man's topological sort
-    already_implemented = [None]
-    queued = {}
-    lines = []
-    class_includes = []
-    for prop, impls in cls.cdo_implmenentation.items():
-        if not impls:
-            continue
-        
-        [impl, extras, includes] = impls
-        if impl:
-            lines.append(impl)
-        already_implemented.append(prop)
-        for dep, extra_items in extras.items():
-            if dep in already_implemented:
-                for extra_item in extra_items:
-                    lines.append(extra_item)
-            else:
-                if dep not in queued:
-                    queued[dep] = []
-                for extra_item in extra_items:
-                    queued[dep].append(extra_item)
-        
-        if prop in queued:
-            for queued_item in queued[prop]:
-                lines.append(queued_item)
-            del queued[prop]
-        
-        for include in includes:
-            if isinstance(include, list):
-                raise Exception('nested', prop)
-            class_includes.append(include)
+def main():
+    parser = argparse.ArgumentParser(description='Generate implementations for constructors that set default values as extracted from the game.')
+    parser.add_argument('--dump', '-d', dest='dump_root',
+                        help='The path at which the native class and struct dump is located')
+    args = parser.parse_args()
 
-    class_implementations[cls.full_name] = ['\n'.join(['\t' + line for line in lines]), class_includes]
+    read_class_includes()
+    (package_classes, package_structs) = read_dump(args.dump_root)
+    create_implementations(package_classes, 'FactoryGame')
 
-for root, dirs, files in os.walk(cpp_root, topdown=False):
-    for name in files:
-        cpp_content = open(os.path.join(root, name), 'r').read()
-        includes = set()
-        for cls in re.findall(r'(\b(.+)::\2\((.*?)\)(?:\s*:\s*Super\((.*?)\))?\s?{\s*).*?}', cpp_content):
-            if cls[0][0] != 'F' and cls[1] in class_implementations:
-                cpp_content = cpp_content.replace(cls[0], cls[0] + '\n' + class_implementations[cls[1]][0] + '\n')
-                for include in class_implementations[cls[1]][1]:
-                    if include:
-                        includes.add(include.replace('\\', '/'))
-        if len(includes) > 0:
-            header_rel_path = os.path.relpath(os.path.join(root, name), cpp_root).replace('.cpp', '.h').replace('\\', '/')
-            cpp_content = cpp_content.replace(f'#include "{header_rel_path}"', f'#include "{header_rel_path}"\n' + '\n'.join([f'#include "{inc}"' for inc in includes]))
-        open(os.path.join(root, name), 'w+').write(cpp_content)
-        print(os.path.join(root, name))
+if __name__ == "__main__":
+    main()
