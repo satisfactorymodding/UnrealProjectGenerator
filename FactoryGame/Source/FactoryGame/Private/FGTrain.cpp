@@ -35,7 +35,7 @@ float FClientTrainData::GetDynamicBrakePct(){ return float(); }
 #if WITH_CHEATS
 void AFGTrain::Cheat_Teleport( AFGBuildableRailroadStation* station){ }
 #endif 
-AFGTrain::AFGTrain(){ 
+AFGTrain::AFGTrain() : Super() {
 	this->mSoundComponentClass = nullptr;
 	this->mConsistData.Length = 0.0;
 	this->mConsistData.Mass = 0.0;

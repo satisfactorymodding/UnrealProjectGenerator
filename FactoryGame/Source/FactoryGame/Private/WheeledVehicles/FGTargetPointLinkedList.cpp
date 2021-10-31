@@ -2,7 +2,7 @@
 
 #include "WheeledVehicles/FGTargetPointLinkedList.h"
 
-AFGDrivingTargetList::AFGDrivingTargetList(){ 
+AFGDrivingTargetList::AFGDrivingTargetList() : Super() {
 	this->mFirst = nullptr;
 	this->mLast = nullptr;
 	this->mCurrentTarget = nullptr;

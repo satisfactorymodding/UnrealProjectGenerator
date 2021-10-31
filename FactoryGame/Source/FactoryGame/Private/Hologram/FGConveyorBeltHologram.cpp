@@ -5,7 +5,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGConveyorBeltHologram::AFGConveyorBeltHologram(){ 
+AFGConveyorBeltHologram::AFGConveyorBeltHologram() : Super() {
 	this->mChildPoleHologram = nullptr;
 	this->mConnectionComponents[0] = nullptr;
 	this->mConnectionComponents[1] = nullptr;
@@ -31,13 +31,8 @@ AFGConveyorBeltHologram::AFGConveyorBeltHologram(){
 	this->mConstructionPoleRotations[1].Yaw = 0.0;;
 	this->mConstructionPoleRotations[1].Roll = 0.0;;
 	this->mMesh = nullptr;
-	this->mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("mSplineComponent"));
 	this->mNeedsValidFloor = false;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
 	this->mUseBuildClearanceOverlapSnapp = false;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mSplineComponent->SetupAttachment(RootComponent);
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGConveyorBeltHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGConveyorBeltHologram::BeginPlay(){ }

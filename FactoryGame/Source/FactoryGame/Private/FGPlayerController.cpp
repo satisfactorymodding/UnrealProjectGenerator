@@ -4,7 +4,7 @@
 #include "FGCheatManager.h"
 #include "Components/SceneComponent.h"
 
-AFGPlayerController::AFGPlayerController(){ 
+AFGPlayerController::AFGPlayerController() : Super() {
 	this->mCanAffectAudioVolumes = true;
 	this->mInputComponentChords = nullptr;
 	this->mAttentionPingActorClass = nullptr;
@@ -22,8 +22,6 @@ AFGPlayerController::AFGPlayerController(){
 	this->mPhotomodeInputComponent = nullptr;
 	this->mProximitySubsystem = nullptr;
 	this->mMusicPlayerTickIntervalStart = 1.5;
-	this->CheatClass = UFGCheatManager::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("TransformComponent0"));
 }
 bool AFGPlayerController::ProcessConsoleExec(const TCHAR* cmd, FOutputDevice& ar, UObject* executor){ return bool(); }
 void AFGPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }

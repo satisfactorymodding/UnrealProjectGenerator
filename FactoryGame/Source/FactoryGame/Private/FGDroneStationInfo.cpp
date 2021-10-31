@@ -3,7 +3,7 @@
 #include "FGDroneStationInfo.h"
 
 void FFGDroneTripStatistics::Clear(){ }
-AFGDroneStationInfo::AFGDroneStationInfo(){ 
+AFGDroneStationInfo::AFGDroneStationInfo() : Super() {
 	this->mStation = nullptr;
 	this->mStationLocation.X = 0.0;
 	this->mStationLocation.Y = 0.0;

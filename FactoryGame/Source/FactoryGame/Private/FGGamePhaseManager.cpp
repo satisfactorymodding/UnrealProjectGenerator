@@ -4,7 +4,7 @@
 
 AFGGamePhaseManager* AFGGamePhaseManager::Get(UWorld* world){ return nullptr; }
 AFGGamePhaseManager* AFGGamePhaseManager::Get(UObject* worldContext){ return nullptr; }
-AFGGamePhaseManager::AFGGamePhaseManager(){ 
+AFGGamePhaseManager::AFGGamePhaseManager() : Super() {
 	this->mGamePhase = EGamePhase::EGP_EarlyGame;
 }
 void AFGGamePhaseManager::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }

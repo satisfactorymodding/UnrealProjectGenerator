@@ -5,7 +5,7 @@
 #ifdef DEBUG_SELF_DRIVING
 void AFGTargetPoint::Tick(float DeltaSeconds){ }
 #endif 
-AFGTargetPoint::AFGTargetPoint(){ 
+AFGTargetPoint::AFGTargetPoint() : Super() {
 	this->mNext = nullptr;
 	this->mWaitTime = 3.0;
 	this->mTargetSpeed = -1;

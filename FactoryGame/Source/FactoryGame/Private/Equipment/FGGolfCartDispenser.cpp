@@ -2,7 +2,7 @@
 
 #include "Equipment/FGGolfCartDispenser.h"
 
-AFGGolfCartDispenser::AFGGolfCartDispenser(){ 
+AFGGolfCartDispenser::AFGGolfCartDispenser() : Super() {
 	this->mPlaceDistanceMax = 1000.0;
 	this->mValidPlacementMaterial = nullptr;
 	this->mInvalidPlacementMaterial = nullptr;

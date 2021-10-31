@@ -4,11 +4,8 @@
 #include "Components/SceneComponent.h"
 #include "FGColoredInstanceMeshProxy.h"
 
-AFGBuildablePillar::AFGBuildablePillar(){ 
+AFGBuildablePillar::AFGBuildablePillar() : Super() {
 	this->mSize.X = 0.0;
 	this->mSize.Y = 0.0;
 	this->mSize.Z = 0.0;
-	this->mMeshComponentProxy = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("BuildingMeshProxy"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mMeshComponentProxy->SetupAttachment(RootComponent);
 }

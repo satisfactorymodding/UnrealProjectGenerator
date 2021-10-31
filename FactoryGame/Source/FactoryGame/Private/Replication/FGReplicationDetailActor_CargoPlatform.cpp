@@ -3,9 +3,8 @@
 #include "Replication/FGReplicationDetailActor_CargoPlatform.h"
 #include "Components/SceneComponent.h"
 
-AFGReplicationDetailActor_CargoPlatform::AFGReplicationDetailActor_CargoPlatform(){ 
+AFGReplicationDetailActor_CargoPlatform::AFGReplicationDetailActor_CargoPlatform() : Super() {
 	this->mCargoInventory = nullptr;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("ReplicationDetailActor"));
 }
 void AFGReplicationDetailActor_CargoPlatform::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGReplicationDetailActor_CargoPlatform::InitReplicationDetailActor( AFGBuildable* owningActor){ }

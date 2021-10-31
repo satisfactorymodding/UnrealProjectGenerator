@@ -4,7 +4,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGFoundationHologram::AFGFoundationHologram(){ 
+AFGFoundationHologram::AFGFoundationHologram() : Super() {
 	this->mFineTuneRotationStep = 5;
 	this->mSnapVerticalHitZoneRatio = 0.25;
 	this->mSideSnapDistanceFromEdgeThreshold = 200.0;
@@ -12,9 +12,6 @@ AFGFoundationHologram::AFGFoundationHologram(){
 	this->mAllowCornerRotationMode = false;
 	this->mBuildModeVerticalZoop = nullptr;
 	this->mMaxPlacementFloorAngle = 85.0;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGFoundationHologram::BeginPlay(){ }
 void AFGFoundationHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }

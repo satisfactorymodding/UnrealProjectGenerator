@@ -3,7 +3,7 @@
 #include "Replication/FGReplicationDetailInventoryComponent.h"
 #include "FGInventoryComponent.h"
 
-UFGReplicationDetailInventoryComponent::UFGReplicationDetailInventoryComponent(){ 
+UFGReplicationDetailInventoryComponent::UFGReplicationDetailInventoryComponent() : Super() {
 
 }
 void UFGReplicationDetailInventoryComponent::SetMainInventoryComponent( UFGInventoryComponent* inventoryComponent){ }

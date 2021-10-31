@@ -5,7 +5,7 @@
 #include "FGPowerInfoComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildablePowerStorage::AFGBuildablePowerStorage(){ 
+AFGBuildablePowerStorage::AFGBuildablePowerStorage() : Super() {
 	this->mBatteryInfo = nullptr;
 	this->mBatteryStatus = EBatteryStatus::BS_Idle;
 	this->mPowerStore = 0.0;
@@ -13,9 +13,6 @@ AFGBuildablePowerStorage::AFGBuildablePowerStorage(){
 	this->mPowerInputCapacity = 0.0;
 	this->mIndicatorLevelMax = 0;
 	this->mIndicatorLevel = 0;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildablePowerStorage::BeginPlay(){ }
 void AFGBuildablePowerStorage::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }

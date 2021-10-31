@@ -6,7 +6,7 @@
 #include "AIController.h"
 
 void FFootstepEffect::Reset(){ }
-AFGCharacterBase::AFGCharacterBase(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+AFGCharacterBase::AFGCharacterBase(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->mDefaultFootstepEffect.Particle = nullptr;
 	this->mMaxFootstepParticleSpawnDistance = 2500.0;
 	this->mMaxFootstepDecalSpawnDistance = 1250.0;
@@ -47,8 +47,6 @@ AFGCharacterBase::AFGCharacterBase(const FObjectInitializer& ObjectInitializer) 
 	this->mWeakspotMultiplier = 2.0;
 	this->mNormalDamageMultiplier = 1.0;
 	this->mIsPossessed = false;
-	this->AIControllerClass = AAIController::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CollisionCylinder"));
 }
 void AFGCharacterBase::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGCharacterBase::BeginPlay(){ }

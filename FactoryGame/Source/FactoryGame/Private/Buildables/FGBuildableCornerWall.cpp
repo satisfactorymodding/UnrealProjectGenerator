@@ -4,10 +4,7 @@
 #include "Components/SceneComponent.h"
 #include "FGColoredInstanceMeshProxy.h"
 
-AFGBuildableCornerWall::AFGBuildableCornerWall(){ 
+AFGBuildableCornerWall::AFGBuildableCornerWall() : Super() {
 	this->mSize = 0.0;
 	this->mHeight = 0.0;
-	this->mMeshComponentProxy = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("BuildingMeshProxy"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mMeshComponentProxy->SetupAttachment(RootComponent);
 }

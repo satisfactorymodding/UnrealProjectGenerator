@@ -2,7 +2,7 @@
 
 #include "FGNewsFeedActor.h"
 
-AFGNewsFeedActor::AFGNewsFeedActor(){ 
+AFGNewsFeedActor::AFGNewsFeedActor() : Super() {
 	this->mNewFeedText = INVTEXT("");
 	this->mNewsFeedRequestFailedText = INVTEXT("Unable to fetch News Feed.");
 	this->mNewsFeedURLs.Emplace();

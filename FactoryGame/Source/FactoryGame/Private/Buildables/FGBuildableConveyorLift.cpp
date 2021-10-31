@@ -5,7 +5,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableConveyorLift::AFGBuildableConveyorLift(){ 
+AFGBuildableConveyorLift::AFGBuildableConveyorLift() : Super() {
 	this->mMeshHeight = 200.0;
 	this->mBottomMesh = nullptr;
 	this->mMidMesh = nullptr;
@@ -16,12 +16,7 @@ AFGBuildableConveyorLift::AFGBuildableConveyorLift(){
 	this->mShelfMesh = nullptr;
 	this->mIsReversed = false;
 	this->mVisibilityComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("VisibilityMesh"));
-	this->mConnection0 = CreateDefaultSubobject<UFGFactoryConnectionComponent>(TEXT("ConveyorAny0"));
-	this->mConnection1 = CreateDefaultSubobject<UFGFactoryConnectionComponent>(TEXT("ConveyorAny1"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mVisibilityComponent->SetupAttachment(RootComponent);
-	this->mConnection0->SetupAttachment(RootComponent);
-	this->mConnection1->SetupAttachment(RootComponent);
 }
 void AFGBuildableConveyorLift::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildableConveyorLift::BeginPlay(){ }

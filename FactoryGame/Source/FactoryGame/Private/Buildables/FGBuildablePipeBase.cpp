@@ -6,7 +6,7 @@
 #include "FGInstancedSplineMeshComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildablePipeBase::AFGBuildablePipeBase(){ 
+AFGBuildablePipeBase::AFGBuildablePipeBase() : Super() {
 	this->mMesh = nullptr;
 	this->mMeshLength = 0.0;
 	this->mConnection0 = nullptr;
@@ -22,7 +22,6 @@ AFGBuildablePipeBase::AFGBuildablePipeBase(){
 	this->PrimaryActorTick.bAllowTickOnDedicatedServer = true;
 	this->PrimaryActorTick.TickInterval = 0.0;
 	this->NetDormancy = ENetDormancy::DORM_Awake;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mSplineComponent->SetupAttachment(RootComponent);
 	this->mInstancedSplineComponent->SetupAttachment(RootComponent);
 }

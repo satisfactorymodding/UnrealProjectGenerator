@@ -2,7 +2,7 @@
 
 #include "FGCineCameraComponent.h"
 
-UFGCineCameraComponent::UFGCineCameraComponent(){ 
+UFGCineCameraComponent::UFGCineCameraComponent() : Super() {
 	this->Filmback.SensorWidth = 23.76;
 	this->Filmback.SensorHeight = 13.365;
 	this->Filmback.SensorAspectRatio = 1.77778;

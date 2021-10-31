@@ -2,7 +2,7 @@
 
 #include "FGDeathMarker.h"
 
-AFGDeathMarker::AFGDeathMarker(){ 
+AFGDeathMarker::AFGDeathMarker() : Super() {
 	this->mActorRepresentationTexture = nullptr;
 	this->mMapText = INVTEXT("");
 }

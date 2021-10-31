@@ -4,14 +4,11 @@
 #include "Components/SceneComponent.h"
 #include "FGColoredInstanceMeshProxy.h"
 
-AFGBuildableBeam::AFGBuildableBeam(){ 
+AFGBuildableBeam::AFGBuildableBeam() : Super() {
 	this->mSize = 0.0;
 	this->mDefaultLength = 0.0;
 	this->mMaxLength = 0.0;
 	this->mLength = 0.0;
-	this->mMeshComponentProxy = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("BuildingMeshProxy"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mMeshComponentProxy->SetupAttachment(RootComponent);
 }
 void AFGBuildableBeam::BeginPlay(){ }
 void AFGBuildableBeam::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }

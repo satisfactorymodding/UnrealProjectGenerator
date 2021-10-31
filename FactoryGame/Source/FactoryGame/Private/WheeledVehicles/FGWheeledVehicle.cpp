@@ -6,7 +6,7 @@
 #include "Components/SkeletalMeshComponent.h"
 
 void AFGWheeledVehicle::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
-AFGWheeledVehicle::AFGWheeledVehicle(){ 
+AFGWheeledVehicle::AFGWheeledVehicle() : Super() {
 	this->mWorkBench = nullptr;
 	this->mFuelConsumption = 1.0;
 	this->mFuelConsumedWhileRecording = 0.0;
@@ -91,11 +91,8 @@ AFGWheeledVehicle::AFGWheeledVehicle(){
 	this->mAutomatedFuelConsumptionStart = 0.0;
 	this->mAutomatedFuelConsumptionTimeSkipped = 0.0;
 	this->mHologramClass = AFGWheeledVehicleHologram::StaticClass();
-	this->mMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VehicleMesh"));
-	this->mFoliageCollideBox->SetupAttachment(mMesh);
-	this->mHealthComponent = CreateDefaultSubobject<UFGHealthComponent>(TEXT("HealthComponent"));
 	this->SetReplicatingMovement(false);
-	this->RootComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VehicleMesh"));
+	this->mFoliageCollideBox->SetupAttachment(mMesh);
 }
 void AFGWheeledVehicle::PostInitializeComponents(){ Super::PostInitializeComponents(); }
 void AFGWheeledVehicle::BeginPlay(){ }

@@ -13,7 +13,7 @@ void AFGWorldSettings::HandleMapChanged( UWorld* newWorld, EMapChangeType mapCha
 #endif 
 #if WITH_EDITORONLY_DATA
 #endif 
-AFGWorldSettings::AFGWorldSettings(){ 
+AFGWorldSettings::AFGWorldSettings() : Super() {
 	this->mDefaultHeightFogSettings.FogHeight = 5000.0;
 	this->mDefaultHeightFogSettings.FogDensity = 0.02;
 	this->mDefaultHeightFogSettings.FogInscatteringColor.R = 0.0;
@@ -47,9 +47,6 @@ AFGWorldSettings::AFGWorldSettings(){
 	this->mFoliageRemovalSubsystem = nullptr;
 	this->mConveyorItemSubsystem = nullptr;
 	this->mPhotoModeManager = nullptr;
-	this->KillZDamageType = FSoftClassPath("/Engine/EngineDamageTypes/DmgTypeBP_Environmental.DmgTypeBP_Environmental_C").ResolveClass();
-	this->DefaultPhysicsVolumeClass = ADefaultPhysicsVolume::StaticClass();
-	this->GameNetworkManagerClass = AGameNetworkManager::StaticClass();
 }
 void AFGWorldSettings::BeginDestroy(){ Super::BeginDestroy(); }
 void AFGWorldSettings::PostActorCreated(){ Super::PostActorCreated(); }

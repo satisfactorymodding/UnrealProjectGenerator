@@ -2,7 +2,7 @@
 
 #include "Equipment/FGBuildGunPaint.h"
 
-UFGBuildGunStatePaint::UFGBuildGunStatePaint(){ 
+UFGBuildGunStatePaint::UFGBuildGunStatePaint() : Super() {
 	this->mHoverProxyMaterial = nullptr;
 	this->mInvisibleMaterialDescriptor = nullptr;
 	this->mActiveColorSlot = 0;

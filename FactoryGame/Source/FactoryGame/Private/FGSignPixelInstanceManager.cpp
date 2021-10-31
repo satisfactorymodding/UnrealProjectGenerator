@@ -2,7 +2,7 @@
 
 #include "FGSignPixelInstanceManager.h"
 
-UFGSignPixelInstanceManager::UFGSignPixelInstanceManager(){ 
+UFGSignPixelInstanceManager::UFGSignPixelInstanceManager() : Super() {
 	this->mInstanceComponent = nullptr;
 }
 void UFGSignPixelInstanceManager::BeginPlay(){ }

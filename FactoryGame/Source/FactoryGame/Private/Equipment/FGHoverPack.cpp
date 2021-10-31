@@ -6,7 +6,7 @@
 #include "FGPowerConnectionComponent.h"
 #include "Equipment/FGEquipment.h"
 
-AFGHoverPack::AFGHoverPack(){ 
+AFGHoverPack::AFGHoverPack() : Super() {
 	this->mHoverSpeed = 800.0;
 	this->mHoverAccelerationSpeed = 2000.0;
 	this->mHoverSprintMultiplier = 2.0;
@@ -78,7 +78,7 @@ bool AFGHoverPack::PlayerIsInHoverMovementMode() const{ return bool(); }
 void AFGHoverPack::OnRep_HasConnection(){ }
 void AFGHoverPack::OnRep_CurrentHoverMode(){ }
 void AFGHoverPack::OnRep_CurrentConnectionLocation(){ }
-AFGHoverPackAttachment::AFGHoverPackAttachment(){ 
+AFGHoverPackAttachment::AFGHoverPackAttachment() : Super() {
 	this->mCurrentHoverMode = EHoverPackMode::HPM_Inactive;
 	this->mHasConnection = false;
 	this->mCurrentConnectionLocation.X = 0.0;

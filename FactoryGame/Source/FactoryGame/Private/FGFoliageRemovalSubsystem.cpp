@@ -2,7 +2,7 @@
 
 #include "FGFoliageRemovalSubsystem.h"
 
-AFGFoliageRemovalSubsystem::AFGFoliageRemovalSubsystem(){ 
+AFGFoliageRemovalSubsystem::AFGFoliageRemovalSubsystem() : Super() {
 
 }
 void AFGFoliageRemovalSubsystem::Destroyed(){ }

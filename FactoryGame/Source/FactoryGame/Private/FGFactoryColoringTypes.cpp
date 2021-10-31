@@ -2,7 +2,7 @@
 
 #include "FGFactoryColoringTypes.h"
 
-UFGFactoryCustomizationDescriptor::UFGFactoryCustomizationDescriptor(){ 
+UFGFactoryCustomizationDescriptor::UFGFactoryCustomizationDescriptor() : Super() {
 	this->ID = 0;
 	this->mIcon = nullptr;
 }
@@ -10,7 +10,7 @@ bool UFGFactoryCustomizationDescriptor_Material::BuildableRecipeIsMappedTo(TSubc
 #if WITH_EDITOR
 EDataValidationResult UFGFactoryCustomizationCollection::IsDataValid(TArray< FText >& ValidationErrors){ return EDataValidationResult::Valid; }
 #endif 
-UFGFactoryCustomizationCollection::UFGFactoryCustomizationCollection(){ 
+UFGFactoryCustomizationCollection::UFGFactoryCustomizationCollection() : Super() {
 	this->mCustomizationClass = nullptr;
 }
 void FFactoryCustomizationData::Initialize( AFGGameState* gameState){ }

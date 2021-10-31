@@ -4,15 +4,12 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGPipePartHologram::AFGPipePartHologram(){ 
+AFGPipePartHologram::AFGPipePartHologram() : Super() {
 	this->mSupportMesh.Mesh = nullptr;
 	this->mSupportMesh.Height = 0.0;
 	this->mSnapConnection = nullptr;
 	this->mSupportMeshComponent = nullptr;
 	this->mSupportLengthComponent = nullptr;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGPipePartHologram::BeginPlay(){ }
 bool AFGPipePartHologram::DoMultiStepPlacement(bool isInputFromARelease){ return bool(); }

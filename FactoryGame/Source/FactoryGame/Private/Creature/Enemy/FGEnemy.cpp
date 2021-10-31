@@ -6,12 +6,9 @@
 #include "AIController.h"
 
 void AFGEnemy::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
-AFGEnemy::AFGEnemy(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+AFGEnemy::AFGEnemy(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->mCurrentAttack = nullptr;
 	this->mCurrentAggroTarget = nullptr;
-	this->mHealthComponent = CreateDefaultSubobject<UFGHealthComponent>(TEXT("HealthComponent"));
-	this->AIControllerClass = AAIController::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CollisionCylinder"));
 }
 FVector AFGEnemy::GetAttackLocation_Implementation(){ return FVector(); }
 void AFGEnemy::PerformCustomRadialAttack_Implementation(){ }

@@ -2,7 +2,7 @@
 
 #include "FGSporeFlower.h"
 
-AFGSporeFlower::AFGSporeFlower(){ 
+AFGSporeFlower::AFGSporeFlower() : Super() {
 
 }
 void AFGSporeFlower::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }

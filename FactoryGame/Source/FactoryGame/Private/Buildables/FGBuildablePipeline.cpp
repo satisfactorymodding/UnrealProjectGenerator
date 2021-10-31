@@ -11,7 +11,7 @@ void FQuantizedPipelineIndicatorData::SetFlowPct(float pct){ }
 float FQuantizedPipelineIndicatorData::GetFlowPct() const{ return float(); }
 void FQuantizedPipelineIndicatorData::SetContentPct(float pct){ }
 float FQuantizedPipelineIndicatorData::GetContentPct() const{ return float(); }
-AFGBuildablePipeline::AFGBuildablePipeline(){ 
+AFGBuildablePipeline::AFGBuildablePipeline() : Super() {
 	this->mRadius = 65.0;
 	this->mFlowLimit = 10.0;
 	this->mFlowIndicatorClass = nullptr;
@@ -29,9 +29,6 @@ AFGBuildablePipeline::AFGBuildablePipeline(){
 	this->mStopRattleSoundEvent = nullptr;
 	this->mConnection0 = CreateDefaultSubobject<UFGPipeConnectionComponent>(TEXT("PipelineConnection0"));
 	this->mConnection1 = CreateDefaultSubobject<UFGPipeConnectionComponent>(TEXT("PipelineConnection1"));
-	this->mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("SplineComponent"));
-	this->mInstancedSplineComponent = CreateDefaultSubobject<UFGInstancedSplineMeshComponent>(TEXT("InstancedSplineComponent"));
-	this->mHologramClass = AFGPipelineHologram::StaticClass();
 	this->mFactoryTickFunction.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->mFactoryTickFunction.EndTickGroup = ETickingGroup::TG_PrePhysics;
 	this->mFactoryTickFunction.bTickEvenWhenPaused = false;
@@ -39,11 +36,8 @@ AFGBuildablePipeline::AFGBuildablePipeline(){
 	this->mFactoryTickFunction.bStartWithTickEnabled = true;
 	this->mFactoryTickFunction.bAllowTickOnDedicatedServer = true;
 	this->mFactoryTickFunction.TickInterval = 0.0;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mConnection0->SetupAttachment(RootComponent);
 	this->mConnection1->SetupAttachment(RootComponent);
-	this->mSplineComponent->SetupAttachment(RootComponent);
-	this->mInstancedSplineComponent->SetupAttachment(RootComponent);
 }
 void AFGBuildablePipeline::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildablePipeline::BeginPlay(){ }

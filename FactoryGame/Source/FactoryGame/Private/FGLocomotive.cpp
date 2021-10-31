@@ -9,17 +9,13 @@
 #include "Hologram/FGRailroadVehicleHologram.h"
 
 void AFGLocomotive::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
-AFGLocomotive::AFGLocomotive(){ 
+AFGLocomotive::AFGLocomotive() : Super() {
 	this->mPowerConsumption.Min = 0.0;
 	this->mPowerConsumption.Max = 15.0;
 	this->mSlidingShoe = CreateDefaultSubobject<UFGPowerConnectionComponent>(TEXT("SlidingShoe"));
 	this->mPowerInfo = CreateDefaultSubobject<UFGPowerInfoComponent>(TEXT("powerInfo"));
 	this->mHasPower = false;
 	this->mVehicleMovement = CreateDefaultSubobject<UFGLocomotiveMovementComponent>(TEXT("MovementComp"));
-	this->mHologramClass = AFGRailroadVehicleHologram::StaticClass();
-	this->mMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VehicleMesh"));
-	this->mHealthComponent = CreateDefaultSubobject<UFGHealthComponent>(TEXT("HealthComponent"));
-	this->RootComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VehicleMesh"));
 }
 void AFGLocomotive::BeginPlay(){ }
 void AFGLocomotive::Tick(float dt){ }

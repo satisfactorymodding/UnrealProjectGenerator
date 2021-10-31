@@ -2,7 +2,7 @@
 
 #include "FGAdminInterface.h"
 
-AFGAdminInterface::AFGAdminInterface(){ 
+AFGAdminInterface::AFGAdminInterface() : Super() {
 	this->bOnlyRelevantToOwner = true;
 	this->bAlwaysRelevant = true;
 	this->bReplicates = true;

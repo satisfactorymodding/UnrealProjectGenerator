@@ -2,7 +2,7 @@
 
 #include "Equipment/FGChargedWeapon.h"
 
-AFGChargedWeapon::AFGChargedWeapon(){ 
+AFGChargedWeapon::AFGChargedWeapon() : Super() {
 	this->mIsPendingExecuteFire = false;
 	this->mMaxChargeTime = 0.0;
 	this->mMaxThrowForce = 0;

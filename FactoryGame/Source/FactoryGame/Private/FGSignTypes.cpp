@@ -11,7 +11,7 @@ int32 FSignStringData::GetNewUniqueID(){ return int32(); }
 FSignStringElement& FSignStringData::GetStringElementRefFromID(int32 id){ return *(new FSignStringElement); }
 bool FSignStringData::GetStringElementCopyFromID(int32 id, FSignStringElement& out_stringElement) const{ return bool(); }
 FSignStringData FSignStringData::Empty = FSignStringData();
-UFGSignTypeDescriptor::UFGSignTypeDescriptor(){ 
+UFGSignTypeDescriptor::UFGSignTypeDescriptor() : Super() {
 	this->mSignCanvasDimensions.X = 0.0;
 	this->mSignCanvasDimensions.Y = 0.0;
 	this->mDefaultForegroundColor.R = 0.0;

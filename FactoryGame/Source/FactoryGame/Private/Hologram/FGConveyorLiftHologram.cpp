@@ -5,7 +5,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGConveyorLiftHologram::AFGConveyorLiftHologram(){ 
+AFGConveyorLiftHologram::AFGConveyorLiftHologram() : Super() {
 	this->mConnectionComponents[0] = nullptr;
 	this->mConnectionComponents[1] = nullptr;
 	this->mSnappedConnectionComponents[0] = nullptr;
@@ -21,12 +21,7 @@ AFGConveyorLiftHologram::AFGConveyorLiftHologram(){
 	this->mArrowDirection = EFactoryConnectionDirection::FCD_ANY;
 	this->mArrowComponent = nullptr;
 	this->mBuildModeReverse = nullptr;
-	this->mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("mSplineComponent"));
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
 	this->mUseBuildClearanceOverlapSnapp = false;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mSplineComponent->SetupAttachment(RootComponent);
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGConveyorLiftHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGConveyorLiftHologram::BeginPlay(){ }

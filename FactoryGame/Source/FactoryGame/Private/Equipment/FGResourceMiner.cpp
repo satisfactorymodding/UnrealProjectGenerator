@@ -4,7 +4,7 @@
 #include "Components/SceneComponent.h"
 #include "Equipment/FGEquipment.h"
 
-AFGResourceMiner::AFGResourceMiner(){ 
+AFGResourceMiner::AFGResourceMiner() : Super() {
 	this->mPickParticleSystem = nullptr;
 	this->mPickArmsAnim = nullptr;
 	this->mCachedResouceNode = nullptr;

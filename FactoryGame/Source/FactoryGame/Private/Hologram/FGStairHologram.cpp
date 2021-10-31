@@ -4,10 +4,8 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGStairHologram::AFGStairHologram(){ 
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
+AFGStairHologram::AFGStairHologram() : Super() {
+
 }
 void AFGStairHologram::BeginPlay(){ }
 bool AFGStairHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }

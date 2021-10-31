@@ -5,7 +5,7 @@
 #include "FGPowerInfoComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableTradingPost::AFGBuildableTradingPost(){ 
+AFGBuildableTradingPost::AFGBuildableTradingPost() : Super() {
 	this->mDefaultGeneratorRecipe = nullptr;
 	this->mDefaultStorageRecipe = nullptr;
 	this->mDefaultHubTerminalRecipe = nullptr;
@@ -27,9 +27,6 @@ AFGBuildableTradingPost::AFGBuildableTradingPost(){
 	this->mNeedPlayingBuildEffectNotification = false;
 	this->mActorRepresentationTexture = nullptr;
 	this->mRepresentationText = INVTEXT("");
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mGenerator1Location->SetupAttachment(RootComponent);
 	this->mGenerator2Location->SetupAttachment(RootComponent);
 	this->mStorageLocation->SetupAttachment(RootComponent);

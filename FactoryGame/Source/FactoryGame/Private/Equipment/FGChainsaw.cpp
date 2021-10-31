@@ -3,7 +3,7 @@
 #include "Equipment/FGChainsaw.h"
 #include "Components/SceneComponent.h"
 
-AFGChainsaw::AFGChainsaw(){ 
+AFGChainsaw::AFGChainsaw() : Super() {
 	this->mFuelClass = nullptr;
 	this->mEnergyConsumption = 3.0;
 	this->mSawDownTreeTime = 2.0;

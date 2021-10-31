@@ -4,10 +4,8 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGStackableStorageHologram::AFGStackableStorageHologram(){ 
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
+AFGStackableStorageHologram::AFGStackableStorageHologram() : Super() {
+
 }
 void AFGStackableStorageHologram::BeginPlay(){ }
 bool AFGStackableStorageHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }

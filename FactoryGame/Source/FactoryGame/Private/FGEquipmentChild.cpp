@@ -2,7 +2,7 @@
 
 #include "FGEquipmentChild.h"
 
-AFGEquipmentChild::AFGEquipmentChild(){ 
+AFGEquipmentChild::AFGEquipmentChild() : Super() {
 	this->mParentEquipment = nullptr;
 	this->mAttachSocket = TEXT("None");
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;

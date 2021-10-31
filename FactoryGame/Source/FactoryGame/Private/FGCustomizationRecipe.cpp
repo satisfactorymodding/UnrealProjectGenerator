@@ -5,7 +5,7 @@
 #if WITH_EDITOR
 EDataValidationResult UFGCustomizationRecipe::IsDataValid(TArray< FText >& ValidationErrors){ return EDataValidationResult::Valid; }
 #endif 
-UFGCustomizationRecipe::UFGCustomizationRecipe(){ 
+UFGCustomizationRecipe::UFGCustomizationRecipe() : Super() {
 	this->mCustomizationDesc = nullptr;
 }
 TSubclassOf< class UFGFactoryCustomizationDescriptor > UFGCustomizationRecipe::GetCustomizationDescriptor(TSubclassOf< UFGCustomizationRecipe > inClass){ return TSubclassOf<class UFGFactoryCustomizationDescriptor>(); }

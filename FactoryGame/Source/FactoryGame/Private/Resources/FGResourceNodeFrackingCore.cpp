@@ -2,7 +2,7 @@
 
 #include "Resources/FGResourceNodeFrackingCore.h"
 
-AFGResourceNodeFrackingCore::AFGResourceNodeFrackingCore(){ 
+AFGResourceNodeFrackingCore::AFGResourceNodeFrackingCore() : Super() {
 
 }
 void AFGResourceNodeFrackingCore::BeginPlay(){ }

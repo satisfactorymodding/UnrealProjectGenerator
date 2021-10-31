@@ -6,7 +6,7 @@
 #include "FGHealthComponent.h"
 #include "Hologram/FGRailroadVehicleHologram.h"
 
-AFGFreightWagon::AFGFreightWagon(){ 
+AFGFreightWagon::AFGFreightWagon() : Super() {
 	this->mInteractWidgetClass = nullptr;
 	this->mFreightCargoType = EFreightCargoType::FCT_NONE;
 	this->mTransitoryCargoType = EFreightCargoType::FCT_NONE;
@@ -18,10 +18,6 @@ AFGFreightWagon::AFGFreightWagon(){
 	this->mFluidStackSizeDefault = EStackSize::SS_ONE;
 	this->mFluidStackSizeMultiplier = 0;
 	this->mCargoMeshComponent = nullptr;
-	this->mHologramClass = AFGRailroadVehicleHologram::StaticClass();
-	this->mMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VehicleMesh"));
-	this->mHealthComponent = CreateDefaultSubobject<UFGHealthComponent>(TEXT("HealthComponent"));
-	this->RootComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VehicleMesh"));
 }
 void AFGFreightWagon::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGFreightWagon::BeginPlay(){ }

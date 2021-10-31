@@ -5,7 +5,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGPipelineHologram::AFGPipelineHologram(){ 
+AFGPipelineHologram::AFGPipelineHologram() : Super() {
 	this->mChildPoleHologram = nullptr;
 	this->mConnectionComponents[0] = nullptr;
 	this->mConnectionComponents[1] = nullptr;
@@ -23,13 +23,8 @@ AFGPipelineHologram::AFGPipelineHologram(){
 	this->mBuildModeNoodle = nullptr;
 	this->mBuildModeHorzToVert = nullptr;
 	this->mMesh = nullptr;
-	this->mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("mSplineComponent"));
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
 	this->mBuildModeCategory = EHologramBuildModeCategory::HBMC_Pipe;
 	this->mUseBuildClearanceOverlapSnapp = false;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mSplineComponent->SetupAttachment(RootComponent);
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGPipelineHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGPipelineHologram::BeginPlay(){ }

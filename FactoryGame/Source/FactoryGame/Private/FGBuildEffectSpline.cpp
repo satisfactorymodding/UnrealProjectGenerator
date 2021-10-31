@@ -2,7 +2,7 @@
 
 #include "FGBuildEffectSpline.h"
 
-AFGBuildEffectSpline::AFGBuildEffectSpline(){ 
+AFGBuildEffectSpline::AFGBuildEffectSpline() : Super() {
 	this->mAttachment = nullptr;
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;

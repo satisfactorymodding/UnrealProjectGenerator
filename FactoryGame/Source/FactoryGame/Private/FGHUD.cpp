@@ -5,7 +5,7 @@
 #if WITH_CHEATS
 void AFGHUD::PonderOpeningCheatBoard(){ }
 #endif 
-AFGHUD::AFGHUD(){ 
+AFGHUD::AFGHUD() : Super() {
 	this->mGameUIClass = nullptr;
 	this->mRespawnUIClass = nullptr;
 	this->mBuildCrosshair = nullptr;

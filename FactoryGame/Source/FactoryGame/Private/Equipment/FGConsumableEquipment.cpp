@@ -3,7 +3,7 @@
 #include "Equipment/FGConsumableEquipment.h"
 #include "Equipment/FGEquipment.h"
 
-AFGConsumableEquipment::AFGConsumableEquipment(){ 
+AFGConsumableEquipment::AFGConsumableEquipment() : Super() {
 	this->mEquipmentSlot = EEquipmentSlot::ES_ARMS;
 	this->mArmAnimation = EArmEquipment::AE_Consumables;
 }

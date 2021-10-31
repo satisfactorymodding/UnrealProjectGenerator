@@ -3,10 +3,9 @@
 #include "Buildables/FGBuildableControlPanelHost.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableControlPanelHost::AFGBuildableControlPanelHost(){ 
+AFGBuildableControlPanelHost::AFGBuildableControlPanelHost() : Super() {
 	this->mDownstreamConnection = nullptr;
 	this->mControlledBuildableType = nullptr;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableControlPanelHost::BeginPlay(){ }
 TArray< AFGBuildable* >& AFGBuildableControlPanelHost::GetControlledBuildables(TSubclassOf< AFGBuildable > outputType){ return *(new TArray< AFGBuildable* >); }

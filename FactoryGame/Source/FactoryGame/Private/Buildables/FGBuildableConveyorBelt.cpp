@@ -7,21 +7,16 @@
 #include "Components/SceneComponent.h"
 #include "FGInstancedSplineMeshComponent.h"
 
-AFGBuildableConveyorBelt::AFGBuildableConveyorBelt(){ 
+AFGBuildableConveyorBelt::AFGBuildableConveyorBelt() : Super() {
 	this->mMesh = nullptr;
 	this->mMeshLength = 0.0;
 	this->mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("SplineComponent"));
 	this->mInstancedSplineComponent = CreateDefaultSubobject<UFGInstancedSplineMeshComponent>(TEXT("InstancedSplineComponent"));
 	this->mSoundSplineComponent = nullptr;
 	this->mSplineAudioEvent = nullptr;
-	this->mConnection0 = CreateDefaultSubobject<UFGFactoryConnectionComponent>(TEXT("ConveyorAny0"));
-	this->mConnection1 = CreateDefaultSubobject<UFGFactoryConnectionComponent>(TEXT("ConveyorAny1"));
 	this->mHologramClass = AFGConveyorBeltHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mSplineComponent->SetupAttachment(RootComponent);
 	this->mInstancedSplineComponent->SetupAttachment(RootComponent);
-	this->mConnection0->SetupAttachment(RootComponent);
-	this->mConnection1->SetupAttachment(RootComponent);
 }
 void AFGBuildableConveyorBelt::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildableConveyorBelt::BeginPlay(){ }

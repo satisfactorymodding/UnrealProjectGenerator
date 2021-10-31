@@ -2,7 +2,7 @@
 
 #include "FGProductionIndicatorInstanceComponent.h"
 
-UFGProductionIndicatorInstanceComponent::UFGProductionIndicatorInstanceComponent(){ 
+UFGProductionIndicatorInstanceComponent::UFGProductionIndicatorInstanceComponent() : Super() {
 	this->bAffectDistanceFieldLighting = false;
 	this->PrimaryComponentTick.TickGroup = ETickingGroup::TG_DuringPhysics;
 	this->PrimaryComponentTick.EndTickGroup = ETickingGroup::TG_PrePhysics;

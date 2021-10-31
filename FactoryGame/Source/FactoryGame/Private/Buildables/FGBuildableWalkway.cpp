@@ -5,7 +5,7 @@
 #include "FGColoredInstanceMeshProxy.h"
 #include "Hologram/FGWalkwayHologram.h"
 
-AFGBuildableWalkway::AFGBuildableWalkway(){ 
+AFGBuildableWalkway::AFGBuildableWalkway() : Super() {
 	this->mSize = 200.0;
 	this->mElevation = 0.0;
 	this->mDisableSnapOn.Front = false;
@@ -14,8 +14,5 @@ AFGBuildableWalkway::AFGBuildableWalkway(){
 	this->mDisableSnapOn.Left = false;
 	this->mDisableSnapOn.Top = true;
 	this->mDisableSnapOn.Bottom = true;
-	this->mMeshComponentProxy = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("BuildingMeshProxy"));
 	this->mHologramClass = AFGWalkwayHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mMeshComponentProxy->SetupAttachment(RootComponent);
 }

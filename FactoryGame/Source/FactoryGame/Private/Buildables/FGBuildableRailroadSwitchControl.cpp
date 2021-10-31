@@ -5,10 +5,8 @@
 #include "FGPowerInfoComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableRailroadSwitchControl::AFGBuildableRailroadSwitchControl(){ 
+AFGBuildableRailroadSwitchControl::AFGBuildableRailroadSwitchControl() : Super() {
 	this->mControlledConnection = nullptr;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.bTickEvenWhenPaused = false;
@@ -16,7 +14,6 @@ AFGBuildableRailroadSwitchControl::AFGBuildableRailroadSwitchControl(){
 	this->PrimaryActorTick.bStartWithTickEnabled = false;
 	this->PrimaryActorTick.bAllowTickOnDedicatedServer = true;
 	this->PrimaryActorTick.TickInterval = 0.0;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableRailroadSwitchControl::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildableRailroadSwitchControl::BeginPlay(){ }

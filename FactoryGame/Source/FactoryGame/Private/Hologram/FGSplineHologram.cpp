@@ -5,7 +5,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGSplineHologram::AFGSplineHologram(){ 
+AFGSplineHologram::AFGSplineHologram() : Super() {
 	this->mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("mSplineComponent"));
 	this->mSplineData.Emplace();
 	this->mSplineData[0].Location.X = 0.0;
@@ -29,10 +29,7 @@ AFGSplineHologram::AFGSplineHologram(){
 	this->mSplineData[1].LeaveTangent.Z = 0.0;
 	this->mIsConnectionSnappedOnConstruction = 0;
 	this->mBuildStep = ESplineHologramBuildStep::SHBS_FindStart;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mSplineComponent->SetupAttachment(RootComponent);
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGSplineHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGSplineHologram::BeginPlay(){ }

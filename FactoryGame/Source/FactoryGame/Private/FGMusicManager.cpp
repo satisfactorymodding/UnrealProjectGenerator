@@ -9,7 +9,7 @@ UWorld* UFGMusicManager::GetWorld() const{ return nullptr; }
 void UFGMusicManager::OnPlayerControllerBeginPlay( AFGPlayerControllerBase* pc){ }
 void UFGMusicManager::UpdateIncomingAttackers(int32 numAttackers){ }
 void UFGMusicManager::OnPlayerEnteredArea_Implementation(AFGPlayerControllerBase* playerController, TSubclassOf<  UFGMapArea > mapArea){ }
-UFGMusicManager::UFGMusicManager(){ 
+UFGMusicManager::UFGMusicManager() : Super() {
 	this->mUpdateInterval = 5.0;
 	this->mFactoryCloseDistance = 10000.0;
 	this->mHasPlayerAlreadyVisitedArea = false;

@@ -2,7 +2,7 @@
 
 #include "FGVehicleSubsystem.h"
 
-AFGSavedWheeledVehiclePath::AFGSavedWheeledVehiclePath(){ 
+AFGSavedWheeledVehiclePath::AFGSavedWheeledVehiclePath() : Super() {
 	this->mPathName = TEXT("");
 	this->mOriginalVehicleType = nullptr;
 	this->mTargetList = nullptr;
@@ -25,7 +25,7 @@ void AFGVehicleSubsystem::SetDebugTextLevel(int level){ }
 int AFGVehicleSubsystem::GetVehicleDeadlocksDebug(){ return int(); }
 void AFGVehicleSubsystem::SetVehicleDeadlocksDebug(int level){ }
 #endif 
-AFGVehicleSubsystem::AFGVehicleSubsystem(){ 
+AFGVehicleSubsystem::AFGVehicleSubsystem() : Super() {
 	this->mMaxVehicleIterationsPerTick = 10;
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;

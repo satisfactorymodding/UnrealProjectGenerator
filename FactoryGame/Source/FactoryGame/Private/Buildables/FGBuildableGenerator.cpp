@@ -7,13 +7,10 @@
 
 void AFGBuildableGenerator::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildableGenerator::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
-AFGBuildableGenerator::AFGBuildableGenerator(){ 
+AFGBuildableGenerator::AFGBuildableGenerator() : Super() {
 	this->mPowerProduction = 0.0;
 	this->mPowerProductionExponent = 1.3;
 	this->mLoadPercentage = 0.0;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableGenerator::BeginPlay(){ }
 bool AFGBuildableGenerator::CanProduce_Implementation() const{ return bool(); }

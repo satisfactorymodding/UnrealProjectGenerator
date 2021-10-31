@@ -3,7 +3,7 @@
 #include "FGRadioactiveActor.h"
 #include "Components/SceneComponent.h"
 
-AFGRadioactiveActor::AFGRadioactiveActor(){ 
+AFGRadioactiveActor::AFGRadioactiveActor() : Super() {
 	this->mRadioactiveDecay = 0.0;
 	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }

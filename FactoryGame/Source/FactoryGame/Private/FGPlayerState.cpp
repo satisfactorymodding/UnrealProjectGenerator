@@ -6,7 +6,7 @@
 FHotbar::FHotbar( AFGPlayerState* owningState, const FHotbar& hotbar){ }
 FHotbar::FHotbar(TArray<  UFGHotbarShortcut* > hotbarShortcuts){ }
 FPresetHotbar::FPresetHotbar( AFGPlayerState* owningState, const FPresetHotbar& presetHotbar){ }
-AFGPlayerState::AFGPlayerState(){ 
+AFGPlayerState::AFGPlayerState() : Super() {
 	this->mCurrentHotbarIndex = 0;
 	this->mSlotNum = -1;
 	this->mSlotData.PingColor.R = 0.0;
@@ -35,7 +35,6 @@ AFGPlayerState::AFGPlayerState(){
 	this->mNumArmSlots = 1;
 	this->mOnlyShowAffordableRecipes = false;
 	this->mNumObservedInventorySlots = 0;
-	this->EngineMessageClass = UEngineMessage::StaticClass();
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.bTickEvenWhenPaused = false;

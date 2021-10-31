@@ -5,7 +5,7 @@
 #include "Hologram/FGWallHologram.h"
 #include "FGColoredInstanceMeshProxy.h"
 
-AFGBuildableDoor::AFGBuildableDoor(){ 
+AFGBuildableDoor::AFGBuildableDoor() : Super() {
 	this->mDoorState = EDoorState::DS_Closed;
 	this->mDoorConfiguration = EDoorConfiguration::DC_Auto;
 	this->mCanBeLocked = false;
@@ -14,10 +14,6 @@ AFGBuildableDoor::AFGBuildableDoor(){
 	this->EasingFunction = EEasingFunc::Linear;
 	this->BlendExp = 2.0;
 	this->Steps = 2;
-	this->mMeshComponentProxy = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("BuildingMeshProxy"));
-	this->mHologramClass = AFGWallHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mMeshComponentProxy->SetupAttachment(RootComponent);
 }
 void AFGBuildableDoor::BeginPlay(){ }
 void AFGBuildableDoor::EndPlay(const EEndPlayReason::Type EndPlayReason){ }

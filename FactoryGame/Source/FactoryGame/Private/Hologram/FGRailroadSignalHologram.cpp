@@ -4,11 +4,8 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGRailroadSignalHologram::AFGRailroadSignalHologram(){ 
+AFGRailroadSignalHologram::AFGRailroadSignalHologram() : Super() {
 	this->mSnappedConnection = nullptr;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGRailroadSignalHologram::BeginPlay(){ }
 void AFGRailroadSignalHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }

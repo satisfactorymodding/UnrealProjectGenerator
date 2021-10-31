@@ -2,7 +2,7 @@
 
 #include "Resources/FGConsumableDescriptor.h"
 
-UFGConsumableDescriptor::UFGConsumableDescriptor(){ 
+UFGConsumableDescriptor::UFGConsumableDescriptor() : Super() {
 	this->mConsumeEvent = nullptr;
 	this->mCustomHandsMeshScale = 1.0;
 	this->mCustomRotation.Pitch = 0.0;

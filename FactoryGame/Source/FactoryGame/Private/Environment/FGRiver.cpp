@@ -16,7 +16,7 @@ void AFGRiver::UpdateFlowIntensity(){ }
 void AFGRiver::PopulateMaterialSettings(){ }
 void AFGRiver::BuildRiverFromData(const UObject* WorldContext, TSubclassOf<AFGRiver> BaseClass, TArray<FVector> WorldLocations, TArray<FVector> PointScales, TArray<FRotator> PointRotations, TArray<FVector> ArriaveTangets, TArray<FVector> LeaveTangents){ }
 #endif 
-AFGRiver::AFGRiver(){ 
+AFGRiver::AFGRiver() : Super() {
 	this->mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("RiverSpline"));
 	this->mSplineMesh = nullptr;
 	this->mSegmentLengthMultiplier = 1.0;
@@ -33,7 +33,7 @@ AFGRiver::AFGRiver(){
 	this->PrimaryActorTick.bStartWithTickEnabled = true;
 	this->PrimaryActorTick.bAllowTickOnDedicatedServer = true;
 	this->PrimaryActorTick.TickInterval = 0.0;
-	this->RootComponent = CreateDefaultSubobject<USplineComponent>(TEXT("RiverSpline"));
+	this->RootComponent = mSplineComponent;
 }
 void AFGRiver::BeginPlay(){ }
 void AFGRiver::OnConstruction(const FTransform & Transform){ }

@@ -16,7 +16,7 @@ void AFGBuildable::SetBuildableDisplayName(TSubclassOf< AFGBuildable > inClass, 
 #endif 
 void AFGBuildable::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildable::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
-AFGBuildable::AFGBuildable(){ 
+AFGBuildable::AFGBuildable() : Super() {
 	this->mHologramClass = nullptr;
 	this->mDisplayName = INVTEXT("");
 	this->mDescription = INVTEXT("");

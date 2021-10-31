@@ -77,6 +77,12 @@ class_headers = {
     'EEquipmentSlot': 'Equipment/FGEquipment.h'
 }
 
+getters = {
+    'BrushComponent': 'GetBrushComponent()',
+    'mCollisionComp': 'GetCollisionSphere()',
+    'CapsuleComponent': 'GetCapsuleComponent()',
+}
+
 def read_class_includes():
     for root, dirs, files in os.walk(header_root, topdown=False):
         for name in files:
@@ -146,7 +152,11 @@ class UEStruct:
     
     def get_object_property_name_from_idx(self, object_idx: int) -> str:
         object_props = [prop for prop in self.all_properties if prop['ObjectClass'] == 'ObjectProperty']
-        return next(prop for prop in object_props if prop['ObjectName'] in self.cdo and self.cdo[prop['ObjectName']] == object_idx)['ObjectName']
+        prop = next(prop for prop in object_props if prop['ObjectName'] in self.cdo and self.cdo[prop['ObjectName']] == object_idx)
+        self_prop = next((p for p in self.properties if p['ObjectName'] == prop['ObjectName']), None)
+        if not self_prop and int(prop['PropertyFlags']) & 0x0040000000000000:
+            return getters[prop['ObjectName']]
+        return prop['ObjectName']
 
     def property_type_value(self, prop_type, val, struct_type = None, enum_name = None) -> tuple[str, dict[str, list[str]], list[str]]: # [impl (can be None if not available), {dep: [impl]} (dep can be self or None), required headers]:
         if prop_type == 'BoolProperty':
@@ -220,14 +230,14 @@ class UEStruct:
                         return [impl, extra, [class_headers[object_class.full_name]]] 
                     else:
                         includes = [class_headers[object_class.full_name]]
-                        outer_idx = object_hierarchy['Properties']['AttachParent'] if 'AttachParent' in object_hierarchy['Properties'] else -1
+                        outer_idx = object_hierarchy['Outer'] if 'Outer' in object_hierarchy else -1
                         if self.json_object['ObjectHierarchy'][outer_idx]['ObjectName'].startswith('Default__'):
                             outer = 'this'
+                            return [f'NewObject<{object_class.full_name}>({outer}, TEXT("{object_hierarchy["ObjectName"]}"))', {}, includes]
                         else:
                             outer = self.get_object_property_name_from_idx(outer_idx)
                             includes.append(class_headers[self.json_object['ObjectHierarchy'][outer_idx]['ObjectName']])
-
-                        return [f'NewObject<{object_class.full_name}>({outer}, TEXT("{object_hierarchy["ObjectName"]}"))', {}, ]
+                            return [None, {outer: [f'= NewObject<{object_class.full_name}>({outer}, TEXT("{object_hierarchy["ObjectName"]}"))']}, includes]
                 else:
                     blueprint_hierarchy = self.json_object['ObjectHierarchy'][val]
                     blueprint_class = blueprint_hierarchy['ObjectName']
@@ -424,7 +434,7 @@ class UEStruct:
                     if prop_name == 'this->bHidden':
                         return [f'this->SetHidden({impl});' if impl else None, {dep: [f'{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
                     if prop_name == 'this->bReplicates' and self.prefix == 'U':
-                        return [f'this->SetIsReplicated({impl});' if impl else None, {dep: [f'{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
+                        return [f'this->SetIsReplicatedByDefault({impl});' if impl else None, {dep: [f'{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
                     return [f'{prop_name} = {impl};' if impl else None, {dep: [f'{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
                 else:
                     return None
@@ -466,6 +476,8 @@ ignore_properties = [
     'mCachedUseState',
     'mCargoMeshComponentDerailedTransform',
     'bWorkOnFloatValues',
+    'mPlatformConnections', # TODO: find CreateDefaultSubobject that was already constructed
+    'mMesh', # Same
 ]
 
 class UEClass(UEStruct):
@@ -515,12 +527,30 @@ class UEClass(UEStruct):
             if self_prop:
                 continue
             
-            if prop['ObjectClass'] == 'ObjectProperty':
-                if self.cdo[cdo_property] == -1 and self.parent_ue_class.cdo[cdo_property] == -1:
-                    del modified_cdo[cdo_property]
-                elif int(prop['PropertyFlags']) & 0x0040000000000000: # private
-                    del modified_cdo[cdo_property]
-                # TODO: Can these be shared with the parent. Do they need to?
+            if prop['ObjectClass'] == 'ObjectProperty' or prop['ObjectClass'] == 'WeakObjectProperty' or prop['ObjectClass'] == 'SoftObjectProperty' or prop['ObjectClass'] == 'ClassProperty' or prop['ObjectClass'] == 'SoftClassProperty':
+                if prop['ArrayDim'] == 1:
+                    if self.cdo[cdo_property] == -1 and self.parent_ue_class.cdo[cdo_property] == -1:
+                        del modified_cdo[cdo_property]
+                    elif int(prop['PropertyFlags']) & 0x0040000000000000: # private
+                        del modified_cdo[cdo_property]
+                    else:
+                        self_object_hierarchy = self.json_object['ObjectHierarchy'][self.cdo[cdo_property]]
+                        parent_object_hierarchy = self.parent_ue_class.json_object['ObjectHierarchy'][self.parent_ue_class.cdo[cdo_property]]
+                        if self_object_hierarchy['ObjectName'] == parent_object_hierarchy['ObjectName']:
+                            del modified_cdo[cdo_property]
+                else:
+                    for i in range(prop['ArrayDim']):
+                        if self.cdo[cdo_property][i] == -1 and self.parent_ue_class.cdo[cdo_property][i] == -1:
+                            modified_cdo[cdo_property][i] = None
+                        elif int(prop['PropertyFlags']) & 0x0040000000000000: # private
+                            modified_cdo[cdo_property][i] = None
+                        else:
+                            self_object_hierarchy = self.json_object['ObjectHierarchy'][self.cdo[cdo_property][i]]
+                            parent_object_hierarchy = self.parent_ue_class.json_object['ObjectHierarchy'][self.parent_ue_class.cdo[cdo_property][i]]
+                            if self_object_hierarchy['ObjectName'] == parent_object_hierarchy['ObjectName']:
+                                modified_cdo[cdo_property][i] = None
+                    if all(entry == None for entry in modified_cdo[cdo_property]):
+                        del modified_cdo[cdo_property]
             else:
                 if self.cdo[cdo_property] == self.parent_ue_class.cdo[cdo_property]:
                     del modified_cdo[cdo_property]
@@ -720,6 +750,11 @@ def create_implementations(package_classes: dict[str, dict[str, UEClass]], dump_
                 if isinstance(include, list):
                     raise Exception('nested', prop)
                 class_includes.append(include)
+        
+        for prop, queued_items in queued.items():
+            print(f'{class_name}::{prop} was not generated. Implementations depending on it added at the end')
+            for queued_item in queued_items:
+                lines.append(queued_item)
 
         class_implementations[cls.full_name] = ['\n'.join(['\t' + line for line in lines]), class_includes]
 
@@ -727,15 +762,24 @@ def create_implementations(package_classes: dict[str, dict[str, UEClass]], dump_
         for name in files:
             cpp_content = open(os.path.join(root, name), 'r').read()
             includes = set()
-            for cls in re.findall(r'(\b(.+)::\2\((.*?)\)(?:\s*:\s*Super\((.*?)\))?\s?{\s*).*?}', cpp_content):
-                if cls[0][0] != 'F' and cls[1] in class_implementations:
-                    cpp_content = cpp_content.replace(cls[0], cls[0] + '\n' + class_implementations[cls[1]][0] + '\n')
-                    for include in class_implementations[cls[1]][1]:
+            
+            for cls in re.findall(r'((\b(.+)::\3\((.*?)\))(\s*:\s*Super\((.*?)\))?\s*{\s*.*?})', cpp_content, re.DOTALL):
+                if cls[0][0] != 'F' and cls[2] in class_implementations:
+                    [impls, incls] = class_implementations[cls[2]]
+                    cpp_content = cpp_content.replace(cls[0], cls[1] + (cls[4] if cls[4] else ' : Super()') + ' {\n' + impls + '\n}')
+                    for include in incls:
                         if include:
                             includes.add(include.replace('\\', '/'))
-            if len(includes) > 0:
+            
+            existing_includes = re.findall(r'#include "(.+)"', cpp_content)
+            for inc in existing_includes:
+                if inc in includes:
+                    includes.remove(inc)
+            
+            if len(includes) > 0:                
                 header_rel_path = os.path.relpath(os.path.join(root, name), cpp_root).replace('.cpp', '.h').replace('\\', '/')
                 cpp_content = cpp_content.replace(f'#include "{header_rel_path}"', f'#include "{header_rel_path}"\n' + '\n'.join([f'#include "{inc}"' for inc in includes]))
+            
             open(os.path.join(root, name), 'w+').write(cpp_content)
             print(os.path.join(root, name))
 

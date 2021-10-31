@@ -2,7 +2,7 @@
 
 #include "FGResearchManager.h"
 
-AFGResearchManager::AFGResearchManager(){ 
+AFGResearchManager::AFGResearchManager() : Super() {
 	this->mCanConductMultipleResearch = false;
 	this->mIsActivated = false;
 	this->mMAMClass = nullptr;

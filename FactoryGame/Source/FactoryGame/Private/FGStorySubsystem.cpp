@@ -7,7 +7,7 @@ TSubclassOf< class UFGMessageBase > FActiveStoryQueue::PopMessage(){ return TSub
 bool FActiveStoryQueue::DeclineCall(TSubclassOf<  UFGAudioMessage > messageToDecline){ return bool(); }
 void FActiveStoryQueue::UpdateTimers(float dt){ }
 TArray< FEventTriggeredMessage > UFGEventTriggeredMessages::GetEventTriggeredMessages(TSubclassOf< UFGEventTriggeredMessages > inClass){ return TArray<FEventTriggeredMessage>(); }
-AFGStorySubsystem::AFGStorySubsystem(){ 
+AFGStorySubsystem::AFGStorySubsystem() : Super() {
 	this->mResearchTimerCompleteMessage = nullptr;
 	this->mActivePrimaryStoryQueue.StoryQueueClass = nullptr;
 	this->mActivePrimaryStoryQueue.MessageIndex = 0;

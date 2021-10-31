@@ -14,8 +14,8 @@ void AFGAtmosphereVolume::PostEditChangeProperty(FPropertyChangedEvent& property
 void AFGAtmosphereVolume::MoveCurvesToBaseBiome(){ }
 void AFGAtmosphereVolume::CopyLegacyPropertiesToAsset(){ }
 #endif 
-AFGAtmosphereVolume::AFGAtmosphereVolume(){ 
-	this->mBiome = NewObject<UFGBiome>(Brush, TEXT("Biome"));
+AFGAtmosphereVolume::AFGAtmosphereVolume() : Super() {
+	this->mBiome = NewObject<UFGBiome>(this, TEXT("Biome"));
 	this->mPriority = 1.0;
 	this->mBlendDistance = 100.0;
 	this->mFogHeight.EditorCurveData.DefaultValue = 5000.0;
@@ -195,7 +195,6 @@ AFGAtmosphereVolume::AFGAtmosphereVolume(){
 	this->mEnableBlueCorrection = false;
 	this->mEnableExpandGamut = false;
 	this->mEnableSceneColorTint = false;
-	this->RootComponent = CreateDefaultSubobject<UBrushComponent>(TEXT("BrushComponent0"));
 }
 void AFGAtmosphereVolume::BeginPlay(){ }
 void AFGAtmosphereVolume::PostLoad(){ Super::PostLoad(); }

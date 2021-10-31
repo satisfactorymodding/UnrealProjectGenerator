@@ -5,10 +5,8 @@
 #include "FGPowerInfoComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableTrainPlatform::AFGBuildableTrainPlatform(){ 
+AFGBuildableTrainPlatform::AFGBuildableTrainPlatform() : Super() {
 	this->mRailroadTrack = nullptr;
-	this->mPlatformConnections.Add(CreateDefaultSubobject<UFGTrainPlatformConnection>(TEXT("PlatformConnection0")));
-	this->mPlatformConnections.Add(CreateDefaultSubobject<UFGTrainPlatformConnection>(TEXT("PlatformConnection1")));
 	this->mPlatformConnection0 = CreateDefaultSubobject<UFGTrainPlatformConnection>(TEXT("PlatformConnection0"));
 	this->mPlatformConnection1 = CreateDefaultSubobject<UFGTrainPlatformConnection>(TEXT("PlatformConnection1"));
 	this->mDockedRailroadVehicle = nullptr;
@@ -17,7 +15,6 @@ AFGBuildableTrainPlatform::AFGBuildableTrainPlatform(){
 	this->mPlatformDockingStatus = ETrainPlatformDockingStatus::ETPDS_None;
 	this->mSavedDockingStatus = ETrainPlatformDockingStatus::ETPDS_None;
 	this->mDockWasCancelled = false;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
 	this->mShouldShowAttachmentPointVisuals = true;
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
@@ -26,9 +23,6 @@ AFGBuildableTrainPlatform::AFGBuildableTrainPlatform(){
 	this->PrimaryActorTick.bStartWithTickEnabled = false;
 	this->PrimaryActorTick.bAllowTickOnDedicatedServer = true;
 	this->PrimaryActorTick.TickInterval = 0.0;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mPlatformConnections[0]->SetupAttachment(RootComponent);
-	this->mPlatformConnections[1]->SetupAttachment(RootComponent);
 	this->mPlatformConnection0->SetupAttachment(RootComponent);
 	this->mPlatformConnection1->SetupAttachment(RootComponent);
 }

@@ -6,7 +6,7 @@
 #include "FGPowerInfoComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableDockingStation::AFGBuildableDockingStation(){ 
+AFGBuildableDockingStation::AFGBuildableDockingStation() : Super() {
 	this->mDockPosition.X = 0.0;
 	this->mDockPosition.Y = 0.0;
 	this->mDockArea = nullptr;
@@ -33,9 +33,6 @@ AFGBuildableDockingStation::AFGBuildableDockingStation(){
 	this->mVehicleFuelConsumptionRate = 0.0;
 	this->mItemTransferRate = 0.0;
 	this->mMaximumStackTransferRate = 0.0;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableDockingStation::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildableDockingStation::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }

@@ -4,10 +4,8 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGPipeReservoirHologram::AFGPipeReservoirHologram(){ 
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
+AFGPipeReservoirHologram::AFGPipeReservoirHologram() : Super() {
+
 }
 void AFGPipeReservoirHologram::BeginPlay(){ }
 bool AFGPipeReservoirHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }

@@ -4,7 +4,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGPipelineSupportHologram::AFGPipelineSupportHologram(){ 
+AFGPipelineSupportHologram::AFGPipelineSupportHologram() : Super() {
 	this->mSupportMesh.Mesh = nullptr;
 	this->mSupportMesh.Height = 0.0;
 	this->mCanAdjustVerticalAngle = true;
@@ -21,10 +21,7 @@ AFGPipelineSupportHologram::AFGPipelineSupportHologram(){
 	this->mClearanceExtent.Y = 0.0;
 	this->mClearanceExtent.Z = 0.0;
 	this->mUseGradualFoundationRotations = true;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mInstancedMeshComponent->SetupAttachment(RootComponent);
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGPipelineSupportHologram::BeginPlay(){ }
 bool AFGPipelineSupportHologram::DoMultiStepPlacement(bool isInputFromARelease){ return bool(); }

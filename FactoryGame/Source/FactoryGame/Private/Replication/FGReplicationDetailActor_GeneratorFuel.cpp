@@ -3,9 +3,8 @@
 #include "Replication/FGReplicationDetailActor_GeneratorFuel.h"
 #include "Components/SceneComponent.h"
 
-AFGReplicationDetailActor_GeneratorFuel::AFGReplicationDetailActor_GeneratorFuel(){ 
+AFGReplicationDetailActor_GeneratorFuel::AFGReplicationDetailActor_GeneratorFuel() : Super() {
 	this->mFuelInventory = nullptr;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("ReplicationDetailActor"));
 }
 void AFGReplicationDetailActor_GeneratorFuel::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGReplicationDetailActor_GeneratorFuel::InitReplicationDetailActor( AFGBuildable* owningActor){ }

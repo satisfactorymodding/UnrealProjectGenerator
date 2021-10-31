@@ -4,12 +4,9 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGConveyorPoleHologram::AFGConveyorPoleHologram(){ 
+AFGConveyorPoleHologram::AFGConveyorPoleHologram() : Super() {
 	this->mSnapConnection = nullptr;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
 	this->mUseBuildClearanceOverlapSnapp = false;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGConveyorPoleHologram::BeginPlay(){ }
 void AFGConveyorPoleHologram::SnapToConnection(UFGFactoryConnectionComponent* connection,  AFGConveyorBeltHologram* parentConveyor){ }

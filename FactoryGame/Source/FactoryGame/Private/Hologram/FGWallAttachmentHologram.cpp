@@ -4,13 +4,10 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGWallAttachmentHologram::AFGWallAttachmentHologram(){ 
+AFGWallAttachmentHologram::AFGWallAttachmentHologram() : Super() {
 	this->mCanSnapToFoundationFloor = false;
 	this->mCanSnapToWalls = true;
 	this->mSnapAxis = EAxis::X;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 bool AFGWallAttachmentHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 void AFGWallAttachmentHologram::CheckValidFloor(){ }

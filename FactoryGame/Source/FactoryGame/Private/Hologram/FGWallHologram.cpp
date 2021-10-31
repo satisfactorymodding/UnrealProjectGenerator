@@ -4,16 +4,13 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGWallHologram::AFGWallHologram(){ 
+AFGWallHologram::AFGWallHologram() : Super() {
 	this->mUpgradeTarget = nullptr;
 	this->mOnlyAllowLineZoop = false;
 	this->mClearanceShrink.X = 0.0;
 	this->mClearanceShrink.Y = 0.0;
 	this->mClearanceShrink.Z = 0.0;
 	this->mPlacementRequirements = EFactoryBuildingPlacementRequirements::FBPR_MustSnap;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGWallHologram::BeginPlay(){ }
 void AFGWallHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }

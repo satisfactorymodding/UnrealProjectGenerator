@@ -3,10 +3,10 @@
 #include "FGItemPickup_Spawnable.h"
 #include "Components/StaticMeshComponent.h"
 
-AFGItemPickup_Spawnable::AFGItemPickup_Spawnable(){ 
+AFGItemPickup_Spawnable::AFGItemPickup_Spawnable() : Super() {
 	this->mMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
 	this->mPlaySpawnEffect = false;
-	this->RootComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
+	this->RootComponent = mMeshComponent;
 }
 void AFGItemPickup_Spawnable::PostLoad(){ Super::PostLoad(); }
 void AFGItemPickup_Spawnable::BeginPlay(){ }

@@ -2,7 +2,7 @@
 
 #include "Equipment/FGEquipmentZipline.h"
 
-AFGEquipmentZipline::AFGEquipmentZipline(){ 
+AFGEquipmentZipline::AFGEquipmentZipline() : Super() {
 	this->mZiplineJumpLaunchVelocity = 600.0;
 	this->mMaxZiplineAngle = 0.95;
 	this->mTraceDistance = 500.0;

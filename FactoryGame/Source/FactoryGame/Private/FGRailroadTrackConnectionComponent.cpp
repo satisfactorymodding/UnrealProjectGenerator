@@ -2,7 +2,7 @@
 
 #include "FGRailroadTrackConnectionComponent.h"
 
-UFGRailroadTrackConnectionComponent::UFGRailroadTrackConnectionComponent(){ 
+UFGRailroadTrackConnectionComponent::UFGRailroadTrackConnectionComponent() : Super() {
 	this->mTrackPosition.Track = nullptr;
 	this->mTrackPosition.Offset = 0.0;
 	this->mTrackPosition.Forward = 0.0;
@@ -12,7 +12,7 @@ UFGRailroadTrackConnectionComponent::UFGRailroadTrackConnectionComponent(){
 	this->mFacingSignal = nullptr;
 	this->mTrailingSignal = nullptr;
 	this->bNetAddressable = true;
-	this->SetIsReplicated(true);
+	this->SetIsReplicatedByDefault(true);
 }
 void UFGRailroadTrackConnectionComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void UFGRailroadTrackConnectionComponent::OnComponentDestroyed(bool isDestroyingHierarchy){ }

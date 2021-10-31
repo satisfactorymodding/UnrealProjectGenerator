@@ -4,7 +4,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGWireHologram::AFGWireHologram(){ 
+AFGWireHologram::AFGWireHologram() : Super() {
 	this->mConnections[0] = nullptr;
 	this->mConnections[1] = nullptr;
 	this->mPowerPole = nullptr;
@@ -19,7 +19,6 @@ AFGWireHologram::AFGWireHologram(){
 	this->mWireMesh = nullptr;
 	this->mUpgradeTarget = nullptr;
 	this->mNeedsValidFloor = false;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
 	this->mUseBuildClearanceOverlapSnapp = false;
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
@@ -28,8 +27,6 @@ AFGWireHologram::AFGWireHologram(){
 	this->PrimaryActorTick.bStartWithTickEnabled = true;
 	this->PrimaryActorTick.bAllowTickOnDedicatedServer = true;
 	this->PrimaryActorTick.TickInterval = 0.0;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGWireHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGWireHologram::BeginPlay(){ }

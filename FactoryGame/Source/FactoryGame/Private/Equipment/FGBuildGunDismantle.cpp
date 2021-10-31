@@ -2,7 +2,7 @@
 
 #include "Equipment/FGBuildGunDismantle.h"
 
-UFGBuildGunStateDismantle::UFGBuildGunStateDismantle(){ 
+UFGBuildGunStateDismantle::UFGBuildGunStateDismantle() : Super() {
 	this->mHoverProxyMaterial = nullptr;
 	this->mMultiDismantleSpecifiedType = nullptr;
 }

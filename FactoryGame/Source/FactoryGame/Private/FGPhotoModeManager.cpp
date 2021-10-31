@@ -2,7 +2,7 @@
 
 #include "FGPhotoModeManager.h"
 
-AFGPhotoModeManager::AFGPhotoModeManager(){ 
+AFGPhotoModeManager::AFGPhotoModeManager() : Super() {
 	this->mCachedPlayer = nullptr;
 	this->mCachedPlayerController = nullptr;
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;

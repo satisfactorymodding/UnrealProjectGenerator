@@ -2,7 +2,7 @@
 
 #include "Resources/FGDecorationDescriptor.h"
 
-UFGDecorationDescriptor::UFGDecorationDescriptor(){ 
+UFGDecorationDescriptor::UFGDecorationDescriptor() : Super() {
 	this->mGroundMesh = nullptr;
 	this->mGroundMeshScale.X = 1.0;
 	this->mGroundMeshScale.Y = 1.0;

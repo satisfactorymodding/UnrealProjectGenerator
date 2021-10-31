@@ -2,7 +2,7 @@
 
 #include "Resources/FGItemDescriptorNuclearFuel.h"
 
-UFGItemDescriptorNuclearFuel::UFGItemDescriptorNuclearFuel(){ 
+UFGItemDescriptorNuclearFuel::UFGItemDescriptorNuclearFuel() : Super() {
 	this->mSpentFuelClass = nullptr;
 	this->mAmountOfWaste = 1;
 }

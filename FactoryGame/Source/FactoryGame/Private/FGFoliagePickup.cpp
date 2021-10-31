@@ -2,7 +2,7 @@
 
 #include "FGFoliagePickup.h"
 
-AFGFoliagePickup::AFGFoliagePickup(){ 
+AFGFoliagePickup::AFGFoliagePickup() : Super() {
 	this->mPickupMesh = nullptr;
 	this->bOnlyRelevantToOwner = true;
 	this->SetHidden(true);

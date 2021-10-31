@@ -5,7 +5,7 @@
 #if WITH_EDITOR
 void AFGResourceNode::PostEditChangeProperty( FPropertyChangedEvent& propertyChangedEvent){ Super::PostEditChangeProperty(propertyChangedEvent); }
 #endif 
-AFGResourceNode::AFGResourceNode(){ 
+AFGResourceNode::AFGResourceNode() : Super() {
 	this->mPurity = EResourcePurity::RP_Normal;
 	this->mAmount = EResourceAmount::RA_Infinite;
 	this->mResourcesLeft = 0;

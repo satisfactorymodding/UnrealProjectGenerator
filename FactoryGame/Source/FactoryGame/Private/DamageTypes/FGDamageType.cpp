@@ -2,7 +2,7 @@
 
 #include "DamageTypes/FGDamageType.h"
 
-UFGDamageType::UFGDamageType(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+UFGDamageType::UFGDamageType(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->mImpactAudioEvent = nullptr;
 	this->mPlayImpactAudioOn = EPlayOnDamageEvent::PODE_OnTakeAnyDamage;
 	this->mImpactAudioSetting = EOverrideSetting::OS_Additive;

@@ -3,8 +3,8 @@
 #include "WheeledVehicles/FGSimulatedWheeledVehicle.h"
 #include "Components/SkeletalMeshComponent.h"
 
-AFGSimulatedWheeledVehicle::AFGSimulatedWheeledVehicle(){ 
-	this->RootComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("SkeletalMeshComponent0"));
+AFGSimulatedWheeledVehicle::AFGSimulatedWheeledVehicle() : Super() {
+
 }
 void AFGSimulatedWheeledVehicle::Init( AFGWheeledVehicle* vehicle){ }
 void AFGSimulatedWheeledVehicle::UpdateCustomizationData( AFGWheeledVehicle* vehicle){ }

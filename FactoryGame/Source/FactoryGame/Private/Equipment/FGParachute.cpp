@@ -3,7 +3,7 @@
 #include "Equipment/FGParachute.h"
 #include "Equipment/FGEquipment.h"
 
-UFGParachuteCameraShake::UFGParachuteCameraShake(){ 
+UFGParachuteCameraShake::UFGParachuteCameraShake() : Super() {
 	this->OscillationDuration = 2.1;
 	this->OscillationBlendInTime = 0.15;
 	this->OscillationBlendOutTime = 1.8;
@@ -33,7 +33,7 @@ UFGParachuteCameraShake::UFGParachuteCameraShake(){
 	this->LocOscillation.Z.Waveform = EOscillatorWaveform::SineWave;
 	this->bSingleInstance = true;
 }
-AFGParachute::AFGParachute(){ 
+AFGParachute::AFGParachute() : Super() {
 	this->mTerminalVelocityZ = 100.0;
 	this->mIsDeployed = false;
 	this->mCachedMovementComponent = nullptr;

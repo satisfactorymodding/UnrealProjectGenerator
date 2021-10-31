@@ -6,7 +6,7 @@
 #include "FGPowerInfoComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableTrainPlatformCargo::AFGBuildableTrainPlatformCargo(){ 
+AFGBuildableTrainPlatformCargo::AFGBuildableTrainPlatformCargo() : Super() {
 	this->mFreightCargoType = EFreightCargoType::FCT_NONE;
 	this->mStorageSizeX = 4;
 	this->mStorageSizeY = 4;
@@ -41,12 +41,6 @@ AFGBuildableTrainPlatformCargo::AFGBuildableTrainPlatformCargo(){
 	this->mSmoothedUnloadRate = 0.0;
 	this->mReplicatedOutflowRate = 0.0;
 	this->mReplicatedInflowRate = 0.0;
-	this->mPlatformConnections.Add(CreateDefaultSubobject<UFGTrainPlatformConnection>(TEXT("PlatformConnection0")));
-	this->mPlatformConnections.Add(CreateDefaultSubobject<UFGTrainPlatformConnection>(TEXT("PlatformConnection1")));
-	this->mPlatformConnection0 = CreateDefaultSubobject<UFGTrainPlatformConnection>(TEXT("PlatformConnection0"));
-	this->mPlatformConnection1 = CreateDefaultSubobject<UFGTrainPlatformConnection>(TEXT("PlatformConnection1"));
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.bTickEvenWhenPaused = false;
@@ -54,11 +48,6 @@ AFGBuildableTrainPlatformCargo::AFGBuildableTrainPlatformCargo(){
 	this->PrimaryActorTick.bStartWithTickEnabled = true;
 	this->PrimaryActorTick.bAllowTickOnDedicatedServer = true;
 	this->PrimaryActorTick.TickInterval = 0.0;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mPlatformConnections[0]->SetupAttachment(RootComponent);
-	this->mPlatformConnections[1]->SetupAttachment(RootComponent);
-	this->mPlatformConnection0->SetupAttachment(RootComponent);
-	this->mPlatformConnection1->SetupAttachment(RootComponent);
 }
 void AFGBuildableTrainPlatformCargo::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildableTrainPlatformCargo::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }

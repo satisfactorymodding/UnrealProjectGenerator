@@ -2,7 +2,7 @@
 
 #include "FGInteractActor.h"
 
-AFGInteractActor::AFGInteractActor(){ 
+AFGInteractActor::AFGInteractActor() : Super() {
 
 }
 void AFGInteractActor::UpdateUseState_Implementation( AFGCharacterPlayer* byCharacter, const FVector& atLocation,  UPrimitiveComponent* componentHit, FUseState& out_useState) const{ }

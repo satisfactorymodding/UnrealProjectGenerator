@@ -3,7 +3,7 @@
 #include "Replication/FGReplicationDetailActor.h"
 #include "Components/SceneComponent.h"
 
-AFGReplicationDetailActor::AFGReplicationDetailActor(){ 
+AFGReplicationDetailActor::AFGReplicationDetailActor() : Super() {
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.bTickEvenWhenPaused = false;

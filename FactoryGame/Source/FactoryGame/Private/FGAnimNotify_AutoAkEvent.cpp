@@ -2,7 +2,7 @@
 
 #include "FGAnimNotify_AutoAkEvent.h"
 
-UFGAnimNotify_AutoAkEvent::UFGAnimNotify_AutoAkEvent(){ 
+UFGAnimNotify_AutoAkEvent::UFGAnimNotify_AutoAkEvent() : Super() {
 	this->SocketName = TEXT("None");
 	this->AudioEvent = nullptr;
 	this->bFollow = true;

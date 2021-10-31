@@ -6,7 +6,7 @@
 #endif 
 #if WITH_EDITORONLY_DATA
 #endif 
-AFGTimeOfDaySubsystem::AFGTimeOfDaySubsystem(){ 
+AFGTimeOfDaySubsystem::AFGTimeOfDaySubsystem() : Super() {
 	this->mSyncronizeTimeOfDayInterval = 5.0;
 	this->mDayLengthMinutes = 3.0;
 	this->mNightLengthMinutes = 1.5;

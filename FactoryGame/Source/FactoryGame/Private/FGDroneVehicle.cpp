@@ -7,7 +7,7 @@
 #ifdef DEBUG_DRONES
 void UFGDroneAction::DisplayDebugInformation(){ }
 #endif 
-UFGDroneAction::UFGDroneAction(){ 
+UFGDroneAction::UFGDroneAction() : Super() {
 	this->mDrone = nullptr;
 }
 void UFGDroneAction::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
@@ -17,7 +17,7 @@ void UFGDroneAction::PushAction(UFGDroneAction* pAction){ }
 #ifdef DEBUG_DRONES
 void UFGDroneAction_Timed::DisplayDebugInformation(){ }
 #endif 
-UFGDroneAction_Timed::UFGDroneAction_Timed(){ 
+UFGDroneAction_Timed::UFGDroneAction_Timed() : Super() {
 
 }
 void UFGDroneAction_Timed::Tick(float dt){ }
@@ -25,7 +25,7 @@ bool UFGDroneAction_Timed::IsDone() const{ return bool(); }
 #ifdef DEBUG_DRONES
 void UFGDroneAction_TraversePath::DisplayDebugInformation(){ }
 #endif 
-UFGDroneAction_TraversePath::UFGDroneAction_TraversePath(){ 
+UFGDroneAction_TraversePath::UFGDroneAction_TraversePath() : Super() {
 	this->mStopAtDestination = false;
 	this->mFlyingMode = EDroneFlyingMode::DFM_None;
 }
@@ -38,7 +38,7 @@ void UFGDroneAction_TraversePath::GotoNextDestination(){ }
 #ifdef DEBUG_DRONES
 void UFGDroneAction_RequestDocking::DisplayDebugInformation(){ }
 #endif 
-UFGDroneAction_RequestDocking::UFGDroneAction_RequestDocking(){ 
+UFGDroneAction_RequestDocking::UFGDroneAction_RequestDocking() : Super() {
 	this->mStation = nullptr;
 	this->mCurrentState = EDroneDockingRequestState::STravelToQueueLocation;
 	this->mShouldTransferItems = false;
@@ -52,7 +52,7 @@ void UFGDroneAction_RequestDocking::MoveToDesignatedQueuePosition(EDroneFlyingMo
 void UFGDroneAction_RequestDocking::Tick(float dt){ }
 void UFGDroneAction_RequestDocking::ReceiveActionEvent(EDroneActionEvent ActionEvent, void* EventData){ }
 bool UFGDroneAction_RequestDocking::IsDone() const{ return bool(); }
-UFGDroneAction_DockingSequence::UFGDroneAction_DockingSequence(){ 
+UFGDroneAction_DockingSequence::UFGDroneAction_DockingSequence() : Super() {
 	this->mStation = nullptr;
 	this->mShouldTransferItems = false;
 }
@@ -60,7 +60,7 @@ void UFGDroneAction_DockingSequence::SetStation( AFGBuildableDroneStation* Stati
 void UFGDroneAction_DockingSequence::Begin(){ }
 void UFGDroneAction_DockingSequence::End(){ }
 float UFGDroneAction_DockingSequence::GetActionDuration() const{ return float(); }
-UFGDroneAction_TakeoffSequence::UFGDroneAction_TakeoffSequence(){ 
+UFGDroneAction_TakeoffSequence::UFGDroneAction_TakeoffSequence() : Super() {
 	this->mStation = nullptr;
 	this->mNewTravelDestination = nullptr;
 	this->mHasNewPairedStation = false;
@@ -74,7 +74,7 @@ void UFGDroneAction_TravelStartSequence::SetDestination(const FVector& Destinati
 void UFGDroneAction_TravelStartSequence::Begin(){ }
 void UFGDroneAction_TravelStartSequence::End(){ }
 float UFGDroneAction_TravelStartSequence::GetActionDuration() const{ return float(); }
-AFGDroneVehicle::AFGDroneVehicle(){ 
+AFGDroneVehicle::AFGDroneVehicle() : Super() {
 	this->mStorageInventory = nullptr;
 	this->mBatteryInventory = nullptr;
 	this->mInventorySize = 20;
@@ -112,9 +112,6 @@ AFGDroneVehicle::AFGDroneVehicle(){
 	this->mHomeStation = nullptr;
 	this->mCurrentTripDestinationStation = nullptr;
 	this->mCurrentAction = nullptr;
-	this->mMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VehicleMesh"));
-	this->mHealthComponent = CreateDefaultSubobject<UFGHealthComponent>(TEXT("HealthComponent"));
-	this->RootComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VehicleMesh"));
 }
 void AFGDroneVehicle::BeginPlay(){ }
 void AFGDroneVehicle::Tick(float DeltaTime){ }

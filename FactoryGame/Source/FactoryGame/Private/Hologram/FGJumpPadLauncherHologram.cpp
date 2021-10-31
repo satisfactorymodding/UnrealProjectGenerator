@@ -7,7 +7,7 @@
 #include "Components/SceneComponent.h"
 #include "FGInstancedSplineMeshComponent.h"
 
-AFGJumpPadLauncherHologram::AFGJumpPadLauncherHologram(){ 
+AFGJumpPadLauncherHologram::AFGJumpPadLauncherHologram() : Super() {
 	this->mBuildStep = EJumpPadHologramBuildStep::JPHBS_PlacementAndRotation;
 	this->mLaunchAngle = 45;
 	this->mLauncherMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("LauncherMeshComponent"));
@@ -23,13 +23,10 @@ AFGJumpPadLauncherHologram::AFGJumpPadLauncherHologram(){
 	this->mDestinationMeshRotation.Yaw = 0.0;
 	this->mDestinationMeshRotation.Roll = 0.0;
 	this->mNumArrows = 5;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mLauncherMeshComponent->SetupAttachment(RootComponent);
 	this->mSplineComponent->SetupAttachment(RootComponent);
 	this->mInstancedSplineMeshComponent->SetupAttachment(RootComponent);
 	this->mDestinationMeshComponent->SetupAttachment(RootComponent);
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGJumpPadLauncherHologram::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGJumpPadLauncherHologram::BeginPlay(){ }

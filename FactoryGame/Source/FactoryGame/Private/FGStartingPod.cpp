@@ -4,7 +4,7 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGStartingPod::AFGStartingPod(){ 
+AFGStartingPod::AFGStartingPod() : Super() {
 	this->mCachedPlayer = nullptr;
 	this->mDropPodMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("DropPod Mesh"));
 	this->mActorRepresentationTexture = nullptr;

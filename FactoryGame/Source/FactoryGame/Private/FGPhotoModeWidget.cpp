@@ -2,7 +2,7 @@
 
 #include "FGPhotoModeWidget.h"
 
-UFGPhotoModeWidget::UFGPhotoModeWidget(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+UFGPhotoModeWidget::UFGPhotoModeWidget(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->bIsFocusable = true;
 }
 void UFGPhotoModeWidget::NativeConstruct(){ }

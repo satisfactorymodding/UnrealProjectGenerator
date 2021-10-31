@@ -9,14 +9,12 @@ void FQuantizedPumpIndicatorData::SetFlowPct(float pct){ }
 float FQuantizedPumpIndicatorData::GetFlowPct() const{ return float(); }
 void FQuantizedPumpIndicatorData::SetPressurePct(float pct){ }
 float FQuantizedPumpIndicatorData::GetPressurePct() const{ return float(); }
-AFGBuildablePipelinePump::AFGBuildablePipelinePump(){ 
+AFGBuildablePipelinePump::AFGBuildablePipelinePump() : Super() {
 	this->mMaxPressure = 22.0;
 	this->mDesignPressure = 20.0;
 	this->mDefaultFlowLimit = 10.0;
 	this->mUserFlowLimit = -1.0;
 	this->mMinimumFlowPercentForStandby = 0.05;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGPipelineAttachmentHologram::StaticClass();
 	this->mFactoryTickFunction.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->mFactoryTickFunction.EndTickGroup = ETickingGroup::TG_PrePhysics;
 	this->mFactoryTickFunction.bTickEvenWhenPaused = false;
@@ -24,7 +22,6 @@ AFGBuildablePipelinePump::AFGBuildablePipelinePump(){
 	this->mFactoryTickFunction.bStartWithTickEnabled = true;
 	this->mFactoryTickFunction.bAllowTickOnDedicatedServer = true;
 	this->mFactoryTickFunction.TickInterval = 0.0;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildablePipelinePump::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildablePipelinePump::BeginPlay(){ }

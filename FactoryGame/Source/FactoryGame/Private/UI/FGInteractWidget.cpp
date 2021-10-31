@@ -2,7 +2,7 @@
 
 #include "UI/FGInteractWidget.h"
 
-UFGInteractWidget::UFGInteractWidget(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+UFGInteractWidget::UFGInteractWidget(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->mUseKeyboard = false;
 	this->mUseMouse = false;
 	this->mMouseLockMode = EMouseLockMode::DoNotLock;

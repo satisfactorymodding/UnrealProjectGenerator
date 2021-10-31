@@ -4,7 +4,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGPowerPoleWallHologram::AFGPowerPoleWallHologram(){ 
+AFGPowerPoleWallHologram::AFGPowerPoleWallHologram() : Super() {
 	this->mIsRotationAllowed = false;
 	this->mCanSnapToFoundationCeiling = false;
 	this->mCanSnapToFoundationSide = false;
@@ -12,9 +12,6 @@ AFGPowerPoleWallHologram::AFGPowerPoleWallHologram(){
 	this->mSnapOffset.X = 0.0;
 	this->mSnapOffset.Y = 0.0;
 	this->mFoundationSnappingInset = 0.0;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGPowerPoleWallHologram::BeginPlay(){ }
 bool AFGPowerPoleWallHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }

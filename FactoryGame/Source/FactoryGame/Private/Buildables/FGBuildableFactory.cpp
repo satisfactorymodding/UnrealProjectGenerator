@@ -6,7 +6,7 @@
 #include "FGPowerInfoComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableFactory::AFGBuildableFactory(){ 
+AFGBuildableFactory::AFGBuildableFactory() : Super() {
 	this->mPowerConsumption = 0.0;
 	this->mPowerConsumptionExponent = 1.6;
 	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
@@ -49,7 +49,6 @@ AFGBuildableFactory::AFGBuildableFactory(){
 	this->PrimaryActorTick.bAllowTickOnDedicatedServer = true;
 	this->PrimaryActorTick.TickInterval = 0.0;
 	this->NetDormancy = ENetDormancy::DORM_Awake;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableFactory::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildableFactory::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }

@@ -6,7 +6,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableJumppad::AFGBuildableJumppad(){ 
+AFGBuildableJumppad::AFGBuildableJumppad() : Super() {
 	this->mPowerBankCapacity = 0.0;
 	this->mLaunchPowerCost = 0.0;
 	this->mChargeRateMultiplier = 1.0;
@@ -33,9 +33,6 @@ AFGBuildableJumppad::AFGBuildableJumppad(){
 	this->mSplineComponent = nullptr;
 	this->mTrajectoryGravityMultiplier = 1.0;
 	this->mShowTrajectoryCounter = 0;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mLauncherMeshComponent->SetupAttachment(RootComponent);
 }
 void AFGBuildableJumppad::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }

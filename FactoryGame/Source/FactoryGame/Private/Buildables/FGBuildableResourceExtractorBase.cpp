@@ -8,17 +8,15 @@
 
 void AFGBuildableResourceExtractorBase::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildableResourceExtractorBase::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
-AFGBuildableResourceExtractorBase::AFGBuildableResourceExtractorBase(){ 
+AFGBuildableResourceExtractorBase::AFGBuildableResourceExtractorBase() : Super() {
 	this->mRestrictToNodeType = nullptr;
 	this->mOnlyAllowCertainResources = false;
 	this->mMustPlaceOnResourceDisqualifier = UFGCDNeedsResourceNode::StaticClass();
 	this->mExtractorTypeName = TEXT("None");
 	this->mExtractResourceNode = nullptr;
 	this->mExtractableResource = nullptr;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
 	this->mCanChangePotential = true;
 	this->mHologramClass = AFGResourceExtractorHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableResourceExtractorBase::BeginPlay(){ }
 void AFGBuildableResourceExtractorBase::Destroyed(){ }

@@ -2,7 +2,7 @@
 
 #include "Atmosphere/UFGBiome.h"
 
-UFGBiome::UFGBiome(){ 
+UFGBiome::UFGBiome() : Super() {
 	this->BaseBiome = nullptr;
 	this->DebugName = TEXT("None");
 	this->WeatherStatesMask = 0;

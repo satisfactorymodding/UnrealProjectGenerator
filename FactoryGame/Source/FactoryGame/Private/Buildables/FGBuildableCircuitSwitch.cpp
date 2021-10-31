@@ -3,11 +3,10 @@
 #include "Buildables/FGBuildableCircuitSwitch.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableCircuitSwitch::AFGBuildableCircuitSwitch(){ 
+AFGBuildableCircuitSwitch::AFGBuildableCircuitSwitch() : Super() {
 	this->mIsSwitchOn = false;
 	this->mHasBuildingTag = false;
 	this->mBuildingTag = TEXT("");
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableCircuitSwitch::BeginPlay(){ }
 void AFGBuildableCircuitSwitch::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }

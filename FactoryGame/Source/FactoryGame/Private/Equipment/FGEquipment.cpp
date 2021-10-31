@@ -3,7 +3,7 @@
 #include "Equipment/FGEquipment.h"
 #include "Equipment/FGEquipment.h"
 
-AFGEquipment::AFGEquipment(){ 
+AFGEquipment::AFGEquipment() : Super() {
 	this->mAttachmentClass = nullptr;
 	this->mSecondaryAttachmentClass = nullptr;
 	this->mEquipmentSlot = EEquipmentSlot::ES_NONE;

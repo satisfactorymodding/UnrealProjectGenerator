@@ -4,7 +4,7 @@
 #include "Perception/AIPerceptionComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGEnemyController::AFGEnemyController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+AFGEnemyController::AFGEnemyController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->mUpdateAggroInterval = 1.0;
 	this->mTimeToLoseAllAggro = 10.0;
 	this->mAggroTargetsAggroMax = 0.0;
@@ -20,8 +20,6 @@ AFGEnemyController::AFGEnemyController(const FObjectInitializer& ObjectInitializ
 	this->mCurrentAggroTarget = nullptr;
 	this->mPanicIgnoreTime = 3.0;
 	this->mDidCancelAggroTasks = false;
-	this->PerceptionComponent = CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("PerceptionComponent"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("TransformComponent0"));
 }
 void AFGEnemyController::OnPossess(APawn* InPawn){ }
 void AFGEnemyController::OnUnPossess(){ }

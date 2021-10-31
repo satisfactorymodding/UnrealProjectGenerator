@@ -5,7 +5,7 @@
 #include "Equipment/FGResourceScanner.h"
 #include "FGRecipeShortcut.h"
 
-UFGFactorySettings::UFGFactorySettings(){ 
+UFGFactorySettings::UFGFactorySettings() : Super() {
 	this->mDefaultValidPlacementMaterial = nullptr;
 	this->mDefaultValidPlacementMaterialSimplified = nullptr;
 	this->mDefaultInvalidPlacementMaterial = nullptr;

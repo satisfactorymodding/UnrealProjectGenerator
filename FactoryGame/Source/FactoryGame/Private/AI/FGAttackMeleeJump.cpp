@@ -2,7 +2,7 @@
 
 #include "AI/FGAttackMeleeJump.h"
 
-UFGAttackMeleeJump::UFGAttackMeleeJump(){ 
+UFGAttackMeleeJump::UFGAttackMeleeJump() : Super() {
 	this->mJumpRange = 2000.0;
 	this->mJumpVelocity.X = 0.0;
 	this->mJumpVelocity.Y = 0.0;

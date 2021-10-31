@@ -4,10 +4,8 @@
 #include "Hologram/FGFactoryHologram.h"
 #include "Components/SceneComponent.h"
 
-AFGCentralStorageContainer::AFGCentralStorageContainer(){ 
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
+AFGCentralStorageContainer::AFGCentralStorageContainer() : Super() {
 	this->bAlwaysRelevant = true;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 bool AFGCentralStorageContainer::AddAsRepresentation(){ return bool(); }
 bool AFGCentralStorageContainer::UpdateRepresentation(){ return bool(); }

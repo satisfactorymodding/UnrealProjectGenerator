@@ -2,7 +2,7 @@
 
 #include "FGResearchMachine.h"
 
-UFGResearchMachine::UFGResearchMachine(){ 
+UFGResearchMachine::UFGResearchMachine() : Super() {
 	this->mCurrentResearchRecipe = nullptr;
 	this->mPlayerUsingMachine = nullptr;
 	this->mResearchingMeshComponent = nullptr;
@@ -15,7 +15,7 @@ UFGResearchMachine::UFGResearchMachine(){
 	this->PrimaryComponentTick.bStartWithTickEnabled = true;
 	this->PrimaryComponentTick.bAllowTickOnDedicatedServer = true;
 	this->PrimaryComponentTick.TickInterval = 0.0;
-	this->SetIsReplicated(true);
+	this->SetIsReplicatedByDefault(true);
 	this->bAutoActivate = true;
 }
 void UFGResearchMachine::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }

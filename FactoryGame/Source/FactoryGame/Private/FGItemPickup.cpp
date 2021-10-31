@@ -2,7 +2,7 @@
 
 #include "FGItemPickup.h"
 
-AFGItemPickup::AFGItemPickup(){ 
+AFGItemPickup::AFGItemPickup() : Super() {
 	this->mTimeToPickUp = 0.0;
 	this->mCollector = nullptr;
 	this->mDestroyOnPickup = true;

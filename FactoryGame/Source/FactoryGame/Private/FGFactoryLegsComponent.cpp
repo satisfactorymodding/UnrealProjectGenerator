@@ -10,12 +10,12 @@ FName FFeetOffset::GetSocket() const{ return FName(); }
 void UFGFactoryLegsComponent::OnRegister(){ Super::OnRegister(); }
 void UFGFactoryLegsComponent::OnUnregister(){ Super::OnUnregister(); }
 #endif 
-UFGFactoryLegsComponent::UFGFactoryLegsComponent(){ 
+UFGFactoryLegsComponent::UFGFactoryLegsComponent() : Super() {
 	this->mLegMeshOverride = nullptr;
 	this->mFootMeshOverride = nullptr;
 	this->mMaxLegLengthOverride = 0.0;
 	this->mMinimumLegLength = 40.0;
-	this->SetIsReplicated(true);
+	this->SetIsReplicatedByDefault(true);
 }
 void UFGFactoryLegsComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void UFGFactoryLegsComponent::BeginPlay(){ }

@@ -2,7 +2,7 @@
 
 #include "Environment/FGWaterfall.h"
 
-AFGWaterfall::AFGWaterfall(){ 
+AFGWaterfall::AFGWaterfall() : Super() {
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.bTickEvenWhenPaused = false;

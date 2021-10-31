@@ -5,7 +5,7 @@
 #if WITH_EDITOR
 void UFGDotComponent::CheckForErrors(){ }
 #endif 
-UFGDotComponent::UFGDotComponent(){ 
+UFGDotComponent::UFGDotComponent() : Super() {
 	this->mDotClass = nullptr;
 	this->bAutoActivate = true;
 }

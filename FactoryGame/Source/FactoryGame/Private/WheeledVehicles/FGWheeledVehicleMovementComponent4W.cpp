@@ -3,7 +3,7 @@
 #include "WheeledVehicles/FGWheeledVehicleMovementComponent4W.h"
 #include "VehicleWheel.h"
 
-UFGWheeledVehicleMovementComponent4W::UFGWheeledVehicleMovementComponent4W(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+UFGWheeledVehicleMovementComponent4W::UFGWheeledVehicleMovementComponent4W(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->mUseDSOLGearbox = true;
 	this->mDSOLMaxSlopeAngleLimit = 33.0;
 	this->mSlopeShiftRatio = 0.3;

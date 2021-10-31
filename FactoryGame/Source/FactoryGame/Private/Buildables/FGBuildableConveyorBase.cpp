@@ -20,7 +20,7 @@ void FConveyorBeltItems::MarkArrayDirty(){ }
 void FConveyorBeltItems::UpdateLastestIDFromState(){ }
 float FConveyorBeltItems::ConsumeAndUpdateConveyorOffsetDebt(float dt){ return float(); }
 void FConveyorBeltItems::MarkItemDirty(FConveyorBeltItem& item){ }
-AFGBuildableConveyorBase::AFGBuildableConveyorBase(){ 
+AFGBuildableConveyorBase::AFGBuildableConveyorBase() : Super() {
 	this->mSpeed = 0.0;
 	this->mConnection0 = CreateDefaultSubobject<UFGFactoryConnectionComponent>(TEXT("ConveyorAny0"));
 	this->mConnection1 = CreateDefaultSubobject<UFGFactoryConnectionComponent>(TEXT("ConveyorAny1"));
@@ -32,7 +32,6 @@ AFGBuildableConveyorBase::AFGBuildableConveyorBase(){
 	this->mFactoryTickFunction.bAllowTickOnDedicatedServer = true;
 	this->mFactoryTickFunction.TickInterval = 0.0;
 	this->NetDormancy = ENetDormancy::DORM_Awake;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mConnection0->SetupAttachment(RootComponent);
 	this->mConnection1->SetupAttachment(RootComponent);
 }

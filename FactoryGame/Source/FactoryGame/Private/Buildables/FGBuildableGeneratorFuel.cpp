@@ -6,7 +6,7 @@
 #include "FGPowerInfoComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableGeneratorFuel::AFGBuildableGeneratorFuel(){ 
+AFGBuildableGeneratorFuel::AFGBuildableGeneratorFuel() : Super() {
 	this->mFuelInventoryHandler = CreateDefaultSubobject<UFGReplicationDetailInventoryComponent>(TEXT("FuelInventoryHandler"));
 	this->mFuelResourceForm = EResourceForm::RF_SOLID;
 	this->mFuelLoadAmount = 1;
@@ -21,10 +21,7 @@ AFGBuildableGeneratorFuel::AFGBuildableGeneratorFuel(){
 	this->mHasFuelCached = false;
 	this->mHasSupplementalCached = false;
 	this->mCurrentFuelClass = nullptr;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
 	this->mCanChangePotential = true;
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableGeneratorFuel::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildableGeneratorFuel::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }

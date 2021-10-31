@@ -4,15 +4,12 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGConveyorAttachmentHologram::AFGConveyorAttachmentHologram(){ 
+AFGConveyorAttachmentHologram::AFGConveyorAttachmentHologram() : Super() {
 	this->mMaxValidTurnOffset = 240.0;
 	this->mMaxValidTurnAngle = 3.0;
 	this->mSnappedConveyor = nullptr;
 	this->mSnappedConection = nullptr;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
 	this->mUseBuildClearanceOverlapSnapp = false;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGConveyorAttachmentHologram::BeginPlay(){ }
 void AFGConveyorAttachmentHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }

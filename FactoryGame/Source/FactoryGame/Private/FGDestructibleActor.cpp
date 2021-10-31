@@ -3,12 +3,12 @@
 #include "FGDestructibleActor.h"
 #include "Components/StaticMeshComponent.h"
 
-AFGDestructibleActor::AFGDestructibleActor(){ 
+AFGDestructibleActor::AFGDestructibleActor() : Super() {
 	this->mStaticMeshProxy = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMeshProxy"));
 	this->mHasBeenFractured = false;
 	this->bReplicates = true;
 	this->NetDormancy = ENetDormancy::DORM_Initial;
-	this->RootComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMeshProxy"));
+	this->RootComponent = mStaticMeshProxy;
 }
 void AFGDestructibleActor::BeginPlay(){ }
 float AFGDestructibleActor::TakeDamage(float damage,  FDamageEvent const& damageEvent, AController* eventInstigator, AActor* damageCauser){ return float(); }

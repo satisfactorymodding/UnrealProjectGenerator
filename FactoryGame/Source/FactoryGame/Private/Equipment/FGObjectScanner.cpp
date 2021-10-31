@@ -3,7 +3,7 @@
 #include "Equipment/FGObjectScanner.h"
 #include "Equipment/FGEquipment.h"
 
-AFGObjectScanner::AFGObjectScanner(){ 
+AFGObjectScanner::AFGObjectScanner() : Super() {
 	this->mBeepDelayMax = 1.5;
 	this->mBeepDelayMin = 0.2;
 	this->mDetectionRange = 500.0;

@@ -4,7 +4,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGHologram::AFGHologram(){ 
+AFGHologram::AFGHologram() : Super() {
 	this->mRecipe = nullptr;
 	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
 	this->mClearanceBox = nullptr;

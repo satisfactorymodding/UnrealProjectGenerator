@@ -5,7 +5,7 @@
 #include "Components/SceneComponent.h"
 #include "FGColoredInstanceMeshProxy.h"
 
-AFGBuildableWidgetSign::AFGBuildableWidgetSign(){ 
+AFGBuildableWidgetSign::AFGBuildableWidgetSign() : Super() {
 	this->mWidgetComponent = CreateDefaultSubobject<UWidgetComponent>(TEXT("WidgetDisplayRoot"));
 	this->mSignTypeDescriptor = nullptr;
 	this->mPrefabLayout = nullptr;
@@ -24,11 +24,8 @@ AFGBuildableWidgetSign::AFGBuildableWidgetSign(){
 	this->mAuxilaryColor.B = 0.0;
 	this->mAuxilaryColor.A = 0.0;
 	this->mDataVersion = 0;
-	this->mMeshComponentProxy = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("SignMeshProxy"));
 	this->mAllowColoring = false;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mWidgetComponent->SetupAttachment(RootComponent);
-	this->mMeshComponentProxy->SetupAttachment(RootComponent);
 }
 void AFGBuildableWidgetSign::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildableWidgetSign::BeginPlay(){ }

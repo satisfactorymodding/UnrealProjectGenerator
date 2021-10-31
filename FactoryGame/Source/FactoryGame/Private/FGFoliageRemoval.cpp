@@ -6,7 +6,7 @@
 bool FRemovedInstanceArray::NetDeltaSerialize(FNetDeltaSerializeInfo & DeltaParms){ return bool(); }
 void AFGFoliageRemoval::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 bool AFGFoliageRemoval::IsNetRelevantFor(const AActor* RealViewer, const AActor* ViewTarget, const FVector& SrcLocation) const{ return bool(); }
-AFGFoliageRemoval::AFGFoliageRemoval(){ 
+AFGFoliageRemoval::AFGFoliageRemoval() : Super() {
 	this->mRemovedInstances.FoliageRemover = nullptr;
 	this->mRemovedInstances.ArrayReplicationKey = 0;
 	this->mMeshComponent = nullptr;

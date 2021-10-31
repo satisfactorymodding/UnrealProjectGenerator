@@ -2,7 +2,7 @@
 
 #include "FGColoredInstanceMeshProxy.h"
 
-UFGColoredInstanceMeshProxy::UFGColoredInstanceMeshProxy(){ 
+UFGColoredInstanceMeshProxy::UFGColoredInstanceMeshProxy() : Super() {
 	this->mBlockInstancing = false;
 	this->mOptimizationCategory = EDistanceCullCategory::FGDDC_NEVERCULL;
 	this->mNumCustomDataFloats = 20;

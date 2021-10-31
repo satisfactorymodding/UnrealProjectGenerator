@@ -9,7 +9,7 @@ float FFGWorldGridCell::GetElevation() const{ return float(); }
 void FFGWorldGridCell::OnTraceCompleted(const FTraceHandle& Handle, FTraceDatum& Data){ }
 void UFGWorldGridDataAsset::AssignWorldCells(TArray<FFGWorldGridCellData>&& Cells, const FVector2D& GridMin, const FVector2D& GridMax, int32 Divisions){ }
 void UFGWorldGridDataAsset::DebugDraw(){ }
-AFGWorldGridSubsystem::AFGWorldGridSubsystem(){ 
+AFGWorldGridSubsystem::AFGWorldGridSubsystem() : Super() {
 	this->mDefaultWorldGridData = nullptr;
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;

@@ -4,7 +4,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGFactoryBuildingHologram::AFGFactoryBuildingHologram(){ 
+AFGFactoryBuildingHologram::AFGFactoryBuildingHologram() : Super() {
 	this->mPlacementRequirements = EFactoryBuildingPlacementRequirements::FBPR_None;
 	this->mDesiredZoop.X = 0;
 	this->mDesiredZoop.Y = 0;
@@ -13,11 +13,8 @@ AFGFactoryBuildingHologram::AFGFactoryBuildingHologram(){
 	this->mDefaultBlockedZoopDirections = 0;
 	this->mBuildStep = EFactoryBuildingHologramBuildStep::FBHBS_PlacementAndRotation;
 	this->mBuildModeZoop = nullptr;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
 	this->mShouldCreateClearanceMeshVisual = false;
 	this->mBuildModeCategory = EHologramBuildModeCategory::HBMC_Architecture;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGFactoryBuildingHologram::BeginPlay(){ }
 void AFGFactoryBuildingHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }

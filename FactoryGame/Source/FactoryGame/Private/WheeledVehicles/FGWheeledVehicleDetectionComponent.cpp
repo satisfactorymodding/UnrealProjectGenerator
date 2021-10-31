@@ -3,7 +3,7 @@
 #include "WheeledVehicles/FGWheeledVehicleDetectionComponent.h"
 #include "NavAreas/NavArea_Obstacle.h"
 
-UFGWheeledVehicleDetectionComponent::UFGWheeledVehicleDetectionComponent(){ 
+UFGWheeledVehicleDetectionComponent::UFGWheeledVehicleDetectionComponent() : Super() {
 	this->AreaClass = UNavArea_Obstacle::StaticClass();
 	this->PrimaryComponentTick.TickGroup = ETickingGroup::TG_DuringPhysics;
 	this->PrimaryComponentTick.EndTickGroup = ETickingGroup::TG_PrePhysics;

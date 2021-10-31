@@ -3,7 +3,7 @@
 #include "Resources/FGResourceNodeFrackingSatellite.h"
 #include "Resources/FGResourceNodeFrackingCore.h"
 
-AFGResourceNodeFrackingSatellite::AFGResourceNodeFrackingSatellite(){ 
+AFGResourceNodeFrackingSatellite::AFGResourceNodeFrackingSatellite() : Super() {
 	this->mCore = nullptr;
 	this->mState = EFrackingSatelliteState::FSS_Untouched;
 	this->mDoSpawnParticle = false;

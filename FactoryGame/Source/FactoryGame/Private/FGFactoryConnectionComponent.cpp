@@ -2,7 +2,7 @@
 
 #include "FGFactoryConnectionComponent.h"
 
-UFGFactoryConnectionComponent::UFGFactoryConnectionComponent(){ 
+UFGFactoryConnectionComponent::UFGFactoryConnectionComponent() : Super() {
 	this->mConnector = EFactoryConnectionConnector::FCC_CONVEYOR;
 	this->mDirection = EFactoryConnectionDirection::FCD_INPUT;
 	this->mConnectorClearance = 100.0;
@@ -13,7 +13,7 @@ UFGFactoryConnectionComponent::UFGFactoryConnectionComponent(){
 	this->mOuterBuildable = nullptr;
 	this->mForwardPeekAndGrabToBuildable = false;
 	this->bNetAddressable = true;
-	this->SetIsReplicated(true);
+	this->SetIsReplicatedByDefault(true);
 }
 void UFGFactoryConnectionComponent::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void UFGFactoryConnectionComponent::OnComponentDestroyed(bool isDestroyingHierarchy){ }

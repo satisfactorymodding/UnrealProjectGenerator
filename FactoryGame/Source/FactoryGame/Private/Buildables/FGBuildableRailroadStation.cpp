@@ -4,7 +4,7 @@
 #include "FGTrainPlatformConnection.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableRailroadStation::AFGBuildableRailroadStation(){ 
+AFGBuildableRailroadStation::AFGBuildableRailroadStation() : Super() {
 	this->mShouldTeleportHere = false;
 	this->mStationIdentifier = nullptr;
 	this->mCurrentDockedWithRuleSet.DockingDefinition = ETrainDockingDefinition::TDD_LoadUnloadOnce;
@@ -13,15 +13,6 @@ AFGBuildableRailroadStation::AFGBuildableRailroadStation(){
 	this->mDockingLocomotive = nullptr;
 	this->mCurrentDockForDuration = 0.0;
 	this->mActorRepresentationTexture = nullptr;
-	this->mPlatformConnections.Add(CreateDefaultSubobject<UFGTrainPlatformConnection>(TEXT("PlatformConnection0")));
-	this->mPlatformConnections.Add(CreateDefaultSubobject<UFGTrainPlatformConnection>(TEXT("PlatformConnection1")));
-	this->mPlatformConnection0 = CreateDefaultSubobject<UFGTrainPlatformConnection>(TEXT("PlatformConnection0"));
-	this->mPlatformConnection1 = CreateDefaultSubobject<UFGTrainPlatformConnection>(TEXT("PlatformConnection1"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mPlatformConnections[0]->SetupAttachment(RootComponent);
-	this->mPlatformConnections[1]->SetupAttachment(RootComponent);
-	this->mPlatformConnection0->SetupAttachment(RootComponent);
-	this->mPlatformConnection1->SetupAttachment(RootComponent);
 }
 void AFGBuildableRailroadStation::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildableRailroadStation::BeginPlay(){ }

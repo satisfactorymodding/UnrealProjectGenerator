@@ -6,13 +6,7 @@
 #include "FGColoredInstanceMeshProxy.h"
 #include "Hologram/FGPoleHologram.h"
 
-AFGConveyorPoleStackable::AFGConveyorPoleStackable(){ 
-	this->mPoleComponentProxy = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("PoleComponentProxy"));
-	this->mSnapOnly0 = CreateDefaultSubobject<UFGFactoryConnectionComponent>(TEXT("SnapOnly0"));
-	this->mHologramClass = AFGPoleHologram::StaticClass();
+AFGConveyorPoleStackable::AFGConveyorPoleStackable() : Super() {
 	this->mCreateClearanceMeshRepresentation = false;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mPoleComponentProxy->SetupAttachment(RootComponent);
-	this->mSnapOnly0->SetupAttachment(RootComponent);
 }
 void AFGConveyorPoleStackable::SetupConnectionComponent(){ }

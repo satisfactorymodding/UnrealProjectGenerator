@@ -2,6 +2,6 @@
 
 #include "FGPipeConnectionComponentHyper.h"
 
-UFGPipeConnectionComponentHyper::UFGPipeConnectionComponentHyper(){ 
+UFGPipeConnectionComponentHyper::UFGPipeConnectionComponentHyper() : Super() {
 
 }

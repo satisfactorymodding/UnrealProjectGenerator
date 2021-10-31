@@ -5,15 +5,12 @@
 #include "Hologram/FGWallHologram.h"
 #include "FGColoredInstanceMeshProxy.h"
 
-AFGBuildableWall::AFGBuildableWall(){ 
+AFGBuildableWall::AFGBuildableWall() : Super() {
 	this->mWidth = 0.0;
 	this->mHeight = 0.0;
 	this->mElevation = 0.0;
 	this->mAngularDepth = 0.0;
 	this->mWallType = EBuildableWallType::BWT_Normal;
-	this->mMeshComponentProxy = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("BuildingMeshProxy"));
 	this->mHologramClass = AFGWallHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mMeshComponentProxy->SetupAttachment(RootComponent);
 }
 void AFGBuildableWall::CalculateLocalSnapOffset(FVector& out_upVector, float& out_length) const{ }

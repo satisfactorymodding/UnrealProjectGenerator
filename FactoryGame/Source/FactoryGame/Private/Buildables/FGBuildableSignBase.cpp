@@ -5,7 +5,7 @@
 #include "FGColoredInstanceMeshProxy.h"
 
 bool UFGSignAttachmentPoint::CanAttach(const  FFGAttachmentPoint& point, const  FFGAttachmentPoint& targetPoint) const{ return bool(); }
-AFGBuildableSignBase::AFGBuildableSignBase(){ 
+AFGBuildableSignBase::AFGBuildableSignBase() : Super() {
 	this->mMeshComponentProxy = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("SignMeshProxy"));
 	this->mWorldDimensions.X = 0.0;
 	this->mWorldDimensions.Y = 0.0;
@@ -21,7 +21,6 @@ AFGBuildableSignBase::AFGBuildableSignBase(){
 	this->mFactoryTickFunction.bStartWithTickEnabled = false;
 	this->mFactoryTickFunction.bAllowTickOnDedicatedServer = true;
 	this->mFactoryTickFunction.TickInterval = 0.0;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mMeshComponentProxy->SetupAttachment(RootComponent);
 }
 void AFGBuildableSignBase::BeginPlay(){ }

@@ -2,7 +2,7 @@
 
 #include "FGWorkBench.h"
 
-UFGWorkBench::UFGWorkBench(){ 
+UFGWorkBench::UFGWorkBench() : Super() {
 	this->mCurrentRecipe = nullptr;
 	this->mCurrentManufacturingProgress = 0.0;
 	this->mManufacturingSpeed = 0.8;
@@ -25,7 +25,7 @@ UFGWorkBench::UFGWorkBench(){
 	this->PrimaryComponentTick.bStartWithTickEnabled = true;
 	this->PrimaryComponentTick.bAllowTickOnDedicatedServer = true;
 	this->PrimaryComponentTick.TickInterval = 0.0;
-	this->SetIsReplicated(true);
+	this->SetIsReplicatedByDefault(true);
 	this->bAutoActivate = true;
 }
 void UFGWorkBench::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }

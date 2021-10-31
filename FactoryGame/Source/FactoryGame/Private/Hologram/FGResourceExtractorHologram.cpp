@@ -4,15 +4,12 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGResourceExtractorHologram::AFGResourceExtractorHologram(){ 
+AFGResourceExtractorHologram::AFGResourceExtractorHologram() : Super() {
 	this->mDefaultExtractor = nullptr;
 	this->mSnappedExtractableResource = nullptr;
 	this->mUpgradeTarget = nullptr;
 	this->mNeedsValidFloor = false;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
 	this->mUseBuildClearanceOverlapSnapp = false;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGResourceExtractorHologram::BeginPlay(){ }
 bool AFGResourceExtractorHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }

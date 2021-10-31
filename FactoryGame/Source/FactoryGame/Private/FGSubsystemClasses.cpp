@@ -5,7 +5,7 @@
 #include "FGAdminInterface.h"
 #include "FGFoliageRemovalSubsystem.h"
 
-UFGSubsystemClasses::UFGSubsystemClasses(){ 
+UFGSubsystemClasses::UFGSubsystemClasses() : Super() {
 	this->mStorySubsystemClass = nullptr;
 	this->mTimeSubsystemClass = nullptr;
 	this->mRailroadSubsystemClass = nullptr;

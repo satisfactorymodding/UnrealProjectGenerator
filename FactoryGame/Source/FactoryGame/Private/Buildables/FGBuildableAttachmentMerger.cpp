@@ -4,14 +4,12 @@
 #include "Components/SceneComponent.h"
 #include "Hologram/FGConveyorAttachmentHologram.h"
 
-AFGBuildableAttachmentMerger::AFGBuildableAttachmentMerger(){ 
+AFGBuildableAttachmentMerger::AFGBuildableAttachmentMerger() : Super() {
 	this->mCurrentInputIndex = -1;
 	this->mCurrentInventoryIndex = 0;
 	this->mPowerInfoClass = nullptr;
 	this->mMinimumProducingTime = -1.0;
 	this->mMinimumStoppedTime = -1.0;
-	this->mHologramClass = AFGConveyorAttachmentHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableAttachmentMerger::BeginPlay(){ }
 void AFGBuildableAttachmentMerger::Factory_Tick(float deltaTime){ }

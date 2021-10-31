@@ -4,7 +4,7 @@
 #include "EnvironmentQuery/Items/EnvQueryItemType_Point.h"
 #include "EnvironmentQuery/Contexts/EnvQueryContext_Querier.h"
 
-UFGEnvQueryGenerator_ForAngle::UFGEnvQueryGenerator_ForAngle(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+UFGEnvQueryGenerator_ForAngle::UFGEnvQueryGenerator_ForAngle(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->mDistance.DefaultValue = 3000.0;
 	this->mDistance.DataBinding = nullptr;
 	this->mDistance.DataField = TEXT("None");
@@ -18,7 +18,6 @@ UFGEnvQueryGenerator_ForAngle::UFGEnvQueryGenerator_ForAngle(const FObjectInitia
 	this->mGenerateMirroredPoints.DataBinding = nullptr;
 	this->mGenerateMirroredPoints.DataField = TEXT("None");
 	this->mCenterActor = UEnvQueryContext_Querier::StaticClass();
-	this->ItemType = UEnvQueryItemType_Point::StaticClass();
 }
 void UFGEnvQueryGenerator_ForAngle::BindDataToDataProviders(FEnvQueryInstance& QueryInstance) const{ }
 void UFGEnvQueryGenerator_ForAngle::GenerateItems(FEnvQueryInstance& QueryInstance) const{ }

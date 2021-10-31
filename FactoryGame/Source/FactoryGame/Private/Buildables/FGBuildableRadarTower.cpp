@@ -8,7 +8,7 @@
 #if WITH_EDITOR
 void AFGBuildableRadarTower::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent){ Super::PostEditChangeProperty(PropertyChangedEvent); }
 #endif 
-AFGBuildableRadarTower::AFGBuildableRadarTower(){ 
+AFGBuildableRadarTower::AFGBuildableRadarTower() : Super() {
 	this->mMinRevealRadius = 60000.0;
 	this->mMaxRevealRadius = 150000.0;
 	this->mNumRadarExpansionSteps = 4;
@@ -16,10 +16,7 @@ AFGBuildableRadarTower::AFGBuildableRadarTower(){
 	this->mCurrentExpansionStep = 0;
 	this->mTimeToNextExpansion = 0.0;
 	this->mActorRepresentationTexture = nullptr;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
 	this->NetUpdateFrequency = 1.0;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableRadarTower::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 bool AFGBuildableRadarTower::AddAsRepresentation(){ return bool(); }

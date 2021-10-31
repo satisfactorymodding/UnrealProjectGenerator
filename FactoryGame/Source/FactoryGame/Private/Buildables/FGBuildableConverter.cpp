@@ -5,11 +5,8 @@
 #include "FGPowerInfoComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableConverter::AFGBuildableConverter(){ 
+AFGBuildableConverter::AFGBuildableConverter() : Super() {
 	this->mNumberOfIngredientsNeeded = 2;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableConverter::BeginPlay(){ }
 void AFGBuildableConverter::Factory_CollectInput_Implementation(){ }

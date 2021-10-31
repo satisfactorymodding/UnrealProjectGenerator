@@ -2,7 +2,7 @@
 
 #include "FGInventoryComponentTrash.h"
 
-UFGInventoryComponentTrash::UFGInventoryComponentTrash(){ 
+UFGInventoryComponentTrash::UFGInventoryComponentTrash() : Super() {
 
 }
 void UFGInventoryComponentTrash::OnItemsAdded(int32 idx, int32 num){ }

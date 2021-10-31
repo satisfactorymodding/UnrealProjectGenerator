@@ -5,7 +5,7 @@
 #include "Components/SphereComponent.h"
 #include "FGDotComponent.h"
 
-AFGGasPillar::AFGGasPillar(){ 
+AFGGasPillar::AFGGasPillar() : Super() {
 	this->mMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
 	this->mOverlapCollision = CreateDefaultSubobject<USphereComponent>(TEXT("OverlapBox"));
 	this->mOverlapCollision->SetupAttachment(mMesh);
@@ -13,7 +13,7 @@ AFGGasPillar::AFGGasPillar(){
 	this->mDotComponent->SetupAttachment(mOverlapCollision);
 	this->mPostProcessSettings = nullptr;
 	this->mSignificanceRange = 15000.0;
-	this->RootComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
+	this->RootComponent = mMesh;
 }
 void AFGGasPillar::BeginPlay(){ }
 void AFGGasPillar::EndPlay(const EEndPlayReason::Type endPlayReason){ }

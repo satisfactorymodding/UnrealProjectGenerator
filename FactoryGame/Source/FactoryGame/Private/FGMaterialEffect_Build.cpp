@@ -2,7 +2,7 @@
 
 #include "FGMaterialEffect_Build.h"
 
-UFGMaterialEffect_Build::UFGMaterialEffect_Build(){ 
+UFGMaterialEffect_Build::UFGMaterialEffect_Build() : Super() {
 	this->mInstigator = nullptr;
 	this->mSpeed = 0.0;
 }

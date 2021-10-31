@@ -11,12 +11,10 @@ void FQuantizedReservoirIndicatorData::SetFlowDrainPct(float pct){ }
 float FQuantizedReservoirIndicatorData::GetFlowDrainPct() const{ return float(); }
 void FQuantizedReservoirIndicatorData::SetContentPct(float pct){ }
 float FQuantizedReservoirIndicatorData::GetContentPct() const{ return float(); }
-AFGBuildablePipeReservoir::AFGBuildablePipeReservoir(){ 
+AFGBuildablePipeReservoir::AFGBuildablePipeReservoir() : Super() {
 	this->mStackingHeight = 400.0;
 	this->mStorageCapacity = 500.0;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
 	this->mHologramClass = AFGPipeReservoirHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildablePipeReservoir::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildablePipeReservoir::BeginPlay(){ }

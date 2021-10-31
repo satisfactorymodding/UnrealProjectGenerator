@@ -2,7 +2,7 @@
 
 #include "FGUnlockSubsystem.h"
 
-AFGUnlockSubsystem::AFGUnlockSubsystem(){ 
+AFGUnlockSubsystem::AFGUnlockSubsystem() : Super() {
 	this->mMapUnlockedMessage = nullptr;
 	this->mInventorySlotUnlockedMessage = nullptr;
 	this->mBuildingEfficiencyUnlockedMessage = nullptr;

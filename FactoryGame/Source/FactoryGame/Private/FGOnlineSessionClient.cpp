@@ -9,7 +9,7 @@ void FSessionInformation::Init(const FString& InMapName, const FString& InOption
 void FSessionInformation::SendAnalytics(UWorld* world){ }
 void FSessionInformation::MarkAsOffline(){ }
 void FSessionInformation::SetState(ECreateSessionState newState, FOnCreateSessionStateChanged& createSessionChanged){ }
-UFGOnlineSessionClient::UFGOnlineSessionClient(){ 
+UFGOnlineSessionClient::UFGOnlineSessionClient() : Super() {
 
 }
 void UFGOnlineSessionClient::RegisterOnlineDelegates(){ }

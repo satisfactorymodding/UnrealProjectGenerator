@@ -4,11 +4,8 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGVehicleHologram::AFGVehicleHologram(){ 
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
+AFGVehicleHologram::AFGVehicleHologram() : Super() {
 	this->mSoftClearanceOverlapResponse = EHologramSoftClearanceResponse::HSCR_Block;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGVehicleHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGVehicleHologram::BeginPlay(){ }

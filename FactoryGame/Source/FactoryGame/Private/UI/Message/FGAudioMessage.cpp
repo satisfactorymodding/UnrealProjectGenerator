@@ -10,7 +10,7 @@ FPendingMessage FPendingMessageQueue::PopPendingMessage(){ return FPendingMessag
 #if WITH_EDITOR
 void UFGAudioMessage::MigrateDialogueData(){ }
 #endif 
-UFGAudioMessage::UFGAudioMessage(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+UFGAudioMessage::UFGAudioMessage(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->mAkAudioComponent = nullptr;
 	this->mCurrentDialogue.AudioEvent = nullptr;
 	this->mCurrentDialogue.OverlapWithNextDialogue = 0.0;

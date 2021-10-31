@@ -2,7 +2,7 @@
 
 #include "FGFluffActor.h"
 
-AFGFluffActor::AFGFluffActor(){ 
+AFGFluffActor::AFGFluffActor() : Super() {
 
 }
 void AFGFluffActor::BeginPlay(){ }

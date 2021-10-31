@@ -3,7 +3,7 @@
 #include "Resources/FGDecorDescriptor.h"
 #include "Buildables/FGBuildableDecor.h"
 
-UFGDecorDescriptor::UFGDecorDescriptor(){ 
+UFGDecorDescriptor::UFGDecorDescriptor() : Super() {
 	this->mDecorMesh = nullptr;
 	this->mBuildableClass = AFGBuildableDecor::StaticClass();
 }

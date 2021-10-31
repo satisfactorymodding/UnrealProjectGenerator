@@ -3,7 +3,7 @@
 #include "Equipment/FGJetPack.h"
 #include "Equipment/FGEquipment.h"
 
-AFGJetPack::AFGJetPack(){ 
+AFGJetPack::AFGJetPack() : Super() {
 	this->mJumpTimeStamp = 0.0;
 	this->mIsThrusting = false;
 	this->mEquipmentSlot = EEquipmentSlot::ES_BACK;

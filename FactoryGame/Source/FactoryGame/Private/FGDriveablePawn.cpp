@@ -3,7 +3,7 @@
 #include "FGDriveablePawn.h"
 #include "AIController.h"
 
-AFGDriveablePawn::AFGDriveablePawn(){ 
+AFGDriveablePawn::AFGDriveablePawn() : Super() {
 	this->mShouldAttachDriver = true;
 	this->mIsDriverVisible = false;
 	this->mDriverSeatSocket = TEXT("None");
@@ -13,7 +13,6 @@ AFGDriveablePawn::AFGDriveablePawn(){
 	this->mDriverExitOffset.Z = 0.0;
 	this->mDriver = nullptr;
 	this->mIsDriving = false;
-	this->AIControllerClass = AAIController::StaticClass();
 }
 void AFGDriveablePawn::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGDriveablePawn::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }

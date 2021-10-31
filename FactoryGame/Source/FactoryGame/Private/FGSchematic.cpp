@@ -13,7 +13,7 @@ void UFGSchematic::UpdateAssetBundleData(){ }
 void UFGSchematic::AddRecipe(TSubclassOf< UFGSchematic > inClass, TSubclassOf<  UFGRecipe > recipe){ }
 void UFGSchematic::MigrateDataToNewDependencySystem(){ }
 #endif 
-UFGSchematic::UFGSchematic(){ 
+UFGSchematic::UFGSchematic() : Super() {
 	this->mType = ESchematicType::EST_Custom;
 	this->mDisplayName = INVTEXT("");
 	this->mDescription = INVTEXT("");

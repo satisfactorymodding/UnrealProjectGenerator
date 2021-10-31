@@ -7,17 +7,14 @@
 
 void AFGBuildableManufacturer::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildableManufacturer::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
-AFGBuildableManufacturer::AFGBuildableManufacturer(){ 
+AFGBuildableManufacturer::AFGBuildableManufacturer() : Super() {
 	this->mManufacturingSpeed = 1.0;
 	this->mCurrentManufacturingProgress = 0.0;
 	this->mInputInventory = nullptr;
 	this->mOutputInventory = nullptr;
 	this->mCurrentRecipe = nullptr;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
 	this->mCanChangePotential = true;
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
 	this->NetDormancy = ENetDormancy::DORM_Initial;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableManufacturer::BeginPlay(){ }
 void AFGBuildableManufacturer::EndPlay(const EEndPlayReason::Type EndPlayReason){ }

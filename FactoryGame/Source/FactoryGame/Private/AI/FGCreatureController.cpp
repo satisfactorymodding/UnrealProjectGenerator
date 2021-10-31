@@ -4,9 +4,8 @@
 #include "Perception/AIPerceptionComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGCreatureController::AFGCreatureController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+AFGCreatureController::AFGCreatureController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->PerceptionComponent = CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("PerceptionComponent"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("TransformComponent0"));
 }
 void AFGCreatureController::SetEnabled(bool enabled){ }
 void AFGCreatureController::StartPanic_Implementation(){ }

@@ -4,7 +4,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGPoleHologram::AFGPoleHologram(){ 
+AFGPoleHologram::AFGPoleHologram() : Super() {
 	this->mPoleMesh.Mesh = nullptr;
 	this->mPoleMesh.Height = 0.0;
 	this->mPoleMeshComponent = nullptr;
@@ -17,10 +17,7 @@ AFGPoleHologram::AFGPoleHologram(){
 	this->mClearanceExtent.Y = 0.0;
 	this->mClearanceExtent.Z = 0.0;
 	this->mUseGradualFoundationRotations = true;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mInstancedMeshComponent->SetupAttachment(RootComponent);
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGPoleHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGPoleHologram::BeginPlay(){ }

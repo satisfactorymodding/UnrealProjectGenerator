@@ -6,7 +6,7 @@
 #include "Components/SceneComponent.h"
 #include "Hologram/FGResourceExtractorHologram.h"
 
-AFGBuildableFrackingActivator::AFGBuildableFrackingActivator(){ 
+AFGBuildableFrackingActivator::AFGBuildableFrackingActivator() : Super() {
 	this->mActivationStartupTime = 0.0;
 	this->mActivationStartupTimer = 0.0;
 	this->mSatelliteActivationComplete = false;
@@ -14,10 +14,6 @@ AFGBuildableFrackingActivator::AFGBuildableFrackingActivator(){
 	this->mConnectedExtractorCount = 0;
 	this->mDefaultPotentialExtractionPerMinute = 0.0;
 	this->mDefaultExtractor = nullptr;
-	this->mMustPlaceOnResourceDisqualifier = UFGCDNeedsResourceNode::StaticClass();
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGResourceExtractorHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableFrackingActivator::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 float AFGBuildableFrackingActivator::GetPotentialExtractionPerMinute() const{ return float(); }

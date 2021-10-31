@@ -8,7 +8,7 @@
 #if WITH_EDITOR
 void AFGBuildablePipelineSupport::OnConstruction(const FTransform& transform){ }
 #endif 
-AFGBuildablePipelineSupport::AFGBuildablePipelineSupport(){ 
+AFGBuildablePipelineSupport::AFGBuildablePipelineSupport() : Super() {
 	this->mLength = 200.0;
 	this->mVerticalAngle = 0.0;
 	this->mSupportComponentDefaultMesh = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("SupportMeshCompProxyHolder"));
@@ -18,7 +18,6 @@ AFGBuildablePipelineSupport::AFGBuildablePipelineSupport(){
 	this->mUseStaticHeight = false;
 	this->mHologramClass = AFGBuildablePipelineSupport::StaticClass();
 	this->mCreateClearanceMeshRepresentation = false;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mSupportComponentDefaultMesh->SetupAttachment(RootComponent);
 }
 void AFGBuildablePipelineSupport::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }

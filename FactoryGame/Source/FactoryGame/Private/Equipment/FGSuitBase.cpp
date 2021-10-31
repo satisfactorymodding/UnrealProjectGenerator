@@ -3,7 +3,7 @@
 #include "Equipment/FGSuitBase.h"
 #include "Equipment/FGEquipment.h"
 
-AFGSuitBase::AFGSuitBase(){ 
+AFGSuitBase::AFGSuitBase() : Super() {
 	this->mEquipmentSlot = EEquipmentSlot::ES_BACK;
 }
 void AFGSuitBase::WasEquipped_Implementation(){ }

@@ -2,7 +2,7 @@
 
 #include "FGCharacterAnimInstance.h"
 
-UFGCharacterAnimInstance::UFGCharacterAnimInstance(){ 
+UFGCharacterAnimInstance::UFGCharacterAnimInstance() : Super() {
 	this->mDirection = 0.0;
 	this->mAccelerationVectorLength = 0.0;
 	this->mVelocity.X = 0.0;

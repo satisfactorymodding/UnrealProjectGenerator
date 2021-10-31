@@ -12,8 +12,7 @@ const FFoundationSideSelectionFlags FFoundationSideSelectionFlags::NoEdges = FFo
 const FFoundationSideSelectionFlags FFoundationSideSelectionFlags::AllEdges = FFoundationSideSelectionFlags();
 FVector FFoundationHelpers::GetLocalSpaceNormalFromFoundationSide(EFoundationSide side){ return FVector(); }
 FFoundationSideNormal FFoundationHelpers::FindBestMatchingFoundationSideFromLocalNormal(const FVector& normal, FFoundationSideSelectionFlags exludeEdges){ return FFoundationSideNormal(); }
-AFGBuildableFactoryBuilding::AFGBuildableFactoryBuilding(){ 
+AFGBuildableFactoryBuilding::AFGBuildableFactoryBuilding() : Super() {
 	this->mMeshComponentProxy = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("BuildingMeshProxy"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mMeshComponentProxy->SetupAttachment(RootComponent);
 }

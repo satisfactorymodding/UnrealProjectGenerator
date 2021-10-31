@@ -4,7 +4,7 @@
 
 AFGCentralStorageSubsystem* AFGCentralStorageSubsystem::Get(UWorld* world){ return nullptr; }
 AFGCentralStorageSubsystem* AFGCentralStorageSubsystem::Get(UObject* worldContext){ return nullptr; }
-AFGCentralStorageSubsystem::AFGCentralStorageSubsystem(){ 
+AFGCentralStorageSubsystem::AFGCentralStorageSubsystem() : Super() {
 
 }
 int32 AFGCentralStorageSubsystem::GetNumItemsFromCentralStorage(TSubclassOf<  UFGItemDescriptor > itemClass){ return int32(); }

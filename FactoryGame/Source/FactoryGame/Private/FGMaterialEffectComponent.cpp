@@ -2,7 +2,7 @@
 
 #include "FGMaterialEffectComponent.h"
 
-UFGMaterialEffectComponent::UFGMaterialEffectComponent(){ 
+UFGMaterialEffectComponent::UFGMaterialEffectComponent() : Super() {
 	this->mMaterial = nullptr;
 	this->mAutoDestroy = true;
 	this->PrimaryComponentTick.TickGroup = ETickingGroup::TG_DuringPhysics;

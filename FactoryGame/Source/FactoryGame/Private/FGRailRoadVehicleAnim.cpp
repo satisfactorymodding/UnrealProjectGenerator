@@ -5,7 +5,7 @@
 void FAnimInstanceProxyRailroadVehicle::PreUpdate(UAnimInstance* inAnimInstance, float dt){ }
 void FAnimInstanceProxyRailroadVehicle::Update(float dt){ }
 void FAnimInstanceProxyRailroadVehicle::Initialize(UAnimInstance* inAnimInstance){ }
-UFGRailroadVehicleAnim::UFGRailroadVehicleAnim(){ 
+UFGRailroadVehicleAnim::UFGRailroadVehicleAnim() : Super() {
 	this->mBrakeCurve = nullptr;
 	this->mVehicle = nullptr;
 	this->mLocomotive = nullptr;

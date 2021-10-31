@@ -4,7 +4,7 @@
 #include "FGPowerInfoComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableLightSource::AFGBuildableLightSource(){ 
+AFGBuildableLightSource::AFGBuildableLightSource() : Super() {
 	this->mIsEnabled = true;
 	this->mLightControlData.ColorSlotIndex = 0;
 	this->mLightControlData.Intensity = 1.0;
@@ -13,7 +13,6 @@ AFGBuildableLightSource::AFGBuildableLightSource(){
 	this->mPowerInfo = CreateDefaultSubobject<UFGPowerInfoComponent>(TEXT("powerInfo"));
 	this->mHasPower = false;
 	this->mIsDay = false;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableLightSource::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildableLightSource::BeginPlay(){ }

@@ -6,9 +6,8 @@
 #if WITH_EDITOR
 void AFGVolumeMapArea::CheckForErrors(){ Super::CheckForErrors(); }
 #endif 
-AFGVolumeMapArea::AFGVolumeMapArea(){ 
+AFGVolumeMapArea::AFGVolumeMapArea() : Super() {
 	this->mMapArea = nullptr;
-	this->RootComponent = CreateDefaultSubobject<UBrushComponent>(TEXT("BrushComponent0"));
 }
 void AFGVolumeMapArea::BeginPlay(){ }
 void AFGVolumeMapArea::OnPrimitiveComponentEntered(UPrimitiveComponent* overlappedComp, AActor* other, UPrimitiveComponent* otherComp, int32 otherBodyIndex, bool fromSweep, const FHitResult& sweepResult){ }

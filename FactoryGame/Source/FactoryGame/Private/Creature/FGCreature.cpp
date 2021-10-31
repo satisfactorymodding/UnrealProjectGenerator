@@ -6,7 +6,7 @@
 #include "Components/SceneComponent.h"
 #include "AIController.h"
 
-AFGCreature::AFGCreature(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+AFGCreature::AFGCreature(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->mSpline = nullptr;
 	this->mShouldOptimizeMeshWhenVisible = true;
 	this->mNavigationGenerationRadius = 7000.0;
@@ -32,10 +32,8 @@ AFGCreature::AFGCreature(const FObjectInitializer& ObjectInitializer) : Super(Ob
 	this->mSpawnWeight = 1.0;
 	this->mNeedsSpawner = true;
 	this->mSpawnDistance = -1.0;
-	this->mHealthComponent = CreateDefaultSubobject<UFGHealthComponent>(TEXT("HealthComponent"));
 	this->bUseControllerRotationYaw = false;
-	this->AIControllerClass = AAIController::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CollisionCylinder"));
+	this->mEyeLocationComponent->SetupAttachment(GetCapsuleComponent());
 }
 void AFGCreature::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGCreature::BeginPlay(){ }

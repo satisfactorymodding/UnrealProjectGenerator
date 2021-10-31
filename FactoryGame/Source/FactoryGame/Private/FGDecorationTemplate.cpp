@@ -3,7 +3,7 @@
 #include "FGDecorationTemplate.h"
 #include "Components/SceneComponent.h"
 
-AFGDecorationTemplate::AFGDecorationTemplate(){ 
+AFGDecorationTemplate::AFGDecorationTemplate() : Super() {
 	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
 }
 TArray< class UFGPoolableProxyComponentBase* > AFGDecorationTemplate::GetPoolAbleComponentsFromSubclass(const UClass* InActorClass){ return TArray<class UFGPoolableProxyComponentBase*>(); }

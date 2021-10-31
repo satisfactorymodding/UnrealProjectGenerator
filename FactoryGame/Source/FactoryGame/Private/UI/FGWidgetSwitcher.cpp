@@ -5,7 +5,7 @@
 UFGWidgetSwitcherInterface::UFGWidgetSwitcherInterface(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 
 }
-UFGWidgetSwitcher::UFGWidgetSwitcher(){ 
+UFGWidgetSwitcher::UFGWidgetSwitcher() : Super() {
 	this->mFadeOutTime = 0.25;
 	this->mPendingNewWidget = nullptr;
 	this->mEnteringWidget = nullptr;

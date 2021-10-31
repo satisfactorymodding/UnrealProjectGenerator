@@ -2,7 +2,7 @@
 
 #include "Equipment/FGResourceScanner.h"
 
-AFGResourceScanner::AFGResourceScanner(){ 
+AFGResourceScanner::AFGResourceScanner() : Super() {
 	this->mResourceDescriptorToScanFor = nullptr;
 	this->mNrOfClosestClustersToMark = 3;
 	this->mLastPressedTimeStamp = 0.0;

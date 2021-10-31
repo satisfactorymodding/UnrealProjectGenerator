@@ -2,7 +2,7 @@
 
 #include "Resources/FGBuildDescriptor.h"
 
-UFGBuildDescriptor::UFGBuildDescriptor(){ 
+UFGBuildDescriptor::UFGBuildDescriptor() : Super() {
 	this->mForm = EResourceForm::RF_INVALID;
 }
 TSubclassOf< class UFGBuildCategory > UFGBuildDescriptor::GetBuildCategory(TSubclassOf< UFGBuildDescriptor > inClass){ return TSubclassOf<class UFGBuildCategory>(); }

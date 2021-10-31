@@ -2,7 +2,7 @@
 
 #include "Particles/FGCollectionParamUniformFloat.h"
 
-UFGCollectionParamUniformFloat::UFGCollectionParamUniformFloat(){ 
+UFGCollectionParamUniformFloat::UFGCollectionParamUniformFloat() : Super() {
 	this->Collection = nullptr;
 	this->WindDirectionParamName = TEXT("WindDirection");
 	this->WindIntensityParamName = TEXT("WindSpeed");

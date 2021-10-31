@@ -2,7 +2,7 @@
 
 #include "FGFactoryLegInstanceMeshProxy.h"
 
-UFGFactoryLegInstanceMeshProxy::UFGFactoryLegInstanceMeshProxy(){ 
+UFGFactoryLegInstanceMeshProxy::UFGFactoryLegInstanceMeshProxy() : Super() {
 	this->mOptimizationCategory = EDistanceCullCategory::FGDDC_NEVERCULL;
 	this->PrimaryComponentTick.TickGroup = ETickingGroup::TG_DuringPhysics;
 	this->PrimaryComponentTick.EndTickGroup = ETickingGroup::TG_PrePhysics;

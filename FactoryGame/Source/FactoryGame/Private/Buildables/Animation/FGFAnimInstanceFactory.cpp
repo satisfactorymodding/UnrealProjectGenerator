@@ -5,7 +5,7 @@
 void FAnimInstanceProxyFactory::PreUpdate(UAnimInstance* InAnimInstance, float DeltaSeconds){ }
 void FAnimInstanceProxyFactory::Update(float DeltaSeconds){ }
 void FAnimInstanceProxyFactory::Initialize(UAnimInstance* InAnimInstance){ }
-UFGFAnimInstanceFactory::UFGFAnimInstanceFactory(){ 
+UFGFAnimInstanceFactory::UFGFAnimInstanceFactory() : Super() {
 	this->mUseRampUp = false;
 	this->mRampUpTime = 2.0;
 	this->mRampDownTime = 2.0;

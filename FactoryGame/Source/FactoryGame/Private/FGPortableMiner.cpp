@@ -3,7 +3,7 @@
 #include "FGPortableMiner.h"
 
 void AFGPortableMiner::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
-AFGPortableMiner::AFGPortableMiner(){ 
+AFGPortableMiner::AFGPortableMiner() : Super() {
 	this->mExtractCycleTime = 1.0;
 	this->mExtractResourceNode = nullptr;
 	this->mOutputInventory = nullptr;

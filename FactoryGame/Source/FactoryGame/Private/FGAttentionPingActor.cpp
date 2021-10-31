@@ -2,7 +2,7 @@
 
 #include "FGAttentionPingActor.h"
 
-AFGAttentionPingActor::AFGAttentionPingActor(){ 
+AFGAttentionPingActor::AFGAttentionPingActor() : Super() {
 	this->mOwningPlayerState = nullptr;
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;

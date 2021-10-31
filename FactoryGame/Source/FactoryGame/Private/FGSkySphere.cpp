@@ -16,7 +16,7 @@ void AFGSkySphere::SetupPreviewDelegate(){ }
 #endif 
 #if WITH_EDITORONLY_DATA
 #endif 
-AFGSkySphere::AFGSkySphere(){ 
+AFGSkySphere::AFGSkySphere() : Super() {
 	this->mSunLightColorCurve.ExternalCurve = nullptr;
 	this->mSunIntensity.EditorCurveData.DefaultValue = 1.0;
 	this->mSunIntensity.EditorCurveData.PreInfinityExtrap = ERichCurveExtrapolation::RCCE_Constant;

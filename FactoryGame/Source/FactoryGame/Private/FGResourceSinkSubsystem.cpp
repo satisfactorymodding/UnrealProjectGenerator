@@ -2,7 +2,7 @@
 
 #include "FGResourceSinkSubsystem.h"
 
-AFGResourceSinkSubsystem::AFGResourceSinkSubsystem(){ 
+AFGResourceSinkSubsystem::AFGResourceSinkSubsystem() : Super() {
 	this->mTotalResourceSinkPoints = 0LL;
 	this->mCurrentPointLevel = 0;
 	this->mNumResourceSinkCoupons = 0;

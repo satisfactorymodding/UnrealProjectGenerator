@@ -5,14 +5,13 @@
 #include "Components/SceneComponent.h"
 #include "FGColoredInstanceMeshProxy.h"
 
-AFGBuildablePowerPole::AFGBuildablePowerPole(){ 
+AFGBuildablePowerPole::AFGBuildablePowerPole() : Super() {
 	this->mConnectionsWidgetComponent = nullptr;
 	this->mConnectionWidgetClass = nullptr;
 	this->mMeshComponentProxy = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("PoleMeshProxy"));
 	this->mPowerPoleType = EPowerPoleType::PPT_POLE;
 	this->mHasPower = false;
 	this->mHologramClass = AFGBuildableHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mMeshComponentProxy->SetupAttachment(RootComponent);
 }
 void AFGBuildablePowerPole::BeginPlay(){ }

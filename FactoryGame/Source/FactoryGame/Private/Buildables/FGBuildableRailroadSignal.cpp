@@ -4,7 +4,7 @@
 #include "Components/SceneComponent.h"
 #include "FGColoredInstanceMeshProxy.h"
 
-AFGBuildableRailroadSignal::AFGBuildableRailroadSignal(){ 
+AFGBuildableRailroadSignal::AFGBuildableRailroadSignal() : Super() {
 	this->mSignalComponent = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("Signal Component"));
 	this->mOwningConnection = nullptr;
 	this->mAspect = ERailroadSignalAspect::RSA_None;
@@ -13,7 +13,6 @@ AFGBuildableRailroadSignal::AFGBuildableRailroadSignal(){
 	this->mIsBiDirectional = false;
 	this->mVisualState = 0;
 	this->mSignificanceRange = 75000.0;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mSignalComponent->SetupAttachment(RootComponent);
 }
 void AFGBuildableRailroadSignal::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }

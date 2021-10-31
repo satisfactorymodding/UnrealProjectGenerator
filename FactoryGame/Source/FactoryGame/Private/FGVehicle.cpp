@@ -7,7 +7,7 @@
 FVehicleSeat::FVehicleSeat(){ }
 void AFGVehicle::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 bool AFGVehicle::IsRelevancyOwnerFor(const AActor* Actor, const AActor* Owner, const AActor* ConnectionActor) const{ return bool(); }
-AFGVehicle::AFGVehicle(){ 
+AFGVehicle::AFGVehicle() : Super() {
 	this->mDisplayName = INVTEXT("");
 	this->mDescription = INVTEXT("");
 	this->mHologramClass = nullptr;
@@ -53,7 +53,7 @@ AFGVehicle::AFGVehicle(){
 	this->AutoPossessAI = EAutoPossessAI::Disabled;
 	this->AIControllerClass = nullptr;
 	this->bNetLoadOnClient = false;
-	this->RootComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VehicleMesh"));
+	this->RootComponent = mMesh;
 }
 void AFGVehicle::BeginPlay(){ }
 void AFGVehicle::EndPlay(const EEndPlayReason::Type EndPlayReason){ }

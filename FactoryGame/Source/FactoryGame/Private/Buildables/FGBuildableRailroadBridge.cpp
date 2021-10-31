@@ -4,9 +4,8 @@
 #include "FGSplineComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableRailroadBridge::AFGBuildableRailroadBridge(){ 
+AFGBuildableRailroadBridge::AFGBuildableRailroadBridge() : Super() {
 	this->mSplineComponent = CreateDefaultSubobject<UFGSplineComponent>(TEXT("SplineComponent"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mSplineComponent->SetupAttachment(RootComponent);
 }
 void AFGBuildableRailroadBridge::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }

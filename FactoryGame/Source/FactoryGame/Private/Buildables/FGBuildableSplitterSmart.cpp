@@ -3,11 +3,10 @@
 #include "Buildables/FGBuildableSplitterSmart.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableSplitterSmart::AFGBuildableSplitterSmart(){ 
+AFGBuildableSplitterSmart::AFGBuildableSplitterSmart() : Super() {
 	this->mMaxNumSortRules = 64;
 	this->mLastOutputIndex = 0;
 	this->NetDormancy = ENetDormancy::DORM_Awake;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableSplitterSmart::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildableSplitterSmart::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }

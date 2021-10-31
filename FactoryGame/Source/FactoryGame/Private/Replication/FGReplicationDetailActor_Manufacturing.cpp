@@ -3,11 +3,10 @@
 #include "Replication/FGReplicationDetailActor_Manufacturing.h"
 #include "Components/SceneComponent.h"
 
-AFGReplicationDetailActor_Manufacturing::AFGReplicationDetailActor_Manufacturing(){ 
+AFGReplicationDetailActor_Manufacturing::AFGReplicationDetailActor_Manufacturing() : Super() {
 	this->mInputInventory = nullptr;
 	this->mOutputInventory = nullptr;
 	this->mCurrentManufacturingProgress = 0.0;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("ReplicationDetailActor"));
 }
 void AFGReplicationDetailActor_Manufacturing::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGReplicationDetailActor_Manufacturing::InitReplicationDetailActor( AFGBuildable* owningActor){ }

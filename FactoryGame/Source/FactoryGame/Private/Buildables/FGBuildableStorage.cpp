@@ -5,14 +5,13 @@
 #include "Components/SceneComponent.h"
 
 void AFGBuildableStorage::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
-AFGBuildableStorage::AFGBuildableStorage(){ 
+AFGBuildableStorage::AFGBuildableStorage() : Super() {
 	this->mStackingHeight = 0.0;
 	this->mInventorySizeX = 4;
 	this->mInventorySizeY = 4;
 	this->mStorageInventory = nullptr;
 	this->mPowerInfoClass = nullptr;
 	this->mAddToSignificanceManager = false;
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
 	this->mForceNetUpdateOnRegisterPlayer = true;
 	this->mToggleDormancyOnInteraction = true;
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
@@ -23,7 +22,6 @@ AFGBuildableStorage::AFGBuildableStorage(){
 	this->PrimaryActorTick.bAllowTickOnDedicatedServer = true;
 	this->PrimaryActorTick.TickInterval = 0.0;
 	this->NetDormancy = ENetDormancy::DORM_Initial;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableStorage::BeginPlay(){ }
 void AFGBuildableStorage::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund) const{ }

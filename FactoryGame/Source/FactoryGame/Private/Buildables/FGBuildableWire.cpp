@@ -5,7 +5,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableWire::AFGBuildableWire(){ 
+AFGBuildableWire::AFGBuildableWire() : Super() {
 	this->mMaxLength = 5000.0;
 	this->mLengthPerCost = 100.0;
 	this->mCircuitType = nullptr;
@@ -22,7 +22,6 @@ AFGBuildableWire::AFGBuildableWire(){
 	this->mDismantleEffectClassName = FSoftClassPath("None");
 	this->mBuildEffectClassName = FSoftClassPath("/Game/FactoryGame/Buildable/Factory/-Shared/BP_MaterialEffect_WireBuild.BP_MaterialEffect_WireBuild_C");
 	this->NetDormancy = ENetDormancy::DORM_DormantAll;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mWireMesh->SetupAttachment(RootComponent);
 }
 void AFGBuildableWire::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }

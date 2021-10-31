@@ -3,9 +3,9 @@
 #include "FGCrashSiteDebrisActor.h"
 #include "Components/StaticMeshComponent.h"
 
-AFGCrashSiteDebrisActor::AFGCrashSiteDebrisActor(){ 
+AFGCrashSiteDebrisActor::AFGCrashSiteDebrisActor() : Super() {
 	this->mMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
-	this->RootComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
+	this->RootComponent = mMesh;
 }
 void AFGCrashSiteDebrisActor::BeginPlay(){ }
 void AFGCrashSiteDebrisActor::EndPlay(const EEndPlayReason::Type endPlayReason){ }

@@ -4,7 +4,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGGenericBuildableHologram::AFGGenericBuildableHologram(){ 
+AFGGenericBuildableHologram::AFGGenericBuildableHologram() : Super() {
 	this->mIsWallRotationAllowed = true;
 	this->mCanSnapToFoundationFloor = true;
 	this->mCanSnapToFoundationCeiling = false;
@@ -18,9 +18,6 @@ AFGGenericBuildableHologram::AFGGenericBuildableHologram(){
 	this->mWallSnapOffset.Y = 0.0;
 	this->mSnapAxis = EAxis::Z;
 	this->mFoundationSnappingInset = 0.0;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGGenericBuildableHologram::BeginPlay(){ }
 bool AFGGenericBuildableHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }

@@ -6,7 +6,7 @@ void UFGCircuit::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLife
 bool UFGCircuit::IsSupportedForNetworking() const{ return bool(); }
 bool UFGCircuit::IsNameStableForNetworking() const{ return bool(); }
 void UFGCircuit::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
-UFGCircuit::UFGCircuit(){ 
+UFGCircuit::UFGCircuit() : Super() {
 	this->mCircuitID = -1;
 	this->mNeedFullRebuild = true;
 	this->mHasChanged = false;

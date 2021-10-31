@@ -2,7 +2,7 @@
 
 #include "Equipment/FGEquipmentBoomBox.h"
 
-AFGEquipmentBoomBox::AFGEquipmentBoomBox(){ 
+AFGEquipmentBoomBox::AFGEquipmentBoomBox() : Super() {
 	this->mCurrentTapeDescriptor = nullptr;
 }
 void AFGEquipmentBoomBox::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }

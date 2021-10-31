@@ -4,11 +4,8 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableDroneHologram::AFGBuildableDroneHologram(){ 
+AFGBuildableDroneHologram::AFGBuildableDroneHologram() : Super() {
 	this->mSnappedStation = nullptr;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGBuildableDroneHologram::BeginPlay(){ }
 void AFGBuildableDroneHologram::Destroyed(){ }

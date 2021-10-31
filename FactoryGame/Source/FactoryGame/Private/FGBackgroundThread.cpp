@@ -51,6 +51,6 @@ void APoolRoot::UpdateBuildingState( AFGBuildable* Building, int32 FlagsToSet){ 
 void APoolRoot::DisplayDebug(UCanvas* Canvas, const FDebugDisplayInfo& DebugDisplay, float& YL, float& YPos){ }
 void APoolRoot::SetFlag(AFGBuildable* Buildable,  int32 Flags){ }
 void APoolRoot::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
-UFGPoolableProxyComponentBase::UFGPoolableProxyComponentBase(){ 
+UFGPoolableProxyComponentBase::UFGPoolableProxyComponentBase() : Super() {
 	this->bHiddenInGame = true;
 }

@@ -2,8 +2,8 @@
 
 #include "FGInventoryComponentBeltSlot.h"
 
-UFGInventoryComponentBeltSlot::UFGInventoryComponentBeltSlot(){ 
-	this->SetIsReplicated(true);
+UFGInventoryComponentBeltSlot::UFGInventoryComponentBeltSlot() : Super() {
+	this->SetIsReplicatedByDefault(true);
 }
 bool UFGInventoryComponentBeltSlot::ContainsStackItemTypeAndHasEnoughRoom(FInventoryStack itemStack){ return bool(); }
 void UFGInventoryComponentBeltSlot::OnItemsAdded(int32 idx, int32 num){ }

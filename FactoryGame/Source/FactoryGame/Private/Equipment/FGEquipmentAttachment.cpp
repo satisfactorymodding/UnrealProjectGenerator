@@ -4,7 +4,7 @@
 #include "Equipment/FGEquipment.h"
 
 void AFGEquipmentAttachment::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
-AFGEquipmentAttachment::AFGEquipmentAttachment(){ 
+AFGEquipmentAttachment::AFGEquipmentAttachment() : Super() {
 	this->mEquipmentClass = nullptr;
 	this->mUseLocation.X = 0.0;
 	this->mUseLocation.Y = 0.0;

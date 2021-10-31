@@ -2,7 +2,7 @@
 
 #include "Equipment/FGBuildGunBuild.h"
 
-UFGBuildGunStateBuild::UFGBuildGunStateBuild(){ 
+UFGBuildGunStateBuild::UFGBuildGunStateBuild() : Super() {
 	this->mBuildModeSelectHoldDownDurationForUI = 0.18;
 	this->mIsWaitingForSelectionUI = false;
 	this->mIsUsingPressAndReleaseAsBuildSteps = true;

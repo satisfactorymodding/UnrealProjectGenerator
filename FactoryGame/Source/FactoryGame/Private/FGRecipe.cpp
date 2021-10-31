@@ -14,7 +14,7 @@ void UFGRecipe::SetProduct(TSubclassOf< UFGRecipe > recipe, TArray< FItemAmount 
 		recipe.GetDefaultObject()->mProduct = product;
 }
 #endif 
-UFGRecipe::UFGRecipe(){ 
+UFGRecipe::UFGRecipe() : Super() {
 	this->mDisplayNameOverride = false;
 	this->mDisplayName = INVTEXT("");
 	this->mOverriddenCategory = nullptr;

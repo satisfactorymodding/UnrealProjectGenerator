@@ -5,13 +5,10 @@
 #include "FGPowerInfoComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableManufacturerVariablePower::AFGBuildableManufacturerVariablePower(){ 
+AFGBuildableManufacturerVariablePower::AFGBuildableManufacturerVariablePower() : Super() {
 	this->mEstimatedMininumPowerConsumption = 0.0;
 	this->mEstimatedMaximumPowerConsumption = 0.0;
 	this->mPowerConsumptionCurve = nullptr;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableManufacturerVariablePower::BeginPlay(){ }
 void AFGBuildableManufacturerVariablePower::Factory_StartProducing(){ }

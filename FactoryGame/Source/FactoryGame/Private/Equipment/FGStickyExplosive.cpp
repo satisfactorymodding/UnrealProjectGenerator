@@ -5,10 +5,9 @@
 #include "Components/SphereComponent.h"
 #include "DamageTypes/FGDamageType.h"
 
-AFGStickyExplosive::AFGStickyExplosive(){ 
+AFGStickyExplosive::AFGStickyExplosive() : Super() {
 	this->mDetonateIn = 0.0;
 	this->mEnvironmentDestructionSphere = nullptr;
-	this->mDestructionCollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("DestructionSphere"));
 	this->mRotatingMovementComp = CreateDefaultSubobject<URotatingMovementComponent>(TEXT("RotatingMovementComponent"));
 	this->mThrowRotation.Pitch = -359.363;
 	this->mThrowRotation.Yaw = -57.0081;
@@ -30,7 +29,6 @@ AFGStickyExplosive::AFGStickyExplosive(){
 	this->mProjectileData.DamageFalloffCurve.ExternalCurve = nullptr;
 	this->mProjectileData.EffectiveRange = 0.0;
 	this->mProjectileData.WeaponDamageMultiplier = 1.0;
-	this->RootComponent = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComp"));
 }
 void AFGStickyExplosive::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGStickyExplosive::OnImpact(const FHitResult& hitResult){ }

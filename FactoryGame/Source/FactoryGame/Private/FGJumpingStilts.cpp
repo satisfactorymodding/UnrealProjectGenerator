@@ -3,7 +3,7 @@
 #include "FGJumpingStilts.h"
 #include "Equipment/FGEquipment.h"
 
-AFGJumpingStilts::AFGJumpingStilts(){ 
+AFGJumpingStilts::AFGJumpingStilts() : Super() {
 	this->mFallDamageCurveOverride = nullptr;
 	this->mSprintSpeedFactor = 0.0;
 	this->mJumpSpeedFactor = 0.0;

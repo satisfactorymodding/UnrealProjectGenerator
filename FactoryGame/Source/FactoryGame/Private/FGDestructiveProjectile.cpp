@@ -4,7 +4,7 @@
 #include "Components/SphereComponent.h"
 #include "DamageTypes/FGDamageType.h"
 
-AFGDestructiveProjectile::AFGDestructiveProjectile(){ 
+AFGDestructiveProjectile::AFGDestructiveProjectile() : Super() {
 	this->mDestructionCollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("DestructionSphere"));
 	this->mDestroysRelevantActors = true;
 	this->mDestroysFoliage = true;
@@ -26,7 +26,7 @@ AFGDestructiveProjectile::AFGDestructiveProjectile(){
 	this->mProjectileData.DamageFalloffCurve.ExternalCurve = nullptr;
 	this->mProjectileData.EffectiveRange = 0.0;
 	this->mProjectileData.WeaponDamageMultiplier = 1.0;
-	this->RootComponent = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComp"));
+	this->mDestructionCollisionComp->SetupAttachment(GetCollisionSphere());
 }
 void AFGDestructiveProjectile::PostInitializeComponents(){ Super::PostInitializeComponents(); }
 void AFGDestructiveProjectile::BeginPlay(){ }

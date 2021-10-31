@@ -2,7 +2,7 @@
 
 #include "FGVehicleWheel.h"
 
-UFGVehicleWheel::UFGVehicleWheel(){ 
+UFGVehicleWheel::UFGVehicleWheel() : Super() {
 	this->mInvertSteering = false;
 	this->mAutoGenerateCollisionCylinder = false;
 	this->mCamberAtRest = 0.0;

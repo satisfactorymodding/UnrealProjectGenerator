@@ -2,7 +2,7 @@
 
 #include "FGAnimNotify_Landed.h"
 
-UFGAnimNotify_Landed::UFGAnimNotify_Landed(){ 
+UFGAnimNotify_Landed::UFGAnimNotify_Landed() : Super() {
 
 }
 FString UFGAnimNotify_Landed::GetNotifyName_Implementation() const{ return FString(); }

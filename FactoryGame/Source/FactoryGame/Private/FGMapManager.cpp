@@ -4,7 +4,7 @@
 
 AFGMapManager* AFGMapManager::Get(UWorld* world){ return nullptr; }
 AFGMapManager* AFGMapManager::Get(UObject* worldContext){ return nullptr; }
-AFGMapManager::AFGMapManager(){ 
+AFGMapManager::AFGMapManager() : Super() {
 	this->mFogOfWarTexture = nullptr;
 	this->mCachedMinimapCaptureActor = nullptr;
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_DuringPhysics;

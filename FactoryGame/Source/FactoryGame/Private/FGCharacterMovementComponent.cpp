@@ -2,7 +2,7 @@
 
 #include "FGCharacterMovementComponent.h"
 
-UFGCharacterMovementComponent::UFGCharacterMovementComponent(){ 
+UFGCharacterMovementComponent::UFGCharacterMovementComponent() : Super() {
 	this->mLastJumpTimeStamp = 0.0;
 	this->mIsParachuting = false;
 	this->mClimbSpeed = 500.0;

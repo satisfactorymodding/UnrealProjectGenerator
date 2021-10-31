@@ -5,7 +5,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGRailroadTrackHologram::AFGRailroadTrackHologram(){ 
+AFGRailroadTrackHologram::AFGRailroadTrackHologram() : Super() {
 	this->mDefaultSwitchControlRecipe = nullptr;
 	this->mMinLength = 1200.0;
 	this->mMaxLength = 10000.0;
@@ -19,11 +19,6 @@ AFGRailroadTrackHologram::AFGRailroadTrackHologram(){
 	this->mMesh = nullptr;
 	this->mSwitchControls[0] = nullptr;
 	this->mSwitchControls[1] = nullptr;
-	this->mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("mSplineComponent"));
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mSplineComponent->SetupAttachment(RootComponent);
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGRailroadTrackHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGRailroadTrackHologram::BeginPlay(){ }

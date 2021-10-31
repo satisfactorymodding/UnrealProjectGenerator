@@ -8,7 +8,7 @@
 #include "AIController.h"
 #include "FGCharacterMovementComponent.h"
 
-AFGCharacterPlayer::AFGCharacterPlayer(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer.SetDefaultSubobjectClass<UFGCharacterMovementComponent>(ACharacter::CharacterMovementComponentName)) { 
+AFGCharacterPlayer::AFGCharacterPlayer(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer.SetDefaultSubobjectClass<UFGCharacterMovementComponent>(ACharacter::CharacterMovementComponentName)) {
 	this->mBaseTurnRate = 45.0;
 	this->mBaseLookUpRate = 45.0;
 	this->mMesh1PAnimClass = nullptr;
@@ -74,10 +74,8 @@ AFGCharacterPlayer::AFGCharacterPlayer(const FObjectInitializer& ObjectInitializ
 	this->mNoUpdate = false;
 	this->mActorRepresentationTexture = nullptr;
 	this->mActorRepresentationTextureDead = nullptr;
-	this->mHealthComponent = CreateDefaultSubobject<UFGHealthComponent>(TEXT("HealthComponent"));
-	this->AIControllerClass = AAIController::StaticClass();
 	this->bNetUseOwnerRelevancy = true;
-	this->RootComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CollisionCylinder"));
+	this->mSpringArmComponent->SetupAttachment(GetCapsuleComponent());
 }
 void AFGCharacterPlayer::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGCharacterPlayer::PostActorCreated(){ Super::PostActorCreated(); }

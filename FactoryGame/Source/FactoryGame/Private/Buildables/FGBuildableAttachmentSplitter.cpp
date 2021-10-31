@@ -4,14 +4,13 @@
 #include "Hologram/FGAttachmentSplitterHologram.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableAttachmentSplitter::AFGBuildableAttachmentSplitter(){ 
+AFGBuildableAttachmentSplitter::AFGBuildableAttachmentSplitter() : Super() {
 	this->mCurrentOutputIndex = -1;
 	this->mCurrentInventoryIndex = 0;
 	this->mPowerInfoClass = nullptr;
 	this->mMinimumProducingTime = -1.0;
 	this->mMinimumStoppedTime = -1.0;
 	this->mHologramClass = AFGAttachmentSplitterHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableAttachmentSplitter::BeginPlay(){ }
 void AFGBuildableAttachmentSplitter::Upgrade_Implementation(AActor* newActor){ }

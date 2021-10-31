@@ -4,7 +4,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGTrainPlatformHologram::AFGTrainPlatformHologram(){ 
+AFGTrainPlatformHologram::AFGTrainPlatformHologram() : Super() {
 	this->mRequireSnapToPlatform = false;
 	this->mRailroadTrackRecipe = nullptr;
 	this->mRailroadTrackHologram = nullptr;
@@ -12,9 +12,6 @@ AFGTrainPlatformHologram::AFGTrainPlatformHologram(){
 	this->mPlatformConnectionComponents[1] = nullptr;
 	this->mConnectedPlatformComponents[0] = nullptr;
 	this->mConnectedPlatformComponents[1] = nullptr;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGTrainPlatformHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGTrainPlatformHologram::BeginPlay(){ }

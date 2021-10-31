@@ -5,14 +5,9 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGRailroadBridgeHologram::AFGRailroadBridgeHologram(){ 
+AFGRailroadBridgeHologram::AFGRailroadBridgeHologram() : Super() {
 	this->mSnappedFoundation[0] = nullptr;
 	this->mSnappedFoundation[1] = nullptr;
-	this->mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("mSplineComponent"));
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mSplineComponent->SetupAttachment(RootComponent);
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGRailroadBridgeHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }
 bool AFGRailroadBridgeHologram::DoMultiStepPlacement(bool isInputFromARelease){ return bool(); }

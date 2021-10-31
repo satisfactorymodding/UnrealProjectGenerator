@@ -3,8 +3,7 @@
 #include "FGPlayerStartTradingPost.h"
 #include "Components/CapsuleComponent.h"
 
-AFGPlayerStartTradingPost::AFGPlayerStartTradingPost(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+AFGPlayerStartTradingPost::AFGPlayerStartTradingPost(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->PlayerStartTag = TEXT("TRADING_POST");
-	this->RootComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CollisionCapsule"));
 }
 const FName AFGPlayerStartTradingPost::STATIC_PLAYER_START_TAG = FName();

@@ -3,7 +3,7 @@
 #include "Server/FGServerBeaconHostObject.h"
 #include "Server/FGServerBeaconClient.h"
 
-AFGServerBeaconHostObject::AFGServerBeaconHostObject(){ 
+AFGServerBeaconHostObject::AFGServerBeaconHostObject() : Super() {
 	this->ClientBeaconActorClass = AFGServerBeaconClient::StaticClass();
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;

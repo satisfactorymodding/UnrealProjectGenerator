@@ -3,7 +3,7 @@
 #include "Resources/FGResourceDeposit.h"
 #include "Components/StaticMeshComponent.h"
 
-AFGResourceDeposit::AFGResourceDeposit(){ 
+AFGResourceDeposit::AFGResourceDeposit() : Super() {
 	this->mResourceDepositPackage.DropChance = 0.0;
 	this->mResourceDepositPackage.ResourceClass = nullptr;
 	this->mResourceDepositPackage.MinAmount = 0;
@@ -17,7 +17,7 @@ AFGResourceDeposit::AFGResourceDeposit(){
 	this->mCanPlaceResourceExtractor = false;
 	this->mExtractMultiplier = 2;
 	this->bNetLoadOnClient = false;
-	this->RootComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("DepositMesh"));
+	this->RootComponent = mDepositMeshComponent;
 }
 void AFGResourceDeposit::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGResourceDeposit::PostLoad(){ Super::PostLoad(); }

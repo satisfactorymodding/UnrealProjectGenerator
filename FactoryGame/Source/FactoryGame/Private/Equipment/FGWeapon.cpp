@@ -4,7 +4,7 @@
 #include "Equipment/FGEquipment.h"
 
 void AFGWeapon::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
-AFGWeapon::AFGWeapon(){ 
+AFGWeapon::AFGWeapon() : Super() {
 	this->mAssociatedHud = nullptr;
 	this->mWeaponState = EWeaponState::EWS_Unequipped;
 	this->mOldState.Add(EWeaponState::EWS_Unequipped);

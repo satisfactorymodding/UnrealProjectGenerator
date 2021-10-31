@@ -4,12 +4,9 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGWalkwayHologram::AFGWalkwayHologram(){ 
+AFGWalkwayHologram::AFGWalkwayHologram() : Super() {
 	this->mOnlyAllowLineZoop = false;
 	this->mPlacementRequirements = EFactoryBuildingPlacementRequirements::FBPR_MustSnap;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 bool AFGWalkwayHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 void AFGWalkwayHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }

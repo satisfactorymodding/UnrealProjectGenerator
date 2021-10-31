@@ -5,7 +5,7 @@
 #if WITH_EDITOR
 void UFGAmbientSettings::CheckForErrors(){ }
 #endif 
-UFGAmbientSettings::UFGAmbientSettings(){ 
+UFGAmbientSettings::UFGAmbientSettings() : Super() {
 	this->mOnEnterOuterVolumeEvent = nullptr;
 	this->mOnExitOuterVolumeEvent = nullptr;
 	this->mOnEnterInnerVolumeEvent = nullptr;

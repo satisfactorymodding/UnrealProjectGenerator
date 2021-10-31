@@ -6,14 +6,10 @@
 #include "Components/SceneComponent.h"
 #include "Hologram/FGResourceExtractorHologram.h"
 
-AFGBuildableWaterPump::AFGBuildableWaterPump(){ 
+AFGBuildableWaterPump::AFGBuildableWaterPump() : Super() {
 	this->mMinimumDepthForPlacement = 0.0;
 	this->mDepthTraceOriginOffset.X = 0.0;
 	this->mDepthTraceOriginOffset.Y = 0.0;
 	this->mDepthTraceOriginOffset.Z = 0.0;
-	this->mMustPlaceOnResourceDisqualifier = UFGCDNeedsResourceNode::StaticClass();
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGResourceExtractorHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 AActor* AFGBuildableWaterPump::TryFindMissingResource(){ return nullptr; }

@@ -2,7 +2,7 @@
 
 #include "FGLocomotiveMovementComponent.h"
 
-UFGLocomotiveMovementComponent::UFGLocomotiveMovementComponent(){ 
+UFGLocomotiveMovementComponent::UFGLocomotiveMovementComponent() : Super() {
 	this->mThrottleInputRate.RiseRate = 5.0;
 	this->mThrottleInputRate.FallRate = 5.0;
 	this->mDynamicBrakeInputRate.RiseRate = 5.0;

@@ -2,7 +2,7 @@
 
 #include "FGSharedPostProcessSettings.h"
 
-UFGSharedPostProcessSettings::UFGSharedPostProcessSettings(){ 
+UFGSharedPostProcessSettings::UFGSharedPostProcessSettings() : Super() {
 	this->mPostProcessSettings.bOverride_WhiteTemp = false;
 	this->mPostProcessSettings.bOverride_WhiteTint = false;
 	this->mPostProcessSettings.bOverride_ColorSaturation = false;

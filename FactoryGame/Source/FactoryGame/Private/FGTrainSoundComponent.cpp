@@ -2,7 +2,7 @@
 
 #include "FGTrainSoundComponent.h"
 
-UFGTrainSoundComponent::UFGTrainSoundComponent(){ 
+UFGTrainSoundComponent::UFGTrainSoundComponent() : Super() {
 	this->mTrainOwner = nullptr;
 	this->mWheelsetsAkComponent = nullptr;
 	this->mEnginesAkComponent = nullptr;

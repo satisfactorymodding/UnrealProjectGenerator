@@ -2,7 +2,7 @@
 
 #include "AI/FGAttack.h"
 
-UFGAttack::UFGAttack(){ 
+UFGAttack::UFGAttack() : Super() {
 	this->mAttackMontage = nullptr;
 	this->mStopsMovement = false;
 	this->mAttackRange = 100.0;

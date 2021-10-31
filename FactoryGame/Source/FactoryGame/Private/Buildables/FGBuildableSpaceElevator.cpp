@@ -5,13 +5,10 @@
 #include "FGPowerInfoComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableSpaceElevator::AFGBuildableSpaceElevator(){ 
+AFGBuildableSpaceElevator::AFGBuildableSpaceElevator() : Super() {
 	this->mInputInventory = nullptr;
 	this->mGamePhaseManager = nullptr;
 	this->mActorRepresentationTexture = nullptr;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableSpaceElevator::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 bool AFGBuildableSpaceElevator::AddAsRepresentation(){ return bool(); }

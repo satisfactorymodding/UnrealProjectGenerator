@@ -9,7 +9,7 @@ void UFGSignDataRemoteCallObject::Server_SetSignData_Implementation(FClientSetSi
 void AFGSignSubsystem::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 AFGSignSubsystem* AFGSignSubsystem::Get(UWorld* world){ return nullptr; }
 AFGSignSubsystem* AFGSignSubsystem::GetSignSubsystem(UObject* worldContext){ return nullptr; }
-AFGSignSubsystem::AFGSignSubsystem(){ 
+AFGSignSubsystem::AFGSignSubsystem() : Super() {
 	this->mSignPixelInstanceActor = nullptr;
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;

@@ -12,11 +12,10 @@ float FPumpHeadLiftLocationPath::GetLongestPathLength() const{ return float(); }
 void FPumpHeadLiftLocationPath::Clear(){ }
 FPumpHeadLiftLocationPath& FPumpHeadLiftLocationPath::AddNextPath(const FPumpHeadLiftLocationPath& NextPath){ return *(this); }
 FPumpHeadLiftLocationPath& FPumpHeadLiftLocationPath::AddNextPath(const  USplineComponent* pSpline, float StartOffset, float EndOffset, bool ReverseDirection){ return *(this); }
-AFGPipelinePumpHologram::AFGPipelinePumpHologram(){ 
+AFGPipelinePumpHologram::AFGPipelinePumpHologram() : Super() {
 	this->mOffsetEstimationBinaryDivisionCount = 8;
 	this->mMaxJunctionRecursions = 5;
 	this->mMaxTraversalDistance = 10000.0;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.bTickEvenWhenPaused = false;
@@ -24,8 +23,6 @@ AFGPipelinePumpHologram::AFGPipelinePumpHologram(){
 	this->PrimaryActorTick.bStartWithTickEnabled = true;
 	this->PrimaryActorTick.bAllowTickOnDedicatedServer = true;
 	this->PrimaryActorTick.TickInterval = 0.0;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGPipelinePumpHologram::Tick(float dt){ }
 bool AFGPipelinePumpHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }

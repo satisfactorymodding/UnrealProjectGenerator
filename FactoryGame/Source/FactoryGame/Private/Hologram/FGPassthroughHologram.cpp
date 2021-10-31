@@ -4,7 +4,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGPassthroughHologram::AFGPassthroughHologram(){ 
+AFGPassthroughHologram::AFGPassthroughHologram() : Super() {
 	this->mAlignDirection.X = 0.0;
 	this->mAlignDirection.Y = 0.0;
 	this->mAlignDirection.Z = 0.0;
@@ -22,9 +22,6 @@ AFGPassthroughHologram::AFGPassthroughHologram(){
 	this->mClearanceHeightMin = 0.0;
 	this->mClearanceThickness = 0.0;
 	this->mConnectionClass = nullptr;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGPassthroughHologram::BeginPlay(){ }
 void AFGPassthroughHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }

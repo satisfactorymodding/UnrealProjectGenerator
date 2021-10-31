@@ -6,8 +6,8 @@
 #ifdef DEBUG_SELF_DRIVING
 void AFGWheeledVehicleAIController::DrawDebug(float deltaTime, const Input& input, const Output& output){ }
 #endif 
-AFGWheeledVehicleAIController::AFGWheeledVehicleAIController(){ 
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("TransformComponent0"));
+AFGWheeledVehicleAIController::AFGWheeledVehicleAIController() : Super() {
+
 }
 void AFGWheeledVehicleAIController::OnPossess(APawn* InPawn){ }
 void AFGWheeledVehicleAIController::OnUnPossess(){ }

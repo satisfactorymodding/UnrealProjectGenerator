@@ -7,7 +7,7 @@ void UFGBuildingDescriptor::SetupStage(){ }
 FVector UFGBuildingDescriptor::GetCenterOfCollision(){ return FVector(); }
 void UFGBuildingDescriptor::SetBuildableClass(TSubclassOf< UFGBuildingDescriptor > inClass, TSubclassOf<  AFGBuildable > buildableClass){ }
 #endif 
-UFGBuildingDescriptor::UFGBuildingDescriptor(){ 
+UFGBuildingDescriptor::UFGBuildingDescriptor() : Super() {
 	this->mBuildableClass = nullptr;
 	this->mDisplayName = INVTEXT("");
 	this->mDescription = INVTEXT("");

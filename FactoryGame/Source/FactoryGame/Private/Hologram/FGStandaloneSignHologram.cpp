@@ -4,14 +4,11 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGStandaloneSignHologram::AFGStandaloneSignHologram(){ 
+AFGStandaloneSignHologram::AFGStandaloneSignHologram() : Super() {
 	this->mDefaultSignSupportRecipe = nullptr;
 	this->mChildSignPoleHologram = nullptr;
 	this->mUseGradualFoundationRotations = true;
 	this->mAttachmentPointSnapDistanceThreshold = 10000.0;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGStandaloneSignHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGStandaloneSignHologram::BeginPlay(){ }

@@ -4,8 +4,7 @@
 #include "AIController.h"
 
 void AFGPassengerSeat::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
-AFGPassengerSeat::AFGPassengerSeat(){ 
+AFGPassengerSeat::AFGPassengerSeat() : Super() {
 	this->mOuterVehicle = nullptr;
-	this->AIControllerClass = AAIController::StaticClass();
 }
 void AFGPassengerSeat::Tick(float dt){ }

@@ -2,7 +2,7 @@
 
 #include "Resources/FGOverflowDescriptor.h"
 
-UFGOverflowDescriptor::UFGOverflowDescriptor(){ 
+UFGOverflowDescriptor::UFGOverflowDescriptor() : Super() {
 	this->mDisplayName = NSLOCTEXT("OverflowDescriptor", "DisplayName", "Overflow");
 	this->mDescription = NSLOCTEXT("OverflowDescriptor", "Description", "Overflow Output");
 }

@@ -5,7 +5,7 @@
 #include "Components/SphereComponent.h"
 #include "DamageTypes/FGDamageType.h"
 
-AFGProjectile::AFGProjectile(){ 
+AFGProjectile::AFGProjectile() : Super() {
 	this->mRotatingMovementComp = nullptr;
 	this->mThrowRotation.Pitch = 0.0;
 	this->mThrowRotation.Yaw = 0.0;
@@ -49,7 +49,7 @@ AFGProjectile::AFGProjectile(){
 	this->SetReplicatingMovement(true);
 	this->bReplicates = true;
 	this->InitialLifeSpan = 3.0;
-	this->RootComponent = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComp"));
+	this->RootComponent = mCollisionComp;
 }
 void AFGProjectile::Tick(float DeltaSeconds){ }
 void AFGProjectile::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }

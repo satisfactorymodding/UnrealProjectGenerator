@@ -3,11 +3,11 @@
 #include "FGClearanceComponent.h"
 #include "NavAreas/NavArea_Obstacle.h"
 
-UFGClearanceComponent::UFGClearanceComponent(){ 
+UFGClearanceComponent::UFGClearanceComponent() : Super() {
 	this->mIsSoftClearance = false;
 	this->AreaClass = UNavArea_Obstacle::StaticClass();
 	this->Mobility = EComponentMobility::Static;
 }
-UFGComplexClearanceComponent::UFGComplexClearanceComponent(){ 
+UFGComplexClearanceComponent::UFGComplexClearanceComponent() : Super() {
 	this->Mobility = EComponentMobility::Static;
 }

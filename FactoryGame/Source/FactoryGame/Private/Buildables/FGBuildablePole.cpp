@@ -6,14 +6,13 @@
 #include "FGColoredInstanceMeshProxy.h"
 #include "Hologram/FGPoleHologram.h"
 
-AFGBuildablePole::AFGBuildablePole(){ 
+AFGBuildablePole::AFGBuildablePole() : Super() {
 	this->mHeight = 100.0;
 	this->mPoleComponentProxy = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("PoleComponentProxy"));
 	this->mSnapOnly0 = CreateDefaultSubobject<UFGFactoryConnectionComponent>(TEXT("SnapOnly0"));
 	this->mPoleMesh = nullptr;
 	this->mUseStaticHeight = false;
 	this->mHologramClass = AFGPoleHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mPoleComponentProxy->SetupAttachment(RootComponent);
 	this->mSnapOnly0->SetupAttachment(RootComponent);
 }

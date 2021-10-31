@@ -2,7 +2,7 @@
 
 #include "FGCrate.h"
 
-AFGCrate::AFGCrate(){ 
+AFGCrate::AFGCrate() : Super() {
 	this->mInventory = nullptr;
 	this->mIconType = EFGCrateIconType::CIT_DeathIcon;
 	this->mActorRepresentationTexture = nullptr;

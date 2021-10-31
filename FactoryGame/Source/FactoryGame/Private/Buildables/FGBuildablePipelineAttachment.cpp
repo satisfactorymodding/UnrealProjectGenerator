@@ -5,11 +5,10 @@
 #include "Hologram/FGPipelineAttachmentHologram.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildablePipelineAttachment::AFGBuildablePipelineAttachment(){ 
+AFGBuildablePipelineAttachment::AFGBuildablePipelineAttachment() : Super() {
 	this->mRadius = 75.0;
 	this->mFluidBoxVolume = 5.0;
 	this->mCachedFluidDescriptor = nullptr;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
 	this->mAddToSignificanceManager = false;
 	this->mHologramClass = AFGPipelineAttachmentHologram::StaticClass();
 	this->mFactoryTickFunction.TickGroup = ETickingGroup::TG_PrePhysics;
@@ -19,7 +18,6 @@ AFGBuildablePipelineAttachment::AFGBuildablePipelineAttachment(){
 	this->mFactoryTickFunction.bStartWithTickEnabled = true;
 	this->mFactoryTickFunction.bAllowTickOnDedicatedServer = true;
 	this->mFactoryTickFunction.TickInterval = 0.0;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildablePipelineAttachment::BeginPlay(){ }
 void AFGBuildablePipelineAttachment::EndPlay(const EEndPlayReason::Type endPlayReason){ }

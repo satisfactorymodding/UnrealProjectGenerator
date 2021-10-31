@@ -4,7 +4,7 @@
 #include "Components/SceneCaptureComponent2D.h"
 #include "Components/SceneComponent.h"
 
-AFGRenderTargetStage::AFGRenderTargetStage(){ 
+AFGRenderTargetStage::AFGRenderTargetStage() : Super() {
 	this->mDynamicRenderTargetSizeX = 512;
 	this->mDynamicRenderTargetSizeY = 512;
 	this->mDynamicPixelFormat = EPixelFormat::PF_B8G8R8A8;

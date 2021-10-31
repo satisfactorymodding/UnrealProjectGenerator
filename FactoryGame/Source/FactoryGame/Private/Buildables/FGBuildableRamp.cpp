@@ -5,12 +5,8 @@
 #include "FGColoredInstanceMeshProxy.h"
 #include "Hologram/FGFoundationHologram.h"
 
-AFGBuildableRamp::AFGBuildableRamp(){ 
+AFGBuildableRamp::AFGBuildableRamp() : Super() {
 	this->mIsDoubleRamp = false;
-	this->mMeshComponentProxy = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("BuildingMeshProxy"));
-	this->mHologramClass = AFGFoundationHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mMeshComponentProxy->SetupAttachment(RootComponent);
 }
 void AFGBuildableRamp::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 float AFGBuildableRamp::CalculateRampAngle() const{ return float(); }

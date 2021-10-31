@@ -2,7 +2,7 @@
 
 #include "FGCircuitSubsystem.h"
 
-UFGCriticalBatteryDepletionMessage::UFGCriticalBatteryDepletionMessage(){ 
+UFGCriticalBatteryDepletionMessage::UFGCriticalBatteryDepletionMessage() : Super() {
 
 }
 void AFGCircuitSubsystem::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
@@ -18,7 +18,7 @@ void AFGCircuitSubsystem::PostLoadGame_Implementation(int32 saveVersion, int32 g
 void AFGCircuitSubsystem::GatherDependencies_Implementation(TArray< UObject* >& out_dependentObjects){ }
 bool AFGCircuitSubsystem::NeedTransform_Implementation(){ return bool(); }
 bool AFGCircuitSubsystem::ShouldSave_Implementation() const{ return bool(); }
-AFGCircuitSubsystem::AFGCircuitSubsystem(){ 
+AFGCircuitSubsystem::AFGCircuitSubsystem() : Super() {
 	this->mCriticalBatteryDepletionPercent = 0.25;
 	this->mMinimumBatteryWarningInterval = 10.0;
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;

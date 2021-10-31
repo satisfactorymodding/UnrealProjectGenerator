@@ -11,7 +11,7 @@ FTrackReservationRequest::FTrackReservationRequest(TWeakPtr< FTrainSchedulerInfo
 		TWeakPtr< FFGRailroadSignalBlock > block,
 		 AFGBuildableRailroadSignal* signal){ }
 bool FTrackReservationRequest::IsValid() const{ return bool(); }
-AFGTrainScheduler::AFGTrainScheduler(){ 
+AFGTrainScheduler::AFGTrainScheduler() : Super() {
 
 }
 void AFGTrainScheduler::DisplayDebug( UCanvas* canvas, const  FDebugDisplayInfo& debugDisplay, float& YL, float& YPos){ }

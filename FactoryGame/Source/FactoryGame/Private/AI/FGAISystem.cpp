@@ -2,7 +2,7 @@
 
 #include "AI/FGAISystem.h"
 
-UFGAISystem::UFGAISystem(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+UFGAISystem::UFGAISystem(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->mDisableAIDistance = 6000.0;
 	this->mNavWalkingDistance = 3000.0;
 	this->mMeshTickEnableDistance = 10000.0;

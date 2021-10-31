@@ -2,7 +2,7 @@
 
 #include "Server/FGServerObject.h"
 
-UFGServerObject::UFGServerObject(){ 
+UFGServerObject::UFGServerObject() : Super() {
 	this->ServerName = TEXT("");
 	this->Address = TEXT("");
 	this->AuthenticationToken.PrivilegeLevel = EPrivilegeLevel::NotAuthenticated;

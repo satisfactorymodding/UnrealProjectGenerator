@@ -4,11 +4,8 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGSignPoleHologram::AFGSignPoleHologram(){ 
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
+AFGSignPoleHologram::AFGSignPoleHologram() : Super() {
 	this->mUseBuildClearanceOverlapSnapp = false;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGSignPoleHologram::BeginPlay(){ }
 bool AFGSignPoleHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }

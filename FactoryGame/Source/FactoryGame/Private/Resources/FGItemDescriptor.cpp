@@ -28,7 +28,7 @@ UFGItemDescriptor::FGenerateIconContext::FGenerateIconContext(){ }
 bool UFGItemDescriptor::FGenerateIconContext::IsValid() const{ return bool(); }
 UFGItemDescriptor::FGenerateIconContext UFGItemDescriptor::GenerateIconContext = UFGItemDescriptor::FGenerateIconContext();
 #endif 
-UFGItemDescriptor::UFGItemDescriptor(){ 
+UFGItemDescriptor::UFGItemDescriptor() : Super() {
 	this->mDisplayName = INVTEXT("");
 	this->mDescription = INVTEXT("");
 	this->mAbbreviatedDisplayName = INVTEXT("");

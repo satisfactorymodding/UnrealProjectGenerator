@@ -6,7 +6,7 @@
 #include "FGPowerInfoComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableDroneStation::AFGBuildableDroneStation(){ 
+AFGBuildableDroneStation::AFGBuildableDroneStation() : Super() {
 	this->mDroneDockingStartLocationLocal.X = 0.0;
 	this->mDroneDockingStartLocationLocal.Y = 0.0;
 	this->mDroneDockingStartLocationLocal.Z = 0.0;
@@ -42,9 +42,6 @@ AFGBuildableDroneStation::AFGBuildableDroneStation(){
 	this->mInfo = nullptr;
 	this->mActorRepresentationTexture = nullptr;
 	this->mMapText = INVTEXT("");
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 bool AFGBuildableDroneStation::AddAsRepresentation(){ return bool(); }
 bool AFGBuildableDroneStation::UpdateRepresentation(){ return bool(); }

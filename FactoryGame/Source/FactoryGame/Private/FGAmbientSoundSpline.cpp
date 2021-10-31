@@ -4,7 +4,7 @@
 #include "Components/SplineComponent.h"
 #include "FGSoundSplineComponent.h"
 
-AFGAmbientSoundSpline::AFGAmbientSoundSpline(){ 
+AFGAmbientSoundSpline::AFGAmbientSoundSpline() : Super() {
 	this->mSpline = CreateDefaultSubobject<USplineComponent>(TEXT("Spline"));
 	this->mSoundSpline = CreateDefaultSubobject<UFGSoundSplineComponent>(TEXT("SoundSpline"));
 	this->mSoundSpline->SetupAttachment(mSpline);

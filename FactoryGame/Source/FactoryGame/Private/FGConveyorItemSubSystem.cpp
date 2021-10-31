@@ -6,7 +6,7 @@
 void FInstanceLODs::UpdateVisibility(int32 NumInstances){ }
 void FInstanceLODs::AddBucketComponents(int32 Num, AActor* Outer){ }
 void FInstanceLODs::AddInstance_Internal(AActor* Outer){ }
-AFGConveyorItemSubsystem::AFGConveyorItemSubsystem(){ 
+AFGConveyorItemSubsystem::AFGConveyorItemSubsystem() : Super() {
 	this->mInitialPreAllocatedNumberOfItemTypes = 0;
 	this->mInitialPreAllocatedNumberOfItemsInstances = 512;
 	this->mItemInstanceIncrementSize = 32;

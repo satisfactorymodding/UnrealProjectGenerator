@@ -2,7 +2,7 @@
 
 #include "FGSoundSplineComponent.h"
 
-UFGSoundSplineComponent::UFGSoundSplineComponent(){ 
+UFGSoundSplineComponent::UFGSoundSplineComponent() : Super() {
 	this->mEmitterInterval = 200.0;
 	this->Mobility = EComponentMobility::Static;
 }

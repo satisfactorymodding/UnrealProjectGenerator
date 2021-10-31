@@ -3,7 +3,7 @@
 #include "FGSplinePath.h"
 #include "Components/SplineComponent.h"
 
-AFGSplinePath::AFGSplinePath(){ 
+AFGSplinePath::AFGSplinePath() : Super() {
 	this->mSpline = CreateDefaultSubobject<USplineComponent>(TEXT("Spline"));
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;

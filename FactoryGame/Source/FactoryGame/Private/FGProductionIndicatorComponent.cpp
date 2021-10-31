@@ -2,7 +2,7 @@
 
 #include "FGProductionIndicatorComponent.h"
 
-UFGProductionIndicatorComponent::UFGProductionIndicatorComponent(){ 
+UFGProductionIndicatorComponent::UFGProductionIndicatorComponent() : Super() {
 	this->mIndicatorMaterial = nullptr;
 	this->PrimaryComponentTick.TickGroup = ETickingGroup::TG_DuringPhysics;
 	this->PrimaryComponentTick.EndTickGroup = ETickingGroup::TG_PrePhysics;

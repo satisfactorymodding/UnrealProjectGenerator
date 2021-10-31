@@ -6,7 +6,7 @@
 void UFGVehicleDescriptor::SetupStage(){ }
 FVector UFGVehicleDescriptor::GetCenterOfCollision(){ return FVector(); }
 #endif 
-UFGVehicleDescriptor::UFGVehicleDescriptor(){ 
+UFGVehicleDescriptor::UFGVehicleDescriptor() : Super() {
 	this->mVehicleClass = nullptr;
 	this->mDisplayName = INVTEXT("");
 	this->mDescription = INVTEXT("");

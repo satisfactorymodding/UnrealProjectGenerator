@@ -6,7 +6,7 @@ FChatMessageStruct::FChatMessageStruct(){ }
 FChatMessageStruct::FChatMessageStruct(FString messageString,  AFGPlayerState* sender, float serverTimeStamp){ }
 AFGChatManager* AFGChatManager::Get(UWorld* world){ return nullptr; }
 AFGChatManager* AFGChatManager::Get(UObject* worldContext){ return nullptr; }
-AFGChatManager::AFGChatManager(){ 
+AFGChatManager::AFGChatManager() : Super() {
 	this->mMaxNumMessagesInHistory = 50;
 	this->mMessageVisibleDuration = 10.0;
 }

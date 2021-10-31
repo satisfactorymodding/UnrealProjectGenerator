@@ -5,7 +5,7 @@
 #include "Components/SceneComponent.h"
 #include "Components/SplineMeshComponent.h"
 
-AFGInteractableMarker::AFGInteractableMarker(){ 
+AFGInteractableMarker::AFGInteractableMarker() : Super() {
 	this->mIconWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("Icon"));
 	this->mSplineMesh = CreateDefaultSubobject<USplineMeshComponent>(TEXT("SplineMesh"));
 	this->mDesiredScreenRadius = 10.0;

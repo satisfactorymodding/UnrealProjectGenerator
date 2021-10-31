@@ -4,7 +4,7 @@
 #include "FGCheatManager.h"
 #include "Components/SceneComponent.h"
 
-AFGPlayerControllerBase::AFGPlayerControllerBase(){ 
+AFGPlayerControllerBase::AFGPlayerControllerBase() : Super() {
 	this->mAdminInterface = nullptr;
 	this->mReplicatedCheatManager = nullptr;
 	this->mDisableInputComponent = nullptr;
@@ -13,7 +13,6 @@ AFGPlayerControllerBase::AFGPlayerControllerBase(){
 	this->mAllowedInputWhenDead.Add(TEXT("PauseGame"));
 	this->mAllowedInputWhenDead.Add(TEXT("Chat"));
 	this->CheatClass = UFGCheatManager::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("TransformComponent0"));
 }
 void AFGPlayerControllerBase::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGPlayerControllerBase::BeginPlay(){ }

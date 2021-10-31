@@ -2,7 +2,7 @@
 
 #include "Equipment/FGPortableMinerDispenser.h"
 
-AFGPortableMinerDispenser::AFGPortableMinerDispenser(){ 
+AFGPortableMinerDispenser::AFGPortableMinerDispenser() : Super() {
 	this->mPlaceDistanceMax = 1000.0;
 	this->mValidPlacementMaterial = nullptr;
 	this->mInvalidPlacementMaterial = nullptr;

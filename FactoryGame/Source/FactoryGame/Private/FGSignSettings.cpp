@@ -2,7 +2,7 @@
 
 #include "FGSignSettings.h"
 
-UFGSignSettings::UFGSignSettings(){ 
+UFGSignSettings::UFGSignSettings() : Super() {
 	this->mGridSize = 0;
 	this->mTextMaterial = nullptr;
 	this->mIconMaterial = nullptr;

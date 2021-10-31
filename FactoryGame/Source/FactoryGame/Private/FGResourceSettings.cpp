@@ -6,7 +6,7 @@
 #if WITH_EDITORONLY_DATA && WITH_EDITOR
 const FItemSettings& UFGResourceSettings::GetResourceSettings(TSubclassOf<  UFGItemDescriptor > resourceClass){ return *(new FItemSettings); }
 #endif 
-UFGResourceSettings::UFGResourceSettings(){ 
+UFGResourceSettings::UFGResourceSettings() : Super() {
 	this->mResourceAmount.Emplace();
 	this->mResourceAmount[0].Min = 500;
 	this->mResourceAmount[0].Max = 1000;

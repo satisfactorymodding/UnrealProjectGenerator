@@ -2,7 +2,7 @@
 
 #include "FGSplineComponent.h"
 
-UFGSplineComponent::UFGSplineComponent(){ 
+UFGSplineComponent::UFGSplineComponent() : Super() {
 	this->mSplineMesh = nullptr;
 	this->mSplineMeshLength = 100.0;
 	this->mGenerateCollisions = false;

@@ -4,10 +4,10 @@
 #include "Server/FGServerSubsystem.h"
 #include "Server/FGServerBeaconHostObject.h"
 
-UFGServerSubsystem::UFGServerSubsystem(){ 
+UFGServerSubsystem::UFGServerSubsystem() : Super() {
 	this->mAutoPause = true;
 	this->mAutoSaveOnDisconnect = true;
-	this->mSettings = NewObject<UFGServerSettings>(mBeaconHostObject, TEXT("ServerSettings"));
+	this->mSettings = NewObject<UFGServerSettings>(this, TEXT("ServerSettings"));
 	this->mBeaconHostObject = nullptr;
 }
 UFGServerSubsystem* UFGServerSubsystem::Get(const UObject* WorldContext){ return nullptr; }

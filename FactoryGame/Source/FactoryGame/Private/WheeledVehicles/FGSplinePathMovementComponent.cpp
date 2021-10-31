@@ -5,7 +5,7 @@
 #ifdef DEBUG_SELF_DRIVING
 void UFGSplinePathMovementComponent::DrawDebugVehicle(int visualDebugLevel, int textualDebugLevel){ }
 #endif 
-UFGSplinePathMovementComponent::UFGSplinePathMovementComponent(){ 
+UFGSplinePathMovementComponent::UFGSplinePathMovementComponent() : Super() {
 	this->mTargetList = nullptr;
 	this->mEndOfPath = false;
 	this->mTransitionTarget = nullptr;

@@ -5,8 +5,7 @@
 #include "Components/SceneComponent.h"
 
 void AFGBuildableDecor::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
-AFGBuildableDecor::AFGBuildableDecor(){ 
+AFGBuildableDecor::AFGBuildableDecor() : Super() {
 	this->mDecorMesh = nullptr;
 	this->mHologramClass = AFGDecorHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }

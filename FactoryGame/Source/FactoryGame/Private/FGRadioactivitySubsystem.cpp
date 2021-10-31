@@ -2,7 +2,7 @@
 
 #include "FGRadioactivitySubsystem.h"
 
-AFGRadioactivitySubsystem::AFGRadioactivitySubsystem(){ 
+AFGRadioactivitySubsystem::AFGRadioactivitySubsystem() : Super() {
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.bTickEvenWhenPaused = false;

@@ -2,7 +2,7 @@
 
 #include "FGDroneSubsystem.h"
 
-AFGDroneSubsystem::AFGDroneSubsystem(){ 
+AFGDroneSubsystem::AFGDroneSubsystem() : Super() {
 	this->mDroneStationDefaultNamePrefix = TEXT("Drone Port");
 }
 AFGDroneSubsystem* AFGDroneSubsystem::Get(UWorld* world){ return nullptr; }

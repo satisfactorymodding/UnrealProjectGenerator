@@ -4,7 +4,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGPipelineAttachmentHologram::AFGPipelineAttachmentHologram(){ 
+AFGPipelineAttachmentHologram::AFGPipelineAttachmentHologram() : Super() {
 	this->mBuildStep = EPipelineAttachmentBuildStep::PABS_PlacementAndDirection;
 	this->mMaxValidTurnOffset = 140.0;
 	this->mMaxValidTurnAngle = 3.0;
@@ -20,9 +20,6 @@ AFGPipelineAttachmentHologram::AFGPipelineAttachmentHologram(){
 	this->mSnappedPipeline = nullptr;
 	this->mSnappedConnectionComponent = nullptr;
 	this->mNeedsValidFloor = false;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGPipelineAttachmentHologram::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGPipelineAttachmentHologram::BeginPlay(){ }

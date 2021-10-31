@@ -4,11 +4,8 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGWaterPumpHologram::AFGWaterPumpHologram(){ 
+AFGWaterPumpHologram::AFGWaterPumpHologram() : Super() {
 	this->mDefaultWaterPump = nullptr;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGWaterPumpHologram::BeginPlay(){ }
 bool AFGWaterPumpHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }

@@ -3,7 +3,7 @@
 #include "FGDropPod.h"
 #include "FGPowerInfoComponent.h"
 
-AFGDropPod::AFGDropPod(){ 
+AFGDropPod::AFGDropPod() : Super() {
 	this->mAmountOfInventorySlots = 1;
 	this->mPowerInfo = CreateDefaultSubobject<UFGPowerInfoComponent>(TEXT("PowerInfoComponent"));
 	this->mHasPower = false;

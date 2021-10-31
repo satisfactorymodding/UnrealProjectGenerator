@@ -4,14 +4,11 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGFloodlightHologram::AFGFloodlightHologram(){ 
+AFGFloodlightHologram::AFGFloodlightHologram() : Super() {
 	this->mMountingType = EFloodlightHologramMountingType::FHMT_Ground;
 	this->mFixtureAngle = 0;
 	this->mLightFixtureComponent = nullptr;
 	this->mUseGradualFoundationRotations = true;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGFloodlightHologram::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGFloodlightHologram::BeginPlay(){ }

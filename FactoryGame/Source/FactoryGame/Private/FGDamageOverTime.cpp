@@ -4,7 +4,7 @@
 #include "GameFramework/Pawn.h"
 #include "DamageTypes/FGDamageType.h"
 
-UFGDamageOverTime::UFGDamageOverTime(){ 
+UFGDamageOverTime::UFGDamageOverTime() : Super() {
 	this->mDamageInterval = 1.0;
 	this->mDamageAmount = 10.0;
 	this->mDamageClass = UFGDamageType::StaticClass();

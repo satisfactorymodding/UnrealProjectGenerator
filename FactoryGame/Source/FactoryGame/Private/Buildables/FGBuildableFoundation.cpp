@@ -5,7 +5,7 @@
 #include "FGColoredInstanceMeshProxy.h"
 #include "Hologram/FGFoundationHologram.h"
 
-AFGBuildableFoundation::AFGBuildableFoundation(){ 
+AFGBuildableFoundation::AFGBuildableFoundation() : Super() {
 	this->mSize = 0.0;
 	this->mHeight = 0.0;
 	this->mElevation = 0.0;
@@ -21,9 +21,6 @@ AFGBuildableFoundation::AFGBuildableFoundation(){
 	this->mDisableAttachmentSnapOn.Left = false;
 	this->mDisableAttachmentSnapOn.Top = false;
 	this->mDisableAttachmentSnapOn.Bottom = false;
-	this->mMeshComponentProxy = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("BuildingMeshProxy"));
 	this->mHologramClass = AFGFoundationHologram::StaticClass();
 	this->mColorSlot = 16;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mMeshComponentProxy->SetupAttachment(RootComponent);
 }

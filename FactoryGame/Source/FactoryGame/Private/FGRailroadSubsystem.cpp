@@ -6,7 +6,7 @@ void UFGRailroadRemoteCallObject::GetLifetimeReplicatedProps(TArray< FLifetimePr
 void UFGRailroadRemoteCallObject::Server_RerailTrain_Implementation( AFGTrain* train){ }
 bool UFGRailroadRemoteCallObject::Server_RerailTrain_Validate( AFGTrain* train){ return bool(); }
 FTrackGraph::FTrackGraph(){ }
-AFGRailroadSubsystem::AFGRailroadSubsystem(){ 
+AFGRailroadSubsystem::AFGRailroadSubsystem() : Super() {
 	this->mConnectDistance = 200.0;
 	this->mSwitchControlClass = nullptr;
 	this->mTrainClass = nullptr;

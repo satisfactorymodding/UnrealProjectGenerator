@@ -6,17 +6,12 @@
 #include "FGPipeConnectionComponentHyper.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildablePipeHyper::AFGBuildablePipeHyper(){ 
+AFGBuildablePipeHyper::AFGBuildablePipeHyper() : Super() {
 	this->mConnection0 = CreateDefaultSubobject<UFGPipeConnectionComponentHyper>(TEXT("PipeHyperConnection0"));
 	this->mConnection1 = CreateDefaultSubobject<UFGPipeConnectionComponentHyper>(TEXT("PipeHyperConnection1"));
-	this->mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("SplineComponent"));
-	this->mInstancedSplineComponent = CreateDefaultSubobject<UFGInstancedSplineMeshComponent>(TEXT("InstancedSplineComponent"));
 	this->NetDormancy = ENetDormancy::DORM_Initial;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mConnection0->SetupAttachment(RootComponent);
 	this->mConnection1->SetupAttachment(RootComponent);
-	this->mSplineComponent->SetupAttachment(RootComponent);
-	this->mInstancedSplineComponent->SetupAttachment(RootComponent);
 }
 void AFGBuildablePipeHyper::BeginPlay(){ }
 float AFGBuildablePipeHyper::GetPipeProgressOfConnection_Implementation(const UFGPipeConnectionComponentBase* connectionEnteredThrough){ return float(); }

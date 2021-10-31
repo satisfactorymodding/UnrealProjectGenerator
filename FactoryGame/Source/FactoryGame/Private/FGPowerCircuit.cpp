@@ -10,7 +10,7 @@ FPowerGraphPoint& FPowerCircuitStats::MakeAndAddGraphPoint(){ return *(new FPowe
 FPowerGraphPoint& FPowerCircuitStats::AdvanceToNextGraphPoint(){ return *(new FPowerGraphPoint); }
 void UFGPowerCircuit::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void UFGPowerCircuit::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
-UFGPowerCircuit::UFGPowerCircuit(){ 
+UFGPowerCircuit::UFGPowerCircuit() : Super() {
 	this->mPowerProductionCapacity = 0.0;
 	this->mPowerProduced = 0.0;
 	this->mPowerConsumed = 0.0;

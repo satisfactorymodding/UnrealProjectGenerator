@@ -2,7 +2,7 @@
 
 #include "FGItemRegrowSubsystem.h"
 
-AFGItemRegrowSubsystem::AFGItemRegrowSubsystem(){ 
+AFGItemRegrowSubsystem::AFGItemRegrowSubsystem() : Super() {
 	this->mMaxPerTick = 200;
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;

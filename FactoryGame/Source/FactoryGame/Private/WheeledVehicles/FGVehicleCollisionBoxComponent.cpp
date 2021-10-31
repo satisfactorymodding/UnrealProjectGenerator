@@ -3,7 +3,7 @@
 #include "WheeledVehicles/FGVehicleCollisionBoxComponent.h"
 #include "NavAreas/NavArea_Obstacle.h"
 
-UFGVehicleCollisionBoxComponent::UFGVehicleCollisionBoxComponent(){ 
+UFGVehicleCollisionBoxComponent::UFGVehicleCollisionBoxComponent() : Super() {
 	this->mFudgeFactor = 1.2;
 	this->mAddedZVelocityFactor = 0.1;
 	this->mMaxAddedZVelocity = 600.0;

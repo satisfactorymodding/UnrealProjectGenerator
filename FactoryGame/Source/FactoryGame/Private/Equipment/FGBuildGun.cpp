@@ -4,7 +4,7 @@
 #include "Components/SceneComponent.h"
 #include "Equipment/FGEquipment.h"
 
-UFGBuildGunState::UFGBuildGunState(){ 
+UFGBuildGunState::UFGBuildGunState() : Super() {
 	this->mActionDelay = 0.0;
 	this->mActionMessage = INVTEXT("");
 }
@@ -39,7 +39,7 @@ void UFGBuildGunState::BeginBuildGunDelay(){ }
 void UFGBuildGunState::ResetBuildGunDelay(){ }
 bool UFGBuildGunState::BuildGunDelayIsComplete(){ return bool(); }
 bool UFGBuildGunState::HasBuildGunDelay(){ return bool(); }
-AFGBuildGun::AFGBuildGun(){ 
+AFGBuildGun::AFGBuildGun() : Super() {
 	this->mBuildDistanceMax = 10000.0;
 	this->mMenuStateClass = nullptr;
 	this->mBuildStateClass = nullptr;

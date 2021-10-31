@@ -2,7 +2,7 @@
 
 #include "FGConveyorInstanceMeshBucket.h"
 
-UFGConveyorInstanceMeshBucket::UFGConveyorInstanceMeshBucket(){ 
+UFGConveyorInstanceMeshBucket::UFGConveyorInstanceMeshBucket() : Super() {
 	this->mNumInstances = 32;
 	this->bCanEverAffectNavigation = false;
 }

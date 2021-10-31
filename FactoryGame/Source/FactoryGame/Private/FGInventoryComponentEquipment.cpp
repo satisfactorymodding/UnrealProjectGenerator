@@ -3,12 +3,12 @@
 #include "FGInventoryComponentEquipment.h"
 #include "Equipment/FGEquipment.h"
 
-UFGInventoryComponentEquipment::UFGInventoryComponentEquipment(){ 
+UFGInventoryComponentEquipment::UFGInventoryComponentEquipment() : Super() {
 	this->mOverrideEquipmentInSlot = nullptr;
 	this->mEquipmentInSlot = nullptr;
 	this->mEquipmentInventorySlot = EEquipmentSlot::ES_NONE;
 	this->mActiveEquipmentIndex = -1;
-	this->SetIsReplicated(true);
+	this->SetIsReplicatedByDefault(true);
 }
 AFGEquipment* UFGInventoryComponentEquipment::GetEquipmentInInventory() const{ return nullptr; }
 EEquipmentSlot UFGInventoryComponentEquipment::GetEquipmentSlotEnum() const{ return EEquipmentSlot(); }

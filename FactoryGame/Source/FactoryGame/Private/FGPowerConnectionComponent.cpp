@@ -3,7 +3,7 @@
 #include "FGPowerConnectionComponent.h"
 #include "FGPowerCircuit.h"
 
-UFGPowerConnectionComponent::UFGPowerConnectionComponent(){ 
+UFGPowerConnectionComponent::UFGPowerConnectionComponent() : Super() {
 	this->mPowerInfo = nullptr;
 	this->mHasPower = false;
 	this->mCircuitType = UFGPowerCircuit::StaticClass();

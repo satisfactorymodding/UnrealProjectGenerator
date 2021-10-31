@@ -4,7 +4,7 @@
 #include "Components/SceneComponent.h"
 #include "Hologram/FGConveyorAttachmentHologram.h"
 
-AFGBuildableConveyorAttachment::AFGBuildableConveyorAttachment(){ 
+AFGBuildableConveyorAttachment::AFGBuildableConveyorAttachment() : Super() {
 	this->mBufferInventory = nullptr;
 	this->mAddToSignificanceManager = false;
 	this->mHologramClass = AFGConveyorAttachmentHologram::StaticClass();
@@ -16,7 +16,6 @@ AFGBuildableConveyorAttachment::AFGBuildableConveyorAttachment(){
 	this->PrimaryActorTick.bAllowTickOnDedicatedServer = true;
 	this->PrimaryActorTick.TickInterval = 0.0;
 	this->NetDormancy = ENetDormancy::DORM_DormantAll;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableConveyorAttachment::BeginPlay(){ }
 void AFGBuildableConveyorAttachment::Dismantle_Implementation(){ }

@@ -2,7 +2,7 @@
 
 #include "Creature/Enemy/FGGameplayTask_AttackJump.h"
 
-UFGGameplayTask_AttackJump::UFGGameplayTask_AttackJump(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+UFGGameplayTask_AttackJump::UFGGameplayTask_AttackJump(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->mDoJump = false;
 }
 UFGGameplayTask_AttackJump* UFGGameplayTask_AttackJump::StartJump(AFGEnemy* enemy, TSubclassOf<  UFGAttackMeleeJump > attackClass, bool startJump){ return nullptr; }

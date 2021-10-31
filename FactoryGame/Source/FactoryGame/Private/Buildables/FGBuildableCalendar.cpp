@@ -3,13 +3,12 @@
 #include "Buildables/FGBuildableCalendar.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableCalendar::AFGBuildableCalendar(){ 
+AFGBuildableCalendar::AFGBuildableCalendar() : Super() {
 	this->mInventory = nullptr;
 	this->mNumberOfSlotsInCalendar = 25;
 	this->mCalendarRewardsClass = nullptr;
 	this->mSlotFillerItemClass = nullptr;
 	this->NetDormancy = ENetDormancy::DORM_Awake;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableCalendar::BeginPlay(){ }
 void AFGBuildableCalendar::EndPlay(const EEndPlayReason::Type EndPlayReason){ }

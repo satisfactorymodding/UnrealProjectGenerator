@@ -2,7 +2,7 @@
 
 #include "AI/FGNavArea_Factory.h"
 
-UFGNavArea_Factory::UFGNavArea_Factory(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+UFGNavArea_Factory::UFGNavArea_Factory(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->DrawColor.B = 33;
 	this->DrawColor.G = 35;
 	this->DrawColor.R = 40;

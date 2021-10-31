@@ -11,7 +11,7 @@
 #include "FGHUD.h"
 #include "GameFramework/GameSession.h"
 
-AFGGameMode::AFGGameMode(){ 
+AFGGameMode::AFGGameMode() : Super() {
 	this->mSaveSession = nullptr;
 	this->mLastAutosaveId = 255;
 	this->mSaveSessionName = TEXT("");
@@ -21,17 +21,11 @@ AFGGameMode::AFGGameMode(){
 	this->mDefaultRemoteCallObjectsClassNames.Add(FSoftClassPath("/Game/FactoryGame/Character/Player/BP_RemoteCallObject.BP_RemoteCallObject_C"));
 	this->mServerRestartTimeHours = 24.0;
 	this->mIsMainMenu = false;
-	this->EngineMessageClass = UEngineMessage::StaticClass();
 	this->InactivePlayerStateLifeSpan = 0.0;
-	this->GameSessionClass = AGameSession::StaticClass();
 	this->GameStateClass = AFGGameState::StaticClass();
-	this->PlayerControllerClass = APlayerController::StaticClass();
 	this->PlayerStateClass = AFGPlayerState::StaticClass();
 	this->HUDClass = AFGHUD::StaticClass();
 	this->DefaultPawnClass = AFGCharacterPlayer::StaticClass();
-	this->SpectatorClass = ASpectatorPawn::StaticClass();
-	this->ReplaySpectatorPlayerControllerClass = APlayerController::StaticClass();
-	this->ServerStatReplicatorClass = AServerStatReplicator::StaticClass();
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.bTickEvenWhenPaused = false;

@@ -5,7 +5,7 @@
 #include "Components/SceneComponent.h"
 
 void AFGBuildableHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
-AFGBuildableHologram::AFGBuildableHologram(){ 
+AFGBuildableHologram::AFGBuildableHologram() : Super() {
 	this->mMaxPlacementFloorAngle = 35.0;
 	this->mLegs = nullptr;
 	this->mUseGradualFoundationRotations = false;
@@ -34,10 +34,7 @@ AFGBuildableHologram::AFGBuildableHologram(){
 	this->mCustomizationData.ColorSlot = 0;
 	this->mCustomizationData.HasPower = 0;
 	this->mDefaultSwatch = nullptr;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
 	this->mUseBuildClearanceOverlapSnapp = true;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGBuildableHologram::BeginPlay(){ }
 void AFGBuildableHologram::SetBuildableClass(TSubclassOf<  AFGBuildable > buildableClass){ }

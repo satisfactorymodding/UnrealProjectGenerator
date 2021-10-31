@@ -5,7 +5,7 @@
 #include "FGLadderComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableLadder::AFGBuildableLadder(){ 
+AFGBuildableLadder::AFGBuildableLadder() : Super() {
 	this->mWidth = 0.0;
 	this->mMeshHeight = 0.0;
 	this->mLadderSegmentMesh = nullptr;
@@ -15,7 +15,6 @@ AFGBuildableLadder::AFGBuildableLadder(){
 	this->mFrontLadderComponent = CreateDefaultSubobject<UFGLadderComponent>(TEXT("Front Ladder Component"));
 	this->mBackLadderComponent = CreateDefaultSubobject<UFGLadderComponent>(TEXT("Back Ladder Component"));
 	this->mHologramClass = AFGLadderHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mFrontLadderComponent->SetupAttachment(RootComponent);
 	this->mBackLadderComponent->SetupAttachment(RootComponent);
 }

@@ -27,7 +27,7 @@ UFGRailroadTrackConnectionComponent* FRailroadTrackPosition::GetReverseConnectio
 AFGBuildableRailroadTrack* FRailroadTrackPosition::GetForwardTrack() const{ return nullptr; }
 AFGBuildableRailroadTrack* FRailroadTrackPosition::GetReverseTrack() const{ return nullptr; }
 const FRailroadTrackPosition FRailroadTrackPosition::InvalidTrackPosition = FRailroadTrackPosition();
-AFGBuildableRailroadTrack::AFGBuildableRailroadTrack(){ 
+AFGBuildableRailroadTrack::AFGBuildableRailroadTrack() : Super() {
 	this->mMesh = nullptr;
 	this->mMeshLength = 0.0;
 	this->mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("SplineComponent"));
@@ -36,7 +36,6 @@ AFGBuildableRailroadTrack::AFGBuildableRailroadTrack(){
 	this->mConnections.Add(CreateDefaultSubobject<UFGRailroadTrackConnectionComponent>(TEXT("TrackConnection1")));
 	this->mIsOwnedByPlatform = false;
 	this->mHologramClass = AFGRailroadTrackHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mSplineComponent->SetupAttachment(RootComponent);
 	this->mInstancedSplineComponent->SetupAttachment(RootComponent);
 	this->mConnections[0]->SetupAttachment(RootComponent);

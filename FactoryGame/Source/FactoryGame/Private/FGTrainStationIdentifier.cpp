@@ -2,7 +2,7 @@
 
 #include "FGTrainStationIdentifier.h"
 
-AFGTrainStationIdentifier::AFGTrainStationIdentifier(){ 
+AFGTrainStationIdentifier::AFGTrainStationIdentifier() : Super() {
 	this->mStation = nullptr;
 	this->mTrackGraphID = -1;
 	this->mStationName = INVTEXT("");

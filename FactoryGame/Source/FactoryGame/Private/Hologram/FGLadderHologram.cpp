@@ -4,7 +4,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGLadderHologram::AFGLadderHologram(){ 
+AFGLadderHologram::AFGLadderHologram() : Super() {
 	this->mLadderBottomSnapThreshold = 0.4;
 	this->mWidth = 0.0;
 	this->mMeshHeight = 0.0;
@@ -17,10 +17,7 @@ AFGLadderHologram::AFGLadderHologram(){
 	this->mCanDragUp = true;
 	this->mInstancedMeshComponent = CreateDefaultSubobject<UInstancedStaticMeshComponent>(TEXT("Instanced Mesh Component"));
 	this->mBuildStep = ELadderHologramBuildStep::LHBS_SnapToActor;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mInstancedMeshComponent->SetupAttachment(RootComponent);
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGLadderHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGLadderHologram::BeginPlay(){ }

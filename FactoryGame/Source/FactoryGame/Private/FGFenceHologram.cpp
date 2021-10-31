@@ -4,13 +4,10 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGFenceHologram::AFGFenceHologram(){ 
+AFGFenceHologram::AFGFenceHologram() : Super() {
 	this->mRotationStep = 15;
 	this->mPlacementRequirements = EFactoryBuildingPlacementRequirements::FBPR_None;
 	this->mDefaultBlockedZoopDirections = 48;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 bool AFGFenceHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 int32 AFGFenceHologram::GetRotationStep() const{ return int32(); }

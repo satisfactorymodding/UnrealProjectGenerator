@@ -20,7 +20,7 @@ FInventoryStack::FInventoryStack(int32 numItems, TSubclassOf<  UFGItemDescriptor
 void UFGInventoryComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void UFGInventoryComponent::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
 void UFGInventoryComponent::PreNetReceive(){ }
-UFGInventoryComponent::UFGInventoryComponent(){ 
+UFGInventoryComponent::UFGInventoryComponent() : Super() {
 	this->mDefaultInventorySize = 1;
 	this->mAdjustedSizeDiff = 0;
 	this->mCanBeRearrange = true;

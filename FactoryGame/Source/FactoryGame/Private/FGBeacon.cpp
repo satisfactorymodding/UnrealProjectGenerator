@@ -2,7 +2,7 @@
 
 #include "FGBeacon.h"
 
-AFGBeacon::AFGBeacon(){ 
+AFGBeacon::AFGBeacon() : Super() {
 	this->mActorRepresentationTexture = nullptr;
 }
 bool AFGBeacon::AddAsRepresentation(){ return bool(); }

@@ -5,7 +5,7 @@
 #include "FGHealthComponent.h"
 #include "Hologram/FGRailroadVehicleHologram.h"
 
-AFGRailroadVehicle::AFGRailroadVehicle(){ 
+AFGRailroadVehicle::AFGRailroadVehicle() : Super() {
 	this->mTrain = nullptr;
 	this->mLength = 500.0;
 	this->mCoupledVehicleFront = nullptr;
@@ -21,10 +21,7 @@ AFGRailroadVehicle::AFGRailroadVehicle(){
 	this->mServerForward = 0.0;
 	this->mServerSpeed = 0.0;
 	this->mHologramClass = AFGRailroadVehicleHologram::StaticClass();
-	this->mMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VehicleMesh"));
-	this->mHealthComponent = CreateDefaultSubobject<UFGHealthComponent>(TEXT("HealthComponent"));
 	this->SetReplicatingMovement(false);
-	this->RootComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VehicleMesh"));
 }
 void AFGRailroadVehicle::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGRailroadVehicle::BeginPlay(){ }

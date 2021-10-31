@@ -2,7 +2,7 @@
 
 #include "UI/FGMenuBase.h"
 
-UFGMenuBase::UFGMenuBase(const FObjectInitializer& objectInitializer) : Super(objectInitializer) { 
+UFGMenuBase::UFGMenuBase(const FObjectInitializer& objectInitializer) : Super(objectInitializer) {
 	this->mCachedOwner = nullptr;
 }
 void UFGMenuBase::ReleaseSlateResources(bool bReleaseChildren){ }

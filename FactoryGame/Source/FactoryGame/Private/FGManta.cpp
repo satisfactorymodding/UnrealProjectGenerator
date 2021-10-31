@@ -3,7 +3,7 @@
 #include "FGManta.h"
 #include "Components/SceneComponent.h"
 
-AFGManta::AFGManta(){ 
+AFGManta::AFGManta() : Super() {
 	this->mCachedSpline = nullptr;
 	this->mSplinePath = nullptr;
 	this->mCachedMesh = nullptr;

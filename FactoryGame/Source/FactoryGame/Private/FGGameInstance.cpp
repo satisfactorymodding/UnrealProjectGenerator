@@ -3,7 +3,7 @@
 #include "FGGameInstance.h"
 
 void FOnJoinSessionData::SetState(EJoinSessionState newState, FOnJoinSessionStateChanged& onStateChangedDelegate){ }
-UFGGameInstance::UFGGameInstance(){ 
+UFGGameInstance::UFGGameInstance() : Super() {
 	this->mSaveSystem = nullptr;
 	this->mAnalyticsService = nullptr;
 	this->mJoinSessionData.LocalPlayer = nullptr;

@@ -4,10 +4,9 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGJumpPadHologram::AFGJumpPadHologram(){ 
+AFGJumpPadHologram::AFGJumpPadHologram() : Super() {
 	this->mTrajectorySearchRadius = 10000.0;
 	this->mTrajectorySearchFrequency = 0.1;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
 	this->PrimaryActorTick.bTickEvenWhenPaused = false;
@@ -15,8 +14,6 @@ AFGJumpPadHologram::AFGJumpPadHologram(){
 	this->PrimaryActorTick.bStartWithTickEnabled = true;
 	this->PrimaryActorTick.bAllowTickOnDedicatedServer = true;
 	this->PrimaryActorTick.TickInterval = 0.0;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGJumpPadHologram::EndPlay(const EEndPlayReason::Type endPlayReason){ }
 void AFGJumpPadHologram::Tick(float dt){ }

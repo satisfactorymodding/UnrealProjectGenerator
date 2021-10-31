@@ -3,7 +3,7 @@
 #include "FGLadderComponent.h"
 #include "NavAreas/NavArea_Obstacle.h"
 
-UFGLadderComponent::UFGLadderComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+UFGLadderComponent::UFGLadderComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->mClimbableLookAngle = 20.0;
 	this->mEndClimbingLookAngle = 70.0;
 	this->AreaClass = UNavArea_Obstacle::StaticClass();

@@ -4,13 +4,10 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGPipelineJunctionHologram::AFGPipelineJunctionHologram(){ 
+AFGPipelineJunctionHologram::AFGPipelineJunctionHologram() : Super() {
 	this->mRotationAxis = EAxis::Y;
 	this->mIncrementSnappedConnectionOnScroll = false;
 	this->mHasPipeRotationBuildStep = false;
 	this->mUseGradualFoundationRotations = true;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 int32 AFGPipelineJunctionHologram::GetRotationStep() const{ return int32(); }

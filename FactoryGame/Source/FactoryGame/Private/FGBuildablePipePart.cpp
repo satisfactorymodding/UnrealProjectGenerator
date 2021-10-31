@@ -9,7 +9,7 @@
 #if WITH_EDITOR
 void AFGBuildablePipePart::OnConstruction(const FTransform& transform){ }
 #endif 
-AFGBuildablePipePart::AFGBuildablePipePart(){ 
+AFGBuildablePipePart::AFGBuildablePipePart() : Super() {
 	this->mLength = 200.0;
 	this->mCanStack = false;
 	this->mStackHeight = 0.0;
@@ -17,9 +17,7 @@ AFGBuildablePipePart::AFGBuildablePipePart(){
 	this->mConnection0 = nullptr;
 	this->mSupportMesh = nullptr;
 	this->mUseStaticHeight = false;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
 	this->mHologramClass = AFGBuildablePipePart::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mSupportComponentDefaultMesh->SetupAttachment(RootComponent);
 }
 void AFGBuildablePipePart::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }

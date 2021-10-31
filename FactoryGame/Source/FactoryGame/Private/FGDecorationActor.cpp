@@ -2,7 +2,7 @@
 
 #include "FGDecorationActor.h"
 
-AFGDecorationActor::AFGDecorationActor(){ 
+AFGDecorationActor::AFGDecorationActor() : Super() {
 	this->mDecorationDescriptor = nullptr;
 }
 void AFGDecorationActor::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }

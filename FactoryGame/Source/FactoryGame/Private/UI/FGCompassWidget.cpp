@@ -2,7 +2,7 @@
 
 #include "UI/FGCompassWidget.h"
 
-UFGCompassWidget::UFGCompassWidget(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { 
+UFGCompassWidget::UFGCompassWidget(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->mCompassPanel = nullptr;
 	this->mContentPanel = nullptr;
 	this->mCompassLine = nullptr;

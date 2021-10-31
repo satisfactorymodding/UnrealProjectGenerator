@@ -4,10 +4,8 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGFactoryHologram::AFGFactoryHologram(){ 
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
+AFGFactoryHologram::AFGFactoryHologram() : Super() {
+
 }
 void AFGFactoryHologram::BeginPlay(){ }
 void AFGFactoryHologram::Tick(float dt){ }

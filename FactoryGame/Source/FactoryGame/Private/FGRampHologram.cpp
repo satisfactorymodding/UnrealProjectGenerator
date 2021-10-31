@@ -4,10 +4,8 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGRampHologram::AFGRampHologram(){ 
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
+AFGRampHologram::AFGRampHologram() : Super() {
+
 }
 void AFGRampHologram::UpdateZoop(){ }
 void AFGRampHologram::ConstructZoop(TArray<AActor*>& out_children){ }

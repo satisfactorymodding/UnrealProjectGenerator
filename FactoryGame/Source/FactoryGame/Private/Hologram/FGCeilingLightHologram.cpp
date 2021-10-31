@@ -4,11 +4,8 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGCeilingLightHologram::AFGCeilingLightHologram(){ 
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
+AFGCeilingLightHologram::AFGCeilingLightHologram() : Super() {
 	this->mUseBuildClearanceOverlapSnapp = false;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGCeilingLightHologram::BeginPlay(){ }
 bool AFGCeilingLightHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }

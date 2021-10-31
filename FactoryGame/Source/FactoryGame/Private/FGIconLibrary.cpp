@@ -2,7 +2,7 @@
 
 #include "FGIconLibrary.h"
 
-UFGIconLibrary::UFGIconLibrary(){ 
+UFGIconLibrary::UFGIconLibrary() : Super() {
 
 }
 UFGIconLibrary* UFGIconLibrary::Get(){ return nullptr; }

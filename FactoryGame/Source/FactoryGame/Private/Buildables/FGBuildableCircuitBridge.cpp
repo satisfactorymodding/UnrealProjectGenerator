@@ -3,9 +3,8 @@
 #include "Buildables/FGBuildableCircuitBridge.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableCircuitBridge::AFGBuildableCircuitBridge(){ 
+AFGBuildableCircuitBridge::AFGBuildableCircuitBridge() : Super() {
 	this->mIsBridgeConnected = false;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableCircuitBridge::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildableCircuitBridge::BeginPlay(){ }

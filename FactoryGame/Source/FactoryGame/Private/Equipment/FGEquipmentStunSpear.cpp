@@ -4,7 +4,7 @@
 #include "Components/SceneComponent.h"
 #include "DamageTypes/FGDamageType.h"
 
-AFGEquipmentStunSpear::AFGEquipmentStunSpear(){ 
+AFGEquipmentStunSpear::AFGEquipmentStunSpear() : Super() {
 	this->mCollisionComp = nullptr;
 	this->mDamageTypeClass = UFGDamageType::StaticClass();
 	this->mSecondSwingMaxTime = 0.7;

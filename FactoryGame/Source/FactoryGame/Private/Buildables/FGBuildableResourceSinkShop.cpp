@@ -5,12 +5,9 @@
 #include "FGPowerInfoComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableResourceSinkShop::AFGBuildableResourceSinkShop(){ 
+AFGBuildableResourceSinkShop::AFGBuildableResourceSinkShop() : Super() {
 	this->mShopInventory = nullptr;
 	this->mShopInventoryDefaultSize = 30;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableResourceSinkShop::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildableResourceSinkShop::BeginPlay(){ }

@@ -3,9 +3,8 @@
 #include "Replication/FGRepDetailActor_Extractor.h"
 #include "Components/SceneComponent.h"
 
-AFGRepDetailActor_Extractor::AFGRepDetailActor_Extractor(){ 
+AFGRepDetailActor_Extractor::AFGRepDetailActor_Extractor() : Super() {
 	this->mOutputInventory = nullptr;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("ReplicationDetailActor"));
 }
 void AFGRepDetailActor_Extractor::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGRepDetailActor_Extractor::InitReplicationDetailActor( AFGBuildable* owningActor){ }

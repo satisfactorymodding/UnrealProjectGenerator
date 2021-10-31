@@ -4,11 +4,8 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGAttachmentSplitterHologram::AFGAttachmentSplitterHologram(){ 
+AFGAttachmentSplitterHologram::AFGAttachmentSplitterHologram() : Super() {
 	this->mUpgradedSplitter = nullptr;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGAttachmentSplitterHologram::BeginPlay(){ }
 bool AFGAttachmentSplitterHologram::TryUpgrade(const FHitResult& hitResult){ return bool(); }

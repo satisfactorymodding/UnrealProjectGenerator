@@ -10,14 +10,13 @@ void AFGWaterVolume::PreSave(const  ITargetPlatform* targetPlatform){ }
 void AFGWaterVolume::PostEditChangeProperty(FPropertyChangedEvent& propertyChangedEvent){ Super::PostEditChangeProperty(propertyChangedEvent); }
 void AFGWaterVolume::CheckForErrors(){ Super::CheckForErrors(); }
 #endif 
-AFGWaterVolume::AFGWaterVolume(){ 
+AFGWaterVolume::AFGWaterVolume() : Super() {
 	this->mAreaClass = UFGNavArea_Water::StaticClass();
 	this->mWaterAudio = nullptr;
 	this->mCanPlaceExtractor = true;
 	this->mPostProcessSettings = nullptr;
 	this->mResourceClass = FSoftClassPath("/Game/FactoryGame/Resource/RawResources/Water/Desc_Water.Desc_Water_C").ResolveClass();
 	this->bWaterVolume = true;
-	this->RootComponent = CreateDefaultSubobject<UBrushComponent>(TEXT("BrushComponent0"));
 }
 void AFGWaterVolume::PostInitProperties(){ Super::PostInitProperties(); }
 void AFGWaterVolume::BeginPlay(){ }

@@ -2,7 +2,7 @@
 
 #include "FGSignificanceManager.h"
 
-UFGSignificanceManager::UFGSignificanceManager(){ 
+UFGSignificanceManager::UFGSignificanceManager() : Super() {
 	this->mIsEnabled = true;
 }
 void UFGSignificanceManager::RegisterSignificanceObject(UObject* Object, EFGSignificanceType SignificanceType){ }

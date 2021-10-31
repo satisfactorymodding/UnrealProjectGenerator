@@ -2,7 +2,7 @@
 
 #include "FGPipeConnectionFactory.h"
 
-UFGPipeConnectionFactory::UFGPipeConnectionFactory(){ 
+UFGPipeConnectionFactory::UFGPipeConnectionFactory() : Super() {
 	this->mFluidBoxVolume = 5.0;
 	this->mApplyAdditionalPressure = true;
 }

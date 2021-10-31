@@ -5,11 +5,8 @@
 #include "FGPowerInfoComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableAutomatedWorkBench::AFGBuildableAutomatedWorkBench(){ 
+AFGBuildableAutomatedWorkBench::AFGBuildableAutomatedWorkBench() : Super() {
 	this->mInputInventorySize = 4;
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableAutomatedWorkBench::SetUpInventoryFilters(){ }
 bool AFGBuildableAutomatedWorkBench::CanProduce_Implementation() const{ return bool(); }

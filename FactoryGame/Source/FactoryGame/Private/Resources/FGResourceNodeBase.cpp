@@ -7,7 +7,7 @@ bool AFGResourceNodeBase::IsGeyserDescButNotGeyserNode(){ return bool(); }
 void AFGResourceNodeBase::PostEditChangeProperty( FPropertyChangedEvent& propertyChangedEvent){ Super::PostEditChangeProperty(propertyChangedEvent); }
 void AFGResourceNodeBase::CheckForErrors(){ Super::CheckForErrors(); }
 #endif 
-AFGResourceNodeBase::AFGResourceNodeBase(){ 
+AFGResourceNodeBase::AFGResourceNodeBase() : Super() {
 	this->mResourceClass = nullptr;
 	this->mDecalComponent = nullptr;
 	this->mBoxComponent = nullptr;

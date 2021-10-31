@@ -3,7 +3,7 @@
 #include "Buildables/FGBuildablePassthrough.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildablePassthrough::AFGBuildablePassthrough(){ 
+AFGBuildablePassthrough::AFGBuildablePassthrough() : Super() {
 	this->mSnappedBuildingThickness = 0.0;
 	this->mMidMeshLength = 0.0;
 	this->mGenerateTunnelCollision = false;
@@ -21,7 +21,6 @@ AFGBuildablePassthrough::AFGBuildablePassthrough(){
 	this->mBottomSnappedConnection = nullptr;
 	this->mTopSnappedConnection = nullptr;
 	this->mConnectionComponentClass = nullptr;
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildablePassthrough::BeginPlay(){ }
 void AFGBuildablePassthrough::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }

@@ -2,14 +2,14 @@
 
 #include "FGCircuitConnectionComponent.h"
 
-UFGCircuitConnectionComponent::UFGCircuitConnectionComponent(){ 
+UFGCircuitConnectionComponent::UFGCircuitConnectionComponent() : Super() {
 	this->mCircuitType = nullptr;
 	this->mMaxNumConnectionLinks = 1;
 	this->mIsHiddenConnection = false;
 	this->mNumWiresConnected = 0;
 	this->mCircuitID = -1;
 	this->bNetAddressable = true;
-	this->SetIsReplicated(true);
+	this->SetIsReplicatedByDefault(true);
 }
 void UFGCircuitConnectionComponent::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void UFGCircuitConnectionComponent::OnComponentDestroyed(bool isDestroyingHierarchy){ }

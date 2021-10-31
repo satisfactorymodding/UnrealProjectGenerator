@@ -4,7 +4,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGPillarHologram::AFGPillarHologram(){ 
+AFGPillarHologram::AFGPillarHologram() : Super() {
 	this->mMeshComponent = nullptr;
 	this->mInstancedMeshComponent = CreateDefaultSubobject<UInstancedStaticMeshComponent>(TEXT("Instanced Mesh Component"));
 	this->mForceVerticalSnapThreshold = 0.5;
@@ -12,10 +12,7 @@ AFGPillarHologram::AFGPillarHologram(){
 	this->mCurrentZoop = 0;
 	this->mBuildStep = EPillarHologramBuildStep::PHBS_Placement;
 	this->mBuildModeZoop = nullptr;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mInstancedMeshComponent->SetupAttachment(RootComponent);
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGPillarHologram::BeginPlay(){ }
 void AFGPillarHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }

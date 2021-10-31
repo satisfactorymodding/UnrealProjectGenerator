@@ -5,7 +5,7 @@
 #if WITH_EDITOR
 void AFGRiverSpline::CheckForErrors(){ Super::CheckForErrors(); }
 #endif 
-AFGRiverSpline::AFGRiverSpline(){ 
+AFGRiverSpline::AFGRiverSpline() : Super() {
 	this->mAudioEvent = nullptr;
 	this->mEmitterInterval = 600.0;
 	this->mShouldHaveAudio = true;

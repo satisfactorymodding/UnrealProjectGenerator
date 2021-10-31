@@ -6,7 +6,7 @@
 #include "GameFramework/FloatingPawnMovement.h"
 #include "Components/SceneComponent.h"
 
-AFGPipeBuilder::AFGPipeBuilder(){ 
+AFGPipeBuilder::AFGPipeBuilder() : Super() {
 	this->mMovementComponent = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("FloatingMovementComponent"));
 	this->mPipeSupportLocation = CreateDefaultSubobject<USceneComponent>(TEXT("PipeSupportLocation"));
 	this->mSplineHologram = nullptr;
@@ -50,10 +50,7 @@ AFGPipeBuilder::AFGPipeBuilder(){
 	this->mTrailClass = nullptr;
 	this->mTrail = nullptr;
 	this->mTrailDistance = 500.0;
-	this->mMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VehicleMesh"));
 	this->mPipeSupportLocation->SetupAttachment(mMesh);
-	this->mHealthComponent = CreateDefaultSubobject<UFGHealthComponent>(TEXT("HealthComponent"));
-	this->RootComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VehicleMesh"));
 }
 void AFGPipeBuilder::BeginPlay(){ }
 void AFGPipeBuilder::EndPlay(const EEndPlayReason::Type EndPlayReason){ }

@@ -3,6 +3,6 @@
 #include "Equipment/FGGasMask.h"
 #include "Equipment/FGEquipment.h"
 
-AFGGasMask::AFGGasMask(){ 
+AFGGasMask::AFGGasMask() : Super() {
 	this->mEquipmentSlot = EEquipmentSlot::ES_BACK;
 }

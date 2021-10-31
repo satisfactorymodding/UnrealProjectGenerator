@@ -4,15 +4,12 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBeamHologram::AFGBeamHologram(){ 
+AFGBeamHologram::AFGBeamHologram() : Super() {
 	this->mBuildModeDiagonal = nullptr;
 	this->mBuildModeFreeForm = nullptr;
 	this->mBeamMesh = nullptr;
 	this->mCurrentLength = 0.0;
 	this->mBuildStep = EBeamHologramBuildStep::BHBS_Placement;
-	this->mLoopSound = CreateDefaultSubobject<UAkComponent>(TEXT("LoopSound"));
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mLoopSound->SetupAttachment(RootComponent);
 }
 void AFGBeamHologram::BeginPlay(){ }
 void AFGBeamHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }

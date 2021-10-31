@@ -5,7 +5,7 @@
 #include "AkAudio/Classes/AkComponent.h"
 #include "Equipment/FGEquipment.h"
 
-AFGHookshot::AFGHookshot(){ 
+AFGHookshot::AFGHookshot() : Super() {
 	this->mMaxHookDistance = 0.0;
 	this->mAccelRate = 0.0;
 	this->mBrakeAccelRate = 0.0;

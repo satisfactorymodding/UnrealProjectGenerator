@@ -2,7 +2,7 @@
 
 #include "FGGameState.h"
 
-AFGGameState::AFGGameState(){ 
+AFGGameState::AFGGameState() : Super() {
 	this->mTurboModeMultiplier = 0.0;
 	this->mPowerCircuitFuseTriggeredMessage = nullptr;
 	this->mTimeSubsystem = nullptr;

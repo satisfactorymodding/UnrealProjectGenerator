@@ -43,7 +43,7 @@ void UFGReplicationGraphNode_ConveyorSpatialFrequency::OnStaticActorPutIntoCell(
 void UFGReplicationGraphNode_ConveyorSpatialFrequency::OnStaticActorRemovedFromCell(const FNewReplicatedActorInfo& ActorInfo){ }
 int32 UFGReplicationGraphNode_ConveyorSpatialFrequency::CalcFrequencyForCell(FFrequencyGrid2D_Cell* GridCell, UReplicationGraph* RepGraph, UNetReplicationGraphConnection& ConnectionManager, UNetConnection* NetConnection, FSettings& MySettings, const FNetViewerArray& Viewers, const uint32 FrameNum, bool IsPlayerInCell){ return int32(); }
 UFGReplicationGraphNode_ConveyorSpatialFrequency::FSettings UFGReplicationGraphNode_ConveyorSpatialFrequency::mDefaultSettings = UFGReplicationGraphNode_ConveyorSpatialFrequency::FSettings();
-UFGReplicationGraphNode_PlayerStateFrequencyLimiter::UFGReplicationGraphNode_PlayerStateFrequencyLimiter(){ 
+UFGReplicationGraphNode_PlayerStateFrequencyLimiter::UFGReplicationGraphNode_PlayerStateFrequencyLimiter() : Super() {
 
 }
 void UFGReplicationGraphNode_PlayerStateFrequencyLimiter::GatherActorListsForConnection(const FConnectionGatherActorListParameters& Params){ }

@@ -4,7 +4,7 @@
 
 FWheelsetSetup::FWheelsetSetup(){ }
 FCouplerSetup::FCouplerSetup(){ }
-UFGRailroadVehicleMovementComponent::UFGRailroadVehicleMovementComponent(){ 
+UFGRailroadVehicleMovementComponent::UFGRailroadVehicleMovementComponent() : Super() {
 	this->mWheelRadius = 70.0;
 	this->mMass = 100000.0;
 	this->mMaxVelocity = 200.0;

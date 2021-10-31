@@ -6,7 +6,7 @@
 #if WITH_EDITOR
 void AFGCreatureSpawner::PostEditMove(bool bFinished){ }
 #endif 
-AFGCreatureSpawner::AFGCreatureSpawner(){ 
+AFGCreatureSpawner::AFGCreatureSpawner() : Super() {
 	this->mDebugComponent = nullptr;
 	this->mEditorSprite = nullptr;
 	this->mCapsuleComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CollisionCapsule"));
@@ -28,7 +28,7 @@ AFGCreatureSpawner::AFGCreatureSpawner(){
 	this->mVisualizeSpawnDistance = false;
 	this->bCollideWhenPlacing = true;
 	this->SpawnCollisionHandlingMethod = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
-	this->RootComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CollisionCapsule"));
+	this->RootComponent = mCapsuleComponent;
 }
 void AFGCreatureSpawner::BeginPlay(){ }
 void AFGCreatureSpawner::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }

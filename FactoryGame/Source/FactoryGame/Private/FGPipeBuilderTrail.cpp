@@ -2,7 +2,7 @@
 
 #include "FGPipeBuilderTrail.h"
 
-AFGPipeBuilderTrail::AFGPipeBuilderTrail(){ 
+AFGPipeBuilderTrail::AFGPipeBuilderTrail() : Super() {
 	this->mCurrentPipeline = nullptr;
 	this->mSpline = nullptr;
 	this->mSpeed = 5.0;

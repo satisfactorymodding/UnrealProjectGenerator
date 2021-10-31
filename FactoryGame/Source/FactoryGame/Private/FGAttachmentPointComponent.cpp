@@ -2,7 +2,7 @@
 
 #include "FGAttachmentPointComponent.h"
 
-UFGAttachmentPointComponent::UFGAttachmentPointComponent(){ 
+UFGAttachmentPointComponent::UFGAttachmentPointComponent() : Super() {
 	this->mUsage = EAttachmentPointUsage::EAPU_Default;
 	this->mType = nullptr;
 }

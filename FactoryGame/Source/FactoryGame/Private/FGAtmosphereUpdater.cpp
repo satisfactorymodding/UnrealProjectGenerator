@@ -4,7 +4,7 @@
 
 #if WITH_EDITORONLY_DATA
 #endif 
-UFGAtmosphereUpdater::UFGAtmosphereUpdater(){ 
+UFGAtmosphereUpdater::UFGAtmosphereUpdater() : Super() {
 
 }
 void UFGAtmosphereUpdater::Tick(float dt){ }

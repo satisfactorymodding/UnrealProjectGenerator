@@ -5,12 +5,9 @@
 #include "FGColoredInstanceMeshProxy.h"
 #include "Hologram/FGStairHologram.h"
 
-AFGBuildableStair::AFGBuildableStair(){ 
+AFGBuildableStair::AFGBuildableStair() : Super() {
 	this->mStairDirection = EBuildableStairDirection::EBSD_Right;
 	this->mHeight = 0.0;
 	this->mSize = 0.0;
-	this->mMeshComponentProxy = CreateDefaultSubobject<UFGColoredInstanceMeshProxy>(TEXT("BuildingMeshProxy"));
 	this->mHologramClass = AFGStairHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	this->mMeshComponentProxy->SetupAttachment(RootComponent);
 }

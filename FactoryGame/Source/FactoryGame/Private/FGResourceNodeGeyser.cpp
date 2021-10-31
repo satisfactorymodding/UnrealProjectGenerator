@@ -2,6 +2,6 @@
 
 #include "FGResourceNodeGeyser.h"
 
-AFGResourceNodeGeyser::AFGResourceNodeGeyser(){ 
+AFGResourceNodeGeyser::AFGResourceNodeGeyser() : Super() {
 
 }

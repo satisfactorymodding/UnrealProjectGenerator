@@ -2,6 +2,6 @@
 
 #include "Creature/FGCreatureSpawnerDebugComponent.h"
 
-UFGCreatureSpawnerDebugComponent::UFGCreatureSpawnerDebugComponent(){ 
+UFGCreatureSpawnerDebugComponent::UFGCreatureSpawnerDebugComponent() : Super() {
 
 }

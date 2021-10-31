@@ -3,7 +3,7 @@
 #include "FGOutlineComponent.h"
 #include "Components/StaticMeshComponent.h"
 
-UFGOutlineComponent::UFGOutlineComponent(){ 
+UFGOutlineComponent::UFGOutlineComponent() : Super() {
 	this->mOutlineProxy = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("OutlineProxy"));
 	this->mOutlineProxy->SetupAttachment(this);
 	this->mActiveOutlineActor = nullptr;

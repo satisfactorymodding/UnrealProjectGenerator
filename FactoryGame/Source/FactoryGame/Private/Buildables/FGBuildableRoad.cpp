@@ -7,12 +7,11 @@
 #include "Hologram/FGRoadHologram.h"
 
 void AFGBuildableRoad::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
-AFGBuildableRoad::AFGBuildableRoad(){ 
+AFGBuildableRoad::AFGBuildableRoad() : Super() {
 	this->mConnection0 = CreateDefaultSubobject<UFGRoadConnectionComponent>(TEXT("Connection0"));
 	this->mConnection1 = CreateDefaultSubobject<UFGRoadConnectionComponent>(TEXT("Connection1"));
 	this->mSplineComponent = CreateDefaultSubobject<UFGSplineComponent>(TEXT("SplineComponent"));
 	this->mHologramClass = AFGRoadHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	this->mConnection0->SetupAttachment(RootComponent);
 	this->mConnection1->SetupAttachment(RootComponent);
 	this->mSplineComponent->SetupAttachment(RootComponent);

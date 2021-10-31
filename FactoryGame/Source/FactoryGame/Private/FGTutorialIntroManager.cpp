@@ -4,7 +4,7 @@
 
 AFGTutorialIntroManager* AFGTutorialIntroManager::Get(UWorld* world){ return nullptr; }
 AFGTutorialIntroManager* AFGTutorialIntroManager::Get(UObject* worldContext){ return nullptr; }
-AFGTutorialIntroManager::AFGTutorialIntroManager(){ 
+AFGTutorialIntroManager::AFGTutorialIntroManager() : Super() {
 	this->mTradingPostBuilt = false;
 	this->mPendingTutorial = EIntroTutorialSteps::ITS_NONE;
 	this->mHasCompletedIntroTutorial = false;

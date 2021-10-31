@@ -6,15 +6,11 @@
 #include "FGPowerInfoComponent.h"
 #include "Components/SceneComponent.h"
 
-AFGBuildableGeneratorNuclear::AFGBuildableGeneratorNuclear(){ 
+AFGBuildableGeneratorNuclear::AFGBuildableGeneratorNuclear() : Super() {
 	this->mOutputInventory = nullptr;
 	this->mOutputInventoryHandler = CreateDefaultSubobject<UFGReplicationDetailInventoryComponent>(TEXT("WasteInventoryHandler"));
 	this->mWasteLeftFromCurrentFuel = 0;
 	this->mCurrentGeneratorNuclearWarning = EGeneratorNuclearWarning::GNW_None;
-	this->mFuelInventoryHandler = CreateDefaultSubobject<UFGReplicationDetailInventoryComponent>(TEXT("FuelInventoryHandler"));
-	this->mPowerInfoClass = UFGPowerInfoComponent::StaticClass();
-	this->mHologramClass = AFGFactoryHologram::StaticClass();
-	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 void AFGBuildableGeneratorNuclear::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildableGeneratorNuclear::BeginPlay(){ }
