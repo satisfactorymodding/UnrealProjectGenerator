@@ -50,6 +50,16 @@ namespace ImplementHeaders
                 {
                     "SSpacer.h"
                 }
+            },
+            { "FGResourceNodeFrackingSatellite", new List<string>()
+                {
+                    "FGResourceNodeFrackingCore.h"
+                }
+            },
+            { "FGBuildableFrackingExtractor", new List<string>()
+                {
+                    "FGResourceNodeFrackingCore.h"
+                }
             }
         };
 
@@ -502,7 +512,8 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
 
         private static readonly Dictionary<string, string> CustomSuper = new Dictionary<string, string>()
         {
-            { "AFGCharacterPlayer", "Super(ObjectInitializer.SetDefaultSubobjectClass<UFGCharacterMovementComponent>(ACharacter::CharacterMovementComponentName))" }
+            { "AFGCharacterPlayer", "Super(ObjectInitializer.SetDefaultSubobjectClass<UFGCharacterMovementComponent>(ACharacter::CharacterMovementComponentName))" },
+            { "FLargeDataTransfer", "mNumChunks(0)" }
         };
 
         private static readonly Dictionary<string, string> NestedStructs = new Dictionary<string, string>()
@@ -577,7 +588,7 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
             {
                 InlineImplementedFunctions.Add(match.Groups[2].Value);
             }
-            foreach(Match match in Regex.Matches(fileContents, @"^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?.*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match class/struct definition
+            foreach(Match match in Regex.Matches(fileContents, @"^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?[^{]*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match class/struct definition
             {
                 string FGAPI = match.Groups[3].Value;
                 string className = match.Groups[4].Value;
@@ -610,7 +621,10 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                 if (filePath.Contains("FGCheatBoardWidget.h"))
                     writer.WriteLine("#endif");
                 if (filePath.Contains("FactoryGame.h"))
+                {
                     writer.WriteLine("DEFINE_LOG_CATEGORY(LogGame);"); // TODO: Generate this for all logs
+                    writer.WriteLine("DEFINE_LOG_CATEGORY(LogSigns);"); // TODO: Generate this for all logs
+                }
                 if (filePath.Contains("FactoryGameModule.h"))
                     writer.WriteLine("IMPLEMENT_PRIMARY_GAME_MODULE(FDefaultGameModuleImpl, FactoryGame, \"FactoryGame\");");
             }
@@ -702,7 +716,7 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
             content = Regex.Replace(content, @"^\s*DECLARE_.*\(.*\)\r?\n", "\r\n", RegexOptions.Multiline);
             List<string> implementations = new List<string>();
             // Match function definition (including UFUNCTIONs), nothing to see here ... just walk away ... probably the reason for many missing implementations...
-            foreach (Match function in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual\s?)?(static\s?)?(const\s?)?(class\s?)?(explicit\s?)?([^=()\n{}]*?\s)?\n*((?:[^=<>()\n{}]|operator.+)*?)(\([^{}]*?\))(\s*const)?(\s*override)?(.*);", RegexOptions.Multiline))
+            foreach (Match function in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual\s?)?(static\s?)?(const\s?)?(class\s?)?(explicit\s?)?([^=()\n{}]*?\s)?\n*((?:[^=<>()\n{}]|operator.+)*?)(\([^{}\[]*?\))(\s*const)?(\s*override)?([^<>\n]*);", RegexOptions.Multiline))
             {
                 // string comment = function.Groups[1].Value; // removed because regex took too long
                 string ufunction = function.Groups[1].Value;
@@ -767,7 +781,7 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                             Console.WriteLine($"Skipped {className}::{functionName} (BlueprintImplementableEvent)");
                         continue;
                     }
-                    if (Regex.IsMatch(ufunction, @"\WBlueprintNativeEvent\W") || Regex.IsMatch(ufunction, @"\WServer\W") || Regex.IsMatch(ufunction, @"\WClient\W") || Regex.IsMatch(ufunction, @"\WNetMulticast\W"))
+                    if (Regex.IsMatch(ufunction, @"\WBlueprintNativeEvent\W") || Regex.IsMatch(ufunction, @"\W(?<!""|=\s*)Server\W") || Regex.IsMatch(ufunction, @"\WClient\W") || Regex.IsMatch(ufunction, @"\WNetMulticast\W"))
                     {
                         if (Regex.IsMatch(ufunction, @"\WBlueprintNativeEvent\W") && className[0] == 'I')
                         {
