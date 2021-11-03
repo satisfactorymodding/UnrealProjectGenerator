@@ -2,6 +2,7 @@ import json
 import os
 import re
 import argparse
+import typing
 
 generation_scripts_path = os.path.dirname(os.path.abspath(__file__))
 root = os.path.dirname(generation_scripts_path)
@@ -90,6 +91,125 @@ setters = {
         'bReplicateMovement': 'SetReplicatingMovement',
         'bHidden': 'SetHidden',
     }
+}
+
+def InventoryItem_impl(self, val):
+    if val['ItemClass'] != -1:
+        blueprint_hierarchy = self.object_hierarchy[val]
+        blueprint_class = blueprint_hierarchy['ObjectName']
+        
+        blueprint_package_idx = blueprint_hierarchy['Outer']
+        blueprint_package_hierarchy = self.object_hierarchy[blueprint_package_idx]
+        blueprint_package = blueprint_package_hierarchy['ObjectName']
+        return [f'FSoftClassPath("{blueprint_package}.{blueprint_class}").ResolveClass()', {}, []]
+    
+    return [None, {}, []]
+
+def InventoryStack_impl(self, val):
+    item_class = None
+    num_items = None
+    if val['Item']['ItemClass'] != -1:
+        blueprint_hierarchy = self.object_hierarchy[val]
+        blueprint_class = blueprint_hierarchy['ObjectName']
+        
+        blueprint_package_idx = blueprint_hierarchy['Outer']
+        blueprint_package_hierarchy = self.object_hierarchy[blueprint_package_idx]
+        blueprint_package = blueprint_package_hierarchy['ObjectName']
+        item_class = f'FSoftClassPath("{blueprint_package}.{blueprint_class}").ResolveClass()'
+    
+    if val['NumItems'] != 0:
+        num_items = val['NumItems']
+    
+    if num_items and not item_class:
+        raise Exception('NumItems is not 0, but ItemClass is non null')
+    
+    if num_items and item_class:
+        return [f'FInventoryStack({num_items}, {item_class})', {}, []]
+    
+    return [None, {}, []]
+
+def BodyInstance_impl(self, val):
+    extra = {None: []}
+
+    if val['ObjectType'] != 'ECC_WorldStatic':
+        extra[None].append(f'.SetObjectType({val["ObjectType"]})')
+    if val['CollisionEnabled'] != 'ECollisionEnabled::QueryAndPhysics':
+        extra[None].append(f'.SetCollisionEnabled({val["CollisionEnabled"]})')
+    if val['CollisionProfileName'] != 'Custom':
+        extra[None].append(f'.SetCollisionProfileName(TEXT("{val["CollisionProfileName"]}"))')
+    
+    if len(extra[None]) == 0:
+        del extra[None]
+
+    return [None, extra, []]
+
+
+def Transform_impl(self, val):
+    translation = (round_float_scientific(val['Translation']['X']), round_float_scientific(val['Translation']['Y']), round_float_scientific(val['Translation']['Z']))
+    rotation = (round_float_scientific(val['Rotation']['X']), round_float_scientific(val['Rotation']['Y']), round_float_scientific(val['Rotation']['Z']), round_float_scientific(val['Rotation']['W']))
+    scale = (round_float_scientific(val['Scale3D']['X']), round_float_scientific(val['Scale3D']['Y']), round_float_scientific(val['Scale3D']['Z']))
+
+    translation_text = f'FVector({translation[0]}, {translation[1]}, {translation[2]})' if translation != (0, 0, 0) else 'FVector::ZeroVector'
+    rotation_text = f'FRotator({rotation[0]}, {rotation[1]}, {rotation[2]}, {rotation[3]})' if rotation != (0, 0, 0, 1) else 'FRotator::ZeroRotator'
+    scale_text = f'FVector({scale[0]}, {scale[1]}, {scale[2]})' if scale != (1, 1, 1) else 'FVector::OneVector'
+
+    if translation == (0, 0, 0) and rotation == (0, 0, 0, 1) and scale == (1, 1, 1):
+        return [None, {}, []]
+    return [f'FTransform({translation_text}, {rotation_text}, {scale_text})', {}, []]
+
+def QuantizedPipelineIndicatorData_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def QuantizedPumpIndicatorData_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def QuantizedReservoirIndicatorData_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def SwitchData_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def SlateBrush_impl(self, val):    
+    return [None, {}, []] # Just... no...
+
+def ComboBoxStyle_impl(self, val):    
+    return [None, {}, []] # Just... no...
+
+def TableRowStyle_impl(self, val):    
+    return [None, {}, []] # Just... no...
+
+def SlateColor_impl(self, val):    
+    return [None, {}, []] # Just... no...
+
+def MessageSubtitle_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def UseState_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def PowerCircuitStats_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def ClientTrainData_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+custom_struct_implementations = {
+    'InventoryItem': InventoryItem_impl,
+    'InventoryStack': InventoryStack_impl,
+    'BodyInstance': BodyInstance_impl,
+    'Transform': Transform_impl,
+    'QuantizedPipelineIndicatorData': QuantizedPipelineIndicatorData_impl,
+    'QuantizedPumpIndicatorData': QuantizedPumpIndicatorData_impl,
+    'QuantizedReservoirIndicatorData': QuantizedReservoirIndicatorData_impl,
+    'SwitchData': SwitchData_impl,
+    'SlateBrush': SlateBrush_impl,
+    'ComboBoxStyle': ComboBoxStyle_impl,
+    'TableRowStyle': TableRowStyle_impl,
+    'SlateColor': SlateColor_impl,
+    'MessageSubtitle': MessageSubtitle_impl,
+    'UseState': UseState_impl,
+    'PowerCircuitStats': PowerCircuitStats_impl,
+    'ClientTrainData': ClientTrainData_impl,
 }
 
 def read_class_includes():
@@ -331,6 +451,9 @@ class UEStruct:
             if struct_type.class_name == 'SoftClassPath': # thank you UE, very cool
                 return [f'FSoftClassPath("{val["AssetPathName"]}")', {}, []]
 
+            if struct_type.class_name in custom_struct_implementations:
+                return custom_struct_implementations[struct_type.class_name](self, val)
+
             extra = {None: []}
             includes = []
             for prop in struct_type.all_properties:
@@ -507,36 +630,6 @@ class UEStruct:
 
 ignore_properties = [
     'mFogOfWarRawData',
-    'WidgetStyle',
-    'ItemStyle',
-    'ForegroundColor',
-    'mSwitchData',
-    'mCurrentSubtitle',
-    'CollisionMesh',
-    'mTopTransform',
-    'mPowerStats',
-    'BodyInstance',
-    'mClientTrainData',
-    'mLastItem',
-    'mSchematicIcon',
-    'mMesh3P',
-    'DefaultBookmarkClass',
-    'LastBookmarkClass',
-    'mPickupItems',
-    'mRespawnTimeIndays',
-    'mDefaultCrosshair',
-    'mPickupCrosshair',
-    'mVehicleCrosshair',
-    'mWeaponCrosshair',
-    'mWorkbenchCrosshair',
-    'mGeneralCrosshair',
-    'mInventoryIcon',
-    'mExtractorClass',
-    'mIndicatorData',
-    'mActorTransform',
-    'mCachedUseState',
-    'mCargoMeshComponentDerailedTransform',
-    'bWorkOnFloatValues',
 ]
 
 class UEClass(UEStruct):
