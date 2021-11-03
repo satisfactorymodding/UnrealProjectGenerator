@@ -369,6 +369,7 @@ class UEStruct:
                     elif object_type == 'SceneComponent':
                         impl = f'CreateDefaultSubobject<{object_class.full_name}>(TEXT("{object_hierarchy["ObjectName"]}"))'
                         extra = {}
+                        includes = [class_headers[object_class.full_name]]
 
                         attach_parent_idx = object_hierarchy['Properties']['AttachParent'] if 'AttachParent' in object_hierarchy['Properties'] else -1
                         if attach_parent_idx != -1:
@@ -376,9 +377,12 @@ class UEStruct:
                                 extra[None] = [f'->SetupAttachment(this)']
                             else:
                                 attach = self.get_object_property_name_from_idx(attach_parent_idx)
+                                attach_class_idx = self.object_hierarchy[attach_parent_idx]['ObjectClass']
+                                attach_class = self.hierarchy_classes[attach_class_idx].full_name
+                                includes.append(class_headers[attach_class])
                                 extra[attach] = [f'->SetupAttachment({attach})']
                         
-                        return [impl, extra, [class_headers[object_class.full_name]]] 
+                        return [impl, extra, includes] 
                     else:
                         includes = [class_headers[object_class.full_name]]
                         outer_idx = object_hierarchy['Outer'] if 'Outer' in object_hierarchy else -1
@@ -638,6 +642,7 @@ class UEStruct:
 
 ignore_properties = [
     'mFogOfWarRawData',
+    'mExtractorClass', # Is const
 ]
 
 property_remap = {
