@@ -305,7 +305,7 @@ class UEStruct:
             return getters[prop['ObjectName']]
         return prop['ObjectName']
 
-    def property_type_value(self, prop_name, prop_type, val, struct_type = None, enum_name = None) -> tuple[typing.Union[str, tuple[str, str]], dict[str, list[str]], list[str]]: # [impl (can be None if not available), {dep: [impl]} (dep can be self or None), required headers]:
+    def property_type_value(self, prop_name, prop_type, val, struct_type = None, enum_name = None, property_class = None) -> tuple[typing.Union[str, tuple[str, str]], dict[str, list[str]], list[str]]: # [impl (can be None if not available), {dep: [impl]} (dep can be self or None), required headers]:
         if prop_type == 'BoolProperty':
             return [f'{"true" if val else "false"}', {}, []]
         elif prop_type == 'FloatProperty':
@@ -396,8 +396,11 @@ class UEStruct:
                     blueprint_package_idx = blueprint_hierarchy['Outer']
                     blueprint_package_hierarchy = self.object_hierarchy[blueprint_package_idx]
                     blueprint_package = blueprint_package_hierarchy['ObjectName']
-                    
-                    return [f'FSoftObjectPath("{blueprint_package}.{blueprint_class}").ResolveObject()', {}, []]
+
+                    if property_class and property_class.class_name != 'Object':
+                        return [f'Cast<{property_class.full_name}>(FSoftObjectPath("{blueprint_package}.{blueprint_class}").ResolveObject())', {}, []]
+                    else:
+                        return [f'FSoftObjectPath("{blueprint_package}.{blueprint_class}").ResolveObject()', {}, []]
         elif prop_type == 'WeakObjectProperty':
             if val == -1:
                 return [f'nullptr', {}, []]
@@ -459,6 +462,7 @@ class UEStruct:
             for prop in struct_type.all_properties:
                 inner_struct_type = prop['OwnerStruct'].hierarchy_structs[prop['Struct']] if 'Struct' in prop else None
                 inner_enum_name = prop['OwnerStruct'].object_hierarchy[prop['Enum']]['ObjectName'] if 'Enum' in prop and prop['Enum'] != -1 else None
+                inner_property_class = prop['OwnerStruct'].hierarchy_classes[prop['PropertyClass']] if 'PropertyClass' in prop and prop['PropertyClass'] != -1 else None
                 if prop["ObjectClass"] == 'ArrayProperty':
                     if len(val) != 0:
                         print(f'Struct has array with values "{struct_type.package}/{struct_type.class_name}:{prop["ObjectName"]}')
@@ -471,7 +475,7 @@ class UEStruct:
                         pass
                 else:
                     if prop["ObjectName"] in val:
-                        [inner_impl, inner_extra, inner_includes] = self.property_type_value(prop_name, prop["ObjectClass"], val[prop["ObjectName"]], inner_struct_type, inner_enum_name)
+                        [inner_impl, inner_extra, inner_includes] = self.property_type_value(prop_name, prop["ObjectClass"], val[prop["ObjectName"]], inner_struct_type, inner_enum_name, inner_property_class)
                         if inner_impl:
                             if isinstance(inner_impl, str):
                                 extra[None].append(f'.{prop["ObjectName"]} = {inner_impl}')
@@ -492,7 +496,7 @@ class UEStruct:
             raise Exception(f'Unknown property type "{prop_type}"', prop_type)
 
 
-    def property_type_implementation(self, prop_name, prop_type, val, struct_type = None, enum_name = None, inner_property_type = None, key_property_type = None, value_property_type = None) -> tuple[str, dict[str, list[str]], list[str]]: # [impl (can be None if not available), {dep: [impl]} (dep can be self), required headers]
+    def property_type_implementation(self, prop_name, prop_type, val, struct_type = None, enum_name = None, inner_property_type = None, key_property_type = None, value_property_type = None, property_class = None) -> tuple[str, dict[str, list[str]], list[str]]: # [impl (can be None if not available), {dep: [impl]} (dep can be self), required headers]
         if prop_type == 'ArrayProperty':
             if len(val) == 0:
                 return None
@@ -502,11 +506,12 @@ class UEStruct:
             
             inner_struct_type = inner_property_type['OwnerStruct'].hierarchy_structs[inner_property_type['Struct']] if 'Struct' in inner_property_type else None
             inner_enum_name = inner_property_type['OwnerStruct'].object_hierarchy[inner_property_type['Enum']]['ObjectName'] if 'Enum' in inner_property_type and inner_property_type['Enum'] != -1 else None
+            inner_property_class = inner_property_type['OwnerStruct'].hierarchy_classes[inner_property_type['PropertyClass']] if 'PropertyClass' in inner_property_type and inner_property_type['PropertyClass'] != -1 else None
             
             extra = {None: []}
             includes = []
             for idx, item in enumerate(val):
-                [inner_impl, inner_extra, inner_includes] = self.property_type_value(f'{prop_name}[{idx}]', inner_property_type["ObjectClass"], item, inner_struct_type)
+                [inner_impl, inner_extra, inner_includes] = self.property_type_value(f'{prop_name}[{idx}]', inner_property_type["ObjectClass"], item, inner_struct_type, inner_enum_name, inner_property_class)
                 if inner_impl:
                     if isinstance(inner_impl, str):
                         extra[None].append(f'this->{prop_name}.Add({inner_impl});')
@@ -533,11 +538,12 @@ class UEStruct:
             
             inner_struct_type = inner_property_type['OwnerStruct'].hierarchy_structs[inner_property_type['Struct']] if 'Struct' in inner_property_type else None
             inner_enum_name = inner_property_type['OwnerStruct'].object_hierarchy[inner_property_type['Enum']]['ObjectName'] if 'Enum' in inner_property_type and inner_property_type['Enum'] != -1 else None
+            inner_property_class = inner_property_type['OwnerStruct'].hierarchy_classes[inner_property_type['PropertyClass']] if 'PropertyClass' in inner_property_type and inner_property_type['PropertyClass'] != -1 else None
             
             extra = {None: []}
             includes = []
             for idx, item in enumerate(val):
-                [inner_impl, inner_extra, inner_includes] = self.property_type_value(f'{prop_name}[{idx}]', inner_property_type["ObjectClass"], item, inner_struct_type, inner_enum_name)
+                [inner_impl, inner_extra, inner_includes] = self.property_type_value(f'{prop_name}[{idx}]', inner_property_type["ObjectClass"], item, inner_struct_type, inner_enum_name, inner_property_class)
                 if inner_impl:
                     if isinstance(inner_impl, str):
                         extra[None].append(f'this->{prop_name}.Add({inner_impl});')
@@ -564,15 +570,17 @@ class UEStruct:
             
             key_struct_type = key_property_type['OwnerStruct'].hierarchy_structs[key_property_type['Struct']] if 'Struct' in key_property_type else None
             key_enum_name = key_property_type['OwnerStruct'].object_hierarchy[key_property_type['Enum']]['ObjectName'] if 'Enum' in key_property_type and key_property_type['Enum'] != -1 else None
+            key_property_class = key_property_type['OwnerStruct'].hierarchy_classes[key_property_type['PropertyClass']] if 'PropertyClass' in key_property_type and key_property_type['PropertyClass'] != -1 else None
             
             value_struct_type = value_property_type['OwnerStruct'].hierarchy_structs[value_property_type['Struct']] if 'Struct' in value_property_type else None
             value_enum_name = value_property_type['OwnerStruct'].object_hierarchy[value_property_type['Enum']]['ObjectName'] if 'Enum' in value_property_type and value_property_type['Enum'] != -1 else None
+            value_property_class = value_property_type['OwnerStruct'].hierarchy_classes[value_property_type['PropertyClass']] if 'PropertyClass' in value_property_type and value_property_type['PropertyClass'] != -1 else None
 
             extra = {None: []}
             includes = []
             for entry in val:
-                [key_impl, key_extra, key_includes] = self.property_type_value(f'{prop_name}[KEY_UNKNOWN]', key_property_type["ObjectClass"], entry['Key'], key_struct_type, key_enum_name)
-                [val_impl, val_extra, val_includes] = self.property_type_value(f'{prop_name}[VALUE_UNKNOWN]', value_property_type["ObjectClass"], entry['Value'], value_struct_type, value_enum_name)
+                [key_impl, key_extra, key_includes] = self.property_type_value(f'{prop_name}[KEY_UNKNOWN]', key_property_type["ObjectClass"], entry['Key'], key_struct_type, key_enum_name, key_property_class)
+                [val_impl, val_extra, val_includes] = self.property_type_value(f'{prop_name}[VALUE_UNKNOWN]', value_property_type["ObjectClass"], entry['Value'], value_struct_type, value_enum_name, value_property_class)
                 if not key_impl:
                     raise Exception(f'key_impl is None for {self.class_name}:{prop_name}')
                 
@@ -611,7 +619,7 @@ class UEStruct:
             return None
         else:
             try:
-                impls = self.property_type_value(prop_name, prop_type, val, struct_type, enum_name)
+                impls = self.property_type_value(prop_name, prop_type, val, struct_type, enum_name, property_class)
                 if impls:
                     [impl, extra, includes] = impls
                     if prop_name in setters[self.prefix]:
@@ -750,12 +758,13 @@ class UEClass(UEStruct):
             value_prop_type = prop['ValueProp'] if 'ValueProp' in prop else None
             struct_type = prop['OwnerStruct'].hierarchy_structs[prop['Struct']] if 'Struct' in prop else None
             enum_name = prop['OwnerStruct'].object_hierarchy[prop['Enum']]['ObjectName'] if 'Enum' in prop and prop['Enum'] != -1 else None
+            property_class = prop['OwnerStruct'].hierarchy_classes[prop['PropertyClass']] if 'PropertyClass' in prop and prop['PropertyClass'] != -1 else None
             
             if self.class_name in property_remap and prop_name in property_remap[self.class_name]:
                 prop_name = property_remap[self.class_name][prop_name]
             
             if array_dim == 1:
-                implementations[prop_name] = self.property_type_implementation(f'{prop_name}', prop_type, val, struct_type, enum_name, inner_prop_type, key_prop_type, value_prop_type)
+                implementations[prop_name] = self.property_type_implementation(f'{prop_name}', prop_type, val, struct_type, enum_name, inner_prop_type, key_prop_type, value_prop_type, property_class)
             else:
                 implementations[prop_name] = [None, {None: []}, []]
                 for i in range(0, array_dim):
