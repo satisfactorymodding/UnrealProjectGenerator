@@ -13,7 +13,7 @@ def add_factorygame_pch():
             if name == 'FactoryGame.h':
                 continue
             header_contents = open(os.path.join(root, name), 'r').read()
-            if re.match(r'^\s*#include\s+"FactoryGame.h"', header_contents, re.MULTILINE):
+            if re.findall(r'^\s*#include\s+"FactoryGame\.h"', header_contents, re.MULTILINE):
                 continue
             header_contents = re.sub(r'(^\s*#include\s+".+")', r'#include "FactoryGame.h"\n\1', header_contents, 1, re.MULTILINE)
             open(os.path.join(root, name), 'w').write(header_contents)
