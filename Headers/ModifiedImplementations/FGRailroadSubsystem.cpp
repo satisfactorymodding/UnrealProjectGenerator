@@ -50,7 +50,7 @@ void AFGRailroadSubsystem::Debug_MarkAllGraphsForFullRebuild(){ }
 void AFGRailroadSubsystem::TickTrackGraphs(float dt){ }
 void AFGRailroadSubsystem::TickPendingCollisions(float dt){ }
 void AFGRailroadSubsystem::PurgeInvalidStationsFromTimeTables(){ }
-FRailroadHitResult AFGRailroadSubsystem::SolveVehicleCollisions( AFGTrain* forTrain,
+AFGRailroadSubsystem::FRailroadHitResult AFGRailroadSubsystem::SolveVehicleCollisions( AFGTrain* forTrain,
 		 AFGRailroadVehicle* forVehicle,
 		FRailroadTrackPosition oldTrackPosition,
 		FRailroadTrackPosition newTrackPosition){ return FRailroadHitResult(); }

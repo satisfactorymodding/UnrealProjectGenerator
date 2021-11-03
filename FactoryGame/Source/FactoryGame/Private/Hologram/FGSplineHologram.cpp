@@ -2,7 +2,6 @@
 
 #include "Hologram/FGSplineHologram.h"
 #include "Components/SplineComponent.h"
-#include "AkAudio/Classes/AkComponent.h"
 #include "Components/SceneComponent.h"
 
 AFGSplineHologram::AFGSplineHologram() : Super() {

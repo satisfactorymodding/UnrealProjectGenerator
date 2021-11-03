@@ -4,7 +4,6 @@
 #include "Hologram/FGFactoryHologram.h"
 #include "Replication/FGReplicationDetailInventoryComponent.h"
 #include "FGPowerInfoComponent.h"
-#include "Components/SceneComponent.h"
 
 AFGBuildableFactory::AFGBuildableFactory() : Super() {
 	this->mPowerConsumption = 0.0;

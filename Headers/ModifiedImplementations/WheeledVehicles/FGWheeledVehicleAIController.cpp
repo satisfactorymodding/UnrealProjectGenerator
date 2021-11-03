@@ -11,7 +11,7 @@ void AFGWheeledVehicleAIController::OnUnPossess(){ }
 const FString& AFGWheeledVehicleAIController::GetCurrentPlanName() const{ return *(new FString); }
 void AFGWheeledVehicleAIController::Tick(float DeltaTime){ }
 void AFGWheeledVehicleAIController::CalculateInput(float deltaTime, Input& input) const{ }
-Plan AFGWheeledVehicleAIController::PickPlan(const Input& input) const{ return Plan(); }
+AFGWheeledVehicleAIController::Plan AFGWheeledVehicleAIController::PickPlan(const Input& input) const{ return Plan(); }
 void AFGWheeledVehicleAIController::Halt(const Input& input, Output& output){ }
 void AFGWheeledVehicleAIController::FollowInReverse(const Input& input, Output& output){ }
 void AFGWheeledVehicleAIController::ReverseToAlignment(const Input& input, Output& output){ }
@@ -34,4 +34,3 @@ void AFGWheeledVehicleAIController::CreatePlans(){ }
 void AFGWheeledVehicleAIController::CreateDetectionBox(){ }
 bool AFGWheeledVehicleAIController::CheckCollisions(float deltaTime){ return bool(); }
 const FString& AFGWheeledVehicleAIController::GetPlanName(Plan plan) const{ return *(new FString); }
-TMap < Plan, TFunction< AFGWheeledVehicleAIController::void(const Input& input, Output& output){ return TMap< Plan,TFunction<(); }

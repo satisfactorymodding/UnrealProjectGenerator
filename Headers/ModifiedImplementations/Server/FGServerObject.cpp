@@ -3,11 +3,11 @@
 #include "FGServerObject.h"
 
 UFGServerObject::UFGServerObject(){ }
-bool UFGServerObject::Join_Implementation(){ return bool(); }
-bool UFGServerObject::IsConnected_Implementation() const{ return bool(); }
-void UFGServerObject::CreateGame_Implementation(const FString& SessionName, const FString& StartingLocation, bool JoinOnceLoaded){ }
-void UFGServerObject::UploadSave_Implementation(const  FSaveHeader& SaveHeader, bool LoadImmediately){ }
-void UFGServerObject::ConsoleCommand_Implementation(const FString& Command){ }
+bool UFGServerObject::Join(){ return bool(); }
+bool UFGServerObject::IsConnected() const{ return bool(); }
+void UFGServerObject::CreateGame(const FString& SessionName, const FString& StartingLocation, bool JoinOnceLoaded){ }
+void UFGServerObject::UploadSave(const  FSaveHeader& SaveHeader, bool LoadImmediately){ }
+void UFGServerObject::ConsoleCommand(const FString& Command){ }
 EBeaconConnectionState UFGServerObject::GetConnectionState(){ return EBeaconConnectionState(); }
 void UFGServerObject::SetServerState(EServerState NewState){ }
 void UFGServerObject::RegisterStateListener(TScriptInterface<  IFGServerStateListener> Listener){ }

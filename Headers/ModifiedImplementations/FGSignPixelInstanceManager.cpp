@@ -4,7 +4,7 @@
 
 UFGSignPixelInstanceManager::UFGSignPixelInstanceManager(){ }
 void UFGSignPixelInstanceManager::BeginPlay(){ }
-FSignHandle UFGSignPixelInstanceManager::AddPixelSign( AFGBuildablePixelSign* pixelSign){ return FSignHandle(); }
+UFGSignPixelInstanceManager::FSignHandle UFGSignPixelInstanceManager::AddPixelSign( AFGBuildablePixelSign* pixelSign){ return FSignHandle(); }
 void UFGSignPixelInstanceManager::RemovePixelSign(const FSignHandle& signHandle){ }
 void UFGSignPixelInstanceManager::CreateHierarchicalInstancingComponent(UStaticMesh* staticMesh){ }
 void UFGSignPixelInstanceManager::CreateInstancesForSign( AFGBuildablePixelSign* pixelSign){ }

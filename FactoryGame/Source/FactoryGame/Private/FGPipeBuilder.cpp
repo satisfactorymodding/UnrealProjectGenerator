@@ -2,7 +2,6 @@
 
 #include "FGPipeBuilder.h"
 #include "Components/SkeletalMeshComponent.h"
-#include "FGHealthComponent.h"
 #include "GameFramework/FloatingPawnMovement.h"
 #include "Components/SceneComponent.h"
 

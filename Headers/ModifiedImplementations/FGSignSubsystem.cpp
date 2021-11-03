@@ -2,7 +2,6 @@
 
 #include "FGSignSubsystem.h"
 
-FNetworkGUID FSignRPC_Data::netGuid(Map->GetNetGUIDFromObject( Signs[ i ] )){ return FNetworkGUID(); }
 void UFGSignDataRemoteCallObject::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void UFGSignDataRemoteCallObject::Server_RequestSignData_Implementation(FSignRPC_Data signRPCData){ }
 void UFGSignDataRemoteCallObject::Client_RequestSignDataResponse_Implementation(FSignRPC_Data signRPCData){ }
