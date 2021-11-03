@@ -632,6 +632,15 @@ ignore_properties = [
     'mFogOfWarRawData',
 ]
 
+property_remap = {
+    'FGDecorationDescriptor': {
+        'mMesh3P': 'mMesh3p',
+    },
+    'FGItemPickup': {
+        'mRespawnTimeIndays': 'mRespawnTimeInDays',
+    },
+}
+
 class UEClass(UEStruct):
     def __init__(self, package: str, class_name: str, json_object: dict):
         super().__init__(package, class_name, json_object)
@@ -741,6 +750,10 @@ class UEClass(UEStruct):
             value_prop_type = prop['ValueProp'] if 'ValueProp' in prop else None
             struct_type = prop['OwnerStruct'].hierarchy_structs[prop['Struct']] if 'Struct' in prop else None
             enum_name = prop['OwnerStruct'].object_hierarchy[prop['Enum']]['ObjectName'] if 'Enum' in prop and prop['Enum'] != -1 else None
+            
+            if self.class_name in property_remap and prop_name in property_remap[self.class_name]:
+                prop_name = property_remap[self.class_name][prop_name]
+            
             if array_dim == 1:
                 implementations[prop_name] = self.property_type_implementation(f'{prop_name}', prop_type, val, struct_type, enum_name, inner_prop_type, key_prop_type, value_prop_type)
             else:
