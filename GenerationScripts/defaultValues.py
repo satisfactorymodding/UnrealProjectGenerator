@@ -82,6 +82,16 @@ getters = {
     'CapsuleComponent': 'GetCapsuleComponent()',
 }
 
+setters = {
+    'U': {
+        'bReplicates': 'SetIsReplicatedByDefault',
+    },
+    'A': {
+        'bReplicateMovement': 'SetReplicatingMovement',
+        'bHidden': 'SetHidden',
+    }
+}
+
 def read_class_includes():
     for root, dirs, files in os.walk(header_root, topdown=False):
         for name in files:
@@ -481,12 +491,8 @@ class UEStruct:
                 impls = self.property_type_value(prop_name, prop_type, val, struct_type, enum_name)
                 if impls:
                     [impl, extra, includes] = impls
-                    if prop_name == 'bReplicateMovement':
-                        return [f'this->SetReplicatingMovement({impl});' if impl else None, {dep: [f'this->{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
-                    if prop_name == 'bHidden':
-                        return [f'this->SetHidden({impl});' if impl else None, {dep: [f'this->{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
-                    if prop_name == 'bReplicates' and self.prefix == 'U':
-                        return [f'this->SetIsReplicatedByDefault({impl});' if impl else None, {dep: [f'{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
+                    if prop_name in setters[self.prefix]:
+                        return [f'this->{setters[self.prefix][prop_name]}({impl});' if impl else None, {dep: [f'this->{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
                     if isinstance(impl, str):
                         return [f'this->{prop_name} = {impl};' if impl else None, {dep: [f'this->{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
                     else:
@@ -587,6 +593,10 @@ class UEClass(UEStruct):
             self_prop = next((prop for prop in self.properties if prop['ObjectName'] == cdo_property), None)
            
             if self_prop:
+                continue
+            
+            if not self_prop and int(prop['PropertyFlags']) & 0x0040000000000000 and cdo_property not in setters[self.prefix]: # private
+                del modified_cdo[cdo_property]
                 continue
             
             if prop['ObjectClass'] == 'ObjectProperty' or prop['ObjectClass'] == 'WeakObjectProperty' or prop['ObjectClass'] == 'SoftObjectProperty' or prop['ObjectClass'] == 'ClassProperty' or prop['ObjectClass'] == 'SoftClassProperty':
