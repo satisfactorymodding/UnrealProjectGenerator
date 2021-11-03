@@ -24,7 +24,7 @@ def update_headers(cssHeadersPath: str, newVersion: str):
 
     subprocess.call([fixHeadersExe, original_headers_path, modified_headers_path, cssHeadersPath, modified_headers_path])
 
-    subprocess.call([implementHeadersExe, modified_headers_path, modified_implementations_path])
+    subprocess.call([implementHeadersExe, modified_headers_path, modified_implementations_path, 'true']) # too verbose
 
     shutil.rmtree(original_headers_path, ignore_errors=True)
 
