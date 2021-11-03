@@ -175,7 +175,7 @@ class UEStruct:
             return getters[prop['ObjectName']]
         return prop['ObjectName']
 
-    def property_type_value(self, prop_name, prop_type, val, struct_type = None, enum_name = None) -> tuple[str, dict[str, list[str]], list[str]]: # [impl (can be None if not available), {dep: [impl]} (dep can be self or None), required headers]:
+    def property_type_value(self, prop_name, prop_type, val, struct_type = None, enum_name = None) -> tuple[typing.Union[str, tuple[str, str]], dict[str, list[str]], list[str]]: # [impl (can be None if not available), {dep: [impl]} (dep can be self or None), required headers]:
         if prop_type == 'BoolProperty':
             return [f'{"true" if val else "false"}', {}, []]
         elif prop_type == 'FloatProperty':
@@ -224,7 +224,7 @@ class UEStruct:
                 # Check if this object is the "first" one created and set its value to the existing object
                 original = self.get_object_property_name_from_idx(val)
                 if original and original != prop_name:
-                    return [None, {original: [f' = {original}']}, []]
+                    return [[original, original], {}, []]
                 object_hierarchy = self.object_hierarchy[val]
                 if object_hierarchy['Type'] == 'Export':
                     object_class = self.hierarchy_classes[object_hierarchy['ObjectClass']]
@@ -340,7 +340,12 @@ class UEStruct:
                     if prop["ObjectName"] in val:
                         [inner_impl, inner_extra, inner_includes] = self.property_type_value(prop_name, prop["ObjectClass"], val[prop["ObjectName"]], inner_struct_type, inner_enum_name)
                         if inner_impl:
-                            extra[None].append(f'.{prop["ObjectName"]} = {inner_impl}')
+                            if isinstance(inner_impl, str):
+                                extra[None].append(f'.{prop["ObjectName"]} = {inner_impl}')
+                            else:
+                                if inner_impl[0] not in extra:
+                                    extra[inner_impl[0]] = []
+                                extra[inner_impl[0]].append(f'.{prop["ObjectName"]} = {inner_impl[1]}')
                         for dep, inner_extra_list in inner_extra.items():
                             if dep not in extra:
                                 extra[dep] = []
@@ -370,7 +375,12 @@ class UEStruct:
             for idx, item in enumerate(val):
                 [inner_impl, inner_extra, inner_includes] = self.property_type_value(f'{prop_name}[{idx}]', inner_property_type["ObjectClass"], item, inner_struct_type)
                 if inner_impl:
-                    extra[None].append(f'this->{prop_name}.Add({inner_impl});')
+                    if isinstance(inner_impl, str):
+                        extra[None].append(f'this->{prop_name}.Add({inner_impl});')
+                    else:
+                        if inner_impl[0] not in extra:
+                            extra[inner_impl[0]] = []
+                        extra[inner_impl[0]].append(f'this->{prop_name}.Add({inner_impl[1]});')
                 else:
                     extra[None].append(f'this->{prop_name}.Emplace();')
                 for dep, inner_extra_list in inner_extra.items():
@@ -395,7 +405,14 @@ class UEStruct:
             includes = []
             for idx, item in enumerate(val):
                 [inner_impl, inner_extra, inner_includes] = self.property_type_value(f'{prop_name}[{idx}]', inner_property_type["ObjectClass"], item, inner_struct_type, inner_enum_name)
-                extra[None].append(f'this->{prop_name}.Add({inner_impl});')
+                if inner_impl:
+                    if isinstance(inner_impl, str):
+                        extra[None].append(f'this->{prop_name}.Add({inner_impl});')
+                    else:
+                        if inner_impl[0] not in extra:
+                            extra[inner_impl[0]] = []
+                        extra[inner_impl[0]].append(f'this->{prop_name}.Add({inner_impl[1]});')
+
                 for dep, inner_extra_list in inner_extra.items():
                     if dep not in extra:
                         extra[dep] = []
@@ -423,7 +440,21 @@ class UEStruct:
             for entry in val:
                 [key_impl, key_extra, key_includes] = self.property_type_value(f'{prop_name}[KEY_UNKNOWN]', key_property_type["ObjectClass"], entry['Key'], key_struct_type, key_enum_name)
                 [val_impl, val_extra, val_includes] = self.property_type_value(f'{prop_name}[VALUE_UNKNOWN]', value_property_type["ObjectClass"], entry['Value'], value_struct_type, value_enum_name)
-                extra[None].append(f'this->{prop_name}.Add({key_impl}, {val_impl});')
+                if not key_impl:
+                    raise Exception(f'key_impl is None for {self.class_name}:{prop_name}')
+                
+                if not isinstance(key_impl, str):
+                    raise Exception(f'key_impl is not str for {self.class_name}:{prop_name}') # Ok, maybe I need multiple dependencies
+
+                if val_impl:
+                    if isinstance(val_impl, str):
+                        extra[None].append(f'this->{prop_name}.Add({key_impl}, {val_impl});')
+                    else:
+                        if val_impl[0] not in extra:
+                            extra[val_impl[0]] = []
+                        extra[val_impl[0]].append(f'this->{prop_name}.Add({key_impl}, {val_impl[1]});')
+                else:
+                    extra[None].append(f'this->{prop_name}.Emplace({key_impl});')
                 
                 for dep, key_extra_list in key_extra.items():
                     if dep not in extra:
@@ -456,7 +487,10 @@ class UEStruct:
                         return [f'this->SetHidden({impl});' if impl else None, {dep: [f'this->{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
                     if prop_name == 'bReplicates' and self.prefix == 'U':
                         return [f'this->SetIsReplicatedByDefault({impl});' if impl else None, {dep: [f'{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
-                    return [f'this->{prop_name} = {impl};' if impl else None, {dep: [f'this->{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
+                    if isinstance(impl, str):
+                        return [f'this->{prop_name} = {impl};' if impl else None, {dep: [f'this->{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
+                    else:
+                        return [[impl[0], f'this->{prop_name} = {impl[1]};'] if impl else None, {dep: [f'this->{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
                 else:
                     return None
             except Exception as e:
@@ -720,7 +754,13 @@ def create_implementations(package_classes: dict[str, dict[str, UEClass]], dump_
             
             [impl, extras, includes] = impls
             if impl:
-                lines.append(impl)
+                if isinstance(impl, str):
+                    lines.append(impl)
+                else:
+                    if dep not in already_implemented:
+                        queued[impl[0]] = impl[1]
+                    else:
+                        lines.append(impl[1])
             already_implemented.append(prop)
             for dep, extra_items in extras.items():
                 if dep in already_implemented:
