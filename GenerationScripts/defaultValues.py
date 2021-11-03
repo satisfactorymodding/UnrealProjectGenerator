@@ -160,14 +160,22 @@ class UEStruct:
         return properties
     
     def get_object_property_name_from_idx(self, object_idx: int) -> str:
-        object_props = [prop for prop in self.all_properties if prop['ObjectClass'] == 'ObjectProperty']
-        prop = next(prop for prop in object_props if prop['ObjectName'] in self.cdo and self.cdo[prop['ObjectName']] == object_idx)
+        prop = None
+        obj = self
+        while obj and not prop:
+            object_props = [p for p in obj.properties if p['ObjectClass'] == 'ObjectProperty']
+            prop = next((p for p in object_props if p['ObjectName'] in self.cdo and self.cdo[p['ObjectName']] == object_idx), None)
+            obj = obj.parent_ue_struct
+        
+        if not prop:
+            return None
+
         self_prop = next((p for p in self.properties if p['ObjectName'] == prop['ObjectName']), None)
         if not self_prop and int(prop['PropertyFlags']) & 0x0040000000000000:
             return getters[prop['ObjectName']]
         return prop['ObjectName']
 
-    def property_type_value(self, prop_type, val, struct_type = None, enum_name = None) -> tuple[str, dict[str, list[str]], list[str]]: # [impl (can be None if not available), {dep: [impl]} (dep can be self or None), required headers]:
+    def property_type_value(self, prop_name, prop_type, val, struct_type = None, enum_name = None) -> tuple[str, dict[str, list[str]], list[str]]: # [impl (can be None if not available), {dep: [impl]} (dep can be self or None), required headers]:
         if prop_type == 'BoolProperty':
             return [f'{"true" if val else "false"}', {}, []]
         elif prop_type == 'FloatProperty':
@@ -213,6 +221,10 @@ class UEStruct:
             if val == -1:
                 return [f'nullptr', {}, []]
             else:
+                # Check if this object is the "first" one created and set its value to the existing object
+                original = self.get_object_property_name_from_idx(val)
+                if original and original != prop_name:
+                    return [None, {original: [f' = {original}']}, []]
                 object_hierarchy = self.object_hierarchy[val]
                 if object_hierarchy['Type'] == 'Export':
                     object_class = self.hierarchy_classes[object_hierarchy['ObjectClass']]
@@ -326,7 +338,7 @@ class UEStruct:
                         pass
                 else:
                     if prop["ObjectName"] in val:
-                        [inner_impl, inner_extra, inner_includes] = self.property_type_value(prop["ObjectClass"], val[prop["ObjectName"]], inner_struct_type, inner_enum_name)
+                        [inner_impl, inner_extra, inner_includes] = self.property_type_value(prop_name, prop["ObjectClass"], val[prop["ObjectName"]], inner_struct_type, inner_enum_name)
                         if inner_impl:
                             extra[None].append(f'.{prop["ObjectName"]} = {inner_impl}')
                         for dep, inner_extra_list in inner_extra.items():
@@ -356,16 +368,16 @@ class UEStruct:
             extra = {None: []}
             includes = []
             for idx, item in enumerate(val):
-                [inner_impl, inner_extra, inner_includes] = self.property_type_value(inner_property_type["ObjectClass"], item, inner_struct_type)
+                [inner_impl, inner_extra, inner_includes] = self.property_type_value(f'{prop_name}[{idx}]', inner_property_type["ObjectClass"], item, inner_struct_type)
                 if inner_impl:
-                    extra[None].append(f'{prop_name}.Add({inner_impl});')
+                    extra[None].append(f'this->{prop_name}.Add({inner_impl});')
                 else:
-                    extra[None].append(f'{prop_name}.Emplace();')
+                    extra[None].append(f'this->{prop_name}.Emplace();')
                 for dep, inner_extra_list in inner_extra.items():
                     if dep not in extra:
                         extra[dep] = []
                     for inner_extra_item in inner_extra_list:
-                        extra[dep].append(f'{prop_name}[{idx}]{inner_extra_item};')
+                        extra[dep].append(f'this->{prop_name}[{idx}]{inner_extra_item};')
                 for inner_include in inner_includes:
                     includes.append(inner_include)
             return [None, extra, includes]
@@ -382,13 +394,13 @@ class UEStruct:
             extra = {None: []}
             includes = []
             for idx, item in enumerate(val):
-                [inner_impl, inner_extra, inner_includes] = self.property_type_value(inner_property_type["ObjectClass"], item, inner_struct_type, inner_enum_name)
-                extra[None].append(f'{prop_name}.Add({inner_impl});')
+                [inner_impl, inner_extra, inner_includes] = self.property_type_value(f'{prop_name}[{idx}]', inner_property_type["ObjectClass"], item, inner_struct_type, inner_enum_name)
+                extra[None].append(f'this->{prop_name}.Add({inner_impl});')
                 for dep, inner_extra_list in inner_extra.items():
                     if dep not in extra:
                         extra[dep] = []
                     for inner_extra_item in inner_extra_list:
-                        extra[dep].append(f'{prop_name}[{idx}]{inner_extra_item};')
+                        extra[dep].append(f'this->{prop_name}[{idx}]{inner_extra_item};')
                 for inner_include in inner_includes:
                     includes.append(inner_include)
             return [None, extra, includes]
@@ -409,9 +421,9 @@ class UEStruct:
             extra = {None: []}
             includes = []
             for entry in val:
-                [key_impl, key_extra, key_includes] = self.property_type_value(key_property_type["ObjectClass"], entry['Key'], key_struct_type, key_enum_name)
-                [val_impl, val_extra, val_includes] = self.property_type_value(value_property_type["ObjectClass"], entry['Value'], value_struct_type, value_enum_name)
-                extra[None].append(f'{prop_name}.Add({key_impl}, {val_impl});')
+                [key_impl, key_extra, key_includes] = self.property_type_value(f'{prop_name}[KEY_UNKNOWN]', key_property_type["ObjectClass"], entry['Key'], key_struct_type, key_enum_name)
+                [val_impl, val_extra, val_includes] = self.property_type_value(f'{prop_name}[VALUE_UNKNOWN]', value_property_type["ObjectClass"], entry['Value'], value_struct_type, value_enum_name)
+                extra[None].append(f'this->{prop_name}.Add({key_impl}, {val_impl});')
                 
                 for dep, key_extra_list in key_extra.items():
                     if dep not in extra:
@@ -425,7 +437,7 @@ class UEStruct:
                     if dep not in extra:
                         extra[dep] = []
                     for val_extra_item in val_extra_list:
-                        extra[dep].append(f'{prop_name}[{key_impl}]{val_extra_item};')
+                        extra[dep].append(f'this->{prop_name}[{key_impl}]{val_extra_item};')
                 for val_include in val_includes:
                     includes.append(val_include)
             return [None, extra, includes]
@@ -435,16 +447,16 @@ class UEStruct:
             return None
         else:
             try:
-                impls = self.property_type_value(prop_type, val, struct_type, enum_name)
+                impls = self.property_type_value(prop_name, prop_type, val, struct_type, enum_name)
                 if impls:
                     [impl, extra, includes] = impls
-                    if prop_name == 'this->bReplicateMovement':
-                        return [f'this->SetReplicatingMovement({impl});' if impl else None, {dep: [f'{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
-                    if prop_name == 'this->bHidden':
-                        return [f'this->SetHidden({impl});' if impl else None, {dep: [f'{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
-                    if prop_name == 'this->bReplicates' and self.prefix == 'U':
+                    if prop_name == 'bReplicateMovement':
+                        return [f'this->SetReplicatingMovement({impl});' if impl else None, {dep: [f'this->{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
+                    if prop_name == 'bHidden':
+                        return [f'this->SetHidden({impl});' if impl else None, {dep: [f'this->{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
+                    if prop_name == 'bReplicates' and self.prefix == 'U':
                         return [f'this->SetIsReplicatedByDefault({impl});' if impl else None, {dep: [f'{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
-                    return [f'{prop_name} = {impl};' if impl else None, {dep: [f'{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
+                    return [f'this->{prop_name} = {impl};' if impl else None, {dep: [f'this->{prop_name}{extra_item};' for extra_item in extra_items] for dep, extra_items in extra.items()}, includes]
                 else:
                     return None
             except Exception as e:
@@ -485,8 +497,6 @@ ignore_properties = [
     'mCachedUseState',
     'mCargoMeshComponentDerailedTransform',
     'bWorkOnFloatValues',
-    'mPlatformConnections', # TODO: find CreateDefaultSubobject that was already constructed
-    'mMesh', # Same
 ]
 
 class UEClass(UEStruct):
@@ -595,11 +605,11 @@ class UEClass(UEStruct):
             struct_type = prop['OwnerStruct'].hierarchy_structs[prop['Struct']] if 'Struct' in prop else None
             enum_name = prop['OwnerStruct'].object_hierarchy[prop['Enum']]['ObjectName'] if 'Enum' in prop and prop['Enum'] != -1 else None
             if array_dim == 1:
-                implementations[prop_name] = self.property_type_implementation(f'this->{prop_name}', prop_type, val, struct_type, enum_name, inner_prop_type, key_prop_type, value_prop_type)
+                implementations[prop_name] = self.property_type_implementation(f'{prop_name}', prop_type, val, struct_type, enum_name, inner_prop_type, key_prop_type, value_prop_type)
             else:
                 implementations[prop_name] = [None, {None: []}, []]
                 for i in range(0, array_dim):
-                    [impl, extra, includes] = self.property_type_implementation(f'this->{prop_name}[{i}]', prop_type, val[i], struct_type, enum_name)
+                    [impl, extra, includes] = self.property_type_implementation(f'{prop_name}[{i}]', prop_type, val[i], struct_type, enum_name)
                     if impl:
                         implementations[prop_name][1][None].append(impl)
                     for dep, extra_items in extra.items():
