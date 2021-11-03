@@ -1,7 +1,6 @@
 import json
 import os
 import re
-import sys
 import argparse
 
 generation_scripts_path = os.path.dirname(os.path.abspath(__file__))
@@ -95,16 +94,26 @@ class UEStruct:
         self.package = package
         self.class_name = class_name
 
+        self.object_hierarchy = json_object['ObjectHierarchy']
+
         self.properties: list = json_object['ClassSerializedData']['ChildProperties']
+        for prop in self.properties:
+            prop['OwnerStruct'] = self
+            if 'Inner' in prop:
+                prop['Inner']['OwnerStruct'] = self
+            if 'KeyProp' in prop:
+                prop['KeyProp']['OwnerStruct'] = self
+            if 'ValueProp' in prop:
+                prop['ValueProp']['OwnerStruct'] = self
         
         parent_hierarchy_idx = json_object['ClassSerializedData']['SuperStruct']
         if parent_hierarchy_idx != -1:
-            parent_hierarchy = json_object['ObjectHierarchy'][parent_hierarchy_idx]
+            parent_hierarchy = self.object_hierarchy[parent_hierarchy_idx]
             if parent_hierarchy['Type'] == 'Export':
                 self.parent_package = self.package
             else:
                 parent_package_hierarchy_idx = parent_hierarchy['Outer']
-                parent_package_hierarchy = json_object['ObjectHierarchy'][parent_package_hierarchy_idx]
+                parent_package_hierarchy = self.object_hierarchy[parent_package_hierarchy_idx]
                 self.parent_package: str = parent_package_hierarchy['ObjectName'][8:] # trim /Script
 
             self.parent_class: str = parent_hierarchy['ObjectName']
@@ -115,18 +124,18 @@ class UEStruct:
 
         self.hierarchy_classes: dict[int, UEClass] = {
             idx: None
-            for idx, obj in enumerate(json_object['ObjectHierarchy'])
+            for idx, obj in enumerate(self.object_hierarchy)
             if
-                obj['Type'] == 'Export' and 'ObjectClass' in obj and json_object['ObjectHierarchy'][obj['ObjectClass']]['ObjectName'] == 'Class' and not obj['ObjectName'].startswith('Default__')
+                obj['Type'] == 'Export' and 'ObjectClass' in obj and self.object_hierarchy[obj['ObjectClass']]['ObjectName'] == 'Class' and not obj['ObjectName'].startswith('Default__')
             or
                 obj['Type'] == 'Import' and obj['ClassName'] == 'Class'
         }
 
         self.hierarchy_structs: dict[int, UEStruct] = {
             idx: None
-            for idx, obj in enumerate(json_object['ObjectHierarchy'])
+            for idx, obj in enumerate(self.object_hierarchy)
             if
-                obj['Type'] == 'Export' and 'ObjectClass' in obj and json_object['ObjectHierarchy'][obj['ObjectClass']]['ObjectName'] == 'ScriptStruct' and not obj['ObjectName'].startswith('Default__')
+                obj['Type'] == 'Export' and 'ObjectClass' in obj and self.object_hierarchy[obj['ObjectClass']]['ObjectName'] == 'ScriptStruct' and not obj['ObjectName'].startswith('Default__')
             or
                 obj['Type'] == 'Import' and obj['ClassName'] == 'ScriptStruct'
         }
@@ -189,12 +198,12 @@ class UEStruct:
         elif prop_type == 'ClassProperty':
             if val == -1:
                 return [f'nullptr', {}, []]
-            if 'ClassName' in self.json_object['ObjectHierarchy'][val] and not self.json_object['ObjectHierarchy'][self.json_object['ObjectHierarchy'][val]['Outer']]['ObjectName'].startswith('/Script'):
-                blueprint_hierarchy = self.json_object['ObjectHierarchy'][val]
+            if 'ClassName' in self.object_hierarchy[val] and not self.object_hierarchy[self.object_hierarchy[val]['Outer']]['ObjectName'].startswith('/Script'):
+                blueprint_hierarchy = self.object_hierarchy[val]
                 blueprint_class = blueprint_hierarchy['ObjectName']
                 
                 blueprint_package_idx = blueprint_hierarchy['Outer']
-                blueprint_package_hierarchy = self.json_object['ObjectHierarchy'][blueprint_package_idx]
+                blueprint_package_hierarchy = self.object_hierarchy[blueprint_package_idx]
                 blueprint_package = blueprint_package_hierarchy['ObjectName']
                 
                 return [f'FSoftClassPath("{blueprint_package}.{blueprint_class}").ResolveClass()', {}, []]
@@ -204,7 +213,7 @@ class UEStruct:
             if val == -1:
                 return [f'nullptr', {}, []]
             else:
-                object_hierarchy = self.json_object['ObjectHierarchy'][val]
+                object_hierarchy = self.object_hierarchy[val]
                 if object_hierarchy['Type'] == 'Export':
                     object_class = self.hierarchy_classes[object_hierarchy['ObjectClass']]
                 
@@ -221,7 +230,7 @@ class UEStruct:
 
                         attach_parent_idx = object_hierarchy['Properties']['AttachParent'] if 'AttachParent' in object_hierarchy['Properties'] else -1
                         if attach_parent_idx != -1:
-                            if self.json_object['ObjectHierarchy'][attach_parent_idx]['ObjectName'].startswith('Default__'):
+                            if self.object_hierarchy[attach_parent_idx]['ObjectName'].startswith('Default__'):
                                 extra[None] = [f'->SetupAttachment(this)']
                             else:
                                 attach = self.get_object_property_name_from_idx(attach_parent_idx)
@@ -231,19 +240,19 @@ class UEStruct:
                     else:
                         includes = [class_headers[object_class.full_name]]
                         outer_idx = object_hierarchy['Outer'] if 'Outer' in object_hierarchy else -1
-                        if self.json_object['ObjectHierarchy'][outer_idx]['ObjectName'].startswith('Default__'):
+                        if self.object_hierarchy[outer_idx]['ObjectName'].startswith('Default__'):
                             outer = 'this'
                             return [f'NewObject<{object_class.full_name}>({outer}, TEXT("{object_hierarchy["ObjectName"]}"))', {}, includes]
                         else:
                             outer = self.get_object_property_name_from_idx(outer_idx)
-                            includes.append(class_headers[self.json_object['ObjectHierarchy'][outer_idx]['ObjectName']])
+                            includes.append(class_headers[self.object_hierarchy[outer_idx]['ObjectName']])
                             return [None, {outer: [f'= NewObject<{object_class.full_name}>({outer}, TEXT("{object_hierarchy["ObjectName"]}"))']}, includes]
                 else:
-                    blueprint_hierarchy = self.json_object['ObjectHierarchy'][val]
+                    blueprint_hierarchy = self.object_hierarchy[val]
                     blueprint_class = blueprint_hierarchy['ObjectName']
                     
                     blueprint_package_idx = blueprint_hierarchy['Outer']
-                    blueprint_package_hierarchy = self.json_object['ObjectHierarchy'][blueprint_package_idx]
+                    blueprint_package_hierarchy = self.object_hierarchy[blueprint_package_idx]
                     blueprint_package = blueprint_package_hierarchy['ObjectName']
                     
                     return [f'FSoftObjectPath("{blueprint_package}.{blueprint_class}").ResolveObject()', {}, []]
@@ -255,12 +264,12 @@ class UEStruct:
         elif prop_type == 'SoftObjectProperty':
             if val == -1:
                 return [f'nullptr', {}, []]
-            elif 'ClassName' in self.json_object['ObjectHierarchy'][val]:
-                blueprint_hierarchy = self.json_object['ObjectHierarchy'][val]
+            elif 'ClassName' in self.object_hierarchy[val]:
+                blueprint_hierarchy = self.object_hierarchy[val]
                 blueprint_class = blueprint_hierarchy['ObjectName']
                 
                 blueprint_package_idx = blueprint_hierarchy['Outer']
-                blueprint_package_hierarchy = self.json_object['ObjectHierarchy'][blueprint_package_idx]
+                blueprint_package_hierarchy = self.object_hierarchy[blueprint_package_idx]
                 blueprint_package = blueprint_package_hierarchy['ObjectName']
                 
                 return [f'FSoftObjectPath("{blueprint_package}.{blueprint_class}")', {}, []]
@@ -269,12 +278,12 @@ class UEStruct:
         elif prop_type == 'SoftClassProperty':
             if val == -1:
                 return [f'nullptr', {}, []]
-            elif 'ClassName' in self.json_object['ObjectHierarchy'][val]:
-                blueprint_hierarchy = self.json_object['ObjectHierarchy'][val]
+            elif 'ClassName' in self.object_hierarchy[val]:
+                blueprint_hierarchy = self.object_hierarchy[val]
                 blueprint_class = blueprint_hierarchy['ObjectName']
                 
                 blueprint_package_idx = blueprint_hierarchy['Outer']
-                blueprint_package_hierarchy = self.json_object['ObjectHierarchy'][blueprint_package_idx]
+                blueprint_package_hierarchy = self.object_hierarchy[blueprint_package_idx]
                 blueprint_package = blueprint_package_hierarchy['ObjectName']
                 
                 return [f'FSoftClassPath("{blueprint_package}.{blueprint_class}")', {}, []]
@@ -303,8 +312,8 @@ class UEStruct:
             extra = {None: []}
             includes = []
             for prop in struct_type.all_properties:
-                inner_struct_type = prop['Struct'] if 'Struct' in prop else None
-                inner_enum_name = prop['Enum']['ObjectName'] if 'Enum' in prop and prop['Enum'] else None
+                inner_struct_type = prop['OwnerStruct'].hierarchy_structs[prop['Struct']] if 'Struct' in prop else None
+                inner_enum_name = prop['OwnerStruct'].object_hierarchy[prop['Enum']]['ObjectName'] if 'Enum' in prop and prop['Enum'] != -1 else None
                 if prop["ObjectClass"] == 'ArrayProperty':
                     if len(val) != 0:
                         print(f'Struct has array with values "{struct_type.package}/{struct_type.class_name}:{prop["ObjectName"]}')
@@ -341,8 +350,8 @@ class UEStruct:
             if not inner_property_type:
                 raise Exception('inner_property_type')
             
-            inner_struct_type = inner_property_type['Struct'] if 'Struct' in inner_property_type else None
-            inner_enum_name = inner_property_type['Enum']['ObjectName'] if 'Enum' in inner_property_type and inner_property_type['Enum'] else None
+            inner_struct_type = inner_property_type['OwnerStruct'].hierarchy_structs[inner_property_type['Struct']] if 'Struct' in inner_property_type else None
+            inner_enum_name = inner_property_type['OwnerStruct'].object_hierarchy[inner_property_type['Enum']]['ObjectName'] if 'Enum' in inner_property_type and inner_property_type['Enum'] != -1 else None
             
             extra = {None: []}
             includes = []
@@ -367,8 +376,8 @@ class UEStruct:
             if not inner_property_type:
                 raise Exception('inner_property_type')
             
-            inner_struct_type = inner_property_type['Struct'] if 'Struct' in inner_property_type else None
-            inner_enum_name = inner_property_type['Enum']['ObjectName'] if 'Enum' in inner_property_type and inner_property_type['Enum'] else None
+            inner_struct_type = inner_property_type['OwnerStruct'].hierarchy_structs[inner_property_type['Struct']] if 'Struct' in inner_property_type else None
+            inner_enum_name = inner_property_type['OwnerStruct'].object_hierarchy[inner_property_type['Enum']]['ObjectName'] if 'Enum' in inner_property_type and inner_property_type['Enum'] != -1 else None
             
             extra = {None: []}
             includes = []
@@ -391,11 +400,11 @@ class UEStruct:
             if not value_property_type:
                 raise Exception('value_property_type')
             
-            key_struct_type = key_property_type['Struct'] if 'Struct' in key_property_type else None
-            key_enum_name = key_property_type['Enum']['ObjectName'] if 'Enum' in key_property_type and key_property_type['Enum'] else None
+            key_struct_type = key_property_type['OwnerStruct'].hierarchy_structs[key_property_type['Struct']] if 'Struct' in key_property_type else None
+            key_enum_name = key_property_type['OwnerStruct'].object_hierarchy[key_property_type['Enum']]['ObjectName'] if 'Enum' in key_property_type and key_property_type['Enum'] != -1 else None
             
-            value_struct_type = value_property_type['Struct'] if 'Struct' in value_property_type else None
-            value_enum_name = value_property_type['Enum']['ObjectName'] if 'Enum' in value_property_type and value_property_type['Enum'] else None
+            value_struct_type = value_property_type['OwnerStruct'].hierarchy_structs[value_property_type['Struct']] if 'Struct' in value_property_type else None
+            value_enum_name = value_property_type['OwnerStruct'].object_hierarchy[value_property_type['Enum']]['ObjectName'] if 'Enum' in value_property_type and value_property_type['Enum'] != -1 else None
 
             extra = {None: []}
             includes = []
@@ -484,17 +493,26 @@ class UEClass(UEStruct):
     def __init__(self, package: str, class_name: str, json_object: dict):
         super().__init__(package, class_name, json_object)
         
+        for prop in self.properties:
+            prop['OwnerClass'] = self
+            if 'Inner' in prop:
+                prop['Inner']['OwnerClass'] = self
+            if 'KeyProp' in prop:
+                prop['KeyProp']['OwnerClass'] = self
+            if 'ValueProp' in prop:
+                prop['ValueProp']['OwnerClass'] = self
+        
         cdo_hierarchy_idx = json_object['ClassSerializedData']['ClassDefaultObject']
-        self.cdo: dict[str, ] = json_object['ObjectHierarchy'][cdo_hierarchy_idx]['Properties']
+        self.cdo: dict[str, ] = self.object_hierarchy[cdo_hierarchy_idx]['Properties']
         
         parent_hierarchy_idx = json_object['ClassSerializedData']['SuperStruct']
         if parent_hierarchy_idx != -1:
-            parent_hierarchy = json_object['ObjectHierarchy'][parent_hierarchy_idx]
+            parent_hierarchy = self.object_hierarchy[parent_hierarchy_idx]
             if parent_hierarchy['Type'] == 'Export':
                 self.parent_package = self.package
             else:
                 parent_package_hierarchy_idx = parent_hierarchy['Outer']
-                parent_package_hierarchy = json_object['ObjectHierarchy'][parent_package_hierarchy_idx]
+                parent_package_hierarchy = self.object_hierarchy[parent_package_hierarchy_idx]
                 self.parent_package: str = parent_package_hierarchy['ObjectName'][8:] # trim /Script
 
             self.parent_class: str = parent_hierarchy['ObjectName']
@@ -534,8 +552,8 @@ class UEClass(UEStruct):
                     elif int(prop['PropertyFlags']) & 0x0040000000000000: # private
                         del modified_cdo[cdo_property]
                     else:
-                        self_object_hierarchy = self.json_object['ObjectHierarchy'][self.cdo[cdo_property]]
-                        parent_object_hierarchy = self.parent_ue_class.json_object['ObjectHierarchy'][self.parent_ue_class.cdo[cdo_property]]
+                        self_object_hierarchy = self.object_hierarchy[self.cdo[cdo_property]]
+                        parent_object_hierarchy = self.parent_ue_class.object_hierarchy[self.parent_ue_class.cdo[cdo_property]]
                         if self_object_hierarchy['ObjectName'] == parent_object_hierarchy['ObjectName']:
                             del modified_cdo[cdo_property]
                 else:
@@ -545,8 +563,8 @@ class UEClass(UEStruct):
                         elif int(prop['PropertyFlags']) & 0x0040000000000000: # private
                             modified_cdo[cdo_property][i] = None
                         else:
-                            self_object_hierarchy = self.json_object['ObjectHierarchy'][self.cdo[cdo_property][i]]
-                            parent_object_hierarchy = self.parent_ue_class.json_object['ObjectHierarchy'][self.parent_ue_class.cdo[cdo_property][i]]
+                            self_object_hierarchy = self.object_hierarchy[self.cdo[cdo_property][i]]
+                            parent_object_hierarchy = self.parent_ue_class.object_hierarchy[self.parent_ue_class.cdo[cdo_property][i]]
                             if self_object_hierarchy['ObjectName'] == parent_object_hierarchy['ObjectName']:
                                 modified_cdo[cdo_property][i] = None
                     if all(entry == None for entry in modified_cdo[cdo_property]):
@@ -574,8 +592,8 @@ class UEClass(UEStruct):
             inner_prop_type = prop['Inner'] if 'Inner' in prop else None
             key_prop_type = prop['KeyProp'] if 'KeyProp' in prop else None
             value_prop_type = prop['ValueProp'] if 'ValueProp' in prop else None
-            struct_type = prop['Struct'] if 'Struct' in prop else None
-            enum_name = prop['Enum']['ObjectName'] if 'Enum' in prop and prop['Enum'] else None
+            struct_type = prop['OwnerStruct'].hierarchy_structs[prop['Struct']] if 'Struct' in prop else None
+            enum_name = prop['OwnerStruct'].object_hierarchy[prop['Enum']]['ObjectName'] if 'Enum' in prop and prop['Enum'] != -1 else None
             if array_dim == 1:
                 implementations[prop_name] = self.property_type_implementation(f'this->{prop_name}', prop_type, val, struct_type, enum_name, inner_prop_type, key_prop_type, value_prop_type)
             else:
@@ -615,13 +633,13 @@ def read_dump(dump_root: str):
                 cls.parent_ue_struct = package_classes[cls.parent_package][cls.parent_class]
                 
             for hier_cls_idx in cls.hierarchy_classes:
-                hier_cls_hierarchy = cls.json_object['ObjectHierarchy'][hier_cls_idx]
+                hier_cls_hierarchy = cls.object_hierarchy[hier_cls_idx]
                 
                 if hier_cls_hierarchy['Type'] == 'Export':
                     hier_cls_package = cls.package
                 else:
                     hier_cls_package_hierarchy_idx = hier_cls_hierarchy['Outer']
-                    hier_cls_package_hierarchy = cls.json_object['ObjectHierarchy'][hier_cls_package_hierarchy_idx]
+                    hier_cls_package_hierarchy = cls.object_hierarchy[hier_cls_package_hierarchy_idx]
                     hier_cls_package: str = hier_cls_package_hierarchy['ObjectName'][8:]
                 
                 hier_cls_class: str = hier_cls_hierarchy['ObjectName']
@@ -629,37 +647,18 @@ def read_dump(dump_root: str):
                 cls.hierarchy_classes[hier_cls_idx] = package_classes[hier_cls_package][hier_cls_class]
             
             for hier_cls_idx in cls.hierarchy_structs:
-                hier_cls_hierarchy = cls.json_object['ObjectHierarchy'][hier_cls_idx]
+                hier_cls_hierarchy = cls.object_hierarchy[hier_cls_idx]
                 
                 if hier_cls_hierarchy['Type'] == 'Export':
                     hier_cls_package = cls.package
                 else:
                     hier_cls_package_hierarchy_idx = hier_cls_hierarchy['Outer']
-                    hier_cls_package_hierarchy = cls.json_object['ObjectHierarchy'][hier_cls_package_hierarchy_idx]
+                    hier_cls_package_hierarchy = cls.object_hierarchy[hier_cls_package_hierarchy_idx]
                     hier_cls_package: str = hier_cls_package_hierarchy['ObjectName'][8:]
                 
                 hier_cls_class: str = hier_cls_hierarchy['ObjectName']
 
                 cls.hierarchy_structs[hier_cls_idx] = package_structs[hier_cls_package][hier_cls_class]
-            
-            # Because properties don't know what their object's objectHierarchy is... TODO
-            for prop in cls.properties:
-                if 'Struct' in prop:
-                    prop['Struct'] = cls.hierarchy_structs[prop['Struct']]
-                if 'Inner' in prop and 'Struct' in prop['Inner']:
-                    prop['Inner']['Struct'] = cls.hierarchy_structs[prop['Inner']['Struct']]
-                if 'KeyProp' in prop and 'Struct' in prop['KeyProp']:
-                    prop['KeyProp']['Struct'] = cls.hierarchy_structs[prop['KeyProp']['Struct']]
-                if 'ValueProp' in prop and 'Struct' in prop['ValueProp']:
-                    prop['ValueProp']['Struct'] = cls.hierarchy_structs[prop['ValueProp']['Struct']]
-                if 'Enum' in prop:
-                    prop['Enum'] = cls.json_object['ObjectHierarchy'][prop['Enum']] if prop['Enum'] != -1 else None
-                if 'Inner' in prop and 'Enum' in prop['Inner']:
-                    prop['Inner']['Enum'] = cls.json_object['ObjectHierarchy'][prop['Inner']['Enum']] if prop['Inner']['Enum'] != -1 else None
-                if 'KeyProp' in prop and 'Enum' in prop['KeyProp']:
-                    prop['KeyProp']['Enum'] = cls.json_object['ObjectHierarchy'][prop['KeyProp']['Enum']] if prop['KeyProp']['Enum'] != -1 else None
-                if 'ValueProp' in prop and 'Enum' in prop['ValueProp']:
-                    prop['ValueProp']['Enum'] = cls.json_object['ObjectHierarchy'][prop['ValueProp']['Enum']] if prop['ValueProp']['Enum'] != -1 else None
 
     for pkg, structs in package_structs.items():
         for struct_name, struct in structs.items():
@@ -667,13 +666,13 @@ def read_dump(dump_root: str):
                 struct.parent_ue_struct = package_structs[struct.parent_package][struct.parent_class]
                 
             for hier_cls_idx in struct.hierarchy_classes:
-                hier_cls_hierarchy = struct.json_object['ObjectHierarchy'][hier_cls_idx]
+                hier_cls_hierarchy = struct.object_hierarchy[hier_cls_idx]
                 
                 if hier_cls_hierarchy['Type'] == 'Export':
                     hier_cls_package = struct.package
                 else:
                     hier_cls_package_hierarchy_idx = hier_cls_hierarchy['Outer']
-                    hier_cls_package_hierarchy = struct.json_object['ObjectHierarchy'][hier_cls_package_hierarchy_idx]
+                    hier_cls_package_hierarchy = struct.object_hierarchy[hier_cls_package_hierarchy_idx]
                     hier_cls_package: str = hier_cls_package_hierarchy['ObjectName'][8:]
                 
                 hier_cls_class: str = hier_cls_hierarchy['ObjectName']
@@ -681,37 +680,19 @@ def read_dump(dump_root: str):
                 struct.hierarchy_classes[hier_cls_idx] = package_classes[hier_cls_package][hier_cls_class]
             
             for hier_cls_idx in struct.hierarchy_structs:
-                hier_cls_hierarchy = struct.json_object['ObjectHierarchy'][hier_cls_idx]
+                hier_cls_hierarchy = struct.object_hierarchy[hier_cls_idx]
                 
                 if hier_cls_hierarchy['Type'] == 'Export':
                     hier_cls_package = struct.package
                 else:
                     hier_cls_package_hierarchy_idx = hier_cls_hierarchy['Outer']
-                    hier_cls_package_hierarchy = struct.json_object['ObjectHierarchy'][hier_cls_package_hierarchy_idx]
+                    hier_cls_package_hierarchy = struct.object_hierarchy[hier_cls_package_hierarchy_idx]
                     hier_cls_package: str = hier_cls_package_hierarchy['ObjectName'][8:]
                 
                 hier_cls_class: str = hier_cls_hierarchy['ObjectName']
 
                 struct.hierarchy_structs[hier_cls_idx] = package_structs[hier_cls_package][hier_cls_class]
             
-            # Because properties don't know what their object's objectHierarchy is... TODO
-            for prop in struct.properties:
-                if 'Struct' in prop:
-                    prop['Struct'] = struct.hierarchy_structs[prop['Struct']]
-                if 'Inner' in prop and 'Struct' in prop['Inner']:
-                    prop['Inner']['Struct'] = struct.hierarchy_structs[prop['Inner']['Struct']]
-                if 'KeyProp' in prop and 'Struct' in prop['KeyProp']:
-                    prop['KeyProp']['Struct'] = struct.hierarchy_structs[prop['KeyProp']['Struct']]
-                if 'ValueProp' in prop and 'Struct' in prop['ValueProp']:
-                    prop['ValueProp']['Struct'] = struct.hierarchy_structs[prop['ValueProp']['Struct']]
-                if 'Enum' in prop:
-                    prop['Enum'] = struct.json_object['ObjectHierarchy'][prop['Enum']] if prop['Enum'] != -1 else None
-                if 'Inner' in prop and 'Enum' in prop['Inner']:
-                    prop['Inner']['Enum'] = struct.json_object['ObjectHierarchy'][prop['Inner']['Enum']] if prop['Inner']['Enum'] != -1 else None
-                if 'KeyProp' in prop and 'Enum' in prop['KeyProp']:
-                    prop['KeyProp']['Enum'] = struct.json_object['ObjectHierarchy'][prop['KeyProp']['Enum']] if prop['KeyProp']['Enum'] != -1 else None
-                if 'ValueProp' in prop and 'Enum' in prop['ValueProp']:
-                    prop['ValueProp']['Enum'] = struct.json_object['ObjectHierarchy'][prop['ValueProp']['Enum']] if prop['ValueProp']['Enum'] != -1 else None
     return (package_classes, package_structs)
 
 def create_implementations(package_classes: dict[str, dict[str, UEClass]], dump_package: str):
