@@ -2,9 +2,9 @@
 
 #include "Buildables/FGBuildableRoad.h"
 #include "Hologram/FGRoadHologram.h"
-#include "FGSplineComponent.h"
 #include "Components/SceneComponent.h"
 #include "FGRoadConnectionComponent.h"
+#include "FGSplineComponent.h"
 
 void AFGBuildableRoad::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 AFGBuildableRoad::AFGBuildableRoad() : Super() {

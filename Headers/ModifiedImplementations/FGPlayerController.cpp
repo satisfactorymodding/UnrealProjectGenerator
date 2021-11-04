@@ -29,6 +29,7 @@ void AFGPlayerController::OnFOVUpdated(FString cvar){ }
 void AFGPlayerController::ExecuteShortcut(int32 shortcutIndex){ }
 void AFGPlayerController::GetCurrentShortcuts(TArray<  UFGHotbarShortcut* >& out_shortcuts){ }
 void AFGPlayerController::GetPresetShortcuts(int32 presetHotbarIndex, TArray<  UFGHotbarShortcut* >& out_shortcuts){ }
+bool AFGPlayerController::DoesHotbarContainMaterialCustomization(){ return bool(); }
 void AFGPlayerController::GetAllPresetHotbars(TArray<FPresetHotbar>& out_presetHotbars){ }
 void AFGPlayerController::GetPresetHotbar(int32 presetHotbarIndex, FPresetHotbar& out_presetHotbar){ }
 bool AFGPlayerController::CreatePresetHotbarFromCurrentHotbar(const FText& presetName, int32 iconIndex){ return bool(); }

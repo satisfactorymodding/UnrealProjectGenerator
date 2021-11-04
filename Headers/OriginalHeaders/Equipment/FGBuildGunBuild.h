@@ -13,6 +13,8 @@
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FBuildModeChangedDelegate, TSubclassOf<class UFGHologramBuildModeDescriptor>, newMode );
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams( FOnZoopUpdated, float, currentZoop, float, maxZoop, const FVector&, zoopLocation );
+
 USTRUCT()
 struct FConnectionRepresentation
 {
@@ -182,12 +184,16 @@ public:
 	void CloseBuildModeSelectUI();
 
 	/** Called whenever a hologram updates its zoop.
-	 * @param zoopSizePercentage - 0-1 value describing how far we have zooped.
+	 * @param currentZoop - How far we have zooped, value depends on hologram implementation. Beams use meters, cosmetic buildables use number of instances.
+	 * @param maxZoop - How far we are allowed to zoop with the current hologram.
 	 * @param zoopLocation - The location we're zooping to.
 	 */
-	UFUNCTION( BlueprintImplementableEvent, Category = "Hologram" )
+	UFUNCTION( BlueprintNativeEvent, Category = "Hologram" )
 	void OnZoopUpdated( float currentZoop, float maxZoop, const FVector& zoopLocation );
 
+	/** Called whenever a hologram updates its zoop. */
+	UPROPERTY( BlueprintAssignable, Category = "Hologram", DisplayName = "OnZoopUpdated" )
+	FOnZoopUpdated OnZoopUpdatedDelegate;
 
 	void HookUpUserSettings();
 
@@ -266,6 +272,9 @@ private:
 
 	UFUNCTION()
 	void OnUserSettingsUpdated();
+
+	UFUNCTION( Server, Reliable )
+	void Server_SetUseAutomaticClearanceSnapping( bool useAutomaticSnapping );
 private:
 	/** Stored values between hologram builds on how the hologram was scrolled */
 	TArray< int32 > mScrollModeValues;
@@ -294,7 +303,7 @@ private:
 	bool mIsUsingPressAndReleaseAsBuildSteps = true;
 
 
-	bool mAllowAutomaticClearanceSnapping = true;
+	bool mAllowAutomaticClearanceSnapping = false;
 
 	/** Stored flag for whether hologram builds should snap to guide lines */
 	bool mSnapToGuideLinesMode;

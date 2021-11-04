@@ -2,9 +2,9 @@
 
 #include "Equipment/FGHoverPack.h"
 #include "FGPowerConnectionComponent.h"
-#include "FGPowerInfoComponent.h"
-#include "Components/SceneComponent.h"
 #include "Equipment/FGEquipment.h"
+#include "Components/SceneComponent.h"
+#include "FGPowerInfoComponent.h"
 
 AFGHoverPack::AFGHoverPack() : Super() {
 	this->mHoverSpeed = 800.0;

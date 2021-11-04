@@ -650,7 +650,7 @@ protected:
 	UPROPERTY( EditDefaultsOnly )
 	bool mUseBuildClearanceOverlapSnapp = false;
 
-	bool mUseAutomaticBuildClearanceOverlapSnapp = true;
+	bool mUseAutomaticBuildClearanceOverlapSnapp = false;
 
 	/** The reason why we couldn't construct this hologram, if it's empty then we can construct it */
 	TArray< TSubclassOf< class UFGConstructDisqualifier > > mConstructDisqualifiers;

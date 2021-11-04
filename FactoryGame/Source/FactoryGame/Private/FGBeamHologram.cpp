@@ -22,7 +22,6 @@ int32 AFGBeamHologram::GetBaseCostMultiplier() const{ return int32(); }
 bool AFGBeamHologram::CanBeZooped() const{ return bool(); }
 void AFGBeamHologram::SerializeConstructMessage(FArchive& ar, FNetConstructionID id){ }
 void AFGBeamHologram::OnPendingConstructionHologramCreated_Implementation(AFGHologram* fromHologram){ }
-void AFGBeamHologram::AttachToBuildablePoint( AFGBuildable* pBuildable, const FFGAttachmentPoint& BuildablePoint, const FFGAttachmentPoint& LocalPoint){ }
 void AFGBeamHologram::OnRep_CurrentLength(){ }
 bool AFGBeamHologram::IsHologramIdenticalToBuildable( AFGBuildable* buildable, const FVector& hologramLocationOffset) const{ return bool(); }
 void AFGBeamHologram::CreateVerticalBeam(const FHitResult& hitResult, bool allowDiagonal){ }

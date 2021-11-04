@@ -3,3 +3,4 @@
 #include "FactoryGame.h"
 
 DEFINE_LOG_CATEGORY(LogGame);
+DEFINE_LOG_CATEGORY(LogSigns);
