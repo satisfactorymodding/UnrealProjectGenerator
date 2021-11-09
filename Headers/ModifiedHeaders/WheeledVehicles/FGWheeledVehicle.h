@@ -789,7 +789,7 @@ public:
 	void CacheSpeedInKMH();
 	bool ShouldStopVehicle() const;
 	void SetIsFollowingPath( bool isFollowingPath );
-	bool IsAtStation() const { return mIsAtStation; }
+	bool IsAtStation() const { return mCurrentStation != nullptr; }
 	int GetSpeedLimit() const { return mSpeedLimit; }
 	void StopAllMovement();
 	float GetLocalTime() const;
@@ -881,12 +881,6 @@ public:
 
 	UFUNCTION()
 	void OnRep_SimulationMovement();
-
-	//UFUNCTION()
-	//void OnRep_TemporarySimulationMovement();
-
-	UFUNCTION()
-	void OnRep_CurrentTarget();
 	
 	UFUNCTION()
 	void OnRep_RecordingStatus();
@@ -915,7 +909,6 @@ public:
 	AFGTargetPoint* SpawnNewTargetPoint( const FVector& location, const FRotator& rotation, AFGDrivingTargetList* targetList, int targetSpeed, AFGTargetPoint* afterTarget = nullptr );
 
 	void OnTargetWasForceClaimed( class AFGTargetPoint* target, class AFGWheeledVehicle* claimant );
-	void OnDockingTargetWasClaimed( class AFGTargetPoint* target );
 
 	class UFGVehicleCollisionBoxComponent* FindCollisionBox() const;
 
@@ -996,13 +989,11 @@ private:
 	UPROPERTY( Replicated )
 	bool mIsPossessed = false;
 
-	UPROPERTY( Replicated, SaveGame )
-	bool mIsAtStation = false;
-
-	class AFGBuildableDockingStation* mNextStation = nullptr;
+	UPROPERTY( Replicated )
+	class AFGBuildableDockingStation* mCurrentStation = nullptr;
 
 	/** Current node */
-	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_CurrentTarget )
+	UPROPERTY( SaveGame, Replicated )
 	class AFGTargetPoint* mCurrentTarget;
 
 	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_RecordingStatus )
@@ -1019,9 +1010,6 @@ private:
 
 	float mThrottleSampleCount = 0.0f;
 	float mThrottleSampleSum = 0.0f;
-
-	/** Number of target points before we reach next station, 5 means 4+ **/
-	int mTargetsToStation = -1;
 
 	bool mWasFuelAdded = false;
 	float mLastNecessaryRefuelTime = 0.0f;

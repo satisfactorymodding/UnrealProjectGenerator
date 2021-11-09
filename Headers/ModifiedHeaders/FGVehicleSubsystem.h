@@ -125,6 +125,8 @@ public:
 
 	void AddWheeledVehicle( class AFGWheeledVehicle* vehicle );
 
+	void AddDockingStation( class AFGBuildableDockingStation* station );
+
 	void AddTargetPoint( class AFGTargetPoint* target );
 
 	/**
@@ -133,6 +135,8 @@ public:
 	void RemoveVehicle( class AFGVehicle* vehicle );
 
 	void RemoveWheeledVehicle( class AFGWheeledVehicle* vehicle );
+
+	void RemoveDockingStation( class AFGBuildableDockingStation* station );
 	
 	/** Removes the desired target from the linked list */
 	UFUNCTION( BlueprintCallable, Category = "LinkedList" )
@@ -213,6 +217,10 @@ private:
 	/** All the wheeled vehicles in the world. */
 	UPROPERTY()
 	TArray< class AFGWheeledVehicle* > mWheeledVehicles;
+
+	/** All the docking stations in the world. */
+	UPROPERTY()
+	TArray< class AFGBuildableDockingStation* > mDockingStations;
 
 	UPROPERTY( SaveGame, Replicated )
 	TArray< AFGSavedWheeledVehiclePath* > mSavedPaths;

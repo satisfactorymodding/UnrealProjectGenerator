@@ -120,7 +120,6 @@ void AFGWheeledVehicle::Server_LoadPath_Implementation( AFGDrivingTargetList* ta
 void AFGWheeledVehicle::FindSavedPaths(const FString& textFilter, bool filterOnVehicleType, TArray< AFGSavedWheeledVehiclePath* >& result) const{ }
 void AFGWheeledVehicle::OnRep_IsFollowingPath(){ }
 void AFGWheeledVehicle::OnRep_SimulationMovement(){ }
-void AFGWheeledVehicle::OnRep_CurrentTarget(){ }
 void AFGWheeledVehicle::OnRep_RecordingStatus(){ }
 void AFGWheeledVehicle::OnRep_IsGhosting(){ }
 void AFGWheeledVehicle::OnIsSimulatedChanged(){ }
@@ -131,7 +130,6 @@ void AFGWheeledVehicle::OnSimulationTargetReached(AFGTargetPoint* newTarget){ }
 void AFGWheeledVehicle::PickFirstTargetAfterStation(){ }
 AFGTargetPoint* AFGWheeledVehicle::SpawnNewTargetPoint(const FVector& location, const FRotator& rotation, AFGDrivingTargetList* targetList, int targetSpeed, AFGTargetPoint* afterTarget){ return nullptr; }
 void AFGWheeledVehicle::OnTargetWasForceClaimed( AFGTargetPoint* target,  AFGWheeledVehicle* claimant){ }
-void AFGWheeledVehicle::OnDockingTargetWasClaimed( AFGTargetPoint* target){ }
 UFGVehicleCollisionBoxComponent* AFGWheeledVehicle::FindCollisionBox() const{ return nullptr; }
 void AFGWheeledVehicle::StartGhosting(){ }
 void AFGWheeledVehicle::TryLeaveSimulatedMode(){ }
