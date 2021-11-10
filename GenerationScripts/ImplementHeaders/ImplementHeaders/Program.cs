@@ -60,6 +60,11 @@ namespace ImplementHeaders
                 {
                     "FGResourceNodeFrackingCore.h"
                 }
+            },
+            { "FGServerObject", new List<string>()
+                {
+                    "FGServerManager.h"
+                }
             }
         };
 
