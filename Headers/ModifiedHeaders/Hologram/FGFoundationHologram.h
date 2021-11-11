@@ -53,6 +53,7 @@ protected:
 	float mSize;
 	float mHeight;
 	float mElevation;
+	bool mIsFrame;
 	FFoundationSideSelectionFlags mDisableSnapOn;
 
 	bool mIsSnappedVertically;

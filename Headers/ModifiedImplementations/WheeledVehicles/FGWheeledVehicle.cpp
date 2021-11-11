@@ -53,9 +53,7 @@ void AFGWheeledVehicle::MeasureVelocities(float deltaTime){ }
 FText AFGWheeledVehicle::GetDefaultMapName(TSubclassOf< AFGWheeledVehicle > vehicleType){ return FText(); }
 AFGDrivingTargetList* AFGWheeledVehicle::GetActiveTargetList() const{ return nullptr; }
 void AFGWheeledVehicle::SyncWithSimulation(){ }
-void AFGWheeledVehicle::StartDockingProcess(){ }
-void AFGWheeledVehicle::EndDockingProcess(){ }
-bool AFGWheeledVehicle::ShouldStayAtDock() const{ return bool(); }
+bool AFGWheeledVehicle::ShouldStayAtDock(){ return bool(); }
 float AFGWheeledVehicle::GetTotalFuelEnergy() const{ return float(); }
 float AFGWheeledVehicle::CalculateFuelNeed() const{ return float(); }
 float AFGWheeledVehicle::GetMaxFuelEnergy() const{ return float(); }

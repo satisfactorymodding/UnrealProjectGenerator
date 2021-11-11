@@ -588,6 +588,11 @@ public:
 	/** Spawn particle for now */
 	void PlayZiplineEffects( FVector inLocation );
 
+	// Cheat for all players to fly
+	UFUNCTION( NetMulticast, Reliable )
+	void NetMulticast_CheatFly();
+	virtual void NetMulticast_CheatFly_Implementation();
+
 	/** Returns the Cinematic Camera subobject used in photomode **/
 	UFUNCTION( BlueprintPure, Category = "Camera" )
 	FORCEINLINE class UFGCineCameraComponent* GetCinematicCameraComponent() const { return mCinematicCameraComponent; }
@@ -876,6 +881,7 @@ private:
 	void Server_OnUseReleased();
 	UFUNCTION( Reliable, Server, WithValidation )
 	void Server_PickUpItem( class AFGItemPickup* itemPickup );
+
 
 
 	/** Called when slide status changes so we can change capsule size accordingly */

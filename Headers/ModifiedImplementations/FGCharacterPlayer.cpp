@@ -151,6 +151,7 @@ bool AFGCharacterPlayer::Multicast_ZiplineStart_Validate(AActor* ziplineActor, F
 void AFGCharacterPlayer::Multicast_ZiplineEnd_Implementation(FVector exitForce){ }
 bool AFGCharacterPlayer::Multicast_ZiplineEnd_Validate(FVector exitForce){ return bool(); }
 void AFGCharacterPlayer::PlayZiplineEffects(FVector inLocation){ }
+void AFGCharacterPlayer::NetMulticast_CheatFly_Implementation(){ }
 void AFGCharacterPlayer::SetupPlayerInputComponent( UInputComponent* InputComponent){ }
 void AFGCharacterPlayer::OnInventorySlotsUnlocked(int32 newUnlockedSlots){ }
 void AFGCharacterPlayer::OnArmsSlotsUnlocked(int32 newUnlockedSlots){ }

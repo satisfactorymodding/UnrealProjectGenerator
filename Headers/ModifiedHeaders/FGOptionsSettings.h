@@ -191,6 +191,9 @@ struct FActionMappingDisplayName
 
 	UPROPERTY( BlueprintReadOnly, EditAnywhere )
 	FText DisplayName;
+
+	UPROPERTY( BlueprintReadOnly, EditAnywhere )
+	FText Tooltip;
 };
 
 USTRUCT( BlueprintType, meta = ( ShowOnlyInnerProperties ) )
@@ -212,6 +215,9 @@ struct FAxisMappingDisplayName
 
 	UPROPERTY( BlueprintReadOnly, EditAnywhere )
 	FText DisplayNameNegativeScale;
+	
+	UPROPERTY( BlueprintReadOnly, EditAnywhere )
+	FText Tooltip;
 };
 
 UCLASS( config = Game, defaultconfig, meta = ( DisplayName = "Satisfactory User Options" ) )

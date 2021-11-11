@@ -42,13 +42,13 @@ public:
 	class AFGPlayerState* Sender;
 
 	/** The name of the player */
+	UPROPERTY()
 	FString CachedPlayerName;
 
 	/** Caching the color */
+	UPROPERTY()
 	FLinearColor CachedColor;
-
 	
-
 	UPROPERTY()
 	EFGChatMessageType MessageType = EFGChatMessageType::CMT_PlayerMessage;
 };

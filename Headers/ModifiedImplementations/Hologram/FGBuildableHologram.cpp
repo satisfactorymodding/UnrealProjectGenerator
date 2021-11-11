@@ -41,6 +41,7 @@ void AFGBuildableHologram::CheckValidFloor(){ }
 void AFGBuildableHologram::HandleClearanceSnapping(FVector& newLocation, FRotator& newRotation, const FHitResult& hitResult){ }
 void AFGBuildableHologram::SnapToClearanceBox(const UFGClearanceComponent* targetSnapClearanceComponent, FVector& newLocation, FRotator& newRotation){ }
 bool AFGBuildableHologram::IsHologramIdenticalToBuildable( AFGBuildable* buildable, const FVector& hologramLocationOffset) const{ return bool(); }
+void AFGBuildableHologram::PreConfigureActor( AFGBuildable* inBuildable){ }
 void AFGBuildableHologram::ConfigureActor( AFGBuildable* inBuildable) const{ }
 void AFGBuildableHologram::ConfigureComponents( AFGBuildable* inBuildable) const{ }
 void AFGBuildableHologram::ConfigureBuildEffect( AFGBuildable* inBuildable){ }

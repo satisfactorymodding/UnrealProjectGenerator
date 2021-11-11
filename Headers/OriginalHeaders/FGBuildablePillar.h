@@ -18,7 +18,12 @@ public:
 
 	const FVector& GetSize() const { return mSize; }
 
-private:
+	bool IsSupport() const { return mIsSupport; }
+
+protected:
 	UPROPERTY( EditDefaultsOnly, Category = "Pillar" )
 	FVector mSize;
+
+	UPROPERTY( EditDefaultsOnly, Category = "Pillar" )
+	bool mIsSupport;
 };

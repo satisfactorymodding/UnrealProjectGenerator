@@ -60,6 +60,8 @@ public:
 
 	void ProcessPollResponses( FClientQuerySocket* Socket );
 
+	FClientQuerySocket* GetQuerySocket( const FName& Protocol );
+
 protected:
 	UPROPERTY( BlueprintReadOnly )
 	TArray<class UFGServerObject*> mServers;
@@ -69,13 +71,6 @@ private:
 	TArray< TUniquePtr< FRunnableThread > > mServerQueryThreads;
 	
 	bool mRunningFromConsole = false;
-
-	enum class EServerManagerVersion : uint8
-	{
-		SVM_InitialVersion,
-		SVM_CurrentVersion = SVM_InitialVersion,
-		SVM_EndVersions
-	};
 
 	void CustomSerialize(FArchive& Ar, EServerManagerVersion Version);
 };

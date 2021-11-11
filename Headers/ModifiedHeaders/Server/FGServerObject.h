@@ -9,6 +9,12 @@
 #include "FGServerObject.generated.h"
 
 
+struct FServerQueryAddressInfo
+{
+	TSharedPtr< class FInternetAddr > Address;
+	class FClientQuerySocket* QuerySocket = nullptr;
+};
+
 /**
 * Holds information about dedicated servers that we know about
 * Typically, a server gets to be known about by connecting to it
@@ -112,13 +118,15 @@ public:
 	UFUNCTION( BlueprintCallable )
 	void ChangeServerName( const FString& NewServerName );
 
+	void CustomSerialize(FStructuredArchive::FRecord Record, EServerManagerVersion Version);
 private:
 	void SetAuthenticationToken( const FServerAuthenticationToken& Token );
 	// @todo: Naming is confusing
 	void SetServerName( const FString& ServerName );
 	void NotifyComplexStateChange();
 	void ProcessServerStatePollResponse( const struct FServerStatePollResponse& Beat );
-	void CheckServerHealth();
+	void PollState();
+	class UFGServerManager& GetOuterServerManager() const;
 	
 protected:
 	virtual void BeginDestroy() override;
@@ -139,9 +147,8 @@ protected:
 	/// The actual address of this server, after DNS lookup.
 	UPROPERTY( BlueprintReadOnly, SaveGame )
 	FString Address;
-
-	TSharedPtr< class FInternetAddr > NativeAddress;
-	class FClientQuerySocket *mQuerySocket = nullptr;
+	
+	TArray< FServerQueryAddressInfo > SolvedAddresses;
 	
 	UPROPERTY( BlueprintReadOnly, SaveGame )
 	FServerAuthenticationToken AuthenticationToken;
@@ -193,7 +200,6 @@ protected:
 
 	uint8 mConnectionAttemptFailed : 1;
 	uint8 mWaitingToJoinGame : 1;
-	uint8 mQuerySocketLookupMade : 1;
 	FServerNetStats mNetStats;
 	
 	void SetGameState( const FServerGameState& NewState );
