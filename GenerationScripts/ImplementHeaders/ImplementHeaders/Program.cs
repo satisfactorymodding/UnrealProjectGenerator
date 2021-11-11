@@ -512,7 +512,9 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
             { "FSaveCustomVersion::GUID",
 @" FGuid(0x21043E2F, 0x13E61FD6, 0x513B9D51, 0x3636A230); //See symbol ?GUID@FSaveCustomVersion@@2UFGuid@@B in IDA for value <21043E2Fh, 13E61FD6h, 513B9D51h, 3636A230h>" },
             { "UFGGameUserSettings::mCVarSink",
-@"FConsoleCommandDelegate::CreateStatic(&UFGGameUserSettings::CVarSinkHandler)" }
+@"FConsoleCommandDelegate::CreateStatic(&UFGGameUserSettings::CVarSinkHandler)" },
+            { "UFGServerObject::GetOuterServerManager",
+@"  return *Cast<UFGServerManager>(GetOuter());" }
         };
 
         private static readonly Dictionary<string, string> CustomSuper = new Dictionary<string, string>()
