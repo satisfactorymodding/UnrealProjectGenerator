@@ -1,4 +1,0 @@
-*.pdb filter=lfs diff=lfs merge=lfs -text
-*.dll filter=lfs diff=lfs merge=lfs -text
-FactoryGame/Binaries/Win64/UE4Editor-FactoryGame.dll filter=lfs diff=lfs merge=lfs -text
-FactoryGame/Binaries/Win64/UE4Editor-FactoryGame.pdb filter=lfs diff=lfs merge=lfs -text
