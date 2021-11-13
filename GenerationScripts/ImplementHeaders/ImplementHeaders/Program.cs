@@ -65,6 +65,11 @@ namespace ImplementHeaders
                 {
                     "FGServerManager.h"
                 }
+            },
+            { "FGResourceSinkSubsystem", new List<string>()
+                {
+                    "FGItemDescriptor.h"
+                }
             }
         };
 
