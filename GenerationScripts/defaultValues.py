@@ -320,10 +320,14 @@ class UEStruct:
             return [f'{val}', {}, []]
         elif prop_type == 'Int16Property':
             return [f'{val}', {}, []]
+        elif prop_type == 'UInt16Property':
+            return [f'{val}U', {}, []]
         elif prop_type == 'UInt32Property':
             return [f'{val}U', {}, []]
         elif prop_type == 'Int64Property':
             return [f'{val}LL', {}, []]
+        elif prop_type == 'UInt64Property':
+            return [f'{val}ULL', {}, []]
         elif prop_type == 'EnumProperty':
             for cls in class_headers:
                 if cls in val:
