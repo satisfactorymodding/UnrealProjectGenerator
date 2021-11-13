@@ -248,6 +248,9 @@ def AnimInstanceProxyFactory_impl(self, val):
 def TimerHandle_impl(self, val):
     return [None, {}, []] # It's going to be default anyway
 
+def PostProcessSettings_impl(self, val):
+    return [None, {}, []] # Not dealing with that
+
 custom_struct_implementations = {
     'InventoryItem': InventoryItem_impl,
     'InventoryStack': InventoryStack_impl,
@@ -278,6 +281,7 @@ custom_struct_implementations = {
     'AnimInstanceProxyRailRoadVehicle': AnimInstanceProxyRailRoadVehicle_impl,
     'AnimInstanceProxyFactory': AnimInstanceProxyFactory_impl,
     'TimerHandle': TimerHandle_impl,
+    'PostProcessSettings': PostProcessSettings_impl,
 }
 
 def read_class_includes():
