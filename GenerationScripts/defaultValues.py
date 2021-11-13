@@ -941,7 +941,8 @@ def create_implementations(package_classes: dict[str, dict[str, UEClass]], dump_
                 if inc in includes:
                     includes.remove(inc)
             
-            if len(includes) > 0:                
+            if len(includes) > 0:
+                includes = sorted(list(includes))
                 header_rel_path = os.path.relpath(os.path.join(root, name), cpp_root).replace('.cpp', '.h').replace('\\', '/')
                 cpp_content = cpp_content.replace(f'#include "{header_rel_path}"', f'#include "{header_rel_path}"\n' + '\n'.join([f'#include "{inc}"' for inc in includes]))
             
