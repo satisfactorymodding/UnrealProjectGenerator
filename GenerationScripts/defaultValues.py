@@ -157,6 +157,28 @@ def Transform_impl(self, val):
         return [None, {}, []]
     return [f'FTransform({translation_text}, {rotation_text}, {scale_text})', {}, []]
 
+def LinearColor_impl(self, val):
+    r = round_float_scientific(val['R'])
+    g = round_float_scientific(val['G'])
+    b = round_float_scientific(val['B'])
+    a = round_float_scientific(val['A'])
+    if r == 0 and g == 0 and b == 0 and a == 1:
+        return [None, {}, []]
+    if a == 1:
+        return [f'FLinearColor({r}, {g}, {b})', {}, []]
+    return [f'FLinearColor({r}, {g}, {b}, {a})', {}, []]
+
+def Color_impl(self, val):
+    r = val['R']
+    g = val['G']
+    b = val['B']
+    a = val['A']
+    if r == 0 and g == 0 and b == 0 and a == 255:
+        return [None, {}, []]
+    if a == 255:
+        return [f'FColor({r}, {g}, {b})', {}, []]
+    return [f'FColor({r}, {g}, {b}, {a})', {}, []]
+
 def QuantizedPipelineIndicatorData_impl(self, val):
     return [None, {}, []] # It's going to be default anyway
 
@@ -193,11 +215,46 @@ def PowerCircuitStats_impl(self, val):
 def ClientTrainData_impl(self, val):
     return [None, {}, []] # It's going to be default anyway
 
+def NetConstructionID_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def DismantleRefunds_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def ServerGameState_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def ReplicatedRailroadVehicleState_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def PlayerPipeHyperData_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def RemovedInstanceArray_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def AnimInstanceProxyTrainDocking_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def AnimInstanceProxyTruckStation_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def AnimInstanceProxyRailRoadVehicle_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def AnimInstanceProxyFactory_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def TimerHandle_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
 custom_struct_implementations = {
     'InventoryItem': InventoryItem_impl,
     'InventoryStack': InventoryStack_impl,
     'BodyInstance': BodyInstance_impl,
     'Transform': Transform_impl,
+    'LinearColor': LinearColor_impl,
+    'Color': Color_impl,
     'QuantizedPipelineIndicatorData': QuantizedPipelineIndicatorData_impl,
     'QuantizedPumpIndicatorData': QuantizedPumpIndicatorData_impl,
     'QuantizedReservoirIndicatorData': QuantizedReservoirIndicatorData_impl,
@@ -210,6 +267,17 @@ custom_struct_implementations = {
     'UseState': UseState_impl,
     'PowerCircuitStats': PowerCircuitStats_impl,
     'ClientTrainData': ClientTrainData_impl,
+    'NetConstructionID': NetConstructionID_impl,
+    'DismantleRefunds': DismantleRefunds_impl,
+    'ServerGameState': ServerGameState_impl,
+    'ReplicatedRailroadVehicleState': ReplicatedRailroadVehicleState_impl,
+    'PlayerPipeHyperData': PlayerPipeHyperData_impl,
+    'RemovedInstanceArray': RemovedInstanceArray_impl,
+    'AnimInstanceProxyTrainDocking': AnimInstanceProxyTrainDocking_impl,
+    'AnimInstanceProxyTruckStation': AnimInstanceProxyTruckStation_impl,
+    'AnimInstanceProxyRailRoadVehicle': AnimInstanceProxyRailRoadVehicle_impl,
+    'AnimInstanceProxyFactory': AnimInstanceProxyFactory_impl,
+    'TimerHandle': TimerHandle_impl,
 }
 
 def read_class_includes():
