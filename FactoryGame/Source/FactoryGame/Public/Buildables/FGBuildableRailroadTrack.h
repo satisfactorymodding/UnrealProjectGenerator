@@ -112,6 +112,9 @@ public:
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Track" )
 	class USplineComponent* GetSplineComponent() const { return mSplineComponent; }
 
+	void ShowBlockFeedback( FLinearColor colourID );
+	void StopBlockFeedback();
+
 	/** Get the length of this track. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Track" )
 	FORCEINLINE float GetLength() const { return mLength; }
@@ -185,6 +188,9 @@ public:
 	TArray< AFGBuildableRailroadTrack* > GetOverlappingTracks();
 	/** Add an overlapping track */
 	void AddOverlappingTrack( AFGBuildableRailroadTrack* track );
+
+	bool IsBlockFeedbackVisualizationActive() const { return mBlockVisualizationSplineMeshComponent.IsValid(); }
+
 	
 private:
 	void SetTrackGraphID( int32 trackGraphID );
@@ -242,4 +248,11 @@ private:
 
 	/** The signal block this track section is part of. */
 	TWeakPtr< FFGRailroadSignalBlock > mSignalBlock;
+
+	/** The instance spline mesh component dynamic spawned when needed to preview feedback. */
+	TWeakObjectPtr< UFGInstancedSplineMeshComponent > mBlockVisualizationSplineMeshComponent;
+
+	/* Mesh to use for block feedback. */
+	UPROPERTY( EditDefaultsOnly )
+	UStaticMesh* mBlockVisualizationMesh;
 };

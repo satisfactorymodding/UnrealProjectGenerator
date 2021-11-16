@@ -22,10 +22,7 @@ struct FDrivingTargetListMapData
 	FWidgetTransform DisplayTransform;
 
 	UPROPERTY( BlueprintReadOnly )
-	TArray< FVector2D > StationLocations;
-
-	UPROPERTY( BlueprintReadOnly )
-	UTexture2D* StationIcon;
+	TArray< class UFGActorRepresentation* > Stations;
 
 	UPROPERTY( BlueprintReadOnly )
 	TArray< FWidgetTransform > ArrowTransforms;

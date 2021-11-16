@@ -4,7 +4,7 @@
 
 UFGWidgetSwitcherInterface::UFGWidgetSwitcherInterface(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 UFGWidgetSwitcher::UFGWidgetSwitcher(){ }
-void UFGWidgetSwitcher::ReleaseSlateResources(bool bReleaseChildren){ }
+void UFGWidgetSwitcher::ReleaseSlateResources(bool bReleaseChildren){ Super::ReleaseSlateResources(bReleaseChildren); }
 void UFGWidgetSwitcher::RemoveFromParent(){ }
 void UFGWidgetSwitcher::SetActiveWidgetIndex(int32 index){ }
 void UFGWidgetSwitcher::SetActiveWidget(UWidget* widget){ }

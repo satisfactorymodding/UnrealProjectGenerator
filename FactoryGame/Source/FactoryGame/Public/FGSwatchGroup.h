@@ -24,7 +24,8 @@ public:
 		mGroupName( LOCTEXT( "UFGSwatchGroup", "This should never be seen!") )
 	{
 	}
-	
+
+	UFUNCTION( BlueprintPure, Category="SwatchGroup")
 	static FText GetGroupName( TSubclassOf< UFGSwatchGroup > inClass );
 
 protected:

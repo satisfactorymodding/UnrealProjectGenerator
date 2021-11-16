@@ -35,6 +35,7 @@ AFGBuildableRailroadTrack::AFGBuildableRailroadTrack() : Super() {
 	this->mConnections.Add(CreateDefaultSubobject<UFGRailroadTrackConnectionComponent>(TEXT("TrackConnection0")));
 	this->mConnections.Add(CreateDefaultSubobject<UFGRailroadTrackConnectionComponent>(TEXT("TrackConnection1")));
 	this->mIsOwnedByPlatform = false;
+	this->mBlockVisualizationMesh = nullptr;
 	this->mHologramClass = AFGRailroadTrackHologram::StaticClass();
 	this->mSplineComponent->SetupAttachment(RootComponent);
 	this->mInstancedSplineComponent->SetupAttachment(RootComponent);
@@ -47,6 +48,8 @@ void AFGBuildableRailroadTrack::Destroyed(){ }
 void AFGBuildableRailroadTrack::Dismantle_Implementation(){ }
 bool AFGBuildableRailroadTrack::CanDismantle_Implementation() const{ return bool(); }
 int32 AFGBuildableRailroadTrack::GetDismantleRefundReturnsMultiplier() const{ return int32(); }
+void AFGBuildableRailroadTrack::ShowBlockFeedback(FLinearColor colourID){ }
+void AFGBuildableRailroadTrack::StopBlockFeedback(){ }
 FRailroadTrackPosition AFGBuildableRailroadTrack::FindTrackPositionClosestToWorldLocation(const FVector& worldLocation){ return FRailroadTrackPosition(); }
 void AFGBuildableRailroadTrack::GetWorldLocationAndDirectionAtPosition(const  FRailroadTrackPosition& position, FVector& out_location, FVector& out_direction) const{ }
 UFGPowerConnectionComponent* AFGBuildableRailroadTrack::GetThirdRail() const{ return nullptr; }
