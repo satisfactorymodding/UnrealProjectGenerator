@@ -41,6 +41,7 @@ FLinearColor AFGGameState::GetBuildingColorPrimary_Linear(uint8 slot){ return FL
 FLinearColor AFGGameState::GetBuildingColorSecondary_Linear(uint8 slot){ return FLinearColor(); }
 void AFGGameState::Server_SetBuildableLightColorSlot_Implementation(uint8 slotIdx, FLinearColor color){ }
 FFactoryCustomizationColorSlot AFGGameState::GetBuildingColorDataForSlot(uint8 slot){ return FFactoryCustomizationColorSlot(); }
+TSubclassOf< class UFGFactoryCustomizationDescriptor_Swatch > AFGGameState::GetCurrentSwatchForSwatchGroup(TSubclassOf< UFGSwatchGroup > swatchGroup){ return TSubclassOf<class UFGFactoryCustomizationDescriptor_Swatch>(); }
 void AFGGameState::OnRep_BuildingColorSlot_Data(){ }
 void AFGGameState::OnRep_BuildableLightColorSlots(){ }
 void AFGGameState::ClaimPlayerColor( AFGPlayerState* playerState){ }
@@ -50,5 +51,6 @@ void AFGGameState::SetPlannedServerRestartWorldTime(float worldTimeSeconds){ }
 FDateTime AFGGameState::GetServerLocalDateTime() const{ return FDateTime(); }
 void AFGGameState::OnRep_OnlineSessionVisibility(){ }
 bool AFGGameState::IsCustomizerRecipeUnlocked(){ return bool(); }
+void AFGGameState::SetDefaultSwatchForBuildableGroup(TSubclassOf<  UFGSwatchGroup > swatchGroup, TSubclassOf<  UFGFactoryCustomizationDescriptor_Swatch> swatch){ }
 void AFGGameState::CheckRestartTime(){ }
 void AFGGameState::OnRep_PlannedRestartTime(){ }

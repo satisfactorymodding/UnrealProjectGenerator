@@ -59,6 +59,9 @@ float AFGWheeledVehicle::CalculateFuelNeed() const{ return float(); }
 float AFGWheeledVehicle::GetMaxFuelEnergy() const{ return float(); }
 bool AFGWheeledVehicle::HasFuelForRoundtrip() const{ return bool(); }
 ETransferAnimationState AFGWheeledVehicle::GetTransferAnimationState(float animationLength, float& animationTime){ return ETransferAnimationState(); }
+void AFGWheeledVehicle::CalculateManualDockingState(){ }
+void AFGWheeledVehicle::SetRefuelingStation( AFGBuildableDockingStation* station){ }
+void AFGWheeledVehicle::DockToRefuelingStation(){ }
 void AFGWheeledVehicle::Died(AActor* thisActor){ }
 void AFGWheeledVehicle::SetSimulated(bool newIsSimulated){ }
 void AFGWheeledVehicle::CreateInventoryItemDrops_Implementation(){ }
@@ -120,6 +123,7 @@ void AFGWheeledVehicle::OnRep_IsFollowingPath(){ }
 void AFGWheeledVehicle::OnRep_SimulationMovement(){ }
 void AFGWheeledVehicle::OnRep_RecordingStatus(){ }
 void AFGWheeledVehicle::OnRep_IsGhosting(){ }
+void AFGWheeledVehicle::OnRep_ManualDockingState(){ }
 void AFGWheeledVehicle::OnIsSimulatedChanged(){ }
 void AFGWheeledVehicle::TryActivatePathSimulation(){ }
 void AFGWheeledVehicle::AttachSimulatedVehicle(){ }

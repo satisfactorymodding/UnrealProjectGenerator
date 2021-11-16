@@ -89,6 +89,7 @@ void AFGVehicle::SetForceRealMode(bool forceRealMode){ }
 void AFGVehicle::SetForceSimulationMode(bool forceSimulationMode){ }
 void AFGVehicle::SetSimulated(bool newIsSimulated){ }
 void AFGVehicle::ApplyMeshPrimitiveData(const FFactoryCustomizationData& customizationData){ }
+TSubclassOf< class UFGFactoryCustomizationDescriptor_Swatch > AFGVehicle::GetDefaultSwatchCustomizationOverride(UObject* worldContext){ return TSubclassOf<class UFGFactoryCustomizationDescriptor_Swatch>(); }
 void AFGVehicle::OnCustomizationDataApplied(const FFactoryCustomizationData& customizationData){ }
 void AFGVehicle::OnRep_IsSimulated(){ }
 void AFGVehicle::OnTakeDamage(AActor* damagedActor, float damageAmount, const  UDamageType* damageType,  AController* instigatedBy, AActor* damageCauser){ }

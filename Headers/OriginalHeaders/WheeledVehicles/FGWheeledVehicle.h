@@ -133,6 +133,14 @@ enum class ETransferAnimationState : uint8
 	TS_Unloading
 };
 
+UENUM( BlueprintType )
+enum class EManualDockingState : uint8
+{
+	MDS_NoDocking,
+	MDS_CanLoad,
+	MDS_CanUnload
+};
+
 /**
  * This is our implementation of a wheeled vehicle, we want a base class FGVehicle that can be shared by wheeled vehicles, trains etc.
  * @see AWheeledVehicle
@@ -358,6 +366,19 @@ public:
 	UFUNCTION( BlueprintPure, Category = "Docking" )
 	ETransferAnimationState GetTransferAnimationState( float animationLength, float& animationTime );
 
+	void CalculateManualDockingState();
+
+	UFUNCTION( BlueprintPure, Category = "Docking" )
+	EManualDockingState GetManualDockingState() const { return mManualDockingState; }
+
+	UFUNCTION( BlueprintPure, Category = "Docking" )
+	class AFGBuildableDockingStation* GetRefuelingStation() const { return mRefuelingStation; }
+
+	void SetRefuelingStation( class AFGBuildableDockingStation* station );
+
+	UFUNCTION( BlueprintCallable, Category = "Docking" )
+	void DockToRefuelingStation();
+
 protected:
 	// Begin AFGVehicle interface
 	virtual void Died( AActor* thisActor ) override;
@@ -451,6 +472,11 @@ public:
 	/** Broadcast when transfer status is updated */
 	UPROPERTY( BlueprintAssignable, Category = "Docking", DisplayName = "OnTransferStatusChanged" )
 	FTransferStatusChanged TransferStatusChangedDelegate;
+	
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE( FManualDockingStateChanged );
+	/** Broadcast when the conditions for manually docking have changed */
+	UPROPERTY( BlueprintAssignable, Category = "Docking", DisplayName = "OnManualDockingStateChanged" )
+	FManualDockingStateChanged ManualDockingStateChangedDelegate;
 
 protected:
 	friend class AFGWheeledVehicleAIController;
@@ -884,6 +910,9 @@ public:
 	UFUNCTION()
 	void OnRep_IsGhosting();
 
+	UFUNCTION()
+	void OnRep_ManualDockingState();
+
 	UFUNCTION( BlueprintImplementableEvent, Category = "Vehicle|SelfDriving" )
 	void IsFollowingPathChanged( bool isFollowingPath );
 
@@ -987,8 +1016,15 @@ private:
 	UPROPERTY( Replicated )
 	bool mIsPossessed = false;
 
+	/** The station to which this vehicle is currently docked */
 	UPROPERTY( Replicated )
 	class AFGBuildableDockingStation* mCurrentStation = nullptr;
+
+	/** The station at which this vehicle is currently being refueled */
+	class AFGBuildableDockingStation* mRefuelingStation = nullptr;
+
+	UPROPERTY( ReplicatedUsing = OnRep_ManualDockingState )
+	EManualDockingState mManualDockingState = EManualDockingState::MDS_NoDocking;
 
 	/** Current node */
 	UPROPERTY( SaveGame, Replicated )

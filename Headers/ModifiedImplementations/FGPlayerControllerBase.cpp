@@ -35,6 +35,11 @@ void AFGPlayerControllerBase::Admin(const FString& command){ }
 void AFGPlayerControllerBase::ServerAdmin_Implementation(const FString& command){ }
 bool AFGPlayerControllerBase::ServerAdmin_Validate(const FString& command){ return bool(); }
 bool AFGPlayerControllerBase::ProcessConsoleExec(const TCHAR* Cmd, FOutputDevice& Ar, UObject* Executor){ return bool(); }
+TScriptInterface<class IFGSaveManagerInterface> AFGPlayerControllerBase::GetMostRelevantSaveManager(){ return TScriptInterface<class IFGSaveManagerInterface>(); }
+TScriptInterface<class IFGSaveManagerInterface> AFGPlayerControllerBase::GetLocalSaveManager(){ return TScriptInterface<class IFGSaveManagerInterface>(); }
 void AFGPlayerControllerBase::DiscardInput(){ }
+void AFGPlayerControllerBase::SetPlayer(UPlayer* InPlayer){ }
+void AFGPlayerControllerBase::OnNetCleanup( UNetConnection* Connection){ }
 void AFGPlayerControllerBase::EnablePlayerInput(bool enable){ }
+void AFGPlayerControllerBase::SetCurrentServer( UFGServerObject* CurrentServer){ }
 void AFGPlayerControllerBase::InitDeathInput(){ }

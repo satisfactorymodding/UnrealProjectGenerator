@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FGSaveManagerInterface.h"
 #include "Object.h"
 #include "Server/FGDedicatedServerTypes.h"
 #include "OnlineBeaconClient.h"
@@ -20,7 +21,7 @@ struct FServerQueryAddressInfo
 * Typically, a server gets to be known about by connecting to it
 **/ 
 UCLASS( BlueprintType, Within=FGServerManager )
-class FACTORYGAME_API UFGServerObject : public UObject
+class FACTORYGAME_API UFGServerObject : public UObject, public IFGSaveManagerInterface
 {
 	GENERATED_BODY()
 	friend class UFGServerManager;
@@ -38,11 +39,20 @@ public:
 	void CreateGame( const FString& SessionName, const FString& StartingLocation, bool JoinOnceLoaded );
 
 	UFUNCTION( BlueprintCallable, Category = Server )
-	void UploadSave( const struct FSaveHeader& SaveHeader, bool LoadImmediately );
-
-	UFUNCTION( BlueprintCallable, Category = Server )
 	void ConsoleCommand( const FString& Command );
 
+	// IFGSaveManagerInterface overrides
+	virtual void EnumerateSessions(const FOnSaveManagerEnumerateSessionsComplete& CompleteDelegate) override;
+	virtual bool IsEnumeratingLocalSaves() override;
+	virtual bool IsSaveManagerAvailable() override;
+	virtual void DeleteSaveFile(const FSaveHeader& SaveGame, FOnSaveMgrInterfaceDeleteSaveGameComplete CompleteDelegate) override;
+	virtual void DeleteSaveSession(const FSessionSaveStruct& Session, FOnSaveMgrInterfaceDeleteSaveGameComplete CompleteDelegate) override;
+	virtual void LoadSaveFile(const FSaveHeader& SaveGame,  class APlayerController* Player) override;
+	virtual void SaveGame(const FString& SaveName, FOnSaveMgrInterfaceSaveGameComplete CompleteDelegate) override;
+	virtual void UploadSave(const FSaveHeader& Save, FOnSaveManagerTransferCompleted CompleteDelegate, FOnSaveManagerTransferProgress ProgressDelegate) override;
+	virtual bool IsTransferInProgress() override;
+	//
+	
 	const FString& GetServerName() const
 	{
 		return ServerName;
@@ -63,6 +73,11 @@ public:
 		return ServerBeaconPort;
 	}
 
+	int32 GetGamePort() const
+	{
+		return ServerGamePort;
+	}
+
 	const FServerGameState& GetGameState() const
 	{
 		return GameState;
@@ -81,6 +96,11 @@ public:
 	{
 		return ServerState;
 	}
+
+	const TArray<FServerQueryAddressInfo>& GetQueryAddresses() const
+	{
+		return SolvedAddresses;
+	} 
 
 	UFUNCTION( BlueprintCallable )
 	void RegisterStateListener( TScriptInterface< class IFGServerStateListener> Listener );
@@ -127,6 +147,7 @@ private:
 	void ProcessServerStatePollResponse( const struct FServerStatePollResponse& Beat );
 	void PollState();
 	class UFGServerManager& GetOuterServerManager() const;
+	void ServerSavesUpdated() const;
 	
 protected:
 	virtual void BeginDestroy() override;
@@ -184,8 +205,9 @@ protected:
 	int32 ServerNetCL = 0;
 
 	/// The beacon port of this server
-	uint32 ServerBeaconPort = 0;
-	
+	int32 ServerBeaconPort = 0;
+
+	uint32 ServerGamePort = 0; 
 	UPROPERTY( Transient )
 	class AFGServerBeaconClient* ServerConnection = nullptr;
 
@@ -210,4 +232,7 @@ protected:
 	void ServerConnectionFailure( AFGServerBeaconClient& Connection );
 	void ServerDisconnected();
 	void ConnectionStateChanged( EBeaconConnectionState State );
+
+	TArray<FSessionSaveStruct> CachedSessions;
+	int32 CachedCurrentSession = -1;
 };

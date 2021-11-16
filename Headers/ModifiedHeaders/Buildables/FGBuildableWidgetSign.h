@@ -97,6 +97,9 @@ protected:
 	UPROPERTY()
 	TMap< FString, int32 > mIconElementToDataMap;
 
+	UPROPERTY( EditDefaultsOnly )
+	UMaterialInterface* mWidgetMaterial;
+
 	//////////////////////////////////////////////////////////////////////////
 	/// Saved Properties
 

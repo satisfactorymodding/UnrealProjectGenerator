@@ -3,7 +3,9 @@
 #include "FGServerBeaconHostObject.h"
 
 AFGServerBeaconHostObject::AFGServerBeaconHostObject(){ }
+void AFGServerBeaconHostObject::BeginPlay(){ }
 void AFGServerBeaconHostObject::Tick(float DeltaSeconds){ }
 void AFGServerBeaconHostObject::OnClientConnected(AOnlineBeaconClient* NewClientActor, UNetConnection* ClientConnection){ }
 void AFGServerBeaconHostObject::NotifyClientDisconnected(AOnlineBeaconClient* LeavingClientActor){ }
 void AFGServerBeaconHostObject::PushBasicSettings(){ }
+void AFGServerBeaconHostObject::SavesCollectionChanged(){ }
