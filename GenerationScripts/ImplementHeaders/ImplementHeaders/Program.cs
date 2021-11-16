@@ -12,7 +12,7 @@ namespace ImplementHeaders
         private static bool CountOnly = false;
         private static int FunctionCount;
 
-        private static readonly string[] NeedsSuper = new string[] { "Serialize", "OnRegister", "OnUnregister", "PostLoad", "BeginDestroy", "PostInitProperties", "PostInitializeComponents", "CreateRenderState_Concurrent", "PostEditChangeProperty", "PostActorCreated", "PreInitializeComponents", "NotifyBeginPlay" };
+        private static readonly string[] NeedsSuper = new string[] { "Serialize", "OnRegister", "OnUnregister", "PostLoad", "BeginDestroy", "PostInitProperties", "PostInitializeComponents", "CreateRenderState_Concurrent", "PostEditChangeProperty", "PostActorCreated", "PreInitializeComponents", "NotifyBeginPlay", "ReleaseSlateResources" };
         // Only adds super if the class name starts with that character
         private static readonly Dictionary<string, string> ConditionalSuper = new Dictionary<string, string>()
         {
