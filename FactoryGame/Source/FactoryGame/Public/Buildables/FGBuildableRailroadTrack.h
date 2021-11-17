@@ -112,8 +112,11 @@ public:
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Track" )
 	class USplineComponent* GetSplineComponent() const { return mSplineComponent; }
 
-	void ShowBlockFeedback( FLinearColor colourID );
-	void StopBlockFeedback();
+	/** Show/hide the block color on this track. */
+	void ShowBlockVisualization();
+	void StopBlockVisualization();
+	bool IsBlockVisualizationActive() const { return mBlockVisualizationSplineMeshComponent.IsValid(); }
+	bool CanShowBlockVisualization() const { return mSignalBlockID != INDEX_NONE; }
 
 	/** Get the length of this track. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Track" )
@@ -189,12 +192,12 @@ public:
 	/** Add an overlapping track */
 	void AddOverlappingTrack( AFGBuildableRailroadTrack* track );
 
-	bool IsBlockFeedbackVisualizationActive() const { return mBlockVisualizationSplineMeshComponent.IsValid(); }
-
-	
 private:
 	void SetTrackGraphID( int32 trackGraphID );
 	void SetSignalBlock( TWeakPtr< FFGRailroadSignalBlock > block );
+
+	UFUNCTION()
+	void OnRep_SignalBlockID();
 
 protected:
 	/** Mesh to use for his track. */
@@ -249,10 +252,14 @@ private:
 	/** The signal block this track section is part of. */
 	TWeakPtr< FFGRailroadSignalBlock > mSignalBlock;
 
+	/** A unique id for this signal block, used for block coloring. */
+	UPROPERTY( ReplicatedUsing = OnRep_SignalBlockID )
+	int32 mSignalBlockID;
+
 	/** The instance spline mesh component dynamic spawned when needed to preview feedback. */
 	TWeakObjectPtr< UFGInstancedSplineMeshComponent > mBlockVisualizationSplineMeshComponent;
 
 	/* Mesh to use for block feedback. */
-	UPROPERTY( EditDefaultsOnly )
+	UPROPERTY( EditDefaultsOnly, Category = "Track|Block Visualization" )
 	UStaticMesh* mBlockVisualizationMesh;
 };

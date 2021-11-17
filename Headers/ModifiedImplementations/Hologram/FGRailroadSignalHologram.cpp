@@ -4,6 +4,7 @@
 
 AFGRailroadSignalHologram::AFGRailroadSignalHologram(){ }
 void AFGRailroadSignalHologram::BeginPlay(){ }
+void AFGRailroadSignalHologram::EndPlay(const EEndPlayReason::Type endPlayReason){ }
 void AFGRailroadSignalHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }
 void AFGRailroadSignalHologram::ConfigureActor( AFGBuildable* inBuildable) const{ }
 void AFGRailroadSignalHologram::CheckValidPlacement(){ }

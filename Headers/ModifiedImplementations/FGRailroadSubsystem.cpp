@@ -45,10 +45,14 @@ UFGPowerConnectionComponent* AFGRailroadSubsystem::GetThirdRailForTrackGraph(int
 void AFGRailroadSubsystem::AddSignal( AFGBuildableRailroadSignal* signal){ }
 void AFGRailroadSubsystem::RemoveSignal( AFGBuildableRailroadSignal* signal){ }
 AFGTrainScheduler* AFGRailroadSubsystem::GetTrainScheduler() const{ return nullptr; }
+void AFGRailroadSubsystem::ToggleBlockVisualization(bool enabled){ }
+void AFGRailroadSubsystem::ToggleBlockVisualizationAlways(bool enabled){ }
+FLinearColor AFGRailroadSubsystem::GetBlockVisualizationColor(int32 forSignalBlockID){ return FLinearColor(); }
 void AFGRailroadSubsystem::Debug_MarkAllGraphsAsChanged(){ }
 void AFGRailroadSubsystem::Debug_MarkAllGraphsForFullRebuild(){ }
 void AFGRailroadSubsystem::TickTrackGraphs(float dt){ }
 void AFGRailroadSubsystem::TickPendingCollisions(float dt){ }
+void AFGRailroadSubsystem::TickBlockVisualization(){ }
 void AFGRailroadSubsystem::PurgeInvalidStationsFromTimeTables(){ }
 AFGRailroadSubsystem::FRailroadHitResult AFGRailroadSubsystem::SolveVehicleCollisions( AFGTrain* forTrain,
 		 AFGRailroadVehicle* forVehicle,

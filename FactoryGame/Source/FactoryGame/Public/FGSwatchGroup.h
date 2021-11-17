@@ -83,6 +83,28 @@ public:
 };
 
 UCLASS()
+class FACTORYGAME_API UFGSwatchGroup_CoatedConcreteFoundation : public UFGSwatchGroup
+{
+	GENERATED_BODY()
+public:
+	UFGSwatchGroup_CoatedConcreteFoundation()
+	{
+		mGroupName = LOCTEXT( "UFGSwatchGroup_CoatedConcreteFoundation", "Coated Concrete Foundation" );
+	}
+};
+
+UCLASS()
+class FACTORYGAME_API UFGSwatchGroup_ConcreteWall : public UFGSwatchGroup
+{
+	GENERATED_BODY()
+public:
+	UFGSwatchGroup_ConcreteWall()
+	{ 
+		mGroupName = LOCTEXT( "UFGSwatchGroup_ConcreteWall", "Concrete Wall" );
+	}
+};
+
+UCLASS()
 class FACTORYGAME_API UFGSwatchGroup_Pipeline : public UFGSwatchGroup
 {
 	GENERATED_BODY()

@@ -71,4 +71,8 @@ public:
 
 	UFUNCTION( exec )
 	void DumpDynamicOptionsSettings();
+
+	/** Toggle visualization of railroad blocks on/off. */
+	UFUNCTION( exec )
+	void ToggleRailroadBlockVisualization( bool enabled );
 };
