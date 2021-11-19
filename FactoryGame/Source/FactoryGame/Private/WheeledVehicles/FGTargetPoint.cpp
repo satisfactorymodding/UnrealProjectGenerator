@@ -19,7 +19,15 @@ AFGTargetPoint::AFGTargetPoint() : Super() {
 	this->bReplicates = true;
 	this->NetDormancy = ENetDormancy::DORM_Initial;
 }
-void AFGTargetPoint::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
+void AFGTargetPoint::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+	DOREPLIFETIME(AFGTargetPoint, mNext);
+	DOREPLIFETIME(AFGTargetPoint, mWaitTime);
+	DOREPLIFETIME(AFGTargetPoint, mTargetSpeed);
+	DOREPLIFETIME(AFGTargetPoint, mIsLoopTarget);
+	DOREPLIFETIME(AFGTargetPoint, mIsDockingTarget);
+	DOREPLIFETIME(AFGTargetPoint, mHostStation);
+}
 void AFGTargetPoint::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 bool AFGTargetPoint::ShouldSave_Implementation() const{ return bool(); }
 void AFGTargetPoint::StartIsLookedAt_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state){ }

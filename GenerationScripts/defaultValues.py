@@ -1031,7 +1031,7 @@ def create_implementations(package_classes: dict[str, dict[str, UEClass]], dump_
                 cpp_content = cpp_content.replace(f'#include "{header_rel_path}"', f'#include "{header_rel_path}"\n' + '\n'.join([f'#include "{inc}"' for inc in includes]))
                         
             # GetLifetimeReplicatedProps
-            for cls in re.findall(r'((^void\s+(.+)::GetLifetimeReplicatedProps\((.*?)\))\s*const\s*{\s*.*?})', cpp_content, re.DOTALL | re.MULTILINE):
+            for cls in re.findall(r'((^void\s+([^{}]+)::GetLifetimeReplicatedProps\(([^{}]*?)\))\s*const\s*{\s*[^{}]*?})', cpp_content, re.DOTALL | re.MULTILINE):
                 if cls[2] in class_replicated_props_implementations:
                     impls = class_replicated_props_implementations[cls[2]]
                     cpp_content = cpp_content.replace(cls[0], cls[1] + ' const {\n\tSuper::GetLifetimeReplicatedProps(' + cls[3].strip().split(' ')[-1] + ');\n' + impls + '\n}')

@@ -43,7 +43,11 @@ AFGBuildableRailroadTrack::AFGBuildableRailroadTrack() : Super() {
 	this->mConnections[0]->SetupAttachment(RootComponent);
 	this->mConnections[1]->SetupAttachment(RootComponent);
 }
-void AFGBuildableRailroadTrack::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
+void AFGBuildableRailroadTrack::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+	DOREPLIFETIME(AFGBuildableRailroadTrack, mSplineData);
+	DOREPLIFETIME(AFGBuildableRailroadTrack, mSignalBlockID);
+}
 void AFGBuildableRailroadTrack::BeginPlay(){ }
 void AFGBuildableRailroadTrack::Destroyed(){ }
 void AFGBuildableRailroadTrack::Dismantle_Implementation(){ }

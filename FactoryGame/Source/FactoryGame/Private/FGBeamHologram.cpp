@@ -10,7 +10,11 @@ AFGBeamHologram::AFGBeamHologram() : Super() {
 	this->mBuildStep = EBeamHologramBuildStep::BHBS_Placement;
 }
 void AFGBeamHologram::BeginPlay(){ }
-void AFGBeamHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
+void AFGBeamHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const {
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+	DOREPLIFETIME(AFGBeamHologram, mCurrentLength);
+	DOREPLIFETIME(AFGBeamHologram, mBuildStep);
+}
 bool AFGBeamHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }
 bool AFGBeamHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 void AFGBeamHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }

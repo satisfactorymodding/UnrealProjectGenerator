@@ -2,7 +2,10 @@
 
 #include "FGRailroadSubsystem.h"
 
-void UFGRailroadRemoteCallObject::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
+void UFGRailroadRemoteCallObject::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const {
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+	DOREPLIFETIME(UFGRailroadRemoteCallObject, mForceNetField_UFGRailroadRemoteCallObject);
+}
 void UFGRailroadRemoteCallObject::Server_RerailTrain_Implementation( AFGTrain* train){ }
 bool UFGRailroadRemoteCallObject::Server_RerailTrain_Validate( AFGTrain* train){ return bool(); }
 FTrackGraph::FTrackGraph(){ }
@@ -21,7 +24,11 @@ AFGRailroadSubsystem::AFGRailroadSubsystem() : Super() {
 	this->PrimaryActorTick.TickInterval = 0.0;
 }
 void AFGRailroadSubsystem::Init(){ }
-void AFGRailroadSubsystem::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
+void AFGRailroadSubsystem::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const {
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+	DOREPLIFETIME(AFGRailroadSubsystem, mTrainStationIdentifiers);
+	DOREPLIFETIME(AFGRailroadSubsystem, mTrains);
+}
 void AFGRailroadSubsystem::Serialize(FArchive& ar){ Super::Serialize(ar); }
 void AFGRailroadSubsystem::BeginPlay(){ }
 void AFGRailroadSubsystem::EndPlay(const EEndPlayReason::Type endPlayReason){ }
