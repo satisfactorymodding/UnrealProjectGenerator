@@ -29,7 +29,10 @@ AFGStickyExplosive::AFGStickyExplosive() : Super() {
 	this->mProjectileData.EffectiveRange = 0.0;
 	this->mProjectileData.WeaponDamageMultiplier = 1.0;
 }
-void AFGStickyExplosive::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
+void AFGStickyExplosive::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const {
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+	DOREPLIFETIME(AFGStickyExplosive, mDetonateIn);
+}
 void AFGStickyExplosive::OnImpact(const FHitResult& hitResult){ }
 float AFGStickyExplosive::TakeDamage(float DamageAmount, const  FDamageEvent& DamageEvent,
 							 AController* EventInstigator,
