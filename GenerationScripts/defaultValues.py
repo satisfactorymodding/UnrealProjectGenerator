@@ -719,6 +719,7 @@ class UEStruct:
 ignore_properties = [
     'mFogOfWarRawData',
     'mExtractorClass', # Is const
+    'mInstancedSplineComponent', # UFGInstancedSplineMeshComponent has custom serialization which crashes at runtime
 ]
 
 property_remap = {
