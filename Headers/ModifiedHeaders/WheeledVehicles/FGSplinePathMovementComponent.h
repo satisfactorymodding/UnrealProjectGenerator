@@ -66,6 +66,8 @@ public:
 
 	bool TryClaim( class AFGTargetPoint* target, bool essentialsOnly );
 
+	bool IsMoving() const { return mIsMoving; }
+
 private:
 	static void GetShortestRotation( FRotator& rotation );
 
@@ -185,6 +187,8 @@ private:
 	TSet< TWeakObjectPtr< class AFGWheeledVehicle > > mCoDeadlockedVehicles;
 
 	bool mIsDeadlocked = false;
+
+	bool mIsMoving = false;
 };
 
 FORCEINLINE float AdjustAngle( float angle )
