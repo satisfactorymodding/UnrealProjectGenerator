@@ -179,6 +179,9 @@ struct FServerGameState
 
 	UPROPERTY( BlueprintReadOnly )
 	int32 TotalGameDuration = 0.f;
+
+	UPROPERTY( BlueprintReadOnly )
+	float AverageTickRate = 0.f;
 };
 
 /**

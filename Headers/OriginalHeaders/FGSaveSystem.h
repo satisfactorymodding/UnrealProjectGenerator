@@ -29,7 +29,8 @@ class FACTORYGAME_API UFGSaveSystem : public UObject, public IFGSaveManagerInter
 public:
 	/** Initialize our save system, checks for available session ids */
 	virtual void Init();
-
+	virtual void BeginDestroy() override;
+	
 	/** Get the path to the save folder */
 	static FString GetSaveDirectoryPath();
 
@@ -252,4 +253,7 @@ protected:
 
 	/** We are currently using internal saves */
 	static bool mIsUsingBundledSaves;
+
+	/** A delegate handle from UFGSaveSystem::FOnSaveCollectionChanged that we need for cleanup purposes */
+	FDelegateHandle mOnSaveCollectionUpdatedDelegateHandle;
 };
