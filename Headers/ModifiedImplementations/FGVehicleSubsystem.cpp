@@ -13,12 +13,15 @@ void AFGVehicleSubsystem::SetDebugTextLevel(int level){ }
 int AFGVehicleSubsystem::GetVehicleDeadlocksDebug(){ return int(); }
 void AFGVehicleSubsystem::SetVehicleDeadlocksDebug(int level){ }
 #endif 
+#ifdef DEBUG_SELF_DRIVING
+#endif 
 AFGVehicleSubsystem::AFGVehicleSubsystem(){ }
 void AFGVehicleSubsystem::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGVehicleSubsystem::Tick(float dt){ }
 AFGVehicleSubsystem* AFGVehicleSubsystem::Get(UWorld* world){ return nullptr; }
 AFGVehicleSubsystem* AFGVehicleSubsystem::Get(UObject* worldContext){ return nullptr; }
 void AFGVehicleSubsystem::TickVehicleSimulation(float dt){ }
+float AFGVehicleSubsystem::GetEffectiveSimulationDistance( AFGVehicle* vehicle){ return float(); }
 float AFGVehicleSubsystem::FindClosestPlayerSq( AFGVehicle* actor) const{ return float(); }
 void AFGVehicleSubsystem::AddVehicle( AFGVehicle* vehicle){ }
 void AFGVehicleSubsystem::AddWheeledVehicle( AFGWheeledVehicle* vehicle){ }
