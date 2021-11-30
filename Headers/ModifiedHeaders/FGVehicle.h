@@ -153,6 +153,10 @@ public:
 	void ApplyCustomizationData_Native( const FFactoryCustomizationData& customizationData );
 	FFactoryCustomizationData& GetCustomizationData_Native() { return mCustomizationData; }
 	FFactoryCustomizationData GetCustomizationData_Implementation() { return mCustomizationData; }
+	TSubclassOf< UFGFactorySkinActorData > GetFactorySkinClass_Implementation() { return mFactorySkinClass; }
+	TSubclassOf< UFGFactorySkinActorData > GetFactorySkinClass_Native() { return mFactorySkinClass; }
+	TSubclassOf< UFGFactoryCustomizationDescriptor_Skin > GetActiveSkin_Native();
+	TSubclassOf< UFGFactoryCustomizationDescriptor_Skin > GetActiveSkin_Implementation();
 	bool GetCanBeColored_Implementation(){ return true; }
 	virtual bool IsColorApplicationDeferred() { return false; }
 	virtual bool CanApplyDeferredColorToBuildable( FVector hitLocation, FVector hitNormal, TSubclassOf< class UFGFactoryCustomizationDescriptor_Swatch > swatch, APlayerController* playerController ){ return false; }
@@ -324,8 +328,15 @@ public:
 	UFUNCTION( BlueprintCallable, Category = "Vehicle" )
 	void ApplyMeshPrimitiveData( const FFactoryCustomizationData& customizationData );
 
+	/** Update skins on all meshes */
+	UFUNCTION( BlueprintCallable, Category = "Buildable|Customization" )
+	void ApplySkinData( TSubclassOf< UFGFactoryCustomizationDescriptor_Skin > newSkinDesc );
+
 	UFUNCTION()
 	TSubclassOf< class UFGFactoryCustomizationDescriptor_Swatch > GetDefaultSwatchCustomizationOverride( UObject* worldContext );
+
+	UFUNCTION( BlueprintNativeEvent, Category = "Buildable|Customization" )
+	void OnSkinCustomizationApplied( TSubclassOf< class UFGFactoryCustomizationDescriptor_Skin > skin );
 
 protected:
 	/** Called when customization data is applied. Allows child vehicles to update their simulated vehicles to keep colors synced */
@@ -449,7 +460,10 @@ protected:
 	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_CustomColorData )
 	FFactoryCustomizationData mCustomizationData;
 
-	UPROPERTY( EditAnywhere, BlueprintReadWrite, Category = "Buildable" )
+	UPROPERTY( EditDefaultsOnly, Category = "Vehicle" )
+	TSubclassOf< class UFGFactorySkinActorData > mFactorySkinClass;
+
+	UPROPERTY( EditAnywhere, BlueprintReadWrite, Category = "Vehicle" )
 	TSubclassOf< class UFGSwatchGroup > mSwatchGroup;
 
 private:

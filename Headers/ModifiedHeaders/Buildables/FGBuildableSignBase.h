@@ -7,6 +7,7 @@
 #include "FGSignInterface.h"
 #include "FGBuildableSignBase.generated.h"
 
+
 UENUM()
 enum class ESignAttachmentPointSnapType : uint8
 {

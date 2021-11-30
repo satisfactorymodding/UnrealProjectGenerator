@@ -45,3 +45,4 @@ void AFGBuildableTradingPost::OnRep_HAXX_SubbuildingReplicated(){ }
 void AFGBuildableTradingPost::AdjustPlayerSpawnsToGround(){ }
 AFGSchematicManager* AFGBuildableTradingPost::GetSchematicManager(){ return nullptr; }
 void AFGBuildableTradingPost::OnRep_NeedPlayingBuildEffect(){ }
+void AFGBuildableTradingPost::TryAddEventSubBuildings(){ }

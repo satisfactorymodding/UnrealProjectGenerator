@@ -52,5 +52,7 @@ FDateTime AFGGameState::GetServerLocalDateTime() const{ return FDateTime(); }
 void AFGGameState::OnRep_OnlineSessionVisibility(){ }
 bool AFGGameState::IsCustomizerRecipeUnlocked(){ return bool(); }
 void AFGGameState::SetDefaultSwatchForBuildableGroup(TSubclassOf<  UFGSwatchGroup > swatchGroup, TSubclassOf<  UFGFactoryCustomizationDescriptor_Swatch> swatch){ }
+void AFGGameState::AddTetrominoResult(const FMiniGameResult& newResult){ }
+void AFGGameState::OnRep_TetrominoLeaderBoard(){ }
 void AFGGameState::CheckRestartTime(){ }
 void AFGGameState::OnRep_PlannedRestartTime(){ }

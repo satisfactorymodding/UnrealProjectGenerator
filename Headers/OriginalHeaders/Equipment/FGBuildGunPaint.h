@@ -76,6 +76,9 @@ public:
 	void SetActiveMaterialDesc( TSubclassOf< UFGFactoryCustomizationDescriptor_Material > materialDesc);
 
 	UFUNCTION( BlueprintCallable, Category = "FactoryGame|BuildGunPaint" )
+	void SetActiveSkinDesc( TSubclassOf< UFGFactoryCustomizationDescriptor_Skin > skinDesc );
+
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|BuildGunPaint" )
 	void RemoveCustomization( TSubclassOf< UFGFactoryCustomizationDescriptor > customization );
 
 	UFUNCTION( BlueprintCallable, Category = "FactoryGame|BuildGunPaint" )
@@ -97,6 +100,10 @@ public:
 	/** Return the currently active Material Descriptor */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|BuildGunPaint" )
 	TSubclassOf< UFGFactoryCustomizationDescriptor_Material > GetActiveMaterialDesc() { return mActiveMaterialDesc; }
+
+	/** Return the currently active Skin Descriptor */
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|BuildGunPaint" )
+	TSubclassOf< UFGFactoryCustomizationDescriptor_Skin > GetActiveSkinDesc() { return mActiveSkinDesc; }
 
 	/** Is a give customization currently active? */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|BuildGunPaint" )
@@ -128,8 +135,11 @@ public:
 	TSubclassOf< class UFGCustomizationRecipe > GetActiveRecipe() { return mActiveRecipe; }
 
 	/** Spawns a preview actor for displaying the mesh swap that might occur when applying a material Desc. Will modify target objects material desc for preview */
-	void SpawnPreviewActor( AFGBuildable* aimedAtBuildable, TSubclassOf< UFGFactoryCustomizationDescriptor_Material >& targetMaterialDesc );
+	void SpawnPreviewActor( AFGBuildable* aimedAtBuildable, TSubclassOf< UFGRecipe > recipe, TSubclassOf< UFGFactoryCustomizationDescriptor_Material >& targetMaterialDesc );
 
+	/** Spawn a preview actor for a Skin Desc*/
+	void SpawnPreviewForMaterial(AFGBuildable* aimedAtBuildable, TSubclassOf< UFGFactoryCustomizationDescriptor_Material >& targetMaterialDesc );
+	
 	/** Sets up components for the preview actor*/
 	USceneComponent* SetupComponent( USceneComponent* attachParent, UActorComponent* componentTemplate, const FName& componentName );
 
@@ -147,6 +157,9 @@ public:
 
 	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|BuildGunPaint" )
 	void OnMaterialDescriptorChanged( TSubclassOf< UFGFactoryCustomizationDescriptor_Material > newMaterialDesc );
+
+	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|BuildGunPaint" )
+	void OnSkinDescriptorChanged( TSubclassOf< UFGFactoryCustomizationDescriptor_Skin > newSkinDesc );
 
 	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|BuildGunPaint" )
 	void OnPatternRotationChanged( uint8 patternOrientation );
@@ -205,6 +218,9 @@ private:
 	TSubclassOf< UFGFactoryCustomizationDescriptor_Material > mActiveMaterialDesc;
 
 	UPROPERTY()
+	TSubclassOf< UFGFactoryCustomizationDescriptor_Skin > mActiveSkinDesc;
+
+	UPROPERTY()
 	uint8 mPatternRotation;
 
 	// Max number of orientations, this is a little rough as we might want it per pattern. But generally we will never want more that 4
@@ -213,6 +229,7 @@ private:
 	bool mHitCanApplySwatch;
 	bool mHitCanApplyPattern;
 	bool mHitCanApplyMaterial;
+	bool mHitCanApplySkin;
 	bool mDescHasChanged;
 	bool mPatternRotationChanged;
 

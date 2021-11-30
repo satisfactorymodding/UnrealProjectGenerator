@@ -9,6 +9,7 @@ void AFGBuildableCalendar::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>&
 void AFGBuildableCalendar::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund) const{ }
 void AFGBuildableCalendar::OpenSlot(int32 dayNumber){ }
 bool AFGBuildableCalendar::GetContentOnSlot(int32 dayNumber, FInventoryStack& out_slotContent){ return bool(); }
+UFGUnlock* AFGBuildableCalendar::GetUnlockOnSlot(int32 dayNumber){ return nullptr; }
 bool AFGBuildableCalendar::IsSlotOpened(int32 dayNumber) const{ return bool(); }
 void AFGBuildableCalendar::OnInventoryItemRemoved(TSubclassOf< UFGItemDescriptor > itemClass, int32 numRemoved){ }
 void AFGBuildableCalendar::StoreDataToEventSubsystem(){ }

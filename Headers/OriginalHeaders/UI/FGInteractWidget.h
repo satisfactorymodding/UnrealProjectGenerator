@@ -89,6 +89,9 @@ public:
 	
 	FORCEINLINE bool GetSupportsCaching() const { return mSupportsCaching; }
 
+	UFUNCTION( BlueprintImplementableEvent, Category = "Shortcut" )
+	void OnShortcutPressed( int32 index );
+
 protected:
 	// Begin UUserWidget interface
 	virtual void NativeConstruct() override;

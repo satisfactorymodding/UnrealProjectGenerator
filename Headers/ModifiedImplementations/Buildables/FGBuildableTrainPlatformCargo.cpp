@@ -37,6 +37,7 @@ void AFGBuildableTrainPlatformCargo::UpdateLoadSettings(){ }
 void AFGBuildableTrainPlatformCargo::SwapCargoContainerVisibility(){ }
 void AFGBuildableTrainPlatformCargo::HidePlatformCargoContainer(){ }
 void AFGBuildableTrainPlatformCargo::ShowPlatformCargoContainer(){ }
+void AFGBuildableTrainPlatformCargo::ForceUpdateAnimInstance(){ }
 void AFGBuildableTrainPlatformCargo::OnCargoPowerStateChanged(bool hasPower){ }
 void AFGBuildableTrainPlatformCargo::EvaluateRuleSet(){ }
 bool AFGBuildableTrainPlatformCargo::CanCompleteDocking(){ return bool(); }
