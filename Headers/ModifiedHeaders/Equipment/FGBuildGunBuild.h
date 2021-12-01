@@ -196,6 +196,11 @@ public:
 	FOnZoopUpdated OnZoopUpdatedDelegate;
 
 	void HookUpUserSettings();
+	
+	/** Save/clear/restore the scroll values for the hologram. */
+	void SaveHologramScrollValues();
+	void ClearHologramScrollValues();
+	void RestoreHologramScrollValues( AFGHologram* hologram );
 
 protected:
 	
@@ -253,14 +258,6 @@ private:
 
 	/** Remove the clearance from our current hologram */
 	void CleanupHologramClearanceDetection( AFGHologram* hologram );
-
-	/** Save/clear/restore the scroll values for the hologram. */
-	void SaveHologramScrollValues();
-	void ClearHologramScrollValues();
-	void RestoreHologramScrollValues(AFGHologram* hologram);
-
-	UFUNCTION( Server, Reliable, WithValidation )
-	void Server_SaveHologramScrollValues( const TArray< int32 >& scrollValues );
 
 	AFGHologram* InternalSpawnHologram();
 
