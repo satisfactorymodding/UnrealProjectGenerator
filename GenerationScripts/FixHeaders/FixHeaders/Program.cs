@@ -106,21 +106,25 @@ namespace FixHeaders
             Directory.CreateDirectory(headerUpgradeHeadersFolder);
             Run("git.exe", "init", headerUpgradeFolder);
             DirectoryCopy(oldPath, headerUpgradeHeadersFolder);
+            Run("git.exe", "rm -r --cached *", headerUpgradeFolder);
             Run("git.exe", "add .", headerUpgradeFolder);
             Run("git.exe", "commit -m \"Old Headers\"", headerUpgradeFolder);
             Run("git.exe", "branch ModdingEdit", headerUpgradeFolder);
             Run("git.exe", "checkout ModdingEdit", headerUpgradeFolder);
             DirectoryCopy(modifiedPath, headerUpgradeHeadersFolder);
+            Run("git.exe", "rm -r --cached *", headerUpgradeFolder);
             Run("git.exe", "add .", headerUpgradeFolder);
             Run("git.exe", "commit -m \"Modding Edit Headers\"", headerUpgradeFolder);
             Run("git.exe", "checkout master", headerUpgradeFolder);
             DirectoryCopy(newPath, headerUpgradeHeadersFolder);
+            Run("git.exe", "rm -r --cached *", headerUpgradeFolder);
             Run("git.exe", "add .", headerUpgradeFolder);
             Run("git.exe", "commit -m \"New Headers\"", headerUpgradeFolder);
             Run("git.exe", "merge ModdingEdit", headerUpgradeFolder);
             GenerateHeaderCache(headerUpgradeFolder);
             FixFiles(headerUpgradeFolder);
             ConfirmModdingEdits();
+            Run("git.exe", "rm -r --cached *", headerUpgradeFolder);
             Run("git.exe", "add .", headerUpgradeFolder);
             Run("git.exe", "commit -m \"New Modding Edit Headers\"", headerUpgradeFolder);
             DirectoryCopy(headerUpgradeHeadersFolder, savePath);
@@ -212,7 +216,7 @@ namespace FixHeaders
                 }
                 else
                 {
-                    // Keep edit
+                    // Manual conflict solving required
                     HasConflict = true;
                 }
             }
