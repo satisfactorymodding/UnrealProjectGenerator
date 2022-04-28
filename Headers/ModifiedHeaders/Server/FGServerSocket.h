@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FGServerSocket.generated.h"
 
 UCLASS()
 class FACTORYGAME_API UFGServerSocket : public UObject
