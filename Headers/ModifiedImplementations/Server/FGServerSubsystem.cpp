@@ -3,6 +3,8 @@
 #include "FGServerSubsystem.h"
 
 UFGServerSubsystem::UFGServerSubsystem(){ }
+UFGServerSubsystem::UFGServerSubsystem(FVTableHelper& Helper){ }
+UFGServerSubsystem::~UFGServerSubsystem(){ }
 UFGServerSubsystem* UFGServerSubsystem::Get(const UObject* WorldContext){ return nullptr; }
 bool UFGServerSubsystem::ShouldCreateSubsystem(UObject* Outer) const{ return bool(); }
 void UFGServerSubsystem::Initialize(FSubsystemCollectionBase& Collection){ }

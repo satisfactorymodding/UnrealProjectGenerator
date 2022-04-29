@@ -56,6 +56,9 @@ protected:
 	void ContinueWithAndHookUpSteamToEOSAfterEpicLogout();
 
 	UFUNCTION( BlueprintCallable )
+	void UnlinkCurrentAccount();
+
+	UFUNCTION( BlueprintCallable )
 	void LogOutEpicAndCreateNewAccountConnection();
 
 	UPROPERTY( BlueprintReadOnly )

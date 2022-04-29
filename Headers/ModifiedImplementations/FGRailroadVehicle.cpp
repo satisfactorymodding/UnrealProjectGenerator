@@ -20,9 +20,6 @@ void AFGRailroadVehicle::StopIsLookedAt_Implementation( AFGCharacterPlayer* byCh
 FText AFGRailroadVehicle::GetLookAtDecription_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state) const{ return FText(); }
 void AFGRailroadVehicle::RegisterInteractingPlayer_Implementation( AFGCharacterPlayer* player){ }
 void AFGRailroadVehicle::UnregisterInteractingPlayer_Implementation( AFGCharacterPlayer* player){ }
-bool AFGRailroadVehicle::UpdateRepresentation(){ return bool(); }
-bool AFGRailroadVehicle::GetActorShouldShowInCompass(){ return bool(); }
-bool AFGRailroadVehicle::GetActorShouldShowOnMap(){ return bool(); }
 void AFGRailroadVehicle::UpdatePower(){ }
 UFGRailroadVehicleMovementComponent* AFGRailroadVehicle::GetRailroadVehicleMovementComponent() const{ return nullptr; }
 bool AFGRailroadVehicle::IsDocked() const{ return bool(); }
@@ -33,6 +30,9 @@ void AFGRailroadVehicle::ShowDerailHologram(){ }
 void AFGRailroadVehicle::HideDerailHologram(){ }
 void AFGRailroadVehicle::DisplayDebug( UCanvas* canvas, const  FDebugDisplayInfo& debugDisplay, float& YL, float& YPos){ }
 void AFGRailroadVehicle::OnCollided_Implementation(AFGRailroadVehicle* withVehicle, float impactVelocity, bool isPrimaryEvent, bool isDerailed){ }
+void AFGRailroadVehicle::EnableDerailPhysics(const FVector& velocity){ }
+void AFGRailroadVehicle::FreezeDerailPhysics(){ }
+void AFGRailroadVehicle::DisableDerailPhysics(){ }
 void AFGRailroadVehicle::TickClientSimulation(float dt){ }
 void AFGRailroadVehicle::OnIsSimulatedChanged(){ }
 void AFGRailroadVehicle::CoupleVehicleAt(AFGRailroadVehicle* vehicle, ERailroadVehicleCoupler coupler){ }
@@ -40,5 +40,3 @@ void AFGRailroadVehicle::DecoupleVehicleAt(ERailroadVehicleCoupler coupler){ }
 void AFGRailroadVehicle::OnRep_IsOrientationReversed(){ }
 void AFGRailroadVehicle::OnRep_Train(){ }
 void AFGRailroadVehicle::OnRep_IsDerailed(){ }
-void AFGRailroadVehicle::EnableDerailPhysics(const FVector& velocity){ }
-void AFGRailroadVehicle::DisableDerailPhysics(){ }

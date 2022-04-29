@@ -23,14 +23,10 @@ void AFGWheeledVehicle::OnBeginUnloadVehicle_Implementation(){ }
 void AFGWheeledVehicle::OnTransferComplete_Implementation(){ }
 void AFGWheeledVehicle::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGWheeledVehicle::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
-FVector AFGWheeledVehicle::GetRealActorLocation(){ return FVector(); }
-FRotator AFGWheeledVehicle::GetRealActorRotation(){ return FRotator(); }
-FLinearColor AFGWheeledVehicle::GetActorRepresentationColor(){ return FLinearColor(); }
-EFogOfWarRevealType AFGWheeledVehicle::GetActorFogOfWarRevealType(){ return EFogOfWarRevealType(); }
-float AFGWheeledVehicle::GetActorFogOfWarRevealRadius(){ return float(); }
 void AFGWheeledVehicle::StartIsLookedAt_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state){ }
 void AFGWheeledVehicle::StopIsLookedAt_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state){ }
-UStaticMesh* AFGWheeledVehicle::FindAttachedStaticMesh_Implementation(){ return nullptr; }
+FVector AFGWheeledVehicle::GetRealActorLocation() const{ return FVector(); }
+UStaticMeshComponent* AFGWheeledVehicle::FindAttachedStaticMesh_Implementation(){ return nullptr; }
 UWheeledVehicleMovementComponent* AFGWheeledVehicle::GetVehicleMovementComponent() const{ return nullptr; }
 void AFGWheeledVehicle::SetMovementComponent(UWheeledVehicleMovementComponent* movementComponent){ }
 bool AFGWheeledVehicle::HasFuel() const{ return bool(); }
@@ -51,14 +47,14 @@ void AFGWheeledVehicle::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor
 void AFGWheeledVehicle::ManageFakeForces(float DeltaTime){ }
 void AFGWheeledVehicle::MeasureVelocities(float deltaTime){ }
 FText AFGWheeledVehicle::GetDefaultMapName(TSubclassOf< AFGWheeledVehicle > vehicleType){ return FText(); }
-AFGDrivingTargetList* AFGWheeledVehicle::GetActiveTargetList() const{ return nullptr; }
 void AFGWheeledVehicle::SyncWithSimulation(){ }
-bool AFGWheeledVehicle::ShouldStayAtDock(){ return bool(); }
 bool AFGWheeledVehicle::HasFullTank() const{ return bool(); }
 float AFGWheeledVehicle::GetTotalFuelEnergy() const{ return float(); }
 float AFGWheeledVehicle::CalculateFuelNeed() const{ return float(); }
+float AFGWheeledVehicle::GetMaxFuelEnergy(TSubclassOf<  UFGItemDescriptor > fuelClass) const{ return float(); }
 float AFGWheeledVehicle::GetMaxFuelEnergy() const{ return float(); }
 bool AFGWheeledVehicle::HasFuelForRoundtrip() const{ return bool(); }
+bool AFGWheeledVehicle::IsSufficientFuelType(TSubclassOf<  UFGItemDescriptor > fuelType) const{ return bool(); }
 ETransferAnimationState AFGWheeledVehicle::GetTransferAnimationState(float animationLength, float& animationTime){ return ETransferAnimationState(); }
 void AFGWheeledVehicle::CalculateManualDockingState(){ }
 void AFGWheeledVehicle::SetRefuelingStation( AFGBuildableDockingStation* station){ }
@@ -76,6 +72,7 @@ void AFGWheeledVehicle::UseReplicatedState(){ }
 void AFGWheeledVehicle::SmoothMovementReplication(float DeltaTime){ }
 void AFGWheeledVehicle::ReplicateMovementClientToServer_Implementation(FVector AuthoritativeLoc, FQuat AuthoritativeQuat, FVector AuthoritativeVelocity){ }
 void AFGWheeledVehicle::OnCustomizationDataApplied(const FFactoryCustomizationData& customizationData){ }
+void AFGWheeledVehicle::EnsureInfoCreated(){ }
 void AFGWheeledVehicle::UpdateAirStatus(){ }
 void AFGWheeledVehicle::UpdateTireEffects(){ }
 void AFGWheeledVehicle::UpdateTireParticle(FTireData tireData){ }
@@ -99,17 +96,15 @@ void AFGWheeledVehicle::PlaceTargetPoint(){ }
 void AFGWheeledVehicle::ClearTargetList(){ }
 void AFGWheeledVehicle::CacheSpeedInKMH(){ }
 bool AFGWheeledVehicle::ShouldStopVehicle() const{ return bool(); }
-void AFGWheeledVehicle::SetIsFollowingPath(bool isFollowingPath){ }
 void AFGWheeledVehicle::StopAllMovement(){ }
 float AFGWheeledVehicle::GetLocalTime() const{ return float(); }
 void AFGWheeledVehicle::MoveForward(float axisValue){ }
 void AFGWheeledVehicle::MoveRight(float axisValue){ }
 void AFGWheeledVehicle::TurnOverVehicle(){ }
+bool AFGWheeledVehicle::IsFollowingPath() const{ return bool(); }
 void AFGWheeledVehicle::SetIsPossessed(bool isPossessed){ }
 bool AFGWheeledVehicle::CanLoadPath() const{ return bool(); }
 bool AFGWheeledVehicle::CanSavePath() const{ return bool(); }
-void AFGWheeledVehicle::SetCurrentTarget( AFGTargetPoint* newTarget){ }
-void AFGWheeledVehicle::UpdateCurrentTarget(){ }
 void AFGWheeledVehicle::PickNextTarget(){ }
 void AFGWheeledVehicle::Server_Leave_Implementation(){ }
 void AFGWheeledVehicle::Server_ToggleAutoPilot_Implementation(){ }
@@ -120,24 +115,18 @@ void AFGWheeledVehicle::Server_SavePath_Implementation(const FString& saveName){
 void AFGWheeledVehicle::Server_UnsavePath_Implementation(AFGSavedWheeledVehiclePath* path){ }
 void AFGWheeledVehicle::Server_LoadPath_Implementation( AFGDrivingTargetList* targetList){ }
 void AFGWheeledVehicle::FindSavedPaths(const FString& textFilter, bool filterOnVehicleType, TArray< AFGSavedWheeledVehiclePath* >& result) const{ }
-void AFGWheeledVehicle::OnRep_IsFollowingPath(){ }
-void AFGWheeledVehicle::OnRep_SimulationMovement(){ }
 void AFGWheeledVehicle::OnRep_RecordingStatus(){ }
-void AFGWheeledVehicle::OnRep_IsGhosting(){ }
 void AFGWheeledVehicle::OnRep_ManualDockingState(){ }
+void AFGWheeledVehicle::OnRep_Info(){ }
 void AFGWheeledVehicle::OnIsSimulatedChanged(){ }
-void AFGWheeledVehicle::TryActivatePathSimulation(){ }
-void AFGWheeledVehicle::AttachSimulatedVehicle(){ }
 FVector AFGWheeledVehicle::GetVelocityVector() const{ return FVector(); }
 void AFGWheeledVehicle::OnSimulationTargetReached(AFGTargetPoint* newTarget){ }
 void AFGWheeledVehicle::PickFirstTargetAfterStation(){ }
 AFGTargetPoint* AFGWheeledVehicle::SpawnNewTargetPoint(const FVector& location, const FRotator& rotation, AFGDrivingTargetList* targetList, int targetSpeed, AFGTargetPoint* afterTarget){ return nullptr; }
-void AFGWheeledVehicle::OnTargetWasForceClaimed( AFGTargetPoint* target,  AFGWheeledVehicle* claimant){ }
 UFGVehicleCollisionBoxComponent* AFGWheeledVehicle::FindCollisionBox() const{ return nullptr; }
 void AFGWheeledVehicle::StartGhosting(){ }
 void AFGWheeledVehicle::TryLeaveSimulatedMode(){ }
 bool AFGWheeledVehicle::IsAboveSolidGround(const FTransform& transform) const{ return bool(); }
-bool AFGWheeledVehicle::IsLeaveSimulationFriendly(const FTransform& transform) const{ return bool(); }
-void AFGWheeledVehicle::GiveWayTo(const AFGWheeledVehicle* other){ }
+bool AFGWheeledVehicle::IsOverlappingOther(const FTransform& transform) const{ return bool(); }
 float AFGWheeledVehicle::CalculateAutomatedFuelToConsume(float deltaTime){ return float(); }
 FName AFGWheeledVehicle::VehicleMovementComponentName = FName();

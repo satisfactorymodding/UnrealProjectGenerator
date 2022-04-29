@@ -3,6 +3,9 @@
 #include "FGSplinePathMovementComponent.h"
 
 #ifdef DEBUG_SELF_DRIVING
+void UFGSplinePathMovementComponent::DrawDebug(int debugLevel) const{ }
+#endif 
+#ifdef DEBUG_SELF_DRIVING
 void UFGSplinePathMovementComponent::DrawDebugVehicle(int visualDebugLevel, int textualDebugLevel){ }
 #endif 
 UFGSplinePathMovementComponent::UFGSplinePathMovementComponent(){ }
@@ -10,30 +13,38 @@ void UFGSplinePathMovementComponent::GetLifetimeReplicatedProps(TArray<FLifetime
 void UFGSplinePathMovementComponent::BeginPlay(){ }
 void UFGSplinePathMovementComponent::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void UFGSplinePathMovementComponent::TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction){ }
+void UFGSplinePathMovementComponent::TicTac(float DeltaTime){ }
+void UFGSplinePathMovementComponent::OnBecameTheChosenWheeledVehicle(){ }
+void UFGSplinePathMovementComponent::RestoreEssentialClaims(){ }
+void UFGSplinePathMovementComponent::ForceClaimTemporaryEssentialTargets(){ }
 void UFGSplinePathMovementComponent::DestroyPath_Server(){ }
-void UFGSplinePathMovementComponent::DrawDebug(int debugLevel) const{ }
-void UFGSplinePathMovementComponent::TransitionToSplinePath_Server( AFGTargetPoint* target, const TArray< FVector >* intermediateStops , bool startReversing){ }
-void UFGSplinePathMovementComponent::TransitionToSplinePath( AFGTargetPoint* target, const TArray< FVector >* intermediateStops , bool startReversing){ }
+void UFGSplinePathMovementComponent::TransitionToSplinePath_Server( AFGTargetPoint* target, const TArray< FVector >& intermediateStops, bool startReversing){ }
+void UFGSplinePathMovementComponent::TransitionToSplinePath_Multi_Implementation( AFGTargetPoint* target, const TArray< FVector >& intermediateStops, bool startReversing, bool skipTemporaryPath){ }
 void UFGSplinePathMovementComponent::SetPaused(bool isPaused){ }
+const FVector& UFGSplinePathMovementComponent::GetSimulatedLocation(){ return *(new FVector); }
+const FRotator& UFGSplinePathMovementComponent::GetSimulatedRotation(){ return *(new FRotator); }
 void UFGSplinePathMovementComponent::SetIsDocked(bool isDocked){ }
-void UFGSplinePathMovementComponent::SetIsBlocked( AFGWheeledVehicle* blockingVehicle){ }
+void UFGSplinePathMovementComponent::SetIsBlocked( AFGWheeledVehicleInfo* blockingVehicle){ }
 void UFGSplinePathMovementComponent::ResetIsBlocked(){ }
 void UFGSplinePathMovementComponent::DrawTargetDebug(bool drawSearchPoints) const{ }
-void UFGSplinePathMovementComponent::SetIsDeadlocked(bool isDeadlocked, bool notify){ }
+void UFGSplinePathMovementComponent::ResetIsDeadlocked(bool removeDeadlock){ }
+void UFGSplinePathMovementComponent::SetDeadlockId(int deadlockId, bool isInHardDeadlock){ }
 float UFGSplinePathMovementComponent::GetTimeSpentOnRegularPath() const{ return float(); }
-void UFGSplinePathMovementComponent::ResetTarget(){ }
+void UFGSplinePathMovementComponent::ResetTarget(bool resetStatus){ }
+const TArray< FVector >& UFGSplinePathMovementComponent::GetSearchPoints() const{ return *(new TArray< FVector >); }
 bool UFGSplinePathMovementComponent::TryClaim( AFGTargetPoint* target, bool essentialsOnly){ return bool(); }
 void UFGSplinePathMovementComponent::GetShortestRotation(FRotator& rotation){ }
 bool UFGSplinePathMovementComponent::HasData() const{ return bool(); }
+void UFGSplinePathMovementComponent::CalculateSimulatedPosition(float clientCorrection){ }
 float UFGSplinePathMovementComponent::GetServerTime() const{ return float(); }
-void UFGSplinePathMovementComponent::OnRep_TransitionTarget(){ }
+void UFGSplinePathMovementComponent::OnRep_PauseTarget(){ }
 void UFGSplinePathMovementComponent::OnRep_ServerStartTime(){ }
-void UFGSplinePathMovementComponent::OnRep_IsDocked(){ }
-void UFGSplinePathMovementComponent::OnRep_IsBlocked(){ }
+void UFGSplinePathMovementComponent::OnRep_IsMoving(){ }
 bool UFGSplinePathMovementComponent::TickSplinePathMovement(double deltaTime){ return bool(); }
 void UFGSplinePathMovementComponent::AdvanceOnSplinePath(){ }
 void UFGSplinePathMovementComponent::TryClaimTarget(){ }
-void UFGSplinePathMovementComponent::SetTarget( AFGTargetPoint* newTarget){ }
+void UFGSplinePathMovementComponent::SetTarget( AFGTargetPoint* newTarget, bool resetStatus){ }
+void UFGSplinePathMovementComponent::ReleaseTemporaryTargets(){ }
 float UFGSplinePathMovementComponent::GetStartTime(float adjustment){ return float(); }
 void UFGSplinePathMovementComponent::SetStartTime(float startTime){ }
 bool UFGSplinePathMovementComponent::ShouldAdjustClient() const{ return bool(); }

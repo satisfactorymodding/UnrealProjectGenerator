@@ -7,7 +7,6 @@
 #include "Subsystems/LocalPlayerSubsystem.h"
 #include "Server/FGServerBeaconClient.h"
 #include "Server/FGDedicatedServerTypes.h"
-#include "Server/FGServerQuerySocket.h"
 #include "GameFramework/SaveGame.h"
 #include "FGServerManager.generated.h"
 
@@ -19,6 +18,8 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnServerAboutToBeRemoved, class UF
 DECLARE_DYNAMIC_DELEGATE_OneParam( FOnServerAddedOrFoundDelegate, class UFGServerObject*, Server );
 DECLARE_DELEGATE_OneParam( FOnServerAddedOrFoundDelegateNative, class UFGServerObject* );
 
+class FClientQuerySocket;
+
 /**
  * Client side server manager class. Holds a list of all know dedicated server and can perform arbitrary operations on them. Should be used as
  * the dedicated server interface on clients
@@ -28,7 +29,12 @@ class FACTORYGAME_API UFGServerManager : public ULocalPlayerSubsystem, public FT
 {
 	GENERATED_BODY()
 public:
-	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
+	UFGServerManager();
+	UFGServerManager(FVTableHelper& Helper);
+	virtual ~UFGServerManager() override;
+
+	virtual void Initialize(FSubsystemCollectionBase& Collection) override;\
+
 	virtual bool Tick(float DeltaTime) override;
 
 	UFGServerObject* GetServerByAddress( const FString& Address, int32 QueryPort );

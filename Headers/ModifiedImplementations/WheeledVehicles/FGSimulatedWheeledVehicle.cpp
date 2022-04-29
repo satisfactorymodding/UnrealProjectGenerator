@@ -3,9 +3,7 @@
 #include "FGSimulatedWheeledVehicle.h"
 
 AFGSimulatedWheeledVehicle::AFGSimulatedWheeledVehicle(){ }
+void AFGSimulatedWheeledVehicle::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGSimulatedWheeledVehicle::Init( AFGWheeledVehicle* vehicle){ }
-void AFGSimulatedWheeledVehicle::UpdateCustomizationData( AFGWheeledVehicle* vehicle){ }
-void AFGSimulatedWheeledVehicle::ApplyMeshPrimitiveData(const FFactoryCustomizationData& customizationData){ }
-void AFGSimulatedWheeledVehicle::ShowGhostingEffect(bool enabled){ }
 void AFGSimulatedWheeledVehicle::BeginPlay(){ }
 void AFGSimulatedWheeledVehicle::EndPlay(const EEndPlayReason::Type EndPlayReason){ }

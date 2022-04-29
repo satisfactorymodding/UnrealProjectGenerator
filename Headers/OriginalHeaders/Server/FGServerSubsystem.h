@@ -7,11 +7,8 @@
 #include "IPAddress.h"
 #include "Server/FGDedicatedServerTypes.h"
 #include "FGSaveSystem.h"
-#include "Server/FGServerQuerySocket.h"
 #include "GameFramework/SaveGame.h"
 #include "FGServerSubsystem.generated.h"
-
-DECLARE_LOG_CATEGORY_EXTERN( LogServerSubsystem, Log, Log );
 
 UCLASS()
 class FACTORYGAME_API UFGServerSettings : public USaveGame
@@ -47,14 +44,16 @@ class FACTORYGAME_API UFGServerSubsystem : public UGameInstanceSubsystem, public
 {
 	GENERATED_BODY()
 public:
+	UFGServerSubsystem();
+	UFGServerSubsystem( FVTableHelper& Helper );
+	virtual ~UFGServerSubsystem() override;
+	
 	static const TCHAR* EnableAutomaticPauseCommand;
 	static const TCHAR* DisableAutomaticPauseCommand;
 	static const TCHAR* ShowAutomaticPauseCommand;
 	static const TCHAR* EnableSaveOnPlayerLeaveCommand;
 	static const TCHAR* DisableSaveOnPlayerLeaveCommand;
 	static const TCHAR* ShowSaveOnPlayerLeaveCommand;
-
-	UFGServerSubsystem();
 
 	static UFGServerSubsystem* Get( const UObject* WorldContext );
 	static const TCHAR* EntryTicketOptionName;
@@ -109,6 +108,12 @@ public:
 	void SetAutoSaveOnDisconnect( bool AutoSaveOnDisconnect );
 
 	bool Tick(float DeltaTime) override;
+
+	int16 GetGamePort() const
+	{
+		return mGamePort;
+	}
+	
 private:
 	void OnPreLoadMap( const FString &MapName );
 	void OnPostLoadMap( UWorld* World );
@@ -126,8 +131,11 @@ private:
 	UPROPERTY( Config )
 	bool mAutoSaveOnDisconnect = true;
 
-	TArray< TUniquePtr< FServerQuerySocket > > mQuerySockets;
-	TArray< TUniquePtr< FRunnableThread > > mQueryThreads;
+	UPROPERTY( Config )
+	bool mUsePacketRouting = true;
+
+	UPROPERTY()
+	class UFGServerSocket* mServerSocket = nullptr;
 	
 	UPROPERTY()
 	UFGServerSettings *mSettings = nullptr;
@@ -137,7 +145,8 @@ private:
 
 	FString mCredentialsFile;
 
-	int32 mBeaconPort = 0;
+	int16 mBeaconPort = 0;
+	int16 mGamePort = 0;
 	EServerState mState = EServerState::Offline;
 	float mAverageTickRate = 0.f;
 };
