@@ -17,43 +17,6 @@ namespace FixHeaders
 
         private static List<string> HeaderCache = new List<string>();
 
-        private static Dictionary<string, string> NeededIncludes = new Dictionary<string, string>()
-        {
-            {"UENUM", "UObject/Class.h" },
-            {"UCLASS", "UObject/Class.h" },
-            {"TSubclassOf", "SubclassOf.h" },
-            {"UInterface", "UObject/Interface.h" },
-            {"UBlueprintFunctionLibrary", "Kismet/BlueprintFunctionLibrary.h" },
-            {"USplineMeshComponent", "Components/SplineMeshComponent.h" },
-            {"UFGInstancedSplineMeshComponent", "FGInstancedSplineMeshComponent.h" },
-            {"SLATE", "UMG.h" },
-            {"AActor", "GameFramework/Actor.h" },
-            {"FString", "UnrealString.h" },
-            {"TArray", "Array.h" },
-            {"FPostProcessSettings", "Engine/Scene.h" },
-            {"UWorld", "Engine/World.h" },
-            {"IRepChangedPropertyTracker", "UObject/CoreNet.h" },
-            {"ULevel", "Engine/Level.h" },
-            {"UStaticMesh", "Engine/StaticMesh.h" },
-            {"FUpdateTextureRegion2D", "RHI.h" },
-            {"FRuntimeFloatCurve", "Curves/CurveFloat.h" },
-            {"UDeveloperSettings", "Engine/DeveloperSettings.h" },
-            {"FBufferArchive", "Serialization/BufferArchive.h" },
-            {"UAkAudioEvent", "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h" },
-            {"FGuid", "Misc/Guid.h" },
-            {"IFGChainsawableInterface", "FGInventoryComponent.h" }
-        };
-
-        private static List<string> SkipCtorClasses = new List<string>
-        {
-            "UFGConsoleCommandManager",
-            "AFGBuildableGeneratorGeoThermal"
-        };
-
-        private static List<string> SkipDtorClasses = new List<string>
-        {
-        };
-
         static void ConfirmModdingEdits()
         {
             if (HasConflict)
@@ -226,16 +189,7 @@ namespace FixHeaders
 
             File.WriteAllText(Path.Combine(upgradeRepoPath, filePath), file);
         }
-
-        private static object GetFileRelative(string root, string file, string relativeTo)
-        {
-            // https://stackoverflow.com/a/9045399
-            Uri filePath = new Uri(HeaderCache.Find(path => path.EndsWith("\\" + file)), UriKind.Absolute);
-            Uri relTo = new Uri(Path.Combine(root, relativeTo), UriKind.Absolute);
-
-            return relTo.MakeRelativeUri(filePath).ToString();
-        }
-
+        
         // https://stackoverflow.com/a/7064944
         private static void DirectoryCopy(string sourceDirName, string destDirName,
                                       bool copySubDirs = true)
