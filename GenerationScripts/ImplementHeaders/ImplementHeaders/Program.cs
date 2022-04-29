@@ -75,11 +75,6 @@ namespace ImplementHeaders
                 {
                     "Server/FGServerQuerySocket.h"
                 }
-            },
-            { "FGServerManager", new List<string>()
-                {
-                    "Server/FGServerQuerySocket.h"
-                }
             }
         };
 
