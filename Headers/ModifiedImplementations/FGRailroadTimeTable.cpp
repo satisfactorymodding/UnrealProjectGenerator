@@ -17,6 +17,7 @@ void AFGRailroadTimeTable::GetStops(TArray< FTimeTableStop >& out_stops) const{ 
 bool AFGRailroadTimeTable::SetStops(const TArray< FTimeTableStop >& stops){ return bool(); }
 bool AFGRailroadTimeTable::IsValidStop(int32 index) const{ return bool(); }
 FTimeTableStop AFGRailroadTimeTable::GetStop(int32 index) const{ return FTimeTableStop(); }
+void AFGRailroadTimeTable::SetCurrentStop(int32 index){ }
 void AFGRailroadTimeTable::IncrementCurrentStop(){ }
 void AFGRailroadTimeTable::PurgeInvalidStops(){ }
 void AFGRailroadTimeTable::GetDockingRuleSetForStop(int32 index, FTrainDockingRuleSet& out_ruleSet) const{ }

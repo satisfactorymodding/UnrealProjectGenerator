@@ -91,6 +91,9 @@ private:
 	class AFGBuildableDockingStation* mStation;
 
 	UPROPERTY( Replicated )
+	FVector mLocation;
+
+	UPROPERTY( Replicated )
 	class UTexture2D* mActorRepresentationTexture;
 
 	UPROPERTY( Replicated )
