@@ -11,8 +11,19 @@ projectPath = os.path.join(root, 'FactoryGame')
 header_root = os.path.join(projectPath, 'Source', 'FactoryGame', 'Public')
 cpp_root = os.path.join(projectPath, 'Source', 'FactoryGame', 'Private')
 
-def round_float_scientific(f: float, decimals: int = 5) -> float:
-    return float(f'{f:.{decimals}e}')
+def format_float_scientific(f: float, decimals: int = 5) -> str:
+    if f == 3.40282e+38:
+        return 'TNumericLimits<float>::Max()'
+    if f == -3.40282e+38:
+        return 'TNumericLimits<float>::Min()'
+    return str(float(f'{f:.{decimals}e}'))
+
+def format_int(i: int) -> str:
+    if i == 2147483647:
+        return 'TNumericLimits<int32>::Max()'
+    if i == -2147483648:
+        return 'TNumericLimits<int32>::Min()'
+    return str(i)
 
 class_headers = {
     # TODO: parse UE headers?
@@ -143,25 +154,51 @@ def BodyInstance_impl(self, val):
 
     return [None, extra, []]
 
+def Vector_impl(self, val):
+    if val["X"] == 0 and val["Y"] == 0 and val["Z"] == 0:
+        return ['FVector::ZeroVector', {}, []]
+    if val["X"] == 1 and val["Y"] == 1 and val["Z"] == 1:
+        return ['FVector::OneVector', {}, []]
+    return [f'FVector({val["X"], val["Y"], val["Z"]})', {}, []]
+
+def Vector2D_impl(self, val):
+    if val["X"] == 0 and val["Y"] == 0:
+        return ['FVector2D::ZeroVector', {}, []]
+    if val["X"] == 1 and val["Y"] == 1:
+        return ['FVector2D::UnitVector', {}, []]
+    return [f'FVector2D({val["X"], val["Y"]})', {}, []]
+
+def Rotator_impl(self, val):
+    if val["Pitch"] == 0 and val["Yaw"] == 0 and val["Roll"] == 0:
+        return ['FRotator::ZeroRotator', {}, []]
+    return [f'FRotator({val["Pitch"]}, {val["Yaw"]}, {val["Roll"]})', {}, []]
+
+def Quat_impl(self, val):
+    if val["X"] == 0 and val["Y"] == 0 and val["Z"] == 0 and val["W"] == 1:
+        return ['FQuat::Identity', {}, []]
+    return [f'FQuat({val["X"]}, {val["Y"]}, {val["Z"]}, {val["W"]})', {}, []]
 
 def Transform_impl(self, val):
-    translation = (round_float_scientific(val['Translation']['X']), round_float_scientific(val['Translation']['Y']), round_float_scientific(val['Translation']['Z']))
-    rotation = (round_float_scientific(val['Rotation']['X']), round_float_scientific(val['Rotation']['Y']), round_float_scientific(val['Rotation']['Z']), round_float_scientific(val['Rotation']['W']))
-    scale = (round_float_scientific(val['Scale3D']['X']), round_float_scientific(val['Scale3D']['Y']), round_float_scientific(val['Scale3D']['Z']))
+    translation = Vector_impl(self, val["Translation"])
+    rotation = Quat_impl(self, val["Rotation"])
+    scale = Vector_impl(self, val["Scale3D"])
 
-    translation_text = f'FVector({translation[0]}, {translation[1]}, {translation[2]})' if translation != (0, 0, 0) else 'FVector::ZeroVector'
-    rotation_text = f'FRotator({rotation[0]}, {rotation[1]}, {rotation[2]}, {rotation[3]})' if rotation != (0, 0, 0, 1) else 'FRotator::ZeroRotator'
-    scale_text = f'FVector({scale[0]}, {scale[1]}, {scale[2]})' if scale != (1, 1, 1) else 'FVector::OneVector'
-
-    if translation == (0, 0, 0) and rotation == (0, 0, 0, 1) and scale == (1, 1, 1):
+    if translation == 'FVector::ZeroVector' and rotation == 'FQuat::Identity' and scale == 'FVector::OneVector':
         return [None, {}, []]
-    return [f'FTransform({translation_text}, {rotation_text}, {scale_text})', {}, []]
+    return [f'FTransform({rotation[0]}, {translation[0]}, {scale[0]})', {}, []]
+
+def Box_impl(self, val):
+    minVec = Vector_impl(self, val['Min'])
+    maxVec = Vector_impl(self, val['Max'])
+    if minVec == 'FVector::ZeroVector' and maxVec == 'FVector::ZeroVector':
+        return [None, {}, []]
+    return [f'FBox({minVec[0]}, {maxVec[0]})', {}, []]
 
 def LinearColor_impl(self, val):
-    r = round_float_scientific(val['R'])
-    g = round_float_scientific(val['G'])
-    b = round_float_scientific(val['B'])
-    a = round_float_scientific(val['A'])
+    r = format_float_scientific(val['R'])
+    g = format_float_scientific(val['G'])
+    b = format_float_scientific(val['B'])
+    a = format_float_scientific(val['A'])
     if r == 0 and g == 0 and b == 0 and a == 1:
         return [None, {}, []]
     if a == 1:
@@ -178,6 +215,17 @@ def Color_impl(self, val):
     if a == 255:
         return [f'FColor({r}, {g}, {b})', {}, []]
     return [f'FColor({r}, {g}, {b}, {a})', {}, []]
+
+def FloatInterval_impl(self, val):
+    return [f'FFloatInterval({format_float_scientific(val["Min"])}, {format_float_scientific(val["Max"])})', {}, []]
+
+def Int32Interval_impl(self, val):
+    return [f'FInt32Interval({format_int(val["Min"])}, {format_int(val["Max"])})', {}, []]
+
+def RandomStream_impl(self, val):
+    if val['InitialSeed'] != 0:
+        return [f'FRandomStream({format_int(val["InitialSeed"])})', {}, []]
+    return [None, {}, []]
 
 def QuantizedPipelineIndicatorData_impl(self, val):
     return [None, {}, []] # It's going to be default anyway
@@ -204,6 +252,9 @@ def SlateColor_impl(self, val):
     return [None, {}, []] # Just... no...
 
 def MessageSubtitle_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def FactoryCustomizationData_impl(self, val):
     return [None, {}, []] # It's going to be default anyway
 
 def UseState_impl(self, val):
@@ -251,13 +302,29 @@ def TimerHandle_impl(self, val):
 def PostProcessSettings_impl(self, val):
     return [None, {}, []] # Not dealing with that
 
+def ByteRemovalIndices_impl(self, val):
+    return [None, {}, []] # Not dealing with that
+
+def ShortRemovalIndices_impl(self, val):
+    return [None, {}, []] # Not dealing with that
+
+def LongRemovalIndices_impl(self, val):
+    return [None, {}, []] # Not dealing with that
+
 custom_struct_implementations = {
     'InventoryItem': InventoryItem_impl,
     'InventoryStack': InventoryStack_impl,
     'BodyInstance': BodyInstance_impl,
+    'Vector': Vector_impl,
+    'Vector2D': Vector2D_impl,
+    'Rotator': Rotator_impl,
     'Transform': Transform_impl,
+    'Box': Box_impl,
     'LinearColor': LinearColor_impl,
     'Color': Color_impl,
+    'FloatInterval': FloatInterval_impl,
+    'Int32Interval': Int32Interval_impl,
+    'RandomStream': RandomStream_impl,
     'QuantizedPipelineIndicatorData': QuantizedPipelineIndicatorData_impl,
     'QuantizedPumpIndicatorData': QuantizedPumpIndicatorData_impl,
     'QuantizedReservoirIndicatorData': QuantizedReservoirIndicatorData_impl,
@@ -267,6 +334,7 @@ custom_struct_implementations = {
     'TableRowStyle': TableRowStyle_impl,
     'SlateColor': SlateColor_impl,
     'MessageSubtitle': MessageSubtitle_impl,
+    'FactoryCustomizationData': FactoryCustomizationData_impl,
     'UseState': UseState_impl,
     'PowerCircuitStats': PowerCircuitStats_impl,
     'ClientTrainData': ClientTrainData_impl,
@@ -282,6 +350,9 @@ custom_struct_implementations = {
     'AnimInstanceProxyFactory': AnimInstanceProxyFactory_impl,
     'TimerHandle': TimerHandle_impl,
     'PostProcessSettings': PostProcessSettings_impl,
+    'ByteRemovalIndices': ByteRemovalIndices_impl,
+    'ShortRemovalIndices': ShortRemovalIndices_impl,
+    'LongRemovalIndices': LongRemovalIndices_impl,
 }
 
 def read_class_includes():
@@ -381,13 +452,9 @@ class UEStruct:
         if prop_type == 'BoolProperty':
             return [f'{"true" if val else "false"}', {}, []]
         elif prop_type == 'FloatProperty':
-            return [f'{round_float_scientific(val)}', {}, []]
+            return [f'{format_float_scientific(val)}', {}, []]
         elif prop_type == 'IntProperty':
-            if val == 2147483647:
-                return ['INT_MAX', {}, []]
-            if val == -2147483648:
-                return ['INT_MIN', {}, []]
-            return [f'{val}', {}, []]
+            return [f'{format_int(val)}', {}, []]
         elif prop_type == 'Int8Property':
             return [f'{val}', {}, []]
         elif prop_type == 'Int16Property':
@@ -536,6 +603,8 @@ class UEStruct:
 
             if struct_type.class_name in custom_struct_implementations:
                 return custom_struct_implementations[struct_type.class_name](self, val)
+            else:
+                print(f'Struct {struct_type.class_name} does not have custom implementation')
 
             extra = {None: []}
             includes = []
@@ -974,7 +1043,7 @@ def create_implementations(package_classes: dict[str, dict[str, UEClass]], dump_
                     lines.append(impl)
                 else:
                     if dep not in already_implemented:
-                        queued[impl[0]] = impl[1]
+                        queued[impl[0]] = [impl[1]]
                     else:
                         lines.append(impl[1])
             already_implemented.append(prop)

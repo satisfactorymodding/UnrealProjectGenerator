@@ -142,12 +142,15 @@ DEFINE_LOG_CATEGORY(LogPoolSystem);"
 	else
 		return EResourceForm();"
             },
-            { "static UFGItemDescriptor::GetItemCategory",
+            { "static UFGItemDescriptor::GetCategory",
 @"	if (inClass)
-		return inClass.GetDefaultObject()->mItemCategory;
+		return inClass.GetDefaultObject()->mCategory;
 	else
-		return TSubclassOf< UFGItemCategory >();"
-			},
+		return TSubclassOf< UFGCategory >();"
+            },
+            { "static UFGItemDescriptor::GetItemCategory",
+@"	return TSubclassOf< UFGItemCategory >(UFGItemDescriptor::GetCategory(inClass));"
+            },
             { "static UFGItemDescriptor::GetItemDescription",
 @"	if (inClass)
 		return inClass.GetDefaultObject()->mDescription;
@@ -733,7 +736,7 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
             content = Regex.Replace(content, @"^\s*DECLARE_.*\(.*\)\r?\n", "\r\n", RegexOptions.Multiline);
             List<string> implementations = new List<string>();
             // Match function definition (including UFUNCTIONs), nothing to see here ... just walk away ... probably the reason for many missing implementations...
-            foreach (Match function in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual\s?)?(static\s?)?(const\s?)?(class\s?)?(explicit\s?)?([^=()\n{};]*?\s)?\n*((?:[^=<>()\n{};]|operator.+)*?)(\([^{}\[;]*?\))(\s*const)?(\s*override)?([^<>\n]*);", RegexOptions.Multiline))
+            foreach (Match function in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual\s?)?(static\s?)?(const\s?)?(class\s?)?(explicit\s?)?(?:UPARAM\(.*?\)\s?)?([^=()\n{};]*?\s)?\n*((?:[^=<>()\n{};]|operator.+)*?)(\([^{}\[;]*?\))(\s*const)?(\s*override)?([^<>\n]*);", RegexOptions.Multiline))
             {
                 // string comment = function.Groups[1].Value; // removed because regex took too long
                 string ufunction = function.Groups[1].Value;
