@@ -33,6 +33,7 @@ public class FactoryGame : ModuleRules
 			"RenderCore",
 			"CinematicCamera",
 			"Foliage",
+            "Niagara",
 		});
 		
 		PublicDependencyModuleNames.AddRange(new[] {
