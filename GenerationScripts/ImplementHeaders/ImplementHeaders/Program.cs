@@ -75,6 +75,12 @@ namespace ImplementHeaders
                 {
                     "Server/FGServerQuerySocket.h"
                 }
+            },
+            { "FGItemDescriptor", new List<string>()
+                {
+                    "FGCategory.h",
+                    "FGItemCategory.h",
+                }
             }
         };
 
