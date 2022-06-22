@@ -32,9 +32,13 @@ FVector AFGResourceNodeBase::GetPlacementLocation(const FVector& hitLocation) co
 FText AFGResourceNodeBase::GetResourceName() const{ return FText(); }
 EResourceForm AFGResourceNodeBase::GetResourceForm() const{ return EResourceForm(); }
 void AFGResourceNodeBase::OnRep_IsOccupied(){ }
+void AFGResourceNodeBase::OnRep_MapReveals(){ }
 void AFGResourceNodeBase::UpdateMeshFromDescriptor(bool needRegister){ }
-void AFGResourceNodeBase::AddRevealedOnMapBy(UObject* newObject){ }
-void AFGResourceNodeBase::RemoveRevealedOnMapBy(UObject* oldObject){ }
+void AFGResourceNodeBase::ScanResourceNode_Replicated(){ }
+void AFGResourceNodeBase::ScanResourceNode_Local(float lifeSpan){ }
+void AFGResourceNodeBase::RemoveResourceNodeScan_Replicated(){ }
+void AFGResourceNodeBase::RemoveResourceNodeScan_Local(){ }
 void AFGResourceNodeBase::InitResource(TSubclassOf<UFGResourceDescriptor> resourceClass){ }
 void AFGResourceNodeBase::ConditionallySetupComponents(bool needRegister){ }
 void AFGResourceNodeBase::UpdateHighlightParticleSystem(){ }
+void AFGResourceNodeBase::UpdateNodeRepresentation(){ }

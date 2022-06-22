@@ -2,11 +2,18 @@
 
 #include "FGBuildableLightSource.h"
 
+void UFGLightSourceClipboardRCO::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
+void UFGLightSourceClipboardRCO::Server_PasteSettingsBuildableLight_Implementation( AFGBuildableLightSource* buildableLight, FLightSourceControlData lightSourceControlData){ }
+void UFGLightSourceClipboardRCO::Server_PasteSettingsControlPanel_Implementation( AFGBuildableLightsControlPanel* controlPanel, FLightSourceControlData lightSourceControlData){ }
 AFGBuildableLightSource::AFGBuildableLightSource(){ }
 void AFGBuildableLightSource::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildableLightSource::BeginPlay(){ }
 void AFGBuildableLightSource::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 bool AFGBuildableLightSource::GetPoolHandleInitialState() const{ return bool(); }
+UFGFactoryClipboardSettings* AFGBuildableLightSource::CopySettings_Implementation(){ return nullptr; }
+bool AFGBuildableLightSource::PasteSettings_Implementation(UFGFactoryClipboardSettings* settings){ return bool(); }
+TSubclassOf<UObject> AFGBuildableLightSource::GetClipboardMappingClass_Implementation(){ return TSubclassOf<UObject>(); }
+void AFGBuildableLightSource::OnBuildEffectFinished(){ }
 void AFGBuildableLightSource::SetLightEnabled(bool isEnabled){ }
 void AFGBuildableLightSource::SetLightControlData(FLightSourceControlData data){ }
 bool AFGBuildableLightSource::IsLightEnabled() const{ return bool(); }

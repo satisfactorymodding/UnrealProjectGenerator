@@ -11,17 +11,29 @@ bool AFGProjectile::NeedTransform_Implementation(){ return bool(); }
 float AFGProjectile::TakeDamage(float DamageAmount, const  FDamageEvent& DamageEvent,  AController* EventInstigator,
 							AActor* DamageCauser){ return float(); }
 void AFGProjectile::LifeSpanExpired(){ }
-void AFGProjectile::OnImpact(const FHitResult& hitResult){ }
-void AFGProjectile::OnBounce(const FHitResult& hitResult, const FVector& hitVelocity){ }
-void AFGProjectile::SetProjectileData(FProjectileData projectileData){ }
-void AFGProjectile::SetInitialVelocity(FVector inVelocity){ }
+void AFGProjectile::OnImpact_Native(const FHitResult& hitResult){ }
+void AFGProjectile::Multicast_OnImpact_Implementation(const FHitResult& hitResult, bool wasAttached){ }
+void AFGProjectile::OnBounce_Native(const FHitResult& hitResult, const FVector& hitVelocity){ }
+void AFGProjectile::SetTargetLocation(const FVector& targetLocation){ }
+void AFGProjectile::SetTargetActor(AActor* actor){ }
+void AFGProjectile::SetIsHomingProjectile(bool isHoming){ }
+void AFGProjectile::SetInitialVelocity(const FVector& inVelocity){ }
 void AFGProjectile::TriggerSecondary(){ }
 void AFGProjectile::TriggerSecondaryWithDelay(float delayTime){ }
 void AFGProjectile::SetAndEnableRotation(float scale){ }
-void AFGProjectile::DealExplosionDamage(const FHitResult& impact){ }
-void AFGProjectile::DealImpactDamage(const FHitResult& impact){ }
+void AFGProjectile::Multicast_SpawnImpactDamageEffects_Implementation(FHitResult const& hitResult){ }
+void AFGProjectile::Multicast_SpawnEndOfLifeDamageEffects_Implementation(FHitResult const& hitResult){ }
+void AFGProjectile::SetInitialHealth(float newHealth){ }
+void AFGProjectile::SetMaximumHomingAccelerationMagnitude(float newHomingAccelerationMagnitude){ }
+void AFGProjectile::OnSpawnedAsClusterProjectile_Implementation(){ }
+void AFGProjectile::DealEndOfLifeDamages(const FHitResult& impact){ }
+void AFGProjectile::DealImpactDamages(const FHitResult& impact){ }
 void AFGProjectile::DisableAndSetLifeSpan(){ }
 void AFGProjectile::OnRep_Exploded(){ }
-void AFGProjectile::OnNotifiedExploded(){ }
+void AFGProjectile::OnExplode_Implementation(){ }
 bool AFGProjectile::AttachProjectileToImpactActor(const FHitResult& impact){ return bool(); }
 void AFGProjectile::OnRep_InitialVelocity(){ }
+void AFGProjectile::OnRep_TargetActor(){ }
+void AFGProjectile::OnRep_TargetLocation(){ }
+void AFGProjectile::OnRep_IsHomingProjectile(){ }
+void AFGProjectile::OnRep_MaxHomingAccelerationMagnitude(){ }

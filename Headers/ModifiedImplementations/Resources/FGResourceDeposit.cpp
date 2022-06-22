@@ -10,6 +10,7 @@ void AFGResourceDeposit::RollResourceType(){ }
 void AFGResourceDeposit::TrySetDesiredResourceType(){ }
 void AFGResourceDeposit::SetupResourceInfo(){ }
 void AFGResourceDeposit::ExtractResourceAndGiveToPlayer(AFGCharacterPlayer* toPlayer, int32 amount){ }
+void AFGResourceDeposit::OnRep_ResourceDepositTableIndex(){ }
 void AFGResourceDeposit::OnRep_ResourceDepositEmptied(){ }
 void AFGResourceDeposit::InitRadioactivity(){ }
 void AFGResourceDeposit::UpdateRadioactivity(){ }

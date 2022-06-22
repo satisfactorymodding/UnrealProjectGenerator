@@ -4,7 +4,7 @@
 
 AFGStickyExplosive::AFGStickyExplosive(){ }
 void AFGStickyExplosive::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
-void AFGStickyExplosive::OnImpact(const FHitResult& hitResult){ }
+void AFGStickyExplosive::OnImpact_Native(const FHitResult& hitResult){ }
 float AFGStickyExplosive::TakeDamage(float DamageAmount, const  FDamageEvent& DamageEvent,
 							 AController* EventInstigator,
 							AActor* DamageCauser){ return float(); }
@@ -14,3 +14,4 @@ void AFGStickyExplosive::TriggerSecondary(){ }
 void AFGStickyExplosive::TriggerSecondaryWithDelay(float delayTime){ }
 void AFGStickyExplosive::SetToDetonate(float timeUntilDetonate){ }
 void AFGStickyExplosive::OnRep_DetonateIn(){ }
+void AFGStickyExplosive::OnExplode_Implementation(){ }

@@ -85,6 +85,12 @@ public:
 	UPROPERTY( EditAnywhere, config )
 	TMap< EDistanceCullCategory, FCullSettings > mCullDistances;
 
+	/*Key: Highspec / default material, value low spec material.*/
+	UPROPERTY( EditAnywhere, config )
+	TMap< TAssetPtr<UMaterialInterface>, TAssetPtr<UMaterialInterface> > mMaterialSwapList;
+
+	TMap< TAssetPtr<UMaterialInterface>, TAssetPtr<UMaterialInterface>> mResolvedMaterials;
+	
 public:
 	/** Returns associated cull distance.**/
 	FVector2D GetCullDistanceByCategory( EDistanceCullCategory Type, float Modifier ) const
@@ -97,4 +103,18 @@ public:
 
 		return FVector2D( -1, -1 );
 	};
+
+	FORCEINLINE UMaterialInterface* GetScalabilityMaterial( UMaterialInterface* Material ) const
+	{
+		if( const TSoftObjectPtr< UMaterialInterface > Ref = mMaterialSwapList.FindRef( Material ) )
+		{
+			// Todo improve this.
+			if( UMaterialInterface* outMaterial = Ref.LoadSynchronous() )
+			{
+				return outMaterial;
+			}
+		}
+
+		return Material;
+	}
 };

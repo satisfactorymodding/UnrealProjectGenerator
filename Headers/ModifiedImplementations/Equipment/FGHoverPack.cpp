@@ -38,6 +38,7 @@ void AFGHoverPack::PlayerStopHover_Server_Implementation(){ }
 bool AFGHoverPack::PlayerStopHover_Server_Validate(){ return bool(); }
 void AFGHoverPack::PlayerStopHover(){ }
 bool AFGHoverPack::PlayerIsInHoverMovementMode() const{ return bool(); }
+void AFGHoverPack::MakeActiveNoise(){ }
 void AFGHoverPack::OnRep_HasConnection(){ }
 void AFGHoverPack::OnRep_CurrentHoverMode(){ }
 void AFGHoverPack::OnRep_CurrentConnectionLocation(){ }

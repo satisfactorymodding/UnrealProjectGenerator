@@ -6,6 +6,7 @@ AFGResourceScanner::AFGResourceScanner(){ }
 void AFGResourceScanner::BeginPlay(){ }
 void AFGResourceScanner::Tick(float dt){ }
 bool AFGResourceScanner::ShouldSaveState() const{ return bool(); }
+void AFGResourceScanner::CreateResourceNodeRepresentations(const FNodeClusterData& cluster){ }
 TArray< TSubclassOf< UFGResourceDescriptor > > AFGResourceScanner::GetScannableResources() const{ return TArray<TSubclassOf<UFGResourceDescriptor> >(); }
 void AFGResourceScanner::SetResourceDescriptorToScanFor(TSubclassOf< UFGResourceDescriptor > inClass){ }
 void AFGResourceScanner::UnEquip(){ }

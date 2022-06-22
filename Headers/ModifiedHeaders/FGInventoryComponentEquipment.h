@@ -2,10 +2,13 @@
 
 #pragma once
 
+#include "FGEquipment.h"
 #include "FGInventoryComponent.h"
 #include "FGInventoryComponentEquipment.generated.h"
 
 class AFGEquipment;
+
+DECLARE_MULTICAST_DELEGATE_OneParam( FOnActiveEquipmentChanged, EEquipmentSlot slot );
 
 UCLASS()
 class FACTORYGAME_API UFGInventoryComponentEquipment : public UFGInventoryComponent
@@ -43,8 +46,14 @@ public:
 	/** Loop de loop */
 	void CycleEquipment( int32 dir );
 
+	/** Sets @index to be active if it is a valid index */
+	void SetActiveIndex( int32 index );
+
 	/** Checks whether this contains any items of item type and whether they have room for inventory item */
 	bool ContainsItemTypeAndHasEnoughSpaceForItem( FInventoryItem item );
+
+	/** Subscribes for active equipment changed notifications */
+	FDelegateHandle BindOnActiveEquipmentChanged( const FOnActiveEquipmentChanged::FDelegate &Delegate );
 protected:
 	/** Decide on what properties to replicate */
 	void GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps ) const override;
@@ -64,6 +73,11 @@ private:
 	/** Finds and returns the cached character */
 	class AFGCharacterPlayer* GetOwningCharacter();
 
+	UFUNCTION()
+	void OnRep_ActiveEquipmentIndex();
+
+	UFUNCTION()
+	void OnRep_ActiveEquipment();
 private:
 	friend class AFGCharacterPlayer;
 
@@ -76,7 +90,7 @@ private:
 	AFGEquipment* mOverrideEquipmentInSlot;
 
 	/** This is the actual equipment in the slot */
-	UPROPERTY( SaveGame, Replicated )
+	UPROPERTY( SaveGame, ReplicatedUsing=OnRep_ActiveEquipment )
 	AFGEquipment* mEquipmentInSlot;
 
 	/** This inventory will only accept equipments that are supposed to be on this slot */
@@ -84,6 +98,9 @@ private:
 	EEquipmentSlot mEquipmentInventorySlot;
 
 	/** Index of the active equipment*/
-	UPROPERTY( SaveGame, Replicated )
+	UPROPERTY( SaveGame, ReplicatedUsing=OnRep_ActiveEquipmentIndex )
 	int32 mActiveEquipmentIndex;
+
+	/**  Delegate fired when the active equipment index changes. The delegate works on both server and client */
+	FOnActiveEquipmentChanged mOnActiveEquipmentChanged;
 };

@@ -13,6 +13,7 @@ void UFGCharacterMovementComponent::SetDefaultMovementMode(){ }
 float UFGCharacterMovementComponent::GetMaxJumpZVelocity() const{ return float(); }
 bool UFGCharacterMovementComponent::CanCrouchInCurrentState() const{ return bool(); }
 void UFGCharacterMovementComponent::SmoothClientPosition(float DeltaSeconds){ }
+float UFGCharacterMovementComponent::ImmersionDepth() const{ return float(); }
 void UFGCharacterMovementComponent::ServerSetHookLocation_Implementation(const FVector& hookLocation){ }
 bool UFGCharacterMovementComponent::ServerSetHookLocation_Validate(const FVector& hookLocation){ return bool(); }
 void UFGCharacterMovementComponent::SetHookLocation(const FVector& hookLocation){ }

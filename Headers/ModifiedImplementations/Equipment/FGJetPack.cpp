@@ -14,6 +14,7 @@ void AFGJetPack::JetPackStopThrust(){ }
 float AFGJetPack::GetCurrentFuel_Implementation() const{ return float(); }
 float AFGJetPack::GetMaxFuel_Implementation(){ return float(); }
 void AFGJetPack::AddEquipmentActionBindings(){ }
+void AFGJetPack::MakeActiveNoise(){ }
 void AFGJetPackAttachment::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGJetPackAttachment::OnRep_IsThrusting(){ }
 void AFGJetPackAttachment::SetIsThrusting(bool newIsThrusting){ }

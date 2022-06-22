@@ -2,11 +2,11 @@
 
 #pragma once
 
-#include "Animation/AnimNotifies/AnimNotify.h"
+#include "FGAnimNotify.h"
 #include "FGAnimNotify_Landed.generated.h"
 
 UCLASS()
-class FACTORYGAME_API UFGAnimNotify_Landed : public UAnimNotify
+class FACTORYGAME_API UFGAnimNotify_Landed : public UFGAnimNotify
 {
 	GENERATED_BODY()
 public:

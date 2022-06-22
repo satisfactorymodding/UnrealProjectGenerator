@@ -4,6 +4,7 @@
 
 #include "FGEquipment.h"
 #include "FGInventoryComponent.h"
+#include "FGEquipmentAttachment.h"
 #include "FGChainsaw.generated.h"
 
 
@@ -101,14 +102,14 @@ protected:
 	 * Removes the foliage we just cut down
 	 */
 	UFUNCTION( Reliable, Server, WithValidation )
-	void Server_RemoveChainsawedObject( class USceneComponent* sawingComponent, FTransform foliageToRemoveTransform, FVector effectLocation );
+	void Server_RemoveChainsawedObject( class USceneComponent* sawingComponent, int foliageIndex, const FVector& effectLocation );
 
-	void RemoveChainsawedObject( class USceneComponent* sawingComponent, FTransform foliageToRemoveTransform, FVector effectLocation );
+	void RemoveChainsawedObject( class USceneComponent* sawingComponent, int foliageIndex, const FVector& effectLocation );
 
 	/**
 	 * Removes surrounding foliage around the chainsawedObject and picks it up the within the Collateral pick-up radius
 	*/
-	void RemoveCollateralFoliage( class AFGFoliageRemovalSubsystem* removalSubsystem, const FTransform& chainsawedObjectTransform );
+	void RemoveCollateralFoliage( class AFGFoliageRemovalSubsystem* removalSubsystem, const FVector& location );
 
 	UFUNCTION( NetMulticast, Unreliable )
 	void BroadcastPickup( const TArray<FPickedUpInstance>& pickups, class AFGFoliagePickup* instigatorPlayer );
@@ -184,6 +185,10 @@ protected:
 	UPROPERTY( EditDefaultsOnly, Category = "Chainsaw|Collateral" )
 	bool mExcludeChainsawableFoliage;
 
+	/** The noise to make when using the chainsaw. */
+	UPROPERTY( EditDefaultsOnly, Category = "Chainsaw" )
+	TSubclassOf< class UFGNoise > mChainsawNoise;
+
 	/**
 	 * How much energy do we have stored left in the chainsaw (when we consume fuel from owners inventory
 	 * then this is the energy stored here)
@@ -206,3 +211,33 @@ protected:
 	/** if true, then we are spinning the chainsaw up */
 	uint8 mIsSpinningUp:1;
 };
+
+UCLASS()
+class FACTORYGAME_API AFGChainsawAttachment : public AFGEquipmentAttachment
+{
+	GENERATED_BODY()
+	
+public:
+	//~ Begin AActor interface
+	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
+	//~ End AActor interface
+	
+	/** Return true we have any energy stored or if our owner has any fuel */
+	UFUNCTION( BlueprintPure, Category = "Chainsaw" )
+	FORCEINLINE bool HasAnyFuel() const { return mHasAnyFuel; }
+	
+	UFUNCTION( BlueprintImplementableEvent )
+	void OnHasAnyFuelUpdated( bool hasAnyFuel );
+
+	UFUNCTION()
+	void SetHasAnyFuel( bool newHasAnyFuel );
+
+protected:
+	UFUNCTION()
+	void OnRep_HasAnyFuel();
+	
+	UPROPERTY( ReplicatedUsing = OnRep_HasAnyFuel )
+	bool mHasAnyFuel;
+	
+};
+

@@ -2,3 +2,4 @@
 
 #include "FGBuildablePipelineJunction.h"
 
+AFGBuildablePipelineJunction::AFGBuildablePipelineJunction(){ }

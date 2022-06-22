@@ -84,4 +84,7 @@ protected:
 	/** Mesh component for the factory building. */
 	UPROPERTY( EditDefaultsOnly )
 	class UFGColoredInstanceMeshProxy* mMeshComponentProxy = nullptr;
+
+	UPROPERTY( EditDefaultsOnly )
+	UStaticMesh* mCustomRainBoundsMesh = nullptr;
 };

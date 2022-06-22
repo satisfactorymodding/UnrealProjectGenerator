@@ -4,5 +4,4 @@
 
 UFGConveyorInstanceMeshBucket::UFGConveyorInstanceMeshBucket(){ }
 void UFGConveyorInstanceMeshBucket::Init(){ }
-void UFGConveyorInstanceMeshBucket::DirectUpdateInstance(){ }
 FBoxSphereBounds UFGConveyorInstanceMeshBucket::CalcBounds(const FTransform& LocalToWorld) const{ return FBoxSphereBounds(); }

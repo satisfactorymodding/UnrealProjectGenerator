@@ -13,6 +13,9 @@ void AFGBuildable::CheckForErrors(){ Super::CheckForErrors(); }
 #if WITH_EDITOR
 void AFGBuildable::SetBuildableDisplayName(TSubclassOf< AFGBuildable > inClass, FText displayName){ }
 #endif 
+#if WITH_EDITOR
+void AFGBuildable::DebugDrawOcclusionBoxes(){ }
+#endif 
 void AFGBuildable::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildable::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
 AFGBuildable::AFGBuildable(){ }
@@ -67,6 +70,7 @@ void AFGBuildable::ConfigureDynamicDecoratorComponent(USceneComponent* newCompon
 void AFGBuildable::TryRemoveDecoratorSignificantComponents( AFGPlayerController* controller){ }
 void AFGBuildable::RemoveDecoratorSignificantComponents(){ }
 const TArray< class UMeshComponent* >& AFGBuildable::GetMainMeshes(){ return *(new TArray< class UMeshComponent* >); }
+void AFGBuildable::ApplyHasPowerCustomData(){ }
 void AFGBuildable::DisplayDebug( UCanvas* canvas, const  FDebugDisplayInfo& debugDisplay, float& YL, float& YPos){ }
 void AFGBuildable::Stat_Cost(TArray< FItemAmount >& out_amount) const{ }
 void AFGBuildable::Stat_StockInventory(TArray< FItemAmount >& out_amount) const{ }
@@ -110,7 +114,6 @@ void AFGBuildable::GetDismantleInventoryReturns(TArray< FInventoryStack >& out_r
 void AFGBuildable::TogglePendingDismantleMaterial(bool enabled){ }
 void AFGBuildable::ApplySkinData(TSubclassOf< UFGFactoryCustomizationDescriptor_Skin > newSkinDesc){ }
 void AFGBuildable::ApplyMeshPrimitiveData(const FFactoryCustomizationData& customizationData){ }
-void AFGBuildable::ApplyHasPowerCustomData(){ }
 void AFGBuildable::SetDidFirstTimeUse(bool didUse){ }
 TArray< UStaticMeshComponent* > AFGBuildable::CreateBuildEffectProxyComponents(){ return TArray<UStaticMeshComponent*>(); }
 void AFGBuildable::DestroyBuildEffectProxyComponents(){ }

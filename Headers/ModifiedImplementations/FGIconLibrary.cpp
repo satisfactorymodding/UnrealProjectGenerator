@@ -5,6 +5,7 @@
 UFGIconLibrary::UFGIconLibrary(){ }
 UFGIconLibrary* UFGIconLibrary::Get(){ return nullptr; }
 int32 UFGIconLibrary::GetIconIDForTexture( UObject* texture){ return int32(); }
+UObject* UFGIconLibrary::GetTextureFromIconID(int32 iconID){ return nullptr; }
 UObject* UFGIconLibrary::GetTextureFromIconData(const FIconData& iconData){ return nullptr; }
 int32 UFGIconLibrary::GetIDFromIconData(const FIconData& iconData){ return int32(); }
 bool UFGIconLibrary::GetIsAnimatedFromIconData(const FIconData& iconData){ return bool(); }

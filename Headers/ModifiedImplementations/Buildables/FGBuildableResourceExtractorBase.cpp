@@ -2,6 +2,8 @@
 
 #include "FGBuildableResourceExtractorBase.h"
 
+int AFGBuildableResourceExtractorBase::GetDebugLevel(){ return int(); }
+void AFGBuildableResourceExtractorBase::SetDebugLevel(int level){ }
 void AFGBuildableResourceExtractorBase::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildableResourceExtractorBase::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
 AFGBuildableResourceExtractorBase::AFGBuildableResourceExtractorBase(){ }

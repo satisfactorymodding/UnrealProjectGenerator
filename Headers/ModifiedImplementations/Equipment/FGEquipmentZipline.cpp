@@ -22,3 +22,4 @@ void AFGEquipmentZipline::OnCrouchPressed(){ }
 void AFGEquipmentZipline::OnCrouchReleased(){ }
 void AFGEquipmentZipline::OnJumpPressed(){ }
 void AFGEquipmentZipline::TryToGrab(){ }
+void AFGEquipmentZipline::MakeActiveNoise(){ }

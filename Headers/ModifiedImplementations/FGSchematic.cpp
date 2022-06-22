@@ -76,6 +76,8 @@ FSlateBrush UFGSchematic::GetItemIcon(TSubclassOf< UFGSchematic > inClass) {
 UTexture2D* UFGSchematic::GetSmallIcon(TSubclassOf< UFGSchematic > inClass){ return nullptr; }
 bool UFGSchematic::AreSchematicDependenciesMet(TSubclassOf< UFGSchematic > inClass, UObject* worldContext){ return bool(); }
 void UFGSchematic::GetSchematicDependencies(TSubclassOf< UFGSchematic > inClass, TArray<  UFGAvailabilityDependency* >& out_schematicDependencies){ }
+bool UFGSchematic::GetHiddenUntilDependenciesMet(TSubclassOf< UFGSchematic > inClass){ return bool(); }
+ESchematicState UFGSchematic::GetSchematicState(TSubclassOf< UFGSchematic > inClass, UObject* worldContext){ return ESchematicState(); }
 bool UFGSchematic::CanGiveAccessToSchematic(TSubclassOf< UFGSchematic > inClass, UObject* worldContext){ return bool(); }
 bool UFGSchematic::IsRepeatPurchasesAllowed(TSubclassOf< UFGSchematic > inClass){ return bool(); }
 void UFGSchematic::SortByMenuPriority(TArray< TSubclassOf< UFGSchematic > >& schematics){ }

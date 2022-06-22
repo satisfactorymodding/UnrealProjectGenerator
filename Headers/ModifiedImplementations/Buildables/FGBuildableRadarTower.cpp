@@ -2,11 +2,10 @@
 
 #include "FGBuildableRadarTower.h"
 
-#if WITH_EDITOR
-void AFGBuildableRadarTower::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent){ Super::PostEditChangeProperty(PropertyChangedEvent); }
-#endif 
 AFGBuildableRadarTower::AFGBuildableRadarTower(){ }
 void AFGBuildableRadarTower::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
+void AFGBuildableRadarTower::BeginPlay(){ }
+void AFGBuildableRadarTower::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 bool AFGBuildableRadarTower::AddAsRepresentation(){ return bool(); }
 bool AFGBuildableRadarTower::UpdateRepresentation(){ return bool(); }
 bool AFGBuildableRadarTower::RemoveAsRepresentation(){ return bool(); }
@@ -29,8 +28,13 @@ void AFGBuildableRadarTower::PostLoadGame_Implementation(int32 saveVersion, int3
 void AFGBuildableRadarTower::Factory_StartProducing(){ }
 void AFGBuildableRadarTower::Factory_StopProducing(){ }
 void AFGBuildableRadarTower::Factory_TickProducing(float dt){ }
-float AFGBuildableRadarTower::GetCurrentRevealRadius(){ return float(); }
-float AFGBuildableRadarTower::GetNormalizedProgressValueForStep(int32 step){ return float(); }
-void AFGBuildableRadarTower::OnRep_OnRadiusUpdated(){ }
-float AFGBuildableRadarTower::GetRevealRadiusOnStep(int32 step){ return float(); }
-bool AFGBuildableRadarTower::IsRadarExpandedToMax(){ return bool(); }
+void AFGBuildableRadarTower::ScanForResources(){ }
+void AFGBuildableRadarTower::AddResourceNodes(const TArray<  AFGResourceNodeBase* >& resourceNodes){ }
+void AFGBuildableRadarTower::ClearScannedResources(){ }
+void AFGBuildableRadarTower::InitScanForObjects(){ }
+void AFGBuildableRadarTower::TryRemovePickup(AActor* removedActor){ }
+void AFGBuildableRadarTower::TryAddCreatureSpawner( AFGCreatureSpawner* creatureSpawner){ }
+void AFGBuildableRadarTower::TryRemoveCreatureSpawner( AFGCreatureSpawner* creatureSpawner){ }
+void AFGBuildableRadarTower::TryRemoveDropPod( AFGDropPod* dropPod){ }
+bool AFGBuildableRadarTower::IsInRadarTowerRange(const FVector& location) const{ return bool(); }
+void AFGBuildableRadarTower::UpdateRepresentationValues(){ }

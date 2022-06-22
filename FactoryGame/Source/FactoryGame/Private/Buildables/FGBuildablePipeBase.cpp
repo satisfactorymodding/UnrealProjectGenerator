@@ -12,13 +12,6 @@ AFGBuildablePipeBase::AFGBuildablePipeBase() : Super() {
 	this->mConnection1 = nullptr;
 	this->mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("SplineComponent"));
 	this->mHologramClass = AFGPipelineHologram::StaticClass();
-	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
-	this->PrimaryActorTick.EndTickGroup = ETickingGroup::TG_PrePhysics;
-	this->PrimaryActorTick.bTickEvenWhenPaused = false;
-	this->PrimaryActorTick.bCanEverTick = true;
-	this->PrimaryActorTick.bStartWithTickEnabled = false;
-	this->PrimaryActorTick.bAllowTickOnDedicatedServer = true;
-	this->PrimaryActorTick.TickInterval = 0.0;
 	this->NetDormancy = ENetDormancy::DORM_Awake;
 	this->mSplineComponent->SetupAttachment(RootComponent);
 }

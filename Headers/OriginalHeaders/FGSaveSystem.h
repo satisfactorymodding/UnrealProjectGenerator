@@ -186,7 +186,6 @@ public:
 
 	static bool SaveFileExistsInCommonSaveDirectory( const FString& saveName );
 
-
 	/** Set so that we use our internal saves */
 	static FORCEINLINE void SetUseBundledSaves( bool useInternal ){ mIsUsingBundledSaves = useInternal; }
 
@@ -235,7 +234,7 @@ protected:
 	void GatherUsedSaveIds();
 protected:
 	/** The session id's that used */
-	TArray<FString> mUsedSessionNames;
+	TSet<FString> mUsedSessionNames;
 	
 	/** Last result of EnumerateSaves */
 	TArray<FSaveHeader> mCachedSaves;

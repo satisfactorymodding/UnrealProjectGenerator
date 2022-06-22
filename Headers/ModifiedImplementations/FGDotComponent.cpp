@@ -6,14 +6,10 @@
 void UFGDotComponent::CheckForErrors(){ }
 #endif 
 UFGDotComponent::UFGDotComponent(){ }
-void UFGDotComponent::PostLoad(){ Super::PostLoad(); }
 void UFGDotComponent::OnRegister(){ Super::OnRegister(); }
 void UFGDotComponent::OnUnregister(){ Super::OnUnregister(); }
 void UFGDotComponent::Activate(bool reset){ }
 void UFGDotComponent::Deactivate(){ }
-void UFGDotComponent::StartDamageTimer(){ }
-void UFGDotComponent::OnPrimitiveComponentEntered(UPrimitiveComponent* overlappedComp, AActor* other, UPrimitiveComponent* otherComp, int32 otherBodyIndex, bool fromSweep, const FHitResult& sweepResult){ }
-void UFGDotComponent::OnPrimitiveComponentExited(UPrimitiveComponent* overlappedComp, AActor* other, UPrimitiveComponent* otherComp, int32 otherBodyIndex){ }
-void UFGDotComponent::DamageContainingActors(){ }
-void UFGDotComponent::AddActorToDamage(AActor* actor){ }
-void UFGDotComponent::RemoveActorToDamage(AActor* actor){ }
+void UFGDotComponent::OnActorBeginOverlap(AActor* overlappedActor, AActor* otherActor){ }
+void UFGDotComponent::OnActorEndOverlap(AActor* overlappedActor, AActor* otherActor){ }
+void UFGDotComponent::RegisterDOTForActor(AActor* actor, bool shouldRegister) const{ }

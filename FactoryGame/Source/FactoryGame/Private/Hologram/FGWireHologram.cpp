@@ -10,9 +10,7 @@ AFGWireHologram::AFGWireHologram() : Super() {
 	this->mDefaultPowerPoleRecipe = nullptr;
 	this->mCircuitType = nullptr;
 	this->mDefaultPowerPoleWallRecipe = nullptr;
-	this->mStartLocation.X = 0.0;
-	this->mStartLocation.Y = 0.0;
-	this->mStartLocation.Z = 0.0;
+	this->mStartLocation = FVector::ZeroVector;
 	this->mCurrentConnection = 0;
 	this->mWireMesh = nullptr;
 	this->mUpgradeTarget = nullptr;

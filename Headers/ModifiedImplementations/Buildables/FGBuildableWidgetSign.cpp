@@ -14,6 +14,9 @@ TSubclassOf< UFGSignTypeDescriptor > AFGBuildableWidgetSign::GetSignTypeDescript
 FVector2D AFGBuildableWidgetSign::GetSignDimensions_Implementation(){ return FVector2D(); }
 void AFGBuildableWidgetSign::GainedSignificance_Implementation(){ }
 void AFGBuildableWidgetSign::LostSignificance_Implementation(){ }
+UFGFactoryClipboardSettings* AFGBuildableWidgetSign::CopySettings_Implementation(){ return nullptr; }
+bool AFGBuildableWidgetSign::PasteSettings_Implementation(UFGFactoryClipboardSettings* settings){ return bool(); }
+void AFGBuildableWidgetSign::OnBuildEffectFinished(){ }
 void AFGBuildableWidgetSign::SetPrefabSignData(FPrefabSignData& signData){ }
 void AFGBuildableWidgetSign::GetSignPrefabData(FPrefabSignData& out_signData){ }
 void AFGBuildableWidgetSign::UpdateSignElements(FPrefabSignData& prefabSignData){ }

@@ -21,6 +21,7 @@ void AFGFreightWagon::DisplayDebug( UCanvas* canvas, const  FDebugDisplayInfo& d
 void AFGFreightWagon::OnItemAddedToFreight(TSubclassOf<  UFGItemDescriptor > itemClass, int32 numAdded){ }
 void AFGFreightWagon::OnItemRemovedFromFreight(TSubclassOf<  UFGItemDescriptor > itemClass, int32 numRemoved){ }
 void AFGFreightWagon::InitializeInventoryComponent(){ }
+void AFGFreightWagon::OnRep_StorageInventory(){ }
 UStaticMesh* AFGFreightWagon::GetCargoStaticMesh(){ return nullptr; }
 float AFGFreightWagon::GetInventoryFilledPercentage() const{ return float(); }
 FName AFGFreightWagon::VehicleMovementComponentName = FName();

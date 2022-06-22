@@ -5,6 +5,7 @@
 AFGSporeFlower::AFGSporeFlower(){ }
 void AFGSporeFlower::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGSporeFlower::BeginPlay(){ }
+float AFGSporeFlower::TakeDamage(float damage,  FDamageEvent const& damageEvent, AController* eventInstigator, AActor* damageCauser){ return float(); }
 void AFGSporeFlower::GainedSignificance_Implementation(){ }
 void AFGSporeFlower::LostSignificance_Implementation(){ }
 void AFGSporeFlower::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }

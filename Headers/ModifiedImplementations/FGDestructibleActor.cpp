@@ -4,6 +4,7 @@
 
 AFGDestructibleActor::AFGDestructibleActor(){ }
 void AFGDestructibleActor::BeginPlay(){ }
+void AFGDestructibleActor::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 float AFGDestructibleActor::TakeDamage(float damage,  FDamageEvent const& damageEvent, AController* eventInstigator, AActor* damageCauser){ return float(); }
 void AFGDestructibleActor::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGDestructibleActor::PostSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }

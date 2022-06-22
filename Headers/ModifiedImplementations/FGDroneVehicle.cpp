@@ -56,6 +56,7 @@ AFGDroneVehicle::AFGDroneVehicle(){ }
 void AFGDroneVehicle::BeginPlay(){ }
 void AFGDroneVehicle::Tick(float DeltaTime){ }
 void AFGDroneVehicle::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
+void AFGDroneVehicle::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 bool AFGDroneVehicle::IsUseable_Implementation() const{ return bool(); }
 void AFGDroneVehicle::Dismantle_Implementation(){ }
 void AFGDroneVehicle::OnIsSimulatedChanged(){ }

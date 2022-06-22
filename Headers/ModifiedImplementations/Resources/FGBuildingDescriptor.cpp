@@ -3,8 +3,6 @@
 #include "FGBuildingDescriptor.h"
 
 #if WITH_EDITOR
-void UFGBuildingDescriptor::SetupStage(){ }
-FVector UFGBuildingDescriptor::GetCenterOfCollision(){ return FVector(); }
 void UFGBuildingDescriptor::SetBuildableClass(TSubclassOf< UFGBuildingDescriptor > inClass, TSubclassOf<  AFGBuildable > buildableClass){ }
 #endif 
 UFGBuildingDescriptor::UFGBuildingDescriptor(){ }

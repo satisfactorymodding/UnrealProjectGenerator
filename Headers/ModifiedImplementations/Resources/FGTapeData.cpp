@@ -3,3 +3,4 @@
 #include "FGTapeData.h"
 
 TArray< class UAkAudioEvent* > UFGTapeData::GetSongs(TSubclassOf<  UFGTapeData > inClass){ return TArray<class UAkAudioEvent*>(); }
+TArray< FSongData > UFGTapeData::GetPlaylist(TSubclassOf<  UFGTapeData > inClass){ return TArray<FSongData>(); }

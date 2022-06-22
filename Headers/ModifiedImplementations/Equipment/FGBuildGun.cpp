@@ -42,6 +42,7 @@ void AFGBuildGun::Tick(float dt){ }
 bool AFGBuildGun::ShouldSaveState() const{ return bool(); }
 void AFGBuildGun::Equip( AFGCharacterPlayer* character){ }
 void AFGBuildGun::UnEquip(){ }
+void AFGBuildGun::TraceForBuilding(APawn* owningPawn, FHitResult& hitresult){ }
 void AFGBuildGun::GetAvailableRecipes(TArray< TSubclassOf<  UFGRecipe > >& out_recipes, TArray < TSubclassOf< UFGCustomizationRecipe > >& out_customizationRecipes) const{ }
 TArray< FItemAmount > AFGBuildGun::GetCostForRecipe(TSubclassOf<  UFGRecipe > recipe) const{ return TArray<FItemAmount>(); }
 UFGInventoryComponent* AFGBuildGun::GetInventory() const{ return nullptr; }
@@ -75,6 +76,7 @@ void AFGBuildGun::SetCustomizationDataForSlot(uint8 slotIndex, FFactoryCustomiza
 void AFGBuildGun::Server_SetCustomizationDataForSlot_Implementation(uint8 slotIndex, FFactoryCustomizationColorSlot slotData){ }
 void AFGBuildGun::SetAllowRayCleranceHit(bool allow){ }
 void AFGBuildGun::SetPendingEntryState(EBuildGunState state){ }
+void AFGBuildGun::TryBuildSample(){ }
 void AFGBuildGun::AddEquipmentActionBindings(){ }
 void AFGBuildGun::Server_PrimaryFire_Implementation(){ }
 bool AFGBuildGun::Server_PrimaryFire_Validate(){ return bool(); }

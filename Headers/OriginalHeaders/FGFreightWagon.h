@@ -83,6 +83,9 @@ private:
 	UFUNCTION()
 	void InitializeInventoryComponent();
 
+	UFUNCTION()
+	void OnRep_StorageInventory();
+
 	/** Returns a UStaticMesh pointer ( loaded if necessary ) that matches the inventory housed in our inventory component */
 	UStaticMesh* GetCargoStaticMesh();
 
@@ -118,7 +121,7 @@ private:
 	class UFGRailroadVehicleMovementComponent* mVehicleMovement;
 
 	/** Responsible for handling our inventory */
-	UPROPERTY( SaveGame, Replicated )
+	UPROPERTY( SaveGame, ReplicatedUsing=OnRep_StorageInventory )
 	class UFGInventoryComponent* mStorageInventory;
 
 	/** Static mesh to use when freight is holding standard inventory ( factory items ) */

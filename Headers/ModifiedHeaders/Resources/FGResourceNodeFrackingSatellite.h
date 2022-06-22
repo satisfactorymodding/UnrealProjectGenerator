@@ -3,6 +3,7 @@
 #pragma once
 
 #include "FGResourceNode.h"
+#include "FGResourceNodeFrackingCore.h"
 #include "UObject/WeakObjectPtrTemplates.h"
 #include "FGResourceNodeFrackingSatellite.generated.h"
 
@@ -52,10 +53,10 @@ public:
 	void SetExtractor( TWeakObjectPtr< class AFGBuildableFrackingExtractor > extractor );
 
 	/** @returns the extractor connected to this node. nullptr if there is no such extractor */
-	TWeakObjectPtr< class AFGBuildableFrackingExtractor > GetExtractor() { return mExtractor; }
+	TWeakObjectPtr< AFGBuildableFrackingExtractor > GetExtractor() { return mExtractor; }
 	
 	/** @returns the core connected to this satellite. nullptr means this asset is not properly configured */
-	TWeakObjectPtr< class AFGResourceNodeFrackingCore > GetCore() { return mCore; }
+	TWeakObjectPtr< AFGResourceNodeFrackingCore > GetCore() { return mCore; }
 
 protected:
 	UFUNCTION( BlueprintImplementableEvent, Category="Fracking" )

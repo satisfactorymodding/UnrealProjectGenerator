@@ -24,12 +24,8 @@ AFGHologram::AFGHologram() : Super() {
 	this->mIsDisabled = false;
 	this->mIsChanged = false;
 	this->mInitialScrollModeValue = 0;
-	this->mConstructionPosition.X = 0.0;
-	this->mConstructionPosition.Y = 0.0;
-	this->mConstructionPosition.Z = 0.0;
-	this->mConstructionRotation.Pitch = 0.0;
-	this->mConstructionRotation.Yaw = 0.0;
-	this->mConstructionRotation.Roll = 0.0;
+	this->mConstructionPosition = FVector::ZeroVector;
+	this->mConstructionRotation = FRotator::ZeroRotator;
 	this->SetHidden(true);
 	this->bReplicates = true;
 	this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));

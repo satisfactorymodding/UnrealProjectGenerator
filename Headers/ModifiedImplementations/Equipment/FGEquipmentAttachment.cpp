@@ -5,7 +5,10 @@
 void AFGEquipmentAttachment::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 AFGEquipmentAttachment::AFGEquipmentAttachment(){ }
 void AFGEquipmentAttachment::BeginPlay(){ }
+void AFGEquipmentAttachment::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void AFGEquipmentAttachment::Attach( AFGCharacterPlayer* character){ }
+void AFGEquipmentAttachment::UpdatePrimitiveColors(){ }
+void AFGEquipmentAttachment::OnColorUpdate(int32 index){ }
 void AFGEquipmentAttachment::OnAttach_Implementation(){ }
 void AFGEquipmentAttachment::Detach(){ }
 void AFGEquipmentAttachment::OnDetach_Implementation(){ }

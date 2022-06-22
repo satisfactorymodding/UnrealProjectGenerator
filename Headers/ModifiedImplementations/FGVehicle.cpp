@@ -44,14 +44,6 @@ void AFGVehicle::Dismantle_Implementation(){ }
 void AFGVehicle::StartIsLookedAtForDismantle_Implementation(AFGCharacterPlayer* byCharacter){ }
 void AFGVehicle::StopIsLookedAtForDismantle_Implementation(AFGCharacterPlayer* byCharacter){ }
 void AFGVehicle::GetChildDismantleActors_Implementation(TArray< AActor* >& out_ChildDismantleActors) const{ }
-void AFGVehicle::RegisterIncomingAttacker_Implementation( AFGEnemyController* forController){ }
-void AFGVehicle::UnregisterAttacker_Implementation( AFGEnemyController* forController){ }
-AActor* AFGVehicle::GetActor_Implementation(){ return nullptr; }
-float AFGVehicle::GetEnemyTargetDesirability_Implementation( AFGEnemyController* forController){ return float(); }
-bool AFGVehicle::ShouldAutoregisterAsTargetable_Implementation() const{ return bool(); }
-UPrimitiveComponent* AFGVehicle::GetTargetComponent_Implementation(){ return nullptr; }
-bool AFGVehicle::IsAlive_Implementation() const{ return bool(); }
-FVector AFGVehicle::GetAttackLocation_Implementation() const{ return FVector(); }
 bool AFGVehicle::CanBeSampled(){ return bool(); }
 USkeletalMeshComponent* AFGVehicle::GetMesh() const{ return nullptr; }
 bool AFGVehicle::DriverEnter( AFGCharacterPlayer* driver){ return bool(); }

@@ -3,7 +3,7 @@
 #include "FGHUD.h"
 
 #if WITH_CHEATS
-void AFGHUD::PonderOpeningCheatBoard(){ }
+void AFGHUD::ToggleCheatBoard(){ }
 #endif 
 AFGHUD::AFGHUD(){ }
 void AFGHUD::PostInitializeComponents(){ Super::PostInitializeComponents(); }

@@ -12,12 +12,8 @@ AFGBuildableWire::AFGBuildableWire() : Super() {
 	this->mWireMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MainMesh"));
 	this->mConnections[0] = nullptr;
 	this->mConnections[1] = nullptr;
-	this->mLocations[0].X = 0.0;;
-	this->mLocations[0].Y = 0.0;;
-	this->mLocations[0].Z = 0.0;;
-	this->mLocations[1].X = 0.0;;
-	this->mLocations[1].Y = 0.0;;
-	this->mLocations[1].Z = 0.0;;
+	this->mLocations[0] = FVector::ZeroVector;
+	this->mLocations[1] = FVector::ZeroVector;
 	this->mHologramClass = AFGWireHologram::StaticClass();
 	this->mDismantleEffectClassName = FSoftClassPath("None");
 	this->mBuildEffectClassName = FSoftClassPath("/Game/FactoryGame/Buildable/Factory/-Shared/BP_MaterialEffect_WireBuild.BP_MaterialEffect_WireBuild_C");

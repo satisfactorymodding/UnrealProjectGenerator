@@ -5,7 +5,9 @@
 AFGEquipment::AFGEquipment(){ }
 void AFGEquipment::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGEquipment::PreReplication(IRepChangedPropertyTracker & ChangedPropertyTracker){ }
+void AFGEquipment::OnRep_AttachmentReplication(){ }
 void AFGEquipment::BeginPlay(){ }
+void AFGEquipment::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void AFGEquipment::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGEquipment::PostSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGEquipment::PreLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
@@ -17,12 +19,14 @@ void AFGEquipment::Equip( AFGCharacterPlayer* character){ }
 void AFGEquipment::UnEquip(){ }
 void AFGEquipment::OnCharacterMovementModeChanged(EMovementMode PreviousMovementMode, uint8 PreviousCustomMode, EMovementMode NewMovementMode, uint8 NewCustomMode){ }
 void AFGEquipment::OnDefaultPrimaryFirePressed(){ }
+void AFGEquipment::UpdatePrimitiveColors(){ }
 void AFGEquipment::Server_DefaultPrimaryFire_Implementation(){ }
 bool AFGEquipment::Server_DefaultPrimaryFire_Validate(){ return bool(); }
 void AFGEquipment::DoDefaultPrimaryFire_Native(){ }
 bool AFGEquipment::CanDoDefaultPrimaryFire_Implementation(){ return bool(); }
 void AFGEquipment::DisableEquipment(){ }
 AFGCharacterPlayer* AFGEquipment::GetInstigatorCharacter() const{ return nullptr; }
+void AFGEquipment::OnColorUpdate(int32 index){ }
 bool AFGEquipment::IsLocalInstigator() const{ return bool(); }
 bool AFGEquipment::ShouldSaveState() const{ return bool(); }
 void AFGEquipment::SetAttachment( AFGEquipmentAttachment* newAttachment){ }
@@ -32,6 +36,7 @@ bool AFGEquipment::Server_UpdateAttachmentUseState_Validate(int newUseState){ re
 float AFGEquipment::AdjustDamage_Implementation(float damageAmount, const  UDamageType* damageType,  AController* instigatedBy, AActor* damageCauser){ return float(); }
 EEquipmentSlot AFGEquipment::GetEquipmentSlot(TSubclassOf< AFGEquipment > inClass){ return EEquipmentSlot(); }
 void AFGEquipment::SpawnChildEquipment(){ }
+void AFGEquipment::WasRemovedFromSlot_Implementation(){ }
 void AFGEquipment::WasEquipped_Implementation(){ }
 void AFGEquipment::WasUnEquipped_Implementation(){ }
 void AFGEquipment::AddEquipmentHUD(){ }

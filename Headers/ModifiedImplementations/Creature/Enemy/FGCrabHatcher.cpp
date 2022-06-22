@@ -2,7 +2,12 @@
 
 #include "FGCrabHatcher.h"
 
+AFGCrabHatcher::AFGCrabHatcher(){ }
+void AFGCrabHatcher::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
+void AFGCrabHatcher::PostSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
+void AFGCrabHatcher::PreLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
+void AFGCrabHatcher::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
+void AFGCrabHatcher::GatherDependencies_Implementation(TArray<UObject*>& out_dependentObjects){ }
+bool AFGCrabHatcher::NeedTransform_Implementation(){ return bool(); }
+bool AFGCrabHatcher::ShouldSave_Implementation() const{ return bool(); }
 void AFGCrabHatcher::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
-void AFGCrabHatcher::BeginPlay(){ }
-void AFGCrabHatcher::Tick(float deltaTime){ }
-void AFGCrabHatcher::OnRep_DidSpawnCrabs(){ }

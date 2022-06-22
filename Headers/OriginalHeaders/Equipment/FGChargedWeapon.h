@@ -28,7 +28,7 @@ public:
 	// End
 
 	/** Called on both client and server */
-	virtual void BeginPrimaryFire() override;
+	virtual void Multicast_BeginPrimaryFire_Implementation() override;
 
 	/** Called on both client and server */
 	virtual void EndPrimaryFire() override;
@@ -75,6 +75,12 @@ protected:
 	UFUNCTION( NetMulticast, Reliable )
 	void Multicast_ResetPressTimestamp();
 
+	UFUNCTION( Server, Reliable )
+	void Server_SecondaryFirePressed();
+
+	UFUNCTION( NetMulticast, Reliable )
+	void Multicast_SecondaryFirePressed();
+	
 	/** Called when the player presses secondary fire */
 	void SecondaryFirePressed();
 
@@ -98,7 +104,7 @@ protected:
 	virtual void AddEquipmentActionBindings() override;
 	// End AFGEquipment interface
 
-	virtual void ApplyDispersionReduction( float DeltaSeconds ) override;
+	virtual void UpdateDispersion( float DeltaSeconds ) override;
 
 	virtual void OnAmmoFired( AActor* SpawnedActor ) override;
 
@@ -107,7 +113,7 @@ protected:
 	TArray< AFGProjectile* > mDispensedProjectiles;
 
 	/** Tracks waiting for execute fire */
-	UPROPERTY( BlueprintReadOnly, Category ="ChargedWeapon" )
+	UPROPERTY( Replicated, BlueprintReadOnly, Category ="ChargedWeapon" )
 	bool mIsPendingExecuteFire;
 
 	/** If we charge the throw for this amount of time we will get max throw velocity */

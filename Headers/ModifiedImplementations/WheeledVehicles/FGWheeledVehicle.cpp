@@ -59,6 +59,7 @@ ETransferAnimationState AFGWheeledVehicle::GetTransferAnimationState(float anima
 void AFGWheeledVehicle::CalculateManualDockingState(){ }
 void AFGWheeledVehicle::SetRefuelingStation( AFGBuildableDockingStation* station){ }
 void AFGWheeledVehicle::DockToRefuelingStation(){ }
+void AFGWheeledVehicle::FindSurroundingLevels(){ }
 void AFGWheeledVehicle::Died(AActor* thisActor){ }
 void AFGWheeledVehicle::SetSimulated(bool newIsSimulated){ }
 void AFGWheeledVehicle::CreateInventoryItemDrops_Implementation(){ }
@@ -127,6 +128,6 @@ UFGVehicleCollisionBoxComponent* AFGWheeledVehicle::FindCollisionBox() const{ re
 void AFGWheeledVehicle::StartGhosting(){ }
 void AFGWheeledVehicle::TryLeaveSimulatedMode(){ }
 bool AFGWheeledVehicle::IsAboveSolidGround(const FTransform& transform) const{ return bool(); }
-bool AFGWheeledVehicle::IsOverlappingOther(const FTransform& transform) const{ return bool(); }
+AActor* AFGWheeledVehicle::IsOverlappingOther(const FTransform& transform) const{ return nullptr; }
 float AFGWheeledVehicle::CalculateAutomatedFuelToConsume(float deltaTime){ return float(); }
 FName AFGWheeledVehicle::VehicleMovementComponentName = FName();

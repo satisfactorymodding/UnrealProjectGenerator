@@ -20,7 +20,31 @@ AFGSkySphere::AFGSkySphere(){ }
 void AFGSkySphere::PostActorCreated(){ Super::PostActorCreated(); }
 void AFGSkySphere::PostLoad(){ Super::PostLoad(); }
 void AFGSkySphere::BeginDestroy(){ Super::BeginDestroy(); }
-void AFGSkySphere::UpdatePreview_Implementation(){ }
+void AFGSkySphere::Tick(float DeltaTime){ }
+void AFGSkySphere::BeginPlay(){ }
+void AFGSkySphere::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
+void AFGSkySphere::OnConstruction(const FTransform& Transform){ }
+void AFGSkySphere::UpdateMaterial(bool bWithVolumetricClouds){ }
+void AFGSkySphere::SetDirectionalLightIntensityMultiplierOverride(float multiplier){ }
+float AFGSkySphere::GetDirectionalLightIntensityMultiplierOverride(){ return float(); }
+FWeatherChanceEntry AFGSkySphere::GetNewWeatherState(){ return FWeatherChanceEntry(); }
+void AFGSkySphere::SetWeatherState(int32 NewTypeID){ }
+void AFGSkySphere::OnRep_OnWeatherChanged(int32 OldState){ }
+void AFGSkySphere::SetCloudShadowIntensity(float NewValue){ }
+float AFGSkySphere::GetCloudShadowIntensity() const{ return float(); }
+void AFGSkySphere::TryUpdateSceneCaptureLocation(bool bForce){ }
+void AFGSkySphere::UpdateOcclusionDistance(){ }
+void AFGSkySphere::UpdateLightRotation(){ }
+void AFGSkySphere::UpdateCurvesFromTime(){ }
+void AFGSkySphere::CalculateDominantLight(){ }
+void AFGSkySphere::UpdateDominantLight(ADirectionalLight* NewDominantLight){ }
+FRotator AFGSkySphere::CalculateLightRotation(FRotator OriginalRotation, FRotator RotationAxis, FRuntimeFloatCurve LightRotationCurve) const{ return FRotator(); }
+bool AFGSkySphere::CanUpdate(){ return bool(); }
+bool AFGSkySphere::CanUpdatePreview() const{ return bool(); }
+void AFGSkySphere::ApplySkySphereSettings_Implementation(const FSkySphereSettings& settings){ }
+void AFGSkySphere::UpdatePreview(){ }
 FLinearColor AFGSkySphere::GetColorCurveValue(const FRuntimeCurveLinearColor& curve, float time){ return FLinearColor(); }
 float AFGSkySphere::GetFloatCurveValue(const FRuntimeFloatCurve& curve, float time){ return float(); }
 void AFGSkySphere::GetSkySphereSettings(float atTime, FSkySphereSettings& out_settings) const{ }
+bool AFGSkySphere::DoesWeatherEffectNeedOcclusion(const FWeatherChanceEntry& Type){ return bool(); }
+void AFGSkySphere::UpdateGlobalMaterialCollection(){ }
