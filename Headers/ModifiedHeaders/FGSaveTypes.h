@@ -2,4 +2,4 @@
 
 #include "Object.h"
 #include "FGOnlineSessionSettings.h"
-#include "FGSaveSystem.generated.h"
+// #include "FGSaveSystem.generated.h" // MODDING EDIT
