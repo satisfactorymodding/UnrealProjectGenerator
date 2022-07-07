@@ -20,7 +20,12 @@ class FACTORYGAME_API AFGBuildablePoleBase : public AFGBuildable
 {
 	GENERATED_BODY()
 public:
+	virtual bool ShouldBeConsideredForBase_Implementation() override;
 
+	virtual float GetStackHeight() const
+	{
+		return mStackHeight;
+	}
 
 	/** Can this pole stack. */
 	UPROPERTY( EditDefaultsOnly, Category = "Pole" )
@@ -30,8 +35,4 @@ public:
 	UPROPERTY( EditDefaultsOnly, Category = "Pole" )
 	float mStackHeight = 200;
 
-	virtual float GetStackHeight()
-	{
-		return mStackHeight;
-	}
 };

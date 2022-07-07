@@ -8,6 +8,7 @@ void AFGBuildableWire::Serialize(FArchive& ar){ Super::Serialize(ar); }
 void AFGBuildableWire::BeginPlay(){ }
 void AFGBuildableWire::Destroyed(){ }
 int32 AFGBuildableWire::GetDismantleRefundReturnsMultiplier() const{ return int32(); }
+bool AFGBuildableWire::ShouldBeConsideredForBase_Implementation(){ return bool(); }
 UFGCircuitConnectionComponent* AFGBuildableWire::GetOppositeConnection(const  UFGCircuitConnectionComponent* connection) const{ return nullptr; }
 void AFGBuildableWire::Disconnect(){ }
 void AFGBuildableWire::DisplayDebug( UCanvas* canvas, const  FDebugDisplayInfo& debugDisplay, float& YL, float& YPos){ }

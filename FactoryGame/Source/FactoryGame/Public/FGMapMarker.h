@@ -77,8 +77,14 @@ public:
 	UFUNCTION( BlueprintPure, Category = "Map" )
 	bool GetIsNewMarker() const { return mIsNewMarker; }
 
+	UFUNCTION( BlueprintPure, Category = "Map" )
+	AActor* GetHitActor() const { return mHitActor; }
+
 	bool mIsNewMarker;
 	FMapMarker mMapMarker;
+
+	UPROPERTY( Transient )
+	AActor* mHitActor;
 };
 
 

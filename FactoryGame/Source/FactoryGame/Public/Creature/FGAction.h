@@ -144,11 +144,11 @@ public:		// PUBLIC FUNC
 
 	/** Returns the pawn the action is being performed on. Can be used for playing montage etc. */
 	UFUNCTION(BlueprintPure, Category="Action")
-	FORCEINLINE APawn* GetPawn() const { return mPawn; }
+	FORCEINLINE APawn* GetPawn() const { return mPawn.Get(); }
 
 	/** Returns the controller that this action "belongs" to */
 	UFUNCTION(BlueprintPure, Category="Action")
-	FORCEINLINE AController* GetController() const { return mController; }
+	FORCEINLINE AController* GetController() const { return mController.Get(); }
 
 	UFUNCTION(BlueprintPure, Category="Action")
 	FORCEINLINE UFGAction* GetPreAction() const { return mPreAction; }
@@ -261,12 +261,12 @@ protected:	// PROTECTED MEMBERS
 	UFGAction* mPostAction = nullptr;
 
 	/** The pawn performing the action */
-	UPROPERTY(BlueprintGetter=GetPawn, Category="Action")
-	APawn* mPawn = nullptr;
+	UPROPERTY()
+	TWeakObjectPtr<APawn> mPawn = nullptr;
 
 	/** The Controller of the pawn performing the action */
-	UPROPERTY(BlueprintGetter=GetController, Category="Action")
-	AController* mController = nullptr;
+	UPROPERTY()
+	TWeakObjectPtr<AController> mController = nullptr;
 
 private:	// PRIVATE FUNC
 	void ClearTimers();

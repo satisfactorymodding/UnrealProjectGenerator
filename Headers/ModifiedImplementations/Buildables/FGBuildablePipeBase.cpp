@@ -7,6 +7,7 @@ void AFGBuildablePipeBase::GetLifetimeReplicatedProps(TArray< FLifetimeProperty 
 void AFGBuildablePipeBase::BeginPlay(){ }
 void AFGBuildablePipeBase::EndPlay(const EEndPlayReason::Type endPlayReason){ }
 int32 AFGBuildablePipeBase::GetDismantleRefundReturnsMultiplier() const{ return int32(); }
+bool AFGBuildablePipeBase::ShouldBeConsideredForBase_Implementation(){ return bool(); }
 void AFGBuildablePipeBase::Upgrade_Implementation(AActor* newActor){ }
 void AFGBuildablePipeBase::Dismantle_Implementation(){ }
 void AFGBuildablePipeBase::GainedSignificance_Implementation(){ }

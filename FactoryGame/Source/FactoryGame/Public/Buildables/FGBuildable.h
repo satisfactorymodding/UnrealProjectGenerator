@@ -340,7 +340,6 @@ public:
 	UFUNCTION( BlueprintNativeEvent, Category = "Buildable" )
 	bool ShouldBeConsideredForBase();
 
-	virtual bool ShouldBeConsideredForBase_Implementation();
 #if WITH_EDITOR
 	/** Sets the display name for this buildable. Only for editor use */
 	UFUNCTION( BlueprintCallable, Category = "Editor|Buildable" )

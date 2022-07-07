@@ -58,6 +58,7 @@ void AFGPlayerState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLi
 	DOREPLIFETIME(AFGPlayerState, mCollapsedItemCategories);
 	DOREPLIFETIME(AFGPlayerState, mFilteredOutMapTypes);
 	DOREPLIFETIME(AFGPlayerState, mFilteredOutCompassTypes);
+	DOREPLIFETIME(AFGPlayerState, mCollapsedMapCategories);
 	DOREPLIFETIME(AFGPlayerState, mNumObservedInventorySlots);
 	DOREPLIFETIME(AFGPlayerState, mFavoriteShopSchematics);
 	DOREPLIFETIME(AFGPlayerState, mPrivateTodoList);
@@ -121,6 +122,8 @@ bool AFGPlayerState::Server_SetMapFilter_Validate(ERepresentationType representa
 void AFGPlayerState::SetCompassFilter(ERepresentationType representationType, bool visible){ }
 void AFGPlayerState::Server_SetCompassFilter_Implementation(ERepresentationType representationType, bool visible){ }
 bool AFGPlayerState::Server_SetCompassFilter_Validate(ERepresentationType representationType, bool visible){ return bool(); }
+void AFGPlayerState::SetMapCategoryCollapsed(ERepresentationType mapCategory, bool collapsed){ }
+void AFGPlayerState::Server_SetMapCategoryCollapsed_Implementation(ERepresentationType mapCategory, bool collapsed){ }
 void AFGPlayerState::UpdateOwningPawnActorRepresentation() const{ }
 void AFGPlayerState::DumpHotbars(){ }
 void AFGPlayerState::UpdateNumObservedInventorySlots(){ }

@@ -413,6 +413,22 @@ public:
 	UFUNCTION( Server, Reliable, WithValidation, Category = "FactoryGame|Representation" )
 	void Server_SetCompassFilter( ERepresentationType representationType, bool visible );
 
+	/** Get the map categories that the user have collapsed in map widget */
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Representation" )
+	FORCEINLINE TArray< ERepresentationType > GetCollapsedMapCategories() const { return mCollapsedMapCategories; }
+	
+	/** Get if a map category is collapsed in the map widget */
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Representation" )
+	FORCEINLINE bool GetMapCategoryCollapsed( ERepresentationType mapCategory ) const { return mCollapsedMapCategories.Contains( mapCategory ); }
+
+	/** Set if a map category is collapsed in the map widget */
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Representation" )
+	void SetMapCategoryCollapsed( ERepresentationType mapCategory, bool collapsed );
+
+	/** Let server set if a map category is collapsed in the map widget */
+	UFUNCTION( Server, Reliable, Category = "FactoryGame|Representation" )
+	void Server_SetMapCategoryCollapsed( ERepresentationType mapCategory, bool collapsed );
+
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Color" )
 	FORCEINLINE FLinearColor GetPingColor() const { return mSlotData.PingColor; }
 	
@@ -697,6 +713,10 @@ private:
 	
 	UPROPERTY( SaveGame, Replicated )
 	TArray< ERepresentationType > mFilteredOutCompassTypes;
+
+	/** The map categories that the user have collapsed in the map widget */
+	UPROPERTY( SaveGame, Replicated )
+	TArray< ERepresentationType > mCollapsedMapCategories;
 
 	/** The last selected category in the resource sink shop so we can open the shop at the same category later */
 	UPROPERTY( Transient )

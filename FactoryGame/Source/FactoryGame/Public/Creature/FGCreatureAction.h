@@ -70,7 +70,7 @@ public:
 
 	virtual bool IsTickable() const override;
 
-	FORCEINLINE class AActor* GetCurrentTarget() const { return mCurrentTarget; }
+	FORCEINLINE class AActor* GetCurrentTarget() const { return mCurrentTarget.Get(); }
 
 	FORCEINLINE bool ShouldCancelOnStateChange() const { return mCancelsOnStateChange; }
 
@@ -101,19 +101,19 @@ protected:
 
 	/** The controller of the creature we belong to. */
 	UPROPERTY(BlueprintReadOnly, Category="Action")
-	class AFGCreatureController* mCreatureController;
+	TWeakObjectPtr<AFGCreatureController> mCreatureController;
 
 	/** The creature we belong to. */
 	UPROPERTY(BlueprintReadOnly, Category="Action")
-	class AFGCreature* mCreature;
+	TWeakObjectPtr<AFGCreature> mCreature;
 
 	/** The character movement component of our creature. */
 	UPROPERTY( BlueprintReadOnly, Category="Action" )
-	class UCharacterMovementComponent* mCharacterMovement;
+	TWeakObjectPtr<UCharacterMovementComponent> mCharacterMovement;
 
 	/** Cached value of the current target of the creature controller. */
 	UPROPERTY(BlueprintReadOnly, Category="Action")
-	class AActor* mCurrentTarget;
+	TWeakObjectPtr<AActor> mCurrentTarget;
 	
 	/** Target requirements of the action. */
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="General Settings")

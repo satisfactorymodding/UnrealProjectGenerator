@@ -20,6 +20,7 @@ struct FACTORYGAME_API FSpawnData
 		SpawnLocation( FVector( 0, 0, 0 ) ),
 		Creature( nullptr ),
 		WasKilled( false ),
+		NumTimesKilled( 0 ),
 		KilledOnDayNr( -1 ),
 		WaitingForSpawnLocation( false ),
 		SpawnLocationWaitTimeStamp( -1.0f )
@@ -36,6 +37,10 @@ struct FACTORYGAME_API FSpawnData
 	/** We save if the creature was killed so we know if we want to respawn the creature when in range of the spawner */
 	UPROPERTY( SaveGame )
 	bool WasKilled;
+
+	/** How many times this creature has been killed. */
+	UPROPERTY( SaveGame )
+	int32 NumTimesKilled;
 
 	/** What day we were killed ( -1 if we haven't been killed yet ) */
 	UPROPERTY( SaveGame )
