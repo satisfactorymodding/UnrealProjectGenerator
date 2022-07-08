@@ -466,13 +466,13 @@ DEFINE_LOG_CATEGORY(LogPoolSystem);"
 @"  out_schematics = mSchematics;"  
             },
             { "UFGSchematic::GetPrimaryAssetId",
-@"  return FPrimaryAssetId(StaticClass()->GetFName(), GetFName());"
+@"  return FPrimaryAssetId(StaticClass()->GetFName(), FPackageName::GetShortFName(GetOutermost()->GetFName()));"
             },
             { "UFGResearchTree::GetPrimaryAssetId",
-@"  return FPrimaryAssetId(StaticClass()->GetFName(), GetFName());"
+@"  return FPrimaryAssetId(StaticClass()->GetFName(), FPackageName::GetShortFName(GetOutermost()->GetFName()));"
             },
             { "UFGResearchRecipe::GetPrimaryAssetId",
-@"  return FPrimaryAssetId(StaticClass()->GetFName(), GetFName());"
+@"  return FPrimaryAssetId(StaticClass()->GetFName(), FPackageName::GetShortFName(GetOutermost()->GetFName()));"
             },
             { "FFluidBox::Serialize",
 @"	if (ar.ArIsSaveGame) {
