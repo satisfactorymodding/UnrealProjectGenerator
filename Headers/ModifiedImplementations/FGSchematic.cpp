@@ -16,7 +16,9 @@ void UFGSchematic::MigrateDataToNewDependencySystem(){ }
 UFGSchematic::UFGSchematic(){ }
 void UFGSchematic::PostLoad(){ Super::PostLoad(); }
 void UFGSchematic::Serialize(FArchive& ar){ Super::Serialize(ar); }
-FPrimaryAssetId UFGSchematic::GetPrimaryAssetId() const{ return FPrimaryAssetId(); }
+FPrimaryAssetId UFGSchematic::GetPrimaryAssetId() const {
+  return FPrimaryAssetId(StaticClass()->GetFName(), GetFName());
+}
 ESchematicType UFGSchematic::GetType(TSubclassOf< UFGSchematic > inClass) {
 	if (inClass)
 		return inClass.GetDefaultObject()->mType;
