@@ -465,6 +465,15 @@ DEFINE_LOG_CATEGORY(LogPoolSystem);"
             { "UFGSchematicPurchasedDependency::GetSchematics",
 @"  out_schematics = mSchematics;"  
             },
+            { "UFGSchematic::GetPrimaryAssetId",
+@"  return FPrimaryAssetId(StaticClass()->GetFName(), GetFName());"
+            },
+            { "UFGResearchTree::GetPrimaryAssetId",
+@"  return FPrimaryAssetId(StaticClass()->GetFName(), GetFName());"
+            },
+            { "UFGResearchRecipe::GetPrimaryAssetId",
+@"  return FPrimaryAssetId(StaticClass()->GetFName(), GetFName());"
+            },
             { "FFluidBox::Serialize",
 @"	if (ar.ArIsSaveGame) {
 
