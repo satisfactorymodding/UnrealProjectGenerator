@@ -7,6 +7,8 @@ FString FResearchRecipeReward::ToString() const{ return FString(); }
 void UFGResearchRecipe::PreSave(const  ITargetPlatform* targetPlatform){ }
 void UFGResearchRecipe::UpdateAssetBundleData(){ }
 #endif 
+#if WITH_EDITORONLY_DATA
+#endif 
 UFGResearchRecipe::UFGResearchRecipe(){ }
 FResearchRecipeReward UFGResearchRecipe::GetResearcResults(TSubclassOf<UFGResearchRecipe> inClass){ return FResearchRecipeReward(); }
 float UFGResearchRecipe::GetResearchTime(TSubclassOf<UFGResearchRecipe> inClass){ return float(); }

@@ -2,10 +2,15 @@
 
 #include "FGCreature.h"
 
+TAutoConsoleVariable<int32> CVarCreatureDebug(TEXT("CVarCreatureDebug"), 0, TEXT(""));
+TAutoConsoleVariable<int32> CVarCreatureVisionDebug(TEXT("CVarCreatureVisionDebug"), 0, TEXT(""));
 void UFGCreatureInterruptTest::Initialize(APawn* pawn, AController* controller, UFGAction* ownerAction){ }
 void UFGCreatureInterruptTest::Initialize(AFGCreature* creature, AFGCreatureController* controller){ }
 #if WITH_EDITOR
 void AFGCreature::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent){ Super::PostEditChangeProperty(PropertyChangedEvent); }
+bool AFGCreature::IsSelectedInEditor() const{ return bool(); }
+#endif 
+#ifdef WITH_EDITOR
 #endif 
 AFGCreature::AFGCreature(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
 void AFGCreature::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
@@ -19,12 +24,13 @@ void AFGCreature::UnPossessed(){ }
 void AFGCreature::BeginDestroy(){ Super::BeginDestroy(); }
 void AFGCreature::GetActorEyesViewPoint(FVector& OutLocation, FRotator& OutRotation) const{ }
 void AFGCreature::RenameActionArrayEntries(){ }
+void AFGCreature::UpdateCreatureNavAgentProps(){ }
 bool AFGCreature::IsReadyToDespawn() const{ return bool(); }
 bool AFGCreature::ShouldSave_Implementation() const{ return bool(); }
 void AFGCreature::Died(AActor* died){ }
 FVector AFGCreature::GetPawnViewLocation() const{ return FVector(); }
 UFGCreatureMovementComponent* AFGCreature::GetCreatureCharacterMovement() const{ return nullptr; }
-bool AFGCreature::GetAdjustedNavAgentProps(FNavAgentProperties& out_navAgentProps) const{ return bool(); }
+bool AFGCreature::GetAdjustedNavAgentProps(FNavAgentProperties& out_navAgentProps, UWorld* worldContext) const{ return bool(); }
 void AFGCreature::ConfigureArachnophobiaMode_Implementation(bool isArachnophobiaMode){ }
 void AFGCreature::OnArachnophobiaModeChanged(bool isArachnophobiaMode){ }
 void AFGCreature::Multicast_ConsumeItem_Implementation(TSubclassOf<  UFGItemDescriptor > itemDescriptor, int32 amount){ }
@@ -33,6 +39,7 @@ void AFGCreature::SpawnDeathItem_Implementation(){ }
 UBehaviorTree* AFGCreature::GetOverrideBehaviorTreeForState(ECreatureState state) const{ return nullptr; }
 bool AFGCreature::HasOverriddenBehaviorState(ECreatureState State) const{ return bool(); }
 bool AFGCreature::IsCreatureStateEnabled(ECreatureState State) const{ return bool(); }
+float AFGCreature::GetRandomRoamingWaitTime() const{ return float(); }
 TArray<UFGAction*> AFGCreature::GetAvailableActionsForState(ECreatureState state){ return TArray<UFGAction*>(); }
 TArray<UFGAction*> AFGCreature::GetAllCreatureActions() const{ return TArray<UFGAction*>(); }
 void AFGCreature::ClearKillOrphanTimer(){ }

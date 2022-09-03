@@ -2,6 +2,8 @@
 
 #include "FGDecorationTemplate.h"
 
+#if WITH_EDITORONLY_DATA
+#endif 
 AFGDecorationTemplate::AFGDecorationTemplate(){ }
 TArray< class UFGPoolableProxyComponentBase* > AFGDecorationTemplate::GetPoolAbleComponentsFromSubclass(const UClass* InActorClass){ return TArray<class UFGPoolableProxyComponentBase*>(); }
 TArray< class USceneComponent* > AFGDecorationTemplate::GetSignificantComponentsFromSubclass(const UClass* InActorClass){ return TArray<class USceneComponent*>(); }

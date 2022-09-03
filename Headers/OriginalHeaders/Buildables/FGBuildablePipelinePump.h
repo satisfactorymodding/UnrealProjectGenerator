@@ -10,7 +10,7 @@
  * Struct containing quantized fluid content for a more optimized replication.
  */
 USTRUCT()
-struct FQuantizedPumpIndicatorData
+struct FACTORYGAME_API FQuantizedPumpIndicatorData
 {
 	GENERATED_BODY()
 public:

@@ -48,6 +48,6 @@ void AFGCharacterBase::DoRagdoll_Internal(){ }
 void AFGCharacterBase::TryGetUpFromRagdoll(){ }
 void AFGCharacterBase::SyncRagdoll(){ }
 void AFGCharacterBase::SetupDestroyTimer(){ }
-void AFGCharacterBase::OnRep_IsRagdolled(){ }
 void AFGCharacterBase::OnRep_IsPossessed(){ }
+void AFGCharacterBase::OnRep_IsRagdolled(){ }
 FVector AFGCharacterBase::FindSafePlaceToGetUp(){ return FVector(); }

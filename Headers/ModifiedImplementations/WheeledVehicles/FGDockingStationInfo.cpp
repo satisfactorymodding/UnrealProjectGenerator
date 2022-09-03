@@ -23,8 +23,10 @@ EFogOfWarRevealType AFGDockingStationInfo::GetActorFogOfWarRevealType(){ return 
 float AFGDockingStationInfo::GetActorFogOfWarRevealRadius(){ return float(); }
 ECompassViewDistance AFGDockingStationInfo::GetActorCompassViewDistance(){ return ECompassViewDistance(); }
 void AFGDockingStationInfo::SetActorCompassViewDistance(ECompassViewDistance compassViewDistance){ }
+void AFGDockingStationInfo::SetBuildingTag_Implementation(const FString& buildingTag){ }
 void AFGDockingStationInfo::BeginPlay(){ }
 void AFGDockingStationInfo::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void AFGDockingStationInfo::Init( AFGBuildableDockingStation* station){ }
 void AFGDockingStationInfo::SetStationStatus(EDockingStationStatus status){ }
 void AFGDockingStationInfo::OnRep_Status(){ }
+void AFGDockingStationInfo::OnRep_BuildingTag(){ }

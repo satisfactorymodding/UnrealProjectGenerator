@@ -9,6 +9,8 @@ EDataValidationResult UFGResearchTree::IsDataValid(TArray<FText>& ValidationErro
 #if WITH_EDITOR
 void UFGResearchTree::UpdateAssetBundleData(){ }
 #endif 
+#if WITH_EDITORONLY_DATA
+#endif 
 void UFGResearchTree::PostLoad(){ Super::PostLoad(); }
 FPrimaryAssetId UFGResearchTree::GetPrimaryAssetId() const {
   return FPrimaryAssetId(StaticClass()->GetFName(), FPackageName::GetShortFName(GetOutermost()->GetFName()));

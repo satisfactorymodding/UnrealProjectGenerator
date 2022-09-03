@@ -3,3 +3,4 @@
 #include "FGBuildablePillar.h"
 
 AFGBuildablePillar::AFGBuildablePillar(){ }
+void AFGBuildablePillar::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }

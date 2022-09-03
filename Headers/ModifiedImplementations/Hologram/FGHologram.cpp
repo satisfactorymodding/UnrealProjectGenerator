@@ -2,6 +2,7 @@
 
 #include "FGHologram.h"
 
+TAutoConsoleVariable<int32> CVarHologramDebug(TEXT("CVarHologramDebug"), 0, TEXT(""));
 AFGHologram::AFGHologram(){ }
 void AFGHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 bool AFGHologram::IsNetRelevantFor(const AActor* RealViewer, const AActor* ViewTarget, const FVector& SrcLocation) const{ return bool(); }

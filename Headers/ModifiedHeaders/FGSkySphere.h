@@ -301,7 +301,8 @@ public:
 	
 	UFUNCTION( BlueprintPure )
 	static bool DoesWeatherEffectNeedOcclusion( const FWeatherChanceEntry& Type );
-	
+
+	UFUNCTION( BlueprintCallable )
 	void UpdateGlobalMaterialCollection();
 protected:
 #if WITH_EDITOR

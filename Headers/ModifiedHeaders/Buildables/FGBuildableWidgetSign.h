@@ -11,7 +11,7 @@
 #include "FGBuildableWidgetSign.generated.h"
 
 UCLASS()
-class UFGSignClipboardSettings : public UFGFactoryClipboardSettings
+class FACTORYGAME_API UFGSignClipboardSettings : public UFGFactoryClipboardSettings
 {
 	GENERATED_BODY()
 public:

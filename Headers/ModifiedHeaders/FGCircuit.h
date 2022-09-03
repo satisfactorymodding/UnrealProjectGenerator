@@ -135,6 +135,9 @@ private:
 	TArray< class AFGCharacterPlayer* > mInteractingPlayers;
 };
 
+/**
+ * Abstract groups for circuits logically working as a single circuit
+ */
 UCLASS( Abstract )
 class FACTORYGAME_API UFGCircuitGroup : public UObject
 {

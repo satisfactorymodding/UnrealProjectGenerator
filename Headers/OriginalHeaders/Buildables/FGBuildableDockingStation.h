@@ -256,9 +256,6 @@ public:
 
 	UPROPERTY( EditDefaultsOnly, Category = "Representation" )
 	class UTexture2D* mActorRepresentationTexture;
-
-	UPROPERTY( SaveGame, Replicated )
-	FText mMapText;
 	
 protected:
 	friend class AFGReplicationDetailActor_DockingStation;

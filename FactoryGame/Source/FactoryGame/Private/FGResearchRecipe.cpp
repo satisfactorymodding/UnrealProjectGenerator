@@ -7,6 +7,8 @@ FString FResearchRecipeReward::ToString() const{ return FString(); }
 void UFGResearchRecipe::PreSave(const  ITargetPlatform* targetPlatform){ }
 void UFGResearchRecipe::UpdateAssetBundleData(){ }
 #endif 
+#if WITH_EDITORONLY_DATA
+#endif 
 UFGResearchRecipe::UFGResearchRecipe() : Super() {
 	this->mIsRepeatable = false;
 	this->mRewardUsesDropPackage = false;

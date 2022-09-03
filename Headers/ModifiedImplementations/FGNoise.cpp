@@ -2,6 +2,7 @@
 
 #include "FGNoise.h"
 
+TAutoConsoleVariable<int32> CVarFGNoiseDebug(TEXT("CVarFGNoiseDebug"), 0, TEXT(""));
 UFGNoise::UFGNoise(){ }
 void UFGNoise::MakeNoiseOfType(TSubclassOf< UFGNoise > noiseClass, AActor* actor, const FVector& noiseLocation){ }
 void UFGNoise::MakeNoiseForActor(AActor* actor, const FVector& noiseLocation) const{ }

@@ -7,7 +7,7 @@
 #include "FGFactoryClipboard.generated.h"
 
 UCLASS( Blueprintable, Abstract )
-class UFGFactoryClipboardSettings : public UObject
+class FACTORYGAME_API UFGFactoryClipboardSettings : public UObject
 {
 	GENERATED_BODY()
 	

@@ -73,6 +73,16 @@ public:
     void Server_RemoveDecoratorSignificantComponents( AFGBuildable* actor, AFGPlayerController* controller );
 };
 
+USTRUCT()
+struct FCustomizationDescToRecipeData
+{
+	GENERATED_BODY()
+	UPROPERTY( EditDefaultsOnly )
+	TSoftClassPtr< UFGFactoryCustomizationDescriptor_Material > mMaterial;
+
+	UPROPERTY( EditDefaultsOnly )
+	TSoftClassPtr< class UFGRecipe > mRecipe;
+};
 
 
 /**
@@ -99,6 +109,7 @@ public:
 
 	// Begin UObject interface
 	virtual void Serialize( FArchive& ar ) override;
+	virtual void PostLoad() override;
 	// End UObject interface
 
 	// Begin AActor interface
@@ -129,6 +140,7 @@ public:
 	TSubclassOf< UFGFactoryCustomizationDescriptor_Skin > GetActiveSkin_Native();
 	TSubclassOf< UFGFactoryCustomizationDescriptor_Skin > GetActiveSkin_Implementation();
 	bool GetCanBeColored_Implementation();
+	bool GetCanBePatterned_Implementation();
 	virtual bool IsColorApplicationDeferred() { return false; }
 	virtual bool CanApplyDeferredColorToBuildable( FVector hitLocation, FVector hitNormal, TSubclassOf< class UFGFactoryCustomizationDescriptor_Swatch > swatch, APlayerController* playerController ) { return false; }
 	virtual void ApplyDeferredColorToBuildable( FVector hitLocation, TSubclassOf< class UFGFactoryCustomizationDescriptor_Swatch > swatch, APlayerController* playerController ) {};
@@ -481,6 +493,10 @@ protected:
 	void OnRep_CustomizationData();
 
 private:
+	// TODO @Ben modding support make this available in runtime.
+	/* Force add material to the material desc, editor only for now.*/
+	void ForceUpdateCustomizerMaterialToRecipeMapping( bool bTryToSave = false );
+	
 	/** Create a stat for the buildable */
 	void CreateFactoryStatID() const;
 
@@ -492,7 +508,6 @@ private:
 
 	/** Helper to verify the connection naming. */
 	bool CheckFactoryConnectionComponents( FString& out_message );
-
 
 	/** Let client see the highlight */
 	UFUNCTION()
@@ -533,6 +548,11 @@ public:
 	/** Delegate will trigger whenever the actor's use state has changed (Start, End) */
 	static FOnRegisteredPlayerChanged OnRegisterPlayerChange;
 
+#if WITH_EDITORONLY_DATA
+	UPROPERTY(EditDefaultsOnly, Category = "Customization Editor only")
+	TArray<FCustomizationDescToRecipeData> mAlternativeMaterialRecipes;
+#endif
+	
 protected:
 	//@todorefactor With meta = ( ShowOnlyInnerProperties ) it does not show and PrimaryActorTick seems to be all custom properties, so I moved to another category but could not expand.
 	/** Controls if we should receive Factory_Tick and how frequent. */
@@ -556,6 +576,10 @@ protected:
 	/** if true, then this buildable will accept swatches and patterns */
 	UPROPERTY( EditDefaultsOnly, Category = "Buildable" )
 	bool mAllowColoring;
+
+	/** Absolute override for whether patterns are allowed on this buildable. AllowColoring must also be true to allow. */
+	UPROPERTY( EditDefaultsOnly, Category = "Buildable" )
+	bool mAllowPatterning;
 
 	UPROPERTY( EditDefaultsOnly, Category = "Buildable" )
 	TSubclassOf< class UFGFactorySkinActorData > mFactorySkinClass;
@@ -672,6 +696,10 @@ protected:
 #if WITH_EDITOR
 	UFUNCTION(CallInEditor, Category="Buildable|OcclusionSystem")
 	void DebugDrawOcclusionBoxes();
+
+	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
+	virtual void PostEditChangeChainProperty(FPropertyChangedChainEvent& PropertyChangedEvent) override;
+
 #endif
 	
 	/** Caching the extent for use later */

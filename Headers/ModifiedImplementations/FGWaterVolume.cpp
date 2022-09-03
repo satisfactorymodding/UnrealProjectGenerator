@@ -8,6 +8,8 @@ void AFGWaterVolume::PreSave(const  ITargetPlatform* targetPlatform){ }
 void AFGWaterVolume::PostEditChangeProperty(FPropertyChangedEvent& propertyChangedEvent){ Super::PostEditChangeProperty(propertyChangedEvent); }
 void AFGWaterVolume::CheckForErrors(){ Super::CheckForErrors(); }
 #endif 
+#if WITH_EDITORONLY_DATA
+#endif 
 AFGWaterVolume::AFGWaterVolume(){ }
 void AFGWaterVolume::PostInitProperties(){ Super::PostInitProperties(); }
 void AFGWaterVolume::BeginPlay(){ }
@@ -27,6 +29,7 @@ void AFGWaterVolume::PostRegisterAllComponents(){ }
 void AFGWaterVolume::GetNavigationData(FNavigationRelevantData& Data) const{ }
 FBox AFGWaterVolume::GetNavigationBounds() const{ return FBox(); }
 void AFGWaterVolume::RebuildNavigationData(){ }
+bool AFGWaterVolume::IsNavigationRelevant() const{ return bool(); }
 void AFGWaterVolume::SetIsOccupied(bool occupied){ }
 bool AFGWaterVolume::IsOccupied() const{ return bool(); }
 bool AFGWaterVolume::CanBecomeOccupied() const{ return bool(); }

@@ -2,6 +2,7 @@
 
 #include "FGAction.h"
 
+TAutoConsoleVariable<int32> CVarActionDebug(TEXT("CVarActionDebug"), 0, TEXT(""));
 UFGAction::UFGAction(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
 void UFGAction::PostInitProperties(){ Super::PostInitProperties(); }
 bool UFGAction::CallRemoteFunction (UFunction * Function, void * Parms,  FOutParmRec * OutParms, FFrame * Stack){ return bool(); }
@@ -16,6 +17,7 @@ void UFGAction::PerformAction_Implementation(){ }
 void UFGAction::CancelAction_Implementation(){ }
 void UFGAction::ActionTick_Implementation(float DeltaTime){ }
 void UFGAction::FinishAction(bool ActionSuccess){ }
+void UFGAction::SetActionLastFinishTime(float finishTime){ }
 bool UFGAction::IsInCooldown() const{ return bool(); }
 bool UFGAction::HasAuthority() const{ return bool(); }
 void UFGAction::Tick(float DeltaTime){ }
@@ -35,4 +37,3 @@ void UFGAction::OnPreActionFinished(bool success){ }
 void UFGAction::InternalActionCleanup(bool actionSuccess){ }
 void UFGAction::ClearTimers(){ }
 void UFGAction::Multicast_RepActionState_Implementation(EFGActionState newState){ }
-void UFGAction::OnOuterControllerChanged(APawn* pawn, AController* controller){ }

@@ -11,6 +11,8 @@ void AFGAtmosphereVolume::PostEditChangeProperty(FPropertyChangedEvent& property
 void AFGAtmosphereVolume::MoveCurvesToBaseBiome(){ }
 void AFGAtmosphereVolume::CopyLegacyPropertiesToAsset(){ }
 #endif 
+#if WITH_EDITORONLY_DATA
+#endif 
 AFGAtmosphereVolume::AFGAtmosphereVolume(){ }
 void AFGAtmosphereVolume::BeginPlay(){ }
 void AFGAtmosphereVolume::PostLoad(){ Super::PostLoad(); }

@@ -84,13 +84,18 @@ public:
 	void AddResourceNodes( const TArray< class AFGResourceNodeBase* >& resourceNodes );
 	void ClearScannedResources();
 	
-	void InitScanForObjects();
+	void ScanForObjects();
 	void TryRemovePickup( AActor* removedActor );
 	void TryAddCreatureSpawner( class AFGCreatureSpawner* creatureSpawner );
 	void TryRemoveCreatureSpawner( class AFGCreatureSpawner* creatureSpawner );
 	void TryRemoveDropPod( class AFGDropPod* dropPod );
 
+	/** Called when unlock subsystem unlocks a new scannable object. Triggers a scan for objects */
+	UFUNCTION()
+	void OnNewScannableObjectUnlocked( TSubclassOf< class UFGItemDescriptor > itemDescriptor );
+
 private:
+	TArray<TSubclassOf<UFGItemDescriptor>> GetAvailableScannableDescriptors() const;
 	bool IsInRadarTowerRange( const FVector& location ) const;
 	void UpdateRepresentationValues();
 
@@ -101,7 +106,8 @@ protected:
 	float mRevealRadius;
 
 	/** The descriptors we would like to scan for */
-	UPROPERTY( EditDefaultsOnly, Category = "Scanner" )
+	UE_DEPRECATED( 4.26, "Handled by the unlock subssytem from now on" ) // @todok2 Remove when we know the new system works
+	UPROPERTY( VisibleDefaultsOnly, Category = "Deprecated" )
 	TArray< TSubclassOf< class UFGItemDescriptor > > mScannableDescriptors;
 
 private:

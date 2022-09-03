@@ -2,6 +2,7 @@
 
 #include "FGWeapon.h"
 
+TAutoConsoleVariable<int32> CVarWeaponDebug(TEXT("CVarWeaponDebug"), 0, TEXT(""));
 void AFGWeapon::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 bool AFGWeapon::ReplicateSubobjects( UActorChannel* channel,  FOutBunch* bunch, FReplicationFlags* repFlags){ return bool(); }
 AFGWeapon::AFGWeapon(){ }

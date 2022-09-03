@@ -22,6 +22,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams( FOnBestUseableActorUpdated, bool, 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnReviveStarted, bool, isReviver );
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnReviveEnded, bool, isReviveCompleted );
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnPickupToCollectStateUpdated, bool, isActive );
+DECLARE_DELEGATE_OneParam( FOnEquipmentSpawned, class AFGEquipment* );
 
 UENUM( BlueprintType )
 enum class ECameraMode : uint8
@@ -125,7 +126,6 @@ struct FACTORYGAME_API FFGCreaturePlayerPerceptionInfo
 	FFGCreaturePlayerPerceptionInfo()
 		: Creature( nullptr )
 		, AggroLevel( 0.0f )
-		, VisibilityLevel( 0.0f )
 		, HasCalledInfoAddedEvent( false )
 	{}
 
@@ -136,10 +136,6 @@ struct FACTORYGAME_API FFGCreaturePlayerPerceptionInfo
 	/** Value representing the current aggro level of the creature. */
 	UPROPERTY( BlueprintReadOnly )
 	float AggroLevel;
-
-	/** Value representing the visibility level of the creature. */
-	UPROPERTY( BlueprintReadOnly )
-	float VisibilityLevel;
 
 private:
 	friend class AFGCharacterPlayer;
@@ -508,8 +504,9 @@ public:
 
 	/**
 	 * Picks up a boom box. Only works as long as the player has a free hand slot, so the boombox gets equipped right away. 
-	 */ 
-	void PickUpBoomBox( class AFGBoomBox* boomBox );
+	 */
+	UFUNCTION( BlueprintCallable )
+	void PickUpBoomBox( class AFGBoomBoxPlayer* boomBox );
 
 	//** The target of a pickup, this is only set if the pickup has a collection time */
 	void SetPickupToCollect( class AFGItemPickup* itemPickup );
@@ -932,6 +929,9 @@ public:
 	UPROPERTY( BlueprintAssignable, Category = "UI" )
 	FOnCreaturePerceptionStateChanged mOnCreaturePerceptionStateChanged;
 
+	/** Called jsut after a new equipment actor has been spawned, before it eventually gets equipped. */
+	FOnEquipmentSpawned mOnEquipmentSpawned;
+
 	/** The best usable actor nearby. */
 	UFUNCTION( BlueprintPure, Category = "Use" )
 	FORCEINLINE	class AActor* GetBestUsableActor() { return mBestUsableActor; }
@@ -951,6 +951,12 @@ public:
 	inline bool IsTryingToUnslide(){ return mTryToUnSlide; }
 
 	bool IsInPumpiMode();
+
+	/** Update name and color on player name widget */
+	UFUNCTION( BlueprintCallable, Category = "Player Name" )
+	void UpdatePlayerNameWidget();
+
+	void Native_OnPlayerColorDataUpdated();
 private:
 	/**
 	 * Spawn a new equipment.
@@ -1005,7 +1011,7 @@ private:
 	UFUNCTION( Reliable, Server, WithValidation )
 	void Server_PickUpItem( class AFGItemPickup* itemPickup );
 	UFUNCTION( Reliable, Server )
-	void Server_PickUpBoomBox( class AFGBoomBox* boomBox );
+	void Server_PickUpBoomBoxPlayer( class AFGBoomBoxPlayer* boomBox );
 
 	UFUNCTION( Client, Reliable )
 	void Client_OnPerceivingCreatureStateChange( AFGCreature* creature, ECreatureState newState );
@@ -1051,6 +1057,9 @@ private:
 
 	/** Check if we have items picked up that isn't registered as picked up. Fixes issues on old saves before we saved picked up items */
 	void CheckItemPickedUp();
+	
+	virtual void OnRep_IsPossessed() override;
+	virtual void OnRep_PlayerState() override;
 
 public:
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
@@ -1069,6 +1078,10 @@ protected:
 	/** Pawn mesh: 3rd person view */
 	UPROPERTY( VisibleDefaultsOnly, Category = Mesh )
 	class USkeletalMeshComponent* mMesh3P;
+
+	/** The widget component used to show the players name */
+	UPROPERTY( VisibleAnywhere, Category = "Player Name" )
+	class UWidgetComponent* mPlayerNameWidgetComponent;
 
 	/** As we have no foliage actor to actually put pickup code in, we use this actor as a proxy */
 	UPROPERTY( EditDefaultsOnly, Category = "Use" )
@@ -1473,4 +1486,9 @@ private:
 	int32 mHolsteredEquipmentIndex = INDEX_NONE;
 
 	TSet< EEquipmentSlot > mQueuedEquipmentChangedInSlotNotifies;
+
+	/** The player name of the last logged in player that possessed this pawn */
+	UPROPERTY( SaveGame, Replicated )
+	FString mCachedPlayerName;
+	
 };

@@ -13,7 +13,7 @@ enum class ECreatureState : uint8;
 
 /** Used to accumulate a float value for a creature when it perceives a stimulus. */
 UCLASS( Blueprintable, BlueprintType, Abstract, DefaultToInstanced, EditInlineNew )
-class UFGStimulusAccumulator : public UObject
+class FACTORYGAME_API UFGStimulusAccumulator : public UObject
 {
 	GENERATED_BODY()
 public:
@@ -55,7 +55,7 @@ protected:
 
 /** Stimulus accumulator for noise. */
 UCLASS( Blueprintable, BlueprintType, DefaultToInstanced, EditInlineNew )
-class UFGStimulusAccumulatorNoise : public UFGStimulusAccumulator
+class FACTORYGAME_API UFGStimulusAccumulatorNoise : public UFGStimulusAccumulator
 {
 	GENERATED_BODY()
 public:
@@ -71,7 +71,7 @@ protected:
 
 /** Stimulus accumulator for senses. */
 UCLASS( Blueprintable, BlueprintType, DefaultToInstanced, EditInlineNew )
-class UFGStimulusAccumulatorSense : public UFGStimulusAccumulator
+class FACTORYGAME_API UFGStimulusAccumulatorSense : public UFGStimulusAccumulator
 {
 	GENERATED_BODY()
 public:

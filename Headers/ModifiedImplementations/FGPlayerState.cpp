@@ -18,7 +18,7 @@ void AFGPlayerState::PostLoadGame_Implementation(int32 saveVersion, int32 gameVe
 void AFGPlayerState::GatherDependencies_Implementation(TArray< UObject* >& out_dependentObjects){ }
 bool AFGPlayerState::NeedTransform_Implementation(){ return bool(); }
 bool AFGPlayerState::ShouldSave_Implementation() const{ return bool(); }
-void AFGPlayerState::SetSlotData(FSlotData slotData){ }
+void AFGPlayerState::SetPlayerColorData(FPlayerColorData slotData){ }
 FString AFGPlayerState::GetUserName(){ return FString(); }
 FString AFGPlayerState::GetUserID(){ return FString(); }
 FUniqueNetIdRepl AFGPlayerState::GetUniqeNetId(){ return FUniqueNetIdRepl(); }
@@ -105,6 +105,7 @@ void AFGPlayerState::Native_OnFactoryClipboardCopied(UObject* object,  UFGFactor
 void AFGPlayerState::Native_OnFactoryClipboardPasted(UObject* object,  UFGFactoryClipboardSettings* factoryClipboard){ }
 void AFGPlayerState::OnRep_HotbarShortcuts(){ }
 void AFGPlayerState::OnRep_CurrentHotbarIndex(){ }
-void AFGPlayerState::OnRep_SlotData(){ }
+void AFGPlayerState::OnRep_PlayerColorData(){ }
 void AFGPlayerState::Server_UpdateNumObservedInventorySlots_Implementation(){ }
 bool AFGPlayerState::Server_UpdateNumObservedInventorySlots_Validate(){ return bool(); }
+void AFGPlayerState::Native_OnPlayerColorDataUpdated(){ }

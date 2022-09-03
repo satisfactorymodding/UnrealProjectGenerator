@@ -112,6 +112,7 @@ public:
     static AFGWorldGridSubsystem* Get( UObject* worldContext );
 
 	void UpdateCellContainingBuildable( class AFGBuildable* pBuildable );
+	void UpdateCellContainingLocation( const FVector& location );
 
 	FORCEINLINE FIntPoint GetWorldGridCoordinatesForLocation( const FVector& WorldLocation ) const;
 
