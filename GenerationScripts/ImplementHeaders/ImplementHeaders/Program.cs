@@ -623,7 +623,26 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
             {
                 InlineImplementedFunctions.Add(match.Groups[2].Value);
             }
-            foreach(Match match in Regex.Matches(fileContents, @"^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?[^{]*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match class/struct definition
+            foreach (Match match in Regex.Matches(fileContents, @"^extern\s+TAutoConsoleVariable\s*<\s*(.+?)\s*>\s*(.+?);", RegexOptions.Multiline))
+            {
+                string type = match.Groups[1].Value;
+                string name = match.Groups[2].Value;
+                string defaultValue;
+                switch(type)
+                {
+                    case "int32":
+                    case "float":
+                        defaultValue = "0";
+                        break;
+                    case "FString":
+                        defaultValue = "TEXT(\"\")";
+                        break;
+                    default:
+                        throw new Exception($"Unknown TAutoConsoleVariable type {type}");
+                }
+                implementations.Add($"TAutoConsoleVariable<{type}> {name}(TEXT(\"{name}\"), {defaultValue}, TEXT(\"\"));");
+            }
+            foreach (Match match in Regex.Matches(fileContents, @"^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?[^{]*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match class/struct definition
             {
                 string FGAPI = match.Groups[3].Value;
                 string className = match.Groups[4].Value;
