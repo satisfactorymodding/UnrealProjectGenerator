@@ -697,7 +697,7 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
             classContents = Regex.Replace(classContents, @"^\s*DEPRECATED ?\( ?(?:.|\s)*?\)", "", RegexOptions.Multiline); // fix for DEPRECATED... macros being matched
 
             // Implement with #if ... and delete it (fixes issues and requires less manual changes in the end)
-            foreach (Match ifMacro in Regex.Matches(classContents, @"\s*#if(def)? (.*?)\n((?:.|\n)*?)\n\s*#endif(.*)"))
+            foreach (Match ifMacro in Regex.Matches(classContents, @"\s*#if(def)?\s+(.*?)\n(?:((?:.|\n)*?)\n)??\s*#endif(.*)"))
             {
                 string ifContents = ifMacro.Groups[3].Value;
                 implementations.Add($"#if{ifMacro.Groups[1].Value} {ifMacro.Groups[2].Value.Trim()}");
