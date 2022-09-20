@@ -25,6 +25,7 @@ void UFGBoomBoxRemoteCallObject::Server_StopNow_Implementation(AFGBoomBoxPlayer*
 void UFGBoomBoxRemoteCallObject::Server_NextNow_Implementation(AFGBoomBoxPlayer* player){ }
 void UFGBoomBoxRemoteCallObject::Server_PrevNow_Implementation(AFGBoomBoxPlayer* player){ }
 void UFGBoomBoxRemoteCallObject::Server_FireTurboBassNow_Implementation(AFGBoomBoxPlayer* player){ }
+void UFGBoomBoxRemoteCallObject::Server_SetRepeatMode_Implementation(AFGBoomBoxPlayer* player, EBoomBoxRepeatMode repeatMode){ }
 void UFGBoomBoxRemoteCallObject::Server_SyncPlayerStateRequest_Implementation( AFGBoomBoxPlayer* player, float clientTimestamp){ }
 void UFGBoomBoxRemoteCallObject::Client_SyncPlayerState_Implementation( AFGBoomBoxPlayer* player, FBoomBoxPlayerState state, float timestamp){ }
 AFGBoomBoxPlayer::AFGBoomBoxPlayer() : Super() {
@@ -58,6 +59,7 @@ AFGBoomBoxPlayer::AFGBoomBoxPlayer() : Super() {
 	this->mState.mPlaybackState = EBoomboxPlaybackState::EStopped;
 	this->mState.mPlaybackSuspended = false;
 	this->mMode = EBoomBoxMode::Undefined;
+	this->mRepeatMode = EBoomBoxRepeatMode::RepeatTape;
 	this->mEquipmentActor = nullptr;
 	this->mNextTape = nullptr;
 	this->PrimaryActorTick.TickGroup = ETickingGroup::TG_PrePhysics;
@@ -81,6 +83,8 @@ void AFGBoomBoxPlayer::BeginStopSequence(AFGCharacterPlayer* instigatorCharacter
 void AFGBoomBoxPlayer::BeginTurboBassSequence(AFGCharacterPlayer* instigatorCharacter){ }
 void AFGBoomBoxPlayer::SetVolumeNormalized(float volume, AFGCharacterPlayer* instigatorCharacter){ }
 void AFGBoomBoxPlayer::PutDown(const FTransform& transform){ }
+void AFGBoomBoxPlayer::SetRepeatMode(EBoomBoxRepeatMode repeatMode, AFGCharacterPlayer* instigatorCharacter){ }
+EBoomBoxRepeatMode AFGBoomBoxPlayer::GetRepeatMode() const{ return EBoomBoxRepeatMode(); }
 bool AFGBoomBoxPlayer::GetCharacterLookAtTransform(FTransform& out_Transform) const{ return bool(); }
 bool AFGBoomBoxPlayer::GetCharacterNearbyTransform(FTransform& out_Transform) const{ return bool(); }
 void AFGBoomBoxPlayer::RegisterStateListener(TScriptInterface<class IFGBoomboxListenerInterface> stateListener){ }
@@ -94,8 +98,10 @@ void AFGBoomBoxPlayer::Tick(float DeltaTime){ }
 void AFGBoomBoxPlayer::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 	DOREPLIFETIME(AFGBoomBoxPlayer, mMode);
+	DOREPLIFETIME(AFGBoomBoxPlayer, mRepeatMode);
 }
 void AFGBoomBoxPlayer::OnModeChanged_Implementation(){ }
+void AFGBoomBoxPlayer::OnRep_RepeatMode(){ }
 void AFGBoomBoxPlayer::Multicast_SetAudioVolume_Implementation(float normalizedVolume){ }
 void AFGBoomBoxPlayer::SuspendPlayback(){ }
 void AFGBoomBoxPlayer::ResumePlayback(){ }
@@ -123,6 +129,7 @@ void AFGBoomBoxPlayer::ApplyTurboBassGameplayEffects( AFGCharacterPlayer* charac
 void AFGBoomBoxPlayer::SetAudioVolumeLocally(float normalizedVolume, bool notifyListeners){ }
 UMaterialInterface* AFGBoomBoxPlayer::GetDefaultTapeMaterial(){ return nullptr; }
 void AFGBoomBoxPlayer::BeginPlay(){ }
+void AFGBoomBoxPlayer::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void AFGBoomBoxPlayer::OnPawnPossessed( APawn* pawn,  AController* controller){ }
 void AFGBoomBoxPlayer::OnceClientSubsystemsAreReady(){ }
 void AFGBoomBoxPlayer::SongFinished(EAkCallbackType cbType, UAkCallbackInfo* cbInfo){ }

@@ -9,6 +9,8 @@ UFGDamageType::UFGDamageType(const FObjectInitializer& ObjectInitializer) : Supe
 	this->mShouldDamageDestructible = false;
 	this->mDamageAmount = 1.0;
 	this->mAlwaysCauseStun = false;
+	this->DamageImpulse = 0.0;
+	this->DestructibleImpulse = 0.0;
 }
 void UFGDamageType::ProcessDamage(const FHitResult& hitResult,  AController* instigator, AActor* damageCauser, float damageAmount, TArray<AActor*> ignoredActors){ }
 void UFGDamageType::SpawnEffects(const FHitResult& hitResult, AActor* outer){ }

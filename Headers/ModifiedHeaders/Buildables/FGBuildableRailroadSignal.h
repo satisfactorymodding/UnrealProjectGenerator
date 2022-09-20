@@ -27,6 +27,7 @@ public:
 
 	// Begin FGBuildable
 	virtual void OnBuildEffectFinished() override;
+	virtual bool ShouldBeConsideredForBase_Implementation() override { return false; }
 	// End FGBuildable
 
 	// Begin SaveInterface

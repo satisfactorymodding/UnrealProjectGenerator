@@ -113,6 +113,10 @@ public:
 	UFUNCTION( exec, CheatBoard, Category = "Player/Camera" )
 	virtual bool PlayerNoClipModeOnFly_Get();
 
+	/** Locally update all player nametags */
+	UFUNCTION( exec, CheatBoard, category = "Player" )
+	void UpdatePlayerNametags();
+
 	UFUNCTION( exec )
 	virtual void ClearGiveItemPopularList();
 	
@@ -690,7 +694,7 @@ public:
 	void Server_MarkTrackGraphsForRebuild();
 	UFUNCTION( exec )
 	void MarkTrackGraphsForRebuild();
-
+	
 	UFUNCTION( exec )
 	void RunHardwareBenchmark(int32 WorkScale = 10, float CPUMultiplier = 1.0f, float GPUMultiplier = 1.0f);
 

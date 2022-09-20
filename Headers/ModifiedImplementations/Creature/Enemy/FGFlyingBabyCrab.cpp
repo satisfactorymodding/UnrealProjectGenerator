@@ -6,3 +6,4 @@ AFGFlyingBabyCrab::AFGFlyingBabyCrab(){ }
 void AFGFlyingBabyCrab::BeginPlay(){ }
 void AFGFlyingBabyCrab::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void AFGFlyingBabyCrab::PostNetReceiveLocationAndRotation(){ }
+void AFGFlyingBabyCrab::OnClientSubsystemsValid(){ }

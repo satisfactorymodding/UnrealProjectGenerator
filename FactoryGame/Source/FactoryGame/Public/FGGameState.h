@@ -448,7 +448,7 @@ private:
 	class AFGStatisticsSubsystem* mStatisticsSubsystem;
 	UPROPERTY( Replicated )
 	class AFGSignSubsystem* mSignSubsystem;
-	UPROPERTY()
+	UPROPERTY( Replicated )
 	class AFGCreatureSubsystem* mCreatureSubsystem;
 	UPROPERTY( Replicated )
 	class AFGScannableSubsystem* mScannableSubsystem;

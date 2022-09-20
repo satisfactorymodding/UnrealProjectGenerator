@@ -19,4 +19,7 @@ protected:
 	virtual void EndPlay( const EEndPlayReason::Type EndPlayReason ) override;
 
 	virtual void PostNetReceiveLocationAndRotation() override;
+
+	UFUNCTION()
+	void OnClientSubsystemsValid();
 };

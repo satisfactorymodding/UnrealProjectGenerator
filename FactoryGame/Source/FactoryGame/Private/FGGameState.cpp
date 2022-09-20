@@ -76,6 +76,7 @@ void AFGGameState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLife
 	DOREPLIFETIME(AFGGameState, mEventSubsystem);
 	DOREPLIFETIME(AFGGameState, mDroneSubsystem);
 	DOREPLIFETIME(AFGGameState, mSignSubsystem);
+	DOREPLIFETIME(AFGGameState, mCreatureSubsystem);
 	DOREPLIFETIME(AFGGameState, mScannableSubsystem);
 	DOREPLIFETIME(AFGGameState, mVisitedMapAreas);
 	DOREPLIFETIME(AFGGameState, mPickedUpItems);

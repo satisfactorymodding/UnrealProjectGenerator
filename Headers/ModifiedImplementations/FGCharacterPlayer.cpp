@@ -214,7 +214,7 @@ void AFGCharacterPlayer::UpdateHUDCrosshair(){ }
 bool AFGCharacterPlayer::IsSliding() const{ return bool(); }
 bool AFGCharacterPlayer::IsInPumpiMode(){ return bool(); }
 void AFGCharacterPlayer::UpdatePlayerNameWidget(){ }
-void AFGCharacterPlayer::Native_OnPlayerColorDataUpdated(){ }
+void AFGCharacterPlayer::UpdatePlayerStatus(){ }
 AFGEquipment* AFGCharacterPlayer::SpawnEquipment(TSubclassOf< AFGEquipment > equipmentClass, AActor* owner){ return nullptr; }
 AFGEquipmentAttachment* AFGCharacterPlayer::SpawnAttachmentForEquipment(AFGEquipment* equipment){ return nullptr; }
 AFGEquipmentAttachment* AFGCharacterPlayer::SpawnSecondaryAttachmentForEquipment(AFGEquipment* equipment){ return nullptr; }
@@ -258,6 +258,8 @@ void AFGCharacterPlayer::MigrateNumSavedSlots(){ }
 void AFGCharacterPlayer::CheckItemPickedUp(){ }
 void AFGCharacterPlayer::OnRep_IsPossessed(){ }
 void AFGCharacterPlayer::OnRep_PlayerState(){ }
+void AFGCharacterPlayer::SetOnlineState(bool isOnline){ }
+AFGPlayerState* AFGCharacterPlayer::GetControllingPlayerState(){ return nullptr; }
 bool AFGCharacterPlayer::HasHolsteredEquipment(){ return bool(); }
 int32 AFGCharacterPlayer::GetHolsteredEquipmentIndex() const{ return int32(); }
 bool AFGCharacterPlayer::FilterInventoryClasses(TSubclassOf< UObject > object, int32 idx) const{ return bool(); }

@@ -883,6 +883,14 @@ protected:
 	UFUNCTION( BlueprintPure, Category = "Movement" )
 	FORCEINLINE float GetArmBoneLocation() const { return mArmBoneLocation; }
 
+	/** Called when some state changed so we can update name tag location */
+	UFUNCTION( BlueprintImplementableEvent, Category = "Online" )
+	void UpdatePlayerNameTagLocation();
+
+	/** True if player is online. By online we mean this player or the driven vehicle has a player state and someone is controlling it */
+	UFUNCTION( BlueprintPure, Category = "Radiation" )
+	FORCEINLINE bool IsPlayerOnline() const { return mIsPlayerOnline.GetValue(); }
+
 	/** Called when we update the best useable actor */
 	UPROPERTY( BlueprintAssignable, Category = "UI"  )
 	FOnBestUseableActorUpdated mOnBestUseableActorUpdated;
@@ -956,7 +964,9 @@ public:
 	UFUNCTION( BlueprintCallable, Category = "Player Name" )
 	void UpdatePlayerNameWidget();
 
-	void Native_OnPlayerColorDataUpdated();
+	/** Update the status of the player s we can update appearances and UI */
+	void UpdatePlayerStatus();
+	
 private:
 	/**
 	 * Spawn a new equipment.
@@ -1060,6 +1070,11 @@ private:
 	
 	virtual void OnRep_IsPossessed() override;
 	virtual void OnRep_PlayerState() override;
+	
+	void SetOnlineState( bool isOnline );
+
+	/** Gets the players state for this player. Either from this character or the driven vehicle */
+	class AFGPlayerState* GetControllingPlayerState();
 
 public:
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
@@ -1080,7 +1095,7 @@ protected:
 	class USkeletalMeshComponent* mMesh3P;
 
 	/** The widget component used to show the players name */
-	UPROPERTY( VisibleAnywhere, Category = "Player Name" )
+	UPROPERTY( VisibleAnywhere, BlueprintReadOnly, Category = "Player Name" )
 	class UWidgetComponent* mPlayerNameWidgetComponent;
 
 	/** As we have no foliage actor to actually put pickup code in, we use this actor as a proxy */
@@ -1490,5 +1505,9 @@ private:
 	/** The player name of the last logged in player that possessed this pawn */
 	UPROPERTY( SaveGame, Replicated )
 	FString mCachedPlayerName;
+
+	/** True if player is online. By online we mean this player or the driven vehicle has a player state and someone is controlling it.
+	 *	It doesn't care about platform logins */
+	TOptional<bool> mIsPlayerOnline;
 	
 };

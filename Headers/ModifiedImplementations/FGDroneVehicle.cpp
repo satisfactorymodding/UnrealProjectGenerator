@@ -2,56 +2,6 @@
 
 #include "FGDroneVehicle.h"
 
-#ifdef DEBUG_DRONES
-void UFGDroneAction::DisplayDebugInformation(){ }
-#endif 
-UFGDroneAction::UFGDroneAction(){ }
-void UFGDroneAction::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
-bool UFGDroneAction::NeedTransform_Implementation(){ return bool(); }
-bool UFGDroneAction::ShouldSave_Implementation() const{ return bool(); }
-void UFGDroneAction::PushAction(UFGDroneAction* pAction){ }
-#ifdef DEBUG_DRONES
-void UFGDroneAction_Timed::DisplayDebugInformation(){ }
-#endif 
-UFGDroneAction_Timed::UFGDroneAction_Timed(){ }
-void UFGDroneAction_Timed::Tick(float dt){ }
-bool UFGDroneAction_Timed::IsDone() const{ return bool(); }
-#ifdef DEBUG_DRONES
-void UFGDroneAction_TraversePath::DisplayDebugInformation(){ }
-#endif 
-UFGDroneAction_TraversePath::UFGDroneAction_TraversePath(){ }
-void UFGDroneAction_TraversePath::SetPath(const TArray<FVector>& Path, EDroneFlyingMode FlyingMode, bool StopAtDestination){ }
-void UFGDroneAction_TraversePath::Begin(){ }
-void UFGDroneAction_TraversePath::Tick(float dt){ }
-void UFGDroneAction_TraversePath::ReceiveActionEvent(EDroneActionEvent ActionEvent, void* EventData){ }
-bool UFGDroneAction_TraversePath::IsDone() const{ return bool(); }
-void UFGDroneAction_TraversePath::GotoNextDestination(){ }
-#ifdef DEBUG_DRONES
-void UFGDroneAction_RequestDocking::DisplayDebugInformation(){ }
-#endif 
-UFGDroneAction_RequestDocking::UFGDroneAction_RequestDocking(){ }
-void UFGDroneAction_RequestDocking::SetStation( AFGBuildableDroneStation* Station, bool ShouldTransferItems){ }
-void UFGDroneAction_RequestDocking::Begin(){ }
-void UFGDroneAction_RequestDocking::End(){ }
-void UFGDroneAction_RequestDocking::MoveToDesignatedQueuePosition(EDroneFlyingMode FlyingMode){ }
-void UFGDroneAction_RequestDocking::Tick(float dt){ }
-void UFGDroneAction_RequestDocking::ReceiveActionEvent(EDroneActionEvent ActionEvent, void* EventData){ }
-bool UFGDroneAction_RequestDocking::IsDone() const{ return bool(); }
-UFGDroneAction_DockingSequence::UFGDroneAction_DockingSequence(){ }
-void UFGDroneAction_DockingSequence::SetStation( AFGBuildableDroneStation* Station, bool ShouldTransferItems){ }
-void UFGDroneAction_DockingSequence::Begin(){ }
-void UFGDroneAction_DockingSequence::End(){ }
-float UFGDroneAction_DockingSequence::GetActionDuration() const{ return float(); }
-UFGDroneAction_TakeoffSequence::UFGDroneAction_TakeoffSequence(){ }
-void UFGDroneAction_TakeoffSequence::SetStation( AFGBuildableDroneStation* Station){ }
-void UFGDroneAction_TakeoffSequence::Begin(){ }
-void UFGDroneAction_TakeoffSequence::End(){ }
-float UFGDroneAction_TakeoffSequence::GetActionDuration() const{ return float(); }
-void UFGDroneAction_TakeoffSequence::ReceiveActionEvent(EDroneActionEvent ActionEvent, void* EventData){ }
-void UFGDroneAction_TravelStartSequence::SetDestination(const FVector& Destination){ }
-void UFGDroneAction_TravelStartSequence::Begin(){ }
-void UFGDroneAction_TravelStartSequence::End(){ }
-float UFGDroneAction_TravelStartSequence::GetActionDuration() const{ return float(); }
 AFGDroneVehicle::AFGDroneVehicle(){ }
 void AFGDroneVehicle::BeginPlay(){ }
 void AFGDroneVehicle::Tick(float DeltaTime){ }
@@ -117,3 +67,53 @@ void AFGDroneVehicle::SetNewFlyingMode(EDroneFlyingMode Mode){ }
 void AFGDroneVehicle::SetDockingState(EDroneDockingState State){ }
 bool AFGDroneVehicle::ConsumeBatteriesForPower(float PowerRequirement){ return bool(); }
 void AFGDroneVehicle::CalculateInventoryPotentialPower(){ }
+#ifdef DEBUG_DRONES
+void UFGDroneAction::DisplayDebugInformation(){ }
+#endif 
+UFGDroneAction::UFGDroneAction(){ }
+void UFGDroneAction::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
+bool UFGDroneAction::NeedTransform_Implementation(){ return bool(); }
+bool UFGDroneAction::ShouldSave_Implementation() const{ return bool(); }
+void UFGDroneAction::PushAction(UFGDroneAction* pAction){ }
+#ifdef DEBUG_DRONES
+void UFGDroneAction_Timed::DisplayDebugInformation(){ }
+#endif 
+UFGDroneAction_Timed::UFGDroneAction_Timed(){ }
+void UFGDroneAction_Timed::Tick(float dt){ }
+bool UFGDroneAction_Timed::IsDone() const{ return bool(); }
+#ifdef DEBUG_DRONES
+void UFGDroneAction_TraversePath::DisplayDebugInformation(){ }
+#endif 
+UFGDroneAction_TraversePath::UFGDroneAction_TraversePath(){ }
+void UFGDroneAction_TraversePath::SetPath(const TArray<FVector>& Path, EDroneFlyingMode FlyingMode, bool StopAtDestination){ }
+void UFGDroneAction_TraversePath::Begin(){ }
+void UFGDroneAction_TraversePath::Tick(float dt){ }
+void UFGDroneAction_TraversePath::ReceiveActionEvent(EDroneActionEvent ActionEvent, void* EventData){ }
+bool UFGDroneAction_TraversePath::IsDone() const{ return bool(); }
+void UFGDroneAction_TraversePath::GotoNextDestination(){ }
+#ifdef DEBUG_DRONES
+void UFGDroneAction_RequestDocking::DisplayDebugInformation(){ }
+#endif 
+UFGDroneAction_RequestDocking::UFGDroneAction_RequestDocking(){ }
+void UFGDroneAction_RequestDocking::SetStation( AFGBuildableDroneStation* Station, bool ShouldTransferItems){ }
+void UFGDroneAction_RequestDocking::Begin(){ }
+void UFGDroneAction_RequestDocking::End(){ }
+void UFGDroneAction_RequestDocking::MoveToDesignatedQueuePosition(EDroneFlyingMode FlyingMode){ }
+void UFGDroneAction_RequestDocking::Tick(float dt){ }
+void UFGDroneAction_RequestDocking::ReceiveActionEvent(EDroneActionEvent ActionEvent, void* EventData){ }
+bool UFGDroneAction_RequestDocking::IsDone() const{ return bool(); }
+UFGDroneAction_DockingSequence::UFGDroneAction_DockingSequence(){ }
+void UFGDroneAction_DockingSequence::SetStation( AFGBuildableDroneStation* Station, bool ShouldTransferItems){ }
+void UFGDroneAction_DockingSequence::Begin(){ }
+void UFGDroneAction_DockingSequence::End(){ }
+float UFGDroneAction_DockingSequence::GetActionDuration() const{ return float(); }
+UFGDroneAction_TakeoffSequence::UFGDroneAction_TakeoffSequence(){ }
+void UFGDroneAction_TakeoffSequence::SetStation( AFGBuildableDroneStation* Station){ }
+void UFGDroneAction_TakeoffSequence::Begin(){ }
+void UFGDroneAction_TakeoffSequence::End(){ }
+float UFGDroneAction_TakeoffSequence::GetActionDuration() const{ return float(); }
+void UFGDroneAction_TakeoffSequence::ReceiveActionEvent(EDroneActionEvent ActionEvent, void* EventData){ }
+void UFGDroneAction_TravelStartSequence::SetDestination(const FVector& Destination){ }
+void UFGDroneAction_TravelStartSequence::Begin(){ }
+void UFGDroneAction_TravelStartSequence::End(){ }
+float UFGDroneAction_TravelStartSequence::GetActionDuration() const{ return float(); }

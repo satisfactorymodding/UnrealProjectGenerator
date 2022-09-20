@@ -22,15 +22,6 @@ enum class EBoomBoxPickupButtonState: uint8
 	ENoRoomForBoomBox		/** There's no room anywhere, in the inventory or a hand slot available so can't perform either action */
 };
 
-UENUM( BlueprintType )
-enum class EBoomBoxMode: uint8
-{
-	Undefined,				/** The mode is undefined, the boombox is not initialized. It cannot be shown or play any music in this mode*/
-	EquippedVisible,		/** The boombox is currently used as an equipment and should be visible (active equipment on possessed pawn). */
-	EquippedHidden,			/** The boombox is used as an equipment but should currently be hidden (can still play music). */
-	Static					/** The boombox is placed within the world as a static actor. */
-};
-
 
 class AFGCharacterPlayer;
 USTRUCT()
@@ -121,6 +112,9 @@ public:
 	UFUNCTION( Server, Reliable )
 	void Server_FireTurboBassNow( AFGBoomBoxPlayer* player );
 
+	UFUNCTION( Server, Reliable )
+	void Server_SetRepeatMode( AFGBoomBoxPlayer* player, EBoomBoxRepeatMode repeatMode );
+
 protected:
 	UFUNCTION( Server, Reliable )
 	void Server_SyncPlayerStateRequest( class AFGBoomBoxPlayer* player, float clientTimestamp );
@@ -180,6 +174,12 @@ public:
 	void PutDown( const FTransform& transform );
 
 	UFUNCTION( BlueprintCallable )
+	void SetRepeatMode( EBoomBoxRepeatMode repeatMode, AFGCharacterPlayer* instigatorCharacter );
+
+	UFUNCTION( BlueprintPure )
+	EBoomBoxRepeatMode GetRepeatMode() const;
+
+	UFUNCTION( BlueprintCallable )
 	bool GetCharacterLookAtTransform( FTransform& out_Transform ) const;
 
 	UFUNCTION( BlueprintCallable )
@@ -218,6 +218,9 @@ public:
 	
 	UFUNCTION( BlueprintNativeEvent )
 	void OnModeChanged();
+
+	UFUNCTION()
+	void OnRep_RepeatMode();
 	
 	UFUNCTION( NetMulticast, Reliable )
 	void Multicast_SetAudioVolume( float normalizedVolume );
@@ -227,6 +230,9 @@ public:
 
 	UFUNCTION( BlueprintCallable )
 	void ResumePlayback();
+
+	UFUNCTION( BlueprintPure )
+	bool IsPlaybackSuspended() const { return mState.mPlaybackSuspended; }
 
 	UFUNCTION( NetMulticast, Reliable )
 	void Multicast_PutDown( const FTransform& transform );
@@ -302,6 +308,7 @@ protected:
 
 	// Called when the game starts
 	virtual void BeginPlay() override;
+	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
 
 	UFUNCTION()
 	void OnPawnPossessed( class APawn* pawn, class AController* controller );
@@ -422,7 +429,7 @@ protected:
 	void PlayTurboBassSequence( AFGCharacterPlayer* instigatorPlayer );
 
 	UFUNCTION( BlueprintImplementableEvent )
-	void OnPlaybackStateChanged( EBoomboxPlaybackState PlaybackState );
+	void OnPlaybackStateChanged( EBoomboxPlaybackState PlaybackState, bool PlaybackSuspended );
 
 private:
 	friend class AFGEquipmentBoomBox;
@@ -471,8 +478,11 @@ private:
 	UPROPERTY( SaveGame )
 	FBoomBoxPlayerState mState;
 
-	UPROPERTY( ReplicatedUsing=OnModeChanged )
+	UPROPERTY( SaveGame, ReplicatedUsing=OnModeChanged )
 	EBoomBoxMode mMode = EBoomBoxMode::Undefined;
+	
+	UPROPERTY( SaveGame, ReplicatedUsing=OnRep_RepeatMode )
+	EBoomBoxRepeatMode mRepeatMode = EBoomBoxRepeatMode::RepeatTape;
 
 	UPROPERTY()
 	AFGEquipmentBoomBox* mEquipmentActor = nullptr;

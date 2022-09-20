@@ -98,6 +98,9 @@ public:
 	bool IsProtectedCreature( TSubclassOf< class AFGCreature > creatureClass ) const;
 
 	void SetCreatureStressEnabled( bool enabled );
+
+	/** Whether or not creature stress gain is enabled. */
+	UFUNCTION( BlueprintPure, Category = "AI" )
 	bool IsCreatureStressEnabled() const { return mEnableCreatureStress; }
 
 	/** Get the creature subsystem in the current world, can be nullptr, e.g. on game ending (destroy) or game startup. */

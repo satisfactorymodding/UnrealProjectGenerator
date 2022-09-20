@@ -15,6 +15,24 @@ enum class EBoomboxPlaybackState: uint8
 	EStopped
 };
 
+UENUM( BlueprintType )
+enum class EBoomBoxRepeatMode: uint8
+{
+	NoRepeat,
+	RepeatTape,
+	RepeatSong
+};
+
+
+UENUM( BlueprintType )
+enum class EBoomBoxMode: uint8
+{
+	Undefined,				/** The mode is undefined, the boombox is not initialized. It cannot be shown or play any music in this mode */
+	EquippedVisible,		/** The boombox is currently used as an equipment and should be visible (active equipment on possessed pawn). */
+	EquippedHidden,			/** The boombox is used as an equipment but should currently be hidden (can still play music). */
+	Static					/** The boombox is placed within the world as a static actor. */
+};
+
 /**
  * 
  */
@@ -43,4 +61,10 @@ public:
 
 	UFUNCTION( BlueprintImplementableEvent )
 	void AudioVolumeChanged( float volume );
+
+	UFUNCTION( BlueprintImplementableEvent )
+	void RepeatModeChanged( EBoomBoxRepeatMode newMode );
+
+	UFUNCTION( BlueprintImplementableEvent )
+	void BoomBoxModeChanged( EBoomBoxMode newMode );
 };

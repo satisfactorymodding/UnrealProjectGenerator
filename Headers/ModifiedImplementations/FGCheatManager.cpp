@@ -40,6 +40,7 @@ bool UFGCheatManager::PlayerAllFly_Get(){ return bool(); }
 bool UFGCheatManager::PlayerFly_Get(){ return bool(); }
 void UFGCheatManager::PlayerNoClipModeOnFly(bool ghostMode){ }
 bool UFGCheatManager::PlayerNoClipModeOnFly_Get(){ return bool(); }
+void UFGCheatManager::UpdatePlayerNametags(){ }
 void UFGCheatManager::ClearGiveItemPopularList(){ }
 void UFGCheatManager::Server_GiveAllSchematics_Implementation(){ }
 void UFGCheatManager::GiveAllSchematics(){ }
