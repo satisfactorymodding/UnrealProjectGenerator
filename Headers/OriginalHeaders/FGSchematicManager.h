@@ -103,6 +103,7 @@ public:
 	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
 	virtual void PreInitializeComponents() override;
 	virtual void BeginPlay() override;
+	virtual void EndPlay( const EEndPlayReason::Type endPlayReason ) override;
 	virtual void Tick( float dt ) override;
 	//~ End AActor interface
 
@@ -253,6 +254,12 @@ private:
 	FSchematicCost* FindSchematicPayOff( TSubclassOf< class UFGSchematic > schematic );
 	void AddSchematicPayOff( TSubclassOf< class UFGSchematic > schematic, const TArray< FItemAmount >& amount );
 	void RemoveSchematicPayOff( TSubclassOf< class UFGSchematic > schematic );
+
+	/** Telemetry helper. */
+	void SubmitUnlockSchematicTelemetry( TSubclassOf< UFGSchematic > schematicClass );
+
+	UFUNCTION()
+	void SubmitMilestoneTelemetry( TSubclassOf< UFGSchematic > activeSchematic );
 
 protected:	
 	/** All schematic assets that have been sucked up in the PopulateSchematicsList function. Contains cheats and all sort of schematic. */

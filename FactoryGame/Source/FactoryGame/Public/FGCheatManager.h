@@ -499,9 +499,6 @@ public:
 	void GetVehicleInfo();
 
 	UFUNCTION( exec )
-	void RunDebugMetric();
-
-	UFUNCTION( exec )
 	void MCP_Login( FString username, FString password );
 
 	UFUNCTION( exec )

@@ -3,6 +3,7 @@
 #include "FGBuildableFrackingExtractor.h"
 #include "FGResourceNodeFrackingCore.h"
 
+AFGBuildableFrackingExtractor::AFGBuildableFrackingExtractor(){ }
 void AFGBuildableFrackingExtractor::BeginPlay(){ }
 bool AFGBuildableFrackingExtractor::Factory_HasPower() const{ return bool(); }
 bool AFGBuildableFrackingExtractor::CanProduce_Implementation() const{ return bool(); }

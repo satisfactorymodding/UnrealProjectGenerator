@@ -8,12 +8,26 @@
 #include "UObject/Interface.h"
 #include "FGBoomboxListenerInterface.generated.h"
 
-UENUM( BlueprintType )
-enum class EBoomboxPlaybackState: uint8
+UENUM( BlueprintType, meta=( Bitflags, UseEnumValuesAsMaskValuesInEditor = "true" ) )
+enum class EBoomBoxPlaybackStateBitfield : uint8
 {
-	EPlaying,
-	EStopped
+	NotPlaying								= 0,
+	PlaybackEnabled							= 1,		/** Bit should be set if the player actually started playback */
+	PlaybackAllowedByEquipmentStatus		= 1 << 1,	/** Bit should be set if playback is allowed by the equipment's equipped status. */
+	PlaybackAllowedByPawnPossessedStatus	= 1 << 2,	/** Bit should be set if playback is allowed by the owning pawn's possessed status.*/
+	MayActuallyPlay							= PlaybackEnabled | PlaybackAllowedByEquipmentStatus | PlaybackAllowedByPawnPossessedStatus
 };
+
+ENUM_CLASS_FLAGS( EBoomBoxPlaybackStateBitfield );
+
+inline int32& operator|=( int32& Lhs, EBoomBoxPlaybackStateBitfield Rhs ) { return Lhs = Lhs | static_cast<std::underlying_type_t<EBoomBoxPlaybackStateBitfield>>( Rhs ); }
+inline int32& operator&=( int32& Lhs, EBoomBoxPlaybackStateBitfield Rhs ) { return Lhs = Lhs & static_cast<std::underlying_type_t<EBoomBoxPlaybackStateBitfield>>( Rhs ); }
+constexpr int32 operator&( int32 Lhs, EBoomBoxPlaybackStateBitfield Rhs ) { return Lhs & static_cast<std::underlying_type_t<EBoomBoxPlaybackStateBitfield>>( Rhs ); }
+constexpr int32 operator|( int32 Lhs, EBoomBoxPlaybackStateBitfield Rhs ) { return Lhs | static_cast<std::underlying_type_t<EBoomBoxPlaybackStateBitfield>>( Rhs ); }
+constexpr int32 operator^( int32  Lhs, EBoomBoxPlaybackStateBitfield Rhs ) { return Lhs ^ static_cast<std::underlying_type_t<EBoomBoxPlaybackStateBitfield>>( Rhs ); }
+constexpr bool operator==( int32 Lhs, EBoomBoxPlaybackStateBitfield Rhs ) { return Lhs == static_cast<std::underlying_type_t<EBoomBoxPlaybackStateBitfield>>( Rhs ); }
+constexpr bool operator!=( int32 Lhs, EBoomBoxPlaybackStateBitfield Rhs ) { return !( Lhs == Rhs ); }
+
 
 UENUM( BlueprintType )
 enum class EBoomBoxRepeatMode: uint8
@@ -48,7 +62,7 @@ class FACTORYGAME_API IFGBoomboxListenerInterface
 
 public:
 	UFUNCTION( BlueprintImplementableEvent )
-	void PlaybackStateChanged( EBoomboxPlaybackState newState );
+	void PlaybackStateChanged( UPARAM(meta = (Bitmask, BitmaskEnum = EBoomBoxPlaybackStateBitfield)) int32 newState );
 
 	UFUNCTION( BlueprintImplementableEvent )
 	void CurrentSongChanged( const FSongData& currentSong, int32 index );

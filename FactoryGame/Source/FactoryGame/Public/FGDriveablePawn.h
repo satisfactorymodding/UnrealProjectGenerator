@@ -37,7 +37,7 @@ public:
 	virtual void OnRep_PlayerState() override;
 	// End APawn interface
 
-	void UpdatePlayerStatus();
+	virtual void UpdatePlayerStatus();
 
 	/** Gets the driving pawn. */
 	UFUNCTION( BlueprintPure, Category = "Driveable" )

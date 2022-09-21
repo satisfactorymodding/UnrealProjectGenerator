@@ -177,7 +177,6 @@ void UFGCheatManager::Server_SetTradingPostLevel_Implementation(int32 inLevel){ 
 void UFGCheatManager::SetTradingPostLevel(int32 inLevel){ }
 void UFGCheatManager::ListUnlockedRecipesAndSchematics(){ }
 void UFGCheatManager::GetVehicleInfo(){ }
-void UFGCheatManager::RunDebugMetric(){ }
 void UFGCheatManager::MCP_Login(FString username, FString password){ }
 void UFGCheatManager::MCP_Logout(){ }
 void UFGCheatManager::MCP_GetOnlineStatus(int32 localPlayerNum){ }

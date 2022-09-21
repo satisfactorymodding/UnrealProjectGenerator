@@ -83,6 +83,9 @@ public:
 	void RegisterFlyingBabyCrab( class AFGFlyingBabyCrab* babyCrab );
 	void UnregisterFlyingBabyCrab( class AFGFlyingBabyCrab* babyCrab );
 
+	/** Used to force spawners which have players near them to spawn. */
+	void ForceTriggerSpawnersInRange();
+
 	UFUNCTION( BlueprintPure, Category = "AI" )
 	ECreatureHostility GetCreatureHostility() const { return mCreatureHostilityMode; }
 

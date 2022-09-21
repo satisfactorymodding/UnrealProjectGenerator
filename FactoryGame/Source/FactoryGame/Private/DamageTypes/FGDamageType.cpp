@@ -2,6 +2,7 @@
 
 #include "DamageTypes/FGDamageType.h"
 
+TAutoConsoleVariable<int32> CVarDamageTypeRangeDebug(TEXT("CVarDamageTypeRangeDebug"), 0, TEXT(""));
 UFGDamageType::UFGDamageType(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 	this->mImpactAudioEvent = nullptr;
 	this->mImpactParticle = nullptr;

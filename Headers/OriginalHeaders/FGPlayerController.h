@@ -43,6 +43,7 @@ public:
 	virtual bool ReplicateSubobjects( class UActorChannel* channel, class FOutBunch* bunch, FReplicationFlags* repFlags ) override;
 	virtual void PostInitializeComponents() override;
 	virtual void BeginPlay() override;
+	virtual void EndPlay( const EEndPlayReason::Type endPlayReason ) override;
 	virtual void Destroyed() override;
 	// End AActor interface
 
@@ -428,6 +429,8 @@ public:
 
 	/** Handle pause game input and routes it to game UI */
 	void OnPauseGamePressed();
+
+	class UFGGameUI* GetGameUI() const;
 	
 protected:
 	/** Pontentially spawns deathcreate when disconnecting if we are dead */
@@ -531,8 +534,6 @@ protected:
 
 	UFUNCTION( BlueprintPure, Category = "Photo Mode" )
 	bool GetHiResPhotoModeEnabled() { return mHiResPhotoMode; }
-
-	class UFGGameUI* GetGameUI() const;
 
 #if WITH_CHEATS
 	void ToggleCheatBoard();

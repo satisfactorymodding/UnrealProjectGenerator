@@ -4,6 +4,8 @@
 
 AFGGameMode::AFGGameMode(){ }
 void AFGGameMode::Serialize(FArchive& ar){ Super::Serialize(ar); }
+void AFGGameMode::BeginPlay(){ }
+void AFGGameMode::EndPlay(const EEndPlayReason::Type endPlayReason){ }
 void AFGGameMode::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGGameMode::PostSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGGameMode::PreLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }

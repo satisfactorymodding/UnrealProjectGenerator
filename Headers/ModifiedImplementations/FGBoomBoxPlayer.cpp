@@ -50,12 +50,14 @@ void AFGBoomBoxPlayer::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& O
 void AFGBoomBoxPlayer::OnModeChanged_Implementation(){ }
 void AFGBoomBoxPlayer::OnRep_RepeatMode(){ }
 void AFGBoomBoxPlayer::Multicast_SetAudioVolume_Implementation(float normalizedVolume){ }
-void AFGBoomBoxPlayer::SuspendPlayback(){ }
-void AFGBoomBoxPlayer::ResumePlayback(){ }
+void AFGBoomBoxPlayer::SetPlaybackAllowedByEquipStatus(bool allowed){ }
 void AFGBoomBoxPlayer::Multicast_PutDown_Implementation(const FTransform& transform){ }
 void AFGBoomBoxPlayer::Multicast_ApplyState_Implementation(const FBoomBoxPlayerState& boomBoxState){ }
 void AFGBoomBoxPlayer::Multicast_FireTurboBassNow_Implementation( AFGCharacterPlayer* character){ }
-bool AFGBoomBoxPlayer::IsPlaying() const{ return bool(); }
+bool AFGBoomBoxPlayer::IsPlaybackEnabled() const{ return bool(); }
+bool AFGBoomBoxPlayer::IsPlaybackAllowedByEquippedStatus() const{ return bool(); }
+bool AFGBoomBoxPlayer::IsPlaybackAllowedByPossessedStatus() const{ return bool(); }
+bool AFGBoomBoxPlayer::IsPlaybackEffectivelyAllowed() const{ return bool(); }
 bool AFGBoomBoxPlayer::IsEffectivelyPlaying() const{ return bool(); }
 FSongData AFGBoomBoxPlayer::GetCurrentSong(){ return FSongData(); }
 bool AFGBoomBoxPlayer::CanFireTurboBass() const{ return bool(); }
@@ -72,6 +74,7 @@ void AFGBoomBoxPlayer::NextNow(AFGCharacterPlayer* character){ }
 void AFGBoomBoxPlayer::PrevNow(AFGCharacterPlayer* character){ }
 void AFGBoomBoxPlayer::FireTurboBassNow(AFGCharacterPlayer* character){ }
 void AFGBoomBoxPlayer::TogglePlaybackNow(AFGCharacterPlayer* character){ }
+void AFGBoomBoxPlayer::SetPlaybackStateFlag(EBoomBoxPlaybackStateBitfield flag, bool set){ }
 void AFGBoomBoxPlayer::ApplyTurboBassGameplayEffects( AFGCharacterPlayer* character){ }
 void AFGBoomBoxPlayer::SetAudioVolumeLocally(float normalizedVolume, bool notifyListeners){ }
 UMaterialInterface* AFGBoomBoxPlayer::GetDefaultTapeMaterial(){ return nullptr; }
@@ -81,6 +84,7 @@ void AFGBoomBoxPlayer::OnPawnPossessed( APawn* pawn,  AController* controller){ 
 void AFGBoomBoxPlayer::OnceClientSubsystemsAreReady(){ }
 void AFGBoomBoxPlayer::SongFinished(EAkCallbackType cbType, UAkCallbackInfo* cbInfo){ }
 void AFGBoomBoxPlayer::TapeTextureLoadedAsync(UTexture2D *texture){ }
+void AFGBoomBoxPlayer::SetOwningCharacter( AFGCharacterPlayer* character){ }
 void AFGBoomBoxPlayer::Multicast_BeginPlaySequence_Implementation(AFGCharacterPlayer* instigatorPlayer){ }
 void AFGBoomBoxPlayer::Multicast_BeginStopSequence_Implementation(AFGCharacterPlayer* instigatorPlayer){ }
 void AFGBoomBoxPlayer::Multicast_BeginLoadTapeSequence_Implementation(TSubclassOf< UFGTapeData > newTape, AFGCharacterPlayer* instigatorPlayer){ }
@@ -96,4 +100,5 @@ void AFGBoomBoxPlayer::SanitizeListeners(){ }
 void AFGBoomBoxPlayer::StopPlayingNoNotify(){ }
 void AFGBoomBoxPlayer::StartPlayingNoNotify(int32 song, int32 offsetMs){ }
 void AFGBoomBoxPlayer::FullyNotifyListeners(){ }
-void AFGBoomBoxPlayer::UpdatePostPlayerControllerChange(){ }
+void AFGBoomBoxPlayer::UpdatePlaybackAllowedByPossessedStatus(){ }
+void AFGBoomBoxPlayer::SetPlaybackAllowedByPossessedStatus(bool allowed){ }

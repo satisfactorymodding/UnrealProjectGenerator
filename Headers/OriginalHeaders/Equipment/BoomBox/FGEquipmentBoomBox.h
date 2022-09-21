@@ -48,4 +48,5 @@ private:
 
 	// Breaks the connection to the boombox player. This should only be called by the boombox player when it gets placed down in the world.
 	void ReleaseBoomBoxPlayer();
+	static void TransferMontagesToNewBoomBoxPlayer( AFGBoomBoxPlayer* oldPlayer, AFGBoomBoxPlayer* newPlayer );
 };

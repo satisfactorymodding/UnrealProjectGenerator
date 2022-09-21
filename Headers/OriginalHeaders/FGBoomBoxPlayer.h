@@ -27,7 +27,7 @@ class AFGCharacterPlayer;
 USTRUCT()
 struct FBoomBoxPlayerState
 {
-	GENERATED_BODY() 
+	GENERATED_BODY()
 
 	UPROPERTY( SaveGame )
 	TSubclassOf< UFGTapeData > mCurrentTape = nullptr;
@@ -43,11 +43,8 @@ struct FBoomBoxPlayerState
 	UPROPERTY( SaveGame )
 	float mVolume = 1.f;
 
-	UPROPERTY( SaveGame )
-	EBoomboxPlaybackState mPlaybackState = EBoomboxPlaybackState::EStopped;
-
-	UPROPERTY( SaveGame )
-	bool mPlaybackSuspended = false;
+	UPROPERTY( SaveGame, meta = (Bitmask, BitmaskEnum = EBoomBoxPlaybackStateBitfield) )
+	int32 mPlaybackState = 0;
 };
 
 UCLASS()
@@ -225,14 +222,7 @@ public:
 	UFUNCTION( NetMulticast, Reliable )
 	void Multicast_SetAudioVolume( float normalizedVolume );
 
-	UFUNCTION( BlueprintCallable )
-	void SuspendPlayback();
-
-	UFUNCTION( BlueprintCallable )
-	void ResumePlayback();
-
-	UFUNCTION( BlueprintPure )
-	bool IsPlaybackSuspended() const { return mState.mPlaybackSuspended; }
+	void SetPlaybackAllowedByEquipStatus( bool allowed );
 
 	UFUNCTION( NetMulticast, Reliable )
 	void Multicast_PutDown( const FTransform& transform );
@@ -246,7 +236,18 @@ public:
 	UFUNCTION( BlueprintImplementableEvent, BlueprintCosmetic )
 	void PlayTurboBassEffects( class AFGCharacterPlayer* character );
 
-	bool IsPlaying() const;
+	UFUNCTION( BlueprintPure )
+	bool IsPlaybackEnabled() const;
+
+	UFUNCTION( BlueprintPure )
+	bool IsPlaybackAllowedByEquippedStatus() const;
+
+	UFUNCTION( BlueprintPure )
+	bool IsPlaybackAllowedByPossessedStatus() const;
+
+	UFUNCTION( BlueprintPure )
+	bool IsPlaybackEffectivelyAllowed() const;
+	
 	bool IsEffectivelyPlaying() const;
 	FSongData GetCurrentSong();
 	
@@ -300,6 +301,8 @@ public:
 	void PlayEquipEffects( AFGCharacterPlayer* character );
 	
 protected:
+	void SetPlaybackStateFlag( EBoomBoxPlaybackStateBitfield flag, bool set );
+	
 	void ApplyTurboBassGameplayEffects( class AFGCharacterPlayer* character );
 	
 	/** Stops playback */
@@ -367,7 +370,13 @@ protected:
 	float mImpulseRadius = 3000.f;
 
 	UPROPERTY( EditDefaultsOnly, Category = "Boombox" )
-	float mImpulseStrength = 250.f;
+	float mImpulseStrength = 500.f;
+
+	UPROPERTY( EditDefaultsOnly, Category = "Boombox" )
+	float mVerticalImpulseStrength = 250.f;
+
+	UPROPERTY( EditDefaultsOnly, Category = "Boombox" )
+	float mTurboBassBaseDamage = 1.f;
 
 	UPROPERTY( EditDefaultsOnly, Category = "Boombox" )
 	TSubclassOf< class UFGPointDamageType > mImpulseDamageType;
@@ -429,8 +438,10 @@ protected:
 	void PlayTurboBassSequence( AFGCharacterPlayer* instigatorPlayer );
 
 	UFUNCTION( BlueprintImplementableEvent )
-	void OnPlaybackStateChanged( EBoomboxPlaybackState PlaybackState, bool PlaybackSuspended );
+	void OnPlaybackStateChanged( UPARAM(meta = (Bitmask, BitmaskEnum = EBoomBoxPlaybackStateBitfield)) int32 PlaybackState );
 
+	void SetOwningCharacter( class AFGCharacterPlayer* character );
+	AFGCharacterPlayer* GetOwningCharacter() const { return mOwningCharacter; }
 private:
 	friend class AFGEquipmentBoomBox;
 	friend class UFGBoomBoxRemoteCallObject;
@@ -464,9 +475,10 @@ private:
 	void StopPlayingNoNotify();
 	void StartPlayingNoNotify( int32 song, int32 offsetMs );
 	void FullyNotifyListeners();
-	void UpdatePostPlayerControllerChange();
+	void UpdatePlaybackAllowedByPossessedStatus();
+	void SetPlaybackAllowedByPossessedStatus( bool allowed );
 	
-	USkeletalMeshComponent* GetMesh() const { return mMesh; };
+	USkeletalMeshComponent* GetMesh() const { return mMesh; }
 
 	// On Dedicated Servers, WWise does not play back sounds at all, not even virtualized so we need to keep track of playback position
 	// on our own, using timers and relying on the properties of the audio events. This is of course required to be able to keep clients
@@ -483,6 +495,9 @@ private:
 	
 	UPROPERTY( SaveGame, ReplicatedUsing=OnRep_RepeatMode )
 	EBoomBoxRepeatMode mRepeatMode = EBoomBoxRepeatMode::RepeatTape;
+
+	UPROPERTY( SaveGame, Replicated )
+	class AFGCharacterPlayer* mOwningCharacter = nullptr;
 
 	UPROPERTY()
 	AFGEquipmentBoomBox* mEquipmentActor = nullptr;

@@ -153,3 +153,4 @@ void AFGGameState::OnRep_TetrominoLeaderBoard(){ }
 void AFGGameState::Server_SetPublicTodoList(const FString& newTodoList){ }
 void AFGGameState::CheckRestartTime(){ }
 void AFGGameState::OnRep_PlannedRestartTime(){ }
+void AFGGameState::SubmitNumPlayersTelemetry(bool isBeginPlay){ }

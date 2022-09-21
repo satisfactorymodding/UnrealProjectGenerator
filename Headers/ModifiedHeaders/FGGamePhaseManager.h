@@ -98,8 +98,12 @@ public:
 public:
 	AFGGamePhaseManager();
 
+	// Begin Actor
 	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
-
+	virtual void BeginPlay() override;
+	virtual void EndPlay( const EEndPlayReason::Type endPlayReason ) override;
+	// End Actor
+	
 	// Begin IFGSaveInterface
 	virtual void PreSaveGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
 	virtual void PostSaveGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
@@ -162,8 +166,13 @@ public:
 	/** Resets the game phases to the defaults. Used for resetting progression for testing. */
 	void ResetGamePhase();
 
-	int32 GetLastTechTierForGamePhase(EGamePhase phase) const;
+	int32 GetLastTechTierForGamePhase( EGamePhase phase ) const;
 
+private:
+	UFUNCTION()
+	void SubmitGamePhaseTelemetry( EGamePhase phase );
+	
+public:
 	/** Broadcast a notification when we pay something of on a game phase*/
 	UPROPERTY( BlueprintAssignable, Category = "Progression" )
 	FOnPayOffOnGamePhase mOnPayOffOnGamePhase;

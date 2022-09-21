@@ -369,6 +369,8 @@ private:
 		fgcheck( out_spawnedSubsystem );
 	}
 
+	void SubmitNumPlayersTelemetry( bool isBeginPlay = false );
+
 public:
 	//@todo When was this used last time? Cleanup?
 	UPROPERTY( EditDefaultsOnly, Category = "Cheat" )

@@ -21,6 +21,9 @@ protected:
 	
 	UFUNCTION( BlueprintImplementableEvent, Category = "Character" )
 	void OnPlayerDataUpdated();
+
+	UFUNCTION()
+	void OnHiddenHUDModeChanged( bool hideHUD );
 	
 	UPROPERTY( BlueprintReadOnly, Category = "Character" )
 	FString mPlayerName;
@@ -30,4 +33,8 @@ protected:
 
 	UPROPERTY( BlueprintReadOnly, Category = "Character" )
 	bool mIsPlayerOnline;
+
+	/** The cached local players HUD. All name tags on the same instance of a game will have the same HUD */
+	UPROPERTY( Transient )
+	class AFGHUD* mCachedLocalHUD;
 };
