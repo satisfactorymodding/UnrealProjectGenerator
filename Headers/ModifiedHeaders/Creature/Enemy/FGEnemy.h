@@ -8,7 +8,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS( Abstract )
 class FACTORYGAME_API AFGEnemy : public AFGCreature
 {
 	GENERATED_BODY()
