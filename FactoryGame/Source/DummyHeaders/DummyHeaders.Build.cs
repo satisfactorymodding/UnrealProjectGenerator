@@ -14,7 +14,6 @@ public class DummyHeaders : ModuleRules
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
         bLegacyPublicIncludePaths = false;
 
-
         PublicDependencyModuleNames.AddRange(new[]
         {
             "Core", "CoreUObject", "Engine"
