@@ -3,6 +3,7 @@
 #include "FGInteractWidget.h"
 
 UFGInteractWidget::UFGInteractWidget(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
+void UFGInteractWidget::Native_Init(){ }
 void UFGInteractWidget::Init_Implementation(){ }
 void UFGInteractWidget::SetInputMode_Implementation(){ }
 void UFGInteractWidget::HandleEquipment(){ }
