@@ -89,6 +89,34 @@ namespace ImplementHeaders
             { "FGBackgroundThread",
 @"
 DEFINE_LOG_CATEGORY(LogPoolSystem);"
+            },
+            { "FGWorldSettings",
+@"bool ShouldConsiderActorForSave(AActor* actor, ULevel* settingsLevel) {
+	if (actor == NULL) {
+		return false;
+	}
+	if (actor->GetWorld() == NULL || actor->GetWorld()->IsGameWorld()) {
+		if (!actor->IsA<AFGWorldSettings>()) {
+			if (!actor->Implements<UFGSaveInterface>()) {
+				return false;
+			}
+			return !actor->HasAnyFlags(RF_Transient);
+		}
+		return actor->IsInPersistentLevel();
+	}
+	{
+		if (actor->IsA<AFGSubsystem>()) {
+			return false;
+		}
+		if (actor->GetLevel() != settingsLevel) {
+			return false;
+		}
+		if (!actor->Implements<UFGSaveInterface>()) {
+			return false;
+		}
+		return !actor->HasAnyFlags(RF_Transient);
+	}
+}"      
             }
         };
 
@@ -531,6 +559,192 @@ DEFINE_LOG_CATEGORY(LogPoolSystem);"
 #endif    
     // only create when its blocking instancing.
     return mBlockInstancing;"
+            },
+            {
+                "AFGResourceNode::InitResource",
+@"  this->mResourceClass = resourceClass;
+    this->mAmount = amount;
+    this->mPurity = purity;"
+            },
+            { "AFGWorldSettings::OnActorSpawned",
+@"	if (AExponentialHeightFog* HeightFog = Cast<AExponentialHeightFog>(actor)) {
+		mExponentialHeightFog = HeightFog;
+	}
+	if (ASkyAtmosphere* SkyAtmosphere = Cast<ASkyAtmosphere>(actor)) {
+		mSkyAtmosphere = SkyAtmosphere;
+	}
+	if (AFGSkySphere* SkySphere = Cast<AFGSkySphere>(actor)) {
+		mSkySphere = SkySphere;
+	}
+	if (AFGMinimapCaptureActor* MinimapCaptureActor = Cast<AFGMinimapCaptureActor>(actor)) {
+		mMinimapCaptureActor = MinimapCaptureActor;
+	}
+	MarkSaveActorArrayDirty();
+"
+            },
+            { "AFGWorldSettings::BeginDestroy",
+@"	Super::BeginDestroy();
+
+#if WITH_EDITOR
+	//Unregister Map Change Events
+	FLevelEditorModule& LevelEditor = FModuleManager::LoadModuleChecked<FLevelEditorModule>(""LevelEditor"");
+	LevelEditor.OnMapChanged().Remove(mOnMapChangedDelegateHandle);
+	mOnMapChangedDelegateHandle.Reset();
+
+	//Unregister Actor Spawned Event
+	GetWorld()->RemoveOnActorSpawnedHandler(mActorSpawnedDelegateHandle);
+	mActorSpawnedDelegateHandle.Reset();
+#endif
+"
+            },
+            { "AFGWorldSettings::AddReferencedObjects",
+@"	AFGWorldSettings* Settings = CastChecked<AFGWorldSettings>(inThis);
+	collector.AddReferencedObjects(Settings->mSaveActors, inThis);
+"
+            },
+            { "AFGWorldSettings::Serialize",
+@"	Super::Serialize(ar);
+	ar.UsingCustomVersion(FFactoryGameCustomVersion::GUID);
+
+	if (ar.IsSaveGame()) {
+		return;	
+	}
+	if (!ar.IsSaving() && !ar.IsLoading() || ar.CustomVer(FFactoryGameCustomVersion::GUID) < FFactoryGameCustomVersion::CachedSaveActors) {
+		return;
+	}
+	
+	const FString LevelName = GetLevel()->GetFullName();
+	if (LevelName.Find(TEXT(""_LOD""), ESearchCase::IgnoreCase, ESearchDir::FromEnd) != INDEX_NONE) {
+		return;
+	}
+
+	if (ar.IsCooking()) {
+		if (mSaveActors.Contains((AActor*) NULL)) {
+			UE_LOG(LogGame, Warning,
+				TEXT(""AFGWorldSettings::mSaveActors contains nullpointers during cook, that should never happen. Please resave the level %s""),
+				*LevelName);
+		}
+	}
+	if (mSaveActorsDirty) {
+		PrepareSaveActors();
+		mSaveActorsDirty = false;
+	}
+	ar << mSaveActors;
+"
+            },
+            { "AFGWorldSettings::PostLoad",
+@"	Super::PostLoad();
+	PrepareSaveActors();
+"
+            },
+            { "AFGWorldSettings::PreInitializeComponents",
+@"	Super::PreInitializeComponents();
+
+#if WITH_EDITOR
+	//Register Map Change Events
+	FLevelEditorModule& LevelEditor = FModuleManager::LoadModuleChecked<FLevelEditorModule>(""LevelEditor"");
+	mOnMapChangedDelegateHandle = LevelEditor.OnMapChanged().AddUObject(this, &AFGWorldSettings::HandleMapChanged);
+
+	//Register Actor Spawned Event
+	mActorSpawnedDelegateHandle = GetWorld()->AddOnActorSpawnedHandler(FOnActorSpawned::FDelegate::CreateUObject(this, &AFGWorldSettings::OnActorSpawned));
+#endif
+	
+	/*UFGSubsystemClasses* SubsystemClasses = UFGSubsystemClasses::Get();
+	SpawnSubsystem<AFGFoliageRemovalSubsystem>(mFoliageRemovalSubsystem, SubsystemClasses->mFoliageRemovalSubsystemClass, TEXT(""FoliageRemovalSubsystem""));
+	SpawnSubsystem<AFGAudioVolumeSubsystem>(mAudioVolumeSubsystem, AFGAudioVolumeSubsystem::StaticClass(), TEXT(""AudioVolumeSubsystem""));
+	SpawnSubsystem<AFGBuildableSubsystem>(mBuildableSubsystem, SubsystemClasses->mBuildableSubsystemClass, TEXT(""BuildableSubsystem""));
+	SpawnSubsystem<AFGPhotoModeManager>(mPhotoModeManager, SubsystemClasses->mPhotoModeManagerClass, TEXT(""PhotoModeManager""));
+
+	if (GetWorld()->WorldType != EWorldType::Editor && GetWorld()->WorldType != EWorldType::EditorPreview) {
+		SpawnSubsystem<AFGConveyorItemSubsystem>(mConveyorItemSubsystem, SubsystemClasses->mConveyorItemSubsystemClass, TEXT(""ConveyorItemSubsystem""));
+	}*/
+"
+            },
+            { "AFGWorldSettings::NotifyBeginPlay",
+@"	Super::NotifyBeginPlay();
+
+	/*if (!GetWorld()->HasBegunPlay()) {
+		AFGFoliageRemovalSubsystem* FoliageRemovalSubsystem = AFGFoliageRemovalSubsystem::Get(GetWorld());
+		if (FoliageRemovalSubsystem) {
+			FoliageRemovalSubsystem->Init();
+		}
+
+		UFGGameUserSettings* UserSettings = UFGGameUserSettings::GetFGGameUserSettings();
+		if (UserSettings) {
+			UserSettings->ApplyHologramColoursToCollectionParameterInstance(GetWorld());
+		}
+	}*/
+"
+            },
+            { "AFGWorldSettings::GetExponentialHeightFog",
+@"	return mExponentialHeightFog.LoadSynchronous();
+"
+            },
+            { "AFGWorldSettings::GetSkyAtmosphere",
+@"	return mSkyAtmosphere.LoadSynchronous();
+"
+            },
+            { "AFGWorldSettings::GetSkySphere",
+@"	return mSkySphere.LoadSynchronous();
+"
+            },
+            { "AFGWorldSettings::UpdateWorldBounds",
+@"	/*UMaterialParameterCollection* ParameterCollection = UFGEnvironmentSettings::GetWorldBoundsParameters();
+
+	if (ParameterCollection) {
+		FVector2D Min, Max;
+		UFGMapFunctionLibrary::GetWorldBounds(this, Min, Max);
+
+		UKismetMaterialLibrary::SetVectorParameterValue(this, ParameterCollection,
+			UFGEnvironmentSettings::WorldBoundsMinName,
+			FLinearColor(FVector(Min.X, Min.Y, 0.0f)));
+		
+		UKismetMaterialLibrary::SetVectorParameterValue(this, ParameterCollection,
+			UFGEnvironmentSettings::WorldBoundsExtentName,
+			FLinearColor(FVector(Max.X - Min.X, Max.Y - Min.Y, 0.0f)));
+	}*/
+"
+            },
+            { "AFGWorldSettings::OnSaveActorDestroyed",
+@"	actor->OnEndPlay.RemoveAll(this);
+	actor->OnDestroyed.RemoveAll(this);
+	mSaveActors.Remove(actor);
+	
+	if (GetWorld()) {
+		if (!GetWorld()->IsGameWorld()) {
+			mSaveActorsDirty = true;
+		}
+	}
+"
+            },
+            { "AFGWorldSettings::PrepareSaveActors",
+@"	ULevel* Level = GetLevel();
+	check(Level);
+
+	if (mSaveActorsDirty || GetLinkerCustomVersion(FFactoryGameCustomVersion::GUID) < FFactoryGameCustomVersion::CachedSaveActors) {
+		mSaveActors.Empty();
+
+		for (AActor* LevelActor : Level->Actors) {
+			if (!ShouldConsiderActorForSave(LevelActor, Level)) {
+				continue;
+			}
+			if (LevelActor->IsPendingKill()) {
+				continue;
+			}
+			if (!LevelActor->OnDestroyed.IsAlreadyBound(this, &AFGWorldSettings::OnSaveActorDestroyed)) {
+				LevelActor->OnDestroyed.AddDynamic(this, &AFGWorldSettings::OnSaveActorDestroyed);
+			}
+			mSaveActors.Add(LevelActor);
+		}
+	}
+	mSaveActors.Remove(NULL);
+
+	for (AActor* SaveActor : mSaveActors) {
+		if (!SaveActor->OnDestroyed.IsAlreadyBound(this, &AFGWorldSettings::OnSaveActorDestroyed)) {
+			SaveActor->OnDestroyed.AddDynamic(this, &AFGWorldSettings::OnSaveActorDestroyed);
+		}
+	}
+"
             },
             { "FFactoryGameCustomVersion::GUID",
 @"FGuid(0x0F4E61DC1, 0x7C029ACE, 0x85D7D561, 0x0E42F6A3D); //See symbol ?GUID@FFactoryGameCustomVersion@@2UFGuid@@B in IDA for value <0F4E61DC1h, 7C029ACEh, 85D7D561h, 0E42F6A3Dh>
