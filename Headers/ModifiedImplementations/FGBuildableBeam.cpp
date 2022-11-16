@@ -2,11 +2,13 @@
 
 #include "FGBuildableBeam.h"
 
-AFGBuildableBeam::AFGBuildableBeam(){ }
+AFGBuildableBeam::AFGBuildableBeam(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
 void AFGBuildableBeam::BeginPlay(){ }
 void AFGBuildableBeam::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildableBeam::GetAttachmentPoints(TArray< const FFGAttachmentPoint* >& out_points) const{ }
 void AFGBuildableBeam::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 int32 AFGBuildableBeam::GetDismantleRefundReturnsMultiplier() const{ return int32(); }
 void AFGBuildableBeam::SetLength(float NewLength){ }
+void AFGBuildableBeam::OnBuildEffectActorFinished(){ }
 void AFGBuildableBeam::OnRep_Length(){ }
+AFGBuildableBeamLightweight::AFGBuildableBeamLightweight(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }

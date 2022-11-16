@@ -114,7 +114,7 @@ public:
 
 	/** HUD visibility */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|HUD" )
-	bool GetPumpiMode() { return mForceHideHUD; }
+	bool GetPumpiMode() const { return mForceHideHUD; }
 
 	/** HUD visibility */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|HUD" )

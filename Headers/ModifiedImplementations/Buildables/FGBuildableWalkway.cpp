@@ -2,4 +2,5 @@
 
 #include "FGBuildableWalkway.h"
 
-AFGBuildableWalkway::AFGBuildableWalkway(){ }
+AFGBuildableWalkway::AFGBuildableWalkway(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
+AFGBuildableWalkwayLightweight::AFGBuildableWalkwayLightweight(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }

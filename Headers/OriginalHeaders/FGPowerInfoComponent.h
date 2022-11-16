@@ -150,7 +150,7 @@ public:
 	/** Get the dynamic power production we provide to the circuit. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerInfo" )
 	float GetRegulatedDynamicProduction() const;
-
+	
 	/**
 	 * @param isFullBlast set to true if the generator should always produce at full capacity; to false if it should only produce on-demand
 	 */
@@ -237,5 +237,5 @@ private:
 	uint8 mIsFuseTriggered:1;
 
 	UPROPERTY( SaveGame, Replicated )
-	uint8 mIsFullBlast : 1;
+	uint8 mIsFullBlast:1;
 };

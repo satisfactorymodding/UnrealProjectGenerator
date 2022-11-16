@@ -43,7 +43,6 @@ bool AFGCreatureController::GetStimulusLocationToInvestigate(FVector& outLocatio
 bool AFGCreatureController::TryUnstuckCreature(){ return bool(); }
 void AFGCreatureController::OnCreatureStuckInGeometry(){ }
 void AFGCreatureController::OnInterruptActionFinished_Implementation(bool success){ }
-void AFGCreatureController::OnHostilityModeUpdated(ECreatureHostility hostility){ }
 void AFGCreatureController::SetCurrentAction( UFGCreatureAction* action){ }
 void AFGCreatureController::OnActionSelectionComplete( UFGAction* selectedAction){ }
 void AFGCreatureController::OnCreatureMovementModeChanged(EMovementMode PrevMovementMode, uint8 PreviousCustomMode){ }
@@ -76,3 +75,4 @@ void AFGCreatureController::OnCreatureStunChanged(bool isStunned){ }
 void AFGCreatureController::ClearOutdatedRecentDamageTaken(){ }
 void AFGCreatureController::SenseActor(AActor* perceivedActor, const FAIStimulus& stimulus){ }
 AActor* AFGCreatureController::GetActualPerceivedActor(AActor* inActor) const{ return nullptr; }
+bool AFGCreatureController::CanBeHostileAgainstPlayer(const  AFGCharacterPlayer* player) const{ return bool(); }

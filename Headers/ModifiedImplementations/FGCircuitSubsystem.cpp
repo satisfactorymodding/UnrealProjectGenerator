@@ -3,6 +3,7 @@
 #include "FGCircuitSubsystem.h"
 
 UFGCriticalBatteryDepletionMessage::UFGCriticalBatteryDepletionMessage(){ }
+AFGCircuitSubsystem::AFGCircuitSubsystem(){ }
 void AFGCircuitSubsystem::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 bool AFGCircuitSubsystem::ReplicateSubobjects( UActorChannel* channel,  FOutBunch* bunch, FReplicationFlags* repFlags){ return bool(); }
 void AFGCircuitSubsystem::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
@@ -16,7 +17,6 @@ void AFGCircuitSubsystem::PostLoadGame_Implementation(int32 saveVersion, int32 g
 void AFGCircuitSubsystem::GatherDependencies_Implementation(TArray< UObject* >& out_dependentObjects){ }
 bool AFGCircuitSubsystem::NeedTransform_Implementation(){ return bool(); }
 bool AFGCircuitSubsystem::ShouldSave_Implementation() const{ return bool(); }
-AFGCircuitSubsystem::AFGCircuitSubsystem(){ }
 void AFGCircuitSubsystem::Serialize(FArchive& ar){ Super::Serialize(ar); }
 void AFGCircuitSubsystem::BeginPlay(){ }
 void AFGCircuitSubsystem::Tick(float DeltaSeconds){ }
@@ -28,6 +28,9 @@ void AFGCircuitSubsystem::RemoveComponent( UFGCircuitConnectionComponent* compon
 void AFGCircuitSubsystem::SetCircuitBridgesModified(){ }
 void AFGCircuitSubsystem::AddCircuitBridge(TWeakObjectPtr< AFGBuildableCircuitBridge > circuitBridge){ }
 void AFGCircuitSubsystem::RemoveCircuitBridge(TWeakObjectPtr< AFGBuildableCircuitBridge > circuitBridge){ }
+void AFGCircuitSubsystem::PowerCircuit_RegisterPriorityPowerSwitchInfo( AFGPriorityPowerSwitchInfo* info){ }
+void AFGCircuitSubsystem::PowerCircuit_UnregisterPriorityPowerSwitchInfo( AFGPriorityPowerSwitchInfo* info){ }
+TArray< AFGPriorityPowerSwitchInfo* > AFGCircuitSubsystem::PowerCircuit_GetPriorityPowerSwitchInfos() const{ return TArray<AFGPriorityPowerSwitchInfo*>(); }
 void AFGCircuitSubsystem::Debug_DumpCircuitsToLog(){ }
 void AFGCircuitSubsystem::OnRep_ReplicatedCircuits(){ }
 int32 AFGCircuitSubsystem::GenerateUniqueCircuitID(){ return int32(); }

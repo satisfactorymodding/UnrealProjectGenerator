@@ -32,8 +32,9 @@ UCLASS( Blueprintable, abstract, hidecategories = ( Actor, Input, Replication, R
 class FACTORYGAME_API AFGCircuitSubsystem : public AFGSubsystem, public IFGSaveInterface
 {
 	GENERATED_BODY()
-	
 public:
+	AFGCircuitSubsystem();
+	
 	/** Replication. */
 	virtual void GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps ) const override;
 	virtual bool ReplicateSubobjects( class UActorChannel* channel, class FOutBunch* bunch, FReplicationFlags* repFlags ) override;
@@ -56,8 +57,6 @@ public:
 	virtual bool NeedTransform_Implementation() override;
 	virtual bool ShouldSave_Implementation() const override;
 	// End IFSaveInterface
-
-	AFGCircuitSubsystem();
 
 	// Begin AActor interface
 	virtual void Serialize( FArchive& ar ) override;
@@ -146,6 +145,11 @@ public:
 	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|Circuits|Power" )
 	void PowerCircuit_OnCriticalBatteryDepletion( float depletionPercent );
 
+	/** Allow power circuits to keep track of all the */
+	void PowerCircuit_RegisterPriorityPowerSwitchInfo( class AFGPriorityPowerSwitchInfo* info );
+	void PowerCircuit_UnregisterPriorityPowerSwitchInfo( class AFGPriorityPowerSwitchInfo* info );
+	TArray< AFGPriorityPowerSwitchInfo* > PowerCircuit_GetPriorityPowerSwitchInfos() const;
+
 	/** Debugging function to dump stats of all circuits to the log */
 	void Debug_DumpCircuitsToLog();
 
@@ -167,9 +171,7 @@ private:
 	int32 SplitCircuit( const UFGCircuit* circuit );
 	void RemoveCircuit( int32 circuitID );
 
-	/**
-	 * Rebuild the circuit-group structure
-	 */
+	/** Rebuild the circuit-group structure. */
 	void RebuildCircuitGroups();
 
 	/**
@@ -185,14 +187,14 @@ private:
 
 public:
 	/**
-	* Power circuits: the share of the battery capacity that can be depleted before a warning is raised, in the interval [0.0, 1.0].
-	*/
+	 * Power circuits: the share of the battery capacity that can be depleted before a warning is raised, in the interval [0.0, 1.0].
+	 */
 	UPROPERTY( EditDefaultsOnly, Category = "Power Circuit")
 	float mCriticalBatteryDepletionPercent = 0.25f;
 
 	/**
-	* Power circuits: the minimum time that has to pass between battery warnings, in minutes.
-	*/
+	 * Power circuits: the minimum time that has to pass between battery warnings, in minutes.
+	 */
 	UPROPERTY( EditDefaultsOnly, Category = "Power Circuit")
 	float mMinimumBatteryWarningInterval = 10.0f;
 
@@ -220,4 +222,10 @@ private:
 	 */
 	UPROPERTY()
 	TArray< class UFGCircuitGroup* > mCircuitGroups;
+
+	/**
+	 * Power circuits: all the priority switches in the world.
+	 */
+	UPROPERTY()
+	TArray< class AFGPriorityPowerSwitchInfo* > mPriorityPowerSwitchInfos;
 };

@@ -12,4 +12,4 @@ void AFGBuildablePipelineFlowIndicator::LostSignificance_Implementation(){ }
 void AFGBuildablePipelineFlowIndicator::GainedSignificance_Native(){ }
 void AFGBuildablePipelineFlowIndicator::LostSignificance_Native(){ }
 float AFGBuildablePipelineFlowIndicator::GetSignificanceRange(){ return float(); }
-void AFGBuildablePipelineFlowIndicator::UpdateVisuals(){ }
+void AFGBuildablePipelineFlowIndicator::UpdateVisuals(float Dt){ }

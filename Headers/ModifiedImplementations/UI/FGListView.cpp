@@ -2,13 +2,7 @@
 
 #include "FGListView.h"
 
-#if WITH_EDITOR
-const FText UFGListView::GetPaletteCategory(){ return FText(); }
-#endif 
-void UFGListView::Refresh(){ }
-UClass* UFGListView::GetSlotClass() const{ return nullptr; }
-void UFGListView::OnSlotAdded(UPanelSlot* slot){ }
-void UFGListView::OnSlotRemoved(UPanelSlot* slot){ }
-void UFGListView::ReleaseSlateResources(bool releaseChildren){ Super::ReleaseSlateResources(releaseChildren); }
-TSharedRef< SWidget > UFGListView::RebuildWidget(){ return Super::RebuildWidget(); }
-UFGListView::UFGListView(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
+UFGListView::UFGListView(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
+TSharedRef<STableViewBase> UFGListView::RebuildListWidget() {
+  return ConstructListView<SFGListView>();
+}

@@ -2,5 +2,6 @@
 
 #include "FGBuildablePillar.h"
 
-AFGBuildablePillar::AFGBuildablePillar(){ }
+AFGBuildablePillar::AFGBuildablePillar(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
 void AFGBuildablePillar::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
+AFGBuildablePillarLightweight::AFGBuildablePillarLightweight(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }

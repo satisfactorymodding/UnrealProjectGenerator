@@ -15,6 +15,7 @@ void AFGPipelineHologram::GetSupportedScrollModes(TArray< EHologramScrollMode >*
 void AFGPipelineHologram::GetSupportedBuildModes_Implementation(TArray<TSubclassOf<UFGHologramBuildModeDescriptor>>& out_buildmodes) const{ }
 bool AFGPipelineHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }
 void AFGPipelineHologram::AdjustForGround(FVector& out_adjustedLocation, FRotator& out_adjustedRotation){ }
+void AFGPipelineHologram::PreHologramPlacement(){ }
 bool AFGPipelineHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 void AFGPipelineHologram::OnInvalidHitResult(){ }
 void AFGPipelineHologram::Scroll(int32 delta){ }

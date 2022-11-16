@@ -10,4 +10,6 @@ const FFoundationSideSelectionFlags FFoundationSideSelectionFlags::NoEdges = FFo
 const FFoundationSideSelectionFlags FFoundationSideSelectionFlags::AllEdges = FFoundationSideSelectionFlags();
 FVector FFoundationHelpers::GetLocalSpaceNormalFromFoundationSide(EFoundationSide side){ return FVector(); }
 FFoundationSideNormal FFoundationHelpers::FindBestMatchingFoundationSideFromLocalNormal(const FVector& normal, FFoundationSideSelectionFlags exludeEdges){ return FFoundationSideNormal(); }
-AFGBuildableFactoryBuilding::AFGBuildableFactoryBuilding(){ }
+AFGBuildableFactoryBuilding::AFGBuildableFactoryBuilding(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
+FName AFGBuildableFactoryBuilding::MeshComponentFName = FName();
+AFGBuildableFactoryBuildingLightweight::AFGBuildableFactoryBuildingLightweight(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }

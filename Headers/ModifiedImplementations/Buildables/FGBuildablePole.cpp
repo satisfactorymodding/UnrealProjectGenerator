@@ -2,10 +2,12 @@
 
 #include "FGBuildablePole.h"
 
-AFGBuildablePole::AFGBuildablePole(){ }
+AFGBuildablePole::AFGBuildablePole(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
 void AFGBuildablePole::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildablePole::BeginPlay(){ }
 void AFGBuildablePole::SetPoleHeight(float height){ }
 void AFGBuildablePole::SetupConnectionComponent(){ }
-void AFGBuildablePole::PostLoad(){ Super::PostLoad(); }
+TArray<struct FInstanceData> AFGBuildablePole::GetActorLightweightInstanceData_Implementation(){ return TArray<struct FInstanceData>(); }
+void AFGBuildablePole::SetupInstances_Native(bool bSpawnHidden){ }
 const FName AFGBuildablePole::PoleMeshName = FName();
+AFGBuildablePoleLightweight::AFGBuildablePoleLightweight(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }

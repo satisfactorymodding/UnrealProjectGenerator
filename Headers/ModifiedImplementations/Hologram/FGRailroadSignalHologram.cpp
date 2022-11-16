@@ -6,5 +6,8 @@ AFGRailroadSignalHologram::AFGRailroadSignalHologram(){ }
 void AFGRailroadSignalHologram::BeginPlay(){ }
 void AFGRailroadSignalHologram::EndPlay(const EEndPlayReason::Type endPlayReason){ }
 void AFGRailroadSignalHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }
+bool AFGRailroadSignalHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }
+AActor* AFGRailroadSignalHologram::GetUpgradedActor() const{ return nullptr; }
+bool AFGRailroadSignalHologram::TryUpgrade(const FHitResult& hitResult){ return bool(); }
 void AFGRailroadSignalHologram::ConfigureActor( AFGBuildable* inBuildable) const{ }
 void AFGRailroadSignalHologram::CheckValidPlacement(){ }

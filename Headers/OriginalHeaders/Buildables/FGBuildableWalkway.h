@@ -14,7 +14,7 @@ class FACTORYGAME_API AFGBuildableWalkway : public AFGBuildableFactoryBuilding
 {
 	GENERATED_BODY()
 public:
-	AFGBuildableWalkway();
+	AFGBuildableWalkway(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 
 public:
 	/** Size of the walkway (size of one side of the square part). */
@@ -28,4 +28,12 @@ public:
 	/** Disable snapping on specific sides. */
 	UPROPERTY( EditDefaultsOnly, Category = "Walkway" )
 	FFoundationSideSelectionFlags mDisableSnapOn;
+};
+
+UCLASS()
+class FACTORYGAME_API AFGBuildableWalkwayLightweight : public AFGBuildableWalkway
+{
+	GENERATED_BODY()
+
+	AFGBuildableWalkwayLightweight( const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get() );
 };

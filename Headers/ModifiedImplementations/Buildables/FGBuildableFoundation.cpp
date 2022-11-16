@@ -2,4 +2,5 @@
 
 #include "FGBuildableFoundation.h"
 
-AFGBuildableFoundation::AFGBuildableFoundation(){ }
+AFGBuildableFoundation::AFGBuildableFoundation(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
+AFGBuildableFoundationLightweight::AFGBuildableFoundationLightweight(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }

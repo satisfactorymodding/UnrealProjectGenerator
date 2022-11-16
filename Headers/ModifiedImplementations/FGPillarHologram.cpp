@@ -15,6 +15,7 @@ int32 AFGPillarHologram::GetBaseCostMultiplier() const{ return int32(); }
 void AFGPillarHologram::GetSupportedBuildModes_Implementation(TArray<TSubclassOf<UFGHologramBuildModeDescriptor>>& out_buildmodes) const{ }
 void AFGPillarHologram::OnBuildModeChanged(){ }
 bool AFGPillarHologram::CanBeZooped() const{ return bool(); }
+void AFGPillarHologram::AdjustForGround(FVector& out_adjustedLocation, FRotator& out_adjustedRotation){ }
 void AFGPillarHologram::FilterAttachmentPoints(TArray< const FFGAttachmentPoint* >& Points, AFGBuildable* pBuildable, const FHitResult& HitResult) const{ }
 void AFGPillarHologram::CreateAttachmentPointTransform(FTransform& out_transformResult, const FHitResult& HitResult, AFGBuildable* pBuildable, const FFGAttachmentPoint& BuildablePoint, const FFGAttachmentPoint& LocalPoint){ }
 void AFGPillarHologram::SerializeConstructMessage(FArchive& ar, FNetConstructionID id){ }

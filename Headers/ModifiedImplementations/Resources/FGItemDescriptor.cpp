@@ -51,14 +51,12 @@ UTexture2D* UFGItemDescriptor::GetSmallIcon(TSubclassOf< UFGItemDescriptor > inC
 	else
 		return nullptr;
 }
-UTexture2D* UFGItemDescriptor::Internal_GetSmallIcon() const{ return nullptr; }
 UTexture2D* UFGItemDescriptor::GetBigIcon(TSubclassOf< UFGItemDescriptor > inClass) {
 	if (inClass)
 		return inClass.GetDefaultObject()->mPersistentBigIcon;
 	else
 		return nullptr;
 }
-UTexture2D* UFGItemDescriptor::Internal_GetBigIcon() const{ return nullptr; }
 UMaterialInterface* UFGItemDescriptor::GetCrosshairMaterial(TSubclassOf< UFGItemDescriptor > inClass){ return nullptr; }
 void UFGItemDescriptor::GetDescriptorStatBars(TSubclassOf< UFGItemDescriptor > inClass, TArray<FDescriptorStatBar>& out_DescriptorStatBars){ }
 UStaticMesh* UFGItemDescriptor::GetItemMesh(TSubclassOf< UFGItemDescriptor > inClass) {
@@ -121,4 +119,7 @@ TSubclassOf<UFGSchematic> UFGItemDescriptor::GetRequiredSchematicToScan(TSubclas
 FText UFGItemDescriptor::GetScannerDisplayText(TSubclassOf< UFGItemDescriptor > inClass){ return FText(); }
 FColor UFGItemDescriptor::GetScannerLightColor(TSubclassOf< UFGItemDescriptor > inClass){ return FColor(); }
 FText UFGItemDescriptor::GetItemNameInternal() const{ return FText(); }
+FString UFGItemDescriptor::GetItemNameInternalAsString() const{ return FString(); }
 FText UFGItemDescriptor::GetItemDescriptionInternal() const{ return FText(); }
+UTexture2D* UFGItemDescriptor::Internal_GetSmallIcon() const{ return nullptr; }
+UTexture2D* UFGItemDescriptor::Internal_GetBigIcon() const{ return nullptr; }

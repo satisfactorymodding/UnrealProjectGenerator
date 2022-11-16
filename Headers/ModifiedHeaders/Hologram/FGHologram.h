@@ -249,6 +249,8 @@ public:
 	 */
 	virtual void GetSupportedScrollModes( TArray< EHologramScrollMode >* out_modes ) const;
 
+	/** Set additional clearance boxes to check for collision */
+	void SetAdditionalClearanceBoxes( TArray< class UFGClearanceComponent* >& clearanceComps ) { mAdditionalClearanceBoxes.Reset(); mAdditionalClearanceBoxes.Append( clearanceComps ); }
 
 	/**
 	* Get the build modes implemented for the hologram
@@ -351,7 +353,7 @@ public:
 	 * @param includeChildren Include child holograms cost in the cost.
 	 * @note DO NOT expose this to blueprint, use the provided functions in the build guns build state.
 	 */
-	TArray< FItemAmount > GetCost( bool includeChildren ) const;
+	virtual TArray< FItemAmount > GetCost( bool includeChildren ) const;
 
 	/** Can be null if the building has no clearance */
 	class UBoxComponent* GetClearanceDetector() const{ return mClearanceDetector; }
@@ -428,6 +430,10 @@ public:
 	//@todo This has the same name as a deprecated function in Actor, rename.
 	TSubclassOf< AActor > GetActorClass() const;
 
+	/** Sets whether the hologram is currently residing inside a blueprint designer */
+	void SetInsideBlueprintDesigner( class AFGBuildableBlueprintDesigner* designer );
+	class AFGBuildableBlueprintDesigner* GetBlueprintDesigner();
+
 protected:
 	/** OnHologramTransformUpdated
 	 * Let's holograms react to rotation and location chnages applied after the initial move. Currently used for stuff like snapping and having sub holograms like hub parts update.
@@ -447,6 +453,9 @@ protected:
 	/** Runs for every overlap result from our clearance check. */
 	virtual void HandleClearanceOverlap( const FOverlapResult& overlap, const FVector& locationOffset, bool HologramHasSoftClearance );
 
+	/** When overlapping with the edge of a designer, this function determines whether or not the overlap is allowed. */
+	virtual bool CanIntersectWithDesigner( class AFGBuildableBlueprintDesigner* designer );
+	
 	/** Gets the component we should use when checking for clearance overlaps. */
 	virtual class UPrimitiveComponent* GetClearanceOverlapCheckComponent() const;
 
@@ -500,6 +509,8 @@ protected:
 	 */
 	virtual USceneComponent* SetupComponent( USceneComponent* attachParent, UActorComponent* componentTemplate, const FName& componentName );
 
+	virtual TArray<UStaticMeshComponent*> SpawnLightWeightInstanceData( USceneComponent* attachParent );
+	
 	/** Mark the hologram as changed. */
 	void SetIsChanged( bool isChanged );
 
@@ -568,6 +579,10 @@ protected:
 	UPROPERTY()
 	class UFGClearanceComponent* mClearanceBox;
 
+	/** Optional Clearance boxes if we want to have more than a single one (useful for blueprints) */
+	UPROPERTY()
+	TArray< class UFGClearanceComponent* > mAdditionalClearanceBoxes;
+	
 	/** Mesh component used to display the clearance mesh */
 	UPROPERTY()
 	class UStaticMeshComponent* mClearanceMeshComponent;
@@ -584,6 +599,9 @@ protected:
 	UPROPERTY( EditDefaultsOnly, Category = "Hologram" )
 	EHologramSoftClearanceResponse mSoftClearanceOverlapResponse;
 
+	UPROPERTY()
+	TArray<UStaticMeshComponent*> mGeneratedAbstractComponents;
+	
 	/** No enforced snapping, foundations use this for now. */
 	bool mNoSnapMode;
 
@@ -664,7 +682,19 @@ protected:
 
 	/** The reason why we couldn't construct this hologram, if it's empty then we can construct it */
 	TArray< TSubclassOf< class UFGConstructDisqualifier > > mConstructDisqualifiers;
+	
+	/** Tracks the blueprint designer this hologram resides inside of */
+	UPROPERTY()
+	class AFGBuildableBlueprintDesigner* mBlueprintDesigner;
+	
+	/** Special override to allow certain buildables to intersect with the blueprint designer when theyre at the very edge (walls, poles) */
+	UPROPERTY( EditDefaultsOnly, Category = "Hologram" )
+	bool mAllowEdgePlacementInDesignerEvenOnIntersect;
 
+	/** Initialized on spawn - Can this hologram be placed in a blueprint designer? */
+	UPROPERTY()
+	bool mCanBePlacedInBlueprintDesigner;
+	
 private:
 	/** Who is building */
 	UPROPERTY( Replicated, CustomSerialization )
@@ -692,7 +722,7 @@ private:
 	/** Temp memory holders for when holograms are serialized for construction messages (replication) */
 	UPROPERTY( CustomSerialization )
 	FRotator mConstructionRotation;
-public:
+
 };
 
 template<typename T>

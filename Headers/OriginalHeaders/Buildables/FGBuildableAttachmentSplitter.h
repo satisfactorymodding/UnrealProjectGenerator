@@ -29,7 +29,7 @@ public:
 };
 
 /**
- * 
+ * Base class for splitters.
  */
 UCLASS()
 class FACTORYGAME_API AFGBuildableAttachmentSplitter : public AFGBuildableConveyorAttachment

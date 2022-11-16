@@ -10,6 +10,7 @@ AActor* AFGWallHologram::GetUpgradedActor() const{ return nullptr; }
 bool AFGWallHologram::TryUpgrade(const FHitResult& hitResult){ return bool(); }
 bool AFGWallHologram::DoMultiStepPlacement(bool isInputFromARelease){ return bool(); }
 void AFGWallHologram::ConfigureActor(AFGBuildable* inBuildable) const{ }
+void AFGWallHologram::CalculateClearanceInformation(const FWallClearanceParams& params, FVector& newRelativeLocation, FRotator& newRelativeRotation, FVector& newExtents){ }
 int32 AFGWallHologram::GetRotationStep() const{ return int32(); }
 void AFGWallHologram::CheckValidPlacement(){ }
 void AFGWallHologram::UpdateZoop(){ }
@@ -17,4 +18,3 @@ void AFGWallHologram::ConstructZoop(TArray<AActor*>& out_children){ }
 FVector AFGWallHologram::ConvertZoopToWorldLocation(const FIntVector& zoop) const{ return FVector(); }
 bool AFGWallHologram::IsHologramIdenticalToBuildable( AFGBuildable* buildable, const FVector& hologramLocationOffset) const{ return bool(); }
 void AFGWallHologram::SelectWallVariantForElevation(float NewAngle){ }
-void AFGWallHologram::CalculateClearanceInformation(FVector& newRelativeLocation, FRotator& newRelativeRotation, FVector& newExtents){ }

@@ -13,6 +13,7 @@ bool FInventoryItem::Serialize(FArchive& ar) {
 	}
 	return true;
 }
+void FInventoryItem::SetItemClass(TSubclassOf<  UFGItemDescriptor > NewItemClass){ }
 const FInventoryItem FInventoryItem::NullInventoryItem = FInventoryItem();
 FInventoryStack::FInventoryStack(){ }
 FInventoryStack::FInventoryStack(const FInventoryItem& item){ }
@@ -58,12 +59,14 @@ TArray<int32> UFGInventoryComponent::GetRelevantStackIndexes(TArray< TSubclassOf
 void UFGInventoryComponent::AddArbitrarySlotSize(int32 index, int32 arbitrarySlotSize){ }
 void UFGInventoryComponent::RemoveArbitrarySlotSize(int32 index){ }
 int32 UFGInventoryComponent::GetSlotSize(int32 index, TSubclassOf< UFGItemDescriptor > itemDesc) const{ return int32(); }
+int32 UFGInventoryComponent::GetSlotSizeForItem(int32 index, TSubclassOf< UFGItemDescriptor > itemDesc , const FInventoryItem* Item) const{ return int32(); }
 TSubclassOf< UFGItemDescriptor > UFGInventoryComponent::GetAllowedItemOnIndex(int32 idx){ return TSubclassOf<UFGItemDescriptor>(); }
 void UFGInventoryComponent::SetAllowedItemOnIndex(int32 idx, TSubclassOf< UFGItemDescriptor > allowedItemClass){ }
 bool UFGInventoryComponent::CanSplitStackAtIdx(int32 idx){ return bool(); }
 void UFGInventoryComponent::SplitStackAtIdx(int32 idx, int32 numItemsToMove){ }
 void UFGInventoryComponent::SetCanBeRearranged(bool canBeRearranged){ }
 void UFGInventoryComponent::CopyFromOtherComponent(UFGInventoryComponent* otherComponent){ }
+AFGEquipment* UFGInventoryComponent::GetStackEquipmentActorAtIdx(const int32 index) const{ return nullptr; }
 void UFGInventoryComponent::OnRep_InventoryStacks(){ }
 void UFGInventoryComponent::OnRep_AllowedItemDescriptors(TArray< TSubclassOf < UFGItemDescriptor > > previousAllowedItems){ }
 void UFGInventoryComponent::OnItemsAdded(int32 idx, int32 num){ }

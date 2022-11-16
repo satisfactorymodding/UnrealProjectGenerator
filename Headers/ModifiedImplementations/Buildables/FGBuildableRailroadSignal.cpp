@@ -14,9 +14,11 @@ void AFGBuildableRailroadSignal::LostSignificance_Implementation(){ }
 void AFGBuildableRailroadSignal::GainedSignificance_Native(){ }
 void AFGBuildableRailroadSignal::LostSignificance_Native(){ }
 void AFGBuildableRailroadSignal::SetupForSignificance(){ }
+void AFGBuildableRailroadSignal::PreUpgrade_Implementation(){ }
 void AFGBuildableRailroadSignal::OnAspectChanged(){ }
 void AFGBuildableRailroadSignal::OnBlockValidationChanged(){ }
 void AFGBuildableRailroadSignal::OnDirectionalityChanged(){ }
+void AFGBuildableRailroadSignal::DisconnectSignal(){ }
 void AFGBuildableRailroadSignal::UpdateVisuals(){ }
 void AFGBuildableRailroadSignal::ApplyVisualState(int16 state){ }
 void AFGBuildableRailroadSignal::AddGuardedConnection( UFGRailroadTrackConnectionComponent* connection){ }

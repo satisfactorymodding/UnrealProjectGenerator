@@ -352,11 +352,14 @@ struct FConveyorBeltItems
 	}
 
 
-	FORCEINLINE void RemoveItemFromListAt( int16 index )
+	FORCEINLINE void RemoveItemFromListAt( int16 index, bool bMarkDirty = true )
 	{
 		Items.RemoveAt( index );
 
-		MarkArrayDirty();
+		if ( bMarkDirty )
+		{
+			MarkArrayDirty();
+		}
 	}
 
 	FORCEINLINE bool IsRemovedAt( int16 index ) const
@@ -375,6 +378,11 @@ struct FConveyorBeltItems
 	}
 
 	FORCEINLINE FConveyorBeltItem& GetItemUnsafe( int16 index )
+	{
+		return Items.GetData()[index];
+	}
+
+	FORCEINLINE const FConveyorBeltItem& GetItemUnsafe( int16 index ) const
 	{
 		return Items.GetData()[index];
 	}
@@ -572,7 +580,6 @@ public:
 	FORCEINLINE void MarkItemTransformsDirty()
 	{
 		mPendingUpdateItemTransforms = true;
-		mFramesStalled = 0;
 	}
 
 	/** Returns how much room there was on the belt after the last factory tick. If the belt is empty it will return the length of the belt */
@@ -658,13 +665,10 @@ public:
 	/** Spacing between each conveyor item, from origo to origo. */
 	static constexpr float ITEM_SPACING = 120.0f;
 
-	// TODO maybe add a getter & Setter instead of moving this to public.
+	/* Used to block updating when items cannot move.*/
+	mutable uint8 mIsStalled:1;
+	
 	bool mPendingUpdateItemTransforms;
-
-	TMap< FName, TArray< FTransform > > mCachedTransforms;
-
-	/* Number of frames the conveyor belt has stalled used in the experimental conveyor renderer to see if we should cache or not. */
-	uint8 mFramesStalled;
 
 protected:
 
@@ -697,5 +701,4 @@ private:
 
 	/** The id for the conveyor bucket this conveyor belongs to */
 	int32 mConveyorBucketID;
-
 };

@@ -15,14 +15,18 @@ void AFGBuildable::SetBuildableDisplayName(TSubclassOf< AFGBuildable > inClass, 
 #endif 
 #if WITH_EDITORONLY_DATA
 #endif 
+#if WITH_EDITORONLY_DATA
+#endif 
 #if WITH_EDITOR
 void AFGBuildable::DebugDrawOcclusionBoxes(){ }
 void AFGBuildable::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent){ Super::PostEditChangeProperty(PropertyChangedEvent); }
 void AFGBuildable::PostEditChangeChainProperty(FPropertyChangedChainEvent& PropertyChangedEvent){ }
 #endif 
+#if WITH_EDITOR
+#endif 
 void AFGBuildable::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildable::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
-AFGBuildable::AFGBuildable(){ }
+AFGBuildable::AFGBuildable(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
 void AFGBuildable::Serialize(FArchive& ar){ Super::Serialize(ar); }
 void AFGBuildable::PostLoad(){ Super::PostLoad(); }
 void AFGBuildable::OnConstruction(const FTransform& transform){ }
@@ -35,6 +39,8 @@ void AFGBuildable::PostLoadGame_Implementation(int32 saveVersion, int32 gameVers
 void AFGBuildable::GatherDependencies_Implementation(TArray< UObject* >& out_dependentObjects){ }
 bool AFGBuildable::NeedTransform_Implementation(){ return bool(); }
 bool AFGBuildable::ShouldSave_Implementation() const{ return bool(); }
+TArray<struct FInstanceData> AFGBuildable::GetActorLightweightInstanceData_Implementation(){ return TArray<struct FInstanceData>(); }
+void AFGBuildable::PostLazySpawnInstances_Implementation(){ }
 void AFGBuildable::SetCustomizationData_Implementation(const FFactoryCustomizationData& customizationData){ }
 void AFGBuildable::SetCustomizationData_Native(const FFactoryCustomizationData& customizationData){ }
 void AFGBuildable::ApplyCustomizationData_Implementation(const FFactoryCustomizationData& customizationData){ }
@@ -83,6 +89,10 @@ void AFGBuildable::Stat_StockInventory(TArray< FItemAmount >& out_amount) const{
 void AFGBuildable::PlayBuildEffects(AActor* inInstigator){ }
 void AFGBuildable::ExecutePlayBuildEffects(){ }
 void AFGBuildable::OnBuildEffectFinished(){ }
+void AFGBuildable::PlayBuildEffectActor(AActor* inInstigator){ }
+void AFGBuildable::ExecutePlayBuildActorEffects(){ }
+void AFGBuildable::OnBuildEffectActorFinished(){ }
+bool AFGBuildable::HandleBlueprintSpawnedBuildEffect(AFGBuildEffectActor* inBuildEffectActor){ return bool(); }
 void AFGBuildable::PlayDismantleEffects_Implementation(){ }
 void AFGBuildable::OnDismantleEffectFinished(){ }
 UFGMaterialEffect_Build* AFGBuildable::GetActiveBuildEffect(){ return nullptr; }
@@ -103,6 +113,10 @@ bool AFGBuildable::ShouldBeConsideredForBase_Implementation(){ return bool(); }
 void AFGBuildable::Native_OnMaterialInstancesUpdated(){ }
 int32 AFGBuildable::GetCostMultiplierForLength(float totalLength, float costSegmentLength){ return int32(); }
 TSubclassOf< class UFGFactoryCustomizationDescriptor_Swatch > AFGBuildable::GetDefaultSwatchCustomizationOverride(UObject* worldContext){ return TSubclassOf<class UFGFactoryCustomizationDescriptor_Swatch>(); }
+void AFGBuildable::ToggleInstanceVisibility(bool bNewState){ }
+void AFGBuildable::SetInsideBlueprintDesigner( AFGBuildableBlueprintDesigner* designer){ }
+AFGBuildableBlueprintDesigner* AFGBuildable::GetBlueprintDesigner(){ return nullptr; }
+void AFGBuildable::PostSerializedFromBlueprint(){ }
 void AFGBuildable::OnSkinCustomizationApplied_Implementation(TSubclassOf<  UFGFactoryCustomizationDescriptor_Skin > skin){ }
 void AFGBuildable::PlayConstructSound_Implementation(){ }
 void AFGBuildable::PlayDismantleSound_Implementation(){ }
@@ -124,10 +138,15 @@ void AFGBuildable::SetDidFirstTimeUse(bool didUse){ }
 TArray< UStaticMeshComponent* > AFGBuildable::CreateBuildEffectProxyComponents(){ return TArray<UStaticMeshComponent*>(); }
 void AFGBuildable::DestroyBuildEffectProxyComponents(){ }
 void AFGBuildable::OnRep_CustomizationData(){ }
+void AFGBuildable::SetupInstances_Implementation(bool bInitializeHidden){ }
+void AFGBuildable::SetupInstances_Native(bool bInitializeHidden){ }
+void AFGBuildable::RemoveInstances_Implementation(){ }
+void AFGBuildable::RemoveInstances_Native(){ }
 void AFGBuildable::ForceUpdateCustomizerMaterialToRecipeMapping(bool bTryToSave){ }
 void AFGBuildable::CreateFactoryStatID() const{ }
 void AFGBuildable::SetReplicateDetails(bool replicateDetails){ }
 bool AFGBuildable::CheckFactoryConnectionComponents(FString& out_message){ return bool(); }
 void AFGBuildable::OnRep_DidFirstTimeUse(){ }
+void AFGBuildable::OnRep_LightweightTransform(){ }
 FOnReplicationDetailActorStateChange AFGBuildable::OnBuildableReplicationDetailActorStateChange = FOnReplicationDetailActorStateChange();
 FOnRegisteredPlayerChanged AFGBuildable::OnRegisterPlayerChange = FOnRegisteredPlayerChanged();

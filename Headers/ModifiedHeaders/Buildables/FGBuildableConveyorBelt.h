@@ -4,6 +4,7 @@
 
 #include "FGUseableInterface.h"
 #include "FGBuildableConveyorBase.h"
+#include "FGSplineBuildableInterface.h"
 #include "Components/SplineComponent.h"
 #include "FGBuildableConveyorBelt.generated.h"
 
@@ -51,8 +52,8 @@ public:
  * Base for conveyor belts.
  * Assumption: Conveyors are never rotated, rotation is always 0,0,0.
  */
-UCLASS(Abstract)
-class FACTORYGAME_API AFGBuildableConveyorBelt : public AFGBuildableConveyorBase
+UCLASS()
+class FACTORYGAME_API AFGBuildableConveyorBelt : public AFGBuildableConveyorBase, public IFGSplineBuildableInterface
 {
 	GENERATED_BODY()
 public:
@@ -128,9 +129,13 @@ public:
 	UFUNCTION( BlueprintPure, Category = "Conveyor" )
 	FORCEINLINE UStaticMesh* GetSplineMesh() const { return mMesh; }
 
-	/** Get the spline data for this conveyor. */
-	UFUNCTION( BlueprintCallable, BlueprintPure = false, Category = "Conveyor" )
-	FORCEINLINE TArray< FSplinePointData > GetSplineData() const { return mSplineData; };
+	// Begin IFGSplineBuildableInterface
+	TArray< FSplinePointData > GetSplinePointData() { return mSplineData; };
+	float GetMeshLength() { return mMeshLength; }
+	FVector GetCollisionExtent() override { return COLLISION_EXTENT; }
+	float GetCollisionSpacing() override { return COLLISION_SPACING; }
+	FVector GetCollisionOffset() override { return COLLISION_OFFSET; }
+	// End IFGSplineBuildableInterface
 
 	/** Returns the spline component */
 	UFUNCTION( BlueprintPure, Category = "Build" )
@@ -169,6 +174,9 @@ protected:
 	UPROPERTY( EditDefaultsOnly, Category = "Conveyor Belt" )
 	class UStaticMesh* mMesh;
 
+	UPROPERTY( EditDefaultsOnly, Category = "Conveyor Belt" )
+	class UStaticMesh* mCollisionProxyMesh;
+	
 	/** Length of the mesh to use for this conveyor. */
 	UPROPERTY( EditDefaultsOnly, Category = "Conveyor Belt" )
 	float mMeshLength;
@@ -199,6 +207,11 @@ private:
 	/** The ak event to post for the sound spline */
 	UPROPERTY( EditDefaultsOnly, Category = "Audio" )
 	class UAkAudioEvent* mSplineAudioEvent;
+	
+	// Collision Constants. These used to be magic numbers in the .cpp but were moved here so they could be accessed via the SplineBuildableInterface
+	static inline const FVector COLLISION_EXTENT = FVector( 80.f, 80.f, 15.f );
+	static inline const float COLLISION_SPACING =  160.f;
+	static inline const FVector COLLISION_OFFSET = FVector( 0.f, 0.f, 0.f );
 
 	bool mShouldCastBeltShadows;
 

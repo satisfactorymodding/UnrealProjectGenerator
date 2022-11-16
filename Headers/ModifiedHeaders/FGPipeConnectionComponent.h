@@ -242,6 +242,8 @@ public:
 	/** Actual implementation of PullPipeInput */
 	bool Factory_Internal_PullPipeInput( float dt, FInventoryStack& out_stack, TSubclassOf< UFGItemDescriptor > type, int32 maxQuantity = -1 );
 
+	void PostSerializedFromBlueprint() { SetPipeNetworkID( INDEX_NONE ); }
+	
 private:
 	/** Used by the pipe subsystem to update the network this is connected to. */
 	void SetPipeNetworkID( int32 networkID );

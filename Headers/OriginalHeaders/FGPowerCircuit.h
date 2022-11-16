@@ -334,12 +334,14 @@ private:
 	friend class UFGPowerCircuitGroup;
 };
 
+/**
+ * @todo-power Comment me please, and move me to a separate file? :)
+ */
 UCLASS()
 class FACTORYGAME_API UFGPowerCircuitGroup : public UFGCircuitGroup
 {
 	GENERATED_BODY()
 public:
-
 	void ResetFuses();
 	void RegisterPrioritySwitch( class AFGBuildablePriorityPowerSwitch* circuitSwitch );
 
@@ -353,8 +355,8 @@ private:
 	// End UFGCircuitGroup interface
 
 	/**
-	* Ticks a group of power circuits, making calculations as to power produced, power consumed, and if the fuse is blown.
-	*/
+	 * Ticks a group of power circuits, making calculations as to power produced, power consumed, and if the fuse is blown.
+	 */
 	void TickPowerCircuitGroup( float deltaTime, bool hasAuthority, bool isNoPowerCheatOn );
 
 	/** Specifically ticks the batteries connected to the power-circuit group, calculating the power input, output and charge increment to the batteries. */
@@ -367,10 +369,14 @@ private:
 	void OnFuseSet();
 	void OnFuseReset();
 
+	virtual void DisplayDebug( class UCanvas* canvas, const class FDebugDisplayInfo& debugDisplay, float& YL, float& YPos, float indent );
+
 private:
+	/** All the circuits that this group owns. */
 	UPROPERTY()
 	TArray< UFGPowerCircuit* > mCircuits;
 
+	/** All the priority switches inside this circuit group. */
 	TSet< TWeakObjectPtr< class AFGBuildablePriorityPowerSwitch > > mPrioritySwitches;
 };
 

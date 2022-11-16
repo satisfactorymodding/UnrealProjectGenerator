@@ -2,9 +2,6 @@
 
 #include "FGCreatureSubsystem.h"
 
-#if WITH_EDITOR
-void AFGCreatureSubsystem::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent){ Super::PostEditChangeProperty(PropertyChangedEvent); }
-#endif 
 AFGCreatureSubsystem::AFGCreatureSubsystem(){ }
 void AFGCreatureSubsystem::BeginPlay(){ }
 void AFGCreatureSubsystem::Tick(float dt){ }
@@ -15,7 +12,6 @@ void AFGCreatureSubsystem::UnregisterCreature( AFGCreature* creature){ }
 void AFGCreatureSubsystem::RegisterFlyingBabyCrab( AFGFlyingBabyCrab* babyCrab){ }
 void AFGCreatureSubsystem::UnregisterFlyingBabyCrab( AFGFlyingBabyCrab* babyCrab){ }
 void AFGCreatureSubsystem::ForceTriggerSpawnersInRange(){ }
-void AFGCreatureSubsystem::SetCreatureHostility(ECreatureHostility hostility){ }
 bool AFGCreatureSubsystem::IsProtectedCreature(TSubclassOf<  AFGCreature > creatureClass) const{ return bool(); }
 void AFGCreatureSubsystem::SetCreatureStressEnabled(bool enabled){ }
 AFGCreatureSubsystem* AFGCreatureSubsystem::Get(UWorld* world){ return nullptr; }

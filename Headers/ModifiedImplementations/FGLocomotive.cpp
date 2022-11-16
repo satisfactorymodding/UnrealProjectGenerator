@@ -15,6 +15,8 @@ bool AFGLocomotive::SetMultipleUnitControlMaster(bool force){ return bool(); }
 void AFGLocomotive::ClearMultipleUnitControlMaster(){ }
 void AFGLocomotive::DisplayDebug( UCanvas* canvas, const  FDebugDisplayInfo& debugDisplay, float& YL, float& YPos){ }
 void AFGLocomotive::GiveHumanDriverControl(){ }
+void AFGLocomotive::SetHeadlightsMode(ELocomotiveHeadlightsMode::Type mode){ }
 void AFGLocomotive::SetPowerConsumption(float pct){ }
 void AFGLocomotive::SetPowerRegeneration(float pct){ }
+void AFGLocomotive::OnRep_HeadlightMode(){ }
 FName AFGLocomotive::VehicleMovementComponentName = FName();

@@ -14,6 +14,7 @@ void AFGBeamHologram::GetSupportedBuildModes_Implementation(TArray< TSubclassOf<
 void AFGBeamHologram::ConfigureActor(AFGBuildable* inBuildable) const{ }
 int32 AFGBeamHologram::GetBaseCostMultiplier() const{ return int32(); }
 bool AFGBeamHologram::CanBeZooped() const{ return bool(); }
+bool AFGBeamHologram::CanIntersectWithDesigner(AFGBuildableBlueprintDesigner* designer){ return bool(); }
 void AFGBeamHologram::SerializeConstructMessage(FArchive& ar, FNetConstructionID id){ }
 void AFGBeamHologram::OnPendingConstructionHologramCreated_Implementation(AFGHologram* fromHologram){ }
 void AFGBeamHologram::OnRep_CurrentLength(){ }

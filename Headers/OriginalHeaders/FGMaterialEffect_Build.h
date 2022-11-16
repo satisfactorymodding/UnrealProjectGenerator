@@ -24,6 +24,7 @@ public:
 	void SetInstigator( class AActor* instigator );
 	void SetCost( TArray< FItemAmount > cost );
 	void SetSpeed( float speed );
+	void SetTransform( const FTransform& transform ) { mTransform = transform; }
 
 	/** Who build the thing. */
 	UFUNCTION( BlueprintPure )
@@ -37,6 +38,9 @@ public:
 	UFUNCTION( BlueprintPure )
 	FORCEINLINE float GetSpeed() const { return mSpeed; }
 
+	UFUNCTION( BlueprintPure )
+	FORCEINLINE FTransform GetTransform() const { return mTransform; }
+
 private:
 	/** Who built this */
 	UPROPERTY(  )
@@ -47,4 +51,8 @@ private:
 	/** The speed of this effect. */
 	UPROPERTY()
 	float mSpeed;
+
+	/* Transform, in case we are using a lightweight instance.*/
+	UPROPERTY()
+	FTransform mTransform;
 };

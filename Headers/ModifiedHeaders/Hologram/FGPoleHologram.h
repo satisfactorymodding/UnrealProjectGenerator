@@ -55,6 +55,8 @@ public:
 
 	// Returns the desired height (not clamped to the mesh sizes available)
 	FORCEINLINE float GetPoleHeight() const { return mPoleHeight; }
+
+	FORCEINLINE bool CanAdjustHeight() const { return mCanAdjustHeight; }
 	
 	// Returns the Height for the currently active mesh
 	float GetActiveMeshHeight() const;
@@ -67,7 +69,7 @@ protected:
 	// Begin AFGHologram Interface
 	virtual void CheckValidPlacement() override;
 	// End AFGHologram Interface
-
+	
 private:
 	UFUNCTION()
 	void OnRep_PoleMesh();

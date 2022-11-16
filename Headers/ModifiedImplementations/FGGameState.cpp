@@ -31,6 +31,9 @@ void AFGGameState::GetVisitedMapAreas(TArray< TSubclassOf< UFGMapArea > >& out_V
 bool AFGGameState::IsMapAreaVisisted(TSubclassOf< UFGMapArea > inArea){ return bool(); }
 void AFGGameState::AddUniqueVisistedMapArea(TSubclassOf< UFGMapArea > mapArea){ }
 void AFGGameState::OnRep_MapAreaVisited(){ }
+void AFGGameState::SetCheatNoPower(bool noPower){ }
+void AFGGameState::SetCheatNoCost(bool noCost){ }
+void AFGGameState::SetCheatNoFuel(bool noFuel){ }
 void AFGGameState::NotifyPlayerAdded( AFGCharacterPlayer* inPlayer){ }
 void AFGGameState::SendMessageToAllPlayers(TSubclassOf<  UFGMessageBase > inMessage){ }
 void AFGGameState::SendMessageToPlayer(TSubclassOf<  UFGMessageBase > inMessage,  APlayerController* controller){ }
@@ -60,4 +63,5 @@ void AFGGameState::OnRep_TetrominoLeaderBoard(){ }
 void AFGGameState::Server_SetPublicTodoList(const FString& newTodoList){ }
 void AFGGameState::CheckRestartTime(){ }
 void AFGGameState::OnRep_PlannedRestartTime(){ }
-void AFGGameState::SubmitNumPlayersTelemetry(bool isBeginPlay){ }
+void AFGGameState::SubmitNumPlayersTelemetry() const{ }
+void AFGGameState::SubmitCheatTelemetry() const{ }

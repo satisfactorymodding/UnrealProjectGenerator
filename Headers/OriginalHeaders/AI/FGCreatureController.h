@@ -307,9 +307,6 @@ public:
 	UFUNCTION( BlueprintNativeEvent, Category = "AI" )
 	void OnInterruptActionFinished(bool success);
 
-	/** Called when the hostility mode has been changed in the creature subsystem. */
-	void OnHostilityModeUpdated( ECreatureHostility hostility );
-
 	/** Gets the current action being performed by the creature. */
 	UFUNCTION( BlueprintPure, Category = "AI" )
 	FORCEINLINE class UFGCreatureAction* GetCurrentAction() const { return mCurrentAction; }
@@ -435,6 +432,8 @@ private:
 	/** Sometimes a stimulus might come from an actor which belongs to another, such as a weapon which belongs to the player. This function would in that case return the player. */
 	AActor* GetActualPerceivedActor( AActor* inActor ) const;
 
+	bool CanBeHostileAgainstPlayer( const class AFGCharacterPlayer* player ) const;
+
 public:
 	/** Called whenever the creature state changes. */
 	UPROPERTY( BlueprintAssignable, Category = "AI" )
@@ -471,6 +470,10 @@ protected:
 	
 	UPROPERTY()
 	TArray< FFGCreatureAggroData > mAggroTargets;
+
+	/** Controllers who have been responsible for damaging us recently. */
+	UPROPERTY()
+	TArray< AController* > mAggressors;
 
 	UPROPERTY()
 	TArray< FFGCreatureVisibilityData > mVisibleTargets;

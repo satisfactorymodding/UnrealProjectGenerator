@@ -23,7 +23,7 @@ class FACTORYGAME_API AFGBuildableWall : public AFGBuildableFactoryBuilding
 {
 	GENERATED_BODY()
 public:
-	AFGBuildableWall();
+	AFGBuildableWall(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 
 	void CalculateLocalSnapOffset( FVector& out_upVector, float& out_length ) const;
 
@@ -51,4 +51,12 @@ public:
 	/** List of angled variants of this wall. */
 	UPROPERTY( EditDefaultsOnly, BlueprintReadOnly, Category = "Wall" )
 	TArray< TSubclassOf< class AFGBuildableWall > > mAngledVariants;
+};
+
+UCLASS( Abstract )
+class FACTORYGAME_API AFGBuildableWallLightweight : public AFGBuildableWall
+{
+	GENERATED_BODY()
+	
+	AFGBuildableWallLightweight( const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get() );
 };

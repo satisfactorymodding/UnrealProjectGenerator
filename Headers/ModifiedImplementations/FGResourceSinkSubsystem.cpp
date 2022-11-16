@@ -10,12 +10,17 @@ void AFGResourceSinkSubsystem::Tick(float DeltaSeconds){ }
 void AFGResourceSinkSubsystem::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 AFGResourceSinkSubsystem* AFGResourceSinkSubsystem::Get(UWorld* world){ return nullptr; }
 AFGResourceSinkSubsystem* AFGResourceSinkSubsystem::Get(UObject* worldContext){ return nullptr; }
+void AFGResourceSinkSubsystem::SetupRewardLevelData(EResourceSinkTrack ResourceSinkTrack,  UDataTable* rewardLevelsDataTable){ }
+void AFGResourceSinkSubsystem::SetupPointData(EResourceSinkTrack ResourceSinkTrack,  UDataTable* pointsDataTable){ }
 void AFGResourceSinkSubsystem::DisplayDebug( UCanvas* canvas, const  FDebugDisplayInfo& debugDisplay, float& YL, float& YPos){ }
 bool AFGResourceSinkSubsystem::AddPoints_ThreadSafe(TSubclassOf<class UFGItemDescriptor> item){ return bool(); }
-int64 AFGResourceSinkSubsystem::GetNumPointsToNextCoupon() const{ return int64(); }
-float AFGResourceSinkSubsystem::GetProgressionTowardsNextCoupon() const{ return float(); }
+int64 AFGResourceSinkSubsystem::GetNumTotalPoints(EResourceSinkTrack resourceSinkTrack) const{ return int64(); }
+TArray<int32> AFGResourceSinkSubsystem::GetGlobalPointHistory(EResourceSinkTrack resourceSinkTrack) const{ return TArray<int32>(); }
+int64 AFGResourceSinkSubsystem::GetNumPointsToNextCoupon(EResourceSinkTrack resourceSinkTrack) const{ return int64(); }
+float AFGResourceSinkSubsystem::GetProgressionTowardsNextCoupon(EResourceSinkTrack resourceSinkTrack) const{ return float(); }
 int32 AFGResourceSinkSubsystem::GetCostOfSchematics(TArray< TSubclassOf<  UFGSchematic > > schematics) const{ return int32(); }
 bool AFGResourceSinkSubsystem::CanAffordResourceSinkSchematics( UFGInventoryComponent* playerInventory, TArray< TSubclassOf<  UFGSchematic > > schematics) const{ return bool(); }
+bool AFGResourceSinkSubsystem::HasTrackGivenCouponSinceLastCheck(EResourceSinkTrack resourceSinkTrack){ return bool(); }
 bool AFGResourceSinkSubsystem::PurchaseResourceSinkSchematics( UFGInventoryComponent* playerInventory, TArray< TSubclassOf<  UFGSchematic > > schematics){ return bool(); }
 void AFGResourceSinkSubsystem::AddResourceSinkCoupons(int32 numCoupons, bool sendTelemetryData, ECouponSource couponSource){ }
 int32 AFGResourceSinkSubsystem::RemoveResourceSinkCoupons(int32 numCoupons){ return int32(); }
@@ -24,7 +29,8 @@ void AFGResourceSinkSubsystem::HandleQueuedPoints(){ }
 void AFGResourceSinkSubsystem::HandleQueuedFailedItems(){ }
 void AFGResourceSinkSubsystem::InitCouponClass(){ }
 void AFGResourceSinkSubsystem::CalculateLevel(){ }
-int64 AFGResourceSinkSubsystem::GetRequiredPointsForLevel(int32 level) const{ return int64(); }
+int32 AFGResourceSinkSubsystem::GetCurrentPointLevel(EResourceSinkTrack resourceSinkTrack) const{ return int32(); }
+int64 AFGResourceSinkSubsystem::GetRequiredPointsForLevel(EResourceSinkTrack resourceSinkTrack, int32 level) const{ return int64(); }
 void AFGResourceSinkSubsystem::CalculateAccumulatedPointsPastInterval(){ }
 void AFGResourceSinkSubsystem::TriggerCyberCoupon(){ }
 void AFGResourceSinkSubsystem::TriggerCustomReward(TSubclassOf<  UFGItemDescriptor> item){ }

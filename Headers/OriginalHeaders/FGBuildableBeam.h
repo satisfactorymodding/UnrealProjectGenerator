@@ -21,7 +21,7 @@ class FACTORYGAME_API AFGBuildableBeam : public AFGBuildableFactoryBuilding
 {
 	GENERATED_BODY()
 public:
-	AFGBuildableBeam();
+	AFGBuildableBeam(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 
 	// Begin Actor interface
 	virtual void BeginPlay() override;
@@ -48,6 +48,8 @@ public:
 	float GetLength() const { return mLength; }
 	void SetLength( float NewLength );
 
+	virtual void OnBuildEffectActorFinished() override;
+	
 protected:
 	UFUNCTION()
 	void OnRep_Length();
@@ -71,4 +73,12 @@ protected:
 
 private:
 	FFGAttachmentPoint mFrontAttachmentPoint;
+};
+
+
+UCLASS()
+class FACTORYGAME_API AFGBuildableBeamLightweight : public AFGBuildableBeam
+{
+	GENERATED_BODY()
+	AFGBuildableBeamLightweight( const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get() );
 };

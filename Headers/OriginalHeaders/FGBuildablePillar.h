@@ -14,7 +14,7 @@ class FACTORYGAME_API AFGBuildablePillar : public AFGBuildableFactoryBuilding
 {
 	GENERATED_BODY()
 public:
-	AFGBuildablePillar();
+	AFGBuildablePillar(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 
 	const FVector& GetSize() const { return mSize; }
 
@@ -33,4 +33,11 @@ protected:
 
 	UPROPERTY( EditDefaultsOnly, Category = "Pillar|legacy" )
 	TSubclassOf< class UFGFactoryCustomizationDescriptor_Swatch > mLegacySwatch;
+};
+
+UCLASS()
+class FACTORYGAME_API AFGBuildablePillarLightweight : public AFGBuildablePillar
+{
+	GENERATED_BODY()
+	AFGBuildablePillarLightweight(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 };
