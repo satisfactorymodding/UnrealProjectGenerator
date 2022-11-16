@@ -3,9 +3,11 @@
 #include "FGWorldSettings.h"
 #include "FactoryGameCustomVersion.h"
 #include "FGMinimapCaptureActor.h"
-#include "LevelEditor.h"
 #include "Components/SkyAtmosphereComponent.h"
 #include "Engine/ExponentialHeightFog.h"
+#if WITH_EDITOR
+#include "LevelEditor.h"
+#endif
 
 bool ShouldConsiderActorForSave(AActor* actor, ULevel* settingsLevel) {
 	if (actor == NULL) {

@@ -91,9 +91,22 @@ namespace ImplementHeaders
                 {
                     "FactoryGameCustomVersion.h",
                     "FGMinimapCaptureActor.h",
-                    "LevelEditor.h",
                     "Components/SkyAtmosphereComponent.h",
                     "Engine/ExponentialHeightFog.h"
+                }
+            }
+        };
+
+        private static readonly Dictionary<string, Dictionary<string, List<string>>> ExtraIncludesIf = new Dictionary<string, Dictionary<string, List<string>>>()
+        {
+            { "FGWorldSettings", new Dictionary<string, List<string>>()
+                {
+                    { "WITH_EDITOR",
+                        new List<string>()
+                        {
+                            "LevelEditor.h",
+                        }
+                    }
                 }
             }
         };
@@ -892,6 +905,18 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                     foreach (string incl in ExtraIncludes[Path.GetFileNameWithoutExtension(filePath)])
                     {
                         writer.WriteLine($"#include \"{incl}\"");
+                    }
+                }
+                if (ExtraIncludesIf.ContainsKey(Path.GetFileNameWithoutExtension(filePath)))
+                {
+                    foreach (KeyValuePair<string, List<string>> inclIf in ExtraIncludesIf[Path.GetFileNameWithoutExtension(filePath)])
+                    {
+                        writer.WriteLine($"#if {inclIf.Key}");
+                        foreach (string incl in inclIf.Value)
+                        {
+                            writer.WriteLine($"#include \"{incl}\"");
+                        }
+                        writer.WriteLine("#endif");
                     }
                 }
                 writer.WriteLine($"");
