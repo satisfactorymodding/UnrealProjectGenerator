@@ -81,6 +81,20 @@ namespace ImplementHeaders
                     "FGCategory.h",
                     "FGItemCategory.h",
                 }
+            },
+            { "FGBuildEffectActor", new List<string>()
+                {
+                    "ItemAmount.h",
+                }
+            },
+            { "FGWorldSettings", new List<string>()
+                {
+                    "FactoryGameCustomVersion.h",
+                    "FGMinimapCaptureActor.h",
+                    "LevelEditor.h",
+                    "Components/SkyAtmosphereComponent.h",
+                    "Engine/ExponentialHeightFog.h"
+                }
             }
         };
 
@@ -579,7 +593,7 @@ DEFINE_LOG_CATEGORY(LogPoolSystem);"
 	if (AFGMinimapCaptureActor* MinimapCaptureActor = Cast<AFGMinimapCaptureActor>(actor)) {
 		mMinimapCaptureActor = MinimapCaptureActor;
 	}
-	MarkSaveActorArrayDirty();
+	mSaveActorsDirty = true;
 "
             },
             { "AFGWorldSettings::BeginDestroy",
@@ -756,7 +770,9 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
             { "UFGGameUserSettings::mCVarSink",
 @"FConsoleCommandDelegate::CreateStatic(&UFGGameUserSettings::CVarSinkHandler)" },
             { "UFGServerObject::GetOuterServerManager",
-@"  return *Cast<UFGServerManager>(GetOuter());" }
+@"  return *Cast<UFGServerManager>(GetOuter());" },
+            { "UFGListView::RebuildListWidget",
+@"  return ConstructListView<SFGListView>();" },
         };
 
         private static readonly Dictionary<string, string> CustomSuper = new Dictionary<string, string>()
@@ -856,12 +872,13 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                 }
                 implementations.Add($"TAutoConsoleVariable<{type}> {name}(TEXT(\"{name}\"), {defaultValue}, TEXT(\"\"));");
             }
-            foreach (Match match in Regex.Matches(fileContents, @"^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?[^{]*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match class/struct definition
+            foreach (Match match in Regex.Matches(fileContents, @"^([ \t]*)(template\s*<.+?>\s+)?(class|struct) ([^ ]*? )??([^ ]*?)(?:\s*final\s*)?( ?: ?[^{]*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match class/struct definition
             {
-                string FGAPI = match.Groups[3].Value;
-                string className = match.Groups[4].Value;
-                string classContents = match.Groups[6].Value;
-                if (!IsValidClassName(className))
+                string template = match.Groups[2].Value;
+                string FGAPI = match.Groups[4].Value;
+                string className = match.Groups[5].Value;
+                string classContents = match.Groups[7].Value;
+                if (!IsValidClassName(className) || !string.IsNullOrWhiteSpace(template))
                     continue;
                 implementations.AddRange(ImplementClass(className, classContents, !string.IsNullOrWhiteSpace(FGAPI)));
             }
@@ -915,11 +932,12 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
             {
                 string ifContents = ifMacro.Groups[3].Value;
                 implementations.Add($"#if{ifMacro.Groups[1].Value} {ifMacro.Groups[2].Value.Trim()}");
-                foreach (Match match in Regex.Matches(ifContents, @"^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?.*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match inner class/struct definition
+                foreach (Match match in Regex.Matches(ifContents, @"^([ \t]*)(template\s*<.+?>\s+)?(class|struct) ([^ ]*? )??([^ ]*?)(?:\s*final\s*)?( ?: ?.*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match inner class/struct definition
                 {
-                    string innerClassName = match.Groups[4].Value;
-                    string innerClassContents = match.Groups[6].Value;
-                    if (!IsValidClassName(innerClassName))
+                    string template = match.Groups[2].Value;
+                    string innerClassName = match.Groups[5].Value;
+                    string innerClassContents = match.Groups[7].Value;
+                    if (!IsValidClassName(innerClassName) || !string.IsNullOrWhiteSpace(template))
                         continue;
                     implementations.AddRange(ImplementClass(className + "::" + innerClassName, innerClassContents, FGAPI));
                     ifContents = ifContents.Replace(match.Value, "");
@@ -928,12 +946,13 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                 implementations.AddRange(ImplementStaticVars(ifContents, className));
                 implementations.Add($"#endif {ifMacro.Groups[4].Value.Trim()}");
             }
-            classContents = Regex.Replace(classContents, @"\s*#if(def)?\s(.*?)\n((?:.|\n)*?)\n\s*#endif(.*)", "");
-            foreach (Match match in Regex.Matches(classContents, @"^([\s\t]*)(class|struct)\s([^\s]*?\s)??([^\s]*?)(\s?:\s?.*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match inner class/struct definition
+            classContents = Regex.Replace(classContents, @"\s*#if(def)?\s+(.*?)\n(?:((?:.|\n)*?)\n)??\s*#endif(.*)", "");
+            foreach (Match match in Regex.Matches(classContents, @"^([\s\t]*)(template\s*<.+?>\s+)?(class|struct)\s([^\s]*?\s)??([^\s]*?)(?:\s*final\s*)?(\s?:\s?.*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match inner class/struct definition
             {
-                string innerClassName = match.Groups[4].Value;
-                string innerClassContents = match.Groups[6].Value;
-                if (!IsValidClassName(innerClassName))
+                string template = match.Groups[2].Value;
+                string innerClassName = match.Groups[5].Value;
+                string innerClassContents = match.Groups[7].Value;
+                if (!IsValidClassName(innerClassName) || !string.IsNullOrWhiteSpace(template))
                     continue;
                 implementations.AddRange(ImplementClass(className + "::" + innerClassName, innerClassContents, FGAPI));
                 classContents = classContents.Replace(match.Value, "");
@@ -976,9 +995,9 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
         private static List<string> ImplementFunctions(string content, string className)
         {
             // Remove access modifiers
-            content = Regex.Replace(content, @"\r?\n\s*public:", "\r\n");
-            content = Regex.Replace(content, @"\r?\n\s*private:", "\r\n");
-            content = Regex.Replace(content, @"\r?\n\s*protected:", "\r\n");
+            content = Regex.Replace(content, @"(\r?\n|^)\s*public:", "\r\n", RegexOptions.Multiline);
+            content = Regex.Replace(content, @"(\r?\n|^)\s*private:", "\r\n");
+            content = Regex.Replace(content, @"(\r?\n|^)\s*protected:", "\r\n");
 
             // Remove event/delegate declarations, which are matched as functions
             content = Regex.Replace(content, @"^\s*DECLARE_.*\(.*\)\r?\n", "\r\n", RegexOptions.Multiline);
@@ -1059,7 +1078,7 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                         }
                         ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName.Trim() + "_Implementation", parameters, isConst, template, isStatic);
                     }
-                    else if (Regex.IsMatch(ufunction, @"\WBlueprintPure\W") || Regex.IsMatch(ufunction, @"\WBlueprintCallable\W") || Regex.IsMatch(ufunction, @"\WExec\W", RegexOptions.IgnoreCase) || Regex.IsMatch(ufunction, @"\WCallInEditor\W", RegexOptions.IgnoreCase) || Regex.Replace(TrimUselessSpaces(ufunction), @"( ?(?:Category ?= ?"".*?""|meta ?= ?"".*""|meta ?= ?\(.*?\))(?:,| )?)", "") == "UFUNCTION()")
+                    else if (Regex.IsMatch(ufunction, @"\WBlueprintPure\W") || Regex.IsMatch(ufunction, @"\WBlueprintCallable\W") || Regex.IsMatch(ufunction, @"\WBlueprintGetter\W") || Regex.IsMatch(ufunction, @"\WExec\W", RegexOptions.IgnoreCase) || Regex.IsMatch(ufunction, @"\WCallInEditor\W", RegexOptions.IgnoreCase) || Regex.Replace(TrimUselessSpaces(ufunction), @"( ?(?:Category ?= ?"".*?""|meta ?= ?"".*""|meta ?= ?\(.*?\))(?:,| )?)", "") == "UFUNCTION()")
                         ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName, parameters, isConst, template, isStatic);
                     if (Regex.IsMatch(ufunction, @"\WWithValidation\W"))
                         ImplementFunction(implementations, className, isClass, isReturnConst, "bool ", functionName.Trim() + "_Validate", parameters, isConst, template, isStatic);
@@ -1096,6 +1115,10 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                     if (functionName.Replace(" ", "").Contains("FObjectReader"))
                         result += " : FObjectReader(Obj, InBytes) ";
                     if (functionName.Replace(" ", "").Contains("FObjectWriter"))
+                        result += " : FObjectWriter(Obj, InBytes) ";
+                    if (functionName.Replace(" ", "").Contains("FBlueprintObjectReader"))
+                        result += " : FObjectReader(Obj, InBytes) ";
+                    if (functionName.Replace(" ", "").Contains("FBlueprintObjectWriter"))
                         result += " : FObjectWriter(Obj, InBytes) ";
                 }
 
