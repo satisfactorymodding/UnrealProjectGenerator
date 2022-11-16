@@ -454,18 +454,32 @@ class UEStruct:
         elif prop_type == 'FloatProperty':
             return [f'{format_float_scientific(val)}', {}, []]
         elif prop_type == 'IntProperty':
+            if val == 0:
+                return [None, {}, []]
             return [f'{format_int(val)}', {}, []]
         elif prop_type == 'Int8Property':
+            if val == 0:
+                return [None, {}, []]
             return [f'{val}', {}, []]
         elif prop_type == 'Int16Property':
+            if val == 0:
+                return [None, {}, []]
             return [f'{val}', {}, []]
         elif prop_type == 'UInt16Property':
+            if val == 0:
+                return [None, {}, []]
             return [f'{val}U', {}, []]
         elif prop_type == 'UInt32Property':
+            if val == 0:
+                return [None, {}, []]
             return [f'{val}U', {}, []]
         elif prop_type == 'Int64Property':
+            if val == 0:
+                return [None, {}, []]
             return [f'{val}LL', {}, []]
         elif prop_type == 'UInt64Property':
+            if val == 0:
+                return [None, {}, []]
             return [f'{val}ULL', {}, []]
         elif prop_type == 'EnumProperty':
             for cls in class_headers:
@@ -589,8 +603,8 @@ class UEStruct:
         elif prop_type == 'StrProperty':
             return [f'TEXT("{val}")', {}, []]
         elif prop_type == 'TextProperty':
-            if 'TEXT(' in val:
-                return [val, {}, []]
+            if 'TEXT(' in val or 'LOCTABLE(' in val:
+                return [val, {}, ['Internationalization/StringTableRegistry.h']]
             return [f'INVTEXT("{val}")', {}, []]
         elif prop_type == 'NameProperty':
             return [f'TEXT("{val}")', {}, []]
