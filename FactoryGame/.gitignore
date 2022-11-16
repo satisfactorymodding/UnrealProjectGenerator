@@ -83,3 +83,4 @@ Plugins/Wwise/*
 Content/*
 Mods/*
 Plugins/*
+!Plugins/AbstractInstance
