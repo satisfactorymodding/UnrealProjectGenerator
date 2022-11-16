@@ -3,6 +3,7 @@
 #pragma once
 
 #include "Components/ActorComponent.h"
+#include "Replication/FGReplicationDetailActor.h" // MODDING EDIT: for mReplicationDetailActor
 #include "FGReplicationDetailInventoryComponent.generated.h"
 
 /**
