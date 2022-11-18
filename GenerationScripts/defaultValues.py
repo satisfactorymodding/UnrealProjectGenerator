@@ -568,33 +568,13 @@ class UEStruct:
             else:
                 raise Exception(f'Unknown WeakObjectProperty type', 'WeakObjectProperty')
         elif prop_type == 'SoftObjectProperty':
-            if val == -1:
-                return [f'nullptr', {}, []]
-            elif 'ClassName' in self.object_hierarchy[val]:
-                blueprint_hierarchy = self.object_hierarchy[val]
-                blueprint_class = blueprint_hierarchy['ObjectName']
-                
-                blueprint_package_idx = blueprint_hierarchy['Outer']
-                blueprint_package_hierarchy = self.object_hierarchy[blueprint_package_idx]
-                blueprint_package = blueprint_package_hierarchy['ObjectName']
-                
-                return [f'FSoftObjectPath("{blueprint_package}.{blueprint_class}")', {}, []]
-            else:
-                raise Exception(f'Unknown SoftObjectProperty type', 'SoftObjectProperty')
+            if val == "" or val == "None":
+                return [f'nullptr', {}, []]            
+            return [f'FSoftObjectPath("{val}")', {}, []]
         elif prop_type == 'SoftClassProperty':
-            if val == -1:
+            if val == "" or val == "None":
                 return [f'nullptr', {}, []]
-            elif 'ClassName' in self.object_hierarchy[val]:
-                blueprint_hierarchy = self.object_hierarchy[val]
-                blueprint_class = blueprint_hierarchy['ObjectName']
-                
-                blueprint_package_idx = blueprint_hierarchy['Outer']
-                blueprint_package_hierarchy = self.object_hierarchy[blueprint_package_idx]
-                blueprint_package = blueprint_package_hierarchy['ObjectName']
-                
-                return [f'FSoftClassPath("{blueprint_package}.{blueprint_class}")', {}, []]
-            else:
-                raise Exception(f'Unknown SoftClassProperty type', 'SoftClassProperty')
+            return [f'FSoftClassPath("{val}")', {}, []]
         elif prop_type == 'InterfaceProperty':
             if val == -1:
                 return [f'nullptr', {}, []]
@@ -873,8 +853,8 @@ class UEClass(UEStruct):
             if not self_prop and int(prop['PropertyFlags']) & 0x0040000000000000 and cdo_property not in setters[self.prefix]: # private
                 del modified_cdo[cdo_property]
                 continue
-            
-            if prop['ObjectClass'] == 'ObjectProperty' or prop['ObjectClass'] == 'WeakObjectProperty' or prop['ObjectClass'] == 'SoftObjectProperty' or prop['ObjectClass'] == 'ClassProperty' or prop['ObjectClass'] == 'SoftClassProperty':
+
+            if prop['ObjectClass'] == 'ObjectProperty' or prop['ObjectClass'] == 'WeakObjectProperty' or prop['ObjectClass'] == 'ClassProperty':
                 if prop['ArrayDim'] == 1:
                     if self.cdo[cdo_property] == -1 and self.parent_ue_class.cdo[cdo_property] == -1:
                         del modified_cdo[cdo_property]
