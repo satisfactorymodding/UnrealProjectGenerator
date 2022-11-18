@@ -100,6 +100,8 @@ public:
 	UFUNCTION( BlueprintPure, Category="Blueprint Designer" )
 	FORCEINLINE FIntVector GetBlueprintDimensions() const { return mDimensions; }
 
+	FVector GetBlueprintDesignerSize() const;
+	
 	/** Checks if a given buildable is placed along the edge of the designer. Checks both location and rotation */
 	bool IsTransformOnPerimeterOfDesigner( const FTransform& trans ) const;
 	
