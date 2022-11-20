@@ -624,7 +624,7 @@ DEFINE_LOG_CATEGORY(LogPoolSystem);"
 #endif
 "
             },
-            { "AFGWorldSettings::AddReferencedObjects",
+            { "static AFGWorldSettings::AddReferencedObjects",
 @"	AFGWorldSettings* Settings = CastChecked<AFGWorldSettings>(inThis);
 	collector.AddReferencedObjects(Settings->mSaveActors, inThis);
 "
