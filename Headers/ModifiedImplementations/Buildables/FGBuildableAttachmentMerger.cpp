@@ -4,5 +4,5 @@
 
 AFGBuildableAttachmentMerger::AFGBuildableAttachmentMerger(){ }
 void AFGBuildableAttachmentMerger::BeginPlay(){ }
+void AFGBuildableAttachmentMerger::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGBuildableAttachmentMerger::Factory_Tick(float deltaTime){ }
-bool AFGBuildableAttachmentMerger::Factory_GrabOutput_Implementation( UFGFactoryConnectionComponent* connection, FInventoryItem& out_item, float& out_OffsetBeyond, TSubclassOf< UFGItemDescriptor > type){ return bool(); }
