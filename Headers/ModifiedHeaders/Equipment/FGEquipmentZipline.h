@@ -10,7 +10,7 @@
  * 
  */
 UCLASS()
-class FACTORYGAME_API AFGEquipmentZipline : public AFGEquipment
+class FACTORYGAME_API AFGEquipmentZipline final: public AFGEquipment
 {
 	GENERATED_BODY()
 public:

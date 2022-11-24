@@ -73,7 +73,7 @@ struct FBlueprintBuildEffectData
 	TArray< class AFGBuildable* > Buildables;
 
 	UPROPERTY()
-	APawn* Instigator;
+	TWeakObjectPtr< APawn > Instigator;
 };
 
 UCLASS()

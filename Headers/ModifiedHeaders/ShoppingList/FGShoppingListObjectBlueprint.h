@@ -21,7 +21,9 @@ public:
 	void SetBlueprintDescriptor( class UFGBlueprintDescriptor* blueprintDescriptor );
 
 	UFUNCTION( BlueprintPure )
-	UFGBlueprintDescriptor* GetBlueprintDescriptor();
+	UFGBlueprintDescriptor* GetBlueprintDescriptor() const;
+
+	virtual UObject* GetIdentifierObject() const override;
 
 protected:
 	virtual FText Internal_GetShoppingListName() const override;

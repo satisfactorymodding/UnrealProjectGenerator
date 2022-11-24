@@ -198,7 +198,7 @@ public:
 	FORCEINLINE bool GetWantsToSprint() const { return mWantsToSprint; }
 
 	/** Toggles mWantsToSprint and sets mHoldToSprint to isHoldSprintOn. */
-	void ToggleWantsToSprintAndHoldSprint( const bool isHoldSprintOn );
+	void ToggleWantsToSprintAndSetHoldSprint( const bool isHoldSprintOn );
 	
 	/** Get mBaseVelocity */
 	UFUNCTION( BlueprintPure, Category = "Movement" )
@@ -359,7 +359,7 @@ protected:
 	void SetOnLadder( class UFGLadderComponent* ladder );
 	
 	virtual void PhysFlying( float deltaTime, int32 iterations ) override;
-	
+
 private:
 	/** Apply ladder climb physics */
 	void PhysLadder( const float deltaTime, int32 iterations );
@@ -648,6 +648,8 @@ public:
 
 	uint8 mSavedIsPressingJump : 1;
 
+	uint8 mSavedWantsToSprintOnZipline : 1;
+	
 	FVector mSavedHookLocation;
 
 	float mPipeMoveProgress;
