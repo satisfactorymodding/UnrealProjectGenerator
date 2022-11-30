@@ -135,6 +135,7 @@ public:
 	FVector GetCollisionExtent() override { return COLLISION_EXTENT; }
 	float GetCollisionSpacing() override { return COLLISION_SPACING; }
 	FVector GetCollisionOffset() override { return COLLISION_OFFSET; }
+	UStaticMesh* GetUsedSplineMesh() override { return mMesh; }
 	// End IFGSplineBuildableInterface
 
 	/** Returns the spline component */

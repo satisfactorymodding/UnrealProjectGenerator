@@ -6,4 +6,4 @@ AFGGenericBuildableHologram::AFGGenericBuildableHologram(){ }
 void AFGGenericBuildableHologram::BeginPlay(){ }
 bool AFGGenericBuildableHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 int32 AFGGenericBuildableHologram::GetRotationStep() const{ return int32(); }
-bool AFGGenericBuildableHologram::IsHologramIdenticalToBuildable(AFGBuildable* buildable, const FVector& hologramLocationOffset) const{ return bool(); }
+bool AFGGenericBuildableHologram::IsHologramIdenticalToActor(AActor* actor, const FVector& hologramLocationOffset) const{ return bool(); }

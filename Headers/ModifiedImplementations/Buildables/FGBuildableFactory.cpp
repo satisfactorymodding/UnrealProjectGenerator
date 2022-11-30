@@ -11,6 +11,7 @@ void AFGBuildableFactory::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void AFGBuildableFactory::Tick(float dt){ }
 void AFGBuildableFactory::Destroyed(){ }
 void AFGBuildableFactory::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
+void AFGBuildableFactory::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGBuildableFactory::GainedSignificance_Implementation(){ }
 void AFGBuildableFactory::LostSignificance_Implementation(){ }
 void AFGBuildableFactory::GainedSignificance_Native(){ }
@@ -40,7 +41,8 @@ float AFGBuildableFactory::GetProductionCycleTime() const{ return float(); }
 float AFGBuildableFactory::GetDefaultProductionCycleTime() const{ return float(); }
 float AFGBuildableFactory::GetProductionCycleTimeForRecipe(TSubclassOf< UFGRecipe > recipe) const{ return float(); }
 float AFGBuildableFactory::CalcProductionCycleTimeForPotential(float potential) const{ return float(); }
-float AFGBuildableFactory::GetProductivity(){ return float(); }
+float AFGBuildableFactory::GetProductivity() const{ return float(); }
+float AFGBuildableFactory::GetProductivityMeasurementDuration() const{ return float(); }
 void AFGBuildableFactory::SetPendingPotential(float newPendingPotential){ }
 float AFGBuildableFactory::GetCurrentMaxPotential() const{ return float(); }
 float AFGBuildableFactory::GetMaxPossiblePotential() const{ return float(); }
@@ -72,3 +74,4 @@ bool AFGBuildableFactory::FilterPotentialInventoryClasses(TSubclassOf< UObject >
 void AFGBuildableFactory::SetIsProducing(uint8 isProducing){ }
 void AFGBuildableFactory::SetHasPower(uint8 hasPower){ }
 void AFGBuildableFactory::SetCurrentProductivity(uint8 productivity){ }
+void AFGBuildableFactory::SetProductivityMonitorEnabled(bool enabled){ }

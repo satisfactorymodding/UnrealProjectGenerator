@@ -27,4 +27,5 @@ public:
 	virtual FVector GetCollisionExtent() = 0;
 	virtual float GetCollisionSpacing() = 0;
 	virtual FVector GetCollisionOffset() = 0;
+	virtual UStaticMesh* GetUsedSplineMesh() = 0;
 };
