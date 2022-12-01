@@ -32,6 +32,9 @@ void AFGBuildableDockingStation::UpdateItemTransferRate(bool dispatchToMainThrea
 bool AFGBuildableDockingStation::CanBeRefuelingVehicle(AFGWheeledVehicle* vehicle) const{ return bool(); }
 void AFGBuildableDockingStation::SetRefuelingVehicle(AFGWheeledVehicle* vehicle){ }
 bool AFGBuildableDockingStation::HasSufficientFuelType() const{ return bool(); }
+void AFGBuildableDockingStation::PreSerializedToBlueprint(){ }
+void AFGBuildableDockingStation::PostSerializedToBlueprint(){ }
+void AFGBuildableDockingStation::PostSerializedFromBlueprint(){ }
 void AFGBuildableDockingStation::Factory_Tick(float dt){ }
 void AFGBuildableDockingStation::Factory_TickProducing(float dt){ }
 void AFGBuildableDockingStation::Factory_CollectInput_Implementation(){ }

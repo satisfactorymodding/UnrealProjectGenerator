@@ -19,6 +19,7 @@ void UFGShoppingListComponent::OnShoppingListObjectUpdated(UFGShoppingListObject
 void UFGShoppingListComponent::OnBlueprintRemoved(const FString& blueprintName){ }
 void UFGShoppingListComponent::UpdateShoppingListObjectBlueprint( UFGShoppingListObject_Object* shoppingListObject_Object){ }
 void UFGShoppingListComponent::UpdateShoppingListObjectRecipe( UFGShoppingListObject_Class* shoppingListObject_Class){ }
+void UFGShoppingListComponent::UpdateShoppingList(){ }
 void UFGShoppingListComponent::BeginPlay(){ }
 void UFGShoppingListComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void UFGShoppingListComponent::UpdateShoppingListObjectBlueprint( UFGShoppingListObjectBlueprint* shoppingListObjectBlueprint){ }

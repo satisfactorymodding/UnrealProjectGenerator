@@ -189,6 +189,7 @@ void AFGCharacterPlayer::OnDisabledInputGateChanged_Implementation(FDisabledInpu
 void AFGCharacterPlayer::SpawnDeathCrate(){ }
 void AFGCharacterPlayer::SetupInventory(){ }
 void AFGCharacterPlayer::OnItemAddedToInventory(TSubclassOf<UFGItemDescriptor> itemClass, int32 numAdded){ }
+void AFGCharacterPlayer::OnInventorySlotUpdated(int32 Index){ }
 void AFGCharacterPlayer::AddDefaultInventoryItems(){ }
 void AFGCharacterPlayer::ReEquipExistingEquipment(){ }
 void AFGCharacterPlayer::UnEquipAllEquipment(){ }
@@ -260,6 +261,7 @@ void AFGCharacterPlayer::OnRep_BackEquipmentSlot(){ }
 void AFGCharacterPlayer::OnRep_LegsEquipmentSlot(){ }
 void AFGCharacterPlayer::OnRep_HeadEquipmentSlot(){ }
 void AFGCharacterPlayer::OnRep_BodyEquipmentSlot(){ }
+void AFGCharacterPlayer::OnRep_PlayerInventory(){ }
 void AFGCharacterPlayer::OnRep_ActorPerceptionInfo(const TArray< FFGActorPlayerPerceptionInfo >& OldValues){ }
 void AFGCharacterPlayer::MigrateNumSavedSlots(){ }
 void AFGCharacterPlayer::CheckItemPickedUp() const{ }

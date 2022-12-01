@@ -3,3 +3,4 @@
 #include "FGResourceNodeGeyser.h"
 
 AFGResourceNodeGeyser::AFGResourceNodeGeyser(){ }
+void AFGResourceNodeGeyser::BeginPlay(){ }

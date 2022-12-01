@@ -18,6 +18,7 @@ void AFGConveyorLiftHologram::GetSupportedBuildModes_Implementation(TArray< TSub
 void AFGConveyorLiftHologram::PostHologramPlacement(){ }
 void AFGConveyorLiftHologram::CheckClearance(const FVector& locationOffset){ }
 void AFGConveyorLiftHologram::CheckBlueprintCommingling(){ }
+bool AFGConveyorLiftHologram::IsHologramIdenticalToActor(AActor* actor, const FVector& hologramLocationOffset) const{ return bool(); }
 void AFGConveyorLiftHologram::SerializeConstructMessage(FArchive& ar, FNetConstructionID id){ }
 void AFGConveyorLiftHologram::ServerPostConstructMessageDeserialization(){ }
 void AFGConveyorLiftHologram::OnPendingConstructionHologramCreated_Implementation(AFGHologram* fromHologram){ }

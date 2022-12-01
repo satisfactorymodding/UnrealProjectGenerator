@@ -76,4 +76,7 @@ private:
 
 	UPROPERTY()
 	TSubclassOf< class UFGConnectionComponent > mConnectionClass;
+
+	UPROPERTY()
+	float mMinHeight;
 };

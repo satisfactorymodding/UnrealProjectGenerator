@@ -750,6 +750,9 @@ protected:
 	UFUNCTION()
 	void OnItemAddedToInventory( TSubclassOf<UFGItemDescriptor> itemClass, int32 numAdded );
 
+	UFUNCTION()
+	void OnInventorySlotUpdated( int32 Index );
+
 	/** Hand out the starting resources. */
 	void AddDefaultInventoryItems();
 
@@ -1071,6 +1074,8 @@ private:
 	void OnRep_HeadEquipmentSlot();
 	UFUNCTION()
 	void OnRep_BodyEquipmentSlot();
+	UFUNCTION()
+	void OnRep_PlayerInventory();
 	
 	UFUNCTION()
 	void OnRep_ActorPerceptionInfo( const TArray< FFGActorPlayerPerceptionInfo >& OldValues );
@@ -1273,8 +1278,10 @@ private:
 	ECameraMode mPlayerPreferredCameraMode;
 
 	/** The players inventory. */
-	UPROPERTY( SaveGame, Replicated )
+	UPROPERTY( SaveGame, ReplicatedUsing=OnRep_PlayerInventory )
 	class UFGInventoryComponent* mInventory;
+
+	bool mIsShoppingListDelegateBound = false;
 	
 	/** Storing equipment inventory components in individual variables instead of using a TArray since OnRep functions are somewhat unreliable for the later. So not the most elegant solution but the most robust one. */
 	static_assert( static_cast<int32>( EEquipmentSlot::ES_MAX ) == 6, "Adding or removing equipment slot variables might be needed" );
