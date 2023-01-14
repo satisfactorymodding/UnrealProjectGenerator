@@ -850,6 +850,11 @@ class UEClass(UEStruct):
             if self_prop:
                 continue
             
+            if not prop:
+                print(f'Skipping {self.class_name}::{cdo_property}, not found in class definition')
+                del modified_cdo[cdo_property]
+                continue
+
             if not self_prop and int(prop['PropertyFlags']) & 0x0040000000000000 and cdo_property not in setters[self.prefix]: # private
                 del modified_cdo[cdo_property]
                 continue
