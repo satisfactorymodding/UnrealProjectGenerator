@@ -636,7 +636,7 @@ DEFINE_LOG_CATEGORY(LogPoolSystem);"
 	if (ar.IsSaveGame()) {
 		return;	
 	}
-	if (!ar.IsSaving() && !ar.IsLoading() || ar.CustomVer(FFactoryGameCustomVersion::GUID) < FFactoryGameCustomVersion::CachedSaveActors) {
+	if ((!ar.IsSaving() && !ar.IsLoading()) || ar.CustomVer(FFactoryGameCustomVersion::GUID) < FFactoryGameCustomVersion::CachedSaveActors) {
 		return;
 	}
 	
