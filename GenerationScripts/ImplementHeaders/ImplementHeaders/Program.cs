@@ -9,7 +9,7 @@ namespace ImplementHeaders
 {
     class Program
     {
-        private static bool CountOnly = false;
+        private static bool CountOnly;
         private static int FunctionCount;
 
         private static readonly string[] NeedsSuper = new string[] { "Serialize", "OnRegister", "OnUnregister", "PostLoad", "BeginDestroy", "FinishDestroy", "PostInitProperties", "PostInitializeComponents", "CreateRenderState_Concurrent", "PostEditChangeProperty", "PostActorCreated", "PreInitializeComponents", "NotifyBeginPlay", "ReleaseSlateResources" };
@@ -17,843 +17,6 @@ namespace ImplementHeaders
         private static readonly Dictionary<string, string> ConditionalSuper = new Dictionary<string, string>()
         {
             { "CheckForErrors", "A" }
-        };
-
-        private static readonly Dictionary<string, List<string>> ExtraIncludes = new Dictionary<string, List<string>>()
-        {
-            { "FGInventoryComponent", new List<string>()
-                {
-                    "FactoryGameCustomVersion.h"
-                }
-            },
-            { "FGCharacterPlayer", new List<string>()
-                {
-                    "FGCharacterMovementComponent.h"
-                }
-            },
-            { "FGReplicationDetailInventoryComponent", new List<string>()
-                {
-                    "FGInventoryComponent.h"
-                }
-            },
-            { "FactoryGameCustomVersion", new List<string>()
-                {
-                    "CustomVersion.h"
-                }
-            },
-            { "FGBuildableGeneratorGeoThermal", new List<string>()
-                {
-                    "FGExtractableResourceInterface.h"
-                }
-            },
-            { "FGComboBoxSearch", new List<string>()
-                {
-                    "SSpacer.h"
-                }
-            },
-            { "FGResourceNodeFrackingSatellite", new List<string>()
-                {
-                    "FGResourceNodeFrackingCore.h"
-                }
-            },
-            { "FGBuildableFrackingExtractor", new List<string>()
-                {
-                    "FGResourceNodeFrackingCore.h"
-                }
-            },
-            { "FGServerObject", new List<string>()
-                {
-                    "FGServerManager.h"
-                }
-            },
-            { "FGResourceSinkSubsystem", new List<string>()
-                {
-                    "FGItemDescriptor.h"
-                }
-            },
-            { "FGServerManager", new List<string>()
-                {
-                    "Server/FGServerQuerySocket.h"
-                }
-            },
-            { "FGItemDescriptor", new List<string>()
-                {
-                    "FGCategory.h",
-                    "FGItemCategory.h",
-                }
-            },
-            { "FGBuildEffectActor", new List<string>()
-                {
-                    "ItemAmount.h",
-                }
-            },
-            { "FGWorldSettings", new List<string>()
-                {
-                    "FactoryGameCustomVersion.h",
-                    "FGMinimapCaptureActor.h",
-                    "Components/SkyAtmosphereComponent.h",
-                    "Engine/ExponentialHeightFog.h"
-                }
-            }
-        };
-
-        private static readonly Dictionary<string, Dictionary<string, List<string>>> ExtraIncludesIf = new Dictionary<string, Dictionary<string, List<string>>>()
-        {
-            { "FGWorldSettings", new Dictionary<string, List<string>>()
-                {
-                    { "WITH_EDITOR",
-                        new List<string>()
-                        {
-                            "LevelEditor.h",
-                        }
-                    }
-                }
-            }
-        };
-
-        private static readonly Dictionary<string, string> ExtraCPPContent = new Dictionary<string, string>()
-        {
-            { "FGBackgroundThread",
-@"
-DEFINE_LOG_CATEGORY(LogPoolSystem);"
-            },
-            { "FGWorldSettings",
-@"bool ShouldConsiderActorForSave(AActor* actor, ULevel* settingsLevel) {
-	if (actor == NULL) {
-		return false;
-	}
-	if (actor->GetWorld() == NULL || actor->GetWorld()->IsGameWorld()) {
-		if (!actor->IsA<AFGWorldSettings>()) {
-			if (!actor->Implements<UFGSaveInterface>()) {
-				return false;
-			}
-			return !actor->HasAnyFlags(RF_Transient);
-		}
-		return actor->IsInPersistentLevel();
-	}
-	{
-		if (actor->IsA<AFGSubsystem>()) {
-			return false;
-		}
-		if (actor->GetLevel() != settingsLevel) {
-			return false;
-		}
-		if (!actor->Implements<UFGSaveInterface>()) {
-			return false;
-		}
-		return !actor->HasAnyFlags(RF_Transient);
-	}
-}"      
-            }
-        };
-
-        private static readonly Dictionary<string, string> CustomImplementation = new Dictionary<string, string>()
-        {
-            { "static UFGItemDescriptor::CanBeDiscarded",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mCanBeDiscarded;
-	else
-		return bool();"
-            },
-            { "static UFGItemDescriptor::GetBigIcon",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mPersistentBigIcon;
-	else
-		return nullptr;"
-            },
-            { "static UFGItemDescriptor::GetEnergyValue",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mEnergyValue;
-	else
-		return float();"
-            },
-            { "static UFGItemDescriptor::GetFluidColor",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mFluidColor;
-	else
-		return FColor();"
-            },
-            { "static UFGItemDescriptor::GetFluidColorLinear",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mFluidColor.ReinterpretAsLinear();
-	else
-		return FLinearColor();"
-            },
-            { "static UFGItemDescriptor::GetFluidDensity",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mFluidDensity;
-	else
-		return float();"
-            },
-            { "static UFGItemDescriptor::GetFluidFriction",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mFluidFriction;
-	else
-		return float();"
-            },
-            { "static UFGItemDescriptor::GetFluidViscosity",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mFluidViscosity;
-	else
-		return float();"
-            },
-            { "static UFGItemDescriptor::GetForm",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mForm;
-	else
-		return EResourceForm();"
-            },
-            { "static UFGItemDescriptor::GetCategory",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mCategory;
-	else
-		return TSubclassOf< UFGCategory >();"
-            },
-            { "static UFGItemDescriptor::GetItemCategory",
-@"	return TSubclassOf< UFGItemCategory >(UFGItemDescriptor::GetCategory(inClass));"
-            },
-            { "static UFGItemDescriptor::GetItemDescription",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mDescription;
-	else
-		return FText();"
-            },
-            { "static UFGItemDescriptor::GetItemIcon",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mInventoryIcon;
-	else
-		return FSlateBrush();"
-            },
-            { "static UFGItemDescriptor::GetItemMesh",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mConveyorMesh;
-	else
-		return nullptr;"
-            },
-            { "static UFGItemDescriptor::GetItemName",
-@"	if (!inClass)
-		return FText();
-	if (inClass.GetDefaultObject()->mUseDisplayNameAndDescription)
-		return inClass.GetDefaultObject()->mDisplayName;
-	else
-		return FText::FromString(inClass->GetName());"
-            },
-            { "static UFGItemDescriptor::GetRadioactiveDecay",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mRadioactiveDecay;
-	else
-		return float();"
-            },
-            { "static UFGItemDescriptor::GetSmallIcon",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mSmallIcon;
-	else
-		return nullptr;"
-            },
-            { "static UFGItemDescriptor::GetStackSize",
-@"	if (inClass)
-		return static_cast<int32>(inClass.GetDefaultObject()->mStackSize);
-	else
-		return int32();"
-            },
-            { "UFGItemDescriptor::GetStackSizeConverted",
-@"	switch (inClass.GetDefaultObject()->mStackSize) {
-    case EStackSize::SS_ONE: return 1;
-    case EStackSize::SS_SMALL: return 20;
-    case EStackSize::SS_MEDIUM: return 50;
-    case EStackSize::SS_BIG: return 200;
-    case EStackSize::SS_HUGE: return 500;
-    case EStackSize::SS_FLUID: return 5000;
-    case EStackSize::SS_LAST_ENUM: return 1;
-    }
-    return 0;"
-            },
-            { "static UFGItemDescriptor::RememberPickUp",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mRememberPickUp;
-	else
-		return bool();"
-            },
-            { "static UFGRecipe::GetIngredients",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mIngredients;
-	else
-		return TArray<FItemAmount>();"
-            },
-            { "static UFGRecipe::GetManualManufacturingDuration",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mManualManufacturingMultiplier;
-	else
-		return float();"
-            },
-            { "static UFGRecipe::GetManufacturingDuration",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mManufactoringDuration;
-	else
-		return float();"
-            },
-            { "UFGRecipe::GetProducedIn",
-@"	out_producedIn = UFGRecipe::GetProducedIn(this->GetClass());"
-            },
-            { "static UFGRecipe::GetProducts",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mProduct;
-	else
-		return TArray< FItemAmount >();"
-            },
-            { "static UFGRecipe::GetRecipeName",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mDisplayName;
-	else
-		return FText();"
-            },
-            { "UFGRecipe::SetIngredient",
-@"	recipe.GetDefaultObject()->mIngredients = ingredient;"
-            },
-            { "UFGRecipe::SetManualManufacturingMultiplier",
-@"	recipe.GetDefaultObject()->mManualManufacturingMultiplier = sec;"
-            },
-            { "UFGRecipe::SetManufactoringDuration",
-@"	recipe.GetDefaultObject()->mManufactoringDuration = sec;"
-            },
-            { "static UFGRecipe::SetProduct",
-@"	if(recipe)
-		recipe.GetDefaultObject()->mProduct = product;"
-            },
-            { "UFGRecipe::CanEditChange",
-@"	return true;"
-            },
-            { "static UFGResearchTree::GetDisplayName",
-@"	return inClass.GetDefaultObject()->mDisplayName;"
-			},
-            { "static UFGResearchTree::GetNodes",
-@"	return inClass.GetDefaultObject()->mNodes;"
-			},
-            { "static UFGResearchTree::GetPostUnlockDescription",
-@"	return inClass.GetDefaultObject()->mPostUnlockDescription;"
-			},
-            { "static UFGResearchTree::GetPreUnlockDescription",
-@"	return inClass.GetDefaultObject()->mPreUnlockDescription;"
-			},
-            { "static UFGResearchTree::GetPreUnlockDisplayName",
-@"	return inClass.GetDefaultObject()->mPreUnlockDisplayName;"
-			},
-            { "static UFGResearchTree::GetResearchTreeIcon",
-@"	return inClass.GetDefaultObject()->mResearchTreeIcon;"
-			},
-            { "static UFGResearchTree::GetUnlockDependencies",
-@"	return inClass.GetDefaultObject()->mUnlockDependencies;"
-			},
-            { "static UFGResearchTree::SetNodes",
-@"	inClass.GetDefaultObject()->mNodes = nodes;"
-			},
-            { "static UFGSchematic::GetAdditionalSchematicDependencies",
-@"	return inClass.GetDefaultObject()->mAdditionalSchematicDependencies;"
-			},
-            { "static UFGSchematic::GetCost",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mCost;
-	else
-		return TArray< FItemAmount >();"
-            },
-            { "static UFGSchematic::GetDependentOnSchematic",
-@"	return inClass.GetDefaultObject()->mDependsOnSchematic;"
-			},
-            { "static UFGSchematic::GetItemIcon",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mSchematicIcon;
-	else
-		return FSlateBrush();"
-            },
-            { "static UFGSchematic::GetSchematicCategory",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mSchematicCategory;
-	else
-		return TSubclassOf< class UFGSchematicCategory >();"
-            },
-            { "static UFGSchematic::GetSchematicDisplayName",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mDisplayName;
-	else
-		return FText();"
-            },
-            { "static UFGSchematic::GetSubCategories",
-@"	if(inClass)
-		out_subCategories = inClass.GetDefaultObject()->mSubCategories;"
-            },
-            { "static UFGSchematic::GetTechTier",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mTechTier;
-	else
-		return int32();"
-            },
-            { "static UFGSchematic::GetTimeToComplete",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mTimeToComplete;
-	else
-		return float();"
-            },
-            { "static UFGSchematic::GetType",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mType;
-	else
-		return ESchematicType();"
-            },
-            { "static UFGSchematic::GetUnlocks",
-@"	if (inClass)
-		return inClass.GetDefaultObject()->mUnlocks;
-	else
-		return TArray<UFGUnlock*>();"
-            },
-            { "static UFGSchematic::SetCost",
-@"	inClass.GetDefaultObject()->mCost = Cost;"
-			},
-            { "static UFGSchematic::SetDisplayName",
-@"	inClass.GetDefaultObject()->mDisplayName = Name;"
-			},
-            { "static UFGSchematic::SetTechTier",
-@"	inClass.GetDefaultObject()->mTechTier = Tier;"
-			},
-            { "static UFGSchematic::SetTimeToComplete",
-@"	inClass.GetDefaultObject()->mTimeToComplete = sec;"
-			},
-            { "static UFGSchematic::SetType",
-@"	inClass.GetDefaultObject()->mType = Type;"
-			},
-            { "static UFGRecipe::GetProducedIn",
-@"	TArray<TSubclassOf<UObject>>   out;
-	if (!inClass)
-		return TArray< TSubclassOf< UObject > >();
-
-	TArray<TSoftClassPtr<UObject>> In = inClass.GetDefaultObject()->mProducedIn;
-	if (In.Num() > 0)
-	{
-		for (int j = 0; j < In.Num(); j++)
-		{
-			TSubclassOf<UObject> obj = In[j].LoadSynchronous();
-			if(obj)
-				out.Add(obj);
-		}
-		return out;
-	}
-	else
-		return TArray<TSubclassOf<UObject>>();"
-            },
-            { "static UFGItemDescriptor::GetIconCameraTransform",
-@"	if (inClass)
-#if WITH_EDITOR
-		return inClass.GetDefaultObject()->mIconCameraTransform;
-#else
-		return FTransform();
-#endif
-	else
-		return FTransform();"
-            },
-            { "static UFGItemDescriptor::SetIconCameraTransform",
-@"#if WITH_EDITOR
-	if (inClass)
-		inClass.GetDefaultObject()->mIconCameraTransform = cameraTransform;
-#endif"
-            },
-            { "static UFGItemDescriptor::GetIconFOV",
-@"	if (inClass)
-#if WITH_EDITOR
-		return inClass.GetDefaultObject()->mIconFOV;
-#else
-		return float();
-#endif
-	else
-		return float();"
-            },
-            { "static UFGItemDescriptor::SetIconFOV",
-@"#if WITH_EDITOR
-	if (inClass)
-		inClass.GetDefaultObject()->mIconFOV = iconFOV;
-#endif"
-            },
-            { "static UFGItemDescriptor::GetIconObjectOrientation",
-@"	if (inClass)
-#if WITH_EDITOR
-		return inClass.GetDefaultObject()->mIconObjectOrientation;
-#else
-		return FRotator();
-#endif
-	else
-		return FRotator();"
-            },
-            { "static UFGItemDescriptor::SetIconObjectOrientation",
-@"#if WITH_EDITOR
-	if (inClass)
-		inClass.GetDefaultObject()->mIconObjectOrientation = objectOrientation;
-#endif"
-            },
-            { "static UFGItemDescriptor::GetIconCameraDistance",
-@"	if (inClass)
-#if WITH_EDITOR
-		return inClass.GetDefaultObject()->mIconCameraDistance;
-#else
-		return float();
-#endif
-	else
-		return  float();"
-            },
-            { "static UFGItemDescriptor::SetIconCameraDistance",
-@"#if WITH_EDITOR
-	if (inClass)
-		inClass.GetDefaultObject()->mIconCameraDistance = cameraDistance;
-#endif"
-            },
-            { "static UFGItemDescriptor::GetIconSkyOrientation",
-@"	if (inClass)
-#if WITH_EDITOR
-		return inClass.GetDefaultObject()->mIconSkyOrientation;
-#else
-		return FRotator();
-#endif
-	else
-		return FRotator();"
-            },
-            { "UFGSchematicPurchasedDependency::Init",
-@"	this->mSchematics = schematics;
-    this->mRequireAllSchematicsToBePurchased = requireAllSchematicsToBePurchased;"
-            },
-            { "UFGSchematicPurchasedDependency::GetSchematics",
-@"  out_schematics = mSchematics;"  
-            },
-            { "UFGSchematic::GetPrimaryAssetId",
-@"  return FPrimaryAssetId(StaticClass()->GetFName(), FPackageName::GetShortFName(GetOutermost()->GetFName()));"
-            },
-            { "UFGResearchTree::GetPrimaryAssetId",
-@"  return FPrimaryAssetId(StaticClass()->GetFName(), FPackageName::GetShortFName(GetOutermost()->GetFName()));"
-            },
-            { "UFGResearchRecipe::GetPrimaryAssetId",
-@"  return FPrimaryAssetId(StaticClass()->GetFName(), FPackageName::GetShortFName(GetOutermost()->GetFName()));"
-            },
-            { "FFluidBox::Serialize",
-@"	if (ar.ArIsSaveGame) {
-
-        ar << Content;
-    }
-	return true;"
-            },
-            { "FFluidBox::operator==",
-@"	return !this->operator!=(other);"
-            },
-            { "FFluidBox::operator!=",
-@"	return (bool)FPlatformMemory::Memcmp(this, &other, sizeof(FFluidBox));"
-            },
-            { "FInventoryItem::Serialize",
-@"	ar.UsingCustomVersion(FFactoryGameCustomVersion::GUID);
-	if (ar.CustomVer(FFactoryGameCustomVersion::GUID) >= 2) {
-		ar << ItemClass;
-		ar << ItemState;
-	}
-	return true;"
-            },
-            { "FRailroadTrackPosition::Serialize",
-@"	if (ar.ArIsSaveGame) {
-		ar << Offset;
-		ar << Forward;
-	}
-
-	return true;"
-            },
-            { "FSignData::Serialize",
-@"	if (ar.ArIsSaveGame) {
-		ar << BackgroundColorIndex;
-	}
-
-	return true;"
-            },
-            { "FSaveCollectorArchive::FSaveCollectorArchive",
-@":mObjectsToSave(toFill) {}"
-            },
-            { "FHolgramAStarHelper::GetNeighbour",
-@"  return FHologramAStarNode(0);"
-            },
-            { "UFGComboBoxSearch::HandleGenerateWidget",
-@"  return SNew(SSpacer);"
-            },
-            { "FGSSearchableComboBox::GenerateMenuItemRow",
-@"  return SNew(STableRow<TSharedPtr<FString>>, OwnerTable);"
-            },
-            { "UFGColoredInstanceMeshProxy::ShouldCreateRenderState",
-@"#if WITH_EDITOR // Ensure visibility in blueprint & editor.
-    if( GetWorld()->WorldType == EWorldType::Editor || GetWorld()->WorldType == EWorldType::EditorPreview)
-    {
-        return true;
-    }
-#endif    
-    // only create when its blocking instancing.
-    return mBlockInstancing;"
-            },
-            {
-                "AFGResourceNode::InitResource",
-@"  this->mResourceClass = resourceClass;
-    this->mAmount = amount;
-    this->mPurity = purity;"
-            },
-            { "AFGWorldSettings::OnActorSpawned",
-@"	if (AExponentialHeightFog* HeightFog = Cast<AExponentialHeightFog>(actor)) {
-		mExponentialHeightFog = HeightFog;
-	}
-	if (ASkyAtmosphere* SkyAtmosphere = Cast<ASkyAtmosphere>(actor)) {
-		mSkyAtmosphere = SkyAtmosphere;
-	}
-	if (AFGSkySphere* SkySphere = Cast<AFGSkySphere>(actor)) {
-		mSkySphere = SkySphere;
-	}
-	if (AFGMinimapCaptureActor* MinimapCaptureActor = Cast<AFGMinimapCaptureActor>(actor)) {
-		mMinimapCaptureActor = MinimapCaptureActor;
-	}
-	mSaveActorsDirty = true;
-"
-            },
-            { "AFGWorldSettings::BeginDestroy",
-@"	Super::BeginDestroy();
-
-#if WITH_EDITOR
-	//Unregister Map Change Events
-	FLevelEditorModule& LevelEditor = FModuleManager::LoadModuleChecked<FLevelEditorModule>(""LevelEditor"");
-	LevelEditor.OnMapChanged().Remove(mOnMapChangedDelegateHandle);
-	mOnMapChangedDelegateHandle.Reset();
-
-	//Unregister Actor Spawned Event
-	GetWorld()->RemoveOnActorSpawnedHandler(mActorSpawnedDelegateHandle);
-	mActorSpawnedDelegateHandle.Reset();
-#endif
-"
-            },
-            { "static AFGWorldSettings::AddReferencedObjects",
-@"	AFGWorldSettings* Settings = CastChecked<AFGWorldSettings>(inThis);
-	collector.AddReferencedObjects(Settings->mSaveActors, inThis);
-"
-            },
-            { "AFGWorldSettings::Serialize",
-@"	Super::Serialize(ar);
-	ar.UsingCustomVersion(FFactoryGameCustomVersion::GUID);
-
-	if (ar.IsSaveGame()) {
-		return;	
-	}
-	if ((!ar.IsSaving() && !ar.IsLoading()) || ar.CustomVer(FFactoryGameCustomVersion::GUID) < FFactoryGameCustomVersion::CachedSaveActors) {
-		return;
-	}
-	
-	const FString LevelName = GetLevel()->GetFullName();
-	if (LevelName.Find(TEXT(""_LOD""), ESearchCase::IgnoreCase, ESearchDir::FromEnd) != INDEX_NONE) {
-		return;
-	}
-
-	if (ar.IsCooking()) {
-		if (mSaveActors.Contains((AActor*) NULL)) {
-			UE_LOG(LogGame, Warning,
-				TEXT(""AFGWorldSettings::mSaveActors contains nullpointers during cook, that should never happen. Please resave the level %s""),
-				*LevelName);
-		}
-	}
-	if (mSaveActorsDirty) {
-		PrepareSaveActors();
-		mSaveActorsDirty = false;
-	}
-	ar << mSaveActors;
-"
-            },
-            { "AFGWorldSettings::PostLoad",
-@"	Super::PostLoad();
-	PrepareSaveActors();
-"
-            },
-            { "AFGWorldSettings::PreInitializeComponents",
-@"	Super::PreInitializeComponents();
-
-#if WITH_EDITOR
-	//Register Map Change Events
-	FLevelEditorModule& LevelEditor = FModuleManager::LoadModuleChecked<FLevelEditorModule>(""LevelEditor"");
-	mOnMapChangedDelegateHandle = LevelEditor.OnMapChanged().AddUObject(this, &AFGWorldSettings::HandleMapChanged);
-
-	//Register Actor Spawned Event
-	mActorSpawnedDelegateHandle = GetWorld()->AddOnActorSpawnedHandler(FOnActorSpawned::FDelegate::CreateUObject(this, &AFGWorldSettings::OnActorSpawned));
-#endif
-	
-	/*UFGSubsystemClasses* SubsystemClasses = UFGSubsystemClasses::Get();
-	SpawnSubsystem<AFGFoliageRemovalSubsystem>(mFoliageRemovalSubsystem, SubsystemClasses->mFoliageRemovalSubsystemClass, TEXT(""FoliageRemovalSubsystem""));
-	SpawnSubsystem<AFGAudioVolumeSubsystem>(mAudioVolumeSubsystem, AFGAudioVolumeSubsystem::StaticClass(), TEXT(""AudioVolumeSubsystem""));
-	SpawnSubsystem<AFGBuildableSubsystem>(mBuildableSubsystem, SubsystemClasses->mBuildableSubsystemClass, TEXT(""BuildableSubsystem""));
-	SpawnSubsystem<AFGPhotoModeManager>(mPhotoModeManager, SubsystemClasses->mPhotoModeManagerClass, TEXT(""PhotoModeManager""));
-
-	if (GetWorld()->WorldType != EWorldType::Editor && GetWorld()->WorldType != EWorldType::EditorPreview) {
-		SpawnSubsystem<AFGConveyorItemSubsystem>(mConveyorItemSubsystem, SubsystemClasses->mConveyorItemSubsystemClass, TEXT(""ConveyorItemSubsystem""));
-	}*/
-"
-            },
-            { "AFGWorldSettings::NotifyBeginPlay",
-@"	Super::NotifyBeginPlay();
-
-	/*if (!GetWorld()->HasBegunPlay()) {
-		AFGFoliageRemovalSubsystem* FoliageRemovalSubsystem = AFGFoliageRemovalSubsystem::Get(GetWorld());
-		if (FoliageRemovalSubsystem) {
-			FoliageRemovalSubsystem->Init();
-		}
-
-		UFGGameUserSettings* UserSettings = UFGGameUserSettings::GetFGGameUserSettings();
-		if (UserSettings) {
-			UserSettings->ApplyHologramColoursToCollectionParameterInstance(GetWorld());
-		}
-	}*/
-"
-            },
-            { "AFGWorldSettings::GetExponentialHeightFog",
-@"	return mExponentialHeightFog.LoadSynchronous();
-"
-            },
-            { "AFGWorldSettings::GetSkyAtmosphere",
-@"	return mSkyAtmosphere.LoadSynchronous();
-"
-            },
-            { "AFGWorldSettings::GetSkySphere",
-@"	return mSkySphere.LoadSynchronous();
-"
-            },
-            { "AFGWorldSettings::UpdateWorldBounds",
-@"	/*UMaterialParameterCollection* ParameterCollection = UFGEnvironmentSettings::GetWorldBoundsParameters();
-
-	if (ParameterCollection) {
-		FVector2D Min, Max;
-		UFGMapFunctionLibrary::GetWorldBounds(this, Min, Max);
-
-		UKismetMaterialLibrary::SetVectorParameterValue(this, ParameterCollection,
-			UFGEnvironmentSettings::WorldBoundsMinName,
-			FLinearColor(FVector(Min.X, Min.Y, 0.0f)));
-		
-		UKismetMaterialLibrary::SetVectorParameterValue(this, ParameterCollection,
-			UFGEnvironmentSettings::WorldBoundsExtentName,
-			FLinearColor(FVector(Max.X - Min.X, Max.Y - Min.Y, 0.0f)));
-	}*/
-"
-            },
-            { "AFGWorldSettings::OnSaveActorDestroyed",
-@"	actor->OnEndPlay.RemoveAll(this);
-	actor->OnDestroyed.RemoveAll(this);
-	mSaveActors.Remove(actor);
-	
-	if (GetWorld()) {
-		if (!GetWorld()->IsGameWorld()) {
-			mSaveActorsDirty = true;
-		}
-	}
-"
-            },
-            { "AFGWorldSettings::PrepareSaveActors",
-@"	ULevel* Level = GetLevel();
-	check(Level);
-
-	if (mSaveActorsDirty || GetLinkerCustomVersion(FFactoryGameCustomVersion::GUID) < FFactoryGameCustomVersion::CachedSaveActors) {
-		mSaveActors.Empty();
-
-		for (AActor* LevelActor : Level->Actors) {
-			if (!ShouldConsiderActorForSave(LevelActor, Level)) {
-				continue;
-			}
-			if (LevelActor->IsPendingKill()) {
-				continue;
-			}
-			if (!LevelActor->OnDestroyed.IsAlreadyBound(this, &AFGWorldSettings::OnSaveActorDestroyed)) {
-				LevelActor->OnDestroyed.AddDynamic(this, &AFGWorldSettings::OnSaveActorDestroyed);
-			}
-			mSaveActors.Add(LevelActor);
-		}
-	}
-	mSaveActors.Remove(NULL);
-
-	for (AActor* SaveActor : mSaveActors) {
-		if (!SaveActor->OnDestroyed.IsAlreadyBound(this, &AFGWorldSettings::OnSaveActorDestroyed)) {
-			SaveActor->OnDestroyed.AddDynamic(this, &AFGWorldSettings::OnSaveActorDestroyed);
-		}
-	}
-"
-            },
-            { "FFactoryGameCustomVersion::GUID",
-@"FGuid(0x0F4E61DC1, 0x7C029ACE, 0x85D7D561, 0x0E42F6A3D); //See symbol ?GUID@FFactoryGameCustomVersion@@2UFGuid@@B in IDA for value <0F4E61DC1h, 7C029ACEh, 85D7D561h, 0E42F6A3Dh>
-
-//Stuff to register custom version for UE4 tracking
-FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustomVersion::GUID, FFactoryGameCustomVersion::Type::LatestVersion, TEXT(""Dev-Framework"") }" }, // I don't like this multiline
-            { "FSaveCustomVersion::GUID",
-@" FGuid(0x21043E2F, 0x13E61FD6, 0x513B9D51, 0x3636A230); //See symbol ?GUID@FSaveCustomVersion@@2UFGuid@@B in IDA for value <21043E2Fh, 13E61FD6h, 513B9D51h, 3636A230h>" },
-            { "UFGGameUserSettings::mCVarSink",
-@"FConsoleCommandDelegate::CreateStatic(&UFGGameUserSettings::CVarSinkHandler)" },
-            { "UFGServerObject::GetOuterServerManager",
-@"  return *Cast<UFGServerManager>(GetOuter());" },
-            { "UFGListView::RebuildListWidget",
-@"  return ConstructListView<SFGListView>();" },
-            { "AFGBuildable::RemoveInstances_Native",
-@"  if( this && GetWorld() )
-    {
-        AAbstractInstanceManager* Manager = AAbstractInstanceManager::GetInstanceManager( GetWorld() );
-        for (FInstanceHandle* InstanceHandle : mInstanceHandles )
-        {
-            if( InstanceHandle->IsInstanced() )
-            {
-                Manager->RemoveInstance( InstanceHandle );
-            }
-        }
-        mInstanceHandles.Empty();
-    }"
-            },
-            { "AFGBuildable::SetupInstances_Native",
-@"  if( this && GetWorld() && IsValid( mInstanceDataCDO ) )
-    {
-        for (FInstanceData InstanceData : mInstanceDataCDO->GetInstanceData() )
-        {
-            if( IsValid( InstanceData.StaticMesh ) && !InstanceData.OverridenMaterials.Contains( nullptr ) )
-            {
-                FInstanceHandle* Handle;
-                AAbstractInstanceManager::SetInstanceFromDataStatic( this, FTransform(), InstanceData, Handle, bInitializeHidden );
-                mInstanceHandles.Add( Handle );
-            }
-        }
-    }"
-            },
-            { "AFGBuildable::GetActorLightweightInstanceData_Implementation",
-@"  if( IsValid( mInstanceDataCDO ) )
-    {
-        return mInstanceDataCDO->GetInstanceData();
-    }
-    return TArray<FInstanceData>();"
-            },
-            { "AFGBuildable::OnConstruction",
-@"  Super::OnConstruction(transform);
-
-#if WITH_EDITOR
-    RemoveInstances();
-    RemoveInstances_Native();
-    CallSetupInstances();
-#endif"
-            },
-            { "AFGBuildable::PostEditChangeProperty",
-@"  Super::PostEditChangeProperty(PropertyChangedEvent);
-    if( PropertyChangedEvent.GetPropertyName() == GET_MEMBER_NAME_CHECKED( AFGBuildable, mInstanceData) )
-    {
-        mInstanceDataCDO = mInstanceData;
-    }
-    
-    if( PropertyChangedEvent.GetPropertyName() == GET_MEMBER_NAME_CHECKED( AFGBuildable, mBuildableSparseDataEditorObject) )
-    {
-        mBuildableSparseDataCDO = mBuildableSparseDataEditorObject;
-    }"
-            },
-            { "AFGBuildable::PostEditChangeChainProperty",
-@"  Super::PostEditChangeChainProperty(PropertyChangedEvent);
-    if( PropertyChangedEvent.GetPropertyName() == GET_MEMBER_NAME_CHECKED( AFGBuildable, mInstanceData) )
-    {
-        mInstanceDataCDO = mInstanceData;
-    }
-    
-    if( PropertyChangedEvent.GetPropertyName() == GET_MEMBER_NAME_CHECKED( AFGBuildable, mBuildableSparseDataEditorObject) )
-    {
-        mBuildableSparseDataCDO = mBuildableSparseDataEditorObject;
-    }"
-            },
         };
 
         private static readonly Dictionary<string, string> CustomSuper = new Dictionary<string, string>()
@@ -878,56 +41,69 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
         {
             if (args.Length == 0)
             {
-                args = new string[] { "", "", "" };
+                args = new string[] { "", "", "", "" };
                 Console.Write("Headers dir: ");
                 args[0] = Console.ReadLine();
                 Console.Write("Cpp dir: ");
                 args[1] = Console.ReadLine();
-                Console.Write("Show only count? (y/N): ");
+                Console.Write("Custom implementations dir: ");
                 args[2] = Console.ReadLine();
-                if (args[2].ToLower() == "y" || args[2].ToLower() == "yes")
-                    args[2] = "true";
+                Console.Write("Show only count? (y/N): ");
+                args[3] = Console.ReadLine();
+                if (args[3].ToLower() == "y" || args[2].ToLower() == "yes")
+                    args[3] = "true";
                 else
-                    args[2] = "false";
+                    args[3] = "false";
             }
-            if (args.Length >= 3)
-                CountOnly = bool.Parse(args[2]);
+            if (args.Length >= 4)
+                CountOnly = bool.Parse(args[3]);
             Directory.Delete(args[1], true); // remove the old implementations
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
-            Implement(args[0], args[1]);
+            Implement(args[0], args[1], args[2]);
             stopwatch.Stop();
             Console.WriteLine($"Done. Generated {FunctionCount} functions in {stopwatch.ElapsedMilliseconds} ms.");
         }
 
-        private static void Implement(string path, string saveLocation)
+        private static void Implement(string path, string saveLocation, string customImplementationsPath)
         {
             if (File.Exists(path))
             {
                 if (path.EndsWith(".h"))
-                    ImplementFile(path, saveLocation);
+                    ImplementFile(path, saveLocation, customImplementationsPath);
             }
             else if (Directory.Exists(path))
             {
                 foreach (string dir in Directory.EnumerateDirectories(path))
                 {
                     string newSaveLocation = saveLocation + Path.DirectorySeparatorChar + new DirectoryInfo(dir).Name;
+                    string newCustomImplementationsPath = customImplementationsPath + Path.DirectorySeparatorChar + new DirectoryInfo(dir).Name;
                     Directory.CreateDirectory(newSaveLocation);
-                    Implement(dir, newSaveLocation);
+                    Implement(dir, newSaveLocation, newCustomImplementationsPath);
                 }
                 foreach (string file in Directory.EnumerateFiles(path))
                     if (file.EndsWith(".h"))
-                        ImplementFile(file, saveLocation);
+                        ImplementFile(file, saveLocation, customImplementationsPath);
             }
         }
 
         private static HashSet<string> InlineImplementedFunctions = new HashSet<string>();
 
-        private static void ImplementFile(string filePath, string saveDir)
+        private static void ImplementFile(string filePath, string saveDir, string customImplementationsPath)
         {
             string fileContents;
             using (StreamReader reader = new StreamReader(filePath))
                 fileContents = reader.ReadToEnd();
+
+            string customImplementations = "";
+            string customImplementationsFilePath =
+                Path.Combine(customImplementationsPath, Path.GetFileNameWithoutExtension(filePath) + ".cpp");
+            if (File.Exists(customImplementationsFilePath))
+            {
+                using (StreamReader reader = new StreamReader(customImplementationsFilePath))
+                    customImplementations = reader.ReadToEnd().Trim();
+            }
+            
             List<string> implementations = new List<string>();
             // TODO: Maybe clear InlineImplementedFunctions, but it's not like they conflict
             foreach (Match match in Regex.Matches(fileContents, @"^(FORCEINLINE|inline)\s+(.+\(.*\))\s*{?$", RegexOptions.Multiline))
@@ -961,54 +137,35 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                 string classContents = match.Groups[7].Value;
                 if (!IsValidClassName(className) || !string.IsNullOrWhiteSpace(template))
                     continue;
-                implementations.AddRange(ImplementClass(className, classContents, !string.IsNullOrWhiteSpace(FGAPI)));
+                implementations.AddRange(ImplementClass(className, classContents, !string.IsNullOrWhiteSpace(FGAPI), customImplementations));
             }
             using (StreamWriter writer = new StreamWriter($"{saveDir}{Path.DirectorySeparatorChar}{Path.GetFileName(filePath).Replace(".h", ".cpp")}"))
             {
                 writer.WriteLine($"// This file has been automatically generated by the Unreal Header Implementation tool");
                 writer.WriteLine($"");
                 writer.WriteLine($"#include \"{Path.GetFileName(filePath)}\"");
-                if (ExtraIncludes.ContainsKey(Path.GetFileNameWithoutExtension(filePath)))
+
+                if (!string.IsNullOrWhiteSpace(customImplementations))
                 {
-                    foreach (string incl in ExtraIncludes[Path.GetFileNameWithoutExtension(filePath)])
-                    {
-                        writer.WriteLine($"#include \"{incl}\"");
-                    }
+                    if (!customImplementations.StartsWith("#include"))
+                        writer.WriteLine("");
+                    writer.WriteLine(customImplementations);
+
                 }
-                if (ExtraIncludesIf.ContainsKey(Path.GetFileNameWithoutExtension(filePath)))
-                {
-                    foreach (KeyValuePair<string, List<string>> inclIf in ExtraIncludesIf[Path.GetFileNameWithoutExtension(filePath)])
-                    {
-                        writer.WriteLine($"#if {inclIf.Key}");
-                        foreach (string incl in inclIf.Value)
-                        {
-                            writer.WriteLine($"#include \"{incl}\"");
-                        }
-                        writer.WriteLine("#endif");
-                    }
-                }
-                writer.WriteLine($"");
-                if(ExtraCPPContent.ContainsKey(Path.GetFileNameWithoutExtension(filePath)))
-                {
-                    writer.WriteLine(ExtraCPPContent[Path.GetFileNameWithoutExtension(filePath)]);
-                }
+                
+                writer.WriteLine($"");  // writer.WriteLine($"// Code below has been automatically generated by the Unreal Header Implementation tool");
                 if (filePath.Contains("FGCheatBoardWidget.h"))
                     writer.WriteLine("#if WITH_CHEATS");
                 foreach (string func in implementations)
                     writer.WriteLine(func);
                 if (filePath.Contains("FGCheatBoardWidget.h"))
                     writer.WriteLine("#endif");
-                if (filePath.Contains("FactoryGame.h"))
-                {
-                    writer.WriteLine("DEFINE_LOG_CATEGORY(LogGame);"); // TODO: Generate this for all logs
-                    writer.WriteLine("DEFINE_LOG_CATEGORY(LogSigns);"); // TODO: Generate this for all logs
-                }
                 if (filePath.Contains("FactoryGameModule.h"))
-                    writer.WriteLine("IMPLEMENT_PRIMARY_GAME_MODULE(FDefaultGameModuleImpl, FactoryGame, \"FactoryGame\");");
+                    writer.WriteLine("IMPLEMENT_PRIMARY_GAME_MODULE(FFactoryGameModule, FactoryGame, \"FactoryGame\");");
             }
         }
 
-        private static List<string> ImplementClass(string className, string classContents, bool FGAPI)
+        private static List<string> ImplementClass(string className, string classContents, bool FGAPI, string customImplementations)
         {
             List<string> implementations = new List<string>();
             bool needsFObjectInitializer = Regex.IsMatch(classContents, @"GENERATED_U(CLASS|INTERFACE)_BODY");
@@ -1032,11 +189,11 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                     string innerClassContents = match.Groups[7].Value;
                     if (!IsValidClassName(innerClassName) || !string.IsNullOrWhiteSpace(template))
                         continue;
-                    implementations.AddRange(ImplementClass(className + "::" + innerClassName, innerClassContents, FGAPI));
+                    implementations.AddRange(ImplementClass(className + "::" + innerClassName, innerClassContents, FGAPI, customImplementations));
                     ifContents = ifContents.Replace(match.Value, "");
                 }
-                implementations.AddRange(ImplementFunctions(ifContents, className));
-                implementations.AddRange(ImplementStaticVars(ifContents, className));
+                implementations.AddRange(ImplementFunctions(ifContents, className, customImplementations));
+                implementations.AddRange(ImplementStaticVars(ifContents, className, customImplementations));
                 implementations.Add($"#endif {ifMacro.Groups[4].Value.Trim()}");
             }
             classContents = Regex.Replace(classContents, @"\s*#if(def)?\s+(.*?)\n(?:((?:.|\n)*?)\n)??\s*#endif(.*)", "");
@@ -1047,11 +204,11 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                 string innerClassContents = match.Groups[7].Value;
                 if (!IsValidClassName(innerClassName) || !string.IsNullOrWhiteSpace(template))
                     continue;
-                implementations.AddRange(ImplementClass(className + "::" + innerClassName, innerClassContents, FGAPI));
+                implementations.AddRange(ImplementClass(className + "::" + innerClassName, innerClassContents, FGAPI, customImplementations));
                 classContents = classContents.Replace(match.Value, "");
             }
-            implementations.AddRange(ImplementFunctions(classContents, className));
-            implementations.AddRange(ImplementStaticVars(classContents, className));
+            implementations.AddRange(ImplementFunctions(classContents, className, customImplementations));
+            implementations.AddRange(ImplementStaticVars(classContents, className, customImplementations));
 
             if (needsFObjectInitializer && !implementations.Any((impl) => impl.Replace(" ", "").Contains($"{className}::{className}(constFObjectInitializer")) && !InlineImplementedFunctions.Any((impl) => impl.Replace(" ", "").Contains($"{className}::{className}(classFObjectInitializer")))
                 implementations.Add($"{className}::{className}(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {{}}");
@@ -1062,7 +219,7 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
             return implementations;
         }
 
-        private static List<string> ImplementStaticVars(string content, string className)
+        private static List<string> ImplementStaticVars(string content, string className, string customImplementations)
         {
             List<string> implementations = new List<string>();
             foreach (Match function in Regex.Matches(content, @"(const\s)?static\s(const\s)?\s*([\w\d_]*?)\s+([\w\d_]*?);", RegexOptions.Multiline))
@@ -1070,22 +227,21 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                 string isConst = function.Groups[1].Value + function.Groups[2].Value;
                 string type = FixReturnType(function.Groups[3].Value).Trim();
                 string name = function.Groups[4].Value;
-                if (CustomImplementation.ContainsKey($"{className}::{name}"))
+                if (Regex.IsMatch(customImplementations, $@"^(?:(?:const\s+)?\w+\s*(?:<\s*.*?\s*>)?[&*]?\s+)?{className.Trim()}::{name.Trim()}"))
                 {
-                    implementations.Add($"{isConst}{type} {className}::{name} = {CustomImplementation[$"{className}::{name}"]};");
+                    if (CountOnly)
+                        Console.WriteLine($"Skipping {className}::{name} (custom implementation)");
+                    continue;
                 }
-                else
-                {
-                    if (type.Contains("FAutoConsoleVariableSink")) // for this classes there is no constructor with no params, but NULL works
-                        implementations.Add($"{isConst}{type} {className}::{name} = NULL;");
-                    else // but NULL doesn't work for everything
-                        implementations.Add($"{isConst}{type} {className}::{name} = {type}();");
-                }
+                if (type.Contains("FAutoConsoleVariableSink")) // for this classes there is no constructor with no params, but NULL works
+                    implementations.Add($"{isConst}{type} {className}::{name} = NULL;");
+                else // but NULL doesn't work for everything
+                    implementations.Add($"{isConst}{type} {className}::{name} = {type}();");
             }
             return implementations;
         }
 
-        private static List<string> ImplementFunctions(string content, string className)
+        private static List<string> ImplementFunctions(string content, string className, string customImplementations)
         {
             // Remove access modifiers
             content = Regex.Replace(content, @"(\r?\n|^)\s*public:", "\r\n", RegexOptions.Multiline);
@@ -1169,21 +325,29 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                                 Console.WriteLine($"Skipped {className}::{functionName} (BlueprintNativeEvent in Interface)"); // https://answers.unrealengine.com/questions/832889/blueprintnativeevent-function-already-has-a-body.html
                             continue;
                         }
-                        ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName.Trim() + "_Implementation", parameters, isConst, template, isStatic);
+                        ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName.Trim() + "_Implementation", parameters, isConst, template, isStatic, customImplementations);
                     }
                     else if (Regex.IsMatch(ufunction, @"\WBlueprintPure\W") || Regex.IsMatch(ufunction, @"\WBlueprintCallable\W") || Regex.IsMatch(ufunction, @"\WBlueprintGetter\W") || Regex.IsMatch(ufunction, @"\WExec\W", RegexOptions.IgnoreCase) || Regex.IsMatch(ufunction, @"\WCallInEditor\W", RegexOptions.IgnoreCase) || Regex.Replace(TrimUselessSpaces(ufunction), @"( ?(?:Category ?= ?"".*?""|meta ?= ?"".*""|meta ?= ?\(.*?\))(?:,| )?)", "") == "UFUNCTION()")
-                        ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName, parameters, isConst, template, isStatic);
+                        ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName, parameters, isConst, template, isStatic, customImplementations);
                     if (Regex.IsMatch(ufunction, @"\WWithValidation\W"))
-                        ImplementFunction(implementations, className, isClass, isReturnConst, "bool ", functionName.Trim() + "_Validate", parameters, isConst, template, isStatic);
+                        ImplementFunction(implementations, className, isClass, isReturnConst, "bool ", functionName.Trim() + "_Validate", parameters, isConst, template, isStatic, customImplementations);
                 }
                 else
-                    ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName, parameters, isConst, template, isStatic);
+                    ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName, parameters, isConst, template, isStatic, customImplementations);
             }
             return implementations;
         }
 
-        private static void ImplementFunction(List<string> implementations, string className, string isClass, string isReturnConst, string returnType, string functionName, string parameters, string isConst, string template, string isStatic)
+        private static void ImplementFunction(List<string> implementations, string className, string isClass, string isReturnConst, string returnType, string functionName, string parameters, string isConst, string template, string isStatic, string customImplementations)
         {
+            if (Regex.IsMatch(customImplementations, $@"^(?:(?:const\s+)?\w+\s*(?:<\s*.*?\s*>)?[&*]?\s+)?{className.Trim()}::{functionName.Trim()}",
+                    RegexOptions.Multiline))
+            {
+                if (!CountOnly)
+                    Console.WriteLine($"Skipping {className}::{functionName} (custom implementation)");
+                return;
+            }
+
             string withoutDestructorThingy = functionName.Trim().Replace("~", "");
             string withoutOuterClass = className.Substring(className.LastIndexOf(":") + 1);
             if (IsValidReturnType(returnType) || (withoutDestructorThingy == withoutOuterClass && string.IsNullOrWhiteSpace(returnType)))
@@ -1215,37 +379,26 @@ FCustomVersionRegistration GRegisterFactoryGameCustomVersion{ FFactoryGameCustom
                         result += " : FObjectWriter(Obj, InBytes) ";
                 }
 
-                if (CustomImplementation.ContainsKey($"{(!string.IsNullOrWhiteSpace(isStatic) ? "static " : "")}{className}::{functionName}")) // aghhhh
+                result += $"{{ "; // TODO: Add space for nice formatting
+                if (returnType.Contains("void") || string.IsNullOrWhiteSpace(returnType))
                 {
-                    string customImplementation = CustomImplementation[$"{(!string.IsNullOrWhiteSpace(isStatic) ? "static " : "")}{className}::{functionName}"];
-                    if(customImplementation[0] == ':')
-                        result += customImplementation;
-                    else
-                        result += $" {{\r\n{customImplementation}\r\n}}";
+                    if (NeedsSuper.Contains(functionName.Trim()) || (ConditionalSuper.ContainsKey(functionName.Trim()) && className.Trim().StartsWith(ConditionalSuper[functionName.Trim()])))
+                        result += $"Super::{functionName}({string.Join(",", Regex.Matches(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?:.*? )??(.*?) ([^ ]*?)(?:, ?| \)|$)").Cast<Match>().Select(match => match.Groups[2].Value))}); ";
+                    result += $"}}";
                 }
                 else
                 {
-                    result += $"{{ "; // TODO: Add space for nice formatting
-                    if (returnType.Contains("void") || string.IsNullOrWhiteSpace(returnType))
-                    {
-                        if (NeedsSuper.Contains(functionName.Trim()) || (ConditionalSuper.ContainsKey(functionName.Trim()) && className.Trim().StartsWith(ConditionalSuper[functionName.Trim()])))
-                            result += $"Super::{functionName}({string.Join(",", Regex.Matches(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?:.*? )??(.*?) ([^ ]*?)(?:, ?| \)|$)").Cast<Match>().Select(match => match.Groups[2].Value))}); ";
-                        result += $"}}";
-                    }
-                    else
-                    {
-                        result += $"return ";
-                        if (returnType.Trim().EndsWith("&"))
-                            if (returnType.Trim().TrimEnd('&') == className)
-                                result += $"*(this)";
-                            else
-                                result += $"*(new {returnType.Trim().TrimEnd('&')})"; // Brabb3l's life-hacks
-                        else if (returnType.Trim().EndsWith("*"))
-                            result += $"nullptr";
+                    result += $"return ";
+                    if (returnType.Trim().EndsWith("&"))
+                        if (returnType.Trim().TrimEnd('&') == className)
+                            result += $"*(this)";
                         else
-                            result += $"{GetCustomReturn(returnType)}";
-                        result += $"; }}";
-                    }
+                            result += $"*(new {returnType.Trim().TrimEnd('&')})"; // Brabb3l's life-hacks
+                    else if (returnType.Trim().EndsWith("*"))
+                        result += $"nullptr";
+                    else
+                        result += $"{GetCustomReturn(returnType)}";
+                    result += $"; }}";
                 }
                 if (!implementations.Contains(result))
                     implementations.Add(result);
