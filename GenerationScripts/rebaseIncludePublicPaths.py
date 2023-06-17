@@ -60,11 +60,16 @@ def rebase_includes(UEPath: str):
     UAT_process.wait()
 
     for [filePath, includes] in extraIncludes:
-        with open(os.path.join(sourceDir, 'Public', filePath), 'r') as f:
+        fullpath = os.path.join(sourceDir, 'Public', filePath)
+        if not os.path.exists(fullpath):
+            print(f'Missing file {filePath}')
+            continue
+            
+        with open(fullpath, 'r') as f:
             fileContent = f.read()
         
         for [oldInclude, newInclude] in includes:
             fileContent = fileContent.replace(f'#include "{oldInclude}"', f'#include "{newInclude}"')
             
-        with open(os.path.join(sourceDir, 'Public', filePath), 'w') as f:
+        with open(fullpath, 'w') as f:
             f.write(fileContent)
