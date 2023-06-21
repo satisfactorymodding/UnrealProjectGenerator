@@ -7,7 +7,6 @@ void AFGBuildableGeneratorNuclear::GetLifetimeReplicatedProps(TArray<FLifetimePr
 void AFGBuildableGeneratorNuclear::BeginPlay(){ }
 void AFGBuildableGeneratorNuclear::Factory_Tick(float dt){ }
 void AFGBuildableGeneratorNuclear::OnRep_ReplicationDetailActor(){ }
-bool AFGBuildableGeneratorNuclear::Factory_HasPower() const{ return bool(); }
 bool AFGBuildableGeneratorNuclear::CanStartPowerProduction_Implementation() const{ return bool(); }
 bool AFGBuildableGeneratorNuclear::CanLoadFuel() const{ return bool(); }
 void AFGBuildableGeneratorNuclear::LoadFuel(){ }

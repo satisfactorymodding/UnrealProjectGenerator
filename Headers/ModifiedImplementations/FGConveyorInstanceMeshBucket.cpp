@@ -4,4 +4,9 @@
 
 UFGConveyorInstanceMeshBucket::UFGConveyorInstanceMeshBucket(){ }
 void UFGConveyorInstanceMeshBucket::Init(){ }
+void UFGConveyorInstanceMeshBucket::PrepareInstanceUpdateBuffer(int32 Count){ }
+void UFGConveyorInstanceMeshBucket::UpdateInstanceData(const int32 Id, const FMatrix& M,const FMatrix& PrevM){ }
+void UFGConveyorInstanceMeshBucket::UpdateInstancesFast(){ }
+void UFGConveyorInstanceMeshBucket::CheckNANs(){ }
+void UFGConveyorInstanceMeshBucket::SubmitToGPU(){ }
 FBoxSphereBounds UFGConveyorInstanceMeshBucket::CalcBounds(const FTransform& LocalToWorld) const{ return FBoxSphereBounds(); }

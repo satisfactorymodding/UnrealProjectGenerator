@@ -61,6 +61,12 @@ public:
 	 */
 	UFUNCTION( BlueprintCallable, BlueprintAuthorityOnly, Category = "Driveable" )
 	virtual bool DriverLeave( bool keepDriving = false );
+	
+	UFUNCTION( BlueprintCallable, Server, Reliable )
+	virtual void Server_DriverLeave();
+
+	UFUNCTION( BlueprintPure, Category = "Driveable" )
+	virtual bool CanLeaveVehicle( class AFGCharacterPlayer* character );
 
 	/**
 	 * Attach/detach driver to vehicle.
@@ -104,6 +110,12 @@ protected:
 	/** When driving status changed for this vehicle. */
 	virtual void OnDrivingStatusChanged();
 
+	/** Add the bindings to vehicle and child-classes. */
+	virtual void AddInputBindings( UInputComponent* inputComponent );
+
+	/** Clear input bindings for the driveable pawn. */
+	void ClearInputBindings( class AFGPlayerController* playerController );
+
 	/** Called when the driver has entered (human or ai) */
 	UFUNCTION( BlueprintImplementableEvent, meta = ( DisplayName = "OnDriverEnter" ) )
 	void ReceiveOnDriverEnter();
@@ -119,14 +131,18 @@ protected:
 	/** Helpers */
 	void SetDriving( bool isDriving );
 
+	virtual void SetupPlayerInputComponent( UInputComponent* PlayerInputComponent ) override;
+	
+	/** Input Bindings */
+	UFUNCTION()
+	void Input_LeaveVehicle( const FInputActionValue& actionValue );
 private:
-
 	/** Rep notifies */
 	UFUNCTION()
 	void OnRep_IsDriving();
 	
 	UFUNCTION()
-	void OnRep_Driver();
+	void OnRep_Driver( AFGCharacterPlayer* previousDriver );
 
 public:
 	/** True if the driver should be attached, false if this is a "remote controlled" pawn. */
@@ -148,6 +164,14 @@ public:
 	/** Where to place the driver upon exiting (local space), set from FVehicleSeat */
 	UPROPERTY( EditDefaultsOnly, Category = "Driveable" )
 	FVector mDriverExitOffset;
+
+protected:
+	/** Mapping context which is applied when entering. */
+	UPROPERTY( EditDefaultsOnly, BlueprintReadOnly, Category="Input" )
+	TObjectPtr< class UInputMappingContext > mMappingContext;
+
+	UPROPERTY( EditDefaultsOnly, BlueprintReadOnly, Category="Input" )
+	int32 mMappingContextPriority = 0;
 
 private:
 	/** If another driver is about to enter this vehicle. Used to not shutdown/startup the */

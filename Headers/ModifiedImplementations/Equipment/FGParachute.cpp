@@ -2,17 +2,20 @@
 
 #include "FGParachute.h"
 
-UFGParachuteCameraShake::UFGParachuteCameraShake(){ }
 AFGParachute::AFGParachute(){ }
 void AFGParachute::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGParachute::Tick(float DeltaSeconds){ }
-void AFGParachute::Equip( AFGCharacterPlayer* character){ }
 void AFGParachute::UnEquip(){ }
+void AFGParachute::Input_Deploy(const FInputActionValue& actionValue){ }
+void AFGParachute::Input_UnDeploy(const FInputActionValue& actionValue){ }
 void AFGParachute::Deploy(){ }
-void AFGParachute::Server_Deploy_Implementation(){ }
-bool AFGParachute::Server_Deploy_Validate(){ return bool(); }
-FVector AFGParachute::ModifyVelocity_Implementation(float deltaTime, const FVector& oldVelocity){ return FVector(); }
+void AFGParachute::StopDeploy(){ }
 void AFGParachute::AddEquipmentActionBindings(){ }
-void AFGParachuteAttachment::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
-void AFGParachuteAttachment::SetIsDeployed(bool newIsDeployed){ }
-void AFGParachuteAttachment::OnRep_IsDeployed(){ }
+float AFGParachute::GetCharacterUseDistanceOverride() const{ return float(); }
+void AFGParachute::Server_Deploy_Implementation(){ }
+void AFGParachute::Server_StopDeploy_Implementation(){ }
+void AFGParachute::Client_NotifyDeployFailed_Implementation(){ }
+bool AFGParachute::AttemptDeployLocal(){ return bool(); }
+void AFGParachute::StopDeployLocal(){ }
+void AFGParachute::Authority_SetDeployed(bool isDeployedNow){ }
+void AFGParachute::OnRep_IsDeployed(){ }

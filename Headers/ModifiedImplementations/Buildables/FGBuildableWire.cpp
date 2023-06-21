@@ -9,12 +9,21 @@ void AFGBuildableWire::BeginPlay(){ }
 void AFGBuildableWire::Destroyed(){ }
 int32 AFGBuildableWire::GetDismantleRefundReturnsMultiplier() const{ return int32(); }
 bool AFGBuildableWire::ShouldBeConsideredForBase_Implementation(){ return bool(); }
+void AFGBuildableWire::StartIsLookedAtForDismantle_Implementation(AFGCharacterPlayer* byCharacter){ }
+TSoftClassPtr<UFGMaterialEffect_Build> AFGBuildableWire::GetBuildEffectTemplate_Implementation() const{ return TSoftClassPtr<UFGMaterialEffect_Build>(); }
+TSoftClassPtr<UFGMaterialEffect_Build> AFGBuildableWire::GetDismantleEffectTemplate_Implementation() const{ return TSoftClassPtr<UFGMaterialEffect_Build>(); }
 UFGCircuitConnectionComponent* AFGBuildableWire::GetOppositeConnection(const  UFGCircuitConnectionComponent* connection) const{ return nullptr; }
 void AFGBuildableWire::Disconnect(){ }
 void AFGBuildableWire::DisplayDebug( UCanvas* canvas, const  FDebugDisplayInfo& debugDisplay, float& YL, float& YPos){ }
-void AFGBuildableWire::UpdateWireMesh(){ }
 bool AFGBuildableWire::Connect( UFGCircuitConnectionComponent* first,  UFGCircuitConnectionComponent* second){ return bool(); }
-void AFGBuildableWire::PostSerializedFromBlueprint(){ }
+const FWireInstance* AFGBuildableWire::GetWireInstanceForMeshComponent(const UStaticMeshComponent* meshComponent) const{ return nullptr; }
+TArray< UStaticMeshComponent* > AFGBuildableWire::GetWireInstanceMeshes() const{ return TArray<UStaticMeshComponent*>(); }
+void AFGBuildableWire::CreateWireInstancesBetweenConnections(TArray< FWireInstance >& out_instances,  UFGCircuitConnectionComponent* first,  UFGCircuitConnectionComponent* second, const FTransform& WireTransform){ }
+FWireInstance AFGBuildableWire::CreateWireInstance(const FVector& FirstLocation, const FVector& SecondLocation, const FTransform& WireTransform){ return FWireInstance(); }
+void AFGBuildableWire::UpdateWireInstanceMesh(const FWireInstance& WireInstance){ }
 bool AFGBuildableWire::IsConnected() const{ return bool(); }
-void AFGBuildableWire::OnRep_Locations(){ }
+void AFGBuildableWire::OnRep_Connections(){ }
+UStaticMeshComponent* AFGBuildableWire::CreateNewWireMesh(){ return nullptr; }
+void AFGBuildableWire::DestroyWireInstances(){ }
+void AFGBuildableWire::UpdateWireMeshes(){ }
 FName AFGBuildableWire::mWireMeshTag = FName();

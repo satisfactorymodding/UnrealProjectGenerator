@@ -34,7 +34,7 @@ enum class EWeatherIntensity : uint8
 };
 
 USTRUCT( BlueprintType )
-struct FWeatherChanceEntry
+struct FACTORYGAME_API FWeatherChanceEntry
 {
 	GENERATED_BODY()
 
@@ -77,7 +77,7 @@ struct FWeatherChanceEntry
 };
 
 USTRUCT( BlueprintType )
-struct FSkySphereSettings
+struct FACTORYGAME_API FSkySphereSettings
 {
 	GENERATED_BODY()
 
@@ -146,7 +146,7 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "SkySphere")
 	UStaticMesh* mDefaultMesh;
 
-	UPROPERTY()
+	UPROPERTY(BlueprintReadOnly)
 	UStaticMeshComponent* mSkyMeshComponent;
 	
 	/* Called when volumetric clouds settings are changed. */

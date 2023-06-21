@@ -2,15 +2,25 @@
 
 #include "FGGasPillar.h"
 
+#if DEBUG_POST_PROCESS_VOLUME_ENABLE
+FString AFGGasPillar::GetDebugName() const{ return FString(); }
+#endif 
+#if WITH_EDITOR
+#endif 
 AFGGasPillar::AFGGasPillar(){ }
 void AFGGasPillar::BeginPlay(){ }
 void AFGGasPillar::EndPlay(const EEndPlayReason::Type endPlayReason){ }
 void AFGGasPillar::PostUnregisterAllComponents(void){ }
 void AFGGasPillar::PostRegisterAllComponents(){ }
+void AFGGasPillar::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGGasPillar::GainedSignificance_Implementation(){ }
 void AFGGasPillar::LostSignificance_Implementation(){ }
 void AFGGasPillar::GainedSignificance_Native(){ }
 void AFGGasPillar::LostSignificance_Native(){ }
 float AFGGasPillar::GetSignificanceRange(){ return float(); }
+void AFGGasPillar::RemoveGasComponents(){ }
+void AFGGasPillar::NotifyGasCloudOfRemoval(){ }
+void AFGGasPillar::OnDestructibleFractured(){ }
+void AFGGasPillar::OnDesctructibleDestroyed(){ }
 bool AFGGasPillar::EncompassesPoint(FVector point, float sphereRadius , float* out_distanceToPoint){ return bool(); }
 FPostProcessVolumeProperties AFGGasPillar::GetProperties() const{ return FPostProcessVolumeProperties(); }

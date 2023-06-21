@@ -6,7 +6,6 @@ UFGInteractWidget::UFGInteractWidget(const FObjectInitializer& ObjectInitializer
 void UFGInteractWidget::Native_Init(){ }
 void UFGInteractWidget::Init_Implementation(){ }
 void UFGInteractWidget::SetInputMode_Implementation(){ }
-void UFGInteractWidget::HandleEquipment(){ }
 void UFGInteractWidget::PassThroughKeybindings(){ }
 void UFGInteractWidget::UpdateIgnoreMoveInput_Implementation(){ }
 void UFGInteractWidget::UpdateIgnoreLookInput_Implementation(){ }

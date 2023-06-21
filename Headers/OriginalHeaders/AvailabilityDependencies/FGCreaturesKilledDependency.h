@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS( Blueprintable, abstract )
 class FACTORYGAME_API UFGCreaturesKilledDependency : public UFGAvailabilityDependency
 {
 	GENERATED_BODY()

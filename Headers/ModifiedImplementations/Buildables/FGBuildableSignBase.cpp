@@ -2,7 +2,7 @@
 
 #include "FGBuildableSignBase.h"
 
-bool UFGSignAttachmentPoint::CanAttach(const  FFGAttachmentPoint& point, const  FFGAttachmentPoint& targetPoint) const{ return bool(); }
+bool UFGSignAttachmentPoint::CanAttach_Implementation(const  FFGAttachmentPoint& point, const  FFGAttachmentPoint& targetPoint) const{ return bool(); }
 AFGBuildableSignBase::AFGBuildableSignBase(){ }
 void AFGBuildableSignBase::BeginPlay(){ }
 AFGBuildable* AFGBuildableSignBase::GetBuildable_Implementation(){ return nullptr; }

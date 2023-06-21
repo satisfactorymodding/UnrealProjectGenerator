@@ -35,6 +35,7 @@ void AFGBuildableDroneStation::StartIsLookedAtForSnapping( AFGCharacterPlayer* b
 void AFGBuildableDroneStation::StopIsLookedAtForSnapping( AFGCharacterPlayer* byCharacter){ }
 void AFGBuildableDroneStation::Undock(bool Immediate){ }
 int32 AFGBuildableDroneStation::RequestDocking( AFGDroneVehicle* DroneToDock){ return int32(); }
+bool AFGBuildableDroneStation::IsDroneInQueue( AFGDroneVehicle* Drone) const{ return bool(); }
 void AFGBuildableDroneStation::SetStationDrone( AFGDroneVehicle* Drone){ }
 FVector AFGBuildableDroneStation::GetDroneDockingStartLocation() const{ return FVector(); }
 FVector AFGBuildableDroneStation::GetDroneDockingLocation() const{ return FVector(); }
@@ -45,7 +46,7 @@ void AFGBuildableDroneStation::StartTakeoffSequence_Implementation( AFGDroneVehi
 void AFGBuildableDroneStation::EndTakeoffSequence_Implementation( AFGDroneVehicle* Drone){ }
 void AFGBuildableDroneStation::PreSerializedToBlueprint(){ }
 void AFGBuildableDroneStation::PostSerializedToBlueprint(){ }
-void AFGBuildableDroneStation::PostSerializedFromBlueprint(){ }
+void AFGBuildableDroneStation::PostSerializedFromBlueprint(bool isBlueprintWorld){ }
 void AFGBuildableDroneStation::OnRep_ReplicationDetailActor(){ }
 AFGReplicationDetailActor_DroneStation* AFGBuildableDroneStation::GetCastRepDetailsActor() const{ return nullptr; }
 bool AFGBuildableDroneStation::FilterBatteryClasses(TSubclassOf< UObject > object, int32 idx) const{ return bool(); }

@@ -9,5 +9,8 @@ void AFGBuildableResourceSink::Tick(float dt){ }
 void AFGBuildableResourceSink::Destroyed(){ }
 void AFGBuildableResourceSink::Factory_CollectInput_Implementation(){ }
 bool AFGBuildableResourceSink::CanProduce_Implementation() const{ return bool(); }
+void AFGBuildableResourceSink::OnRep_ReplicationDetailActor(){ }
+void AFGBuildableResourceSink::OnReplicationDetailActorRemoved(){ }
 int32 AFGBuildableResourceSink::ClaimCoupons(int32 numCoupons){ return int32(); }
 void AFGBuildableResourceSink::ReturnUnclaimedCoupons(){ }
+AFGReplicationDetailActor_ResourceSink* AFGBuildableResourceSink::GetCastRepDetailsActor() const{ return nullptr; }

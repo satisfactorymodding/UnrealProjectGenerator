@@ -5,7 +5,7 @@
 AFGRailroadTrackHologram::AFGRailroadTrackHologram(){ }
 void AFGRailroadTrackHologram::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGRailroadTrackHologram::BeginPlay(){ }
-USceneComponent* AFGRailroadTrackHologram::SetupComponent(USceneComponent* attachParent, UActorComponent* componentTemplate, const FName& componentName){ return nullptr; }
+USceneComponent* AFGRailroadTrackHologram::SetupComponent(USceneComponent* attachParent, UActorComponent* componentTemplate, const FName& componentName, const FName& attachSocketName){ return nullptr; }
 void AFGRailroadTrackHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }
 int32 AFGRailroadTrackHologram::GetBaseCostMultiplier() const{ return int32(); }
 void AFGRailroadTrackHologram::SpawnChildren(AActor* hologramOwner, FVector spawnLocation, APawn* hologramInstigator){ }

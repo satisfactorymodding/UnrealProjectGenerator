@@ -15,7 +15,11 @@ void AFGBuildablePipeBase::LostSignificance_Implementation(){ }
 void AFGBuildablePipeBase::GainedSignificance_Native(){ }
 void AFGBuildablePipeBase::LostSignificance_Native(){ }
 void AFGBuildablePipeBase::SetupForSignificance(){ }
+float AFGBuildablePipeBase::GetSignificanceRange(){ return float(); }
 float AFGBuildablePipeBase::FindOffsetClosestToLocation(const FVector& location) const{ return float(); }
 void AFGBuildablePipeBase::GetLocationAndDirectionAtOffset(float offset, FVector& out_location, FVector& out_direction) const{ }
+void AFGBuildablePipeBase::SetupConnections(){ }
+TArray<AFGBuildablePipeBase*> AFGBuildablePipeBase::Splice(AFGBuildablePipeBase* Pipe, float SpliceOffset, float SpliceLength){ return TArray<AFGBuildablePipeBase*>(); }
+void AFGBuildablePipeBase::PostSerializedFromBlueprint(bool isBlueprintWorld){ }
 TSubclassOf< class UFGPipeConnectionComponentBase > AFGBuildablePipeBase::GetConnectionType_Implementation(){ return TSubclassOf<class UFGPipeConnectionComponentBase>(); }
 const float AFGBuildablePipeBase::PIPE_COST_LENGTH_MULTIPLIER = float();

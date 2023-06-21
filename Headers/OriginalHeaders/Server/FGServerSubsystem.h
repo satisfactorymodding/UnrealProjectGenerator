@@ -7,6 +7,8 @@
 #include "IPAddress.h"
 #include "Server/FGDedicatedServerTypes.h"
 #include "FGSaveSystem.h"
+#include "GameInstanceSubsystem.h"
+#include "Ticker.h"
 #include "GameFramework/SaveGame.h"
 #include "FGServerSubsystem.generated.h"
 
@@ -40,7 +42,7 @@ class FACTORYGAME_API UFGServerSettings : public USaveGame
  * Server-side class that serves as the entry point for all dedicated server related operations. Also manages all server specific settings.
  */
 UCLASS( config=ServerSettings, configdonotcheckdefaults )
-class FACTORYGAME_API UFGServerSubsystem : public UGameInstanceSubsystem, public FTickerObjectBase
+class FACTORYGAME_API UFGServerSubsystem : public UGameInstanceSubsystem, public FTSTickerObjectBase
 {
 	GENERATED_BODY()
 public:
@@ -83,7 +85,7 @@ public:
 	void StartGame( const FString& SessionName, const FString& StartLocation );
 
 	/// Loads the save game that this header belongs to
-	bool LoadGame( const FSaveHeader& header );
+	bool LoadGame( const FSaveHeader& header, TMap<FString, FString> Options );
 
 	/// Looks for an existing save game and loads it. Takes into account mAutoLoadSessionName if it's set
 	bool AutoStart();

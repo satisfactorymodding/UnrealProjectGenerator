@@ -16,6 +16,7 @@ void AFGBuildableConveyorBelt::StopIsLookedAt_Implementation( AFGCharacterPlayer
 FText AFGBuildableConveyorBelt::GetLookAtDecription_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state) const{ return FText(); }
 void AFGBuildableConveyorBelt::GainedSignificance_Implementation(){ }
 void AFGBuildableConveyorBelt::LostSignificance_Implementation(){ }
+float AFGBuildableConveyorBelt::GetSignificanceRange(){ return float(); }
 void AFGBuildableConveyorBelt::SetupForSignificance(){ }
 void AFGBuildableConveyorBelt::UpdateMeshLodLevels(int32 newLodLevel){ }
 int32 AFGBuildableConveyorBelt::GetDismantleRefundReturnsMultiplier() const{ return int32(); }
@@ -28,10 +29,11 @@ void AFGBuildableConveyorBelt::Upgrade_Implementation(AActor* newActor){ }
 TArray< AFGBuildableConveyorBelt* > AFGBuildableConveyorBelt::Split(AFGBuildableConveyorBelt* conveyor, float offset, bool connectNewConveyors){ return TArray<AFGBuildableConveyorBelt*>(); }
 AFGBuildableConveyorBelt* AFGBuildableConveyorBelt::Merge(TArray< AFGBuildableConveyorBelt* > conveyors){ return nullptr; }
 AFGBuildableConveyorBelt* AFGBuildableConveyorBelt::Respline(AFGBuildableConveyorBelt* conveyor, const TArray< FSplinePointData >& newSplineData){ return nullptr; }
+void AFGBuildableConveyorBelt::SetupConnections(){ }
 void AFGBuildableConveyorBelt::OnUseServerRepInput( AFGCharacterPlayer* byCharacter, uint32 itemRepID, float itemOffset){ }
 void AFGBuildableConveyorBelt::SetShadowCasting(bool inStateBelt, bool inStateItems){ }
 void AFGBuildableConveyorBelt::DestroyVisualItems(){ }
-void AFGBuildableConveyorBelt::PostSerializedFromBlueprint(){ }
+void AFGBuildableConveyorBelt::PostSerializedFromBlueprint(bool isBlueprintWorld){ }
 bool AFGBuildableConveyorBelt::VerifyDefaults(FString& out_message){ return bool(); }
 void AFGBuildableConveyorBelt::TickItemTransforms(float dt){ }
 void AFGBuildableConveyorBelt::TickRadioactivity(){ }

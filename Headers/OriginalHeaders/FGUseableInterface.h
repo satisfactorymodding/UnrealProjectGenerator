@@ -2,6 +2,10 @@
 
 #pragma once
 
+#include "CoreMinimal.h"
+#include "UObject/Interface.h"
+#include "SubclassOf.h"
+
 #include "FGUseableInterface.generated.h"
 
 UCLASS( abstract, Blueprintable )

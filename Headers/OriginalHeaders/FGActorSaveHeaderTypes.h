@@ -47,6 +47,9 @@ struct FACTORYGAME_API FObjectBaseSaveHeader
 
 		return ar;
 	}
+
+	FString ToString() const;
+	UClass* ResolveClass() const;
 };
 
 struct FACTORYGAME_API FObjectSaveHeader
@@ -71,6 +74,8 @@ struct FACTORYGAME_API FObjectSaveHeader
 
 		FObjectReferenceDisc::GetRelativePath( obj->GetOuter(), OuterPathName );
 	}
+	
+	FString ToString() const;
 
 	/** Save/load data from disc */
 	friend FArchive& operator<<( FArchive& ar, FObjectSaveHeader& header )
@@ -87,19 +92,11 @@ struct FACTORYGAME_API FActorSaveHeader
 	/** Reference and class */
 	FObjectBaseSaveHeader ObjectHeader;
 	// Transform of the actor
-	FTransform Transform;
+	FTransform3f Transform = FTransform3f::Identity;
 	// If true, then transform is set and we need transform
-	bool NeedTransform;
+	bool NeedTransform = false;
 	// if true, then this actor was places on level, and hence, if it isn't found when loading, then it shouldn't be spawned
-	bool WasPlacedInLevel;
-
-	/** Sensible defaults */
-	FActorSaveHeader() :
-		Transform( FTransform::Identity ),
-		NeedTransform( false ),
-		WasPlacedInLevel( false )
-	{
-	}
+	bool WasPlacedInLevel = false;
 
 	/** Reset values to default values */
 	void Reset()
@@ -115,7 +112,7 @@ struct FACTORYGAME_API FActorSaveHeader
 		ObjectHeader.Set( obj );
 		if( AActor* actor = Cast<AActor>( obj ) )
 		{
-			Transform = actor->GetTransform();
+			Transform = FTransform3f(actor->GetTransform());
 			NeedTransform = IFGSaveInterface::Execute_NeedTransform( actor );
 			WasPlacedInLevel = actor->HasAnyFlags( RF_WasLoaded );
 
@@ -130,7 +127,7 @@ struct FACTORYGAME_API FActorSaveHeader
 		ObjectHeader.Set( obj );
 		if( AActor* actor = Cast<AActor>( obj ) )
 		{
-			Transform = overrideTransform;
+			Transform = FTransform3f( overrideTransform );
 			NeedTransform = IFGSaveInterface::Execute_NeedTransform( actor );
 			WasPlacedInLevel = actor->HasAnyFlags( RF_WasLoaded );
 
@@ -141,23 +138,18 @@ struct FACTORYGAME_API FActorSaveHeader
 	}
 
 	/** Helper to get object names */
-	FORCEINLINE void ParseObjectName( FString& out_objName )
+	FORCEINLINE void ParseObjectName( FString& out_objName ) const
 	{
-		ObjectHeader.Reference.ParseObjectName( out_objName );
+		ObjectHeader.ParseObjectName( out_objName );
 	}
 
-	/** Helper to find the level this actor/object resides in */
-	FORCEINLINE ULevel* FindLevel( UWorld* world )
-	{
-		return ObjectHeader.Reference.FindLevel( world );
-	}
 
 	/** Save/load data */
 	friend FArchive& operator<<( FArchive& ar, FActorSaveHeader& header )
 	{
 		// We always store transform, so that the need transform switch can be flicked anytime during development without breaking savegames
 		ar << header.ObjectHeader << header.NeedTransform << header.Transform << header.WasPlacedInLevel;
-
+	
 		return ar;
 	}
 };

@@ -67,13 +67,13 @@ private:
 	UPROPERTY()
 	TArray<UBoxComponent*> mOverlappingShapes;
 	
-	UPROPERTY()
-    USplineComponent* mSplineComponent;
-
 	UPROPERTY(VisibleAnywhere)
 	TArray<USplineMeshComponent*> mSplineMeshComponents;
 	
 protected:
+	UPROPERTY( BlueprintReadOnly )
+	USplineComponent* mSplineComponent;
+
 	UPROPERTY(EditDefaultsOnly)
 	UStaticMesh* mSplineMesh;
 	

@@ -14,14 +14,15 @@ void AFGConveyorBeltHologram::OnInvalidHitResult(){ }
 void AFGConveyorBeltHologram::SpawnChildren(AActor* hologramOwner, FVector spawnLocation, APawn* hologramInstigator){ }
 bool AFGConveyorBeltHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }
 void AFGConveyorBeltHologram::AdjustForGround(FVector& out_adjustedLocation, FRotator& out_adjustedRotation){ }
-void AFGConveyorBeltHologram::PreHologramPlacement(){ }
-void AFGConveyorBeltHologram::PostHologramPlacement(){ }
+void AFGConveyorBeltHologram::PreHologramPlacement(const FHitResult& hitResult){ }
+void AFGConveyorBeltHologram::PostHologramPlacement(const FHitResult& hitResult){ }
 bool AFGConveyorBeltHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 void AFGConveyorBeltHologram::Scroll(int32 delta){ }
-void AFGConveyorBeltHologram::GetSupportedScrollModes(TArray<EHologramScrollMode>* out_modes) const{ }
 float AFGConveyorBeltHologram::GetHologramHoverHeight() const{ return float(); }
 void AFGConveyorBeltHologram::GetIgnoredClearanceActors(TArray< AActor* >& ignoredActors) const{ }
 void AFGConveyorBeltHologram::CheckBlueprintCommingling(){ }
+AFGHologram* AFGConveyorBeltHologram::GetNudgeHologramTarget(){ return nullptr; }
+bool AFGConveyorBeltHologram::CanTakeNextBuildStep() const{ return bool(); }
 void AFGConveyorBeltHologram::SerializeConstructMessage(FArchive& ar, FNetConstructionID id){ }
 void AFGConveyorBeltHologram::ClientPreConstructMessageSerialization(){ }
 void AFGConveyorBeltHologram::ServerPostConstructMessageDeserialization(){ }

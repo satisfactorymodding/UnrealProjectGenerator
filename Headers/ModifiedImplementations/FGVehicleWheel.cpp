@@ -2,6 +2,3 @@
 
 #include "FGVehicleWheel.h"
 
-UFGVehicleWheel::UFGVehicleWheel(){ }
-PxConvexMesh* UFGVehicleWheel::CreateWheelMesh(const PxF32 width, const PxF32 radius, PxPhysics& physics, PxCooking& cooking){ return nullptr; }
-UTireConfig* UFGVehicleWheel::GetDefaultTireConfig(){ return nullptr; }

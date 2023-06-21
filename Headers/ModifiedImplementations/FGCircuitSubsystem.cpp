@@ -5,7 +5,6 @@
 UFGCriticalBatteryDepletionMessage::UFGCriticalBatteryDepletionMessage(){ }
 AFGCircuitSubsystem::AFGCircuitSubsystem(){ }
 void AFGCircuitSubsystem::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
-bool AFGCircuitSubsystem::ReplicateSubobjects( UActorChannel* channel,  FOutBunch* bunch, FReplicationFlags* repFlags){ return bool(); }
 void AFGCircuitSubsystem::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker){ }
 void AFGCircuitSubsystem::CallPreReplication(UNetDriver* NetDriver){ }
 AFGCircuitSubsystem* AFGCircuitSubsystem::Get(UWorld* world){ return nullptr; }
@@ -31,6 +30,7 @@ void AFGCircuitSubsystem::RemoveCircuitBridge(TWeakObjectPtr< AFGBuildableCircui
 void AFGCircuitSubsystem::PowerCircuit_RegisterPriorityPowerSwitchInfo( AFGPriorityPowerSwitchInfo* info){ }
 void AFGCircuitSubsystem::PowerCircuit_UnregisterPriorityPowerSwitchInfo( AFGPriorityPowerSwitchInfo* info){ }
 TArray< AFGPriorityPowerSwitchInfo* > AFGCircuitSubsystem::PowerCircuit_GetPriorityPowerSwitchInfos() const{ return TArray<AFGPriorityPowerSwitchInfo*>(); }
+void AFGCircuitSubsystem::PowerCircuit_SortPriorityPowerSwitchInfos(TArray< AFGPriorityPowerSwitchInfo* >& infos) const{ }
 void AFGCircuitSubsystem::Debug_DumpCircuitsToLog(){ }
 void AFGCircuitSubsystem::OnRep_ReplicatedCircuits(){ }
 int32 AFGCircuitSubsystem::GenerateUniqueCircuitID(){ return int32(); }

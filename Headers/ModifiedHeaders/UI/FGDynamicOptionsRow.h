@@ -8,6 +8,9 @@
 #include "FGUserSetting.h"
 #include "FGDynamicOptionsRow.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnOptionRowHovered, UFGDynamicOptionsRow*, optionRow );
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnOptionRowUnhovered, UFGDynamicOptionsRow*, optionRow );
+
 /**
  * 
  */
@@ -27,10 +30,12 @@ public:
 
 	UFUNCTION( BlueprintCallable, Category = "Option" )
 	void AddSubOption( UFGDynamicOptionsRow* dynamicOptionsRow );
-
-protected:
-	UFUNCTION( Blueprintpure, Category = "Option" )
+	
+	UFUNCTION( Blueprintpure, Category = "Option", meta=(DeprecatedFunction,DeprecationMessage = "DEPRECATED Use GetUserSetting instead") )
 	FORCEINLINE FOptionRowData GetOptionRowData() const { return mUserSetting ? mUserSetting->ToOptionRowData() : mOptionRowData; }
+
+	UFUNCTION( Blueprintpure, Category = "Option" )
+	FORCEINLINE UFGUserSetting* GetUserSetting() const { return mUserSetting; }
 
 	UFUNCTION( Blueprintpure, Category = "Option" )
 	FORCEINLINE UFGOptionsValueController* GetValueControllerWidget() const { return mValueControllerWidget; }
@@ -47,9 +52,12 @@ protected:
 	UFUNCTION( BlueprintImplementableEvent, BlueprintCallable, Category = "Option" )
 	void OnOptionValueUpdated();
 
-	UFUNCTION( BlueprintCallable, Category = "Option" )
+	// Called before an option is applied. So we can take action before option is applied 
+	UFUNCTION( BlueprintCallable, Category = "Option", Meta = ( DisplayName=OnOptionPreApplied ) )
 	void OnOptionApplied();
 
+	// Called when we reset an option. This is the first thing to be called before the applied value is reset back to the default value
+	// Gives the widget a chance to execute logic that is needed for the setting to be reset. Mostly useful for custom settings with custom widgets
 	UFUNCTION( BlueprintCallable, Category = "Option" )
 	void OnOptionReverted();
 
@@ -67,6 +75,13 @@ protected:
 	
 	UFUNCTION( BlueprintCallable, Category = "Option" )
 	void SetSubOptionsVisibility( bool newVisibilty ) { mSubOptionsVisibility = newVisibilty; }
+
+protected:
+	UPROPERTY( BlueprintAssignable, BlueprintCallable )
+	FOnOptionRowHovered mOnOptionRowHovered;
+
+	UPROPERTY( BlueprintAssignable, BlueprintCallable )
+	FOnOptionRowUnhovered mOnOptionRowUnhovered;
 	
 private:
 

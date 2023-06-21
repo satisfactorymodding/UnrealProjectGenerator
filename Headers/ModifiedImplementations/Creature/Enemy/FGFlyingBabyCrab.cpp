@@ -3,7 +3,27 @@
 #include "FGFlyingBabyCrab.h"
 
 AFGFlyingBabyCrab::AFGFlyingBabyCrab(){ }
+void AFGFlyingBabyCrab::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
+bool AFGFlyingBabyCrab::IsValidTarget_Implementation(AActor* target){ return bool(); }
+void AFGFlyingBabyCrab::SetHomeLocation(const FVector& Location){ }
+void AFGFlyingBabyCrab::Explode(){ }
 void AFGFlyingBabyCrab::BeginPlay(){ }
 void AFGFlyingBabyCrab::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
+void AFGFlyingBabyCrab::Destroyed(){ }
 void AFGFlyingBabyCrab::PostNetReceiveLocationAndRotation(){ }
 void AFGFlyingBabyCrab::OnClientSubsystemsValid(){ }
+void AFGFlyingBabyCrab::SetCurrentTarget(AActor* target){ }
+void AFGFlyingBabyCrab::OnCurrentTargetChanged_Implementation(AActor* newTarget){ }
+void AFGFlyingBabyCrab::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult){ }
+void AFGFlyingBabyCrab::OnDamageReceived(AActor* DamagedActor, float Damage, const  UDamageType* DamageType,  AController* InstigatedBy, AActor* DamageCauser){ }
+void AFGFlyingBabyCrab::RestartAggroTimer(bool initialStart){ }
+void AFGFlyingBabyCrab::UpdateAggro(){ }
+AActor* AFGFlyingBabyCrab::SelectAggroTarget(const TArray< AActor* >& TargetCandidates) const{ return nullptr; }
+void AFGFlyingBabyCrab::OnRep_CurrentTarget(){ }
+void AFGFlyingBabyCrab::TickMovement(float dt){ }
+void AFGFlyingBabyCrab::SteerTowardsDirection(const FVector& Direction, float strength, FVector& out_acceleration){ }
+void AFGFlyingBabyCrab::SteerTowardsTarget(FVector& out_acceleration){ }
+void AFGFlyingBabyCrab::SteerTowardsHome(FVector& out_acceleration){ }
+void AFGFlyingBabyCrab::SteerSwarmMovement(FVector& out_acceleration){ }
+void AFGFlyingBabyCrab::SteerAvoidFloor(FVector& out_acceleration){ }
+void AFGFlyingBabyCrab::SteerErraticMovement(FVector& out_acceleration){ }

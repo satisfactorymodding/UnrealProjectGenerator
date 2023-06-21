@@ -2,7 +2,7 @@
 
 #include "FGFoliageLibrary.h"
 
-bool UFGFoliageLibrary::HasPlayerInventorySpaceFor( AFGCharacterPlayer* character,  UHierarchicalInstancedStaticMeshComponent* meshComponent){ return bool(); }
-bool UFGFoliageLibrary::CheckInventorySpaceAndGetStacks( AFGCharacterPlayer* character,  UHierarchicalInstancedStaticMeshComponent* meshComponent, TArray<struct FInventoryStack>& out_inventoryStacks){ return bool(); }
-bool UFGFoliageLibrary::TryAddToPlayerInventory( AFGCharacterPlayer* character,  UHierarchicalInstancedStaticMeshComponent* meshComponent){ return bool(); }
-TArray<FInventoryStack> UFGFoliageLibrary::GetValidInventoryStacks( UFGFoliageResourceUserData* foliageUserData){ return TArray<FInventoryStack>(); }
+bool UFGFoliageLibrary::HasPlayerInventorySpaceFor( AFGCharacterPlayer* character,  UHierarchicalInstancedStaticMeshComponent* meshComponent, uint32 randomSeed){ return bool(); }
+bool UFGFoliageLibrary::CheckInventorySpaceAndGetStacks( AFGCharacterPlayer* character,  UHierarchicalInstancedStaticMeshComponent* meshComponent, TArrayView< uint32 > randomSeeds, TArray<struct FInventoryStack>& out_inventoryStacks){ return bool(); }
+bool UFGFoliageLibrary::TryAddToPlayerInventory( AFGCharacterPlayer* character,  UHierarchicalInstancedStaticMeshComponent* meshComponent, uint32 randomSeed){ return bool(); }
+TArray<FInventoryStack> UFGFoliageLibrary::GetValidInventoryStacks( UFGFoliageResourceUserData* foliageUserData, uint32 randomSeed){ return TArray<FInventoryStack>(); }

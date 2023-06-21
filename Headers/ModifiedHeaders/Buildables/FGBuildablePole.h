@@ -51,7 +51,7 @@ public:
 	float mHeight;
 
 	/** The component we want to use with the pole */
-	UPROPERTY( VisibleAnywhere, Category = "Pole" )
+	UPROPERTY( VisibleAnywhere, BlueprintReadOnly, Category = "Pole" )
 	class UFGColoredInstanceMeshProxy* mPoleComponentProxy;
 
 	/** Connection component used */

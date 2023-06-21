@@ -9,7 +9,7 @@
 #include "FGSaveInterface.h"
 #include "FGAtmosphereVolume.h"
 #include "GameFramework/WorldSettings.h"
-#include "FGSubsystem.h"
+#include "FWPSaveDataMigrationContext.h"
 #include "FGWorldSettings.generated.h"
 
 UCLASS()
@@ -29,7 +29,6 @@ public:
 	// Begin UObject interface
 	virtual void BeginDestroy() override;
 	// Magic GC function, if it exists, it will be called by the GC
-	static void AddReferencedObjects( UObject* inThis, FReferenceCollector& collector );
 	virtual void Serialize( FArchive& ar ) override;
 	// End UObject interface
 
@@ -39,7 +38,6 @@ public:
 	virtual void PostEditChangeProperty( struct FPropertyChangedEvent& propertyChangedEvent ) override;
 #endif
 	
-	virtual void PostActorCreated() override;
 	virtual void PostLoad() override;
 	virtual void PreInitializeComponents() override;
 	// End AActor interface
@@ -80,31 +78,19 @@ public:
 	/** Get the default start time of the current time of day in hours */
 	FORCEINLINE class AFGMinimapCaptureActor* GetMinimapCaptureActor() const{ return mMinimapCaptureActor; }
 
-	/** Get actors marked as save in the current level */
-	FORCEINLINE const TArray< class AActor* >& GetSaveActors() const { return mSaveActors; }
-
 	/** Update the world bounds */
 	UFUNCTION( Category="FactoryGame|Level", meta=(CallInEditor="true") )
 	void UpdateWorldBounds();
 
 protected:
-	/** Called whenever a save actor receives destroyed both inside editor and during gameplay */
-	UFUNCTION( meta=(CallInEditor="true") )
-	void OnSaveActorDestroyed( AActor* actor );
-
-	/** Called after level is loaded, prepare all actors in the level */
-	void PrepareSaveActors();
 
 #if WITH_EDITOR
 	void HandleMapChanged( class UWorld* newWorld, EMapChangeType mapChangeType );
-	
-	/** Called whenever a actor is spawned in editor */
-	void OnActorSpawned( AActor* actor );
 #endif
 private:
 	/** Helper to spawn subsystems. */
 	template< class C >
-	void SpawnSubsystem( C*& out_spawnedSubsystem, TSubclassOf< AFGSubsystem > spawnClass, FName spawnName )
+	void SpawnSubsystem( C*& out_spawnedSubsystem, TSubclassOf< AInfo > spawnClass, FName spawnName )
 	{
 		// @todo: Refactor, haxx as we didn't think about that there are several world infos in one world
 		// Avoid spawning subsystems if not in a persistent level, as we never expected a level to not be persistent
@@ -152,14 +138,27 @@ public:
 	UPROPERTY( EditInstanceOnly, Category = "HeightFog" )
 	FExponentialFogSettings mDefaultHeightFogSettings;
 
+#if WITH_EDITORONLY_DATA	
+	/** This is the grid name that all InstancedFoliageActors will be placed on. Only used with world partition. */
+	UPROPERTY(EditInstanceOnly, Category = "Foliage")
+	FName mFoliageRuntimeGrid;
+#endif
+
+#if WITH_EDITOR
+	void SetFoliageRemovalSubsystem(AFGFoliageRemovalSubsystem* foliageRemovalSubsystem)
+	{
+		mFoliageRemovalSubsystem = foliageRemovalSubsystem;
+		Modify();
+	}
+#endif
+	
+	UPROPERTY( VisibleAnywhere )
+	FWorldPartitionValidationData SaveGameValidationData;
+
+	UPROPERTY( VisibleAnywhere )
+	TMap<FString, FWPCellIdentifier> WPActorCellMapping;
+	
 protected:
-	/** All save actors for the current sublevel. Stored during save */
-	TArray<AActor*> mSaveActors;
-
-	/** Used to flag Save Actors as dirty. This will cause the save actors array to be rebuilt when saving. This is to ensure that all save actors are up to date */
-	UPROPERTY( transient )
-	bool mSaveActorsDirty;
-
 	/** Set the height fog that's placed in the world here */
 	UPROPERTY( EditInstanceOnly, Category = "HeightFog" )
 	TSoftObjectPtr< class AExponentialHeightFog > mExponentialHeightFog;
@@ -186,6 +185,7 @@ protected:
 	/** Time of day to start the day (in hours) */
 	UPROPERTY( EditInstanceOnly, Category = "Time", meta = ( UIMin = 0, UIMax = 24, ClampMin = 0, ClampMax = 24 ) )
 	float mStartTimeOfDay;
+
 
 private:
 	UPROPERTY( SaveGame )

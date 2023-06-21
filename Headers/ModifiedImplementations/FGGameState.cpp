@@ -2,6 +2,9 @@
 
 #include "FGGameState.h"
 
+void UFGGameStateRemoteCallObject::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
+UFGGameStateRemoteCallObject* UFGGameStateRemoteCallObject::Get(UWorld* world){ return nullptr; }
+void UFGGameStateRemoteCallObject::Server_SetCreativeModeEnabled_Implementation(){ }
 AFGGameState::AFGGameState(){ }
 void AFGGameState::Serialize(FArchive& ar){ Super::Serialize(ar); }
 void AFGGameState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
@@ -61,7 +64,10 @@ void AFGGameState::SetDefaultSwatchForBuildableGroup(TSubclassOf<  UFGSwatchGrou
 void AFGGameState::AddTetrominoResult(const FMiniGameResult& newResult){ }
 void AFGGameState::OnRep_TetrominoLeaderBoard(){ }
 void AFGGameState::Server_SetPublicTodoList(const FString& newTodoList){ }
+void AFGGameState::SetCreativeModeEnabled(){ }
 void AFGGameState::CheckRestartTime(){ }
 void AFGGameState::OnRep_PlannedRestartTime(){ }
+void AFGGameState::OnRep_CheatNoPower(){ }
 void AFGGameState::SubmitNumPlayersTelemetry() const{ }
 void AFGGameState::SubmitCheatTelemetry() const{ }
+void AFGGameState::TryGiveStartingRecipes( AFGCharacterPlayer* inPlayer){ }

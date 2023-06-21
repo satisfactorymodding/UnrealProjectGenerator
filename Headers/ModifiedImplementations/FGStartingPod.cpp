@@ -6,7 +6,7 @@ AFGStartingPod::AFGStartingPod(){ }
 void AFGStartingPod::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 FVector AFGStartingPod::GetRefundSpawnLocationAndArea_Implementation(const FVector& aimHitLocation, float& out_radius) const{ return FVector(); }
 bool AFGStartingPod::CanDismantle_Implementation() const{ return bool(); }
-void AFGStartingPod::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund) const{ }
+void AFGStartingPod::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund, bool noBuildCostEnabled) const{ }
 void AFGStartingPod::PreUpgrade_Implementation(){ }
 void AFGStartingPod::Upgrade_Implementation(AActor* newActor){ }
 void AFGStartingPod::Dismantle_Implementation(){ }

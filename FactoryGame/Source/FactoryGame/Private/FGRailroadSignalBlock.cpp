@@ -20,6 +20,8 @@ ERailroadBlockValidation FFGRailroadSignalBlock::GetBlockValidation() const{ ret
 void FFGRailroadSignalBlock::UpdateOccupancy(){ }
 void FFGRailroadSignalBlock::OnReservationsUpdated(){ }
 void FFGRailroadSignalBlock::UpdateReservation(FFGRailroadBlockReservation* reservation){ }
+void FFGRailroadSignalBlock::UpdateDependencies(FFGRailroadBlockReservation* reservation){ }
+void FFGRailroadSignalBlock::UpdateOverlaps(FFGRailroadBlockReservation* reservation){ }
 void FFGRailroadSignalBlock::ApproveReservation(FFGRailroadBlockReservation* reservation){ }
 void FFGRailroadSignalBlock::CancelReservation(FFGRailroadBlockReservation* reservation){ }
 void FFGRailroadSignalBlock::NotifyEnteredReservation(FFGRailroadBlockReservation* reservation){ }

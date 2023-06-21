@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS( Blueprintable, abstract )
 class FACTORYGAME_API UFGItemsManuallyCraftedDependency : public UFGAvailabilityDependency
 {
 	GENERATED_BODY()

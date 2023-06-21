@@ -3,8 +3,6 @@
 #include "UI/FGListView.h"
 
 UFGListView::UFGListView(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
-
+	this->mWidgetBarStyle.Thickness = 8.0;
 }
-TSharedRef<STableViewBase> UFGListView::RebuildListWidget() {
-  return ConstructListView<SFGListView>();
-}
+TSharedRef<STableViewBase> UFGListView::RebuildListWidget(){ return Super::RebuildListWidget(); }

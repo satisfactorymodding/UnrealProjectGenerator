@@ -7,8 +7,6 @@ const FItemSettings& UFGResourceSettings::GetResourceSettings(TSubclassOf<  UFGI
 #endif 
 #if WITH_EDITORONLY_DATA
 #endif 
-UFGResourceSettings::UFGResourceSettings(){ }
-UFGResourceSettings* UFGResourceSettings::Get(){ return nullptr; }
-const FResourceDepositPackage& UFGResourceSettings::GetRandomResourceDepositData(int32& out_resourceDepositPackageIdx, AActor* worldContext){ return *(new FResourceDepositPackage); }
+const FResourceDepositPackage& UFGResourceSettings::GetRandomResourceDepositData(int32& out_resourceDepositPackageIdx, const bool canBeRadioActive){ return *(new FResourceDepositPackage); }
 const FResourceDepositPackage& UFGResourceSettings::GetResourceDepositDataFromClass(TSubclassOf<  UFGResourceDescriptor > desiredResourceClass, int32& out_resourceDepositPackageIdx, AActor* worldContext){ return *(new FResourceDepositPackage); }
 int32 UFGResourceSettings::GetStackSizeFromEnum(EStackSize stackSize) const{ return int32(); }

@@ -3,8 +3,8 @@
 #include "FGSchematic.h"
 
 #if WITH_EDITOR
-void UFGSchematic::PreSave(const  ITargetPlatform* targetPlatform){ }
-EDataValidationResult UFGSchematic::IsDataValid(TArray<FText>& ValidationErrors){ return EDataValidationResult::Valid; }
+void UFGSchematic::PreSave(FObjectPreSaveContext saveContext){ }
+EDataValidationResult UFGSchematic::IsDataValid(TArray< FText >& ValidationErrors){ return EDataValidationResult::Valid; }
 #endif 
 #if WITH_EDITOR
 void UFGSchematic::UpdateAssetBundleData(){ }
@@ -22,6 +22,7 @@ UFGSchematic::UFGSchematic() : Super() {
 	this->mSchematicCategory = nullptr;
 	this->mMenuPriority = 0.0;
 	this->mTimeToComplete = 600.0;
+	this->mIsPlayerSpecific = false;
 	this->mSmallSchematicIcon = nullptr;
 	this->mDependenciesBlocksSchematicAccess = false;
 	this->mHiddenUntilDependenciesMet = false;
@@ -30,65 +31,21 @@ UFGSchematic::UFGSchematic() : Super() {
 }
 void UFGSchematic::PostLoad(){ Super::PostLoad(); }
 void UFGSchematic::Serialize(FArchive& ar){ Super::Serialize(ar); }
-FPrimaryAssetId UFGSchematic::GetPrimaryAssetId() const {
-  return FPrimaryAssetId(StaticClass()->GetFName(), FPackageName::GetShortFName(GetOutermost()->GetFName()));
-}
-ESchematicType UFGSchematic::GetType(TSubclassOf< UFGSchematic > inClass) {
-	if (inClass)
-		return inClass.GetDefaultObject()->mType;
-	else
-		return ESchematicType();
-}
-FText UFGSchematic::GetSchematicDisplayName(TSubclassOf< UFGSchematic > inClass) {
-	if (inClass)
-		return inClass.GetDefaultObject()->mDisplayName;
-	else
-		return FText();
-}
+FPrimaryAssetId UFGSchematic::GetPrimaryAssetId() const{ return FPrimaryAssetId(); }
+ESchematicType UFGSchematic::GetType(TSubclassOf< UFGSchematic > inClass){ return ESchematicType(); }
+FText UFGSchematic::GetSchematicDisplayName(TSubclassOf< UFGSchematic > inClass){ return FText(); }
 FText UFGSchematic::GetSchematicDescription(TSubclassOf< UFGSchematic > inClass){ return FText(); }
-TSubclassOf< class UFGSchematicCategory > UFGSchematic::GetSchematicCategory(TSubclassOf< UFGSchematic > inClass) {
-	if (inClass)
-		return inClass.GetDefaultObject()->mSchematicCategory;
-	else
-		return TSubclassOf< class UFGSchematicCategory >();
-}
-void UFGSchematic::GetSubCategories(TSubclassOf< UFGSchematic > inClass,  TArray< TSubclassOf<  UFGSchematicCategory > >& out_subCategories) {
-	if(inClass)
-		out_subCategories = inClass.GetDefaultObject()->mSubCategories;
-}
+TSubclassOf< class UFGSchematicCategory > UFGSchematic::GetSchematicCategory(TSubclassOf< UFGSchematic > inClass){ return TSubclassOf<class UFGSchematicCategory>(); }
+void UFGSchematic::GetSubCategories(TSubclassOf< UFGSchematic > inClass,  TArray< TSubclassOf<  UFGSchematicCategory > >& out_subCategories){ }
 float UFGSchematic::GetMenuPriority(TSubclassOf< UFGSchematic > inClass){ return float(); }
-TArray< FItemAmount > UFGSchematic::GetCost(TSubclassOf< UFGSchematic > inClass) {
-	if (inClass)
-		return inClass.GetDefaultObject()->mCost;
-	else
-		return TArray< FItemAmount >();
-}
-TArray< class UFGUnlock* > UFGSchematic::GetUnlocks(TSubclassOf< UFGSchematic > inClass) {
-	if (inClass)
-		return inClass.GetDefaultObject()->mUnlocks;
-	else
-		return TArray<UFGUnlock*>();
-}
-int32 UFGSchematic::GetTechTier(TSubclassOf< UFGSchematic > inClass) {
-	if (inClass)
-		return inClass.GetDefaultObject()->mTechTier;
-	else
-		return int32();
-}
-float UFGSchematic::GetTimeToComplete(TSubclassOf< UFGSchematic > inClass) {
-	if (inClass)
-		return inClass.GetDefaultObject()->mTimeToComplete;
-	else
-		return float();
-}
+TArray< FItemAmount > UFGSchematic::GetCost(TSubclassOf< UFGSchematic > inClass){ return TArray<FItemAmount>(); }
+bool UFGSchematic::GetIsPlayerSpecific(TSubclassOf< UFGSchematic > inClass){ return bool(); }
+TArray< class UFGUnlock* > UFGSchematic::GetUnlocks(TSubclassOf< UFGSchematic > inClass){ return TArray<class UFGUnlock*>(); }
+int32 UFGSchematic::GetTechTier(TSubclassOf< UFGSchematic > inClass){ return int32(); }
+float UFGSchematic::GetTimeToComplete(TSubclassOf< UFGSchematic > inClass){ return float(); }
 void UFGSchematic::GetRelevantUnlockedShopSchematics(UObject* worldContext, TSubclassOf< UFGSchematic > inClass, TArray< TSubclassOf< UFGSchematic > >& out_schematics){ }
 void UFGSchematic::GetRelevantShopSchematics(TSubclassOf< UFGSchematic > inClass, TArray< TSubclassOf< UFGSchematic > >& out_schematics){ }
-FSlateBrush UFGSchematic::GetItemIcon(TSubclassOf< UFGSchematic > inClass) {
-	if (inClass)
-		return inClass.GetDefaultObject()->mSchematicIcon;
-	else
-		return FSlateBrush();
-}
+FSlateBrush UFGSchematic::GetItemIcon(TSubclassOf< UFGSchematic > inClass){ return FSlateBrush(); }
 UTexture2D* UFGSchematic::GetSmallIcon(TSubclassOf< UFGSchematic > inClass){ return nullptr; }
 bool UFGSchematic::AreSchematicDependenciesMet(TSubclassOf< UFGSchematic > inClass, UObject* worldContext){ return bool(); }
 void UFGSchematic::GetSchematicDependencies(TSubclassOf< UFGSchematic > inClass, TArray<  UFGAvailabilityDependency* >& out_schematicDependencies){ }

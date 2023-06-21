@@ -14,13 +14,16 @@ void AFGBuildableFactory::PreSaveGame_Implementation(int32 saveVersion, int32 ga
 void AFGBuildableFactory::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGBuildableFactory::GainedSignificance_Implementation(){ }
 void AFGBuildableFactory::LostSignificance_Implementation(){ }
+void AFGBuildableFactory::UpdateSignificanceTickRate_Implementation(float NewTickRate, bool bTickEnabled){ }
 void AFGBuildableFactory::GainedSignificance_Native(){ }
 void AFGBuildableFactory::LostSignificance_Native(){ }
 void AFGBuildableFactory::SetupForSignificance(){ }
+bool AFGBuildableFactory::DoesReduceTick() const{ return bool(); }
+int32 AFGBuildableFactory::NumTickLevels() const{ return int32(); }
 void AFGBuildableFactory::Factory_Tick(float dt){ }
 void AFGBuildableFactory::OnUse_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state){ }
 void AFGBuildableFactory::OnUseStop_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state){ }
-void AFGBuildableFactory::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund) const{ }
+void AFGBuildableFactory::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund, bool noBuildCostEnabled) const{ }
 void AFGBuildableFactory::OnBuildableReplicationDetailStateChange(bool newStateIsActive){ }
 void AFGBuildableFactory::OnReplicationDetailActorCreated(){ }
 void AFGBuildableFactory::OnReplicationDetailActorRemoved(){ }
@@ -55,6 +58,7 @@ void AFGBuildableFactory::OnIsProducingChanged_Native(bool newIsProducing){ }
 void AFGBuildableFactory::OnHasPowerChanged_Native(bool newHasPower){ }
 void AFGBuildableFactory::SetCurrentPotential(float newCurrentPotential){ }
 void AFGBuildableFactory::OnReplicatingDetailsChanged(){ }
+bool AFGBuildableFactory::Factory_HasPower() const{ return bool(); }
 void AFGBuildableFactory::Factory_ProductionCycleCompleted(float overProductionRate){ }
 void AFGBuildableFactory::Factory_CollectInput_Implementation(){ }
 void AFGBuildableFactory::Factory_PullPipeInput_Implementation(float dt){ }

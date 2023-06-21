@@ -13,5 +13,10 @@ void AFGEquipmentBoomBox::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void AFGEquipmentBoomBox::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 bool AFGEquipmentBoomBox::ShouldSaveState() const{ return bool(); }
 void AFGEquipmentBoomBox::OnRep_BoomBoxPlayer( AFGBoomBoxPlayer* oldPlayer){ }
+void AFGEquipmentBoomBox::AddEquipmentActionBindings(){ }
+void AFGEquipmentBoomBox::Input_PlayPause(const FInputActionValue& actionValue){ }
+void AFGEquipmentBoomBox::Input_Turbobass(const FInputActionValue& actionValue){ }
+void AFGEquipmentBoomBox::Input_ToggleMenu(const FInputActionValue& actionValue){ }
+void AFGEquipmentBoomBox::Input_PutDown(const FInputActionValue& actionValue){ }
 void AFGEquipmentBoomBox::ReleaseBoomBoxPlayer(){ }
 void AFGEquipmentBoomBox::TransferMontagesToNewBoomBoxPlayer(AFGBoomBoxPlayer* oldPlayer, AFGBoomBoxPlayer* newPlayer){ }

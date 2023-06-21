@@ -6,14 +6,7 @@ FRailroadTrackPosition::FRailroadTrackPosition(){ }
 FRailroadTrackPosition::FRailroadTrackPosition( AFGBuildableRailroadTrack* track, float offset, float forward){ }
 FRailroadTrackPosition::FRailroadTrackPosition(const FRailroadTrackPosition& position){ }
 FRailroadTrackPosition::~FRailroadTrackPosition(){ }
-bool FRailroadTrackPosition::Serialize(FArchive& ar) {
-	if (ar.ArIsSaveGame) {
-		ar << Offset;
-		ar << Forward;
-	}
-
-	return true;
-}
+bool FRailroadTrackPosition::Serialize(FArchive& ar){ return bool(); }
 void FRailroadTrackPosition::GetWorldLocationAndDirection(FVector& out_location, FVector& out_direction) const{ }
 float FRailroadTrackPosition::GetForwardOffset() const{ return float(); }
 float FRailroadTrackPosition::GetReverseOffset() const{ return float(); }
@@ -40,6 +33,8 @@ bool AFGBuildableRailroadTrack::IsConnectionOccupied(const  UFGRailroadTrackConn
 bool AFGBuildableRailroadTrack::UpdateOverlappingTracks(){ return bool(); }
 TArray< AFGBuildableRailroadTrack* > AFGBuildableRailroadTrack::GetOverlappingTracks(){ return TArray<AFGBuildableRailroadTrack*>(); }
 void AFGBuildableRailroadTrack::AddOverlappingTrack(AFGBuildableRailroadTrack* track){ }
+void AFGBuildableRailroadTrack::SetupConnections(){ }
+void AFGBuildableRailroadTrack::PostSerializedFromBlueprint(bool isBlueprintWorld){ }
 void AFGBuildableRailroadTrack::SetTrackGraphID(int32 trackGraphID){ }
 void AFGBuildableRailroadTrack::SetSignalBlock(TWeakPtr< FFGRailroadSignalBlock > block){ }
 void AFGBuildableRailroadTrack::OnRep_SignalBlockID(){ }

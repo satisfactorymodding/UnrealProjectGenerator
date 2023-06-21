@@ -3,19 +3,5 @@
 #include "FGPipelineAttachmentHologram.h"
 
 AFGPipelineAttachmentHologram::AFGPipelineAttachmentHologram(){ }
-void AFGPipelineAttachmentHologram::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGPipelineAttachmentHologram::BeginPlay(){ }
-bool AFGPipelineAttachmentHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }
-bool AFGPipelineAttachmentHologram::DoMultiStepPlacement(bool isInputFromARelease){ return bool(); }
-void AFGPipelineAttachmentHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }
-bool AFGPipelineAttachmentHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
-float AFGPipelineAttachmentHologram::GetHologramHoverHeight() const{ return float(); }
-void AFGPipelineAttachmentHologram::GetIgnoredClearanceActors(TArray< AActor* >& ignoredActors) const{ }
-bool AFGPipelineAttachmentHologram::ShouldActorBeConsideredForGuidelines( AActor* actor) const{ return bool(); }
-void AFGPipelineAttachmentHologram::ScrollRotate(int32 delta, int32 step){ }
-int32 AFGPipelineAttachmentHologram::GetRotationStep() const{ return int32(); }
-void AFGPipelineAttachmentHologram::ConfigureComponents( AFGBuildable* inBuildable) const{ }
-void AFGPipelineAttachmentHologram::CheckValidPlacement(){ }
-void AFGPipelineAttachmentHologram::TrySnapToConnection(const float snapDistance, FVector& out_location, FVector& out_normal){ }
-FName AFGPipelineAttachmentHologram::mConnection0 = FName();
-FName AFGPipelineAttachmentHologram::mConnection1 = FName();
+void AFGPipelineAttachmentHologram::ConfigureComponents(AFGBuildable* inBuildable) const{ }

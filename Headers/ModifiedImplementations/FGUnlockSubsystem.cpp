@@ -12,20 +12,26 @@ void AFGUnlockSubsystem::UnlockRecipe(TSubclassOf<  UFGRecipe > recipe){ }
 void AFGUnlockSubsystem::UnlockScannableResource(FScannableResourcePair newResource){ }
 void AFGUnlockSubsystem::UnlockScannableObject(FScannableObjectData newScannableObject){ }
 void AFGUnlockSubsystem::UnlockMap(){ }
+void AFGUnlockSubsystem::UnlockBlueprints(){ }
+void AFGUnlockSubsystem::UnlockCustomizer(){ }
 void AFGUnlockSubsystem::UnlockBuildEfficiency(){ }
 void AFGUnlockSubsystem::UnlockBuildOverclock(){ }
 void AFGUnlockSubsystem::UnlockInventorySlots(int32 numSlotsToUnlock){ }
 void AFGUnlockSubsystem::UnlockArmEquipmentSlots(int32 numSlotsToUnlock){ }
 void AFGUnlockSubsystem::UnlockEmote(TSubclassOf<  UFGEmote > newEmote){ }
 void AFGUnlockSubsystem::UnlockTape(TSubclassOf< UFGTapeData > newTape){ }
+void AFGUnlockSubsystem::UnlockCheckmark(FString playerName){ }
 TArray<TSubclassOf<class UFGResourceDescriptor>> AFGUnlockSubsystem::GetScannableResources() const{ return TArray<TSubclassOf<class UFGResourceDescriptor>>(); }
 TArray<TSubclassOf<class UFGItemDescriptor>> AFGUnlockSubsystem::GetScannableObjects(const UObject* scannerObject) const{ return TArray<TSubclassOf<class UFGItemDescriptor>>(); }
 bool AFGUnlockSubsystem::IsNodeScannable(FScannableResourcePair scannableResourcePair){ return bool(); }
 void AFGUnlockSubsystem::OnSchematicPurchased(TSubclassOf<  UFGSchematic > newSchematic){ }
+void AFGUnlockSubsystem::OnSchematicPurchasedByPlayer_Implementation(TSubclassOf<  UFGSchematic > newSchematic,  AFGCharacterPlayer* player){ }
 void AFGUnlockSubsystem::SetTotalNumInventorySlots(int32 totalNumSlots){ }
 void AFGUnlockSubsystem::SetTotalNumArmEquipmentSlots(int32 totalNumSlots){ }
 void AFGUnlockSubsystem::GetUnlockedEmotes(TArray< TSubclassOf<class UFGEmote> >& out_unlockedEmotes) const{ }
 void AFGUnlockSubsystem::GetUnlockedTapes(TArray< TSubclassOf<  UFGTapeData > >& out_unlockedTapes) const{ }
+void AFGUnlockSubsystem::GetPlayersWithCheckmarks(TArray< FGCheckmarkUnlockData >& out_playersWithCheckmarks) const{ }
 void AFGUnlockSubsystem::SetNumOfAdditionalInventorySlots(int32 newNumSlots){ }
 void AFGUnlockSubsystem::SetNumAdditionalArmEquipmentSlots(int32 newNumSlots){ }
-void AFGUnlockSubsystem::SendMessageToAllPlayers(TSubclassOf<  UFGMessageBase > inMessage){ }
+void AFGUnlockSubsystem::OnRep_PlayerCheckmarks(){ }
+void AFGUnlockSubsystem::UpdatePlayerWidgets(){ }

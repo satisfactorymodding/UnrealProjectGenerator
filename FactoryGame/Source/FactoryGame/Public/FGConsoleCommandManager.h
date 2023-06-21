@@ -77,6 +77,10 @@ public:
 	UFUNCTION( exec )
 	void ToggleRailroadBlockVisualization( bool enabled );
 
+	/** Enable the train scheduler's black box, dumps state when a deadlock is detected or continuously if num records to keep is set to 0. */
+	UFUNCTION( exec )
+	void ToggleTrainSchedulerBlackBoxEnabled( bool enabled, int32 numRecordsToKeep );
+
 	/** Tries to dismantle vehicles that are under the player (50m down or lower in a 100m radius) and places the recovered resources in front of the player. */
 	UFUNCTION( exec )
 	void DismantleVehiclesUnderWorld();

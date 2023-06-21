@@ -3,6 +3,8 @@
 #include "FGJumpPadHologram.h"
 
 AFGJumpPadHologram::AFGJumpPadHologram(){ }
+void AFGJumpPadHologram::BeginPlay(){ }
 void AFGJumpPadHologram::EndPlay(const EEndPlayReason::Type endPlayReason){ }
 void AFGJumpPadHologram::Tick(float dt){ }
 void AFGJumpPadHologram::DisplayNearbyJumpPadTrajectories(){ }
+void AFGJumpPadHologram::OnTraceCompleted(const FTraceHandle& Handle, FOverlapDatum& Data){ }

@@ -5,17 +5,13 @@
 AFGPlayerControllerBase::AFGPlayerControllerBase(){ }
 void AFGPlayerControllerBase::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGPlayerControllerBase::BeginPlay(){ }
-bool AFGPlayerControllerBase::ReplicateSubobjects( UActorChannel *Channel,  FOutBunch *Bunch, FReplicationFlags *RepFlags){ return bool(); }
 void AFGPlayerControllerBase::ClientRestart_Implementation(APawn* newPawn){ }
 void AFGPlayerControllerBase::AddCheats(bool force){ }
 void AFGPlayerControllerBase::SetIsUsingGamepad(bool newIsUsingGamepad){ }
 void AFGPlayerControllerBase::OnControlledCharacterDied( AFGCharacterBase* character){ }
 void AFGPlayerControllerBase::OnControlledCharacterRevived( AFGCharacterBase* character){ }
 void AFGPlayerControllerBase::FlushPressedKeys(){ }
-bool AFGPlayerControllerBase::RebindActionKey(FFGKeyMapping newKeyMapping){ return bool(); }
-void AFGPlayerControllerBase::ResetInputBindings(){ }
-void AFGPlayerControllerBase::UpdatePlayerInput(){ }
-void AFGPlayerControllerBase::OnGamepadInputEnabledUpdated(FString updatedCvar){ }
+void AFGPlayerControllerBase::FlushMouseKeys(){ }
 void AFGPlayerControllerBase::OnMouseSensitivityUpdated(FString updatedCvar){ }
 void AFGPlayerControllerBase::SetMouseSensitivity(float newSense){ }
 float AFGPlayerControllerBase::GetMouseSensitivity(){ return float(); }
@@ -25,6 +21,7 @@ float AFGPlayerControllerBase::GetDefaultMouseSensitivity(){ return float(); }
 float AFGPlayerControllerBase::GetDefaultMouseSensitivityX(){ return float(); }
 float AFGPlayerControllerBase::GetDefaultMouseSensitivityY(){ return float(); }
 FText AFGPlayerControllerBase::GetKeyNameForAction(FName inAction, bool getGamepadKey){ return FText(); }
+FText AFGPlayerControllerBase::GetKeyNameForUseAction(){ return FText(); }
 FString AFGPlayerControllerBase::GetPresenceString_Implementation() const{ return FString(); }
 void AFGPlayerControllerBase::Client_UpdateCappedBandwidth_Implementation(int32 cap){ }
 void AFGPlayerControllerBase::Server_UpdateCappedBandwidth_Implementation(int32 cap){ }
@@ -32,8 +29,7 @@ bool AFGPlayerControllerBase::Server_UpdateCappedBandwidth_Validate(int32 cap){ 
 void AFGPlayerControllerBase::OnAdminRightsGranted(){ }
 void AFGPlayerControllerBase::OnAdminRightsRevoked(){ }
 void AFGPlayerControllerBase::Admin(const FString& command){ }
-void AFGPlayerControllerBase::ServerAdmin_Implementation(const FString& command){ }
-bool AFGPlayerControllerBase::ServerAdmin_Validate(const FString& command){ return bool(); }
+void AFGPlayerControllerBase::Server_Admin_Implementation(const FString& command){ }
 bool AFGPlayerControllerBase::ProcessConsoleExec(const TCHAR* Cmd, FOutputDevice& Ar, UObject* Executor){ return bool(); }
 TScriptInterface<class IFGSaveManagerInterface> AFGPlayerControllerBase::GetMostRelevantSaveManager(){ return TScriptInterface<class IFGSaveManagerInterface>(); }
 TScriptInterface<class IFGSaveManagerInterface> AFGPlayerControllerBase::GetLocalSaveManager(){ return TScriptInterface<class IFGSaveManagerInterface>(); }
@@ -42,4 +38,5 @@ void AFGPlayerControllerBase::SetPlayer(UPlayer* InPlayer){ }
 void AFGPlayerControllerBase::OnNetCleanup( UNetConnection* Connection){ }
 void AFGPlayerControllerBase::EnablePlayerInput(bool enable){ }
 void AFGPlayerControllerBase::SetCurrentServer( UFGServerObject* CurrentServer){ }
-void AFGPlayerControllerBase::InitDeathInput(){ }
+void AFGPlayerControllerBase::OnRep_ReplicatedCheatManager(){ }
+void AFGPlayerControllerBase::InitDefaultCheats(){ }

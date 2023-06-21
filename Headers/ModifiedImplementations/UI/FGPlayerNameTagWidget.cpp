@@ -2,6 +2,6 @@
 
 #include "FGPlayerNameTagWidget.h"
 
-void UFGPlayerNameTagWidget::UpdatePlayerData(FString playerName, FLinearColor playerColor, bool isPlayerOnline){ }
+void UFGPlayerNameTagWidget::UpdatePlayerData(FString playerName, FLinearColor playerColor, bool isPlayerOnline, bool useOverrideIcon){ }
 void UFGPlayerNameTagWidget::NativeConstruct(){ }
 void UFGPlayerNameTagWidget::OnHiddenHUDModeChanged(bool hideHUD){ }

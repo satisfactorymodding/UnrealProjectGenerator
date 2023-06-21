@@ -3,6 +3,8 @@
 #include "FGCreatureActionAmmoAttack.h"
 
 UFGCreatureActionAmmoAttack::UFGCreatureActionAmmoAttack(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
+void UFGCreatureActionAmmoAttack::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
+void UFGCreatureActionAmmoAttack::BeginDestroy(){ Super::BeginDestroy(); }
 bool UFGCreatureActionAmmoAttack::InitializeAction(AController* controller, APawn* pawn){ return bool(); }
 void UFGCreatureActionAmmoAttack::PerformAction_Implementation(){ }
 void UFGCreatureActionAmmoAttack::OnAnimNotify_Implementation(const UFGAnimNotify* Notify){ }

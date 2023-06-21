@@ -6,7 +6,7 @@ AFGBuildableCalendar::AFGBuildableCalendar(){ }
 void AFGBuildableCalendar::BeginPlay(){ }
 void AFGBuildableCalendar::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void AFGBuildableCalendar::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
-void AFGBuildableCalendar::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund) const{ }
+void AFGBuildableCalendar::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund, bool noBuildCostEnabled) const{ }
 void AFGBuildableCalendar::OpenSlot(int32 dayNumber){ }
 bool AFGBuildableCalendar::GetContentOnSlot(int32 dayNumber, FInventoryStack& out_slotContent){ return bool(); }
 UFGUnlock* AFGBuildableCalendar::GetUnlockOnSlot(int32 dayNumber){ return nullptr; }

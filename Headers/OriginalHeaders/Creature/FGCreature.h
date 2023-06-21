@@ -109,7 +109,7 @@ enum class ECreatureState : uint8
 
 inline FString CreatureStateEnumToString( ECreatureState state )
 {
-	const UEnum* EnumPtr = FindObject< UEnum >( ANY_PACKAGE, TEXT( "ECreatureState" ), true );
+	const UEnum* EnumPtr = FindObject< UEnum >( nullptr, TEXT( "/Script/FactoryGame.ECreatureState" ), true );
 
 	if( !EnumPtr )
 	{
@@ -259,6 +259,7 @@ public:
 
 	// Begin FGCharacterBase
 	virtual void Died( AActor* died ) override;
+	virtual void DoRagdoll_Internal() override;
 	// End FGCharacterBase
 
 	/** @return	Pawn's eye location */

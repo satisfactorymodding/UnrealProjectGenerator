@@ -29,7 +29,7 @@ struct FACTORYGAME_API FItemDrop
 	FInt32Interval NumItems;
 
 	/** Get a random amount of items in range */
-	int32 GetRandomItemAmount() const;
+	int32 GetRandomItemAmount( uint32 randomSeed ) const;
 };
 
 /**
@@ -46,7 +46,7 @@ struct FACTORYGAME_API FItemDropWithChance
 	}
 
 	/** returns true if the item drop should drop */
-	bool ShouldDrop() const;
+	bool ShouldDrop( uint32 randomSeed ) const;
 
 	/** A chance between 0->1, 1 means 100% drop chance */
 	UPROPERTY( EditAnywhere, BlueprintReadOnly, meta = (UIMin = 0.0, UIMax = 1.0), Category = "DropPackage" )

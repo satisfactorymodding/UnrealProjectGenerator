@@ -20,4 +20,8 @@ void AFGBuildableWidgetSign::OnBuildEffectFinished(){ }
 void AFGBuildableWidgetSign::SetPrefabSignData(FPrefabSignData& signData){ }
 void AFGBuildableWidgetSign::GetSignPrefabData(FPrefabSignData& out_signData){ }
 void AFGBuildableWidgetSign::UpdateSignElements(FPrefabSignData& prefabSignData){ }
+float AFGBuildableWidgetSign::GetAdjustedEmissiveValue(int32 Level) const{ return float(); }
 void AFGBuildableWidgetSign::OnRep_SignDataDirty(){ }
+uint32 AFGBuildableWidgetSign::GenerateGUID(FPrefabSignData& signData){ return uint32(); }
+void AFGBuildableWidgetSign::ConvertToEmissiveOnly(FPrefabSignData& prefabSignData) const{ }
+void AFGBuildableWidgetSign::SetupMaterialInstanceForProxyPlane(UMaterialInstanceDynamic* Instance, UTextureRenderTarget2D* RenderTarget){ }

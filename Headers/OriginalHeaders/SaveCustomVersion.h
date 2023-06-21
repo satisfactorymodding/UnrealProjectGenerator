@@ -122,6 +122,21 @@ struct FACTORYGAME_API FSaveCustomVersion
 		// 2022-11-25: Nativized shopping list and added blueprint support.
 		NativizedShoppingList,
 
+		// 2022-07-05: Unreal Engine 5 support
+		UnrealEngine5,
+
+		// 2022-11-10: Added support for partitioned worlds in conjunction to sub-level saving 
+		IntroducedWorldPartition,
+
+		// 2023-01-09: Tobias: Refactored drone actions to no longer be uobjects in order to fix a crash.
+		DroneActionRefactor,
+
+		// 2023-01-13: Tobias: Refactored wires to support multiple wire meshes.
+		MultipleWireMeshRefactor,
+
+		// 2023-01-11: Switched FArchive support to be 64bit in SaveSession
+		SwitchTo64BitSaveArchive,
+
 		// -----<new versions can be added above this line>-------------------------------------------------
 		VersionPlusOne,
 		LatestVersion = VersionPlusOne - 1
@@ -132,6 +147,5 @@ struct FACTORYGAME_API FSaveCustomVersion
 
 	inline static const Type MinSupportedVersion = DROPPED_CircuitObjects;
 
-private:
-	FSaveCustomVersion() {}
+	FSaveCustomVersion() = delete;
 };

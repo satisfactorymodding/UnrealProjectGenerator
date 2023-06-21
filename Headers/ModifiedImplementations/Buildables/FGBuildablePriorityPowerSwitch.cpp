@@ -7,7 +7,6 @@ void AFGBuildablePriorityPowerSwitch::BeginPlay(){ }
 void AFGBuildablePriorityPowerSwitch::EndPlay(const EEndPlayReason::Type endPlayReason){ }
 void AFGBuildablePriorityPowerSwitch::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildablePriorityPowerSwitch::AcceptCircuitGroup( UFGPowerCircuitGroup* circuitGroup){ }
-TArray< class AFGPriorityPowerSwitchInfo* > AFGBuildablePriorityPowerSwitch::GetAllInfos() const{ return TArray<class AFGPriorityPowerSwitchInfo*>(); }
 void AFGBuildablePriorityPowerSwitch::SetPriority(int32 priority){ }
 void AFGBuildablePriorityPowerSwitch::EnsureInfoCreated(){ }
 void AFGBuildablePriorityPowerSwitch::OnRep_Priority(){ }

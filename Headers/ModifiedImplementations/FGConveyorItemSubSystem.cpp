@@ -3,8 +3,8 @@
 #include "FGConveyorItemSubSystem.h"
 
 void FInstanceLODs::UpdateVisibility(int32 NumInstances){ }
-void FInstanceLODs::AddBucketComponents(int32 Num, AActor* Outer){ }
 void FInstanceLODs::AddInstance_Internal(AActor* Outer){ }
+void FConveyorBucketData::CreateComponent(AActor* Outer){ }
 #if WITH_PIE_SUPPORT
 #endif 
 AFGConveyorItemSubsystem::AFGConveyorItemSubsystem(){ }
@@ -12,11 +12,8 @@ AFGConveyorItemSubsystem* AFGConveyorItemSubsystem::Get(UWorld* world){ return n
 void AFGConveyorItemSubsystem::Tick(float DeltaSeconds){ }
 void AFGConveyorItemSubsystem::BeginPlay(){ }
 void AFGConveyorItemSubsystem::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
-void AFGConveyorItemSubsystem::ResolveNewTypes(){ }
-void AFGConveyorItemSubsystem::GatherTransformData(const TArray<bool> DistancesToUpdate, FConveyorActorContainer< AFGBuildableConveyorBelt* >* Belt, FConveyorActorContainer< AFGBuildableConveyorLift* >* Lifts){ }
+void AFGConveyorItemSubsystem::InitializeConveyorItems(){ }
 void AFGConveyorItemSubsystem::GatherTransformData_ISPC(const TArray<bool> DistancesToUpdate, FConveyorActorContainer< AFGBuildableConveyorBelt* >* Belt, FConveyorActorContainer< AFGBuildableConveyorLift* >* Lifts){ }
-void AFGConveyorItemSubsystem::UpdateGPUData(const TArray<bool> DistancesToUpdate){ }
-void AFGConveyorItemSubsystem::UpdateBuckets(){ }
 void AFGConveyorItemSubsystem::Cleanup(TArray< bool > LodsToUpdate){ }
 TArray< bool > AFGConveyorItemSubsystem::UpdateTimers(float DeltaTime){ return TArray<bool>(); }
 bool AFGConveyorItemSubsystem::mIsConveyorRendererActive = bool();

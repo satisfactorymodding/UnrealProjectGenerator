@@ -3,6 +3,7 @@
 #pragma once
 
 #include "FGBuildableFactory.h"
+#include "FGRecipeProducerInterface.h"
 #include "FGFactoryClipboard.h"
 #include "FGReplicationDetailInventoryComponent.h"
 #include "FGReplicationDetailActor_Manufacturing.h"
@@ -126,11 +127,11 @@ public:
 
 	/** Get the input inventory from this manufacturer. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Factory|Inventory" )
-	FORCEINLINE class UFGInventoryComponent* GetInputInventory() const { return mInputInventoryHandler->GetActiveInventoryComponent(); }
+	FORCEINLINE class UFGInventoryComponent* GetInputInventory() const { return mInputInventoryHandlerData.GetActiveInventoryComponent(); }
 
 	/** Get the output inventory from this manufacturer. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Factory|Inventory" )
-	FORCEINLINE class UFGInventoryComponent* GetOutputInventory() const { return mOutputInventoryHandler->GetActiveInventoryComponent(); }
+	FORCEINLINE class UFGInventoryComponent* GetOutputInventory() const { return mOutputInventoryHandlerData.GetActiveInventoryComponent(); }
 
 	/** Get the current recipe for manufacturing. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Factory|Recipe" )
@@ -210,6 +211,13 @@ protected:
 	 */
 	virtual bool HasRequiredIngredients() const;
 
+	virtual void GetAllReplicationDetailDataMembers(TArray<FReplicationDetailData*>& out_repDetailData) override
+	{
+		Super::GetAllReplicationDetailDataMembers( out_repDetailData );
+		out_repDetailData.Add( &mInputInventoryHandlerData );
+		out_repDetailData.Add( &mOutputInventoryHandlerData );
+	}
+
 protected:
 	friend class AFGReplicationDetailActor_Manufacturing;
 
@@ -253,8 +261,10 @@ protected:
 	class UFGInventoryComponent* mOutputInventory;
 
 	/** Active Inventory Component pointers which will switch once the replication detail actor has been created */
-	class UFGReplicationDetailInventoryComponent* mInputInventoryHandler;
-	class UFGReplicationDetailInventoryComponent* mOutputInventoryHandler;
+	UPROPERTY()
+	FReplicationDetailData mInputInventoryHandlerData;
+	UPROPERTY()
+	FReplicationDetailData mOutputInventoryHandlerData;
 
 	/** The recipe we're currently running. */
 	UPROPERTY( SaveGame, Replicated, ReplicatedUsing = OnRep_CurrentRecipe, Meta = (NoAutoJson = true) )

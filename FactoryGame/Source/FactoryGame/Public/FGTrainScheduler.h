@@ -4,10 +4,21 @@
 
 #include "FactoryGame.h"
 #include "CoreMinimal.h"
+#include "Algo/Accumulate.h"
 #include "GameFramework/Info.h"
 #include "FGRailroadSignalBlock.h"
 #include "FGTrainScheduler.generated.h"
 
+
+/**
+ * Combined status of the reservations made by a train.
+ */
+enum class EReservationsApprovalStatus : uint8
+{
+	RAS_NoApproval,
+	RAS_PartialApproval,
+	RAS_FullApproval
+};
 
 /**
  * All information that is needed for the train scheduler to keep track of this train.
@@ -15,7 +26,7 @@
 struct FACTORYGAME_API FTrainSchedulerInfo
 {
 public:
-	FTrainSchedulerInfo( class AFGTrain* train );
+	FTrainSchedulerInfo();
 	~FTrainSchedulerInfo();
 
 	/** Add a reservation to the list. */
@@ -26,11 +37,6 @@ public:
 	bool HaveReservation( TWeakPtr< FFGRailroadSignalBlock > block );
 	
 public:
-	/**
-	 * The train being tracked.
-	 */
-	TWeakObjectPtr< AFGTrain > Train = nullptr;
-	
 	/**
 	 * Path that was used to make reservations, keep track of it in case it changes.
 	 * If the previous path is cleared, then we need to clean any reservation pertaining to that path.
@@ -49,16 +55,27 @@ public:
 	 * The number of reservations in this list may vary depending on the length of the path signal chain reserved.
 	 */
 	TArray< TWeakPtr< FFGRailroadBlockReservation > > BlockReservations;
+	/**
+	 * When a chain of reservations are made, this is updated with a reservation number.
+	 * This is weighted into the priorities.
+	 */
+	uint32 ReservationNumber = 0;
+
+	/** A combined status for all the reservations, used to prioritize trains. */
+	EReservationsApprovalStatus ReservationStatus = EReservationsApprovalStatus::RAS_NoApproval;
 
 	/**
 	 * The priority for this train when requests are handled.
 	 *
 	 * Higher number have higher priority.
 	 */
-	int32 Priority = -1;
+	int32 Priority = 0;
 
 	/** The overlaps that this this train have along its path. */
 	ERailroadPathOverlap PathOverlaps = ERailroadPathOverlap::RPO_None;
+
+	/** All the trains we depend on. */
+	TSet< TWeakObjectPtr< class AFGTrain > > TrainDependencies;
 };
 
 
@@ -86,13 +103,135 @@ public:
 	void TickScheduler();
 
 public:
-	/** Each tick we output details about the scheduling, and decrease this by one. Only valid in non-shipping builds. */
-	int32 mDebugDumpNextTick;
+	/**
+	 * Enable the black box, it will tick and directly outputs state to the log or records the history and outputs to the log when the dump function is called.
+	 * @param isEnabled If the black box is enabled or not.
+	 * @param numRecordsToKeep If 0, directly output to the log, otherwise store n records in history until Dump is called.
+	 */
+	void Debug_EnableBlackBox( bool isEnabled, int32 numRecordsToKeep );
+	/** Dumps the content of the black box. */
+	void Debug_DumpBlackBox();
 	
 private:
-	//@todo-trains Split the master tick into manageable functions.
+	/** "Tickers" to manage reservations throughout their lifetime. See cpp for details. */
+	void UpdateProgressOnApprovedReservations();
+	void MakeNewReservations();
+	void UpdateOverlapsAndDependencies();
+	void UpdatePrioritiesAndSort();
+	void ApproveReservations();
+
+	/** See FTrainSchedulerInfo */
+	uint32 GetReservationNumber() const;
+	uint32 GetNextReservationNumber();
+
+	/** Dump the internal state. */
+	void Debug_UpdateBlackBox();
+	
+	/**
+	 * Helper function to check for a deadlocks in the scheduling.
+	 * This only checks for direct deadlocks (2 trains) and not indirect deadlocks (3+ trains).
+	 * This checks all trains against all other trains so operation might be expensive.
+	 */
+	TTuple< AFGTrain*, AFGTrain* > CheckForDeadlock() const;
+	
+	/** Check if there are any trains that have derailed. Returns an empty list if everything is fine. */
+	TArray< AFGTrain* > CheckForDerailments() const;
 	
 private:
-	/** List of information for the tracked trains. */
-	TArray< TSharedPtr< FTrainSchedulerInfo > > mSchedulerInfos;
+	/** Scheduling information for the tracked trains. */
+	TMap< class AFGTrain*, TUniquePtr< FTrainSchedulerInfo > > mSchedulerInfos;
+
+	/** Counter for giving out reservation numbers. */
+	uint32 mReservationCounter;
+
+	/** Is the black box enabled. */
+	bool mDebugEnableBlackBox = false;
+	/** The black box of the train scheduler. */
+	struct FTrainSchedulerBlackBox
+	{
+	public:
+		void Append( const FString& log ) { UncommittedState.Add( log ); }
+		void Revert() { UncommittedState.Empty(); }
+
+		void Commit()
+		{
+			const uint32 hash = Algo::Accumulate( UncommittedState, 0, []( uint32 result, const FString& line ){ return HashCombine( result, GetTypeHash( line ) ); } );
+			
+			if( hash != LastCommittedHash )
+			{
+				CommitId++;
+				
+				LastCommittedHash = hash;
+				
+				UncommittedState.Insert( FString::Printf( TEXT( "=========== Black Box Commit Start [%i] ===============" ), CommitId ), 0 );
+				UncommittedState.Add( FString::Printf( TEXT( "=========== Black Box Commit End [%i] ===============" ), CommitId ) );
+				
+				if( HistoryLength == 0 )
+				{
+					// Direct output.
+					while( UncommittedState.Num() > 0 )
+					{
+						UE_LOG( LogRailroad, Warning, TEXT( "%s" ), *UncommittedState[ 0 ] );
+
+						UncommittedState.RemoveAt( 0 );
+					}
+				}
+				else
+				{
+					UE_LOG( LogRailroad, Warning, TEXT( "Black Box Commit [%i]" ), CommitId );
+					
+					// Save history.
+					History.Add( UncommittedState );
+				
+					while( History.Num() > HistoryLength )
+					{
+						History.RemoveAt( 0 );
+					}
+				}
+			}
+			
+			UncommittedState.Empty();
+		}
+
+		void Dump()
+		{
+			for( auto commit : History )
+			{
+				for( auto log : commit )
+				{
+					UE_LOG( LogRailroad, Warning, TEXT( "%s" ), *log );
+				}
+			}
+		}
+
+		void Reset()
+		{
+			History.Reset( HistoryLength );
+			
+			CommitId = 0;
+			LastCommittedHash = 0;
+		}
+		
+		void Reset( int32 numRecordsToKeep )
+		{
+			HistoryLength = numRecordsToKeep;
+			
+			Reset();
+		}
+	private:
+		/** How many records do we keep. If 0, then no history is kept and a log is made every time a message is committed. */
+		int32 HistoryLength = 0;
+
+		/** List of log lines for the current state. */
+		TArray< FString > UncommittedState;
+		
+		/** We keep a hash for the last committed hash so we only record unique points in time. */
+		uint32 LastCommittedHash = 0;
+		
+		/** Recorded history, keep the n last states. */
+		TArray< TArray< FString > > History;
+			
+		/** Counter to identify committed entries for the user. */
+		int32 CommitId = 0;
+	} mDebugBlackBox;
 };

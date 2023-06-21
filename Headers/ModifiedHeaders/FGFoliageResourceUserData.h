@@ -12,11 +12,12 @@
 UENUM(BlueprintType)
 enum EProximityEffectTypes
 {
-	PET_None UMETA(DisplayName = "None"),
-	PET_Bush UMETA(DisplayName = "Bush(s)"),
-    PET_Tree UMETA(DisplayName = "Tree(s)"),
-    PET_Rock UMETA(DisplayName = "Rock(s)"),
-    PET_Flower UMETA(DisplayName = "Flower(s)"),
+	PET_None 		UMETA(DisplayName = "None"),
+	PET_Bush 		UMETA(DisplayName = "Bush(s)"),
+    PET_Tree 		UMETA(DisplayName = "Tree(s)"),
+    PET_Rock 		UMETA(DisplayName = "Rock(s)"),
+    PET_Flower		UMETA(DisplayName = "Flower(s)"),
+	PET_Mushroom	UMETA(DisplayName = "Mushroom(s)")
 };
 
 UCLASS( EditInlineNew, DefaultToInstanced )
@@ -52,6 +53,9 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Foliage")
 	static TArray<int32> GetProximityEffectIdsByMesh(UStaticMesh* mesh);
 
+	UFUNCTION(BlueprintPure, Category = "Foliage")
+	static bool GetIsCaveTypeByMesh(UStaticMesh* mesh);
+	
 	// Accessors
 	FORCEINLINE const TArray< FItemDropWithChance >& GetPickupItems() const{ return mPickupItems; }
 	FORCEINLINE class UAkAudioEvent* GetPickupEvent() const{ return mPickupEvent; }
@@ -62,6 +66,8 @@ public:
 	FORCEINLINE class UStaticMesh* GetPhysicsMesh() const { return mPhysicsMesh; }
 	FORCEINLINE EProximityEffectTypes GetEffectCategory() const { return EffectCategory; }
 	FORCEINLINE TArray<int32> GetFoliageTypeIDs() const { return FoliageTypeIDs; }
+	FORCEINLINE bool GetIsCaveType() const { return bIsCaveMesh; }
+	
 	// Returns the first defined effect starting from most desirable, mExplosionDestroyedEffect working down to mPickupEffect
 	class UParticleSystem* GetExplosionDestroyedEffect() const;
 
@@ -107,4 +113,8 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	TArray<int32> FoliageTypeIDs;
+
+	/* Is the foliage type normally used in caves? if so we know what vfx to spawn from it.*/
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	bool bIsCaveMesh = false;
 };

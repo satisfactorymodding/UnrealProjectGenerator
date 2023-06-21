@@ -2,10 +2,18 @@
 
 #include "FGProximitySubsystem.h"
 
+#if WITH_EDITOR
+#endif 
 AFGProximitySubsystem::AFGProximitySubsystem(){ }
+void AFGProximitySubsystem::SetupPlayerBinds( AFGPlayerController* Player){ }
+AFGProximitySubsystem* AFGProximitySubsystem::GetProximitySubsystem(UWorld* World){ return nullptr; }
+void AFGProximitySubsystem::IsNearBase(const FVector& Location, float Range) const{ }
+void AFGProximitySubsystem::StaticRegisterFactoryBuildingToProximitySystem(AActor* Actor){ }
+void AFGProximitySubsystem::RegisterFactoryBuildingToProximitySystem(FVector Location){ }
 void AFGProximitySubsystem::OnEnteredMapArea_Implementation( AFGPlayerControllerBase* playerController, TSubclassOf<  UFGMapArea > newArea){ }
 void AFGProximitySubsystem::OnPawnChanged_Implementation( APawn* newPawn){ }
 UParticleSystem* AFGProximitySubsystem::GetParticleSystemFromMapArea(TSubclassOf<  UFGMapArea > inArea){ return nullptr; }
 void AFGProximitySubsystem::SpawnPooledDecal(const UObject* WorldContextObject,  UMaterialInterface* DecalMaterial, FVector DecalSize, FVector Location, FRotator Rotation , float LifeSpan){ }
 void AFGProximitySubsystem::BeginPlay(){ }
+void AFGProximitySubsystem::EndPlay(const EEndPlayReason::Type EndPlayReason){ }
 void AFGProximitySubsystem::Tick(float DeltaTime){ }

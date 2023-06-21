@@ -28,15 +28,16 @@ int32 AFGCharacterBase::CalculateFallDamage_Implementation(float zSpeed) const{ 
 void AFGCharacterBase::SetFallDamageOverride(UCurveFloat* fallDamageCurveOverride){ }
 void AFGCharacterBase::PlayLandEffects(){ }
 bool AFGCharacterBase::IsAliveAndWell() const{ return bool(); }
-void AFGCharacterBase::PushedByVehicle( AFGVehicle* vehicle, FVector pushVelocity){ }
 void AFGCharacterBase::PlayFootstepEffect_Implementation(int32 footDown, bool playSound){ }
 bool AFGCharacterBase::TraceForGround(FVector traceStart, FVector traceEnd, FHitResult& out_hitResult, float& out_waterDepth) const{ return bool(); }
 const FFootstepEffect& AFGCharacterBase::GetFootstepEffect(const FHitResult& hitResult) const{ return *(new FFootstepEffect); }
 void AFGCharacterBase::RagdollCharacter(bool newRagdoll){ }
+void AFGCharacterBase::UpdateRagdollSyncData(){ }
 USkeletalMeshComponent* AFGCharacterBase::GetMesh3P() const{ return nullptr; }
 USkeletalMeshComponent* AFGCharacterBase::GetMainMesh() const{ return nullptr; }
 void AFGCharacterBase::CheckFallDamage(float zSpeed){ }
 void AFGCharacterBase::SetLocallyPossessed(bool inPossessed){ }
+void AFGCharacterBase::Native_OnLocallyPossessedChanged(bool isPossessed){ }
 UAkAudioEvent* AFGCharacterBase::GetFootstepEvent(int32 footDown) const{ return nullptr; }
 float AFGCharacterBase::AdjustDamage(AActor* damagedActor, float damageAmount, const  UDamageType* damageType,  AController* instigatedBy, AActor* damageCauser){ return float(); }
 void AFGCharacterBase::PlayFootstepAudio(int32 footIndex, const FHitResult& hitInfo, float waterDepth){ }

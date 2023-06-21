@@ -7,6 +7,7 @@
 #include "Components/SplineComponent.h"
 #include "Components/SplineMeshComponent.h"
 #include "FGInstancedSplineMeshComponent.h"
+#include "InstancedSplineMeshComponent.h"
 #include "FGSplineMeshGenerationLibrary.generated.h"
 
 /**
@@ -78,7 +79,9 @@ public:
 		class USplineComponent* spline,
 		UStaticMesh* mesh,
 		float meshLength,
-		UFGInstancedSplineMeshComponent* splineInstances );
+		class UFGConveyorInstanceSplineMesh* splineInstances );
+	
+	static void BuildSplineMeshesInstanced(USplineComponent* spline, float meshLength, class UInstancedSplineMeshComponent* splineInstances);
 
 	/**
 	 * Given a spline, this creates an instanced spline mesh along the spline.
@@ -90,6 +93,12 @@ public:
 		UStaticMesh* mesh,
 		float meshLength,
 		UFGInstancedSplineMeshComponent* splineInstances );
+
+	static void BuildSplineMeshesPerSegmentInstanced(
+		USplineComponent* spline,
+		UStaticMesh* mesh,
+		float meshLength,
+	    UInstancedSplineMeshComponent* splineInstances );
 
 	/**
 	 * Given a spline, this creates collisions along the spline.

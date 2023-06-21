@@ -36,7 +36,7 @@ FText AFGVehicle::GetLookAtDecription_Implementation( AFGCharacterPlayer* byChar
 void AFGVehicle::RegisterInteractingPlayer_Implementation( AFGCharacterPlayer* player){ }
 void AFGVehicle::UnregisterInteractingPlayer_Implementation( AFGCharacterPlayer* player){ }
 bool AFGVehicle::CanDismantle_Implementation() const{ return bool(); }
-void AFGVehicle::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund) const{ }
+void AFGVehicle::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund, bool noBuildCostEnabled) const{ }
 FVector AFGVehicle::GetRefundSpawnLocationAndArea_Implementation(const FVector& aimHitLocation, float& out_radius) const{ return FVector(); }
 void AFGVehicle::PreUpgrade_Implementation(){ }
 void AFGVehicle::Upgrade_Implementation(AActor* newActor){ }
@@ -44,6 +44,7 @@ void AFGVehicle::Dismantle_Implementation(){ }
 void AFGVehicle::StartIsLookedAtForDismantle_Implementation(AFGCharacterPlayer* byCharacter){ }
 void AFGVehicle::StopIsLookedAtForDismantle_Implementation(AFGCharacterPlayer* byCharacter){ }
 void AFGVehicle::GetChildDismantleActors_Implementation(TArray< AActor* >& out_ChildDismantleActors) const{ }
+TSubclassOf< class UFGItemDescriptor > AFGVehicle::GetBuiltWithDescriptor() const{ return TSubclassOf<class UFGItemDescriptor>(); }
 bool AFGVehicle::CanBeSampled(){ return bool(); }
 USkeletalMeshComponent* AFGVehicle::GetMesh() const{ return nullptr; }
 bool AFGVehicle::DriverEnter( AFGCharacterPlayer* driver){ return bool(); }
@@ -60,7 +61,7 @@ void AFGVehicle::ApplyMeshPrimitiveData(const FFactoryCustomizationData& customi
 void AFGVehicle::ApplySkinData(TSubclassOf< UFGFactoryCustomizationDescriptor_Skin > newSkinDesc){ }
 TSubclassOf< class UFGFactoryCustomizationDescriptor_Swatch > AFGVehicle::GetDefaultSwatchCustomizationOverride(UObject* worldContext){ return TSubclassOf<class UFGFactoryCustomizationDescriptor_Swatch>(); }
 void AFGVehicle::OnSkinCustomizationApplied_Implementation(TSubclassOf<  UFGFactoryCustomizationDescriptor_Skin > skin){ }
-FVector AFGVehicle::GetRealActorLocation() const{ return FVector(); }
+FVector AFGVehicle::GetVehicleRealActorLocation() const{ return FVector(); }
 void AFGVehicle::OnCustomizationDataApplied(const FFactoryCustomizationData& customizationData){ }
 void AFGVehicle::OnRep_IsSimulated(){ }
 void AFGVehicle::OnTakeDamage(AActor* damagedActor, float damageAmount, const  UDamageType* damageType,  AController* instigatedBy, AActor* damageCauser){ }

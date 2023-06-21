@@ -4,14 +4,7 @@
 
 bool FMessageDialogue::HasMoreSubtitlesToShow() const{ return bool(); }
 FMessageSubtitle FMessageDialogue::PopNextSubtitle(float subtitleTimeMultiplier){ return FMessageSubtitle(); }
-bool FPendingMessageQueue::HasUnplayedMessages(){ return bool(); }
-bool FPendingMessageQueue::ContainsAudioMessages(){ return bool(); }
-FPendingMessage FPendingMessageQueue::PopPendingMessage(){ return FPendingMessage(); }
-#if WITH_EDITOR
-void UFGAudioMessage::MigrateDialogueData(){ }
-#endif 
 UFGAudioMessage::UFGAudioMessage(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
-void UFGAudioMessage::PostLoad(){ Super::PostLoad(); }
 void UFGAudioMessage::NativeConstruct(){ }
 void UFGAudioMessage::NativeDestruct(){ }
 void UFGAudioMessage::StartPlayback(){ }
@@ -23,3 +16,4 @@ void UFGAudioMessage::CancelPlayback(){ }
 void UFGAudioMessage::FinishPlayback(){ }
 FAudioSubtitlePair UFGAudioMessage::GetCurrentDialogue(){ return FAudioSubtitlePair(); }
 EMessagePriorityType UFGAudioMessage::GetMessagePriorityType(TSubclassOf< UFGAudioMessage > message, UObject* worldContext){ return EMessagePriorityType(); }
+void UFGAudioMessage::InitMessage( UFGMessage* message){ }

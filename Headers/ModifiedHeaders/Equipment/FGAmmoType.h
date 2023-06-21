@@ -169,6 +169,9 @@ public:
 	UFUNCTION( BlueprintPure, Category="Ammunition")
 	FORCEINLINE TArray<FSkeletalMaterial> GetMagazineMaterials() const { return mMagazineMeshMaterials; }
 
+	UFUNCTION( BlueprintPure, Category="Ammunition")
+	TArray< UMaterialInstance* > GetMagazineMaterials1p() const { return mMagazineMeshMaterials1p; }
+
 	UFUNCTION( BlueprintPure, Category="Ammunition" )
 	FORCEINLINE float GetMaxAmmoEffectiveRange() const { return mMaxAmmoEffectiveRange; }
 
@@ -183,6 +186,9 @@ public:
 
 	UFUNCTION( BlueprintPure, Category = "Ammunition|FX" )
 	FORCEINLINE TArray<UAkAudioEvent*> GetFiringSounds() const { return mFiringSounds; }
+
+	UFUNCTION( BlueprintPure, Category = "Ammunition|FX" )
+	FORCEINLINE TArray<UAkAudioEvent*> GetFiringSounds1P() const { return mFiringSounds1P; }
 
 	/** Returns reload time multiplier in percent (1 = 100%, 0.5 = 50% time) */
 	UFUNCTION( BlueprintPure, Category="Ammunition|Modifiers" )
@@ -294,7 +300,10 @@ private:
 	UPROPERTY( EditDefaultsOnly, EditFixedSize, Category = "Item" )
 	TArray<FSkeletalMaterial> mMagazineMeshMaterials;
 
-	UPROPERTY( SaveGame, EditDefaultsOnly, Instanced, Category = "Ammunition|Damage" )
+	UPROPERTY( EditDefaultsOnly, Category="Item" )
+	TArray<UMaterialInstance* > mMagazineMeshMaterials1p;
+
+	UPROPERTY( EditDefaultsOnly, Instanced, Category = "Ammunition|Damage" )
 	TArray<  UFGDamageType*  > mDamageTypesOnImpact;
 
 	/** The noise to make when we fire the weapon. */
@@ -303,7 +312,7 @@ private:
 
 	/** Horizontal axis drives the damage falloff between 0-1 (1 = max effective range).
 	 * Up axis controls how much damage attenuation/amplification we get at said distance.*/
-	UPROPERTY( SaveGame, EditDefaultsOnly, Category="Ammunition|Damage" )
+	UPROPERTY( EditDefaultsOnly, Category="Ammunition|Damage" )
 	FRuntimeFloatCurve mAmmoDamageFalloff;
 
 	UPROPERTY( EditDefaultsOnly, Category = "Ammunition|FX" )
@@ -314,6 +323,9 @@ private:
 
 	UPROPERTY( EditDefaultsOnly, Category = "Ammunition|FX" )
 	TArray<UAkAudioEvent*> mFiringSounds;
+
+	UPROPERTY( EditDefaultsOnly, Category = "Ammunition|FX" )
+	TArray<UAkAudioEvent*> mFiringSounds1P;
 
 	/** To set the color of a spawned ammo type. */
 	UPROPERTY( EditDefaultsOnly, Category = "Ammunition|FX" )

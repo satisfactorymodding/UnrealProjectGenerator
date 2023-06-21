@@ -48,22 +48,18 @@ enum class ERailroadBlockReservationType : uint8
  */
 enum class ERailroadPathOverlap : int8
 {
-	RPO_None						= 0x00,
-	RPO_PathInSameDirection			= 0x01,
-	RPO_PathInOppositeDirection		= 0x02,
-	RPO_PathOnNeighboringTrack		= 0x04, //@todo-signals See comment about how to handle forks, is this higher or lower than RPO_PathInSameDirection? Higher, a train cannot start on the path (safer), lower and the train can potentially start the path if other segments are not opposing?
-	RPO_OccupiedNeighboringTrack	= 0x08,
-	RPO_OccupiedTrack				= 0x10,
-	RPO_ExclusiveTrack				= 0x20,
-	RPO_Max							= 0x40
+	RPO_None                            = 0x00,
+	RPO_ReservationInSameDirection      = 0x01,
+	RPO_ReservationInOppositeDirection  = 0x02,
+	//@todo-signals See comment about how to handle forks, is this higher or lower than RPO_PathInSameDirection? Higher, a train cannot start on the path (safer), lower and the train can potentially start the path if other segments are not opposing?
+	//@todo-signals How will two track merging into one right before a signal work in the new system? This will only cause RPO_ReservationOnOverlappingTrack. 
+	RPO_ReservationOnOverlappingTrack   = 0x04,
+	RPO_ExclusiveReservation            = 0x08,
+	RPO_Max                             = 0x10
 };
 inline ERailroadPathOverlap operator|( ERailroadPathOverlap a, ERailroadPathOverlap b ) { return static_cast< ERailroadPathOverlap >( static_cast< int8 >( a ) | static_cast< int8 >( b ) ); }
 inline ERailroadPathOverlap& operator|=( ERailroadPathOverlap& a, ERailroadPathOverlap b ) { return reinterpret_cast< ERailroadPathOverlap& >( reinterpret_cast< int8& >( a ) |= static_cast< int8 >( b ) ); }
 inline ERailroadPathOverlap operator&( ERailroadPathOverlap a, ERailroadPathOverlap b ) { return static_cast< ERailroadPathOverlap >( static_cast< int8 >( a ) & static_cast< int8 >( b ) ); }
-inline ERailroadPathOverlap operator>=( ERailroadPathOverlap a, ERailroadPathOverlap b ) { return static_cast< ERailroadPathOverlap >( static_cast< int8 >( a ) >= static_cast< int8 >( b ) ); }
-inline ERailroadPathOverlap operator>( ERailroadPathOverlap a, ERailroadPathOverlap b ) { return static_cast< ERailroadPathOverlap >( static_cast< int8 >( a ) >= static_cast< int8 >( b ) ); }
-// For logging only.
-FString RailroadPathOverlapToString( ERailroadPathOverlap flags );
 
 /**
  * Lets us keep track of segments and their direction so we can allow reservations in the same direction but not in opposite directions, this is to avoid deadlock situations.
@@ -124,13 +120,9 @@ public:
 	/**
 	 * Priority of this request compared to other requests in the same block.
 	 * Higher number is higher priority.
-	 * -1: Uninitialized, and lowest priority possible.
-	 * 0: Is the lowest that should be set from outside code.
+	 * 0: Is the lowest that should be set from code.
 	 */
-	int32 Priority = -1;
-
-	/** Position of this reservation in the approval queue, lower number is served first. */
-	int8 QueuePosition = INDEX_NONE;
+	int32 Priority = 0;
 	
 	/** Information about the block from the last update. */
 	ERailroadPathOverlap Overlap;
@@ -171,6 +163,9 @@ public:
 	 * Not a guarded pointer as the reservations are cleared if a track is dismantled.
 	 */
 	TSet< class AFGBuildableRailroadTrack* > OverlappingTracks;
+
+	/** All the trains we depend on. */
+	TSet< TWeakObjectPtr< class AFGTrain > > TrainDependencies;
 };
 
 
@@ -251,11 +246,13 @@ private:
 
 	// Helpers, see block reservation class for more details, just don't pass a null reservation.
 	void UpdateReservation( FFGRailroadBlockReservation* reservation );
+	void UpdateDependencies( FFGRailroadBlockReservation* reservation );
+	void UpdateOverlaps( FFGRailroadBlockReservation* reservation );
 	void ApproveReservation( FFGRailroadBlockReservation* reservation );
 	void CancelReservation( FFGRailroadBlockReservation* reservation );
 	void NotifyEnteredReservation( FFGRailroadBlockReservation* reservation );
 
-	/** Return true if this train have an approved reservation inside this block. */
+	/** @return true if this train have an approved reservation inside this block. */
 	bool HasApprovedReservation( const class AFGTrain* train ) const;
 
 public:
@@ -298,29 +295,21 @@ inline FString RailroadPathOverlapToString( ERailroadPathOverlap flags )
 {
 	FString result;
 
-	if( ( flags & ERailroadPathOverlap::RPO_PathInSameDirection ) != ERailroadPathOverlap::RPO_None )
+	if( ( flags & ERailroadPathOverlap::RPO_ReservationInSameDirection ) != ERailroadPathOverlap::RPO_None )
 	{
-		result += TEXT( "PathInSameDirection, " );
+		result += TEXT( "ReservationInSameDirection, " );
 	}
-	if( ( flags & ERailroadPathOverlap::RPO_PathInOppositeDirection ) != ERailroadPathOverlap::RPO_None )
+	if( ( flags & ERailroadPathOverlap::RPO_ReservationInOppositeDirection ) != ERailroadPathOverlap::RPO_None )
 	{
-		result += TEXT( "PathInOppositeDirection, " );
+		result += TEXT( "ReservationInOppositeDirection, " );
 	}
-	if( ( flags & ERailroadPathOverlap::RPO_PathOnNeighboringTrack ) != ERailroadPathOverlap::RPO_None )
+	if( ( flags & ERailroadPathOverlap::RPO_ReservationOnOverlappingTrack ) != ERailroadPathOverlap::RPO_None )
 	{
-		result += TEXT( "PathOnNeighboringTrack, " );
+		result += TEXT( "ReservationOnOverlappingTrack, " );
 	}
-	if( ( flags & ERailroadPathOverlap::RPO_OccupiedNeighboringTrack ) != ERailroadPathOverlap::RPO_None )
+	if( ( flags & ERailroadPathOverlap::RPO_ExclusiveReservation ) != ERailroadPathOverlap::RPO_None )
 	{
-		result += TEXT( "OccupiedNeighboringTrack, " );
-	}
-	if( ( flags & ERailroadPathOverlap::RPO_OccupiedTrack ) != ERailroadPathOverlap::RPO_None )
-	{
-		result += TEXT( "OccupiedTrack, " );
-	}
-	if( ( flags & ERailroadPathOverlap::RPO_ExclusiveTrack ) != ERailroadPathOverlap::RPO_None )
-	{
-		result += TEXT( "ExclusiveTrack, " );
+		result += TEXT( "ExclusiveReservation, " );
 	}
 
 	result.RemoveFromEnd( TEXT( ", " ) );

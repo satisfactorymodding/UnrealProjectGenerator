@@ -2,10 +2,15 @@
 
 #include "FGBuildableStorage.h"
 
+#if WITH_EDITOR
+void AFGBuildableStorage::Factory_Tick(float dt){ }
+#endif 
+#if WITH_EDITOR
+#endif 
 void AFGBuildableStorage::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 AFGBuildableStorage::AFGBuildableStorage(){ }
 void AFGBuildableStorage::BeginPlay(){ }
-void AFGBuildableStorage::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund) const{ }
+void AFGBuildableStorage::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund, bool noBuildCostEnabled) const{ }
 void AFGBuildableStorage::OnReplicationDetailActorRemoved(){ }
 void AFGBuildableStorage::Factory_CollectInput_Implementation(){ }
 void AFGBuildableStorage::OnRep_ReplicationDetailActor(){ }

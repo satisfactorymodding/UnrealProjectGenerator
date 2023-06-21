@@ -4,7 +4,7 @@
 
 #include "FGHologramGraphAStar.h"
 #include "Components/SplineComponent.h"
-#include "Stats.h"
+#include "CoreMinimal.h"
 
 DECLARE_STATS_GROUP( TEXT( "Hologram Helpers" ), STATGROUP_HologramHelpers, STATCAT_Advanced );
 
@@ -38,12 +38,12 @@ struct FACTORYGAME_API FHologramHelpers
 	/**
 	 * Calculate a poles height given a hit result and the poles location.
 	 */
-	static float CalcPoleHeight( const struct FHitResult& aimResult, const struct FVector& poleLocation );
+	static float CalcPoleHeight( const struct FHitResult& aimResult, const FVector& poleLocation );
 
 	/**
 	 * Calculate a poles height given a hit result and the poles location while also calculating the poles horizontal offset angle from the rays forward direction
 	 */
-	static float CalcPoleHeightAndHorisontalOffset(float& out_horisontalOffset, const struct FHitResult& aimResult, const struct FVector& poleLocation );
+	static float CalcPoleHeightAndHorisontalOffset(float& out_horisontalOffset, const struct FHitResult& aimResult, const FVector& poleLocation );
 	
 	/** Duplicate a component for the hologram. */
 	template< class ComponentType >

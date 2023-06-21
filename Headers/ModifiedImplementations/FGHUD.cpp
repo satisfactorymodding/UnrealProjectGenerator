@@ -9,7 +9,6 @@ AFGHUD::AFGHUD(){ }
 void AFGHUD::PostInitializeComponents(){ Super::PostInitializeComponents(); }
 void AFGHUD::BeginPlay(){ }
 void AFGHUD::EndPlay(const EEndPlayReason::Type endPlayReason){ }
-void AFGHUD::DrawHUD(){ }
 void AFGHUD::AddPawnHUD(TSubclassOf<class UUserWidget> widgetClass, APawn* pawn){ }
 void AFGHUD::ShowRespawnUI(){ }
 void AFGHUD::CloseRespawnUI(){ }
@@ -17,18 +16,14 @@ UFGInteractWidget* AFGHUD::RequestInteractWidget(TSubclassOf<  UFGInteractWidget
 UUserWidget* AFGHUD::RequestWidget(TSubclassOf< UUserWidget > widgetClass){ return nullptr; }
 void AFGHUD::ReleaseWidget(UUserWidget* widgetToRelease){ }
 void AFGHUD::ShowDebugInfo(float& YL, float& YPos){ }
-void AFGHUD::SetPreviewActorClass(TSubclassOf<AActor> actorClass){ }
-void AFGHUD::SetPreviewDistance(float previewDistance){ }
-void AFGHUD::SetPreviewView(const FItemView& view){ }
-UTextureRenderTarget2D* AFGHUD::GetPreviewTexture() const{ return nullptr; }
-void AFGHUD::BeginPreviewActor(){ }
-void AFGHUD::EndPreviewActor(){ }
+void AFGHUD::SetShowCrossHair(bool showCrosshair){ }
+void AFGHUD::SetForceHideCrossHair(bool forceHide){ }
 void AFGHUD::SetPumpiMode(bool hideHUD){ }
 void AFGHUD::SetPartialPumpiMode(bool hideHUD){ }
 void AFGHUD::SetHiddenHUDMode(bool hideHUD){ }
 void AFGHUD::SetHUDVisibility(bool hudVisibility){ }
+void AFGHUD::SetCrosshairState(ECrosshairState crosshairState){ }
 void AFGHUD::UpdateCrosshairState_Implementation( AFGCharacterPlayer* player){ }
 void AFGHUD::UpdateCrosshairColorState_Implementation(const FLinearColor& newColor){ }
 void AFGHUD::SetCrustomCrosshairTexture_Implementation(UTexture2D* newTexture){ }
-void AFGHUD::SetupActorPreview(){ }
-USceneComponent* AFGHUD::CreatePreviewComponent( USceneComponent* attachParent,  UActorComponent* componentTemplate, const FName& componentName){ return nullptr; }
+void AFGHUD::UpdateCrosshair(){ }

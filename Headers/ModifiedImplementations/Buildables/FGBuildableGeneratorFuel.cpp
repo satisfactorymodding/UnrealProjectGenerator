@@ -9,7 +9,7 @@ void AFGBuildableGeneratorFuel::BeginPlay(){ }
 void AFGBuildableGeneratorFuel::PostLoad(){ Super::PostLoad(); }
 void AFGBuildableGeneratorFuel::Factory_Tick(float dt){ }
 void AFGBuildableGeneratorFuel::OnReplicationDetailActorRemoved(){ }
-void AFGBuildableGeneratorFuel::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund) const{ }
+void AFGBuildableGeneratorFuel::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund, bool noBuildCostEnabled) const{ }
 bool AFGBuildableGeneratorFuel::IsValidFuel(TSubclassOf<  UFGItemDescriptor > resource) const{ return bool(); }
 bool AFGBuildableGeneratorFuel::IsValidSupplementalResource(TSubclassOf<  UFGItemDescriptor > resource) const{ return bool(); }
 bool AFGBuildableGeneratorFuel::HasFuel() const{ return bool(); }

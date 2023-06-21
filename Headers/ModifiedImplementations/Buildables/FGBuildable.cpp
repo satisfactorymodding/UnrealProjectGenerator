@@ -64,7 +64,7 @@ void AFGBuildable::EnablePrimaryTickFunctions(bool enable){ }
 void AFGBuildable::TickFactory(float dt, ELevelTick TickType){ }
 void AFGBuildable::Factory_Tick(float dt){ }
 bool AFGBuildable::CanDismantle_Implementation() const{ return bool(); }
-void AFGBuildable::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund) const{ }
+void AFGBuildable::GetDismantleRefund_Implementation(TArray< FInventoryStack >& out_refund, bool noBuildCostEnabled) const{ }
 FVector AFGBuildable::GetRefundSpawnLocationAndArea_Implementation(const FVector& aimHitLocation, float& out_radius) const{ return FVector(); }
 void AFGBuildable::PreUpgrade_Implementation(){ }
 void AFGBuildable::Upgrade_Implementation(AActor* newActor){ }
@@ -97,8 +97,6 @@ void AFGBuildable::PlayDismantleEffects_Implementation(){ }
 void AFGBuildable::OnDismantleEffectFinished(){ }
 UFGMaterialEffect_Build* AFGBuildable::GetActiveBuildEffect(){ return nullptr; }
 bool AFGBuildable::CanBeSampled_Implementation() const{ return bool(); }
-void AFGBuildable::ShowHighlightEffect(){ }
-void AFGBuildable::RemoveHighlightEffect(){ }
 void AFGBuildable::SetHiddenIngameAndHideInstancedMeshes(bool hide){ }
 TSubclassOf< AFGBuildable > AFGBuildable::GetBuildableClassFromRecipe(TSubclassOf<  UFGRecipe > inRecipe){ return TSubclassOf<AFGBuildable>(); }
 UFGClearanceComponent* AFGBuildable::GetClearanceComponent(){ return nullptr; }
@@ -118,7 +116,9 @@ void AFGBuildable::SetInsideBlueprintDesigner( AFGBuildableBlueprintDesigner* de
 AFGBuildableBlueprintDesigner* AFGBuildable::GetBlueprintDesigner(){ return nullptr; }
 void AFGBuildable::PreSerializedToBlueprint(){ }
 void AFGBuildable::PostSerializedToBlueprint(){ }
-void AFGBuildable::PostSerializedFromBlueprint(){ }
+void AFGBuildable::PostSerializedFromBlueprint(bool isBlueprintWorld){ }
+TSoftClassPtr< UFGMaterialEffect_Build > AFGBuildable::GetBuildEffectTemplate_Implementation() const{ return TSoftClassPtr<UFGMaterialEffect_Build>(); }
+TSoftClassPtr< UFGMaterialEffect_Build > AFGBuildable::GetDismantleEffectTemplate_Implementation() const{ return TSoftClassPtr<UFGMaterialEffect_Build>(); }
 void AFGBuildable::OnSkinCustomizationApplied_Implementation(TSubclassOf<  UFGFactoryCustomizationDescriptor_Skin > skin){ }
 void AFGBuildable::PlayConstructSound_Implementation(){ }
 void AFGBuildable::PlayDismantleSound_Implementation(){ }
@@ -136,7 +136,6 @@ void AFGBuildable::GetDismantleInventoryReturns(TArray< FInventoryStack >& out_r
 void AFGBuildable::TogglePendingDismantleMaterial(bool enabled){ }
 void AFGBuildable::ApplySkinData(TSubclassOf< UFGFactoryCustomizationDescriptor_Skin > newSkinDesc){ }
 void AFGBuildable::ApplyMeshPrimitiveData(const FFactoryCustomizationData& customizationData){ }
-void AFGBuildable::SetDidFirstTimeUse(bool didUse){ }
 TArray< UStaticMeshComponent* > AFGBuildable::CreateBuildEffectProxyComponents(){ return TArray<UStaticMeshComponent*>(); }
 void AFGBuildable::DestroyBuildEffectProxyComponents(){ }
 void AFGBuildable::OnRep_CustomizationData(){ }
@@ -148,7 +147,6 @@ void AFGBuildable::ForceUpdateCustomizerMaterialToRecipeMapping(bool bTryToSave)
 void AFGBuildable::CreateFactoryStatID() const{ }
 void AFGBuildable::SetReplicateDetails(bool replicateDetails){ }
 bool AFGBuildable::CheckFactoryConnectionComponents(FString& out_message){ return bool(); }
-void AFGBuildable::OnRep_DidFirstTimeUse(){ }
 void AFGBuildable::OnRep_LightweightTransform(){ }
 FOnReplicationDetailActorStateChange AFGBuildable::OnBuildableReplicationDetailActorStateChange = FOnReplicationDetailActorStateChange();
 FOnRegisteredPlayerChanged AFGBuildable::OnRegisterPlayerChange = FOnRegisteredPlayerChanged();

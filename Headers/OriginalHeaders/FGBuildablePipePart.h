@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "FGBuildableFactory.h"
+#include "FGPipeHyperAttachmentSnapTargetInterface.h"
 #include "FGPipeHyperInterface.h"
 #include "FGBuildablePipePart.generated.h"
 
@@ -71,16 +72,7 @@ public:
 };
 
 UCLASS()
-class FACTORYGAME_API AFGBuildablePipeHyperPart : public AFGBuildablePipePart, public IFGPipeHyperInterface
+class FACTORYGAME_API AFGBuildablePipeHyperPart : public AFGBuildablePipePart, public IFGPipeHyperAttachmentSnapTargetInterface
 {
 	GENERATED_BODY()
-	public:
-	
-
-	// Begin FGHyperTube Interface
-	virtual float GetPipeProgressOfConnection_Implementation( const UFGPipeConnectionComponentBase* connectionEnteredThrough ) override;
-	virtual void OnPipeMove_Implementation( UFGCharacterMovementComponent* charMove, float deltaTime ) override;
-	virtual bool OnPipeEnter_Implementation( UFGCharacterMovementComponent* charMove, const UFGPipeConnectionComponentBase* connectionEnteredThrough = nullptr, const AActor* fromPipe = nullptr ) override;
-	// End FGHyperTube Interface
-
 };

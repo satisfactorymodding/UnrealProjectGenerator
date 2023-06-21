@@ -5,19 +5,13 @@
 #include "Components/SplineComponent.h"
 #include "FGRailroadTrackConnectionComponent.h"
 #include "Hologram/FGRailroadTrackHologram.h"
+#include "InstancedSplineMeshComponent.h"
 
 FRailroadTrackPosition::FRailroadTrackPosition(){ }
 FRailroadTrackPosition::FRailroadTrackPosition( AFGBuildableRailroadTrack* track, float offset, float forward){ }
 FRailroadTrackPosition::FRailroadTrackPosition(const FRailroadTrackPosition& position){ }
 FRailroadTrackPosition::~FRailroadTrackPosition(){ }
-bool FRailroadTrackPosition::Serialize(FArchive& ar) {
-	if (ar.ArIsSaveGame) {
-		ar << Offset;
-		ar << Forward;
-	}
-
-	return true;
-}
+bool FRailroadTrackPosition::Serialize(FArchive& ar){ return bool(); }
 void FRailroadTrackPosition::GetWorldLocationAndDirection(FVector& out_location, FVector& out_direction) const{ }
 float FRailroadTrackPosition::GetForwardOffset() const{ return float(); }
 float FRailroadTrackPosition::GetReverseOffset() const{ return float(); }
@@ -30,6 +24,7 @@ AFGBuildableRailroadTrack::AFGBuildableRailroadTrack() : Super() {
 	this->mMesh = nullptr;
 	this->mMeshLength = 0.0;
 	this->mSplineComponent = CreateDefaultSubobject<USplineComponent>(TEXT("SplineComponent"));
+	this->mInstancedSplineMesh = CreateDefaultSubobject<UInstancedSplineMeshComponent>(TEXT("InstancedSplineMesh"));
 	this->mConnections.Add(CreateDefaultSubobject<UFGRailroadTrackConnectionComponent>(TEXT("TrackConnection0")));
 	this->mConnections.Add(CreateDefaultSubobject<UFGRailroadTrackConnectionComponent>(TEXT("TrackConnection1")));
 	this->mIsOwnedByPlatform = false;
@@ -37,6 +32,7 @@ AFGBuildableRailroadTrack::AFGBuildableRailroadTrack() : Super() {
 	this->mBlockVisualizationMesh = nullptr;
 	this->mHologramClass = AFGRailroadTrackHologram::StaticClass();
 	this->mSplineComponent->SetupAttachment(RootComponent);
+	this->mInstancedSplineMesh->SetupAttachment(RootComponent);
 	this->mConnections[0]->SetupAttachment(RootComponent);
 	this->mConnections[1]->SetupAttachment(RootComponent);
 }
@@ -61,6 +57,8 @@ bool AFGBuildableRailroadTrack::IsConnectionOccupied(const  UFGRailroadTrackConn
 bool AFGBuildableRailroadTrack::UpdateOverlappingTracks(){ return bool(); }
 TArray< AFGBuildableRailroadTrack* > AFGBuildableRailroadTrack::GetOverlappingTracks(){ return TArray<AFGBuildableRailroadTrack*>(); }
 void AFGBuildableRailroadTrack::AddOverlappingTrack(AFGBuildableRailroadTrack* track){ }
+void AFGBuildableRailroadTrack::SetupConnections(){ }
+void AFGBuildableRailroadTrack::PostSerializedFromBlueprint(bool isBlueprintWorld){ }
 void AFGBuildableRailroadTrack::SetTrackGraphID(int32 trackGraphID){ }
 void AFGBuildableRailroadTrack::SetSignalBlock(TWeakPtr< FFGRailroadSignalBlock > block){ }
 void AFGBuildableRailroadTrack::OnRep_SignalBlockID(){ }

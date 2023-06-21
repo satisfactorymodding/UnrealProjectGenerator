@@ -6,7 +6,7 @@ AFGWaterPumpHologram::AFGWaterPumpHologram(){ }
 void AFGWaterPumpHologram::BeginPlay(){ }
 bool AFGWaterPumpHologram::IsValidHitResult(const FHitResult& hitResult) const{ return bool(); }
 void AFGWaterPumpHologram::CheckValidPlacement(){ }
-void AFGWaterPumpHologram::PostHologramPlacement(){ }
+void AFGWaterPumpHologram::PostHologramPlacement(const FHitResult& hitResult){ }
 bool AFGWaterPumpHologram::TrySnapToActor(const FHitResult& hitResult){ return bool(); }
 void AFGWaterPumpHologram::TrySnapToExtractableResource(const FHitResult& hitResult, FVector& newHitLocation){ }
 void AFGWaterPumpHologram::SetHologramLocationAndRotation(const FHitResult& hitResult){ }

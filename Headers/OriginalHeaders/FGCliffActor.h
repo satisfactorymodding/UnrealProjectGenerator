@@ -67,7 +67,7 @@ public:
 	FORCEINLINE bool IsSignificant() const { return mIsSignificant; }
 	
 private:
-	UPROPERTY()
+	UPROPERTY(EditInstanceOnly, meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* mMeshComponent;
 	
 	//TArray<FAsyncTask<class FFGAsyncCliffGrassBuilderTask>*> mAsyncTasks;
@@ -99,6 +99,9 @@ public:
 	UFUNCTION( BlueprintCallable )
 	static void ConvertStaticMeshActorToOnTopMesh( AActor* SelectedActor, FString& ResultMsg );
 
+	UFUNCTION( BlueprintCallable )
+	static void UpdateAssociatedCliffActorsAndReParent();
+
 	UFUNCTION( CallInEditor, Category = "Debug")
 	void DebugSpawn();
 
@@ -106,9 +109,8 @@ public:
 	void ClearDebugSpawn();
 
 	UFUNCTION( CallInEditor, Category = "Debug")
-	void ForceUpdateMeshCPUAccess();
+	void ForceUpdateMeshCPUAccess();	
 	
-
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
 #endif	
 };
@@ -127,8 +129,9 @@ struct FFGCliffGrassWorker
 	UFoliageType* mFoliageType;
 	TWeakObjectPtr<class UHierarchicalInstancedStaticMeshComponent> mInstanceComponent;
 	TArray<uint32> mCachedIndices;
-	TArray<FVector> mCachedVerts;
+	TArray<FVector3f> mCachedVerts;
 	float mFoliageTypesDensityMultiplier;
+	TArray<FInstancedStaticMeshInstanceData> mInstanceData;
 	/* Output */
 	FStaticMeshInstanceData InstanceBuffer;
 	TArray<struct FClusterNode> ClusterTree;

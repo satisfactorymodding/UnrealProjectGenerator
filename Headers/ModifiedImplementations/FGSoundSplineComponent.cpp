@@ -2,7 +2,7 @@
 
 #include "FGSoundSplineComponent.h"
 
-UFGSoundSplineComponent::UFGSoundSplineComponent(){ }
+UFGSoundSplineComponent::UFGSoundSplineComponent(const  FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
 void UFGSoundSplineComponent::Activate(bool reset){ }
 void UFGSoundSplineComponent::SetAutoActivate(bool newAutoActivate){ }
 void UFGSoundSplineComponent::SetEmitterInterval(float newEmitterInterval){ }

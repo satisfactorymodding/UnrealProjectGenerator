@@ -83,8 +83,13 @@ public:
 	/** Get the height for this lift. */
 	float GetHeight() const { return FMath::Abs( mTopTransform.GetTranslation().Z ); }
 
+	virtual void BuildStaticItemInstances() override;
+
 	/** Overrided as conveyor lifts lack primitives so they never recieve this otherwise */
 	virtual float GetLastRenderTime() const override;
+
+	// Setup the connection locations
+	void SetupConnections();
 
 	void DestroyVisualItems();
 
@@ -101,6 +106,8 @@ public:
 	UFGBuildableConveyorLiftSparseData* mConveyorLiftSparesDataCDO;
 	
 	FORCEINLINE const UFGBuildableConveyorLiftSparseData* GetConveyorLiftSparesData() const { return mConveyorLiftSparesDataCDO; }
+
+	virtual void PostSerializedFromBlueprint(bool isBlueprintWorld) override;
 	
 protected:
 	// Begin AFGBuildableConveyorBase interface
@@ -205,6 +212,16 @@ private:
 	inline static const FName FOG_PLANE_1 = FName( TEXT( "FogPlane1" ) );
 };
 
+inline void AFGBuildableConveyorLift::PostSerializedFromBlueprint( bool isBlueprintWorld )
+{
+	Super::PostSerializedFromBlueprint( isBlueprintWorld );
+
+	if( isBlueprintWorld )
+	{
+		SetupConnections();
+	}
+}
+
 /**
  * Templated function implementations.
  */
@@ -220,7 +237,7 @@ void AFGBuildableConveyorLift::BuildStaticMeshes( USceneComponent* parent, const
 	float totalPassthroughHeight = heightOfTopPassthrough + heightOfBottomPassthrough;
 
 	const float height = FMath::Abs( endTransform.GetTranslation().Z ) - ( totalPassthroughHeight / 2.f );
-	const float stepDir = FMath::FloatSelect( endTransform.GetTranslation().Z, 1.f, -1.f );
+	const float stepDir = FMath::FloatSelect( endTransform.GetTranslation().Z, 1., -1. );
 	const bool isReversed = stepDir < 0.f;
 	int32 numMeshes = FMath::Max( 1, FMath::RoundToInt( height / stepHeight ) + (bHasPassthrough ? 0 : 1) );
 

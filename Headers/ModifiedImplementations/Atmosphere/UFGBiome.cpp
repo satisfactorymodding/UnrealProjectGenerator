@@ -3,3 +3,4 @@
 #include "UFGBiome.h"
 
 UFGBiome::UFGBiome(){ }
+void UFGBiome::Serialize(FArchive& Ar){ Super::Serialize(Ar); }

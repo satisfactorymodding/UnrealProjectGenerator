@@ -3,10 +3,6 @@
 #include "FGPortableMinerDispenser.h"
 
 AFGPortableMinerDispenser::AFGPortableMinerDispenser(){ }
-void AFGPortableMinerDispenser::Tick(float DeltaSeconds){ }
 void AFGPortableMinerDispenser::BeginPlay(){ }
 void AFGPortableMinerDispenser::SetMaterial( UMaterialInterface* material){ }
-void AFGPortableMinerDispenser::OnPrimaryFirePressed(){ }
-void AFGPortableMinerDispenser::Server_PrimaryFire_Implementation(){ }
-bool AFGPortableMinerDispenser::Server_PrimaryFire_Validate(){ return bool(); }
-void AFGPortableMinerDispenser::AddEquipmentActionBindings(){ }
+void AFGPortableMinerDispenser::HandleDefaultEquipmentActionEvent(EDefaultEquipmentAction action, EDefaultEquipmentActionEvent actionEvent){ }

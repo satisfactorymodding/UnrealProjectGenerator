@@ -40,6 +40,8 @@ public:
 	UFUNCTION( Exec )
 	void ToggleOptionsDebugOverlay();
 	UFUNCTION( Exec )
+	void ToggleAdvancedGameSettingsDebugOverlay();
+	UFUNCTION( Exec )
 	void ToggleStatisticsDebugOverlay();
 	UFUNCTION( Exec )
 	void ToggleShoppingListDebugOverlay();

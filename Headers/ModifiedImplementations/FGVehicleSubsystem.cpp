@@ -12,8 +12,6 @@ int AFGVehicleSubsystem::GetDebugTextLevel(){ return int(); }
 void AFGVehicleSubsystem::SetDebugTextLevel(int level){ }
 int AFGVehicleSubsystem::GetVehicleDeadlocksDebug(){ return int(); }
 void AFGVehicleSubsystem::SetVehicleDeadlocksDebug(int level){ }
-int AFGVehicleSubsystem::GetVehicleLevelCacheDebug(){ return int(); }
-void AFGVehicleSubsystem::VehicleLevelCacheDebug(int level){ }
 #endif 
 #if DEBUG_SELF_DRIVING
 #endif 
@@ -56,12 +54,6 @@ void AFGVehicleSubsystem::ResetBeingTheChosenWheeledVehicle(const  AFGWheeledVeh
 void AFGVehicleSubsystem::RemoveDeadlock(int deadlockId){ }
 void AFGVehicleSubsystem::ResetAllDeadlocks(){ }
 void AFGVehicleSubsystem::JoinDeadlock(int deadlockId,  AFGWheeledVehicleInfo* vehicle){ }
-bool AFGVehicleSubsystem::FindSurroundingLevels(const FVector& location, TArray< TileLevelData* >& surroundingTiles, TArray< CaveLevelData* >& surroundingCaves){ return bool(); }
-void AFGVehicleSubsystem::BuildLevelCache(){ }
-void AFGVehicleSubsystem::DrawLevelCacheDebug(){ }
-void AFGVehicleSubsystem::DrawLevelDebug(const FString& name, const FBox& bounds, FColor color){ }
-void AFGVehicleSubsystem::OnLevelAddedToWorld(ULevel* level, UWorld* world){ }
-void AFGVehicleSubsystem::OnLevelRemovedFromWorld(ULevel* level, UWorld* world){ }
 void AFGVehicleSubsystem::AddHardDeadlock(int deadlockId, const WheeledVehicleDeadlock& deadlock){ }
 void AFGVehicleSubsystem::SanitizeDeadlocks(){ }
 void AFGVehicleSubsystem::DetectDeadlocks(){ }

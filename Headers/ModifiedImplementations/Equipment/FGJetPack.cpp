@@ -8,8 +8,6 @@ bool AFGJetPack::ShouldSaveState() const{ return bool(); }
 void AFGJetPack::DisableEquipment(){ }
 void AFGJetPack::SetIsThrusting(const bool newIsThrusting){ }
 float AFGJetPack::GetNewVelocityWhenThrusting(const float delta) const{ return float(); }
-void AFGJetPack::JetPackThrust(){ }
-void AFGJetPack::JetPackStopThrust(){ }
 void AFGJetPack::GetSupportedConsumableTypes(TArray<TSubclassOf< UFGItemDescriptor >>& out_itemDescriptors) const{ }
 int AFGJetPack::GetSelectedConsumableTypeIndex() const{ return int(); }
 void AFGJetPack::SetSelectedConsumableTypeIndex(const int selectedIndex){ }
@@ -17,11 +15,13 @@ void AFGJetPack::AddEquipmentActionBindings(){ }
 void AFGJetPack::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGJetPack::ConsumeFuel(const float delta){ }
 void AFGJetPack::RegenerateFuel(const float delta){ }
-void AFGJetPack::Equip( AFGCharacterPlayer* character){ }
+void AFGJetPack::Equip(AFGCharacterPlayer* character){ }
 void AFGJetPack::UnEquip(){ }
+void AFGJetPack::Input_Thrust(const FInputActionValue& actionValue){ }
 bool AFGJetPack::CanThrust() const{ return bool(); }
 void AFGJetPack::MakeActiveNoise(){ }
 bool AFGJetPack::CheckCurrentAvailableFuel(){ return bool(); }
+void AFGJetPack::OnInventoryChanged(TSubclassOf< UFGItemDescriptor > itemClass, int32 numAdded){ }
 void AFGJetPackAttachment::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGJetPackAttachment::OnRep_IsThrusting(){ }
 void AFGJetPackAttachment::SetIsThrusting(const bool newIsThrusting){ }

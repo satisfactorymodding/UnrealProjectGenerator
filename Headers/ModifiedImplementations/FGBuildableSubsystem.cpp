@@ -21,11 +21,12 @@ AFGBuildableSubsystem* AFGBuildableSubsystem::Get(UObject* worldContext){ return
 AFGBuildable* AFGBuildableSubsystem::BeginSpawnBuildable(TSubclassOf<  AFGBuildable > inClass, const FTransform& inTransform){ return nullptr; }
 void AFGBuildableSubsystem::AddBuildable( AFGBuildable* buildable){ }
 void AFGBuildableSubsystem::OnDesignerBuildableSpawned(AFGBuildable* buildable){ }
+void AFGBuildableSubsystem::AssignConveyorTickOrder(int32 id){ }
 void AFGBuildableSubsystem::AddConveyor(AFGBuildableConveyorBase* conveyor){ }
 AFGBuildableConveyorBase* AFGBuildableSubsystem::GetConnectedConveyorBelt( UFGFactoryConnectionComponent* connection){ return nullptr; }
 void AFGBuildableSubsystem::RemoveBuildable( AFGBuildable* buildable){ }
 void AFGBuildableSubsystem::RemoveConveyor(AFGBuildableConveyorBase* conveyor){ }
-void AFGBuildableSubsystem::RemoveConveyorFromBucket(AFGBuildableConveyorBase* conveyorToRemove){ }
+bool AFGBuildableSubsystem::RemoveConveyorFromBucket(AFGBuildableConveyorBase* conveyorToRemove){ return bool(); }
 void AFGBuildableSubsystem::RearrangeConveyorBuckets(int32 emptiedBucketID){ }
 void AFGBuildableSubsystem::RemoveAndSplitConveyorBucket(AFGBuildableConveyorBase* conveyorToRemove){ }
 bool AFGBuildableSubsystem::IsServerSubSystem() const{ return bool(); }

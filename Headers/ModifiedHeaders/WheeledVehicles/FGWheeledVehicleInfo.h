@@ -4,6 +4,7 @@
 
 #include "FGActorRepresentationInterface.h"
 #include "Animation/SkeletalMeshActor.h"
+#include "FGWheeledVehicle.h"
 #include "FGSaveInterface.h" // MODDING EDIT
 #include "WheeledVehicles/FGWheeledVehicle.h" // MODDING EDIT
 #include "FGWheeledVehicleInfo.generated.h"
@@ -40,23 +41,41 @@ public:
 	// End IFSaveInterface
 
 	// Begin IFGActorRepresentationInterface
+	UFUNCTION()
 	virtual bool AddAsRepresentation() override;
+	UFUNCTION()
 	virtual bool UpdateRepresentation() override;
+	UFUNCTION()
 	virtual bool RemoveAsRepresentation() override;
+	UFUNCTION()
 	virtual bool IsActorStatic() override;
+	UFUNCTION()
 	virtual FVector GetRealActorLocation() override;
+	UFUNCTION()
 	virtual FRotator GetRealActorRotation() override;
+	UFUNCTION()
 	virtual class UTexture2D* GetActorRepresentationTexture() override;
+	UFUNCTION()
 	virtual FText GetActorRepresentationText() override;
+	UFUNCTION()
 	virtual void SetActorRepresentationText( const FText& newText ) override;
+	UFUNCTION()
 	virtual FLinearColor GetActorRepresentationColor() override;
+	UFUNCTION()
 	virtual void SetActorRepresentationColor( FLinearColor newColor ) override;
+	UFUNCTION()
 	virtual ERepresentationType GetActorRepresentationType() override;
+	UFUNCTION()
 	virtual bool GetActorShouldShowInCompass() override;
+	UFUNCTION()
 	virtual bool GetActorShouldShowOnMap() override;
+	UFUNCTION()
 	virtual EFogOfWarRevealType GetActorFogOfWarRevealType() override;
+	UFUNCTION()
 	virtual float GetActorFogOfWarRevealRadius() override;
+	UFUNCTION()
 	virtual ECompassViewDistance GetActorCompassViewDistance() override;
+	UFUNCTION()
 	virtual void SetActorCompassViewDistance( ECompassViewDistance compassViewDistance ) override;
 	// End IFGActorRepresentationInterface
 
@@ -74,11 +93,11 @@ public:
 	/**
 	 * Initializes a few members that govern vehicle collision detection.
 	 */
-	void InitCollisionData( class UFGVehicleCollisionBoxComponent* collisionBox );
+	void InitCollisionData();
 
 	// Accessors and change delegates
 
-	class AFGWheeledVehicle* GetVehicle() const;
+	AFGWheeledVehicle* GetVehicle() const;
 
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FStatusChanged, EVehicleStatus, status );
 	UPROPERTY( BlueprintAssignable, Category = "Vehicle", DisplayName = "OnVehicleStatusChanged" )

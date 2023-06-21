@@ -14,4 +14,6 @@ class FACTORYGAME_API UFGNoneDescriptor : public UFGItemDescriptor
 	GENERATED_BODY()
 public:
 	UFGNoneDescriptor();
+protected:
+	FORCEINLINE virtual bool Internal_CanItemBePickedup() const override { return false; }
 };

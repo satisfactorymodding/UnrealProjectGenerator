@@ -2,16 +2,19 @@
 
 #include "FGWaterVolume.h"
 
+#if DEBUG_POST_PROCESS_VOLUME_ENABLE
+FString AFGWaterVolume::GetDebugName() const{ return FString(); }
+#endif 
 #if WITH_EDITOR
 void AFGWaterVolume::PostLoad(){ Super::PostLoad(); }
-void AFGWaterVolume::PreSave(const  ITargetPlatform* targetPlatform){ }
+void AFGWaterVolume::PreSave(FObjectPreSaveContext saveContext){ }
 void AFGWaterVolume::PostEditChangeProperty(FPropertyChangedEvent& propertyChangedEvent){ Super::PostEditChangeProperty(propertyChangedEvent); }
 void AFGWaterVolume::CheckForErrors(){ Super::CheckForErrors(); }
 #endif 
 #if WITH_EDITORONLY_DATA
 #endif 
 AFGWaterVolume::AFGWaterVolume(){ }
-void AFGWaterVolume::PostInitProperties(){ Super::PostInitProperties(); }
+void AFGWaterVolume::OnConstruction(const FTransform& transform){ }
 void AFGWaterVolume::BeginPlay(){ }
 void AFGWaterVolume::EndPlay(const EEndPlayReason::Type endPlayReason){ }
 bool AFGWaterVolume::IsOverlapInVolume(const  USceneComponent& testComponent) const{ return bool(); }

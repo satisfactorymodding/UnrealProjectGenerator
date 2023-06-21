@@ -3,6 +3,8 @@
 #include "FGCreatureActionProjectileCharge.h"
 
 UFGCreatureActionProjectileCharge::UFGCreatureActionProjectileCharge(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
+void UFGCreatureActionProjectileCharge::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
+void UFGCreatureActionProjectileCharge::BeginDestroy(){ Super::BeginDestroy(); }
 bool UFGCreatureActionProjectileCharge::InitializeAction(AController* controller, APawn* pawn){ return bool(); }
 void UFGCreatureActionProjectileCharge::InternalActionCleanup(bool actionSuccess){ }
 void UFGCreatureActionProjectileCharge::BeginCharge_Implementation(){ }

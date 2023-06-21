@@ -8,7 +8,6 @@ AFGActorRepresentationManager* AFGActorRepresentationManager::Get(UObject* world
 AFGActorRepresentationManager::AFGActorRepresentationManager(){ }
 void AFGActorRepresentationManager::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGActorRepresentationManager::PreReplication(IRepChangedPropertyTracker& changedPropertyTracker){ }
-bool AFGActorRepresentationManager::ReplicateSubobjects( UActorChannel* channel,  FOutBunch* bunch, FReplicationFlags* repFlags){ return bool(); }
 void AFGActorRepresentationManager::OnSubobjectCreatedFromReplication(UObject* newSubobject){ }
 void AFGActorRepresentationManager::OnSubobjectDestroyFromReplication(UObject* subobject){ }
 void AFGActorRepresentationManager::BeginPlay(){ }
