@@ -1,10 +1,10 @@
-// Copyright Ben de Hullu. All Rights Reserved.
+// Copyright Ben de Hullu & Coffee Stain Studios 2022. All Rights Reserved.
 
 using UnrealBuildTool;
 
-public class AbstractInstance : ModuleRules
+public class InstancedSplinesComponent : ModuleRules
 {
-	public AbstractInstance(ReadOnlyTargetRules Target) : base(Target)
+	public InstancedSplinesComponent(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		
@@ -40,6 +40,8 @@ public class AbstractInstance : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
+				"RHI",
+				"RenderCore"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

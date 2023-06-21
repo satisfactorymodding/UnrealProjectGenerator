@@ -1,12 +1,13 @@
-// Copyright Ben de Hullu. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 using UnrealBuildTool;
 
-public class AbstractInstance : ModuleRules
+public class SignificanceISPC : ModuleRules
 {
-	public AbstractInstance(ReadOnlyTargetRules Target) : base(Target)
+	public SignificanceISPC(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+		bLegacyPublicIncludePaths = true;
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
@@ -26,8 +27,7 @@ public class AbstractInstance : ModuleRules
 			new string[]
 			{
 				"Core", 
-				"CoreUObject",
-				"Engine"
+				"SignificanceManager",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -40,6 +40,7 @@ public class AbstractInstance : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
+				"IntelISPC"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

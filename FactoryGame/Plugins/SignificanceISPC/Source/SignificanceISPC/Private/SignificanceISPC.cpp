@@ -1,15 +1,15 @@
-// Copyright Ben de Hullu. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "AbstractInstance.h"
+#include "SignificanceISPC.h"
 
-#define LOCTEXT_NAMESPACE "FAbstractInstanceModule"
+#define LOCTEXT_NAMESPACE "FSignificanceISPCModule"
 
-void FAbstractInstanceModule::StartupModule()
+void FSignificanceISPCModule::StartupModule()
 {
 	// This code will execute after your module is loaded into memory; the exact timing is specified in the .uplugin file per-module
 }
 
-void FAbstractInstanceModule::ShutdownModule()
+void FSignificanceISPCModule::ShutdownModule()
 {
 	// This function may be called during shutdown to clean up your module.  For modules that support dynamic reloading,
 	// we call this function before unloading the module.
@@ -17,4 +17,4 @@ void FAbstractInstanceModule::ShutdownModule()
 
 #undef LOCTEXT_NAMESPACE
 	
-IMPLEMENT_MODULE(FAbstractInstanceModule, AbstractInstance)
+IMPLEMENT_MODULE(FSignificanceISPCModule, SignificanceISPC)
