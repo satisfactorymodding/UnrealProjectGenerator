@@ -317,7 +317,7 @@ namespace ImplementHeaders
                             Console.WriteLine($"Skipped {className}::{functionName} (BlueprintImplementableEvent)");
                         continue;
                     }
-                    if (Regex.IsMatch(ufunction, @"\WBlueprintNativeEvent\W") || Regex.IsMatch(ufunction, @"\W(?<!""|=\s*)Server\W") || Regex.IsMatch(ufunction, @"\WClient\W") || Regex.IsMatch(ufunction, @"\WNetMulticast\W"))
+                    if (Regex.IsMatch(ufunction, @"\WBlueprintNativeEvent\W") || Regex.IsMatch(ufunction, @"\W(?<!""|=|\|\s*)Server\W") || Regex.IsMatch(ufunction, @"\WClient\W") || Regex.IsMatch(ufunction, @"\WNetMulticast\W"))
                     {
                         if (Regex.IsMatch(ufunction, @"\WBlueprintNativeEvent\W") && className[0] == 'I')
                         {

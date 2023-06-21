@@ -85,7 +85,9 @@ class_headers = {
     'ADefaultPhysicsVolume': 'GameFramework/DefaultPhysicsVolume.h',
     'AGameNetworkManager': 'GameFramework/GameNetworkManager.h',
     'UBookMark': 'Engine/BookMark.h',
-    'EEquipmentSlot': 'Equipment/FGEquipment.h'
+    'EEquipmentSlot': 'Equipment/FGEquipment.h',
+    'UInstancedSplineMeshComponent': 'InstancedSplineMeshComponent.h',
+    'UGeometryCollectionComponent': 'GeometryCollection/GeometryCollectionComponent.h',
 }
 
 getters = {
@@ -311,6 +313,15 @@ def ShortRemovalIndices_impl(self, val):
 def LongRemovalIndices_impl(self, val):
     return [None, {}, []] # Not dealing with that
 
+def HitResult_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def ReplicationDetailData_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
+def GameplayTag_impl(self, val):
+    return [f'FGameplayTag(TEXT("{val["TagName"]}"))', {}, []] # It's going to be default anyway
+
 custom_struct_implementations = {
     'InventoryItem': InventoryItem_impl,
     'InventoryStack': InventoryStack_impl,
@@ -353,13 +364,16 @@ custom_struct_implementations = {
     'ByteRemovalIndices': ByteRemovalIndices_impl,
     'ShortRemovalIndices': ShortRemovalIndices_impl,
     'LongRemovalIndices': LongRemovalIndices_impl,
+    'HitResult': HitResult_impl,
+    'ReplicationDetailData': ReplicationDetailData_impl,
+    'GameplayTag': GameplayTag_impl,
 }
 
 def read_class_includes():
     for root, dirs, files in os.walk(header_root, topdown=False):
         for name in files:
             header_contents = open(os.path.join(root, name), 'r').read()
-            for cls in re.findall(r'^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?.*?)?\s*{((?:.|\n)*?)^\1};', header_contents, re.RegexFlag.MULTILINE):
+            for cls in re.findall(r'^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)(\s+final)?( ?: ?.*?)?\s*{((?:.|\n)*?)^\1};', header_contents, re.RegexFlag.MULTILINE):
                 class_headers[cls[3]] = os.path.relpath(os.path.join(root, name), header_root)
 
 class UEStruct:
@@ -448,37 +462,39 @@ class UEStruct:
             return getters[prop['ObjectName']]
         return prop['ObjectName']
 
-    def property_type_value(self, prop_name, prop_type, val, struct_type = None, enum_name = None, property_class = None) -> tuple[typing.Union[str, tuple[str, str]], dict[str, list[str]], list[str]]: # [impl (can be None if not available), {dep: [impl]} (dep can be self or None), required headers]:
+    def property_type_value(self, prop_name, prop_type, val, struct_type = None, enum_name = None, property_class = None, force_create = False) -> tuple[typing.Union[str, tuple[str, str]], dict[str, list[str]], list[str]]: # [impl (can be None if not available), {dep: [impl]} (dep can be self or None), required headers]:
         if prop_type == 'BoolProperty':
             return [f'{"true" if val else "false"}', {}, []]
         elif prop_type == 'FloatProperty':
             return [f'{format_float_scientific(val)}', {}, []]
+        elif prop_type == 'DoubleProperty':
+            return [f'{format_float_scientific(val)}', {}, []]
         elif prop_type == 'IntProperty':
-            if val == 0:
+            if val == 0 and not force_create:
                 return [None, {}, []]
             return [f'{format_int(val)}', {}, []]
         elif prop_type == 'Int8Property':
-            if val == 0:
+            if val == 0 and not force_create:
                 return [None, {}, []]
             return [f'{val}', {}, []]
         elif prop_type == 'Int16Property':
-            if val == 0:
+            if val == 0 and not force_create:
                 return [None, {}, []]
             return [f'{val}', {}, []]
         elif prop_type == 'UInt16Property':
-            if val == 0:
+            if val == 0 and not force_create:
                 return [None, {}, []]
             return [f'{val}U', {}, []]
         elif prop_type == 'UInt32Property':
-            if val == 0:
+            if val == 0 and not force_create:
                 return [None, {}, []]
             return [f'{val}U', {}, []]
         elif prop_type == 'Int64Property':
-            if val == 0:
+            if val == 0 and not force_create:
                 return [None, {}, []]
             return [f'{val}LL', {}, []]
         elif prop_type == 'UInt64Property':
-            if val == 0:
+            if val == 0 and not force_create:
                 return [None, {}, []]
             return [f'{val}ULL', {}, []]
         elif prop_type == 'EnumProperty':
@@ -593,7 +609,7 @@ class UEStruct:
                 raise Exception('struct_type') 
 
             if struct_type.class_name == 'SoftClassPath': # thank you UE, very cool
-                return [f'FSoftClassPath("{val["AssetPathName"]}")', {}, []]
+                return [f'FSoftClassPath("{val["AssetPath"]["PackageName"]}.{val["AssetPath"]["AssetName"]}")', {}, []]
 
             if struct_type.class_name in custom_struct_implementations:
                 return custom_struct_implementations[struct_type.class_name](self, val)
@@ -722,8 +738,8 @@ class UEStruct:
             extra = {None: []}
             includes = []
             for entry in val:
-                [key_impl, key_extra, key_includes] = self.property_type_value(f'{prop_name}[KEY_UNKNOWN]', key_property_type["ObjectClass"], entry['Key'], key_struct_type, key_enum_name, key_property_class)
-                [val_impl, val_extra, val_includes] = self.property_type_value(f'{prop_name}[VALUE_UNKNOWN]', value_property_type["ObjectClass"], entry['Value'], value_struct_type, value_enum_name, value_property_class)
+                [key_impl, key_extra, key_includes] = self.property_type_value(f'{prop_name}[KEY_UNKNOWN]', key_property_type["ObjectClass"], entry['Key'], key_struct_type, key_enum_name, key_property_class, force_create=True)
+                [val_impl, val_extra, val_includes] = self.property_type_value(f'{prop_name}[VALUE_UNKNOWN]', value_property_type["ObjectClass"], entry['Value'], value_struct_type, value_enum_name, value_property_class, force_create=True)
                 if not key_impl:
                     raise Exception(f'key_impl is None for {self.class_name}:{prop_name}')
                 

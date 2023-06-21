@@ -7,6 +7,7 @@ root = os.path.dirname(generation_scripts_path)
 projectPath = os.path.join(root, 'FactoryGame')
 projectFile = os.path.join(projectPath, 'FactoryGame.uproject')
 sourceDir = os.path.join(projectPath, 'Source', 'FactoryGame')
+rebasePath = os.path.join(root, 'RebasePublicIncludePaths')
 
 extraIncludes = [
     [
@@ -51,6 +52,7 @@ def rebase_includes(UEPath: str):
     UATPath = os.path.join(UEPath, 'Engine', 'Build', 'BatchFiles', 'RunUAT.bat')
 
     UAT_process = subprocess.Popen([UATPath,
+                                    f'-ScriptDir={rebasePath}'
                                     'RebasePublicIncludePaths',
                                     f'-Project={projectFile}',
                                     f'-UpdateDir={sourceDir}',
