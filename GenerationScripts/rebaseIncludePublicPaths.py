@@ -52,7 +52,7 @@ def rebase_includes(UEPath: str):
     UATPath = os.path.join(UEPath, 'Engine', 'Build', 'BatchFiles', 'RunUAT.bat')
 
     UAT_process = subprocess.Popen([UATPath,
-                                    f'-ScriptDir={rebasePath}'
+                                    f'-ScriptDir={rebasePath}',
                                     'RebasePublicIncludePaths',
                                     f'-Project={projectFile}',
                                     f'-UpdateDir={sourceDir}',

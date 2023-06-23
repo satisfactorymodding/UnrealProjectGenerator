@@ -320,7 +320,7 @@ def ReplicationDetailData_impl(self, val):
     return [None, {}, []] # It's going to be default anyway
 
 def GameplayTag_impl(self, val):
-    return [f'FGameplayTag(TEXT("{val["TagName"]}"))', {}, []] # It's going to be default anyway
+    return [f'FGameplayTag::RequestGameplayTag(TEXT("{val["TagName"]}"))', {}, []] # It's going to be default anyway
 
 custom_struct_implementations = {
     'InventoryItem': InventoryItem_impl,
@@ -609,7 +609,10 @@ class UEStruct:
                 raise Exception('struct_type') 
 
             if struct_type.class_name == 'SoftClassPath': # thank you UE, very cool
-                return [f'FSoftClassPath("{val["AssetPath"]["PackageName"]}.{val["AssetPath"]["AssetName"]}")', {}, []]
+                return [f'FSoftClassPath(TEXT("{val["AssetPath"]["PackageName"]}.{val["AssetPath"]["AssetName"]}"))', {}, []]
+
+            if struct_type.class_name == 'SoftObjectPath': # thank you UE, very cool
+                return [f'FSoftObjectPath(TEXT("{val["AssetPath"]["PackageName"]}.{val["AssetPath"]["AssetName"]}"))', {}, []]
 
             if struct_type.class_name in custom_struct_implementations:
                 return custom_struct_implementations[struct_type.class_name](self, val)

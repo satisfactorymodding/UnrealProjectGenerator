@@ -227,7 +227,7 @@ namespace ImplementHeaders
                 string isConst = function.Groups[1].Value + function.Groups[2].Value;
                 string type = FixReturnType(function.Groups[3].Value).Trim();
                 string name = function.Groups[4].Value;
-                if (Regex.IsMatch(customImplementations, $@"^(?:(?:const\s+)?\w+\s*(?:<\s*.*?\s*>)?[&*]?\s+)?{className.Trim()}::{name.Trim()}"))
+                if (Regex.IsMatch(customImplementations, $@"^(?:(?:const\s+)?\w+\s*(?:<\s*.*?\s*>)?[&*]?\s+)?{className.Trim()}::{name.Trim()}", RegexOptions.Multiline))
                 {
                     if (CountOnly)
                         Console.WriteLine($"Skipping {className}::{name} (custom implementation)");
@@ -252,7 +252,7 @@ namespace ImplementHeaders
             content = Regex.Replace(content, @"^\s*DECLARE_.*\(.*\)\r?\n", "\r\n", RegexOptions.Multiline);
             List<string> implementations = new List<string>();
             // Match function definition (including UFUNCTIONs), nothing to see here ... just walk away ... probably the reason for many missing implementations...
-            foreach (Match function in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual\s?)?(static\s?)?(const\s?)?(class\s?)?(explicit\s?)?(?:UPARAM\(.*?\)\s?)?([^=()\n{};]*?\s)?\n*((?:[^=<>()\n{};]|operator.+)*?)(\([^{}\[;]*?\))(\s*const)?(\s*override)?([^<>\n]*);", RegexOptions.Multiline))
+            foreach (Match function in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual\s+)?(static\s+)?(const\s+)?(class\s+)?(explicit\s+)?(?:UPARAM\(.*?\)\s?)?([^=()\n{};]*?\s)?\n*((?:[^=<>()\n{};]|operator.+)*?)(\([^{}\[;]*?\))(\s*noexcept)?(\s*const)?(\s*override)?([^<>\n]*);", RegexOptions.Multiline))
             {
                 // string comment = function.Groups[1].Value; // removed because regex took too long
                 string ufunction = function.Groups[1].Value;
@@ -265,9 +265,10 @@ namespace ImplementHeaders
                 string returnType = function.Groups[8].Value;
                 string functionName = function.Groups[9].Value;
                 string parameters = function.Groups[10].Value;
-                string isConst = function.Groups[11].Value;
-                string isOverride = function.Groups[12].Value;
-                string extras = function.Groups[13].Value;
+                string isNoexcept = function.Groups[11].Value;
+                string isConst = function.Groups[12].Value;
+                string isOverride = function.Groups[13].Value;
+                string extras = function.Groups[14].Value;
 
                 if (extras.Contains("PURE_VIRTUAL")) // ignore pure virtual macro
                     continue;
@@ -309,6 +310,13 @@ namespace ImplementHeaders
                 parameters = Regex.Replace(parameters, @"\/\*.*?\*\/", ""); // fix for commented defaults
                 template = Regex.Replace(template, @"\/\*.*?\*\/", ""); // fix for commented defaults ?
 
+                if (InlineImplementedFunctions.Any((impl) => Regex.IsMatch(impl, $@"\W{className}::{functionName}\W")))
+                {
+                    if (!CountOnly)
+                        Console.WriteLine($"Skipped {className}::{functionName} (Inline implemented)");
+                    continue;
+                }
+
                 if (!string.IsNullOrWhiteSpace(ufunction))
                 {
                     if (Regex.IsMatch(ufunction, @"\WBlueprintImplementableEvent\W"))
@@ -317,7 +325,7 @@ namespace ImplementHeaders
                             Console.WriteLine($"Skipped {className}::{functionName} (BlueprintImplementableEvent)");
                         continue;
                     }
-                    if (Regex.IsMatch(ufunction, @"\WBlueprintNativeEvent\W") || Regex.IsMatch(ufunction, @"\W(?<!""|=|\|\s*)Server\W") || Regex.IsMatch(ufunction, @"\WClient\W") || Regex.IsMatch(ufunction, @"\WNetMulticast\W"))
+                    if (Regex.IsMatch(ufunction, @"\WBlueprintNativeEvent\W", RegexOptions.IgnoreCase) || Regex.IsMatch(ufunction, @"(?<!""|=|\|\s*)\W(?<!""|=|\|\s*)Server\W", RegexOptions.IgnoreCase) || Regex.IsMatch(ufunction, @"(?<!""|=|\|\s*)\W(?<!""|=|\|\s*)Client\W", RegexOptions.IgnoreCase) || Regex.IsMatch(ufunction, @"\WNetMulticast\W", RegexOptions.IgnoreCase))
                     {
                         if (Regex.IsMatch(ufunction, @"\WBlueprintNativeEvent\W") && className[0] == 'I')
                         {
@@ -325,23 +333,22 @@ namespace ImplementHeaders
                                 Console.WriteLine($"Skipped {className}::{functionName} (BlueprintNativeEvent in Interface)"); // https://answers.unrealengine.com/questions/832889/blueprintnativeevent-function-already-has-a-body.html
                             continue;
                         }
-                        ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName.Trim() + "_Implementation", parameters, isConst, template, isStatic, customImplementations);
+                        ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName.Trim() + "_Implementation", parameters, isConst, isNoexcept, template, isStatic, customImplementations);
                     }
                     else if (Regex.IsMatch(ufunction, @"\WBlueprintPure\W") || Regex.IsMatch(ufunction, @"\WBlueprintCallable\W") || Regex.IsMatch(ufunction, @"\WBlueprintGetter\W") || Regex.IsMatch(ufunction, @"\WExec\W", RegexOptions.IgnoreCase) || Regex.IsMatch(ufunction, @"\WCallInEditor\W", RegexOptions.IgnoreCase) || Regex.Replace(TrimUselessSpaces(ufunction), @"( ?(?:Category ?= ?"".*?""|meta ?= ?"".*""|meta ?= ?\(.*?\))(?:,| )?)", "") == "UFUNCTION()")
-                        ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName, parameters, isConst, template, isStatic, customImplementations);
+                        ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName, parameters, isConst, isNoexcept, template, isStatic, customImplementations);
                     if (Regex.IsMatch(ufunction, @"\WWithValidation\W"))
-                        ImplementFunction(implementations, className, isClass, isReturnConst, "bool ", functionName.Trim() + "_Validate", parameters, isConst, template, isStatic, customImplementations);
+                        ImplementFunction(implementations, className, isClass, isReturnConst, "bool ", functionName.Trim() + "_Validate", parameters, isConst, isNoexcept, template, isStatic, customImplementations);
                 }
                 else
-                    ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName, parameters, isConst, template, isStatic, customImplementations);
+                    ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName, parameters, isConst, isNoexcept, template, isStatic, customImplementations);
             }
             return implementations;
         }
 
-        private static void ImplementFunction(List<string> implementations, string className, string isClass, string isReturnConst, string returnType, string functionName, string parameters, string isConst, string template, string isStatic, string customImplementations)
+        private static void ImplementFunction(List<string> implementations, string className, string isClass, string isReturnConst, string returnType, string functionName, string parameters, string isConst, string isNoExcept, string template, string isStatic, string customImplementations)
         {
-            if (Regex.IsMatch(customImplementations, $@"^(?:(?:const\s+)?\w+\s*(?:<\s*.*?\s*>)?[&*]?\s+)?{className.Trim()}::{functionName.Trim()}",
-                    RegexOptions.Multiline))
+            if (Regex.IsMatch(customImplementations, $@"^(?:(?:const\s+)?\w+\s*(?:<\s*.*?\s*>)?[&*]?\s+)?{className.Trim()}::{functionName.Trim()}\W", RegexOptions.Multiline))
             {
                 if (!CountOnly)
                     Console.WriteLine($"Skipping {className}::{functionName} (custom implementation)");
@@ -354,7 +361,7 @@ namespace ImplementHeaders
             {
                 if (!string.IsNullOrWhiteSpace(template))
                     template = FixDefaults(template.Trim().TrimEnd('>')) + '>' + Environment.NewLine;
-                string result = $"{template}{isReturnConst}{FixReturnType(returnType)}{className}::{functionName}({Regex.Replace(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?<!<)\b(class|struct)\b", "")}){isConst}";
+                string result = $"{template}{isReturnConst}{FixReturnType(returnType)}{className}::{functionName}({Regex.Replace(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?<!<)\b(class|struct)\b", "")}){isNoExcept}{isConst}";
                 if (CustomSuper.ContainsKey(functionName.Trim()))
                 {
                     result += $" : {CustomSuper[functionName.Trim()]} ";
@@ -415,7 +422,7 @@ namespace ImplementHeaders
 
         private static bool IsValidFunctionName(string functionName)
         {
-            return Regex.Match(functionName.Trim(), @"^([\w\d_~]+|operator.+)$").Success && !(new string[] { "return", "if", "else", "const", "struct", "for" /* fill with more as they show up */ }).Contains(functionName.Trim()) && !IsAllCaps(functionName.Trim()); // Don't match macros
+            return Regex.Match(functionName.Trim(), @"^([\w\d_~]+|operator.+)$").Success && !(new string[] { "return", "if", "else", "const", "struct", "for", "entireArray" /* fill with more as they show up */ }).Contains(functionName.Trim()) && !IsAllCaps(functionName.Trim()); // Don't match macros
         }
 
         private static string FixReturnType(string returnType)

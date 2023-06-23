@@ -12,6 +12,7 @@ headers_dir_path = os.path.join(root, 'Headers')
 original_headers_path = os.path.join(headers_dir_path, 'OriginalHeaders')
 modified_headers_path = os.path.join(headers_dir_path, 'ModifiedHeaders')
 modified_implementations_path = os.path.join(headers_dir_path, 'ModifiedImplementations')
+custom_implementations_path = os.path.join(root, 'CustomImplementations')
 current_headers_version_file = os.path.join(headers_dir_path, 'currentVersion.txt')
 
 def update_headers(cssHeadersPath: str, newVersion: str):
@@ -24,7 +25,7 @@ def update_headers(cssHeadersPath: str, newVersion: str):
 
     subprocess.call([fixHeadersExe, original_headers_path, modified_headers_path, cssHeadersPath, modified_headers_path])
 
-    subprocess.call([implementHeadersExe, modified_headers_path, modified_implementations_path, 'true']) # too verbose
+    subprocess.call([implementHeadersExe, modified_headers_path, modified_implementations_path, custom_implementations_path, 'true']) # too verbose
 
     shutil.rmtree(original_headers_path, ignore_errors=True)
 
