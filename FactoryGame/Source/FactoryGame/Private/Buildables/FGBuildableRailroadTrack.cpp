@@ -7,11 +7,19 @@
 #include "Hologram/FGRailroadTrackHologram.h"
 #include "InstancedSplineMeshComponent.h"
 
+bool FRailroadTrackPosition::Serialize(FArchive& ar) {
+	if (ar.ArIsSaveGame) {
+		ar << Offset;
+		ar << Forward;
+	}
+
+	return true;
+}
+
 FRailroadTrackPosition::FRailroadTrackPosition(){ }
 FRailroadTrackPosition::FRailroadTrackPosition( AFGBuildableRailroadTrack* track, float offset, float forward){ }
 FRailroadTrackPosition::FRailroadTrackPosition(const FRailroadTrackPosition& position){ }
 FRailroadTrackPosition::~FRailroadTrackPosition(){ }
-bool FRailroadTrackPosition::Serialize(FArchive& ar){ return bool(); }
 void FRailroadTrackPosition::GetWorldLocationAndDirection(FVector& out_location, FVector& out_direction) const{ }
 float FRailroadTrackPosition::GetForwardOffset() const{ return float(); }
 float FRailroadTrackPosition::GetReverseOffset() const{ return float(); }
@@ -45,6 +53,7 @@ void AFGBuildableRailroadTrack::BeginPlay(){ }
 void AFGBuildableRailroadTrack::Destroyed(){ }
 void AFGBuildableRailroadTrack::Dismantle_Implementation(){ }
 bool AFGBuildableRailroadTrack::CanDismantle_Implementation() const{ return bool(); }
+void AFGBuildableRailroadTrack::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 int32 AFGBuildableRailroadTrack::GetDismantleRefundReturnsMultiplier() const{ return int32(); }
 void AFGBuildableRailroadTrack::ShowBlockVisualization(){ }
 void AFGBuildableRailroadTrack::StopBlockVisualization(){ }
@@ -59,6 +68,7 @@ TArray< AFGBuildableRailroadTrack* > AFGBuildableRailroadTrack::GetOverlappingTr
 void AFGBuildableRailroadTrack::AddOverlappingTrack(AFGBuildableRailroadTrack* track){ }
 void AFGBuildableRailroadTrack::SetupConnections(){ }
 void AFGBuildableRailroadTrack::PostSerializedFromBlueprint(bool isBlueprintWorld){ }
+void AFGBuildableRailroadTrack::UnrotateForBlueprintPlaced(){ }
 void AFGBuildableRailroadTrack::SetTrackGraphID(int32 trackGraphID){ }
 void AFGBuildableRailroadTrack::SetSignalBlock(TWeakPtr< FFGRailroadSignalBlock > block){ }
 void AFGBuildableRailroadTrack::OnRep_SignalBlockID(){ }

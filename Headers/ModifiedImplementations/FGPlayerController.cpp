@@ -76,7 +76,7 @@ void AFGPlayerController::Server_SetHighlightRepresentation_Implementation( AFGP
 void AFGPlayerController::Server_SetHighlighMarker_Implementation( AFGPlayerState* fgPlayerState, int32 markerID){ }
 void AFGPlayerController::Client_OnRepresentationHighlighted_Implementation( AFGPlayerState* fgPlayerState,  UFGActorRepresentation* actorRepresentation){ }
 void AFGPlayerController::Client_OnMarkerHighlighted_Implementation( AFGPlayerState* fgPlayerState, int32 markerID){ }
-void AFGPlayerController::ClientPlayCameraAnimationSequence( UCameraAnimationSequence* AnimToPlay, float Scale, float Rate, float BlendInTime, float BlendOutTime, bool bLoop, bool bRandomStartTime, ECameraShakePlaySpace Space, FRotator CustomPlaySpace){ }
+void AFGPlayerController::ClientPlayCameraAnimationSequence_Implementation( UCameraAnimationSequence* AnimToPlay, float Scale, float Rate, float BlendInTime, float BlendOutTime, bool bLoop, bool bRandomStartTime, ECameraShakePlaySpace Space, FRotator CustomPlaySpace){ }
 float AFGPlayerController::GetObjectScreenRadius(AActor* actor, float boundingRadius){ return float(); }
 float AFGPlayerController::GetScreenBasedObjectRadius(AActor* actor, float screenRadius){ return float(); }
 void AFGPlayerController::Client_AddMessage_Implementation(TSubclassOf<class UFGMessageBase> newMessage){ }

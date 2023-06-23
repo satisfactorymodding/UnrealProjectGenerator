@@ -107,6 +107,7 @@ protected:
 	UFUNCTION( BlueprintNativeEvent, Category = "FactoryGame|Pipes|PipeBase" )
 	TSubclassOf< class UFGPipeConnectionComponentBase > GetConnectionType();
 
+	void UnrotateForBlueprintPlaced();
 public:
 	/** Default height above ground level for pipes */
 	static constexpr float DEFAULT_PIPE_HEIGHT = 175.f;

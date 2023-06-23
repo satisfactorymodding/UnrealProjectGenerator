@@ -6,6 +6,7 @@
 #include "Components/WidgetComponent.h"
 #include "FGOutlineComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "FGCharacterMovementComponent.h"
 
 AFGCharacterPlayer::AFGCharacterPlayer(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer.SetDefaultSubobjectClass<UFGCharacterMovementComponent>(ACharacter::CharacterMovementComponentName)) {
 	this->mFlyToggleTime = 0.2;

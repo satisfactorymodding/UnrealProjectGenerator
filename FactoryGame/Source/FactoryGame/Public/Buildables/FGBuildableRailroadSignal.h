@@ -120,10 +120,6 @@ protected:
 	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|Railroad|Signal" )
 	void OnVisualStateChanged();
 
-	/** Called when we want to draw debugging state. */
-	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|Railroad|Signal" )
-	void OnDrawDebugVisualState();
-
 private:
 	/** Called when this signal is about to be removed. */
 	void DisconnectSignal();

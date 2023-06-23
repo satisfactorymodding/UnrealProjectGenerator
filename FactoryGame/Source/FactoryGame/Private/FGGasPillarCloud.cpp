@@ -7,8 +7,8 @@ void AFGGasPillarCloud::GatherNearbyPillarLocations(){ }
 void AFGGasPillarCloud::NotifyGasPillarRemovedFromInfluence( AFGGasPillar* gasPillar){ }
 void AFGGasPillarCloud::DebugDrawCurrentPillarLocations(){ }
 #endif 
-void AFGGasPillarCloud::GainedSignificance_Implementation() {}
-void AFGGasPillarCloud::LostSignificance_Implementation() {}
+void AFGGasPillarCloud::GainedSignificance_Implementation(){ }
+void AFGGasPillarCloud::LostSignificance_Implementation(){ }
 AFGGasPillarCloud::AFGGasPillarCloud() : Super() {
 	this->mNiagaraComponent = nullptr;
 	this->mLongRangeNiagaraSystem = nullptr;

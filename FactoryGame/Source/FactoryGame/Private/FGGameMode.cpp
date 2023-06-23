@@ -13,8 +13,8 @@ AFGGameMode::AFGGameMode() : Super() {
 	this->mStartingPointTagName = TEXT("None");
 	this->mAllowPossessAny = false;
 	this->mDebugStartingPointTagName = TEXT("None");
-	this->mDefaultRemoteCallObjectsClassNames.Add(FSoftClassPath("/Game/FactoryGame/Character/Player/BP_RemoteCallObject.BP_RemoteCallObject_C"));
-	this->mDefaultRemoteCallObjectsClassNames.Add(FSoftClassPath("/Script/FactoryGame.FGBoomBoxRemoteCallObject"));
+	this->mDefaultRemoteCallObjectsClassNames.Add(FSoftClassPath(TEXT("/Game/FactoryGame/Character/Player/BP_RemoteCallObject.BP_RemoteCallObject_C")));
+	this->mDefaultRemoteCallObjectsClassNames.Add(FSoftClassPath(TEXT("/Script/FactoryGame.FGBoomBoxRemoteCallObject")));
 	this->mServerRestartTimeHours = 24.0;
 	this->mIsMainMenu = false;
 	this->InactivePlayerStateLifeSpan = 0.0;

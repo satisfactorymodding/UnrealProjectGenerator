@@ -4,9 +4,9 @@
 
 FFGPipeHyperDynamicPipeData::FFGPipeHyperDynamicPipeData(){ }
 FFGPipeHyperDynamicPipeData::FFGPipeHyperDynamicPipeData(const FFGPipeHyperDynamicPipeData& Other){ }
-FFGPipeHyperDynamicPipeData::FFGPipeHyperDynamicPipeData(FFGPipeHyperDynamicPipeData&& Other){ }
+FFGPipeHyperDynamicPipeData::FFGPipeHyperDynamicPipeData(FFGPipeHyperDynamicPipeData&& Other) noexcept{ }
 FFGPipeHyperDynamicPipeData& FFGPipeHyperDynamicPipeData::operator=(const FFGPipeHyperDynamicPipeData& Other){ return *(this); }
-FFGPipeHyperDynamicPipeData& FFGPipeHyperDynamicPipeData::operator=(FFGPipeHyperDynamicPipeData&& Other){ return *(this); }
+FFGPipeHyperDynamicPipeData& FFGPipeHyperDynamicPipeData::operator=(FFGPipeHyperDynamicPipeData&& Other) noexcept{ return *(this); }
 bool FFGPipeHyperDynamicPipeData::Serialize(FArchive& Ar){ return bool(); }
 void FFGPipeHyperDynamicPipeData::AddStructReferencedObjects( FReferenceCollector& Collector){ }
 UFGCharacterMovementComponent::UFGCharacterMovementComponent(){ }

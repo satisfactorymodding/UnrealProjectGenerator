@@ -3,6 +3,8 @@
 #include "FGGameUserSettings.h"
 #include "Settings/FGUserSettingCategory.h"
 
+FAutoConsoleVariableSink UFGGameUserSettings::mCVarSink = FConsoleCommandDelegate::CreateStatic(&UFGGameUserSettings::CVarSinkHandler);
+
 #if WITH_EDITOR
 void UFGGameUserSettings::OnBeginPIE(const bool bIsSimulating){ }
 #endif 
@@ -28,6 +30,7 @@ void UFGGameUserSettings::SanitizeResolution(){ }
 void UFGGameUserSettings::ToggleFullscreenMode(){ }
 void UFGGameUserSettings::UpdateVideoQuality(){ }
 void UFGGameUserSettings::OnVideoQualityUpdated(FString strId, FVariant value){ }
+void UFGGameUserSettings::OnFOVScalingUpdated(FString strId, FVariant value){ }
 void UFGGameUserSettings::InitVideoQualityValues(){ }
 void UFGGameUserSettings::UpdateVideoQualityCvars(const FString& cvar){ }
 void UFGGameUserSettings::HandleCmdLineVideoQuality(){ }
@@ -105,6 +108,7 @@ void UFGGameUserSettings::SetInvalidPlacementHologramColour(FVector inColour){ }
 void UFGGameUserSettings::SetSoftClearanceHologramColour(FVector inColour){ }
 void UFGGameUserSettings::ApplyHologramColoursToCollectionParameterInstance(UObject* World){ }
 void UFGGameUserSettings::UpdateFoliageLoadingDistance(UObject* World){ }
+void UFGGameUserSettings::UpdatePaniniFOVScaling(){ }
 UMaterialParameterCollection* UFGGameUserSettings::GetHologramMaterialCollectionAsset() const{ return nullptr; }
 void UFGGameUserSettings::DumpDynamicOptionsSettings(){ }
 void UFGGameUserSettings::GetOptionsDebugData(TArray<FString>& out_debugData){ }
@@ -121,5 +125,3 @@ void UFGGameUserSettings::PreSetup(){ }
 bool UFGGameUserSettings::ValidateCVar(const FString& cvar){ return bool(); }
 void UFGGameUserSettings::CacheVideoQualitySettings(){ }
 void UFGGameUserSettings::TestSavedValues(){ }
-FConsoleCommandDelegate UFGGameUserSettingsDelegate;
-FAutoConsoleVariableSink UFGGameUserSettings::mCVarSink = FAutoConsoleVariableSink(UFGGameUserSettingsDelegate);

@@ -21,6 +21,10 @@ public:
 	// Begin AActor interface
 	virtual void BeginPlay() override;
 	// End AActor interface
+
+	// Begin Save Interface
+	virtual void PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion) override;
+	// end Save interface
 	
 	// Begin FGHyperTube Interface
 	virtual TArray<TPair<UFGPipeConnectionComponentBase*, float>> GetPossibleConnectionsToTransitionThrough(AFGCharacterPlayer* charPlayer, UFGPipeConnectionComponentBase* connectionEnteredThrough) const override;
@@ -29,6 +33,7 @@ public:
 	virtual void GetLocationAndRotationAlongPipe( AFGCharacterPlayer* charPlayer, const TStructOnScope<FFGPipeHyperBasePipeData>& pipeData, float distance, FVector& outLocation, FVector& outDirection ) override;
 	virtual UFGPipeConnectionComponentBase* GetConnectionToTransitThrough( AFGCharacterPlayer* charPlayer, const TStructOnScope<FFGPipeHyperBasePipeData>& pipeData, float distance, float& outExitOffset ) override;
 	// End FGHyperTube Interface
+
 private:
 	static const FName mConnectionName0;
 	static const FName mConnectionName1;

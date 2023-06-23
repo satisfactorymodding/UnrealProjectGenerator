@@ -1,0 +1,2 @@
+FFGSimpleEngineSim::FFGSimpleEngineSim(const Chaos::FSimpleEngineConfig* StaticDataIn):FSimpleEngineSim(StaticDataIn){ }
+FFGSimpleTransmissionSim::FFGSimpleTransmissionSim(const Chaos::FSimpleTransmissionConfig* SetupIn):FSimpleTransmissionSim(SetupIn){ }

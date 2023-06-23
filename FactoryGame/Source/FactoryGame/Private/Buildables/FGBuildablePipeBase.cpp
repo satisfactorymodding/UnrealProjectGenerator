@@ -41,4 +41,5 @@ void AFGBuildablePipeBase::SetupConnections(){ }
 TArray<AFGBuildablePipeBase*> AFGBuildablePipeBase::Splice(AFGBuildablePipeBase* Pipe, float SpliceOffset, float SpliceLength){ return TArray<AFGBuildablePipeBase*>(); }
 void AFGBuildablePipeBase::PostSerializedFromBlueprint(bool isBlueprintWorld){ }
 TSubclassOf< class UFGPipeConnectionComponentBase > AFGBuildablePipeBase::GetConnectionType_Implementation(){ return TSubclassOf<class UFGPipeConnectionComponentBase>(); }
+void AFGBuildablePipeBase::UnrotateForBlueprintPlaced(){ }
 const float AFGBuildablePipeBase::PIPE_COST_LENGTH_MULTIPLIER = float();

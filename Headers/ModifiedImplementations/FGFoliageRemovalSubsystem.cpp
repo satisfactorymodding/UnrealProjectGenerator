@@ -8,7 +8,6 @@ void FFoliageOctreeSemantics::SetElementId(FOctree& Octree, const UHierarchicalI
 bool FFoliageRemovalSaveDataForFoliageType::Append(TArrayView< FVector > newRemovals){ return bool(); }
 bool FFoliageRemovalSaveDataForFoliageType::Add(const FVector& Location){ return bool(); }
 bool FFoliageRemovalSaveDataForFoliageType::Contains(const FVector& Location) const{ return bool(); }
-const TArrayView<const FVector> FFoliageRemovalSaveDataForFoliageType::entireArray(RemovedLocations){ return TArrayView<const FVector>(); }
 TSet< FHashableVectorWrapper > FFoliageRemovalSaveDataForFoliageType::GetRemovalLocations() const{ return TSet<FHashableVectorWrapper>(); }
 void FFoliageRemovalSaveDataForFoliageType::CollapseBuckets(int32 FirstBucket, int32 LastBucket){ }
 bool FFoliageRemovalSaveDataForFoliageType::PostSerialize(const FArchive& Ar){ return bool(); }

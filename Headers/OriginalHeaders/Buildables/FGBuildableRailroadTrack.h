@@ -104,6 +104,10 @@ public:
 	virtual bool CanDismantle_Implementation() const override;
 	// End IFGDismantleInterface
 
+	// Begin Save Interface
+	virtual void PostLoadGame_Implementation(int32 saveVersion, int32 gameVersion) override;
+	// End Save Interface
+
 	// Begin Buildable interface
 	virtual int32 GetDismantleRefundReturnsMultiplier() const override;
 	virtual bool ShouldBeConsideredForBase_Implementation() override { return false; }
@@ -211,6 +215,8 @@ public:
 	FORCEINLINE UStaticMesh* GetMesh() const { return mMesh; }
 
 	virtual void PostSerializedFromBlueprint(bool isBlueprintWorld) override;
+
+	void UnrotateForBlueprintPlaced();
 	
 private:
 	void SetTrackGraphID( int32 trackGraphID );
@@ -288,3 +294,4 @@ private:
 	static inline const float COLLISION_SPACING =   300.f;
 	static inline const FVector COLLISION_OFFSET = FVector( 0.f, 0.f, 30.f + 1.f );
 };
+

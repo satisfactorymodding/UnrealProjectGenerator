@@ -7,6 +7,8 @@ void AFGGasPillarCloud::GatherNearbyPillarLocations(){ }
 void AFGGasPillarCloud::NotifyGasPillarRemovedFromInfluence( AFGGasPillar* gasPillar){ }
 void AFGGasPillarCloud::DebugDrawCurrentPillarLocations(){ }
 #endif 
+void AFGGasPillarCloud::GainedSignificance_Implementation(){ }
+void AFGGasPillarCloud::LostSignificance_Implementation(){ }
 AFGGasPillarCloud::AFGGasPillarCloud(){ }
 void AFGGasPillarCloud::BeginPlay(){ }
 void AFGGasPillarCloud::EndPlay(const EEndPlayReason::Type EndPlayReason){ }

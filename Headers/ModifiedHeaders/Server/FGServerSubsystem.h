@@ -111,7 +111,7 @@ public:
 
 	bool Tick(float DeltaTime) override;
 
-	int16 GetGamePort() const
+	int32 GetGamePort() const
 	{
 		return mGamePort;
 	}
@@ -147,8 +147,8 @@ private:
 
 	FString mCredentialsFile;
 
-	int16 mBeaconPort = 0;
-	int16 mGamePort = 0;
+	int32 mBeaconPort = 0;
+	int32 mGamePort = 0;
 	EServerState mState = EServerState::Offline;
 	float mAverageTickRate = 0.f;
 };

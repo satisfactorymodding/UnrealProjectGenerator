@@ -2,6 +2,10 @@
 
 #include "Hologram/HologramHelpers.h"
 
+FHologramAStarNode FHolgramAStarHelper::GetNeighbour(const FHologramAStarNode& nodeRef, const int32 neighbourIndex) const {
+  return FHologramAStarNode(0);
+}
+
 UStaticMeshComponent* FHologramHelpers::CreateClearanceMeshComponent( USceneComponent* attachTo,  UFGClearanceComponent* fromClearanceBox){ return nullptr; }
 UStaticMeshComponent* FHologramHelpers::CreateBlueprintBoundsMeshComponent( USceneComponent* attachTo, const FTransform& boundsRelativeTransform, const FVector& boundsExtent){ return nullptr; }
 void FHologramHelpers::SetScaledBoxMeshData( UStaticMeshComponent* clearanceMesh, const FTransform& relativeTransform, const FVector& extent){ }
@@ -118,7 +122,6 @@ FHologramAStarNode::FHologramAStarNode(FHologramPathingPoint* pathingPoint){ }
 FHologramAStarNode::FHologramAStarNode(const FHologramAStarNode& pathingNode){ }
 int32 FHolgramAStarHelper::GetNeighbourCount(const FHologramAStarNode& nodeRef) const{ return int32(); }
 bool FHolgramAStarHelper::IsValidRef(const FHologramAStarNode& nodeRef) const{ return bool(); }
-FHologramAStarNode FHolgramAStarHelper::GetNeighbour(const FHologramAStarNode& nodeRef, const int32 neighbourIndex) const{ return FHologramAStarNode(); }
 FVector FHolgramAStarHelper::GetDirectionNormal(const FHologramAStarNode& nodeA, const FHologramAStarNode& nodeB) const{ return FVector(); }
 FHologramAStarFilter::FHologramAStarFilter(){ }
 float FHologramAStarFilter::GetHeuristicScale() const{ return float(); }

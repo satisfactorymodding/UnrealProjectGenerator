@@ -2,5 +2,8 @@
 
 #include "FGListView.h"
 
+TSharedRef<STableViewBase> UFGListView::RebuildListWidget() {
+  return ConstructListView<SFGListView>();
+}
+
 UFGListView::UFGListView(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
-TSharedRef<STableViewBase> UFGListView::RebuildListWidget(){ return TSharedRef<STableViewBase>(); }

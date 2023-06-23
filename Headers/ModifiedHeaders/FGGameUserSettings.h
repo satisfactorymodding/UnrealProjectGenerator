@@ -109,6 +109,7 @@ public:
 	UFUNCTION( BlueprintCallable, Category = Settings )
 	void UpdateVideoQuality();
 	void OnVideoQualityUpdated( FString strId, FVariant value );
+	void OnFOVScalingUpdated( FString strId, FVariant value );
 	void InitVideoQualityValues();
 	void UpdateVideoQualityCvars( const FString& cvar );
 	/** Checks if we want to apply some scalability settings based on cmd line arguments. No applied in shipping. Used for profiling.
@@ -286,6 +287,9 @@ public:
 
 	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Settings")
 	void UpdateFoliageLoadingDistance(UObject* World);
+
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Settings")
+	void UpdatePaniniFOVScaling();
 	
 	UMaterialParameterCollection* GetHologramMaterialCollectionAsset() const;
 

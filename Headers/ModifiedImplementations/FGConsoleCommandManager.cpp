@@ -18,5 +18,4 @@ void UFGConsoleCommandManager::CopyPlayerCoordinates(){ }
 void UFGConsoleCommandManager::DumpPlayerCoordinates(const FString& label , bool copyToClipboard){ }
 void UFGConsoleCommandManager::DumpDynamicOptionsSettings(){ }
 void UFGConsoleCommandManager::ToggleRailroadBlockVisualization(bool enabled){ }
-void UFGConsoleCommandManager::ToggleTrainSchedulerBlackBoxEnabled(bool enabled, int32 numRecordsToKeep){ }
 void UFGConsoleCommandManager::DismantleVehiclesUnderWorld(){ }

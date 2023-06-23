@@ -2,5 +2,7 @@
 
 #include "FGFoliageTypes.h"
 
+uint32 GetTypeHash(const FHashableVectorWrapper& Loc) { return uint32(); }
+
 bool FHashableVectorWrapper::operator<(const FVector &V) const{ return bool(); }
 bool FFoliageRemovalDataKey::operator==(const FFoliageRemovalDataKey&) const{ return bool(); }

@@ -3,6 +3,67 @@
 #include "Buildables/FGBuildable.h"
 #include "Components/SceneComponent.h"
 #include "FGSwatchGroup.h"
+#include "AbstractInstanceManager.h"
+
+#if WITH_EDITOR
+void AFGBuildable::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) {
+    Super::PostEditChangeProperty(PropertyChangedEvent);
+    if (PropertyChangedEvent.GetPropertyName() == GET_MEMBER_NAME_CHECKED(AFGBuildable, mInstanceData)) {
+        mInstanceDataCDO = mInstanceData;
+    }
+
+    if (PropertyChangedEvent.GetPropertyName() == GET_MEMBER_NAME_CHECKED(AFGBuildable, mBuildableSparseDataEditorObject)) {
+        mBuildableSparseDataCDO = mBuildableSparseDataEditorObject;
+    }
+}
+void AFGBuildable::PostEditChangeChainProperty(FPropertyChangedChainEvent& PropertyChangedEvent) {
+    Super::PostEditChangeChainProperty(PropertyChangedEvent);
+    if (PropertyChangedEvent.GetPropertyName() == GET_MEMBER_NAME_CHECKED(AFGBuildable, mInstanceData)) {
+        mInstanceDataCDO = mInstanceData;
+    }
+
+    if (PropertyChangedEvent.GetPropertyName() == GET_MEMBER_NAME_CHECKED(AFGBuildable, mBuildableSparseDataEditorObject)) {
+        mBuildableSparseDataCDO = mBuildableSparseDataEditorObject;
+    }
+}
+#endif
+void AFGBuildable::OnConstruction(const FTransform& transform) {
+    Super::OnConstruction(transform);
+
+#if WITH_EDITOR
+    RemoveInstances();
+    RemoveInstances_Native();
+    CallSetupInstances();
+#endif
+}
+TArray<struct FInstanceData> AFGBuildable::GetActorLightweightInstanceData_Implementation() {
+    if (IsValid(mInstanceDataCDO)) {
+        return mInstanceDataCDO->GetInstanceData();
+    }
+    return TArray<FInstanceData>();
+}
+void AFGBuildable::SetupInstances_Native(bool bInitializeHidden) {
+    if (this && GetWorld() && IsValid(mInstanceDataCDO)) {
+        for (FInstanceData InstanceData : mInstanceDataCDO->GetInstanceData()) {
+            if (IsValid(InstanceData.StaticMesh) && !InstanceData.OverridenMaterials.Contains(nullptr)) {
+                FInstanceHandle* Handle;
+                AAbstractInstanceManager::SetInstanceFromDataStatic(this, FTransform(), InstanceData, Handle, bInitializeHidden);
+                mInstanceHandles.Add(Handle);
+            }
+        }
+    }
+}
+void AFGBuildable::RemoveInstances_Native() {
+    if (this && GetWorld()) {
+        AAbstractInstanceManager* Manager = AAbstractInstanceManager::GetInstanceManager(GetWorld());
+        for (FInstanceHandle* InstanceHandle : mInstanceHandles) {
+            if (InstanceHandle->IsInstanced()) {
+                Manager->RemoveInstance(InstanceHandle);
+            }
+        }
+        mInstanceHandles.Empty();
+    }
+}
 
 void UFGSignificantNetworkRCO::GetLifetimeReplicatedProps(::TArray<FLifetimeProperty>& OutLifetimeProps) const {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
@@ -24,8 +85,6 @@ void AFGBuildable::SetBuildableDisplayName(TSubclassOf< AFGBuildable > inClass, 
 #endif 
 #if WITH_EDITOR
 void AFGBuildable::DebugDrawOcclusionBoxes(){ }
-void AFGBuildable::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent){ Super::PostEditChangeProperty(PropertyChangedEvent); }
-void AFGBuildable::PostEditChangeChainProperty(FPropertyChangedChainEvent& PropertyChangedEvent){ }
 #endif 
 #if WITH_EDITOR
 #endif 
@@ -106,7 +165,6 @@ AFGBuildable::AFGBuildable(const FObjectInitializer& ObjectInitializer) : Super(
 }
 void AFGBuildable::Serialize(FArchive& ar){ Super::Serialize(ar); }
 void AFGBuildable::PostLoad(){ Super::PostLoad(); }
-void AFGBuildable::OnConstruction(const FTransform& transform){ }
 void AFGBuildable::BeginPlay(){ }
 void AFGBuildable::EndPlay(const EEndPlayReason::Type endPlayReason){ }
 void AFGBuildable::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
@@ -116,7 +174,6 @@ void AFGBuildable::PostLoadGame_Implementation(int32 saveVersion, int32 gameVers
 void AFGBuildable::GatherDependencies_Implementation(TArray< UObject* >& out_dependentObjects){ }
 bool AFGBuildable::NeedTransform_Implementation(){ return bool(); }
 bool AFGBuildable::ShouldSave_Implementation() const{ return bool(); }
-TArray<struct FInstanceData> AFGBuildable::GetActorLightweightInstanceData_Implementation(){ return TArray<struct FInstanceData>(); }
 void AFGBuildable::PostLazySpawnInstances_Implementation(){ }
 void AFGBuildable::SetCustomizationData_Implementation(const FFactoryCustomizationData& customizationData){ }
 void AFGBuildable::SetCustomizationData_Native(const FFactoryCustomizationData& customizationData){ }
@@ -217,9 +274,7 @@ TArray< UStaticMeshComponent* > AFGBuildable::CreateBuildEffectProxyComponents()
 void AFGBuildable::DestroyBuildEffectProxyComponents(){ }
 void AFGBuildable::OnRep_CustomizationData(){ }
 void AFGBuildable::SetupInstances_Implementation(bool bInitializeHidden){ }
-void AFGBuildable::SetupInstances_Native(bool bInitializeHidden){ }
 void AFGBuildable::RemoveInstances_Implementation(){ }
-void AFGBuildable::RemoveInstances_Native(){ }
 void AFGBuildable::ForceUpdateCustomizerMaterialToRecipeMapping(bool bTryToSave){ }
 void AFGBuildable::CreateFactoryStatID() const{ }
 void AFGBuildable::SetReplicateDetails(bool replicateDetails){ }

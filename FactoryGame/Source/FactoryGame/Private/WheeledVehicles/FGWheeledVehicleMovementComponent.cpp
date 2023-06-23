@@ -3,9 +3,10 @@
 #include "WheeledVehicles/FGWheeledVehicleMovementComponent.h"
 
 FFGSimpleEngineSim::FFGSimpleEngineSim(const Chaos::FSimpleEngineConfig* StaticDataIn):FSimpleEngineSim(StaticDataIn){ }
+FFGSimpleTransmissionSim::FFGSimpleTransmissionSim(const Chaos::FSimpleTransmissionConfig* SetupIn):FSimpleTransmissionSim(SetupIn){ }
+
 FFGSimpleEngineSim::~FFGSimpleEngineSim(){ }
 void FFGSimpleEngineSim::Simulate(float DeltaTime){ }
-FFGSimpleTransmissionSim::FFGSimpleTransmissionSim(const Chaos::FSimpleTransmissionConfig* SetupIn):FSimpleTransmissionSim(SetupIn){ }
 FFGSimpleTransmissionSim::~FFGSimpleTransmissionSim(){ }
 void FFGSimpleTransmissionSim::SetGear(int32 InGear, bool Immediate){ }
 void FFGSimpleTransmissionSim::Simulate(float DeltaTime){ }

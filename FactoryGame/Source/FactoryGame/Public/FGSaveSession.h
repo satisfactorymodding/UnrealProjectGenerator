@@ -459,6 +459,9 @@ public:
 	/** Used to optimize checking for redirects on GameMode and GameState to avoid casting checks after they have already been resolved */
 	inline static int32 mRedirectedSingletonCount = 0;
 
+	/** This static map is used to store temporary serialized versions of objects so that PostLoadGame can execute knowing the version the object was deserialized with */
+	inline static TMap< UObject*, int32 > mObjectToSerailizedVersion = TMap< UObject*, int32 >(); 
+
 	/** Delegate that listens for when level placed actor is destroyed */
 	FOnLevelPlacedActorDestroyed mOnLevelPlacedActorDestroyed;
 

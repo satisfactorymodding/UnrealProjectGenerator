@@ -69,9 +69,6 @@ bool UFGItemDescriptor::RememberPickUp(TSubclassOf<UFGItemDescriptor> inClass) {
 	else
 		return bool();
 }
-TSubclassOf<class UFGItemCategory> UFGItemDescriptor::GetItemCategory(TSubclassOf<UFGItemDescriptor> inClass) {
-	return TSubclassOf<UFGItemCategory>(UFGItemDescriptor::GetCategory(inClass));
-}
 TSubclassOf<class UFGCategory> UFGItemDescriptor::GetCategory(TSubclassOf<UFGItemDescriptor> inClass) {
 	if (inClass)
 		return inClass.GetDefaultObject()->mCategory;

@@ -2,6 +2,8 @@
 
 #include "FGBuildableConveyorBase.h"
 
+bool GIsConveyorFreezingEnabled = false;
+
 void UFGConveyorRemoteCallObject::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void UFGConveyorRemoteCallObject::Server_OnUse_Implementation( AFGBuildableConveyorBelt* target,  AFGCharacterPlayer* byCharacter, uint32 itemRepID, float itemOffset){ }
 bool UFGConveyorRemoteCallObject::Server_OnUse_Validate( AFGBuildableConveyorBelt* target,  AFGCharacterPlayer* byCharacter, uint32 itemRepID, float itemOffset){ return bool(); }

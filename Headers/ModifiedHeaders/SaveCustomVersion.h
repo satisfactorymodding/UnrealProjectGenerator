@@ -137,6 +137,9 @@ struct FACTORYGAME_API FSaveCustomVersion
 		// 2023-01-11: Switched FArchive support to be 64bit in SaveSession
 		SwitchTo64BitSaveArchive,
 
+		// 20223-06-14: Added PostLoad corrections for splines built from Blueprints (they were broken do to them being now rendered by a shader)
+		ResetBrokenBlueprintSplines,
+
 		// -----<new versions can be added above this line>-------------------------------------------------
 		VersionPlusOne,
 		LatestVersion = VersionPlusOne - 1

@@ -4,6 +4,8 @@
 #include "Components/SceneComponent.h"
 #include "FGFactoryConnectionComponent.h"
 
+bool GIsConveyorFreezingEnabled = false;
+
 void UFGConveyorRemoteCallObject::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 	DOREPLIFETIME(UFGConveyorRemoteCallObject, mForceNetField_UFGConveyorRemoteCallObject);
@@ -76,5 +78,3 @@ void AFGBuildableConveyorBase::Factory_RemoveItemAt(int32 index){ }
 void AFGBuildableConveyorBase::DestroyStaticItemInstances(){ }
 void AFGBuildableConveyorBase::Factory_DequeueItem(){ }
 void AFGBuildableConveyorBase::Factory_EnqueueItem(const FInventoryItem& item, float initialOffset){ }
-
-bool GIsConveyorFreezingEnabled = false;

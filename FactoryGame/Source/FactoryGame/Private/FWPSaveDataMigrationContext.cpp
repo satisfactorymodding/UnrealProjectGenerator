@@ -2,11 +2,12 @@
 
 #include "FWPSaveDataMigrationContext.h"
 
+FWPSaveDataMigrationContext::FWPSaveDataMigrationContext(const  AFGWorldSettings &InWorldSettings, const  FSaveHeader& InSaveHeader): WorldSettings(InWorldSettings), SaveHeader(InSaveHeader){ }
+
 #if WITH_EDITOR
 void FWPSaveDataMigrationContext::CollectSaveGameValidationData(const  UWorldPartitionRuntimeLevelStreamingCell& Cell,  AFGWorldSettings& WorldSettings){ }
 void FWPSaveDataMigrationContext::CollectSaveGameValidationDataForPersistentLevel(const ULevel& Level,  AFGWorldSettings& WorldSettings){ }
 #endif 
-FWPSaveDataMigrationContext::FWPSaveDataMigrationContext(const  AFGWorldSettings &InWorldSettings, const  FSaveHeader& InSaveHeader):WorldSettings(InWorldSettings),SaveHeader(InSaveHeader){ }
 FWPSaveDataMigrationContext::~FWPSaveDataMigrationContext(){ }
 void FWPSaveDataMigrationContext::MigrateUnpackedData(FUnpackedSaveData& UnpackedSaveData, const bool DataIsFromPersistentLevel){ }
 bool FWPSaveDataMigrationContext::ValidateSaveData(FArchive& ReadAr){ return bool(); }

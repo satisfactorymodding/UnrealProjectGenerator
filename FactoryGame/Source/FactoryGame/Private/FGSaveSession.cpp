@@ -2,6 +2,9 @@
 
 #include "FGSaveSession.h"
 
+FPerStreamingLevelSaveData& UFGSaveSession::GetLevelSaveData(ULevel* level){ return mRuntimeLevelState; }
+FPerStreamingLevelSaveData& UFGSaveSession::GetLevelSaveData(const FString& levelName, bool isPersistent){ return mRuntimeLevelState; }
+
 #if STATS
 uint32 FPerBasicLevelSaveData::GetMemoryConsumption() const{ return uint32(); }
 #endif 
@@ -38,8 +41,6 @@ void UFGSaveSession::OnRuntimeSpawnedActorDestroyed(AActor* destroyedActor){ }
 void UFGSaveSession::OnActorSpawned(AActor* spawnedActor){ }
 void UFGSaveSession::SaveLevelState(ULevel* forLevel, bool markAsUpToDate){ }
 void UFGSaveSession::CleanupPerLevelData(){ }
-FPerStreamingLevelSaveData& UFGSaveSession::GetLevelSaveData(ULevel* level){ return *(FPerStreamingLevelSaveData*)nullptr; }
-FPerStreamingLevelSaveData& UFGSaveSession::GetLevelSaveData(const FString& levelName, bool isPersistent){ return *(FPerStreamingLevelSaveData*)nullptr; }
 void UFGSaveSession::DeleteSave(FString sessionName, int32 autosaveNum){ }
 UWorld* UFGSaveSession::GetWorld() const{ return nullptr; }
 FString UFGSaveSession::GenerateAutosaveName(int32& out_autosaveNum, const FString& sessionName){ return FString(); }

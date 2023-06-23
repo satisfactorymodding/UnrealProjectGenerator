@@ -1,3 +1,4 @@
+#include "AbstractInstanceManager.h"
 
 #if WITH_EDITOR
 void AFGBuildable::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) {

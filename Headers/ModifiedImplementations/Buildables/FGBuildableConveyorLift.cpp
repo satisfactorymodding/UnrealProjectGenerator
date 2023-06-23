@@ -18,7 +18,6 @@ void AFGBuildableConveyorLift::BuildStaticItemInstances(){ }
 float AFGBuildableConveyorLift::GetLastRenderTime() const{ return float(); }
 void AFGBuildableConveyorLift::SetupConnections(){ }
 void AFGBuildableConveyorLift::DestroyVisualItems(){ }
-void AFGBuildableConveyorLift::PostSerializedFromBlueprint(bool isBlueprintWorld){ }
 void AFGBuildableConveyorLift::TickItemTransforms(float dt){ }
 void AFGBuildableConveyorLift::TickRadioactivity(){ }
 void AFGBuildableConveyorLift::Factory_UpdateRadioactivity( AFGRadioactivitySubsystem* subsystem){ }

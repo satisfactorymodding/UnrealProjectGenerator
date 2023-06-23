@@ -305,4 +305,8 @@ public:
 	UPROPERTY( EditDefaultsOnly, Category = "Pipes" )
 	TArray< FViscosityToPuddlePair > mViscosityToPuddlePairs;
 
+	/** Material Param Collection containing the panini settings so scaling can be exposed to the Settings Menu */
+	UPROPERTY( EditDefaultsOnly, Category = "Rendering" )
+	class UMaterialParameterCollection* mPaniniProjectionCollection;
+
 };

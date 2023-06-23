@@ -62,6 +62,7 @@ UFGFactorySettings::UFGFactorySettings() : Super() {
 	this->mNumPresetHotbars = 2;
 	this->mNumSlotsPerHotbar = 10;
 	this->mAddedPipeProductionPressure = 0.0;
+	this->mPaniniProjectionCollection = nullptr;
 }
 UAkAudioEvent* UFGFactorySettings::GetRandomConstructionSound(){ return nullptr; }
 UAkAudioEvent* UFGFactorySettings::GetRandomDismantleSound(){ return nullptr; }

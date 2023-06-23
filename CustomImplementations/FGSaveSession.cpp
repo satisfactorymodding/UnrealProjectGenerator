@@ -1,0 +1,2 @@
+FPerStreamingLevelSaveData& UFGSaveSession::GetLevelSaveData(ULevel* level){ return mRuntimeLevelState; }
+FPerStreamingLevelSaveData& UFGSaveSession::GetLevelSaveData(const FString& levelName, bool isPersistent){ return mRuntimeLevelState; }

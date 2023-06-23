@@ -1,3 +1,5 @@
+#include "UObject/ObjectSaveContext.h"
+
 FPrimaryAssetId UFGResearchTree::GetPrimaryAssetId() const {
 	return FPrimaryAssetId(StaticClass()->GetFName(), FPackageName::GetShortFName(GetOutermost()->GetFName()));
 }

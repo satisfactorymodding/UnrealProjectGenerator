@@ -1,3 +1,5 @@
+#include "UObject/ObjectSaveContext.h"
+
 FPrimaryAssetId UFGSchematic::GetPrimaryAssetId() const {
 	return FPrimaryAssetId(StaticClass()->GetFName(), FPackageName::GetShortFName(GetOutermost()->GetFName()));
 }
