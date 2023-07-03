@@ -88,6 +88,7 @@ class_headers = {
     'EEquipmentSlot': 'Equipment/FGEquipment.h',
     'UInstancedSplineMeshComponent': 'InstancedSplineMeshComponent.h',
     'UGeometryCollectionComponent': 'GeometryCollection/GeometryCollectionComponent.h',
+    'UInstancedStaticMeshComponent': 'Components/InstancedStaticMeshComponent.h',
 }
 
 getters = {
