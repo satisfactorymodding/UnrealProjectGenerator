@@ -7,10 +7,10 @@ void UFGSchematicPurchasedDependency::Init(TArray<TSubclassOf<UFGSchematic>> sch
   this->mSchematics = schematics;
   this->mRequireAllSchematicsToBePurchased = requireAllSchematicsToBePurchased;
 }
+#endif
 void UFGSchematicPurchasedDependency::GetSchematics(TArray<TSubclassOf<UFGSchematic>> &out_schematics) const {
   out_schematics = mSchematics;
 }
-#endif
 
 #if WITH_EDITOR
 #endif 

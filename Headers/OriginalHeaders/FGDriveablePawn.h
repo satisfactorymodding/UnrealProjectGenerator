@@ -136,6 +136,8 @@ protected:
 	/** Input Bindings */
 	UFUNCTION()
 	void Input_LeaveVehicle( const FInputActionValue& actionValue );
+
+	class UFGGameUI* GetGameUI() const;
 private:
 	/** Rep notifies */
 	UFUNCTION()

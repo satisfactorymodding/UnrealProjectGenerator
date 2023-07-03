@@ -2,6 +2,7 @@
 
 #include "FGRecipe.h"
 
+#if WITH_EDITOR
 bool UFGRecipe::CanEditChange(const FProperty* InProperty) const {
 	return true;
 }
@@ -9,6 +10,7 @@ void UFGRecipe::SetProduct(TSubclassOf<UFGRecipe> recipe, TArray<FItemAmount> pr
 	if (recipe)
 		recipe.GetDefaultObject()->mProduct = product;
 }
+#endif
 FText UFGRecipe::GetRecipeName(TSubclassOf<UFGRecipe> inClass) {
 	if (inClass)
 		return inClass.GetDefaultObject()->mDisplayName;

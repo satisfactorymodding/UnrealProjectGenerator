@@ -5,9 +5,9 @@
 UFGWidgetSwitcherInterface::UFGWidgetSwitcherInterface(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 UFGWidgetSwitcher::UFGWidgetSwitcher(){ }
 void UFGWidgetSwitcher::ReleaseSlateResources(bool bReleaseChildren){ Super::ReleaseSlateResources(bReleaseChildren); }
-void UFGWidgetSwitcher::RemoveFromParent(){ }
-void UFGWidgetSwitcher::SetActiveWidgetIndex(int32 index){ }
-void UFGWidgetSwitcher::SetActiveWidget(UWidget* widget){ }
+void UFGWidgetSwitcher::RemoveFromParent(){ Super::RemoveFromParent(); }
+void UFGWidgetSwitcher::SetActiveWidgetIndex(int32 index){ Super::SetActiveWidgetIndex(index); }
+void UFGWidgetSwitcher::SetActiveWidget(UWidget* widget){ Super::SetActiveWidget(widget); }
 void UFGWidgetSwitcher::WidgetMenuEnterDone( UFGMenuBase* menuBase){ }
 void UFGWidgetSwitcher::WidgetMenuExitDone( UFGMenuBase* menuBase){ }
 bool UFGWidgetSwitcher::CanSwitchWidget(UFGButtonWidget* buttonWidget) const{ return bool(); }

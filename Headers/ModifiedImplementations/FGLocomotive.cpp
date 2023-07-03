@@ -9,6 +9,7 @@ void AFGLocomotive::Tick(float dt){ }
 bool AFGLocomotive::DriverEnter( AFGCharacterPlayer* driver){ return bool(); }
 bool AFGLocomotive::DriverLeave(bool keepDriving){ return bool(); }
 void AFGLocomotive::AddInputBindings(UInputComponent* inputComponent){ }
+bool AFGLocomotive::CanLeaveVehicle(AFGCharacterPlayer* character){ return bool(); }
 void AFGLocomotive::UpdatePower(){ }
 void AFGLocomotive::GainedSignificance_Implementation(){ }
 EMultipleUnitControl AFGLocomotive::GetMultipleUnitRole() const{ return EMultipleUnitControl(); }
@@ -18,6 +19,7 @@ void AFGLocomotive::ClearMultipleUnitControlMaster(){ }
 void AFGLocomotive::DisplayDebug( UCanvas* canvas, const  FDebugDisplayInfo& debugDisplay, float& YL, float& YPos){ }
 void AFGLocomotive::GiveHumanDriverControl(){ }
 void AFGLocomotive::UpdateHeadlightsMode(){ }
+void AFGLocomotive::OpenLocomotiveMenu(){ }
 bool AFGLocomotive::IsInputEnabled() const{ return bool(); }
 void AFGLocomotive::Input_ThrottleAxis_Started(const FInputActionValue& actionValue){ }
 void AFGLocomotive::Input_ThrottleAxis(const FInputActionValue& actionValue){ }
