@@ -321,7 +321,9 @@ def ReplicationDetailData_impl(self, val):
     return [None, {}, []] # It's going to be default anyway
 
 def GameplayTag_impl(self, val):
-    return [f'FGameplayTag::RequestGameplayTag(TEXT("{val["TagName"]}"))', {}, []] # It's going to be default anyway
+    if val["TagName"] == 'None':
+        return [None, {}, []]
+    return [f'FGameplayTag::RequestGameplayTag(TEXT("{val["TagName"]}"))', {}, []]
 
 custom_struct_implementations = {
     'InventoryItem': InventoryItem_impl,
