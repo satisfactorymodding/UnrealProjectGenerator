@@ -86,4 +86,4 @@ Plugins/*
 !Plugins/AbstractInstance
 !Plugins/InstancedSplines
 !Plugins/SignificanceISPC
-!Plugins/UHTPlugin
+!Plugins/CSSUHTPlugin
