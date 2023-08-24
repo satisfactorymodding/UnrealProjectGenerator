@@ -165,6 +165,7 @@ uint8 AFGBuildable::GetNumFactoryOuputConnections() const{ return uint8(); }
 void AFGBuildable::GetAttachmentPoints(TArray< const FFGAttachmentPoint* >& out_points) const{ }
 void AFGBuildable::CreateAttachmentPointsFromComponents(TArray< FFGAttachmentPoint >& out_points, AActor* owner) const{ }
 bool AFGBuildable::ShouldBeConsideredForBase_Implementation(){ return bool(); }
+float AFGBuildable::GetConsideredForBaseWeight_Implementation() const{ return float(); }
 void AFGBuildable::Native_OnMaterialInstancesUpdated(){ }
 int32 AFGBuildable::GetCostMultiplierForLength(float totalLength, float costSegmentLength){ return int32(); }
 TSubclassOf< class UFGFactoryCustomizationDescriptor_Swatch > AFGBuildable::GetDefaultSwatchCustomizationOverride(UObject* worldContext){ return TSubclassOf<class UFGFactoryCustomizationDescriptor_Swatch>(); }

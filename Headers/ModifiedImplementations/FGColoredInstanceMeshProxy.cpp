@@ -21,5 +21,6 @@ void UFGColoredInstanceMeshProxy::SetHasPowerData(float newHasPower){ }
 void UFGColoredInstanceMeshProxy::SetUserDefinedData(TArray<float> userData){ }
 void UFGColoredInstanceMeshProxy::SetInstanced(bool setToInstanced){ }
 void UFGColoredInstanceMeshProxy::OnHiddenInGameChanged(){ }
+bool UFGColoredInstanceMeshProxy::ShouldBlockInstancing() const{ return bool(); }
 void UFGColoredInstanceMeshProxy::InstantiateInternal(){ }
 void UFGColoredInstanceMeshProxy::PostLoad(){ Super::PostLoad(); }

@@ -4,3 +4,4 @@
 
 UFGSignTypeDescriptor::UFGSignTypeDescriptor(){ }
 uint32 FPrefabSignData::GetGUID() const{ return uint32(); }
+void UFGSignPrefabWidget::OnToggleBackground(bool NewVisibility) const{ }

@@ -2,6 +2,7 @@
 
 #include "FGWaterVolume.h"
 #include "AI/FGNavArea_Water.h"
+#include "UObject/ObjectSaveContext.h"
 
 #if DEBUG_POST_PROCESS_VOLUME_ENABLE
 FString AFGWaterVolume::GetDebugName() const{ return FString(); }
