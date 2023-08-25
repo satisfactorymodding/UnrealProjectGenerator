@@ -106,9 +106,11 @@ namespace ImplementHeaders
             
             List<string> implementations = new List<string>();
             // TODO: Maybe clear InlineImplementedFunctions, but it's not like they conflict
-            foreach (Match match in Regex.Matches(fileContents, @"^(FORCEINLINE|inline)\s+(.+\(.*\))\s*{?$", RegexOptions.Multiline))
+            foreach (Match match in Regex.Matches(fileContents, @"^(?:FORCEINLINE|inline)\s+(.+)\((.*\s*)\){?\s*$", RegexOptions.Multiline))
             {
-                InlineImplementedFunctions.Add(match.Groups[2].Value);
+                string typeAndName = match.Groups[1].Value.Trim();
+                string arguments = match.Groups[2].Value.Trim();
+                InlineImplementedFunctions.Add($"{typeAndName}({arguments})");
             }
             foreach (Match match in Regex.Matches(fileContents, @"^extern\s+TAutoConsoleVariable\s*<\s*(.+?)\s*>\s*(.+?);", RegexOptions.Multiline))
             {
@@ -250,6 +252,29 @@ namespace ImplementHeaders
 
             // Remove event/delegate declarations, which are matched as functions
             content = Regex.Replace(content, @"^\s*DECLARE_.*\(.*\)\r?\n", "\r\n", RegexOptions.Multiline);
+
+            foreach (Match inlineFunction in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(?:FORCEINLINE|inline\s+)?(virtual\s+)?(static\s+)?(const\s+)?(class\s+)?(explicit\s+)?(?:UPARAM\(.*?\)\s?)?([^=()\n{};]*?\s)?\n*((?:[^=<>()\n{};]|operator.+)*?)(\([^{}\[;]*?\))(\s*noexcept)?(\s*const)?(\s*override)?\s*{", RegexOptions.Multiline))
+            {
+                string ufunction = inlineFunction.Groups[1].Value;
+                string template = inlineFunction.Groups[2].Value;
+                string isVirtual = inlineFunction.Groups[3].Value;
+                string isStatic = inlineFunction.Groups[4].Value;
+                string isReturnConst = inlineFunction.Groups[5].Value;
+                string isClass = inlineFunction.Groups[6].Value;
+                string isExplicit = inlineFunction.Groups[7].Value;
+                string returnType = inlineFunction.Groups[8].Value;
+                string functionName = inlineFunction.Groups[9].Value;
+                string parameters = inlineFunction.Groups[10].Value;
+                string isNoexcept = inlineFunction.Groups[11].Value;
+                string isConst = inlineFunction.Groups[12].Value;
+                string isOverride = inlineFunction.Groups[13].Value;
+                string extras = inlineFunction.Groups[14].Value;
+
+                string completeFunctionDecl = $"{template}{isReturnConst}{FixReturnType(returnType)}{className}::{functionName}({Regex.Replace(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?<!<)\b(class|struct)\b", "")}){isNoexcept}{isConst}";
+
+                InlineImplementedFunctions.Add(completeFunctionDecl);
+            }
+
             List<string> implementations = new List<string>();
             // Match function definition (including UFUNCTIONs), nothing to see here ... just walk away ... probably the reason for many missing implementations...
             foreach (Match function in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual\s+)?(static\s+)?(const\s+)?(class\s+)?(explicit\s+)?(?:UPARAM\(.*?\)\s?)?([^=()\n{};]*?\s)?\n*((?:[^=<>()\n{};]|operator.+)*?)(\([^{}\[;]*?\))(\s*noexcept)?(\s*const)?(\s*override)?([^<>\n]*);", RegexOptions.Multiline))
@@ -310,13 +335,6 @@ namespace ImplementHeaders
                 parameters = Regex.Replace(parameters, @"\/\*.*?\*\/", ""); // fix for commented defaults
                 template = Regex.Replace(template, @"\/\*.*?\*\/", ""); // fix for commented defaults ?
 
-                if (InlineImplementedFunctions.Any((impl) => Regex.IsMatch(impl, $@"\W{className}::{functionName}\W")))
-                {
-                    if (!CountOnly)
-                        Console.WriteLine($"Skipped {className}::{functionName} (Inline implemented)");
-                    continue;
-                }
-
                 if (!string.IsNullOrWhiteSpace(ufunction))
                 {
                     if (Regex.IsMatch(ufunction, @"\WBlueprintImplementableEvent\W"))
@@ -355,13 +373,21 @@ namespace ImplementHeaders
                 return;
             }
 
+            string completeFunctionDecl = $"{template}{isReturnConst}{FixReturnType(returnType)}{className}::{functionName}({Regex.Replace(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?<!<)\b(class|struct)\b", "")}){isNoExcept}{isConst}";
+            if (InlineImplementedFunctions.Any((impl) => Regex.IsMatch(impl, $@"(?:\b|\W|^){Regex.Escape(completeFunctionDecl)}(?:\b|\W|$)")))
+            {
+                if (!CountOnly)
+                    Console.WriteLine($"Skipped {className}::{functionName} (Inline implemented)");
+                return;
+            }
+
             string withoutDestructorThingy = functionName.Trim().Replace("~", "");
             string withoutOuterClass = className.Substring(className.LastIndexOf(":") + 1);
             if (IsValidReturnType(returnType) || (withoutDestructorThingy == withoutOuterClass && string.IsNullOrWhiteSpace(returnType)))
             {
                 if (!string.IsNullOrWhiteSpace(template))
                     template = FixDefaults(template.Trim().TrimEnd('>')) + '>' + Environment.NewLine;
-                string result = $"{template}{isReturnConst}{FixReturnType(returnType)}{className}::{functionName}({Regex.Replace(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?<!<)\b(class|struct)\b", "")}){isNoExcept}{isConst}";
+                string result = completeFunctionDecl;
                 if (CustomSuper.ContainsKey(functionName.Trim()))
                 {
                     result += $" : {CustomSuper[functionName.Trim()]} ";
