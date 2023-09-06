@@ -26,6 +26,7 @@ UENUM( BlueprintType )
 enum class EGameUserSettingsState : uint8
 {
 	EGUSS_Default		UMETA( DisplayName = "Default" ),
+	EGUSS_Init			UMETA( DisplayName = "Init" ),
 	EGUSS_Applying		UMETA( DisplayName = "Applying" ),
 	EGUSS_Reset			UMETA( DisplayName = "Reset"  )
 };
@@ -157,6 +158,11 @@ public:
 	void InitUpscalingPresetValue();
 	/** Triggered when TSR preset scalabilty cvar have changed */
 	void OnUpscalingPresetUpdated( FString strId, FVariant value );
+
+	/** Triggered when Screen percentage setting is updated */
+	void OnScreenPercentageUpdated( FString strId, FVariant value );
+	UFUNCTION( BlueprintPure, Category = Settings )
+	bool IsUsingCustomScreenPercentage() const;
 	
 	/** Triggered when Foliage loading distance preset scalabilty cvar have changed */
 	void OnFoliageLoadDistanceUpdated( FString strId, FVariant value );

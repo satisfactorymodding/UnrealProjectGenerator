@@ -12,6 +12,7 @@ void AFGCreatureSpawner::DrawDebugInformation(float duration){ }
 AFGCreatureSpawner::AFGCreatureSpawner(){ }
 void AFGCreatureSpawner::BeginPlay(){ }
 void AFGCreatureSpawner::EndPlay(const EEndPlayReason::Type endPlayReason){ }
+void AFGCreatureSpawner::Tick(float DeltaSeconds){ }
 void AFGCreatureSpawner::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGCreatureSpawner::PostSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGCreatureSpawner::PreLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }

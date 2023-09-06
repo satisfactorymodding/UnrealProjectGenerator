@@ -181,7 +181,7 @@ public:
 		mNameToIconWidget.Empty();
 		mNameToIconWidget.Append( iconWidgetMap );
 	}
-
+	
 	// Toggle background, assuming background is called mBackground.
 	void OnToggleBackground(bool NewVisibility) const;
 
