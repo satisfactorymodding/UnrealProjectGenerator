@@ -2,7 +2,6 @@ import argparse
 import os
 import shutil
 from updateHeaders import update_headers
-from rebaseIncludePublicPaths import rebase_includes
 from addFactoryGamePCH import add_factorygame_pch
 
 generation_scripts_path = os.path.dirname(os.path.abspath(__file__))
@@ -31,7 +30,6 @@ def main():
   shutil.copytree(modified_headers_path, headersDir)
   shutil.copytree(modified_implementations_path, cppDir)
   
-  rebase_includes(args.UEPath)
   add_factorygame_pch()
 
 if __name__ == "__main__":
