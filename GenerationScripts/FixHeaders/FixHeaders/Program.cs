@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -74,13 +74,13 @@ namespace FixHeaders
             Run("git.exe", "commit -m \"Old Headers\"", headerUpgradeFolder);
             Run("git.exe", "branch ModdingEdit", headerUpgradeFolder);
             Run("git.exe", "checkout ModdingEdit", headerUpgradeFolder);
-            DirectoryCopy(modifiedPath, headerUpgradeHeadersFolder);
             Run("git.exe", "rm -r --cached *", headerUpgradeFolder);
+            DirectoryCopy(modifiedPath, headerUpgradeHeadersFolder);
             Run("git.exe", "add .", headerUpgradeFolder);
             Run("git.exe", "commit -m \"Modding Edit Headers\"", headerUpgradeFolder);
             Run("git.exe", "checkout master", headerUpgradeFolder);
-            DirectoryCopy(newPath, headerUpgradeHeadersFolder);
             Run("git.exe", "rm -r --cached *", headerUpgradeFolder);
+            DirectoryCopy(newPath, headerUpgradeHeadersFolder);
             Run("git.exe", "add .", headerUpgradeFolder);
             Run("git.exe", "commit -m \"New Headers\"", headerUpgradeFolder);
             Run("git.exe", "merge ModdingEdit", headerUpgradeFolder);
