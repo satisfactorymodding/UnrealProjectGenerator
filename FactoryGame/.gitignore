@@ -87,3 +87,4 @@ Plugins/*
 !Plugins/InstancedSplines
 !Plugins/SignificanceISPC
 !Plugins/CSSUHTPlugin
+!Plugins/OnlineIntegration
