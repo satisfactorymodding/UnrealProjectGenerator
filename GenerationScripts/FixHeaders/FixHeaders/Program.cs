@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -168,12 +168,22 @@ namespace FixHeaders
             bool hasChanges = false;
 
             // apply previous edits
-            foreach (Match m in Regex.Matches(file, @"<<<<<<< HEAD\r?\n((?:.|\s)*?)=======\r?\n((?:.|\s)*?)>>>>>>> ModdingEdit(?:\r?\n)?", RegexOptions.Multiline))
+            foreach (Match m in Regex.Matches(file, @"<<<<<<< HEAD\r?\n((?:.|\s)*?)=======\r?\n((?:.|\s)*?)>>>>>>> ModdingEdit(?=\r?\n)?", RegexOptions.Multiline))
             {
                 if (m.Groups[1].Value.StartsWith("#include") || m.Groups[2].Value.StartsWith("#include"))
                 {
+                    IEnumerable<string> includesNew = m.Groups[1].Value.Split('\n');
+                    IEnumerable<string> includesModdingEdit = m.Groups[2].Value.Split('\n').Where((s) => s.Contains("MODDING EDIT"));
+                    foreach(string moddingInclude in includesModdingEdit)
+                    {
+                        // Remove includes matching an edited include
+                        includesNew = includesNew.Where((s) => !moddingInclude.Contains(s));
+                    }
+                    List<string> allIncludes = new List<string>();
+                    allIncludes.AddRange(includesNew);
+                    allIncludes.AddRange(includesModdingEdit);
                     // Keep both
-                    file = file.Replace(m.Value, m.Groups[1].Value + m.Groups[2].Value);
+                    file = file.Replace(m.Value, string.Join("\n", allIncludes));
                     FixedCount++;
                     hasChanges = true;
                 }
