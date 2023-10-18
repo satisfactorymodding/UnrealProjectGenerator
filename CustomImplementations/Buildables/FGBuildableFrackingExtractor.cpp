@@ -1,1 +1,1 @@
-#include "FGResourceNodeFrackingCore.h"
+#include "Resources/FGResourceNodeFrackingCore.h"
