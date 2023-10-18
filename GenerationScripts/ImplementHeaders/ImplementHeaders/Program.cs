@@ -253,7 +253,7 @@ namespace ImplementHeaders
             // Remove event/delegate declarations, which are matched as functions
             content = Regex.Replace(content, @"^\s*DECLARE_.*\(.*\)\r?\n", "\r\n", RegexOptions.Multiline);
 
-            foreach (Match inlineFunction in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(?:FORCEINLINE|inline\s+)?(virtual\s+)?(static\s+)?(const\s+)?(class\s+)?(explicit\s+)?(?:UPARAM\(.*?\)\s?)?([^=()\n{};]*?\s)?\n*((?:[^=<>()\n{};]|operator.+)*?)(\([^{}\[;]*?\))(\s*noexcept)?(\s*const)?(\s*override)?\s*{", RegexOptions.Multiline))
+            foreach (Match inlineFunction in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(?:FORCEINLINE|inline\s+)?(virtual\s+)?(static\s+)?(const\s+)?(class\s+)?(explicit\s+)?(?:UPARAM\(.*?\)\s?)?([^=()\n{};]*?\s)?\n*((?:[^=<>()\n{};]|operator.+)*?)(\([^{}\[;]*?\))(\s*noexcept(?:\(.+\))?)?(\s*const)?(\s*override)?\s*{", RegexOptions.Multiline))
             {
                 string ufunction = inlineFunction.Groups[1].Value;
                 string template = inlineFunction.Groups[2].Value;
@@ -277,7 +277,7 @@ namespace ImplementHeaders
 
             List<string> implementations = new List<string>();
             // Match function definition (including UFUNCTIONs), nothing to see here ... just walk away ... probably the reason for many missing implementations...
-            foreach (Match function in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual\s+)?(static\s+)?(const\s+)?(class\s+)?(explicit\s+)?(?:UPARAM\(.*?\)\s?)?([^=()\n{};]*?\s)?\n*((?:[^=<>()\n{};]|operator.+)*?)(\([^{}\[;]*?\))(\s*noexcept)?(\s*const)?(\s*override)?([^<>\n]*);", RegexOptions.Multiline))
+            foreach (Match function in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual\s+)?(static\s+)?(const\s+)?(class\s+)?(explicit\s+)?(?:UPARAM\(.*?\)\s?)?([^=()\n{};]*?\s)?\n*((?:[^=<>()\n{};]|operator.+)*?)(\([^{}\[;]*?\))(\s*noexcept(?:\(.+\))?)?(\s*const)?(\s*override)?([^<>\n]*);", RegexOptions.Multiline))
             {
                 // string comment = function.Groups[1].Value; // removed because regex took too long
                 string ufunction = function.Groups[1].Value;
