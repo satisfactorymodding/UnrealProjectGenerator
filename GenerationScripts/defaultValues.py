@@ -326,6 +326,9 @@ def GameplayTag_impl(self, val):
         return [None, {}, []]
     return [f'FGameplayTag::RequestGameplayTag(TEXT("{val["TagName"]}"))', {}, []]
 
+def PlayerRules_impl(self, val):
+    return [None, {}, []] # It's going to be default anyway
+
 custom_struct_implementations = {
     'InventoryItem': InventoryItem_impl,
     'InventoryStack': InventoryStack_impl,
@@ -371,6 +374,7 @@ custom_struct_implementations = {
     'HitResult': HitResult_impl,
     'ReplicationDetailData': ReplicationDetailData_impl,
     'GameplayTag': GameplayTag_impl,
+    'PlayerRules': PlayerRules_impl,
 }
 
 def read_class_includes():
