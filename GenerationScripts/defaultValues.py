@@ -29,8 +29,8 @@ class_headers = {
     # TODO: parse UE headers?
     'UAIPerceptionComponent': 'Perception/AIPerceptionComponent.h',
     'UAkComponent': 'AkAudio/Classes/AkComponent.h',
-    'UBillboardComponent': '',
-    'UBoxComponent': '',
+    'UBillboardComponent': 'Components/BillboardComponent.h',
+    'UBoxComponent': 'Components/BoxComponent.h',
     'UBrushComponent': 'Components/BrushComponent.h',
     'UCameraComponent': '',
     'UCapsuleComponent': 'Components/CapsuleComponent.h',
@@ -89,6 +89,7 @@ class_headers = {
     'UInstancedSplineMeshComponent': 'InstancedSplineMeshComponent.h',
     'UGeometryCollectionComponent': 'GeometryCollection/GeometryCollectionComponent.h',
     'UInstancedStaticMeshComponent': 'Components/InstancedStaticMeshComponent.h',
+    'UContentBundleDescriptor': 'WorldPartition/ContentBundle/ContentBundleDescriptor.h',
 }
 
 getters = {
