@@ -1111,6 +1111,14 @@ def create_implementations(package_classes: dict[str, dict[str, UEClass]], dump_
                     for include in incls:
                         if include:
                             includes.add(include.replace('\\', '/'))
+
+            # GetLifetimeReplicatedProps
+            for cls in re.findall(r'((^void\s+([^{}]+)::GetLifetimeReplicatedProps\(([^{}]*?)\))\s*const\s*{\s*[^{}]*?})', cpp_content, re.DOTALL | re.MULTILINE):
+                if cls[2] in class_replicated_props_implementations:
+                    impls = class_replicated_props_implementations[cls[2]]
+                    cpp_content = cpp_content.replace(cls[0], cls[1] + ' const {\n\tSuper::GetLifetimeReplicatedProps(' + cls[3].strip().split(' ')[-1] + ');\n' + impls + '\n}')
+                    if len(impls) > 0:
+                        includes.add('Net/UnrealNetwork.h')
             
             existing_includes = re.findall(r'#include "(.+)"', cpp_content)
             for inc in existing_includes:
@@ -1121,12 +1129,6 @@ def create_implementations(package_classes: dict[str, dict[str, UEClass]], dump_
                 includes = sorted(list(includes))
                 header_rel_path = os.path.relpath(os.path.join(root, name), cpp_root).replace('.cpp', '.h').replace('\\', '/')
                 cpp_content = cpp_content.replace(f'#include "{header_rel_path}"', f'#include "{header_rel_path}"\n' + '\n'.join([f'#include "{inc}"' for inc in includes]))
-                        
-            # GetLifetimeReplicatedProps
-            for cls in re.findall(r'((^void\s+([^{}]+)::GetLifetimeReplicatedProps\(([^{}]*?)\))\s*const\s*{\s*[^{}]*?})', cpp_content, re.DOTALL | re.MULTILINE):
-                if cls[2] in class_replicated_props_implementations:
-                    impls = class_replicated_props_implementations[cls[2]]
-                    cpp_content = cpp_content.replace(cls[0], cls[1] + ' const {\n\tSuper::GetLifetimeReplicatedProps(' + cls[3].strip().split(' ')[-1] + ');\n' + impls + '\n}')
             
             open(os.path.join(root, name), 'w+').write(cpp_content)
             print(os.path.join(root, name))
