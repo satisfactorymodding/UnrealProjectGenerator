@@ -4,7 +4,7 @@
 #include "CoreMinimal.h"
 #include "FGFactoryHologram.h"
 #include "FGPipeConnectionComponent.h"
-#include "FGPoleDescriptor.h"
+#include "Resources/FGPoleDescriptor.h"
 #include "FGPipePartHologram.generated.h"
 
 

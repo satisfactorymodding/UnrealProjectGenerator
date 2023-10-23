@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "AvailabilityDependencies/FGAvailabilityDependency.h"
+#include "FGAvailabilityDependency.h"
 #include "ItemAmount.h"
 #include "FGConsumablesConsumedDependency.generated.h"
 

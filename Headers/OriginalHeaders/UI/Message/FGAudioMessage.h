@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UI/Message/FGMessageBase.h"
+#include "FGMessageBase.h"
 #include "FGAudioMessage.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE( FOnAudioMessageFinishedPlaying );

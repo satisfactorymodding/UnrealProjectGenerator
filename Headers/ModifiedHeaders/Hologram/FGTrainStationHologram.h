@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FGFactoryBuildingHologram.h"
 #include "FGTrainPlatformHologram.h"
-#include "Hologram/FGFactoryBuildingHologram.h"
 #include "FGTrainStationHologram.generated.h"
 
 

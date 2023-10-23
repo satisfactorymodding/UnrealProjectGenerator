@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/EngineTypes.h"
-#include "Equipment/FGAmmoType.h"
+#include "FGAmmoType.h"
 #include "FGAmmoTypeSpreadshot.generated.h"
 
 /**

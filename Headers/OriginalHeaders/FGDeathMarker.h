@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "GameFramework/Actor.h"
 #include "FGActorRepresentationInterface.h"
 #include "FGDeathMarker.generated.h"
 

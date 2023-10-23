@@ -3,6 +3,7 @@
 #pragma once
 
 #include "FGInventoryComponent.h"
+#include "Kismet/BlueprintFunctionLibrary.h"
 #include "FGInventoryLibrary.generated.h"
 
 

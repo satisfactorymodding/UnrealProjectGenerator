@@ -2,9 +2,9 @@
 
 #pragma once
 
+#include "Buildables/FGBuildableFactory.h"
+#include "Buildables/FGPipeHyperAttachmentSnapTargetInterface.h"
 #include "CoreMinimal.h"
-#include "FGBuildableFactory.h"
-#include "FGPipeHyperAttachmentSnapTargetInterface.h"
 #include "FGPipeHyperInterface.h"
 #include "FGBuildablePipePart.generated.h"
 

@@ -2,12 +2,12 @@
 
 #pragma once
 
-#include "FGBuildable.h"
 #include "Components/SplineComponent.h"
 #include "Components/SplineMeshComponent.h"
-#include "FGInstancedSplineMeshComponent.h"
+#include "FGBuildable.h"
 #include "FGRailroadSignalBlock.h"
 #include "FGSplineBuildableInterface.h"
+#include "InstancedSplineMeshComponent.h"
 #include "FGBuildableRailroadTrack.generated.h"
 
 
@@ -283,11 +283,31 @@ private:
 	int32 mSignalBlockID;
 
 	/** The instance spline mesh component dynamic spawned when needed to preview feedback. */
-	TWeakObjectPtr< UFGInstancedSplineMeshComponent > mBlockVisualizationSplineMeshComponent;
+	TWeakObjectPtr< UInstancedSplineMeshComponent > mBlockVisualizationSplineMeshComponent;
 
 	/* Mesh to use for block feedback. */
 	UPROPERTY( EditDefaultsOnly, Category = "Track|Block Visualization" )
 	UStaticMesh* mBlockVisualizationMesh;
+
+	/** Length of the block visualization mesh */
+	UPROPERTY( EditDefaultsOnly, Category = "Track|Block Visualization" )
+	float mBlockVisualizationMeshLength;
+
+	/** The offset for the spline data for the block visualization */
+	UPROPERTY( EditDefaultsOnly, Category = "Track|Block Visualization" )
+	int32 mBlockVisualizationNumPrimitiveDataFloats;
+	
+	/** The offset for the spline data for the block visualization */
+	UPROPERTY( EditDefaultsOnly, Category = "Track|Block Visualization" )
+	int32 mBlockVisualizationNumPerInstancePrimitiveDataCountOffset;
+	
+	/** Spline data settings for the visualization */
+	UPROPERTY( EditDefaultsOnly, Category = "Track|Block Visualization" )
+	FSplineDataSettings mBlockVisualizationSplineDataSettings;
+
+	/** First index of the Custom Data used for the block visualization color. It will use 3 custom data floats for R/G/B channels of the color */
+	UPROPERTY( EditDefaultsOnly, Category = "Track|Block Visualization" )
+	int32 mBlockVisualizationColorDataStartIndex;
 
 	// Collision Constants. These used to be magic numbers in the .cpp but were moved here so they could be accessed via the SplineBuildableInterface
 	static inline const FVector COLLISION_EXTENT = FVector( 200.f, 300.f, 30.f );

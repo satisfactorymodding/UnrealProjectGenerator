@@ -5,6 +5,7 @@
 #include "FactoryGame.h"
 #include "CoreMinimal.h"
 #include "FGOnlineSessionSettings.h"
+#include "OnlineIntegrationTypes.h"
 #include "GameFramework/GameSession.h"
 #include "FGGameSession.generated.h"
 
@@ -77,8 +78,6 @@ protected:
 	/** Game can become public after this, and the current visibility is applied */
 	UFUNCTION()
 	void IntroSequenceUpdated();
-
-	virtual void OnUpdateSessionComplete( FName sessionName, bool wasSuccessful );
 private:
 	/** Visibility of current game session */
 	ESessionVisibility mSessionVisibility;

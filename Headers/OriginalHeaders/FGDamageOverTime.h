@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "Object.h"
+#include "UObject/Object.h"
 #include "FGDamageOverTime.generated.h"
 
 class UFGDamageType;

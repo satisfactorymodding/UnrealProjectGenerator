@@ -3,10 +3,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Creature/FGCreature.h"
 #include "FGSubsystem.h"
-#include "RecastNavMesh.h"
-#include "EnumRange.h"
-#include "FGCreature.h"
+#include "Misc/EnumRange.h"
+#include "NavMesh/RecastNavMesh.h"
 #include "FGCreatureSubsystem.generated.h"
 
 extern TAutoConsoleVariable< int32 > CVarCreatureDisable;

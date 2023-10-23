@@ -2,9 +2,9 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
-#include "SubclassOf.h"
 #include "../Resources/FGItemDescriptor.h"
+#include "CoreMinimal.h"
+#include "Templates/SubclassOf.h"
 #include "FGCreatureDescriptor.generated.h"
 
 /**

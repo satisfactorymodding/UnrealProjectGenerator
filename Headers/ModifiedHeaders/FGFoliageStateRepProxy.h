@@ -2,16 +2,17 @@
 
 #pragma once
 
+#include "Containers/RingBuffer.h"
 #include "CoreMinimal.h"
 #include "FGFoliageTypes.h"
-#include "FGStaticReplicatedActor.h"
-#include "RingBuffer.h"
 #include "GameFramework/Actor.h"
+#include "Net/Serialization/FastArraySerializer.h"
+#include "Replication/FGStaticReplicatedActor.h"
 #include "FGFoliageStateRepProxy.generated.h"
 
 
 DECLARE_DELEGATE_OneParam(FOnNewFoliageRemovalReplicated, uint32);
-DECLARE_LOG_CATEGORY_EXTERN( LogFoliageReplication, Verbose, Verbose );
+FACTORYGAME_API DECLARE_LOG_CATEGORY_EXTERN( LogFoliageReplication, Verbose, Verbose );
 
 USTRUCT()
 struct FFoliageLocationHash : public FFastArraySerializerItem

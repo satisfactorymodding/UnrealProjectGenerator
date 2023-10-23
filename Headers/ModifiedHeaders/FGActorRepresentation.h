@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "FGConveyorItemRenderTargetWriter.h"
 #include "UObject/NoExportTypes.h"
 #include "FGActorRepresentation.generated.h"
 

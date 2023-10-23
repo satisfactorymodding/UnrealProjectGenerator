@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+#include "Templates/SubclassOf.h"
 #include "FGCreatureFamily.generated.h"
 
 UENUM( BlueprintType )

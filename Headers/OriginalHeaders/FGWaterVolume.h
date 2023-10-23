@@ -2,13 +2,13 @@
 
 #pragma once
 
-#include "UndefinedBool.h"
-#include "Interfaces/Interface_PostProcessVolume.h"
-#include "GameFramework/PhysicsVolume.h"
 #include "AI/Navigation/NavRelevantInterface.h"
-#include "NavAreas/NavArea.h"
-#include "FGExtractableResourceInterface.h"
 #include "FGSignificanceInterface.h"
+#include "GameFramework/PhysicsVolume.h"
+#include "Interfaces/Interface_PostProcessVolume.h"
+#include "NavAreas/NavArea.h"
+#include "Resources/FGExtractableResourceInterface.h"
+#include "UndefinedBool.h"
 #include "FGWaterVolume.generated.h"
 
 /**

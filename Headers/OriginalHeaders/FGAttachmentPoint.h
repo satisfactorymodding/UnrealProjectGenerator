@@ -2,7 +2,7 @@
 
 #pragma once
 #include "CoreMinimal.h"
-#include "SubclassOf.h"
+#include "Templates/SubclassOf.h"
 #include "FGAttachmentPoint.generated.h"
 
 struct FFGAttachmentPoint;

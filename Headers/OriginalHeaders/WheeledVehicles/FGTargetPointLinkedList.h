@@ -2,12 +2,13 @@
 
 #pragma once
 
+#include "Containers/Map.h"
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
 #include "FGSaveInterface.h"
-#include "WidgetTransform.h"
-#include "Map.h"
+#include "GameFramework/Info.h"
 #include "Math/TransformCalculus2D.h"
+#include "Slate/WidgetTransform.h"
+#include "UObject/NoExportTypes.h"
 #include "FGTargetPointLinkedList.generated.h"
 
 USTRUCT( BlueprintType )

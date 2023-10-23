@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Distributions/DistributionVector.h"
-#include "Runtime/Engine/Classes/Materials/MaterialParameterCollection.h"
+#include "Materials/MaterialParameterCollection.h"
 #include "Materials/MaterialParameterCollectionInstance.h"
 #include "FGCollectionParamUniformFloat.generated.h"
 

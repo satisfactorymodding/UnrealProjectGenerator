@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "UObject/Interface.h"
 #include "FGSaveInterface.generated.h"
 
 /** Customize this for complex types to be able to sanitize structs from a array */

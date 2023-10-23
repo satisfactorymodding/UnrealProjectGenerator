@@ -6,7 +6,7 @@
 #include "FGSaveInterface.h"
 #include "FGSignTypes.h"
 #include "FGRemoteCallObject.h"
-#include "FGBuildableWidgetSign.h"
+#include "Buildables/FGBuildableWidgetSign.h"
 #include "Buildables/FGBuildablePixelSign.h"
 #include "FGSignSubsystem.generated.h"
 

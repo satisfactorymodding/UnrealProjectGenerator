@@ -2,8 +2,7 @@
 
 #pragma once
 
-
-#include "UMG.h"
+#include "Blueprint/UserWidget.h"
 #include "FGSignTypes.generated.h"
 
 

@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "FGCreatureActionAnimatedBase.h"
+#include "Curves/CurveFloat.h"
 #include "FGCreatureActionCharge.generated.h"
 
 /**

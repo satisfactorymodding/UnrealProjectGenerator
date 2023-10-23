@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "Templates/SubclassOf.h"
 #include "ItemDrop.generated.h"
 
 

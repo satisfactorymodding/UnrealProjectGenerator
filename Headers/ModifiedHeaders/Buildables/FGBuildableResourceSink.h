@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "FGReplicationDetailActor_ResourceSink.h"
-#include "Buildables/FGBuildableFactory.h"
+#include "FGBuildableFactory.h"
+#include "Replication/FGReplicationDetailActor_ResourceSink.h"
 #include "FGBuildableResourceSink.generated.h"
 
 /**

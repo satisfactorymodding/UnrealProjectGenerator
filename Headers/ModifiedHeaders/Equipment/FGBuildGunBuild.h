@@ -2,12 +2,12 @@
 
 #pragma once
 
-#include "Equipment/FGBuildGun.h"
-#include "ItemAmount.h"
+#include "Delegates/DelegateCombinations.h"
+#include "FGBuildGun.h"
 #include "FGBuildableSubsystem.h"
 #include "FGConstructionMessageInterface.h"
-#include "DelegateCombinations.h"
 #include "FGFactoryBlueprintTypes.h"
+#include "ItemAmount.h"
 #include "FGBuildGunBuild.generated.h"
 
 /** Used to define reasons for failing to perform a nudge. */
@@ -142,6 +142,8 @@ public:
 	virtual void GetSupportedBuildModes_Implementation( TArray< TSubclassOf< UFGBuildGunModeDescriptor > >& out_buildModes) const override;
 	virtual float GetBuildGunRangeOverride_Implementation() override;
 	virtual void BindInputActions( class UFGEnhancedInputComponent* inputComponent ) override;
+	virtual bool CanSampleBuildings() const override;
+	virtual bool OnShortcutPressed(int32 shortcutIndex) override;
 	// End UFGBuildGunState
 
 	/**
@@ -271,8 +273,8 @@ private:
 	/** Spawn a hologram. */
 	void SpawnHologram();
 
-	/** Remove the current hologram. */
-	void RemoveHologram();
+	/** Remove the specified hologram. */
+	void RemoveHologram( class AFGHologram* hologram, bool cleanupClearanceDetection = true );
 
 	/** Remove the clearance from our current hologram */
 	void CleanupHologramClearanceDetection();
@@ -291,11 +293,14 @@ private:
 	UFUNCTION( Server, Reliable )
 	void Server_SetUseAutomaticClearanceSnapping( bool useAutomaticSnapping );
 
+	UFUNCTION( Server, Reliable )
+	void Server_UpdateNudgeOffset( const FVector& newNudgeOffset );
+
 	/** Input Action Bindings */
 	void Input_HologramLock( const FInputActionValue& actionValue );
 	void Input_HologramNudgeAxis( const FInputActionValue& actionValue );
 	void Input_SnapToGuideLines( const FInputActionValue& actionValue );
-	
+	void Input_HotbarSample( const FInputActionValue& actionValue );
 private:
 	/** stores a time we have held the primary fire button for. Used so we can detect if it's a hold or tap or similar*/
 	float mPrimaryFireHoldTime = -1;
@@ -360,4 +365,7 @@ private:
 
 	UPROPERTY()
 	UFGBlueprintDescriptor* mActiveBlueprintDescriptor;
+
+	/** Whenever we're in a hotbar sample mode, where clicking a shortcut key would overwrite the shortcut at that index instead */
+	bool mHotbarSampleMode;
 };

@@ -2,9 +2,9 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "Buildables/FGBuildable.h"
-#include "FGBuildablePoleBase.h"
+#include "Buildables/FGBuildablePoleBase.h"
+#include "CoreMinimal.h"
 #include "FGBuildablePipelineSupport.generated.h"
 
 class UFGPipeConnectionComponentBase;

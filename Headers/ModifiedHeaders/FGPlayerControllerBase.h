@@ -2,9 +2,9 @@
 
 #pragma once
 
-#include "Online.h"
 #include "FGInputLibrary.h"
 #include "PlayerPresenceState.h"
+#include "GameFramework/PlayerController.h"
 #include "FGPlayerControllerBase.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE( FOnInputChanged );

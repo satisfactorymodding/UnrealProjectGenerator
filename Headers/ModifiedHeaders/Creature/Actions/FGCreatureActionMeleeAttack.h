@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Creature/Actions/FGCreatureActionAnimated.h"
+#include "FGCreatureActionAnimated.h"
 #include "FGCreatureActionMeleeAttack.generated.h"
 
 USTRUCT()

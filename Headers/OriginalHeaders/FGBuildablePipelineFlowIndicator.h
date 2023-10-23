@@ -2,9 +2,9 @@
 
 #pragma once
 
+#include "Buildables/FGBuildable.h"
+#include "Buildables/FGBuildablePipeline.h"
 #include "CoreMinimal.h"
-#include "FGBuildable.h"
-#include "FGBuildablePipeline.h"
 #include "FGSignificanceInterface.h"
 #include "FGBuildablePipelineFlowIndicator.generated.h"
 

@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "Hologram/FGSplineHologram.h"
+#include "FGSplineHologram.h"
 #include "FGRoadHologram.generated.h"
 
 //@todonow Broke this when making the lifts

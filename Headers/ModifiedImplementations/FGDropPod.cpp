@@ -15,7 +15,7 @@ void AFGDropPod::PostLoadGame_Implementation(int32 saveVersion, int32 gameVersio
 void AFGDropPod::GatherDependencies_Implementation(TArray< UObject* >& out_dependentObjects){ }
 bool AFGDropPod::NeedTransform_Implementation(){ return bool(); }
 bool AFGDropPod::ShouldSave_Implementation() const{ return bool(); }
-void AFGDropPod::UpdateUseState_Implementation( AFGCharacterPlayer* byCharacter, const FVector& atLocation,  UPrimitiveComponent* componentHit, FUseState& out_useState) const{ }
+void AFGDropPod::UpdateUseState_Implementation( AFGCharacterPlayer* byCharacter, const FVector& atLocation,  UPrimitiveComponent* componentHit, FUseState& out_useState){ }
 void AFGDropPod::OnUse_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state){ }
 void AFGDropPod::OnUseStop_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state){ }
 bool AFGDropPod::IsUseable_Implementation() const{ return bool(); }

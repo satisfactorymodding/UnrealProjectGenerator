@@ -2,9 +2,9 @@
 
 #pragma once
 
+#include "Components/ListView.h"
 #include "CoreMinimal.h"
-#include "ListView.h"
-#include "SListView.h"
+#include "Widgets/Views/SListView.h"
 #include "FGListView.generated.h"
 
 
@@ -23,6 +23,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Style", meta=( DisplayName="Bar Style" ))
 	FScrollBarStyle mWidgetBarStyle;
 
+	UFUNCTION( BlueprintCallable, Category=Default )
+	UUserWidget* GetEntryWidgetForItem( UObject* item ) const;
+	
 	virtual TSharedRef<STableViewBase> RebuildListWidget() override;
 };
 

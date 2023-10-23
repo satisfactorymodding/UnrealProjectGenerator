@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Buildables/FGBuildableFactoryBuilding.h"
+#include "FGBuildableFactoryBuilding.h"
 #include "FGBuildableWalkway.generated.h"
 
 /**

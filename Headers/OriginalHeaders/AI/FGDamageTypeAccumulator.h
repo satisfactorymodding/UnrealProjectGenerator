@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 
-#include "FGDamageType.h"
+#include "DamageTypes/FGDamageType.h"
 
 #include "FGDamageTypeAccumulator.generated.h"
 

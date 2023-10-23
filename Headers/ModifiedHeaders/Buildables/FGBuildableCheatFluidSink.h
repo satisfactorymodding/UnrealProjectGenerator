@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Buildables/FGBuildableFactory.h"
+#include "FGBuildableFactory.h"
 #include "FGFluidIntegrantInterface.h"
 #include "FGBuildableCheatFluidSink.generated.h"
 

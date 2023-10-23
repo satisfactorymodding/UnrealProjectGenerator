@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FGBuildable.h"
 #include "FGCalendarRewards.h"
-#include "Buildables/FGBuildable.h"
 #include "FGEventSubsystem.h"
 #include "FGBuildableCalendar.generated.h"
 

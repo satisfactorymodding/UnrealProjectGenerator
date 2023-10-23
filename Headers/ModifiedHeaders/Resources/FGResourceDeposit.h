@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FGResourceNode.h"
 #include "FGResourceSettings.h"
-#include "Resources/FGResourceNode.h"
 #include "FGResourceDeposit.generated.h"
 
 /**

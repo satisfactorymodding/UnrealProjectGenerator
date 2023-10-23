@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Resources/FGItemDescriptor.h"
+#include "FGItemDescriptor.h"
 #include "FGOverflowDescriptor.generated.h"
 
 /**

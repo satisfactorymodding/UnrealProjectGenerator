@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "FGBuildableGeneratorGeoThermal.h"
+#include "Buildables/FGBuildableGeneratorGeoThermal.h"
 #include "Resources/FGResourceNode.h"
 #include "FGResourceNodeGeyser.generated.h"
 

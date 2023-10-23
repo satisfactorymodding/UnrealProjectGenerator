@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Buildables/FGBuildablePole.h"
+#include "FGBuildablePole.h"
 #include "FGConveyorPoleStackable.generated.h"
 
 /**

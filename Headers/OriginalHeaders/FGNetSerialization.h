@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "Engine/NetSerialization.h"
+#include "Net/Serialization/FastArraySerializer.h"
 #include "FGNetSerialization.generated.h"
 
 /** Base struct for items using Custom Fast TArray Replication */

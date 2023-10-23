@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "Hologram/FGBuildableHologram.h"
 #include "Buildables/FGBuildableFactoryBuilding.h"
+#include "FGBuildableHologram.h"
 
 #include "FGFactoryBuildingHologram.generated.h"
 

@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "Hologram/FGVehicleHologram.h"
 #include "FGRailroadSubsystem.h"
+#include "FGVehicleHologram.h"
 #include "FGRailroadVehicleHologram.generated.h"
 
 /**

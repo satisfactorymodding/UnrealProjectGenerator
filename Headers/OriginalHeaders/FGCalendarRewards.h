@@ -3,9 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "ObjectMacros.h"
-#include "UObject/NoExportTypes.h"
 #include "ItemAmount.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/ObjectMacros.h"
 #include "FGCalendarRewards.generated.h"
 
 /**

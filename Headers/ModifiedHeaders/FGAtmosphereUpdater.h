@@ -2,10 +2,11 @@
 
 #pragma once
 
-#include "Object.h"
+#include "UObject/Object.h"
 #include "FGAtmosphereVolume.h"
 #include "FGAtmosphereUpdater.generated.h"
 
+DECLARE_STATS_GROUP( TEXT( "AtmosphereUpdater" ), STATGROUP_AtmosphereUpdater, STATCAT_Advanced );
 
 /**
 * Struct containing debugging info for monitoring atmosphere volumes in the editor.

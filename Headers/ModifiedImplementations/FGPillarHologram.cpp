@@ -21,5 +21,6 @@ void AFGPillarHologram::CreateAttachmentPointTransform(FTransform& out_transform
 void AFGPillarHologram::SerializeConstructMessage(FArchive& ar, FNetConstructionID id){ }
 void AFGPillarHologram::OnPendingConstructionHologramCreated_Implementation(AFGHologram* fromHologram){ }
 void AFGPillarHologram::CheckValidPlacement(){ }
+bool AFGPillarHologram::CanIntersectWithDesigner( AFGBuildableBlueprintDesigner* designer){ return bool(); }
 bool AFGPillarHologram::IsHologramIdenticalToActor(AActor* actor, const FVector& hologramLocationOffset) const{ return bool(); }
 void AFGPillarHologram::OnRep_CurrentZoop(){ }

@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "Equipment/FGEquipment.h"
+#include "FGEquipment.h"
 #include "FGEquipmentAttachment.h"
 #include "FGSuitBase.generated.h"
 

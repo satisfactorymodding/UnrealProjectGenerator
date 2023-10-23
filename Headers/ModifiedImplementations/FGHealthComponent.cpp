@@ -16,7 +16,7 @@ bool UFGHealthComponent::NeedTransform_Implementation(){ return bool(); }
 bool UFGHealthComponent::ShouldSave_Implementation() const{ return bool(); }
 void UFGHealthComponent::TakeDamage(AActor* damagedActor, float damageAmount, const  UDamageType* damageType,  AController* instigatedBy, AActor* damageCauser){ }
 void UFGHealthComponent::TakePointDamage(AActor* damagedActor, float damage,  AController* instigatedBy, FVector hitLocation,  UPrimitiveComponent* hitComponent, FName boneName, FVector shotFromDirection, const  UDamageType* damageType, AActor* damageCauser){ }
-void UFGHealthComponent::TakeRadialDamage(AActor* damagedActor, float damage, const  UDamageType* damageType, FVector hitLocation, FHitResult hitInfo,  AController* instigatedBy, AActor* damageCauser){ }
+void UFGHealthComponent::TakeRadialDamage(AActor* damagedActor, float damage, const  UDamageType* damageType, FVector hitLocation, const FHitResult& hitInfo,  AController* instigatedBy, AActor* damageCauser){ }
 void UFGHealthComponent::AddDamageModifier(const FDamageModifier damageMod){ }
 void UFGHealthComponent::RemoveDamageModifiersOfType(TSubclassOf<UFGDamageType> dmgType, bool includeSubClasses){ }
 void UFGHealthComponent::RemoveDamageModifiersAppliedFromObject(UObject* applyingObject){ }

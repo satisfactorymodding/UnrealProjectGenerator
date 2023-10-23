@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Buildables/FGBuildableGeneratorFuel.h"
-#include "FGReplicationDetailActor_GeneratorNuclear.h"
+#include "FGBuildableGeneratorFuel.h"
+#include "Replication/FGReplicationDetailActor_GeneratorNuclear.h"
 #include "FGBuildableGeneratorNuclear.generated.h"
 
 

@@ -2,11 +2,7 @@
 
 #pragma once
 
-#include "Serialization/ArchiveUObject.h"
-#include "EngineGlobals.h"
-#include "Engine.h"
-
-
+#include "Serialization/ObjectWriter.h"
 
 /** 
  * Our modded version of object writer. When this is used we serialize the objects name and path
@@ -19,5 +15,4 @@ public:
 	virtual FArchive& operator<<( class UObject*& Res ) override;
 	virtual FArchive& operator<<( FObjectPtr& Res ) override;
 	virtual FArchive& operator<<( class FName& N ) override;
-
 };

@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 
-#include "FGFoundationHologram.h"
+#include "Hologram/FGFoundationHologram.h"
 #include "FGRampHologram.generated.h"
 
 /**

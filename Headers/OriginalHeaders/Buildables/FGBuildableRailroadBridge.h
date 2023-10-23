@@ -2,9 +2,9 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
-#include "Buildables/FGBuildable.h"
 #include "Components/SplineComponent.h"
+#include "CoreMinimal.h"
+#include "FGBuildable.h"
 #include "FGSplineComponent.h"
 #include "FGBuildableRailroadBridge.generated.h"
 

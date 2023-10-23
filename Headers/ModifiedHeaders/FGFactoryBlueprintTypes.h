@@ -3,10 +3,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "FGBuildDescriptor.h"
+#include "Resources/FGBuildDescriptor.h"
 #include "FGCategory.h"
 #include "FGInventoryComponent.h"
-#include "FGItemDescriptor.h"
+#include "Resources/FGItemDescriptor.h"
 #include "ItemAmount.h"
 #include "FGFactoryBlueprintTypes.generated.h"
 

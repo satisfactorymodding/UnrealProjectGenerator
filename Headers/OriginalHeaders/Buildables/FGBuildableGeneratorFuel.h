@@ -2,10 +2,10 @@
 
 #pragma once
 
-#include "Buildables/FGBuildableGenerator.h"
-#include "FGReplicationDetailInventoryComponent.h"
-#include "FGReplicationDetailActorOwnerInterface.h"
-#include "FGReplicationDetailActor_GeneratorFuel.h"
+#include "FGBuildableGenerator.h"
+#include "Replication/FGReplicationDetailActorOwnerInterface.h"
+#include "Replication/FGReplicationDetailActor_GeneratorFuel.h"
+#include "Replication/FGReplicationDetailInventoryComponent.h"
 #include "FGBuildableGeneratorFuel.generated.h"
 
 /**

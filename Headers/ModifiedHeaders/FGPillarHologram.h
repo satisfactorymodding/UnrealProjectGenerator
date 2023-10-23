@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "FGBuildableHologram.h"
+#include "Hologram/FGBuildableHologram.h"
 #include "FGPillarHologram.generated.h"
 
 UENUM()
@@ -56,6 +56,7 @@ public:
 protected:
 	// Begin AFGHologram Interface
 	virtual void CheckValidPlacement() override;
+	virtual bool CanIntersectWithDesigner( class AFGBuildableBlueprintDesigner* designer ) override;
 	// End AFGHologram Interface
 	
 	// Begin AFGBuildableHologram interface

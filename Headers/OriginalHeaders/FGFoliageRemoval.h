@@ -5,7 +5,7 @@
 #include "FGFoliageTypes.h"
 #include "GameFramework/Actor.h"
 #include "FGSaveInterface.h"
-#include "FGStaticReplicatedActor.h"
+#include "Replication/FGStaticReplicatedActor.h"
 #include "FGFoliageRemovalSubsystem.h"
 #include "FGFoliageRemoval.generated.h"
 

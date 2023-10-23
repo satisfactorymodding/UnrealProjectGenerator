@@ -2,15 +2,15 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
-#include "FGSaveInterface.h"
-#include "GameFramework/Info.h"
-#include "FGTapeData.h"
 #include "AkGameplayTypes.h"
+#include "Components/BoxComponent.h"
+#include "CoreMinimal.h"
 #include "FGBoomboxListenerInterface.h"
 #include "FGCharacterPlayer.h"
 #include "FGRemoteCallObject.h"
-#include "Components/BoxComponent.h"
+#include "FGSaveInterface.h"
+#include "GameFramework/Info.h"
+#include "Resources/FGTapeData.h"
 #include "FGBoomBoxPlayer.generated.h"
 
 UENUM( BlueprintType )

@@ -1,6 +1,6 @@
-﻿#pragma once
+#pragma once
 #include "CoreMinimal.h"
-#include "Interface.h"
+#include "UObject/Interface.h"
 #include "FGPipeHyperAttachmentSnapTargetInterface.generated.h"
 
 UINTERFACE( Blueprintable )

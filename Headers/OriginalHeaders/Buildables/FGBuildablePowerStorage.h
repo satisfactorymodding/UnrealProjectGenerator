@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "Buildables/FGBuildableFactory.h"
-#include "FGReplicationDetailActor_PowerStorage.h"
+#include "FGBuildableFactory.h"
+#include "Replication/FGReplicationDetailActor_PowerStorage.h"
 #include "FGBuildablePowerStorage.generated.h"
 
 UENUM( BlueprintType )

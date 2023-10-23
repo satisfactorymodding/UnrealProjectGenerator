@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "FGEquipment.h"
+#include "Equipment/FGEquipment.h"
 #include "FGInventoryComponent.h"
 #include "FGInventoryComponentEquipment.generated.h"
 
@@ -56,6 +56,9 @@ public:
 
 	/** Subscribes for active equipment changed notifications */
 	FDelegateHandle BindOnActiveEquipmentChanged( const FOnActiveEquipmentChanged::FDelegate &Delegate );
+
+	/** Makes the provided equipment active either by changing the active slot or by making it an active override equipment */
+	void SetActiveEquipment( AFGEquipment* equipment );
 protected:
 	/** Decide on what properties to replicate */
 	void GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps ) const override;

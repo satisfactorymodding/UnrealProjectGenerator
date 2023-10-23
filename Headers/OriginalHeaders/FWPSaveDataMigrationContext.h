@@ -1,12 +1,12 @@
-﻿// Copyright Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Equipment/FGAmmoType.h"
 #include "FGActorSaveHeaderTypes.h"
-#include "FGAmmoType.h"
-#include "Object.h"
 #include "SaveCustomVersion.h"
+#include "UObject/Object.h"
 #include "FWPSaveDataMigrationContext.generated.h"
 
 USTRUCT()

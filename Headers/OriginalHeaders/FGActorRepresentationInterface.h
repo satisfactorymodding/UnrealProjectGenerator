@@ -3,6 +3,7 @@
 #pragma once
 
 #include "FGActorRepresentation.h"
+#include "UObject/Interface.h"
 #include "FGActorRepresentationInterface.generated.h"
 
 /**

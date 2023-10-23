@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Misc/AutomationTest.h"
 #include "UObject/NoExportTypes.h"
 
 #if WITH_PERF_AUTOMATION_TESTS

@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Buildables/FGBuildablePipelineAttachment.h"
+#include "FGBuildablePipelineAttachment.h"
 #include "FGBuildablePipelinePump.generated.h"
 
 /**

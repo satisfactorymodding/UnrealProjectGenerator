@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Hologram/FGPoleHologram.h"
+#include "FGPoleHologram.h"
 #include "FGConveyorPoleHologram.generated.h"
 
 /**

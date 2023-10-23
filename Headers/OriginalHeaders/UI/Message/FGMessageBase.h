@@ -2,9 +2,8 @@
 
 #pragma once
 
-#include "UMG.h"
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+#include "Blueprint/UserWidget.h"
 #include "FGMessageBase.generated.h"
 
 UENUM( BlueprintType )

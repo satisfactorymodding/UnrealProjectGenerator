@@ -2,7 +2,7 @@
 #pragma once
 
 #include "Components/HierarchicalInstancedStaticMeshComponent.h"
-#include "FGBuildableFactory.h"
+#include "Buildables/FGBuildableFactory.h"
 #include <type_traits>
 #include "FGProductionIndicatorInstanceManager.generated.h"
 

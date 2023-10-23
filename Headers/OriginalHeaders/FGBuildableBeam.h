@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 
-#include "FGBuildableFactoryBuilding.h"
+#include "Buildables/FGBuildableFactoryBuilding.h"
 #include "FGBuildableBeam.generated.h"
 
 UCLASS()

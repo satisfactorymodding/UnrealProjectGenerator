@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/HUD.h"
-#include "FGDebugOverlayWidget.h"
+#include "UI/FGDebugOverlayWidget.h"
 #include "FGHUDBase.generated.h"
 
 /** Z-order values for sub widgets. */
@@ -45,6 +45,8 @@ public:
 	void ToggleStatisticsDebugOverlay();
 	UFUNCTION( Exec )
 	void ToggleShoppingListDebugOverlay();
+	UFUNCTION( Exec )
+	void ToggleOnlineInfoDebugOverlay();
 	UFUNCTION( Exec )
 	void QuickSwitchLanguage();
 	

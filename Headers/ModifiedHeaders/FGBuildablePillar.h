@@ -2,8 +2,8 @@
 
 #pragma once
 
+#include "Buildables/FGBuildableFactoryBuilding.h"
 #include "CoreMinimal.h"
-#include "FGBuildableFactoryBuilding.h"
 #include "FGBuildablePillar.generated.h"
 
 /**

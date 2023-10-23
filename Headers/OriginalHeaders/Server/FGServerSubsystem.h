@@ -2,14 +2,14 @@
 
 #pragma once
 
+#include "Containers/Ticker.h"
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "IPAddress.h"
-#include "Server/FGDedicatedServerTypes.h"
+#include "FGDedicatedServerTypes.h"
 #include "FGSaveSystem.h"
-#include "GameInstanceSubsystem.h"
-#include "Ticker.h"
 #include "GameFramework/SaveGame.h"
+#include "IPAddress.h"
+#include "Subsystems/GameInstanceSubsystem.h"
+#include "GameFramework/OnlineReplStructs.h"
 #include "FGServerSubsystem.generated.h"
 
 UCLASS()
@@ -119,7 +119,7 @@ public:
 private:
 	void OnPreLoadMap( const FString &MapName );
 	void OnPostLoadMap( UWorld* World );
-	void PlayerLeaving(AGameModeBase* /*GameMode*/, AController* /*Exiting*/) const;
+	void PlayerLeaving(class AGameModeBase* /*GameMode*/, class AController* /*Exiting*/) const;
 	void SaveSettings() const;
 	void LoadSettings();
 	

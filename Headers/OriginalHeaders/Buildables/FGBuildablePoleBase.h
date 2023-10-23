@@ -3,7 +3,7 @@
 #pragma once
 
 #include "FGBuildable.h"
-#include "FGPoleDescriptor.h"
+#include "Resources/FGPoleDescriptor.h"
 #include "FGBuildablePoleBase.generated.h"
 
 UCLASS( EditInlineNew )

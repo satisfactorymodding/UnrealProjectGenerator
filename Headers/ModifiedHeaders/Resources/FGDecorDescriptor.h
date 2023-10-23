@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "Resources/FGBuildingDescriptor.h"
+#include "FGBuildingDescriptor.h"
 #include "FGDecorDescriptor.generated.h"
 
 /**

@@ -2,10 +2,9 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
-#include "UMG.h"
 #include "Blueprint/UserWidget.h"
-#include "UI/FGPopupWidget.h"
+#include "CoreMinimal.h"
+#include "FGPopupWidget.h"
 #include "FGBaseUI.generated.h"
 
 /**

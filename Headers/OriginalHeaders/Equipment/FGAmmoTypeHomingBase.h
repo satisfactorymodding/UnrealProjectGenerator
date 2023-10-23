@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Equipment/FGAmmoType.h"
+#include "FGAmmoType.h"
 #include "FGAmmoTypeHomingBase.generated.h"
 
 UENUM()

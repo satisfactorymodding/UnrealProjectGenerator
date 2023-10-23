@@ -2,10 +2,10 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "AkAudioEvent.h"
-#include "Object.h"
 #include "Animation/AnimNotifies/AnimNotify.h"
+#include "CoreMinimal.h"
+#include "UObject/Object.h"
 #include "FGAnimNotify_CreatureSound.generated.h"
 
 class AFGCreature;

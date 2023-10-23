@@ -2,9 +2,9 @@
 
 #pragma once
 
+#include "Blueprint/UserWidget.h"
 #include "CoreMinimal.h"
 #include "FGServerStateListener.h"
-#include "UserWidget.h"
 #include "FGAbstractServerWidget.generated.h"
 
 /**

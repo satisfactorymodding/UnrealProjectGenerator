@@ -3,9 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "FGBoomBoxPlayer.h"
-#include "FGPointDamageType.h"
+#include "DamageTypes/FGPointDamageType.h"
 #include "Equipment/FGEquipment.h"
+#include "FGBoomBoxPlayer.h"
 #include "FGEquipmentBoomBox.generated.h"
 
 /**

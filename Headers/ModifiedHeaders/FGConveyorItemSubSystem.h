@@ -4,8 +4,8 @@
 
 #include "CoreMinimal.h"
 
-#include "FGBuildableConveyorBelt.h"
-#include "FGBuildableConveyorLift.h"
+#include "Buildables/FGBuildableConveyorBelt.h"
+#include "Buildables/FGBuildableConveyorLift.h"
 #include "FGConveyorInstanceSplineMesh.h"
 #include "FGSubsystem.h"
 #include "FGConveyorItemSubSystem.generated.h"

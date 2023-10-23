@@ -6,7 +6,7 @@
 #include "FGSaveInterface.h"
 #include "FGSignificanceInterface.h"
 #include "GameFramework/Actor.h"
-#include "FGStaticReplicatedActor.h"
+#include "Replication/FGStaticReplicatedActor.h"
 #include "FGGasPillarCloud.generated.h"
 
 class UNiagaraComponent;

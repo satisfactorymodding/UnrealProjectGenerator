@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "Resources/FGBuildDescriptor.h"
+#include "FGBuildDescriptor.h"
 #include "FGVehicleDescriptor.generated.h"
 
 /**

@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Resources/FGEquipmentDescriptor.h"
-#include "FGEquipment.h"
+#include "Equipment/FGEquipment.h"
+#include "FGEquipmentDescriptor.h"
 #include "FGDecorationDescriptor.generated.h"
 
 /**

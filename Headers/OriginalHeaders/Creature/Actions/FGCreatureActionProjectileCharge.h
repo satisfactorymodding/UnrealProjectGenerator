@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Creature/Actions/FGCreatureActionCharge.h"
+#include "FGCreatureActionCharge.h"
 
 #include "FGProjectile.h"
 
@@ -22,7 +22,6 @@ public:
 
 	// Begin UObject Interface
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-	virtual void BeginDestroy() override;
 	// End UObject interface
 	
 	// Begin UFGAction Interface
@@ -77,7 +76,7 @@ protected:
 	float mActiveChargeFiringRate;
 	
 	/** Magazine object of our ammo type. */
-	UPROPERTY( BlueprintReadOnly, Replicated, Category = "Charge|Projectile" )
+	UPROPERTY( BlueprintReadOnly, Category = "Charge|Projectile" )
 	UFGAmmoType* mMagazineObject;
 
 private:

@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "FGCreature.h"
+#include "Creature/FGCreature.h"
 #include "FGEnemy.generated.h"
 
 /**

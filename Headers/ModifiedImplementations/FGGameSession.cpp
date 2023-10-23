@@ -24,4 +24,3 @@ void AFGGameSession::ListenForIntroSequenceUpdated(){ }
 bool AFGGameSession::AllowsLoginAttempts(const  APlayerController* PC) const{ return bool(); }
 void AFGGameSession::ClearFailTracking(const  APlayerController* PC){ }
 void AFGGameSession::IntroSequenceUpdated(){ }
-void AFGGameSession::OnUpdateSessionComplete(FName sessionName, bool wasSuccessful){ }

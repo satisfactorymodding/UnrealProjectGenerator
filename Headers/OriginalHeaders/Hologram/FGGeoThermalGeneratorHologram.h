@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "Hologram/FGResourceExtractorHologram.h"
+#include "FGResourceExtractorHologram.h"
 #include "FGGeoThermalGeneratorHologram.generated.h"
 
 /**

@@ -4,8 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "FGOptionInterface.h"
+#include "Misc/Variant.h"
 #include "UObject/NoExportTypes.h"
-#include "Variant.h"
 #include "FGUserSettingApplyType.generated.h"
 
 /**
@@ -72,6 +72,8 @@ public:
 	virtual FVariant GetPendingValue() const { return PendingValue; }
 	/** This is the value we want to show in the UI. This is usually the pending value if one exists other wise it's the applied value */
 	virtual FVariant GetDisplayValue() const;
+	/** This is the default value for the user setting that we want to default to and apply when we reset this setting */
+	virtual FVariant GetDefaultValue() const { return DefaultValue; }
 	/** Returns a non empty FVariant if we have a value to actually save i.e the value is different from the default value and marked as dirty */
 	virtual FVariant GetValueToSave() const;
 	/** Returns true if we have pending changes that haven't been applied yet. */

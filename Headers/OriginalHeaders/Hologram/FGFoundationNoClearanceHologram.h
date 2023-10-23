@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Hologram/FGFoundationHologram.h"
+#include "FGFoundationHologram.h"
 #include "FGFoundationNoClearanceHologram.generated.h"
 
 /**

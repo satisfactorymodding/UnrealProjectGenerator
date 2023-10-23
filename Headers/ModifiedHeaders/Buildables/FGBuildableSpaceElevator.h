@@ -3,9 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Buildables/FGBuildableFactory.h"
-#include "ItemAmount.h"
 #include "FGActorRepresentationInterface.h"
+#include "FGBuildableFactory.h"
+#include "ItemAmount.h"
 #include "FGBuildableSpaceElevator.generated.h"
 
 /**

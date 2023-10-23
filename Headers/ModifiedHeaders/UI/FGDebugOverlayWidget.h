@@ -14,7 +14,8 @@ enum class EDebugOverlayType : uint8
 	DOT_Options,
 	DOT_Statistics,
 	DOT_ShoppingList,
-	DOT_AdvancedGameSettings
+	DOT_AdvancedGameSettings,
+	DOT_OnlineInfo
 };
 
 /**
@@ -59,6 +60,9 @@ protected:
 
 	UFUNCTION()
 	void GetAdvancedGameSettingsOverlayData( TArray<FString>& out_debugOverlayData );
+
+	UFUNCTION()
+	void GetOnlineInfoOverlayData( TArray<FString>& out_debugOverlayData );
 	
 	UFUNCTION( BlueprintImplementableEvent, Category = "Debug" )
 	void UpdateDebugOverlayData( const TArray<FString>& debugOverlayData );

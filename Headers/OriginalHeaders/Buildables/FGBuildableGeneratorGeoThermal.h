@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "Buildables/FGBuildableGenerator.h"
-#include "FGExtractableResourceInterface.h"
+#include "FGBuildableGenerator.h"
+#include "Resources/FGExtractableResourceInterface.h"
 #include "FGBuildableGeneratorGeoThermal.generated.h"
 
 /**

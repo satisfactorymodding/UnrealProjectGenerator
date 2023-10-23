@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "FGTapeData.h"
-#include "Interface.h"
+#include "Resources/FGTapeData.h"
+#include "UObject/Interface.h"
 #include "FGBoomboxListenerInterface.generated.h"
 
 UENUM( BlueprintType, meta=( Bitflags, UseEnumValuesAsMaskValuesInEditor = "true" ) )

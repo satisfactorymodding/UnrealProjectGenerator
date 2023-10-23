@@ -16,6 +16,8 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams( FOnCircuitSwitchBuildingTagChanged
 UCLASS()
 class FACTORYGAME_API AFGBuildableCircuitSwitch : public AFGBuildableCircuitBridge, public IFGBuildingTagInterface
 {
+	friend class AFGPowerSwitchHologram;
+	
 	GENERATED_BODY()
 public:
 	AFGBuildableCircuitSwitch();

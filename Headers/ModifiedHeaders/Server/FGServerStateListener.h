@@ -3,9 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Interface.h"
+#include "FGDedicatedServerTypes.h"
 #include "OnlineBeaconClient.h"
-#include "Server/FGDedicatedServerTypes.h"
+#include "UObject/Interface.h"
 #include "FGServerStateListener.generated.h"
 
 /**

@@ -6,7 +6,7 @@
 
 #include "FGAction.h"
 
-#include "FGCreatureController.h"
+#include "AI/FGCreatureController.h"
 
 #include "FGCreatureAction.generated.h"
 

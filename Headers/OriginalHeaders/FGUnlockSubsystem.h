@@ -3,11 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "FGSubsystem.h"
 #include "FGSaveInterface.h"
-#include "FGTapeData.h"
-#include "FGUnlockCheckmark.h"
-#include "FGUnlockScannableResource.h"
+#include "FGSubsystem.h"
+#include "Resources/FGTapeData.h"
+#include "Unlocks/FGUnlockCheckmark.h"
+#include "Unlocks/FGUnlockScannableResource.h"
 #include "FGUnlockSubsystem.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FUnlockMoreInventorySlots, int32, newUnlockedSlots );

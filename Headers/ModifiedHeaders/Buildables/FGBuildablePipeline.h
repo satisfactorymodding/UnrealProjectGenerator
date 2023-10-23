@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "FGFluidIntegrantInterface.h"
 #include "FGBuildablePipeBase.h"
+#include "FGFluidIntegrantInterface.h"
 #include "FGBuildablePipeline.generated.h"
 
 

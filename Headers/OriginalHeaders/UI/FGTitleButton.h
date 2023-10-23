@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UI/FGButtonWidget.h"
+#include "FGButtonWidget.h"
 #include "FGTitleButton.generated.h"
 
 /**

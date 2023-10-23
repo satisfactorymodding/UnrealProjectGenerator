@@ -4,7 +4,7 @@
 
 #include "Components/SceneComponent.h"
 #include "FGSaveInterface.h"
-#include "DefaultValueHelper.h"
+#include "Misc/DefaultValueHelper.h"
 #include "FGFactoryLegsComponent.generated.h"
 
 /**

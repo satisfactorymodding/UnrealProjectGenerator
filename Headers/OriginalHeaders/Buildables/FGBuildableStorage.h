@@ -3,8 +3,8 @@
 #pragma once
 
 #include "FGBuildableFactory.h"
-#include "FGReplicationDetailInventoryComponent.h"
-#include "FGReplicationDetailActor_Storage.h"
+#include "Replication/FGReplicationDetailActor_Storage.h"
+#include "Replication/FGReplicationDetailInventoryComponent.h"
 #include "FGBuildableStorage.generated.h"
 
 /**

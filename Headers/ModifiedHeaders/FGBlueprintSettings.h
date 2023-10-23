@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "SubclassOf.h"
 #include "Engine/DeveloperSettings.h"
+#include "Templates/SubclassOf.h"
 #include "FGBlueprintSettings.generated.h"
 
 /**

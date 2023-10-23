@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Buildables/FGBuildableConveyorAttachment.h"
+#include "FGBuildableConveyorAttachment.h"
 #include "FGBuildableSplitterSmart.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE( FOnSortRulesChanged );

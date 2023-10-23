@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "Resources/FGItemDescriptor.h"
+#include "FGItemDescriptor.h"
 #include "FGNoneDescriptor.generated.h"
 
 /**

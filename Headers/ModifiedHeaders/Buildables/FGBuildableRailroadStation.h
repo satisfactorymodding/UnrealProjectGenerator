@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "FGBuildableTrainPlatform.h"
 #include "FGActorRepresentationInterface.h"
+#include "FGBuildableTrainPlatform.h"
 #include "FGTrainDockingRules.h"
 #include "FGBuildableRailroadStation.generated.h"
 
@@ -105,6 +105,8 @@ protected:
 	virtual void SetupRailroadTrack() override;
 	// End AFGBuildableTrainPlatform
 
+	UFUNCTION()
+	void OnRep_StationIdentifier();
 private:
 	/** Tries to dock each vehicle in the train to a platform */
 	bool DockVehiclesToPlatforms( class AFGLocomotive* locomotive );
@@ -119,7 +121,7 @@ public:
 	
 	//@todo-trains private
 	/** Light weight representation about this station, the railroad subsystem is responsible for this. */
-	UPROPERTY( Replicated )
+	UPROPERTY( ReplicatedUsing = OnRep_StationIdentifier )
 	class AFGTrainStationIdentifier* mStationIdentifier;
 
 private:

@@ -3,20 +3,20 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "FGOnlineSessionSettings.h"
-#include "FGOnlineSessionClient.h"
 #include "Engine/LocalPlayer.h"
-#include "OnlineSubsystemTypes.h"
 #include "FGErrorMessage.h"
-#include "CoreOnline.h"
-#include "EOSAccountHelpers.h"
+#include "FGOnlineSessionClient.h"
+#include "FGOnlineSessionSettings.h"
 #include "FindSessionsCallbackProxy.h"
-#include "EOSSDKForwards.h"
+#include "Online/CoreOnline.h"
+#include "Online/FGOnlineHelpers.h"
+#include "OnlineSubsystemTypes.h"
 #include "PlayerPresenceState.h"
+#include "OnlineIntegrationTypes.h"
 #include "FGLocalPlayer.generated.h"
 
-
 class UFGInputMappingContext;
+
 UCLASS()
 class UFGEM_LoggedOutFromOnlineService : public UFGErrorMessage
 {
@@ -57,6 +57,11 @@ enum ELoginState
 	LS_LoggedIn			UMETA(DisplayName="LoggedIn")
 };
 
+namespace UE::Online
+{
+struct FAccountInfo;
+};
+
 USTRUCT(BlueprintType)
 struct FFGOnlineFriend
 {
@@ -87,8 +92,6 @@ struct FFGOnlineFriend
 	/** Internal friend data */
 	TSharedPtr<FOnlineFriend> Friend;
 };
-
-FORCEINLINE FString VarToFString( const FFGOnlineFriend& f ){ return FString::Printf( TEXT("%s"), *VarToFString(f.Friend->GetUserId()) ); }
 
 FORCEINLINE uint32 GetTypeHash( const FFGOnlineFriend& onlineFriend )
 {
@@ -289,6 +292,7 @@ public:
 	void LinkAccount();
 
 	virtual void SwitchController(class APlayerController* PC) override;
+	virtual FString GetNickname() const override;
 
 	/** Logout current account and login to a epic account and connect */
 	void LoginAndConnectOtherEpicAccount();
@@ -315,7 +319,8 @@ protected:
 	//~Begin OnlineIdentity delegates
 	void OnLoginStatusChanged( int32 localUserNum, ELoginStatus::Type previous, ELoginStatus::Type current, const FUniqueNetId& userId );
 	void OnLoginStatusChangedSteam(int32 localUserNum, ELoginStatus::Type previous, ELoginStatus::Type current, const FUniqueNetId& userId);
-
+	void OnLoginStatusChanged( TSharedRef<UE::Online::FAccountInfo> AccountInfo, EOnlineIntegrationUnmappedContext Context );
+	
 	void SteamTaskRetryWaiter();
 	void StartSteamEOSConnect();
 

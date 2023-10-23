@@ -2,9 +2,9 @@
 
 #pragma once
 
+#include "FGActorRepresentationInterface.h"
 #include "FGBuildableFactory.h"
 #include "FGBuildableGenerator.h"
-#include "FGActorRepresentationInterface.h"
 #include "FGBuildableTradingPost.generated.h"
 
 UINTERFACE( Blueprintable )

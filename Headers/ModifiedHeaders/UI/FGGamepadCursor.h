@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "AnalogCursor.h"
 #include "Engine/LocalPlayer.h"
+#include "Framework/Application/AnalogCursor.h"
 //#include "FGGamepadCursor.generated.h"
 
 class FACTORYGAME_API FFGGamepadCursor : public FAnalogCursor

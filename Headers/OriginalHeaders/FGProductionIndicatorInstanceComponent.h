@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "FGBuildableFactory.h"
+#include "Buildables/FGBuildableFactory.h"
 #include "FGColoredInstanceMeshProxy.h"
 #include "FGProductionIndicatorInstanceManager.h"
 #include "FGProductionIndicatorInstanceComponent.generated.h"

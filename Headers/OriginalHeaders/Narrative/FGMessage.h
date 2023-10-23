@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
-#include "FGAudioMessage.h"
+#include "UI/Message/FGAudioMessage.h"
 #include "FGMessage.generated.h"
 
 /**

@@ -2,7 +2,8 @@
 
 #pragma once
 
-#include "UObject/NoExportTypes.h"
+#include "UObject/Object.h"
+#include "Templates/SubclassOf.h"
 #include "FGLootSettings.generated.h"
 
 /**

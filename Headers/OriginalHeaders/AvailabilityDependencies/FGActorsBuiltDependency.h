@@ -3,7 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "AvailabilityDependencies/FGAvailabilityDependency.h"
+#include "FGAvailabilityDependency.h"
+#include "Templates/SubclassOf.h"
 #include "FGActorsBuiltDependency.generated.h"
 
 UENUM( BlueprintType )

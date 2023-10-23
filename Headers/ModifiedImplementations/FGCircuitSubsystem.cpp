@@ -31,6 +31,7 @@ void AFGCircuitSubsystem::PowerCircuit_RegisterPriorityPowerSwitchInfo( AFGPrior
 void AFGCircuitSubsystem::PowerCircuit_UnregisterPriorityPowerSwitchInfo( AFGPriorityPowerSwitchInfo* info){ }
 TArray< AFGPriorityPowerSwitchInfo* > AFGCircuitSubsystem::PowerCircuit_GetPriorityPowerSwitchInfos() const{ return TArray<AFGPriorityPowerSwitchInfo*>(); }
 void AFGCircuitSubsystem::PowerCircuit_SortPriorityPowerSwitchInfos(TArray< AFGPriorityPowerSwitchInfo* >& infos) const{ }
+void AFGCircuitSubsystem::PowerCircuit_SetPrioritySwitchGroupOn(int32 priority, bool on){ }
 void AFGCircuitSubsystem::Debug_DumpCircuitsToLog(){ }
 void AFGCircuitSubsystem::OnRep_ReplicatedCircuits(){ }
 int32 AFGCircuitSubsystem::GenerateUniqueCircuitID(){ return int32(); }

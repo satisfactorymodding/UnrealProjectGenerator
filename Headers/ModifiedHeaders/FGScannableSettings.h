@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "FGItemDescriptor.h"
+#include "Resources/FGItemDescriptor.h"
 #include "FGScannableDetails.h"
 #include "Engine/DeveloperSettings.h"
 #include "FGScannableSettings.generated.h"

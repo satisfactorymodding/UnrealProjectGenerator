@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "Object.h"
+#include "Engine/DeveloperSettings.h"
 #include "FGGlobalSettings.generated.h"
 
 

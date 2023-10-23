@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "GameFramework/Actor.h"
 #include "FGEquipment.h"
+#include "GameFramework/Actor.h"
 #include "FGEquipmentAttachment.generated.h"
 
 UCLASS()

@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Equipment/FGObjectScanner.h"
 #include "FGActorRepresentation.h"
-#include "FGObjectScanner.h"
 #include "FGRadarTowerRepresentation.generated.h"
 
 

@@ -2,13 +2,13 @@
 
 #pragma once
 
+#include "AvailabilityDependencies/FGAvailabilityDependency.h"
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+#include "FGEventSubsystem.h"
 #include "FGResearchTreeNode.h"
-#include "FGAvailabilityDependency.h"
 #include "IncludeInBuild.h"
 #include "Styling/SlateBrush.h"
-#include "FGEventSubsystem.h"
+#include "UObject/NoExportTypes.h"
 #include "FGResearchTree.generated.h"
 
 /**

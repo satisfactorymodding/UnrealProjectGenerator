@@ -2,11 +2,11 @@
 
 #pragma once
 
-#include "Equipment/FGBuildGun.h"
-#include "ItemAmount.h"
-#include "FGFactoryColoringTypes.h"
+#include "FGBuildGun.h"
 #include "FGBuildableSubsystem.h"
 #include "FGConstructionMessageInterface.h"
+#include "FGFactoryColoringTypes.h"
+#include "ItemAmount.h"
 #include "FGBuildGunPaint.generated.h"
 
 
@@ -45,6 +45,7 @@ public:
 	virtual void SecondaryFire_Implementation() override;
 	virtual void Scroll_Implementation( int32 delta ) override;
 	virtual void BindInputActions( class UFGEnhancedInputComponent* inputComponent ) override;
+	virtual bool CanSampleCustomizations() const override;
 	// End UFGBuildGunState
 
 	// Stencil Previews

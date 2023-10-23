@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FGFactoryHologram.h"
 #include "FGPipeAttachmentHologram.h"
-#include "Hologram/FGFactoryHologram.h"
 #include "FGPipelineAttachmentHologram.generated.h"
 
 /**

@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "FGItemDescriptor.h"
-#include "Object.h"
+#include "Resources/FGItemDescriptor.h"
+#include "UObject/Object.h"
 #include "FGJetPackFuelParameters.generated.h"
 
 UCLASS( Blueprintable, Abstract )

@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Misc/FrameTime.h"
 #include "UObject/NoExportTypes.h"
 #include "FGSequence.generated.h"
 

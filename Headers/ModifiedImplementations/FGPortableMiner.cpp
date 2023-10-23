@@ -15,7 +15,7 @@ void AFGPortableMiner::PostLoadGame_Implementation(int32 saveVersion, int32 game
 void AFGPortableMiner::GatherDependencies_Implementation(TArray< UObject* >& out_dependentObjects){ }
 bool AFGPortableMiner::NeedTransform_Implementation(){ return bool(); }
 bool AFGPortableMiner::ShouldSave_Implementation() const{ return bool(); }
-void AFGPortableMiner::UpdateUseState_Implementation( AFGCharacterPlayer* byCharacter, const FVector& atLocation,  UPrimitiveComponent* componentHit, FUseState& out_useState) const{ }
+void AFGPortableMiner::UpdateUseState_Implementation( AFGCharacterPlayer* byCharacter, const FVector& atLocation,  UPrimitiveComponent* componentHit, FUseState& out_useState){ }
 void AFGPortableMiner::OnUse_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state){ }
 void AFGPortableMiner::OnUseStop_Implementation( AFGCharacterPlayer* byCharacter, const FUseState& state){ }
 bool AFGPortableMiner::IsUseable_Implementation() const{ return bool(); }

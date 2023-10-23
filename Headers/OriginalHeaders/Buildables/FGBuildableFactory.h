@@ -4,8 +4,8 @@
 
 #include "FGBuildable.h"
 #include "FGSignificanceInterface.h"
-#include "FGReplicationDetailInventoryComponent.h"
-#include "FGReplicationDetailActor_BuildableFactory.h"
+#include "Replication/FGReplicationDetailActor_BuildableFactory.h"
+#include "Replication/FGReplicationDetailInventoryComponent.h"
 #include "FGBuildableFactory.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnReplicationDetailActorCreated, class AActor*, replicationDetailActorOwner );

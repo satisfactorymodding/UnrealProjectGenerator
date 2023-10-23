@@ -19,6 +19,7 @@ void AFGCharacterBase::PostLoadGame_Implementation(int32 saveVersion, int32 game
 void AFGCharacterBase::GatherDependencies_Implementation(TArray< UObject* >& out_dependentObjects){ }
 bool AFGCharacterBase::NeedTransform_Implementation(){ return bool(); }
 bool AFGCharacterBase::ShouldSave_Implementation() const{ return bool(); }
+void AFGCharacterBase::LaunchCharacter(FVector LaunchVelocity, bool bXYOverride, bool bZOverride){ }
 void AFGCharacterBase::Died(AActor* thisActor){ }
 void AFGCharacterBase::OnTakeDamage(AActor* damagedActor, float damageAmount, const  UDamageType* damageType,  AController* instigatedBy, AActor* damageCauser){ }
 void AFGCharacterBase::OnTakePointDamage(AActor* damagedActor, float damage,  AController* instigatedBy, FVector hitLocation,  UPrimitiveComponent* hitComponent, FName boneName, FVector shotFromDirection, const  UDamageType* damageType, AActor* damageCauser){ }

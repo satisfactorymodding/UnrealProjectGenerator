@@ -51,6 +51,9 @@ public:
 	UFUNCTION( BlueprintPure, Category = "PowerPole" )
 	class UFGPowerConnectionComponent* GetPowerConnection(int32 index) const { return mPowerConnections[index]; }
 
+	UFUNCTION( BlueprintPure, Category = "PowerPole" )
+	const TArray< class UFGPowerConnectionComponent* >& GetPowerConnections() const { return mPowerConnections; }
+
 	void OnPowerConnectionChanged(class UFGCircuitConnectionComponent* connection);
 
 	/** Updates the cached number of connections this power pole currently have. */

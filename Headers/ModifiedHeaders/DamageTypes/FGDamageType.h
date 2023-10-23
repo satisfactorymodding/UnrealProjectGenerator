@@ -3,8 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
-
 #include "GameFramework/DamageType.h"
+#include "HAL/IConsoleManager.h"
+#include "Templates/SubclassOf.h"
 #include "FGDamageType.generated.h"
 
 extern TAutoConsoleVariable< int32 > CVarDamageTypeRangeDebug;
@@ -45,6 +46,13 @@ public:
 	/** Always causes stun if this is set, overriding stun damage calculations  */
 	UPROPERTY( EditAnywhere, BlueprintReadOnly, Category = "DamageType" )
 	bool mAlwaysCauseStun;
+
+	//@todo Maybe add the other types and rework where they are used - BjörkhemT.
+	UPROPERTY( EditDefaultsOnly, Category = "Damage" )
+	bool mIsGasPointType = false;
+	UPROPERTY( EditDefaultsOnly, Category = "Damage" )
+	bool mIsGasRadialType = false;
+	
 };
 
 UENUM()

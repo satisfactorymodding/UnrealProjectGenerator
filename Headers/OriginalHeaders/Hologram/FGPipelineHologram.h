@@ -2,10 +2,10 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
-#include "HologramHelpers.h"
-#include "Hologram/FGSplineHologram.h"
 #include "Components/SplineComponent.h"
+#include "CoreMinimal.h"
+#include "FGSplineHologram.h"
+#include "HologramHelpers.h"
 #include "FGPipelineHologram.generated.h"
 
 /**
@@ -45,6 +45,7 @@ public:
 	virtual void CheckBlueprintCommingling() override;
 	virtual AFGHologram* GetNudgeHologramTarget() override;
 	virtual bool CanTakeNextBuildStep() const override;
+	virtual void ReplaceHologram( AFGHologram* hologram, bool snapTransform ) override;
 	// End AFGHologram Interface
 
 	// Begin FGConstructionMessageInterface

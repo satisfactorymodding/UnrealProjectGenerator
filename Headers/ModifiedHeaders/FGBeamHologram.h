@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "FGBuildableHologram.h"
+#include "Hologram/FGBuildableHologram.h"
 #include "FGBeamHologram.generated.h"
 
 UENUM()

@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "Resources/FGBuildDescriptor.h"
-#include "FGBuildableManufacturerVariablePower.h"
+#include "Buildables/FGBuildableManufacturerVariablePower.h"
+#include "FGBuildDescriptor.h"
 #include "FGBuildingDescriptor.generated.h"
 
 /**

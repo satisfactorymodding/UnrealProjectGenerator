@@ -3,9 +3,9 @@
 #pragma once
 
 #include "FGSaveInterface.h"
-#include "GeometryCollectionActor.h"
-#include "GeometryCollectionComponent.h"
-#include "FGStaticReplicatedActor.h"
+#include "GeometryCollection/GeometryCollectionActor.h"
+#include "GeometryCollection/GeometryCollectionComponent.h"
+#include "Replication/FGStaticReplicatedActor.h"
 #include "FGDestructibleActor.generated.h"
 
 class UGeometryCollection;

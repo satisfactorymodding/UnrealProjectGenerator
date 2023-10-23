@@ -1,10 +1,10 @@
-﻿// Copyright Coffee Stain Studios. All Rights Reserved.
+// Copyright Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 
+#include "Blueprint/UserWidget.h"
 #include "CoreMinimal.h"
 #include "FGServerStateListener.h"
-#include "UserWidget.h"
 #include "FGAbstractServerWidget.generated.h"
 
 /**

@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GeometryCollectionComponent.h"
 #include "GameFramework/Actor.h"
+#include "GeometryCollection/GeometryCollectionComponent.h"
 #include "FGGasPillarDesctructionActor.generated.h"
 
 UCLASS()

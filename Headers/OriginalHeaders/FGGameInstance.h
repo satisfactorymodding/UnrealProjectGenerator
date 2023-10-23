@@ -3,10 +3,10 @@
 #pragma once
 
 #include "Engine/GameInstance.h"
-#include "NAT.h"
+#include "Online/FGNat.h"
+#include "Online/FGOnlineHelpers.h"
 #include "OnlineSessionSettings.h"
 #include "Interfaces/OnlineSessionInterface.h"
-#include "EOSSDKForwards.h"
 #include "FGGameInstance.generated.h"
 
 
@@ -223,7 +223,7 @@ protected:
 	virtual void OnDestroyOldSessionComplete_JoinSession( FName gameSessionName, bool wasSuccessful );
 
 	/** Called after we have queried a friends product id */
-	virtual void OnQueryFriendProductIdCompleted_JoinSession( bool wasSuccessful, FString EpicId, EOS_ProductUserId ProductId );
+	virtual void OnQueryFriendProductIdCompleted_JoinSession( bool wasSuccessful, FString EpicId, struct EOS_ProductUserIdDetails* ProductId );
 
 	/** Called after we have queried a friends product id */
 	UFUNCTION()
@@ -303,7 +303,7 @@ protected:
 	FOnNatTypeUpdated mOnNatTypeUpdated;
 
 	/** Used to query NAT type, nothing more */
-	EOS_HP2P mP2PHandle;
+	EOS_HP2P mP2PHandle = nullptr;
 
 	/** Our last seen NAT-type */
 	ECachedNATType mCachedNATType;

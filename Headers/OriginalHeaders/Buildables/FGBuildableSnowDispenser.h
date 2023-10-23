@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FGBuildable.h"
 #include "FGSignificanceInterface.h"
-#include "Buildables/FGBuildable.h"
 #include "FGBuildableSnowDispenser.generated.h"
 
 /**

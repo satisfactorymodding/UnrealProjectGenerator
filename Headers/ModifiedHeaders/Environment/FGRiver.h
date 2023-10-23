@@ -109,7 +109,7 @@ protected:
 	float BuoyancyMaxIntensity;
 
 	UPROPERTY(EditAnywhere)
-	UMaterialParameterCollection* mDataCollection;
+	class UMaterialParameterCollection* mDataCollection;
 	
 	//UPROPERTY(EditDefaultsOnly)
 	//class UAKAudioEvent* mRiverSound;

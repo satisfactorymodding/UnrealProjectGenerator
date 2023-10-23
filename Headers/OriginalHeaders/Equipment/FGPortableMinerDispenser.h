@@ -2,10 +2,10 @@
 
 #pragma once
 
+#include "Buildables/FGBuildable.h"
+#include "FGEquipment.h"
 #include "GameFramework/Actor.h"
-#include "FGItemDescriptor.h"
-#include "Equipment/FGEquipment.h"
-#include "FGBuildable.h"
+#include "Resources/FGItemDescriptor.h"
 #include "FGPortableMinerDispenser.generated.h"
 
 UCLASS()

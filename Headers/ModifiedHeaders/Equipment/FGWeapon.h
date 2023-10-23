@@ -2,9 +2,9 @@
 
 #pragma once
 
-#include "GameFramework/Actor.h"
-#include "FGEquipment.h"
 #include "FGAmmoType.h"
+#include "FGEquipment.h"
+#include "GameFramework/Actor.h"
 
 #include "FGWeaponState.h"
 

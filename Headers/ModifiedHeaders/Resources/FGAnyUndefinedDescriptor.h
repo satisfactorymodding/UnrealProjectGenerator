@@ -1,7 +1,7 @@
 // Copyright Coffee Stain Studios. All Rights Reserved.
 #pragma once
 
-#include "Resources/FGItemDescriptor.h"
+#include "FGItemDescriptor.h"
 #include "FGAnyUndefinedDescriptor.generated.h"
 
 /**

@@ -10,11 +10,11 @@
 
 #include "FGDroneStationInfo.h"
 
-#include "FGReplicationDetailActor_DroneStation.h"
 #include "FGActorRepresentationInterface.h"
+#include "Replication/FGReplicationDetailActor_DroneStation.h"
 #include "FGBuildableDroneStation.generated.h"
 
-DECLARE_LOG_CATEGORY_EXTERN( LogDroneStation, Log, All );
+FACTORYGAME_API DECLARE_LOG_CATEGORY_EXTERN( LogDroneStation, Log, All );
 
 UENUM( BlueprintType )
 enum class EItemTransferringStage : uint8

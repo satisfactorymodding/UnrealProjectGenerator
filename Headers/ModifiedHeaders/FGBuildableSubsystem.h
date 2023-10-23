@@ -2,10 +2,11 @@
 
 #pragma once
 
-#include "FGSubsystem.h"
 #include "FGFactoryColoringTypes.h"
 #include "FGSaveInterface.h"
+#include "FGSubsystem.h"
 #include "FactoryTick.h"
+#include "Materials/MaterialInterface.h"
 #include "FGBuildableSubsystem.generated.h"
 
 class UFGProductionIndicatorInstanceManager;
@@ -254,7 +255,7 @@ public:
 	virtual void DisplayDebug( class UCanvas* canvas, const class FDebugDisplayInfo& debugDisplay, float& YL, float& YPos ) override;
 	void DebugGetFactoryActors( TArray< AActor* >& out_actors );
 
-	static FName GetMeshMapName( UStaticMesh* mesh, UMeshComponent* sourceComponent );
+	static FName GetMeshMapName( UStaticMesh* mesh, class UMeshComponent* sourceComponent );
 	
 	/** Returns the factory stat ID of the object used for the profiling tool. */
 	FORCEINLINE TStatId GetFactoryStatID( bool forDeferredUse = false ) const
@@ -358,6 +359,8 @@ private:
 	}
 		
 public:
+	static const FName MaterialParameter_ConveyorSpeed;
+	
 	/** Distance used when calculating if a location is near a base */
 	UPROPERTY( EditDefaultsOnly, Category = "Factory" )
 	float mDistanceConsideredClose;

@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "AvailabilityDependencies/FGAvailabilityDependency.h"
+#include "FGAvailabilityDependency.h"
 #include "FGGamePhaseManager.h"
 #include "FGGamePhaseReachedDependency.generated.h"
 

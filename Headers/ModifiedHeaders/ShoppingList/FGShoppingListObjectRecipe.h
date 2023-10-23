@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "SubclassOf.h"
-#include "ShoppingList/FGShoppingListObject.h"
+#include "FGShoppingListObject.h"
+#include "Templates/SubclassOf.h"
 #include "FGShoppingListObjectRecipe.generated.h"
 
 /**

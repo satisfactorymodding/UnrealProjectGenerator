@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "FGStaticReplicatedActor.h"
+#include "Replication/FGStaticReplicatedActor.h"
 #include "FGActorRepresentationInterface.h"
 #include "FGBeacon.generated.h"
 

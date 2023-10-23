@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Unlocks/FGUnlock.h"
 #include "FGSchematic.h"
+#include "FGUnlock.h"
 #include "FGUnlockGiveItem.generated.h"
 
 /**

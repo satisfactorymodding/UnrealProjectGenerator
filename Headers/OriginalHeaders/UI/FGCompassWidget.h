@@ -2,9 +2,9 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
-#include "CanvasPanel.h"
+#include "Components/CanvasPanel.h"
+#include "CoreMinimal.h"
 #include "FGCompassWidget.generated.h"
 
 /**

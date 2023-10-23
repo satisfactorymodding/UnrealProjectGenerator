@@ -24,6 +24,7 @@ void AFGGameRulesSubsystem::SetNoUnlockCost(bool enabled){ }
 void AFGGameRulesSubsystem::SetNoPower(bool enabled){ }
 void AFGGameRulesSubsystem::SetArachnidCreaturesDisabled(bool disabled){ }
 void AFGGameRulesSubsystem::SetGamePhase(int32 gamePhase){ }
+void AFGGameRulesSubsystem::UnlockPreviouslyUnlockedContent(){ }
 void AFGGameRulesSubsystem::GetDebugOverlayData(TArray<FString>& out_debugOverlayData) const{ }
 void AFGGameRulesSubsystem::OnRep_GameRules(){ }
 void AFGGameRulesSubsystem::OnRep_NoUnlockCost(){ }

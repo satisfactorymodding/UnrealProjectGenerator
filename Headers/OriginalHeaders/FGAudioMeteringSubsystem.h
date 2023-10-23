@@ -2,10 +2,10 @@
 
 #pragma once
 
+#include "AkGameplayTypes.h"
 #include "CoreMinimal.h"
-#include "GameInstanceSubsystem.h"
-#include "NoExportTypes.h"
-#include "AkAudio/Classes/AkGameplayTypes.h"
+#include "Subsystems/GameInstanceSubsystem.h"
+#include "UObject/NoExportTypes.h"
 #include "FGAudioMeteringSubsystem.generated.h"
 
 

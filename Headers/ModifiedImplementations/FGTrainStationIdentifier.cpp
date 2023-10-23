@@ -33,3 +33,4 @@ ECompassViewDistance AFGTrainStationIdentifier::GetActorCompassViewDistance(){ r
 void AFGTrainStationIdentifier::SetActorCompassViewDistance(ECompassViewDistance compassViewDistance){ }
 void AFGTrainStationIdentifier::SetStationName(const FText& text){ }
 void AFGTrainStationIdentifier::OnRep_StationName(){ }
+void AFGTrainStationIdentifier::OnRep_Station(){ }

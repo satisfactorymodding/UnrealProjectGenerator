@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FGBuildableFactory.h"
 #include "FGBuildableTrainPlatform.h"
-#include "Buildables/FGBuildableFactory.h"
 #include "FGBuildableTrainPlatformEmpty.generated.h"
 
 /**

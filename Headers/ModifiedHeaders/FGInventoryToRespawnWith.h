@@ -3,7 +3,7 @@
 #pragma once
 #include "Containers/Map.h"
 #include "Containers/Array.h"
-#include "FGEquipment.h"
+#include "Equipment/FGEquipment.h"
 #include "FGInventoryComponent.h"
 
 #include "FGInventoryToRespawnWith.generated.h"
@@ -41,4 +41,8 @@ struct FACTORYGAME_API FInventoryToRespawnWith final
 	// Equipment
 	UPROPERTY( SaveGame )
 	TMap< EEquipmentSlot, FArrayOfInventoryStacksHolder > mEquipmentPairs;
+
+	// Additional data you are willing to persist until the respawn. Objects in question should implement IFGSaveGameInterface and be parented to the level or to the player state
+	UPROPERTY( SaveGame )
+	TMap< FString, UObject* > mMetadata;
 };

@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "Hologram/FGFactoryBuildingHologram.h"
+#include "FGFactoryBuildingHologram.h"
 #include "FGFoundationHologram.generated.h"
 
 /**

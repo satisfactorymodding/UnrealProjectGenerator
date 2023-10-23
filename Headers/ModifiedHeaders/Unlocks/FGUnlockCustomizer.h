@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Unlocks/FGUnlock.h"
+#include "FGUnlock.h"
 #include "FGUnlockCustomizer.generated.h"
 
 /**

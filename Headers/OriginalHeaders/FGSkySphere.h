@@ -4,6 +4,7 @@
 
 #include "Components/DirectionalLightComponent.h"
 #include "Components/VolumetricCloudComponent.h"
+#include "Curves/CurveFloat.h"
 #include "GameFramework/Actor.h"
 #include "Curves/CurveLinearColor.h"
 #include "Engine/DirectionalLight.h"
@@ -218,13 +219,13 @@ public:
 
 	/* Texture used for rain occlusion. Updated on tick with grid snapping to the player location.*/
 	UPROPERTY( VisibleAnywhere, Category = "Weather|Occlusion" )
-	USceneCaptureComponent2D* mRainOcclusionSceneCapture2DComponent;
+	class USceneCaptureComponent2D* mRainOcclusionSceneCapture2DComponent;
 
 	UPROPERTY( EditDefaultsOnly, Category = "Weather|Occlusion" )
-	UTextureRenderTarget2D* mRainOcclusionRT;
+	class UTextureRenderTarget2D* mRainOcclusionRT;
 
 	UPROPERTY( EditDefaultsOnly, Category = "Weather|Occlusion" )
-	UMaterialParameterCollection* mRainOcclusionMaterialParameterCollection;
+	class UMaterialParameterCollection* mRainOcclusionMaterialParameterCollection;
 
 	//TODO deprecate this or move this to weather data.
 	UPROPERTY( EditDefaultsOnly)

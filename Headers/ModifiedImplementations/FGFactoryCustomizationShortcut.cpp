@@ -3,9 +3,14 @@
 #include "FGFactoryCustomizationShortcut.h"
 
 void UFGFactoryCustomizationShortcut::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
-void UFGFactoryCustomizationShortcut::SetCustomizationRecipe(TSubclassOf<  UFGCustomizationRecipe > customization){ }
+void UFGFactoryCustomizationShortcut::SetCustomizationRecipe(TSubclassOf<  UFGCustomizationRecipe > customization, bool silent){ }
 void UFGFactoryCustomizationShortcut::Execute_Implementation( AFGPlayerController* owner){ }
 bool UFGFactoryCustomizationShortcut::IsValidShortcut_Implementation( AFGPlayerController* owner) const{ return bool(); }
 UTexture2D* UFGFactoryCustomizationShortcut::GetDisplayImage_Implementation() const{ return nullptr; }
 bool UFGFactoryCustomizationShortcut::IsActive_Implementation( AFGPlayerController* owner) const{ return bool(); }
+bool UFGFactoryCustomizationShortcut::IsSame_Implementation(UFGHotbarShortcut* shortcut) const{ return bool(); }
+FString UFGFactoryCustomizationShortcut::DescribeShortcut_Implementation() const{ return FString(); }
 void UFGFactoryCustomizationShortcut::OnRep_Customization(){ }
+void UFGFactoryCustomizationShortcut::OnClientSubsystemsValid(){ }
+void UFGFactoryCustomizationShortcut::DestroyShortcut_Implementation(){ }
+void UFGFactoryCustomizationShortcut::OnRecipeUnlocked(TSubclassOf<class UFGRecipe> recipeClass){ }

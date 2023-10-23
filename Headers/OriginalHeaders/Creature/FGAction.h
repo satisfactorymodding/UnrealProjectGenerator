@@ -2,14 +2,15 @@
 
 #pragma once
 
+#include "Actions/FGActionScorer.h"
 #include "CoreMinimal.h"
 #include "Engine/EngineTypes.h"
-#include "FGActionScorer.h"
-#include "Tickable.h"
 #include "Engine/World.h"
+#include "Tickable.h"
+#include "HAL/IConsoleManager.h"
 #include "FGAction.generated.h"
 
-DECLARE_LOG_CATEGORY_EXTERN( LogAction, Log, All );
+FACTORYGAME_API DECLARE_LOG_CATEGORY_EXTERN( LogAction, Log, All );
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FActionFinished, bool, Success );
 

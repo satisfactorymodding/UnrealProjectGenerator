@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "FGScannableDetails.h"
-#include "Unlocks/FGUnlock.h"
+#include "FGUnlock.h"
 #include "FGUnlockScannableObject.generated.h"
 
 

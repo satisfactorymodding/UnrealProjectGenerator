@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "Hologram/FGVehicleHologram.h"
+#include "FGVehicleHologram.h"
 #include "FGWheeledVehicleHologram.generated.h"
 
 /**

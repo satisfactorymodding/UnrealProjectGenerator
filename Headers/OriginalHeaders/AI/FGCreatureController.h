@@ -4,7 +4,7 @@
 
 #include "AIController.h"
 
-#include "FGCreature.h"
+#include "Creature/FGCreature.h"
 #include "FGCreatureSubsystem.h"
 
 #include "FGStimulusAccumulator.h"

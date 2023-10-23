@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Equipment/FGEquipment.h"
+#include "FGEquipment.h"
 #include "FGDowsingStick.generated.h"
 
 /**

@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "FGBuildableManufacturer.h"
 #include "Curves/CurveFloat.h"
+#include "FGBuildableManufacturer.h"
 #include "FGBuildableManufacturerVariablePower.generated.h"
 
 UCLASS( Blueprintable )

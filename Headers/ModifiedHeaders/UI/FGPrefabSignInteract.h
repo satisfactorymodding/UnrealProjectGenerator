@@ -3,10 +3,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FGInteractWidget.h"
 #include "FGSignInterface.h"
-#include "UI/FGInteractWidget.h"
 #include "FGSignTypes.h"
-#include "Text/TextLayout.h"
+#include "Framework/Text/TextLayout.h"
 #include "FGPrefabSignInteract.generated.h"
 
 

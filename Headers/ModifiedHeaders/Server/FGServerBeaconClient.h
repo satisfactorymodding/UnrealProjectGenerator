@@ -9,7 +9,7 @@
 
 #include "FGServerBeaconClient.generated.h"
 
-DECLARE_LOG_CATEGORY_EXTERN( LogServerConnection, Log, Log );
+FACTORYGAME_API DECLARE_LOG_CATEGORY_EXTERN( LogServerConnection, Log, Log );
 
 DECLARE_DELEGATE_TwoParams( FOnJoinRequestAccepted, int32 Port, FServerEntryToken Ticket );
 

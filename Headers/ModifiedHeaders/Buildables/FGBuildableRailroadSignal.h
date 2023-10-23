@@ -2,9 +2,9 @@
 
 #pragma once
 
-#include "FGRailroadTrackConnectionComponent.h"
-#include "Buildables/FGBuildable.h"
+#include "FGBuildable.h"
 #include "FGRailroadSignalBlock.h"
+#include "FGRailroadTrackConnectionComponent.h"
 #include "FGTrain.h"
 #include "FGBuildableRailroadSignal.generated.h"
 

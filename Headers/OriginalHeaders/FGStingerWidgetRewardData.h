@@ -3,7 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "UObject/Object.h"
+#include "Templates/SubclassOf.h"
 #include "FGStingerWidgetRewardData.generated.h"
+
+class UTexture2D;
 
 /**
  * Base class for holding reward data for stinger reward widgets

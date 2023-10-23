@@ -2,10 +2,10 @@
 
 #pragma once
 
+#include "FGBaseUI.h"
 #include "FGSchematic.h"
 #include "FGTutorialIntroManager.h"
-#include "FGBaseUI.h"
-#include "FGAudioMessage.h"
+#include "Message/FGAudioMessage.h"
 #include "FGGameUI.generated.h"
 
 class UFGInteractWidget;

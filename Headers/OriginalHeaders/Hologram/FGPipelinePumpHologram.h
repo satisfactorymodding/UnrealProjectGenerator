@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Hologram/FGPipelineAttachmentHologram.h"
+#include "FGPipelineAttachmentHologram.h"
 #include "FGPipelinePumpHologram.generated.h"
 
 USTRUCT( BlueprintType )

@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "Object.h"
+#include "UObject/Object.h"
 #include "FGConstructDisqualifier.generated.h"
 
 #define LOCTEXT_NAMESPACE "Construct Disqualifiers" 
@@ -93,7 +93,7 @@ class FACTORYGAME_API UFGCDEncroachingClearance : public UFGConstructDisqualifie
 
 	UFGCDEncroachingClearance()
 	{
-		mDisqfualifyingText = LOCTEXT( "UFGCDEncroachingClearance", "Encroaching other's clearance!" );
+		mDisqfualifyingText = LOCTEXT( "UFGCDEncroachingClearance", "Encroaching another object's clearance!" );
 	}
 };
 
@@ -104,7 +104,7 @@ class FACTORYGAME_API UFGCDEncroachingSoftClearance : public UFGConstructDisqual
 	
 	UFGCDEncroachingSoftClearance()
 	{
-		mDisqfualifyingText = LOCTEXT( "UFGCDEncroachingSoftClearance", "Overlapping other's clearance, clipping may occur." );
+		mDisqfualifyingText = LOCTEXT( "UFGCDEncroachingSoftClearance", "Overlapping another object's clearance, clipping may occur" );
 		mIsSoftDisqualifier = true;
 	}
 };
@@ -652,7 +652,7 @@ class FACTORYGAME_API UFGCDNotAllowedInBlueprint : public UFGConstructDisqualifi
 	
 	UFGCDNotAllowedInBlueprint()
 	{
-		mDisqfualifyingText = LOCTEXT( "UFGCDNotAllowedInBlueprint", "Hologram cannot be placed in blueprint designer!" );
+		mDisqfualifyingText = LOCTEXT( "UFGCDNotAllowedInBlueprint", "Hologram cannot be placed in Blueprint Designer!" );
 	}
 };
 
@@ -664,7 +664,7 @@ class FACTORYGAME_API UFGCDIntersectingBlueprintDesigner : public UFGConstructDi
 	
 	UFGCDIntersectingBlueprintDesigner()
 	{
-		mDisqfualifyingText = LOCTEXT( "UFGCDIntersectingBlueprintDesigner", "Partially overlapping blueprint designer!" );
+		mDisqfualifyingText = LOCTEXT( "UFGCDIntersectingBlueprintDesigner", "Partially overlapping Blueprint Designer!" );
 	}
 };
 

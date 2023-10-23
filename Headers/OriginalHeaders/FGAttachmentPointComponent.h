@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Components/SceneComponent.h"
 #include "FGAttachmentPointComponent.generated.h"
 
 UENUM()

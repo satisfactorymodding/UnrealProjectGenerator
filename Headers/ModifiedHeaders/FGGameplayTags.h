@@ -141,6 +141,7 @@ public:
 					FGameplayTag HologramLock;
 					FGameplayTag HologramNudgeAxis;
 					FGameplayTag SnapToGuidelines;
+					FGameplayTag HotbarSample;
 				} BuildState;
 
 				// BuildGunDismantle

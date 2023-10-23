@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
+#include "HAL/IConsoleManager.h"
 #include "FGNoise.generated.h"
 
 extern TAutoConsoleVariable< int32 > CVarFGNoiseDebug;

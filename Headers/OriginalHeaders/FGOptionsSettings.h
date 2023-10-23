@@ -2,10 +2,10 @@
 
 #pragma once
 
-#include "DeveloperSettings.h"
-#include "IncludeInBuild.h"
+#include "Engine/DeveloperSettings.h"
 #include "EngineMinimal.h"
-#include "SubclassOf.h"
+#include "IncludeInBuild.h"
+#include "Templates/SubclassOf.h"
 #include "FGOptionsSettings.generated.h"
 
 UENUM( BlueprintType )

@@ -3,7 +3,7 @@
 #pragma once
 
 #include "FGBuildableResourceExtractorBase.h"
-#include "FGResourceNodeFrackingCore.h"
+#include "Resources/FGResourceNodeFrackingCore.h"
 #include "FGBuildableFrackingActivator.generated.h"
 
 /**

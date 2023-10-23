@@ -4,9 +4,9 @@
 
 #include "CoreMinimal.h"
 
-#include "FGResourceDescriptorGeyser.h"
-#include "FGResourceNode.h"
 #include "FGUnlock.h"
+#include "Resources/FGResourceDescriptorGeyser.h"
+#include "Resources/FGResourceNode.h"
 #include "FGUnlockScannableResource.generated.h"
 
 

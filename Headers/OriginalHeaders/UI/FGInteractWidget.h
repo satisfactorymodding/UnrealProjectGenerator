@@ -2,8 +2,7 @@
 
 #pragma once
 
-#include "UMG.h"
-#include "UserWidget.h"
+#include "Blueprint/UserWidget.h"
 #include "FGInteractWidget.generated.h"
 
 // Simple object wrapper for a hit result so we can put it as the interact object for an interact widget
@@ -198,6 +197,10 @@ public:
 	/** Whether or not to flush mouse button input when opening the widget. */
 	UPROPERTY( EditDefaultsOnly, Category = "Input" )
 	bool mFlushMouseKeysOnOpen;
+
+	/** Whether or not to clear bindings on NativeDestruct. */
+	UPROPERTY( EditDefaultsOnly, Category = "Input" )
+	bool mClearBindingsOnDestruct;
 	
 	// Begin Deprecated Input
 	/** Decides if we should share input with game or capture it completely */

@@ -2,6 +2,8 @@
 
 #include "FGSchematicManager.h"
 
+#if WITH_EDITORONLY_DATA
+#endif 
 AFGSchematicManager* AFGSchematicManager::Get(UWorld* world){ return nullptr; }
 AFGSchematicManager* AFGSchematicManager::Get(UObject* worldContext){ return nullptr; }
 int32 AFGSchematicManager::GetTechTier(const FAssetData& schematicAsset){ return int32(); }

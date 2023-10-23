@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "FGRecipe.h"
-#include "FGItemDescriptor.h"
+#include "Resources/FGItemDescriptor.h"
 #include "UObject/NoExportTypes.h"
 #include "AssetRegistry/AssetBundleData.h"
 #include "IncludeInBuild.h"
@@ -29,9 +29,6 @@ public:
 	{
 		return ( Products.Num() > 0 || ResearchRecipes.Num() > 0 || Schematics.Num() > 0 );
 	}
-
-	/** For debugging */
-	FString ToString() const;
 };
 
 

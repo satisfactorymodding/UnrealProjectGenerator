@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Buildables/FGBuildable.h"
+#include "FGBuildable.h"
 #include "FGSignInterface.h"
 #include "FGBuildableSignBase.generated.h"
 

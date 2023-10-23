@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "FGEquipment.h"
+#include "Equipment/FGEquipment.h"
 #include "FGEquipmentChild.generated.h"
 
 /**

@@ -2,12 +2,12 @@
 
 #pragma once
 
-#include "GameFramework/Actor.h"
-#include "Equipment/FGEquipment.h"
-#include "FGRecipeProducerInterface.h"
-#include "Equipment/FGEquipmentAttachment.h"
-#include "Inventory.h"
+#include "FGEquipment.h"
+#include "FGEquipmentAttachment.h"
 #include "FGFactoryColoringTypes.h"
+#include "FGRecipeProducerInterface.h"
+#include "GameFramework/Actor.h"
+#include "Inventory.h"
 #include "FGBuildGunModeDescriptor.h"
 #include "FGBuildGun.generated.h"
 
@@ -194,12 +194,16 @@ public:
 
 	virtual void BindInputActions( class UFGEnhancedInputComponent* inputComponent );
 	void ClearInputActions( class UEnhancedInputComponent* inputComponent );
+	virtual bool OnShortcutPressed( int32 shortcutIndex ) { return false; }
 protected:
 	/** If true, then we can sample buildings in this state */
-	bool mCanSampleBuildingsInState;
-
+	virtual bool CanSampleBuildings() const;
+	
 	/** If true, the we can sample customizations in this state */
-	bool mCanSampleCustomizationsInState;
+	virtual bool CanSampleCustomizations() const;
+	
+	/** If true, the we can sample blueprints in this state */
+	virtual bool CanSampleBlueprints() const;
 
 	/** Mapping context of this build gun state. */
 	UPROPERTY( EditDefaultsOnly, BlueprintReadOnly, Category = "Input" )
@@ -241,9 +245,10 @@ public:
 	virtual void Equip( class AFGCharacterPlayer* character );
 	virtual void UnEquip();
 	virtual void OnInteractWidgetAddedOrRemoved( UFGInteractWidget* widget, bool added ) override;
+	virtual bool OnShortcutPressed(int32 shortcutIndex) override;
 	// End AFGEquipment interface
 
-	void TraceForBuilding( APawn* owningPawn, FHitResult& hitresult );
+	void TraceForBuilding( APawn* owningPawn, FHitResult& hitresult ) const;
 	
 	/** @return The FHitResult of this build gun. */
 	FORCEINLINE FHitResult& GetHitResult(){ return mHitResult; }
