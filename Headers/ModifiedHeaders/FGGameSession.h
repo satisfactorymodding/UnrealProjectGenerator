@@ -77,6 +77,12 @@ protected:
 	/** Game can become public after this, and the current visibility is applied */
 	UFUNCTION()
 	void IntroSequenceUpdated();
+
+public:
+	virtual void RegisterPlayer( APlayerController* newPlayer, const FUniqueNetIdRepl& uniqueNetId, bool wasFromInvite ) override;
+	virtual void UnregisterPlayer( FName InSessionName, const FUniqueNetIdRepl& uniqueNetId ) override;
+	virtual void UnregisterPlayers( FName InSessionName, const TArray<FUniqueNetIdRepl>& players ) override;
+
 private:
 	/** Visibility of current game session */
 	ESessionVisibility mSessionVisibility;

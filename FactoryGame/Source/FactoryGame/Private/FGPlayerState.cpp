@@ -107,6 +107,8 @@ void AFGPlayerState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLi
 void AFGPlayerState::BeginPlay(){ }
 void AFGPlayerState::CopyProperties(APlayerState* playerState){ }
 void AFGPlayerState::ClientInitialize(AController* C){ }
+void AFGPlayerState::RegisterPlayerWithSession(bool bWasFromInvite){ }
+void AFGPlayerState::UnregisterPlayerWithSession(){ }
 void AFGPlayerState::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGPlayerState::PostSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGPlayerState::PreLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }

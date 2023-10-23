@@ -291,6 +291,8 @@ public:
 	// Begin APlayerState interface
 	virtual void CopyProperties( APlayerState* playerState ) override;
 	virtual void ClientInitialize(AController* C) override;
+	virtual void RegisterPlayerWithSession(bool bWasFromInvite) override;
+	virtual void UnregisterPlayerWithSession() override;
 	// End APlayerState interface
 
 	// Begin IFGSaveInterface

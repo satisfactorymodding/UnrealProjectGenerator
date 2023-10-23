@@ -2,8 +2,6 @@
 
 #include "FGPlayerState.h"
 
-#undef GetUserName // MODDING EDIT: Wwise includes Windows.h which defines GetUserName as a macro
-
 UFGPlayerHotbar::UFGPlayerHotbar(){ }
 void UFGPlayerHotbar::PostInitProperties(){ Super::PostInitProperties(); }
 void UFGPlayerHotbar::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
@@ -41,6 +39,8 @@ void AFGPlayerState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLi
 void AFGPlayerState::BeginPlay(){ }
 void AFGPlayerState::CopyProperties(APlayerState* playerState){ }
 void AFGPlayerState::ClientInitialize(AController* C){ }
+void AFGPlayerState::RegisterPlayerWithSession(bool bWasFromInvite){ }
+void AFGPlayerState::UnregisterPlayerWithSession(){ }
 void AFGPlayerState::PreSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGPlayerState::PostSaveGame_Implementation(int32 saveVersion, int32 gameVersion){ }
 void AFGPlayerState::PreLoadGame_Implementation(int32 saveVersion, int32 gameVersion){ }
