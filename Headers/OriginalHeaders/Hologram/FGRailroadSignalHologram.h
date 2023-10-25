@@ -30,6 +30,8 @@ public:
 	// End AFGHologram Interface
 
 protected:
+	bool IsLocallyOwnedHologram() const;
+
 	// Begin AFGBuildableHologram Interface
 	virtual void ConfigureActor( class AFGBuildable* inBuildable ) const override;
 	virtual void CheckValidPlacement() override;
