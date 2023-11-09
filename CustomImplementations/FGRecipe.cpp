@@ -57,3 +57,23 @@ TArray<TSubclassOf<UObject>> UFGRecipe::GetProducedIn(TSubclassOf<UFGRecipe> inC
 void UFGRecipe::GetProducedIn(TArray<TSubclassOf<UObject>> &out_producedIn) const {
 	out_producedIn = UFGRecipe::GetProducedIn(this->GetClass());
 }
+
+#if WITH_EDITOR
+EDataValidationResult UFGRecipe::IsDataValid(TArray<FText>& ValidationErrors) {
+	// MODDING IMPLEMENTATION
+	EDataValidationResult ValidationResult = Super::IsDataValid(ValidationErrors);
+
+	TArray<FItemAmount> AllReferencedItems;
+	AllReferencedItems.Append(UFGRecipe::GetIngredients(GetClass()));
+	AllReferencedItems.Append(UFGRecipe::GetProducts(GetClass()));
+
+	for (const FItemAmount& ItemAmount : AllReferencedItems) {
+		if (ItemAmount.ItemClass == nullptr) {
+			ValidationErrors.Add(NSLOCTEXT("Recipe", "RecipeValidation_NullItem", "Null item referenced by recipe. Was the content it previously referenced deleted or moved?"));
+			ValidationResult = EDataValidationResult::Invalid;
+		}
+	}
+
+	return ValidationResult;
+}
+#endif 
