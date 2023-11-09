@@ -4,3 +4,5 @@
 
 void FOnlineIntegrationModule::StartupModule(){ }
 void FOnlineIntegrationModule::ShutdownModule(){ }
+
+IMPLEMENT_MODULE(FOnlineIntegrationModule, OnlineIntegration);
