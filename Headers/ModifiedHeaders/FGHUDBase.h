@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "OnlineInteractionHandlers.h"
 #include "GameFramework/HUD.h"
 #include "UI/FGDebugOverlayWidget.h"
 #include "FGHUDBase.generated.h"
@@ -20,7 +21,7 @@ enum EWidgetOrder
  * 
  */
 UCLASS()
-class FACTORYGAME_API AFGHUDBase : public AHUD
+class FACTORYGAME_API AFGHUDBase : public AHUD, public ISessionCreationInteractionHandler
 {
 	GENERATED_BODY()
 public:
@@ -30,6 +31,9 @@ public:
 	/** Returns base ui */
 	UFUNCTION( BlueprintPure, Category = "HUD" )
 	FORCEINLINE class UFGBaseUI* GetBaseUI() { return mBaseUI; }
+
+	virtual void ShowSessionCreationFailurePopup( FOnlineSessionPromptResultKnown delegate ) override;
+	virtual void HideSessionCreationFailurePopup() override;
 
 	// We want these exec functions here instead of in the FGHUD since we only have a FGHUDBase in the main menu. Don't want to change that for the moment
 	void ToggleDebugOverlayWidget( UWorld* world, EDebugOverlayType type );

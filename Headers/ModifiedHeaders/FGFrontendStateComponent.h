@@ -1,7 +1,7 @@
 #pragma once
 
 #include "MVVMViewModelBase.h"
-#include "OnlineAuthenticationHandler.h"
+#include "OnlineInteractionHandlers.h"
 #include "OnlineIntegrationSubsystem.h"
 #include "OnlineIntegrationTypes.h"
 #include "Async/Future.h"
@@ -72,7 +72,6 @@ private:
 	void OnlineModeSelectionConfirmed(bool popupConfirmed);
 	
 	void TryShowMainScreen();
-	void SpawnOnlineStartupScreen();
 
 	UPROPERTY( Transient )
 	TObjectPtr<class UFGOnlineStartupScreen> mOnlineStartupScreen;
