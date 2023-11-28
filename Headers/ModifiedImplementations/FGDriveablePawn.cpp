@@ -15,6 +15,7 @@ void AFGDriveablePawn::PossessedBy(AController* newController){ }
 void AFGDriveablePawn::UnPossessed(){ }
 void AFGDriveablePawn::OnRep_PlayerState(){ }
 void AFGDriveablePawn::UpdatePlayerStatus(){ }
+bool AFGDriveablePawn::HasActiveDriver() const{ return bool(); }
 bool AFGDriveablePawn::CanDriverEnter( AFGCharacterPlayer* character){ return bool(); }
 bool AFGDriveablePawn::DriverEnter( AFGCharacterPlayer* driver){ return bool(); }
 bool AFGDriveablePawn::DriverLeave(bool keepDriving){ return bool(); }
