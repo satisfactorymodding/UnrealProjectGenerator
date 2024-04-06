@@ -26,9 +26,13 @@ void AFGBuildable::OnConstruction(const FTransform& transform) {
     Super::OnConstruction(transform);
 
 #if WITH_EDITOR
-    RemoveInstances();
-    RemoveInstances_Native();
-    CallSetupInstances();
+    const UWorld* World = GetWorld();
+    if (IsValid(World) and World->IsGameWorld()) {
+        // Don't do this for non-game worlds, otherwise the editor crashes when compiling a blueprint
+        RemoveInstances();
+        RemoveInstances_Native();
+        CallSetupInstances();
+    }
 #endif
 }
 TArray<struct FInstanceData> AFGBuildable::GetActorLightweightInstanceData_Implementation() {
